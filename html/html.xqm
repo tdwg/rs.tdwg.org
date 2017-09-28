@@ -2,9 +2,6 @@ xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.com/html';
 
-(: In order to avoid hard-coding file locations, the propvalue module is imported from GitHub.  It is unlikely that you will need to modify any of the functions it contains, but if you do, you will need to substitute after the "at" keyword the path to the local directory where you put the propvalue.xqm file :)
-import module namespace propvalue = 'http://bioimages.vanderbilt.edu/xqm/propvalue' at 'https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/propvalue.xqm'; 
-
 (:--------------------------------------------------------------------------------------------------:)
 
 declare function html:generate-list($db)
@@ -23,10 +20,12 @@ return
     <title>Test generated web page</title>
   </head>
   <body>
+    <p>{
       (: check records in the database for a match to the requested URI :)
       for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()="recordedBy"
       return $record/label/text()     
+    }</p>
   </body>
 </html>
 };
