@@ -7,8 +7,14 @@ import module namespace propvalue = 'http://bioimages.vanderbilt.edu/xqm/propval
 
 (:--------------------------------------------------------------------------------------------------:)
 
-declare function html:dwc()
+declare function html:generate-list($db)
 {
+let $constants := fn:collection($db)//constants/record
+let $baseIriColumn := $constants//baseIriColumn/text()
+
+let $metadata := fn:collection($db)/metadata/record
+  
+
 let $message := "here is some text"
 return 
 <html>
@@ -17,6 +23,12 @@ return
     <title>Test generated web page</title>
   </head>
   <body>
+  return 
+      (: check records in the database for a match to the requested URI :)
+      for $record in $metadata
+      where $record/*[local-name()=$baseIriColumn]/text()="recordedBy"
+      return $record/      
+
     {$message}
   </body>
 </html>
