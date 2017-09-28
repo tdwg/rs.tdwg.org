@@ -1,0 +1,8 @@
+rdf_type,replacing_term,replacing_term_localName,replacing_term_namespace,replaced_term,replaced_term_namespace,replaced_term_localName
+http://www.w3.org/2000/01/rdf-schema#Class,http://rs.tdwg.org/dwc/terms/FossilSpecimen,FossilSpecimen,http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/dwctype/FossilSpecimen,http://rs.tdwg.org/dwc/dwctype/,FossilSpecimen
+http://www.w3.org/2000/01/rdf-schema#Class,http://rs.tdwg.org/dwc/terms/HumanObservation,HumanObservation,http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/dwctype/HumanObservation,http://rs.tdwg.org/dwc/dwctype/,HumanObservation
+http://www.w3.org/2000/01/rdf-schema#Class,http://rs.tdwg.org/dwc/terms/LivingSpecimen,LivingSpecimen,http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/dwctype/LivingSpecimen,http://rs.tdwg.org/dwc/dwctype/,LivingSpecimen
+http://www.w3.org/2000/01/rdf-schema#Class,http://purl.org/dc/terms/Location,Location,http://purl.org/dc/terms/,http://rs.tdwg.org/dwc/dwctype/Location,http://rs.tdwg.org/dwc/dwctype/,Location
+http://www.w3.org/2000/01/rdf-schema#Class,http://rs.tdwg.org/dwc/terms/MachineObservation,MachineObservation,http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/dwctype/MachineObservation,http://rs.tdwg.org/dwc/dwctype/,MachineObservation
+http://www.w3.org/2000/01/rdf-schema#Class,http://rs.tdwg.org/dwc/terms/MaterialSample,MaterialSample,http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/dwctype/MaterialSample,http://rs.tdwg.org/dwc/dwctype/,MaterialSample
+http://www.w3.org/2000/01/rdf-schema#Class,http://rs.tdwg.org/dwc/terms/PreservedSpecimen,PreservedSpecimen,http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen,http://rs.tdwg.org/dwc/dwctype/,PreservedSpecimen

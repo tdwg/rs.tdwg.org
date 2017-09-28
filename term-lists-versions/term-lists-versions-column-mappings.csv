@@ -1,0 +1,10 @@
+header,predicate,type,value,attribute,subject_id
+version_modified,dcterms:issued,datatype,,xsd:date,$root
+label,rdfs:label,language,,en,$root
+label,dcterms:title,language,,en,$root
+description,rdfs:comment,language,,en,$root
+description,dcterms:description,language,,en,$root
+$constant,dc:publisher,language,Biodiversity Information Standards (TDWG),en,$root
+$constant,dcterms:publisher,iri,https://www.grid.ac/institutes/grid.480498.9,,$root
+version_modified,owl:versionInfo,plain,,,$root
+vann_preferredNamespaceUri,dcterms:isVersionOf,iri,,,$root

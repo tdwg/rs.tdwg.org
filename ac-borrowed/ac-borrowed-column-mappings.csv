@@ -1,0 +1,12 @@
+header,predicate,type,value,attribute,subject_id
+term_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
+$constant,dcterms:isPartOf,iri,http://rs.tdwg.org/ac/borrowed/,,$root
+label,rdfs:label,language,,en,$root
+label,skos:prefLabel,language,,en,$root
+rdfs_comment,rdfs:comment,language,,en,$root
+dcterms_description,dcterms:description,language,,en,$root
+rdf_type,rdf:type,iri,,,$root
+rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
+tdwgutility_layer,tdwgutility:layer,plain,,,$root
+tdwgutility_required,tdwgutility:required,plain,,,$root
+tdwgutility_repeatable,tdwgutility:repeatable,plain,,,$root
