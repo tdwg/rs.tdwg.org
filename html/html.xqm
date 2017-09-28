@@ -1,5 +1,4 @@
-﻿xquery version "3.1";
-
+﻿xquery version 3.1;
 module namespace html = 'http://rs.tdwg.com/html';
 
 declare function html:dwc()
