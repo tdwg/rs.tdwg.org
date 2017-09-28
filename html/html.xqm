@@ -18,6 +18,8 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>Test generated web page</title>
+      <link href="https://raw.githubusercontent.com/baskaufs/tdwg-standards/master/html/config/default.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
      <table cellspacing="0" class="border">
