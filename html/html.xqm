@@ -22,14 +22,11 @@ return
     <meta charset="utf-8"/>
     <title>Test generated web page</title>
   </head>
-  <body>
-  return 
+  <body>{
       (: check records in the database for a match to the requested URI :)
       for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()="recordedBy"
-      return $record/      
-
-    {$message}
-  </body>
+      return $record/label/text()     
+  }</body>
 </html>
 };
