@@ -12,7 +12,6 @@ label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
 dcterms_description,dcterms:description,language,,en,$root
 rdf_type,rdf:type,iri,,,$root
-rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
 dwcattributes_abcdEquivalence,tdwgutility:abcdEquivalence,plain,,,$root
 dwcattributes_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
 dwcattributes_decision,tdwgutility:decision,iri,,,$root

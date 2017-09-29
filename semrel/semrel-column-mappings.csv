@@ -1,0 +1,3 @@
+header,predicate,type,value,attribute,subject_id
+rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
+rdfs_subClassOf,rdfs:subClassOf,iri,,,$root
