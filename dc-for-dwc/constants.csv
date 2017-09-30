@@ -1,2 +1,2 @@
 domainRoot,coreClassFile,documentClass,creator,outputDirectory,outFileNameAfter,separator,baseIriColumn,modifiedColumn
-,dc-for-dwc.csv,foaf:document,Biodiversity Information Standards (TDWG),c:\test\output\,,",",term,document_modified
+,dc-for-dwc.csv,foaf:document,Biodiversity Information Standards (TDWG),c:\test\output\,,",",term_localName,document_modified
