@@ -9,11 +9,5 @@ replaces2_version,dcterms:replaces,iri,,,$root
 label,rdfs:label,language,,en,$root
 label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
-dcterms_description,dcterms:description,language,,en,$root
 rdf_type,rdf:type,iri,,,$root
-rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
-dwcattributes_abcdEquivalence,tdwgutility:abcdEquivalence,plain,,,$root
-dwcattributes_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
-dwcattributes_decision,tdwgutility:decision,iri,,,$root
-rdfs_seeAlso,rdfs:seeAlso,iri,,,$root
-term_localName,dcterms:isVersionOf,iri,http://rs.tdwg.org/dwc/terms/,,$root
+term_localName,dcterms:isVersionOf,iri,http://rs.tdwg.org/dwc/iri/,,$root

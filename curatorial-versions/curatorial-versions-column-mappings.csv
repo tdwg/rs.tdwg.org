@@ -10,4 +10,4 @@ label,rdfs:label,language,,en,$root
 label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
 rdf_type,rdf:type,iri,,,$root
-term_localName,dcterms:isVersionOf,iri,http://rs.tdwg.org/dwc/terms/,,$root
+term_localName,dcterms:isVersionOf,iri,http://rs.tdwg.org/dwc/curatorial/,,$root

@@ -16,7 +16,6 @@ In folder iri-versions:
 iri-versions.csv
 iri-versions-replacements.csv
 
-(eventually)
 In folder dc-for-dwc:
 dc-for-dwc.csv
 dc-for-dwc-versions.csv
