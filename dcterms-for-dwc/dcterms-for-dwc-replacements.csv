@@ -1,2 +1,4 @@
 replacing_term,replaced_term_localName
 http://purl.org/dc/terms/license,rights
+http://purl.org/dc/elements/1.1/language,language
+http://purl.org/dc/elements/1.1/type,type
