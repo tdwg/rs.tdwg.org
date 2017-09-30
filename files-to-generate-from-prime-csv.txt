@@ -1,0 +1,27 @@
+In folder terms:
+terms.csv
+terms-versions.csv
+terms-replacements.csv
+
+In folder terms-versions:
+terms-versions.csv
+terms-versions-replacements.csv
+
+In folder iri:
+iri.csv
+iri-versions.csv
+iri-replacements.csv
+
+In folder iri-versions:
+iri-versions.csv
+iri-versions-replacements.csv
+
+(eventually)
+In folder dc-for-dwc:
+dc-for-dwc.csv
+dc-for-dwc-versions.csv
+dc-for-dwc-replacements.csv
+
+In folder dc-for-dwc-versions:
+dc-for-dwc-versions.csv
+dc-for-dwc-versions-replacements.csv
