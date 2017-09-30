@@ -8,3 +8,4 @@ document_modified,term_localName,term_isDefinedBy,term_created,term_modified,ter
 2017-09-23T06:53:00-05:00,layer,http://rs.tdwg.org/dwc/terms/attributes/,2017-09-23,2017-09-23,,,,,Layer,Used to indicate the centrality of vocabulary terms.,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
 2017-09-23T06:53:00-05:00,required,http://rs.tdwg.org/dwc/terms/attributes/,2017-09-23,2017-09-23,,,,,Required,Indicates that a term is required to conform to a profile.,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
 2017-09-23T06:53:00-05:00,repeatable,http://rs.tdwg.org/dwc/terms/attributes/,2017-09-23,2017-09-23,,,,,Repeatable,Indicates that the term may be repeated in a metadata record.,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+2017-09-23T06:53:00-05:00,UseWithIri,http://rs.tdwg.org/dwc/terms/attributes/,2017-09-23,2017-09-23,,,,,Use with IRI,Indicates that the term should have an IRI value,http://www.w3.org/2000/01/rdf-schema#Class
