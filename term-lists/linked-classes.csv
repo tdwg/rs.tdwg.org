@@ -1,4 +1,4 @@
 link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
-list_localName,dcterms:isVersionOf,version,http,,term-lists-versions.csv,dcterms:hasVersion
-replaced_list_localName,dcterms:replaces,replacing_list,http,,term-lists-replacements.csv,dcterms:isReplacedBy
-localIdentifier,dcterms:isPartOf,term,http,,term-lists-members.csv,dcterms:hasPart
+list,dcterms:isVersionOf,version,http,,term-lists-versions.csv,dcterms:hasVersion
+replaced_list,dcterms:replaces,replacing_list,http,,term-lists-replacements.csv,dcterms:isReplacedBy
+termList,dcterms:isPartOf,term,http,,term-lists-members.csv,dcterms:hasPart
