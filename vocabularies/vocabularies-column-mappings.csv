@@ -7,7 +7,6 @@ $constant,dc:publisher,language,Biodiversity Information Standards (TDWG),en,$ro
 $constant,dcterms:publisher,iri,https://www.grid.ac/institutes/grid.480498.9,,$root
 version_modified,dcterms:modified,datatype,,xsd:date,$root
 version_modified,owl:versionInfo,plain,,,$root
-list_created,dcterms:created,datatype,,xsd:date,$root
-vann_preferredNamespacePrefix,vann:preferredNamespacePrefix,plain,,,$root
-vann_preferredNamespaceUri,vann:preferredNamespaceUri,plain,,,$root
-list_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
+vocabulary_created,dcterms:created,datatype,,xsd:date,$root
+vocabulary_modified,dcterms:modified,datatype,,xsd:date,$root
+vocabulary_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
