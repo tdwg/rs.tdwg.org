@@ -1,4 +1,4 @@
-document_modified,version,version_modified,vocabulary_deprecated,vocabulary_localName,label,description,vocabulary_created,vocabulary_modified,vocabulary
-2017-09-23T06:53:00-05:00,http://rs.tdwg.org/version/dwc/2014-12-23,2014-12-23,,dwc/,Darwin Core basic vocabulary,This vocabulary contains Darwin Core terms intended for use with literal values,2008-11-19,2014-12-23,http://rs.tdwg.org/dwc/
-2017-09-23T06:53:00-05:00,http://rs.tdwg.org/version/dwclink/2015-03-27,2015-03-27,,dwclink/,Darwin Core linked data vocabulary,This vocabulary contains Darwin Core terms suitable for use with both literal and IRI values,2015-03-27,2015-03-27,http://rs.tdwg.org/dwclink/
-2017-09-23T06:53:00-05:00,http://rs.tdwg.org/version/ac/2013-10-28,2013-10-28,,ac/,Audubon Core basic vocabulary,This vocabulary contains all Audubn Core terms,2013-10-28,2013-10-28,http://rs.tdwg.org/ac/
+document_modified,vocabulary_deprecated,vocabulary_localName,label,description,vocabulary_created,vocabulary_modified,vocabulary
+2017-09-23T06:53:00-05:00,,dwc/,Darwin Core basic vocabulary,This vocabulary contains Darwin Core terms intended for use with literal values,2008-11-19,2014-12-23,http://rs.tdwg.org/dwc/
+2017-09-23T06:53:00-05:00,,dwclink/,Darwin Core linked data vocabulary,This vocabulary contains Darwin Core terms suitable for use with both literal and IRI values,2015-03-27,2015-03-27,http://rs.tdwg.org/dwclink/
+2017-09-23T06:53:00-05:00,,ac/,Audubon Core basic vocabulary,This vocabulary contains all Audubn Core terms,2013-10-28,2013-10-28,http://rs.tdwg.org/ac/
