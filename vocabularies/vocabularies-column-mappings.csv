@@ -8,3 +8,5 @@ $constant,dcterms:publisher,iri,https://www.grid.ac/institutes/grid.480498.9,,$r
 vocabulary_created,dcterms:created,datatype,,xsd:date,$root
 vocabulary_modified,dcterms:modified,datatype,,xsd:date,$root
 vocabulary_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
+dc_creator,dc:creator,plain,,,$root
+dcterms_license,dcterms:license,iri,,,$root

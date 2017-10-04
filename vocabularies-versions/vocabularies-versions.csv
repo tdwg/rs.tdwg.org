@@ -1,4 +1,4 @@
-document_modified,version,version_issued,vocabulary_status,label,description,vocabulary,dc_creator,dcterms:license
+document_modified,version,version_issued,vocabulary_status,label,description,vocabulary,dc_creator,dcterms_license
 2017-09-23T06:53:00-05:00,http://rs.tdwg.org/version/dwclink/2015-03-27,2015-03-27,recommended,Darwin Core linked data vocabulary,This vocabulary contains Darwin Core terms suitable for use with both literal and IRI values,http://rs.tdwg.org/dwclink/,TDWG Darwin Core and RDF/OWL Task Groups,http://creativecommons.org/licenses/by/4.0/
 2017-09-23T06:53:00-05:00,http://rs.tdwg.org/version/ac/2013-10-28,2013-10-28,recommended,Audubon Core basic vocabulary,This vocabulary contains all Audubn Core terms,http://rs.tdwg.org/ac/,TDWG Multimedia Resources Task Group,http://creativecommons.org/licenses/by/4.0/
 2017-09-23T06:53:00-05:00,http://rs.tdwg.org/version/dwc/2008-11-19,2008-11-19,superseded,Darwin Core basic vocabulary,This vocabulary contains Darwin Core terms intended for use with literal values,http://rs.tdwg.org/dwc/,TDWG Darwin Core Task Group,http://creativecommons.org/licenses/by/4.0/
