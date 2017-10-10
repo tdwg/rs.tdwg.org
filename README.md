@@ -225,7 +225,7 @@ Within each folder describing versions, the primary metadata is in the file whos
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
  | TDWG utility (```dwcutility:```) terms | http://rs.tdwg.org/dwc/terms/attributes/ttt | [utility](utility) | http://rs.tdwg.org/dwc/terms/attributes/version/ttt-yyyy-mm-dd | [utility-versions](utility-versions) |
- | Darwin Core decisions history | | [decisions](decisions) | | N/A | N/A |
+ | Darwin Core decisions history | http://rs.tdwg.org/decisions/ttt> | [decisions](decisions)**** | | N/A**** | N/A |
 
 ## <a name="obsolete-metadata"></a>4.3 Metadata about obsolete pre-standard versions of Darwin Core
 
@@ -243,3 +243,7 @@ Within each folder describing versions, the primary metadata is in the file whos
  \** This list will eventually be replaced by a list for each namespace.
 
  \*** The primary metadata for these term lists (will be) generated automatically by a script from the [Darwin Core "term versions" document](https://github.com/tdwg/dwc/blob/master/standard/vocabularies/term_versions.csv).
+
+ \**** The decisions directory also contains [a CSV file](decisions/decisions-links.csv) that links vocabulary terms with the decisions that affected them.
+
+ \***** It does not seem necessary at the present time to maintain versions of the decisions themselves, although there are versions of the decisions list.  This could be changed in the future if necessary.
