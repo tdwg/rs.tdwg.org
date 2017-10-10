@@ -73,7 +73,11 @@ are in the form:
 http://www.tdwg.org/standards/nnn
 ```
 
-where "nnn" is a number unique to a particular standard.
+where "nnn" is a number unique to a particular standard.  Example for the Darwin Core Standard:
+
+```
+http://www.tdwg.org/standards/450
+```
 
 ### **2nd level:** IRIs representing vocabularies
 
@@ -83,7 +87,11 @@ are in the form:
 http://rs.tdwg.org/vvv/
 ```
 
-where "vvv" is a string unique to the vocabulary.  For example, "dwc" is the string for the basic Darwin Core vocabulary and "ac" is the string for the Audubon Core vocabulary.
+where "vvv" is a string unique to the vocabulary.  For example, "dwc" is the string for the basic Darwin Core vocabulary and "ac" is the string for the Audubon Core vocabulary.  Example for the Darwin Core basic vocabulary:
+
+```
+http://rs.tdwg.org/dwc/
+```
 
 ### **3rd level** IRIs representing term lists
 
@@ -138,7 +146,12 @@ has versions with IRIs in the form
 http://www.tdwg.org/standards/nnn/version/yyyy-mm-dd
 ```
 
-where yyyy-mm-dd represents the issued date of the version, using the [lexical space of an XML schema date datatype](https://www.w3.org/TR/xmlschema-2/#date) (without timezone indicator).
+where yyyy-mm-dd represents the issued date of the version, using the [lexical space of an XML schema date datatype](https://www.w3.org/TR/xmlschema-2/#date) (without timezone indicator).  Example for the Darwin Core Standard:
+
+```
+http://www.tdwg.org/standards/450/version/2015-03-27
+```
+
 
 ### **2nd level:** Vocabularies
 
@@ -153,7 +166,12 @@ has versions with IRIs in the form
 ```
 http://rs.tdwg.org/version/vvv/yyyy-mm-dd
 ```
-with yyyy-mm-dd as described for standards.
+with yyyy-mm-dd as described for standards.  Example for the Darwin Core basic vocabulary:
+
+```
+http://rs.tdwg.org/version/dwc/2014-12-23
+```
+
 
 ### **3rd level:** Term Lists
 
@@ -167,6 +185,12 @@ has versions with IRIs in the form
 
 ```
 http://rs.tdwg.org/vvv/version/sss/yyyy-mm-dd
+```
+
+Example for the Darwin Core IRI-value term list:
+
+```
+http://rs.tdwg.org/dwc/version/iri/2015-03-27
 ```
 
 ### **4th level:** Terms
@@ -183,6 +207,11 @@ has versions with IRIs in the form
 http://rs.tdwg.org/vvv/sss/version/ttt-yyyy-mm-dd
 ```
 
+Example for a version of ```dwciri:recordedBy```:
+
+```
+http://rs.tdwg.org/dwc/iri/version/recordedBy-2015-03-27
+```
 
 # <a name="directories"></a>3 About directories in this repository
 
