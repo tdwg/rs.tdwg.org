@@ -20,7 +20,7 @@
 
 **Bibliographic citation:** Biodiversity Information Standards. 2017. Biodiversity Information Standards (TDWG) Standards Metadata http://something
 
-## Table of Contents
+# Table of Contents
 
 [1 Metadata model for TDWG standards](#model)  
 [2 IRI patterns](#patterns)  
