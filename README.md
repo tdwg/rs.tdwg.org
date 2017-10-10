@@ -32,7 +32,9 @@ The IRI repsenting TDWG as an orgainzation is:
 https://www.grid.ac/institutes/grid.480498.9
 ```
 
-**1st level:** IRIs representing TDWG standards are in the form:
+#### **1st level:** IRIs representing TDWG standards
+
+are in the form:
 
 ```
 http://www.tdwg.org/standards/nnn
@@ -40,7 +42,9 @@ http://www.tdwg.org/standards/nnn
 
 where "nnn" is a number unique to a particular standard.
 
-**2nd level:** IRIs representing vocabularies are in the form:
+#### **2nd level:** IRIs representing vocabularies
+
+are in the form:
 
 ```
 http://rs.tdwg.org/vvv/
@@ -48,7 +52,9 @@ http://rs.tdwg.org/vvv/
 
 where "vvv" is a string unique to the vocabulary.  For example, "dwc" is the string for the basic Darwin Core vocabulary and "ac" is the string for the Audubon Core vocabulary.
 
-**3rd level** IRIs representing term lists are in the form:
+#### **3rd level** IRIs representing term lists
+
+are in the form:
 
 ```
 http://rs.tdwg.org/vvv/sss/
@@ -66,7 +72,9 @@ http://rs.tdwg.org/ac/terms/
 ```
 for terms defined by Audubon Core.
 
-**4th level** IRIs representing vocabulary terms are in the form:
+#### **4th level** IRIs representing vocabulary terms
+
+are in the form:
 
 ```
 http://rs.tdwg.org/vvv/sss/ttt
@@ -83,7 +91,7 @@ Term IRIs are not followed by a trailing forward slash.  The "namespace" corresp
 
 ### 2.2 patterns for versions of resources in the standards hierarchy
 
-**1st level:** Standards
+#### **1st level:** Standards
 
 A standard with IRI in the form
 
@@ -99,7 +107,7 @@ http://www.tdwg.org/standards/nnn/version/yyyy-mm-dd
 
 where yyyy-mm-dd represents the issued date of the version, using the [lexical space of an XML schema date datatype](https://www.w3.org/TR/xmlschema-2/#date) (without timezone indicator).
 
-**2nd level:** Vocabularies
+#### **2nd level:** Vocabularies
 
 A vocabulary with IRI in the form
 
@@ -114,7 +122,7 @@ http://rs.tdwg.org/version/vvv/yyyy-mm-dd
 ```
 with yyyy-mm-dd as described for standards.
 
-**3rd level:** Term Lists
+#### **3rd level:** Term Lists
 
 A term list with IRI in the form
 
@@ -128,7 +136,7 @@ has versions with IRIs in the form
 http://rs.tdwg.org/vvv/version/sss/yyyy-mm-dd
 ```
 
-**4th level:** Terms
+#### **4th level:** Terms
 
 A term with IRI in the form
 
@@ -176,9 +184,7 @@ Within each folder describing versions, the primary metadata is in the file whos
  | Darwin Core IRI-value terms | http://rs.tdwg.org/dwc/iri/ttt | iri | http://rs.tdwg.org/dwc/iri/version/ttt-yyyy-mm-dd | iri-versions |
  | dc: terms borrowed by Darwin Core | http://purl.org/dc/elements/1.1/ttt | dc-for-dwc | http://dublincore.org/usage/terms/history/#ttt-nnn | dc-for-dwc-versions |
  | dcterms: terms borrowed by Darwin Core | http://purl.org/dc/terms/ttt | dcterms-for-dwc | http://dublincore.org/usage/terms/history/#ttt-nnn | dcterms-for-dwc-versions |
- |---|---|---|---|---|
  | TDWG utility terms (not part of a standard) | http://rs.tdwg.org/dwc/terms/attributes/ttt | utility | http://rs.tdwg.org/dwc/terms/attributes/version/ttt-yyyy-mm-dd | utility-versions |
- |---|---|---|---|---|
  |obsolete DwC type terms | http://rs.tdwg.org/dwc/dwctype/ttt | dwctype | http://rs.tdwg.org/dwc/dwctype/version/ttt-yyyy-mm-dd |dwctype-versions |
  |obsolete DwC curatorial terms | http://rs.tdwg.org/dwc/curatorial/ttt | curatorial | http://rs.tdwg.org/dwc/curatorial/version/ttt-yyyy-mm-dd |curatorial-versions |
  |obsolete DwC dwcore terms | http://rs.tdwg.org/dwc/dwcore/ttt | dwcore | http://rs.tdwg.org/dwc/dwcore/version/ttt-yyyy-mm-dd |dwcore-versions |
