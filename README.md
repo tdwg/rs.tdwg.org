@@ -22,20 +22,18 @@
 
 ## Table of Contents
 
-<ul style="list-style-type:none">
-<li>[1 Metadata model for TDWG standards](#model)</li>
-<li>[2 IRI patterns](#patterns)</li>
-<li>[2.1 Patterns for current resources in the standards hierarchy](#patterns-current)</li>
-<li>[2.2 Patterns for versions of resources in the standards hierarchy](#patterns-versions)</li>
-<li>[3 About directories in this repository](#directories)</li>
-<li>[3.1 Relationship of parts of this repository to the metadata model](#directories-relationships)</li>
-<li>[3.2 Files contained in current resources directories](#directories-files)</li>
-<li>[3.3 Files contained in versions directories](#directories-versions)</li>
-<li>[4 Relationships of directories to resources in the TDWG Standards model](#directories-resources)</li>
-<li>[4.1 Metadata about ratified TDWG Standards](#standards-metadata)</li>
-<li>[4.2 Utility metadata not governed by TDWG Standards](#utility-metadata)</li>
-<li>[4.3 Metadata about obsolete pre-standard versions of Darwin Core](#obsolete-metadata)</li>
-</ul>
+[1 Metadata model for TDWG standards](#model)  
+[2 IRI patterns](#patterns)  
+[2.1 Patterns for current resources in the standards hierarchy](#patterns-current)  
+[2.2 Patterns for versions of resources in the standards hierarchy](#patterns-versions)  
+[3 About directories in this repository](#directories)  
+[3.1 Relationship of parts of this repository to the metadata model](#directories-relationships)  
+[3.2 Files contained in current resources directories](#directories-files)  
+[3.3 Files contained in versions directories](#directories-versions)  
+[4 Relationships of directories to resources in the TDWG Standards model](#directories-resources)  
+[4.1 Metadata about ratified TDWG Standards](#standards-metadata)  
+[4.2 Utility metadata not governed by TDWG Standards](#utility-metadata)  
+[4.3 Metadata about obsolete pre-standard versions of Darwin Core](#obsolete-metadata)  
 
 # <a name="model"></a>1 Metadata model for TDWG standards
 
@@ -237,9 +235,11 @@ Within each folder describing versions, the primary metadata is in the file whos
  | Core terms | http://rs.tdwg.org/dwc/dwcore/ttt | [dwcore](dwcore) | http://rs.tdwg.org/dwc/dwcore/version/ttt-yyyy-mm-dd | [dwcore-versions](dwcore-versions) |
  | Geospatial terms | http://rs.tdwg.org/dwc/geospatial/ttt | [geospatial](geospatial) | http://rs.tdwg.org/dwc/geospatial/version/ttt-yyyy-mm-dd | [geospatial-versions](geospatial-versions) |
  | Type terms | http://rs.tdwg.org/dwc/dwctype/ttt | [dwctype](dwctype) | http://rs.tdwg.org/dwc/dwctype/version/ttt-yyyy-mm-dd | [dwctype-versions](dwctype-versions) |
- | terms not in the tdwg.org subdomain | various IRI forms | [dwc-obsolete](dwc-obsolete) | various IRI forms | [dwc-obsolete-versions](dwc-obsolete-versions) |
+ | terms not in the ```tdwg.org``` subdomain | various IRI forms | [dwc-obsolete](dwc-obsolete) | various IRI forms | [dwc-obsolete-versions](dwc-obsolete-versions) |
 
 
  \* Not complete as of 2017-10-10
+
  \** This list will eventually be replaced by a list for each namespace.
+
  \*** The primary metadata for these term lists (will be) generated automatically by a script from the [Darwin Core "term versions" document](https://github.com/tdwg/dwc/blob/master/standard/vocabularies/term_versions.csv).
