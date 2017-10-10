@@ -18,22 +18,24 @@
 
 **Contributors:** Steve Baskauf (TDWG Technical Architecture Group, TDWG Darwin Core Maintenance Group)
 
-**Bibliographic citation:** TDWG Technical Architecture Group. 2017. Biodiversity Information Standards (TDWG) Standards Metadata http://something
+**Bibliographic citation:** Biodiversity Information Standards. 2017. Biodiversity Information Standards (TDWG) Standards Metadata http://something
 
 ## Table of Contents
 
-[1 Metadata model for TDWG standards](#model)
-[2 IRI patterns](#patterns)
-[2.1 Patterns for current resources in the standards hierarchy](#patterns-current)
-[2.2 Patterns for versions of resources in the standards hierarchy](#patterns-versions)
-[3 About directories in this repository](#directories)
-[3.1 Relationship of parts of this repository to the metadata model](#directories-relationships)
-[3.2 Files contained in current resources directories](#directories-files)
-[3.3 Files contained in versions directories](#directories-versions)
-[4 Relationships of directories to resources in the TDWG Standards model](#directories-resources)
-[4.1 Metadata about ratified TDWG Standards](#standards-metadata)
-[4.2 Utility metadata not governed by TDWG Standards](#utility-metadata)
-[4.3 Metadata about obsolete pre-standard versions of Darwin Core](#obsolete-metadata)
+<ul style="list-style-type:none">
+<li>[1 Metadata model for TDWG standards](#model)</li>
+<li>[2 IRI patterns](#patterns)</li>
+<li>[2.1 Patterns for current resources in the standards hierarchy](#patterns-current)</li>
+<li>[2.2 Patterns for versions of resources in the standards hierarchy](#patterns-versions)</li>
+<li>[3 About directories in this repository](#directories)</li>
+<li>[3.1 Relationship of parts of this repository to the metadata model](#directories-relationships)</li>
+<li>[3.2 Files contained in current resources directories](#directories-files)</li>
+<li>[3.3 Files contained in versions directories](#directories-versions)</li>
+<li>[4 Relationships of directories to resources in the TDWG Standards model](#directories-resources)</li>
+<li>[4.1 Metadata about ratified TDWG Standards](#standards-metadata)</li>
+<li>[4.2 Utility metadata not governed by TDWG Standards](#utility-metadata)</li>
+<li>[4.3 Metadata about obsolete pre-standard versions of Darwin Core](#obsolete-metadata)</li>
+</ul>
 
 # <a name="model"></a>1 Metadata model for TDWG standards
 
