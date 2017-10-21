@@ -1,0 +1,7 @@
+header,predicate,type,value,attribute,subject_id
+localName,rdfs:label,plain,,,$root
+skos_prefLabel_es,skos:prefLabel,language,,es,$root
+skos_definition_es,skos:definition,language,,es,$root
+skos_prefLabel_zh_hans,skos:prefLabel,language,,zh-hans,$root
+skos_definition_zh_hans,skos:definition,language,,zh-hans,$root
+skos_definition_ja,skos:definition,language,,ja,$root
