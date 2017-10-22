@@ -1,7 +1,0 @@
-"header","predicate","type","value","attribute","subject_id"
-"$constant","rdfs:isDefinedBy","iri","http://rs.tdwg.org/decisions/",,"$root"
-"$constant","dcterms:isPartOf","iri","http://rs.tdwg.org/decisions/",,"$root"
-"decision_issued","dcterms:issued","datatype",,"xsd:date","$root"
-"label","rdfs:label","language",,"en","$root"
-"label","skos:prefLabel","language",,"en","$root"
-"rdfs_comment","rdfs:comment","language",,"en","$root"

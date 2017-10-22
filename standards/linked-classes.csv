@@ -1,3 +1,0 @@
-link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
-standard,dcterms:isVersionOf,version,http,,standards-versions.csv,dcterms:hasVersion
-standard,dcterms:isPartOf,part,http,,standards-parts.csv,dcterms:hasPart

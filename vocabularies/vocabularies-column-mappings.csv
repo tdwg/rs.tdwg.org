@@ -5,8 +5,8 @@ description,rdfs:comment,language,,en,$root
 description,dcterms:description,language,,en,$root
 $constant,dc:publisher,language,Biodiversity Information Standards (TDWG),en,$root
 $constant,dcterms:publisher,iri,https://www.grid.ac/institutes/grid.480498.9,,$root
+version_modified,dcterms:modified,datatype,,xsd:date,$root
+version_modified,owl:versionInfo,plain,,,$root
 vocabulary_created,dcterms:created,datatype,,xsd:date,$root
 vocabulary_modified,dcterms:modified,datatype,,xsd:date,$root
 vocabulary_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
-dc_creator,dc:creator,plain,,,$root
-dcterms_license,dcterms:license,iri,,,$root

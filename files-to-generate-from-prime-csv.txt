@@ -1,5 +1,3 @@
-These are the files that need to be generated from the term_versions.csv file from the Darwin Core repo that contains the normative definitions of all of the terms.
-
 In folder terms:
 terms.csv
 terms-versions.csv
@@ -26,12 +24,3 @@ dc-for-dwc-replacements.csv
 In folder dc-for-dwc-versions:
 dc-for-dwc-versions.csv
 dc-for-dwc-versions-replacements.csv
-
-In folder dcterms-for-dwc:
-dcterms-for-dwc.csv
-dcterms-for-dwc-versions.csv
-dcterms-for-dwc-replacements.csv
-
-In folder dcterms-for-dwc-versions:
-dcterms-for-dwc-versions.csv
-dcterms-for-dwc-versions-replacements.csv

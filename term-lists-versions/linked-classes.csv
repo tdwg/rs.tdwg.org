@@ -1,3 +1,2 @@
 link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
-replaced_list,dcterms:replaces,replacing_list,http,,term-lists-versions-replacements.csv,dcterms:isReplacedBy
 termListVersion,dcterms:isPartOf,termVersion,http,,term-lists-versions-members.csv,dcterms:hasPart
