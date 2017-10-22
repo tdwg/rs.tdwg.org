@@ -2663,7 +2663,7 @@ http://rs.tdwg.org/dwc/version/terms/attributes/2017-09-30,http://rs.tdwg.org/dw
 http://rs.tdwg.org/dwc/version/terms/attributes/2017-09-30,http://rs.tdwg.org/dwc/terms/attributes/version/layer-2017-09-23
 http://rs.tdwg.org/dwc/version/terms/attributes/2017-09-30,http://rs.tdwg.org/dwc/terms/attributes/version/required-2017-09-23
 http://rs.tdwg.org/dwc/version/terms/attributes/2017-09-30,http://rs.tdwg.org/dwc/terms/attributes/version/repeatable-2017-09-23
-http://rs.tdwg.org/dwc/version/terms/attributes/2017-09-30,http://rs.tdwg.org/dwc/terms/attributes/version/UseWithIri-2017-09-30
+http://rs.tdwg.org/dwc/version/terms/attributes/2017-09-30,http://rs.tdwg.org/dwc/terms/attributes/version/UseWithIRI-2017-09-30
 http://rs.tdwg.org/ac/version/terms/2013-10-28,http://rs.tdwg.org/ac/terms/version/accessURI-2013-10-28
 http://rs.tdwg.org/ac/version/terms/2013-10-28,http://rs.tdwg.org/ac/terms/version/associatedObservationReference-2013-10-28
 http://rs.tdwg.org/ac/version/terms/2013-10-28,http://rs.tdwg.org/ac/terms/version/associatedSpecimenReference-2013-10-28
