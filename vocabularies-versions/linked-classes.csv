@@ -1,3 +1,3 @@
 link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
-vocabulary,dcterms:isVersionOf,version,http,,vocabularies-versions.csv,dcterms:hasVersion
-vocabulary,dcterms:isPartOf,termList,http,,vocabularies-members.csv,dcterms:hasPart
+replaced_vocabulary,dcterms:replaces,replacing_vocabulary,http,,vocabularies-versions-replacements.csv,dcterms:isReplacedBy
+vocabulary,dcterms:isPartOf,termList,http,,vocabularies-versions-members.csv,dcterms:hasPart
