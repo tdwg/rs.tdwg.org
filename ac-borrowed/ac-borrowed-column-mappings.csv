@@ -10,3 +10,4 @@ rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
 tdwgutility_layer,tdwgutility:layer,plain,,,$root
 tdwgutility_required,tdwgutility:required,plain,,,$root
 tdwgutility_repeatable,tdwgutility:repeatable,plain,,,$root
+rdfs_comment,skos:definition,language,,en,$root
