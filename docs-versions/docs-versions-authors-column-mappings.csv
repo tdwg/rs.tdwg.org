@@ -1,0 +1,6 @@
+header,predicate,type,value,attribute,subject_id
+contributor_literal,rdfs:label,plain,,,$root
+contributor_literal,foaf:name,plain,,,$root
+contributor_literal,schema:name,plain,,,$root
+contributor_role,dcterms:description,plain,,,$root
+affiliation,rdfs:comment,plain,,,$root
