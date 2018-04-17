@@ -7,7 +7,7 @@ http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://orcid.org/0000-0001-7
 http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://orcid.org/0000-0001-8332-2571,Joel Sachs,author,TDWG RDF Task Group
 http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://orcid.org/0000-0002-2954-9027,Greg Whitbread,author,TDWG Technical Architecture Group
 http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://orcid.org/0000-0003-1144-0290,John Wieczorek,author,TDWG Darwin Core Task Group
-http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://orcid.org/0000-0002-2352-5497,Dag Endresen,review editor,GBIF Norway/NHM University of Oslo
+http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://orcid.org/0000-0002-2352-5497,Dag Endresen,review manager,GBIF Norway/NHM University of Oslo
 http://rs.tdwg.org/sds/doc/specification/2007-07-17,http://orcid.org/0000-0003-4581-1379,Roger Hyam,lead author,TDWG Infrastructure Project
 http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,lead author,TDWG Vocabulary Maintenance Specification Task Group
 http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0003-1144-0290,John Wieczorek,author,TDWG Darwin Core Task Group
@@ -16,12 +16,12 @@ http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0002-6
 http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0001-7694-8250,Jonathan Rees,author,Duke University
 http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0001-8332-2571,Joel Sachs,author,TDWG RDF Task Group
 http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0002-2954-9027,Greg Whitbread,author,TDWG Technical Architecture Group
-http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0002-2352-5497,Dag Endresen,review editor,GBIF Norway/NHM University of Oslo
+http://rs.tdwg.org/vms/doc/specification/2017-04-25,http://orcid.org/0000-0002-2352-5497,Dag Endresen,review manager,GBIF Norway/NHM University of Oslo
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-6992-9446,Robert A. Morris,lead author,"University of Massachusetts at Boston, USA"
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-4852-2567,Vijay Barve,author,
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-8234-0599,Mihail Carausu,author,"Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark"
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-3425-6499,Vishwas Chavan,author,"Global Biodiversity Information Facility, Copenhagen, Denmark"
-http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://rs.tdwg.org/contributor/2,José Cuadra,author,
+http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://www.wikidata.org/entity/Q51883873,José Cuadra,author,
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-2541-5822,Chris Freeland,author,"Missouri Botanical Garden, St. Louis, USA"
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0001-7023-7386,Gregor Hagedorn,author,"JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany"
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0001-5172-8577,Patrick Leary,author,
@@ -29,12 +29,12 @@ http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0003-1593-14
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-0772-0022,Annette Olson,author,American Association for the Advancement of Science
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0002-3850-9983,Greg Riccardi,author,"Florida State University, Tallahassee, USA"
 http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0003-4176-2274 ,Ivan Teage,author,
-http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,review editor,"Vanderbilt University, Nashville, TN, USA"
+http://rs.tdwg.org/ac/doc/termlist/2013-10-23,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,review manager,"Vanderbilt University, Nashville, TN, USA"
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-6992-9446,Robert A. Morris,lead author,"University of Massachusetts at Boston, USA"
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-4852-2567,Vijay Barve,author,
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-8234-0599,Mihail Carausu,author,"Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark"
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-3425-6499,Vishwas Chavan,author,"Global Biodiversity Information Facility, Copenhagen, Denmark"
-http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://rs.tdwg.org/contributor/2,José Cuadra,author,
+http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://www.wikidata.org/entity/Q51883873,José Cuadra,author,
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-2541-5822,Chris Freeland,author,"Missouri Botanical Garden, St. Louis, USA"
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0001-7023-7386,Gregor Hagedorn,author,"JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany"
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0001-5172-8577,Patrick Leary,author,
@@ -42,12 +42,12 @@ http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0003-1593-1
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-0772-0022,Annette Olson,author,American Association for the Advancement of Science
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0002-3850-9983,Greg Riccardi,author,"Florida State University, Tallahassee, USA"
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0003-4176-2274 ,Ivan Teage,author,
-http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,review editor,"Vanderbilt University, Nashville, TN, USA"
+http://rs.tdwg.org/ac/doc/structure/2013-10-23,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,review manager,"Vanderbilt University, Nashville, TN, USA"
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-6992-9446,Robert A. Morris,lead author,"University of Massachusetts at Boston, USA"
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-4852-2567,Vijay Barve,author,
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-8234-0599,Mihail Carausu,author,"Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark"
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-3425-6499,Vishwas Chavan,author,"Global Biodiversity Information Facility, Copenhagen, Denmark"
-http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://rs.tdwg.org/contributor/2,José Cuadra,author,
+http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://www.wikidata.org/entity/Q51883873,José Cuadra,author,
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-2541-5822,Chris Freeland,author,"Missouri Botanical Garden, St. Louis, USA"
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0001-7023-7386,Gregor Hagedorn,author,"JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany"
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0001-5172-8577,Patrick Leary,author,
@@ -55,7 +55,7 @@ http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0003-159
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-0772-0022,Annette Olson,author,American Association for the Advancement of Science
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0002-3850-9983,Greg Riccardi,author,"Florida State University, Tallahassee, USA"
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0003-4176-2274 ,Ivan Teage,author,
-http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,review editor,"Vanderbilt University, Nashville, TN, USA"
+http://rs.tdwg.org/ac/doc/introduction/2013-10-23,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,review manager,"Vanderbilt University, Nashville, TN, USA"
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0002-8234-0599,Mihail Carausu,author,"Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark"
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0002-3425-6499,Vishwas Chavan,author,"Global Biodiversity Information Facility, Copenhagen, Denmark"
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0002-2541-5822,Chris Freeland,author,"Missouri Botanical Garden, St. Louis, USA"
@@ -64,10 +64,10 @@ http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0002-6992-9446,
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0003-1593-1417,Dimitry Mozzherin,author,"Encyclopedia of Life, Woods Hole, USA"
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0002-0772-0022,Annette Olson,author,American Association for the Advancement of Science
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://orcid.org/0000-0002-3850-9983,Greg Riccardi,author,"Florida State University, Tallahassee, USA"
-http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://rs.tdwg.org/contributor/4,Éamonn Ó Tuama,author,"Global Biodiversity Information Facility, Copenhagen, Denmark"
-http://rs.tdwg.org/guid/doc/guidas/2010-09-09,http://rs.tdwg.org/contributor/5,Kevin Richards,lead author,Landcare Research
-http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://rs.tdwg.org/contributor/6,Ricardo Scachetti-Pereira,author,TDWG Infrastructure Project
-http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://rs.tdwg.org/contributor/5,Kevin Richards,author,Landcare Research
+http://rs.tdwg.org/ac/doc/guide/2013-10-15,http://www.wikidata.org/entity/Q28913578,Éamonn Ó Tuama,author,"Global Biodiversity Information Facility, Copenhagen, Denmark"
+http://rs.tdwg.org/guid/doc/guidas/2010-09-09,http://www.wikidata.org/entity/Q51883936,Kevin Richards,lead author,Landcare Research
+http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://www.wikidata.org/entity/Q51883958,Ricardo Scachetti-Pereira,author,TDWG Infrastructure Project
+http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://www.wikidata.org/entity/Q51883936,Kevin Richards,author,Landcare Research
 http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://orcid.org/0000-0001-6492-4016,Donald Hobern,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://orcid.org/0000-0003-4581-1379,Roger Hyam,author,TDWG Infrastructure Project
 http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,http://orcid.org/0000-0001-8900-6203,Lee Belbin,author,TDWG Infrastructure Project
@@ -77,7 +77,7 @@ http://rs.tdwg.org/dwc/index/2015-06-05,http://orcid.org/0000-0001-7757-1889,Mar
 http://rs.tdwg.org/dwc/index/2015-06-05,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/dwc/index/2015-06-05,http://orcid.org/0000-0001-6215-3617,Tim Robertson,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/index/2015-06-05,http://orcid.org/0000-0002-6513-4996,Dave Vieglais,author,KU Natural History Museum
-http://rs.tdwg.org/dwc/index/2015-06-05,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review editor,University of Illinois at Urbana-Champaign
+http://rs.tdwg.org/dwc/index/2015-06-05,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review manager,University of Illinois at Urbana-Champaign
 http://rs.tdwg.org/dwc/terms/guides/rdf/2015-06-15,http://orcid.org/0000-0003-4365-3135,Steve Baskauf,lead author,TDWG RDF/OWL Task Group
 http://rs.tdwg.org/dwc/terms/guides/rdf/2015-06-15,http://orcid.org/0000-0003-1144-0290,John Wieczorek,author,TDWG Darwin Core Task Group
 http://rs.tdwg.org/dwc/terms/guides/rdf/2015-06-15,http://orcid.org/0000-0002-5905-1617,John Deck ,author,Genomic Biodiversity Working Group
@@ -89,49 +89,50 @@ http://rs.tdwg.org/dwc/terms/guides/text/2015-06-02,http://orcid.org/0000-0001-7
 http://rs.tdwg.org/dwc/terms/guides/text/2015-06-02,http://orcid.org/0000-0003-1144-0290,John Wieczorek,author,TDWG Darwin Core Task Group
 http://rs.tdwg.org/dwc/terms/guides/text/2015-06-02,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/dwc/terms/guides/text/2015-06-02,http://orcid.org/0000-0002-6513-4996,Dave Vieglais,author,KU Natural History Museum
-http://rs.tdwg.org/dwc/terms/guides/text/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review editor,University of Illinois at Urbana-Champaign
+http://rs.tdwg.org/dwc/terms/guides/text/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review manager,University of Illinois at Urbana-Champaign
 http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0003-1144-0290,John Wieczorek,lead author,Museum of Vertebrate Zoology at Berkeley
 http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0001-7757-1889,Markus Döring,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0001-6215-3617,Tim Robertson,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0002-6513-4996,Dave Vieglais,author,KU Natural History Museum
-http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review editor,University of Illinois at Urbana-Champaign
+http://rs.tdwg.org/dwc/terms/guides/xml/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review manager,University of Illinois at Urbana-Champaign
 http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0003-1144-0290,John Wieczorek,lead author,Museum of Vertebrate Zoology at Berkeley
 http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0001-7757-1889,Markus Döring,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0001-6215-3617,Tim Robertson,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0002-6513-4996,Dave Vieglais,author,KU Natural History Museum
-http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review editor,University of Illinois at Urbana-Champaign
+http://rs.tdwg.org/dwc/terms/simple/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review manager,University of Illinois at Urbana-Champaign
 http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0003-1144-0290,John Wieczorek,lead author,Museum of Vertebrate Zoology at Berkeley
 http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0001-7757-1889,Markus Döring,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0001-6215-3617,Tim Robertson,author,Global Biodiversity Information Facility
 http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0002-6513-4996,Dave Vieglais,author,KU Natural History Museum
-http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review editor,University of Illinois at Urbana-Champaign
+http://rs.tdwg.org/dwc/terms/namespace/2015-06-02,http://orcid.org/0000-0002-5178-4170,Gail E. Kampmeier,review manager,University of Illinois at Urbana-Champaign
 http://rs.tdwg.org/tapir/doc/summary/2007-08-28,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,lead author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,lead author,Centro de Referência em Informação Ambiental 
-http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://rs.tdwg.org/contributor/10,Charles Copp,lead author,Environmental Information Management 
+http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://www.wikidata.org/entity/Q51883987,Charles Copp,lead author,Environmental Information Management 
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0001-7757-1889,Markus Döring,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0002-4325-4030,Anton Güntsch ,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0002-6513-4996,Dave Vieglais,author,KU Natural History Museum
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0001-6492-4016,Donald Hobern,author,Global Biodiversity Information Facility
-http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://rs.tdwg.org/contributor/7,Javier de la Torre,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
+http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://www.wikidata.org/entity/Q51883962,Javier de la Torre,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0003-1144-0290,John Wieczorek,author,Museum of Vertebrate Zoology at Berkeley
-http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://rs.tdwg.org/contributor/8,Robert Gales,author,KU Natural History Museum
+http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://www.wikidata.org/entity/Q51883993,Robert Gales,author,KU Natural History Museum
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0003-4581-1379,Roger Hyam,author,TDWG
 http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://orcid.org/0000-0002-4419-6960,Stanley Blum,author,California Academy of Sciences
-http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://rs.tdwg.org/contributor/9,Perry Steven,author,KU Natural History Museum
+http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://www.wikidata.org/entity/Q51883997,Perry Steven,author,KU Natural History Museum
+http://rs.tdwg.org/tapir/doc/specification/2010-05-05,http://www.wikidata.org/entity/Q51883977,Piers Higgs,review manager,
 http://rs.tdwg.org/tapir/doc/xmlschema/2009-02-05,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,lead author,Centro de Referência em Informação Ambiental 
-http://rs.tdwg.org/tapir/doc/conceptaliases/2015-06-01,http://rs.tdwg.org/contributor/18,TAPIR Task Group,task group,
-http://rs.tdwg.org/tapir/doc/guide/2015-06-03,http://rs.tdwg.org/contributor/10,Charles Copp,lead author,Environmental Information Management 
+http://rs.tdwg.org/tapir/doc/conceptaliases/2015-06-01,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,lead author,Centro de Referência em Informação Ambiental 
+http://rs.tdwg.org/tapir/doc/guide/2015-06-03,http://www.wikidata.org/entity/Q51883987,Charles Copp,lead author,Environmental Information Management 
 http://rs.tdwg.org/tapir/doc/guide/2015-06-03,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,lead author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/tapir/doc/guide/2015-06-03,http://orcid.org/0000-0001-8900-6203,Lee Belbin,reviewer,TDWG Infrastructure Project
 http://rs.tdwg.org/tapir/doc/guide/2015-06-03,http://orcid.org/0000-0001-7757-1889,Markus Döring,reviewer,Botanic Garden and Botanical Museum Berlin-Dahlem 
-http://rs.tdwg.org/tapir/doc/models/2015-11-25,http://rs.tdwg.org/contributor/18,TAPIR Task Group,task group,
+http://rs.tdwg.org/tapir/doc/models/2015-11-25,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,lead author,Centro de Referência em Informação Ambiental 
 http://rs.tdwg.org/abcd/doc/primer/2006-07-27,https://orcid.org/0000-0003-2231-6228 ,Neil Thomson,author,"Natural History Museum, London"
 http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://orcid.org/0000-0001-7757-1889,Markus Döring,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://orcid.org/0000-0002-7104-7266,Renato De Giovanni,author,Centro de Referência em Informação Ambiental 
-http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://rs.tdwg.org/contributor/7,Javier de la Torre,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
+http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://www.wikidata.org/entity/Q51883962,Javier de la Torre,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://orcid.org/0000-0001-9945-7606,Walter G. Berendsohn,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://orcid.org/0000-0002-3090-1761,Wouter Addink,author,"Expertise Centre for Taxonomic Identification, Amsterdam "
 http://rs.tdwg.org/abcd/doc/primer/2006-07-27,http://orcid.org/0000-0003-2863-2491 ,William Ulate ,author,"INBioparque, Santo Domingo de Heredia "
@@ -173,7 +174,7 @@ http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://viaf.org/viaf/265750549,B
 http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://orcid.org/0000-0002-4325-4030,Anton Güntsch,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/21e8d5c7-464f-41c3-9e9c-1ce09b0d4f1f,Wolf-Henning Kusber,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://rs.tdwg.org/contributor/14,Patricia Kelbert,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
-http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://rs.tdwg.org/contributor/19,Jörg Holetschek,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
+http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://www.bgbm.org/de/personal/joerg-holetschek,Jörg Holetschek,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcddna/doc/guide/2010-08-04,http://orcid.org/0000-0001-9945-7606,Walter G. Berendsohn,author,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/abcddna/doc/xmlschema/2010-08-04,http://rs.tdwg.org/contributor/12,Gabriele Dröge,editor,Botanic Garden and Botanical Museum Berlin-Dahlem 
 http://rs.tdwg.org/hispid/doc/specification/2007-05-11,http://orcid.org/0000-0001-9832-3809,Barry J. Conn,editor,
@@ -196,17 +197,17 @@ http://rs.tdwg.org/ih/doc/book/1990,http://viaf.org/viaf/5004494,Patricia K. Hol
 http://rs.tdwg.org/ih/doc/book/1990,http://viaf.org/viaf/69002167,Noel H. Holmgren,author,
 http://rs.tdwg.org/ih/doc/book/1990,http://viaf.org/viaf/66539117,Lisa C. Barnett,author,
 http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,http://viaf.org/viaf/17299201,Hugh Synge,lead author,IUCN Conservation Monitoring Centre
-http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,http://rs.tdwg.org/contributor/17,Duncan Mackinder,author,IUCN Conservation Monitoring Centre
+http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,http://www.wikidata.org/entity/Q51885175,Duncan Mackinder,author,IUCN Conservation Monitoring Centre
 http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,http://viaf.org/viaf/61595508,James Cullen,author,"Royal Botanic Garden, Edinburgh"
 http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,http://viaf.org/viaf/69104243,Kerry Walter,author,"Center for Plant Conservation, Massachusetts"
 http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,htts://orcid.org/0000-0001-8905-5638,Michael Lear,author,"Royal Botanic Garden, Kew"
 http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15,http://viaf.org/viaf/112328349,Peter Wyse Jackson,author,Botanic Gardens Conservation Secretariat
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://viaf.org/viaf/194025057,Diane Wyse Jackson,lead author,Botanic Gardens Conservation International
-http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://rs.tdwg.org/contributor/15,Christopher Hobson,editor,Botanic Gardens Conservation International
+http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://www.wikidata.org/entity/Q51885215,Christopher Hobson,editor,Botanic Gardens Conservation International
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://viaf.org/viaf/92780116,Barry Conn,editor,Botanic Gardens Conservation International
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://viaf.org/viaf/41424576,Richard Piacentini,editor,Botanic Gardens Conservation International
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://orcid.org/0000-0002-5705-8655,Steve Waldren,editor,Botanic Gardens Conservation International
-http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://rs.tdwg.org/contributor/16,Chris Ward,editor,Botanic Gardens Conservation International
+http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://www.wikidata.org/entity/Q51892660,Chris Ward,editor,Botanic Gardens Conservation International
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://orcid.org/0000-0002-2524-2773,Ken Bailey,author,"Royal Botanic Garden, Kew"
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://viaf.org/viaf/112328349,Peter Wyse Jackson,author,Botanic Gardens Conservation International
 http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://orcid.org/0000-0002-4726-7373,Simon Thornton Wood,author,Royal Horticultural Society
