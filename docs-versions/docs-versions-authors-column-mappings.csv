@@ -2,5 +2,7 @@ header,predicate,type,value,attribute,subject_id
 contributor_literal,rdfs:label,plain,,,$root
 contributor_literal,foaf:name,plain,,,$root
 contributor_literal,schema:name,plain,,,$root
-contributor_role,dcterms:description,plain,,,$root
+contributor_role,schema:jobTitle,plain,,,$root
+role_uri,dcterms:subject,iri,,,$root
 affiliation,rdfs:comment,plain,,,$root
+affiliation_uri,schema:affiliation,iri,,,$root
