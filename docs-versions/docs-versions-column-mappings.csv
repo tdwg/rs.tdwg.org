@@ -3,10 +3,11 @@ documentTitle,rdfs:label,language,,en,$root
 documentTitle,dcterms:title,language,,en,$root
 comment,rdfs:comment,language,,en,$root
 abstract,dcterms:description,language,,en,$root
-$constant,dc:publisher,language,Biodiversity Information Standards (TDWG),en,$root
-$constant,dcterms:publisher,iri,https://www.grid.ac/institutes/grid.480498.9,,$root
-version_issued,dcterms:issued,datatype,,xsd:date,$root
+publisher,dc:publisher,language,,en,$root
+license_statement,xmpRights:UsageTerms,language,,en,$root
+license_uri,dcterms:license,iri,,,$root
+version_issued,dcterms:issued,plain,,,$root
 current_iri,dcterms:isVersionOf,iri,,,$root
-mediaType,dcterms:format,plain,,,$root
 dcterms_isPartOf,dcterms:isPartOf,iri,,,$root
-creator,dcterms:creator,plain,,,$root
+creator,dc:creator,plain,,,$root
+citation,dcterms:bibliographicCitation,language,,en,$root
