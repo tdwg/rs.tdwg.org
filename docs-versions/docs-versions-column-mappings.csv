@@ -11,3 +11,4 @@ current_iri,dcterms:isVersionOf,iri,,,$root
 dcterms_isPartOf,dcterms:isPartOf,iri,,,$root
 creator,dc:creator,plain,,,$root
 citation,dcterms:bibliographicCitation,language,,en,$root
+browserRedirectUri,rdfs:seeAlso,iri,,,$root
