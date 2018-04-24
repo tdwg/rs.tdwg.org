@@ -1,0 +1,14 @@
+header,predicate,type,value,attribute,subject_id
+documentTitle,rdfs:label,language,,en,$root
+documentTitle,dcterms:title,language,,en,$root
+comment,rdfs:comment,language,,en,$root
+abstract,dcterms:description,language,,en,$root
+publisher,dc:publisher,language,,en,$root
+license_statement,xmpRights:UsageTerms,language,,en,$root
+license_uri,dcterms:license,iri,,,$root
+version_issued,dcterms:issued,plain,,,$root
+current_iri,dcterms:isVersionOf,iri,,,$root
+dcterms_isPartOf,dcterms:isPartOf,iri,,,$root
+creator,dc:creator,plain,,,$root
+citation,dcterms:bibliographicCitation,language,,en,$root
+browserRedirectUri,rdfs:seeAlso,iri,,,$root
