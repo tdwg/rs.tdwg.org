@@ -1,7 +1,24 @@
 document_modified,standard,standard_deprecated,label,description,standard_created,standard_modified
-2017-09-23T06:53:00-05:00,http://www.tdwg.org/standards/147,,Standards Documentation Standard,A standard that documents how standards should be described in human- and machine-readable terms.,2017-04-25,2017-04-25
-2017-09-23T06:53:00-05:00,http://www.tdwg.org/standards/642,,Vocabulary Maintenance Standard,A standard that describes the processes used to modify TDWG vocabularies and their associated documents.,2017-04-25,2017-04-25
-2017-09-23T06:53:00-05:00,http://www.tdwg.org/standards/638,,Audubon Core,The Audubon Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections.,2013-10-28,2013-10-28
-2017-09-23T06:53:00-05:00,http://www.tdwg.org/standards/150,,GUID and Life Sciences Identifiers Applicability Statements,This standard provides guidance on how to use GUIDs to meet specific requirements of the biodiversity information community.,2011-01-30,2011-01-30
-2017-09-23T06:53:00-05:00,http://www.tdwg.org/standards/450,,Darwin Core,"This vocabulary standard includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions. ",2009-10-09,2015-03-27
-2017-09-23T06:53:00-05:00,http://www.tdwg.org/standards/449,,TDWG Access Protocol for Information Retrieval (TAPIR),"TAPIR is a computer protocol designed for discovery, search and retrieval of distributed data over the Internet. ",2009-09-09,2009-09-09
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/147,,TDWG Standards Documentation Standard,A standard that documents how standards should be described in human- and machine-readable terms.,2017-04-25,2017-04-25
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/642,,Vocabulary Maintenance Standard,A standard that describes the processes used to modify TDWG vocabularies and their associated documents.,2017-04-25,2017-04-25
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/638,,Audubon Core Multimedia Resources Metadata Schema,The Audubon Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections.,2013-10-28,2013-10-28
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/150,,GUID and Life Sciences Identifiers Applicability Statements,This standard provides guidance on how to use GUIDs to meet specific requirements of the biodiversity information community.,2011-01-30,2011-01-30
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/450,,Darwin Core,"This vocabulary standard includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions. ",2009-10-09,2015-03-27
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/449,,TDWG Access Protocol for Information Retrieval (TAPIR),"TAPIR is a computer protocol designed for discovery, search and retrieval of distributed data over the Internet. ",2009-09-09,2009-09-09
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/115,,Access to Biological Collection Data,,2005-09-16,2005-09-16
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/116,,Structured Descriptive Data,,2005-09-16,2005-09-16
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/117,,Taxonomic Concept Transfer Schema,,2005-09-16,2005-09-16
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/107,,Description Language for Taxonomy (DELTA) ,,1986,1986
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/110,,Herbarium Information Standards and Protocols for Interchange of Data (HISPID3),,1996,1996
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/103,,Economic Botany Data Collection Standard,,1995,1995
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/106,,Plant Occurrence and Status Scheme,,1995,1995
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/113,,Plant Names in Botanical Databases,,1995,1995
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/101,,Authors of Plant Names,,1992,1992
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/109,,World Geographical Scheme for Recording Plant Distributions,,1992,1992
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/108,,XDF - A Language for the Definition and Exchange of Biological Data Sets,,1991,1991
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/114,,Botanico-periodicum-huntianum/supplementum,,1991,1991
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/105,,Index Herbariorum. Part I: The Herbaria of the World,,1990,1990
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/102,,International Transfer Format for Botanic Garden Plant Records,,1987,1987
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/104,,Floristic Regions of the World,,1986,1986
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/111,,"Taxonomic Literature, Edition 2 and its Supplements",,1976,1976
+2018-04-24T22:08:00-05:00,http://www.tdwg.org/standards/112,,Botanico-periodicum-huntianum,,1970,1970

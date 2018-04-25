@@ -1,3 +1,4 @@
 link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
 document,dcterms:relation,contributor_iri,http,,docs-authors.csv,dcterms:contributor
-version_iri,dcterms:isFormatOf,accessUri,http,,docs-formats.csv,dcterms:hasFormat
+doc_iri,dcterms:isFormatOf,accessUri,http,,docs-formats.csv,dcterms:hasFormat
+current_iri,dcterms:isVersionOf,version_iri,http,,docs-versions.csv,dcterms:hasVersion
