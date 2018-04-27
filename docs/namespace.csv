@@ -11,5 +11,5 @@ tdwgutility,http://rs.tdwg.org/dwc/terms/attributes/
 foaf,http://xmlns.com/foaf/0.1/
 schema,http://schema.org/
 gndo,http://d-nb.info/standards/elementset/gnd#
-vcard,http://www.w3.org/2006/vcard/ns# 
-xmpRights,http://ns.adobe.com/xap/1.0/rights/ 
+vcard,http://www.w3.org/2006/vcard/ns#
+xmpRights,http://ns.adobe.com/xap/1.0/rights/

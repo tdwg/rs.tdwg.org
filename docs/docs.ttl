@@ -10,8 +10,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
 @prefix gndo: <http://d-nb.info/standards/elementset/gnd#>.
-@prefix vcard: <http://www.w3.org/2006/vcard/ns# >.
-@prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/ >.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/>.
 
 <http://rs.tdwg.org/sds/doc/specification/>
      rdfs:label "Standards Documentation Specification"@en;
