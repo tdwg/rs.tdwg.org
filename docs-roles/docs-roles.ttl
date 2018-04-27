@@ -315,7 +315,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/ac/doc/termlist/>
-     gndo:author <http://orcid.org/0000-0003-4176-2274 >;
+     gndo:author <http://orcid.org/0000-0003-4176-2274>;
      a foaf:Document.
 
 <http://rs.tdwg.org/ac/doc/termlist.ttl>
@@ -458,7 +458,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/ac/doc/structure/>
-     gndo:author <http://orcid.org/0000-0003-4176-2274 >;
+     gndo:author <http://orcid.org/0000-0003-4176-2274>;
      a foaf:Document.
 
 <http://rs.tdwg.org/ac/doc/structure.ttl>
@@ -601,7 +601,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/ac/doc/introduction/>
-     gndo:author <http://orcid.org/0000-0003-4176-2274 >;
+     gndo:author <http://orcid.org/0000-0003-4176-2274>;
      a foaf:Document.
 
 <http://rs.tdwg.org/ac/doc/introduction.ttl>
@@ -898,7 +898,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/dwc/terms/guides/rdf/>
-     gndo:author <http://orcid.org/0000-0003-1031-3249 >;
+     gndo:author <http://orcid.org/0000-0003-1031-3249>;
      a foaf:Document.
 
 <http://rs.tdwg.org/dwc/terms/guides/rdf.ttl>
@@ -1426,7 +1426,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/abcd/doc/primer/>
-     gndo:author <https://orcid.org/0000-0003-2231-6228 >;
+     gndo:author <http://orcid.org/0000-0003-2231-6228>;
      a foaf:Document.
 
 <http://rs.tdwg.org/abcd/doc/primer.ttl>
@@ -1492,7 +1492,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/abcd/doc/primer/>
-     gndo:author <http://orcid.org/0000-0003-2863-2491 >;
+     gndo:author <http://orcid.org/0000-0003-2863-2491>;
      a foaf:Document.
 
 <http://rs.tdwg.org/abcd/doc/primer.ttl>
@@ -1657,7 +1657,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/ncd/doc/guide/>
-     gndo:author <https://orcid.org/0000-0003-2231-6228 >;
+     gndo:author <http://orcid.org/0000-0003-2231-6228>;
      a foaf:Document.
 
 <http://rs.tdwg.org/ncd/doc/guide.ttl>
@@ -1756,7 +1756,7 @@
      a foaf:document.
 
 <http://rs.tdwg.org/ncd/doc/specification/>
-     gndo:author <https://orcid.org/0000-0003-2231-6228 >;
+     gndo:author <http://orcid.org/0000-0003-2231-6228>;
      a foaf:Document.
 
 <http://rs.tdwg.org/ncd/doc/specification.ttl>

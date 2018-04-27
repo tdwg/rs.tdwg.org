@@ -454,7 +454,7 @@
 <http://rs.tdwg.org/ac/doc/termlist/2013-10-23>
      dcterms:contributor <http://orcid.org/0000-0002-3850-9983>.
 
-<http://orcid.org/0000-0003-4176-2274 >
+<http://orcid.org/0000-0003-4176-2274>
      rdfs:label "Ivan Teage";
      foaf:name "Ivan Teage";
      schema:name "Ivan Teage";
@@ -462,7 +462,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/ac/doc/termlist/2013-10-23>
-     dcterms:contributor <http://orcid.org/0000-0003-4176-2274 >.
+     dcterms:contributor <http://orcid.org/0000-0003-4176-2274>.
 
 <http://orcid.org/0000-0003-4365-3135>
      rdfs:label "Steve Baskauf";
@@ -631,7 +631,7 @@
 <http://rs.tdwg.org/ac/doc/structure/2013-10-23>
      dcterms:contributor <http://orcid.org/0000-0002-3850-9983>.
 
-<http://orcid.org/0000-0003-4176-2274 >
+<http://orcid.org/0000-0003-4176-2274>
      rdfs:label "Ivan Teage";
      foaf:name "Ivan Teage";
      schema:name "Ivan Teage";
@@ -639,7 +639,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/ac/doc/structure/2013-10-23>
-     dcterms:contributor <http://orcid.org/0000-0003-4176-2274 >.
+     dcterms:contributor <http://orcid.org/0000-0003-4176-2274>.
 
 <http://orcid.org/0000-0003-4365-3135>
      rdfs:label "Steve Baskauf";
@@ -807,7 +807,7 @@
 <http://rs.tdwg.org/ac/doc/introduction/2013-10-23>
      dcterms:contributor <http://orcid.org/0000-0002-3850-9983>.
 
-<http://orcid.org/0000-0003-4176-2274 >
+<http://orcid.org/0000-0003-4176-2274>
      rdfs:label "Ivan Teage";
      foaf:name "Ivan Teage";
      schema:name "Ivan Teage";
@@ -815,7 +815,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/ac/doc/introduction/2013-10-23>
-     dcterms:contributor <http://orcid.org/0000-0003-4176-2274 >.
+     dcterms:contributor <http://orcid.org/0000-0003-4176-2274>.
 
 <http://orcid.org/0000-0003-4365-3135>
      rdfs:label "Steve Baskauf";
@@ -1748,7 +1748,7 @@
      dcterms:description "This primer is intended to provide an easily readable background to ABCD and should take anyone with no knowledge of the standard to the very point where they would be able to understand the principles and the more detailed technical specification. Examples are given which are complemented by references to the normative texts."@en;
      a foaf:Document.
 
-<http://orcid.org/0000-0003-2231-6228 >
+<http://orcid.org/0000-0003-2231-6228>
      rdfs:label "Neil Thomson";
      foaf:name "Neil Thomson";
      schema:name "Neil Thomson";
@@ -1758,7 +1758,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/abcd/doc/primer/2006-07-27>
-     dcterms:contributor <http://orcid.org/0000-0003-2231-6228 >.
+     dcterms:contributor <http://orcid.org/0000-0003-2231-6228>.
 
 <http://orcid.org/0000-0001-7757-1889>
      rdfs:label "Markus Döring";
@@ -1820,7 +1820,7 @@
 <http://rs.tdwg.org/abcd/doc/primer/2006-07-27>
      dcterms:contributor <http://orcid.org/0000-0002-3090-1761>.
 
-<http://orcid.org/0000-0003-2863-2491 >
+<http://orcid.org/0000-0003-2863-2491>
      rdfs:label "William Ulate ";
      foaf:name "William Ulate ";
      schema:name "William Ulate ";
@@ -1829,7 +1829,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/abcd/doc/primer/2006-07-27>
-     dcterms:contributor <http://orcid.org/0000-0003-2863-2491 >.
+     dcterms:contributor <http://orcid.org/0000-0003-2863-2491>.
 
 <https://raw.githubusercontent.com/tdwg/wiki-archive/master/twiki/data/ABCD/AbcdPrimer.txt>
      dc:format "text/plain";
@@ -2202,7 +2202,7 @@
      dcterms:description "Natural Collections Description (NCD) is a data standard for describing collections of natural history materials at the collection level; one NCD record describes one entire collection. The NCD standard covers all types of natural history collections, such as specimens, original artwork, archives, observations, library materials, datasets, photographs or mixed collections such as those that result from expeditions and voyages of discovery.  This document accompanies the normative part of the NCD standard. The standard consists of the series of class and property definitions and is presented in a separate document. "@en;
      a foaf:Document.
 
-<http://orcid.org/0000-0003-2231-6228 >
+<http://orcid.org/0000-0003-2231-6228>
      rdfs:label "Neil Thomson";
      foaf:name "Neil Thomson";
      schema:name "Neil Thomson";
@@ -2212,7 +2212,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/ncd/doc/guide/2008-08-12>
-     dcterms:contributor <http://orcid.org/0000-0003-2231-6228 >.
+     dcterms:contributor <http://orcid.org/0000-0003-2231-6228>.
 
 <http://orcid.org/0000-0003-4581-1379>
      rdfs:label "Roger Hyam";
@@ -2337,7 +2337,7 @@
      dcterms:description "This normative document provides the fields and definitions for terms in the standard."@en;
      a foaf:Document.
 
-<http://orcid.org/0000-0003-2231-6228 >
+<http://orcid.org/0000-0003-2231-6228>
      rdfs:label "Neil Thomson";
      foaf:name "Neil Thomson";
      schema:name "Neil Thomson";
@@ -2347,7 +2347,7 @@
      a foaf:Person.
 
 <http://rs.tdwg.org/ncd/doc/specification/2008-08-12>
-     dcterms:contributor <http://orcid.org/0000-0003-2231-6228 >.
+     dcterms:contributor <http://orcid.org/0000-0003-2231-6228>.
 
 <http://orcid.org/0000-0003-4581-1379>
      rdfs:label "Roger Hyam";

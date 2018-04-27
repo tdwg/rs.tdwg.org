@@ -27,7 +27,7 @@ http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0001-5172-8577,,,,,au
 http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
 http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
 http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-4176-2274 ,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
 http://rs.tdwg.org/ac/doc/termlist/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
 http://rs.tdwg.org/ac/doc/structure/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
 http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
@@ -40,7 +40,7 @@ http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0001-5172-8577,,,,,a
 http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
 http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
 http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-4176-2274 ,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
 http://rs.tdwg.org/ac/doc/structure/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
 http://rs.tdwg.org/ac/doc/introduction/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
 http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
@@ -53,7 +53,7 @@ http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0001-5172-8577,,,
 http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
 http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
 http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-4176-2274 ,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
 http://rs.tdwg.org/ac/doc/introduction/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
 http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
 http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
@@ -80,7 +80,7 @@ http://rs.tdwg.org/dwc/index/,,,,,,http://orcid.org/0000-0002-5178-4170,review m
 http://rs.tdwg.org/dwc/terms/guides/rdf/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0002-5905-1617,,,,,author,John Deck 
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1031-3249 ,,,,,author,Campbell Webb 
+http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1031-3249,,,,,author,Campbell Webb 
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,,,,,author,Paul J. Morris 
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-0632-7576,,,,,author,Mark Schildhauer 
 http://rs.tdwg.org/dwc/terms/guides/text/,http://orcid.org/0000-0001-6215-3617,,,,,,lead author,Tim Robertson
@@ -128,13 +128,13 @@ http://rs.tdwg.org/tapir/doc/guide/,http://orcid.org/0000-0002-7104-7266,,,,,,le
 http://rs.tdwg.org/tapir/doc/guide/,,,,,http://orcid.org/0000-0001-8900-6203,,reviewer,Lee Belbin
 http://rs.tdwg.org/tapir/doc/guide/,,,,,http://orcid.org/0000-0001-7757-1889,,reviewer,Markus Döring
 http://rs.tdwg.org/tapir/doc/models/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/abcd/doc/primer/,,https://orcid.org/0000-0003-2231-6228 ,,,,,author,Neil Thomson
+http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
 http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
 http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
 http://rs.tdwg.org/abcd/doc/primer/,,http://www.wikidata.org/entity/Q51883962,,,,,author,Javier de la Torre
 http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0001-9945-7606,,,,,author,Walter G. Berendsohn
 http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2863-2491 ,,,,,author,William Ulate 
+http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2863-2491,,,,,author,William Ulate 
 http://rs.tdwg.org/abcd/doc/xmlschema/,http://orcid.org/0000-0001-9945-7606,,,,,,lead author,Walter G. Berendsohn
 http://rs.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
 http://rs.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-6658-6636,,,,,author,Kevin R. Thiele
@@ -149,7 +149,7 @@ http://rs.tdwg.org/tcs/doc/xmlschema/,,http://orcid.org/0000-0002-0023-2595,,,,,
 http://rs.tdwg.org/tcs/doc/xmlschema/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
 http://rs.tdwg.org/delta/doc/definition/,,http://viaf.org/viaf/48257155,,,,,author,Michael J. Dallwitz
 http://rs.tdwg.org/delta/doc/definition/,,http://viaf.org/viaf/276948380,,,,,author,Toni Anne Paine
-http://rs.tdwg.org/ncd/doc/guide/,,https://orcid.org/0000-0003-2231-6228 ,,,,,author,Neil Thomson
+http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
 http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
 http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-8339-728X,,,,,author,Constance Rinaldo
 http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0001-9382-5594,,,,,author,Carol Roetzel Butler
@@ -158,7 +158,7 @@ http://rs.tdwg.org/ncd/doc/guide/,,http://viaf.org/viaf/236192,,,,,author,Barbar
 http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-4737-745X,,,,,author,Günter Waibel
 http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
 http://rs.tdwg.org/ncd/doc/guide/,,http://viaf.org/viaf/278739412,,,,,author,Ruud Altenburg
-http://rs.tdwg.org/ncd/doc/specification/,,https://orcid.org/0000-0003-2231-6228 ,,,,,author,Neil Thomson
+http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
 http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
 http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-8339-728X,,,,,author,Constance Rinaldo
 http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0001-9382-5594,,,,,author,Carol Roetzel Butler
