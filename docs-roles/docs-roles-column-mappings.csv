@@ -1,0 +1,7 @@
+header,predicate,type,value,attribute,subject_id
+lead_author,gndo:firstAuthor,iri,,,$root
+author,gndo:author,iri,,,$root
+editor,gndo:editor,iri,,,$root
+translator,gndo:translator,iri,,,$root
+reviewer,gndo:writerOfAddedCommentary,iri,,,$root
+review_manager,gndo:compiler,iri,,,$root
