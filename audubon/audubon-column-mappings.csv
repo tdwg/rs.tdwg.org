@@ -12,3 +12,9 @@ label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
 rdf_type,rdf:type,iri,,,$root
 rdfs_comment,skos:definition,language,,en,$root
+dcterms_description,dcterms:description,language,,en,$root
+tdwgutility_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
+tdwgutility_decision,tdwgutility:decision,iri,,,$root
+tdwgutility_layer,tdwgutility:layer,plain,,,$root
+tdwgutility_required,tdwgutility:required,plain,,,$root
+tdwgutility_repeatable,tdwgutility:repeatable,plain,,,$root
