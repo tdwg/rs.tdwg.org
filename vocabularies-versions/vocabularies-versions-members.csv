@@ -1,6 +1,4 @@
 vocabulary,termList
-http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/terms/2013-10-28
-http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/borrowed/2013-10-28
 http://rs.tdwg.org/version/dwclink/2015-03-27,http://rs.tdwg.org/dwc/version/iri/2015-03-27
 http://rs.tdwg.org/version/dwclink/2015-03-27,http://rs.tdwg.org/dwc/version/dc/2015-03-27
 http://rs.tdwg.org/version/dwclink/2015-03-27,http://rs.tdwg.org/dwc/version/dcterms/2015-03-07
@@ -58,3 +56,12 @@ http://rs.tdwg.org/version/dwc/2008-11-19,http://rs.tdwg.org/dwc/version/terms/2
 http://rs.tdwg.org/version/dwc/2007-04-17,http://rs.tdwg.org/dwc/version/curatorial/2007-04-17
 http://rs.tdwg.org/version/dwc/2007-04-17,http://rs.tdwg.org/dwc/version/dwcore/2007-04-17
 http://rs.tdwg.org/version/dwc/2007-04-17,http://rs.tdwg.org/dwc/version/geospatial/2007-04-17
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/terms/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/Iptc4xmpExt/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/exif/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/photoshop/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/xmp/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/xmpRights/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/dc/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/dcterms/2013-10-28
+http://rs.tdwg.org/version/ac/2013-10-28,http://rs.tdwg.org/ac/version/dwc/2013-10-28

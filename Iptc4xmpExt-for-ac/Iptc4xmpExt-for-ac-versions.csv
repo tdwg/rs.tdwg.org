@@ -1,0 +1,10 @@
+version,term
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/City#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/City
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CVterm
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationCreated#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationCreated
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationShown#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/LocationShown
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/ProvinceState#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/ProvinceState
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/Sublocation#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/Sublocation
+http://iptc.org/std/Iptc4xmpExt/2008-02-29/WorldRegion#,http://iptc.org/std/Iptc4xmpExt/2008-02-29/WorldRegion

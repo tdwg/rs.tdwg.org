@@ -11,3 +11,10 @@ http://rs.tdwg.org/dwc/terms/attributes/version/repeatable-2017-09-23,repeatable
 http://rs.tdwg.org/dwc/terms/attributes/version/UseWithIRI-2017-09-30,UseWithIRI
 http://rs.tdwg.org/dwc/terms/attributes/version/decision-2017-10-10,decision
 http://rs.tdwg.org/dwc/terms/attributes/version/DecisionClass-2017-10-10,DecisionClass
+http://rs.tdwg.org/dwc/terms/attributes/version/Management-2018-06-14,Management
+http://rs.tdwg.org/dwc/terms/attributes/version/Attribution-2018-06-14,Attribution
+http://rs.tdwg.org/dwc/terms/attributes/version/ContentCoverage-2018-06-14,ContentCoverage
+http://rs.tdwg.org/dwc/terms/attributes/version/TaxonomicCoverage-2018-06-14,TaxonomicCoverage
+http://rs.tdwg.org/dwc/terms/attributes/version/ResourceCreation-2018-06-14,ResourceCreation
+http://rs.tdwg.org/dwc/terms/attributes/version/RelatedResource-2018-06-14,RelatedResource
+http://rs.tdwg.org/dwc/terms/attributes/version/ServiceAccessPoint-2018-06-14,ServiceAccessPoint
