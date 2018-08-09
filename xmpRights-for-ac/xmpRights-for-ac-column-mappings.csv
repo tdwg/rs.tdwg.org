@@ -4,6 +4,7 @@ $constant,dcterms:isPartOf,iri,http://rs.tdwg.org/ac/xmp/,,$root
 label,rdfs:label,language,,en,$root
 label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
+skos_scopeNote,skos:scopeNote,language,,en,$root
 dcterms_description,dcterms:description,language,,en,$root
 rdf_type,rdf:type,iri,,,$root
 rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
