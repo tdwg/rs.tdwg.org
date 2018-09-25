@@ -40,14 +40,14 @@ declare
   {
     (: $db is the BaseX XML database to be dumped as RDF :)
   let $ext := page:determine-extension($acceptHeader)
-  let $extension :=
+  let $extension := 
       if ($ext = "htm")
-      then
+      then 
           (: If the client is a browser, return Turtle :)
           "ttl"
       else
           (: Otherwise, return the requested media type :)
-          $ext
+          $ext    
   let $response-media-type := page:determine-media-type($extension)
   let $flag := page:determine-type-flag($extension)
 
@@ -58,7 +58,7 @@ declare
           <output:media-type value='{$response-media-type}'/>
         </output:serialization-parameters>
       </rest:response>,
-      serialize:main-github("",$flag,$db,"dump","false")
+      serialize:main-db("",$flag,"dump",$db)
       )
   };
 
@@ -77,7 +77,7 @@ declare
       let $extension := substring-after($local-id,".")
       let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
+    else 
       (: no extension :)
       let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
       let $redirect-id := "/"||$local-id
@@ -213,7 +213,7 @@ declare
   let $db := "terms"
   return
     if (contains($local-id,"."))
-    then
+    then 
       (: has an extension :)
       let $extension := substring-after($local-id,".")
       let $lookup-string := substring-before($local-id,".")
@@ -223,7 +223,7 @@ declare
                page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
              else
                page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
+    else 
       (: no extension :)
       let $lookup-string := $local-id
       let $redirect-id := $local-id
@@ -260,7 +260,7 @@ declare
       let $extension := substring-after($local-id,".")
       let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
+    else 
       (: no extension :)
       let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$local-id
       let $redirect-id := "/version/"||$vocab||"/"||$local-id
@@ -282,7 +282,7 @@ declare
       let $extension := substring-after($local-id,".")
       let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
+    else 
       (: no extension :)
       let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$local-id||"/"
       let $redirect-id := "/"||$namespace||"/"||$local-id
@@ -304,7 +304,7 @@ declare
       let $extension := substring-after($local-id,".")
       let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
+    else 
       (: no extension :)
       let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$local-id
       let $redirect-id := $local-id
@@ -318,12 +318,12 @@ declare
 declare function page:generic-simple-id($local-id,$db,$acceptHeader)
 {
     if (contains($local-id,"."))
-    then
+    then 
       (: has an extension :)
       let $extension := substring-after($local-id,".")
       let $lookup-string := substring-before($local-id,".")
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
+    else 
       (: no extension :)
       let $lookup-string := $local-id
       let $redirect-id := $local-id
@@ -333,7 +333,7 @@ declare function page:generic-simple-id($local-id,$db,$acceptHeader)
 (: Handle request for specific representation when requested with file extension :)
 declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
 {
-  if (serialize:find-github($lookup-string,$db))  (: check whether the resource is in the database :)
+  if (serialize:find-db($lookup-string,$db))  (: check whether the resource is in the database :)
   then
     (: When a specific file extension is requested, override the requested content type. :)
     let $response-media-type := page:determine-media-type($extension)
@@ -348,20 +348,20 @@ declare function page:return-representation($response-media-type,$lookup-string,
 {
   if ($flag = "html")
   then page:handle-html($db,$lookup-string)
-  else
+  else   
   (: I moved this within the ELSE statement because it interferes with the HTML redirect if I leave it before the IF :)
   <rest:response>
     <output:serialization-parameters>
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  serialize:main-github($lookup-string,$flag,$db,"single","false")
+  serialize:main-db($lookup-string,$flag,"single",$db)
 };
 
 (: Function to return a web page :)
 declare function page:handle-html($db,$lookup-string)
 {
-  switch ($db)
+  switch ($db) 
    case "audubon" return page:temp-redirect("https://terms.tdwg.org/wiki/Audubon_Core_Term_List#ac:",$lookup-string)
    case "audubon-versions" return (page:success(),html:generate-term-version-html($db,"ac",$lookup-string))
    case "curatorial" return (page:success(),html:generate-term-html($db,"dwccuratorial",$lookup-string))
@@ -382,7 +382,7 @@ declare function page:handle-html($db,$lookup-string)
    case "vocabularies-versions" return (page:success(),html:generate-vocabulary-version-html($lookup-string))
    default return <p>database handler not yet written</p>
 };
-
+  
 (: 200 Success response:)
 declare function page:success()
 {
@@ -407,7 +407,7 @@ declare function page:temp-redirect($base,$local-id)
 (: 303 See Also redirect to specific representation having file exension, based on requested media type :)
 declare function page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
 {
-  if(serialize:find-github($lookup-string,$db))  (: check whether the resource is in the database :)
+  if(serialize:find-db($lookup-string,$db))  (: check whether the resource is in the database :)
   then
       let $extension := page:determine-extension($acceptHeader)
       return
@@ -415,7 +415,7 @@ declare function page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
             <http:response status="303">
               <http:header name="location" value="{ concat($redirect-id,".",$extension) }"/>
             </http:response>
-          </rest:response>
+          </rest:response> 
   else
       page:not-found() (: respond with 404 if not in database :)
 };
@@ -442,10 +442,10 @@ declare function page:determine-extension($header)
   else
       if (contains(string-join($header),"text/turtle"))
       then "ttl"
-      else
+      else 
           if (contains(string-join($header),"application/ld+json") or contains(string-join($header),"application/json"))
           then "json"
-          else "htm"
+          else "htm" 
 };
 
 declare function page:determine-media-type($extension)
@@ -465,3 +465,13 @@ declare function page:determine-type-flag($extension)
     case "json" return "json"
     default return "html"
 };
+
+
+
+
+
+
+
+
+
+
