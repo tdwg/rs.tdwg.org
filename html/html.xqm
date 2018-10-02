@@ -4,9 +4,23 @@ module namespace html = 'http://rs.tdwg.com/html';
 
 (: lookup functions - need to change the hard-coding when term lists are added or modified :)
 
+declare function html:load-term-list-lookup() as element()*
+{
+(: The term list table has columns containing the term list database name, abbreviations, etc. :)
+let $lookupDoc := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv'/>)[2]
+let $xmlLookup := csv:parse($lookupDoc, map { 'header' : true(),'separator' : "," })
+return $xmlLookup/csv
+};
+
 (: Looks up the name of the database that contains the metadata for the terms in a term list :)
 declare function html:find-list-dbname($list_localName as xs:string) as xs:string
 {
+(: Note: there should be one database name for one list URI, so only a single string should ever get returned :)
+let $lists := html:load-term-list-lookup()
+for $list in $lists/record
+where $list/list/text() = $list_localName
+return $list/database/text()
+(:
 switch ($list_localName) 
    case "http://rs.tdwg.org/dwc/dwctype/" return "dwctype"
    case "http://rs.tdwg.org/dwc/curatorial/" return "curatorial"
@@ -21,11 +35,19 @@ switch ($list_localName)
    case "http://rs.tdwg.org/ac/borrowed/" return "ac-borrowed"
    case "http://rs.tdwg.org/decisions/" return "decisions"
    default return "database name not found"
+:)
 };
 
 (: Looks up the name of the database that contains the metadata for the terms in a term version list :)
 declare function html:find-list-version-dbname($list_localName as xs:string) as xs:string
 {
+(: Note: there should be one database version name for one list URI, so only a single string should ever get returned :)
+let $lists := html:load-term-list-lookup()
+for $list in $lists/record
+where $list/list/text() = $list_localName
+return $list/list/text()
+
+(:
 switch ($list_localName) 
    case "http://rs.tdwg.org/dwc/dwctype/" return "dwctype-versions"
    case "http://rs.tdwg.org/dwc/curatorial/" return "curatorial-versions"
@@ -38,11 +60,19 @@ switch ($list_localName)
    case "http://rs.tdwg.org/dwc/dc/" return "dc-for-dwc-versions"
    case "http://rs.tdwg.org/dwc/dcterms/" return "dcterms-for-dwc-versions"
    default return "database name not found"
+:)
 };
 
 (: Looks up the abbreviation for the namespace associated with terms in a term list :)
 declare function html:find-list-ns-abbreviation($list_localName as xs:string) as xs:string
 {
+(: Note: there should be one database namespace abbreviation for each list URI, so only a single string should ever get returned :)
+let $lists := html:load-term-list-lookup()
+for $list in $lists/record
+where $list/list/text() = $list_localName
+return $list/vann_preferredNamespacePrefix/text()
+
+(:
 switch ($list_localName) 
    case "http://rs.tdwg.org/dwc/dwctype/" return "dwctype"
    case "http://rs.tdwg.org/dwc/curatorial/" return "dwccuratorial"
@@ -57,11 +87,19 @@ switch ($list_localName)
    case "http://rs.tdwg.org/ac/borrowed/" return ""
    case "http://rs.tdwg.org/decisions/" return "tdwgdecisions"
    default return "namespace not found"
+  :)
 };
 
 (: Looks up the standard that a term list is associated with :)
 declare function html:find-standard-for-list($list_localName as xs:string) as xs:string
 {
+(: Note: there should be one standard for each list URI, so only a single string should ever get returned :)
+let $lists := html:load-term-list-lookup()
+for $list in $lists/record
+where $list/list/text() = $list_localName
+return $list/standard/text()
+
+(:
 switch ($list_localName) 
    case "http://rs.tdwg.org/dwc/dwctype/" return "http://www.tdwg.org/standards/450"
    case "http://rs.tdwg.org/dwc/curatorial/" return ""
@@ -76,11 +114,19 @@ switch ($list_localName)
    case "http://rs.tdwg.org/ac/borrowed/" return "http://www.tdwg.org/standards/638"
    case "http://rs.tdwg.org/decisions/" return ""
    default return "standard not found"
+:)
 };
 
 (: Looks up the term list version namespace that corresponds to a term list :)
 declare function html:find-version-for-list($list_localName as xs:string) as xs:string
 {
+(: Note: there should be one version URI for each list URI, so only a single string should ever get returned :)
+let $lists := html:load-term-list-lookup()
+for $list in $lists/record
+where $list/list/text() = $list_localName
+return $list/versions_uri/text()
+
+(:
 switch ($list_localName) 
    case "http://rs.tdwg.org/dwc/dwctype/" return "http://rs.tdwg.org/dwc/version/dwctype/"
    case "http://rs.tdwg.org/dwc/curatorial/" return "http://rs.tdwg.org/dwc/version/curatorial/"
@@ -95,6 +141,7 @@ switch ($list_localName)
    case "http://rs.tdwg.org/ac/borrowed/" return "http://rs.tdwg.org/ac/version/borrowed/"
    case "http://rs.tdwg.org/decisions/" return "http://rs.tdwg.org/version/decisions/"
    default return "database name not found"
+:)
 };
 
 (:--------------------------------------------------------------------------------------------------:)
