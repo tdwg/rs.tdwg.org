@@ -167,22 +167,85 @@ declare function html:substring-before-last
            '(\.|\[|\]|\\|\||\-|\^|\$|\?|\*|\+|\{|\}|\(|\))','\\$1')
  } ;
 
-(: go through the term list or list versions records and pull the metadata for the particular list. There should be exactly one record element returned :)
-declare function html:load-metadata-record($list-iri as xs:string,$db as xs:string) as element()
+declare function html:load-configuration($repoPath as xs:string,$repoName as xs:string) as node()*
 {
-let $config := fn:collection($db)/constants/record (: get the term lists configuration data :)
+let $constantsDoc := http:send-request(<http:request method='get' href='{$repoPath||$repoName||'/constants.csv'}'/>)[2]
+let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
+return $xmlConstants/csv/record
+};
+
+(: go through the term list or list versions records and pull the metadata for the particular list. There should be exactly one record element returned :)
+declare function html:load-metadata-record($list-iri as xs:string,$db as xs:string) as node()*
+{
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+(: let $config := fn:collection($db)/constants/record :) (: get the term lists configuration data :)
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
-let $metadata := fn:collection($db)/metadata/record
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
 
 for $record in $metadata
 where $record/*[local-name()=$key]/text()=$list-iri (: the primary key of the record row must match the requested list :)
 return $record
 };
 
+(: Load the metadata for the classes that are linked to the core class :)
+declare function html:generateLinkedMetadata($db as xs:string) as node()*
+{
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+let $metadataSeparator := $config/separator/text()
+
+let $linkedClassesDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||'linked-classes.csv'}'/>)[2]
+let $xmlLinkedClasses := csv:parse($linkedClassesDoc, map { 'header' : true(),'separator' : "," })
+let $linkedClasses := $xmlLinkedClasses/csv/record
+
+let $linkedMetadata :=
+      for $class in $linkedClasses
+      let $linkedDoc := $class/filename/text()
+      let $linkedClassPrefix := substring-before($linkedDoc,".")
+
+      let $classMappingDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$linkedClassPrefix||"-column-mappings.csv"}'/>)[2]
+      let $xmlClassMapping := csv:parse($classMappingDoc, map { 'header' : true(),'separator' : "," })
+      let $classClassesDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$linkedClassPrefix||"-classes.csv"}'/>)[2]
+      let $xmlClassClasses := csv:parse($classClassesDoc, map { 'header' : true(),'separator' : "," })
+      let $classMetadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$linkedDoc}'/>)[2]
+      let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+      return
+        ( 
+        <file>{
+          $class/link_column,
+          $class/link_property,
+          $class/suffix1,
+          $class/link_characters,
+          $class/suffix2,
+          $class/forward_link,
+          $class/class,
+          <classes>{
+            $xmlClassClasses/csv/record
+          }</classes>,
+          <mapping>{
+            $xmlClassMapping/csv/record
+          }</mapping>,
+          <metadata>{
+            $xmlClassMetadata/csv/record
+          }</metadata>
+       }</file>
+       )
+return $linkedMetadata
+
+};
+
 (: Generate a sequence of the members of a particular term list version :)
 declare function html:generate-list-version-members($termListVersion as xs:string) as xs:string+
 {
-  let $listsMembers := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record
+  let $linkedMetadata := html:generateLinkedMetadata("term-lists-versions")
+  let $listsMembers := $linkedMetadata/metadata/record
+(:  let $listsMembers := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
   for $member in $listsMembers
   where $member/termListVersion/text() = $termListVersion
   order by $member/termVersion/text()
@@ -192,7 +255,9 @@ declare function html:generate-list-version-members($termListVersion as xs:strin
 (: Find the standard of which a vocabulary is part :)
 declare function html:find-standard($vocabulary as xs:string) as xs:string
 {
-  let $parts := fn:collection("standards")/linked-metadata/file/metadata/record
+  let $linkedMetadata := html:generateLinkedMetadata("standards")
+  let $parts := $linkedMetadata/metadata/record
+(: let $parts := fn:collection("standards")/linked-metadata/file/metadata/record :)
   for $part in $parts
   where $part/part/text() = $vocabulary
   return $part/standard/text()
@@ -201,7 +266,9 @@ declare function html:find-standard($vocabulary as xs:string) as xs:string
 (: Generate a sequence of the term lists that are part of a particular vocabulary :)
 declare function html:generate-vocabulary-term-list-members($vocabulary as xs:string,$db as xs:string) as xs:string+
 {
-  let $termLists := fn:collection($db)/linked-metadata/file/metadata/record
+  let $linkedMetadata := html:generateLinkedMetadata($db)
+  let $termLists := $linkedMetadata/metadata/record
+(: let $termLists := fn:collection($db)/linked-metadata/file/metadata/record :)
   for $termList in $termLists
   where $termList/vocabulary/text() = $vocabulary
   order by $termList/termList/text()
@@ -211,9 +278,16 @@ declare function html:generate-vocabulary-term-list-members($vocabulary as xs:st
 (: go through the term list or term list versions records ($db) and pull the metadata for all lists that are part of a particular vocabulary. :)
 declare function html:load-list-records($termLists as xs:string+,$db as xs:string) as element()*
 {
-let $config := fn:collection($db)/constants/record (: get the term/term versions lists configuration data :)
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
-let $metadata := fn:collection($db)/metadata/record
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
 
 for $record in $metadata,$termList in $termLists
 where $record/*[local-name()=$key]/text()=$termList (: the primary key of the record row must match a list in the vocabulary :)
@@ -324,8 +398,18 @@ return $record/version/text()
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-term-html($db as xs:string,$ns as xs:string,$localName as xs:string) as element()
 {
-let $metadata := fn:collection($db)/metadata/record
-let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
+let $linkedMetadataRaw := html:generateLinkedMetadata($db)
+let $linkedMetadata := $linkedMetadataRaw/metadata/record
+(: let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record :)
 
 for $record in $metadata
 where $record/term_localName/text() = $localName
@@ -364,9 +448,23 @@ return
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-term-version-html($db as xs:string,$ns as xs:string,$localName as xs:string) as element()
 {
-let $metadata := fn:collection($db)/metadata/record
-let $replacements := fn:collection($db)/linked-metadata/file/metadata/record
-let $listVersionMembers := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
+
+let $linkedMetadataRaw := html:generateLinkedMetadata($db)
+let $replacements := $linkedMetadataRaw/metadata/record
+(: let $replacements := fn:collection($db)/linked-metadata/file/metadata/record :)
+
+let $listVersionMembersRaw := html:generateLinkedMetadata("term-lists-versions")
+let $listVersionMembers := $listVersionMembersRaw/metadata/record
+(: let $listVersionMembers := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
 
 for $record in $metadata
 let $versionRoot := substring($record/version/text(),1,
@@ -438,7 +536,7 @@ return
 (: Generates HTML metadata for a particular vocabulary and returns them as a div element :)
 declare function html:generate-vocabulary-metadata-html($record as element()) as element()
 {
-let $thisVersion := $record/vocabulary/text()||$record/vocabulary_modified/text()
+let $thisVersion := "http://rs.tdwg.org/version/"||$record/vocabulary_localName/text()||$record/vocabulary_modified/text()
 let $std := html:find-standard($record/vocabulary/text())
 return  
 <div>{
@@ -486,7 +584,10 @@ declare function html:generate-vocabulary-toc-etc-html($vocabularyIri as xs:stri
   <h1><a id="2">2 Vocabulary versions</a></h1>
   <p>To examine specific historical versions of this vocabulary, click on one of the links below.</p>
   <ul style="list-style: none;">{
-    let $versions := fn:collection("vocabularies")/linked-metadata/file/metadata/record
+
+    let $linkedMetadata := html:generateLinkedMetadata("vocabularies")
+    let $versions := $linkedMetadata/metadata/record
+    (: let $versions := fn:collection("vocabularies")/linked-metadata/file/metadata/record :)
     for $version in $versions
     where $version/vocabulary/text() = $vocabularyIri and exists($version/version) (: screen out other linked metadata not related to versions:)
     return <li><a href="{$version/version/text()}">{$version/version/text()}</a></li>
@@ -580,7 +681,10 @@ return
 declare function html:generate-vocabulary-version-metadata-html($record as element()) as element()
 {
 let $std := html:find-standard($record/vocabulary/text())
-let $replacements := fn:collection("vocabularies-versions")/linked-metadata/file/metadata/record
+
+let $linkedMetadataRaw := html:generateLinkedMetadata("vocabularies-versions")
+let $replacements := $linkedMetadataRaw/metadata/record
+(: let $replacements := fn:collection("vocabularies-versions")/linked-metadata/file/metadata/record :)
 
 return  
 <div>{
@@ -641,7 +745,10 @@ declare function html:generate-vocabulary-version-table-html($vocabularyVersionI
 {
 let $termListsVersions := html:generate-vocabulary-term-list-members($vocabularyVersionIri,"vocabularies-versions") (: generate sequence of term list version IRIs that are in vocabulary:)
 let $metadata := html:load-list-records($termListsVersions,"term-lists-versions") (: pull the metadata records for term lists versions in the sequence :)
-let $replacements := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record
+
+let $linkedMetadataRaw := html:generateLinkedMetadata("term-lists-versions")
+let $replacements := $linkedMetadataRaw/metadata/record
+(: let $replacements := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
   
 return 
      <div>
@@ -757,7 +864,9 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
   <h1><a id="2">2 List versions</a></h1>
   <p>List versions are &quot;snapshots&quot; of the term list at a particular point in time. To examine specific historical versions of this list, click on one of the links below.</p>
   <ul style="list-style: none;">{
-    let $versions := fn:collection("term-lists")/linked-metadata/file/metadata/record
+    let $listRaw := html:generateLinkedMetadata("term-lists")
+    let $versions := $listRaw/metadata/record  
+    (: let $versions := fn:collection("term-lists")/linked-metadata/file/metadata/record :)
     for $version in $versions
     where $version/list/text() = $termListIri
     return <li><a href="{$version/version/text()}">{$version/version/text()}</a></li>
@@ -781,8 +890,19 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-list-html($db as xs:string,$ns as xs:string) as element()
 {
-let $metadata := fn:collection($db)/metadata/record
-let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
+
+let $linkedMetadataRaw := html:generateLinkedMetadata($db)
+let $linkedMetadata := $linkedMetadataRaw/metadata/record
+(: let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record :)
   
 return 
      <div>
@@ -834,7 +954,9 @@ return
 (: Generates metadata for a list version and returns it as an HTML div element :)
 declare function html:generate-list-versions-metadata-html($record as element(),$std as xs:string,$termListIri as xs:string) as element()
 {
-let $replacements := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record
+let $linkedMetadataRaw := html:generateLinkedMetadata("term-lists-versions")
+let $replacements := $linkedMetadataRaw/metadata/record
+(: let $replacements := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
 return
 <div>{
   <strong>Title: </strong>,<span>{$record/label/text()||" (version)"}</span>,<br/>,
@@ -912,8 +1034,19 @@ declare function html:generate-list-versions-toc-etc-html($termListVersionIri as
 (: Generate the HTML table of metadata about the terms in the list:)
 declare function html:generate-list-versions-html($db as xs:string,$ns as xs:string,$members as xs:string+) as element()
 {
-let $metadata := fn:collection($db)/metadata/record
-let $replacements := fn:collection($db)/linked-metadata/file/metadata/record
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
+
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
+
+let $linkedMetadataRaw := html:generateLinkedMetadata($db)
+let $replacements := $linkedMetadataRaw/metadata/record
+(: let $replacements := fn:collection($db)/linked-metadata/file/metadata/record :)
 return 
      <div>
        {
@@ -937,10 +1070,19 @@ fn:string-length($record/version/text())-11) (: find the part of the version bef
 (: This is the test template web page for the /home URI pattern :)
 declare function html:generate-list($db)
 {
-let $constants := fn:collection($db)//constants/record
-let $baseIriColumn := $constants//baseIriColumn/text()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $config := html:load-configuration($repoPath, $db)
 
-let $metadata := fn:collection($db)/metadata/record
+let $coreDoc := $config/coreClassFile/text()
+let $metadataSeparator := $config/separator/text()
+let $baseIriColumn := $config/baseIriColumn/text()
+(: let $constants := fn:collection($db)//constants/record
+let $baseIriColumn := $constants//baseIriColumn/text() :)
+
+let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
+let $metadata := $xmlMetadata/csv/record
+(: let $metadata := fn:collection($db)/metadata/record :)
   
 return 
 <html>
