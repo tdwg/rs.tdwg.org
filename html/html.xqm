@@ -45,7 +45,7 @@ declare function html:find-list-version-dbname($list_localName as xs:string) as 
 let $lists := html:load-term-list-lookup()
 for $list in $lists/record
 where $list/list/text() = $list_localName
-return $list/list/text()
+return $list/versions_database/text()
 
 (:
 switch ($list_localName) 
