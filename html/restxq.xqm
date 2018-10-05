@@ -38,7 +38,7 @@ declare
   %rest:header-param("Accept","{$acceptHeader}")
   function page:dump($acceptHeader,$db)
   {
-    (: $db is the BaseX XML database to be dumped as RDF :)
+    (: $db is the Github database to be dumped as RDF :)
   let $ext := page:determine-extension($acceptHeader)
   let $extension :=
       if ($ext = "htm")
@@ -58,7 +58,7 @@ declare
           <output:media-type value='{$response-media-type}'/>
         </output:serialization-parameters>
       </rest:response>,
-      serialize:main-github("",$flag,$db,"dump","false")
+      serialize:main-github("",$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db,"dump","false")
       )
   };
 
@@ -81,6 +81,28 @@ declare
       (: no extension :)
       let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
       let $redirect-id := "/"||$local-id
+      return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
+  };
+
+(: This is the handler function for URI patterns of "/{vocab}/doc/{docname}/" :)
+declare
+  %rest:path("/{$vocab}/doc/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:content-negotiation-docs($acceptHeader,$vocab,$local-id)
+  {
+  let $db := "docs"
+  return
+    if (contains($local-id,"."))
+    then
+      (: has an extension :)
+      let $stripped-local-name := substring-before($local-id,".")
+      let $extension := substring-after($local-id,".")
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$stripped-local-name||"/"
+      return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+    else
+      (: no extension :)
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"
+      let $redirect-id := "/"||$vocab||"/doc/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
@@ -333,7 +355,7 @@ declare function page:generic-simple-id($local-id,$db,$acceptHeader)
 (: Handle request for specific representation when requested with file extension :)
 declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
 {
-  if (serialize:find-github($lookup-string,$db))  (: check whether the resource is in the database :)
+  if (serialize:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db))  (: check whether the resource is in the database :)
   then
     (: When a specific file extension is requested, override the requested content type. :)
     let $response-media-type := page:determine-media-type($extension)
@@ -347,7 +369,9 @@ declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-
 declare function page:return-representation($response-media-type,$lookup-string,$flag,$db)
 {
   if ($flag = "html")
-  then page:handle-html($db,$lookup-string)
+  then if ($db = "docs")
+      then page:handle-docs-html($lookup-string)
+      else page:handle-html($db,$lookup-string)
   else
   (: I moved this within the ELSE statement because it interferes with the HTML redirect if I leave it before the IF :)
   <rest:response>
@@ -355,12 +379,38 @@ declare function page:return-representation($response-media-type,$lookup-string,
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  serialize:main-github($lookup-string,$flag,$db,"single","false")
+  serialize:main-github($lookup-string,$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db,"single","false")
 };
 
-(: Function to return a web page :)
+(: Function to return a web page for vocabs etc. :)
 declare function page:handle-html($db,$lookup-string)
 {
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/redirects.csv"
+let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
+let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectData := $redirectDataRaw/csv/record
+for $redirectItem in $redirectData
+where $redirectItem/database/text() = $db
+return
+  if ($redirectItem/redirect/text() = "no")
+  then
+    switch ($redirectItem/type/text())
+      case "term" return (page:success(),html:generate-term-html($db,$redirectItem/namespace/text(),$lookup-string))
+      case "termVersion" return (page:success(),html:generate-term-version-html($db,$redirectItem/namespace/text(),$lookup-string))
+      case "termList" return (page:success(),html:generate-term-list-html($lookup-string))
+      case "termListVersion" return (page:success(),html:generate-term-list-version-html($lookup-string))
+      case "vocabulary" return (page:success(),html:generate-vocabulary-html($lookup-string))
+      case "vocabularyVersion" return (page:success(),html:generate-vocabulary-version-html($lookup-string))
+      default return page:not-found()
+  else
+    (: this sort of redirect only makes sense for terms and term versions :)
+    let $base :=
+      if ($redirectItem/useNamespace/text()="yes")
+      then $redirectItem/prefix/text()||$redirectItem/namespace/text()||$redirectItem/connector/text()
+      else $redirectItem/prefix/text()
+    return page:temp-redirect($base,$lookup-string)
+
+(:
   switch ($db)
    case "audubon" return page:temp-redirect("https://terms.tdwg.org/wiki/Audubon_Core_Term_List#ac:",$lookup-string)
    case "audubon-versions" return (page:success(),html:generate-term-version-html($db,"ac",$lookup-string))
@@ -381,6 +431,19 @@ declare function page:handle-html($db,$lookup-string)
    case "vocabularies" return (page:success(),html:generate-vocabulary-html($lookup-string))
    case "vocabularies-versions" return (page:success(),html:generate-vocabulary-version-html($lookup-string))
    default return <p>database handler not yet written</p>
+   :)
+};
+
+(: Function to redirect to a web page for vocabs etc. :)
+declare function page:handle-docs-html($lookup-string)
+{
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
+let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
+let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectData := $redirectDataRaw/csv/record
+for $redirectItem in $redirectData
+where $redirectItem/current_iri/text() = $lookup-string
+return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 };
 
 (: 200 Success response:)
@@ -407,7 +470,7 @@ declare function page:temp-redirect($base,$local-id)
 (: 303 See Also redirect to specific representation having file exension, based on requested media type :)
 declare function page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
 {
-  if(serialize:find-github($lookup-string,$db))  (: check whether the resource is in the database :)
+  if(serialize:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db))  (: check whether the resource is in the database :)
   then
       let $extension := page:determine-extension($acceptHeader)
       return
