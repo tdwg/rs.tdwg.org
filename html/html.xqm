@@ -409,6 +409,7 @@ let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
+let $baseIriColumn := $config/baseIriColumn/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
@@ -416,11 +417,14 @@ let $metadata := $xmlMetadata/csv/record
 let $linkedMetadataRaw := html:generateLinkedMetadata($db)
 let $linkedMetadata := $linkedMetadataRaw/metadata/record
 (: let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record :)
-
+return
 for $record in $metadata
-where $record/term_localName/text() = $localName
-let $version := html:most-recent-version($linkedMetadata,$localName)[last()]
-return 
+where $record/*[local-name()=$baseIriColumn]/text()=$localName
+let $version := 
+  if ($db!="decisions")
+  then html:most-recent-version($linkedMetadata,$localName)[last()]
+  else ""
+return
 <html>
   <head>
     <meta charset="utf-8"/>
