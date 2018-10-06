@@ -91,13 +91,19 @@ switch ($list_localName)
 };
 
 (: Looks up the standard that a term list is associated with :)
-declare function html:find-standard-for-list($list_localName as xs:string) as xs:string
+declare function html:find-standard-for-list($list_uri as xs:string) as xs:string
 {
 (: Note: there should be one standard for each list URI, so only a single string should ever get returned :)
 let $lists := html:load-term-list-lookup()
-for $list in $lists/record
-where $list/list/text() = $list_localName
-return $list/standard/text()
+let $result := 
+  for $list in $lists/record
+  where $list/list/text() = $list_uri
+  return $list/standard/text()
+return
+      (: If the term list is not part of any standard, or matches with two standards, return an empty string :)
+      if (count($result)=1)
+      then  $result
+      else  ""
 
 (:
 switch ($list_localName) 
