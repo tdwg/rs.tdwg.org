@@ -9,3 +9,4 @@ version_issued,dcterms:issued,datatype,,xsd:date,$root
 vocabulary_status,tdwgutility:status,datatype,,xsd:string,$root
 dc_creator,dc:creator,plain,,,$root
 dcterms_license,dcterms:license,iri,,,$root
+vocabulary,dcterms:isVersionOf,iri,,,$root
