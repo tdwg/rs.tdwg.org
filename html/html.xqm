@@ -428,14 +428,14 @@ return
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>{"Term metadata for "||$ns||":"||$record/term_localName/text()}</title>
+    <title>{"Term metadata for "||$ns||":"||$localName}</title>
   </head>
   <body>{
     html:term-metadata($record,$version,$linkedMetadata,$ns),
     <br/>,
     <p><strong>Metadata about this term are available in the following formats/serializations:</strong></p>,
     <table border="1">{
-      let $iri := $record/term_isDefinedBy/text()||$record/term_localName/text()
+      let $iri := $record/term_isDefinedBy/text()||$localName
       return (
       <tr><th>Description</th><th>IRI</th></tr>,
       <tr><td>HTML file (this document)</td><td><a href="{$iri||'.htm'}">{$iri||".htm"}</a></td></tr>,
