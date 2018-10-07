@@ -8,7 +8,7 @@ import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubu
 (:----------------------------------------------------------------------------------------------:)
 (: Main functions for handling URI patterns :)
 
-(: This is a temporary function for testing the kind of Accept header sent by the client :)
+(: This is a test function for testing the kind of Accept header sent by the client :)
 declare
   %rest:path("/header")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -17,22 +17,7 @@ declare
   <p>{$acceptHeader}</p>
   };
 
-(: This is a temporary function for testing the generation of an HTML page :)
-declare
-  %rest:path("/home")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:home($acceptHeader)
-  {
-  <rest:response>
-    <http:response status="200" message="Success">
-      <http:header name="Content-Language" value="en"/>
-      <http:header name="Content-Type" value="text/html; charset=utf-8"/>
-    </http:response>
-  </rest:response>,
-  html:generate-list("terms")
-  };
-
-(: This is a hacked function to provide an option to dump the entire dataset :)
+(: This is a function to provide an option to dump an entire dataset :)
 declare
   %rest:path("/dump/{$db}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -62,7 +47,36 @@ declare
       )
   };
 
-(: This is the handler function for URI patterns of "/{vocab}/" :)
+(: Ideosyncratic redirects to fixed categories of resources :)
+(: See documentation at http://docs.basex.org/wiki/RESTXQ#Forwards_and_Redirects :)
+(: forwards that were set as 302 redirects :)
+declare
+  %rest:path("/abcd2/terms/{$path=.+}")
+  function page:abdc-redirect($path)
+  {
+  <rest:redirect>{"http://terms.tdwg.org/wiki/abcd2:"||$path}</rest:redirect>
+  };
+
+(: forwards that were set as proxypass :)
+declare
+  %rest:path("/UBIF/{$path=.+}")
+  function page:ubif-forward($path)
+  {
+  <rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>
+  (:<rest:forward>{"http://tdwg.github.io/sdd/"||$path}</rest:forward>:)
+  };
+
+
+(: Handler for the special URI pattern for Executive Committee decision instances under the "/decisions/" subpath :)
+declare
+  %rest:path("/decisions/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:decisions($acceptHeader,$local-id)
+  {
+  page:generic-simple-id($local-id,"decisions",$acceptHeader)
+  };
+
+(: This is the handler function for URI patterns of "/{vocab}/" (vocabularies):)
 declare
   %rest:path("/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -75,6 +89,7 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
+
       let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
@@ -84,7 +99,7 @@ declare
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
-(: This is the handler function for URI patterns of "/{vocab}/doc/{docname}/" :)
+(: This is the handler function for URI patterns of "/{vocab}/doc/{docname}/" (standards documents) :)
 declare
   %rest:path("/{$vocab}/doc/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -106,8 +121,44 @@ declare
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
-(: Handler for URI patterns where the local name follows the "/ac/terms/" subpath (Audubon Core-defined terms) :)
+(: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/" subpath (generic terms) :)
 declare
+  %rest:path("/{$vocab}/{$ns}/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
+  {
+  let $listLocalname := $vocab||"/"||$ns||"/"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
+  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
+  let $termlistData := $termlistDataRaw/csv/record
+
+  for $termlist in $termlistData
+  where $termlist/list_localName/text() = $listLocalname
+  return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
+  };
+
+(: Handler for the special URI pattern for tdwgutility: terms under the "/dwc/terms/attributes/" subpath (generic terms) :)
+declare
+  %rest:path("/dwc/terms/attributes/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:tdwgutility-terms($acceptHeader,$local-id)
+  {
+  page:generic-simple-id($local-id,"utility",$acceptHeader)
+  };
+
+(: Handler for the special URI pattern for tdwgutility: term versions under the "/dwc/terms/attributes/version/" subpath (generic terms) :)
+declare
+  %rest:path("/dwc/terms/attributes/version/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:tdwgutility-term-versions($acceptHeader,$local-id)
+  {
+  page:generic-simple-id($local-id,"utility-versions",$acceptHeader)
+  };
+
+(: Handler for URI patterns where the local name follows the "/ac/terms/" subpath (Audubon Core-defined terms) :)
+(:
+  declare
   %rest:path("/ac/terms/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
   function page:audubon($acceptHeader,$local-id)
@@ -115,8 +166,28 @@ declare
   let $db := "audubon"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
+:)
+
+(: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/version/" subpath (generic term versions) :)
+declare
+  %rest:path("/{$vocab}/{$ns}/version/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
+  {
+  let $listLocalname := $vocab||"/"||$ns||"/"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
+  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
+  let $termlistData := $termlistDataRaw/csv/record
+
+  for $termlist in $termlistData
+  where $termlist/list_localName/text() = $listLocalname
+  return page:generic-simple-id($local-id,$termlist/database/text()||"-versions",$acceptHeader)
+
+  };
 
 (: Handler for URI patterns where the local name follows the "/ac/terms/version/" subpath (Audubon Core) :)
+(:
 declare
   %rest:path("/ac/terms/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -125,8 +196,9 @@ declare
   let $db := "audubon-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/curatorial/" subpath :)
+(:
 declare
   %rest:path("/dwc/curatorial/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -135,8 +207,9 @@ declare
   let $db := "curatorial"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/curatorial/version/" subpath :)
+(:
 declare
   %rest:path("/dwc/curatorial/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -145,8 +218,9 @@ declare
   let $db := "curatorial-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/dwcore/" subpath :)
+(:
 declare
   %rest:path("/dwc/dwcore/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -155,8 +229,9 @@ declare
   let $db := "dwcore"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/dwcore/version/" subpath :)
+(:
 declare
   %rest:path("/dwc/dwcore/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -165,8 +240,9 @@ declare
   let $db := "dwcore-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/dwctype/" subpath (DwC type vocabulary :)
+(:
 declare
   %rest:path("/dwc/dwctype/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -175,8 +251,9 @@ declare
   let $db := "dwctype"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/dwctype/version/" subpath (DwC type vocab) :)
+(:
 declare
   %rest:path("/dwc/dwctype/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -185,8 +262,9 @@ declare
   let $db := "dwctype-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/geospatial/" subpath :)
+(:
 declare
   %rest:path("/dwc/geospatial/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -195,8 +273,9 @@ declare
   let $db := "geospatial"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/geospatial/version/" subpath :)
+(:
 declare
   %rest:path("/dwc/geospatial/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -205,8 +284,9 @@ declare
   let $db := "geospatial-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/iri/" subpath (dwciri: terms) :)
+(:
 declare
   %rest:path("/dwc/iri/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -215,8 +295,9 @@ declare
   let $db := "iri"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/dwc/iri/version/" subpath (dwciri: term versions) :)
+(:
 declare
   %rest:path("/dwc/iri/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -225,8 +306,10 @@ declare
   let $db := "iri-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
-(: Special handler for URI patterns where the local name follows the "/dwc/terms/" subpath (Darwin Core and Utility terms :)
+:)
+(: Special handler for URI patterns where a final string follows the "/dwc/terms/" subpath (Darwin Core terms and Utility term list :)
+(: Note: This must be hard-coded. Although the dwc: terms could be handled by the generic terms handler, there is no way to get the non-fixed :)
+(: extension from the /dwc/terms/attributes local name without using the {$local-id} pattern matching.  :)
 declare
   %rest:path("/dwc/terms/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -241,7 +324,7 @@ declare
       let $lookup-string := substring-before($local-id,".")
       return if ($lookup-string = "attributes")
              then
-               (: handle the special case of the tdwgutility: namespace "/dwc/terms/attributes/". :)
+               (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
                page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
              else
                page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
@@ -251,13 +334,14 @@ declare
       let $redirect-id := $local-id
       return if ($lookup-string = "attributes")
              then
-               (: handle the special case of the tdwgutility: namespace "/dwc/terms/attributes/". :)
+               (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
                page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
              else
                page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
 (: Handler for URI patterns where the local name follows the "/dwc/terms/version/" subpath (Darwin Core term versions) :)
+(:
 declare
   %rest:path("/dwc/terms/version/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -266,7 +350,7 @@ declare
   let $db := "terms-versions"
   return page:generic-simple-id($local-id,$db,$acceptHeader)
   };
-
+:)
 (: Handler for URI patterns where the local name follows the "/version/{vocab}/" subpath (vocabulary versions) :)
 declare
   %rest:path("/version/{$vocab}/{$local-id}")
@@ -434,7 +518,7 @@ return
    :)
 };
 
-(: Function to redirect to a web page for vocabs etc. :)
+(: Function to redirect to a web page for standards documents :)
 declare function page:handle-docs-html($lookup-string)
 {
 let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
