@@ -47,26 +47,6 @@ declare
       )
   };
 
-(: Ideosyncratic redirects to fixed categories of resources :)
-(: See documentation at http://docs.basex.org/wiki/RESTXQ#Forwards_and_Redirects :)
-(: forwards that were set as 302 redirects :)
-declare
-  %rest:path("/abcd2/terms/{$path=.+}")
-  function page:abdc-redirect($path)
-  {
-  <rest:redirect>{"http://terms.tdwg.org/wiki/abcd2:"||$path}</rest:redirect>
-  };
-
-(: forwards that were set as proxypass :)
-declare
-  %rest:path("/UBIF/{$path=.+}")
-  function page:ubif-forward($path)
-  {
-  <rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>
-  (:<rest:forward>{"http://tdwg.github.io/sdd/"||$path}</rest:forward>:)
-  };
-
-
 (: Handler for the special URI pattern for Executive Committee decision instances under the "/decisions/" subpath :)
 declare
   %rest:path("/decisions/{$local-id}")
@@ -416,6 +396,95 @@ declare
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
+
+(: Ideosyncratic redirects to fixed categories of resources :)
+(: See documentation at http://docs.basex.org/wiki/RESTXQ#Forwards_and_Redirects :)
+(: 302 redirects :)
+
+(: Tapir redirects :)
+declare %rest:path("/tapir/cns/{$path=.+}") function page:tapir-cns-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/tapir/cns/"||$path}</rest:redirect>};
+
+declare %rest:path("/tapir/cs/{$path=.+}") function page:tapir-cs-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/tapir/cs/"||$path}</rest:redirect>};
+
+declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-schema-redirect()
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/schema/tapir.xsd"}</rest:redirect>};
+
+declare %rest:path("/tapir/1.0/{$path=.+}") function page:tapir10-redirect($path)
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/"||$path}</rest:redirect>};
+
+(: TDWG ontology redirects :)
+declare %rest:path("/ontology/{$path=.+}") function page:ontology-redirect($path)
+  {<rest:redirect>{"http://tdwg.github.io/ontology/ontology/"||$path}</rest:redirect>};
+
+declare %rest:path("/ontology2/{$path=.+}") function page:ontology2-redirect($path)
+  {<rest:redirect>{"http://tdwg-ontology.googlecode.com/svn/trunk/ontology/"||$path}</rest:redirect>};
+
+(: SDD redirects :)
+declare %rest:path("/UBIF/{$path=.+}") function page:ubif-forward($path)
+  {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};
+
+declare %rest:path("/sdd/{$path=.+}") function page:sdd-forward($path)
+  {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};
+
+(: ABCD redirects :)
+declare %rest:path("/abcd2/terms/{$path=.+}") function page:abdc2-redirect($path)
+  {<rest:redirect>{"http://terms.tdwg.org/wiki/abcd2:"||$path}</rest:redirect>};
+
+declare %rest:path("/abcd-efg/terms/{$path=.+}") function page:abdcefg-redirect($path)
+  {<rest:redirect>{"http://terms.tdwg.org/wiki/abcd-efg:"||$path}</rest:redirect>};
+
+declare %rest:path("/abcd/{$path=.+}") function page:abdc-redirect($path)
+  {<rest:redirect>{"http://tdwg.github.io/abcd/"||$path}</rest:redirect>};
+
+(: Darwin Core generic redirects when specific content negotiation doesn't kick in :)
+(: must have subpath to not override the vocabulary terms :)
+declare %rest:path("/dwc/xsd/{$path=.+}") function page:dwc-xsd-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/dwc/xsd/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc/text/{$path=.+}") function page:dwc-text-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/dwc/text/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc/rdf/{$path=.+}") function page:dwc-rdf-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/dwc/rdf/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc/downloads/{$path=.+}") function page:dwc-downloads-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/dwc/downloads/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc/examples/{$path=.+}") function page:dwc-examples-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/dwc/rexamples/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc/DarwinCore_files/{$path=.+}") function page:dwc-files-redirect($path)
+ {<rest:redirect>{"https://tdwg.github.io/dwc/DarwinCore_files/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc/index_legacy_rddl.html") function page:tdwg-legacy-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/index_legacy_rddl.html"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_basetypes.xsd") function page:tdwg-basetypes-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_basetypes.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_dw_core.xsd") function page:tdwg-dw-core-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_core.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_dw_curatorial.xsd") function page:tdwg-dw-curat-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_curatorial.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_dw_element.xsd") function page:tdwg-dw-element-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_element.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_dw_geospatial.xsd") function page:tdwg-dw-geo-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_geospatial.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_dw_record.xsd") function page:tdwg-dw-record-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_record.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_dw_record_tapir.xsd") function page:tdwg-dw-tapir-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_record_tapir.xsd"}</rest:redirect>};
+
+declare %rest:path("/dwc/tdwg_gml.xsd") function page:tdwg-gml-redirect()
+ {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_gml.xsd"}</rest:redirect>};
+
 
 (:----------------------------------------------------------------------------------------------:)
 (: Second-level functions :)
