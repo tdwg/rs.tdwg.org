@@ -397,10 +397,17 @@ declare function html:term-version-metadata($record as element(),$versionOf as x
 (: Find the most recent version of a term :)
 declare function html:most-recent-version($linkedMetadata as node()+,$localName as xs:string) as xs:string+
 {
-for $record in $linkedMetadata
-where $record/term_localName/text() = $localName
-order by $record/version/text()
-return $record/version/text()
+let $result := 
+    for $record in $linkedMetadata
+    where $record/term_localName/text() = $localName
+    order by $record/version/text()
+    return $record/version/text()
+return
+      (: If there are no versions, return an empty string :)
+      if (count($result)=0)
+      then  ""
+      else  $result
+
 };
 
 (:--------------------------------------------------------------------------------------------------:)
