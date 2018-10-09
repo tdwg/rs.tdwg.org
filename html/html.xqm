@@ -801,6 +801,35 @@ return
 };
 
 (:--------------------------------------------------------------------------------------------------:)
+(: Generate decisions web page ////////////////////////////////////////////////////////////////////:)
+(:--------------------------------------------------------------------------------------------------:)
+
+(: 1st level function :)
+
+(: Generates web page for the decisions list; ; following the pattern http://rs.tdwg.org/decisions/ :)
+(: Note: at the moment, this is just a hack of the term lists web page.  It shoud be modified to produce the actual decisions page. :)
+declare function html:generate-decisions-html($termListIri as xs:string) as element()
+{
+let $listMetadata := html:load-metadata-record($termListIri,"term-lists")
+let $ns := html:find-list-ns-abbreviation($termListIri)
+let $std := html:find-standard-for-list($termListIri)
+let $version := html:find-version-for-list($termListIri)
+return
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>{$listMetadata/label/text()}</title>
+  </head>
+  <body>{
+    html:generate-list-metadata-html($listMetadata,$std,$version),
+    html:generate-list-toc-etc-html($termListIri),
+    html:generate-list-html(html:find-list-dbname($termListIri),$ns),
+    html:generate-footer()
+   }</body>
+</html>
+};
+
+(:--------------------------------------------------------------------------------------------------:)
 (: Generate term lists web page ////////////////////////////////////////////////////////////////////:)
 (:--------------------------------------------------------------------------------------------------:)
 
