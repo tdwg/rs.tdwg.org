@@ -128,9 +128,15 @@ declare function html:find-version-for-list($list_localName as xs:string) as xs:
 {
 (: Note: there should be one version URI for each list URI, so only a single string should ever get returned :)
 let $lists := html:load-term-list-lookup()
-for $list in $lists/record
-where $list/list/text() = $list_localName
-return $list/versions_uri/text()
+let $result := 
+  for $list in $lists/record
+  where $list/list/text() = $list_uri
+  return $list/versions_uri/text()
+return
+      (: If the term list doesn't have versions (like decisions), or matches with two version files, return an empty string :)
+      if (count($result)=1)
+      then  $result
+      else  ""
 
 (:
 switch ($list_localName) 
