@@ -3,10 +3,11 @@
 module namespace page = 'http://basex.org/modules/web-page';
 import module namespace serialize = 'http://bioimages.vanderbilt.edu/xqm/serialize' at 'https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/serialize.xqm';
 import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/html.xqm';
-(: import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubusercontent.com/baskaufs/msc/master/tdwg-metadata-reference/html/html.xqm'; :)
 
 (:----------------------------------------------------------------------------------------------:)
 (: Main functions for handling URI patterns :)
+
+(: Miscellaneous patterns :)
 
 (: This is a test function for testing the kind of Accept header sent by the client :)
 declare
@@ -35,7 +36,6 @@ declare
           $ext
   let $response-media-type := page:determine-media-type($extension)
   let $flag := page:determine-type-flag($extension)
-
   return
       (
       <rest:response>
@@ -56,28 +56,8 @@ declare
   page:generic-simple-id($local-id,"decisions",$acceptHeader)
   };
 
-(: This is the handler function for URI patterns of "/{vocab}/" (vocabularies):)
-declare
-  %rest:path("/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:content-negotiation-vocabularies($acceptHeader,$local-id)
-  {
-  let $db := "vocabularies"
-  return
-    if (contains($local-id,"."))
-    then
-      (: has an extension :)
-      let $stripped-local-name := substring-before($local-id,".")
-      let $extension := substring-after($local-id,".")
-
-      let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
-      return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
-    else
-      (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
-      let $redirect-id := "/"||$local-id
-      return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
-  };
+(:----------------------------------------------------------------------------------------------:)
+(: Document patterns :)
 
 (: This is the handler function for URI patterns of "/{vocab}/doc/{docname}/" (standards documents) :)
 declare
@@ -101,236 +81,63 @@ declare
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
-(: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/" subpath (generic terms) :)
+(: Handle ideosynchratic Darwin Core guides URI patterns of "/dwc/terms/guides/{doc}/" :)
 declare
-  %rest:path("/{$vocab}/{$ns}/{$local-id}")
+  %rest:path("/dwc/terms/guides/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
-  function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
+  function page:content-negotiation-dwc-guides($acceptHeader,$local-id)
   {
-  let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
-  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
-  let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
-  let $termlistData := $termlistDataRaw/csv/record
-
-  for $termlist in $termlistData
-  where $termlist/list_localName/text() = $listLocalname
-  return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
-  };
-
-(: Handler for the special URI pattern for tdwgutility: terms under the "/dwc/terms/attributes/" subpath (generic terms) :)
-declare
-  %rest:path("/dwc/terms/attributes/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:tdwgutility-terms($acceptHeader,$local-id)
-  {
-  page:generic-simple-id($local-id,"utility",$acceptHeader)
-  };
-
-(: Handler for the special URI pattern for tdwgutility: term versions under the "/dwc/terms/attributes/version/" subpath (generic terms) :)
-declare
-  %rest:path("/dwc/terms/attributes/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:tdwgutility-term-versions($acceptHeader,$local-id)
-  {
-  page:generic-simple-id($local-id,"utility-versions",$acceptHeader)
-  };
-
-(: Handler for URI patterns where the local name follows the "/ac/terms/" subpath (Audubon Core-defined terms) :)
-(:
-  declare
-  %rest:path("/ac/terms/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:audubon($acceptHeader,$local-id)
-  {
-  let $db := "audubon"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-
-(: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/version/" subpath (generic term versions) :)
-declare
-  %rest:path("/{$vocab}/{$ns}/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
-  {
-  let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
-  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
-  let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
-  let $termlistData := $termlistDataRaw/csv/record
-
-  for $termlist in $termlistData
-  where $termlist/list_localName/text() = $listLocalname
-  return page:generic-simple-id($local-id,$termlist/database/text()||"-versions",$acceptHeader)
-
-  };
-
-(: Handler for URI patterns where the local name follows the "/ac/terms/version/" subpath (Audubon Core) :)
-(:
-declare
-  %rest:path("/ac/terms/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:audubon-versions($acceptHeader,$local-id)
-  {
-  let $db := "audubon-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/curatorial/" subpath :)
-(:
-declare
-  %rest:path("/dwc/curatorial/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:content-negotiation-curatorial($acceptHeader,$local-id)
-  {
-  let $db := "curatorial"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/curatorial/version/" subpath :)
-(:
-declare
-  %rest:path("/dwc/curatorial/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:curatorial-versions($acceptHeader,$local-id)
-  {
-  let $db := "curatorial-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/dwcore/" subpath :)
-(:
-declare
-  %rest:path("/dwc/dwcore/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:content-negotiation-dwcore($acceptHeader,$local-id)
-  {
-  let $db := "dwcore"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/dwcore/version/" subpath :)
-(:
-declare
-  %rest:path("/dwc/dwcore/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:dwcore-versions($acceptHeader,$local-id)
-  {
-  let $db := "dwcore-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/dwctype/" subpath (DwC type vocabulary :)
-(:
-declare
-  %rest:path("/dwc/dwctype/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:content-negotiation-dwctype($acceptHeader,$local-id)
-  {
-  let $db := "dwctype"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/dwctype/version/" subpath (DwC type vocab) :)
-(:
-declare
-  %rest:path("/dwc/dwctype/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:dwctype-versions($acceptHeader,$local-id)
-  {
-  let $db := "dwctype-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/geospatial/" subpath :)
-(:
-declare
-  %rest:path("/dwc/geospatial/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:content-negotiation-geospatial($acceptHeader,$local-id)
-  {
-  let $db := "geospatial"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/geospatial/version/" subpath :)
-(:
-declare
-  %rest:path("/dwc/geospatial/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:geospatial-versions($acceptHeader,$local-id)
-  {
-  let $db := "geospatial-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/iri/" subpath (dwciri: terms) :)
-(:
-declare
-  %rest:path("/dwc/iri/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:iri($acceptHeader,$local-id)
-  {
-  let $db := "iri"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Handler for URI patterns where the local name follows the "/dwc/iri/version/" subpath (dwciri: term versions) :)
-(:
-declare
-  %rest:path("/dwc/iri/version/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:iri-versions($acceptHeader,$local-id)
-  {
-  let $db := "iri-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
-  };
-:)
-(: Special handler for URI patterns where a final string follows the "/dwc/terms/" subpath (Darwin Core terms and Utility term list :)
-(: Note: This must be hard-coded. Although the dwc: terms could be handled by the generic terms handler, there is no way to get the non-fixed :)
-(: extension from the /dwc/terms/attributes local name without using the {$local-id} pattern matching.  :)
-declare
-  %rest:path("/dwc/terms/{$local-id}")
-  %rest:header-param("Accept","{$acceptHeader}")
-  function page:dwc-terms($acceptHeader,$local-id)
-  {
-  let $db := "terms"
+  let $db := "docs"
   return
     if (contains($local-id,"."))
     then
       (: has an extension :)
+      let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := substring-before($local-id,".")
-      return if ($lookup-string = "attributes")
-             then
-               (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
-               page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
-             else
-               page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$stripped-local-name||"/"
+      return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := $local-id
-      let $redirect-id := $local-id
-      return if ($lookup-string = "attributes")
-             then
-               (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
-               page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
-             else
-               page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"
+      let $redirect-id := "/dwc/terms/guides/"||$local-id
+      return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
-(: Handler for URI patterns where the local name follows the "/dwc/terms/version/" subpath (Darwin Core term versions) :)
-(:
+(:----------------------------------------------------------------------------------------------:)
+(: Vocabularies and term lists patterns :)
+
+(: This is the handler function for URI patterns of "/{vocab}/" (vocabularies):)
 declare
-  %rest:path("/dwc/terms/version/{$local-id}")
+  %rest:path("/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
-  function page:terms-versions($acceptHeader,$local-id)
+  function page:content-negotiation-vocabularies($acceptHeader,$local-id)
   {
-  let $db := "terms-versions"
-  return page:generic-simple-id($local-id,$db,$acceptHeader)
+  let $db := "vocabularies"
+  return
+    if (contains($local-id,"."))
+    then
+      (: has an extension :)
+      let $stripped-local-name := substring-before($local-id,".")
+      let $extension := substring-after($local-id,".")
+      let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
+      return if ($stripped-local-name = "decisions")
+            (: handle the special case of TDWG decisions :)
+            then
+              page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/decisions/")
+            else
+              page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+    else
+      (: no extension :)
+      let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
+      let $redirect-id := "/"||$local-id
+      return if ($local-id = "decisions")
+            (: handle the special case of TDWG decisions :)
+            then
+              page:see-also($acceptHeader,"/decisions","term-lists","http://rs.tdwg.org/decisions/")
+            else
+              page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
-:)
+
 (: Handler for URI patterns where the local name follows the "/version/{vocab}/" subpath (vocabulary versions) :)
 declare
   %rest:path("/version/{$vocab}/{$local-id}")
@@ -397,6 +204,96 @@ declare
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
+(:----------------------------------------------------------------------------------------------:)
+(: Terms patterns :)
+
+(: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/" subpath (generic terms) :)
+declare
+  %rest:path("/{$vocab}/{$ns}/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
+  {
+  let $listLocalname := $vocab||"/"||$ns||"/"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
+  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
+  let $termlistData := $termlistDataRaw/csv/record
+
+  for $termlist in $termlistData
+  where $termlist/list_localName/text() = $listLocalname
+  return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
+  };
+
+(: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/version/" subpath (generic term versions) :)
+declare
+  %rest:path("/{$vocab}/{$ns}/version/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
+  {
+  let $listLocalname := $vocab||"/"||$ns||"/"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
+  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
+  let $termlistData := $termlistDataRaw/csv/record
+
+  for $termlist in $termlistData
+  where $termlist/list_localName/text() = $listLocalname
+  return page:generic-simple-id($local-id,$termlist/database/text()||"-versions",$acceptHeader)
+
+  };
+
+(: Handler for the special URI pattern for tdwgutility: terms under the "/dwc/terms/attributes/" subpath (TDWG utility terms) :)
+declare
+  %rest:path("/dwc/terms/attributes/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:tdwgutility-terms($acceptHeader,$local-id)
+  {
+  page:generic-simple-id($local-id,"utility",$acceptHeader)
+  };
+
+(: Handler for the special URI pattern for tdwgutility: term versions under the "/dwc/terms/attributes/version/" subpath (TDGW utility term versions) :)
+declare
+  %rest:path("/dwc/terms/attributes/version/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:tdwgutility-term-versions($acceptHeader,$local-id)
+  {
+  page:generic-simple-id($local-id,"utility-versions",$acceptHeader)
+  };
+
+(: Patterns to handle all the inconsistent uses of the Darwin Core namespace :)
+declare
+  %rest:path("/dwc/terms/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-terms($acceptHeader,$local-id)
+  {
+  let $db := "terms"
+  return
+    if (contains($local-id,"."))
+    then
+      (: has an extension :)
+      let $extension := substring-after($local-id,".")
+      let $lookup-string := substring-before($local-id,".")
+      return
+      switch ($lookup-string)
+        (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
+        case "attributes" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
+        (: handle the special case of the simple Darwin Core guide :)
+        case "simple" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/simple/")
+        default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+    else
+      (: no extension :)
+      let $lookup-string := $local-id
+      let $redirect-id := $local-id
+      return
+      switch ($lookup-string)
+        (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
+        case "attributes" return page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
+        (: handle the special case of the simple Darwin Core guide :)
+        case "simple" return page:see-also($acceptHeader,"/dwc/terms/simple","docs","http://rs.tdwg.org/dwc/terms/simple/")
+        default return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
+  };
+
+(:----------------------------------------------------------------------------------------------:)
 (: Ideosyncratic redirects to fixed categories of resources :)
 (: See documentation at http://docs.basex.org/wiki/RESTXQ#Forwards_and_Redirects :)
 (: 302 redirects :)
@@ -554,6 +451,7 @@ return
       case "termListVersion" return (page:success(),html:generate-term-list-version-html($lookup-string))
       case "vocabulary" return (page:success(),html:generate-vocabulary-html($lookup-string))
       case "vocabularyVersion" return (page:success(),html:generate-vocabulary-version-html($lookup-string))
+      case "decisions" return (page:success(),html:generate-decisions-html($lookup-string))
       default return page:not-found()
   else
     (: this sort of redirect only makes sense for terms and term versions :)
@@ -562,29 +460,6 @@ return
       then $redirectItem/prefix/text()||$redirectItem/namespace/text()||$redirectItem/connector/text()
       else $redirectItem/prefix/text()
     return page:temp-redirect($base,$lookup-string)
-
-(:
-  switch ($db)
-   case "audubon" return page:temp-redirect("https://terms.tdwg.org/wiki/Audubon_Core_Term_List#ac:",$lookup-string)
-   case "audubon-versions" return (page:success(),html:generate-term-version-html($db,"ac",$lookup-string))
-   case "curatorial" return (page:success(),html:generate-term-html($db,"dwccuratorial",$lookup-string))
-   case "curatorial-versions" return (page:success(),html:generate-term-version-html($db,"dwccuratorial",$lookup-string))
-   case "dwcore" return (page:success(),html:generate-term-html($db,"dwcore",$lookup-string))
-   case "dwcore-versions" return (page:success(),html:generate-term-version-html($db,"dwcore",$lookup-string))
-   case "dwctype" return (page:success(),html:generate-term-html($db,"dwctype",$lookup-string))
-   case "dwctype-versions" return (page:success(),html:generate-term-version-html($db,"dwctype",$lookup-string))
-   case "geospatial" return (page:success(),html:generate-term-html($db,"dwcgeospatial",$lookup-string))
-   case "geospatial-versions" return (page:success(),html:generate-term-version-html($db,"dwcgeospatial",$lookup-string))
-   case "iri" return (page:success(),html:generate-term-html($db,"dwciri",$lookup-string))
-   case "iri-versions" return (page:success(),html:generate-term-version-html($db,"dwciri",$lookup-string))
-   case "terms" return page:temp-redirect("http://rs.tdwg.org/dwc/terms/#",$lookup-string)
-   case "terms-versions" return (page:success(),html:generate-term-version-html($db,"dwc",$lookup-string))
-   case "term-lists" return (page:success(),html:generate-term-list-html($lookup-string))
-   case "term-lists-versions" return (page:success(),html:generate-term-list-version-html($lookup-string))
-   case "vocabularies" return (page:success(),html:generate-vocabulary-html($lookup-string))
-   case "vocabularies-versions" return (page:success(),html:generate-vocabulary-version-html($lookup-string))
-   default return <p>database handler not yet written</p>
-   :)
 };
 
 (: Function to redirect to a web page for standards documents :)
