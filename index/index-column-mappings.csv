@@ -1,0 +1,9 @@
+header,predicate,type,value,attribute,subject_id
+label,rdfs:label,language,,en,$root
+label,dcterms:title,language,,en,$root
+rdfs_comment,rdfs:comment,language,,en,$root
+rdfs_comment,dcterms:description,language,,en,$root
+$constant,dc:publisher,language,Biodiversity Information Standards (TDWG),en,$root
+$constant,dcterms:publisher,iri,https://www.grid.ac/institutes/grid.480498.9,,$root
+dcterms_modified,dcterms:modified,datatype,,xsd:date,$root
+$constant,dcterms:license,iri,http://creativecommons.org/licenses/by/4.0/,,$root

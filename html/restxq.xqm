@@ -9,6 +9,15 @@ import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubu
 
 (: Miscellaneous patterns :)
 
+(: root pattern. Note: this just redirects to /index :)
+declare
+  %rest:path("/")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:root($acceptHeader)
+  {
+  page:see-also($acceptHeader,"/index","index","http://rs.tdwg.org/index")
+  };
+
 (: This is a test function for testing the kind of Accept header sent by the client :)
 declare
   %rest:path("/header")
@@ -120,23 +129,25 @@ declare
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
       let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
-      return if ($stripped-local-name = "decisions")
-            (: handle the special case of TDWG decisions :)
-            then
-              page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/decisions/")
-            else
-              page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+      return
+      switch ($stripped-local-name)
+        (: handle the special case of TDWG decisions :)
+        case "decisions" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/decisions/")
+        (: handle the special case of the dataset index :)
+        case "index" return page:handle-repesentation($acceptHeader,$extension,"index","http://rs.tdwg.org/index")
+        default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
       let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
       let $redirect-id := "/"||$local-id
-      return if ($local-id = "decisions")
-            (: handle the special case of TDWG decisions :)
-            then
-              page:see-also($acceptHeader,"/decisions","term-lists","http://rs.tdwg.org/decisions/")
-            else
-              page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
-  };
+      return
+      switch ($local-id)
+        (: handle the special case of TDWG decisions :)
+        case "decisions" return page:see-also($acceptHeader,"/decisions","term-lists","http://rs.tdwg.org/decisions/")
+        (: handle the special case of the simple Darwin Core guide :)
+        case "index" return page:see-also($acceptHeader,"/index","index","http://rs.tdwg.org/index")
+        default return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
+ };
 
 (: Handler for URI patterns where the local name follows the "/version/{vocab}/" subpath (vocabulary versions) :)
 declare
