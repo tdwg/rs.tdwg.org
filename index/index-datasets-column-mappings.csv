@@ -1,5 +1,4 @@
 header,predicate,type,value,attribute,subject_id
-dcterms_isPartOf,dcterms:isPartOf,iri,,,$root
 dcterms_modified,dcterms:modified,datatype,,xsd:date,$root
 label,rdfs:label,language,,en,$root
 label,skos:prefLabel,language,,en,$root
