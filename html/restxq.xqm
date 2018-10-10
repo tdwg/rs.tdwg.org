@@ -430,9 +430,11 @@ declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-
 declare function page:return-representation($response-media-type,$lookup-string,$flag,$db)
 {
   if ($flag = "html")
-  then if ($db = "docs")
-      then page:handle-docs-html($lookup-string)
-      else page:handle-html($db,$lookup-string)
+  then 
+    switch ($db)
+      case "docs" return page:handle-docs-html($lookup-string)
+      case "index" return page:temp-redirect("https://github.com/tdwg/rs.tdwg.org/blob/master/README.md","")
+      default return page:handle-html($db,$lookup-string)
   else
   (: I moved this within the ELSE statement because it interferes with the HTML redirect if I leave it before the IF :)
   <rest:response>
