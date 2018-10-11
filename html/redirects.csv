@@ -11,7 +11,7 @@ geospatial,no,term,dwcgeospatial,,,
 geospatial-versions,no,termVersion,dwcgeospatial,,,
 iri,no,term,dwciri,,,
 iri-versions,no,termVersion,dwciri,,,
-terms,yes,term,dwc,http://rs.tdwg.org/dwc/terms/#,no,
+terms,yes,term,dwc,https://dwc.tdwg.org/terms/#,yes,:
 terms-versions,no,termVersion,dwc,,,
 term-lists,no,termList,,,,
 term-lists-versions,no,termListVersion,,,,
