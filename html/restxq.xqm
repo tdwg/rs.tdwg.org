@@ -271,7 +271,7 @@ declare
   page:generic-simple-id($local-id,"utility-versions",$acceptHeader)
   };
 
-(: Patterns to handle all the inconsistent uses of the Darwin Core namespace :)
+ (: Patterns to handle all the inconsistent uses of the Darwin Core namespace :)
 declare
   %rest:path("/dwc/terms/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
@@ -290,6 +290,16 @@ declare
         case "attributes" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
         (: handle the special case of the simple Darwin Core guide :)
         case "simple" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/simple/")
+        (: handle the special case of the Darwin Core namespace policy :)
+        case "namespace" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/namespace/")
+        (: handle the case of bookmarks to old quick reference guide :)
+        (: Note: I used a 301 (moved permanently) redirect because we basically don't want this URL to be used any more :)
+        case "index" return
+                <rest:response>
+                <http:response status="301">
+                  <http:header name="location" value="https://dwc.tdwg.org/terms/"/>
+                </http:response>
+              </rest:response>
         default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
@@ -301,8 +311,119 @@ declare
         case "attributes" return page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
         (: handle the special case of the simple Darwin Core guide :)
         case "simple" return page:see-also($acceptHeader,"/dwc/terms/simple","docs","http://rs.tdwg.org/dwc/terms/simple/")
+       (: handle the special case of the Darwin Core namespace policy :)
+        case "namespace" return page:see-also($acceptHeader,"/dwc/terms/namespace","docs","http://rs.tdwg.org/dwc/terms/namespace/")
+        case "history" return
+              (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+              (: This will redirect to the rs.tdwg.org repository readme :)
+              <rest:response>
+              <http:response status="301">
+                <http:header name="location" value="https://github.com/tdwg/rs.tdwg.org/blob/master/README.md"/>
+              </http:response>
+            </rest:response>
         default return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
+
+ (: Patterms to redirect legacy bookmarks :)
+declare
+  %rest:path("/dwc/terms/guides/{$local-id}/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-index-htm($acceptHeader,$local-id)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the "permanent URL", which then does a 302 to the Darwin Core website :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="{'/dwc/terms/guides/'||$local-id}"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/simple/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-simple-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the "permanent URL", which then does a 302 to the Darwin Core website :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="/dwc/terms/simple"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/namespace/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-namespace-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the "permanent URL", which then does a 302 to the Darwin Core website :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="/dwc/terms/namespace"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-dwc-landing-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the Darwin Core homepage :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="https://www.tdwg.org/standards/dwc/"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/history/decisions/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-decisions-index-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the TDWG Decisions page :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="/decisions"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/history/decisions")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-decisions-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the TDWG Decisions page :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="/decisions"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/history/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-legacy-history-index-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect to the rs.tdwg.org repository readme :)
+    <rest:response>
+    <http:response status="301">
+      <http:header name="location" value="https://github.com/tdwg/rs.tdwg.org/blob/master/README.md"/>
+    </http:response>
+  </rest:response>
+  };
+
+
 
 (:----------------------------------------------------------------------------------------------:)
 (: Ideosyncratic redirects to fixed categories of resources :)
@@ -349,49 +470,51 @@ declare %rest:path("/abcd/{$path=.+}") function page:abdc-redirect($path)
 (: Darwin Core generic redirects when specific content negotiation doesn't kick in :)
 (: must have subpath to not override the vocabulary terms :)
 declare %rest:path("/dwc/xsd/{$path=.+}") function page:dwc-xsd-redirect($path)
- {<rest:redirect>{"https://tdwg.github.io/dwc/xsd/"||$path}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/xsd/"||$path}</rest:redirect>};
 
 declare %rest:path("/dwc/text/{$path=.+}") function page:dwc-text-redirect($path)
- {<rest:redirect>{"https://tdwg.github.io/dwc/text/"||$path}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/text/"||$path}</rest:redirect>};
 
 declare %rest:path("/dwc/rdf/{$path=.+}") function page:dwc-rdf-redirect($path)
- {<rest:redirect>{"https://tdwg.github.io/dwc/rdf/"||$path}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/rdf/"||$path}</rest:redirect>};
 
 declare %rest:path("/dwc/downloads/{$path=.+}") function page:dwc-downloads-redirect($path)
- {<rest:redirect>{"https://tdwg.github.io/dwc/downloads/"||$path}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/downloads/"||$path}</rest:redirect>};
 
 declare %rest:path("/dwc/examples/{$path=.+}") function page:dwc-examples-redirect($path)
- {<rest:redirect>{"https://tdwg.github.io/dwc/rexamples/"||$path}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/examples/"||$path}</rest:redirect>};
 
+(: defunct styling
 declare %rest:path("/dwc/DarwinCore_files/{$path=.+}") function page:dwc-files-redirect($path)
  {<rest:redirect>{"https://tdwg.github.io/dwc/DarwinCore_files/"||$path}</rest:redirect>};
+:)
 
 declare %rest:path("/dwc/index_legacy_rddl.html") function page:tdwg-legacy-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/index_legacy_rddl.html"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/index_legacy_rddl.html"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_basetypes.xsd") function page:tdwg-basetypes-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_basetypes.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_basetypes.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_dw_core.xsd") function page:tdwg-dw-core-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_core.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_dw_core.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_dw_curatorial.xsd") function page:tdwg-dw-curat-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_curatorial.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_dw_curatorial.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_dw_element.xsd") function page:tdwg-dw-element-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_element.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_dw_element.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_dw_geospatial.xsd") function page:tdwg-dw-geo-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_geospatial.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_dw_geospatial.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_dw_record.xsd") function page:tdwg-dw-record-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_record.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_dw_record.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_dw_record_tapir.xsd") function page:tdwg-dw-tapir-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_dw_record_tapir.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_dw_record_tapir.xsd"}</rest:redirect>};
 
 declare %rest:path("/dwc/tdwg_gml.xsd") function page:tdwg-gml-redirect()
- {<rest:redirect>{"https://tdwg.github.io/dwc/tdwg_gml.xsd"}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/tdwg_gml.xsd"}</rest:redirect>};
 
 
 (:----------------------------------------------------------------------------------------------:)
