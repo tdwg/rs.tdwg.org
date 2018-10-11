@@ -1,22 +1,22 @@
-database	redirect	type	namespace	prefix	useNamespace	connector
-audubon	yes	term	ac	https://tdwg.github.io/ac/termlist#	yes	_
-audubon-versions	no	termVersion	ac			
-curatorial	no	term	dwccuratorial			
-curatorial-versions	no	termVersion	dwccuratorial			
-dwcore	no	term	dwcore			
-dwcore-versions	no	termVersion	dwcore			
-dwctype	no	term	dwctype			
-dwctype-versions	no	termVersion	dwctype			
-geospatial	no	term	dwcgeospatial			
-geospatial-versions	no	termVersion	dwcgeospatial			
-iri	yes	term	dwciri	https://dwc.tdwg.org/terms/#	yes	:
-iri-versions	no	termVersion	dwciri			
-terms	yes	term	dwc	https://dwc.tdwg.org/terms/#	yes	:
-terms-versions	no	termVersion	dwc			
-term-lists	no	termList				
-term-lists-versions	no	termListVersion				
-vocabularies	no	vocabulary				
-vocabularies-versions	no	vocabularyVersion				
-utility	no	term	tdwgutility			
-utility-versions	no	termVersion	tdwgutility			
-decisions	no	decisions	tdwgdecision			
+database,redirect,type,namespace,prefix,useNamespace,connector
+audubon,yes,term,ac,https://tdwg.github.io/ac/termlist#,yes,_
+audubon-versions,no,termVersion,ac,,,
+curatorial,no,term,dwccuratorial,,,
+curatorial-versions,no,termVersion,dwccuratorial,,,
+dwcore,no,term,dwcore,,,
+dwcore-versions,no,termVersion,dwcore,,,
+dwctype,no,term,dwctype,,,
+dwctype-versions,no,termVersion,dwctype,,,
+geospatial,no,term,dwcgeospatial,,,
+geospatial-versions,no,termVersion,dwcgeospatial,,,
+iri,yes,term,dwciri,https://dwc.tdwg.org/terms/#,yes,:
+iri-versions,no,termVersion,dwciri,,,
+terms,yes,term,dwc,https://dwc.tdwg.org/terms/#,yes,:
+terms-versions,no,termVersion,dwc,,,
+term-lists,no,termList,,,,
+term-lists-versions,no,termListVersion,,,,
+vocabularies,no,vocabulary,,,,
+vocabularies-versions,no,vocabularyVersion,,,,
+utility,no,term,tdwgutility,,,
+utility-versions,no,termVersion,tdwgutility,,,
+decisions,no,decisions,tdwgdecision,,,
