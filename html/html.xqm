@@ -850,6 +850,13 @@ return
   </head>
   <body>{
     html:generate-list-metadata-html($listMetadata,$std,$version),
+
+  if ($termListIri = "http://rs.tdwg.org/dwc/terms/")
+  then (
+    <h2><strong>Please note: </strong><span>This is the list of terms defined by Darwin Core. For the Darwin Core Quick Reference Guide, please bookmark </span><a href="https://dwc.tdwg.org/terms/">https://dwc.tdwg.org/terms/</a><br/></h2>
+    )
+  else (),
+
     html:generate-list-toc-etc-html($termListIri),
     html:generate-list-html(html:find-list-dbname($termListIri),$ns),
     html:generate-footer()
