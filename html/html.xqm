@@ -853,7 +853,7 @@ return
 
   if ($termListIri = "http://rs.tdwg.org/dwc/terms/")
   then (
-    <h1><span>Note: This is the list of basic terms defined by Darwin Core. For the </span><a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference Guide</a><span>, please bookmark </span><a href="https://dwc.tdwg.org/terms/">https://dwc.tdwg.org/terms/</a><br/></h1>
+    <h1>Note: This is the list of basic terms defined by Darwin Core. For the <a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference Guide</a>, please bookmark <a href="https://dwc.tdwg.org/terms/">https://dwc.tdwg.org/terms/</a><br/></h1>
     )
   else (),
 
