@@ -235,9 +235,9 @@ declare
     where $termlist/list_localName/text() = $listLocalname
     return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
   return
-    if (count($result)=1)
-    then $result
-    else page:not-found()
+    if (count($result)=0)
+    then page:not-found()
+    else $result
   };
 
 
@@ -258,9 +258,9 @@ declare
     where $termlist/list_localName/text() = $listLocalname
     return page:generic-simple-id($local-id,$termlist/database/text()||"-versions",$acceptHeader)
   return
-    if (count($result)=1)
-    then $result
-    else page:not-found()
+    if (count($result)=0)
+    then page:not-found()
+    else $result
   };
 
 (: Handler for the special URI pattern for tdwgutility: terms under the "/dwc/terms/attributes/" subpath (TDWG utility terms) :)
