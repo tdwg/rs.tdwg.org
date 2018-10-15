@@ -230,10 +230,16 @@ declare
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
 
-  for $termlist in $termlistData
-  where $termlist/list_localName/text() = $listLocalname
-  return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
+  let $result :=
+    for $termlist in $termlistData
+    where $termlist/list_localName/text() = $listLocalname
+    return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
+  return
+    if (count($result)=1)
+    then $result
+    else page:not-found()
   };
+
 
 (: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/version/" subpath (generic term versions) :)
 declare
@@ -247,10 +253,14 @@ declare
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
 
-  for $termlist in $termlistData
-  where $termlist/list_localName/text() = $listLocalname
-  return page:generic-simple-id($local-id,$termlist/database/text()||"-versions",$acceptHeader)
-
+  let $result :=
+    for $termlist in $termlistData
+    where $termlist/list_localName/text() = $listLocalname
+    return page:generic-simple-id($local-id,$termlist/database/text()||"-versions",$acceptHeader)
+  return
+    if (count($result)=1)
+    then $result
+    else page:not-found()
   };
 
 (: Handler for the special URI pattern for tdwgutility: terms under the "/dwc/terms/attributes/" subpath (TDWG utility terms) :)
@@ -410,6 +420,58 @@ declare
   };
 
 declare
+  %rest:path("/dwc/terms/history/versions/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-history-versions-index-htm($acceptHeader)
+  {
+    (: This is where the versions history has been redirecting to :)
+    <rest:response>
+    <http:response status="302">
+      <http:header name="location" value="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/history/versions")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-history-versions-htm($acceptHeader)
+  {
+    (: This is where the versions history has been redirecting to :)
+    <rest:response>
+    <http:response status="302">
+      <http:header name="location" value="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/history/dwctoabcd/index.htm")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-dwctoabcd-versions-index-htm($acceptHeader)
+  {
+    (: This is where the versions history has been redirecting to :)
+    <rest:response>
+    <http:response status="302">
+      <http:header name="location" value="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
+  %rest:path("/dwc/terms/history/dwctoabcd")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-dwctoabcd-versions-htm($acceptHeader)
+  {
+    (: This is where the versions history has been redirecting to :)
+    <rest:response>
+    <http:response status="302">
+      <http:header name="location" value="https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
   %rest:path("/dwc/terms/history/index.htm")
   %rest:header-param("Accept","{$acceptHeader}")
   function page:dwc-legacy-history-index-htm($acceptHeader)
@@ -437,11 +499,16 @@ declare %rest:path("/tapir/cns/{$path=.+}") function page:tapir-cns-redirect($pa
 declare %rest:path("/tapir/cs/{$path=.+}") function page:tapir-cs-redirect($path)
  {<rest:redirect>{"https://tdwg.github.io/tapir/cs/"||$path}</rest:redirect>};
 
+(: This isn't working - gets a 404 
 declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-schema-redirect()
  {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/schema/tapir.xsd"}</rest:redirect>};
 
 declare %rest:path("/tapir/1.0/{$path=.+}") function page:tapir10-redirect($path)
  {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/"||$path}</rest:redirect>};
+:)
+(: This particular URL seems to be in use and redirects to this particular place :)
+declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-tdwgtapir-redirect()
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/infrastructure/master/rs.tdwg.org/tapir/1.0/schema/tapir.xsd"}</rest:redirect>};
 
 (: TDWG ontology redirects :)
 declare %rest:path("/ontology/{$path=.+}") function page:ontology-redirect($path)
@@ -519,6 +586,13 @@ declare %rest:path("/dwc/tdwg_gml.xsd") function page:tdwg-gml-redirect()
 
 (:----------------------------------------------------------------------------------------------:)
 (: Second-level functions :)
+
+(: Generic 404 error message for errors :)
+declare
+  %rest:error("*")
+function page:user-error() {
+page:not-found()
+};
 
 (: Generic handler for simple local IDs :)
 declare function page:generic-simple-id($local-id,$db,$acceptHeader)
