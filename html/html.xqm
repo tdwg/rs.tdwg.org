@@ -2,8 +2,6 @@ xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.com/html';
 
-(: lookup functions - need to change the hard-coding when term lists are added or modified :)
-
 declare function html:load-term-list-lookup() as element()*
 {
 (: The term list table has columns containing the term list database name, abbreviations, etc. :)
@@ -20,22 +18,6 @@ let $lists := html:load-term-list-lookup()
 for $list in $lists/record
 where $list/list/text() = $list_localName
 return $list/database/text()
-(:
-switch ($list_localName) 
-   case "http://rs.tdwg.org/dwc/dwctype/" return "dwctype"
-   case "http://rs.tdwg.org/dwc/curatorial/" return "curatorial"
-   case "http://rs.tdwg.org/dwc/dwcore/" return "dwcore"
-   case "http://rs.tdwg.org/dwc/geospatial/" return "geospatial"
-   case "http://rs.tdwg.org/dwc/terms/" return "terms"
-   case "http://rs.tdwg.org/dwc/terms/attributes/" return "utility"
-   case "http://rs.tdwg.org/dwc/iri/" return "iri"
-   case "http://rs.tdwg.org/ac/terms/" return "audubon"
-   case "http://rs.tdwg.org/dwc/dc/" return "dc-for-dwc"
-   case "http://rs.tdwg.org/dwc/dcterms/" return "dcterms-for-dwc"
-   case "http://rs.tdwg.org/ac/borrowed/" return "ac-borrowed"
-   case "http://rs.tdwg.org/decisions/" return "decisions"
-   default return "database name not found"
-:)
 };
 
 (: Looks up the name of the database that contains the metadata for the terms in a term version list :)
@@ -46,21 +28,6 @@ let $lists := html:load-term-list-lookup()
 for $list in $lists/record
 where $list/list/text() = $list_localName
 return $list/versions_database/text()
-
-(:
-switch ($list_localName) 
-   case "http://rs.tdwg.org/dwc/dwctype/" return "dwctype-versions"
-   case "http://rs.tdwg.org/dwc/curatorial/" return "curatorial-versions"
-   case "http://rs.tdwg.org/dwc/dwcore/" return "dwcore-versions"
-   case "http://rs.tdwg.org/dwc/geospatial/" return "geospatial-versions"
-   case "http://rs.tdwg.org/dwc/terms/" return "terms-versions"
-   case "http://rs.tdwg.org/dwc/terms/attributes/" return "utility-versions"
-   case "http://rs.tdwg.org/dwc/iri/" return "iri-versions"
-   case "http://rs.tdwg.org/ac/terms/" return "audubon-versions"
-   case "http://rs.tdwg.org/dwc/dc/" return "dc-for-dwc-versions"
-   case "http://rs.tdwg.org/dwc/dcterms/" return "dcterms-for-dwc-versions"
-   default return "database name not found"
-:)
 };
 
 (: Looks up the abbreviation for the namespace associated with terms in a term list :)
@@ -71,23 +38,6 @@ let $lists := html:load-term-list-lookup()
 for $list in $lists/record
 where $list/list/text() = $list_localName
 return $list/vann_preferredNamespacePrefix/text()
-
-(:
-switch ($list_localName) 
-   case "http://rs.tdwg.org/dwc/dwctype/" return "dwctype"
-   case "http://rs.tdwg.org/dwc/curatorial/" return "dwccuratorial"
-   case "http://rs.tdwg.org/dwc/dwcore/" return "dwcore"
-   case "http://rs.tdwg.org/dwc/geospatial/" return "dwcgeospatial"
-   case "http://rs.tdwg.org/dwc/terms/" return "dwc"
-   case "http://rs.tdwg.org/dwc/terms/attributes/" return "tdwgutility"
-   case "http://rs.tdwg.org/dwc/iri/" return "dwciri"
-   case "http://rs.tdwg.org/ac/terms/" return "ac"
-   case "http://rs.tdwg.org/dwc/dc/" return "dc"
-   case "http://rs.tdwg.org/dwc/dcterms/" return "dcterms"
-   case "http://rs.tdwg.org/ac/borrowed/" return ""
-   case "http://rs.tdwg.org/decisions/" return "tdwgdecisions"
-   default return "namespace not found"
-  :)
 };
 
 (: Looks up the standard that a term list is associated with :)
@@ -104,23 +54,6 @@ return
       if (count($result)=1)
       then  $result
       else  ""
-
-(:
-switch ($list_localName) 
-   case "http://rs.tdwg.org/dwc/dwctype/" return "http://www.tdwg.org/standards/450"
-   case "http://rs.tdwg.org/dwc/curatorial/" return ""
-   case "http://rs.tdwg.org/dwc/dwcore/" return ""
-   case "http://rs.tdwg.org/dwc/geospatial/" return ""
-   case "http://rs.tdwg.org/dwc/terms/" return "http://www.tdwg.org/standards/450"
-   case "http://rs.tdwg.org/dwc/terms/attributes/" return ""
-   case "http://rs.tdwg.org/dwc/iri/" return "http://www.tdwg.org/standards/450"
-   case "http://rs.tdwg.org/ac/terms/" return "http://www.tdwg.org/standards/638"
-   case "http://rs.tdwg.org/dwc/dc/" return "http://www.tdwg.org/standards/450"
-   case "http://rs.tdwg.org/dwc/dcterms/" return "http://www.tdwg.org/standards/450"
-   case "http://rs.tdwg.org/ac/borrowed/" return "http://www.tdwg.org/standards/638"
-   case "http://rs.tdwg.org/decisions/" return ""
-   default return "standard not found"
-:)
 };
 
 (: Looks up the term list version namespace that corresponds to a term list :)
@@ -137,23 +70,6 @@ return
       if (count($result)=1)
       then  $result
       else  ""
-
-(:
-switch ($list_localName) 
-   case "http://rs.tdwg.org/dwc/dwctype/" return "http://rs.tdwg.org/dwc/version/dwctype/"
-   case "http://rs.tdwg.org/dwc/curatorial/" return "http://rs.tdwg.org/dwc/version/curatorial/"
-   case "http://rs.tdwg.org/dwc/dwcore/" return "http://rs.tdwg.org/dwc/version/dwcore/"
-   case "http://rs.tdwg.org/dwc/geospatial/" return "http://rs.tdwg.org/dwc/version/geospatial/"
-   case "http://rs.tdwg.org/dwc/terms/" return "http://rs.tdwg.org/dwc/version/terms/"
-   case "http://rs.tdwg.org/dwc/terms/attributes/" return "http://rs.tdwg.org/dwc/terms/version/attributes/"
-   case "http://rs.tdwg.org/dwc/iri/" return "http://rs.tdwg.org/dwc/version/iri/"
-   case "http://rs.tdwg.org/ac/terms/" return "http://rs.tdwg.org/ac/version/terms/"
-   case "http://rs.tdwg.org/dwc/dc/" return "http://rs.tdwg.org/dwc/version/dc/"
-   case "http://rs.tdwg.org/dwc/dcterms/" return "http://rs.tdwg.org/dwc/version/dcterms/"
-   case "http://rs.tdwg.org/ac/borrowed/" return "http://rs.tdwg.org/ac/version/borrowed/"
-   case "http://rs.tdwg.org/decisions/" return "http://rs.tdwg.org/version/decisions/"
-   default return "database name not found"
-:)
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -191,14 +107,12 @@ declare function html:load-metadata-record($list-iri as xs:string,$db as xs:stri
 {
 let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
 let $config := html:load-configuration($repoPath, $db)
-(: let $config := fn:collection($db)/constants/record :) (: get the term lists configuration data :)
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
 
 for $record in $metadata
 where $record/*[local-name()=$key]/text()=$list-iri (: the primary key of the record row must match the requested list :)
@@ -257,7 +171,6 @@ declare function html:generate-list-version-members($termListVersion as xs:strin
 {
   let $linkedMetadata := html:generateLinkedMetadata("term-lists-versions")
   let $listsMembers := $linkedMetadata/metadata/record
-(:  let $listsMembers := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
   for $member in $listsMembers
   where $member/termListVersion/text() = $termListVersion
   order by $member/termVersion/text()
@@ -269,7 +182,6 @@ declare function html:find-standard($vocabulary as xs:string) as xs:string
 {
   let $linkedMetadata := html:generateLinkedMetadata("standards")
   let $parts := $linkedMetadata/metadata/record
-(: let $parts := fn:collection("standards")/linked-metadata/file/metadata/record :)
   for $part in $parts
   where $part/part/text() = $vocabulary
   return $part/standard/text()
@@ -280,7 +192,6 @@ declare function html:generate-vocabulary-term-list-members($vocabulary as xs:st
 {
   let $linkedMetadata := html:generateLinkedMetadata($db)
   let $termLists := $linkedMetadata/metadata/record
-(: let $termLists := fn:collection($db)/linked-metadata/file/metadata/record :)
   for $termList in $termLists
   where $termList/vocabulary/text() = $vocabulary
   order by $termList/termList/text()
@@ -299,7 +210,6 @@ let $metadataSeparator := $config/separator/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
 
 for $record in $metadata,$termList in $termLists
 where $record/*[local-name()=$key]/text()=$termList (: the primary key of the record row must match a list in the vocabulary :)
@@ -426,10 +336,8 @@ let $baseIriColumn := $config/baseIriColumn/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
 let $linkedMetadataRaw := html:generateLinkedMetadata($db)
 let $linkedMetadata := $linkedMetadataRaw/metadata/record
-(: let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record :)
 return
 for $record in $metadata
 where $record/*[local-name()=$baseIriColumn]/text()=$localName
@@ -479,15 +387,12 @@ let $metadataSeparator := $config/separator/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
 
 let $linkedMetadataRaw := html:generateLinkedMetadata($db)
 let $replacements := $linkedMetadataRaw/metadata/record
-(: let $replacements := fn:collection($db)/linked-metadata/file/metadata/record :)
 
 let $listVersionMembersRaw := html:generateLinkedMetadata("term-lists-versions")
 let $listVersionMembers := $listVersionMembersRaw/metadata/record
-(: let $listVersionMembers := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
 
 for $record in $metadata
 let $versionRoot := substring($record/version/text(),1,
@@ -610,7 +515,6 @@ declare function html:generate-vocabulary-toc-etc-html($vocabularyIri as xs:stri
 
     let $linkedMetadata := html:generateLinkedMetadata("vocabularies")
     let $versions := $linkedMetadata/metadata/record
-    (: let $versions := fn:collection("vocabularies")/linked-metadata/file/metadata/record :)
     for $version in $versions
     where $version/vocabulary/text() = $vocabularyIri and exists($version/version) (: screen out other linked metadata not related to versions:)
     return <li><a href="{$version/version/text()}">{$version/version/text()}</a></li>
@@ -636,7 +540,6 @@ declare function html:generate-vocabulary-table-html($vocabularyIri as xs:string
 {
 let $termLists := html:generate-vocabulary-term-list-members($vocabularyIri,"vocabularies") (: generate sequence of term list IRIs that are in vocabulary:)
 let $metadata := html:load-list-records($termLists,"term-lists") (: pull the metadata records for term lists in the sequence :)
-(:let $replacements := fn:collection($db)/linked-metadata/file/metadata/record:)
   
 return 
      <div>
@@ -666,8 +569,7 @@ declare function html:generate-footer() as element()
 {
 <div>
   <hr/>
-  <p>This document is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>. <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="http://creativecommons.org/licenses/by/4.0/" style="max-width:100%;"></img></a></p>
-<p>Copyright 2017 - Biodiversity Information Standards - TDWG - <a href="http://www.tdwg.org/about-tdwg/contact-us/">Contact Us</a></p>
+  <p>Content on this site, made open by <a href="http://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a> is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</p>
 </div>
 };
 
@@ -707,7 +609,6 @@ let $std := html:find-standard($record/vocabulary/text())
 
 let $linkedMetadataRaw := html:generateLinkedMetadata("vocabularies-versions")
 let $replacements := $linkedMetadataRaw/metadata/record
-(: let $replacements := fn:collection("vocabularies-versions")/linked-metadata/file/metadata/record :)
 
 return  
 <div>{
@@ -771,7 +672,6 @@ let $metadata := html:load-list-records($termListsVersions,"term-lists-versions"
 
 let $linkedMetadataRaw := html:generateLinkedMetadata("term-lists-versions")
 let $replacements := $linkedMetadataRaw/metadata/record
-(: let $replacements := fn:collection("term-lists-versions")/linked-metadata/file/metadata/record :)
   
 return 
      <div>
@@ -853,7 +753,7 @@ return
 
   if ($termListIri = "http://rs.tdwg.org/dwc/terms/")
   then (
-    <h1>Note: This is the list of basic terms defined by Darwin Core. For the <a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference Guide</a>, please bookmark <a href="https://dwc.tdwg.org/terms/">https://dwc.tdwg.org/terms/</a><br/></h1>
+    <h1>Note: This is the list of core terms defined by Darwin Core. For the <a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference Guide</a>, please bookmark <a href="https://dwc.tdwg.org/terms/">https://dwc.tdwg.org/terms/</a><br/></h1>
     )
   else (),
 
@@ -925,7 +825,6 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
   <ul style="list-style: none;">{
     let $listRaw := html:generateLinkedMetadata("term-lists")
     let $versions := $listRaw/metadata/record  
-    (: let $versions := fn:collection("term-lists")/linked-metadata/file/metadata/record :)
     for $version in $versions
     where $version/list/text() = $termListIri
     return <li><a href="{$version/version/text()}">{$version/version/text()}</a></li>
@@ -957,11 +856,9 @@ let $metadataSeparator := $config/separator/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
 
 let $linkedMetadataRaw := html:generateLinkedMetadata($db)
 let $linkedMetadata := $linkedMetadataRaw/metadata/record
-(: let $linkedMetadata := fn:collection($db)/linked-metadata/file/metadata/record :)
   
 return 
      <div>
@@ -1101,11 +998,9 @@ let $metadataSeparator := $config/separator/text()
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
 
 let $linkedMetadataRaw := html:generateLinkedMetadata($db)
 let $replacements := $linkedMetadataRaw/metadata/record
-(: let $replacements := fn:collection($db)/linked-metadata/file/metadata/record :)
 return 
      <div>
        {
@@ -1135,13 +1030,10 @@ let $config := html:load-configuration($repoPath, $db)
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
 let $baseIriColumn := $config/baseIriColumn/text()
-(: let $constants := fn:collection($db)//constants/record
-let $baseIriColumn := $constants//baseIriColumn/text() :)
 
 let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
-(: let $metadata := fn:collection($db)/metadata/record :)
   
 return 
 <html>
