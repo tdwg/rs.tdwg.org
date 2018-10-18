@@ -306,7 +306,7 @@ declare
         (: Note: I used a 301 (moved permanently) redirect because we basically don't want this URL to be used any more :)
         case "index" return
                 <rest:response>
-                <http:response status="301">
+                <http:response status="307">
                   <http:header name="location" value="https://dwc.tdwg.org/terms/"/>
                 </http:response>
               </rest:response>
@@ -327,7 +327,7 @@ declare
               (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
               (: This will redirect to the rs.tdwg.org repository readme :)
               <rest:response>
-              <http:response status="301">
+              <http:response status="307">
                 <http:header name="location" value="https://github.com/tdwg/rs.tdwg.org/blob/master/README.md"/>
               </http:response>
             </rest:response>
@@ -343,7 +343,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the "permanent URL", which then does a 302 to the Darwin Core website :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="{'/dwc/terms/guides/'||$local-id}"/>
     </http:response>
   </rest:response>
@@ -357,7 +357,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the "permanent URL", which then does a 302 to the Darwin Core website :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="/dwc/terms/simple"/>
     </http:response>
   </rest:response>
@@ -371,7 +371,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the "permanent URL", which then does a 302 to the Darwin Core website :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="/dwc/terms/namespace"/>
     </http:response>
   </rest:response>
@@ -385,7 +385,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the Darwin Core homepage :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="https://www.tdwg.org/standards/dwc/"/>
     </http:response>
   </rest:response>
@@ -399,7 +399,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the TDWG Decisions page :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="/decisions"/>
     </http:response>
   </rest:response>
@@ -413,7 +413,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the TDWG Decisions page :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="/decisions"/>
     </http:response>
   </rest:response>
@@ -479,7 +479,7 @@ declare
     (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
     (: This will redirect to the rs.tdwg.org repository readme :)
     <rest:response>
-    <http:response status="301">
+    <http:response status="307">
       <http:header name="location" value="https://github.com/tdwg/rs.tdwg.org/blob/master/README.md"/>
     </http:response>
   </rest:response>
