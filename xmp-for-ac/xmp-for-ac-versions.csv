@@ -1,4 +1,4 @@
-version,term
-http://ns.adobe.com/xap/1.0/CreateDate#,http://ns.adobe.com/xap/1.0/CreateDate
-http://ns.adobe.com/xap/1.0/MetadataDate#,http://ns.adobe.com/xap/1.0/MetadataDate
-http://ns.adobe.com/xap/1.0/Rating#,http://ns.adobe.com/xap/1.0/Rating
+version,term_localName
+http://ns.adobe.com/xap/1.0/CreateDate#,CreateDate
+http://ns.adobe.com/xap/1.0/MetadataDate#,MetadataDate
+http://ns.adobe.com/xap/1.0/Rating#,Rating
