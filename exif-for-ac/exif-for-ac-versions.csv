@@ -1,3 +1,3 @@
-version,term
-http://ns.adobe.com/exif/1.0/PixelXDimension#,http://ns.adobe.com/exif/1.0/PixelXDimension
-http://ns.adobe.com/exif/1.0/PixelYDimension#,http://ns.adobe.com/exif/1.0/PixelYDimension
+version,term_localName
+http://ns.adobe.com/exif/1.0/PixelXDimension#,PixelXDimension
+http://ns.adobe.com/exif/1.0/PixelYDimension#,PixelYDimension
