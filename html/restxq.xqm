@@ -215,6 +215,28 @@ declare
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
+(: Handler for the special URI pattern for tdwgutility: term list versions under the "/dwc/terms/version/attributes/" subpath (TDGW utility term list versions) :)
+declare
+  %rest:path("/dwc/version/terms/attributes/{$local-id}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:content-negotiation-tdwgutility-term-list-versions($acceptHeader,$local-id)
+  {
+  let $db := "term-lists-versions"
+  return
+    if (contains($local-id,"."))
+    then
+      (: has an extension :)
+      let $stripped-local-name := substring-before($local-id,".")
+      let $extension := substring-after($local-id,".")
+      let $lookup-string := "http://rs.tdwg.org/dwc/version/terms/attributes/"||$stripped-local-name
+      return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+    else
+      (: no extension :)
+      let $lookup-string := "http://rs.tdwg.org/dwc/version/terms/attributes/"||$local-id
+      let $redirect-id := $local-id
+      return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
+  };
+
 (:----------------------------------------------------------------------------------------------:)
 (: Terms patterns :)
 
@@ -281,7 +303,7 @@ declare
   page:generic-simple-id($local-id,"utility-versions",$acceptHeader)
   };
 
- (: Patterns to handle all the inconsistent uses of the Darwin Core namespace :)
+(: Patterns to handle all the inconsistent uses of the Darwin Core namespace :)
 declare
   %rest:path("/dwc/terms/{$local-id}")
   %rest:header-param("Accept","{$acceptHeader}")
