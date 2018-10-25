@@ -2,10 +2,7 @@ vocabulary,termList
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/dwc/terms/
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/dwc/dc/
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/dwc/dcterms/
-http://rs.tdwg.org/dwclink/,http://rs.tdwg.org/dwc/terms/
-http://rs.tdwg.org/dwclink/,http://rs.tdwg.org/dwc/dc/
-http://rs.tdwg.org/dwclink/,http://rs.tdwg.org/dwc/dcterms/
-http://rs.tdwg.org/dwclink/,http://rs.tdwg.org/dwc/iri/
+http://rs.tdwg.org/dwc/,http://rs.tdwg.org/dwc/iri/
 http://rs.tdwg.org/ac/,http://rs.tdwg.org/ac/terms/
 http://rs.tdwg.org/ac/,http://rs.tdwg.org/ac/Iptc4xmpExt/
 http://rs.tdwg.org/ac/,http://rs.tdwg.org/ac/exif/

@@ -1,7 +1,6 @@
 standard,part,rdf_type
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwclink/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/147,http://rs.tdwg.org/sds/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/147,http://rs.tdwg.org/sds/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/642,http://rs.tdwg.org/vms/doc/specification/,foaf:Document
