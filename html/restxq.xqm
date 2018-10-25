@@ -90,6 +90,28 @@ declare
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
 
+(: This is the handler function for URI patterns of "/{vocab}/doc/{docname}/{versionDate}" (standards documents versions) :)
+declare
+  %rest:path("/{$vocab}/doc/{$local-id}/{$date}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:content-negotiation-docs-versions($acceptHeader,$vocab,$local-id,$date)
+  {
+  let $db := "docs-versions"
+  return
+    if (contains($date,"."))
+    then
+      (: has an extension :)
+      let $stripped-local-name := substring-before($date,".")
+      let $extension := substring-after($date,".")
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
+      return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
+    else
+      (: no extension :)
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$date
+      let $redirect-id := "/"||$vocab||"/doc/"||$local-id||"/"||$date
+      return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
+  };
+
 (: Handle ideosynchratic Darwin Core guides URI patterns of "/dwc/terms/guides/{doc}/" :)
 declare
   %rest:path("/dwc/terms/guides/{$local-id}")
