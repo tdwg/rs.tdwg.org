@@ -1,2 +1,5 @@
 id,class
 $root,dcmitype:Dataset
+_:1,dcat:Distribution
+_:2,dcat:Distribution
+_:3,dcat:Distribution

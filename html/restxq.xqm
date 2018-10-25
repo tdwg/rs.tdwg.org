@@ -436,6 +436,20 @@ declare
   };
 
 declare
+  %rest:path("/dwc/index")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwc-index-legacy-dwc-landing-htm($acceptHeader)
+  {
+    (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
+    (: This will redirect from http://rs.tdwg.org/dwc/index/ to the Darwin Core homepage :)
+    <rest:response>
+    <http:response status="307">
+      <http:header name="location" value="https://www.tdwg.org/standards/dwc/"/>
+    </http:response>
+  </rest:response>
+  };
+
+declare
   %rest:path("/dwc/terms/history/decisions/index.htm")
   %rest:header-param("Accept","{$acceptHeader}")
   function page:dwc-legacy-decisions-index-htm($acceptHeader)
