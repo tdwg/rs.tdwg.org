@@ -674,6 +674,7 @@ declare function page:return-representation($response-media-type,$lookup-string,
   then 
     switch ($db)
       case "docs" return page:handle-docs-html($lookup-string)
+      case "docs-versions" return page:handle-docs-versions-html($lookup-string)
       case "index" return page:temp-redirect("https://github.com/tdwg/rs.tdwg.org/blob/master/README.md","")
       default return page:handle-html($db,$lookup-string)
   else
@@ -725,6 +726,18 @@ let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separat
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/current_iri/text() = $lookup-string
+return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
+};
+
+(: Function to redirect to a web page for standards documents versions :)
+declare function page:handle-docs-versions-html($lookup-string)
+{
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs-versions/docs-versions.csv"
+let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
+let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectData := $redirectDataRaw/csv/record
+for $redirectItem in $redirectData
+where $redirectItem/version_iri/text() = $lookup-string
 return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 };
 
