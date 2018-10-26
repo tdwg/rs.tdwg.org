@@ -1,0 +1,17 @@
+
+rdf:type
+rdfs:comment
+rdfs:domain
+rdfs:isDefinedBy
+rdfs:label
+owl:versionInfo
+dcterm:issued
+dcterm:modified
+dc:title
+dc:creator
+dc:description
+dc:publisher
+<http://rs.tdwg.org/ontology/Base#definition>
+<http://rs.tdwg.org/ontology/voc/CommontcsEquivalence>
+rdfs:range
+dc:relation

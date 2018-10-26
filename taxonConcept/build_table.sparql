@@ -1,0 +1,29 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX base: <http://rs.tdwg.org/ontology/Base#>
+PREFIX com: <http://rs.tdwg.org/ontology/voc/Common>
+
+SELECT DISTINCT ?subject ?rdf_type ?rdfs_comment ?rdfs_domain ?rdfs_isDefinedBy ?rdfs_label ?owl_versionInfo ?dcterms_issued ?dcterms_modified ?dc_title ?dc_creator ?dc_description ?dc_publisher ?base_definition ?com_tcsEquivalence ?rdfs_range ?dc_relation
+FROM <http://rs.tdwg.org/ontology/voc/TaxonConcept>
+WHERE {
+  OPTIONAL {?subject rdf:type ?rdf_type.}
+  OPTIONAL {?subject rdfs:comment ?rdfs_comment.}
+  OPTIONAL {?subject rdfs:domain ?rdfs_domain.}
+  OPTIONAL {?subject rdfs:isDefinedBy ?rdfs_isDefinedBy.}
+  OPTIONAL {?subject rdfs:label ?rdfs_label.}
+  OPTIONAL {?subject owl:versionInfo ?owl_versionInfo.}
+  OPTIONAL {?subject dcterms:issued ?dcterms_issued.}
+  OPTIONAL {?subject dcterms:modified ?dcterms_modified.}
+  OPTIONAL {?subject dc:title ?dc_title.}
+  OPTIONAL {?subject dc:creator ?dc_creator.}
+  OPTIONAL {?subject dc:description ?dc_description.}
+  OPTIONAL {?subject dc:publisher ?dc_publisher.}
+  OPTIONAL {?subject base:definition ?base_definition.}
+  OPTIONAL {?subject com:tcsEquivalence ?com_tcsEquivalence.}
+  OPTIONAL {?subject rdfs:range ?rdfs_range.}
+  OPTIONAL {?subject dc:relation ?dc_relation.}  
+}

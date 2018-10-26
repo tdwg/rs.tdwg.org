@@ -1,0 +1,118 @@
+subject,rdf_type,rdfs_comment,rdfs_domain,rdfs_isDefinedBy,rdfs_label,owl_versionInfo,dcterms_issued,dcterms_modified,dc_title,dc_creator,dc_description,dc_publisher,base_definition,com_tcsEquivalence,rdfs_range,dc_relation
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#accordingTo>,owl:ObjectProperty,"Information about the authorship of this concept which uses the Name in their
+         sense (i.e. secundum, sensu). Could be an institution or collection or team of individuals.
+         Equivalent to TCS /DataSet/TaxonConcepts/TaxonConcept/AccordingTo/AccordingToDetailed",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,accordingTo,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName>,owl:ObjectProperty,"The TaxonName for this concept. Equivalent to TCS
+         /DataSet/TaxonConcepts/TaxonConcept/Name",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Has Name,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,owl:Class,"Representation of a TaxonConcept. Equivalent to TCS
+         /DataSet/TaxonConcepts/TaxonConcept",,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Taxon Concept,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept>,owl:Ontology,Version 0.3 removed subclass declarations to classes outside of this ontology in accordance with Recommendation 2.9 of the VoMaG Report http://www.gbif.org/resource/80862,,,,0.3,2006-11-27,2015-07-01,TDWG Taxon Concept LSID Ontology,Roger Hyam,"Ontology describing the metadata returned for LSIDs that are used for Taxon
+         Concepts.",TDWG Biodiversity Information Standards,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept>,owl:Ontology," This is not a full rendering of TaxonConcept as
+         presented in the Taxon Concept Schema 1.0. Not all the possible concept-concept
+         relationships have been modelled just the basic set theory and taxonomic hierarchy
+         relationships. RelationshipAssertions have not been included. These omissions will be
+         addressed in collaboration with the first data provider/consumer pairs who need to make use
+         them. FIXME: Wonder Web OWL
+            Ontology Validator
+      ",,,,0.3,2006-11-27,2015-07-01,TDWG Taxon Concept LSID Ontology,Roger Hyam,"Ontology describing the metadata returned for LSIDs that are used for Taxon
+         Concepts.",TDWG Biodiversity Information Standards,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#accordingToString>,owl:DatatypeProperty,"A string representation of the according to for this concept. Equivalent to TCS
+         /DataSet/TaxonConcepts/TaxonConcept/AccordingTo/Simple",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,According To String,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#circumscribedBy>,owl:ObjectProperty,"A specimen that forms part of the circumscription of this taxon. Equivalent to
+         TCS /DataSet/TaxonConcepts/TaxonConcept/SpecimenCircumscription",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Circumscribed By,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#describedBy>,owl:ObjectProperty,"A description that delimits this taxon. Equivalent to TCS
+         /DataSet/TaxonConcepts/TaxonConcept/CharacterCircumscription",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Described By,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#DoesNotInclude>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Does Not Include,,,,Does Not Include,,,,Set Relationship: Concept 2 is not a subset of Concept 1,/RelationshipType/does not include,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#DoesNotOverlap>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Does Not Overlap,,,,Does Not Overlap,,,,"Set Relationship: Concepts 1 and 2 have no members/children in
+         common",/RelationshipType/does not overlap,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#Excludes>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Excludes,,,,Excludes,,,,"Set Relationship: Concept 1 does not overlap or include Concept
+         2",/RelationshipType/excludes,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#fromTaxon>,owl:ObjectProperty,The host taxon in this relationship.,<http://rs.tdwg.org/ontology/voc/TaxonConcept#Relationship>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,fromTaxon,,,,,,,,,/DataSet/TaxonConcepts/TaxonConcept/Relationships/Relationship/FromTaxonConcept,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#hasInformation>,owl:ObjectProperty,A piece of information about this TaxonConcept.,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Has Information,,,,,,,,,,<http://rs.tdwg.org/ontology/voc/SpeciesProfileModel#InfoItem>,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#hasRelationship>,owl:ObjectProperty,A relationship to another TaxonConcept,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,hasRelationship,,,,,,,,,,<http://rs.tdwg.org/ontology/voc/TaxonConcept#Relationship>,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#HasSynonym>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Has Synonym,,,,Has Synonym,,,,"The target concept is considered a synonym of the current concept. This is
+         an ambiguous relationship. It can mean: 1) a nomenclatural relationship where all that is
+         implied is that the type of the target concept is included in the current circumscription.
+         This is more precisely expressed as a specimen circumscription (for heterotypic synonyms)
+         or as TaxonName basionym relationships (for homotypic synonyms) 2) a concept relationship
+         where some part of (or all of) the target concept is included in the current
+         circumscription. This is more precisely expressed using the set relationships such as 'is
+         congruent to'. The HasSynonym term is principally intended for handling legacy
+         data.",/RelationshipType/has synonym,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#HasVernacular>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Has Vernacular,,,,Has Vernacular,,,,"The target concept is used as a vernacular concept, at least in part, for
+         the current concept. This kind of relationship should not be used to express any form of
+         set relationship (e.g. overlaps, is congruent with, includes). Consider using vernacular
+         type relationships along with set type relationships to avoid any
+         ambiguity.",/RelationshipType/has vernacular,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#Includes>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Includes,,,,Includes,,,,Set Relationship: Concept 2 is a subset of Concept 1,/RelationshipType/includes,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsAmbiregnalOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Ambiregnal Of,,,,Is Ambiregnal Of,,,,"The two concepts are considered to represent the same taxon (i.e. they are
+         congruent) but their names governed by different nomenclatural codes.","/RelationshipType/is ambiregnal of (The definition is somewhat different
+         as TaxonConcepts are permitted to have multiple names in the RDF version of
+         TCS)",,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsAnamorphOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Anamorph Of,,,,Is Anamorph Of,,,,"Concept 1 is the asexual or mitotic reproductive stage in a pleomorphic life
+         cycle in which Concept 2 is the teleomorph or meiotic reproductive stage
+         .",/RelationshipType/is anamorph of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsChildTaxonOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Child Taxon Of,,,,Is Child Taxon Of,,,,"Hierarchical Relationship: Concept 1 is a member of lower taxonomic rank of
+         Concept 2",/RelationshipType/is child taxon of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsCongruentTo>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Congruent To,,,,Is Congruent To,,,,"Set Relationship: The extent of Concept 1 is (essentially) identical to
+         Concept 2",/RelationshipType/is congruent to,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsFemaleParentOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Female Parent Of,,,,Is Female Parent Of,,,,Hybrid Relationship: Concept 1 is genetic mother of Concept 2,/RelationshipType/is female parent of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsFirstParentOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is First Parent Of,,,,Is First Parent Of,,,,"Hybrid Relationship: Concept 1 is genetic parent (1) of Concept
+         2",/RelationshipType/is first parent of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsHybridChildOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Hybrid Child Of,,,,Is Hybrid Child Of,,,,"Hybrid Relationship: Concept 2 is a genetic parent of Concept
+         1",/RelationshipType/is hybrid child of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsHybridParentOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Hybrid Parent Of,,,,Is Hybrid Parent Of,,,,"Hybrid Relationship: Concept 1 is genetic parent of Concept
+         2",/RelationshipType/is hybrid parent of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsIncludedIn>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Included In,,,,Is Included In,,,,Set Relationship: Concept 1 is a subset of Concept 2,/RelationshipType/is included in,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsMaleParentOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Male Parent Of,,,,Is Male Parent Of,,,,"Hybrid Relationship: Concept 1 is genetic father of Concept
+         2",/RelationshipType/is male parent of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsNotCongruentTo>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Not Congruent To,,,,Is Not Congruent To,,,,"Set Relationship: The extent of Concept 1 is not identical to Concept
+         2",/RelationshipType/is not congruent to,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsNotIncludedIn>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Not Included In,,,,Is Not Included In,,,,Set Relationship: Concept 1 is not a subset of Concept 2,/RelationshipType/is not included in,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsParentTaxonOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Parent Taxon Of,,,,Is Parent Taxon Of,,,,"Hierarchical Relationship: Taxon Concept 1 includes Concept 2 as a
+         lower-ranked member.",/RelationshipType/is parent taxon of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsSecondParentOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Second Parent Of,,,,Is Second Parent Of,,,,"Hybrid Relationship: Concept 1 is genetic parent (2) of Concept
+         2.",/RelationshipType/is second parent of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsSynonymFor>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Synonym For,,,,Is Synonym For,,,,"The current concept is considered a synonym of the target concept. This is
+         an ambiguous relationship. It can mean: 1) a nomenclatural relationship where all that is
+         implied is that the type of the current concept is included in the target circumscription.
+         This is more precisely expressed as a specimen circumscription (for heterotypic synonyms)
+         or as TaxonName basionym relationships (for homotypic synonyms) 2) a concept relationship
+         where some part of (or all of) the current concept is included in the target
+         circumscription. This is more precisely expressed using the set relationships such as 'is
+         congruent to'. The IsSynonymFor term is principally intended for handling legacy
+         data.",No direct equivalent,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsTeleomorphOf>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Teleomorph Of,,,,Is Teleomorph Of,,,,"Concept 1 is the teleomorph or meiotic reproductive stage in a pleomorphic
+         life cycle in which Concept 2 is the asexual or mitotic reproductive
+         stage.",/RelationshipType/is teleomorph of,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#IsVernacularFor>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Is Vernacular For,,,,Is Vernacular For,,,,"The current concept is used as a vernacular concept, at least in part, for
+         the target concept. This kind of relationship should not be used to express any form of set
+         relationship (e.g. overlaps, is congruent with, includes). Consider using vernacular type
+         relationships along with set type relationships to avoid any ambiguity.",/RelationshipType/is vernacular for,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#nameString>,owl:DatatypeProperty,"A string representation of the TaxonName for this concept. Equivalent to TCS
+         /DataSet/TaxonConcepts/TaxonConcept/Name/TaxonName/Simple",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Name String,,,,,,,,,,xsd:string,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#Overlaps>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,,,,Overlaps,,,,Overlaps,,,,"Set Relationship: Concepts 1 and 2 share members/children in
+         common",/RelationshipType/overlaps,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#primary>,owl:DatatypeProperty,"If primary='true' the concept is the first level response to a query. If 'false'
+         the concept may be a secondary concept linked directly or indirectly to the definition of a
+         primary concept.",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Primary,,,,,,,,,,xsd:boolean,<http://rs.tdwg.org/ontology/voc/TaxonConcept#rank>
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#rank>,owl:ObjectProperty,"*Deprecated* The taxonomic rank of this concept. This is a link to an instance
+         of TaxonomicRank. Compare with the rankString property. Equivalent to TCS
+         /DataSet/TaxonConcepts/TaxonConcept/Rank. After discussions between a number of parties
+         this property is considered to be deprecated. The rank of a TaxonConcept should be
+         indicated by including a TaxonName of the appropriate rank in the hasName property even if
+         the name object is empty apart from the rank.",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Rank,,,,,,,,,,<http://rs.tdwg.org/ontology/voc/TaxonRank#TaxonRankTerm>,<http://rs.tdwg.org/ontology/voc/TaxonConcept#rankString>
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#rankString>,owl:DatatypeProperty,"*Deprecated* The taxonomic rank of this concept as a string. A string
+         representation of the rank of this concept. It is highly recommended that the rank property
+         be used along with this one unless the correct rank is not available in the rank
+         vocabulary. No direct equivalent in TCS but is string version of
+         /DataSet/TaxonConcepts/TaxonConcept/Rank. Requested by data suppliers. After discussions
+         between a number of parties this property is considered to be deprecated. The rank of a
+         TaxonConcept should be indicated by including a TaxonName of the appropriate rank in the
+         hasName property even if the name object is empty apart from the rank.",<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Rank String,,,,,,,,,,xsd:string,<http://rs.tdwg.org/ontology/voc/TaxonConcept#rank>
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#Relationship>,owl:Class,A typed link to with another taxon.,,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Relationship,,,,,,,,,/DataSet/TaxonConcepts/TaxonConcept/Relationships/Relationship,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#relationshipCategory>,owl:ObjectProperty,The kind of relationship this is.,<http://rs.tdwg.org/ontology/voc/TaxonConcept#Relationship>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,relationshipCategory,,,,,,,,,/DataSet/TaxonConcepts/TaxonConcept/Relationships/Relationship/@type,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonRelationshipTerm>,owl:Class,"The class for constructing a controlled vocabulary for TaxonConcept to
+         TaxonConcept relationship categories.",,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,Taxon Relationship Term,,,,,,,,,,,
+<http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon>,owl:ObjectProperty,The target taxon in this relationship.,<http://rs.tdwg.org/ontology/voc/TaxonConcept#Relationship>,<http://rs.tdwg.org/ontology/voc/TaxonConcept>,toTaxon,,,,,,,,,/DataSet/TaxonConcepts/TaxonConcept/Relationships/Relationship/ToTaxonConcept,<http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept>,
