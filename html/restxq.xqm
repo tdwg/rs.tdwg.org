@@ -33,28 +33,56 @@ declare
   %rest:header-param("Accept","{$acceptHeader}")
   function page:dump($acceptHeader,$db)
   {
-    (: $db is the Github database to be dumped as RDF :)
-  let $ext := page:determine-extension($acceptHeader)
-  let $extension :=
-      if ($ext = "htm")
+  (: $db is the database to be dumped as RDF :)
+  if (contains($db,"."))
+  then
+      (: The database name has an extension, so deliver it :)
+      let $stripped-local-name := substring-before($db,".")
+      let $extension := substring-after($db,".")
+      return
+      if (page:check-db($stripped-local-name))
       then
-          (: If the client is a browser, return Turtle :)
-          "ttl"
-      else
-          (: Otherwise, return the requested media type :)
-          $ext
-  let $response-media-type := page:determine-media-type($extension)
-  let $flag := page:determine-type-flag($extension)
-  return
-      (
-      <rest:response>
-        <output:serialization-parameters>
-          <output:media-type value='{$response-media-type}'/>
-        </output:serialization-parameters>
-      </rest:response>,
-      serialize:main-github("",$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db,"dump","false")
-      )
+          if ($extension = "htm")
+          then
+              (: html requested by browser or .htm explicitly requested :)
+              <rest:redirect>{"https://github.com/tdwg/rs.tdwg.org/tree/master/"||$stripped-local-name}</rest:redirect>
+          else
+              (: respond with correct content-type header for dump of requested media type:)
+              let $response-media-type := page:determine-media-type($extension)
+              let $flag := page:determine-type-flag($extension)
+              return
+                  (
+                  <rest:response>
+                    <output:serialization-parameters>
+                      <output:media-type value='{$response-media-type}'/>
+                    </output:serialization-parameters>
+                  </rest:response>,
+                  serialize:main-github("",$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$stripped-local-name,"dump","false")
+                  )
+      else page:not-found()
+  else
+      (: The database name has no extension, so perform content negotiation :)
+      if (page:check-db($db))
+      then
+          let $extension := page:determine-extension($acceptHeader)
+          return
+              <rest:response>
+                <http:response status="303">
+                  <http:header name="location" value="{'/dump/'||$db||'.'||$extension}"/>
+                </http:response>
+              </rest:response>
+      else page:not-found()
   };
+
+declare function page:check-db($db)
+{
+  let $metadataDoc := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv'/>)[2]
+  let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
+  let $metadata := $xmlMetadata/csv/record
+  for $record in $metadata
+  where $record/term_localName/text()=$db
+  return true()
+};
 
 (: Handler for the special URI pattern for Executive Committee decision instances under the "/decisions/" subpath :)
 declare

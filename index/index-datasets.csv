@@ -48,3 +48,4 @@ document_modified,term_localName,dcterms_isPartOf,dataset_iri,dcterms_modified,l
 2018-10-09T11:00:00-05:00,term-lists-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/term-lists-versions,2018-10-09,TDWG vocabulary term list versions,
 2018-10-09T11:00:00-05:00,vocabularies,http://rs.tdwg.org/index,http://rs.tdwg.org/index/vocabularies,2018-10-09,TDWG vocabularies,
 2018-10-09T11:00:00-05:00,vocabularies-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/vocabularies-versions,2018-10-09,TDWG vocabulary versions,
+2018-10-09T11:00:00-05:00,index,http://rs.tdwg.org/index,http://rs.tdwg.org/index/index,2018-10-09,TDWG metadata database index,
