@@ -2,11 +2,6 @@ xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.com/html';
 
-declare function html:subdomain()
-{
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/subdomain.txt'/>)[2])
-};
-
 declare function html:load-term-list-lookup() as element()*
 {
 (: The term list table has columns containing the term list database name, abbreviations, etc. :)
@@ -469,7 +464,7 @@ return
 (: Generates HTML metadata for a particular vocabulary and returns them as a div element :)
 declare function html:generate-vocabulary-metadata-html($record as element()) as element()
 {
-let $thisVersion := html:subdomain()||"version/"||$record/vocabulary_localName/text()||$record/vocabulary_modified/text()
+let $thisVersion := "http://rs.tdwg.org/version/"||$record/vocabulary_localName/text()||$record/vocabulary_modified/text()
 let $std := html:find-standard($record/vocabulary/text())
 return  
 <div>{
@@ -756,7 +751,7 @@ return
   <body>{
     html:generate-list-metadata-html($listMetadata,$std,$version),
 
-  if ($termListIri = html:subdomain()||"dwc/terms/")
+  if ($termListIri = "http://rs.tdwg.org/dwc/terms/")
   then (
     <h1>Note: This is the list of core terms defined by Darwin Core. For the <a href="https://dwc.tdwg.org/terms/">Darwin Core Quick Reference Guide</a>, please bookmark <a href="https://dwc.tdwg.org/terms/">https://dwc.tdwg.org/terms/</a><br/></h1>
     )
