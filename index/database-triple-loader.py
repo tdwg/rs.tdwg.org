@@ -99,10 +99,11 @@ def baseToTripleButtonClick():
     loadList = []
     for row in csvData:
         loadList.append(row[1])
-    #for database in range(len(loadList)):
-    for database in range(1,2):
-        print(loadList[database])
-        dataToTriplestore(dumpUriBox.get(), loadList[database]+'.ttl', endpointUriBox.get(), graphNameBox.get(), passwordBox2.get())
+    for database in range(1,len(loadList)):  # start range at 1 to avoid header row (0)
+    #for database in range(1,2):  # uncomment this line to test using only one database
+		# for whatever reason, the .ttl serializations of the dumps were loading zero triples.  But the .rdf serializations were fine.
+		# I'm wondering if this is related to the content-type reported by the dump.  I verified that it's "text/turtle", which I thought was a valid type to load
+        dataToTriplestore(dumpUriBox.get(), loadList[database]+'.rdf', endpointUriBox.get(), graphNameBox.get(), passwordBox2.get())
 baseToTripleButton = ttk.Button(mainframe, text = "Transfer from server to Triplestore", width = 30, command = lambda: baseToTripleButtonClick() )
 baseToTripleButton.grid(column=4, row=14, sticky=W)
 
@@ -285,6 +286,7 @@ def escapeBadXmlCharacters(dirtyString):
 
 def performSparqlUpdate(endpointUri, pwd, updateCommand):
 	# SPARQL Update requires HTTP POST
+	updateLog(updateCommand + '\n')
 	hdr = {'Content-Type' : 'application/sparql-update'}
 	r = requests.post(endpointUri, auth=('admin', pwd), headers=hdr, data = updateCommand)
 	updateLog(str(r.status_code) + ' ' + r.url + '\n')
@@ -293,7 +295,7 @@ def performSparqlUpdate(endpointUri, pwd, updateCommand):
 
 def dataToTriplestore(dumpUri, database, endpointUri, graphName, pwd):
     updateCommand = 'LOAD <' + dumpUri + database + '> INTO GRAPH <' + graphName + '>'
-    print(updateCommand)
+    print(updateCommand) # print this to the terminal so that we can see what's going on while the GUI is doing spinning circle
     updateLog('update SPARQL endpoint into graph ' + graphName)
     performSparqlUpdate(endpointUri, pwd, updateCommand)
 
