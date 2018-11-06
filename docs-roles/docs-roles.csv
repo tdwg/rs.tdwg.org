@@ -1,239 +1,239 @@
 document,lead_author,author,editor,translator,reviewer,review_manager,contributor_role,contributor_literal
-http://rs.tdwg.org/sds/doc/specification/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stanley Blum
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0001-7694-8250,,,,,author,Jonathan Rees
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0001-8332-2571,,,,,author,Joel Sachs
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0002-2954-9027,,,,,author,Greg Whitbread
-http://rs.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
-http://rs.tdwg.org/sds/doc/specification/,,,,,,http://orcid.org/0000-0002-2352-5497,review manager,Dag Endresen
-http://rs.tdwg.org/vms/doc/specification/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
-http://rs.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
-http://rs.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stan Blum
-http://rs.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
-http://rs.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0001-7694-8250,,,,,author,Jonathan Rees
-http://rs.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0001-8332-2571,,,,,author,Joel Sachs
-http://rs.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0002-2954-9027,,,,,author,Greg Whitbread
-http://rs.tdwg.org/vms/doc/specification/,,,,,,http://orcid.org/0000-0002-2352-5497,review manager,Dag Endresen
-http://rs.tdwg.org/ac/doc/termlist/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/termlist/,,http://www.wikidata.org/entity/Q51883873,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0001-5172-8577,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/termlist/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/structure/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/structure/,,http://www.wikidata.org/entity/Q51883873,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0001-5172-8577,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/structure/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/introduction/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/introduction/,,http://www.wikidata.org/entity/Q51883873,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0001-5172-8577,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/introduction/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/guide/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/guide/,,http://www.wikidata.org/entity/Q28913578,,,,,author,Éamonn Ó Tuama
-http://rs.tdwg.org/guid/doc/guidas/,http://www.wikidata.org/entity/Q51883936,,,,,,lead author,Kevin Richards
-http://rs.tdwg.org/guid/doc/lsidas/,,http://www.wikidata.org/entity/Q51883958,,,,,author,Ricardo Scachetti-Pereira
-http://rs.tdwg.org/guid/doc/lsidas/,,http://www.wikidata.org/entity/Q51883936,,,,,author,Kevin Richards
-http://rs.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0001-6492-4016,,,,,author,Donald Hobern
-http://rs.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0001-8900-6203,,,,,author,Lee Belbin
-http://rs.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stan Blum
-http://rs.tdwg.org/dwc/index/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
-http://rs.tdwg.org/dwc/index/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/dwc/index/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/dwc/index/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
-http://rs.tdwg.org/dwc/index/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
-http://rs.tdwg.org/dwc/index/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
-http://rs.tdwg.org/dwc/terms/guides/rdf/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0002-5905-1617,,,,,author,John Deck 
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1031-3249,,,,,author,Campbell Webb 
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,,,,,author,Paul J. Morris 
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-0632-7576,,,,,author,Mark Schildhauer 
-http://rs.tdwg.org/dwc/terms/guides/text/,http://orcid.org/0000-0001-6215-3617,,,,,,lead author,Tim Robertson
-http://rs.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
-http://rs.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
-http://rs.tdwg.org/dwc/terms/guides/text/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
-http://rs.tdwg.org/dwc/terms/guides/xml/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
-http://rs.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
-http://rs.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
-http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
-http://rs.tdwg.org/dwc/terms/simple/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
-http://rs.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
-http://rs.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
-http://rs.tdwg.org/dwc/terms/simple/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
-http://rs.tdwg.org/dwc/terms/namespace/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
-http://rs.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
-http://rs.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
-http://rs.tdwg.org/dwc/terms/namespace/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
-http://rs.tdwg.org/tapir/doc/summary/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/tapir/doc/specification/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/tapir/doc/specification/,http://www.wikidata.org/entity/Q51883987,,,,,,lead author,Charles Copp
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0002-4325-4030,,,,,author,Anton Güntsch 
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0001-6492-4016,,,,,author,Donald Hobern
-http://rs.tdwg.org/tapir/doc/specification/,,http://www.wikidata.org/entity/Q51883962,,,,,author,Javier de la Torre
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
-http://rs.tdwg.org/tapir/doc/specification/,,http://www.wikidata.org/entity/Q51883993,,,,,author,Robert Gales
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stanley Blum
-http://rs.tdwg.org/tapir/doc/specification/,,http://www.wikidata.org/entity/Q51883997,,,,,author,Perry Steven
-http://rs.tdwg.org/tapir/doc/specification/,,,,,,http://www.wikidata.org/entity/Q51883977,review manager,Piers Higgs
-http://rs.tdwg.org/tapir/doc/xmlschema/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/tapir/doc/conceptaliases/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/tapir/doc/guide/,http://www.wikidata.org/entity/Q51883987,,,,,,lead author,Charles Copp
-http://rs.tdwg.org/tapir/doc/guide/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/tapir/doc/guide/,,,,,http://orcid.org/0000-0001-8900-6203,,reviewer,Lee Belbin
-http://rs.tdwg.org/tapir/doc/guide/,,,,,http://orcid.org/0000-0001-7757-1889,,reviewer,Markus Döring
-http://rs.tdwg.org/tapir/doc/models/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/abcd/doc/primer/,,http://www.wikidata.org/entity/Q51883962,,,,,author,Javier de la Torre
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0001-9945-7606,,,,,author,Walter G. Berendsohn
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
-http://rs.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2863-2491,,,,,author,William Ulate 
-http://rs.tdwg.org/abcd/doc/xmlschema/,http://orcid.org/0000-0001-9945-7606,,,,,,lead author,Walter G. Berendsohn
-http://rs.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-6658-6636,,,,,author,Kevin R. Thiele
-http://rs.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
-http://rs.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-4601-8180,,,,,author,P. Bryan Heidorn
-http://rs.tdwg.org/sdd/doc/xmlschema/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/sdd/doc/xmlschema/,,http://orcid.org/0000-0002-6658-6636,,,,,author,Kevin R. Thiele
-http://rs.tdwg.org/sdd/doc/xmlschema/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
-http://rs.tdwg.org/tcs/doc/guide/,,http://orcid.org/0000-0002-0023-2595,,,,,author,Jessie Kennedy
-http://rs.tdwg.org/tcs/doc/guide/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/tcs/doc/xmlschema/,,http://orcid.org/0000-0002-0023-2595,,,,,author,Jessie Kennedy
-http://rs.tdwg.org/tcs/doc/xmlschema/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/delta/doc/definition/,,http://viaf.org/viaf/48257155,,,,,author,Michael J. Dallwitz
-http://rs.tdwg.org/delta/doc/definition/,,http://viaf.org/viaf/276948380,,,,,author,Toni Anne Paine
-http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
-http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-8339-728X,,,,,author,Constance Rinaldo
-http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0001-9382-5594,,,,,author,Carol Roetzel Butler
-http://rs.tdwg.org/ncd/doc/guide/,,http://rs.tdwg.org/contributor/3,,,,,author,Doug Holland
-http://rs.tdwg.org/ncd/doc/guide/,,http://viaf.org/viaf/236192,,,,,author,Barbara Mathé
-http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-4737-745X,,,,,author,Günter Waibel
-http://rs.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
-http://rs.tdwg.org/ncd/doc/guide/,,http://viaf.org/viaf/278739412,,,,,author,Ruud Altenburg
-http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
-http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
-http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-8339-728X,,,,,author,Constance Rinaldo
-http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0001-9382-5594,,,,,author,Carol Roetzel Butler
-http://rs.tdwg.org/ncd/doc/specification/,,http://rs.tdwg.org/contributor/3,,,,,author,Doug Holland
-http://rs.tdwg.org/ncd/doc/specification/,,http://viaf.org/viaf/236192,,,,,author,Barbara Mathé
-http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-4737-745X,,,,,author,Günter Waibel
-http://rs.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
-http://rs.tdwg.org/ncd/doc/specification/,,http://viaf.org/viaf/278739412,,,,,author,Ruud Altenburg
-http://rs.tdwg.org/abcddna/doc/guide/,,http://rs.tdwg.org/contributor/12,,,,,author,Gabriele Dröge
-http://rs.tdwg.org/abcddna/doc/guide/,,http://viaf.org/viaf/77423299,,,,,author,Holger Zetzsche
-http://rs.tdwg.org/abcddna/doc/guide/,,http://viaf.org/viaf/265750549,,,,,author,Birgit Gemeinholzer
-http://rs.tdwg.org/abcddna/doc/guide/,,http://orcid.org/0000-0002-4325-4030,,,,,author,Anton Güntsch
-http://rs.tdwg.org/abcddna/doc/guide/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/21e8d5c7-464f-41c3-9e9c-1ce09b0d4f1f,,,,,author,Wolf-Henning Kusber
-http://rs.tdwg.org/abcddna/doc/guide/,,http://rs.tdwg.org/contributor/14,,,,,author,Patricia Kelbert
-http://rs.tdwg.org/abcddna/doc/guide/,,http://www.bgbm.org/de/personal/joerg-holetschek,,,,,author,Jörg Holetschek
-http://rs.tdwg.org/abcddna/doc/guide/,,http://orcid.org/0000-0001-9945-7606,,,,,author,Walter G. Berendsohn
-http://rs.tdwg.org/abcddna/doc/xmlschema/,,,http://rs.tdwg.org/contributor/12,,,,editor,Gabriele Dröge
-http://rs.tdwg.org/hispid/doc/specification/,,,http://orcid.org/0000-0001-9832-3809,,,,editor,Barry J. Conn
-http://rs.tdwg.org/ebdc/doc/specification/,,http://viaf.org/viaf/61185227,,,,,author,Frances E M Cook
-http://rs.tdwg.org/poss/doc/specification/,,http://viaf.org/viaf/17299201,,,,,author,Hugh Synge
-http://rs.tdwg.org/pnbd/doc/specification/,,http://viaf.org/viaf/44359106,,,,,author,Frank A Bisby 
-http://rs.tdwg.org/apn/doc/data/,,http://viaf.org/viaf/41921927,,,,,author,Richard K. Brummitt
-http://rs.tdwg.org/apn/doc/data/,,http://viaf.org/viaf/49306391,,,,,author,C. Emma Powell
-http://rs.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/41921927,,,,,author,Richard K. Brummitt
-http://rs.tdwg.org/wgsrpd/doc/data/,,http://orcid.org/0000-0002-6321-9398,,,,,author,Francisco Pando
-http://rs.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/26204975,,,,,author,S. Hollis
-http://rs.tdwg.org/wgsrpd/doc/data/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/1f870a85-7a31-473e-ad76-fcce00469c83,,,,,author,Neil A. Brummitt
-http://rs.tdwg.org/xdf/doc/,,http://viaf.org/viaf/232871584,,,,,author,Richard J. White
-http://rs.tdwg.org/xdf/doc/,,http://viaf.org/viaf/64067143,,,,,author,Robert Allkin
-http://rs.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
-http://rs.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/76413207,,,,,author,Elizabeth R. Smith
-http://rs.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/5004494,,,,editor,Patricia K. Holmgren
-http://rs.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/69002167,,,,editor,Noel H. Holmgren
-http://rs.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/66539117,,,,editor,Lisa C. Barnett
-http://rs.tdwg.org/itfbgpr/doc/specification/,http://viaf.org/viaf/194025057,,,,,,lead author,Diane Wyse Jackson
-http://rs.tdwg.org/itfbgpr/doc/specification/,,,http://www.wikidata.org/entity/Q51885215,,,,editor,Christopher Hobson
-http://rs.tdwg.org/itfbgpr/doc/specification/,,,http://viaf.org/viaf/92780116,,,,editor,Barry Conn
-http://rs.tdwg.org/itfbgpr/doc/specification/,,,http://viaf.org/viaf/41424576,,,,editor,Richard Piacentini
-http://rs.tdwg.org/itfbgpr/doc/specification/,,,http://orcid.org/0000-0002-5705-8655,,,,editor,Steve Waldren
-http://rs.tdwg.org/itfbgpr/doc/specification/,,,http://www.wikidata.org/entity/Q51892660,,,,editor,Chris Ward
-http://rs.tdwg.org/itfbgpr/doc/specification/,,http://orcid.org/0000-0002-2524-2773,,,,,author,Ken Bailey
-http://rs.tdwg.org/itfbgpr/doc/specification/,,http://viaf.org/viaf/112328349,,,,,author,Peter Wyse Jackson
-http://rs.tdwg.org/itfbgpr/doc/specification/,,http://orcid.org/0000-0002-4726-7373,,,,,author,Simon Thornton Wood
-http://rs.tdwg.org/itfbgpr/doc/specification/,,http://viaf.org/viaf/69104243,,,,,author,Kerry Walter
-http://rs.tdwg.org/frw/doc/book/,,http://viaf.org/viaf/19771885,,,,,author,Armen Leonovich Takhtajan
-http://rs.tdwg.org/frw/doc/book/,,,,http://viaf.org/viaf/91310738,,,translator,Theodore J. Crovello
-http://rs.tdwg.org/frw/doc/book/,,,http://viaf.org/viaf/61620062,,,,editor,Arthur Cronquist
-http://rs.tdwg.org/bph/doc/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
-http://rs.tdwg.org/tl/doc/v1/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v2/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v3/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v4/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v5/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v6/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v7/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/s1/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/s2/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/s3/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/s4/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/s5/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/s6/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
-http://rs.tdwg.org/tl/doc/v1/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/v2/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/v3/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/v4/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/v5/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/v6/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/v7/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
-http://rs.tdwg.org/tl/doc/s7/,,http://viaf.org/viaf/80432287,,,,,author,Laurence J. Dorr
-http://rs.tdwg.org/tl/doc/s8/,,http://viaf.org/viaf/80432287,,,,,author,Laurence J. Dorr
-http://rs.tdwg.org/tl/doc/s1/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
-http://rs.tdwg.org/tl/doc/s2/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
-http://rs.tdwg.org/tl/doc/s3/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
-http://rs.tdwg.org/tl/doc/s4/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
-http://rs.tdwg.org/tl/doc/s5/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
-http://rs.tdwg.org/tl/doc/s6/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
-http://rs.tdwg.org/tl/doc/s7/,,http://viaf.org/viaf/84746223,,,,,author,Dan H. Nicolson
-http://rs.tdwg.org/tl/doc/s8/,,http://viaf.org/viaf/84746223,,,,,author,Dan H. Nicolson
+http://rs-test.tdwg.org/sds/doc/specification/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stanley Blum
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0001-7694-8250,,,,,author,Jonathan Rees
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0001-8332-2571,,,,,author,Joel Sachs
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0002-2954-9027,,,,,author,Greg Whitbread
+http://rs-test.tdwg.org/sds/doc/specification/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
+http://rs-test.tdwg.org/sds/doc/specification/,,,,,,http://orcid.org/0000-0002-2352-5497,review manager,Dag Endresen
+http://rs-test.tdwg.org/vms/doc/specification/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
+http://rs-test.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
+http://rs-test.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stan Blum
+http://rs-test.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
+http://rs-test.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0001-7694-8250,,,,,author,Jonathan Rees
+http://rs-test.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0001-8332-2571,,,,,author,Joel Sachs
+http://rs-test.tdwg.org/vms/doc/specification/,,http://orcid.org/0000-0002-2954-9027,,,,,author,Greg Whitbread
+http://rs-test.tdwg.org/vms/doc/specification/,,,,,,http://orcid.org/0000-0002-2352-5497,review manager,Dag Endresen
+http://rs-test.tdwg.org/ac/doc/termlist/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://www.wikidata.org/entity/Q51883873,,,,,author,José Cuadra
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0001-5172-8577,,,,,author,Patrick Leary
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
+http://rs-test.tdwg.org/ac/doc/termlist/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
+http://rs-test.tdwg.org/ac/doc/termlist/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
+http://rs-test.tdwg.org/ac/doc/structure/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
+http://rs-test.tdwg.org/ac/doc/structure/,,http://www.wikidata.org/entity/Q51883873,,,,,author,José Cuadra
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0001-5172-8577,,,,,author,Patrick Leary
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
+http://rs-test.tdwg.org/ac/doc/structure/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
+http://rs-test.tdwg.org/ac/doc/structure/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
+http://rs-test.tdwg.org/ac/doc/introduction/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-4852-2567,,,,,author,Vijay Barve
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://www.wikidata.org/entity/Q51883873,,,,,author,José Cuadra
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0001-5172-8577,,,,,author,Patrick Leary
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
+http://rs-test.tdwg.org/ac/doc/introduction/,,http://orcid.org/0000-0003-4176-2274,,,,,author,Ivan Teage
+http://rs-test.tdwg.org/ac/doc/introduction/,,,,,,http://orcid.org/0000-0003-4365-3135,review manager,Steve Baskauf
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-8234-0599,,,,,author,Mihail Carausu
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-3425-6499,,,,,author,Vishwas Chavan
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-2541-5822,,,,,author,Chris Freeland
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
+http://rs-test.tdwg.org/ac/doc/guide/,http://orcid.org/0000-0002-6992-9446,,,,,,lead author,Robert A. Morris
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0003-1593-1417,,,,,author,Dimitry Mozzherin
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-0772-0022,,,,,author,Annette Olson
+http://rs-test.tdwg.org/ac/doc/guide/,,http://orcid.org/0000-0002-3850-9983,,,,,author,Greg Riccardi
+http://rs-test.tdwg.org/ac/doc/guide/,,http://www.wikidata.org/entity/Q28913578,,,,,author,Éamonn Ó Tuama
+http://rs-test.tdwg.org/guid/doc/guidas/,http://www.wikidata.org/entity/Q51883936,,,,,,lead author,Kevin Richards
+http://rs-test.tdwg.org/guid/doc/lsidas/,,http://www.wikidata.org/entity/Q51883958,,,,,author,Ricardo Scachetti-Pereira
+http://rs-test.tdwg.org/guid/doc/lsidas/,,http://www.wikidata.org/entity/Q51883936,,,,,author,Kevin Richards
+http://rs-test.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0001-6492-4016,,,,,author,Donald Hobern
+http://rs-test.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0001-8900-6203,,,,,author,Lee Belbin
+http://rs-test.tdwg.org/guid/doc/lsidas/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stan Blum
+http://rs-test.tdwg.org/dwc/index/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
+http://rs-test.tdwg.org/dwc/index/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/dwc/index/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
+http://rs-test.tdwg.org/dwc/index/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
+http://rs-test.tdwg.org/dwc/index/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
+http://rs-test.tdwg.org/dwc/index/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
+http://rs-test.tdwg.org/dwc/terms/guides/rdf/,http://orcid.org/0000-0003-4365-3135,,,,,,lead author,Steve Baskauf
+http://rs-test.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
+http://rs-test.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0002-5905-1617,,,,,author,John Deck 
+http://rs-test.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-1031-3249,,,,,author,Campbell Webb 
+http://rs-test.tdwg.org/dwc/terms/guides/rdf/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,,,,,author,Paul J. Morris 
+http://rs-test.tdwg.org/dwc/terms/guides/rdf/,,http://orcid.org/0000-0003-0632-7576,,,,,author,Mark Schildhauer 
+http://rs-test.tdwg.org/dwc/terms/guides/text/,http://orcid.org/0000-0001-6215-3617,,,,,,lead author,Tim Robertson
+http://rs-test.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
+http://rs-test.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
+http://rs-test.tdwg.org/dwc/terms/guides/text/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
+http://rs-test.tdwg.org/dwc/terms/guides/text/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
+http://rs-test.tdwg.org/dwc/terms/guides/xml/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
+http://rs-test.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
+http://rs-test.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
+http://rs-test.tdwg.org/dwc/terms/guides/xml/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
+http://rs-test.tdwg.org/dwc/terms/guides/xml/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
+http://rs-test.tdwg.org/dwc/terms/simple/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
+http://rs-test.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
+http://rs-test.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
+http://rs-test.tdwg.org/dwc/terms/simple/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
+http://rs-test.tdwg.org/dwc/terms/simple/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
+http://rs-test.tdwg.org/dwc/terms/namespace/,http://orcid.org/0000-0003-1144-0290,,,,,,lead author,John Wieczorek
+http://rs-test.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
+http://rs-test.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0001-6215-3617,,,,,author,Tim Robertson
+http://rs-test.tdwg.org/dwc/terms/namespace/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
+http://rs-test.tdwg.org/dwc/terms/namespace/,,,,,,http://orcid.org/0000-0002-5178-4170,review manager,Gail E. Kampmeier
+http://rs-test.tdwg.org/tapir/doc/summary/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
+http://rs-test.tdwg.org/tapir/doc/specification/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
+http://rs-test.tdwg.org/tapir/doc/specification/,http://www.wikidata.org/entity/Q51883987,,,,,,lead author,Charles Copp
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0002-4325-4030,,,,,author,Anton Güntsch 
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0002-6513-4996,,,,,author,Dave Vieglais
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0001-6492-4016,,,,,author,Donald Hobern
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://www.wikidata.org/entity/Q51883962,,,,,author,Javier de la Torre
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0003-1144-0290,,,,,author,John Wieczorek
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://www.wikidata.org/entity/Q51883993,,,,,author,Robert Gales
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://orcid.org/0000-0002-4419-6960,,,,,author,Stanley Blum
+http://rs-test.tdwg.org/tapir/doc/specification/,,http://www.wikidata.org/entity/Q51883997,,,,,author,Perry Steven
+http://rs-test.tdwg.org/tapir/doc/specification/,,,,,,http://www.wikidata.org/entity/Q51883977,review manager,Piers Higgs
+http://rs-test.tdwg.org/tapir/doc/xmlschema/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
+http://rs-test.tdwg.org/tapir/doc/conceptaliases/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
+http://rs-test.tdwg.org/tapir/doc/guide/,http://www.wikidata.org/entity/Q51883987,,,,,,lead author,Charles Copp
+http://rs-test.tdwg.org/tapir/doc/guide/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
+http://rs-test.tdwg.org/tapir/doc/guide/,,,,,http://orcid.org/0000-0001-8900-6203,,reviewer,Lee Belbin
+http://rs-test.tdwg.org/tapir/doc/guide/,,,,,http://orcid.org/0000-0001-7757-1889,,reviewer,Markus Döring
+http://rs-test.tdwg.org/tapir/doc/models/,http://orcid.org/0000-0002-7104-7266,,,,,,lead author,Renato De Giovanni
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0001-7757-1889,,,,,author,Markus Döring
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0002-7104-7266,,,,,author,Renato De Giovanni
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://www.wikidata.org/entity/Q51883962,,,,,author,Javier de la Torre
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0001-9945-7606,,,,,author,Walter G. Berendsohn
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
+http://rs-test.tdwg.org/abcd/doc/primer/,,http://orcid.org/0000-0003-2863-2491,,,,,author,William Ulate 
+http://rs-test.tdwg.org/abcd/doc/xmlschema/,http://orcid.org/0000-0001-9945-7606,,,,,,lead author,Walter G. Berendsohn
+http://rs-test.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
+http://rs-test.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-6658-6636,,,,,author,Kevin R. Thiele
+http://rs-test.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
+http://rs-test.tdwg.org/sdd/doc/introduction/,,http://orcid.org/0000-0002-4601-8180,,,,,author,P. Bryan Heidorn
+http://rs-test.tdwg.org/sdd/doc/xmlschema/,,http://orcid.org/0000-0001-7023-7386,,,,,author,Gregor Hagedorn
+http://rs-test.tdwg.org/sdd/doc/xmlschema/,,http://orcid.org/0000-0002-6658-6636,,,,,author,Kevin R. Thiele
+http://rs-test.tdwg.org/sdd/doc/xmlschema/,,http://orcid.org/0000-0002-6992-9446,,,,,author,Robert A. Morris
+http://rs-test.tdwg.org/tcs/doc/guide/,,http://orcid.org/0000-0002-0023-2595,,,,,author,Jessie Kennedy
+http://rs-test.tdwg.org/tcs/doc/guide/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/tcs/doc/xmlschema/,,http://orcid.org/0000-0002-0023-2595,,,,,author,Jessie Kennedy
+http://rs-test.tdwg.org/tcs/doc/xmlschema/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/delta/doc/definition/,,http://viaf.org/viaf/48257155,,,,,author,Michael J. Dallwitz
+http://rs-test.tdwg.org/delta/doc/definition/,,http://viaf.org/viaf/276948380,,,,,author,Toni Anne Paine
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-8339-728X,,,,,author,Constance Rinaldo
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0001-9382-5594,,,,,author,Carol Roetzel Butler
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://rs-test.tdwg.org/contributor/3,,,,,author,Doug Holland
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://viaf.org/viaf/236192,,,,,author,Barbara Mathé
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-4737-745X,,,,,author,Günter Waibel
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
+http://rs-test.tdwg.org/ncd/doc/guide/,,http://viaf.org/viaf/278739412,,,,,author,Ruud Altenburg
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0003-2231-6228,,,,,author,Neil Thomson
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0003-4581-1379,,,,,author,Roger Hyam
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-8339-728X,,,,,author,Constance Rinaldo
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0001-9382-5594,,,,,author,Carol Roetzel Butler
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://rs-test.tdwg.org/contributor/3,,,,,author,Doug Holland
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://viaf.org/viaf/236192,,,,,author,Barbara Mathé
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-4737-745X,,,,,author,Günter Waibel
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://orcid.org/0000-0002-3090-1761,,,,,author,Wouter Addink
+http://rs-test.tdwg.org/ncd/doc/specification/,,http://viaf.org/viaf/278739412,,,,,author,Ruud Altenburg
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://rs-test.tdwg.org/contributor/12,,,,,author,Gabriele Dröge
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://viaf.org/viaf/77423299,,,,,author,Holger Zetzsche
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://viaf.org/viaf/265750549,,,,,author,Birgit Gemeinholzer
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://orcid.org/0000-0002-4325-4030,,,,,author,Anton Güntsch
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/21e8d5c7-464f-41c3-9e9c-1ce09b0d4f1f,,,,,author,Wolf-Henning Kusber
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://rs-test.tdwg.org/contributor/14,,,,,author,Patricia Kelbert
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://www.bgbm.org/de/personal/joerg-holetschek,,,,,author,Jörg Holetschek
+http://rs-test.tdwg.org/abcddna/doc/guide/,,http://orcid.org/0000-0001-9945-7606,,,,,author,Walter G. Berendsohn
+http://rs-test.tdwg.org/abcddna/doc/xmlschema/,,,http://rs-test.tdwg.org/contributor/12,,,,editor,Gabriele Dröge
+http://rs-test.tdwg.org/hispid/doc/specification/,,,http://orcid.org/0000-0001-9832-3809,,,,editor,Barry J. Conn
+http://rs-test.tdwg.org/ebdc/doc/specification/,,http://viaf.org/viaf/61185227,,,,,author,Frances E M Cook
+http://rs-test.tdwg.org/poss/doc/specification/,,http://viaf.org/viaf/17299201,,,,,author,Hugh Synge
+http://rs-test.tdwg.org/pnbd/doc/specification/,,http://viaf.org/viaf/44359106,,,,,author,Frank A Bisby 
+http://rs-test.tdwg.org/apn/doc/data/,,http://viaf.org/viaf/41921927,,,,,author,Richard K. Brummitt
+http://rs-test.tdwg.org/apn/doc/data/,,http://viaf.org/viaf/49306391,,,,,author,C. Emma Powell
+http://rs-test.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/41921927,,,,,author,Richard K. Brummitt
+http://rs-test.tdwg.org/wgsrpd/doc/data/,,http://orcid.org/0000-0002-6321-9398,,,,,author,Francisco Pando
+http://rs-test.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/26204975,,,,,author,S. Hollis
+http://rs-test.tdwg.org/wgsrpd/doc/data/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/1f870a85-7a31-473e-ad76-fcce00469c83,,,,,author,Neil A. Brummitt
+http://rs-test.tdwg.org/xdf/doc/,,http://viaf.org/viaf/232871584,,,,,author,Richard J. White
+http://rs-test.tdwg.org/xdf/doc/,,http://viaf.org/viaf/64067143,,,,,author,Robert Allkin
+http://rs-test.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
+http://rs-test.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/76413207,,,,,author,Elizabeth R. Smith
+http://rs-test.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/5004494,,,,editor,Patricia K. Holmgren
+http://rs-test.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/69002167,,,,editor,Noel H. Holmgren
+http://rs-test.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/66539117,,,,editor,Lisa C. Barnett
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,http://viaf.org/viaf/194025057,,,,,,lead author,Diane Wyse Jackson
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,,http://www.wikidata.org/entity/Q51885215,,,,editor,Christopher Hobson
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,,http://viaf.org/viaf/92780116,,,,editor,Barry Conn
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,,http://viaf.org/viaf/41424576,,,,editor,Richard Piacentini
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,,http://orcid.org/0000-0002-5705-8655,,,,editor,Steve Waldren
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,,http://www.wikidata.org/entity/Q51892660,,,,editor,Chris Ward
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,http://orcid.org/0000-0002-2524-2773,,,,,author,Ken Bailey
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,http://viaf.org/viaf/112328349,,,,,author,Peter Wyse Jackson
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,http://orcid.org/0000-0002-4726-7373,,,,,author,Simon Thornton Wood
+http://rs-test.tdwg.org/itfbgpr/doc/specification/,,http://viaf.org/viaf/69104243,,,,,author,Kerry Walter
+http://rs-test.tdwg.org/frw/doc/book/,,http://viaf.org/viaf/19771885,,,,,author,Armen Leonovich Takhtajan
+http://rs-test.tdwg.org/frw/doc/book/,,,,http://viaf.org/viaf/91310738,,,translator,Theodore J. Crovello
+http://rs-test.tdwg.org/frw/doc/book/,,,http://viaf.org/viaf/61620062,,,,editor,Arthur Cronquist
+http://rs-test.tdwg.org/bph/doc/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
+http://rs-test.tdwg.org/tl/doc/v1/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v2/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v3/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v4/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v5/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v6/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v7/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/s1/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/s2/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/s3/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/s4/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/s5/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/s6/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
+http://rs-test.tdwg.org/tl/doc/v1/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/v2/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/v3/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/v4/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/v5/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/v6/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/v7/,,http://viaf.org/viaf/9863210,,,,,author,Richard S. Cowan
+http://rs-test.tdwg.org/tl/doc/s7/,,http://viaf.org/viaf/80432287,,,,,author,Laurence J. Dorr
+http://rs-test.tdwg.org/tl/doc/s8/,,http://viaf.org/viaf/80432287,,,,,author,Laurence J. Dorr
+http://rs-test.tdwg.org/tl/doc/s1/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
+http://rs-test.tdwg.org/tl/doc/s2/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
+http://rs-test.tdwg.org/tl/doc/s3/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
+http://rs-test.tdwg.org/tl/doc/s4/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
+http://rs-test.tdwg.org/tl/doc/s5/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
+http://rs-test.tdwg.org/tl/doc/s6/,,http://viaf.org/viaf/11457657,,,,,author,Erik A. Mennega
+http://rs-test.tdwg.org/tl/doc/s7/,,http://viaf.org/viaf/84746223,,,,,author,Dan H. Nicolson
+http://rs-test.tdwg.org/tl/doc/s8/,,http://viaf.org/viaf/84746223,,,,,author,Dan H. Nicolson

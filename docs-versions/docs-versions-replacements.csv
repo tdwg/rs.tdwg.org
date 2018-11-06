@@ -1,7 +1,7 @@
 replacing_document,replaced_document
-http://rs.tdwg.org/sds/doc/specification/2017-04-25,http://rs.tdwg.org/sds/doc/specification/2007-11-05
-http://rs.tdwg.org/itfbgpr/doc/specification/1998,http://rs.tdwg.org/itfbgpr/doc/specification/1987-09-15
-http://rs.tdwg.org/hispid/doc/specification/2007-05-11,http://rs.tdwg.org/hispid/doc/specification/1993
-http://rs.tdwg.org/hispid/doc/specification/1993,http://rs.tdwg.org/hispid/doc/specification/1989
-http://rs.tdwg.org/bph/doc/2004,http://rs.tdwg.org/bph/doc/1968
-http://rs.tdwg.org/bph/doc/2004,http://rs.tdwg.org/bphsup/doc/book/1991
+http://rs-test.tdwg.org/sds/doc/specification/2017-04-25,http://rs-test.tdwg.org/sds/doc/specification/2007-11-05
+http://rs-test.tdwg.org/itfbgpr/doc/specification/1998,http://rs-test.tdwg.org/itfbgpr/doc/specification/1987-09-15
+http://rs-test.tdwg.org/hispid/doc/specification/2007-05-11,http://rs-test.tdwg.org/hispid/doc/specification/1993
+http://rs-test.tdwg.org/hispid/doc/specification/1993,http://rs-test.tdwg.org/hispid/doc/specification/1989
+http://rs-test.tdwg.org/bph/doc/2004,http://rs-test.tdwg.org/bph/doc/1968
+http://rs-test.tdwg.org/bph/doc/2004,http://rs-test.tdwg.org/bphsup/doc/book/1991

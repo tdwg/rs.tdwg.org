@@ -1,8 +1,8 @@
 replacing_term,replaced_term_localName
-http://rs.tdwg.org/dwc/terms/FossilSpecimen,FossilSpecimen
-http://rs.tdwg.org/dwc/terms/HumanObservation,HumanObservation
-http://rs.tdwg.org/dwc/terms/LivingSpecimen,LivingSpecimen
+http://rs-test.tdwg.org/dwc/terms/FossilSpecimen,FossilSpecimen
+http://rs-test.tdwg.org/dwc/terms/HumanObservation,HumanObservation
+http://rs-test.tdwg.org/dwc/terms/LivingSpecimen,LivingSpecimen
 http://purl.org/dc/terms/Location,Location
-http://rs.tdwg.org/dwc/terms/MachineObservation,MachineObservation
-http://rs.tdwg.org/dwc/terms/MaterialSample,MaterialSample
-http://rs.tdwg.org/dwc/terms/PreservedSpecimen,PreservedSpecimen
+http://rs-test.tdwg.org/dwc/terms/MachineObservation,MachineObservation
+http://rs-test.tdwg.org/dwc/terms/MaterialSample,MaterialSample
+http://rs-test.tdwg.org/dwc/terms/PreservedSpecimen,PreservedSpecimen

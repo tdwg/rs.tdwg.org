@@ -1,2 +1,2 @@
 domainRoot,coreClassFile,documentClass,creator,outputDirectory,outFileNameAfter,separator,baseIriColumn,modifiedColumn
-http://rs.tdwg.org/dwc/curatorial/,curatorial.csv,foaf:document,Biodiversity Information Standards (TDWG),c:\test\output\,,",",term_localName,document_modified
+http://rs-test.tdwg.org/dwc/curatorial/,curatorial.csv,foaf:document,Biodiversity Information Standards (TDWG),c:\test\output\,,",",term_localName,document_modified
