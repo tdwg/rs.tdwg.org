@@ -236,7 +236,7 @@ declare function html:term-metadata($record as element(),$version as xs:string,$
    <tr><td><strong>Term IRI:</strong></td><td>{$record/term_isDefinedBy/text()||$record/term_localName/text()}</td></tr>,
   
    (: terms not defined by TDWG may have different version patterns, or may not have versions :)
-   if (contains($record/term_isDefinedBy/text(),"rs.tdwg.org"))
+   if (contains($record/term_isDefinedBy/text(), html:subdomain() ))
    then (
    <tr><td><strong>Term version IRI:</strong></td><td><a href='{$version}'>{$version}</a></td></tr>
    )
