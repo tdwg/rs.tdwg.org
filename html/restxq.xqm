@@ -2,7 +2,7 @@
 
 module namespace page = 'http://basex.org/modules/web-page';
 import module namespace serialize = 'http://bioimages.vanderbilt.edu/xqm/serialize' at 'https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/serialize.xqm';
-import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/html.xqm';
+import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/test/html/html.xqm';
 
 (:----------------------------------------------------------------------------------------------:)
 (: Main functions for handling URI patterns :)

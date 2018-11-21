@@ -4,12 +4,12 @@ module namespace html = 'http://rs.tdwg.com/html';
 
 declare function html:subdomain()
 {
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/subdomain.txt'/>)[2])
+  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/test/html/subdomain.txt'/>)[2])
 };
 
 declare function html:branch()
 {
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/branch.txt'/>)[2])
+  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/test/html/branch.txt'/>)[2])
 };
 
 declare function html:load-term-list-lookup() as element()*
@@ -115,7 +115,7 @@ return $xmlConstants/csv/record
 (: go through the term list or list versions records and pull the metadata for the particular list. There should be exactly one record element returned :)
 declare function html:load-metadata-record($list-iri as xs:string,$db as xs:string) as node()*
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
 let $coreDoc := $config/coreClassFile/text()
@@ -132,7 +132,7 @@ return $record
 (: Load the metadata for the classes that are linked to the core class :)
 declare function html:generateLinkedMetadata($db as xs:string) as node()*
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 let $metadataSeparator := $config/separator/text()
 
@@ -211,7 +211,7 @@ declare function html:generate-vocabulary-term-list-members($vocabulary as xs:st
 (: go through the term list or term list versions records ($db) and pull the metadata for all lists that are part of a particular vocabulary. :)
 declare function html:load-list-records($termLists as xs:string+,$db as xs:string) as element()*
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
@@ -337,7 +337,7 @@ return
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-term-html($db as xs:string,$ns as xs:string,$localName as xs:string) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
@@ -389,7 +389,7 @@ return
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-term-version-html($db as xs:string,$ns as xs:string,$localName as xs:string) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
@@ -858,7 +858,7 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-list-html($db as xs:string,$ns as xs:string) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
@@ -1000,7 +1000,7 @@ declare function html:generate-list-versions-toc-etc-html($termListVersionIri as
 (: Generate the HTML table of metadata about the terms in the list:)
 declare function html:generate-list-versions-html($db as xs:string,$ns as xs:string,$members as xs:string+) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
@@ -1034,7 +1034,7 @@ fn:string-length($record/version/text())-11) (: find the part of the version bef
 (: This is the test template web page for the /home URI pattern :)
 declare function html:generate-list($db)
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()
+let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||html:branch()||"/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
