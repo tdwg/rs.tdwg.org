@@ -57,7 +57,7 @@ declare
                       <output:media-type value='{$response-media-type}'/>
                     </output:serialization-parameters>
                   </rest:response>,
-                  serialize:main-github("",$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$stripped-local-name,"dump","false")
+                  serialize:main-github("",$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$stripped-local-name,"dump","false")
                   )
       else page:not-found()
   else
@@ -76,7 +76,7 @@ declare
 
 declare function page:check-db($db)
 {
-  let $metadataDoc := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/'||page:branch()||'/index/index-datasets.csv'/>)[2]
+  let $metadataDoc := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv'/>)[2]
   let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
   let $metadata := $xmlMetadata/csv/record
   for $record in $metadata
@@ -363,7 +363,7 @@ declare
   function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/term-lists/term-lists.csv"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
   let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
@@ -386,7 +386,7 @@ declare
   function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/term-lists/term-lists.csv"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
   let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
@@ -765,7 +765,7 @@ declare function page:generic-simple-id($local-id,$db,$acceptHeader)
 (: Handle request for specific representation when requested with file extension :)
 declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
 {
-  if (serialize:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$db))  (: check whether the resource is in the database :)
+  if (serialize:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db))  (: check whether the resource is in the database :)
   then
     (: When a specific file extension is requested, override the requested content type. :)
     let $response-media-type := page:determine-media-type($extension)
@@ -792,13 +792,13 @@ declare function page:return-representation($response-media-type,$lookup-string,
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  serialize:main-github($lookup-string,$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$db,"single","false")
+  serialize:main-github($lookup-string,$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db,"single","false")
 };
 
 (: Function to return a web page for vocabs etc. :)
 declare function page:handle-html($db,$lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/html/redirects.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/redirects.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -828,7 +828,7 @@ return
 (: Function to redirect to a web page for standards documents :)
 declare function page:handle-docs-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/docs/docs.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -840,7 +840,7 @@ return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 (: Function to redirect to a web page for standards documents versions :)
 declare function page:handle-docs-versions-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/docs-versions/docs-versions.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs-versions/docs-versions.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -873,7 +873,7 @@ declare function page:temp-redirect($base,$local-id)
 (: 303 See Also redirect to specific representation having file exension, based on requested media type :)
 declare function page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
 {
-  if(serialize:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$db))  (: check whether the resource is in the database :)
+  if(serialize:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/",$db))  (: check whether the resource is in the database :)
   then
       let $extension := page:determine-extension($acceptHeader)
       return
@@ -935,9 +935,4 @@ declare function page:determine-type-flag($extension)
 declare function page:subdomain()
 {
   normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/subdomain.txt'/>)[2])
-};
-
-declare function page:branch()
-{
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/branch.txt'/>)[2])
 };
