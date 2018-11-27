@@ -4,12 +4,12 @@ module namespace html = 'http://rs.tdwg.com/html';
 
 declare function html:subdomain()
 {
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/test/html/subdomain.txt'/>)[2])
+  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/subdomain.txt'/>)[2])
 };
 
 declare function html:branch()
 {
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/test/html/branch.txt'/>)[2])
+  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/branch.txt'/>)[2])
 };
 
 declare function html:load-term-list-lookup() as element()*
