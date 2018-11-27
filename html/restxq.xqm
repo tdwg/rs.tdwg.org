@@ -76,7 +76,7 @@ declare
 
 declare function page:check-db($db)
 {
-  let $metadataDoc := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/'||page:branch()||'/index/index-datasets.csv'/>)[2]
+  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/index/index-datasets.csv"}'/>)[2]
   let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
   let $metadata := $xmlMetadata/csv/record
   for $record in $metadata
