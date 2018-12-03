@@ -1,6 +1,7 @@
 xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.com/html';
+declare variable $stylesheetUrl := "https://s3.us-east-2.amazonaws.com/sparql-upload/default.css"
 
 declare function html:subdomain()
 {
@@ -360,7 +361,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{"Term metadata for "||$ns||":"||$localName}</title>
-    <link href="https://s3.us-east-2.amazonaws.com/sparql-upload/default.css" rel="stylesheet"/>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:term-metadata($record,$version,$linkedMetadata,$ns),
@@ -415,6 +416,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</title>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
      <strong>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</strong>,
@@ -459,6 +461,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$vocabularyMetadata/label/text()}</title>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-vocabulary-metadata-html($vocabularyMetadata),
@@ -600,6 +603,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$vocabularyVersionMetadata/label/text()||" "||$vocabularyVersionMetadata/version_issued/text()||" version"}</title>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-vocabulary-version-metadata-html($vocabularyVersionMetadata),
@@ -730,6 +734,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$listMetadata/label/text()}</title>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-list-metadata-html($listMetadata,$std,$version),
@@ -905,6 +910,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$listMetadata/label/text()||" "||$listMetadata/version_modified/text()||" version"}</title>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-list-versions-metadata-html($listMetadata,$std,$termListIri),
@@ -1051,7 +1057,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>Test</title>
-      <link href="https://raw.githubusercontent.com/baskaufs/tdwg-standards/master/html/config/default.css" rel="stylesheet" type="text/css"/>
+    <link href="{$stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>
      <table cellspacing="0" class="border">
