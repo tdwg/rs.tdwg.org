@@ -360,6 +360,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{"Term metadata for "||$ns||":"||$localName}</title>
+    <link href="https://raw.githubusercontent.com/baskaufs/tdwg-standards/master/html/config/default.css" rel="stylesheet"/>
   </head>
   <body>{
     html:term-metadata($record,$version,$linkedMetadata,$ns),
