@@ -113,6 +113,27 @@ let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator
 return $xmlConstants/csv/record
 };
 
+(: Generate a header :)
+declare function html:generate-header() as element()
+{
+<nav class="navbar navbar-expand navbar-dark bg-secondary">
+    <div class="container">
+        <a class="navbar-brand mr-md-3" href="http://www.tdwg.org">TDWG</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-md-auto">
+            </ul>
+            <ul class="navbar-nav">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/tdwg/rs.tdwg.org/">GitHub</a>
+                </li>
+            
+            </ul>
+        </nav>
+    </div>
+</nav>
+};
+
 (: Generate a footer :)
 declare function html:generate-footer() as element()+
 {
@@ -383,6 +404,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
     html:term-metadata($record,$version,$linkedMetadata,$ns),
     <br/>,
     <p><strong>Metadata about this term are available in the following formats/serializations:</strong></p>,
@@ -438,6 +460,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
      <strong>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</strong>,
      <br/>,
     html:term-version-metadata($record,$versionOf,$replacements,$ns),
@@ -483,6 +506,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
     html:generate-vocabulary-metadata-html($vocabularyMetadata),
     html:generate-vocabulary-toc-etc-html($vocabularyIri),
     html:generate-vocabulary-table-html($vocabularyIri),
@@ -564,6 +588,7 @@ declare function html:generate-vocabulary-toc-etc-html($vocabularyIri as xs:stri
     <tr><td>JSON-LD</td><td>{$iri||".json"}</td><td><a href="{$iri||'.json'}">{$iri||".json"}</a></td></tr>
     )
   }</table>
+  <p> </p>
   <h2><a id="4">4 Term lists that are part of this vocabulary</a></h2>
 </div>
 };
@@ -616,6 +641,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
     html:generate-vocabulary-version-metadata-html($vocabularyVersionMetadata),
     html:generate-vocabulary-version-toc-etc-html($vocabularyVersionIri),
     html:generate-vocabulary-version-table-html($vocabularyVersionIri),
@@ -747,6 +773,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
     html:generate-list-metadata-html($listMetadata,$std,$version),
     html:generate-list-toc-etc-html($termListIri),
     html:generate-list-html(html:find-list-dbname($termListIri),$ns),
@@ -776,6 +803,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
     html:generate-list-metadata-html($listMetadata,$std,$version),
 
   if ($termListIri = html:subdomain()||"dwc/terms/")
@@ -924,6 +952,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
+    html:generate-header(),
     html:generate-list-versions-metadata-html($listMetadata,$std,$termListIri),
     html:generate-list-versions-toc-etc-html($termListVersionIri),
     html:generate-list-versions-html(html:find-list-version-dbname($termListIri),$ns,$members),
