@@ -763,6 +763,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$listMetadata/label/text()}</title>
+    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-list-metadata-html($listMetadata,$std,$version),
