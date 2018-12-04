@@ -125,7 +125,7 @@ declare function html:generate-header() as element()
             <ul class="navbar-nav">
             
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/tdwg/rs.tdwg.org/">GitHub</a>
+                    <a class="nav-link" href="https://github.com/tdwg/rs.tdwg.org/blob/master/README.md">GitHub</a>
                 </li>
             
             </ul>
