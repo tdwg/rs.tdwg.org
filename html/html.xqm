@@ -1,7 +1,7 @@
 xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.com/html';
-declare variable $html:stylesheetUrl := "https://s3.us-east-2.amazonaws.com/sparql-upload/default.css";
+declare variable $html:stylesheetUrl := "https://www.tdwg.org/theme/css/main.css";
 
 declare function html:subdomain()
 {
