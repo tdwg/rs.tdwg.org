@@ -579,9 +579,8 @@ return
 };
 
 (: Generate a footer and return it as a div element :)
-declare function html:generate-footer() as element()
+declare function html:generate-footer() as element()+
 {
-  <div>
         <footer>
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
@@ -606,7 +605,6 @@ declare function html:generate-footer() as element()
         <script src="https://www.tdwg.org/theme/js/popper.min.js"></script>
         <script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>
         <script src="https://www.tdwg.org/theme/js/theme.js"></script>
-</div>
 };
 
 (:--------------------------------------------------------------------------------------------------:)
