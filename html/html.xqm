@@ -591,7 +591,6 @@ declare function html:generate-footer() as element()+
     </div>
 </footer>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://www.tdwg.org/theme/js/jquery.min.js"></script>
 <script src="https://www.tdwg.org/theme/js/popper.min.js"></script>
 <script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>
