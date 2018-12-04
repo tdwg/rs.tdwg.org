@@ -585,7 +585,7 @@ declare function html:generate-footer() as element()
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="https://www.tdwg.org"><img src="https://www.tdwg.org/theme/images/footer_logo.png"/></a>
-                    <nav class="nav justify-content-end"/>
+                    <nav class="nav justify-content-end">
                         <a class="nav-link" href="https://www.tdwg.org/about/">What is TDWG?</a>
                         <a class="nav-link" href="https://www.tdwg.org/about/contact/">Contact us</a>
                         <a class="nav-link" href="https://www.tdwg.org/about/privacy/">Privacy policy</a>
