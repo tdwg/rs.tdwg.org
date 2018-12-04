@@ -129,7 +129,7 @@ declare function html:generate-header() as element()
                 </li>
             
             </ul>
-        </nav>
+        </div>
     </div>
 </nav>
 };
