@@ -896,6 +896,7 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
     <tr><td>JSON-LD</td><td>{$iri||".json"}</td><td><a href="{$iri||'.json'}">{$iri||".json"}</a></td></tr>
     )
   }</table>
+  <p> </p>
   <h2><a id="4">4 Terms that are members of this list</a></h2>
 </div>
 };
