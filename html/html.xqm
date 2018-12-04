@@ -113,6 +113,25 @@ let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator
 return $xmlConstants/csv/record
 };
 
+(: Generate a footer :)
+declare function html:generate-footer() as element()+
+{
+ <footer>
+    <div class="container">
+		<a href="https://www.tdwg.org/"><img src="https://www.tdwg.org/theme/images/footer_logo.png"/></a>
+
+        <div class="theme-license">
+            Content on this site, made open by <a href="https://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a> is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        </div>
+    </div>
+</footer>,
+
+<script src="https://www.tdwg.org/theme/js/jquery.min.js"></script>,
+<script src="https://www.tdwg.org/theme/js/popper.min.js"></script>,
+<script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>,
+<script src="https://www.tdwg.org/theme/js/theme.js"></script>
+};
+
 (: go through the term list or list versions records and pull the metadata for the particular list. There should be exactly one record element returned :)
 declare function html:load-metadata-record($list-iri as xs:string,$db as xs:string) as node()*
 {
@@ -576,25 +595,6 @@ return
          )
        }
      </div>
-};
-
-(: Generate a footer and return it as a div element :)
-declare function html:generate-footer() as element()+
-{
- <footer>
-    <div class="container">
-		<a href="https://www.tdwg.org/"><img src="https://www.tdwg.org/theme/images/footer_logo.png"/></a>
-
-        <div class="theme-license">
-            Content on this site, made open by <a href="https://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a> is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-        </div>
-    </div>
-</footer>
-
-<script src="https://www.tdwg.org/theme/js/jquery.min.js"></script>
-<script src="https://www.tdwg.org/theme/js/popper.min.js"></script>
-<script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>
-<script src="https://www.tdwg.org/theme/js/theme.js"></script>
 };
 
 (:--------------------------------------------------------------------------------------------------:)
