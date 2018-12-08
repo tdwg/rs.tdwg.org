@@ -1,7 +1,6 @@
 xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.com/html';
-declare variable $html:stylesheetUrl := "https://www.tdwg.org/theme/css/main.css";
 
 declare function html:subdomain()
 {
@@ -401,7 +400,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{"Term metadata for "||$ns||":"||$localName}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-header(),
@@ -457,8 +455,7 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
-  </head>
+   </head>
   <body>{
     html:generate-header(),
      <strong>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</strong>,
@@ -503,7 +500,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$vocabularyMetadata/label/text()}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-header(),
@@ -638,7 +634,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$vocabularyVersionMetadata/label/text()||" "||$vocabularyVersionMetadata/version_issued/text()||" version"}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-header(),
@@ -770,7 +765,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$listMetadata/label/text()}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-header(),
@@ -800,7 +794,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$listMetadata/label/text()}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-header(),
@@ -950,7 +943,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>{$listMetadata/label/text()||" "||$listMetadata/version_modified/text()||" version"}</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
     html:generate-header(),
@@ -1098,7 +1090,6 @@ return
   <head>
     <meta charset="utf-8"/>
     <title>Test</title>
-    <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>
      <table cellspacing="0" class="border">
