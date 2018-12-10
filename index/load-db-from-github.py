@@ -1,5 +1,6 @@
-# Steve Baskauf 2017-07-05 Freely available under a GNU GPLv3 license. 
+# Steve Baskauf 2018-12-10 Freely available under a GNU GPLv3 license. 
 # By its nature, this software overwrites and deletes data, so use at your own risk. 
+# This is hacked from rdf-mover.py https://github.com/baskaufs/msc/blob/master/python/rdf-mover.py
 # See https://github.com/baskaufs/guid-o-matic/blob/master/rdf-mover.md for usage notes.
 
 #libraries for GUI interface
