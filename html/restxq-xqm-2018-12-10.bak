@@ -56,7 +56,7 @@ declare
                       <output:media-type value='{$response-media-type}'/>
                     </output:serialization-parameters>
                   </rest:response>,
-                  page:main-db("",$flag,"single",$db)
+                  page:main-github("",$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$stripped-local-name,"dump","false")
                   )
       else page:not-found()
   else
@@ -764,7 +764,7 @@ declare function page:generic-simple-id($local-id,$db,$acceptHeader)
 (: Handle request for specific representation when requested with file extension :)
 declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
 {
-  if (page:find-db($lookup-string,$db))  (: check whether the resource is in the database :)
+  if (page:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$db))  (: check whether the resource is in the database :)
   then
     (: When a specific file extension is requested, override the requested content type. :)
     let $response-media-type := page:determine-media-type($extension)
@@ -791,7 +791,7 @@ declare function page:return-representation($response-media-type,$lookup-string,
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  page:main-db($lookup-string,$flag,"single",$db)
+  page:main-github($lookup-string,$flag,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$db,"single","false")
 };
 
 (: Function to return a web page for vocabs etc. :)
@@ -872,7 +872,7 @@ declare function page:temp-redirect($base,$local-id)
 (: 303 See Also redirect to specific representation having file exension, based on requested media type :)
 declare function page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
 {
-  if(page:find-db($lookup-string,$db))  (: check whether the resource is in the database :)
+  if(page:find-github($lookup-string,"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/",$db))  (: check whether the resource is in the database :)
   then
       let $extension := page:determine-extension($acceptHeader)
       return
