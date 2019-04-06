@@ -56,7 +56,7 @@ declare
                       <output:media-type value='{$response-media-type}'/>
                     </output:serialization-parameters>
                   </rest:response>,
-                  page:main-db("",$flag,"dump",$db)
+                  page:main-db("",$flag,"single",$db)
                   )
       else page:not-found()
   else
