@@ -5,13 +5,13 @@ label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
 $link,dcat:distribution,iri,_:1,,$root
 $constant,dcat:mediaType,iri,https://www.iana.org/assignments/media-types/application/rdf+xml,,_:1
-term_localName,dcat:downloadURL,iri,http://rs.tdwg.org/dump/,.rdf,_:1
+term_localName,dcat:downloadURL,iri,http://rs-test.tdwg.org/dump/,.rdf,_:1
 $constant,dcterms:license,iri,https://creativecommons.org/publicdomain/zero/1.0/,,_:1
 $link,dcat:distribution,iri,_:2,,$root
 $constant,dcat:mediaType,iri,https://www.iana.org/assignments/media-types/application/ld+json,,_:2
-term_localName,dcat:downloadURL,iri,http://rs.tdwg.org/dump/,.json,_:2
+term_localName,dcat:downloadURL,iri,http://rs-test.tdwg.org/dump/,.json,_:2
 $constant,dcterms:license,iri,https://creativecommons.org/publicdomain/zero/1.0/,,_:2
 $link,dcat:distribution,iri,_:3,,$root
 $constant,dcat:mediaType,iri,https://www.iana.org/assignments/media-types/text/turtle,,_:3
-term_localName,dcat:downloadURL,iri,http://rs.tdwg.org/dump/,.ttl,_:3
+term_localName,dcat:downloadURL,iri,http://rs-test.tdwg.org/dump/,.ttl,_:3
 $constant,dcterms:license,iri,https://creativecommons.org/publicdomain/zero/1.0/,,_:3
