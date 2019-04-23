@@ -1,6 +1,6 @@
 header,predicate,type,value,attribute,subject_id
 term_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
-$constant,dcterms:isPartOf,iri,http://rs.tdwg.org/dwc/dcterms/,,$root
+$constant,dcterms:isPartOf,iri,http://rs-test.tdwg.org/dwc/dcterms/,,$root
 term_created,dcterms:created,datatype,,xsd:date,$root
 term_modified,dcterms:modified,datatype,,xsd:date,$root
 term_deprecated,owl:deprecated,datatype,,xsd:boolean,$root

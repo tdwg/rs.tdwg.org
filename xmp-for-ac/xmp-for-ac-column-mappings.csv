@@ -1,6 +1,6 @@
 header,predicate,type,value,attribute,subject_id
 term_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
-$constant,dcterms:isPartOf,iri,http://rs.tdwg.org/ac/xmp/,,$root
+$constant,dcterms:isPartOf,iri,http://rs-test.tdwg.org/ac/xmp/,,$root
 label,rdfs:label,language,,en,$root
 label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
