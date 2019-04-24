@@ -20,51 +20,8 @@ mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 mainframe.columnconfigure(0, weight=1)
 mainframe.rowconfigure(0, weight=1)
 
-#set up array of labels, text entry boxes, and buttons
-#repoText = StringVar()
-#ttk.Label(mainframe, textvariable=repoText).grid(column=3, row=3, sticky=(W, E))
-#repoText.set('Github repo path')
-#githubRepoBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
-#githubRepoBox.grid(column=4, row=3, sticky=W)
-#githubRepoBox.insert(END, 'baskaufs/msc/')
-
-#subpathText = StringVar()
-#ttk.Label(mainframe, textvariable=subpathText).grid(column=3, row=4, sticky=(W, E))
-#subpathText.set('Github repo subpath')
-#repoSubpathBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
-#repoSubpathBox.grid(column=4, row=4, sticky=W)
-#repoSubpathBox.insert(END, '')
-
-#basexUriText = StringVar()
-#ttk.Label(mainframe, textvariable=basexUriText).grid(column=3, row=5, sticky=(W, E))
-#basexUriText.set('BaseX API URI root')
-#basexUriBox = ttk.Entry(mainframe, width = 50, textvariable = StringVar())
-#basexUriBox.grid(column=4, row=5, sticky=W)
-#basexUriBox.insert(END, 'http://vuswwg.jelastic.servint.net/gom/rest/')
-
-
-#databaseText = StringVar()
-#ttk.Label(mainframe, textvariable=databaseText).grid(column=3, row=6, sticky=(W, E))
-#databaseText.set('Database name')
-#databaseBox = ttk.Entry(mainframe, width = 20, textvariable = StringVar())
-#databaseBox.grid(column=4, row=6, sticky=W)
-#databaseBox.insert(END, 'test')
-
-#passwordText = StringVar()
-#ttk.Label(mainframe, textvariable=passwordText).grid(column=3, row=7, sticky=(W, E))
-#passwordText.set('BaseX database pwd')
-#passwordBox = ttk.Entry(mainframe, width = 15, textvariable = StringVar(), show='*')
-#passwordBox.grid(column=4, row=7, sticky=W)
-#passwordBox.insert(END, '[pwd]')
-
-#def gitToBaseButtonClick():
-#	dataToBasex(githubRepoBox.get(), repoSubpathBox.get(), databaseBox.get(), basexUriBox.get(), passwordBox.get())
-#gitToBaseButton = ttk.Button(mainframe, text = "Transfer from Github to BaseX", width = 30, command = lambda: gitToBaseButtonClick() )
-#gitToBaseButton.grid(column=4, row=8, sticky=W)
 
 emptyText = StringVar()
-#ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=9, sticky=(W, E))
-#emptyText.set(' ')
 
 dumpUriText = StringVar()
 ttk.Label(mainframe, textvariable=dumpUriText).grid(column=3, row=10, sticky=(W, E))
@@ -146,11 +103,7 @@ edit_space.insert(END, '')
 def updateLog(message):
 	edit_space.insert(END, message + '\n')
 	edit_space.see(END) #causes scroll up as text is added
-	root.update_idletasks() # causes updated to log window, see https://stackoverflow.com/questions/6588141/update-a-tkinter-text-widget-as-its-written-rather-than-after-the-class-is-fini
-
-#def generateFilenameList(coreDoc):
-#	filenameList = [{'name': 'namespace','tag': 'namespaces'},{'name': coreDoc + '-column-mappings','tag': 'column-index'},{'name': coreDoc + '-classes','tag': 'base-classes'}]
-#	return filenameList
+	root.update_idletasks() # causes update to log window, see https://stackoverflow.com/questions/6588141/update-a-tkinter-text-widget-as-its-written-rather-than-after-the-class-is-fini
 
 def getCsvObject(httpPath, fileName, fieldDelimiter):
 	# retrieve remotely from GitHub
@@ -160,28 +113,6 @@ def getCsvObject(httpPath, fileName, fieldDelimiter):
 	body = r.text
 	csvData = csv.reader(body.splitlines()) # see https://stackoverflow.com/questions/21351882/reading-data-from-a-csv-file-online-in-python-3
 	return csvData
-
-# XML creation functions hacked from http://code.activestate.com/recipes/577423-convert-csv-to-xml/
-#def buildGenericXml(rootElementName, csvData):
-#	xmlData = ''
-#	xmlData = xmlData + '<' + rootElementName + '>' + "\n"
-	
-#	rowNum = 0
-#	for row in csvData:
-#		if rowNum == 0:
-#			tags = row
-			# replace spaces w/ underscores in tag names
-#			for i in range(len(tags)):
-#				tags[i] = tags[i].replace(' ', '_')
-#		else: 
-#			xmlData = xmlData + '<record>' + "\n"
-#			for i in range(len(tags)):
-#				xmlData = xmlData + '    ' + '<' + tags[i] + '>' + escapeBadXmlCharacters(row[i]) + '</' + tags[i] + '>' + "\n"
-#			xmlData = xmlData + '</record>' + "\n"
-#		rowNum +=1
-	
-#	xmlData = xmlData + '</' + rootElementName + '>' + "\n"
-#	return xmlData
 	
 def escapeBadXmlCharacters(dirtyString):
 	ampString = dirtyString.replace('&','&amp;')
@@ -189,101 +120,6 @@ def escapeBadXmlCharacters(dirtyString):
 	cleanString = ltString.replace('>','&gt;')
 	return cleanString
 	
-#def buildLinkedMetadataXml(httpPath, csvData, fieldDelimiter):
-#	xmlData = '<?xml version="1.0" encoding="UTF-8" ?>' + '\n'
-#	xmlData = xmlData + '<linked-metadata>' + "\n"
-	
-#	rowNum = 0
-#	for row in csvData:
-#		if rowNum == 0:
-#			tags = row
-#		else:
-#			xmlData = xmlData + '<file>' + "\n"
-			
-#			xmlData = xmlData + '    ' + '<link_column>' + row[tags.index('link_column')] + '</link_column>' + "\n"
-#			xmlData = xmlData + '    ' + '<link_property>' + row[tags.index('link_property')] + '</link_property>' + "\n"
-#			xmlData = xmlData + '    ' + '<suffix1>' + row[tags.index('suffix1')] + '</suffix1>' + "\n"
-#			xmlData = xmlData + '    ' + '<link_characters>' + row[tags.index('link_characters')] + '</link_characters>' + "\n"
-#			xmlData = xmlData + '    ' + '<suffix2>' + row[tags.index('suffix2')] + '</suffix2>' + "\n"
-#			xmlData = xmlData + '    ' + '<forward_link>' + row[tags.index('forward_link')] + '</forward_link>' + "\n"
-#			fileName = row[tags.index('filename')]
-#			fileNameRoot = fileName[0:fileName.find('.')]
-#			csvSubData = getCsvObject(httpPath, fileNameRoot + '-classes.csv', ',')
-#			xmlData = xmlData + buildGenericXml('classes', csvSubData)
-#			csvSubData = getCsvObject(httpPath, fileNameRoot + '-column-mappings.csv', ',')
-#			xmlData = xmlData + buildGenericXml('mapping', csvSubData)
-#			csvSubData = getCsvObject(httpPath, fileName, fieldDelimiter) # metadata file may have a different delimiter than comma
-#			xmlData = xmlData + buildGenericXml('metadata', csvSubData)
-			
-#			xmlData = xmlData + '</file>' + "\n"
-#		rowNum +=1
-	
-#	xmlData = xmlData + '</linked-metadata>' + "\n"
-#	return xmlData
-
-#def writeDatabaseFile(databaseWritePath, filename, body, pwd):
-#	uri = databaseWritePath + '/' + filename
-#	hdr = {'Content-Type' : 'application/xml'}
-#	r = requests.put(uri, auth=('admin', pwd), headers=hdr, data = body.encode('utf-8'))
-#	updateLog(str(r.status_code) + ' ' + uri + '\n')
-#	updateLog(r.text + '\n')
-
-#def dataToBasex(githubRepo, repoSubpath, database, basexServerUri, pwd):
-#	databaseWritePath = basexServerUri + database
-
-	# first must do a PUT to the database URI to create it if it doesn't exist
-#	r = requests.put(databaseWritePath, auth=('admin', pwd) )
-#	updateLog('create XML database')
-#	updateLog(str(r.status_code) + ' ' + databaseWritePath + '\n')
-
-#	httpReadPath = 'https://raw.githubusercontent.com/' + githubRepo + 'master/' + repoSubpath + database + '/'
-	# must open the configuration/constants file separately in order to discover the core document and separator character
-#	updateLog('read constants')
-#	csvData = getCsvObject(httpReadPath, 'constants.csv', ',')
-	
-	# pull necessary constants out of the CSV object
-#	rowNum = 0
-#	for row in csvData:  # only one row of data below headers
-#		if rowNum == 0:
-#			tags = row
-#		else:
-#			coreDocFileName = row[tags.index('coreClassFile')]
-#			fieldDelimiter = row[tags.index('separator')]
-#		rowNum +=1
-	# find the file name without extension
-#	coreDocRoot = coreDocFileName[0:coreDocFileName.find('.')]
-	
-	# write the configuration data; not sure why csvData wasn't preserved to this point ???
-#	updateLog('read configuration')
-#	tempCsvData = getCsvObject(httpReadPath, 'constants.csv', ',')
-#	body = '<?xml version="1.0" encoding="UTF-8" ?>' + '\n' + buildGenericXml('constants', tempCsvData)
-#	updateLog('write configuration')
-#	writeDatabaseFile(databaseWritePath, 'constants.xml', body, pwd)
-	
-	# write each of the various associated files	
-#	nameList = generateFilenameList(coreDocRoot)
-#	for name in nameList:
-#		updateLog('read file')
-#		csvData = getCsvObject(httpReadPath, name['name'] + '.csv', ',')
-#		body = '<?xml version="1.0" encoding="UTF-8" ?>' + '\n' + buildGenericXml(name['tag'], csvData)
-#		updateLog('write file')
-#		writeDatabaseFile(databaseWritePath, name['name'] + '.xml', body, pwd)
-	
-	# The main metadata file must be handled separately, since may have a non-standard file extension or delimiter
-#	updateLog('read core metadata')
-#	csvData = getCsvObject(httpReadPath, coreDocFileName, fieldDelimiter)
-#	body = '<?xml version="1.0" encoding="UTF-8" ?>' + '\n' + buildGenericXml('metadata', csvData)
-#	updateLog('write core metadata')
-#	writeDatabaseFile(databaseWritePath, coreDocRoot + '.xml', body, pwd)
-	
-	# The linked class data has a different format and must be handled separately
-#	updateLog('read linked metadata')
-#	csvData = getCsvObject(httpReadPath, 'linked-classes.csv', ',')
-#	body = buildLinkedMetadataXml(httpReadPath, csvData, fieldDelimiter)
-#	updateLog('write linked metadata')
-#	writeDatabaseFile(databaseWritePath, 'linked-classes.xml', body, pwd)
-#	updateLog('Ready')
-
 def performSparqlUpdate(endpointUri, pwd, updateCommand):
 	# SPARQL Update requires HTTP POST
 	updateLog(updateCommand + '\n')
