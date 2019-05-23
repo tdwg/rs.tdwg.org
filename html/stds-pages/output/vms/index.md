@@ -13,23 +13,35 @@ github: https://github.com/tdwg/vocab/tree/master/vms
 Title
 : Vocabulary Maintenance Standard
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/642>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2017-04-25
 
 Status
-: Current standard
+: [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Best current practice
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: A standard that describes the processes used to modify TDWG vocabularies and their associated documents.
+
+Bibliographic citation
+: Vocabulary Maintenance Specification Task Group. 2017. Vocabulary Maintenance Standard. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/642
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Vocabulary Maintenance Specification\
-**Permanent IRI:** <a href="http://rs.tdwg.org/vms/doc/specification/">https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md">http://rs.tdwg.org/vms/doc/specification/</a>\
 **Created:** 2017-04-25\
 **Last modified:** 2017-04-25\
 **Contributors:**\

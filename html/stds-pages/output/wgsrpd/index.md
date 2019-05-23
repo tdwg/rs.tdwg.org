@@ -13,23 +13,32 @@ github: https://github.com/tdwg/wgsrpd
 Title
 : World Geographical Scheme for Recording Plant Distributions
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/109>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1992
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
-Category
-: 
+Abstract
+: A system for recording geographical units that covers the whole world and identifies units at four levels.
+
+Bibliographic citation
+: TDWG World Geographic Scheme for Recording Plant Distributions Committee. 2001. World Geographic Scheme for Recording Plant Distributions Standard. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/109
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** World Geographic Scheme for Recording Plant Distributions\
-**Permanent IRI:** <a href="http://rs.tdwg.org/wgsrpd/doc/data/">https://github.com/tdwg/wgsrpd/blob/master/109-488-1-ED/2nd%20Edition/TDWG_geo2.pdf</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/wgsrpd/blob/master/109-488-1-ED/2nd%20Edition/TDWG_geo2.pdf">http://rs.tdwg.org/wgsrpd/doc/data/</a>\
 **Created:** 2001-08\
 **Last modified:** 2001-08\
 **Contributors:**\

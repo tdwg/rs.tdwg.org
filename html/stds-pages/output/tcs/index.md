@@ -13,23 +13,35 @@ github: https://github.com/tdwg/tcs
 Title
 : Taxonomic Concept Transfer Schema
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/117>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2005-09-16
 
 Status
-: Current (2005) standard
+: [Current (2005) standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: An XML schema that provides a mechanism for the providers of taxonomic information to exchange data.
+
+Bibliographic citation
+: Taxonomic Names and Concepts Interest Group. 2005. Taxonomic Concept Transfer Schema (TCS). Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/117
 
 ## Parts of the standard
 
-This standard is comprised of 2 documents: 
+This standard is comprised of 2 documents. 
 
 Documents:
 
 **Title:** Taxon Concept Schema User Guide\
-**Permanent IRI:** <a href="http://rs.tdwg.org/tcs/doc/guide/">https://github.com/tdwg/tcs/blob/master/TCS101/UserGuidev_1.3.pdf</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/tcs/blob/master/TCS101/UserGuidev_1.3.pdf">http://rs.tdwg.org/tcs/doc/guide/</a>\
 **Created:** 2006-09-21\
 **Last modified:** 2006-09-21\
 **Contributors:**\
@@ -40,7 +52,7 @@ Roger Hyam (author) - TDWG Infrastructure Project\
 **Citation:** Taxonomic Names Subgroup. 2006. Taxon Concept Schema User Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/tcs/doc/guide/
 
 **Title:** Taxon Concept Schema XML Schema\
-**Permanent IRI:** <a href="http://rs.tdwg.org/tcs/doc/xmlschema/">https://github.com/tdwg/tcs/blob/master/TCS101/v101.xsd</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/tcs/blob/master/TCS101/v101.xsd">http://rs.tdwg.org/tcs/doc/xmlschema/</a>\
 **Created:** 2006-09-21\
 **Last modified:** 2006-09-21\
 **Contributors:**\

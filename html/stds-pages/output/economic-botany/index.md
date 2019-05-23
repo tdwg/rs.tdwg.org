@@ -15,23 +15,35 @@ website_title: Online version at kew.org
 Title
 : Economic Botany Data Collection Standard
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/103>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1995
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Best current practice
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: A system for describing uses of plants in their cultural context using standardised descriptors and terms, and attaching those descriptions to taxonomic data sets.
+
+Bibliographic citation
+: Cook, F. E. M. 1995. Economic Botany Data Collection Standard. International Working Group on Taxonomic Databases for Plant Sciences (TDWG) http://www.tdwg.org/standards/103
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Economic Botany Data Collection Standard\
-**Permanent IRI:** <a href="http://rs.tdwg.org/ebdc/doc/specification/">https://www.kew.org/sites/default/files/EconomicBotanyStandard_FEMCook_1995_TDWG_0.pdf</a>\
+**Permanent IRI:** <a href="https://www.kew.org/sites/default/files/EconomicBotanyStandard_FEMCook_1995_TDWG_0.pdf">http://rs.tdwg.org/ebdc/doc/specification/</a>\
 **Created:** 1995\
 **Last modified:** 1995\
 **Contributors:**\

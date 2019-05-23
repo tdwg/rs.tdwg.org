@@ -13,23 +13,35 @@ github: https://github.com/tdwg/vocab/tree/master/sds
 Title
 : TDWG Standards Documentation Standard
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/147>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2017-04-25
 
 Status
-: Current standard
+: [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: A standard that documents how standards should be described in human- and machine-readable terms.
+
+Bibliographic citation
+: Vocabulary Maintenance Specification Task Group. 2017. Standards Documentation Standard. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/147
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Standards Documentation Specification\
-**Permanent IRI:** <a href="http://rs.tdwg.org/sds/doc/specification/">https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md">http://rs.tdwg.org/sds/doc/specification/</a>\
 **Created:** 2007-11-05\
 **Last modified:** 2017-04-25\
 **Contributors:**\

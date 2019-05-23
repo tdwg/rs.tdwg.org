@@ -15,18 +15,30 @@ website_title: Darwin Core website
 Title
 : Darwin Core
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/450>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2009-10-09
 
 Status
-: Current standard
+: [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: This vocabulary standard includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions. 
+
+Bibliographic citation
+: Darwin Core Task Group. 2009. Darwin Core. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/450
 
 ## Parts of the standard
 
-This standard is comprised of one vocabulary and 6 documents: 
+This standard is comprised of one vocabulary and 6 documents. 
 
 Vocabularies:
 
@@ -35,7 +47,7 @@ Darwin Core basic vocabulary (<http://rs.tdwg.org/dwc/>)
 Documents:
 
 **Title:** Darwin Core Introduction\
-**Permanent IRI:** <a href="http://rs.tdwg.org/dwc/index/">http://tdwg.github.io/dwc/</a>\
+**Permanent IRI:** <a href="http://tdwg.github.io/dwc/">http://rs.tdwg.org/dwc/index/</a>\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -50,7 +62,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Darwin Core Introduction. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/index/
 
 **Title:** Darwin Core RDF Guide\
-**Permanent IRI:** <a href="http://rs.tdwg.org/dwc/terms/guides/rdf/">https://dwc.tdwg.org/rdf/</a>\
+**Permanent IRI:** <a href="https://dwc.tdwg.org/rdf/">http://rs.tdwg.org/dwc/terms/guides/rdf/</a>\
 **Created:** 2015-06-02\
 **Last modified:** 2015-06-02\
 **Contributors:**\
@@ -65,7 +77,7 @@ Mark Schildhauer  (author) - National Center for Ecological Analysis and Synthes
 **Citation:** Darwin Core and RDF/OWL Task Groups. 2015. Darwin Core RDF Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/rdf/
 
 **Title:** Darwin Core Text Guide\
-**Permanent IRI:** <a href="http://rs.tdwg.org/dwc/terms/guides/text/">https://dwc.tdwg.org/text/</a>\
+**Permanent IRI:** <a href="https://dwc.tdwg.org/text/">http://rs.tdwg.org/dwc/terms/guides/text/</a>\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -80,7 +92,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Darwin Core Text Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/text/
 
 **Title:** Darwin Core XML Guide\
-**Permanent IRI:** <a href="http://rs.tdwg.org/dwc/terms/guides/xml/">https://dwc.tdwg.org/xml/</a>\
+**Permanent IRI:** <a href="https://dwc.tdwg.org/xml/">http://rs.tdwg.org/dwc/terms/guides/xml/</a>\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -95,7 +107,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Darwin Core XML Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/xml/
 
 **Title:** Simple Darwin Core\
-**Permanent IRI:** <a href="http://rs.tdwg.org/dwc/terms/simple/">https://dwc.tdwg.org/simple/</a>\
+**Permanent IRI:** <a href="https://dwc.tdwg.org/simple/">http://rs.tdwg.org/dwc/terms/simple/</a>\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -110,7 +122,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Simple Darwin Core. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/simple/
 
 **Title:** Darwin Core Namespace Policy\
-**Permanent IRI:** <a href="http://rs.tdwg.org/dwc/terms/namespace/">https://dwc.tdwg.org/namespace/</a>\
+**Permanent IRI:** <a href="https://dwc.tdwg.org/namespace/">http://rs.tdwg.org/dwc/terms/namespace/</a>\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\

@@ -10,23 +10,32 @@ status: hidden
 Title
 : Botanico-periodicum-huntianum/supplementum
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/114>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1991
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
-Category
-: 
+Abstract
+: An index of botanical publications and a supplement to Botanico-periodicum-huntianum.
+
+Bibliographic citation
+: Bridson, G. D. R. and E. R. Smith. 1991. Botanico-Periodicum-Huntianum/Supplementum Standard. IUBS Commission for Plant Taxonomic Databases (TDWG) http://www.tdwg.org/standards/114
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** B-P-H/S: Botanico-Periodicum-Huntianum/Supplementum\
-**Permanent IRI:** <a href="http://rs.tdwg.org/bphsup/doc/book/">http://huntbotanical.org/publications/show.php?=92</a>\
+**Permanent IRI:** <a href="http://huntbotanical.org/publications/show.php?=92">http://rs.tdwg.org/bphsup/doc/book/</a>\
 **Created:** 1991\
 **Last modified:** 1991\
 **Contributors:**\

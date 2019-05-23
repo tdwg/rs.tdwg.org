@@ -13,23 +13,32 @@ github: https://github.com/tdwg/prior-standards/tree/master/floristic-regions-of
 Title
 : Floristic Regions of the World
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/104>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1986
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
-Category
-: 
+Abstract
+: A book that describes the floristic divisions for the whole world, lists endemic families and genera, and provides examples of endemic species for each province
+
+Bibliographic citation
+: Takhtajan, A. 1986. Floristic Regions of the World Standard. IUBS Commission for Plant Taxonomic Databases (TDWG) http://www.tdwg.org/standards/104
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Floristic Regions of the World\
-**Permanent IRI:** <a href="http://rs.tdwg.org/frw/doc/book/">https://github.com/tdwg/prior-standards/tree/master/floristic-regions-of-the-world</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/prior-standards/tree/master/floristic-regions-of-the-world">http://rs.tdwg.org/frw/doc/book/</a>\
 **Created:** 1986-09-04\
 **Last modified:** 1986-09-04\
 **Contributors:**\

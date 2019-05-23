@@ -15,23 +15,35 @@ website_title: HISPID3 at HISCOM
 Title
 : Herbarium Information Standards and Protocols for Interchange of Data (HISPID3)
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/110>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1996
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: A standard format for the interchange of electronic herbarium specimen information.
+
+Bibliographic citation
+: Observation and Specimen Records. 1996. Herbarium Information Standards and Protocols for Interchange of Data (HISPID3) Standard. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/110
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** HISPID3 Herbarium Information Standards and Protocols for Interchange of Data\
-**Permanent IRI:** <a href="http://rs.tdwg.org/hispid/doc/specification/">https://rawgit.com/tdwg/prior-standards/master/hispid3/110-540-1-RV.html</a>\
+**Permanent IRI:** <a href="https://rawgit.com/tdwg/prior-standards/master/hispid3/110-540-1-RV.html">http://rs.tdwg.org/hispid/doc/specification/</a>\
 **Created:** 1989\
 **Last modified:** 2007-05-11\
 **Contributors:**\

@@ -13,23 +13,35 @@ github: https://github.com/tdwg/prior-standards/tree/master/itf2
 Title
 : International Transfer Format for Botanic Garden Plant Records
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/102>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1987
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: This standard defines a machine-readable format for transferring records from botanical gardens.
+
+Bibliographic citation
+: Wyse Jackson, D., C. Hobson, B. Conn, R. Piacentini, S. Waldren, C. Ward, K. Bailey, P. Wyse Jackson, S. T. Wood, K. Walter. 1998. The International Transfer Format (ITF) for Botanic Garden Plant Records Standard. IUBS Commission for Plant Taxonomic Databases (TDWG) http://www.tdwg.org/standards/102
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** The International Transfer Format (ITF) for Botanic Garden Plant Records (Version 2)\
-**Permanent IRI:** <a href="http://rs.tdwg.org/itfbgpr/doc/specification/">http://www.bgci.org/files/Databases/itf2.pdf</a>\
+**Permanent IRI:** <a href="http://www.bgci.org/files/Databases/itf2.pdf">http://rs.tdwg.org/itfbgpr/doc/specification/</a>\
 **Created:** 1987-09-15\
 **Last modified:** 1998\
 **Contributors:**\

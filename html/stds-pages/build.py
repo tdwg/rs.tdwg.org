@@ -65,14 +65,27 @@ for page in pageInfo:
         print('Title', file=outObject)
         print(': ' + standards[standardNumber]['label'], file=outObject)
         print('', file=outObject)
-        print('Date created', file=outObject)
+        print('Permanent IRI to be cited and linked', file=outObject)
+        print(': <' + standards[standardNumber]['standard'] + '>', file=outObject)
+        print('', file=outObject)
+        print('Publisher', file=outObject)
+        print(': [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)', file=outObject)
+        print('', file=outObject)
+        print('Ratified', file=outObject)
         print(': ' + standards[standardNumber]['standard_created'], file=outObject)
         print('', file=outObject)
         print('Status', file=outObject)
-        print(': ' + standards[standardNumber]['status'], file=outObject)
+        print(': [' + standards[standardNumber]['status'] + '](https://www.tdwg.org/standards/status-and-categories/)', file=outObject)
         print('', file=outObject)
-        print('Category', file=outObject)
-        print(': ' + standards[standardNumber]['category'], file=outObject)
+        if standards[standardNumber]['category'] != '':
+            print('Category', file=outObject)
+            print(': [' + standards[standardNumber]['category'] + '](https://www.tdwg.org/standards/status-and-categories/)', file=outObject)
+            print('', file=outObject)
+        print('Abstract', file=outObject)
+        print(': ' + standards[standardNumber]['description'], file=outObject)
+        print('', file=outObject)
+        print('Bibliographic citation', file=outObject)
+        print(': ' + standards[standardNumber]['citation'], file=outObject)
         print('', file=outObject)
 
         # describe the parts of the standard (vocabularies and documents)
@@ -96,9 +109,9 @@ for page in pageInfo:
         if len(vocabsInStd) == 1:
             sentence += 'one vocabulary and '
         if len(docsInStd) > 1:
-            sentence += str(len(docsInStd)) + ' documents: '
+            sentence += str(len(docsInStd)) + ' documents. '
         if len(docsInStd) == 1:
-            sentence += 'one document: '
+            sentence += 'one document. '
         print(sentence, file=outObject)
         print('', file=outObject)
 
@@ -123,7 +136,7 @@ for page in pageInfo:
                     # print metadata about each document
                     print('**Title:** ' + doc['documentTitle'] + '\\', file=outObject)
                     # used HTML for hyperlinking because some browserRedirectUri URLs include parentheses
-                    print('**Permanent IRI:** <a href="' + doc['current_iri'] + '">' + doc['browserRedirectUri'] + '</a>\\', file=outObject)
+                    print('**Permanent IRI:** <a href="' + doc['browserRedirectUri'] + '">' + doc['current_iri'] + '</a>\\', file=outObject)
                     print('**Created:** ' + doc['doc_created'] + '\\', file=outObject)
                     print('**Last modified:** ' + doc['doc_modified'] + '\\', file=outObject)
                     print('**Contributors:**\\', file=outObject)

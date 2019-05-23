@@ -13,23 +13,32 @@ github: https://github.com/tdwg/prior-standards/tree/master/poss
 Title
 : Plant Occurrence and Status Scheme
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/106>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1995
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
-Category
-: 
+Abstract
+: A standard for recording the relationship between a plant and a place.
+
+Bibliographic citation
+: World Conservation Monitoring Centre. 1995. Plant Occurrence and Status Scheme: A Standard for Recording the Relationship between a Plant and a Place. International Working Group on Taxonomic Databases (TDWG) http://www.tdwg.org/standards/106
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Plant Occurrence and Status Scheme: A Standard for Recording the Relationship between a Plant and a Place\
-**Permanent IRI:** <a href="http://rs.tdwg.org/poss/doc/specification/">https://github.com/tdwg/prior-standards/blob/master/poss/106-522-1-RV.pdf</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/prior-standards/blob/master/poss/106-522-1-RV.pdf">http://rs.tdwg.org/poss/doc/specification/</a>\
 **Created:** 1995-11\
 **Last modified:** 1995-11\
 **Contributors:**\

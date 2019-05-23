@@ -13,23 +13,35 @@ github: https://github.com/tdwg/sdd
 Title
 : Structured Descriptive Data
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/116>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2005-09-16
 
 Status
-: Current (2005) standard
+: [Current (2005) standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: An international XML-based standard for capturing and managing descriptive data for organisms.
+
+Bibliographic citation
+: Structure of Descriptive Data Subgroup. 2005. Structured Descriptive Data (SDD). Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/116
 
 ## Parts of the standard
 
-This standard is comprised of 2 documents: 
+This standard is comprised of 2 documents. 
 
 Documents:
 
 **Title:** Introduction and Primer to the Structured Descriptive Data (SDD) Standard\
-**Permanent IRI:** <a href="http://rs.tdwg.org/sdd/doc/introduction/">https://github.com/tdwg/wiki-archive/blob/master/twiki/data/SDD/Primer/SddIntroduction.txt</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/wiki-archive/blob/master/twiki/data/SDD/Primer/SddIntroduction.txt">http://rs.tdwg.org/sdd/doc/introduction/</a>\
 **Created:** 2006-05-11\
 **Last modified:** 2006-05-11\
 **Contributors:**\
@@ -42,7 +54,7 @@ P. Bryan Heidorn (author) - University of Illinois at Urbana-Champaign\
 **Citation:** Structure of Descriptive Data (SDD) Subgroup. 2006. Introduction and Primer to the Structured Descriptive Data (SDD) Standard. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/sdd/doc/introduction/
 
 **Title:** Structured Descriptive Data XML Schema\
-**Permanent IRI:** <a href="http://rs.tdwg.org/sdd/doc/xmlschema/">https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/SDD.xsd</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/SDD.xsd">http://rs.tdwg.org/sdd/doc/xmlschema/</a>\
 **Created:** 2006-05-11\
 **Last modified:** 2006-05-11\
 **Contributors:**\
@@ -51,6 +63,6 @@ Kevin R. Thiele (author) - Western Australian Herbarium \
 Robert A. Morris (author) - University of Massachusetts at Boston, USA\
 **Publisher:** Biodiversity Information Standards (TDWG)\
 **Abstract:** This is the schema file to be referenced in instance documents for validation. It is the top level schema file that integrates the schema components. \
-**Note:** See also https://rawgit.com/tdwg/sdd/master/2006/rddl.html and https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/UBIF_(c).xsd\
+**Note:** See also https://rawgit.com/tdwg/sdd/master/2006/rddl.html and https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/UBIF_(c).xsd .\
 **Citation:** Structure of Descriptive Data (SDD) Subgroup. 2006. Structured Descriptive Data XML Schema. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/sdd/doc/xmlschema/
 

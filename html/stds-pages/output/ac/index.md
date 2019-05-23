@@ -15,18 +15,30 @@ website_title: Audubon Core website
 Title
 : Audubon Core Multimedia Resources Metadata Schema
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/638>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2013-10-28
 
 Status
-: Current standard
+: [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: The Audubon Core is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections.
+
+Bibliographic citation
+: GBIF/TDWG Multimedia Resources Task Group. 2013. Audubon Core Multimedia Resources Metadata Schema. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/638
 
 ## Parts of the standard
 
-This standard is comprised of one vocabulary and 4 documents: 
+This standard is comprised of one vocabulary and 4 documents. 
 
 Vocabularies:
 
@@ -35,7 +47,7 @@ Audubon Core basic vocabulary (<http://rs.tdwg.org/ac/>)
 Documents:
 
 **Title:** Audubon Core Term List\
-**Permanent IRI:** <a href="http://rs.tdwg.org/ac/doc/termlist/">https://tdwg.github.io/ac/termlist</a>\
+**Permanent IRI:** <a href="https://tdwg.github.io/ac/termlist">http://rs.tdwg.org/ac/doc/termlist/</a>\
 **Created:** 2013-10-23\
 **Last modified:** 2013-10-23\
 **Contributors:**\
@@ -57,7 +69,7 @@ Steve Baskauf (review manager) - Vanderbilt University, Nashville, TN, USA\
 **Citation:** Multimedia Resources Task Group. 2013. Audubon Core Term List. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/termlist/
 
 **Title:** Audubon Core Structure\
-**Permanent IRI:** <a href="http://rs.tdwg.org/ac/doc/structure/">https://tdwg.github.io/ac/structure</a>\
+**Permanent IRI:** <a href="https://tdwg.github.io/ac/structure">http://rs.tdwg.org/ac/doc/structure/</a>\
 **Created:** 2013-10-23\
 **Last modified:** 2013-10-23\
 **Contributors:**\
@@ -79,7 +91,7 @@ Steve Baskauf (review manager) - Vanderbilt University, Nashville, TN, USA\
 **Citation:** Multimedia Resources Task Group. 2013. Audubon Core Structure. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/structure/
 
 **Title:** Audubon Core Introduction\
-**Permanent IRI:** <a href="http://rs.tdwg.org/ac/doc/introduction/">https://tdwg.github.io/ac/introduction</a>\
+**Permanent IRI:** <a href="https://tdwg.github.io/ac/introduction">http://rs.tdwg.org/ac/doc/introduction/</a>\
 **Created:** 2013-10-23\
 **Last modified:** 2013-10-23\
 **Contributors:**\
@@ -101,7 +113,7 @@ Steve Baskauf (review manager) - Vanderbilt University, Nashville, TN, USA\
 **Citation:** Multimedia Resources Task Group. 2013. Audubon Core Introduction. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/introduction/
 
 **Title:** Audubon Core Guide\
-**Permanent IRI:** <a href="http://rs.tdwg.org/ac/doc/guide/">https://tdwg.github.io/ac/guide</a>\
+**Permanent IRI:** <a href="https://tdwg.github.io/ac/guide">http://rs.tdwg.org/ac/doc/guide/</a>\
 **Created:** 2013-10-15\
 **Last modified:** 2013-10-15\
 **Contributors:**\

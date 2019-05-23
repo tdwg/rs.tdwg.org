@@ -13,23 +13,35 @@ github: https://github.com/tdwg/guid-as
 Title
 : GUID and Life Sciences Identifiers Applicability Statements
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/150>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 2011-01-30
 
 Status
-: Current standard
+: [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Applicability statement
+: [Applicability statement](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: This standard provides guidance on how to use GUIDs to meet specific requirements of the biodiversity information community.
+
+Bibliographic citation
+: Globally Unique Identifiers Task Group. 2011. GUID and Life Sciences Identifiers Applicability Statements. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/150
 
 ## Parts of the standard
 
-This standard is comprised of 2 documents: 
+This standard is comprised of 2 documents. 
 
 Documents:
 
 **Title:** Globally Unique Identifiers Applicability Statement\
-**Permanent IRI:** <a href="http://rs.tdwg.org/guid/doc/guidas/">https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc">http://rs.tdwg.org/guid/doc/guidas/</a>\
 **Created:** 2010-09-09\
 **Last modified:** 2010-09-09\
 **Contributors:**\
@@ -39,7 +51,7 @@ Kevin Richards (lead author) - Landcare Research\
 **Citation:** Globally Unique Identifiers Task Group. 2011. Globally Unique Identifiers (GUID) Applicability Statement. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/guid/doc/guidas/
 
 **Title:** Life Sciences Identifiers (LSID) Applicability Statement\
-**Permanent IRI:** <a href="http://rs.tdwg.org/guid/doc/lsidas/">https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc">http://rs.tdwg.org/guid/doc/lsidas/</a>\
 **Created:** 2009-09-03\
 **Last modified:** 2009-09-03\
 **Contributors:**\

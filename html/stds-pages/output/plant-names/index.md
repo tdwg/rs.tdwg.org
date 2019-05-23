@@ -14,29 +14,41 @@ status: hidden
 Title
 : Plant Names in Botanical Databases
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/113>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1995
 
 Status
-: Prior standard
+: [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Best current practice
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: A standard that defines the taxonomic and nomenclatural concepts associated with the names of plants. It describes the component parts, their functions and their interrelations of significance in structuring a databas
+
+Bibliographic citation
+: TDWG Minimum Standard for Names in Botanical Databases Subgroup. 1995. Plant Names in Botanical Databases. International Working Group on Taxonomic Databases (TDWG) http://www.tdwg.org/standards/106
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Plant Names in Botanical Databases\
-**Permanent IRI:** <a href="http://rs.tdwg.org/pnbd/doc/specification/">https://github.com/tdwg/prior-standards/blob/master/plant-names-in-botanical-databases/113-528-1-RV.pdf</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/prior-standards/blob/master/plant-names-in-botanical-databases/113-528-1-RV.pdf">http://rs.tdwg.org/pnbd/doc/specification/</a>\
 **Created:** 1994-12\
 **Last modified:** 1994-12\
 **Contributors:**\
 Frank A Bisby  (author) - University of Southampton \
 **Publisher:** Hunt Institute for Botanical Documentation\
 **Abstract:** This standard defines the taxonomic and nomenclatural concepts associated with the names of plants. It describes the component parts, their functions and their interrelations of significance in structuring a database. \
-**Note:** Note: the introduction of this publication provides some historical information about TDWG and early standards it produced or adopted from elsewhere.\
+**Note:** The introduction of this publication provides some historical information about TDWG and early standards it produced or adopted from elsewhere.\
 **Citation:** TDWG Minimum Standard for Names in Botanical Databases Subgroup (Author: Frank A. Bisby). 1994. Plant Names in Botanical Databases. Hunt Institute for Botanical Documentation. http://rs.tdwg.org/pnbd/doc/specification/
 

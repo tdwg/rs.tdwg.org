@@ -15,23 +15,35 @@ website_title: DELTA website
 Title
 : Description Language for Taxonomy (DELTA) 
 
-Date created
+Permanent IRI to be cited and linked
+: <http://www.tdwg.org/standards/107>
+
+Publisher
+: [Biodiversity Information Standards (TDWG)](https://www.tdwg.org/)
+
+Ratified
 : 1986
 
 Status
-: Current (2005) standard
+: [Current (2005) standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: Technical specification
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+
+Abstract
+: A system for coding taxonomic descriptions so that they can be used as input to computer programs.
+
+Bibliographic citation
+: Dallwitz, M. J. 2006. Description Language for Taxonomy (DELTA) Standard. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/107
 
 ## Parts of the standard
 
-This standard is comprised of one document: 
+This standard is comprised of one document. 
 
 Documents:
 
 **Title:** Definition of the Delta Format\
-**Permanent IRI:** <a href="http://rs.tdwg.org/delta/doc/definition/">https://github.com/tdwg/delta/blob/master/107-516-1-ED.pdf</a>\
+**Permanent IRI:** <a href="https://github.com/tdwg/delta/blob/master/107-516-1-ED.pdf">http://rs.tdwg.org/delta/doc/definition/</a>\
 **Created:** 2005-09-13\
 **Last modified:** 2005-09-13\
 **Contributors:**\
