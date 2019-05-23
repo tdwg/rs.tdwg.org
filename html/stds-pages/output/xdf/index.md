@@ -35,7 +35,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** XDF: A Language for the Definition and Exchange of Biological Data Sets\
-**Permanent IRI:** <a href="https://doi.org/10.1016/0895-7177(92)90163-F">http://rs.tdwg.org/xdf/doc/</a>\
+**Permanent IRI:** [https://doi.org/10.1016/0895-7177%2892%2990163-F](http://rs.tdwg.org/xdf/doc/)\
 **Created:** 1992\
 **Last modified:** 1992\
 **Contributors:**\

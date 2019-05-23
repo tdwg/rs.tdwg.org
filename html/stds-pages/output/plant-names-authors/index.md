@@ -40,7 +40,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Authors of Plant Names\
-**Permanent IRI:** <a href="https://www.kew.org/data/authors.html">http://rs.tdwg.org/apn/doc/data/</a>\
+**Permanent IRI:** [https://www.kew.org/data/authors.html](http://rs.tdwg.org/apn/doc/data/)\
 **Created:** 1992\
 **Last modified:** 1992\
 **Contributors:**\

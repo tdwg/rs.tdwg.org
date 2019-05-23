@@ -38,7 +38,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Floristic Regions of the World\
-**Permanent IRI:** <a href="https://github.com/tdwg/prior-standards/tree/master/floristic-regions-of-the-world">http://rs.tdwg.org/frw/doc/book/</a>\
+**Permanent IRI:** [https://github.com/tdwg/prior-standards/tree/master/floristic-regions-of-the-world](http://rs.tdwg.org/frw/doc/book/)\
 **Created:** 1986-09-04\
 **Last modified:** 1986-09-04\
 **Contributors:**\

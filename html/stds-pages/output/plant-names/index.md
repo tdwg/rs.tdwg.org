@@ -42,7 +42,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Plant Names in Botanical Databases\
-**Permanent IRI:** <a href="https://github.com/tdwg/prior-standards/blob/master/plant-names-in-botanical-databases/113-528-1-RV.pdf">http://rs.tdwg.org/pnbd/doc/specification/</a>\
+**Permanent IRI:** [https://github.com/tdwg/prior-standards/blob/master/plant-names-in-botanical-databases/113-528-1-RV.pdf](http://rs.tdwg.org/pnbd/doc/specification/)\
 **Created:** 1994-12\
 **Last modified:** 1994-12\
 **Contributors:**\

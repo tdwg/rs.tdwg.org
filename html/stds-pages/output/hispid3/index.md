@@ -43,7 +43,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** HISPID3 Herbarium Information Standards and Protocols for Interchange of Data\
-**Permanent IRI:** <a href="https://rawgit.com/tdwg/prior-standards/master/hispid3/110-540-1-RV.html">http://rs.tdwg.org/hispid/doc/specification/</a>\
+**Permanent IRI:** [https://rawgit.com/tdwg/prior-standards/master/hispid3/110-540-1-RV.html](http://rs.tdwg.org/hispid/doc/specification/)\
 **Created:** 1989\
 **Last modified:** 2007-05-11\
 **Contributors:**\

@@ -47,7 +47,7 @@ Audubon Core basic vocabulary (<http://rs.tdwg.org/ac/>)
 Documents:
 
 **Title:** Audubon Core Term List\
-**Permanent IRI:** <a href="https://tdwg.github.io/ac/termlist">http://rs.tdwg.org/ac/doc/termlist/</a>\
+**Permanent IRI:** [https://tdwg.github.io/ac/termlist](http://rs.tdwg.org/ac/doc/termlist/)\
 **Created:** 2013-10-23\
 **Last modified:** 2013-10-23\
 **Contributors:**\
@@ -69,7 +69,7 @@ Steve Baskauf (review manager) - Vanderbilt University, Nashville, TN, USA\
 **Citation:** Multimedia Resources Task Group. 2013. Audubon Core Term List. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/termlist/
 
 **Title:** Audubon Core Structure\
-**Permanent IRI:** <a href="https://tdwg.github.io/ac/structure">http://rs.tdwg.org/ac/doc/structure/</a>\
+**Permanent IRI:** [https://tdwg.github.io/ac/structure](http://rs.tdwg.org/ac/doc/structure/)\
 **Created:** 2013-10-23\
 **Last modified:** 2013-10-23\
 **Contributors:**\
@@ -91,7 +91,7 @@ Steve Baskauf (review manager) - Vanderbilt University, Nashville, TN, USA\
 **Citation:** Multimedia Resources Task Group. 2013. Audubon Core Structure. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/structure/
 
 **Title:** Audubon Core Introduction\
-**Permanent IRI:** <a href="https://tdwg.github.io/ac/introduction">http://rs.tdwg.org/ac/doc/introduction/</a>\
+**Permanent IRI:** [https://tdwg.github.io/ac/introduction](http://rs.tdwg.org/ac/doc/introduction/)\
 **Created:** 2013-10-23\
 **Last modified:** 2013-10-23\
 **Contributors:**\
@@ -113,7 +113,7 @@ Steve Baskauf (review manager) - Vanderbilt University, Nashville, TN, USA\
 **Citation:** Multimedia Resources Task Group. 2013. Audubon Core Introduction. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/introduction/
 
 **Title:** Audubon Core Guide\
-**Permanent IRI:** <a href="https://tdwg.github.io/ac/guide">http://rs.tdwg.org/ac/doc/guide/</a>\
+**Permanent IRI:** [https://tdwg.github.io/ac/guide](http://rs.tdwg.org/ac/doc/guide/)\
 **Created:** 2013-10-15\
 **Last modified:** 2013-10-15\
 **Contributors:**\

@@ -35,7 +35,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** B-P-H-2: Periodicals with Botanical content (edition 2)\
-**Permanent IRI:** <a href="http://huntbotanical.org/publications/show.php?=92">http://rs.tdwg.org/bph/doc/</a>\
+**Permanent IRI:** [http://huntbotanical.org/publications/show.php?=92](http://rs.tdwg.org/bph/doc/)\
 **Created:** 1968\
 **Last modified:** 2004\
 **Contributors:**\

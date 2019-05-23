@@ -38,7 +38,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** World Geographic Scheme for Recording Plant Distributions\
-**Permanent IRI:** <a href="https://github.com/tdwg/wgsrpd/blob/master/109-488-1-ED/2nd%20Edition/TDWG_geo2.pdf">http://rs.tdwg.org/wgsrpd/doc/data/</a>\
+**Permanent IRI:** [https://github.com/tdwg/wgsrpd/blob/master/109-488-1-ED/2nd%20Edition/TDWG_geo2.pdf](http://rs.tdwg.org/wgsrpd/doc/data/)\
 **Created:** 2001-08\
 **Last modified:** 2001-08\
 **Contributors:**\

@@ -40,7 +40,7 @@ This standard is comprised of 15 documents.
 Documents:
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 1)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v1/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v1/)\
 **Created:** 1976\
 **Last modified:** 1976\
 **Contributors:**\
@@ -52,7 +52,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1976. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 1). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v1/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 2)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v2/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v2/)\
 **Created:** 1979\
 **Last modified:** 1979\
 **Contributors:**\
@@ -64,7 +64,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1979. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 2). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v2/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 3)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v3/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v3/)\
 **Created:** 1981\
 **Last modified:** 1981\
 **Contributors:**\
@@ -76,7 +76,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1981. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 3). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v3/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 4)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v4/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v4/)\
 **Created:** 1983\
 **Last modified:** 1983\
 **Contributors:**\
@@ -88,7 +88,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1983. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 4). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v4/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 5)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v5/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v5/)\
 **Created:** 1985\
 **Last modified:** 1985\
 **Contributors:**\
@@ -100,7 +100,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1985. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 5). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v5/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 6)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v6/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v6/)\
 **Created:** 1986\
 **Last modified:** 1986\
 **Contributors:**\
@@ -112,7 +112,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1986. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 6). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v6/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 7)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/v7/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/v7/)\
 **Created:** 1988\
 **Last modified:** 1988\
 **Contributors:**\
@@ -124,7 +124,7 @@ Richard S. Cowan (author)\
 **Citation:** Stafleu, F. A. and R. S. Cowan. 1988. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (Second edition, vol. 7). Bohn, Scheltema, and Holkema. http://rs.tdwg.org/tl/doc/v7/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 1)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s1/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s1/)\
 **Created:** 1992\
 **Last modified:** 1992\
 **Contributors:**\
@@ -136,7 +136,7 @@ Erik A. Mennega (author)\
 **Citation:** Stafleu, F. A. and E. A. Mennega. 1992. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 1). Koeltz Scientific Books. http://rs.tdwg.org/tl/doc/s1/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 2)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s2/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s2/)\
 **Created:** 1993\
 **Last modified:** 1993\
 **Contributors:**\
@@ -148,7 +148,7 @@ Erik A. Mennega (author)\
 **Citation:** Stafleu, F. A. and E. A. Mennega. 1993. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 2). Koeltz Scientific Books. http://rs.tdwg.org/tl/doc/s2/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 3)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s3/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s3/)\
 **Created:** 1995\
 **Last modified:** 1995\
 **Contributors:**\
@@ -160,7 +160,7 @@ Erik A. Mennega (author)\
 **Citation:** Stafleu, F. A. and E. A. Mennega. 1995. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 3). Koeltz Scientific Books. http://rs.tdwg.org/tl/doc/s3/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 4)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s4/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s4/)\
 **Created:** 1997\
 **Last modified:** 1997\
 **Contributors:**\
@@ -172,7 +172,7 @@ Erik A. Mennega (author)\
 **Citation:** Stafleu, F. A. and E. A. Mennega. 1997. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 4). Koeltz Scientific Books. http://rs.tdwg.org/tl/doc/s4/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 5)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s5/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s5/)\
 **Created:** 1998\
 **Last modified:** 1998\
 **Contributors:**\
@@ -184,7 +184,7 @@ Erik A. Mennega (author)\
 **Citation:** Stafleu, F. A. and E. A. Mennega. 1998. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 5). Koeltz Scientific Books. http://rs.tdwg.org/tl/doc/s5/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 6)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s6/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s6/)\
 **Created:** 2000\
 **Last modified:** 2000\
 **Contributors:**\
@@ -196,7 +196,7 @@ Erik A. Mennega (author)\
 **Citation:** Stafleu, F. A. and E. A. Mennega. 2000. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 6). Koeltz Scientific Books. http://rs.tdwg.org/tl/doc/s6/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 7)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s7/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s7/)\
 **Created:** 2008\
 **Last modified:** 2008\
 **Contributors:**\
@@ -208,7 +208,7 @@ Dan H. Nicolson (author)\
 **Citation:** Dorr, L. J. and D. H. Nicolson. 2008. Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 7). A.R.G. Gantner Verlag K.G. http://rs.tdwg.org/tl/doc/s7/
 
 **Title:** Taxonomic Literature : A Selective Guide to Botanical Publications and Collections with Dates, Commentaries and Types (supp. 8)\
-**Permanent IRI:** <a href="http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm">http://rs.tdwg.org/tl/doc/s8/</a>\
+**Permanent IRI:** [http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm](http://rs.tdwg.org/tl/doc/s8/)\
 **Created:** 2009\
 **Last modified:** 2009\
 **Contributors:**\

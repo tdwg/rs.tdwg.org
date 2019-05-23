@@ -41,7 +41,7 @@ This standard is comprised of 2 documents.
 Documents:
 
 **Title:** Taxon Concept Schema User Guide\
-**Permanent IRI:** <a href="https://github.com/tdwg/tcs/blob/master/TCS101/UserGuidev_1.3.pdf">http://rs.tdwg.org/tcs/doc/guide/</a>\
+**Permanent IRI:** [https://github.com/tdwg/tcs/blob/master/TCS101/UserGuidev_1.3.pdf](http://rs.tdwg.org/tcs/doc/guide/)\
 **Created:** 2006-09-21\
 **Last modified:** 2006-09-21\
 **Contributors:**\
@@ -52,7 +52,7 @@ Roger Hyam (author) - TDWG Infrastructure Project\
 **Citation:** Taxonomic Names Subgroup. 2006. Taxon Concept Schema User Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/tcs/doc/guide/
 
 **Title:** Taxon Concept Schema XML Schema\
-**Permanent IRI:** <a href="https://github.com/tdwg/tcs/blob/master/TCS101/v101.xsd">http://rs.tdwg.org/tcs/doc/xmlschema/</a>\
+**Permanent IRI:** [https://github.com/tdwg/tcs/blob/master/TCS101/v101.xsd](http://rs.tdwg.org/tcs/doc/xmlschema/)\
 **Created:** 2006-09-21\
 **Last modified:** 2006-09-21\
 **Contributors:**\

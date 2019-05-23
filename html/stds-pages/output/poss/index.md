@@ -38,7 +38,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Plant Occurrence and Status Scheme: A Standard for Recording the Relationship between a Plant and a Place\
-**Permanent IRI:** <a href="https://github.com/tdwg/prior-standards/blob/master/poss/106-522-1-RV.pdf">http://rs.tdwg.org/poss/doc/specification/</a>\
+**Permanent IRI:** [https://github.com/tdwg/prior-standards/blob/master/poss/106-522-1-RV.pdf](http://rs.tdwg.org/poss/doc/specification/)\
 **Created:** 1995-11\
 **Last modified:** 1995-11\
 **Contributors:**\

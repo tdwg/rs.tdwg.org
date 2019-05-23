@@ -41,7 +41,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Vocabulary Maintenance Specification\
-**Permanent IRI:** <a href="https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md">http://rs.tdwg.org/vms/doc/specification/</a>\
+**Permanent IRI:** [https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md](http://rs.tdwg.org/vms/doc/specification/)\
 **Created:** 2017-04-25\
 **Last modified:** 2017-04-25\
 **Contributors:**\
