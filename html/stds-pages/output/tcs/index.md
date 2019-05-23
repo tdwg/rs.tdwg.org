@@ -26,7 +26,7 @@ Status
 : [Current (2005) standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
 
 Abstract
 : An XML schema that provides a mechanism for the providers of taxonomic information to exchange data.

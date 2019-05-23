@@ -26,7 +26,7 @@ Status
 : [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
 
 Abstract
 : This standard defines a machine-readable format for transferring records from botanical gardens.

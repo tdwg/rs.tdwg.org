@@ -28,13 +28,13 @@ Status
 : [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Best current practice](https://www.tdwg.org/standards/status-and-categories/)
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
 
 Abstract
 : A system for describing uses of plants in their cultural context using standardised descriptors and terms, and attaching those descriptions to taxonomic data sets.
 
 Bibliographic citation
-: Cook, F. E. M. 1995. Economic Botany Data Collection Standard. International Working Group on Taxonomic Databases for Plant Sciences (TDWG) http://www.tdwg.org/standards/103
+: TDWG Economic Botany Subgroup. 1995. Economic Botany Data Collection Standard. International Working Group on Taxonomic Databases for Plant Sciences (TDWG) http://www.tdwg.org/standards/103
 
 ## Parts of the standard
 

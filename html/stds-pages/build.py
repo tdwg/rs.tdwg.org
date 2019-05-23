@@ -79,7 +79,7 @@ for page in pageInfo:
         print('', file=outObject)
         if standards[standardNumber]['category'] != '':
             print('Category', file=outObject)
-            print(': [' + standards[standardNumber]['category'] + '](https://www.tdwg.org/standards/status-and-categories/)', file=outObject)
+            print(': [' + standards[standardNumber]['category'] + '](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)', file=outObject)
             print('', file=outObject)
         print('Abstract', file=outObject)
         print(': ' + standards[standardNumber]['description'], file=outObject)
@@ -87,6 +87,11 @@ for page in pageInfo:
         print('Bibliographic citation', file=outObject)
         print(': ' + standards[standardNumber]['citation'], file=outObject)
         print('', file=outObject)
+
+        # insert additional Markdown, if any
+        if page['other'] != '':
+            print(page['other'], file=outObject)
+            print('', file=outObject)
 
         # describe the parts of the standard (vocabularies and documents)
         print('## Parts of the standard', file=outObject)

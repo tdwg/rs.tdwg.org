@@ -28,13 +28,55 @@ Status
 : [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
 
 Abstract
 : This vocabulary standard includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions. 
 
 Bibliographic citation
 : Darwin Core Task Group. 2009. Darwin Core. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/450
+
+## Maintenance group
+
+Modifications and enhancements to Darwin Core are managed by the [Darwin Core Maintenance Group](../../community/dwc).
+
+The best way to be involved is to create an account on [GitHub](https://github.com), and "watch" the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), as well as the [Darwin Core Questions & Answers repository](https://github.com/tdwg/dwc-qa), and respond to requests for comments or "issues" ([Darwin Core issues](https://github.com/tdwg/dwc/issues) and [Darwin Core QA issues](https://github.com/tdwg/dwc-qa/issues/)). Information about how to suggest changes to the standard can be found at the [Guidelines for Contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md) page.
+
+## Scope of Darwin Core
+
+What is in scope?
+
+- Collections of any kind of biological objects or data.
+- Terminology associated with biological collection data.
+- Striving for compatibility with other biodiversity-related standards.
+- Facilitating the addition of components and attributes of biological data.
+
+What is not in scope?
+
+- Data interchange protocols.
+- Non-biodiversity-related data.
+- Purely taxonomic data.
+
+## Audience
+
+- Biodiversity data holders (organizations, institutions, researchers).
+- Consumers of biodiversity data.
+- Developers of collections management systems.
+- Other TDWG interest and task groups.
+- Protocol developers (TAPIR).
+- Biodiversity network developers.
+
+## Contributors
+
+[List of contributors](https://github.com/tdwg/dwc/contributors)
+
+## Resources
+
+- Resource directory: <http://rs.tdwg.org/dwc/>
+- Maintenance group: <https://www.tdwg.org/community/dwc/>
+- Primary collaboration platform: <https://github.com/tdwg/dwc>
+- Darwin Core Questions & Answers: <https://github.com/tdwg/dwc-qa>
+- Darwin Core landing page (this page): <https://www.tdwg.org/standards/dwc/>
 
 ## Parts of the standard
 

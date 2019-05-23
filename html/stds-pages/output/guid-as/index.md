@@ -26,7 +26,7 @@ Status
 : [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Applicability statement](https://www.tdwg.org/standards/status-and-categories/)
+: [Applicability statement](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
 
 Abstract
 : This standard provides guidance on how to use GUIDs to meet specific requirements of the biodiversity information community.

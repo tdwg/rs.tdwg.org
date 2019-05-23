@@ -28,7 +28,7 @@ Status
 : [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
 
 Abstract
 : A standard format for the interchange of electronic herbarium specimen information.
