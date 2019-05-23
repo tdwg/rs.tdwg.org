@@ -43,7 +43,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Definition of the Delta Format\
-**Permanent IRI:** [https://github.com/tdwg/delta/blob/master/107-516-1-ED.pdf](http://rs.tdwg.org/delta/doc/definition/)\
+**Permanent IRI:** [http://rs.tdwg.org/delta/doc/definition/](https://github.com/tdwg/delta/blob/master/107-516-1-ED.pdf)\
 **Created:** 2005-09-13\
 **Last modified:** 2005-09-13\
 **Contributors:**\

@@ -135,8 +135,7 @@ for page in pageInfo:
                 if doc['current_iri'] == docToList:
                     # print metadata about each document
                     print('**Title:** ' + doc['documentTitle'] + '\\', file=outObject)
-                    # used HTML for hyperlinking because some browserRedirectUri URLs include parentheses
-                    print('**Permanent IRI:** [' + doc['browserRedirectUri'] + '](' + doc['current_iri'] + ')\\', file=outObject)
+                    print('**Permanent IRI:** [' + doc['current_iri'] + '](' + doc['browserRedirectUri'] + ')\\', file=outObject)
                     print('**Created:** ' + doc['doc_created'] + '\\', file=outObject)
                     print('**Last modified:** ' + doc['doc_modified'] + '\\', file=outObject)
                     print('**Contributors:**\\', file=outObject)

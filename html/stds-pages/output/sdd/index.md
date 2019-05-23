@@ -41,7 +41,7 @@ This standard is comprised of 2 documents.
 Documents:
 
 **Title:** Introduction and Primer to the Structured Descriptive Data (SDD) Standard\
-**Permanent IRI:** [https://github.com/tdwg/wiki-archive/blob/master/twiki/data/SDD/Primer/SddIntroduction.txt](http://rs.tdwg.org/sdd/doc/introduction/)\
+**Permanent IRI:** [http://rs.tdwg.org/sdd/doc/introduction/](https://github.com/tdwg/wiki-archive/blob/master/twiki/data/SDD/Primer/SddIntroduction.txt)\
 **Created:** 2006-05-11\
 **Last modified:** 2006-05-11\
 **Contributors:**\
@@ -54,7 +54,7 @@ P. Bryan Heidorn (author) - University of Illinois at Urbana-Champaign\
 **Citation:** Structure of Descriptive Data (SDD) Subgroup. 2006. Introduction and Primer to the Structured Descriptive Data (SDD) Standard. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/sdd/doc/introduction/
 
 **Title:** Structured Descriptive Data XML Schema\
-**Permanent IRI:** [https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/SDD.xsd](http://rs.tdwg.org/sdd/doc/xmlschema/)\
+**Permanent IRI:** [http://rs.tdwg.org/sdd/doc/xmlschema/](https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/SDD.xsd)\
 **Created:** 2006-05-11\
 **Last modified:** 2006-05-11\
 **Contributors:**\

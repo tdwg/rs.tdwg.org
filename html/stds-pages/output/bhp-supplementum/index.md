@@ -35,7 +35,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** B-P-H/S: Botanico-Periodicum-Huntianum/Supplementum\
-**Permanent IRI:** [http://huntbotanical.org/publications/show.php?=92](http://rs.tdwg.org/bphsup/doc/book/)\
+**Permanent IRI:** [http://rs.tdwg.org/bphsup/doc/book/](http://huntbotanical.org/publications/show.php?=92)\
 **Created:** 1991\
 **Last modified:** 1991\
 **Contributors:**\

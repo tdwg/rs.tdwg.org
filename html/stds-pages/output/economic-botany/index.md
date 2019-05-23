@@ -43,7 +43,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Economic Botany Data Collection Standard\
-**Permanent IRI:** [https://www.kew.org/sites/default/files/EconomicBotanyStandard_FEMCook_1995_TDWG_0.pdf](http://rs.tdwg.org/ebdc/doc/specification/)\
+**Permanent IRI:** [http://rs.tdwg.org/ebdc/doc/specification/](https://www.kew.org/sites/default/files/EconomicBotanyStandard_FEMCook_1995_TDWG_0.pdf)\
 **Created:** 1995\
 **Last modified:** 1995\
 **Contributors:**\

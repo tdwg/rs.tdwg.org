@@ -43,7 +43,7 @@ This standard is comprised of 2 documents.
 Documents:
 
 **Title:** Access to Biological Collection Data (ABCD) Primer\
-**Permanent IRI:** [https://github.com/tdwg/wiki-archive/blob/master/twiki/data/ABCD/AbcdPrimer.txt](http://rs.tdwg.org/abcd/doc/primer/)\
+**Permanent IRI:** [http://rs.tdwg.org/abcd/doc/primer/](https://github.com/tdwg/wiki-archive/blob/master/twiki/data/ABCD/AbcdPrimer.txt)\
 **Created:** 2006-07-27\
 **Last modified:** 2006-07-27\
 **Contributors:**\
@@ -59,7 +59,7 @@ William Ulate  (author) - INBioparque, Santo Domingo de Heredia \
 **Citation:** TDWG Access to Biological Collections Data (ABCD) Task Group 2006. Access to Biological Collections Data (ABCD) Primer. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/abcd/doc/primer/
 
 **Title:** Access to Biological Collection Data (ABCD) XML Schema\
-**Permanent IRI:** [http://rs.tdwg.org/abcd/2.06/ABCD_2.06.xsd](http://rs.tdwg.org/abcd/doc/xmlschema/)\
+**Permanent IRI:** [http://rs.tdwg.org/abcd/doc/xmlschema/](http://rs.tdwg.org/abcd/2.06/ABCD_2.06.xsd)\
 **Created:** 2007-06-13\
 **Last modified:** 2007-06-13\
 **Contributors:**\

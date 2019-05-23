@@ -41,7 +41,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Standards Documentation Specification\
-**Permanent IRI:** [https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md](http://rs.tdwg.org/sds/doc/specification/)\
+**Permanent IRI:** [http://rs.tdwg.org/sds/doc/specification/](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md)\
 **Created:** 2007-11-05\
 **Last modified:** 2017-04-25\
 **Contributors:**\

@@ -41,7 +41,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** The International Transfer Format (ITF) for Botanic Garden Plant Records (Version 2)\
-**Permanent IRI:** [http://www.bgci.org/files/Databases/itf2.pdf](http://rs.tdwg.org/itfbgpr/doc/specification/)\
+**Permanent IRI:** [http://rs.tdwg.org/itfbgpr/doc/specification/](http://www.bgci.org/files/Databases/itf2.pdf)\
 **Created:** 1987-09-15\
 **Last modified:** 1998\
 **Contributors:**\

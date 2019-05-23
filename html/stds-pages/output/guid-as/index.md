@@ -41,7 +41,7 @@ This standard is comprised of 2 documents.
 Documents:
 
 **Title:** Globally Unique Identifiers Applicability Statement\
-**Permanent IRI:** [https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc](http://rs.tdwg.org/guid/doc/guidas/)\
+**Permanent IRI:** [http://rs.tdwg.org/guid/doc/guidas/](https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc)\
 **Created:** 2010-09-09\
 **Last modified:** 2010-09-09\
 **Contributors:**\
@@ -51,7 +51,7 @@ Kevin Richards (lead author) - Landcare Research\
 **Citation:** Globally Unique Identifiers Task Group. 2011. Globally Unique Identifiers (GUID) Applicability Statement. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/guid/doc/guidas/
 
 **Title:** Life Sciences Identifiers (LSID) Applicability Statement\
-**Permanent IRI:** [https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc](http://rs.tdwg.org/guid/doc/lsidas/)\
+**Permanent IRI:** [http://rs.tdwg.org/guid/doc/lsidas/](https://github.com/tdwg/guid-as/blob/master/guid/applicability_statement.doc)\
 **Created:** 2009-09-03\
 **Last modified:** 2009-09-03\
 **Contributors:**\

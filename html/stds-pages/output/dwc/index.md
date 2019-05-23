@@ -47,7 +47,7 @@ Darwin Core basic vocabulary (<http://rs.tdwg.org/dwc/>)
 Documents:
 
 **Title:** Darwin Core Introduction\
-**Permanent IRI:** [http://tdwg.github.io/dwc/](http://rs.tdwg.org/dwc/index/)\
+**Permanent IRI:** [http://rs.tdwg.org/dwc/index/](http://tdwg.github.io/dwc/)\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -62,7 +62,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Darwin Core Introduction. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/index/
 
 **Title:** Darwin Core RDF Guide\
-**Permanent IRI:** [https://dwc.tdwg.org/rdf/](http://rs.tdwg.org/dwc/terms/guides/rdf/)\
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/rdf/](https://dwc.tdwg.org/rdf/)\
 **Created:** 2015-06-02\
 **Last modified:** 2015-06-02\
 **Contributors:**\
@@ -77,7 +77,7 @@ Mark Schildhauer  (author) - National Center for Ecological Analysis and Synthes
 **Citation:** Darwin Core and RDF/OWL Task Groups. 2015. Darwin Core RDF Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/rdf/
 
 **Title:** Darwin Core Text Guide\
-**Permanent IRI:** [https://dwc.tdwg.org/text/](http://rs.tdwg.org/dwc/terms/guides/text/)\
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/text/](https://dwc.tdwg.org/text/)\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -92,7 +92,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Darwin Core Text Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/text/
 
 **Title:** Darwin Core XML Guide\
-**Permanent IRI:** [https://dwc.tdwg.org/xml/](http://rs.tdwg.org/dwc/terms/guides/xml/)\
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/xml/](https://dwc.tdwg.org/xml/)\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -107,7 +107,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Darwin Core XML Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/xml/
 
 **Title:** Simple Darwin Core\
-**Permanent IRI:** [https://dwc.tdwg.org/simple/](http://rs.tdwg.org/dwc/terms/simple/)\
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/simple/](https://dwc.tdwg.org/simple/)\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\
@@ -122,7 +122,7 @@ Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
 **Citation:** Darwin Core Task Group. 2014. Simple Darwin Core. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/simple/
 
 **Title:** Darwin Core Namespace Policy\
-**Permanent IRI:** [https://dwc.tdwg.org/namespace/](http://rs.tdwg.org/dwc/terms/namespace/)\
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/namespace/](https://dwc.tdwg.org/namespace/)\
 **Created:** 2014-11-08\
 **Last modified:** 2014-11-08\
 **Contributors:**\

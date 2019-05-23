@@ -37,7 +37,7 @@ This standard is comprised of one document.
 Documents:
 
 **Title:** Index Herbariorum. Part I: The Herbaria of the World (Regnum Vegetabile, Vol. 120, eighth edition)\
-**Permanent IRI:** [http://sweetgum.nybg.org/science/ih/](http://rs.tdwg.org/ih/doc/book/)\
+**Permanent IRI:** [http://rs.tdwg.org/ih/doc/book/](http://sweetgum.nybg.org/science/ih/)\
 **Created:** 1990\
 **Last modified:** 1990\
 **Contributors:**\
