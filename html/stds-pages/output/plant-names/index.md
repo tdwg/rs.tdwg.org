@@ -27,7 +27,7 @@ Status
 : [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : A standard that defines the taxonomic and nomenclatural concepts associated with the names of plants. It describes the component parts, their functions and their interrelations of significance in structuring a databas

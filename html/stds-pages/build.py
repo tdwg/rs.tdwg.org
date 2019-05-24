@@ -79,7 +79,7 @@ for page in pageInfo:
         print('', file=outObject)
         if standards[standardNumber]['category'] != '':
             print('Category', file=outObject)
-            print(': [' + standards[standardNumber]['category'] + '](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)', file=outObject)
+            print(': [' + standards[standardNumber]['category'] + '](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)', file=outObject)
             print('', file=outObject)
         print('Abstract', file=outObject)
         print(': ' + standards[standardNumber]['description'], file=outObject)

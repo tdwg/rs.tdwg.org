@@ -26,7 +26,7 @@ Status
 : [Current (2005) standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : An international XML-based standard for capturing and managing descriptive data for organisms.

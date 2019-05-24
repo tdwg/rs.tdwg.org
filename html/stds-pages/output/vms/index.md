@@ -26,7 +26,7 @@ Status
 : [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : A standard that describes the processes used to modify TDWG vocabularies and their associated documents.

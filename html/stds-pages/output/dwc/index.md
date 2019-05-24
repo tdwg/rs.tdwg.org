@@ -28,7 +28,7 @@ Status
 : [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : This vocabulary standard includes a glossary of terms intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions. 

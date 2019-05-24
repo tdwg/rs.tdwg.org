@@ -28,7 +28,7 @@ Status
 : [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Best current practice](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : A system for describing uses of plants in their cultural context using standardised descriptors and terms, and attaching those descriptions to taxonomic data sets.

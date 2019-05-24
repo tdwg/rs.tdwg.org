@@ -26,7 +26,7 @@ Status
 : [Current standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : A standard that documents how standards should be described in human- and machine-readable terms.

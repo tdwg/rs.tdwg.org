@@ -28,7 +28,7 @@ Status
 : [Current (2005) standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Category
-: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories of tdwg standards_1)
+: [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
 : A common data specification for biological collection units, including living and preserved specimens, along with field observations that did not produce voucher specimens. It is intended to support the exchange and integration of detailed primary collection and observation data.
