@@ -48,5 +48,5 @@ Arthur Cronquist (editor)\
 **Publisher:** University of California Press \
 **Abstract:** This book describes the floristic divisions for the whole world, lists endemic families and genera, and provides examples of endemic species for each province.\
 **Note:** First English Language Edition. Seems to be available in print only.\
-**Citation:** Takhtajan, A. L. 1986. Floristic Regions of the World. University of California Press. http://rs.tdwg.org/frw/doc/book/
+**Citation:** Takhtajan, A. L. 1986. Floristic Regions of the World. University of California Press. ISBN 0520040279. http://rs.tdwg.org/frw/doc/book/
 
