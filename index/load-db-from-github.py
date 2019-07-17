@@ -12,13 +12,6 @@ import tkinter.scrolledtext as tkst
 import csv #library to read/write/parse CSV files
 import requests #library to do HTTP communication
 
-# to try to solve the problem of "UnicodeEncodeError: 'ascii' codec can't encode character u'\xa9' in position 476: ordinal not in range(128)"
-# change the system default coding to UTF-8 if not using Python 3.x .  See https://stackoverflow.com/questions/9942594/unicodeencodeerror-ascii-codec-cant-encode-character-u-xa0-in-position-20
-import sys
-if sys.version_info.major < 3:
-    reload(sys)
-    sys.setdefaultencoding('utf8')
-
 root = Tk()
 
 # this sets up the characteristics of the window
