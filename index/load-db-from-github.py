@@ -83,6 +83,8 @@ def getCsvObject(httpPath, fileName, fieldDelimiter):
 	# retrieve remotely from GitHub
 	uri = httpPath + fileName
 	r = requests.get(uri)
+	print('Requests guesses character encoding to be: ', r.encoding)
+	r.encoding = 'utf-8'  # force Requests to treat retrieved text as UTF-8. See https://2.python-requests.org//en/master/user/quickstart/#response-content
 	updateLog(str(r.status_code) + ' ' + uri)
 	body = r.text
 	csvData = csv.reader(body.splitlines()) # see https://stackoverflow.com/questions/21351882/reading-data-from-a-csv-file-online-in-python-3
