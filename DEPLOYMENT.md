@@ -1,6 +1,6 @@
 # Deployment
 
-The server is deployed as a Docker image to a GCS micro instance.
+The server is deployed as a Docker image to a GBIF development server.
 
 ## Public use of the image
 
@@ -46,7 +46,7 @@ nohup socat tcp-listen:8080,reuseaddr,fork tcp:localhost:8984
 
 And then load the database, using the Python GUI script at index/load-db-from-github.py
 
-1. `python load-db-from-github.py`
+1. `python3 load-db-from-github.py`
 2. Set the branch to `master`
 3. Set the BaseX API URI root to `http://w.x.y.z:8984/rest/`
 4. Set the password to `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
