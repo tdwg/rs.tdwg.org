@@ -417,7 +417,6 @@ http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/TaxonomicCoverage
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/ResourceCreation
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/RelatedResource
-http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/ServiceAccessPoint
 http://rs.tdwg.org/dwc/curatorial/,http://rs.tdwg.org/dwc/curatorial/CatalogNumberNumeric
 http://rs.tdwg.org/dwc/curatorial/,http://rs.tdwg.org/dwc/curatorial/CollectorNumber
 http://rs.tdwg.org/dwc/curatorial/,http://rs.tdwg.org/dwc/curatorial/DateIdentified
