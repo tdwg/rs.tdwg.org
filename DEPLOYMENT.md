@@ -44,9 +44,9 @@ Then, until the firewall is updated / BaseX is made to run on a different port, 
 nohup socat tcp-listen:8080,reuseaddr,fork tcp:localhost:8984
 ```
 
-And then load the database, using the Python GUI script at index/load-db-from-github.py
+And then load the database, using the Python script at index/load-db-from-github.py
 
-1. `python3 load-db-from-github.py`
-2. Set the branch to `master`
-3. Set the BaseX API URI root to `http://w.x.y.z:8984/rest/`
-4. Set the password to `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+```
+python3 load-db-from-github.py tdwg/rs.tdwg.org/ master '' http://w.x.y.z:8984/rest/ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+curl -i http://tdwgrs-vh.tdwg.org:8984/dwc/terms/kingdom
+```

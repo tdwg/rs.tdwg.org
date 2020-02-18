@@ -2,78 +2,97 @@
 # By its nature, this software overwrites and deletes data, so use at your own risk. 
 # This is hacked from rdf-mover.py https://github.com/baskaufs/msc/blob/master/python/rdf-mover.py
 # See https://github.com/baskaufs/guid-o-matic/blob/master/rdf-mover.md for usage notes.
+#
+# Usage:
+#   Run with no arguments to launch the GUI
+#     python3 load-db-from-github.py
+#   Run with arguments to run once on the CLI
+#     python3 load-db-from-github.py tdwg/rs.tdwg.org/ master '' http://localhost:8984/rest/ XXXXX
 
-#libraries for GUI interface
-import tkinter
-from tkinter import *
-from tkinter import ttk
-import tkinter.scrolledtext as tkst
-
+import sys # Read CLI arguments
 import csv #library to read/write/parse CSV files
 import requests #library to do HTTP communication
 
-root = Tk()
+try:
+	#libraries for GUI interface
+	import tkinter
+	from tkinter import *
+	from tkinter import ttk
+	import tkinter.scrolledtext as tkst
+except ImportError:
+	print("GUI will be unavailable")
 
-# this sets up the characteristics of the window
-root.title("Load BaseX database")
-mainframe = ttk.Frame(root, padding="3 3 12 12")
-mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-mainframe.columnconfigure(0, weight=1)
-mainframe.rowconfigure(0, weight=1)
+root = False
 
-#set up array of labels, text entry boxes, and buttons
-repoText = StringVar()
-ttk.Label(mainframe, textvariable=repoText).grid(column=3, row=3, sticky=(W, E))
-repoText.set('Github repo path')
-githubRepoBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
-githubRepoBox.grid(column=4, row=3, sticky=W)
-githubRepoBox.insert(END, 'tdwg/rs.tdwg.org/')
+def initializeGui():
+	global root, githubRepoBox, repoSubpathBox, basexUriBox, passwordBox, edit_space
+	root = Tk()
 
-subpathText = StringVar()
-ttk.Label(mainframe, textvariable=subpathText).grid(column=3, row=4, sticky=(W, E))
-subpathText.set('branch (master or test)')
-repoSubpathBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
-repoSubpathBox.grid(column=4, row=4, sticky=W)
-repoSubpathBox.insert(END, 'test')
+	# this sets up the characteristics of the window
+	root.title("Load BaseX database")
+	mainframe = ttk.Frame(root, padding="3 3 12 12")
+	mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+	mainframe.columnconfigure(0, weight=1)
+	mainframe.rowconfigure(0, weight=1)
 
-basexUriText = StringVar()
-ttk.Label(mainframe, textvariable=basexUriText).grid(column=3, row=5, sticky=(W, E))
-basexUriText.set('BaseX API URI root')
-basexUriBox = ttk.Entry(mainframe, width = 50, textvariable = StringVar())
-basexUriBox.grid(column=4, row=5, sticky=W)
-basexUriBox.insert(END, 'http://vuswwg.jelastic.servint.net/gom/rest/')
+	#set up array of labels, text entry boxes, and buttons
+	repoText = StringVar()
+	ttk.Label(mainframe, textvariable=repoText).grid(column=3, row=3, sticky=(W, E))
+	repoText.set('Github repo path')
+	githubRepoBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
+	githubRepoBox.grid(column=4, row=3, sticky=W)
+	githubRepoBox.insert(END, 'tdwg/rs.tdwg.org/')
 
-passwordText = StringVar()
-ttk.Label(mainframe, textvariable=passwordText).grid(column=3, row=7, sticky=(W, E))
-passwordText.set('BaseX database pwd')
-passwordBox = ttk.Entry(mainframe, width = 15, textvariable = StringVar(), show='*')
-passwordBox.grid(column=4, row=7, sticky=W)
-passwordBox.insert(END, '[pwd]')
+	subpathText = StringVar()
+	ttk.Label(mainframe, textvariable=subpathText).grid(column=3, row=4, sticky=(W, E))
+	subpathText.set('branch (master or test)')
+	repoSubpathBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
+	repoSubpathBox.grid(column=4, row=4, sticky=W)
+	repoSubpathBox.insert(END, 'master')
+
+	basexUriText = StringVar()
+	ttk.Label(mainframe, textvariable=basexUriText).grid(column=3, row=5, sticky=(W, E))
+	basexUriText.set('BaseX API URI root')
+	basexUriBox = ttk.Entry(mainframe, width = 50, textvariable = StringVar())
+	basexUriBox.grid(column=4, row=5, sticky=W)
+	basexUriBox.insert(END, 'http://localhost:8984/rest/')
+
+	passwordText = StringVar()
+	ttk.Label(mainframe, textvariable=passwordText).grid(column=3, row=7, sticky=(W, E))
+	passwordText.set('BaseX database pwd')
+	passwordBox = ttk.Entry(mainframe, width = 15, textvariable = StringVar(), show='*')
+	passwordBox.grid(column=4, row=7, sticky=W)
+	passwordBox.insert(END, '[pwd]')
+
+	gitToBaseButton = ttk.Button(mainframe, text = "Transfer from Github to BaseX", width = 30, command = lambda: gitToBaseButtonClick() )
+	gitToBaseButton.grid(column=4, row=8, sticky=W)
+
+	emptyText = StringVar()
+	ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=9, sticky=(W, E))
+	emptyText.set(' ')
+
+	ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=21, sticky=(W, E))
+
+	logText = StringVar()
+	ttk.Label(mainframe, textvariable=logText).grid(column=3, row=22, sticky=(W, E))
+	logText.set('Action log')
+	#scrolling text box hacked from https://www.daniweb.com/programming/software-development/code/492625/exploring-tkinter-s-scrolledtext-widget-python
+	edit_space = tkst.ScrolledText(master = mainframe, width  = 100, height = 25)
+	# the padx/pady space will form a frame
+	edit_space.grid(column=4, row=22, padx=8, pady=8)
+	edit_space.insert(END, '')
 
 def gitToBaseButtonClick():
 	dataToBasex(githubRepoBox.get(), repoSubpathBox.get(), "", basexUriBox.get(), passwordBox.get())
-gitToBaseButton = ttk.Button(mainframe, text = "Transfer from Github to BaseX", width = 30, command = lambda: gitToBaseButtonClick() )
-gitToBaseButton.grid(column=4, row=8, sticky=W)
-
-emptyText = StringVar()
-ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=9, sticky=(W, E))
-emptyText.set(' ')
-
-ttk.Label(mainframe, textvariable=emptyText).grid(column=3, row=21, sticky=(W, E))
-
-logText = StringVar()
-ttk.Label(mainframe, textvariable=logText).grid(column=3, row=22, sticky=(W, E))
-logText.set('Action log')
-#scrolling text box hacked from https://www.daniweb.com/programming/software-development/code/492625/exploring-tkinter-s-scrolledtext-widget-python
-edit_space = tkst.ScrolledText(master = mainframe, width  = 100, height = 25)
-# the padx/pady space will form a frame
-edit_space.grid(column=4, row=22, padx=8, pady=8)
-edit_space.insert(END, '')
 
 def updateLog(message):
-	edit_space.insert(END, message + '\n')
-	edit_space.see(END) #causes scroll up as text is added
-	root.update_idletasks() # causes updated to log window, see https://stackoverflow.com/questions/6588141/update-a-tkinter-text-widget-as-its-written-rather-than-after-the-class-is-fini
+	if (root):
+		global edit_space
+		edit_space.insert(END, message + '\n')
+		edit_space.see(END) #causes scroll up as text is added
+		root.update_idletasks() # causes updated to log window, see https://stackoverflow.com/questions/6588141/update-a-tkinter-text-widget-as-its-written-rather-than-after-the-class-is-fini
+	else:
+		print(message)
 
 def generateFilenameList(coreDoc):
 	filenameList = [{'name': 'namespace','tag': 'namespaces'},{'name': coreDoc + '-column-mappings','tag': 'column-index'},{'name': coreDoc + '-classes','tag': 'base-classes'}]
@@ -226,8 +245,19 @@ def dataToBasexWrite(githubRepo, repoBranch, database, basexServerUri, pwd):
 	writeDatabaseFile(databaseWritePath, 'linked-classes.xml', body, pwd)
 	updateLog('Ready')
 
-def main():	
-	root.mainloop()
-	
+def main():
+	print(sys.argv)
+	print(len(sys.argv))
+	if len(sys.argv) == 6:
+		githubRepo = sys.argv[1]
+		repoSubpath = sys.argv[2]
+		database = sys.argv[3]
+		basexUri = sys.argv[4]
+		password = sys.argv[5]
+		dataToBasex(githubRepo, repoSubpath, database, basexUri, password)
+	else:
+		initializeGui()
+		root.mainloop()
+
 if __name__=="__main__":
 	main()
