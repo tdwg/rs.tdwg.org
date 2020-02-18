@@ -42,11 +42,6 @@ gcloud compute --project "rs-tdwg-org" ssh --zone "us-east1-b" "rs-tdwg-org-base
 Then, until the firewall is updated / BaseX is made to run on a different port, forward it to port 8080:
 ```
 nohup socat tcp-listen:8080,reuseaddr,fork tcp:localhost:8984
-```
 
-And then load the database, using the Python script at index/load-db-from-github.py
-
-```
-python3 load-db-from-github.py tdwg/rs.tdwg.org/ master '' http://w.x.y.z:8984/rest/ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 curl -i http://tdwgrs-vh.tdwg.org:8984/dwc/terms/kingdom
 ```
