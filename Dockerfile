@@ -17,7 +17,7 @@ COPY html/restxq.xqm /basex/basex/webapp
 COPY docker/ /usr/src/docker/
 COPY index/ /usr/src/index/
 USER basex
-RUN /usr/src/docker/initialize-database.sh tdwg/rs.tdwg.org/ test '' http://localhost:8984/rest/ xxxxxxxxxxxx
+RUN /usr/src/docker/initialize-database.sh tdwg/rs.tdwg.org/ '' http://localhost:8984/rest/ xxxxxxxxxxxx
 USER root
 RUN rm -Rf /usr/src/docker /usr/src/index
 
