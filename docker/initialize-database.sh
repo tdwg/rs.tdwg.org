@@ -7,7 +7,7 @@
 sleep 5
 
 # Import the data
-cd /usr/src/rs.tdwg.org/index
+cd /usr/src/index
 
 python3 load-db-from-github.py "$1" "$2" "$3" "$4" "$5"
 
