@@ -180,13 +180,15 @@ def dataToBasex(githubRepo, repoBranch, database, basexServerUri, pwd):
 
 	# Modification of original script to get database names from the TDWG rs.tdwt.org Github repo, then load each one
 
-    csvData = getCsvObject('https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/', 'index-datasets.csv', ',')
-    loadList = []
-    for row in csvData:
-        loadList.append(row[1])
-    for database in range(1,len(loadList)):  # start range at 1 to avoid header row (0)
-    #for database in range(1,2):  # uncomment this line to test using only one database
-        dataToBasexWrite(githubRepo, repoBranch, loadList[database], basexServerUri, pwd)
+	csvData = getCsvObject('https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/', 'index-datasets.csv', ',')
+
+
+	loadList = []
+	for row in csvData:
+		loadList.append(row[1])
+	for database in range(1,len(loadList)):  # start range at 1 to avoid header row (0)
+	#for database in range(1,2):  # uncomment this line to test using only one database
+		dataToBasexWrite(githubRepo, repoBranch, loadList[database], basexServerUri, pwd)
 
 def dataToBasexWrite(githubRepo, repoBranch, database, basexServerUri, pwd):
 	print(database)
@@ -221,7 +223,7 @@ def dataToBasexWrite(githubRepo, repoBranch, database, basexServerUri, pwd):
 	updateLog('write configuration')
 	writeDatabaseFile(databaseWritePath, 'constants.xml', body, pwd)
 	
-	# write each of the various associated files	
+	# write each of the various associated files
 	nameList = generateFilenameList(coreDocRoot)
 	for name in nameList:
 		updateLog('read file')
