@@ -14,7 +14,7 @@ declare
   %rest:header-param("Accept","{$acceptHeader}")
   function page:root($acceptHeader)
   {
-  page:see-also($acceptHeader,"/index","index","http://rs.tdwg.org/index")
+  page:see-also($acceptHeader,"/index","index",page:subdomain()||"index")
   };
 
 (: This is a test function for testing the kind of Accept header sent by the client :)
@@ -75,7 +75,7 @@ declare
 
 declare function page:check-db($db)
 {
-  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv"}'/>)[2]
+  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/index/index-datasets.csv"}'/>)[2]
   let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
   let $metadata := $xmlMetadata/csv/record
   for $record in $metadata
@@ -108,11 +108,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$stripped-local-name||"/"
+      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"
+      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$local-id||"/"
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -130,11 +130,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$date
+      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$local-id||"/"||$date
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id||"/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -152,11 +152,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$stripped-local-name||"/"
+      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"
+      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$local-id||"/"
       let $redirect-id := "/dwc/terms/guides/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -174,11 +174,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/simple/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||"dwc/terms/simple/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/simple/"||$date
+      let $lookup-string := page:subdomain()||"dwc/terms/simple/"||$date
       let $redirect-id := "/dwc/terms/simple/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -196,11 +196,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/namespace/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||"dwc/terms/namespace/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/namespace/"||$date
+      let $lookup-string := page:subdomain()||"dwc/terms/namespace/"||$date
       let $redirect-id := "/dwc/terms/namespace/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -218,11 +218,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$local-id||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"||$date
+      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$local-id||"/"||$date
       let $redirect-id := "/dwc/terms/guides/"||$local-id||"/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -243,24 +243,24 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
+      let $lookup-string := page:subdomain()||$stripped-local-name||"/"
       return
       switch ($stripped-local-name)
         (: handle the special case of TDWG decisions :)
-        case "decisions" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/decisions/")
+        case "decisions" return page:handle-repesentation($acceptHeader,$extension,"term-lists",page:subdomain()||"decisions/")
         (: handle the special case of the dataset index :)
-        case "index" return page:handle-repesentation($acceptHeader,$extension,"index","http://rs.tdwg.org/index")
+        case "index" return page:handle-repesentation($acceptHeader,$extension,"index",page:subdomain()||"index")
         default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
+      let $lookup-string := page:subdomain()||$local-id||"/"
       let $redirect-id := "/"||$local-id
       return
       switch ($local-id)
         (: handle the special case of TDWG decisions :)
-        case "decisions" return page:see-also($acceptHeader,"/decisions","term-lists","http://rs.tdwg.org/decisions/")
+        case "decisions" return page:see-also($acceptHeader,"/decisions","term-lists",page:subdomain()||"decisions/")
         (: handle the special case of the simple Darwin Core guide :)
-        case "index" return page:see-also($acceptHeader,"/index","index","http://rs.tdwg.org/index")
+        case "index" return page:see-also($acceptHeader,"/index","index",page:subdomain()||"index")
         default return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
  };
 
@@ -277,11 +277,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||"version/"||$vocab||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$local-id
+      let $lookup-string := page:subdomain()||"version/"||$vocab||"/"||$local-id
       let $redirect-id := "/version/"||$vocab||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -299,11 +299,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$stripped-local-name||"/"
+      let $lookup-string := page:subdomain()||$namespace||"/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$local-id||"/"
+      let $lookup-string := page:subdomain()||$namespace||"/"||$local-id||"/"
       let $redirect-id := "/"||$namespace||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -321,11 +321,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$local-id
+      let $lookup-string := page:subdomain()||$vocab||"/version/"||$term-list||"/"||$local-id
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -343,11 +343,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/dwc/version/terms/attributes/"||$stripped-local-name
+      let $lookup-string := page:subdomain()||"dwc/version/terms/attributes/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/dwc/version/terms/attributes/"||$local-id
+      let $lookup-string := page:subdomain()||"dwc/version/terms/attributes/"||$local-id
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -362,7 +362,7 @@ declare
   function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/term-lists/term-lists.csv"
   let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
@@ -385,7 +385,7 @@ declare
   function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/term-lists/term-lists.csv"
   let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
@@ -434,11 +434,11 @@ declare
       return
       switch ($lookup-string)
         (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
-        case "attributes" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
+        case "attributes" return page:handle-repesentation($acceptHeader,$extension,"term-lists",page:subdomain()||"dwc/terms/attributes/")
         (: handle the special case of the simple Darwin Core guide :)
-        case "simple" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/simple/")
+        case "simple" return page:handle-repesentation($acceptHeader,$extension,"docs",page:subdomain()||"dwc/terms/simple/")
         (: handle the special case of the Darwin Core namespace policy :)
-        case "namespace" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/namespace/")
+        case "namespace" return page:handle-repesentation($acceptHeader,$extension,"docs",page:subdomain()||"dwc/terms/namespace/")
         (: handle the case of bookmarks to old quick reference guide :)
         (: Note: I used a 301 (moved permanently) redirect because we basically don't want this URL to be used any more :)
         case "index" return
@@ -455,11 +455,11 @@ declare
       return
       switch ($lookup-string)
         (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
-        case "attributes" return page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
+        case "attributes" return page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists",page:subdomain()||"dwc/terms/attributes/")
         (: handle the special case of the simple Darwin Core guide :)
-        case "simple" return page:see-also($acceptHeader,"/dwc/terms/simple","docs","http://rs.tdwg.org/dwc/terms/simple/")
+        case "simple" return page:see-also($acceptHeader,"/dwc/terms/simple","docs",page:subdomain()||"dwc/terms/simple/")
        (: handle the special case of the Darwin Core namespace policy :)
-        case "namespace" return page:see-also($acceptHeader,"/dwc/terms/namespace","docs","http://rs.tdwg.org/dwc/terms/namespace/")
+        case "namespace" return page:see-also($acceptHeader,"/dwc/terms/namespace","docs",page:subdomain()||"dwc/terms/namespace/")
         case "history" return
               (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
               (: This will redirect to the rs.tdwg.org repository readme :)
@@ -797,7 +797,7 @@ declare function page:return-representation($response-media-type,$lookup-string,
 (: Function to return a web page for vocabs etc. :)
 declare function page:handle-html($db,$lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/redirects.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/html/redirects.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -827,7 +827,7 @@ return
 (: Function to redirect to a web page for standards documents :)
 declare function page:handle-docs-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/docs/docs.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -839,7 +839,7 @@ return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 (: Function to redirect to a web page for standards documents versions :)
 declare function page:handle-docs-versions-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs-versions/docs-versions.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/docs-versions/docs-versions.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -931,6 +931,15 @@ declare function page:determine-type-flag($extension)
     default return "html"
 };
 
+declare function page:subdomain()
+{
+  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/subdomain.txt'/>)[2])
+};
+
+declare function page:branch()
+{
+  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/branch.txt'/>)[2])
+};
 
 (: Code from https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/serialize.xqm :)
 (: part of Guid-O-Matic 2.0 https://github.com/baskaufs/guid-o-matic . You are welcome to reuse or hack in any way :)
