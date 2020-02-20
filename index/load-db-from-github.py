@@ -25,7 +25,7 @@ except ImportError:
 root = False
 
 def initializeGui():
-	global root, githubRepoBox, repoSubpathBox, basexUriBox, passwordBox, edit_space
+	global root, githubRepoBox, basexUriBox, passwordBox, edit_space
 	root = Tk()
 
 	# this sets up the characteristics of the window
@@ -43,12 +43,12 @@ def initializeGui():
 	githubRepoBox.grid(column=4, row=3, sticky=W)
 	githubRepoBox.insert(END, 'tdwg/rs.tdwg.org/')
 
-	subpathText = StringVar()
-	ttk.Label(mainframe, textvariable=subpathText).grid(column=3, row=4, sticky=(W, E))
-	subpathText.set('branch (master or test)')
-	repoSubpathBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
-	repoSubpathBox.grid(column=4, row=4, sticky=W)
-	repoSubpathBox.insert(END, 'master')
+	#subpathText = StringVar()
+	#ttk.Label(mainframe, textvariable=subpathText).grid(column=3, row=4, sticky=(W, E))
+	#subpathText.set('branch (master or test)')
+	#repoSubpathBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
+	#repoSubpathBox.grid(column=4, row=4, sticky=W)
+	#repoSubpathBox.insert(END, 'master')
 
 	basexUriText = StringVar()
 	ttk.Label(mainframe, textvariable=basexUriText).grid(column=3, row=5, sticky=(W, E))
@@ -83,7 +83,7 @@ def initializeGui():
 	edit_space.insert(END, '')
 
 def gitToBaseButtonClick():
-	dataToBasex(githubRepoBox.get(), repoSubpathBox.get(), "", basexUriBox.get(), passwordBox.get())
+	dataToBasex(githubRepoBox.get(), 'master', "", basexUriBox.get(), passwordBox.get())
 
 def updateLog(message):
 	if (root):
@@ -250,12 +250,12 @@ def dataToBasexWrite(githubRepo, repoBranch, database, basexServerUri, pwd):
 def main():
 	print(sys.argv)
 	print(len(sys.argv))
-	if len(sys.argv) == 6:
+	if len(sys.argv) == 5:
 		githubRepo = sys.argv[1]
-		repoSubpath = sys.argv[2]
-		database = sys.argv[3]
-		basexUri = sys.argv[4]
-		password = sys.argv[5]
+		repoSubpath = 'master'
+		database = sys.argv[2]
+		basexUri = sys.argv[3]
+		password = sys.argv[4]
 		dataToBasex(githubRepo, repoSubpath, database, basexUri, password)
 	else:
 		initializeGui()
