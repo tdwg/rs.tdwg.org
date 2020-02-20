@@ -663,7 +663,7 @@ declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-tdw
 
 (: TDWG ontology redirects :)
 declare %rest:path("/ontology/{$path=.+}") function page:ontology-redirect($path)
-  {<rest:redirect>{"http://tdwg.github.io/ontology/ontology/"||$path}</rest:redirect>};
+  {<rest:redirect>{"http://tdwg.github.io/ontology/ontology/"||$path||".rdf"}</rest:redirect>};
 
 declare %rest:path("/ontology2/{$path=.+}") function page:ontology2-redirect($path)
   {<rest:redirect>{"http://tdwg-ontology.googlecode.com/svn/trunk/ontology/"||$path}</rest:redirect>};
