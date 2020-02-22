@@ -672,8 +672,8 @@ declare %rest:path("/ontology2/{$path=.+}") function page:ontology2-redirect($pa
 declare %rest:path("/UBIF/{$path=.+}") function page:ubif-forward($path)
   {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};
 
-declare %rest:path("/sdd/{$path=.+}") function page:sdd-forward($path)
-  {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};
+(:declare %rest:path("/sdd/{$path=.+}") function page:sdd-forward($path)
+  {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};:)
 
 (: ABCD redirects :)
 declare %rest:path("/abcd2/terms/{$path=.+}") function page:abdc2-redirect($path)
@@ -682,8 +682,23 @@ declare %rest:path("/abcd2/terms/{$path=.+}") function page:abdc2-redirect($path
 declare %rest:path("/abcd-efg/terms/{$path=.+}") function page:abdcefg-redirect($path)
   {<rest:redirect>{"http://terms.tdwg.org/wiki/abcd-efg:"||$path}</rest:redirect>};
 
-declare %rest:path("/abcd/{$path=.+}") function page:abdc-redirect($path)
-  {<rest:redirect>{"http://tdwg.github.io/abcd/"||$path}</rest:redirect>};
+declare %rest:path("/abcd/2.06/{$path=.+}") function page:abdc206x-redirect($path)
+  {<rest:redirect>{"http://tdwg.github.io/abcd/2.06/"||$path}</rest:redirect>};
+
+declare %rest:path("/abcd/2.06") function page:abdc206-redirect()
+  {<rest:redirect>{"http://tdwg.github.io/abcd/2.06"}</rest:redirect>};
+
+declare %rest:path("/abcd/1.2/{$path=.+}") function page:abdc12x-redirect($path)
+  {<rest:redirect>{"http://tdwg.github.io/abcd/1.2/"||$path}</rest:redirect>};
+
+declare %rest:path("/abcd/1.2") function page:abdc12-redirect()
+  {<rest:redirect>{"http://tdwg.github.io/abcd/1.2"}</rest:redirect>};
+
+declare %rest:path("/abcd/dev/{$path=.+}") function page:abdcdevx-redirect($path)
+  {<rest:redirect>{"http://tdwg.github.io/abcd/dev/"||$path}</rest:redirect>};
+
+declare %rest:path("/abcd/dev") function page:abdcdev-redirect()
+  {<rest:redirect>{"http://tdwg.github.io/abcd/dev"}</rest:redirect>};
 
 (: Darwin Core generic redirects when specific content negotiation doesn't kick in :)
 (: must have subpath to not override the vocabulary terms :)
