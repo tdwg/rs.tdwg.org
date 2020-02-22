@@ -102,7 +102,7 @@ def getCsvObject(httpPath, fileName, fieldDelimiter):
 	# retrieve remotely from GitHub
 	uri = httpPath + fileName
 	r = requests.get(uri)
-	print('Requests guesses character encoding to be: ', r.encoding)
+	#print('Requests guesses character encoding to be: ', r.encoding)
 	r.encoding = 'utf-8'  # force Requests to treat retrieved text as UTF-8. See https://2.python-requests.org//en/master/user/quickstart/#response-content
 	updateLog(str(r.status_code) + ' ' + uri)
 	body = r.text
