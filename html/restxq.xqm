@@ -754,6 +754,17 @@ declare
 
 (: ABCD 3.0 terms :)
 
+declare
+  %rest:path("/abcd")
+  function page:abcd-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/" />
+    </http:response>
+  </rest:response>
+};
+
 (: core ontology :)
 
 declare
@@ -894,7 +905,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/'||$path}" />
+      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/2.06/'||$path}" />
     </http:response>
   </rest:response>
 };
@@ -905,7 +916,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="https://abcd.tdwg.org/legacy" />
+      <http:header name="location" value="https://abcd.tdwg.org/legacy/2.06/" />
     </http:response>
   </rest:response>
 };
@@ -916,7 +927,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/'||$path}" />
+      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/1.2/'||$path}" />
     </http:response>
   </rest:response>
 };
@@ -927,7 +938,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="https://abcd.tdwg.org/legacy" />
+      <http:header name="location" value="https://abcd.tdwg.org/legacy/1.2/" />
     </http:response>
   </rest:response>
 };
@@ -949,7 +960,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="https://abcd.tdwg.org/legacy" />
+      <http:header name="location" value="https://abcd.tdwg.org/legacy/ABCD_/" />
     </http:response>
   </rest:response>
 };
