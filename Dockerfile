@@ -9,15 +9,14 @@ RUN cp -pr /srv /basex
 RUN usermod -d /basex basex
 WORKDIR /basex
 
-# BaseX password and script
-COPY docker/basex-users.xml /basex/basex/data/users.xml
+# BaseX script
 COPY html/restxq.xqm /basex/basex/webapp
 
-# Initialize the database (starts up, imports data, shuts down)
+# Initialize the database (sets password, starts up, imports data, shuts down)
 COPY docker/ /usr/src/docker/
 COPY index/ /usr/src/index/
 USER basex
-RUN /usr/src/docker/initialize-database.sh tdwg/rs.tdwg.org/ '' http://localhost:8984/rest/ xxxxxxxxxxxx
+RUN /usr/src/docker/initialize-database.sh tdwg/rs.tdwg.org/ '' http://localhost:8984/rest/
 USER root
 RUN rm -Rf /usr/src/docker /usr/src/index
 
