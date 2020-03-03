@@ -20,9 +20,6 @@ cat > /basex/basex/data/users.xml <<EOF
 </users>
 EOF
 
-ls -l /basex/basex/data
-cat /basex/basex/data/users.xml
-
 # Start BaseX
 /usr/local/bin/basexhttp &
 

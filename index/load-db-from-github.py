@@ -39,9 +39,9 @@ def initializeGui():
 	repoText = StringVar()
 	ttk.Label(mainframe, textvariable=repoText).grid(column=3, row=3, sticky=(W, E))
 	repoText.set('Github repo path')
-	githubRepoBox = ttk.Entry(mainframe, width = 25, textvariable = StringVar())
+	githubRepoBox = ttk.Entry(mainframe, width = 50, textvariable = StringVar())
 	githubRepoBox.grid(column=4, row=3, sticky=W)
-	githubRepoBox.insert(END, 'tdwg/rs.tdwg.org/')
+	githubRepoBox.insert(END, 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/')
 
 	#subpathText = StringVar()
 	#ttk.Label(mainframe, textvariable=subpathText).grid(column=3, row=4, sticky=(W, E))
@@ -99,13 +99,18 @@ def generateFilenameList(coreDoc):
 	return filenameList
 
 def getCsvObject(httpPath, fileName, fieldDelimiter):
-	# retrieve remotely from GitHub
-	uri = httpPath + fileName
-	r = requests.get(uri)
-	#print('Requests guesses character encoding to be: ', r.encoding)
-	r.encoding = 'utf-8'  # force Requests to treat retrieved text as UTF-8. See https://2.python-requests.org//en/master/user/quickstart/#response-content
-	updateLog(str(r.status_code) + ' ' + uri)
-	body = r.text
+	if (httpPath.startswith('http')):
+		# retrieve remotely from GitHub
+		uri = httpPath + fileName
+		r = requests.get(uri)
+		#print('Requests guesses character encoding to be: ', r.encoding)
+		r.encoding = 'utf-8'  # force Requests to treat retrieved text as UTF-8. See https://2.python-requests.org//en/master/user/quickstart/#response-content
+		updateLog(str(r.status_code) + ' ' + uri)
+		body = r.text
+	else:
+		f = open(httpPath + fileName, 'r')
+		body = f.read()
+		f.close()
 	csvData = csv.reader(body.splitlines()) # see https://stackoverflow.com/questions/21351882/reading-data-from-a-csv-file-online-in-python-3
 	return csvData
 
@@ -178,10 +183,9 @@ def writeDatabaseFile(databaseWritePath, filename, body, pwd):
 
 def dataToBasex(githubRepo, repoBranch, database, basexServerUri, pwd):
 
-	# Modification of original script to get database names from the TDWG rs.tdwt.org Github repo, then load each one
+	# Modification of original script to get database names from the TDWG rs.tdwg.org Github repo, then load each one
 
-	csvData = getCsvObject('https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/', 'index-datasets.csv', ',')
-
+	csvData = getCsvObject(githubRepo + repoBranch + '/index/', 'index-datasets.csv', ',')
 
 	loadList = []
 	for row in csvData:
@@ -199,7 +203,8 @@ def dataToBasexWrite(githubRepo, repoBranch, database, basexServerUri, pwd):
 	updateLog('create XML database')
 	updateLog(str(r.status_code) + ' ' + databaseWritePath + '\n')
 
-	httpReadPath = 'https://raw.githubusercontent.com/' + githubRepo + repoBranch + '/' + database + '/'
+	httpReadPath = githubRepo + repoBranch + '/' + database + '/'
+
 	# must open the configuration/constants file separately in order to discover the core document and separator character
 	updateLog('read constants')
 	csvData = getCsvObject(httpReadPath, 'constants.csv', ',')
@@ -252,7 +257,7 @@ def main():
 	print(len(sys.argv))
 	if len(sys.argv) == 5:
 		githubRepo = sys.argv[1]
-		repoSubpath = 'master'
+		repoSubpath = ''
 		database = sys.argv[2]
 		basexUri = sys.argv[3]
 		password = sys.argv[4]
