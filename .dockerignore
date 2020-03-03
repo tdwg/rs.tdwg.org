@@ -1,2 +1,4 @@
 .git*
 *~
+payload.json
+*.md
