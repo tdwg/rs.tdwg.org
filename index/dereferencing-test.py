@@ -25,6 +25,7 @@ def dereference_urls(outfilename, headers, subdomain, test_urls):
             hdr = {'Accept' : header}
             r = requests.get(full_url, headers=hdr)
             if r.status_code == 404:
+                print('*** 404 !')
                 response = ""
             else:
                 response = r.text[:20]
