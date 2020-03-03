@@ -14,7 +14,7 @@ declare
   %rest:header-param("Accept","{$acceptHeader}")
   function page:root($acceptHeader)
   {
-  page:see-also($acceptHeader,"/index","index",page:subdomain()||"index")
+  page:see-also($acceptHeader,"/index","index","http://rs.tdwg.org/index")
   };
 
 (: This is a test function for testing the kind of Accept header sent by the client :)
@@ -75,7 +75,7 @@ declare
 
 declare function page:check-db($db)
 {
-  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/index/index-datasets.csv"}'/>)[2]
+  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv"}'/>)[2]
   let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
   let $metadata := $xmlMetadata/csv/record
   for $record in $metadata
@@ -108,11 +108,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$stripped-local-name||"/"
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$local-id||"/"
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -130,11 +130,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||$vocab||"/doc/"||$local-id||"/"||$date
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$date
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id||"/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -152,11 +152,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$stripped-local-name||"/"
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$local-id||"/"
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"
       let $redirect-id := "/dwc/terms/guides/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -174,11 +174,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := page:subdomain()||"dwc/terms/simple/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/simple/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||"dwc/terms/simple/"||$date
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/simple/"||$date
       let $redirect-id := "/dwc/terms/simple/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -196,11 +196,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := page:subdomain()||"dwc/terms/namespace/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/namespace/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||"dwc/terms/namespace/"||$date
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/namespace/"||$date
       let $redirect-id := "/dwc/terms/namespace/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -218,11 +218,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$local-id||"/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||"dwc/terms/guides/"||$local-id||"/"||$date
+      let $lookup-string := "http://rs.tdwg.org/dwc/terms/guides/"||$local-id||"/"||$date
       let $redirect-id := "/dwc/terms/guides/"||$local-id||"/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -243,24 +243,24 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||$stripped-local-name||"/"
+      let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
       return
       switch ($stripped-local-name)
         (: handle the special case of TDWG decisions :)
-        case "decisions" return page:handle-repesentation($acceptHeader,$extension,"term-lists",page:subdomain()||"decisions/")
+        case "decisions" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/decisions/")
         (: handle the special case of the dataset index :)
-        case "index" return page:handle-repesentation($acceptHeader,$extension,"index",page:subdomain()||"index")
+        case "index" return page:handle-repesentation($acceptHeader,$extension,"index","http://rs.tdwg.org/index")
         default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||$local-id||"/"
+      let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
       let $redirect-id := "/"||$local-id
       return
       switch ($local-id)
         (: handle the special case of TDWG decisions :)
-        case "decisions" return page:see-also($acceptHeader,"/decisions","term-lists",page:subdomain()||"decisions/")
+        case "decisions" return page:see-also($acceptHeader,"/decisions","term-lists","http://rs.tdwg.org/decisions/")
         (: handle the special case of the simple Darwin Core guide :)
-        case "index" return page:see-also($acceptHeader,"/index","index",page:subdomain()||"index")
+        case "index" return page:see-also($acceptHeader,"/index","index","http://rs.tdwg.org/index")
         default return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
  };
 
@@ -277,11 +277,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||"version/"||$vocab||"/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||"version/"||$vocab||"/"||$local-id
+      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$local-id
       let $redirect-id := "/version/"||$vocab||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -299,11 +299,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||$namespace||"/"||$stripped-local-name||"/"
+      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$stripped-local-name||"/"
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||$namespace||"/"||$local-id||"/"
+      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$local-id||"/"
       let $redirect-id := "/"||$namespace||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -321,11 +321,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||$vocab||"/version/"||$term-list||"/"||$local-id
+      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$local-id
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -343,11 +343,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := page:subdomain()||"dwc/version/terms/attributes/"||$stripped-local-name
+      let $lookup-string := "http://rs.tdwg.org/dwc/version/terms/attributes/"||$stripped-local-name
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := page:subdomain()||"dwc/version/terms/attributes/"||$local-id
+      let $lookup-string := "http://rs.tdwg.org/dwc/version/terms/attributes/"||$local-id
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -362,7 +362,7 @@ declare
   function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/term-lists/term-lists.csv"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
   let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
@@ -385,7 +385,7 @@ declare
   function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/term-lists/term-lists.csv"
+  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
   let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
@@ -434,11 +434,11 @@ declare
       return
       switch ($lookup-string)
         (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
-        case "attributes" return page:handle-repesentation($acceptHeader,$extension,"term-lists",page:subdomain()||"dwc/terms/attributes/")
+        case "attributes" return page:handle-repesentation($acceptHeader,$extension,"term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
         (: handle the special case of the simple Darwin Core guide :)
-        case "simple" return page:handle-repesentation($acceptHeader,$extension,"docs",page:subdomain()||"dwc/terms/simple/")
+        case "simple" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/simple/")
         (: handle the special case of the Darwin Core namespace policy :)
-        case "namespace" return page:handle-repesentation($acceptHeader,$extension,"docs",page:subdomain()||"dwc/terms/namespace/")
+        case "namespace" return page:handle-repesentation($acceptHeader,$extension,"docs","http://rs.tdwg.org/dwc/terms/namespace/")
         (: handle the case of bookmarks to old quick reference guide :)
         (: Note: I used a 301 (moved permanently) redirect because we basically don't want this URL to be used any more :)
         case "index" return
@@ -455,11 +455,11 @@ declare
       return
       switch ($lookup-string)
         (: handle the special case of the tdwgutility: term list "/dwc/terms/attributes/". :)
-        case "attributes" return page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists",page:subdomain()||"dwc/terms/attributes/")
+        case "attributes" return page:see-also($acceptHeader,"/dwc/terms/attributes","term-lists","http://rs.tdwg.org/dwc/terms/attributes/")
         (: handle the special case of the simple Darwin Core guide :)
-        case "simple" return page:see-also($acceptHeader,"/dwc/terms/simple","docs",page:subdomain()||"dwc/terms/simple/")
+        case "simple" return page:see-also($acceptHeader,"/dwc/terms/simple","docs","http://rs.tdwg.org/dwc/terms/simple/")
        (: handle the special case of the Darwin Core namespace policy :)
-        case "namespace" return page:see-also($acceptHeader,"/dwc/terms/namespace","docs",page:subdomain()||"dwc/terms/namespace/")
+        case "namespace" return page:see-also($acceptHeader,"/dwc/terms/namespace","docs","http://rs.tdwg.org/dwc/terms/namespace/")
         case "history" return
               (: Note: I used a 301 (moved permanently) redirect because we basically don't want these URLs to be used any more :)
               (: This will redirect to the rs.tdwg.org repository readme :)
@@ -663,7 +663,13 @@ declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-tdw
 
 (: TDWG ontology redirects :)
 declare %rest:path("/ontology/{$path=.+}") function page:ontology-redirect($path)
-  {<rest:redirect>{"http://tdwg.github.io/ontology/ontology/"||$path}</rest:redirect>};
+{
+    if (contains($path,"."))
+    then
+      <rest:redirect>{"http://tdwg.github.io/ontology/ontology/"||$path}</rest:redirect>
+    else
+      <rest:redirect>{"http://tdwg.github.io/ontology/ontology/"||$path||".rdf"}</rest:redirect>
+};
 
 declare %rest:path("/ontology2/{$path=.+}") function page:ontology2-redirect($path)
   {<rest:redirect>{"http://tdwg-ontology.googlecode.com/svn/trunk/ontology/"||$path}</rest:redirect>};
@@ -672,23 +678,297 @@ declare %rest:path("/ontology2/{$path=.+}") function page:ontology2-redirect($pa
 declare %rest:path("/UBIF/{$path=.+}") function page:ubif-forward($path)
   {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};
 
-declare %rest:path("/sdd/{$path=.+}") function page:sdd-forward($path)
-  {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};
+(:declare %rest:path("/sdd/{$path=.+}") function page:sdd-forward($path)
+  {<rest:redirect>{"http://tdwg.github.io/sdd/"||$path}</rest:redirect>};:)
 
-(: ABCD redirects :)
-declare %rest:path("/abcd2/terms/{$path=.+}") function page:abdc2-redirect($path)
-  {<rest:redirect>{"http://terms.tdwg.org/wiki/abcd2:"||$path}</rest:redirect>};
+(: ABCD redirects. Currently they all have 303 redirects, so I've done that here as well. :)
 
-declare %rest:path("/abcd-efg/terms/{$path=.+}") function page:abdcefg-redirect($path)
-  {<rest:redirect>{"http://terms.tdwg.org/wiki/abcd-efg:"||$path}</rest:redirect>};
+(: ABCD2 terms :)
+declare
+  %rest:path("/abcd2/terms/{$path=[a-zA-Z0-9-._@]+}")
+  function page:abcd2termsx-redirect($path)
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="{'http://terms.tdwg.org/wiki/abcd2:'||$path}" />
+    </http:response>
+  </rest:response>
+};
 
-declare %rest:path("/abcd/{$path=.+}") function page:abdc-redirect($path)
-  {<rest:redirect>{"http://tdwg.github.io/abcd/"||$path}</rest:redirect>};
+declare
+  %rest:path("/abcd2/terms")
+  function page:abcd2terms-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="http://terms.tdwg.org/wiki/ABCD_2" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd2")
+  function page:abcd2-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="http://terms.tdwg.org/wiki/ABCD_2" />
+    </http:response>
+  </rest:response>
+};
+
+(: ABCD EFG terms :)
+
+declare
+  %rest:path("/abcd-efg/terms/{$path=[a-zA-Z0-9-._@]+}")
+  function page:abcdefgtermsx-redirect($path)
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="{'http://terms.tdwg.org/wiki/abcd-efg:'||$path}" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd-efg/terms")
+  function page:abcdefgterms-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="http://terms.tdwg.org/wiki/ABCD_EFG" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd-efg")
+  function page:abcdefg-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="http://terms.tdwg.org/wiki/ABCD_EFG" />
+    </http:response>
+  </rest:response>
+};
+
+(: ABCD 3.0 terms :)
+
+declare
+  %rest:path("/abcd")
+  function page:abcd-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/" />
+    </http:response>
+  </rest:response>
+};
+
+(: core ontology :)
+
+declare
+  %rest:path("/abcd/terms/{$path=[a-zA-Z0-9-._@]+}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:abcdtermsx-redirect($path, $acceptHeader)
+  {
+    switch ($acceptHeader)
+      case "application/rdf+xml" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.owl" />
+            </http:response>
+         </rest:response>
+
+      case "text/turtle" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.ttl" />
+            </http:response>
+         </rest:response>
+
+      case "application/ld+json" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.jsonld" />
+            </http:response>
+         </rest:response>
+
+      case "text/html" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="{'https://abcd.tdwg.org/terms/#'||$path}" />
+            </http:response>
+         </rest:response>
+
+      default return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.owl" />
+            </http:response>
+         </rest:response>
+};
+
+(: mappings ontology :)
+
+declare
+  %rest:path("/abcd/mappings/{$path=[a-zA-Z0-9-._@]+}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:abcdmappingsx-redirect($path, $acceptHeader)
+  {
+    switch ($acceptHeader)
+      case "application/rdf+xml" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.owl" />
+            </http:response>
+         </rest:response>
+
+      case "text/turtle" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.ttl" />
+            </http:response>
+         </rest:response>
+
+      case "application/ld+json" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.jsonld" />
+            </http:response>
+         </rest:response>
+
+      case "text/html" return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="{'https://abcd.tdwg.org/mappings/#'||$path}" />
+            </http:response>
+         </rest:response>
+
+      default return 
+         <rest:response>
+            <http:response status="303">
+              <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.owl" />
+            </http:response>
+         </rest:response>
+};
+
+(: ABCD history URLs :)
+declare
+  %rest:path("/abcd/terms/history/{$path=[a-zA-Z0-9-._@]+}")
+  function page:history-redirect($path)
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="{'https://abcd.tdwg.org/terms/history/#'||$path}" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/terms/?")
+  function page:termsq-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/terms/" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/mapping/?")
+  function page:mappingq-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/terms/mappings/" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/?")
+  function page:abcdq-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/" />
+    </http:response>
+  </rest:response>
+};
+
+(: ABCD legacy URLs :)
+declare
+  %rest:path("/abcd/2.06/{$path=[a-zA-Z0-9-._@]+}")
+  function page:abcd206x-redirect($path)
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/2.06/'||$path}" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/2.06")
+  function page:abcd206-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/legacy/2.06/" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/1.2/{$path=[a-zA-Z0-9-._@]+}")
+  function page:abcd12x-redirect($path)
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/1.2/'||$path}" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/1.2")
+  function page:abcd12-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/legacy/1.2/" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/ABCD_/{$path=[a-zA-Z0-9-._@]+}")
+  function page:abcdABCD_x-redirect($path)
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="{'https://abcd.tdwg.org/legacy/'||$path}" />
+    </http:response>
+  </rest:response>
+};
+
+declare
+  %rest:path("/abcd/ABCD_")
+  function page:abcdABCD_-redirect()
+  {
+   <rest:response>
+    <http:response status="303">
+      <http:header name="location" value="https://abcd.tdwg.org/legacy/ABCD_/" />
+    </http:response>
+  </rest:response>
+};
 
 (: Darwin Core generic redirects when specific content negotiation doesn't kick in :)
 (: must have subpath to not override the vocabulary terms :)
 declare %rest:path("/dwc/xsd/{$path=.+}") function page:dwc-xsd-redirect($path)
- {<rest:redirect>{"https://dwc.tdwg.org/xsd/"||$path}</rest:redirect>};
+ {<rest:redirect>{"https://dwc.tdwg.org/xml/"||$path}</rest:redirect>};
 
 declare %rest:path("/dwc/text/{$path=.+}") function page:dwc-text-redirect($path)
  {<rest:redirect>{"https://dwc.tdwg.org/text/"||$path}</rest:redirect>};
@@ -797,7 +1077,7 @@ declare function page:return-representation($response-media-type,$lookup-string,
 (: Function to return a web page for vocabs etc. :)
 declare function page:handle-html($db,$lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/html/redirects.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/redirects.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -827,7 +1107,7 @@ return
 (: Function to redirect to a web page for standards documents :)
 declare function page:handle-docs-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/docs/docs.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -839,7 +1119,7 @@ return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 (: Function to redirect to a web page for standards documents versions :)
 declare function page:handle-docs-versions-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/"||page:branch()||"/docs-versions/docs-versions.csv"
+let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs-versions/docs-versions.csv"
 let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
@@ -931,15 +1211,6 @@ declare function page:determine-type-flag($extension)
     default return "html"
 };
 
-declare function page:subdomain()
-{
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/subdomain.txt'/>)[2])
-};
-
-declare function page:branch()
-{
-  normalize-space(http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/branch.txt'/>)[2])
-};
 
 (: Code from https://raw.githubusercontent.com/baskaufs/guid-o-matic/master/serialize.xqm :)
 (: part of Guid-O-Matic 2.0 https://github.com/baskaufs/guid-o-matic . You are welcome to reuse or hack in any way :)

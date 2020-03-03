@@ -28,7 +28,7 @@ ttk.Label(mainframe, textvariable=dumpUriText).grid(column=3, row=10, sticky=(W,
 dumpUriText.set('Graph dump URI root')
 dumpUriBox = ttk.Entry(mainframe, width = 50, textvariable = StringVar())
 dumpUriBox.grid(column=4, row=10, sticky=W)
-dumpUriBox.insert(END, 'http://rs-test.tdwg.org/dump/')
+dumpUriBox.insert(END, 'http://rs.tdwg.org/dump/')
 
 endpointUriText = StringVar()
 ttk.Label(mainframe, textvariable=endpointUriText).grid(column=3, row=11, sticky=(W, E))

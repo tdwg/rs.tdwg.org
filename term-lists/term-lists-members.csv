@@ -300,7 +300,6 @@ http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/status
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/Vocabulary
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/TermList
-http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/layer
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/required
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/repeatable
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI
@@ -323,6 +322,9 @@ http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2014-10-26_1
 http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2014-10-30_16
 http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2014-11-06_17
 http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2015-03-19_18
+http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2019-12-01_19
+http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2019-12-01_20
+http://rs.tdwg.org/decisions/,http://rs.tdwg.org/decisions/decision-2019-12-01_21
 http://rs.tdwg.org/ac/Iptc4xmpExt/,http://iptc.org/std/Iptc4xmpExt/2008-02-29/City
 http://rs.tdwg.org/ac/Iptc4xmpExt/,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryCode
 http://rs.tdwg.org/ac/Iptc4xmpExt/,http://iptc.org/std/Iptc4xmpExt/2008-02-29/CountryName
@@ -418,7 +420,6 @@ http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/TaxonomicCoverage
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/ResourceCreation
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/RelatedResource
-http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/ServiceAccessPoint
 http://rs.tdwg.org/dwc/curatorial/,http://rs.tdwg.org/dwc/curatorial/CatalogNumberNumeric
 http://rs.tdwg.org/dwc/curatorial/,http://rs.tdwg.org/dwc/curatorial/CollectorNumber
 http://rs.tdwg.org/dwc/curatorial/,http://rs.tdwg.org/dwc/curatorial/DateIdentified
@@ -604,3 +605,4 @@ http://rs.tdwg.org/dwc/obsolete/,http://digir.net/schema/conceptual/darwin/exten
 http://rs.tdwg.org/dwc/obsolete/,http://digir.net/schema/conceptual/darwin/extension/paleontology/1.0/LowestBiostratigraphicZone
 http://rs.tdwg.org/dwc/obsolete/,http://digir.net/schema/conceptual/darwin/extension/paleontology/1.0/Member
 http://rs.tdwg.org/dwc/obsolete/,http://gensc.org/ns/mixs/source_mat_id
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/ServiceAccessPoint
