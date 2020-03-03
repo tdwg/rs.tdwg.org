@@ -13,11 +13,11 @@ WORKDIR /basex
 COPY html/restxq.xqm /basex/basex/webapp
 
 # Initialize the database (sets password, starts up, imports data, shuts down)
-COPY . /usr/src/
+COPY . /usr/src/rs.tdwg.org
 USER basex
-RUN /usr/src/docker/initialize-database.sh ../ '' http://localhost:8984/rest/
+RUN /usr/src/rs.tdwg.org/docker/initialize-database.sh ../ '' http://localhost:8984/rest/
 USER root
-RUN rm -Rf /usr/src/
+RUN rm -Rf /usr/src/rs.tdwg.org
 
 COPY docker/supervisord.conf /etc/supervisord.conf
 COPY docker/varnish_default.vcl /etc/varnish/default.vcl
