@@ -88,78 +88,78 @@ Darwin Core basic vocabulary (<http://rs.tdwg.org/dwc/>)
 
 Documents:
 
-**Title:** Darwin Core RDF Guide\
-**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/rdf/](https://dwc.tdwg.org/rdf/)\
-**Created:** 2015-06-02\
-**Last modified:** 2015-06-02\
-**Contributors:**\
-Steve Baskauf (lead author) - TDWG RDF/OWL Task Group\
-John Wieczorek (author) - TDWG Darwin Core Task Group\
-John Deck  (author) - Genomic Biodiversity Working Group\
-Campbell Webb  (author) - TDWG RDF/OWL Task Group\
-Paul J. Morris  (author) - Harvard University Herbaria/Museum of Comparative Zoölogy\
-Mark Schildhauer  (author) - National Center for Ecological Analysis and Synthesis\
-**Publisher:** Biodiversity Information Standards (TDWG)\
-**Abstract:** This guide is intended to facilitate the use of Darwin Core terms in the Resource Description Framework (RDF). It explains basic features of RDF and provides details of how to expose data in the form of RDF using Darwin Core terms and terms from other key vocabularies. It defines terms in the namespace http://rs.tdwg.org/dwc/iri/ which are intended for use excusively with non-literal objects. \
+**Title:** Darwin Core RDF Guide \
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/rdf/](https://dwc.tdwg.org/rdf/) \
+**Created:** 2015-06-02 \
+**Last modified:** 2015-06-02 \
+**Contributors:** \
+Steve Baskauf (lead author) - TDWG RDF/OWL Task Group \
+John Wieczorek (author) - TDWG Darwin Core Task Group \
+John Deck  (author) - Genomic Biodiversity Working Group \
+Campbell Webb  (author) - TDWG RDF/OWL Task Group \
+Paul J. Morris  (author) - Harvard University Herbaria/Museum of Comparative Zoölogy \
+Mark Schildhauer  (author) - National Center for Ecological Analysis and Synthesis \
+**Publisher:** Biodiversity Information Standards (TDWG) \
+**Abstract:** This guide is intended to facilitate the use of Darwin Core terms in the Resource Description Framework (RDF). It explains basic features of RDF and provides details of how to expose data in the form of RDF using Darwin Core terms and terms from other key vocabularies. It defines terms in the namespace http://rs.tdwg.org/dwc/iri/ which are intended for use excusively with non-literal objects.  \
 **Citation:** Darwin Core and RDF/OWL Task Groups. 2015. Darwin Core RDF Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/rdf/
 
-**Title:** Darwin Core Text Guide\
-**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/text/](https://dwc.tdwg.org/text/)\
-**Created:** 2014-11-08\
-**Last modified:** 2014-11-08\
-**Contributors:**\
-Tim Robertson (lead author) - Global Biodiversity Information Facility\
-Markus Döring (author) - Global Biodiversity Information Facility\
-John Wieczorek (author) - TDWG Darwin Core Task Group\
-Renato De Giovanni (author) - Centro de Referência em Informação Ambiental\
-Dave Vieglais (author) - KU Natural History Museum\
-Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
-**Publisher:** Biodiversity Information Standards (TDWG)\
-**Abstract:** This document provides guidelines for implementing Darwin Core in Text files.\
+**Title:** Darwin Core Text Guide \
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/text/](https://dwc.tdwg.org/text/) \
+**Created:** 2014-11-08 \
+**Last modified:** 2014-11-08 \
+**Contributors:** \
+Tim Robertson (lead author) - Global Biodiversity Information Facility \
+Markus Döring (author) - Global Biodiversity Information Facility \
+John Wieczorek (author) - TDWG Darwin Core Task Group \
+Renato De Giovanni (author) - Centro de Referência em Informação Ambiental \
+Dave Vieglais (author) - KU Natural History Museum \
+Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign \
+**Publisher:** Biodiversity Information Standards (TDWG) \
+**Abstract:** This document provides guidelines for implementing Darwin Core in Text files. \
 **Citation:** Darwin Core Task Group. 2014. Darwin Core Text Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/text/
 
-**Title:** Darwin Core XML Guide\
-**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/xml/](https://dwc.tdwg.org/xml/)\
-**Created:** 2014-11-08\
-**Last modified:** 2014-11-08\
-**Contributors:**\
-John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley\
-Markus Döring (author) - Global Biodiversity Information Facility\
-Renato De Giovanni (author) - Centro de Referência em Informação Ambiental\
-Tim Robertson (author) - Global Biodiversity Information Facility\
-Dave Vieglais (author) - KU Natural History Museum\
-Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
-**Publisher:** Biodiversity Information Standards (TDWG)\
-**Abstract:** This document provides guidelines for the implementation of Darwin Core in XML.\
+**Title:** Darwin Core XML Guide \
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/xml/](https://dwc.tdwg.org/xml/) \
+**Created:** 2014-11-08 \
+**Last modified:** 2014-11-08 \
+**Contributors:** \
+John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley \
+Markus Döring (author) - Global Biodiversity Information Facility \
+Renato De Giovanni (author) - Centro de Referência em Informação Ambiental \
+Tim Robertson (author) - Global Biodiversity Information Facility \
+Dave Vieglais (author) - KU Natural History Museum \
+Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign \
+**Publisher:** Biodiversity Information Standards (TDWG) \
+**Abstract:** This document provides guidelines for the implementation of Darwin Core in XML. \
 **Citation:** Darwin Core Task Group. 2014. Darwin Core XML Guide. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/guides/xml/
 
-**Title:** Simple Darwin Core\
-**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/simple/](https://dwc.tdwg.org/simple/)\
-**Created:** 2014-11-08\
-**Last modified:** 2014-11-08\
-**Contributors:**\
-John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley\
-Markus Döring (author) - Global Biodiversity Information Facility\
-Renato De Giovanni (author) - Centro de Referência em Informação Ambiental\
-Tim Robertson (author) - Global Biodiversity Information Facility\
-Dave Vieglais (author) - KU Natural History Museum\
-Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
-**Publisher:** Biodiversity Information Standards (TDWG)\
-**Abstract:** This document is a reference for the Simple Darwin Core standard, a mechanism used to share biodiversity information using the simplest methods and structure.  \
+**Title:** Simple Darwin Core \
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/simple/](https://dwc.tdwg.org/simple/) \
+**Created:** 2014-11-08 \
+**Last modified:** 2014-11-08 \
+**Contributors:** \
+John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley \
+Markus Döring (author) - Global Biodiversity Information Facility \
+Renato De Giovanni (author) - Centro de Referência em Informação Ambiental \
+Tim Robertson (author) - Global Biodiversity Information Facility \
+Dave Vieglais (author) - KU Natural History Museum \
+Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign \
+**Publisher:** Biodiversity Information Standards (TDWG) \
+**Abstract:** This document is a reference for the Simple Darwin Core standard, a mechanism used to share biodiversity information using the simplest methods and structure.   \
 **Citation:** Darwin Core Task Group. 2014. Simple Darwin Core. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/simple/
 
-**Title:** Darwin Core Namespace Policy\
-**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/namespace/](https://dwc.tdwg.org/namespace/)\
-**Created:** 2014-11-08\
-**Last modified:** 2014-11-08\
-**Contributors:**\
-John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley\
-Markus Döring (author) - Global Biodiversity Information Facility\
-Renato De Giovanni (author) - Centro de Referência em Informação Ambiental\
-Tim Robertson (author) - Global Biodiversity Information Facility\
-Dave Vieglais (author) - KU Natural History Museum\
-Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
-**Publisher:** Biodiversity Information Standards (TDWG)\
-**Abstract:** All terms in the Darwin Core must be assigned a unique Uniform Resource Identifier (URI). For convenience, the term URIs that are assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin Core namespaces. This document describes how term URIs are allocated by the Darwin Core Task Group and the policies associated with Darwin Core namespaces. \
+**Title:** Darwin Core Namespace Policy \
+**Permanent IRI:** [http://rs.tdwg.org/dwc/terms/namespace/](https://dwc.tdwg.org/namespace/) \
+**Created:** 2014-11-08 \
+**Last modified:** 2014-11-08 \
+**Contributors:** \
+John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley \
+Markus Döring (author) - Global Biodiversity Information Facility \
+Renato De Giovanni (author) - Centro de Referência em Informação Ambiental \
+Tim Robertson (author) - Global Biodiversity Information Facility \
+Dave Vieglais (author) - KU Natural History Museum \
+Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign \
+**Publisher:** Biodiversity Information Standards (TDWG) \
+**Abstract:** All terms in the Darwin Core must be assigned a unique Uniform Resource Identifier (URI). For convenience, the term URIs that are assigned and managed by the Darwin Core Task Group are grouped into collections known as Darwin Core namespaces. This document describes how term URIs are allocated by the Darwin Core Task Group and the policies associated with Darwin Core namespaces.  \
 **Citation:** Darwin Core Task Group. 2014. Darwin Core Namespace Policy. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/terms/namespace/
 
