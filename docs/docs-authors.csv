@@ -187,8 +187,8 @@ http://rs.tdwg.org/wgsrpd/doc/data/,http://viaf.org/viaf/41921927,Richard K. Bru
 http://rs.tdwg.org/wgsrpd/doc/data/,http://orcid.org/0000-0002-6321-9398,Francisco Pando,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/wgsrpd/doc/data/,http://viaf.org/viaf/26204975,S. Hollis,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/wgsrpd/doc/data/,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/1f870a85-7a31-473e-ad76-fcce00469c83,Neil A. Brummitt,author,http://www.wikidata.org/entity/Q482980,,
-http://rs.tdwg.org/xdf/doc/,http://viaf.org/viaf/232871584,Richard J. White,author,http://www.wikidata.org/entity/Q482980,,
-http://rs.tdwg.org/xdf/doc/,http://viaf.org/viaf/64067143,Robert Allkin,author,http://www.wikidata.org/entity/Q482980,,
+http://rs.tdwg.org/xdf/doc/article/,http://viaf.org/viaf/232871584,Richard J. White,author,http://www.wikidata.org/entity/Q482980,,
+http://rs.tdwg.org/xdf/doc/article/,http://viaf.org/viaf/64067143,Robert Allkin,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/bphsup/doc/book/,http://viaf.org/viaf/41889168,Gavin D. R. Bridson,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/bphsup/doc/book/,http://viaf.org/viaf/76413207,Elizabeth R. Smith,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/ih/doc/book/,http://viaf.org/viaf/5004494,Patricia K. Holmgren,editor,http://www.wikidata.org/entity/Q1607826,,
@@ -207,7 +207,7 @@ http://rs.tdwg.org/itfbgpr/doc/specification/,http://viaf.org/viaf/69104243,Kerr
 http://rs.tdwg.org/frw/doc/book/,http://viaf.org/viaf/19771885,Armen Leonovich Takhtajan,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/frw/doc/book/,http://viaf.org/viaf/91310738,Theodore J. Crovello,translator,http://www.wikidata.org/entity/Q333634,,
 http://rs.tdwg.org/frw/doc/book/,http://viaf.org/viaf/61620062,Arthur Cronquist,editor,http://www.wikidata.org/entity/Q1607826,,
-http://rs.tdwg.org/bph/doc/,http://viaf.org/viaf/41889168,Gavin D. R. Bridson,author,http://www.wikidata.org/entity/Q482980,Hunt Institute,http://www.wikidata.org/entity/Q43555311
+http://rs.tdwg.org/bph/doc/book/,http://viaf.org/viaf/41889168,Gavin D. R. Bridson,author,http://www.wikidata.org/entity/Q482980,Hunt Institute,http://www.wikidata.org/entity/Q43555311
 http://rs.tdwg.org/tl/doc/v1/,http://viaf.org/viaf/270400376,Frans A. Stafleu,lead author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/tl/doc/v2/,http://viaf.org/viaf/270400376,Frans A. Stafleu,lead author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/tl/doc/v3/,http://viaf.org/viaf/270400376,Frans A. Stafleu,lead author,http://www.wikidata.org/entity/Q482980,,

@@ -186,8 +186,8 @@ http://rs.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/41921927,,,,,author,Ri
 http://rs.tdwg.org/wgsrpd/doc/data/,,http://orcid.org/0000-0002-6321-9398,,,,,author,Francisco Pando
 http://rs.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/26204975,,,,,author,S. Hollis
 http://rs.tdwg.org/wgsrpd/doc/data/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/1f870a85-7a31-473e-ad76-fcce00469c83,,,,,author,Neil A. Brummitt
-http://rs.tdwg.org/xdf/doc/,,http://viaf.org/viaf/232871584,,,,,author,Richard J. White
-http://rs.tdwg.org/xdf/doc/,,http://viaf.org/viaf/64067143,,,,,author,Robert Allkin
+http://rs.tdwg.org/xdf/doc/article/,,http://viaf.org/viaf/232871584,,,,,author,Richard J. White
+http://rs.tdwg.org/xdf/doc/article/,,http://viaf.org/viaf/64067143,,,,,author,Robert Allkin
 http://rs.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
 http://rs.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/76413207,,,,,author,Elizabeth R. Smith
 http://rs.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/5004494,,,,editor,Patricia K. Holmgren
@@ -206,7 +206,7 @@ http://rs.tdwg.org/itfbgpr/doc/specification/,,http://viaf.org/viaf/69104243,,,,
 http://rs.tdwg.org/frw/doc/book/,,http://viaf.org/viaf/19771885,,,,,author,Armen Leonovich Takhtajan
 http://rs.tdwg.org/frw/doc/book/,,,,http://viaf.org/viaf/91310738,,,translator,Theodore J. Crovello
 http://rs.tdwg.org/frw/doc/book/,,,http://viaf.org/viaf/61620062,,,,editor,Arthur Cronquist
-http://rs.tdwg.org/bph/doc/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
+http://rs.tdwg.org/bph/doc/book/,,http://viaf.org/viaf/41889168,,,,,author,Gavin D. R. Bridson
 http://rs.tdwg.org/tl/doc/v1/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
 http://rs.tdwg.org/tl/doc/v2/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu
 http://rs.tdwg.org/tl/doc/v3/,http://viaf.org/viaf/270400376,,,,,,lead author,Frans A. Stafleu

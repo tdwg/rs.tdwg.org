@@ -66,6 +66,6 @@ William Ulate  (author) - INBioparque, Santo Domingo de Heredia \
 Walter G. Berendsohn (lead author) - Botanic Garden and Botanical Museum Berlin-Dahlem \
 **Publisher:** Biodiversity Information Standards (TDWG)\
 **Abstract:** XML schema document for the Access to Biological Collection Data standard.\
-**Note:** See also https://rawgit.com/tdwg/abcd/master/2.06/rddl-2007-10-18.html\
+**Note:** See also https://raw.githack.com/tdwg/abcd/master/2.06/rddl-2007-10-18.html\
 **Citation:** TDWG Access to Biological Collections Data (ABCD) Task Group 2007. Access to Biological Collections Data (ABCD) XML Schema. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/abcd/doc/xmlschema/
 

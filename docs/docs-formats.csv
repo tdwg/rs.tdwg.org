@@ -36,7 +36,7 @@ http://rs.tdwg.org/poss/doc/specification/,application/pdf,https://github.com/td
 http://rs.tdwg.org/pnbd/doc/specification/,application/pdf,https://github.com/tdwg/prior-standards/raw/master/plant-names-in-botanical-databases/113-528-1-RV.pdf
 http://rs.tdwg.org/apn/doc/data/,print,urn:isbn:1842460854
 http://rs.tdwg.org/wgsrpd/doc/data/,application/pdf,https://github.com/tdwg/wgsrpd/raw/master/109-488-1-ED/2nd%20Edition/TDWG_geo2.pdf
-http://rs.tdwg.org/xdf/doc/,application/pdf,https://doi.org/10.1016/0895-7177(92)90163-F
+http://rs.tdwg.org/xdf/doc/article/,application/pdf,https://doi.org/10.1016/0895-7177(92)90163-F
 http://rs.tdwg.org/bphsup/doc/book/,print,urn:isbn:0913196541
 http://rs.tdwg.org/ih/doc/book/,print,urn:isbn:0893273589
 http://rs.tdwg.org/itfbgpr/doc/specification/,application/pdf,http://www.bgci.org/files/Databases/itf2.pdf
@@ -56,4 +56,4 @@ http://rs.tdwg.org/tl/doc/s5/,text/html,http://www.sil.si.edu/DigitalCollections
 http://rs.tdwg.org/tl/doc/s6/,text/html,http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm?vol=13#page/7
 http://rs.tdwg.org/tl/doc/s7/,text/html,http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm?vol=14#page/7
 http://rs.tdwg.org/tl/doc/s8/,text/html,http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm?vol=15#page/7
-http://rs.tdwg.org/bph/doc/,print,urn:isbn:0913196789
+http://rs.tdwg.org/bph/doc/book/,print,urn:isbn:0913196789
