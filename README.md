@@ -324,19 +324,19 @@ For more information, see [this blog post](http://baskauf.blogspot.com/2019/04/u
 
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
- | TDWG utility (`dwcutility:`) terms | http://rs.tdwg.org/dwc/terms/attributes/ttt | [utility](utility) | http://rs.tdwg.org/dwc/terms/attributes/version/ttt-yyyy-mm-dd | [utility-versions](utility-versions) |
- | Data catalog (DCAT) metadata | http://rs.tdwg.org/dump/datasetname | [index](index) | N/A | N/A |
- | Executive decisions history | http://rs.tdwg.org/decisions/ttt | [decisions](decisions)** | N/A*** | N/A |
+ | TDWG utility (`dwcutility:`) terms | `http://rs.tdwg.org/dwc/terms/attributes/ttt` | [utility](utility) | `http://rs.tdwg.org/dwc/terms/attributes/version/ttt-yyyy-mm-dd` | [utility-versions](utility-versions) |
+ | Data catalog (DCAT) metadata | `http://rs.tdwg.org/dump/datasetname` | [index](index) | N/A | N/A |
+ | Executive decisions history | `http://rs.tdwg.org/decisions/ttt` | [decisions](decisions)** | N/A*** | N/A |
  | Darwin Core translations | multilingual labels (no IRIs) | [dwc-translations](dwc-translations) | N/A | N/A |
 
 ## <a name="obsolete-metadata"></a>4.3 Metadata about obsolete pre-standard versions of Darwin Core
 
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
- | Curatorial terms | http://rs.tdwg.org/dwc/curatorial/ttt | [curatorial](curatorial) | http://rs.tdwg.org/dwc/curatorial/version/ttt-yyyy-mm-dd | [curatorial-versions](curatorial-versions) |
- | Core terms | http://rs.tdwg.org/dwc/dwcore/ttt | [dwcore](dwcore) | http://rs.tdwg.org/dwc/dwcore/version/ttt-yyyy-mm-dd | [dwcore-versions](dwcore-versions) |
- | Geospatial terms | http://rs.tdwg.org/dwc/geospatial/ttt | [geospatial](geospatial) | http://rs.tdwg.org/dwc/geospatial/version/ttt-yyyy-mm-dd | [geospatial-versions](geospatial-versions) |
- | Type terms | http://rs.tdwg.org/dwc/dwctype/ttt | [dwctype](dwctype) | http://rs.tdwg.org/dwc/dwctype/version/ttt-yyyy-mm-dd | [dwctype-versions](dwctype-versions) |
+ | Curatorial terms | `http://rs.tdwg.org/dwc/curatorial/ttt` | [curatorial](curatorial) | `http://rs.tdwg.org/dwc/curatorial/version/ttt-yyyy-mm-dd` | [curatorial-versions](curatorial-versions) |
+ | Core terms | `http://rs.tdwg.org/dwc/dwcore/ttt` | [dwcore](dwcore) | `http://rs.tdwg.org/dwc/dwcore/version/ttt-yyyy-mm-dd` | [dwcore-versions](dwcore-versions) |
+ | Geospatial terms | `http://rs.tdwg.org/dwc/geospatial/ttt` | [geospatial](geospatial) | `http://rs.tdwg.org/dwc/geospatial/version/ttt-yyyy-mm-dd` | [geospatial-versions](geospatial-versions) |
+ | Type terms | `http://rs.tdwg.org/dwc/dwctype/ttt` | [dwctype](dwctype) | `http://rs.tdwg.org/dwc/dwctype/version/ttt-yyyy-mm-dd` | [dwctype-versions](dwctype-versions) |
  | terms not in the ```tdwg.org``` subdomain | various IRI forms | [dwc-obsolete](dwc-obsolete) | various IRI forms | [dwc-obsolete-versions](dwc-obsolete-versions) |
 
 
