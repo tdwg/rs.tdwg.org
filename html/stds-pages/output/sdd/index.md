@@ -63,6 +63,6 @@ Kevin R. Thiele (author) - Western Australian Herbarium \
 Robert A. Morris (author) - University of Massachusetts at Boston, USA\
 **Publisher:** Biodiversity Information Standards (TDWG)\
 **Abstract:** This is the schema file to be referenced in instance documents for validation. It is the top level schema file that integrates the schema components. \
-**Note:** See also https://rawgit.com/tdwg/sdd/master/2006/rddl.html and https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/UBIF_(c).xsd .\
+**Note:** See also https://rawgit.com/tdwg/sdd/master/2006/rddl.html and https://github.com/tdwg/sdd/blob/master/2006/Schema/1.1/UBIF_(c).xsd\
 **Citation:** Structure of Descriptive Data (SDD) Subgroup. 2006. Structured Descriptive Data XML Schema. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/sdd/doc/xmlschema/
 

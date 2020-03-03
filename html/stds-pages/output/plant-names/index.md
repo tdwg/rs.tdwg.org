@@ -49,6 +49,6 @@ Documents:
 Frank A Bisby  (author) - University of Southampton \
 **Publisher:** Hunt Institute for Botanical Documentation\
 **Abstract:** This standard defines the taxonomic and nomenclatural concepts associated with the names of plants. It describes the component parts, their functions and their interrelations of significance in structuring a database. \
-**Note:** The introduction of this publication provides some historical information about TDWG and early standards it produced or adopted from elsewhere.\
+**Note:** Note: the introduction of this publication provides some historical information about TDWG and early standards it produced or adopted from elsewhere.\
 **Citation:** TDWG Minimum Standard for Names in Botanical Databases Subgroup (Author: Frank A. Bisby). 1994. Plant Names in Botanical Databases. Hunt Institute for Botanical Documentation. http://rs.tdwg.org/pnbd/doc/specification/
 

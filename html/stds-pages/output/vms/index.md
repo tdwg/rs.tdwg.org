@@ -34,14 +34,14 @@ Abstract
 Bibliographic citation
 : Vocabulary Maintenance Specification Task Group. 2017. Vocabulary Maintenance Standard. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/642
 
-## Introduction
-
-TDWG vocabularies are a collection of standardized terms and their definitions. Vocabulary standards differ from other Biodiversity Information Standards (TDWG) standards in that they are likely to change more often over time as they evolve to meet the changing needs of the biodiversity informatics community. These changes may be incremental, making it impractical to apply the full [TDWG standards process](../../about/process) to every change. The TDWG Vocabulary Maintenance Specification details the categories of changes that can be made to a TDWG vocabulary standard, the mechanisms used to achieve those changes, and the entities that are responsible for shepherding those changes through the process.
-
-## Audience
-
-This standard is intended for those who are involved in making changes to TDWG vocabulary standards. That includes those who want to submit change proposals and members of Interest Groups who are responsible for vocabulary maintenance.
-
+## Introduction
+
+TDWG vocabularies are a collection of standardized terms and their definitions. Vocabulary standards differ from other Biodiversity Information Standards (TDWG) standards in that they are likely to change more often over time as they evolve to meet the changing needs of the biodiversity informatics community. These changes may be incremental, making it impractical to apply the full [TDWG standards process](../../about/process) to every change. The TDWG Vocabulary Maintenance Specification details the categories of changes that can be made to a TDWG vocabulary standard, the mechanisms used to achieve those changes, and the entities that are responsible for shepherding those changes through the process.
+
+## Audience
+
+This standard is intended for those who are involved in making changes to TDWG vocabulary standards. That includes those who want to submit change proposals and members of Interest Groups who are responsible for vocabulary maintenance.
+
 
 
 ## Parts of the standard

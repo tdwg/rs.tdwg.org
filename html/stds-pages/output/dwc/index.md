@@ -36,46 +36,46 @@ Abstract
 Bibliographic citation
 : Darwin Core Task Group. 2009. Darwin Core. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/450
 
-## Maintenance group
-
-Modifications and enhancements to Darwin Core are managed by the [Darwin Core Maintenance Group](../../community/dwc).
-
-The best way to be involved is to create an account on [GitHub](https://github.com), and "watch" the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), as well as the [Darwin Core Questions & Answers repository](https://github.com/tdwg/dwc-qa), and respond to requests for comments or "issues" ([Darwin Core issues](https://github.com/tdwg/dwc/issues) and [Darwin Core QA issues](https://github.com/tdwg/dwc-qa/issues/)). Information about how to suggest changes to the standard can be found at the [Guidelines for Contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md) page.
-
-## Scope of Darwin Core
-
-What is in scope?
-
-- Collections of any kind of biological objects or data.
-- Terminology associated with biological collection data.
-- Striving for compatibility with other biodiversity-related standards.
-- Facilitating the addition of components and attributes of biological data.
-
-What is not in scope?
-
-- Data interchange protocols.
-- Non-biodiversity-related data.
-- Purely taxonomic data.
-
-## Audience
-
-- Biodiversity data holders (organizations, institutions, researchers).
-- Consumers of biodiversity data.
-- Developers of collections management systems.
-- Other TDWG interest and task groups.
-- Protocol developers (TAPIR).
-- Biodiversity network developers.
-
-## Contributors
-
-[List of contributors](https://github.com/tdwg/dwc/contributors)
-
-## Resources
-
-- Resource directory: <http://rs.tdwg.org/dwc/>
-- Maintenance group: <https://www.tdwg.org/community/dwc/>
-- Primary collaboration platform: <https://github.com/tdwg/dwc>
-- Darwin Core Questions & Answers: <https://github.com/tdwg/dwc-qa>
+## Maintenance group
+
+Modifications and enhancements to Darwin Core are managed by the [Darwin Core Maintenance Group](../../community/dwc).
+
+The best way to be involved is to create an account on [GitHub](https://github.com), and "watch" the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), as well as the [Darwin Core Questions & Answers repository](https://github.com/tdwg/dwc-qa), and respond to requests for comments or "issues" ([Darwin Core issues](https://github.com/tdwg/dwc/issues) and [Darwin Core QA issues](https://github.com/tdwg/dwc-qa/issues/)). Information about how to suggest changes to the standard can be found at the [Guidelines for Contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md) page.
+
+## Scope of Darwin Core
+
+What is in scope?
+
+- Collections of any kind of biological objects or data.
+- Terminology associated with biological collection data.
+- Striving for compatibility with other biodiversity-related standards.
+- Facilitating the addition of components and attributes of biological data.
+
+What is not in scope?
+
+- Data interchange protocols.
+- Non-biodiversity-related data.
+- Purely taxonomic data.
+
+## Audience
+
+- Biodiversity data holders (organizations, institutions, researchers).
+- Consumers of biodiversity data.
+- Developers of collections management systems.
+- Other TDWG interest and task groups.
+- Protocol developers (TAPIR).
+- Biodiversity network developers.
+
+## Contributors
+
+[List of contributors](https://github.com/tdwg/dwc/contributors)
+
+## Resources
+
+- Resource directory: <http://rs.tdwg.org/dwc/>
+- Maintenance group: <https://www.tdwg.org/community/dwc/>
+- Primary collaboration platform: <https://github.com/tdwg/dwc>
+- Darwin Core Questions & Answers: <https://github.com/tdwg/dwc-qa>
 - Darwin Core landing page (this page): <https://www.tdwg.org/standards/dwc/>
 
 ## Parts of the standard
@@ -87,21 +87,6 @@ Vocabularies:
 Darwin Core basic vocabulary (<http://rs.tdwg.org/dwc/>)
 
 Documents:
-
-**Title:** Darwin Core Introduction\
-**Permanent IRI:** [http://rs.tdwg.org/dwc/index/](http://tdwg.github.io/dwc/)\
-**Created:** 2014-11-08\
-**Last modified:** 2014-11-08\
-**Contributors:**\
-John Wieczorek (lead author) - Museum of Vertebrate Zoology at Berkeley\
-Markus Döring (author) - Global Biodiversity Information Facility\
-Renato De Giovanni (author) - Centro de Referência em Informação Ambiental\
-Tim Robertson (author) - Global Biodiversity Information Facility\
-Dave Vieglais (author) - KU Natural History Museum\
-Gail E. Kampmeier (review manager) - University of Illinois at Urbana-Champaign\
-**Publisher:** Biodiversity Information Standards (TDWG)\
-**Abstract:** This document is a cover page, an entry-level document to the Darwin Core standard. It describes the purpose of the standard and orients the reader to the documents that cover specific topics within the standard, such as the quick guide to the list of terms.\
-**Citation:** Darwin Core Task Group. 2014. Darwin Core Introduction. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/index/
 
 **Title:** Darwin Core RDF Guide\
 **Permanent IRI:** [http://rs.tdwg.org/dwc/terms/guides/rdf/](https://dwc.tdwg.org/rdf/)\
