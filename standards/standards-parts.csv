@@ -2,7 +2,6 @@ standard,part,rdf_type
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/147,http://rs.tdwg.org/sds/doc/specification/,foaf:Document
-http://www.tdwg.org/standards/147,http://rs.tdwg.org/sds/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/642,http://rs.tdwg.org/vms/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/doc/termlist/,foaf:Document
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/doc/structure/,foaf:Document
@@ -34,8 +33,6 @@ http://www.tdwg.org/standards/312,http://rs.tdwg.org/ncd/doc/specification/,foaf
 http://www.tdwg.org/standards/640,http://rs.tdwg.org/abcddna/doc/guide/,foaf:Document
 http://www.tdwg.org/standards/640,http://rs.tdwg.org/abcddna/doc/xmlschema/,foaf:Document
 http://www.tdwg.org/standards/110,http://rs.tdwg.org/hispid/doc/specification/,foaf:Document
-http://www.tdwg.org/standards/110,http://rs.tdwg.org/hispid/doc/specification/,foaf:Document
-http://www.tdwg.org/standards/110,http://rs.tdwg.org/hispid/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/103,http://rs.tdwg.org/ebdc/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/106,http://rs.tdwg.org/poss/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/113,http://rs.tdwg.org/pnbd/doc/specification/,foaf:Document
@@ -44,7 +41,6 @@ http://www.tdwg.org/standards/109,http://rs.tdwg.org/wgsrpd/doc/data/,foaf:Docum
 http://www.tdwg.org/standards/108,http://rs.tdwg.org/xdf/doc/,foaf:Document
 http://www.tdwg.org/standards/114,http://rs.tdwg.org/bphsup/doc/book/,foaf:Document
 http://www.tdwg.org/standards/105,http://rs.tdwg.org/ih/doc/book/,foaf:Document
-http://www.tdwg.org/standards/102,http://rs.tdwg.org/itfbgpr/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/102,http://rs.tdwg.org/itfbgpr/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/104,http://rs.tdwg.org/frw/doc/book/,foaf:Document
 http://www.tdwg.org/standards/111,http://rs.tdwg.org/tl/doc/v1/,foaf:Document
@@ -62,5 +58,4 @@ http://www.tdwg.org/standards/111,http://rs.tdwg.org/tl/doc/s5/,foaf:Document
 http://www.tdwg.org/standards/111,http://rs.tdwg.org/tl/doc/s6/,foaf:Document
 http://www.tdwg.org/standards/111,http://rs.tdwg.org/tl/doc/s7/,foaf:Document
 http://www.tdwg.org/standards/111,http://rs.tdwg.org/tl/doc/s8/,foaf:Document
-http://www.tdwg.org/standards/112,http://rs.tdwg.org/bph/doc/,foaf:Document
 http://www.tdwg.org/standards/112,http://rs.tdwg.org/bph/doc/,foaf:Document

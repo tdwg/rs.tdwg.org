@@ -1,0 +1,126 @@
+standard,label,directoryName,summary,cover_image,cover_image_by,cover_image_ref,tags,github,website,website_title,status,other
+http://www.tdwg.org/standards/147,TDWG Standards Documentation Standard,sds,The TDWG Standards Documentation Standard (SDS) consists of a single document: the [Standards Documentation Specification](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md). That document defines how TDWG standards are to be presented. It provides details about the hierarchical structure of standards and versioning of standards components. It specifies how the properties of standards and their components are to be described in human-readable and machine-readable terms.,https://images.unsplash.com/photo-1497796742626-fe30f204ec54,Lysander Yuen,https://unsplash.com/photos/wk833OrQLJE,"technical specification, current standard, 2017",https://github.com/tdwg/vocab/tree/master/sds,,,,"## Maintenance group
+
+Audubon Core is maintained by a specialized Interest Group whose [charter](https://github.com/tdwg/ac/blob/master/audubon-core_maintenance-group_charter.md) was approved in January 2018. The functions of the Audubon Core Maintenance Group are described in detail in [Section 2 of the TDWG Vocabulary Maintenance Specification](https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md#2-administration). In brief, the Maintenance Group manages vocabulary term additions and changes, and maintains the documentation that helps users to understand and apply the standard. As an Interest Group, it may establish Task Groups to accomplish broader changes to the standard.
+
+The activities of the AC Maintenance Group are documented at the group's Github repository, <https://github.com/tdwg/ac>, where a current list of core members and their contact information can be found.  Community participation is welcome.  If you would like to participate in this group, contact the convener or one of the core members.  
+
+To participate in the communications of the group, ""watch"" the group's [Issues tracker](https://github.com/tdwg/ac/issues).  This issues tracker is the mechanism for suggesting specific changes to the standard as well as to raise issues for discussion by the group.
+ as well as to raise issues for discussion by the group."
+http://www.tdwg.org/standards/642,Vocabulary Maintenance Standard,vms,The TDWG Vocabulary Maintenance Standard consists of a single document: the [Vocabulary Maintenance Specification](https://github.com/tdwg/vocab/blob/master/vms/maintenance-specification.md). That document describes the processes used to modify TDWG vocabularies and their associated documents.,https://images.unsplash.com/photo-1502911679107-2b54f5c0292c,Igor Ovsyannykov,https://unsplash.com/photos/VkFhaQHVcE4,"best practice, current standard, 2017",https://github.com/tdwg/vocab/tree/master/vms,,,,"## Introduction
+
+TDWG vocabularies are a collection of standardized terms and their definitions. Vocabulary standards differ from other Biodiversity Information Standards (TDWG) standards in that they are likely to change more often over time as they evolve to meet the changing needs of the biodiversity informatics community. These changes may be incremental, making it impractical to apply the full [TDWG standards process](../../about/process) to every change. The TDWG Vocabulary Maintenance Specification details the categories of changes that can be made to a TDWG vocabulary standard, the mechanisms used to achieve those changes, and the entities that are responsible for shepherding those changes through the process.
+
+## Audience
+
+This standard is intended for those who are involved in making changes to TDWG vocabulary standards. That includes those who want to submit change proposals and members of Interest Groups who are responsible for vocabulary maintenance.
+
+"
+http://www.tdwg.org/standards/638,Audubon Core Multimedia Resources Metadata Schema,ac,"The Audubon Core (AC) is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections. These vocabularies aim to represent information that will help to determine whether a particular resource or collection will be fit for some particular biodiversity science application before acquiring the media. Among others, the vocabularies address such concerns as the management of the media and collections, descriptions of their content, their taxonomic, geographic, and temporal coverage, and the appropriate ways to retrieve, attribute and reproduce them.",https://images.unsplash.com/photo-1430990480609-2bf7c02a6b1a,Mikhail Vasilyev,https://unsplash.com/photos/gGC63oug3iY,"technical specification, current standard, 2013",https://github.com/tdwg/ac,https://tdwg.github.io/ac/,Audubon Core website,,
+http://www.tdwg.org/standards/150,GUID and Life Sciences Identifiers Applicability Statements,guid-as,The Global Unique Identifiers (GUID) applicability statements consist of an applicability statement on the use of GUIDs for the biodiversity information community in general ([Richards 2010]({static}tdwg_guid_applicability_statement.pdf)) and the use of Life Science Identifiers (LSID) in specific ([Pereira et al. 2009]({static}tdwg_lsid_applicability_statement.pdf)).,https://c2.staticflickr.com/4/3516/3701836175_5567871dc6_o.jpg,Erik de Vos,https://www.flickr.com/photos/mrcollaborator/3701836175,"applicability statement, current standard, 2011",https://github.com/tdwg/guid-as,,,,
+http://www.tdwg.org/standards/450,Darwin Core,dwc,"Darwin Core is a standard maintained by the [Darwin Core maintenance group](../../community/dwc). It includes a glossary of terms intended to **facilitate the sharing of information about biological diversity** by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.",https://images.unsplash.com/photo-1492031215329-791748ee1253,Alex Guillaume,https://unsplash.com/photos/0MC0o-xLucM,"technical specification, current standard, 2009",https://github.com/tdwg/dwc,https://dwc.tdwg.org,Darwin Core website,,"## Maintenance group
+
+Modifications and enhancements to Darwin Core are managed by the [Darwin Core Maintenance Group](../../community/dwc).
+
+The best way to be involved is to create an account on [GitHub](https://github.com), and ""watch"" the [Darwin Core GitHub repository](https://github.com/tdwg/dwc), as well as the [Darwin Core Questions & Answers repository](https://github.com/tdwg/dwc-qa), and respond to requests for comments or ""issues"" ([Darwin Core issues](https://github.com/tdwg/dwc/issues) and [Darwin Core QA issues](https://github.com/tdwg/dwc-qa/issues/)). Information about how to suggest changes to the standard can be found at the [Guidelines for Contributing](https://github.com/tdwg/dwc/blob/master/.github/CONTRIBUTING.md) page.
+
+## Scope of Darwin Core
+
+What is in scope?
+
+- Collections of any kind of biological objects or data.
+- Terminology associated with biological collection data.
+- Striving for compatibility with other biodiversity-related standards.
+- Facilitating the addition of components and attributes of biological data.
+
+What is not in scope?
+
+- Data interchange protocols.
+- Non-biodiversity-related data.
+- Purely taxonomic data.
+
+## Audience
+
+- Biodiversity data holders (organizations, institutions, researchers).
+- Consumers of biodiversity data.
+- Developers of collections management systems.
+- Other TDWG interest and task groups.
+- Protocol developers (TAPIR).
+- Biodiversity network developers.
+
+## Contributors
+
+[List of contributors](https://github.com/tdwg/dwc/contributors)
+
+## Resources
+
+- Resource directory: <http://rs.tdwg.org/dwc/>
+- Maintenance group: <https://www.tdwg.org/community/dwc/>
+- Primary collaboration platform: <https://github.com/tdwg/dwc>
+- Darwin Core Questions & Answers: <https://github.com/tdwg/dwc-qa>
+- Darwin Core landing page (this page): <https://www.tdwg.org/standards/dwc/>"
+http://www.tdwg.org/standards/449,TDWG Access Protocol for Information Retrieval (TAPIR),tapir,"TAPIR is a computer protocol designed for discovery, search and retrieval of distributed data over the Internet. TAPIR consists of a [specification](http://tdwg.github.io/tapir/docs/) that determines how client applications seeking information should communicate with server applications hosting data. TAPIR is an approved TDWG standard.",https://c1.staticflickr.com/7/6158/6263150201_a4c9705ff9_b.jpg,Biodiversity Heritage Library,https://www.flickr.com/photos/biodivlibrary/6263150201,"technical specification, current standard, 2010",https://github.com/tdwg/tapir,http://tdwg.github.io/tapir/docs/,TAPIR specification,,"## Motivation
+
+[DiGIR](http://www.digir.net/) and [BioCASe](http://www.biocase.org/products/protocols/) are alternative protocols developed to access historical data from geographically distributed biological collections. While DiGIR and BioCASe have been successful in their own domains, incompatibilities between them make the exchange of biodiversity data more complex than it should be. TAPIR, the TDWG Access Protocol for Information Retrieval, is an international project to solve this problem and to add new functionality.
+
+## How TAPIR works
+
+A TAPIR network comprises distributed data providers with different database systems and different data structures, but all of them having the same kind of content. Consider a group of natural history museums that want to make their biological specimen data available from a single Web search page. Each organization has its own database in a different computer environment. For example, some may use a commercial collection management software, others may use an open source software environment, or even just a simple spreadsheet. Their common requirement is for all searches via a single Web page to access all databases and produce a combined and integrated response to the searcher.
+
+Since all databases contain the same kind of content, it is therefore possible to define what is called a data abstraction layer. DarwinCore is an example of a data abstraction layer for biodiversity data. DarwinCore specifies the details of a specimen or observation of a specimen, such as the name of the organism, where, when and by whom it was collected. TAPIR works with one or more of these data abstraction layers to make it appear to the searcher that all the separate databases are like one big integrated database.
+
+The data providers usually don't need to change their databases nor to periodically export their data. Instead, they will typically install a 'wrapper' software application and then configure it in a way that each concept from the data abstraction layer corresponds to a particular field in their own databases.
+
+This wrapper receives the remote TAPIR search request, translates it into the local language and data structure, applies it to the database, and then sends back a TAPIR search response to the searcher.
+
+TAPIR is flexible enough to be used in a wide range of applications. Other examples include harvesting data to build a central database, sharing data using different Web formats (e.g. RSS, RDF or KML) or building Web interfaces to help browse or search any database.
+
+## TAPIR's key features
+
+- integrates well with the Web infrastructure because it is based on established international Web standards like HTTP, XML and XML Schema.
+- is independent of the data being exchanged and therefore can be used to access a wide range of data.
+- can return data in many different formats - search responses are flexible and customizable.
+- includes five operations to cover all necessary aspects for searching and retrieving data in a network: access to metadata (descriptive data) and capabilities of the provider, preliminary data discovery and data mining, searching, and monitoring the data provider service.
+- allows all operations to be invoked through simple Web addresses.
+- supports complex requests.
+- has existing TAPIR wrapper applications including PyWrapper, TapirLink and TapirDotNET. 
+
+## Resources
+
+- [TAPIR 1.0 Normative Specification](http://tdwg.github.io/tapir/docs/tdwg_tapir_specification_2010-05-05.html)
+- [W3C XML Schema for document validation (normative)](http://tdwg.github.io/tapir/schema/tapir.xsd)
+- [Concept alias definitions for common TDWG standards](http://tdwg.github.io/tapir/cns/alias.txt)
+- [TAPIR output models and query templates](http://tdwg.github.io/tapir/cs/)
+- [TAPIR Network Builders' Guide](http://tdwg.github.io/tapir/docs/TAPIRNetworkBuildersGuide_2010-05-05.html)
+
+## Software
+
+- **TapirLink**: the original PHP TapirLink software is being host on SourceForge: <http://sourceforge.net/projects/digir/files/TapirLink/> and <http://sourceforge.net/p/digir/svn/HEAD/tree/tapirlink/>
+- **PyWrapper**: A python provider software, based on the BioCASE predecessor:
+<http://sourceforge.net/p/digir/svn/HEAD/tree/pywrapper/>
+- **TAPIR Tester**: <http://sourceforge.net/p/digir/svn/HEAD/tree/tapirtester/>
+- **TAPIR Builder**: <http://sourceforge.net/p/digir/svn/HEAD/tree/tapirbuilder/>
+"
+http://www.tdwg.org/standards/115,Access to Biological Collection Data (ABCD) Schema,abcd,The Access to Biological Collections Data (ABCD) Schema is an evolving comprehensive standard for the access to and exchange of data about specimens and observations (a.k.a. primary biodiversity data).,https://c1.staticflickr.com/1/839/41611348922_d4030a5197_b.jpg,Natural History Museum: Coleoptera Section,https://www.flickr.com/photos/nhm_beetle_id/41611348922/,"technical specification, 2005 standard, 2005",https://github.com/tdwg/abcd,https://abcd.tdwg.org/xml/documentation/primer/2.06/,ABCD version 2.06,,
+http://www.tdwg.org/standards/116,Structured Descriptive Data,sdd,"The goal of the SDD standard is to allow capture, transport, caching and archiving of descriptive data (data describing a taxon or specimen), using a platform- and application-independent, international standard. Such a standard is crucial to enabling lossless porting of data between existing and future software platforms including identification, data-mining and analysis tools, and federated databases.",https://c1.staticflickr.com/5/4871/32317503938_1eb7c72aeb_h.jpg,Biodiversity Heritage Library,https://www.flickr.com/photos/biodivlibrary/32317503938,"technical specification, 2005 standard, 2005",https://github.com/tdwg/sdd,,,,
+http://www.tdwg.org/standards/117,Taxonomic Concept Transfer Schema,tcs,"The TCS schema was conceived to allow the representation of taxonomic concepts as defined in published taxonomic classifications, revisions and databases. As such, it specifies the structure for XML documents to be used for the transfer of defined concepts. Valid transfer documents may either explicitly detail the defining components of taxon concepts, transfer GUIDs referring to defined taxon concepts (if and when these are available) or a mixture of the two.",https://images.unsplash.com/photo-1502912143929-50c8a1ce1f69,Fancycrave,https://unsplash.com/photos/4A8ZSlAOUqs,"technical specification, 2005 standard, 2005",https://github.com/tdwg/tcs,,,,
+http://www.tdwg.org/standards/107,Description Language for Taxonomy (DELTA) ,delta,"The DELTA format (DEscription Language for TAxonomy) is a flexible method for encoding taxonomic descriptions for computer processing. DELTA-format data can be used to produce natural-language descriptions, conventional or interactive keys, cladistic or phenetic classifications, and information-retrieval systems.",https://images.unsplash.com/photo-1459664018906-085c36f472af,Erol Ahmed,https://unsplash.com/photos/aIYFR0vbADk,"technical specification, 2005 standard, 1986",https://github.com/tdwg/delta,http://www.delta-intkey.com/,DELTA website,,
+http://www.tdwg.org/standards/110,Herbarium Information Standards and Protocols for Interchange of Data (HISPID3),hispid3,The Herbarium Information Standards and Protocols for Interchange of Data (HISPID) is a standard format for the interchange of electronic herbarium specimen information. ,https://zenodo.org/record/2354442/files/BR0000010007433.jpg?download=1 ,Meise Botanic Garden ,https://doi.org/10.5281/zenodo.2354442 ,"technical specification, prior standard, 1996 ",https://github.com/tdwg/prior-standards/tree/master/hispid3 ,http://plantnet.rbgsyd.nsw.gov.au/HISCOM/HISPID/HISPID3/H3.html ,HISPID3 at HISCOM ,,
+http://www.tdwg.org/standards/103,Economic Botany Data Collection Standard,economic-botany,"Studies on the uses of plants are becoming increasingly important. Standardisation of terms and a unified system to describe uses are of enormous benefit to gatherers of information, especially where exchanges of data sets are involved. The standard provides a system whereby uses of plants (in their cultural context) can be described, using standardised descriptors and terms, and attached to taxonomic data sets. It resulted from discussions at the International Working Group on Taxonomic Databases for Plant Sciences (TDWG) between 1989 and 1992.",https://images.unsplash.com/photo-1464297162577-f5295c892194,Chad Stembridge,https://unsplash.com/photos/-8FjF1p-aw0,"best practice, prior standard, 1995",https://github.com/tdwg/prior-standards/tree/master/economic-botany-data-collection-standard,https://www.kew.org/science/collections/economic-botany-collection/curation/economic-botany-data-standard,Online version at kew.org,,
+http://www.tdwg.org/standards/106,Plant Occurrence and Status Scheme,poss,A standard for recording the relationship between a plant and a place,https://images.unsplash.com/photo-1524235975426-093c4bf9a327,Dieter de Vroomen,https://unsplash.com/photos/syUmgOxHYos,"prior standard, 1995",https://github.com/tdwg/prior-standards/tree/master/poss,,,,
+http://www.tdwg.org/standards/113,Plant Names in Botanical Databases,plant-names,"This standard defines the taxonomic and nomenclatural concepts associated with the names of plants. It describes the component parts, their functions and their interrelations of significance in structuring a database. The appendices provide an outline of a preliminary data dictionary illustrating possible elements and their properties. It does not provide a data model or a data format.",https://images.unsplash.com/photo-1541170362668-5a41854decee,Micheile Henderson,https://unsplash.com/photos/DV4lEwcj774,"prior standard, 1995",https://github.com/tdwg/prior-standards/tree/master/plant-names-in-botanical-databases,,,hidden,
+http://www.tdwg.org/standards/101,Authors of Plant Names,plant-names-authors,"An index of authors of plant scientific names. Includes flowering plants, gymnosperms, pteridophytes, bryophytes, algae, fungi and fossil plants. Full names, dates of birth and death when known, recommended abbreviations and groups in which names have been published, are given for each author. Authors of Plant Names has been incorporated into the [International Plant Names Index (IPNI)](http://www.ipni.org/).",https://images.unsplash.com/photo-1530027644375-9c83053d392e,Xuan Nguyen,https://unsplash.com/photos/v6V-hfxjboI,"prior standard, 1992",https://github.com/tdwg/prior-standards/tree/master/authors-of-plant-names,http://www.kew.org/data/authors.html,Authors of Plant Names at kew.org,,"## Where is the Brummitt & Powell ""Authors of Plant Names"" database?
+
+Since 1998 the database of author names and their standard forms (which formed the basis of the Brummitt & Powell's (1992) Authors of Plant Names) has been maintained and updated on line as part of the Plant Names Project. This database represents a significant improvement to the static one which was hitherto available on our website since it is continuously updated with new entries and additions/corrections to existing entries. Names are still standardized according to the Brummitt & Powell rules; and you can now find authors in the [International Plant Names Index (IPNI) database](http://www.ipni.org/index.html).
+
+## Authors of Plant Names and TDWG
+
+The Taxonomic Databases Working Group (TDWG) adopted the original printed version of Brummitt & Powell (1992) as their data standard for Authors of Plant Names. The adoption of the current live database is still currently under discussion. This would represent a new precedent for TDWG in that all standards adopted to date have been static and in hard copy."
+http://www.tdwg.org/standards/109,World Geographical Scheme for Recording Plant Distributions,wgsrpd,"WGSRPD provides an agreed system of geographical units at approximately ""country"" level and upwards for use in recording plant distributions. It allows adopting organizations to compare and exchange data with each other without loss of information due to incompatible geographical boundaries. The system offered covers the whole world and identifies units at four levels, firstly continental, secondly regional (or subcontinental), thirdly at what may be called ""Botanical Country"" level (which may often ignore purely political considerations), and fourthly at a slightly lower level called ""Basic Recording Units"" where political integrity is fully recognised.",https://images.unsplash.com/photo-1477650112965-999095361212,Tim Marshall,https://unsplash.com/photos/ATrQi9kdHbE,"prior standard, 1992",https://github.com/tdwg/wgsrpd,,,,
+http://www.tdwg.org/standards/108,XDF - A Language for the Definition and Exchange of Biological Data Sets,xdf,,,,,"prior standard, 1991",https://github.com/tdwg/prior-standards/tree/master/xdf,,,hidden,
+http://www.tdwg.org/standards/114,Botanico-periodicum-huntianum/supplementum,bhp-supplementum,,,,,"prior standard, 1991",https://github.com/tdwg/prior-standards/tree/master/botanico-periodicum-huntianum-supplementum,,,hidden,
+http://www.tdwg.org/standards/105,Index Herbariorum. Part I: The Herbaria of the World,ih,,,,,"prior standard, 1990",https://github.com/tdwg/prior-standards/tree/master/index-herbariorum-part-i,http://sweetgum.nybg.org/science/ih/,Current online version of Index Herbariorum,hidden,
+http://www.tdwg.org/standards/102,International Transfer Format for Botanic Garden Plant Records,itf2,"International Transfer Format for Botanic Garden Plant Records, version 2 (ITF2) was developed in response to requests from botanic gardens to incorporate additional data fields for transfer within the botanic gardens and allow for a more flexible transfer format than the original transfer format outlined in ITF version 01.00. It is biased towards 'Conservation Type Data Fields', but incorporates a procedure allowing for additional data fields to be identified and exchanged between gardens. It is because of this flexibility that it is believed that the ITF2 will remain relevant to botanic gardens for a long time despite the rapid change in information system technology in recent years.",https://c2.staticflickr.com/6/5347/9248091524_efa0bdbcac_b.jpg,Drriss & Marrionn,https://www.flickr.com/photos/drriss/9248091524,"prior standard, 1987",https://github.com/tdwg/prior-standards/tree/master/itf2,,,,
+http://www.tdwg.org/standards/104,Floristic Regions of the World,floristic-regions,"Floristic Regions of the World by A. Takhtajan presents a widely accepted schema of biogeographical areas defined by environmental factors and floristic composition. It is a hierarchical schema that recognizes six floristic kingdoms, 35 floristic regions and 152 floristic provinces.",https://images.unsplash.com/photo-1511497584788-876760111969,Sergei Akulich,https://unsplash.com/photos/-heLWtuAN3c,"prior standard, 1986",https://github.com/tdwg/prior-standards/tree/master/floristic-regions-of-the-world,,,,
+http://www.tdwg.org/standards/111,"Taxonomic Literature, Edition 2 and its Supplements",tl-2,"TL-2 is the premier publication of the [International Association for Plant Taxonomy (IAPT)](https://www.iaptglobal.org/) and [its online version](http://www.sil.si.edu/DigitalCollections/tl-2/) was made possible by the generous cooperation of the IAPT. In its print form, TL-2 is a 15 volume guide to the literature of systematic botany published between 1753 and 1940. It is organized by author and includes numbered entries for the author's publications. Suggested abbreviations for use in taxonomic publications are provided: abbreviations for the author's name, short titles and abbreviations of the short titles for publications. TL-2 is the standard by which authors' names and titles should be abbreviated.",https://c1.staticflickr.com/9/8214/8291301344_c813b42546_b.jpg,Biodiversity Heritage Library,https://www.flickr.com/photos/biodivlibrary/8291301344,"prior standard, 1976",https://github.com/tdwg/prior-standards/tree/master/taxonomic-literature-2,http://www.sil.si.edu/DigitalCollections/tl-2/,Online version at Smithsonian Libraries,,
+http://www.tdwg.org/standards/112,Botanico-periodicum-huntianum,bph,,,,,"prior standard, 1970",https://github.com/tdwg/prior-standards/tree/master/botanico-periodicum-huntianum,,,hidden,
