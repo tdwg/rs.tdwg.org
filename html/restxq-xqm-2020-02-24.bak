@@ -653,11 +653,10 @@ declare %rest:path("/tapir/cs/{$path=.+}") function page:tapir-cs-redirect($path
 (: This isn't working - gets a 404 
 declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-schema-redirect()
  {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/schema/tapir.xsd"}</rest:redirect>};
+
+declare %rest:path("/tapir/1.0/{$path=.+}") function page:tapir10-redirect($path)
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/"||$path}</rest:redirect>};
 :)
-
-declare %rest:path("/tapir/1.0/schema/tapir.xsd") function page:tapir10-tapir-redirect()
- {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/master/schema/tapir.xsd"}</rest:redirect>};
-
 (: This particular URL seems to be in use and redirects to this particular place :)
 declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-tdwgtapir-redirect()
  {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/infrastructure/master/rs.tdwg.org/tapir/1.0/schema/tapir.xsd"}</rest:redirect>};
@@ -929,28 +928,6 @@ declare
    <rest:response>
     <http:response status="303">
       <http:header name="location" value="{'https://abcd.tdwg.org/legacy/1.2/'||$path}" />
-    </http:response>
-  </rest:response>
-};
-
-declare
-  %rest:path("/abcd/2.06/a/ABCD_2.06a.xsd")
-  function page:abcd206a-redirect()
-  {
-   <rest:response>
-    <http:response status="303">
-      <http:header name="location" value="https://abcd.tdwg.org/legacy/2.06/a/ABCD_2.06a.xsd" />
-    </http:response>
-  </rest:response>
-};
-
-declare
-  %rest:path("/abcd/2.06/b/ABCD_2.06b.xsd")
-  function page:abcd206b-redirect()
-  {
-   <rest:response>
-    <http:response status="303">
-      <http:header name="location" value="https://abcd.tdwg.org/legacy/2.06/b/ABCD_2.06b.xsd" />
     </http:response>
   </rest:response>
 };
