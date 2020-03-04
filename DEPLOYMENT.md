@@ -1,4 +1,4 @@
-https://builds.gbif.org/job/tdwg-rs/[image:https://builds.gbif.org/job/tdwg-rs/badge/icon[Build status]]
+[![Build Status](https://builds.gbif.org/job/tdwg-rs/badge/icon)](https://builds.gbif.org/job/tdwg-rs/)
 
 # Deployment
 

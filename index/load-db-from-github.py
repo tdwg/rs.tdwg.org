@@ -253,8 +253,6 @@ def dataToBasexWrite(githubRepo, repoBranch, database, basexServerUri, pwd):
 	updateLog('Ready')
 
 def main():
-	print(sys.argv)
-	print(len(sys.argv))
 	if len(sys.argv) == 5:
 		githubRepo = sys.argv[1]
 		repoSubpath = ''
