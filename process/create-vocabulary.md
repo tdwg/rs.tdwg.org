@@ -64,7 +64,7 @@ The following information explains how the term local name is used to generate t
 
 In this example, every term has a definition. Terms generally don't have usage guidelines (although they could if necessary.) Notes provide examples and recommended values when appropriate. The term local names are in lower camelCase for properties and upper CamelCase for classes. There is not necessarily any particulary relationship between the human-readable labels and the term local names (although they are similar in this example - see additional examples below). There is currently no consensus within TDWG about capitalization of labels, but the chosen capitalization scheme should be used consistently. The value for type must be one of the following: `http://www.w3.org/1999/02/22-rdf-syntax-ns#Property` for properties, `http://www.w3.org/2000/01/rdf-schema#Class` for classes, or `http://www.w3.org/2004/02/skos/core#Concept` for controlled vocabulary terms. 
 
-[Link to spreadsheet]()
+[Link to spreadsheet](example-spreadsheets/simple-vocabulary.csv)
 
 | term_localName | label | definition | usage | notes | type |
 | -------------- | ----- | ---------- | ----- | ----- | ---- | 
@@ -77,6 +77,7 @@ In this example, every term has a definition. Terms generally don't have usage g
 
 This example has the same features as the previous example, but it also includes two additional properties beyond the basic properties (organizedInClass and repeatable) that provide information specifically desired for Audubon Core. At the bottom of the table, there are two additional term lists of terms borrowed from other namespaces. They are separated by a row containing a note explaining their source. Note that the definitions of the terms have been copied exactly from their source. The borrowed term local names are the retained as the same as in their original source, despite the fact that the xmp: terms do not follow the lower camelCase convention for properties in TDWG. Also notice that usage guidelines are more commonly used in the borrowed terms where there is no control over the term definitions.
 
+[Link to spreadsheet](example-spreadsheets/complex-vocabulary.csv)
 
 | term_localName | label | definition | usage | notes | type | tdwgutility_organizedInClass | tdwgutility_repeatable |
 | -------------- | ----- | ---------- | ----- | ----- | ---- | --------------------------- | ---------------------------- |
@@ -106,6 +107,8 @@ In the example below, the local name is an opaque string and therefore unlikely 
 
 The type of controlled vocabulary terms should be `http://www.w3.org/2004/02/skos/core#Concept`.
 
+[Link to spreadsheet](example-spreadsheets/simple-cv.csv)
+
 | term_localName | label | controlled value string | definition | usage | notes | type |
 | -------------- | ----- | ----------------------- | ---------- | ----- | ----- | ---- | 
 | e001 | native (indigenous) | native | A taxon occurring within its natural range |  | What is considered native to an area varies with the biogeographic history of an area and the local interpretation of what is a "natural range". See also https://www.iucn.org/sites/dev/files/iucn-glossary-of-definitions_march2018_en.pdf | http://www.w3.org/2004/02/skos/core#Concept |
@@ -115,6 +118,8 @@ The type of controlled vocabulary terms should be `http://www.w3.org/2004/02/sko
 ## 3.4 Controlled vocabulary with broader hierarchy
 
 Terms in a controlled vocabulary may be related to other controlled vocabulary terms through a *broader* relationship.<sup>1</sup> That implies that if the narrower concept applies, the broader concept does as well. This relationship can be indicated in the spreadsheet by including a skos_broader column in the spreadsheet. Placing the local name of the broader term in that column will create that relationship when the metadata are generated. The broader terms are described in the same way as the narrower ones and they can be used if the appropriate narrower concept cannot be determined.
+
+[Link to spreadsheet](example-spreadsheets/cv-hierarchy.csv)
 
 | term_localName | label | skos_broader | controlled value string | definition | usage | notes | type |
 | -------------- | ----- | ------------ | ----------------------- | ---------- | ----- | ----- | ---- | 
