@@ -2,7 +2,7 @@
 
 **Title:** Creating a vocabulary spreadsheet
 
-**Date Mofified:** 2020-06-02
+**Date Modified:** 2020-06-02
 
 **Part of TDWG Standard:** Not part of any standard
 
