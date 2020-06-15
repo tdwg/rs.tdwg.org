@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2020-06-11
+**Date Modified:** 2020-06-14
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -14,9 +14,11 @@
 
 [1 Introduction](#introduction)
 
-[2 Generating necessary CSV files from the hand-generated CSV file](#)
+[2 Generating necessary CSV files from the hand-generated CSV file](#2-generating-necessary-csv-files-from-the-hand-generated-csv-file)
 
-[3 Creating a column header mapping file](#)
+[3 Creating a column header mapping file](#3-creating-a-column-header-mapping-file)
+
+[4 Term list build script](#4-term-list-build-script)
 
 # 1 Introduction
 
@@ -40,7 +42,7 @@ During the initial vocabulary development process, the build script can be used 
 
 There are several steps required generate all of the metadata related to term additions or changes. New versions of the terms must be created, then the metadata record for the current term use be created (if the term is new) or modified (if the term is revised). The version is then linked to its corresponding current term. 
 
-![TDWG metadata model](../tdwg-standards-hierarchy-2017-01-23.png)
+![TDWG metadata model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
 
 Whenever a term is added or changed, that triggers new versions at all of the higher levels in the TDWG standards hierarchy. New term versions trigger new term list versions. New term list versions trigger new vocabulary versions and new vocabulary versions trigger new standards versions.
 
