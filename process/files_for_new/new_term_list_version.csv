@@ -1,0 +1,2 @@
+document_modified,version,version_modified,status,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,list
+,,,,,dwc/doe/,degreeOfEstablishment controlled vocabulary,Controlled vocabulary for the Darwin Core term degreeOfEstablishment,,,dwcdoe,http://rs.tdwg.org/dwc/doe/,http://rs.tdwg.org/dwc/doe/
