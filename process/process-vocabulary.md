@@ -1,4 +1,4 @@
-# Processing a vocabulary spreadsheet
+v# Processing a vocabulary spreadsheet
 
 **Title:** Processing a vocabulary spreadsheet
 
@@ -22,7 +22,19 @@
 
 # 1 Introduction
 
-The [TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/) (SDS) indicates that all human and machine readable representations of vocabulary components should provide the same data. That can be achieved by using a script to generate those representations from a common data source: CSV files generated from a [basic CSV file created by the vocabulary developers](create-vocabulary.md). The process is similar regardless of whether it is a new vocabulary or if modifications are being made to an existing vocabulary.
+## 1.1 RFC 2119 statement
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
+Use of 2119 keywords is not an indication that compliance is required by any TDWG standard. Rather, it is an indication that the associated software will not function as designed if non-compliant.
+
+## 1.2 Audience
+
+This document is intended for those who are responsible for maintaining the TDWG infrastructure. It can also be used by anyone who is developing a vocabulary and wants to generate draft term list documents from a hand-generated CSV file.
+
+## 1.3 Background
+
+The [TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/) (SDS) indicates that all human and machine readable representations of vocabulary components should provide the same data. That can be achieved by using a script to generate those representations from a common data source: CSV files generated from a [basic hand-generated CSV file created by the vocabulary developers](create-vocabulary.md). The process is similar regardless of whether it is a new vocabulary or if modifications are being made to an existing vocabulary.
 
 ![generation of metadata tables](images/table-generation.png)
 
@@ -38,15 +50,108 @@ The current terms CSV file can also be used along with a Python build script to 
 
 During the initial vocabulary development process, the build script can be used to generate draft term list documents for review. Re-running the build script will cause changes or corrections made to the hand generated CSV file to be reflected in a revised term list document.
 
+## 1.4 How to use this document
+
+This document explains the steps for processing a hand-generated CSV file using a Python script that is part of a Jupyter notebook. 
+
+### 1.4.1 Requirements
+
+To carry out the process described in this document, you need:
+- to know how to use Git and GitHub. The simplest way to carry out the necessary operations is to download the [GitHub Desktop client](https://desktop.github.com/). An introduction to Git and GitHub is [here](http://vanderbi.lt/github).
+- to know how to load a Jupyter notebook and run its cells, and have Jupyter notebooks installed on your local computer. The recommended method for installing Jupyter notebooks is via the Anaconda distribution. For more information, see [this page](https://heardlibrary.github.io/digital-scholarship/script/codegraf/003/).
+
+### 1.4.2 Processing scripts
+
+There are two Python scripts (in Jupyter notebooks) that can be used to do the processing. 
+
+1. The [simplified processing script](simplified_process_rs_tdwg_org.ipynb) presupposes no knowledge of Python and will work for most term additions and changes in existing standards and for creating simple vocabularies or term lists, including controlled vocabularies. **You MUST NOT use this script for term deprecations.**
+2. Because this script is not designed for use by the general public, it has limited error trapping. In cases where results are not as expected, or where unusual changes such as term deprecations are required, the [full processing script](process_rs_tdwg_org.ipynb) SHOULD be used. This script contains the same code as the simplified script, but separates the code among more cells and provides more feedback in the form of print statements.
+
+### 1.4.3 General workflow
+
+1. Clone (or add) the [rs.tdwg.org](https://github.com/tdwg/rs.tdwg.org) repository to your local drive.
+2. Create a new branch of the repository.
+3. Place the hand-generated CSV file in the `process` directory of the repository.
+4. Open the appropriate Jupyter notebook (see above) containing the processing script that you want to run. The instructions assume you are running the simplified script.
+5. Edit the configuration section in the first cell of the notebook with values appropriate for your CSV file. See the details below.
+6. If this is a new vocabulary or term list, edit the appropriate files in the `process/files_for_new` directory of the repository. See the details below.
+7. Run the cells of the script, paying careful attention to whether particular cells should be run or omitted based on your circumstances. For generating draft documents, it is not necessary to run the "Step 7" cell (the last one). 
+8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the Desktop client. If bad things happen and you want to start over, commit the changes, then delete the branch you created.
+9. If the changes look sensible, then you can run any desired scripts to generate human readable term list documents. Revisions made based on the draft term list documents should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch.
+10. In production, once the changes have been made all the way from the terms to the standards level, push the changes to GitHub and create a pull request to merge the changes from the branch into the master.
+11. In production, once the changes have been merged into the master, the updated metadata MUST be deployed so that term dereferencing will be "live". See [this page](../DEPLOYMENT.md) for details.
+
 # 2 Generating necessary CSV files from the hand-generated CSV file
 
-There are several steps required generate all of the metadata related to term additions or changes. New versions of the terms must be created, then the metadata record for the current term use be created (if the term is new) or modified (if the term is revised). The version is then linked to its corresponding current term. 
+There are several steps necessary to generate all of the metadata related to term additions or changes. New versions of the terms are usually created, then the metadata record for the current term will be created (if the term is new) or modified (if the term is revised). The version is then linked to its corresponding current term. 
 
 ![TDWG metadata model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
 
-Whenever a term is added or changed, that triggers new versions at all of the higher levels in the TDWG standards hierarchy. New term versions trigger new term list versions. New term list versions trigger new vocabulary versions and new vocabulary versions trigger new standards versions.
+Ratification of a term addion or change triggers new versions at all of the higher levels in the TDWG standards hierarchy. New term versions trigger new term list versions. New term list versions trigger new vocabulary versions and new vocabulary versions trigger new standards versions. For more information about versioning of TDWG standards, see [Section 2.3 of the TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/).
 
-## 2.1 Generating term versions
+## 2.1 Setup
+
+After the repo has been set up on your local drive (see 1.4.3 General workflow above), you MUST edit the configuration section of the script. If you are creating a new term list or vocabulary, you MUST modify files in the `process/files_for_new` directory as well. 
+
+The script is designed to handle the creation of simple vocabularies or maintenance of existing vocabularies through a streamlined process. However, there are two more complicated circumstances that will require manual editing of files. If you are creating a new vocabulary and the hand-edited CSV file contains columns for additional properties beyond those required by the Standards Documentation Specification, you MUST manually edit the column header mapping file. This is discussed in section 3 below. If you are creating a new vocabulary that contains borrowed terms from multiple namespaces (as in the example spreadsheet [complex-vocabulary.csv](example-spreadsheets/complex-vocabulary.csv)), the rows for each namespace MUST be copied and pasted into separate CSV files (one for each namespace). Each of these separate CSV files MUST be processed separately using different configuration values appropriate to their namespaces.
+
+### 2.1.1 Editing the configuration section
+
+Each line in the configuration section will be discussed separately below.
+
+```
+namespaceUri = 'http://rs.tdwg.org/dwc/doe/'
+```
+For existing TDWG term lists and borrowed terms, the namespace IRI MUST be the one assigned by the existing standard. For proposed new term lists minted by TDWG, the namespace MUST conform to the [conventional TDWG IRI patterns](https://github.com/tdwg/rs.tdwg.org#2-iri-patterns).
+
+```
+database = 'degreeOfEstablishment'
+```
+The database name is used to generate names for associated directories within the rs.tdwg.org repository and as the root for file names within those folders. The file name SHOULD be descriptive and lower camelCase is RECOMMENDED. It MUST NOT contain spaces. Terms that are borrowed SHOULD follow the naming convention established for Darwin and Audubon Cores, i.e. `descriptiveName-for-vocab`, where `vocab` is an abbreviation for the borrowing vocabulary. See examples [here](https://github.com/tdwg/rs.tdwg.org). Do not append `-versions` to this name -- the versions directory will be located or created automatically by the script.
+
+```
+date_issued = '2020-06-15'
+```
+The date issued is assigned as the date of issue for all versions and the modification date for current resources. It is also appended to version IRIs. The date SHOULD fall between the current date and the latest date on which all changes included in the version were ratified or completed.
+
+```
+local_offset_from_utc = '-05:00'
+```
+This SHOULD be the UTC offset for the computer running the script (i.e. the appropriate offset for values produced the python method `datetime.datetime.now()`).
+
+```
+modifications_filename = 'degreeOfEstablishment-revised.csv'
+```
+This is the name of the hand-generated file from the vocabulary developers/maintainers. It MUST be placed in the `process` directory of the repository.
+
+```
+vocab_type = 2
+```
+This value is only relevant when new term lists or vocabularies are created and controls the template column mapping files copied into the current terms and versions directories. Those template mapping files have names ending in `-mappings` and are located [here for current terms](files_for_new/current_terms) and [here for versions](files_for_new/versions). The three categories:
+1 for simple vocabulary, 2 for simple controlled vocabulary, 3 for c.v. with broader hierarchy, correspond to the three template spreadsheet types [here](example_spreadsheets). If additional property columns are added beyond those already present in the template spreadsheets, select the most appropriate category, then edit the template mapping file as described in section 3 below.
+
+```
+termlist_uri = ''
+```
+For TDWG-minted terms, this value MUST be left as the empty string and the termlist IRI will be the same as the namespace IRI. However, when terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv)for examples.
+
+### 2.1.2 Editing the template files for new term lists, vocabularies, and standards
+
+When existing metadata records are updated for term lists, vocabularies, and standards, the basic metadata for those resources (labels, descriptions, and other properties such as preferred namespace abbreviations) are copied from the previous version. Changes to those properties would need to be made manually. However, when a new term list, vocabulary, or standard is created, values for those basic metadata properties MUST be provided from template files. Those files are located [here](files_for_new). Follow the patterns in the files while changing the values to those appropriate for the new resource. It is not necessary to provide values for modified or created dates since they will be generated automatically.
+
+When a new resource is created, template files for resources below it in the standards hierarchy MUST also be created. It is not necessary to edit template files at a higher level if the higher-level resource already exists. For example, adding a new vocabulary to the Darwin Core standard would require editing the template `new_vocabulary.csv` and `new_term_list.csv` files, but not the `new_standard.csv` file.
+
+If a new vocabulary is being created and it contains multiple term lists, the `new_vocabulary.csv` file MUST be edited prior to generating the term metadata for the first term list. However, when terms in subsequent term lists are processed, the `new_vocabulary.csv` file will be ignored since a record for the vocabulary will already have been generated on the first pass.
+
+### 2.1.3 Running the processing script for setup
+
+"Step 1" of the processing script sets the configuration values and defines necessary functions. It MUST be run first.
+
+"Step 2" of the processing script MUST NOT be run when updating existing term lists. That cell creates blank files and will delete existing term metadata.
+
+"Step 3" MUST be run every time.
+
+## 2.2 Generating term versions
 
 Each current term is related to at least one term version.
 
@@ -54,23 +159,45 @@ Each current term is related to at least one term version.
 
 Each time a term's metadata is revised, a new version is created. The term version IRI is formed by appending the date of issue to the term local name. A `hasVersion` relationship is created between the term and its version, and the new version has a `replaces` relationship with the previous version. The metadata defining these relationships are generated by the processing script and the definition, usage, and notes are copied from the hand-generated CSV file.
 
-## 2.2 Revising current term metadata
+### 2.2.1 Running the processing script to generate versions
+
+The "Step 4" cell generates term versions and tables that link those versions to other resources. Since many non-TDWG vocabularies do not have explicitly versioned terms, this cell SHOULD NOT be run for term lists of borrowed terms. There are some exceptions like Dublin Core terms - for such namespaces, this cell MAY be run if appropriate.
+
+## 2.3 Revising current term metadata
 
 If a term is being revised, its metadata are changed according to the information in the hand-generated CSV file and the last-modified date for that term is updated. If the term is new, its record is created and the last-modified date is set to be the same as the created date. 
 
-## 2.3 Asignment of term versions to a new term list version
+## 2.4 Asignment of term versions to a new term list version
 
 A term list is a group of related terms that share the same namespace part of their IRI. As with all TDWG resources, term lists also have versions. When a term is changed or added, the new term version is added to a new version of the term list (replacing any older version if necessary). If a term is new, it is also added to the existing term list. 
 
-## 2.4 Proliferation of new versions up the hierarchy
+## 2.4.1 Running the processing script to generate current terms and term list metadata
 
-A new term list version is updated in its parent vocabulary version and a new vocabulary version is updated in its parent standard version. A new term list is only added to its parent vocabulary if it represents terms in a namespace that is not already represented in the vocabulary.
+The "Step 5" cell generates current terms and tables that link those versions to other resources (described in 2.3). It also generates metadata for the term list associated with the terms (section 2.4). Step 5 MUST be run for all term lists.
+
+The "Step 6" cell creates a record of the term versions associated with the term list. It SHOULD NOT be run for term lists containing borrowed terms unless those terms have versions. See the comments on this in section 2.2.1 .
+
+## 2.5 Proliferation of new versions up the hierarchy
+
+A new term list version is updated in its parent vocabulary version and a new vocabulary version is updated in its parent standard version. A term list is only added to its parent vocabulary if it represents terms in a namespace that is not already represented in the vocabulary. Similarly, vocabularies are only added to a standard if they are new, although new versions of both the vocabulary and standard are recorded.
+
+### 2.5.1 Running the processing script to generate high level metadata
+
+The metadata for levels of the hierarchy above the level of term lists is not used by the build scripts for human readable term lists. So for that purpose, running the "Step 7" cell is OPTIONAL. When putting ratified changes into production, running the "Step 7" cell is REQUIRED.
 
 # 3 Creating a column header mapping file
 
 Because the SDS requires particular properties to be included in term metadata, if the template hand-generated CSV file is used without editing the column headers, a template column header mapping file can be used as well. The column header mapping file only needs to be modified if additional property columns are added to the template CSV file. This may happen if specialty properties such as `tdwgutility:organizedInClass` are added to the required properties.
 
-Controlled vocabularies contain one or more additional properties that are not found in vocabularies that define properties and classes. That includes the controlled value string and may also include a property to indicate that a value has a `broader` relationship to another concept. So controlled vocabularies should use the template column header mapping file designed for controlled vocabularies.
+Controlled vocabularies contain one or more additional properties that are not found in vocabularies that define properties and classes. That includes the controlled value string and may also include a property to indicate that a value has a `broader` relationship to another concept. So controlled vocabularies should use one of the template column header mapping file designed for controlled vocabularies. Setting the value of `vocab_type` in the configuration section determines whether the mapping template includes mappings for these extra term columns or not. See section 2.1.1 for details.
+
+## 3.1 Modifying the column header mapping file
+
+If additional property columns were added to the hand-generated CSV file, the mapping file in the current terms directory for that term list (i.e. the directory created having the name set as the value of `database` in the configuration section) must be manually edited. The name of the mappling file ends in `-mappings.csv`. 
+
+The order of rows in the mapping file does not matter. The first column (`header`) contains the name of the column header in the hand-generated CSV file. The second column (`predicate`) contains the abbreviated IRI (also known as CURIE or QName). If the namespace abbreviation is different from others already present in this column, check the `namespace.csv` file in the same directory to make sure that the abbreviation is already listed. If not, add it to the list of namespace abbreviations and IRIs. The third column, which describes the type of the value in the column, MUST have one of the following strings as its value: `iri`, `language`, `datatype`, or `plain`. For language-tagged strings, the `attribute` column contains the ISO 639-1 language code used in the tag. For datatyped strings, the `attribute` column contains the abbreviated IRI for the datatype. If the column in the CSV file contains an unabbreviated full IRI, there is no value in the `value` column of the mapping table. If the column in the CSV contains the local name part of the IRI, the `value` column contains full namespace IRI to be prepended to the value from column in the CSV. 
+
+It is also possible to generate a fixed value for all rows in the CSV table. See [this page](https://github.com/baskaufs/guid-o-matic/blob/master/use.md#recording-the-column-mappings-from--the-metadata-table-to-rdf-triples) for more details on the format of the mapping file. 
 
 # 4 Term list build script
 
