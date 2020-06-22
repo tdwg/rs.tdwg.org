@@ -14,3 +14,4 @@ definition,skos:definition,language,,en,$root
 usage,skos:scopeNote,language,,en,$root
 notes,dcterms:description,language,,en,$root
 type,rdf:type,iri,,,$root
+tdwgutility_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
