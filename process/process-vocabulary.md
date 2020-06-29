@@ -1,4 +1,4 @@
-v# Processing a vocabulary spreadsheet
+# Processing a vocabulary spreadsheet
 
 **Title:** Processing a vocabulary spreadsheet
 
