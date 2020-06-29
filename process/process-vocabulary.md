@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2020-06-28
+**Date Modified:** 2020-06-29
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -26,7 +26,7 @@
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-Use of 2119 keywords is not an indication that compliance is required by any TDWG standard. Rather, it is an indication that the associated software will not function as designed if non-compliant.
+Use of 2119 keywords is not an indication that compliance is required by any TDWG standard. Rather, it is an indication that the associated software will not function as designed if the user does not comply with the requirements of this document.
 
 ## 1.2 Audience
 
@@ -42,13 +42,17 @@ A Python script uses the data present in the hand-generated CSV files to generat
 
 ![generation of machine readable metadata](images/machine-readable-mapping.png)
 
-Data in the generated current terms CSV file is used with a mapping table to generate machine-readable metadata about the terms. The mapping table is hand-generated when the vocabulary is first created and relates the header names in the current terms CSV file to the abbreviated property IRIs used in the machine readable representation.
+Data in the generated current terms CSV file is used with a mapping table to generate machine-readable metadata about the terms. The mapping table is hand-edited as necessary when the vocabulary is first created and relates the header names in the current terms CSV file to the abbreviated property IRIs used in the machine readable representation.
 
 ![generation of human readable document](images/human-readable-mapping.png)
 
-The current terms CSV file can also be used along with a Python build script to create a human readable terms list document. 
+### 1.3.1 Human readable document listing terms
 
-During the initial vocabulary development process, the build script can be used to generate draft term list documents for review. Re-running the build script will cause changes or corrections made to the hand generated CSV file to be reflected in a revised term list document.
+The current terms CSV file can also be used along with a Python build script to create a human readable document listing terms and their metadata. 
+
+**Note:** There is a distinction between this document listing terms and a "term list" document. *Term list* is a technical term defined in [section 3.3.3 of the SDS](http://rs.tdwg.org/sds/doc/specification/) denoting a list of terms incorporated into a vocabulary that share a common namespace. Therefore, a "term list" document is a document that describes all of the terms included in a term list. The document listing terms that is described here may or may not be the same as a "term list" document since it can include terms from a single namespace or terms from an entire vocabulary that consists of multiple term lists.
+
+During the initial vocabulary development process, the build script can be used to generate drafts for review of the document listing terms. Re-running the build script will cause changes or corrections made to the hand generated CSV file to be reflected in a revised document listing terms.
 
 ## 1.4 How to use this document
 
@@ -76,14 +80,14 @@ There are two Python scripts (in Jupyter notebooks) that can be used to do the p
 5. Edit the configuration section in the first cell of the notebook with values appropriate for your CSV file. See the details below.
 6. If this is a new vocabulary or term list, edit the appropriate files in the `process/files_for_new` directory of the repository. See the details below.
 7. Run the cells of the script, paying careful attention to whether particular cells should be run or omitted based on your circumstances. For generating draft documents, it is not necessary to run the "Step 7" cell (the last one). 
-8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the Desktop client. If bad things happen and you want to start over, commit the changes, then delete the branch you created.
-9. If the changes look sensible, then you can run any desired scripts to generate human readable term list documents. Revisions made based on the draft term list documents should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch.
+8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If bad things happen and you want to start over, commit the changes, then delete the branch you created.
+9. If the changes look sensible, then you can run a script to generate a human readable document listing terms and their metadata (See section 4 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated.
 10. In production, once the changes have been made all the way from the terms to the standards level, push the changes to GitHub and create a pull request to merge the changes from the branch into the master.
 11. In production, once the changes have been merged into the master, the updated metadata MUST be deployed so that term dereferencing will be "live". See [this page](../DEPLOYMENT.md) for details.
 
 # 2 Generating necessary CSV files from the hand-generated CSV file
 
-There are several steps necessary to generate all of the metadata related to term additions or changes. New versions of the terms are usually created, then the metadata record for the current term will be created (if the term is new) or modified (if the term is revised). The version is then linked to its corresponding current term. 
+There are several steps necessary to generate all of the metadata related to term additions or changes. A new versions of the term is usually created, then the metadata record for the current term will be created (if the term is new) or modified (if the term is revised). The new version is then linked to its corresponding current term. 
 
 ![TDWG metadata model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
 
@@ -133,11 +137,11 @@ This value is only relevant when new term lists or vocabularies are created and 
 ```
 termlist_uri = ''
 ```
-For TDWG-minted terms, this value MUST be left as the empty string and the termlist IRI will be the same as the namespace IRI. However, when terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv)for examples.
+For TDWG-minted terms, this value MUST be left as the empty string and the termlist IRI will be the same as the namespace IRI. However, when terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv) for examples.
 
 ### 2.1.2 Editing the template files for new term lists, vocabularies, and standards
 
-When existing metadata records are updated for term lists, vocabularies, and standards, the basic metadata for those resources (labels, descriptions, and other properties such as preferred namespace abbreviations) are copied from the previous version. Changes to those properties would need to be made manually. However, when a new term list, vocabulary, or standard is created, values for those basic metadata properties MUST be provided from template files. Those files are located [here](files_for_new). Follow the patterns in the files while changing the values to those appropriate for the new resource. It is not necessary to provide values for modified or created dates since they will be generated automatically.
+When existing metadata records are updated for term lists, vocabularies, and standards, the basic metadata for those resources (labels, descriptions, and other properties such as preferred namespace abbreviations) are copied from the previous version. Changes to those properties would need to be made manually prior to publishing the data. However, when a new term list, vocabulary, or standard is created, values for those basic metadata properties MUST be provided from template files. Those files are located [here](files_for_new). Follow the patterns in the files while changing the values to those appropriate for the new resource. It is not necessary to provide values for modified or created dates since they will be generated automatically.
 
 When a new resource is created, template files for resources below it in the standards hierarchy MUST also be created. It is not necessary to edit template files at a higher level if the higher-level resource already exists. For example, adding a new vocabulary to the Darwin Core standard would require editing the template `new_vocabulary.csv` and `new_term_list.csv` files, but not the `new_standard.csv` file.
 
@@ -183,7 +187,7 @@ A new term list version is updated in its parent vocabulary version and a new vo
 
 ### 2.5.1 Running the processing script to generate high level metadata
 
-The metadata for levels of the hierarchy above the level of term lists is not used by the build scripts for human readable term lists. So for that purpose, running the "Step 7" cell is OPTIONAL. When putting ratified changes into production, running the "Step 7" cell is REQUIRED.
+The metadata for levels of the hierarchy above the level of term lists is not used by the build scripts for human readable document listing terms (section 4 below). So for that purpose, running the "Step 7" cell is OPTIONAL. When putting ratified changes into production, running the "Step 7" cell is REQUIRED.
 
 # 3 Creating a column header mapping file
 
@@ -195,25 +199,25 @@ Controlled vocabularies contain one or more additional properties that are not f
 
 If additional property columns were added to the hand-generated CSV file, the mapping file in the current terms directory for that term list (i.e. the directory created having the name set as the value of `database` in the configuration section) must be manually edited. The name of the mappling file ends in `-mappings.csv`. 
 
-The order of rows in the mapping file does not matter. The first column (`header`) contains the name of the column header in the hand-generated CSV file. The second column (`predicate`) contains the abbreviated IRI (also known as CURIE or QName). If the namespace abbreviation is different from others already present in this column, check the `namespace.csv` file in the same directory to make sure that the abbreviation is already listed. If not, add it to the list of namespace abbreviations and IRIs. The third column, which describes the type of the value in the column, MUST have one of the following strings as its value: `iri`, `language`, `datatype`, or `plain`. For language-tagged strings, the `attribute` column contains the ISO 639-1 language code used in the tag. For datatyped strings, the `attribute` column contains the abbreviated IRI for the datatype. If the column in the CSV file contains an unabbreviated full IRI, there is no value in the `value` column of the mapping table. If the column in the CSV contains the local name part of the IRI, the `value` column contains full namespace IRI to be prepended to the value from column in the CSV. 
+The order of rows in the mapping file does not matter. The first column (`header`) contains the name of the column header in the hand-generated CSV file. The second column (`predicate`) contains the abbreviated IRI (also known as [CURIE](https://www.w3.org/TR/curie/) or [QName](https://www.w3.org/2001/tag/doc/qnameids)). If the namespace abbreviation of an added row is different from others already present in this column, check the `namespace.csv` file in the same directory to make sure that the abbreviation is already listed. If not, add it to that list of namespace abbreviations and IRIs. The third column, which describes the type of the value in the column, MUST have one of the following strings as its value: `iri`, `language`, `datatype`, or `plain`. For language-tagged strings, the `attribute` column contains the ISO 639-1 language code used in the tag. For datatyped strings, the `attribute` column contains the abbreviated IRI for the datatype. If the column in the CSV file contains an unabbreviated full IRI, there is no value in the `value` column of the mapping table. If the column in the CSV contains the local name part of the IRI, the `value` column contains full namespace IRI to be prepended to the value from column in the CSV. 
 
 It is also possible to generate a fixed value for all rows in the CSV table. See [this page](https://github.com/baskaufs/guid-o-matic/blob/master/use.md#recording-the-column-mappings-from--the-metadata-table-to-rdf-triples) for more details on the format of the mapping file. 
 
-# 4 Term list build script
+# 4 Build script for human readable document listing terms and their metadata
 
-A term list document is a Markdown document consisting of two parts. The first part is a hand-edited static file that contains the introductory material (header section, introduction, RFC 2119 keywords section, etc.). The second part is created by a script that generates the actual term list from the current terms files for term lists that are included in the vocabulary. The script is relatively simple if all terms are found in a single term list. It is more complex if the vocabulary includes terms from several term lists or if the terms are categorized. There are several example build scripts that can be modified by a Python programmer needed to make the term list document conform to the idiosyncrasies of a given vocabulary.
+A document listing terms and their metadata is a Markdown document consisting of two or more parts. The first part is a hand-edited static file that contains the introductory material (header section, introduction, RFC 2119 keywords section, etc.). The second part is created by a script that generates the actual list of terms from the current terms files for term lists that are included in the listing. The script is relatively simple if all terms are found in a single term list. It is more complex if the vocabulary includes terms from several term lists or if the terms are categorized. There are two example build scripts that can be modified by a Python programmer if modifications are needed to make the term list document conform to the idiosyncrasies of a given vocabulary.
 
 ## 4.1 Building a simple term list
 
-The notebook `build-page-simple.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository has an example set up for a controlled vocabulary with hierarchy. That directory also has a template header MarkDown file that can be modified as necessary.
+The notebook `build-page-simple.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository has an example set up for a controlled vocabulary with hierarchy. That directory also has a template Markdown file for the introductory section that can be modified as necessary.
 
 ## 4.2 Categorizing terms
 
-It is reasonable to include the few terms of a simple vocabulary in a single section. However, term list documents of larger and more complicated vocabularies may need to be organized into categories to make it easier to locate related terms. This approach was first used with Darwin Core and has also been adopted by Audubon Core. 
+It is reasonable to include the few terms of a simple vocabulary in a single section. However, documents listing the terms of larger and more complicated vocabularies may need to be organized into categories to make it easier to locate related terms. This approach was first used with Darwin Core and has also been adopted by Audubon Core. 
 
 The key to organizing the terms in this way is by using the property `tdwgutility:organizedInClass` where the value is a class under which the subject is organized. NOTE: the local name of this property should not mislead users to think that grouping property terms in this way indicates that the grouped properties have been declared to have the organizing class as a domain. TDWG-minted terms SHOULD NOT have ranges or domains as part of their basic metadata.
 
-In many cases, the organizing class will be a well-known class previously defined by TDWG or some other organization. Examples in Darwin Core are `dwc:Occurrence` and `dcterms:Location`. However, it is also possible to create a "convenience" class within the `tdwgutility:` namespace solely for the purpose of organizing related terms. For example, Audubon Core uses the class 'tdwgutility:ResourceCreation` to group property terms related to the creation of multimedia resources. Terms in the `tdwgutility:` namespace are not generally governed by any standard, so organizational class terms can be added as necessary without going through any official change process.
+In many cases, the organizing class will be a well-known class previously defined by TDWG or some other organization. Examples in Darwin Core are `dwc:Occurrence` and `dcterms:Location`. However, it is also possible to create a "convenience" class within the `tdwgutility:` namespace solely for the purpose of organizing related terms. For example, Audubon Core uses the class `tdwgutility:ResourceCreation` to group property terms related to the creation of multimedia resources. Terms in the `tdwgutility:` namespace are not generally governed by any standard, so organizational class terms can be added as necessary without going through any official change process.
 
 ### 4.2.1 Using categories
 

@@ -2,7 +2,7 @@
 
 **Title:** Creating a vocabulary spreadsheet
 
-**Date Modified:** 2020-06-02
+**Date Modified:** 2020-06-29
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -24,29 +24,35 @@ The [TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/spec
 
 There are several key ideas that need to be understood prior to creating the spreadsheet. They will be explained in the following section. The last section of the document will provide details and examples for several categories of vocabulary terms.
 
+## 1.1 RFC 2119 statement
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
+Use of 2119 keywords here indicates that the the requirement is either necessary to comply with the requirements of the SDS or to enable the proper functioning of the software used to process the spreadsheet.
+
 # 2 Terminology
 
 ## 2.1 Terms related to vocabularies
 
-**Term** A term is the main component of a vocabulary. Types of terms are: *properties* used to describe resources, *classes* used to categorize resources, and *controlled vocabulary terms* used as values of properties. Terms have human readable labels, machine-readable IRI identifiers, definitions, and other descriptive metadata.
+**Term** A term is the main component of a vocabulary. Types of terms are: *properties* used to describe resources, *classes* used to categorize resources, and *controlled vocabulary terms* used as values of properties. Terms MUST have human readable labels, machine-readable IRI identifiers, definitions, and MAY have other descriptive metadata.
 
-**Normative** Normative content is prescriptive and specifies what is required to comply with a standard. It cannot be changed without going through a formal process described by the [TDWG Vocabulary Maintenance Specificiation](http://rs.tdwg.org/vms/doc/specification/) (VMS). 
+**Normative** Normative content is prescriptive and specifies what is required to comply with a standard. It MUST NOT be changed without going through a formal process described by the [TDWG Vocabulary Maintenance Specificiation](http://rs.tdwg.org/vms/doc/specification/) (VMS). 
 
-**Non-normative** Non-normative content may be part of a standard, but it is not as rigorously regulated as normative content. It is desirable to avoid changing non-normative content, but non-normative content may be changed at the discretion of the relevant vocabulary maintenance group if its members feel that the change would be beneficial.
+**Non-normative** Non-normative content MAY be part of a standard, but it is not as rigorously regulated as normative content. It is desirable to avoid changing non-normative content, but non-normative content MAY be changed at the discretion of the relevant vocabulary maintenance group if its members feel that the change would be beneficial.
 
-**Term list** A set of related terms sharing the same namespace identifier. Borrowed terms will be part of one or more term lists that are separate from a term list containing the terms minted by TDWG.
+**Term list** A set of related terms sharing the same namespace identifier. Borrowed terms MUST be part of one or more term lists that are separate from a term list containing the terms minted by TDWG.
 
 ## 2.2 Important terms related to vocabulary metadata
 
-**Definition** The term definition is normative and is worded to precisely define the meaning of the term. If the term is minted by TDWG, vocabulary creators bear the responsibility of writing a concise and clear definition. If the term is borrowed from a non-TDWG vocabulary, the term definition as presented by TDWG will be the same as what is found in the defining vocabulary. Every term is required to have a definition.
+**Definition** The term definition is normative and is worded to precisely define the meaning of the term. If the term is minted by TDWG, vocabulary creators bear the responsibility of writing a concise and clear definition. If the term is borrowed from a non-TDWG vocabulary, the term definition as presented by TDWG SHOULD be the same as what is found in the defining vocabulary. Every term is REQUIRED to have a definition.
 
-**Usage guidelines** Usage guidelines are optional and are often not used if a term is defined by TDWG. They are often used with terms borrowed from other vocabularies because they specify how a borrowed term should be used in the context of the borrowing TDWG vocabulary. They can also be used to communicate expectations about how the term should be used that are not included in the definition. Usage guidelines are generally be declared to be normative since they are prescriptive. 
+**Usage guidelines** Usage guidelines are OPTIONAL and are often not used if a term is defined by TDWG. They are often used with terms borrowed from other vocabularies because they specify how a borrowed term SHOULD be used in the context of the borrowing TDWG vocabulary. They MAY also be used to communicate expectations about how the term should be used that are not included in the definition. Usage guidelines are generally be declared to be normative since they are prescriptive. 
 
-**Notes** Notes are optional and are non-normative. Notes provide information that might be helpful to understand how to use a term, but are not prescriptive. Notes may provide examples and references to other helpful resources.
+**Notes** Notes are OPTIONAL and are non-normative. Notes provide information that might be helpful to understand how to use a term, but are not prescriptive. Notes MAY provide examples and references to other helpful resources.
 
-**Label** A label is a human-readable name for the term. A label would be appropriate to present to a human user in a pick list. Terms are required to have an English label, but that label is not normative. Users should not be expected to understand the meaning of the term from its label without the definition, although a clear label can help prevent confusion among terms. It is desirable to have additional labels for each term in languages other than English, but the creation and maintenance of those labels occurs outside of the standards process and generally will take place following the initial adoption of a vocabulary.
+**Label** A label is a human-readable name for the term. A label would be appropriate to present to a human user in a pick list. Terms are REQUIRED to have an English label, but that label is not normative. Users should not be expected to understand the meaning of the term from its label without the definition, although a clear label can help prevent confusion among terms. It is desirable to have additional labels for each term in languages other than English, but the creation and maintenance of those labels occurs outside of the standards process and generally will take place following the initial adoption of a vocabulary.
 
-**Term local name** The local name<sup>1</sup> is a string of characters that identies the term within the scope of a term list. A local name may be related to a human label or it may be opaque. Based on past TDWG precedent, property and class local names have been related to the human readable labels. As with labels, users should not be expected to understand the meaning of a term from its local name -- they should consult the term definition. Vocabuary developers may suggest term local names, but the final decision on term local names will be made at the time of ratification. Term local names for properties should be in lower [camelCase](https://en.wikipedia.org/wiki/Camel_case) and term local names for classes should be in upper CamelCase. See examples in the tables below.
+**Term local name** The local name<sup>1</sup> is a string of characters that identies the term within the scope of a term list. A local name may be related to a human label or it may be opaque. Based on past TDWG precedent, property and class local names have been related to the human readable labels. As with labels, users MUST NOT be expected to understand the meaning of a term from its local name -- they are expected consult the term definition. Vocabuary developers MAY suggest term local names, but the final decision on term local names will be made at the time of ratification. Term local names for properties SHOULD be in lower [camelCase](https://en.wikipedia.org/wiki/Camel_case) and term local names for classes SHOULD be in upper CamelCase. See examples in the tables below.
 
 ## 2.3 Technical terms related to vocabulary metadata (optional reading)
 
@@ -56,7 +62,7 @@ The following information explains how the term local name is used to generate t
 
 **Namespace** A namespace is a string of characters that denotes a set of terms grouped and defined as a unit. Such a group of terms is called a *term list*. All TDWG-minted terms have namespaces that begin with `http://rs.tdwg.org/`. For example, the namespace for the term list of IRI-valued Darwin Core terms is `http://rs.tdwg.org/dwc/iri/`. TDWG namespaces will be assigned at the time when a vocabulary is ratified, and vocabulary developers do not need to worry about them.
 
-**Term name** The term name is an abbreviated IRI (also known as a [compact URI](https://www.w3.org/TR/curie/) or CURIE) that is composed of an abbreviation for the first part of the IRI (the *namespace*), followed by a colon, then the local name.  **Term names are NOT human-readable term labels! They are abbreviations for IRI identifiers.** The abbreviation `dwc:` is used for the namespace `http://rs.tdwg.org/dwc/terms/`, so the term name (abbreviated IRI) for `http://rs.tdwg.org/dwc/terms/recordedBy` would be `dwc:recordedBy`. IRIs are fundamentally intended for machine use, and an abbreviated IRI is interchangeable with an unabbreviated IRI. That is, a script that can consume IRIs should be able to translate `dwc:recordedBy` to `http://rs.tdwg.org/dwc/terms/recordedBy` and vice-versa. Vocabulary developers may suggest namespace abbreviations that will be combined with local names to form the term name, but that is optional.
+**Term name** The term name is an abbreviated IRI (also known as a [compact URI](https://www.w3.org/TR/curie/) or CURIE) that is composed of an abbreviation for the first part of the IRI (the *namespace*), followed by a colon, then the local name.  **Term names are NOT human-readable term labels! They are abbreviations for IRI identifiers.** The abbreviation `dwc:` is used for the namespace `http://rs.tdwg.org/dwc/terms/`, so the term name (abbreviated IRI) for `http://rs.tdwg.org/dwc/terms/recordedBy` would be `dwc:recordedBy`. IRIs are fundamentally intended for machine use, and an abbreviated IRI is interchangeable with an unabbreviated IRI. That is, a script that can consume IRIs should be able to translate `dwc:recordedBy` to `http://rs.tdwg.org/dwc/terms/recordedBy` and vice-versa. Vocabulary developers MAY suggest namespace abbreviations that will be combined with local names to form the term name, but that is OPTIONAL.
 
 # 3 Examples and details
 
@@ -64,20 +70,22 @@ The following information explains how the term local name is used to generate t
 
 In this example, every term has a definition. Since the terms in this table are are TDWG-defined, they don't have usage guidelines. This is typical for TDWG-defined terms, although TDWG-defined terms may have usage guidelines if they provide clarity on use beyond the term definition.  Notes provide examples and recommended values when appropriate. Following past TDWG practice, the term local names are in lower camelCase for properties and upper CamelCase for classes. Although local names are similar to human-readable labels in this example, in general there is not necessarily any particulary relationship between the human-readable labels and the term local names. See the other tables where local names are partially or completely different from labels. There is currently no consensus within TDWG about capitalization of labels, but the chosen capitalization scheme should be used consistently. 
 
-The value for type must be one of the following: `http://www.w3.org/1999/02/22-rdf-syntax-ns#Property` for properties, `http://www.w3.org/2000/01/rdf-schema#Class` for classes, or `http://www.w3.org/2004/02/skos/core#Concept` for controlled vocabulary terms. 
+The value for type MUST be one of the following: `http://www.w3.org/1999/02/22-rdf-syntax-ns#Property` for properties, `http://www.w3.org/2000/01/rdf-schema#Class` for classes, or `http://www.w3.org/2004/02/skos/core#Concept` for controlled vocabulary terms. 
+
+It is OPTIONAL to provide values in the tdwgutility_organizedInClass column. That column is used in cases where a vocabulary groups related terms. If terms are not to be grouped, leave this column blank. See [section 4.2 of "Processing a vocabulary spreadsheet"](process-vocabulary.md#42-categorizing-terms) for more details on categorizing terms.
 
 Note: the table below contains columns on the right that are not visible. They can be viewed using the scrollbar at the bottom of the table. You can also use this [link to the actual spreadsheet](example-spreadsheets/simple-vocabulary.csv)
 
-| term_localName | label | definition | usage | notes | type |
-| -------------- | ----- | ---------- | ----- | ----- | ---- | 
-| county | County | The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs. | | Examples: "Missoula", "Los Lagos", "Mataró" | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property |
-| georeferenceProtocol | Georeference Protocol | A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties |  | Examples: "Guide to Best Practices for Georeferencing. (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility.", "MaNIS/HerpNet/ORNIS Georeferencing Guidelines", "Georeferencing Quick Reference Guide | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property | 
-| Occurrence | Occurrence | An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time. | | Examples: A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in a the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929. | http://www.w3.org/2000/01/rdf-schema#Class | 
+| term_localName | label | definition | usage | notes | type | tdwgutility_organizedInClass |
+| -------------- | ----- | ---------- | ----- | ----- | ---- | ---- |
+| county | County | The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs. | | Examples: "Missoula", "Los Lagos", "Mataró" | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property | http://purl.org/dc/terms/Location |
+| georeferenceProtocol | Georeference Protocol | A description or reference to the methods used to determine the spatial footprint, coordinates, and uncertainties |  | Examples: "Guide to Best Practices for Georeferencing. (Chapman and Wieczorek, eds. 2006). Global Biodiversity Information Facility.", "MaNIS/HerpNet/ORNIS Georeferencing Guidelines", "Georeferencing Quick Reference Guide | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property | http://purl.org/dc/terms/Location |
+| Occurrence | Occurrence | An existence of an Organism (sensu http://rs.tdwg.org/dwc/terms/Organism) at a particular place at a particular time. | | Examples: A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in a the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929. | http://www.w3.org/2000/01/rdf-schema#Class | | 
 
 
 ## 3.2 More complex example including borrowed terms and additional properties (Audubon Core)
 
-This example has the same features as the previous example, but it also includes two additional property columns beyond the basic properties (`tdwgutility_organizedInClass` and `tdwgutility_repeatable`) that provide information specifically desired for Audubon Core. At the bottom of the table, there are two additional term lists containing terms borrowed from other namespaces. They are separated from the previous term list by a row containing a note explaining their source. Note that the definitions of the borrowed terms have been copied exactly from their source. The borrowed term local names are identical to their original source, despite the fact that the `xmp:` terms do not follow the lower camelCase convention used for property term names in TDWG. Also notice that usage guidelines are more commonly used for the borrowed terms where there is no control over the term definitions.
+This example has the same features as the previous example, but it also includes an additional property column beyond the basic properties (`tdwgutility_repeatable`) that provides information specifically desired for Audubon Core. At the bottom of the table, there are two additional term lists containing terms borrowed from other namespaces. They are separated from the previous term list by a row containing a note explaining their source. Note that the definitions of the borrowed terms have been copied exactly from their source. The borrowed term local names are identical to their original source, despite the fact that the `xmp:` terms do not follow the lower camelCase convention used for property term names in TDWG. Also notice that usage guidelines are more commonly used for the borrowed terms where there is no control over the term definitions.
 
 Note: the table below contains columns on the right that are not visible. They can be viewed using the scrollbar at the bottom of the table. You can also use this [link to the actual spreadsheet](example-spreadsheets/complex-vocabulary.csv)
 
@@ -96,18 +104,18 @@ Note: the table below contains columns on the right that are not visible. They c
 
 ## 3.3 Simple controlled vocabulary (establishmentMeans)
 
-Controlled vocabularies have an additional required property that is not found in other vocabularies: a `controlled value string`. The controlled value string is NOT the human readable label and it is NOT the term local name. It is the plain text string that spreadsheet users should provide in lieu of using the term IRI. It is desirable that the controlled value string not require additional disambiguation. To prevent accidental variation in the controlled value string caused by user errors, controlled value strings should have the following characteristics:
+Controlled vocabularies have an additional required property that is not found in other vocabularies: a `controlled value string`. The controlled value string is **not** the human readable label and it is **not** the term local name. It is the plain text string that spreadsheet users SHOULD provide in lieu of using the term IRI. It is desirable that the form of the controlled value string not create situations where additional disambiguation is necessary. To prevent accidental variation in the controlled value string caused by user errors, controlled value strings SHOULD have the following characteristics:
 
 - no spaces
 - only ASCII alphabetic letters (no diacritics, no punctuation)
 - rule-based capitalization (such as lower camelCase)
 - memorable form suitable for human users (vs. opaque random strings)
 
-The controlled value string may be similar to the English human-readable label, but given the criteria listed above (e.g. no spaces or punctuation), it will often not be the same. Vocabulary creators should think carefully how they will prevent their community from confusing the controlled value strings with the English label and the term local name.
+The controlled value string may be similar to the English human-readable label, but given the criteria listed above (e.g. no spaces or punctuation), it will often not be the same. Vocabulary creators are advised to think carefully how they will prevent their community from confusing the controlled value strings with the English label and the term local name.
 
 In the example below, the local name is an opaque string and therefore unlikely to be confused with either the label or controlled value string. The controlled value sting is in lower camelCase. It is composed of words related to the label, but is unlikely to be confused with the label because the label includes spaces and punctuation.
 
-The type of controlled vocabulary terms should be `http://www.w3.org/2004/02/skos/core#Concept`.
+The type of controlled vocabulary terms MUST be `http://www.w3.org/2004/02/skos/core#Concept`.
 
 Note: the table below contains columns on the right that are not visible. They can be viewed using the scrollbar at the bottom of the table. You can also use this [link to the actual spreadsheet](example-spreadsheets/simple-cv.csv)
 
@@ -119,7 +127,7 @@ Note: the table below contains columns on the right that are not visible. They c
 
 ## 3.4 Controlled vocabulary with broader hierarchy (pathway)
 
-Terms in a controlled vocabulary may be related to other controlled vocabulary terms through a *broader* relationship.<sup>2</sup> That implies that if the narrower concept applies, the broader concept applies as well. This relationship can be indicated in the spreadsheet by including a skos_broader column in the spreadsheet. Placing the local name of the broader term in that column will create that relationship when the metadata are generated. 
+Terms in a controlled vocabulary MAY be related to other controlled vocabulary terms through a *broader* relationship.<sup>2</sup> That implies that if the narrower concept applies, the broader concept applies as well. When present, this relationship MUST be indicated in the spreadsheet by including a skos_broader column in the spreadsheet. Placing the local name of the broader term in that column will create that relationship when the metadata are generated. 
 
 Note: the table below contains columns on the right that are not visible. They can be viewed using the scrollbar at the bottom of the table. You can also use this [link to the actual spreadsheet](example-spreadsheets/cv-hierarchy.csv)
 
