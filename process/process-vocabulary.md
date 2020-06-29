@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2020-06-14
+**Date Modified:** 2020-06-28
 
 **Part of TDWG Standard:** Not part of any standard
 
