@@ -6,7 +6,7 @@ permalink: /pw/
 
 **Title:** Pathway Controlled Vocabulary
 
-**Namespace URI:** http://rs.tdwg.org/dwc/pw/
+**Namespace URI:** http://rs.tdwg.org/dwcpw/values/
 
 **Preferred namespace abbreviation:** dwcpw:
 
