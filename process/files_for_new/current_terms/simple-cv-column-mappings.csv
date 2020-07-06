@@ -13,5 +13,6 @@ definition,rdfs:comment,language,,en,$root
 definition,skos:definition,language,,en,$root
 usage,skos:scopeNote,language,,en,$root
 notes,dcterms:description,language,,en,$root
+skos_inScheme,skos:inScheme,iri,http:/example.org/,,$root
 controlled_value_string,rdf:value,plain,,,$root
 type,rdf:type,iri,,,$root
