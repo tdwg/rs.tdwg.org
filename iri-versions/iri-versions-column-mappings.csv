@@ -17,3 +17,5 @@ tdwgutility_decision,tdwgutility:decision,iri,,,$root
 term_localName,dcterms:isVersionOf,iri,http://rs.tdwg.org/dwc/iri/,,$root
 rdf_type,rdf:type,iri,,,$root
 rdfs_seeAlso,rdfs:seeAlso,iri,,,$root
+examples,skos:example,language,,en,$root
+tdwgutility_usageScope,tdwgutility:usageScope,plain,,,$root
