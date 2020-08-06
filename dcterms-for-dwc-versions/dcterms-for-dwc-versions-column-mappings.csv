@@ -16,3 +16,5 @@ tdwgutility_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
 tdwgutility_decision,tdwgutility:decision,iri,,,$root
 term_localName,dcterms:isVersionOf,iri,http://purl.org/dc/terms/,,$root
 rdf_type,rdf:type,iri,,,$root
+examples,skos:example,language,,en,$root
+tdwgutility_usageScope,tdwgutility:usageScope,plain,,,$root
