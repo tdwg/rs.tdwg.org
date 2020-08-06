@@ -1,0 +1,2 @@
+term_localName,label,rdfs_comment,rdf_type
+usageScope,Usage Scope,Indicates whether a term is part of Simple Darwin Core or extended Darwin Core,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
