@@ -773,8 +773,7 @@ declare
   %rest:header-param("Accept","{$acceptHeader}")
   function page:abcdtermsx-redirect($path, $acceptHeader)
   {
-    let $header := page:extract-html-header($acceptHeader)
-    return switch ($header)
+    switch ($acceptHeader)
       case "application/rdf+xml" return 
          <rest:response>
             <http:response status="303">
@@ -818,8 +817,7 @@ declare
   %rest:header-param("Accept","{$acceptHeader}")
   function page:abcdmappingsx-redirect($path, $acceptHeader)
   {
-    let $header := page:extract-html-header($acceptHeader)
-    return switch ($header)
+    switch ($acceptHeader)
       case "application/rdf+xml" return 
          <rest:response>
             <http:response status="303">
@@ -2220,14 +2218,3 @@ switch ($serialization)
   default return ""
 };
 
-declare function page:extract-html-header($headers)
-{
-let $result :=  
-  for $header in $headers 
-  return if (contains($header, "text/html")) 
-    then true() 
-    else false()
-return if ($result = true()) 
-  then "text/html" 
-  else $headers
-};
