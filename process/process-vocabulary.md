@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2020-06-29
+**Date Modified:** 2020-00-12
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -56,7 +56,7 @@ During the initial vocabulary development process, the build script can be used 
 
 ## 1.4 How to use this document
 
-This document explains the steps for processing a hand-generated CSV file using a Python script that is part of a Jupyter notebook. 
+This document explains the steps for processing a hand-generated CSV file using a Python script that is part of a Jupyter notebook. NOTE: term deprecations cannot be carried out using this workflow and they require a number of special steps. See the [notes at the start of the detailed Jupyter notebook](process_rs_tdwg_org.ipynb) for sepecific steps that are necessary for term deprecations.
 
 ### 1.4.1 Requirements
 
