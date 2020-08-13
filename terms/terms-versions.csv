@@ -548,3 +548,12 @@ http://rs.tdwg.org/dwc/terms/version/resourceID-2018-09-06,resourceID
 http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2018-09-06,ResourceRelationship
 http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2018-09-06,resourceRelationshipID
 http://rs.tdwg.org/dwc/terms/version/Taxon-2018-09-06,Taxon
+http://rs.tdwg.org/dwc/terms/version/month-2020-08-12,month
+http://rs.tdwg.org/dwc/terms/version/eventDate-2020-08-12,eventDate
+http://rs.tdwg.org/dwc/terms/version/eventTime-2020-08-12,eventTime
+http://rs.tdwg.org/dwc/terms/version/georeferencedDate-2020-08-12,georeferencedDate
+http://rs.tdwg.org/dwc/terms/version/dateIdentified-2020-08-12,dateIdentified
+http://rs.tdwg.org/dwc/terms/version/measurementDeterminedDate-2020-08-12,measurementDeterminedDate
+http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2020-08-12,relationshipEstablishedDate
+http://rs.tdwg.org/dwc/terms/version/associatedMedia-2020-08-12,associatedMedia
+http://rs.tdwg.org/dwc/terms/version/namePublishedInID-2020-08-12,namePublishedInID

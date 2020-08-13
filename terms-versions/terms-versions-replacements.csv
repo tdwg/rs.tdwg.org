@@ -338,3 +338,12 @@ http://rs.tdwg.org/dwc/terms/version/resourceID-2018-09-06,resourceID-2017-10-06
 http://rs.tdwg.org/dwc/terms/version/ResourceRelationship-2018-09-06,ResourceRelationship-2017-10-06
 http://rs.tdwg.org/dwc/terms/version/resourceRelationshipID-2018-09-06,resourceRelationshipID-2017-10-06
 http://rs.tdwg.org/dwc/terms/version/Taxon-2018-09-06,Taxon-2014-10-23
+http://rs.tdwg.org/dwc/terms/version/month-2020-08-12,month-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/eventDate-2020-08-12,eventDate-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/eventTime-2020-08-12,eventTime-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/georeferencedDate-2020-08-12,georeferencedDate-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/dateIdentified-2020-08-12,dateIdentified-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/measurementDeterminedDate-2020-08-12,measurementDeterminedDate-2018-09-06
+http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2020-08-12,relationshipEstablishedDate-2018-09-06
+http://rs.tdwg.org/dwc/terms/version/associatedMedia-2020-08-12,associatedMedia-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/namePublishedInID-2020-08-12,namePublishedInID-2017-10-06
