@@ -5,3 +5,4 @@ editor,gndo:editor,iri,,,$root
 translator,gndo:translator,iri,,,$root
 reviewer,gndo:writerOfAddedCommentary,iri,,,$root
 review_manager,gndo:compiler,iri,,,$root
+contributor,gndo:contributingPerson,iri,,,$root
