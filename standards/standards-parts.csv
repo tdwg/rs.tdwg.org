@@ -15,6 +15,7 @@ http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/terms/guides/text/,foaf
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/terms/guides/xml/,foaf:Document
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/terms/simple/,foaf:Document
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/terms/namespace/,foaf:Document
+http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/list/,foaf:Document
 http://www.tdwg.org/standards/449,http://rs.tdwg.org/tapir/doc/summary/,foaf:Document
 http://www.tdwg.org/standards/449,http://rs.tdwg.org/tapir/doc/specification/,foaf:Document
 http://www.tdwg.org/standards/449,http://rs.tdwg.org/tapir/doc/xmlschema/,foaf:Document
