@@ -12,5 +12,6 @@ definition,rdfs:comment,language,,en,$root
 definition,skos:definition,language,,en,$root
 usage,skos:scopeNote,language,,en,$root
 notes,dcterms:description,language,,en,$root
+examples,skos:example,language,,en,$root
 type,rdf:type,iri,,,$root
 term_localName,dcterms:isVersionOf,iri,http:/example.org/,,$root
