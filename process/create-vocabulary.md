@@ -100,7 +100,7 @@ This example has the same features as the previous example, but it also includes
 Note: the table below contains columns on the right that are not visible. They can be viewed using the scrollbar at the bottom of the table. You can also use this [link to the actual spreadsheet](example-spreadsheets/complex-vocabulary.csv).
 
 | term_localName | label | definition | usage | notes | examples | type | tdwgutility_organizedInClass | tdwgutility_repeatable |
-| -------------- | ----- | ---------- | ----- | ----- | ---- | --------------------------- | ---------------------------- |
+| -------------- | ----- | ---------- | ----- | ----- | -------- | ---- | ---------------------------- | ---------------------- |
 | hashFunction | Hash Function | The cryptographic hash function used to compute the value given in the Hash Value. |  | Recommended values include MD5, SHA-1, SHA-224,SHA-256, SHA-384, SHA-512, SHA-512/224 and SHA-512/256 | | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property | http://rs.tdwg.org/ac/terms/ServiceAccessPoint | No |
 | fundingAttribution | Funding | Text description of organizations or individuals who funded the creation of the resource. |  |  |  | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property | http://rs.tdwg.org/dwc/terms/attributes/Attribution | Yes |
 | timeOfDay | Time of Day | Free text information beyond exact clock times. |  |  | English: afternoon, twilight. | http://www.w3.org/1999/02/22-rdf-syntax-ns#Property | http://purl.org/dc/terms/PeriodOfTime | No |
