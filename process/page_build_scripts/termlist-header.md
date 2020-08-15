@@ -1,8 +1,4 @@
----
-permalink: /pw/
----
-
-# Pathway Controlled Vocabulary
+# Darwin Core Chronometric Age Extension Vocabulary
 
 **Title:**  Darwin Core Chronometric Age Extension Vocabulary
 
