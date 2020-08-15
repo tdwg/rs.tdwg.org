@@ -1,3 +1,4 @@
 document_modified,vocabulary,vocabulary_deprecated,vocabulary_localName,label,description,vocabulary_created,vocabulary_modified,dc_creator,dcterms_license
 2020-08-12T14:33:57-05:00,http://rs.tdwg.org/dwc/,,dwc/,Darwin Core basic vocabulary,This vocabulary contains Darwin Core terms suitable for use with both literal and IRI values,2008-11-19,2020-08-12,TDWG Darwin Core and RDF/OWL Task Groups,http://creativecommons.org/licenses/by/4.0/
 2020-01-27T14:02:35-06:00,http://rs.tdwg.org/ac/,,ac/,Audubon Core basic vocabulary,This vocabulary contains all Audubon Core terms,2013-10-28,2020-01-27,TDWG Multimedia Resources Task Group,http://creativecommons.org/licenses/by/4.0/
+2020-08-14T23:11:58-05:00,http://rs.tdwg.org/chrono/,,chrono/,Darwin Core Chronometric Age Extension vocabulary,Vocabulary for the Darwin Core Chronometric Age Extension,2020-08-14,2020-08-14,TDWG Darwin Core Chronometric Age Extension Task Group,http://creativecommons.org/licenses/by/4.0/
