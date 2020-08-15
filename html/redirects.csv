@@ -9,9 +9,9 @@ dwctype,no,term,dwctype,,,
 dwctype-versions,no,termVersion,dwctype,,,
 geospatial,no,term,dwcgeospatial,,,
 geospatial-versions,no,termVersion,dwcgeospatial,,,
-iri,yes,term,dwciri,https://dwc.tdwg.org/terms/#,yes,:
+iri,yes,term,dwciri,https://dwc.tdwg.org/list/#,yes,_
 iri-versions,no,termVersion,dwciri,,,
-terms,yes,term,dwc,https://dwc.tdwg.org/terms/#,yes,:
+terms,yes,term,dwc,https://dwc.tdwg.org/list/#,yes,_
 terms-versions,no,termVersion,dwc,,,
 term-lists,no,termList,,,,
 term-lists-versions,no,termListVersion,,,,
