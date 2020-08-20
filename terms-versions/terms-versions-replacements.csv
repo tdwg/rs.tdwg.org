@@ -347,3 +347,10 @@ http://rs.tdwg.org/dwc/terms/version/measurementDeterminedDate-2020-08-12,measur
 http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2020-08-12,relationshipEstablishedDate-2018-09-06
 http://rs.tdwg.org/dwc/terms/version/associatedMedia-2020-08-12,associatedMedia-2017-10-06
 http://rs.tdwg.org/dwc/terms/version/namePublishedInID-2020-08-12,namePublishedInID-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/startDayOfYear-2020-08-20,startDayOfYear-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/endDayOfYear-2020-08-20,endDayOfYear-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/Occurrence-2020-08-20,Occurrence-2018-09-06
+http://rs.tdwg.org/dwc/terms/version/pointRadiusSpatialFit-2020-08-20,pointRadiusSpatialFit-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2020-08-20,footprintSpatialFit-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2020-08-20,georeferenceProtocol-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2020-08-20,verbatimCoordinateSystem-2017-10-06
