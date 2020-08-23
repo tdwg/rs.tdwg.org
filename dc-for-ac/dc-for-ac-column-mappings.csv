@@ -7,6 +7,7 @@ rdfs_comment,rdfs:comment,language,,en,$root
 rdfs_comment,skos:definition,language,,en,$root
 skos_scopeNote,skos:scopeNote,language,,en,$root
 dcterms_description,dcterms:description,language,,en,$root
+examples,skos:example,language,,en,$root
 tdwgutility_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
 tdwgutility_decision,tdwgutility:decision,iri,,,$root
 tdwgutility_layer,tdwgutility:layer,plain,,,$root
