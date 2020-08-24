@@ -6,6 +6,7 @@ label,skos:prefLabel,language,,en,$root
 rdfs_comment,rdfs:comment,language,,en,$root
 skos_scopeNote,skos:scopeNote,language,,en,$root
 dcterms_description,dcterms:description,language,,en,$root
+examples,skos:example,language,,en,$root
 rdf_type,rdf:type,iri,,,$root
 rdfs_subPropertyOf,rdfs:subPropertyOf,iri,,,$root
 tdwgutility_layer,tdwgutility:layer,plain,,,$root
