@@ -83,7 +83,7 @@ There are two Python scripts (in Jupyter notebooks) that can be used to do the p
 8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If bad things happen and you want to start over, commit the changes, then delete the branch you created.
 9. If the changes look sensible, then you can run a script to generate a human readable document listing terms and their metadata (See section 4 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated.
 10. In production, once the changes have been made all the way from the terms to the standards level, push the changes to GitHub and create a pull request to merge the changes from the branch into the master.
-11. In production, once the changes have been merged into the master, the updated metadata MUST be deployed so that term dereferencing will be "live". See [this page](../DEPLOYMENT.md) for details.
+11. In production, merging the changes into the master branch rebuilds and deploys the server that controls redirects and machine-readable metadata at http://rs-test.tdwg.org . After testing to make sure that its behavior is appropriate, a new release of the rs.tdwg.org repository should be made. That triggers deployment to the "real" http://rs.tdwg.org server and the changes should be "live". 
 
 # 2 Generating necessary CSV files from the hand-generated CSV file
 
