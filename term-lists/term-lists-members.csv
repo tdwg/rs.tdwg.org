@@ -609,3 +609,5 @@ http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/ServiceAccessPoint
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/usageScope
 http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/pathway
 http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/degreeOfEstablishment
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/pathway
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/degreeOfEstablishment

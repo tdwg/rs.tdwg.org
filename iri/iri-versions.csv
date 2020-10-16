@@ -42,3 +42,6 @@ http://rs.tdwg.org/dwc/iri/version/sex-2015-03-27,sex
 http://rs.tdwg.org/dwc/iri/version/typeStatus-2015-03-27,typeStatus
 http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2015-03-27,verbatimCoordinateSystem
 http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2015-03-27,verbatimSRS
+http://rs.tdwg.org/dwc/iri/version/establishmentMeans-2020-10-13,establishmentMeans
+http://rs.tdwg.org/dwc/iri/version/pathway-2020-10-13,pathway
+http://rs.tdwg.org/dwc/iri/version/degreeOfEstablishment-2020-10-13,degreeOfEstablishment
