@@ -607,3 +607,5 @@ http://rs.tdwg.org/dwc/obsolete/,http://digir.net/schema/conceptual/darwin/exten
 http://rs.tdwg.org/dwc/obsolete/,http://gensc.org/ns/mixs/source_mat_id
 http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/ServiceAccessPoint
 http://rs.tdwg.org/dwc/terms/attributes/,http://rs.tdwg.org/dwc/terms/attributes/usageScope
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/pathway
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/degreeOfEstablishment
