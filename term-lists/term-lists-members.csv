@@ -611,3 +611,10 @@ http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/pathway
 http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/degreeOfEstablishment
 http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/pathway
 http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/degreeOfEstablishment
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e001
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e002
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e003
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e004
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e005
+http://rs.tdwg.org/dwcem/values/,http://rs.tdwg.org/dwcem/values/e006
