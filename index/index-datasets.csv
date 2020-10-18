@@ -50,4 +50,6 @@ document_modified,term_localName,dcterms_isPartOf,dataset_iri,dcterms_modified,l
 2018-10-09T11:00:00-05:00,vocabularies-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/vocabularies-versions,2018-10-09,TDWG vocabulary versions,
 2018-10-09T11:00:00-05:00,index,http://rs.tdwg.org/index,http://rs.tdwg.org/index/index,2018-10-09,TDWG metadata database index,
 2020-09-14T09:41:13-05:00,chrono-zooarchnet,http://rs.tdwg.org/index,http://rs.tdwg.org/index/chrono-zooarchnet,2020-09-14,ZooArchNet Chronometric Age Vocabulary,
+2020-09-14T09:41:13-05:00,chrono-zooarchnet-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/chrono-zooarchnet-versions,2020-09-14,ZooArchNet Chronometric Age Vocabulary versions,
 2020-10-17T11:10:09-04:00,establishmentMeans,http://rs.tdwg.org/index,http://rs.tdwg.org/index/establishmentMeans,2020-10-13,Darwin Core controlled vocabulary for establishmentMeans,
+2020-10-17T11:10:09-04:00,establishmentMeans-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/establishmentMeans-versions,2020-10-13,Darwin Core controlled vocabulary for establishmentMeans versions,
