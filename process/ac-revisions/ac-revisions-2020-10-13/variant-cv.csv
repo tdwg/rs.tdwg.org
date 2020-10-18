@@ -1,0 +1,10 @@
+term_localName,label,skos_inScheme,controlled_value_string,definition,usage,notes,examples,type
+v,variant concept scheme,,,A SKOS Concept Scheme for controlled values for ac:variant,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
+v001,Thumbnail,v,Thumbnail,"Service Access Point provides a thumbnail image, short sound clip, or short movie clip that can be used in addition to the resource to represent the media object, typically at lower quality and higher compression than a preview object.",, A typical size for a tiny thumbnail image may be 50-100 pixels in the longer dimension.,,http://www.w3.org/2004/02/skos/core#Concept
+v002,Trailer,v,Trailer,"Service Access Point provides video clip preview, in the form of a specifically authored ""Trailer"", which may provide somewhat different content than the original resource.",,,,http://www.w3.org/2004/02/skos/core#Concept
+v003,Lower Quality,v,Lower Quality,Service Access Point provides a lower quality version of the media resource.,,,an image suitable for web sites,http://www.w3.org/2004/02/skos/core#Concept
+v004,Medium Quality,v,Medium Quality,Service Access Point provides a medium quality version of the media resource.,,,"shortened in duration, reduced size, using lower resolution or higher compression causing moderate artifacts",http://www.w3.org/2004/02/skos/core#Concept
+v005,Good Quality,v,Good Quality,Service Access Point provides a good quality version of the media resource intended for resources displayed as primary information.,,,an image between 800 and 1600 pixels in width or height,http://www.w3.org/2004/02/skos/core#Concept
+v006,Best Quality,v,Best Quality,"Service Access Point provides the highest available quality of the media resource, whatever its resolution or quality level.",,,,http://www.w3.org/2004/02/skos/core#Concept
+v007,Offline,v,Offline,Service Access Point provides data about an offline resource.,,,,http://www.w3.org/2004/02/skos/core#Concept
+v008,Visual,v,Visual,Service Access Point provides a visual or graphic representation of a media resource that is not an image.,,,"a sonogram, an oscillogram",http://www.w3.org/2004/02/skos/core#Concept

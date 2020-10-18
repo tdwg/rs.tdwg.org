@@ -687,3 +687,12 @@ http://rs.tdwg.org/dwcpw/values/,http://rs.tdwg.org/dwcpw/values/p053
 http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/freqLow
 http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/freqHigh
 http://rs.tdwg.org/ac/mo/,http://purl.org/ontology/mo/sample_rate
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v001
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v002
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v003
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v004
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v005
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v006
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v007
+http://rs.tdwg.org/acvariant/values/,http://rs.tdwg.org/acvariant/values/v008
