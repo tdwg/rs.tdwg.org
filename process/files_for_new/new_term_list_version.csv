@@ -1,2 +1,2 @@
 document_modified,version,version_modified,status,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,list
-,,,,,dwcpw/values/,pathway controlled values list,Controlled values list for the Darwin Core term pathway,,,dwcpw,http://rs.tdwg.org/dwcpw/values/,http://rs.tdwg.org/dwcpw/values/
+,,,,,ac/mo/,Music Ontology namespace terms borrowed by Audubon Core,This list includes terms borrowed by Audubon Core from the Music Ontology,,,mo,http://purl.org/ontology/mo/,http://rs.tdwg.org/ac/mo/
