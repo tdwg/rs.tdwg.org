@@ -1,2 +1,2 @@
 document_modified,version,version_issued,vocabulary_status,label,description,vocabulary,dc_creator,dcterms_license
-,,,,variant controlled vocabulary,Controlled vocabulary for the Audubon Core term variant,http://rs.tdwg.org/acvariant/,TDWG Audubon Core Maintenance Group,http://creativecommons.org/licenses/by/4.0/
+,,,,format controlled vocabulary,Controlled vocabulary for the Dublin Core term format,http://rs.tdwg.org/format/,TDWG Audubon Core Maintenance Group,http://creativecommons.org/licenses/by/4.0/
