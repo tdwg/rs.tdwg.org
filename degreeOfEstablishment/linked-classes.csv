@@ -1,0 +1,3 @@
+link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
+term_localName,dcterms:isVersionOf,version,http,,degreeOfEstablishment-versions.csv,dcterms:hasVersion
+replaced_term_localName,dcterms:replaces,replacing_term,http,,degreeOfEstablishment-replacements.csv,dcterms:isReplacedBy
