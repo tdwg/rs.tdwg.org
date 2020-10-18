@@ -1,2 +1,2 @@
 document_modified,list,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,database,versions_database,versions_uri,standard
-,http://rs.tdwg.org/format/values/,,format/values/,controlled values for format,Controlled values list for Dublin Core format,,,acformat,http://rs.tdwg.org/format/values/,format,format-versions,http://rs.tdwg.org/format/version/values/,http://www.tdwg.org/standards/638
+,http://rs.tdwg.org/acsubtype/values/,,acsubtype/values/,subtype controlled values list,Controlled values list for the Audubon Core term subtype,,,acsubtype,http://rs.tdwg.org/acsubtype/values/,acsubtype,acsubtype-versions,http://rs.tdwg.org/acsubtype/version/values/,http://www.tdwg.org/standards/638
