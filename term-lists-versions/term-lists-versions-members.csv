@@ -4390,3 +4390,9 @@ http://rs.tdwg.org/ac/version/terms/2020-10-13,http://rs.tdwg.org/ac/terms/versi
 http://rs.tdwg.org/ac/version/terms/2020-10-13,http://rs.tdwg.org/ac/terms/version/ServiceAccessPoint-2020-01-27
 http://rs.tdwg.org/ac/version/terms/2020-10-13,http://rs.tdwg.org/ac/terms/version/freqLow-2020-10-13
 http://rs.tdwg.org/ac/version/terms/2020-10-13,http://rs.tdwg.org/ac/terms/version/freqHigh-2020-10-13
+http://rs.tdwg.org/ac/version/dc/2020-10-13,http://dublincore.org/usage/terms/history/#creator-006
+http://rs.tdwg.org/ac/version/dc/2020-10-13,http://dublincore.org/usage/terms/history/#format-007
+http://rs.tdwg.org/ac/version/dc/2020-10-13,http://dublincore.org/usage/terms/history/#language-007
+http://rs.tdwg.org/ac/version/dc/2020-10-13,http://dublincore.org/usage/terms/history/#rights-006
+http://rs.tdwg.org/ac/version/dc/2020-10-13,http://dublincore.org/usage/terms/history/#source-006
+http://rs.tdwg.org/ac/version/dc/2020-10-13,http://dublincore.org/usage/terms/history/#type-006
