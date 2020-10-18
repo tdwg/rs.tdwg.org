@@ -100,3 +100,10 @@ http://rs.tdwg.org/ac/terms/version/variant-2020-01-27,variant
 http://rs.tdwg.org/ac/terms/version/variantDescription-2020-01-27,variantDescription
 http://rs.tdwg.org/ac/terms/version/variantLiteral-2020-01-27,variantLiteral
 http://rs.tdwg.org/ac/terms/version/ServiceAccessPoint-2020-01-27,ServiceAccessPoint
+http://rs.tdwg.org/ac/terms/version/resourceCreationTechnique-2020-10-13,resourceCreationTechnique
+http://rs.tdwg.org/ac/terms/version/subtype-2020-10-13,subtype
+http://rs.tdwg.org/ac/terms/version/subtypeLiteral-2020-10-13,subtypeLiteral
+http://rs.tdwg.org/ac/terms/version/variant-2020-10-13,variant
+http://rs.tdwg.org/ac/terms/version/variantLiteral-2020-10-13,variantLiteral
+http://rs.tdwg.org/ac/terms/version/freqLow-2020-10-13,freqLow
+http://rs.tdwg.org/ac/terms/version/freqHigh-2020-10-13,freqHigh

@@ -684,3 +684,5 @@ http://rs.tdwg.org/dwcpw/values/,http://rs.tdwg.org/dwcpw/values/p050
 http://rs.tdwg.org/dwcpw/values/,http://rs.tdwg.org/dwcpw/values/p051
 http://rs.tdwg.org/dwcpw/values/,http://rs.tdwg.org/dwcpw/values/p052
 http://rs.tdwg.org/dwcpw/values/,http://rs.tdwg.org/dwcpw/values/p053
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/freqLow
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/freqHigh
