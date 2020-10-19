@@ -66,3 +66,9 @@ http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwcpw/,tdwgutility:Vocabula
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/acvariant/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/format/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/acsubtype/,tdwgutility:Vocabulary
+http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/doe/,foaf:Document
+http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/em/,foaf:Document
+http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/pw/,foaf:Document
+http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/doc/format/,foaf:Document
+http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/doc/subtype/,foaf:Document
+http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/doc/variant/,foaf:Document

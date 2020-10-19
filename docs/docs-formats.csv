@@ -5,6 +5,9 @@ http://rs.tdwg.org/ac/doc/termlist/,text/markdown,https://github.com/tdwg/ac/raw
 http://rs.tdwg.org/ac/doc/structure/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/structure.md
 http://rs.tdwg.org/ac/doc/introduction/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/introduction.md
 http://rs.tdwg.org/ac/doc/guide/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/guide.md
+http://rs.tdwg.org/ac/doc/format/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/format.md
+http://rs.tdwg.org/ac/doc/subtype/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/subtype.md
+http://rs.tdwg.org/ac/doc/variant/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant.md
 http://rs.tdwg.org/guid/doc/guidas/,application/pdf,https://github.com/tdwg/guid-as/blob/master/guid/tdwg_guid_applicability_statement.pdf
 http://rs.tdwg.org/guid/doc/lsidas/,application/pdf,https://github.com/tdwg/guid-as/blob/master/lsid/tdwg_lsid_applicability_statement.pdf
 http://rs.tdwg.org/dwc/index/,text/html,http://rs.tdwg.org/dwc/index.htm
@@ -14,6 +17,9 @@ http://rs.tdwg.org/dwc/terms/guides/xml/,text/markdown,https://github.com/tdwg/d
 http://rs.tdwg.org/dwc/terms/simple/,text/markdown,https://github.com/tdwg/dwc/raw/master/docs/simple/index.md
 http://rs.tdwg.org/dwc/terms/namespace/,text/markdown,https://github.com/tdwg/dwc/raw/master/docs/namespace/index.md
 http://rs.tdwg.org/dwc/doc/list/,text/markdown,https://github.com/tdwg/dwc/raw/master/docs/list/index.md
+http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/index.md
+http://rs.tdwg.org/dwc/doc/em/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/em/index.md
+http://rs.tdwg.org/dwc/doc/pw/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/index.md
 http://rs.tdwg.org/tapir/doc/summary/,text/html,http://www.tdwg.org/activities/tapir/executive-summary/
 http://rs.tdwg.org/tapir/doc/specification/,text/html,http://tdwg.github.io/tapir/docs/tdwg_tapir_specification_2010-05-05.html
 http://rs.tdwg.org/tapir/doc/xmlschema/,application/xml,http://tdwg.github.io/tapir/schema/tapir.xsd
