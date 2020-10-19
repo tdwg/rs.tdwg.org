@@ -20,6 +20,8 @@
 
 [4 Term list build script](#4-term-list-build-script)
 
+[5 Managing documents metadata](#5-managing-documents-metadata)
+
 # 1 Introduction
 
 ## 1.1 RFC 2119 statement
@@ -223,3 +225,20 @@ In many cases, the organizing class will be a well-known class previously define
 
 In order to use categories, edit the configuration section of the build script so that the value of `organized_in_categories` is `True`. Then create Python lists containing corresponding values for `display_order`, `display_labels`, `display_commnets`, and `display_id`. When the script builds the page, it will use these data to organize the terms and create appropriate section headings and notes for the categories. See the notebook `build-page-categories.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository for an example.
 
+# 5 Managing documents metadata
+
+Currently (2020-10-19), there is no automated method for generating the metadata about documents in the rs.tdwg.org GitHub repository. If a document (such as a list of terms document or any other document) is generated, the metadata tables that describe it need to be updated manually using a workflow similar to that which is automated by the scripts described above. The steps of that workflow are as follows:
+
+1. Create a new version of the document in docs-versions/docs-versions.csv
+2. Update mapping table docs/docs-versions.csv
+3. Update the metadata (or create new) of docs/docs.csv
+4. If 2nd or more version, add entry in docs-versions/docs-versions-replacements.csv
+5. Add entry in docs-versions/docs-versions-format.csv
+6. If necessary, create or updated docs/docs-format.csv
+7. Update (or create) author records in docs/docs-authors.csv Use ORCID if available, otherwise create Wikidata record and use its identifier.
+8. Copy and paste as necessary to create an entry for the new version in docs-versions/docs-versions-authors.csv
+9. Revise (or create new if necessary) entries in docs-roles/docs-roles.csv . Use info from docs-authors.csv
+10. Add entry to standards/standards-parts.csv if a new document has been added to the standard.
+11. Add or update standards-versions/standards-versions-parts.csv if a document had been created or edited.
+
+If the document is a list of terms and is the place where redirects for human-readable term dereferencing goes, make sure that the redirect URL is correct in html/redirects.csv
