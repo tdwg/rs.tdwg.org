@@ -1,0 +1,13 @@
+term_localName,label_en,definition_en
+d,degreeOfEstablishment concept scheme,A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:degreeOfEstablishment and dwciri:degreeOfEstablishment
+d001,native (category A),Not transported beyond limits of native range
+d002,captive (category B1),"Individuals in captivity or quarantine (i.e. individuals provided with conditions suitable for them, but explicit measures of containment are in place)"
+d003,cultivated (category B2),"Individuals in cultivation (i.e. individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best)"
+d004,released (category B3),Individuals directly released into novel environment
+d005,failing (category C0),"Individuals released outside of captivity or cultivation in a location, but incapable of surviving for a significant period"
+d006,casual (category C1),"Individuals surviving outside of captivity or cultivation in a location, no reproduction"
+d007,reproducing (category C2),"Individuals surviving outside of captivity or cultivation in a location, reproduction is occurring, but population not self-sustaining"
+d008,established (category C3),"Individuals surviving outside of captivity or cultivation in a location, reproduction occurring, and population self-sustaining"
+d009,colonising (category D1),"Self-sustaining population outside of captivity or cultivation, with individuals surviving a significant distance from the original point of introduction"
+d010,invasive (category D2),"Self-sustaining population outside of captivity or cultivation, with individuals surviving and reproducing a significant distance from the original point of introduction"
+d011,widespread invasive (category E),"Fully invasive species, with individuals dispersing, surviving and reproducing at multiple sites across a greater or lesser spectrum of habitats and extent of occurrence"

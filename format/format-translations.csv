@@ -1,0 +1,123 @@
+term_localName,label_en,definition_en
+m,media types and physical media concept scheme,concept scheme for IANA media types and various physical media items
+e,file extensions concept scheme,concept scheme based on conventional file extensions for media types
+m001,application,media type for application
+m002,audio,media type for audio
+m003,image,media type for image
+m004,model,media type for model
+m005,text,media type for text
+m006,video,media type for video
+m007,PNG,media subtype for portable network graphics images
+m008,JPEG,media subtype for JPEG images
+m009,BMP,media subtype for bitmap images
+m010,GIF,media subtype for GIF images
+m011,TIFF,media subtype for TIFF images
+m012,MP4 video,media subtype for MP4 videos
+m013,MPEG,media subtype for MPEG videos
+m014,QuickTime,media subtype for QuickTime videos
+m015,MP4 audio,media subtype for MP4 audio
+m016,MP3,media subtype for MP3 audio
+m017,X3D VRML,media subtype for X3D VRML models
+m018,PDF,media subtype for PDF documents
+m019,plain text,media subtype for plain text
+m020,Word (pre-2003) document,media subtype for Microsoft Word (2003 and before) documents
+m021,Word (post-2007) document,media subtype for Microsoft Word (2007 and after) documents
+m022,Digital Negative,media subtype for Digital Negative images
+m023,CR2,media subtype for Canon Raw images
+m024,JPEG 2000,media subtype for JPEG 2000 images
+m025,WAVE,media subtype for WAVE audio
+m026,Nikon NEF Raw,media subtype for Nikon NEF Raw images
+m027,M4V,media subtype for Apple M4V videos
+m028,3GPP,media subtype for 3GPP video
+m029,AVI,media subtype for AVI video
+m030,AMR,media subtype for Adaptive Multi-Rate audio
+m031,AIFF,media subtype for Audio Interchange File Format audio
+m032,OGG audio,media subtype for OGG audio
+m033,OGG video,media subtype for OGG video
+m034,OGG multiplex,media subtype for OGG multiplex
+m035,Kodak Photo CD image,media subtype for Kodak Photo CD image
+m036,Photoshop,media subtype for Photoshop images
+m037,extended MPEG-2 Transport Stream,media subtype for extended MPEG-2 Transport Stream
+m038,FLAC,media subtype for Free Lossless Audio Codec audio
+m039,WMA,media subtype for Windows Media Audio
+m040,WMV,media subtype for Windows Media Video
+m041,ASF,media subtype for Advanced Systems Format
+m042,SVG,media subtype for SVG images
+m043,data CD,physical data compact disc
+m044,audio CD,physical audio compact disc
+m045,video CD,physical video compact disc
+m046,data DVD,physical data DVD
+m047,audio DVD,physical audio DVD
+m048,PAL video DVD,physical PAL video DVD
+m049,NTSC video DVD,physical NTSC video DVD
+m050,photographic slide,physical photographic slide
+m051,photographic print,physical photographic print
+m052,Blu-ray video disc,physical Blu-ray video disc
+m053,physical artwork,physical drawing or painting (non-photographic)
+m054,ZVI,unofficial media subtype for Zeiss Vision Image images
+m055,STL,media subtype for steriolithography files
+m056,reel-to-reel audio tape,physical analogue audio tape (reel-to-reel)
+m057,audio cassette,physical analogue audio cassette
+m058,digital audio tape,physical digital audio tape (DAT)
+m059,MiniDisc,physical MiniDisc 
+m060,vinyl record,physical vinyl record
+m061,mixed CD (data and audio),physical compact disc containing both data and audio tracks
+m062,OBJ,media subtype for OBJ 3D models
+m063,gLTF binary,media subtype for Binary GL Transmission Format
+m064,gLTF,media subtype for GL Transmission Format
+m065,VRML,media subtype for Virtual Reality Modeling Language
+m066,DICOM,media subtype for Digital Imaging and Communications in Medicine
+m067,MTL,media subtype for OBJ Material Template Library
+m068,X3D XML,media subtype for X3D XML models
+m069,CIFF raw image,unofficial media subtype for Camera Image File Format raw image
+m070,CR3 raw image,unofficial media subtype for Canon Raw 3 image
+m071,ARW raw image,unofficial media subtype for Sony raw image
+m072,RW2 raw image,unofficial media subtype for Panasonic raw image
+e001,plain text,file extension for palin text
+e002,Word (pre-2003) document,file extension for Microsoft Word (2003 and before) documents
+e003,Word (post-2007) document,file extension for Microsoft Word (2007 and after) documents
+e004,PNG,file extension for portable network graphics images
+e005,JPEG,file extension for JPEG images
+e006,PDF,file extension for PDF documents
+e007,TIFF,file extension for TIFF images
+e008,Digital Negative,file extension for Digital Negative images
+e009,Canon Raw,file extension for Canon Raw images
+e010,JPEG 2000,file extension for JPEG 2000 images
+e011,WAVE,file extension for WAVE audio
+e012,MP3,ffle extension for MP3 audio
+e013,Nikon NEF Raw,file extension for Nikon NEF Raw images
+e014,MP4 audio,file extension for MP4 audio
+e015,MP4 video,file extension for MP4 video
+e016,GIF,file extension for GIF images
+e017,BMP,file extension for bitmap images
+e018,M4V,file extension for Apple M4V videos
+e019,PLY,file extension for Polygon File Format
+e020,STL,file extension for steriolithography files
+e021,3GPP,file extension for 3GPP video
+e022,ZVI,file extension for Zeiss Vision Image images
+e023,AVI,file extension for AVI video
+e024,AMR,file extension for Adaptive Multi-Rate audio
+e025,AIFF,file extension for Audio Interchange File Format audio
+e026,OGG audio,file extension for OGG audio
+e027,OGG video,file extension for OGG video
+e028,OGG multiplex,file extension for OGG multiplex
+e029,Kodak Photo CD image,file extension for Kodak Photo CD image
+e030,QuickTime,file extension for Apple QuickTime video
+e031,Photoshop,file extension for Photoshop images
+e032,FLAC,file extension for Free Lossless Audio Codec audio
+e033,MWA,file extension for Windows Media Audio
+e034,WMV,file extension for Windows Media Video
+e035,ASF,file extension for Advanced Systems Format
+e036,SVG,file extension for SVG images
+e037,OBJ,file extension for OBJ
+e038,gLTF binary,file extension for Binary GL Transmission Format
+e039,gLTF,file extension for GL Transmission Format
+e040,VRML,file extension for Virtual Reality Modeling Language
+e041,DICOM,file extension for Digital Imaging and Communications in Medicine
+e042,MTL,file extension for OBJ Material Template Library
+e043,X3D VRML,file extension for X3D VRML models
+e044,X3D XML,file extension for X3D XML models
+e045,CIFF raw image,file extension for Camera Image File Format raw image
+e046,CR3 raw image,file extension for Canon Raw 3 image
+e047,ARW raw image,file extension for Sony raw image
+e048,RW2 raw image,file extension for Panasonic raw image

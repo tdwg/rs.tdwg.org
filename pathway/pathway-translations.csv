@@ -1,0 +1,55 @@
+term_localName,label_en,definition_en
+p,pathway concept scheme,A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:pathway and dwciri:pathway
+p001,biological control,Organisms occuring in an area because they were introduced for the purpose of biological control of another organism.
+p002,erosion control,"Organisms introduced for the purpose of erosion control/dune stabilization (windbreaks, hedges, etc)."
+p003,fishery in the wild,Fish stocked into the wild either to create a fishery or for recreational angling.
+p004,hunting,Animals stocked into the wild specifically with the intention that they would be hunted for sport.
+p005,landscape improvement,"Landscape/flora/fauna ""improvement"" in the wild."
+p006,conservation or wildlife management,Organisms introduced for conservation purposes or wildlife management.
+p007,released for use,"Release in nature for use (other than above, e.g., fur, transport, medical use)."
+p008,other intentional release,A catch-all for intentional releases not for human use that are not covered by other more specific terms.
+p009,agriculture (including biofuel feedstocks),Plants grown with then intention of harvesting.
+p010,aquaculture/mariculture,"The analog of agriculture and farmed animals, specifically related to aquatic organisms."
+p011,botanic garden/zoo/aquaria (excluding domestic aquaria),Organisms in public collections of plants and/or animals.
+p012,pet/aquarium/terrarium species (including live food for such species ),Privately kept animals.
+p013,farmed animals (including animals left under limited control),"Animals cared for and bred with the specific intention of using their products, such as meat and milk."
+p014,forestry (including reforestation),Trees specifically introduced to provide timber and other forestry products.
+p015,fur farms,"Organisms escaped from a fur farms, including unauthorised releases."
+p016,horticulture,Plants distributed by the ornamental and decorative plants industry. 
+p017,ornamental purpose other than horticulture,Ornamental plants introduced through pathways other than the horticultural industry.
+p018,research and ex-situ breeding (in facilities),"Plants and animals introduced for the purpose of breeding, scientific and medical research, including science education."
+p019,live food and live bait,"Live food imported for human consumption, such as shellfish and snails, and for live bait. "
+p020,other escape from confinement,"Organisms brought into an area with the intention of keeping them in captivity permanently, but that have subsequently escaped."
+p021,contaminant nursery material,Organisms transported into an area together with plant material.
+p022,contaminated bait,"Contaminants, pathogens and parasites transported with live, frozen or preserved bait used to catch fish or other organisms."
+p023,food contaminant (including of live food),"Foods for human consumption, whether they are transported life or dead."
+p024,"contaminant on animals (except parasites, organisms transported by host/vector)",Contaminants carried either on or in the body of transported animals.
+p025,parasites on animals (including organisms transported by host and vector),Parasitic and pathogenic organisms transported with their host or vector animal.
+p026,"contaminant on plants (except parasites, species transported by host/vector)",Organisms transported on plant material.
+p027,parasites on plants (including species transported by host and vector),Parasitic and pathogenic organisms transported with their host or vector plant.
+p028,seed contaminant,Organisms contaminating transported seeds.
+p029,timber trade,"Contaminants on unprocessed timber, processed wood and wood derived products."
+p030,"transportation of habitat material (soil, vegetation, wood etc)",Organisms transported with their habitat material to a new location.
+p031,angling/fishing equipment,Aquatic organisms moved between sites on equipment of recreational anglers and professional fishermen.
+p032,container/bulk,Stowaways transported in or on the cargo containers or bulk cargo units themselves.
+p033,hitchhikers in or on airplane,"Organisms that enter airplanes or other aircraft, such as helicopters, and are transported by them to another location."
+p034,hitchhikers on ship/boat (excluding ballast water and hull fouling),Organisms that enter directly onto boats or ships and are transported by them to another location.
+p035,machinery/equipment,Organisms carried on the surfaces of or within heavy machinery and equipment.
+p036,people and their luggage/equipment (in particular tourism),Organisms transported on people themselves and/or their personal luggage.
+p037,"organic packing material, in particular wood packaging","Organic material, particularly unprocessed plant material that is used to pack transported goods."
+p038,ship/boat ballast water,Organisms transported within the water pumped into boats and ships to provide ballast.
+p039,ship/boat hull fouling,Organisms that attach themselves to the subsurface hull of boats and ships. 
+p040,"vehicles (car, train, etc.)","Other vehicle hitchhikers that have been unintentionally dispersed, but are not covered by other terms."
+p041,other means of transport,A catchall term for any transport related dispersal that is not covered in other terms.
+p042,interconnected waterways/basins/seas,Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies. 
+p043,tunnels and land bridges,"Unintentional dispersal by organisms using artificial tunnels, bridges, roads and railways."
+p044,natural dispersal across borders of invasive alien organisms,Dispersal of organisms to new regions by natural dispersal from regions in which they are alien.
+p045,release in nature,Organisms transported and released by humans in a (semi)natural environment with the intention that they should live their without further human aid.
+p046,escape from confinement,"Organisms intentionally transported by humans and intended to be kept in captivity or cultivation, but having inadvertently escaped from human control."
+p047,transport-contaminant,An umbrella term for all species transported as contaninents in other products.
+p048,transport-stowaway,"An umbrella term for all species transported by riding on forms of transport where the organism has a direct interation with the transport and is not merely carried as part of, or a contaminent of cargo."
+p049,corridor,"Infrastructure, such as bridges, tunnels and canals have removed natural barriers to dispersal and allowed a species to move into a novel location."
+p050,unaided,"Organisms that spread by natural dispersal, without action or assistance by humans, from regions in which they are also alien."
+p051,intentional,"Organisms were brought to new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild."
+p052,unintentional,The organism was unintentionally brought to a new region.
+p053,corridor and dispersal,"Organisms dispersed naturally, even if that dispersal was aided by changes in the landscape created by humans."

@@ -22,6 +22,8 @@
 
 [5 Managing documents metadata](#5-managing-documents-metadata)
 
+[6 Generating JSON-LD for controlled vocabularies](#6-generating-json-ld-for-controlled-vocabularies)
+
 # 1 Introduction
 
 ## 1.1 RFC 2119 statement
@@ -242,3 +244,9 @@ Currently (2020-10-19), there is no automated method for generating the metadata
 11. Add or update standards-versions/standards-versions-parts.csv if a document had been created or edited.
 
 If the document is a list of terms and is the place where redirects for human-readable term dereferencing goes, make sure that the redirect URL is correct in html/redirects.csv
+
+# 6 Generating JSON-LD for controlled vocabularies
+
+In order to make controlled vocabularies as widely available as possible, multi-lingual translations of the term labels and definitions should be made available in as many languages as possible. A Python script (build-json-ld.ipynb) to generate JSON-LD is avaialable in the `cv_json_ld` directory. It can be run from any location, so maintenance groups should use it to generate JSON-LD representations of their controlled vocabularies on their own sites. This JSON-LD can then be used by developers to create multilingual tools to make it easier for users to select the right concept and acquire the controlled value string or IRI associated with that concept.
+
+Because the JSON-LD can easily be ingested, it can also be used to build multilingual web applications. Some Javascript code and an HTML file for a simple web page is also available in the directory. To see the page in action, visit [this page](https://heardlibrary.github.io/digital-scholarship/lod/json_ld_test/display-cv.html).

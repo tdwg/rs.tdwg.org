@@ -1,0 +1,10 @@
+term_localName,label_en,definition_en
+v,variant concept scheme,A SKOS Concept Scheme for controlled values for ac:variant
+v001,Thumbnail,"Service Access Point provides a thumbnail image, short sound clip, or short movie clip that can be used in addition to the resource to represent the media object, typically at lower quality and higher compression than a preview object."
+v002,Trailer,"Service Access Point provides video clip preview, in the form of a specifically authored ""Trailer"", which may provide somewhat different content than the original resource."
+v003,Lower Quality,Service Access Point provides a lower quality version of the media resource.
+v004,Medium Quality,Service Access Point provides a medium quality version of the media resource.
+v005,Good Quality,Service Access Point provides a good quality version of the media resource intended for resources displayed as primary information.
+v006,Best Quality,"Service Access Point provides the highest available quality of the media resource, whatever its resolution or quality level."
+v007,Offline,Service Access Point provides data about an offline resource.
+v008,Visual,Service Access Point provides a visual or graphic representation of a media resource that is not an image.
