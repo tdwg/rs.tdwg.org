@@ -1,5 +1,5 @@
 database,redirect,type,namespace,prefix,useNamespace,connector
-audubon,yes,term,ac,https://tdwg.github.io/ac/termlist#,yes,_
+audubon,yes,term,ac,https://tdwg.github.io/ac/termlist/#,yes,_
 audubon-versions,no,termVersion,ac,,,
 curatorial,no,term,dwccuratorial,,,
 curatorial-versions,no,termVersion,dwccuratorial,,,
@@ -22,5 +22,15 @@ utility-versions,no,termVersion,tdwgutility,,,
 decisions,no,term,tdwgdecision,,,
 chrono-zooarchnet,no,term,zooarchnet,,,
 chrono-zooarchnet-versions,no,termVersion,zooarchnet,,,
-establishmentMeans,no,term,dwcem,,,
+establishmentMeans,yes,term,dwcem,https://dwc.tdwg.org/em/#,yes,_
 establishmentMeans-versions,no,termVersion,dwcem,,,
+degreeOfEstablishment,yes,term,dwcdoe,https://dwc.tdwg.org/doe/#,yes,_
+pathway,yes,term,dwcpw,https://dwc.tdwg.org/pw/#,yes,_
+acvariant,yes,term,acvariant,https://tdwg.github.io/ac/variant/#,yes,_
+format,yes,term,acformat,https://tdwg.github.io/ac/format/#,yes,_
+acsubtype,yes,term,acsubtype,https://tdwg.github.io/ac/subtype/#,yes,_
+degreeOfEstablishment-versions,no,termVersion,dwcdoe,,,
+pathway-versions,no,termVersion,dwcpw,,,
+acvariant-versions,no,termVersion,acvariant,,,
+format-versions,no,termVersion,acformat,,,
+acsubtype-versions,no,termVersion,acsubtype,,,
