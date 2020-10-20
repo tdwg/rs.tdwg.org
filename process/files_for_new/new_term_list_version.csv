@@ -1,2 +1,2 @@
 document_modified,version,version_modified,status,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,list
-,,,,,acsubtype/values/,subtype controlled values list,Controlled values list for the Audubon Core term subtype,,,acsubtype,http://rs.tdwg.org/acsubtype/values/,http://rs.tdwg.org/acsubtype/values/
+,,,,,test/terms/,test term list,Test term list for new vocabulary,,,test,http://rs.tdwg.org/test/terms/,http://rs.tdwg.org/test/terms/
