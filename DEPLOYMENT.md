@@ -23,7 +23,7 @@ curl -SsiL -H 'Accept: text/turtle' http://192.0.2.1/dwc/terms/recordedBy
 ## Actual deployment
 
 Changes to the `master` branch on GitHub are tracked by the [build system](https://builds.gbif.org/job/tdwg-rs/), which will rebuild the
-Docker container and refresh the container running on `http://rs-test.tdwg.org`.
+Docker container and refresh the container running on http://rs-test.tdwg.org/.
 
 GitHub releases are also tracked by the build system, and will result in a versioned Docker container being built and stored in GBIF's
-Docker repository, and that version being deployed to `http://rs.tdwg.org`.
+Docker repository, and that version being deployed to http://rs.tdwg.org/.
