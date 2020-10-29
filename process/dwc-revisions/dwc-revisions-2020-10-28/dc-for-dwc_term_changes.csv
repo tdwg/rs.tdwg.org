@@ -1,0 +1,2 @@
+term_localName,label,rdfs_comment,dcterms_description,examples,rdf_type,tdwgutility_abcdEquivalence,tdwgutility_organizedInClass,tdwgutility_decision,tdwgutility_usageScope
+language,Language,A language of the resource.,Recommended best practice is to use a controlled vocabulary such as RFC 5646.,"`en` (for English), `es` (for Spanish)",http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,http://purl.org/dc/elements/1.1/,,simple
