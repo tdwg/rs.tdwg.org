@@ -355,3 +355,6 @@ http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2020-08-20,footprintSpa
 http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2020-08-20,georeferenceProtocol-2017-10-06
 http://rs.tdwg.org/dwc/terms/version/verbatimCoordinateSystem-2020-08-20,verbatimCoordinateSystem-2017-10-06
 http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2020-10-13,establishmentMeans-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/establishmentMeans-2020-10-28,establishmentMeans-2020-10-13
+http://rs.tdwg.org/dwc/terms/version/materialSampleID-2020-10-28,materialSampleID-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2020-10-28,georeferenceSources-2017-10-06

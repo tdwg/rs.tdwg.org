@@ -116,3 +116,7 @@ http://rs.tdwg.org/version/ac/2020-10-13,http://rs.tdwg.org/ac/version/mo/2020-1
 http://rs.tdwg.org/version/acvariant/2020-10-13,http://rs.tdwg.org/acvariant/version/values/2020-10-13
 http://rs.tdwg.org/version/format/2020-10-13,http://rs.tdwg.org/format/version/values/2020-10-13
 http://rs.tdwg.org/version/acsubtype/2020-10-13,http://rs.tdwg.org/acsubtype/version/values/2020-10-13
+http://rs.tdwg.org/version/dwc/2020-10-28,http://rs.tdwg.org/dwc/version/iri/2020-10-13
+http://rs.tdwg.org/version/dwc/2020-10-28,http://rs.tdwg.org/dwc/version/dc/2015-03-27
+http://rs.tdwg.org/version/dwc/2020-10-28,http://rs.tdwg.org/dwc/version/dcterms/2020-08-12
+http://rs.tdwg.org/version/dwc/2020-10-28,http://rs.tdwg.org/dwc/version/terms/2020-10-28
