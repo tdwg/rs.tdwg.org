@@ -1,0 +1,2 @@
+term_localName,label,rdfs_comment,dcterms_description,examples,rdf_type,tdwgutility_abcdEquivalence,tdwgutility_organizedInClass,tdwgutility_decision,tdwgutility_usageScope
+materialDatedID,Material Dated ID,"An identifier for the MaterialSample on which the chronometricAgeProtocol was performed, if applicable.",,"`dwc:materialSampleID: https://www.ebi.ac.uk/metagenomics/samples/SRS1930158`",http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,http://tdwg.org/chrono/terms/ChronometricAge,,extension
