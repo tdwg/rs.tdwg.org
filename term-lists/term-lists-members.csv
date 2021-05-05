@@ -869,3 +869,8 @@ http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/uncalibratedChr
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/verbatimChronometricAge
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/earliestChronometricAge
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/latestChronometricAge
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/materialDatedRelationship

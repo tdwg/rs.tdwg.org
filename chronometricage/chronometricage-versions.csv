@@ -31,3 +31,10 @@ http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-11-17,maximu
 http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-11-17,maximumChronometricAgeReferenceSystem
 http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17,minimumChronometricAge
 http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17,minimumChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-01-26,ChronometricAge
+http://rs.tdwg.org/chrono/terms/version/earliestChronometricAge-2021-01-26,earliestChronometricAge
+http://rs.tdwg.org/chrono/terms/version/earliestChronometricAgeReferenceSystem-2021-01-26,earliestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/version/latestChronometricAge-2021-01-26,latestChronometricAge
+http://rs.tdwg.org/chrono/terms/version/latestChronometricAgeReferenceSystem-2021-01-26,latestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-01-26,materialDatedID
+http://rs.tdwg.org/chrono/terms/version/materialDatedRelationship-2021-01-26,materialDatedRelationship
