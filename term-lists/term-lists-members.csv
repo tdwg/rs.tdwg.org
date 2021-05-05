@@ -867,3 +867,5 @@ http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/minimumChronome
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/uncalibratedChronometricAge
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/verbatimChronometricAge
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedBy
+http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/chronometricAgeDeterminedDate
