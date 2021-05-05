@@ -15,3 +15,6 @@ http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17,minimu
 http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17,minimumChronometricAgeReferenceSystem-2020-09-14
 http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-01-26,ChronometricAge-2020-11-17
 http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-01-26,materialDatedID-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2021-02-02,chronometricAgeConversionProtocol-2020-11-17
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2021-02-02,chronometricAgeDeterminedBy-2020-11-17
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2021-02-02,chronometricAgeUncertaintyInYears-2020-11-17
