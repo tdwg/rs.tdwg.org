@@ -1,0 +1,8 @@
+version,term_localName
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2021-01-26,chronometricAgeConversionProtocol
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2021-01-26,chronometricAgeDeterminedBy
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26,chronometricAgeProtocol
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeUncertaintyMethod-2021-01-26,chronometricAgeUncertaintyMethod
+http://rs.tdwg.org/chrono/iri/version/earliestChronometricAgeReferenceSystem-2021-01-26,earliestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26,latestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/iri/version/materialDated-2021-01-26,materialDated

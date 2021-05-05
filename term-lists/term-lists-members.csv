@@ -874,3 +874,10 @@ http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/earliestChronom
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/latestChronometricAge
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem
 http://rs.tdwg.org/chrono/terms/,http://rs.tdwg.org/chrono/terms/materialDatedRelationship
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/materialDated
