@@ -1,1 +1,15 @@
 replacing_version,replaced_version_localName
+http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-11-17,ChronometricAge-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-11-17,chronometricAgeConversionProtocol-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-11-17,chronometricAgeDeterminedBy-2020-10-05
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedDate-2020-11-17,chronometricAgeDeterminedDate-2020-10-05
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeProtocol-2020-11-17,chronometricAgeProtocol-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeReferences-2020-11-17,chronometricAgeReferences-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeRemarks-2020-11-17,chronometricAgeRemarks-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-11-17,chronometricAgeUncertaintyInYears-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyMethod-2020-11-17,chronometricAgeUncertaintyMethod-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/materialDated-2020-11-17,materialDated-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-11-17,maximumChronometricAge-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-11-17,maximumChronometricAgeReferenceSystem-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17,minimumChronometricAge-2020-09-14
+http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17,minimumChronometricAgeReferenceSystem-2020-09-14
