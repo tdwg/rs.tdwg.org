@@ -1,2 +1,2 @@
 document_modified,version,version_modified,status,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,list
-,,,,,chrono/iri/,Darwin Core chronometric age extension (IRI-values),Chronometric age extension (IRI values) for Darwin Core,,,chronoiri,http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/
+,,,,,test/terms/,test term list,Test term list for new vocabulary,,,test,http://rs.tdwg.org/test/terms/,http://rs.tdwg.org/test/terms/
