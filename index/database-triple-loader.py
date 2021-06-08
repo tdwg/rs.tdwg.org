@@ -2,6 +2,11 @@
 # By its nature, this software overwrites and deletes data, so use at your own risk. 
 # See https://github.com/baskaufs/guid-o-matic/blob/master/rdf-mover.md for usage notes about the script this was hacked from.
 
+# Revision notes 2021-06-08
+# Fixes to two problems:
+# 1. graphical log doesn't really work - spinning circle while script mindlessly marches forwared. Just print to console...
+# 2. GitHub response with 503, causing the SPARQL updated to fail. Need to try again if 503 until 200 is obtained.
+
 #libraries for GUI interface
 import tkinter
 from tkinter import *
@@ -10,6 +15,7 @@ import tkinter.scrolledtext as tkst
 
 import csv #library to read/write/parse CSV files
 import requests #library to do HTTP communication
+from time import sleep
 
 root = Tk()
 
@@ -101,15 +107,21 @@ edit_space.grid(column=4, row=22, padx=8, pady=8)
 edit_space.insert(END, '')
 
 def updateLog(message):
-	edit_space.insert(END, message + '\n')
-	edit_space.see(END) #causes scroll up as text is added
-	root.update_idletasks() # causes update to log window, see https://stackoverflow.com/questions/6588141/update-a-tkinter-text-widget-as-its-written-rather-than-after-the-class-is-fini
+	print(message)
+	#edit_space.insert(END, message + '\n')
+	#edit_space.see(END) #causes scroll up as text is added
+	#root.update_idletasks() # causes update to log window, see https://stackoverflow.com/questions/6588141/update-a-tkinter-text-widget-as-its-written-rather-than-after-the-class-is-fini
 
 def getCsvObject(httpPath, fileName, fieldDelimiter):
 	# retrieve remotely from GitHub
 	uri = httpPath + fileName
-	r = requests.get(uri)
-	updateLog(str(r.status_code) + ' ' + uri)
+	statusCode = ''
+	while statusCode != '200':
+		r = requests.get(uri)
+		statusCode = str(r.status_code).strip()
+		updateLog(statusCode + ' ' + uri)
+		if statusCode != '200':
+			sleep(2)
 	body = r.text
 	csvData = csv.reader(body.splitlines()) # see https://stackoverflow.com/questions/21351882/reading-data-from-a-csv-file-online-in-python-3
 	return csvData
@@ -122,17 +134,22 @@ def escapeBadXmlCharacters(dirtyString):
 	
 def performSparqlUpdate(endpointUri, pwd, updateCommand):
 	# SPARQL Update requires HTTP POST
-	updateLog(updateCommand + '\n')
-	hdr = {'Content-Type' : 'application/sparql-update'}
-	r = requests.post(endpointUri, auth=('admin', pwd), headers=hdr, data = updateCommand)
-	updateLog(str(r.status_code) + ' ' + r.url + '\n')
-	updateLog(r.text + '\n')
-	updateLog('Ready')	
+	statusCode = ''
+	while statusCode != '200':
+		updateLog(updateCommand + '\n')
+		hdr = {'Content-Type' : 'application/sparql-update'}
+		r = requests.post(endpointUri, auth=('admin', pwd), headers=hdr, data = updateCommand)
+		statusCode = str(r.status_code).strip()
+		updateLog(statusCode + ' ' + r.url + '\n')
+		updateLog(r.text + '\n')
+		if statusCode != '200':
+			sleep(2)
+	updateLog('Ready')
 
 def dataToTriplestore(dumpUri, database, endpointUri, graphName, pwd):
     updateCommand = 'LOAD <' + dumpUri + database + '> INTO GRAPH <' + graphName + '>'
-    print(updateCommand) # print this to the terminal so that we can see what's going on while the GUI is doing spinning circle
-    updateLog('update SPARQL endpoint into graph ' + graphName)
+    #print(updateCommand) # print this to the terminal so that we can see what's going on while the GUI is doing spinning circle
+    #updateLog('update SPARQL endpoint into graph ' + graphName)
     performSparqlUpdate(endpointUri, pwd, updateCommand)
 
 def moveFile(rdfFileUri, endpointUri, graphName, pwd):
