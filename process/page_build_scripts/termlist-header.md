@@ -1,4 +1,4 @@
-# Pathway Controlled Vocabulary
+# ABCDEFG Vocabulary
 
 **Title:** Access to Biological Collection Data Extended for Geosciences(ABCDEFG) Vocabulary
 
