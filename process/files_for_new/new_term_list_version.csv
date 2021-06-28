@@ -1,2 +1,2 @@
 document_modified,version,version_modified,status,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,list
-,,,,,test/terms/,test term list,Test term list for new vocabulary,,,test,http://rs.tdwg.org/test/terms/,http://rs.tdwg.org/test/terms/
+,,,,,efg/terms/,abcd-efg term list,Test term list for abcd-efg namespace,,,abcd-efg,http://rs.tdwg.org/efg/terms/,http://rs.tdwg.org/efg/terms/
