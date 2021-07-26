@@ -422,7 +422,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             term_lists_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
             # here is the opportunity to find out the standard URI for the modified term list
             standardUri = term_lists_table[rowNumber][standard_column]
-            print(term_lists_table[rowNumber])
+            # print(term_lists_table[rowNumber])
     if aNewTermList:  # this will happen if the term list did not previously exist
         try:
             new_term_list = readCsv('files_for_new/new_term_list.csv')
@@ -547,7 +547,50 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
 
     # save as a file
     writeCsv('../term-lists-versions/term-lists-versions.csv', term_lists_versions_metadata)
-    return standardUri
+    return standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements
+
+# This function contains the Step 6 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
+def update_termlist_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements):
+    # create a list of every term version that was in the most recent previous list version
+    newTermVersionMembersList = []
+    # create a corresponding list of local names for those versions
+    termLocalNameList = []
+
+    if not aNewTermList:
+        for termVersion in term_lists_versions_members:
+            # the first column contains the term list version
+            if term_lists_versions_metadata[mostRecentListNumber][version_uri] == termVersion[0]:
+                newTermVersionMembersList.append(termVersion[1])
+
+                # dissect the term version URI to pull out the local name of the term version
+                pieces = termVersion[1].split('/')
+                versionLocalNamePiece = pieces[len(pieces)-1]
+                # split off the local name string from the issue date part of the version local name
+                termLocalNameList.append(versionLocalNamePiece.split('-')[0])
+
+        # For each modified term, find its previous version and replace it with the new version.
+        for modified_term in modified_terms:
+            for termVersionRowNumber in range(0, len(newTermVersionMembersList)):
+                if modified_term == termLocalNameList[termVersionRowNumber]:
+                    # change the version on the list to the new one
+                    newTermVersionMembersList[termVersionRowNumber] = namespaceUri + 'version/' + termLocalNameList[termVersionRowNumber] + '-' + date_issued
+
+    # For each newly added term, add its new version to the list.
+    for new_term in new_terms:
+        newTermVersionMembersList.append(namespaceUri + 'version/' + new_term + '-' + date_issued)
+
+    # Now that the list is created of new term versions that are part of the new term version list,
+    # add a record for each one to the term list versions members table
+    for termVersionMember in newTermVersionMembersList:
+        term_lists_versions_members.append([termlistVersionUri, termVersionMember])
+
+    # Write the updated term list versions members table to a file
+    writeCsv('../term-lists-versions/term-lists-versions-members.csv', term_lists_versions_members)
+
+    if not aNewTermList:
+        term_lists_versions_replacements.append([termlistVersionUri, term_lists_versions_metadata[mostRecentListNumber][version_uri]])
+        writeCsv('../term-lists-versions/term-lists-versions-replacements.csv', term_lists_versions_replacements)
+
 
 # -----------------------
 # Main routine
@@ -600,4 +643,8 @@ for namespace in namespaces:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
 
     # Step 5. Generate current terms metadata
-    standardUri = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions)
+    standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions)
+
+    # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
+    if not borrowed:
+        update_termlist_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements)
