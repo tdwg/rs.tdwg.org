@@ -325,12 +325,236 @@ def generate_term_versions_metadata(database, versions, version_namespace, mods_
     revised_versions_replacements_table = versions_replacements_table + newReplacements
     writeCsv('../' + versions + '/' + versions + '-replacements.csv', revised_versions_replacements_table)
 
+# This function contains the Step 5 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
+def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions):
+    term_modified_dateTime = findColumnWithHeader(terms_metadata[0], 'document_modified')[1]
+    term_localName = findColumnWithHeader(terms_metadata[0], 'term_localName')[1]
+    term_modified = findColumnWithHeader(terms_metadata[0], 'term_modified')[1]
+    term_created = findColumnWithHeader(terms_metadata[0], 'term_created')[1]
+    term_isDefinedBy = findColumnWithHeader(terms_metadata[0], 'term_isDefinedBy')[1]
+
+    # step through each row in the modification metadata table and modify existing current terms when applicable
+    for mods_rownumber in range(1, len(modifications_metadata)):
+        mods_localname_string = modifications_metadata[mods_rownumber][mods_local_name]
+        modified = False
+        for term_name in modified_terms:
+            # only make a modification if it's on the list of terms to be modified
+            if mods_localname_string == term_name:
+                modified = True
+        # this section of code modifies existing terms
+        if modified:
+            # find the row in the terms metadata file for the term to be modified
+            for term_rownumber in range(1, len(terms_metadata)):
+                if mods_localname_string == terms_metadata[term_rownumber][term_localName]:
+                    terms_metadata[term_rownumber][term_modified_dateTime] = isoTime(local_offset_from_utc)
+                    terms_metadata[term_rownumber][term_modified] = date_issued
+                    # replace every column that's in the modifications metadata
+                    for column_number in range(0, len(modifications_metadata[0])):
+                        # find the column in the current terms metadata table that matches the modifications column and replace the current term's value
+                        result = findColumnWithHeader(terms_metadata[0], modifications_metadata[0][column_number])
+                        if result[0] == True:
+                            terms_metadata[term_rownumber][result[1]] = modifications_metadata[mods_rownumber][column_number]
+                        else:
+                            pass # this shouldn't really happen since there already was a check that all columns existed in the versions table
+        # this section of code adds new term metadata
+        else: 
+            newTermRow = []
+            for column in range(0, len(terms_metadata[0])):
+                newTermRow.append('')
+            newTermRow[term_modified_dateTime] = isoTime(local_offset_from_utc)
+            newTermRow[term_modified] = date_issued
+            newTermRow[term_created] = date_issued
+            newTermRow[term_isDefinedBy] = namespaceUri
+            # replace every column that's in the modifications metadata
+            for column_number in range(0, len(modifications_metadata[0])):
+                # find the column in the current terms metadata table that matches the modifications column and replace the current term's value
+                result = findColumnWithHeader(terms_metadata[0], modifications_metadata[0][column_number])
+                if result[0] == True:
+                    newTermRow[result[1]] = modifications_metadata[mods_rownumber][column_number]
+                else:
+                    pass # this shouldn't really happen since there already was a check that all columns existed in the versions table
+            terms_metadata.append(newTermRow)
+    writeCsv('../' + database + '/' + database + '.csv', terms_metadata)
+
+    # Section 5 for generating new term lists
+    term_lists_table_filename = '../term-lists/term-lists.csv'
+    term_lists_table = readCsv(term_lists_table_filename)
+
+    term_lists_versions_joins_filename = '../term-lists/term-lists-versions.csv'
+    term_lists_versions_joins = readCsv(term_lists_versions_joins_filename)
+
+    term_lists_members_filename = '../term-lists/term-lists-members.csv'
+    term_lists_members = readCsv(term_lists_members_filename)
+
+    term_lists_versions_metadata_filename = '../term-lists-versions/term-lists-versions.csv'
+    term_lists_versions_metadata = readCsv(term_lists_versions_metadata_filename)
+
+    term_lists_versions_members_filename = '../term-lists-versions/term-lists-versions-members.csv'
+    term_lists_versions_members = readCsv(term_lists_versions_members_filename)
+
+    term_lists_versions_replacements_filename = '../term-lists-versions/term-lists-versions-replacements.csv'
+    term_lists_versions_replacements = readCsv(term_lists_versions_replacements_filename)
+
+    datasets_index_filename = '../index/index-datasets.csv'
+    datasets_index = readCsv(datasets_index_filename)
+
+    if namespaceUri == 'http://rs.tdwg.org/dwc/terms/attributes/':
+        termlistVersionUri = 'http://rs.tdwg.org/dwc/version/terms/attributes/' + date_issued
+    else:
+        uriPieces = termlist_uri.split('/')
+        # split the URI between the vocabulary and term list subpaths
+        termlistVersionUri = uriPieces[0] + '//' + uriPieces[2] + '/' + uriPieces[3] + '/version/' + uriPieces[4] + '/' + date_issued
+
+    list_uri = findColumnWithHeader(term_lists_table[0], 'list')[1]
+    list_created = findColumnWithHeader(term_lists_table[0], 'list_created')[1]
+    list_modified = findColumnWithHeader(term_lists_table[0], 'list_modified')[1]
+    modified_datetime = findColumnWithHeader(term_lists_table[0], 'document_modified')[1]
+    standard_column = findColumnWithHeader(term_lists_table[0], 'standard')[1]
+    list_description = findColumnWithHeader(term_lists_table[0], 'description')[1]
+
+    aNewTermList = True
+    for rowNumber in range(1, len(term_lists_table)):
+        # by convention, the namespace URI used for the terms is the same as the URI of the term list
+        if termlist_uri == term_lists_table[rowNumber][list_uri]:
+            aNewTermList = False
+            term_list_rowNumber = rowNumber
+            term_lists_table[rowNumber][list_modified] = date_issued
+            term_lists_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
+            # here is the opportunity to find out the standard URI for the modified term list
+            standardUri = term_lists_table[rowNumber][standard_column]
+            print(term_lists_table[rowNumber])
+    if aNewTermList:  # this will happen if the term list did not previously exist
+        try:
+            new_term_list = readCsv('files_for_new/new_term_list.csv')
+        except:
+            print('The term list was not found and there was no new_term_list.csv file.')
+            sys.exit()
+        # Note: no error trapping is done here, so make sure that the new_term_list columns are the same as term_lists_table
+        new_term_list[1][modified_datetime] = isoTime(local_offset_from_utc)
+        new_term_list[1][list_created] = date_issued
+        new_term_list[1][list_modified] = date_issued
+        standardUri = new_term_list[1][standard_column]
+        # the length of the table (including header row) will be one more than the last row number
+        term_list_rowNumber = len(term_lists_table)
+        term_lists_table.append(new_term_list[1])
+        # after the new row is appended, its row number will be one more than the previous last row number
+
+        # The new term list's dataset directory must be added to the dataset list. 
+        row_for_current_terms = [isoTime(local_offset_from_utc), # document_modified
+                                database, # term_localName
+                                'http://rs.tdwg.org/index', # dcterms_isPartOf
+                                'http://rs.tdwg.org/index/' + database, # dataset_iri
+                                date_issued, # dcterms_modified
+                                new_term_list[1][list_description], # label
+                                ''] # rdfs_comment
+        datasets_index.append(row_for_current_terms)
+        
+        # New term lists will always have a new version dataset directory, so add it, too.
+        row_for_versions = [isoTime(local_offset_from_utc), # document_modified
+                            versions, # term_localName
+                            'http://rs.tdwg.org/index', # dcterms_isPartOf
+                            'http://rs.tdwg.org/index/' + versions, # dataset_iri
+                            date_issued, # dcterms_modified
+                            new_term_list[1][list_description] + ' versions', # label
+                            ''] # rdfs_comment
+        datasets_index.append(row_for_versions)
+        
+    else: # If the term list isn't new, then its modified date needs to be updated.
+        # find the row in the dataset director file for the dataset being modified
+        for dataset_rownumber in range(1, len(datasets_index)):
+            # update current terms modified date
+            if database == datasets_index[dataset_rownumber][1]: # the name is in column 1
+                datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+                datasets_index[dataset_rownumber][4] = date_issued # the date modified is in column 4
+            # update versions modified date
+            if versions == datasets_index[dataset_rownumber][1]:
+                datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+                datasets_index[dataset_rownumber][4] = date_issued
+
+    # Update the date for the term lists and term list versions regardless of whether it's new or not
+    for dataset_rownumber in range(1, len(datasets_index)):
+        if 'term-lists' == datasets_index[dataset_rownumber][1]:
+            datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+            datasets_index[dataset_rownumber][4] = date_issued
+        if 'term-lists-versions' == datasets_index[dataset_rownumber][1]:
+            datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+            datasets_index[dataset_rownumber][4] = date_issued
+        if 'vocabularies' == datasets_index[dataset_rownumber][1]:
+            datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+            datasets_index[dataset_rownumber][4] = date_issued
+        if 'vocabularies-versions' == datasets_index[dataset_rownumber][1]:
+            datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+            datasets_index[dataset_rownumber][4] = date_issued
+        if 'standards' == datasets_index[dataset_rownumber][1]:
+            datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+            datasets_index[dataset_rownumber][4] = date_issued
+        if 'standards-versions' == datasets_index[dataset_rownumber][1]:
+            datasets_index[dataset_rownumber][0] = isoTime(local_offset_from_utc)
+            datasets_index[dataset_rownumber][4] = date_issued
+            
+    writeCsv('../term-lists/term-lists.csv', term_lists_table)
+    writeCsv('../index/index-datasets.csv', datasets_index)
+
+    term_lists_versions_joins.append([termlistVersionUri, termlist_uri])
+    writeCsv('../term-lists/term-lists-versions.csv', term_lists_versions_joins)
+
+    for newTerm in new_terms:
+        term_lists_members.append([termlist_uri, namespaceUri + newTerm])
+    writeCsv('../term-lists/term-lists-members.csv', term_lists_members)
+
+    # find the columns than contain needed information
+    list_uri = findColumnWithHeader(term_lists_versions_metadata[0], 'list')[1]
+    document_modified = findColumnWithHeader(term_lists_versions_metadata[0], 'document_modified')[1]
+    version_uri = findColumnWithHeader(term_lists_versions_metadata[0], 'version')[1]
+    version_modified = findColumnWithHeader(term_lists_versions_metadata[0], 'version_modified')[1]
+    status_column = findColumnWithHeader(term_lists_versions_metadata[0], 'status')[1]
+
+    if aNewTermList:
+        # get the template for the term list version from first data row in the new_term_list_version.csv file
+        try:
+            new_term_list_version = readCsv('files_for_new/new_term_list_version.csv')
+        except:
+            print('The term list version was not found and there was no new_term_list_version.csv file.')
+            sys.exit()
+        newListRow = new_term_list_version[1]
+    else:
+        # find the most recent previous version of the term list
+        mostRecent = 'a' # start the value of mostRecent as something earlier alphabetically than all of the list URIs
+        mostRecentListNumber = 0 # dummy list number to be replaced when most recent list is found
+        for termListRowNumber in range(1, len(term_lists_versions_metadata)):
+            # the row is one of the versions of the list
+            if term_lists_versions_metadata[termListRowNumber][list_uri] == termlist_uri:
+                # Make the version of the row the mostRecent if it's later than the previous mostRecent
+                if term_lists_versions_metadata[termListRowNumber][version_uri] > mostRecent:
+                    mostRecent = term_lists_versions_metadata[termListRowNumber][version_uri]
+                    mostRecentListNumber = termListRowNumber
+
+        # change the status of the most recent list to superseded
+        term_lists_versions_metadata[mostRecentListNumber][status_column] = 'superseded'
+        term_lists_versions_metadata[mostRecentListNumber][document_modified] = isoTime(local_offset_from_utc)
+
+        # start the new list row with the metadata from the most recent list
+        newListRow = copy.deepcopy(term_lists_versions_metadata[mostRecentListNumber])
+
+    # substitute metadata to make the most recent list have the modified dates for the new list
+    newListRow[document_modified] = isoTime(local_offset_from_utc)
+    newListRow[version_uri] = termlistVersionUri
+    newListRow[version_modified] = date_issued
+    newListRow[status_column] = 'recommended'
+
+    # append the new term list row to the old list of term lists
+    term_lists_versions_metadata.append(newListRow)
+
+    # save as a file
+    writeCsv('../term-lists-versions/term-lists-versions.csv', term_lists_versions_metadata)
+    return standardUri
 
 # -----------------------
 # Main routine
 # -----------------------
 
 for namespace in namespaces:
+    # Step 1 (from first cell in development Jupyter notebook simplified_process_rs_tdwg_org.ipynb)
     # Set the values of flags that control the flow of program execution
     borrowed = namespace['borrowed']
     new_term_list = namespace['new_term_list']
@@ -364,12 +588,16 @@ for namespace in namespaces:
     namespace = pieces[len(pieces)-2]
     vocabulary = pieces[len(pieces)-3]
 
-    if new_term_list: # If run for existing term lists, it will overwrite a bunch of stuff
+    # Step 2. Create new mapping and configuration files. If run for existing term lists, it will overwrite a bunch of stuff
+    if new_term_list:
         generate_and_copy_mapping_and_config_files(vocab_type, namespaceUri, database, modifications_filename)
 
-    # Determine values needed to interpret and modify tables later
+    # Step 3. Determine values needed to interpret and modify tables later
     terms_metadata, modifications_metadata, mods_local_name, metadata_localname_column, mods_term_localName, new_terms, modified_terms = determine_state_of_data_tables(database, modifications_filename)
 
-    # Create term versions-related metadata. Generally only applies to TDWG-minted terms, not borrowed ones
+    # Step 4. Create term versions-related metadata. Generally only applies to TDWG-minted terms, not borrowed ones
     if not borrowed:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
+
+    # Step 5. Generate current terms metadata
+    standardUri = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions)
