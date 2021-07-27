@@ -963,8 +963,6 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
     if not(aNewStandard) and not(alreadyAddedStandard):
         standards_versions_replacements.append([standardVersionUri, standards_versions_metadata[mostRecentStandardNumber][version_uri]])
         writeCsv('../standards-versions/standards-versions-replacements.csv', standards_versions_replacements)
-        
-    print('done')
 
 # -----------------------
 # Main routine
@@ -1035,4 +1033,4 @@ for namespace in namespaces:
     # the script isn't being run for namespaces from more than one vocabulary. But it doesn't hurt to be in the loop, either.
     if not utility_namespace: # utility namespaces are not part of any vocabularies or standards
         update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vocab_subpath, vocabularyUri, vocabularyVersionUri, aNewVocabulary)
-
+    print('completed', namespaceUri, 'namespace')
