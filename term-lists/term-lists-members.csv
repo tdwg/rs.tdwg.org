@@ -881,3 +881,15 @@ http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/chronometricAgeUnce
 http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem
 http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem
 http://rs.tdwg.org/chrono/iri/,http://rs.tdwg.org/chrono/iri/materialDated
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/measurementValue
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/verticalDatum
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/recordedByID
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/verticalDatum
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/verbatimIdentification
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/identifiedByID
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/subfamily
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/genericName
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/infragenericEpithet
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/cultivarEpithet
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/relationshipOfResourceID
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/MaterialCitation
