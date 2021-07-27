@@ -550,7 +550,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
     return standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
 
 # This function contains the Step 6 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
-def update_termlist_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements):
+def update_termlist_version_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements):
     # create a list of every term version that was in the most recent previous list version
     newTermVersionMembersList = []
     # create a corresponding list of local names for those versions
@@ -1011,15 +1011,15 @@ for namespace in namespaces:
     terms_metadata, modifications_metadata, mods_local_name, metadata_localname_column, mods_term_localName, new_terms, modified_terms = determine_state_of_data_tables(database, modifications_filename)
 
     # Step 4. Create term versions-related metadata. Generally only applies to TDWG-minted terms, not borrowed ones
-    if not borrowed:
+    if not borrowed and not utility_namespace:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
 
     # Step 5. Generate current terms metadata
     standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions)
 
     # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
-    if not borrowed:
-        update_termlist_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements)
+    if not borrowed and not utility_namespace:
+        update_termlist_version_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements)
     
     # Step 7. Update vocabulary-related metadata
     # NOTE: This must be within the namespace loop because the member term list information must be
