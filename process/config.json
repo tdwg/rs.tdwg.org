@@ -4,6 +4,24 @@
     "vocab_type": 1,
     "namespaces": [
         {
+            "namespace_uri": "http://purl.org/dc/terms/",
+            "database": "dcterms-for-dwc",
+            "borrowed": true,
+            "new_term_list": false,
+            "utility_namespace": false,
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2021-07-15/dcterms_2021-07-15.csv",
+            "termlist_uri": "http://rs.tdwg.org/dwc/dcterms/"
+        },
+        {
+            "namespace_uri": "http://rs.tdwg.org/dwc/iri/",
+            "database": "iri",
+            "borrowed": false,
+            "new_term_list": false,
+            "utility_namespace": false,
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2021-07-15/iri_2021-07-15.csv",
+            "termlist_uri": ""
+        },
+        {
             "namespace_uri": "http://rs.tdwg.org/dwc/terms/",
             "database": "terms",
             "borrowed": false,
