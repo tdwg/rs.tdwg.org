@@ -5584,3 +5584,11 @@ http://rs.tdwg.org/dwc/version/terms/2021-07-15,http://rs.tdwg.org/dwc/terms/ver
 http://rs.tdwg.org/dwc/version/terms/2021-07-15,http://rs.tdwg.org/dwc/terms/version/cultivarEpithet-2021-07-15
 http://rs.tdwg.org/dwc/version/terms/2021-07-15,http://rs.tdwg.org/dwc/terms/version/relationshipOfResourceID-2021-07-15
 http://rs.tdwg.org/dwc/version/terms/2021-07-15,http://rs.tdwg.org/dwc/terms/version/MaterialCitation-2021-07-15
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#accessRights-002
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#bibliographicCitation-002
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#languageT-001
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#license-002
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#Location-001
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#modified-003
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#references-003
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://dublincore.org/usage/terms/history/#rightsHolder-002
