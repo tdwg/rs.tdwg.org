@@ -48,3 +48,9 @@ http://rs.tdwg.org/dwc/iri/version/degreeOfEstablishment-2020-10-13,degreeOfEsta
 http://rs.tdwg.org/dwc/iri/version/establishmentMeans-2021-03-29,establishmentMeans
 http://rs.tdwg.org/dwc/iri/version/pathway-2021-03-29,pathway
 http://rs.tdwg.org/dwc/iri/version/degreeOfEstablishment-2021-03-29,degreeOfEstablishment
+http://rs.tdwg.org/dwc/iri/version/lifeStage-2021-07-15,lifeStage
+http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2021-07-15,samplingProtocol
+http://rs.tdwg.org/dwc/iri/version/measurementValue-2021-07-15,measurementValue
+http://rs.tdwg.org/dwc/iri/version/footprintSRS-2021-07-15,footprintSRS
+http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2021-07-15,georeferenceVerificationStatus
+http://rs.tdwg.org/dwc/iri/version/verticalDatum-2021-07-15,verticalDatum

@@ -31,3 +31,6 @@ document_modified,term_localName,term_isDefinedBy,term_modified,label,rdfs_comme
 2020-10-18T19:34:24-04:00,decision-2020-10-13_30,http://rs.tdwg.org/decisions/,2020-10-13,TDWG Executive Committee decision 30,Created the controlled vocabulary for the Audubon Core variant and variantLiteral terms and modified the metadata of those terms to make them compatible with the new controlled vocabulary. See https://github.com/tdwg/ac/issues/170
 2020-10-18T19:34:24-04:00,decision-2020-10-13_31,http://rs.tdwg.org/decisions/,2020-10-13,TDWG Executive Committee decision 31,Imported the term mo:sample_rate into the Audubon Core vocabulary. See https://github.com/tdwg/ac/issues/177
 2020-10-18T19:34:24-04:00,decision-2020-10-13_32,http://rs.tdwg.org/decisions/,2020-10-13,TDWG Executive Committee decision 32,Added new Audubon Core terms ac:freqLow and ac:freqHigh. See https://github.com/tdwg/ac/issues/178
+2021-07-29T10:40:00-04:00,decision-2021-04-27_33,http://rs.tdwg.org/decisions/,2021-04-27,TDWG Executive Committee decision 33,Created the Chronometric Age extension for Darwin Core. See http://rs.tdwg.org/dwc/doc/chrono/
+2021-07-29T10:40:00-04:00,decision-2021-07-15_34,http://rs.tdwg.org/decisions/,2021-07-15,TDWG Executive Committee decision 34,Darwin Core additions and changes. See https://github.com/tdwg/dwc/milestone/14
+,,,,,\

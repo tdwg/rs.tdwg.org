@@ -3,3 +3,7 @@ http://rs.tdwg.org/dwc/iri/version/establishmentMeans-2020-10-13,establishmentMe
 http://rs.tdwg.org/dwc/iri/version/establishmentMeans-2021-03-29,establishmentMeans-2020-10-13
 http://rs.tdwg.org/dwc/iri/version/pathway-2021-03-29,pathway-2020-10-13
 http://rs.tdwg.org/dwc/iri/version/degreeOfEstablishment-2021-03-29,degreeOfEstablishment-2020-10-13
+http://rs.tdwg.org/dwc/iri/version/lifeStage-2021-07-15,lifeStage-2015-03-27
+http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2021-07-15,samplingProtocol-2015-03-27
+http://rs.tdwg.org/dwc/iri/version/footprintSRS-2021-07-15,footprintSRS-2015-03-27
+http://rs.tdwg.org/dwc/iri/version/georeferenceVerificationStatus-2021-07-15,georeferenceVerificationStatus-2015-03-27
