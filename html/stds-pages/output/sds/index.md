@@ -1,5 +1,5 @@
 ---
-title: TDWG Standards Documentation Standard
+title: TDWG Standards Documentation Standard (SDS)
 summary: “The TDWG Standards Documentation Standard (SDS) consists of a single document: the [Standards Documentation Specification](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md). That document defines how TDWG standards are to be presented. It provides details about the hierarchical structure of standards and versioning of standards components. It specifies how the properties of standards and their components are to be described in human-readable and machine-readable terms.”
 cover_image: https://images.unsplash.com/photo-1497796742626-fe30f204ec54
 cover_image_by: Lysander Yuen
@@ -11,7 +11,7 @@ github: https://github.com/tdwg/vocab/tree/master/sds
 ## Header section
 
 Title
-: TDWG Standards Documentation Standard
+: TDWG Standards Documentation Standard (SDS)
 
 Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/147>

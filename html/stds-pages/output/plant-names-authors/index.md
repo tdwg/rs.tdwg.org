@@ -1,6 +1,6 @@
 ---
 title: Authors of Plant Names
-summary: An index of authors of plant scientific names. Includes flowering plants, gymnosperms, pteridophytes, bryophytes, algae, fungi and fossil plants. Full names, dates of birth and death when known, recommended abbreviations and groups in which names have been published, are given for each author. Authors of Plant Names has been incorporated into the [International Plant Names Index (IPNI)](http://www.ipni.org/).
+summary: An index of authors of plant scientific names. Includes flowering plants, gymnosperms, pteridophytes, bryophytes, algae, fungi and fossil plants. Full names, dates of birth and death when known, recommended abbreviations and groups in which names have been published, are given for each author. Authors of Plant Names has been incorporated into the [International Plant Names Index (IPNI)](https://www.ipni.org/).
 cover_image: https://images.unsplash.com/photo-1530027644375-9c83053d392e
 cover_image_by: Xuan Nguyen
 cover_image_ref: https://unsplash.com/photos/v6V-hfxjboI
@@ -35,7 +35,7 @@ Bibliographic citation
 
 ## Where is the Brummitt & Powell "Authors of Plant Names" database?
 
-Since 1998 the database of author names and their standard forms (which formed the basis of the Brummitt & Powell's (1992) Authors of Plant Names) has been maintained and updated on line as part of the Plant Names Project. This database represents a significant improvement to the static one which was hitherto available on our website since it is continuously updated with new entries and additions/corrections to existing entries. Names are still standardized according to the Brummitt & Powell rules; and you can now find authors in the [International Plant Names Index (IPNI) database](http://www.ipni.org/index.html).
+Since 1998 the database of author names and their standard forms (which formed the basis of the Brummitt & Powell's (1992) Authors of Plant Names) has been maintained and updated on line as part of the Plant Names Project. This database represents a significant improvement to the static one which was hitherto available on our website since it is continuously updated with new entries and additions/corrections to existing entries. Names are still standardized according to the Brummitt & Powell rules; and you can now find authors in the [International Plant Names Index (IPNI) database](https://www.ipni.org/).
 
 ## Authors of Plant Names and TDWG
 

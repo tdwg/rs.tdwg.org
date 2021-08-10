@@ -1,5 +1,5 @@
 ---
-title: Structured Descriptive Data
+title: Structured Descriptive Data (SDD)
 summary: The goal of the SDD standard is to allow capture, transport, caching and archiving of descriptive data (data describing a taxon or specimen), using a platform- and application-independent, international standard. Such a standard is crucial to enabling lossless porting of data between existing and future software platforms including identification, data-mining and analysis tools, and federated databases.
 cover_image: https://c1.staticflickr.com/5/4871/32317503938_1eb7c72aeb_h.jpg
 cover_image_by: Biodiversity Heritage Library
@@ -11,7 +11,7 @@ github: https://github.com/tdwg/sdd
 ## Header section
 
 Title
-: Structured Descriptive Data
+: Structured Descriptive Data (SDD)
 
 Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/116>

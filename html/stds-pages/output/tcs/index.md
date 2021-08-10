@@ -1,5 +1,5 @@
 ---
-title: Taxonomic Concept Transfer Schema
+title: Taxonomic Concept Transfer Schema (TCS)
 summary: The TCS schema was conceived to allow the representation of taxonomic concepts as defined in published taxonomic classifications, revisions and databases. As such, it specifies the structure for XML documents to be used for the transfer of defined concepts. Valid transfer documents may either explicitly detail the defining components of taxon concepts, transfer GUIDs referring to defined taxon concepts (if and when these are available) or a mixture of the two.
 cover_image: https://images.unsplash.com/photo-1502912143929-50c8a1ce1f69
 cover_image_by: Fancycrave
@@ -11,7 +11,7 @@ github: https://github.com/tdwg/tcs
 ## Header section
 
 Title
-: Taxonomic Concept Transfer Schema
+: Taxonomic Concept Transfer Schema (TCS)
 
 Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/117>

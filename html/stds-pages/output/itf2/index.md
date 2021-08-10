@@ -1,5 +1,5 @@
 ---
-title: International Transfer Format for Botanic Garden Plant Records
+title: International Transfer Format for Botanic Garden Plant Records (IFT2)
 summary: International Transfer Format for Botanic Garden Plant Records, version 2 (ITF2) was developed in response to requests from botanic gardens to incorporate additional data fields for transfer within the botanic gardens and allow for a more flexible transfer format than the original transfer format outlined in ITF version 01.00. It is biased towards 'Conservation Type Data Fields', but incorporates a procedure allowing for additional data fields to be identified and exchanged between gardens. It is because of this flexibility that it is believed that the ITF2 will remain relevant to botanic gardens for a long time despite the rapid change in information system technology in recent years.
 cover_image: https://c2.staticflickr.com/6/5347/9248091524_efa0bdbcac_b.jpg
 cover_image_by: Drriss & Marrionn
@@ -11,7 +11,7 @@ github: https://github.com/tdwg/prior-standards/tree/master/itf2
 ## Header section
 
 Title
-: International Transfer Format for Botanic Garden Plant Records
+: International Transfer Format for Botanic Garden Plant Records (IFT2)
 
 Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/102>
