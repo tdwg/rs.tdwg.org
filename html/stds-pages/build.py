@@ -65,7 +65,7 @@ for page in pageInfo:
         print('Title', file=outObject)
         print(': ' + standards[standardNumber]['label'], file=outObject)
         print('', file=outObject)
-        print('Permanent IRI to be cited and linked', file=outObject)
+        print('Permanent IRI (for citations and links)', file=outObject)
         print(': <' + standards[standardNumber]['standard'] + '>', file=outObject)
         print('', file=outObject)
         print('Publisher', file=outObject)
@@ -85,7 +85,7 @@ for page in pageInfo:
         print(': ' + standards[standardNumber]['description'], file=outObject)
         print('', file=outObject)
         print('Bibliographic citation', file=outObject)
-        print(': ' + standards[standardNumber]['citation'], file=outObject)
+        print(': > ' + standards[standardNumber]['citation'], file=outObject)
         print('', file=outObject)
 
         # insert additional Markdown, if any
