@@ -13,7 +13,7 @@ github: https://github.com/tdwg/tcs
 Title
 : Taxonomic Concept Transfer Schema
 
-Permanent IRI to be cited and linked
+Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/117>
 
 Publisher
@@ -29,10 +29,13 @@ Category
 : [Technical specification](https://www.tdwg.org/standards/status-and-categories/#categories%20of%20tdwg%20standards_1)
 
 Abstract
-: An XML schema that provides a mechanism for the providers of taxonomic information to exchange data.
+: The TCS schema was conceived to allow the representation of taxonomic concepts as defined in published taxonomic classifications, revisions and databases. As such, it specifies the structure for XML documents to be used for the transfer of defined concepts. Valid transfer documents may either explicitly detail the defining components of taxon concepts, transfer GUIDs referring to defined taxon concepts (if and when these are available) or a mixture of the two.
 
 Bibliographic citation
-: Taxonomic Names and Concepts Interest Group. 2005. Taxonomic Concept Transfer Schema (TCS). Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/117
+: > Taxonomic Names and Concepts Interest Group. 2005. Taxonomic Concept Transfer Schema (TCS). Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/117
+
+## Maintenance group  
+TCS is maintained by the [Taxonomic Names and Concepts Interest Group](https://www.tdwg.org/community/tnc/), which has sponsored a Task Group to update TCS to make it compliant with the Standards Documentation Specification and to move it into the Current Standard category.
 
 ## Parts of the standard
 

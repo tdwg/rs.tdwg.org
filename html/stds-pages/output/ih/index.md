@@ -4,7 +4,6 @@ tags: prior standard, 1990
 github: https://github.com/tdwg/prior-standards/tree/master/index-herbariorum-part-i
 website: http://sweetgum.nybg.org/science/ih/
 website_title: Current online version of Index Herbariorum
-status: hidden
 ---
 
 ## Header section
@@ -12,7 +11,7 @@ status: hidden
 Title
 : Index Herbariorum. Part I: The Herbaria of the World
 
-Permanent IRI to be cited and linked
+Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/105>
 
 Publisher
@@ -28,7 +27,7 @@ Abstract
 : A guide that records the physical location, holdings, and contact information of the world's herbaria.
 
 Bibliographic citation
-: Holmgren, P. K., N. H. Holmgren, and L. C. Barnett. 1990. Index Herbariorum Standard. IUBS Commission for Plant Taxonomic Databases (TDWG) http://www.tdwg.org/standards/105
+: > Holmgren, P. K., N. H. Holmgren, and L. C. Barnett. 1990. Index Herbariorum Standard. IUBS Commission for Plant Taxonomic Databases (TDWG) http://www.tdwg.org/standards/105
 
 ## Parts of the standard
 

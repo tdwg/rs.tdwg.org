@@ -15,7 +15,7 @@ website_title: Authors of Plant Names at kew.org
 Title
 : Authors of Plant Names
 
-Permanent IRI to be cited and linked
+Permanent IRI (for citations and links)
 : <http://www.tdwg.org/standards/101>
 
 Publisher
@@ -28,17 +28,17 @@ Status
 : [Prior standard](https://www.tdwg.org/standards/status-and-categories/)
 
 Abstract
-: An index of authors of plant scientific names.
+: An index of authors of plant scientific names. Includes flowering plants, gymnosperms, pteridophytes, bryophytes, algae, fungi and fossil plants. Full names, dates of birth and death when known, recommended abbreviations and groups in which names have been published, are given for each author.
 
 Bibliographic citation
-: Brummitt, R. K. and C. E. Powell. 1992. Authors of Plant Names Standard. International Working Group on Taxonomic Databases (TDWG) http://www.tdwg.org/standards/101
+: > Brummitt, R. K. and C. E. Powell. 1992. Authors of Plant Names Standard. International Working Group on Taxonomic Databases (TDWG) http://www.tdwg.org/standards/101
 
-## Where is the Brummitt & Powell "Authors of Plant Names" database?
-
-Since 1998 the database of author names and their standard forms (which formed the basis of the Brummitt & Powell's (1992) Authors of Plant Names) has been maintained and updated on line as part of the Plant Names Project. This database represents a significant improvement to the static one which was hitherto available on our website since it is continuously updated with new entries and additions/corrections to existing entries. Names are still standardized according to the Brummitt & Powell rules; and you can now find authors in the [International Plant Names Index (IPNI) database](http://www.ipni.org/index.html).
-
-## Authors of Plant Names and TDWG
-
+## Where is the Brummitt & Powell "Authors of Plant Names" database?
+
+Since 1998 the database of author names and their standard forms (which formed the basis of the Brummitt & Powell's (1992) Authors of Plant Names) has been maintained and updated on line as part of the Plant Names Project. This database represents a significant improvement to the static one which was hitherto available on our website since it is continuously updated with new entries and additions/corrections to existing entries. Names are still standardized according to the Brummitt & Powell rules; and you can now find authors in the [International Plant Names Index (IPNI) database](http://www.ipni.org/index.html).
+
+## Authors of Plant Names and TDWG
+
 The Taxonomic Databases Working Group (TDWG) adopted the original printed version of Brummitt & Powell (1992) as their data standard for Authors of Plant Names. The adoption of the current live database is still currently under discussion. This would represent a new precedent for TDWG in that all standards adopted to date have been static and in hard copy.
 
 ## Parts of the standard
