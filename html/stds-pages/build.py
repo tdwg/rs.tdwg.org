@@ -139,20 +139,20 @@ for page in pageInfo:
             for doc in docs:
                 if doc['current_iri'] == docToList:
                     # print metadata about each document
-                    print('**Title:** ' + doc['documentTitle'] + ' \\', file=outObject)
-                    print('**Permanent IRI:** [' + doc['current_iri'] + '](' + doc['browserRedirectUri'] + ') \\', file=outObject)
-                    print('**Created:** ' + doc['doc_created'] + ' \\', file=outObject)
-                    print('**Last modified:** ' + doc['doc_modified'] + ' \\', file=outObject)
-                    print('**Contributors:** \\', file=outObject)
+                    print('**Title:** ' + doc['documentTitle'] + ' <br/>', file=outObject)
+                    print('**Permanent IRI:** [' + doc['current_iri'] + '](' + doc['browserRedirectUri'] + ') <br/>', file=outObject)
+                    print('**Created:** ' + doc['doc_created'] + ' <br/>', file=outObject)
+                    print('**Last modified:** ' + doc['doc_modified'] + ' <br/>', file=outObject)
+                    print('**Contributors:** <br/>', file=outObject)
                     for contributor in contributors:
                         if contributor['document'] == docToList:
                             listing = contributor['contributor_literal'] + ' (' + contributor['contributor_role'] + ')'
                             if contributor['affiliation'] != '':
                                 listing += ' - ' + contributor['affiliation']
-                            print(listing + ' \\', file=outObject)
-                    print('**Publisher:** ' + doc['publisher'] + ' \\', file=outObject)
-                    print('**Abstract:** ' + doc['abstract'] + ' \\', file=outObject)
+                            print(listing + ' <br/>', file=outObject)
+                    print('**Publisher:** ' + doc['publisher'] + ' <br/>', file=outObject)
+                    print('**Abstract:** ' + doc['abstract'] + ' <br/>', file=outObject)
                     if doc['comment'] != '':
-                        print('**Note:** ' + doc['comment'] + ' \\', file=outObject)
+                        print('**Note:** ' + doc['comment'] + ' <br/>', file=outObject)
                     print('**Citation:** ' + doc['citation'], file=outObject)
                     print('', file=outObject)
