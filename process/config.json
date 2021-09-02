@@ -1,15 +1,15 @@
 {
     "date_issued": "2021-09-01",
     "local_offset_from_utc": "-05:00",
-    "vocab_type": 1,
+    "vocab_type": 3,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/dwcem/values/",
-            "database": "establishmentMeans",
+            "namespace_uri": "http://rs.tdwg.org/dwcpw/values/",
+            "database": "pathway",
             "borrowed": false,
             "new_term_list": false,
             "utility_namespace": false,
-            "modifications_file_path": "dwc-revisions/cv-revisions-2021-09-01/establishmentmeans_terms_2021-08-25.csv",
+            "modifications_file_path": "dwc-revisions/cv-revisions-2021-09-01/pathway_terms_2021-08-25.csv",
             "termlist_uri": ""
         }
     ]
