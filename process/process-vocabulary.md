@@ -162,7 +162,7 @@ This is generally set to `false` except in the edge case of namespaces that do n
 This is the path to the CSV containing the hand-edited changes and additions. It is relative to the `process` directory in which the `process.py` script is running.
 
 ```
-termlist_uri = ''
+"termlist_uri": ""
 ```
 For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv) for examples.
 
