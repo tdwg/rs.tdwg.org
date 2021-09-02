@@ -4,12 +4,12 @@
     "vocab_type": 1,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/dwcdoe/values/",
-            "database": "degreeOfEstablishment",
+            "namespace_uri": "http://rs.tdwg.org/dwcem/values/",
+            "database": "establishmentMeans",
             "borrowed": false,
             "new_term_list": false,
             "utility_namespace": false,
-            "modifications_file_path": "dwc-revisions/cv-revisions-2021-09-01/degreeofestablishment_terms_2021-08-25.csv",
+            "modifications_file_path": "dwc-revisions/cv-revisions-2021-09-01/establishmentmeans_terms_2021-08-25.csv",
             "termlist_uri": ""
         }
     ]
