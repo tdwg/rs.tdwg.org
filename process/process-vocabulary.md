@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2020-00-12
+**Date Modified:** 2021-09-02
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -60,17 +60,20 @@ During the initial vocabulary development process, the build script can be used 
 
 ## 1.4 How to use this document
 
-This document explains the steps for processing a hand-generated CSV file using a Python script that is part of a Jupyter notebook. NOTE: term deprecations cannot be carried out using this workflow and they require a number of special steps. See the [notes at the start of the detailed Jupyter notebook](process_rs_tdwg_org.ipynb) for specific steps that are necessary for term deprecations.
+This document explains the steps for processing a hand-generated CSV file using a Python script. NOTE: term deprecations cannot be carried out using this workflow and they require a number of special steps. See the [notes at the start of the detailed Jupyter notebook](process_rs_tdwg_org.ipynb) for specific steps that are necessary for term deprecations.
 
 ### 1.4.1 Requirements
 
 To carry out the process described in this document, you need:
 - to know how to use Git and GitHub. The simplest way to carry out the necessary operations is to download the [GitHub Desktop client](https://desktop.github.com/). An introduction to Git and GitHub is [here](http://vanderbi.lt/github).
-- to know how to load a Jupyter notebook and run its cells, and have Jupyter notebooks installed on your local computer. The recommended method for installing Jupyter notebooks is via the Anaconda distribution. For more information, see [this page](https://heardlibrary.github.io/digital-scholarship/script/codegraf/003/).
+- to know how to edit a JSON configuration file using a text editor.
+- to know how to run a Python script, and have Python installed on your local computer.
 
-### 1.4.2 Processing scripts
+### 1.4.2 Processing script and configuration file
 
-There are two Python scripts (in Jupyter notebooks) that can be used to do the processing. 
+The script [process.py](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py) will update multiple namespaces within a single vocabulary at one time. It uses a JSON configuration file, `config.json`, to know where the data are located and how to process the CSV files. An example configuration file is [here](https://github.com/tdwg/rs.tdwg.org/blob/5f7fd93bc0b9afcd2f9a577a4b965528cc2fdad2/process/config.json).
+
+There are also two Python scripts in Jupyter notebooks that were used to develop the script and formerly used to do the processing. They are no longer maintained, but contain a lot of comments that might help in understanding what the script does. They may also be useable for term deprecations. They are:
 
 1. The [simplified processing script](simplified_process_rs_tdwg_org.ipynb) presupposes no knowledge of Python and will work for most term additions and changes in existing standards and for creating simple vocabularies or term lists, including controlled vocabularies. **You MUST NOT use this script for term deprecations.**
 2. Because this script is not designed for use by the general public, it has limited error trapping. In cases where results are not as expected, or where unusual changes such as term deprecations are required, the [full processing script](process_rs_tdwg_org.ipynb) SHOULD be used. This script contains the same code as the simplified script, but separates the code among more cells and provides more feedback in the form of print statements.
@@ -79,12 +82,12 @@ There are two Python scripts (in Jupyter notebooks) that can be used to do the p
 
 1. Clone (or add) the [rs.tdwg.org](https://github.com/tdwg/rs.tdwg.org) repository to your local drive.
 2. Create a new branch of the repository.
-3. Place the hand-generated CSV file in the `process` directory of the repository.
-4. Open the appropriate Jupyter notebook (see above) containing the processing script that you want to run. The instructions assume you are running the simplified script.
-5. Edit the configuration section in the first cell of the notebook with values appropriate for your CSV file. See the details below.
+3. Place the hand-generated CSV files in some subdirectory of the `process` directory of the repository.
+4. Open the `config.json` file in a text editor.
+5. Enter the configuration settings for each of the namespaces to be updated. See the details below.
 6. If this is a new vocabulary or term list, edit the appropriate files in the `process/files_for_new` directory of the repository. See the details below.
-7. Run the cells of the script, paying careful attention to whether particular cells should be run or omitted based on your circumstances. For generating draft documents, it is not necessary to run the "Step 7" cell (the last one). 
-8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If bad things happen and you want to start over, commit the changes, then delete the branch you created.
+7. Before running the script, make a commit that you can go back to if things don't go as anticipated. Run the script. 
+8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If something did not go as planned, discard the changes to go back to the previous commit.  If really bad things happen and you want to start over, commit the changes, then delete the branch you created.
 9. If the changes look sensible, then you can run a script to generate a human readable document listing terms and their metadata (See section 4 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated.
 10. In production, once the changes have been made all the way from the terms to the standards level, push the changes to GitHub and create a pull request to merge the changes from the branch into the master.
 11. In production, merging the changes into the master branch rebuilds and deploys the server that controls redirects and machine-readable metadata at http://rs-test.tdwg.org . After testing to make sure that its behavior is appropriate, a new release of the rs.tdwg.org repository should be made. That triggers deployment to the "real" http://rs.tdwg.org server and the changes should be "live". 
@@ -97,51 +100,71 @@ There are several steps necessary to generate all of the metadata related to ter
 
 Ratification of a term addition or change triggers new versions at all of the higher levels in the TDWG standards hierarchy. New term versions trigger new term list versions. New term list versions trigger new vocabulary versions and new vocabulary versions trigger new standards versions. For more information about versioning of TDWG standards, see [Section 2.3 of the TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/).
 
+The next section describes how to configure and run the processing script. Sections 2.2 through 2.5 are informational and describe how the script changes metadata in various categories. These sections may be helpful when examining the diffs to see if the changes that were made make sense.
+
 ## 2.1 Setup
 
-After the repo has been set up on your local drive (see 1.4.3 General workflow above), you MUST edit the configuration section of the script. If you are creating a new term list or vocabulary, you MUST modify files in the `process/files_for_new` directory as well. 
+After the repo has been set up on your local drive (see 1.4.3 General workflow above), you MUST edit the `config.json` file to reflect the term lists (i.e. namespaces) you are creating or changing. If you are creating a new term list or vocabulary, you MUST modify files in the `process/files_for_new` directory as well. 
 
-The script is designed to handle the creation of simple vocabularies or maintenance of existing vocabularies through a streamlined process. However, there are two more complicated circumstances that will require manual editing of files. If you are creating a new vocabulary and the hand-edited CSV file contains columns for additional properties beyond those required by the Standards Documentation Specification, you MUST manually edit the column header mapping file. This is discussed in section 3 below. If you are creating a new vocabulary that contains borrowed terms from multiple namespaces (as in the example spreadsheet [complex-vocabulary.csv](example-spreadsheets/complex-vocabulary.csv)), the rows for each namespace MUST be copied and pasted into separate CSV files (one for each namespace). Each of these separate CSV files MUST be processed separately using different configuration values appropriate to their namespaces.
+The script is designed to handle the creation of simple vocabularies or maintenance of existing vocabularies through a streamlined process. However, there are two more complicated circumstances that will require manual editing of files. If you are creating a new vocabulary and the hand-edited CSV file contains columns for additional properties beyond those required by the Standards Documentation Specification, you MUST manually edit the column header mapping file. This is discussed in section 3 below. If you are creating a new vocabulary that contains borrowed terms from multiple namespaces (as in the example spreadsheet [complex-vocabulary.csv](example-spreadsheets/complex-vocabulary.csv)), the rows for each namespace MUST be copied and pasted into separate CSV files (one for each namespace). Each of these separate CSV files MUST be described as separate JSON objects in the `namespaces` array of the JSON configuration file.
 
 ### 2.1.1 Editing the configuration section
 
-Each line in the configuration section will be discussed separately below.
+Each setting in the configuration file will be discussed separately below.
 
 ```
-namespaceUri = 'http://rs.tdwg.org/dwc/doe/'
+"date_issued": "2020-06-15"
 ```
-For existing TDWG term lists and borrowed terms, the namespace IRI MUST be the one assigned by the existing standard. For proposed new term lists minted by TDWG, the namespace MUST conform to the [conventional TDWG IRI patterns](https://github.com/tdwg/rs.tdwg.org#2-iri-patterns).
+The date issued is assigned as the date of issue for all versions and the modification date for current resources. It is also appended to version IRIs. The date SHOULD fall between the current date and the latest date on which all changes included in the version were ratified or completed. Typically, this will be the date of the approval by the Executive (if approval was needed for the change), but there isn't actually any rule that says it has to be. The main purpose of the date issued is to allow the versions to be ordered.
 
 ```
-database = 'degreeOfEstablishment'
-```
-The database name is used to generate names for associated directories within the rs.tdwg.org repository and as the root for file names within those folders. The file name SHOULD be descriptive and lower camelCase is RECOMMENDED. It MUST NOT contain spaces. Terms that are borrowed SHOULD follow the naming convention established for Darwin and Audubon Cores, i.e. `descriptiveName-for-vocab`, where `vocab` is an abbreviation for the borrowing vocabulary. See examples [here](https://github.com/tdwg/rs.tdwg.org). Do not append `-versions` to this name -- the versions directory will be located or created automatically by the script.
-
-```
-date_issued = '2020-06-15'
-```
-The date issued is assigned as the date of issue for all versions and the modification date for current resources. It is also appended to version IRIs. The date SHOULD fall between the current date and the latest date on which all changes included in the version were ratified or completed.
-
-```
-local_offset_from_utc = '-05:00'
+"local_offset_from_utc": "-05:00"
 ```
 This SHOULD be the UTC offset for the computer running the script (i.e. the appropriate offset for values produced the python method `datetime.datetime.now()`).
 
 ```
-modifications_filename = 'degreeOfEstablishment-revised.csv'
+"vocab_type": "2"
 ```
-This is the name of the hand-generated file from the vocabulary developers/maintainers. It MUST be placed in the `process` directory of the repository.
+This value is only relevant when new term lists or vocabularies are created. It does nothing when existing terms are changed. It controls the template column mapping files copied into the current terms and versions directories. Those template mapping files have names ending in `-mappings` and are located [here for current terms](files_for_new/current_terms) and [here for versions](files_for_new/versions). The three categories:
+1 for simple vocabulary, 2 for simple controlled vocabulary, 3 for c.v. with broader hierarchy, correspond to the three template spreadsheet types [here](example_spreadsheets). If additional property columns are added beyond those already present in the template spreadsheets, select the most appropriate category, then edit the template mapping file as described in section 3 below.
+
+The following settings must be made for each term list (corresponding to a namespace) that is being changed by a separate CSV file.
 
 ```
-vocab_type = 2
+"namespaceUri": "http://rs.tdwg.org/dwc/doe/"
 ```
-This value is only relevant when new term lists or vocabularies are created and controls the template column mapping files copied into the current terms and versions directories. Those template mapping files have names ending in `-mappings` and are located [here for current terms](files_for_new/current_terms) and [here for versions](files_for_new/versions). The three categories:
-1 for simple vocabulary, 2 for simple controlled vocabulary, 3 for c.v. with broader hierarchy, correspond to the three template spreadsheet types [here](example_spreadsheets). If additional property columns are added beyond those already present in the template spreadsheets, select the most appropriate category, then edit the template mapping file as described in section 3 below.
+For existing TDWG term lists and borrowed terms, the namespace IRI MUST be the one assigned by the existing standard. For proposed new term lists minted by TDWG, the namespace MUST conform to the [conventional TDWG IRI patterns](https://github.com/tdwg/rs.tdwg.org#2-iri-patterns).
+
+```
+"database": "degreeOfEstablishment"
+```
+The database name is used to generate names for associated directories within the rs.tdwg.org repository and as the root for file names within those folders. The file name SHOULD be descriptive and lower camelCase is RECOMMENDED. It MUST NOT contain spaces. Terms that are borrowed SHOULD follow the naming convention established for Darwin and Audubon Cores, i.e. `descriptiveName-for-vocab`, where `vocab` is an abbreviation for the borrowing vocabulary. See examples [here](https://github.com/tdwg/rs.tdwg.org). Do not append `-versions` to this name -- the versions directory will be located or created automatically by the script.
+
+```
+"borrowed": true
+```
+MUST be set to `true` if the namespace is not issued by TDWG in the `http://rs.tdwg.org/` subdomain. MUST be set to `false` if the namespace is controlled by TDWG.
+
+```
+"new_term_list": false
+```
+MUST be set to `true` if it is a new term list that has never been processed before. Note that there are a number of files that must be set up for new term lists. See Section 2.1.2 for details. MUST be set to `false` if this is an existing term list that has been processed at some time in the past.
+
+```
+"utility_namespace": false
+```
+This is generally set to `false` except in the edge case of namespaces that do not have versions like the decisions namespace.
+
+
+```
+"modifications_file_path": "dwc-revisions/dwc-revisions-2021-07-15/dcterms_2021-07-15.csv"
+```
+This is the path to the CSV containing the hand-edited changes and additions. It is relative to the `process` directory in which the `process.py` script is running.
 
 ```
 termlist_uri = ''
 ```
-For TDWG-minted terms, this value MUST be left as the empty string and the termlist IRI will be the same as the namespace IRI. However, when terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv) for examples.
+For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv) for examples.
 
 ### 2.1.2 Editing the template files for new term lists, vocabularies, and standards
 
@@ -153,45 +176,27 @@ If a new vocabulary is being created and it contains multiple term lists, the `n
 
 ### 2.1.3 Running the processing script for setup
 
-"Step 1" of the processing script sets the configuration values and defines necessary functions. It MUST be run first.
+Run the `process.py` script, then check the diffs to make sure that the changes made make sense. 
 
-"Step 2" of the processing script MUST NOT be run when updating existing term lists. That cell creates blank files and will delete existing term metadata.
-
-"Step 3" MUST be run every time.
-
-## 2.2 Generating term versions
+## 2.2 Generating term versions (informational)
 
 Each current term is related to at least one term version.
 
 ![TDWG versions model](https://github.com/tdwg/vocab/raw/master/graphics/version-model.png)
 
-Each time a term's metadata is revised, a new version is created. The term version IRI is formed by appending the date of issue to the term local name. A `hasVersion` relationship is created between the term and its version, and the new version has a `replaces` relationship with the previous version. The metadata defining these relationships are generated by the processing script and the definition, usage, and notes are copied from the hand-generated CSV file.
+Each time a term's metadata is revised, a new version is created. The term version IRI is formed by appending the date of issue to the term local name. A `hasVersion` relationship is created between the term and its version, and the new version has a `replaces` relationship with the previous version. The metadata defining these relationships are generated by the processing script, and the definition, usage, and notes are copied from the hand-generated CSV file.
 
-### 2.2.1 Running the processing script to generate versions
-
-The "Step 4" cell generates term versions and tables that link those versions to other resources. Since many non-TDWG vocabularies do not have explicitly versioned terms, this cell SHOULD NOT be run for term lists of borrowed terms. There are some exceptions like Dublin Core terms - for such namespaces, this cell MAY be run if appropriate.
-
-## 2.3 Revising current term metadata
+## 2.3 Revising current term metadata (informational)
 
 If a term is being revised, its metadata are changed according to the information in the hand-generated CSV file and the last-modified date for that term is updated. If the term is new, its record is created and the last-modified date is set to be the same as the created date. 
 
-## 2.4 Assignment of term versions to a new term list version
+## 2.4 Assignment of term versions to a new term list version (informational)
 
 A term list is a group of related terms that share the same namespace part of their IRI. As with all TDWG resources, term lists also have versions. When a term is changed or added, the new term version is added to a new version of the term list (replacing any older version if necessary). If a term is new, it is also added to the existing term list. 
 
-## 2.4.1 Running the processing script to generate current terms and term list metadata
-
-The "Step 5" cell generates current terms and tables that link those versions to other resources (described in 2.3). It also generates metadata for the term list associated with the terms (section 2.4). Step 5 MUST be run for all term lists.
-
-The "Step 6" cell creates a record of the term versions associated with the term list. It SHOULD NOT be run for term lists containing borrowed terms unless those terms have versions. See the comments on this in section 2.2.1 .
-
-## 2.5 Proliferation of new versions up the hierarchy
+## 2.5 Proliferation of new versions up the hierarchy (informational)
 
 A new term list version is updated in its parent vocabulary version and a new vocabulary version is updated in its parent standard version. A term list is only added to its parent vocabulary if it represents terms in a namespace that is not already represented in the vocabulary. Similarly, vocabularies are only added to a standard if they are new, although new versions of both the vocabulary and standard are recorded.
-
-### 2.5.1 Running the processing script to generate high level metadata
-
-The metadata for levels of the hierarchy above the level of term lists is not used by the build scripts for human readable document listing terms (section 4 below). So for that purpose, running the "Step 7" cell is OPTIONAL. When putting ratified changes into production, running the "Step 7" cell is REQUIRED.
 
 # 3 Creating a column header mapping file
 
