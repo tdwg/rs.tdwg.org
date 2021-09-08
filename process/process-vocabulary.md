@@ -241,7 +241,7 @@ Currently (2020-10-19), there is no automated method for generating the metadata
 3. Update the metadata (or create new) of docs/docs.csv
 4. If 2nd or more version, add entry in docs-versions/docs-versions-replacements.csv
 5. Add entry in docs-versions/docs-versions-format.csv
-6. If necessary, create or updated docs/docs-format.csv
+6. If necessary, create or update docs/docs-format.csv
 7. Update (or create) author records in docs/docs-authors.csv Use ORCID if available, otherwise create Wikidata record and use its identifier.
 8. Copy and paste as necessary to create an entry for the new version in docs-versions/docs-versions-authors.csv
 9. Revise (or create new if necessary) entries in docs-roles/docs-roles.csv . Use info from docs-authors.csv
