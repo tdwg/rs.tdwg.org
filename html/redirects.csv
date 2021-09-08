@@ -26,9 +26,9 @@ establishmentMeans,yes,term,dwcem,https://dwc.tdwg.org/em/#,yes,_
 establishmentMeans-versions,no,termVersion,dwcem,,,
 degreeOfEstablishment,yes,term,dwcdoe,https://dwc.tdwg.org/doe/#,yes,_
 pathway,yes,term,dwcpw,https://dwc.tdwg.org/pw/#,yes,_
-acvariant,yes,term,acvariant,https://tdwg.github.io/ac/variant/#,yes,_
-format,yes,term,acformat,https://tdwg.github.io/ac/format/#,yes,_
-acsubtype,yes,term,acsubtype,https://tdwg.github.io/ac/subtype/#,yes,_
+acvariant,yes,term,acvariant,https://ac.tdwg.org/variant/#,yes,_
+format,yes,term,acformat,https://ac.tdwg.org/format/#,yes,_
+acsubtype,yes,term,acsubtype,https://ac.tdwg.org/subtype/#,yes,_
 degreeOfEstablishment-versions,no,termVersion,dwcdoe,,,
 pathway-versions,no,termVersion,dwcpw,,,
 acvariant-versions,no,termVersion,acvariant,,,
