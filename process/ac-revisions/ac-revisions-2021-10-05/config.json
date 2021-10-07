@@ -1,0 +1,25 @@
+{
+    "date_issued": "2021-10-05",
+    "local_offset_from_utc": "-05:00",
+    "vocab_type": 1,
+    "namespaces": [
+        {
+            "namespace_uri": "http://rs.tdwg.org/ac/terms/",
+            "database": "audubon",
+            "borrowed": false,
+            "new_term_list": false,
+            "utility_namespace": false,
+            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/audubon.csv",
+            "termlist_uri": ""
+        },
+        {
+            "namespace_uri": "http://ns.adobe.com/xap/1.0/",
+            "database": "xmp-for-ac",
+            "borrowed": true,
+            "new_term_list": false,
+            "utility_namespace": false,
+            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/xmp-for-ac.csv",
+            "termlist_uri": "http://rs.tdwg.org/ac/xmp/"
+        }
+    ]
+}
