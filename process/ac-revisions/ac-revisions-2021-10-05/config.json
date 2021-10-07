@@ -32,11 +32,11 @@
         },
         {
             "namespace_uri": "http://purl.org/dc/terms/",
-            "database": "dcterms-for-dwc",
+            "database": "dcterms-for-ac",
             "borrowed": true,
             "new_term_list": false,
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/dcterms-for-dwc.csv",
+            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/dcterms-for-ac.csv",
             "termlist_uri": "http://rs.tdwg.org/ac/dcterms/"
         }
     ]
