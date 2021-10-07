@@ -102,3 +102,7 @@ http://rs.tdwg.org/dwc/version/terms/2021-07-15,http://rs.tdwg.org/dwc/terms/
 http://rs.tdwg.org/dwcdoe/version/values/2021-09-01,http://rs.tdwg.org/dwcdoe/values/
 http://rs.tdwg.org/dwcem/version/values/2021-09-01,http://rs.tdwg.org/dwcem/values/
 http://rs.tdwg.org/dwcpw/version/values/2021-09-01,http://rs.tdwg.org/dwcpw/values/
+http://rs.tdwg.org/ac/version/terms/2021-10-05,http://rs.tdwg.org/ac/terms/
+http://rs.tdwg.org/ac/version/xmp/2021-10-05,http://rs.tdwg.org/ac/xmp/
+http://rs.tdwg.org/ac/version/xmpRights/2021-10-05,http://rs.tdwg.org/ac/xmpRights/
+http://rs.tdwg.org/ac/version/dcterms/2021-10-05,http://rs.tdwg.org/ac/dcterms/
