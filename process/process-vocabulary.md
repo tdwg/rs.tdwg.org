@@ -18,7 +18,7 @@
 
 [3 Creating a column header mapping file](#user-content-3-creating-a-column-header-mapping-file)
 
-[4 Term list build script](user-content-4-build-script-for-human-readable-document-listing-terms-and-their-metadata)
+[4 Term list build script](#user-content-4-build-script-for-human-readable-document-listing-terms-and-their-metadata)
 
 [5 Managing documents metadata](#user-content-5-managing-documents-metadata)
 
