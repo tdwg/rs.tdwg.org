@@ -20,6 +20,15 @@
             "utility_namespace": false,
             "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/xmp-for-ac.csv",
             "termlist_uri": "http://rs.tdwg.org/ac/xmp/"
+        },
+        {
+            "namespace_uri": "http://ns.adobe.com/xap/1.0/rights/",
+            "database": "xmpRights-for-ac",
+            "borrowed": true,
+            "new_term_list": false,
+            "utility_namespace": false,
+            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/xmpRights-for-ac.csv",
+            "termlist_uri": "http://rs.tdwg.org/ac/xmpRights/"
         }
     ]
 }
