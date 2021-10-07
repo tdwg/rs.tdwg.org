@@ -12,11 +12,11 @@
 
 # Table of Contents
 
-[1 Introduction](#introduction)
+[1 Introduction](#user-content-1-introduction)
 
-[2 Terminology](#terminology)
+[2 Terminology](#user-content-2-terminology)
 
-[3 Examples and details](#examples-and-details)
+[3 Examples and details](#user-content-3-details-and-examples)
 
 # 1 Introduction
 

@@ -12,17 +12,17 @@
 
 # Table of Contents
 
-[1 Introduction](#introduction)
+[1 Introduction](#user-content-1-introduction)
 
-[2 Generating necessary CSV files from the hand-generated CSV file](#2-generating-necessary-csv-files-from-the-hand-generated-csv-file)
+[2 Generating necessary CSV files from the hand-generated CSV file](#user-content-2-generating-necessary-csv-files-from-the-hand-generated-csv-file)
 
-[3 Creating a column header mapping file](#3-creating-a-column-header-mapping-file)
+[3 Creating a column header mapping file](#user-content-3-creating-a-column-header-mapping-file)
 
-[4 Term list build script](#4-term-list-build-script)
+[4 Term list build script](user-content-4-build-script-for-human-readable-document-listing-terms-and-their-metadata)
 
-[5 Managing documents metadata](#5-managing-documents-metadata)
+[5 Managing documents metadata](#user-content-5-managing-documents-metadata)
 
-[6 Generating JSON-LD for controlled vocabularies](#6-generating-json-ld-for-controlled-vocabularies)
+[6 Generating JSON-LD for controlled vocabularies](#user-content-6-generating-json-ld-for-controlled-vocabularies)
 
 # 1 Introduction
 
@@ -82,7 +82,7 @@ There are also two Python scripts in Jupyter notebooks that were used to develop
 
 1. Clone (or add) the [rs.tdwg.org](https://github.com/tdwg/rs.tdwg.org) repository to your local drive.
 2. Create a new branch of the repository.
-3. Place the hand-generated CSV files in some subdirectory of the `process` directory of the repository.
+3. Place the hand-generated CSV files in some subdirectory of the `process` directory of the repository. NOTE: when updating an existing vocabulary, it may be convenient to start with a file that's already in the rs.tdwg.org repository. Otherwise, use one of the [example spreadsheets](https://github.com/tdwg/rs.tdwg.org/tree/master/process/example-spreadsheets) as an example. For more information, see the [instructions for creating a vocabulary](https://github.com/tdwg/rs.tdwg.org/blob/master/process/create-vocabulary.md#user-content-3-details-and-examples).
 4. Open the `config.json` file in a text editor.
 5. Enter the configuration settings for each of the namespaces to be updated. See the details below.
 6. If this is a new vocabulary or term list, edit the appropriate files in the `process/files_for_new` directory of the repository. See the details below.
