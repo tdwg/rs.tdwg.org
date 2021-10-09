@@ -33,4 +33,4 @@ document_modified,term_localName,term_isDefinedBy,term_modified,label,rdfs_comme
 2020-10-18T19:34:24-04:00,decision-2020-10-13_32,http://rs.tdwg.org/decisions/,2020-10-13,TDWG Executive Committee decision 32,Added new Audubon Core terms ac:freqLow and ac:freqHigh. See https://github.com/tdwg/ac/issues/178
 2021-07-29T10:40:00-04:00,decision-2021-04-27_33,http://rs.tdwg.org/decisions/,2021-04-27,TDWG Executive Committee decision 33,Created the Chronometric Age extension for Darwin Core. See http://rs.tdwg.org/dwc/doc/chrono/
 2021-07-29T10:40:00-04:00,decision-2021-07-15_34,http://rs.tdwg.org/decisions/,2021-07-15,TDWG Executive Committee decision 34,Darwin Core additions and changes. See https://github.com/tdwg/dwc/milestone/14
-,,,,,\
+2021-10-09T12:48:00-05:00,decision-2021-10-05_35,http://rs.tdwg.org/decisions/,2021-10-05,TDWG Executive Committee decision 35,Additions and changes to Audubon Core associated with Regions of Interest (ROI). See https://github.com/tdwg/ac/milestone/4
