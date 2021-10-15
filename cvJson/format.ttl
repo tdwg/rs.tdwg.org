@@ -1,0 +1,719 @@
+<http://rs.tdwg.org/format/values/e001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "txt" .
+<http://rs.tdwg.org/format/values/e001> <http://www.w3.org/2004/02/skos/core#definition> "file extension for palin text"@en .
+<http://rs.tdwg.org/format/values/e001> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m019> .
+<http://rs.tdwg.org/format/values/e001> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e001> <http://www.w3.org/2004/02/skos/core#prefLabel> "plain text"@en .
+<http://rs.tdwg.org/format/values/e002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "doc" .
+<http://rs.tdwg.org/format/values/e002> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Microsoft Word (2003 and before) documents"@en .
+<http://rs.tdwg.org/format/values/e002> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m020> .
+<http://rs.tdwg.org/format/values/e002> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e002> <http://www.w3.org/2004/02/skos/core#prefLabel> "Word (pre-2003) document"@en .
+<http://rs.tdwg.org/format/values/e003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "docx" .
+<http://rs.tdwg.org/format/values/e003> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Microsoft Word (2007 and after) documents"@en .
+<http://rs.tdwg.org/format/values/e003> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m021> .
+<http://rs.tdwg.org/format/values/e003> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e003> <http://www.w3.org/2004/02/skos/core#prefLabel> "Word (post-2007) document"@en .
+<http://rs.tdwg.org/format/values/e004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "png" .
+<http://rs.tdwg.org/format/values/e004> <http://www.w3.org/2004/02/skos/core#definition> "file extension for portable network graphics images"@en .
+<http://rs.tdwg.org/format/values/e004> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m007> .
+<http://rs.tdwg.org/format/values/e004> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e004> <http://www.w3.org/2004/02/skos/core#prefLabel> "PNG"@en .
+<http://rs.tdwg.org/format/values/e005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "jpg" .
+<http://rs.tdwg.org/format/values/e005> <http://www.w3.org/2004/02/skos/core#definition> "file extension for JPEG images"@en .
+<http://rs.tdwg.org/format/values/e005> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m008> .
+<http://rs.tdwg.org/format/values/e005> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e005> <http://www.w3.org/2004/02/skos/core#prefLabel> "JPEG"@en .
+<http://rs.tdwg.org/format/values/e006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "pdf" .
+<http://rs.tdwg.org/format/values/e006> <http://www.w3.org/2004/02/skos/core#definition> "file extension for PDF documents"@en .
+<http://rs.tdwg.org/format/values/e006> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m018> .
+<http://rs.tdwg.org/format/values/e006> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e006> <http://www.w3.org/2004/02/skos/core#prefLabel> "PDF"@en .
+<http://rs.tdwg.org/format/values/e007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "tif" .
+<http://rs.tdwg.org/format/values/e007> <http://www.w3.org/2004/02/skos/core#definition> "file extension for TIFF images"@en .
+<http://rs.tdwg.org/format/values/e007> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m011> .
+<http://rs.tdwg.org/format/values/e007> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e007> <http://www.w3.org/2004/02/skos/core#prefLabel> "TIFF"@en .
+<http://rs.tdwg.org/format/values/e008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "dng" .
+<http://rs.tdwg.org/format/values/e008> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Digital Negative images"@en .
+<http://rs.tdwg.org/format/values/e008> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m022> .
+<http://rs.tdwg.org/format/values/e008> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e008> <http://www.w3.org/2004/02/skos/core#prefLabel> "Digital Negative"@en .
+<http://rs.tdwg.org/format/values/e009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "cr2" .
+<http://rs.tdwg.org/format/values/e009> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Canon Raw images"@en .
+<http://rs.tdwg.org/format/values/e009> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m023> .
+<http://rs.tdwg.org/format/values/e009> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e009> <http://www.w3.org/2004/02/skos/core#prefLabel> "Canon Raw"@en .
+<http://rs.tdwg.org/format/values/e010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "jp2" .
+<http://rs.tdwg.org/format/values/e010> <http://www.w3.org/2004/02/skos/core#definition> "file extension for JPEG 2000 images"@en .
+<http://rs.tdwg.org/format/values/e010> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m024> .
+<http://rs.tdwg.org/format/values/e010> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e010> <http://www.w3.org/2004/02/skos/core#prefLabel> "JPEG 2000"@en .
+<http://rs.tdwg.org/format/values/e011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "wav" .
+<http://rs.tdwg.org/format/values/e011> <http://www.w3.org/2004/02/skos/core#definition> "file extension for WAVE audio"@en .
+<http://rs.tdwg.org/format/values/e011> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m025> .
+<http://rs.tdwg.org/format/values/e011> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e011> <http://www.w3.org/2004/02/skos/core#prefLabel> "WAVE"@en .
+<http://rs.tdwg.org/format/values/e012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "mp3" .
+<http://rs.tdwg.org/format/values/e012> <http://www.w3.org/2004/02/skos/core#definition> "ffle extension for MP3 audio"@en .
+<http://rs.tdwg.org/format/values/e012> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m016> .
+<http://rs.tdwg.org/format/values/e012> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e012> <http://www.w3.org/2004/02/skos/core#prefLabel> "MP3"@en .
+<http://rs.tdwg.org/format/values/e013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "nef" .
+<http://rs.tdwg.org/format/values/e013> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Nikon NEF Raw images"@en .
+<http://rs.tdwg.org/format/values/e013> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m026> .
+<http://rs.tdwg.org/format/values/e013> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e013> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nikon NEF Raw"@en .
+<http://rs.tdwg.org/format/values/e014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "m4a" .
+<http://rs.tdwg.org/format/values/e014> <http://www.w3.org/2004/02/skos/core#definition> "file extension for MP4 audio"@en .
+<http://rs.tdwg.org/format/values/e014> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m015> .
+<http://rs.tdwg.org/format/values/e014> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e014> <http://www.w3.org/2004/02/skos/core#prefLabel> "MP4 audio"@en .
+<http://rs.tdwg.org/format/values/e015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "mp4" .
+<http://rs.tdwg.org/format/values/e015> <http://www.w3.org/2004/02/skos/core#definition> "file extension for MP4 video"@en .
+<http://rs.tdwg.org/format/values/e015> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m012> .
+<http://rs.tdwg.org/format/values/e015> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e015> <http://www.w3.org/2004/02/skos/core#prefLabel> "MP4 video"@en .
+<http://rs.tdwg.org/format/values/e016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "gif" .
+<http://rs.tdwg.org/format/values/e016> <http://www.w3.org/2004/02/skos/core#definition> "file extension for GIF images"@en .
+<http://rs.tdwg.org/format/values/e016> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m010> .
+<http://rs.tdwg.org/format/values/e016> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e016> <http://www.w3.org/2004/02/skos/core#prefLabel> "GIF"@en .
+<http://rs.tdwg.org/format/values/e017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "bmp" .
+<http://rs.tdwg.org/format/values/e017> <http://www.w3.org/2004/02/skos/core#definition> "file extension for bitmap images"@en .
+<http://rs.tdwg.org/format/values/e017> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m009> .
+<http://rs.tdwg.org/format/values/e017> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e017> <http://www.w3.org/2004/02/skos/core#prefLabel> "BMP"@en .
+<http://rs.tdwg.org/format/values/e018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "m4v" .
+<http://rs.tdwg.org/format/values/e018> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Apple M4V videos"@en .
+<http://rs.tdwg.org/format/values/e018> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m027> .
+<http://rs.tdwg.org/format/values/e018> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e018> <http://www.w3.org/2004/02/skos/core#prefLabel> "M4V"@en .
+<http://rs.tdwg.org/format/values/e019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "ply" .
+<http://rs.tdwg.org/format/values/e019> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Polygon File Format"@en .
+<http://rs.tdwg.org/format/values/e019> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e019> <http://www.w3.org/2004/02/skos/core#prefLabel> "PLY"@en .
+<http://rs.tdwg.org/format/values/e020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "stl" .
+<http://rs.tdwg.org/format/values/e020> <http://www.w3.org/2004/02/skos/core#definition> "file extension for steriolithography files"@en .
+<http://rs.tdwg.org/format/values/e020> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m055> .
+<http://rs.tdwg.org/format/values/e020> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e020> <http://www.w3.org/2004/02/skos/core#prefLabel> "STL"@en .
+<http://rs.tdwg.org/format/values/e021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "3gp" .
+<http://rs.tdwg.org/format/values/e021> <http://www.w3.org/2004/02/skos/core#definition> "file extension for 3GPP video"@en .
+<http://rs.tdwg.org/format/values/e021> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m028> .
+<http://rs.tdwg.org/format/values/e021> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e021> <http://www.w3.org/2004/02/skos/core#prefLabel> "3GPP"@en .
+<http://rs.tdwg.org/format/values/e022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "zvi" .
+<http://rs.tdwg.org/format/values/e022> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Zeiss Vision Image images"@en .
+<http://rs.tdwg.org/format/values/e022> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m054> .
+<http://rs.tdwg.org/format/values/e022> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e022> <http://www.w3.org/2004/02/skos/core#prefLabel> "ZVI"@en .
+<http://rs.tdwg.org/format/values/e023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "avi" .
+<http://rs.tdwg.org/format/values/e023> <http://www.w3.org/2004/02/skos/core#definition> "file extension for AVI video"@en .
+<http://rs.tdwg.org/format/values/e023> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m029> .
+<http://rs.tdwg.org/format/values/e023> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e023> <http://www.w3.org/2004/02/skos/core#prefLabel> "AVI"@en .
+<http://rs.tdwg.org/format/values/e024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "amr" .
+<http://rs.tdwg.org/format/values/e024> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Adaptive Multi-Rate audio"@en .
+<http://rs.tdwg.org/format/values/e024> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m030> .
+<http://rs.tdwg.org/format/values/e024> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e024> <http://www.w3.org/2004/02/skos/core#prefLabel> "AMR"@en .
+<http://rs.tdwg.org/format/values/e025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "aiff" .
+<http://rs.tdwg.org/format/values/e025> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Audio Interchange File Format audio"@en .
+<http://rs.tdwg.org/format/values/e025> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m031> .
+<http://rs.tdwg.org/format/values/e025> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e025> <http://www.w3.org/2004/02/skos/core#prefLabel> "AIFF"@en .
+<http://rs.tdwg.org/format/values/e026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "ogg" .
+<http://rs.tdwg.org/format/values/e026> <http://www.w3.org/2004/02/skos/core#definition> "file extension for OGG audio"@en .
+<http://rs.tdwg.org/format/values/e026> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m032> .
+<http://rs.tdwg.org/format/values/e026> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e026> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGG audio"@en .
+<http://rs.tdwg.org/format/values/e027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "ogv" .
+<http://rs.tdwg.org/format/values/e027> <http://www.w3.org/2004/02/skos/core#definition> "file extension for OGG video"@en .
+<http://rs.tdwg.org/format/values/e027> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m033> .
+<http://rs.tdwg.org/format/values/e027> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e027> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGG video"@en .
+<http://rs.tdwg.org/format/values/e028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "ogx" .
+<http://rs.tdwg.org/format/values/e028> <http://www.w3.org/2004/02/skos/core#definition> "file extension for OGG multiplex"@en .
+<http://rs.tdwg.org/format/values/e028> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m034> .
+<http://rs.tdwg.org/format/values/e028> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e028> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGG multiplex"@en .
+<http://rs.tdwg.org/format/values/e029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "pcd" .
+<http://rs.tdwg.org/format/values/e029> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Kodak Photo CD image"@en .
+<http://rs.tdwg.org/format/values/e029> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m035> .
+<http://rs.tdwg.org/format/values/e029> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e029> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kodak Photo CD image"@en .
+<http://rs.tdwg.org/format/values/e030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "mov" .
+<http://rs.tdwg.org/format/values/e030> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Apple QuickTime video"@en .
+<http://rs.tdwg.org/format/values/e030> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m014> .
+<http://rs.tdwg.org/format/values/e030> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e030> <http://www.w3.org/2004/02/skos/core#prefLabel> "QuickTime"@en .
+<http://rs.tdwg.org/format/values/e031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "psd" .
+<http://rs.tdwg.org/format/values/e031> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Photoshop images"@en .
+<http://rs.tdwg.org/format/values/e031> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m036> .
+<http://rs.tdwg.org/format/values/e031> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e031> <http://www.w3.org/2004/02/skos/core#prefLabel> "Photoshop"@en .
+<http://rs.tdwg.org/format/values/e032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "flac" .
+<http://rs.tdwg.org/format/values/e032> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Free Lossless Audio Codec audio"@en .
+<http://rs.tdwg.org/format/values/e032> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m038> .
+<http://rs.tdwg.org/format/values/e032> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e032> <http://www.w3.org/2004/02/skos/core#prefLabel> "FLAC"@en .
+<http://rs.tdwg.org/format/values/e033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "wma" .
+<http://rs.tdwg.org/format/values/e033> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Windows Media Audio"@en .
+<http://rs.tdwg.org/format/values/e033> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m039> .
+<http://rs.tdwg.org/format/values/e033> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e033> <http://www.w3.org/2004/02/skos/core#prefLabel> "MWA"@en .
+<http://rs.tdwg.org/format/values/e034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "wmv" .
+<http://rs.tdwg.org/format/values/e034> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Windows Media Video"@en .
+<http://rs.tdwg.org/format/values/e034> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m040> .
+<http://rs.tdwg.org/format/values/e034> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e034> <http://www.w3.org/2004/02/skos/core#prefLabel> "WMV"@en .
+<http://rs.tdwg.org/format/values/e035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "asf" .
+<http://rs.tdwg.org/format/values/e035> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Advanced Systems Format"@en .
+<http://rs.tdwg.org/format/values/e035> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m041> .
+<http://rs.tdwg.org/format/values/e035> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e035> <http://www.w3.org/2004/02/skos/core#prefLabel> "ASF"@en .
+<http://rs.tdwg.org/format/values/e036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "svg" .
+<http://rs.tdwg.org/format/values/e036> <http://www.w3.org/2004/02/skos/core#definition> "file extension for SVG images"@en .
+<http://rs.tdwg.org/format/values/e036> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m042> .
+<http://rs.tdwg.org/format/values/e036> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e036> <http://www.w3.org/2004/02/skos/core#prefLabel> "SVG"@en .
+<http://rs.tdwg.org/format/values/e037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "obj" .
+<http://rs.tdwg.org/format/values/e037> <http://www.w3.org/2004/02/skos/core#definition> "file extension for OBJ"@en .
+<http://rs.tdwg.org/format/values/e037> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m062> .
+<http://rs.tdwg.org/format/values/e037> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e037> <http://www.w3.org/2004/02/skos/core#prefLabel> "OBJ"@en .
+<http://rs.tdwg.org/format/values/e038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "glb" .
+<http://rs.tdwg.org/format/values/e038> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Binary GL Transmission Format"@en .
+<http://rs.tdwg.org/format/values/e038> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m063> .
+<http://rs.tdwg.org/format/values/e038> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e038> <http://www.w3.org/2004/02/skos/core#prefLabel> "gLTF binary"@en .
+<http://rs.tdwg.org/format/values/e039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "gltf" .
+<http://rs.tdwg.org/format/values/e039> <http://www.w3.org/2004/02/skos/core#definition> "file extension for GL Transmission Format"@en .
+<http://rs.tdwg.org/format/values/e039> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m064> .
+<http://rs.tdwg.org/format/values/e039> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e039> <http://www.w3.org/2004/02/skos/core#prefLabel> "gLTF"@en .
+<http://rs.tdwg.org/format/values/e040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "wrl" .
+<http://rs.tdwg.org/format/values/e040> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Virtual Reality Modeling Language"@en .
+<http://rs.tdwg.org/format/values/e040> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m065> .
+<http://rs.tdwg.org/format/values/e040> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e040> <http://www.w3.org/2004/02/skos/core#prefLabel> "VRML"@en .
+<http://rs.tdwg.org/format/values/e041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "dcm" .
+<http://rs.tdwg.org/format/values/e041> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Digital Imaging and Communications in Medicine"@en .
+<http://rs.tdwg.org/format/values/e041> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m066> .
+<http://rs.tdwg.org/format/values/e041> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e041> <http://www.w3.org/2004/02/skos/core#prefLabel> "DICOM"@en .
+<http://rs.tdwg.org/format/values/e042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "mtl" .
+<http://rs.tdwg.org/format/values/e042> <http://www.w3.org/2004/02/skos/core#definition> "file extension for OBJ Material Template Library"@en .
+<http://rs.tdwg.org/format/values/e042> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m067> .
+<http://rs.tdwg.org/format/values/e042> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e042> <http://www.w3.org/2004/02/skos/core#prefLabel> "MTL"@en .
+<http://rs.tdwg.org/format/values/e043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "x3dv" .
+<http://rs.tdwg.org/format/values/e043> <http://www.w3.org/2004/02/skos/core#definition> "file extension for X3D VRML models"@en .
+<http://rs.tdwg.org/format/values/e043> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m017> .
+<http://rs.tdwg.org/format/values/e043> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e043> <http://www.w3.org/2004/02/skos/core#prefLabel> "X3D VRML"@en .
+<http://rs.tdwg.org/format/values/e044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "x3d" .
+<http://rs.tdwg.org/format/values/e044> <http://www.w3.org/2004/02/skos/core#definition> "file extension for X3D XML models"@en .
+<http://rs.tdwg.org/format/values/e044> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m068> .
+<http://rs.tdwg.org/format/values/e044> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e044> <http://www.w3.org/2004/02/skos/core#prefLabel> "X3D XML"@en .
+<http://rs.tdwg.org/format/values/e045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "crw" .
+<http://rs.tdwg.org/format/values/e045> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Camera Image File Format raw image"@en .
+<http://rs.tdwg.org/format/values/e045> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m069> .
+<http://rs.tdwg.org/format/values/e045> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e045> <http://www.w3.org/2004/02/skos/core#prefLabel> "CIFF raw image"@en .
+<http://rs.tdwg.org/format/values/e046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "cr3" .
+<http://rs.tdwg.org/format/values/e046> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Canon Raw 3 image"@en .
+<http://rs.tdwg.org/format/values/e046> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m070> .
+<http://rs.tdwg.org/format/values/e046> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e046> <http://www.w3.org/2004/02/skos/core#prefLabel> "CR3 raw image"@en .
+<http://rs.tdwg.org/format/values/e047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "arw" .
+<http://rs.tdwg.org/format/values/e047> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Sony raw image"@en .
+<http://rs.tdwg.org/format/values/e047> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m071> .
+<http://rs.tdwg.org/format/values/e047> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e047> <http://www.w3.org/2004/02/skos/core#prefLabel> "ARW raw image"@en .
+<http://rs.tdwg.org/format/values/e048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/e048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "rw2" .
+<http://rs.tdwg.org/format/values/e048> <http://www.w3.org/2004/02/skos/core#definition> "file extension for Panasonic raw image"@en .
+<http://rs.tdwg.org/format/values/e048> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://rs.tdwg.org/format/values/m072> .
+<http://rs.tdwg.org/format/values/e048> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/e> .
+<http://rs.tdwg.org/format/values/e048> <http://www.w3.org/2004/02/skos/core#prefLabel> "RW2 raw image"@en .
+<http://rs.tdwg.org/format/values/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://rs.tdwg.org/format/values/e> <http://www.w3.org/2004/02/skos/core#definition> "concept scheme based on conventional file extensions for media types"@en .
+<http://rs.tdwg.org/format/values/e> <http://www.w3.org/2004/02/skos/core#prefLabel> "file extensions concept scheme"@en .
+<http://rs.tdwg.org/format/values/m001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application" .
+<http://rs.tdwg.org/format/values/m001> <http://www.w3.org/2004/02/skos/core#definition> "media type for application"@en .
+<http://rs.tdwg.org/format/values/m001> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m001> <http://www.w3.org/2004/02/skos/core#prefLabel> "application"@en .
+<http://rs.tdwg.org/format/values/m002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio" .
+<http://rs.tdwg.org/format/values/m002> <http://www.w3.org/2004/02/skos/core#definition> "media type for audio"@en .
+<http://rs.tdwg.org/format/values/m002> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m002> <http://www.w3.org/2004/02/skos/core#prefLabel> "audio"@en .
+<http://rs.tdwg.org/format/values/m003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image" .
+<http://rs.tdwg.org/format/values/m003> <http://www.w3.org/2004/02/skos/core#definition> "media type for image"@en .
+<http://rs.tdwg.org/format/values/m003> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m003> <http://www.w3.org/2004/02/skos/core#prefLabel> "image"@en .
+<http://rs.tdwg.org/format/values/m004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model" .
+<http://rs.tdwg.org/format/values/m004> <http://www.w3.org/2004/02/skos/core#definition> "media type for model"@en .
+<http://rs.tdwg.org/format/values/m004> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m004> <http://www.w3.org/2004/02/skos/core#prefLabel> "model"@en .
+<http://rs.tdwg.org/format/values/m005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "text" .
+<http://rs.tdwg.org/format/values/m005> <http://www.w3.org/2004/02/skos/core#definition> "media type for text"@en .
+<http://rs.tdwg.org/format/values/m005> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m005> <http://www.w3.org/2004/02/skos/core#prefLabel> "text"@en .
+<http://rs.tdwg.org/format/values/m006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video" .
+<http://rs.tdwg.org/format/values/m006> <http://www.w3.org/2004/02/skos/core#definition> "media type for video"@en .
+<http://rs.tdwg.org/format/values/m006> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m006> <http://www.w3.org/2004/02/skos/core#prefLabel> "video"@en .
+<http://rs.tdwg.org/format/values/m007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/png" .
+<http://rs.tdwg.org/format/values/m007> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m007> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for portable network graphics images"@en .
+<http://rs.tdwg.org/format/values/m007> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m007> <http://www.w3.org/2004/02/skos/core#prefLabel> "PNG"@en .
+<http://rs.tdwg.org/format/values/m008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/jpeg" .
+<http://rs.tdwg.org/format/values/m008> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m008> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for JPEG images"@en .
+<http://rs.tdwg.org/format/values/m008> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m008> <http://www.w3.org/2004/02/skos/core#prefLabel> "JPEG"@en .
+<http://rs.tdwg.org/format/values/m009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/bmp" .
+<http://rs.tdwg.org/format/values/m009> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m009> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for bitmap images"@en .
+<http://rs.tdwg.org/format/values/m009> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m009> <http://www.w3.org/2004/02/skos/core#prefLabel> "BMP"@en .
+<http://rs.tdwg.org/format/values/m010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/gif" .
+<http://rs.tdwg.org/format/values/m010> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m010> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for GIF images"@en .
+<http://rs.tdwg.org/format/values/m010> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m010> <http://www.w3.org/2004/02/skos/core#prefLabel> "GIF"@en .
+<http://rs.tdwg.org/format/values/m011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/tiff" .
+<http://rs.tdwg.org/format/values/m011> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m011> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for TIFF images"@en .
+<http://rs.tdwg.org/format/values/m011> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m011> <http://www.w3.org/2004/02/skos/core#prefLabel> "TIFF"@en .
+<http://rs.tdwg.org/format/values/m012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/mp4" .
+<http://rs.tdwg.org/format/values/m012> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m012> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for MP4 videos"@en .
+<http://rs.tdwg.org/format/values/m012> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m012> <http://www.w3.org/2004/02/skos/core#prefLabel> "MP4 video"@en .
+<http://rs.tdwg.org/format/values/m013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/mpeg" .
+<http://rs.tdwg.org/format/values/m013> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m013> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for MPEG videos"@en .
+<http://rs.tdwg.org/format/values/m013> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m013> <http://www.w3.org/2004/02/skos/core#prefLabel> "MPEG"@en .
+<http://rs.tdwg.org/format/values/m014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/quicktime" .
+<http://rs.tdwg.org/format/values/m014> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m014> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for QuickTime videos"@en .
+<http://rs.tdwg.org/format/values/m014> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m014> <http://www.w3.org/2004/02/skos/core#prefLabel> "QuickTime"@en .
+<http://rs.tdwg.org/format/values/m015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/mp4" .
+<http://rs.tdwg.org/format/values/m015> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m015> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for MP4 audio"@en .
+<http://rs.tdwg.org/format/values/m015> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m015> <http://www.w3.org/2004/02/skos/core#prefLabel> "MP4 audio"@en .
+<http://rs.tdwg.org/format/values/m016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/mpeg" .
+<http://rs.tdwg.org/format/values/m016> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m016> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for MP3 audio"@en .
+<http://rs.tdwg.org/format/values/m016> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m016> <http://www.w3.org/2004/02/skos/core#prefLabel> "MP3"@en .
+<http://rs.tdwg.org/format/values/m017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/x3d-vrml" .
+<http://rs.tdwg.org/format/values/m017> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m017> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for X3D VRML models"@en .
+<http://rs.tdwg.org/format/values/m017> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m017> <http://www.w3.org/2004/02/skos/core#prefLabel> "X3D VRML"@en .
+<http://rs.tdwg.org/format/values/m018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/pdf" .
+<http://rs.tdwg.org/format/values/m018> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m018> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for PDF documents"@en .
+<http://rs.tdwg.org/format/values/m018> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m018> <http://www.w3.org/2004/02/skos/core#prefLabel> "PDF"@en .
+<http://rs.tdwg.org/format/values/m019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "text/plain" .
+<http://rs.tdwg.org/format/values/m019> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m005> .
+<http://rs.tdwg.org/format/values/m019> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for plain text"@en .
+<http://rs.tdwg.org/format/values/m019> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m019> <http://www.w3.org/2004/02/skos/core#prefLabel> "plain text"@en .
+<http://rs.tdwg.org/format/values/m020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/msword" .
+<http://rs.tdwg.org/format/values/m020> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m020> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Microsoft Word (2003 and before) documents"@en .
+<http://rs.tdwg.org/format/values/m020> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Word (pre-2003) document"@en .
+<http://rs.tdwg.org/format/values/m021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/vnd.openxmlformats-officedocument.wordprocessingml.document" .
+<http://rs.tdwg.org/format/values/m021> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m021> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Microsoft Word (2007 and after) documents"@en .
+<http://rs.tdwg.org/format/values/m021> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m021> <http://www.w3.org/2004/02/skos/core#prefLabel> "Word (post-2007) document"@en .
+<http://rs.tdwg.org/format/values/m022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-adobe-dng" .
+<http://rs.tdwg.org/format/values/m022> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m022> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Digital Negative images"@en .
+<http://rs.tdwg.org/format/values/m022> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m022> <http://www.w3.org/2004/02/skos/core#prefLabel> "Digital Negative"@en .
+<http://rs.tdwg.org/format/values/m023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-canon-cr2" .
+<http://rs.tdwg.org/format/values/m023> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m023> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Canon Raw images"@en .
+<http://rs.tdwg.org/format/values/m023> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m023> <http://www.w3.org/2004/02/skos/core#prefLabel> "CR2"@en .
+<http://rs.tdwg.org/format/values/m024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/jp2" .
+<http://rs.tdwg.org/format/values/m024> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m024> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for JPEG 2000 images"@en .
+<http://rs.tdwg.org/format/values/m024> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m024> <http://www.w3.org/2004/02/skos/core#prefLabel> "JPEG 2000"@en .
+<http://rs.tdwg.org/format/values/m025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/vnd.wave" .
+<http://rs.tdwg.org/format/values/m025> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m025> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for WAVE audio"@en .
+<http://rs.tdwg.org/format/values/m025> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m025> <http://www.w3.org/2004/02/skos/core#prefLabel> "WAVE"@en .
+<http://rs.tdwg.org/format/values/m026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-nikon-nef" .
+<http://rs.tdwg.org/format/values/m026> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m026> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Nikon NEF Raw images"@en .
+<http://rs.tdwg.org/format/values/m026> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m026> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nikon NEF Raw"@en .
+<http://rs.tdwg.org/format/values/m027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/x-m4v" .
+<http://rs.tdwg.org/format/values/m027> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m027> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Apple M4V videos"@en .
+<http://rs.tdwg.org/format/values/m027> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m027> <http://www.w3.org/2004/02/skos/core#prefLabel> "M4V"@en .
+<http://rs.tdwg.org/format/values/m028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "‎video/3gpp" .
+<http://rs.tdwg.org/format/values/m028> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m028> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for 3GPP video"@en .
+<http://rs.tdwg.org/format/values/m028> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m028> <http://www.w3.org/2004/02/skos/core#prefLabel> "3GPP"@en .
+<http://rs.tdwg.org/format/values/m029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/vnd.avi" .
+<http://rs.tdwg.org/format/values/m029> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m029> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for AVI video"@en .
+<http://rs.tdwg.org/format/values/m029> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m029> <http://www.w3.org/2004/02/skos/core#prefLabel> "AVI"@en .
+<http://rs.tdwg.org/format/values/m030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/AMR" .
+<http://rs.tdwg.org/format/values/m030> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m030> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Adaptive Multi-Rate audio"@en .
+<http://rs.tdwg.org/format/values/m030> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m030> <http://www.w3.org/2004/02/skos/core#prefLabel> "AMR"@en .
+<http://rs.tdwg.org/format/values/m031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/x-aiff" .
+<http://rs.tdwg.org/format/values/m031> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m031> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Audio Interchange File Format audio"@en .
+<http://rs.tdwg.org/format/values/m031> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m031> <http://www.w3.org/2004/02/skos/core#prefLabel> "AIFF"@en .
+<http://rs.tdwg.org/format/values/m032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/ogg" .
+<http://rs.tdwg.org/format/values/m032> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m032> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for OGG audio"@en .
+<http://rs.tdwg.org/format/values/m032> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m032> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGG audio"@en .
+<http://rs.tdwg.org/format/values/m033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/ogg" .
+<http://rs.tdwg.org/format/values/m033> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m033> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for OGG video"@en .
+<http://rs.tdwg.org/format/values/m033> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m033> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGG video"@en .
+<http://rs.tdwg.org/format/values/m034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/ogg" .
+<http://rs.tdwg.org/format/values/m034> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m034> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for OGG multiplex"@en .
+<http://rs.tdwg.org/format/values/m034> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m034> <http://www.w3.org/2004/02/skos/core#prefLabel> "OGG multiplex"@en .
+<http://rs.tdwg.org/format/values/m035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-photo-cd" .
+<http://rs.tdwg.org/format/values/m035> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m035> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Kodak Photo CD image"@en .
+<http://rs.tdwg.org/format/values/m035> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m035> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kodak Photo CD image"@en .
+<http://rs.tdwg.org/format/values/m036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/vnd.adobe.photoshop" .
+<http://rs.tdwg.org/format/values/m036> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m036> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Photoshop images"@en .
+<http://rs.tdwg.org/format/values/m036> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m036> <http://www.w3.org/2004/02/skos/core#prefLabel> "Photoshop"@en .
+<http://rs.tdwg.org/format/values/m037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/vnd.dlna.mpeg-tts" .
+<http://rs.tdwg.org/format/values/m037> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m037> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for extended MPEG-2 Transport Stream"@en .
+<http://rs.tdwg.org/format/values/m037> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m037> <http://www.w3.org/2004/02/skos/core#prefLabel> "extended MPEG-2 Transport Stream"@en .
+<http://rs.tdwg.org/format/values/m038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/x-flac" .
+<http://rs.tdwg.org/format/values/m038> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m038> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Free Lossless Audio Codec audio"@en .
+<http://rs.tdwg.org/format/values/m038> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m038> <http://www.w3.org/2004/02/skos/core#prefLabel> "FLAC"@en .
+<http://rs.tdwg.org/format/values/m039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio/x-ms-wma" .
+<http://rs.tdwg.org/format/values/m039> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m039> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Windows Media Audio"@en .
+<http://rs.tdwg.org/format/values/m039> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m039> <http://www.w3.org/2004/02/skos/core#prefLabel> "WMA"@en .
+<http://rs.tdwg.org/format/values/m040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "video/x-ms-asf" .
+<http://rs.tdwg.org/format/values/m040> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m040> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Windows Media Video"@en .
+<http://rs.tdwg.org/format/values/m040> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m040> <http://www.w3.org/2004/02/skos/core#prefLabel> "WMV"@en .
+<http://rs.tdwg.org/format/values/m041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/ms-asf" .
+<http://rs.tdwg.org/format/values/m041> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m041> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Advanced Systems Format"@en .
+<http://rs.tdwg.org/format/values/m041> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m041> <http://www.w3.org/2004/02/skos/core#prefLabel> "ASF"@en .
+<http://rs.tdwg.org/format/values/m042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/svg+xml" .
+<http://rs.tdwg.org/format/values/m042> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m042> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for SVG images"@en .
+<http://rs.tdwg.org/format/values/m042> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m042> <http://www.w3.org/2004/02/skos/core#prefLabel> "SVG"@en .
+<http://rs.tdwg.org/format/values/m043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Data-CD" .
+<http://rs.tdwg.org/format/values/m043> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m043> <http://www.w3.org/2004/02/skos/core#definition> "physical data compact disc"@en .
+<http://rs.tdwg.org/format/values/m043> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m043> <http://www.w3.org/2004/02/skos/core#prefLabel> "data CD"@en .
+<http://rs.tdwg.org/format/values/m044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Audio-CD" .
+<http://rs.tdwg.org/format/values/m044> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m044> <http://www.w3.org/2004/02/skos/core#definition> "physical audio compact disc"@en .
+<http://rs.tdwg.org/format/values/m044> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m044> <http://www.w3.org/2004/02/skos/core#prefLabel> "audio CD"@en .
+<http://rs.tdwg.org/format/values/m045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Video-CD" .
+<http://rs.tdwg.org/format/values/m045> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m045> <http://www.w3.org/2004/02/skos/core#definition> "physical video compact disc"@en .
+<http://rs.tdwg.org/format/values/m045> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m045> <http://www.w3.org/2004/02/skos/core#prefLabel> "video CD"@en .
+<http://rs.tdwg.org/format/values/m046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Data-DVD" .
+<http://rs.tdwg.org/format/values/m046> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m046> <http://www.w3.org/2004/02/skos/core#definition> "physical data DVD"@en .
+<http://rs.tdwg.org/format/values/m046> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m046> <http://www.w3.org/2004/02/skos/core#prefLabel> "data DVD"@en .
+<http://rs.tdwg.org/format/values/m047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Audio-DVD" .
+<http://rs.tdwg.org/format/values/m047> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m047> <http://www.w3.org/2004/02/skos/core#definition> "physical audio DVD"@en .
+<http://rs.tdwg.org/format/values/m047> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m047> <http://www.w3.org/2004/02/skos/core#prefLabel> "audio DVD"@en .
+<http://rs.tdwg.org/format/values/m048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Video-DVD-PAL" .
+<http://rs.tdwg.org/format/values/m048> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m048> <http://www.w3.org/2004/02/skos/core#definition> "physical PAL video DVD"@en .
+<http://rs.tdwg.org/format/values/m048> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m048> <http://www.w3.org/2004/02/skos/core#prefLabel> "PAL video DVD"@en .
+<http://rs.tdwg.org/format/values/m049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Video-DVD-NTSC" .
+<http://rs.tdwg.org/format/values/m049> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m049> <http://www.w3.org/2004/02/skos/core#definition> "physical NTSC video DVD"@en .
+<http://rs.tdwg.org/format/values/m049> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m049> <http://www.w3.org/2004/02/skos/core#prefLabel> "NTSC video DVD"@en .
+<http://rs.tdwg.org/format/values/m050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "photographic slide" .
+<http://rs.tdwg.org/format/values/m050> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m050> <http://www.w3.org/2004/02/skos/core#definition> "physical photographic slide"@en .
+<http://rs.tdwg.org/format/values/m050> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m050> <http://www.w3.org/2004/02/skos/core#prefLabel> "photographic slide"@en .
+<http://rs.tdwg.org/format/values/m051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "photographic print" .
+<http://rs.tdwg.org/format/values/m051> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m051> <http://www.w3.org/2004/02/skos/core#definition> "physical photographic print"@en .
+<http://rs.tdwg.org/format/values/m051> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m051> <http://www.w3.org/2004/02/skos/core#prefLabel> "photographic print"@en .
+<http://rs.tdwg.org/format/values/m052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Blu-ray" .
+<http://rs.tdwg.org/format/values/m052> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m006> .
+<http://rs.tdwg.org/format/values/m052> <http://www.w3.org/2004/02/skos/core#definition> "physical Blu-ray video disc"@en .
+<http://rs.tdwg.org/format/values/m052> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m052> <http://www.w3.org/2004/02/skos/core#prefLabel> "Blu-ray video disc"@en .
+<http://rs.tdwg.org/format/values/m053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "physical artwork" .
+<http://rs.tdwg.org/format/values/m053> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m053> <http://www.w3.org/2004/02/skos/core#definition> "physical drawing or painting (non-photographic)"@en .
+<http://rs.tdwg.org/format/values/m053> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m053> <http://www.w3.org/2004/02/skos/core#prefLabel> "physical artwork"@en .
+<http://rs.tdwg.org/format/values/m054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/zvi" .
+<http://rs.tdwg.org/format/values/m054> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m054> <http://www.w3.org/2004/02/skos/core#definition> "unofficial media subtype for Zeiss Vision Image images"@en .
+<http://rs.tdwg.org/format/values/m054> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m054> <http://www.w3.org/2004/02/skos/core#prefLabel> "ZVI"@en .
+<http://rs.tdwg.org/format/values/m055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/stl" .
+<http://rs.tdwg.org/format/values/m055> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m055> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for steriolithography files"@en .
+<http://rs.tdwg.org/format/values/m055> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m055> <http://www.w3.org/2004/02/skos/core#prefLabel> "STL"@en .
+<http://rs.tdwg.org/format/values/m056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio tape" .
+<http://rs.tdwg.org/format/values/m056> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m056> <http://www.w3.org/2004/02/skos/core#definition> "physical analogue audio tape (reel-to-reel)"@en .
+<http://rs.tdwg.org/format/values/m056> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m056> <http://www.w3.org/2004/02/skos/core#prefLabel> "reel-to-reel audio tape"@en .
+<http://rs.tdwg.org/format/values/m057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "audio cassette" .
+<http://rs.tdwg.org/format/values/m057> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m057> <http://www.w3.org/2004/02/skos/core#definition> "physical analogue audio cassette"@en .
+<http://rs.tdwg.org/format/values/m057> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m057> <http://www.w3.org/2004/02/skos/core#prefLabel> "audio cassette"@en .
+<http://rs.tdwg.org/format/values/m058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "DAT" .
+<http://rs.tdwg.org/format/values/m058> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m058> <http://www.w3.org/2004/02/skos/core#definition> "physical digital audio tape (DAT)"@en .
+<http://rs.tdwg.org/format/values/m058> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m058> <http://www.w3.org/2004/02/skos/core#prefLabel> "digital audio tape"@en .
+<http://rs.tdwg.org/format/values/m059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "MiniDisc" .
+<http://rs.tdwg.org/format/values/m059> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m059> <http://www.w3.org/2004/02/skos/core#definition> "physical MiniDisc "@en .
+<http://rs.tdwg.org/format/values/m059> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m059> <http://www.w3.org/2004/02/skos/core#prefLabel> "MiniDisc"@en .
+<http://rs.tdwg.org/format/values/m060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "vinyl" .
+<http://rs.tdwg.org/format/values/m060> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m002> .
+<http://rs.tdwg.org/format/values/m060> <http://www.w3.org/2004/02/skos/core#definition> "physical vinyl record"@en .
+<http://rs.tdwg.org/format/values/m060> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m060> <http://www.w3.org/2004/02/skos/core#prefLabel> "vinyl record"@en .
+<http://rs.tdwg.org/format/values/m061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "Mixed-CD" .
+<http://rs.tdwg.org/format/values/m061> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m061> <http://www.w3.org/2004/02/skos/core#definition> "physical compact disc containing both data and audio tracks"@en .
+<http://rs.tdwg.org/format/values/m061> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m061> <http://www.w3.org/2004/02/skos/core#prefLabel> "mixed CD (data and audio)"@en .
+<http://rs.tdwg.org/format/values/m062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/obj" .
+<http://rs.tdwg.org/format/values/m062> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m062> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for OBJ 3D models"@en .
+<http://rs.tdwg.org/format/values/m062> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m062> <http://www.w3.org/2004/02/skos/core#prefLabel> "OBJ"@en .
+<http://rs.tdwg.org/format/values/m063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/gltf-binary" .
+<http://rs.tdwg.org/format/values/m063> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m063> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Binary GL Transmission Format"@en .
+<http://rs.tdwg.org/format/values/m063> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m063> <http://www.w3.org/2004/02/skos/core#prefLabel> "gLTF binary"@en .
+<http://rs.tdwg.org/format/values/m064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/gltf+json" .
+<http://rs.tdwg.org/format/values/m064> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m064> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for GL Transmission Format"@en .
+<http://rs.tdwg.org/format/values/m064> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m064> <http://www.w3.org/2004/02/skos/core#prefLabel> "gLTF"@en .
+<http://rs.tdwg.org/format/values/m065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/vrml" .
+<http://rs.tdwg.org/format/values/m065> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m065> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Virtual Reality Modeling Language"@en .
+<http://rs.tdwg.org/format/values/m065> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m065> <http://www.w3.org/2004/02/skos/core#prefLabel> "VRML"@en .
+<http://rs.tdwg.org/format/values/m066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "application/dicom" .
+<http://rs.tdwg.org/format/values/m066> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m001> .
+<http://rs.tdwg.org/format/values/m066> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for Digital Imaging and Communications in Medicine"@en .
+<http://rs.tdwg.org/format/values/m066> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m066> <http://www.w3.org/2004/02/skos/core#prefLabel> "DICOM"@en .
+<http://rs.tdwg.org/format/values/m067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/mtl" .
+<http://rs.tdwg.org/format/values/m067> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m067> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for OBJ Material Template Library"@en .
+<http://rs.tdwg.org/format/values/m067> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m067> <http://www.w3.org/2004/02/skos/core#prefLabel> "MTL"@en .
+<http://rs.tdwg.org/format/values/m068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "model/x3d+xml" .
+<http://rs.tdwg.org/format/values/m068> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m004> .
+<http://rs.tdwg.org/format/values/m068> <http://www.w3.org/2004/02/skos/core#definition> "media subtype for X3D XML models"@en .
+<http://rs.tdwg.org/format/values/m068> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m068> <http://www.w3.org/2004/02/skos/core#prefLabel> "X3D XML"@en .
+<http://rs.tdwg.org/format/values/m069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-canon-crw" .
+<http://rs.tdwg.org/format/values/m069> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m069> <http://www.w3.org/2004/02/skos/core#definition> "unofficial media subtype for Camera Image File Format raw image"@en .
+<http://rs.tdwg.org/format/values/m069> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m069> <http://www.w3.org/2004/02/skos/core#prefLabel> "CIFF raw image"@en .
+<http://rs.tdwg.org/format/values/m070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-canon-cr3" .
+<http://rs.tdwg.org/format/values/m070> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m070> <http://www.w3.org/2004/02/skos/core#definition> "unofficial media subtype for Canon Raw 3 image"@en .
+<http://rs.tdwg.org/format/values/m070> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m070> <http://www.w3.org/2004/02/skos/core#prefLabel> "CR3 raw image"@en .
+<http://rs.tdwg.org/format/values/m071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-sony-arw" .
+<http://rs.tdwg.org/format/values/m071> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m071> <http://www.w3.org/2004/02/skos/core#definition> "unofficial media subtype for Sony raw image"@en .
+<http://rs.tdwg.org/format/values/m071> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m071> <http://www.w3.org/2004/02/skos/core#prefLabel> "ARW raw image"@en .
+<http://rs.tdwg.org/format/values/m072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://rs.tdwg.org/format/values/m072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "image/x-panasonic-rw2" .
+<http://rs.tdwg.org/format/values/m072> <http://www.w3.org/2004/02/skos/core#broader> <http://rs.tdwg.org/format/values/m003> .
+<http://rs.tdwg.org/format/values/m072> <http://www.w3.org/2004/02/skos/core#definition> "unofficial media subtype for Panasonic raw image"@en .
+<http://rs.tdwg.org/format/values/m072> <http://www.w3.org/2004/02/skos/core#inScheme> <http://rs.tdwg.org/format/values/m> .
+<http://rs.tdwg.org/format/values/m072> <http://www.w3.org/2004/02/skos/core#prefLabel> "RW2 raw image"@en .
+<http://rs.tdwg.org/format/values/m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://rs.tdwg.org/format/values/m> <http://www.w3.org/2004/02/skos/core#definition> "concept scheme for IANA media types and various physical media items"@en .
+<http://rs.tdwg.org/format/values/m> <http://www.w3.org/2004/02/skos/core#prefLabel> "media types and physical media concept scheme"@en .
