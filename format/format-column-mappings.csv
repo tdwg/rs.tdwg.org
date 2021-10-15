@@ -17,7 +17,7 @@ examples,skos:example,language,,en,$root
 controlled_value_string,rdf:value,plain,,,$root
 skos_broader,skos:broader,iri,http://rs.tdwg.org/format/values/,,$root
 skos_inScheme,skos:inScheme,iri,http://rs.tdwg.org/format/values/,,$root
-skos_exactMatch,skos:exactMatch,iri,,,
+skos_exactMatch,skos:exactMatch,iri,http://rs.tdwg.org/format/values/,,$root
 type,rdf:type,iri,,,$root
 controlled_value_string,foaf:focus,iri,https://www.w3.org/ns/iana/media-types/,#Resource,$root
 dcam_memberOf,dcam:memberOf,iri,,,$root
