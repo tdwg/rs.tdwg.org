@@ -1,7 +1,7 @@
 {
-    "database_name": "format",
+    "database_name": "establishmentMeans",
     "branch": "master",
-    "has_broader": true,
-    "has_exactMatch": true
+    "has_broader": false,
+    "has_exactMatch": false
 }
   

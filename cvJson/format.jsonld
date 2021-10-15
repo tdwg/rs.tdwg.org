@@ -1,0 +1,2324 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:exactMatch": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://rs.tdwg.org/format/values/m",
+      "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "media types and physical media concept scheme"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "concept scheme for IANA media types and various physical media items"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e",
+      "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "file extensions concept scheme"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "concept scheme based on conventional file extensions for media types"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m001",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "application"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media type for application"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m002",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "audio"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media type for audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m003",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media type for image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m004",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "model"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media type for model"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m005",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "text",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "text"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media type for text"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m006",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "video"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media type for video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m007",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/png",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "PNG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for portable network graphics images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m008",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/jpeg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "JPEG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for JPEG images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m009",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/bmp",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "BMP"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for bitmap images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m010",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/gif",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "GIF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for GIF images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m011",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/tiff",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "TIFF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for TIFF images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m012",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/mp4",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MP4 video"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for MP4 videos"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m013",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/mpeg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MPEG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for MPEG videos"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m014",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/quicktime",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "QuickTime"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for QuickTime videos"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m015",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/mp4",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MP4 audio"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for MP4 audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m016",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/mpeg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MP3"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for MP3 audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m017",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/x3d-vrml",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "X3D VRML"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for X3D VRML models"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m018",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application/pdf",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "PDF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for PDF documents"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m019",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "text/plain",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m005",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "plain text"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for plain text"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m020",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application/msword",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Word (pre-2003) document"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Microsoft Word (2003 and before) documents"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m021",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Word (post-2007) document"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Microsoft Word (2007 and after) documents"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m022",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-adobe-dng",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Digital Negative"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Digital Negative images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m023",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-canon-cr2",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "CR2"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Canon Raw images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m024",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/jp2",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "JPEG 2000"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for JPEG 2000 images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m025",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/vnd.wave",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "WAVE"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for WAVE audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m026",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-nikon-nef",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Nikon NEF Raw"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Nikon NEF Raw images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m027",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/x-m4v",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "M4V"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Apple M4V videos"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m028",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "‎video/3gpp",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "3GPP"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for 3GPP video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m029",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/vnd.avi",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AVI"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for AVI video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m030",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/AMR",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AMR"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Adaptive Multi-Rate audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m031",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/x-aiff",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AIFF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Audio Interchange File Format audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m032",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/ogg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OGG audio"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for OGG audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m033",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/ogg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OGG video"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for OGG video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m034",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application/ogg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OGG multiplex"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for OGG multiplex"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m035",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-photo-cd",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Kodak Photo CD image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Kodak Photo CD image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m036",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/vnd.adobe.photoshop",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Photoshop"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Photoshop images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m037",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/vnd.dlna.mpeg-tts",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "extended MPEG-2 Transport Stream"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for extended MPEG-2 Transport Stream"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m038",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/x-flac",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "FLAC"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Free Lossless Audio Codec audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m039",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio/x-ms-wma",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "WMA"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Windows Media Audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m040",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "video/x-ms-asf",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "WMV"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Windows Media Video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m041",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application/ms-asf",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ASF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Advanced Systems Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m042",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/svg+xml",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "SVG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for SVG images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m043",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Data-CD",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "data CD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical data compact disc"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m044",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Audio-CD",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "audio CD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical audio compact disc"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m045",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Video-CD",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "video CD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical video compact disc"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m046",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Data-DVD",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "data DVD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical data DVD"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m047",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Audio-DVD",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "audio DVD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical audio DVD"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m048",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Video-DVD-PAL",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "PAL video DVD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical PAL video DVD"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m049",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Video-DVD-NTSC",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "NTSC video DVD"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical NTSC video DVD"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m050",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "photographic slide",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "photographic slide"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical photographic slide"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m051",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "photographic print",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "photographic print"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical photographic print"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m052",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Blu-ray",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m006",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Blu-ray video disc"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical Blu-ray video disc"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m053",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "physical artwork",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "physical artwork"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical drawing or painting (non-photographic)"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m054",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/zvi",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ZVI"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "unofficial media subtype for Zeiss Vision Image images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m055",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/stl",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "STL"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for steriolithography files"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m056",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio tape",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "reel-to-reel audio tape"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical analogue audio tape (reel-to-reel)"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m057",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "audio cassette",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "audio cassette"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical analogue audio cassette"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m058",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "DAT",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "digital audio tape"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical digital audio tape (DAT)"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m059",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "MiniDisc",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MiniDisc"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical MiniDisc "
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m060",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "vinyl",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m002",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "vinyl record"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical vinyl record"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m061",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Mixed-CD",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "mixed CD (data and audio)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "physical compact disc containing both data and audio tracks"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m062",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/obj",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OBJ"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for OBJ 3D models"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m063",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/gltf-binary",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "gLTF binary"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Binary GL Transmission Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m064",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/gltf+json",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "gLTF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for GL Transmission Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m065",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/vrml",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "VRML"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Virtual Reality Modeling Language"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m066",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "application/dicom",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m001",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "DICOM"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for Digital Imaging and Communications in Medicine"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m067",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/mtl",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MTL"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for OBJ Material Template Library"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m068",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "model/x3d+xml",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m004",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "X3D XML"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "media subtype for X3D XML models"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m069",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-canon-crw",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "CIFF raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "unofficial media subtype for Camera Image File Format raw image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m070",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-canon-cr3",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "CR3 raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "unofficial media subtype for Canon Raw 3 image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m071",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-sony-arw",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ARW raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "unofficial media subtype for Sony raw image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/m072",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "image/x-panasonic-rw2",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/m",
+      "skos:broader": "http://rs.tdwg.org/format/values/m003",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "RW2 raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "unofficial media subtype for Panasonic raw image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e001",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "txt",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m019",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "plain text"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for palin text"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e002",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "doc",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m020",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Word (pre-2003) document"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Microsoft Word (2003 and before) documents"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e003",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "docx",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m021",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Word (post-2007) document"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Microsoft Word (2007 and after) documents"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e004",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "png",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m007",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "PNG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for portable network graphics images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e005",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "jpg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m008",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "JPEG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for JPEG images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e006",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "pdf",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m018",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "PDF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for PDF documents"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e007",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "tif",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m011",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "TIFF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for TIFF images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e008",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "dng",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m022",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Digital Negative"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Digital Negative images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e009",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "cr2",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m023",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Canon Raw"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Canon Raw images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e010",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "jp2",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m024",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "JPEG 2000"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for JPEG 2000 images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e011",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "wav",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m025",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "WAVE"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for WAVE audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e012",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "mp3",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m016",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MP3"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "ffle extension for MP3 audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e013",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "nef",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m026",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Nikon NEF Raw"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Nikon NEF Raw images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e014",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "m4a",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m015",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MP4 audio"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for MP4 audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e015",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "mp4",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m012",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MP4 video"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for MP4 video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e016",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "gif",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m010",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "GIF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for GIF images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e017",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "bmp",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m009",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "BMP"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for bitmap images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e018",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "m4v",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m027",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "M4V"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Apple M4V videos"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e019",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "ply",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "PLY"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Polygon File Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e020",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "stl",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m055",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "STL"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for steriolithography files"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e021",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "3gp",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m028",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "3GPP"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for 3GPP video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e022",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "zvi",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m054",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ZVI"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Zeiss Vision Image images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e023",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "avi",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m029",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AVI"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for AVI video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e024",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "amr",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m030",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AMR"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Adaptive Multi-Rate audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e025",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "aiff",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m031",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "AIFF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Audio Interchange File Format audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e026",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "ogg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m032",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OGG audio"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for OGG audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e027",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "ogv",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m033",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OGG video"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for OGG video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e028",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "ogx",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m034",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OGG multiplex"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for OGG multiplex"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e029",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "pcd",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m035",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Kodak Photo CD image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Kodak Photo CD image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e030",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "mov",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m014",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "QuickTime"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Apple QuickTime video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e031",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "psd",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m036",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Photoshop"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Photoshop images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e032",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "flac",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m038",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "FLAC"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Free Lossless Audio Codec audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e033",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "wma",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m039",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MWA"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Windows Media Audio"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e034",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "wmv",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m040",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "WMV"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Windows Media Video"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e035",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "asf",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m041",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ASF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Advanced Systems Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e036",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "svg",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m042",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "SVG"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for SVG images"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e037",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "obj",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m062",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "OBJ"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for OBJ"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e038",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "glb",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m063",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "gLTF binary"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Binary GL Transmission Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e039",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "gltf",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m064",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "gLTF"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for GL Transmission Format"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e040",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "wrl",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m065",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "VRML"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Virtual Reality Modeling Language"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e041",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "dcm",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m066",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "DICOM"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Digital Imaging and Communications in Medicine"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e042",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "mtl",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m067",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "MTL"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for OBJ Material Template Library"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e043",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "x3dv",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m017",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "X3D VRML"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for X3D VRML models"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e044",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "x3d",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m068",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "X3D XML"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for X3D XML models"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e045",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "crw",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m069",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "CIFF raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Camera Image File Format raw image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e046",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "cr3",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m070",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "CR3 raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Canon Raw 3 image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e047",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "arw",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m071",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ARW raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Sony raw image"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/format/values/e048",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "rw2",
+      "skos:inScheme": "http://rs.tdwg.org/format/values/e",
+      "skos:exactMatch": "http://rs.tdwg.org/format/values/m072",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "RW2 raw image"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "file extension for Panasonic raw image"
+        }
+      ]
+    }
+  ]
+}
