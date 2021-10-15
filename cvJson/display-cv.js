@@ -36,7 +36,7 @@ function setStatusOptions(isoLanguage) {
         // send query to endpoint
         $.ajax({
             type: 'GET',
-            url: 'https://heardlibrary.github.io/digital-scholarship/lod/json_ld_test/establishmentMeans.jsonld',
+            url: 'https://tdwg.github.io/rs.tdwg.org/cvJson/establishmentMeans.json',
             headers: {
                 Accept: 'application/sparql-results+json'
             },
