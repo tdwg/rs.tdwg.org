@@ -6,7 +6,7 @@ For the main landing page, see the repository readme visible at the [repository 
 
 ## Some links
 
-Multilingual controlled vocabulary demo page (still need to fix page to acknowledge translators):
+Multilingual `establishmentMeans` controlled vocabulary demo page (still need to fix page to acknowledge translators):
 - [English](cvJson/display-cv.html?en)
 - [Dutch](cvJson/display-cv.html?nl)
 - [Spanish](cvJson/display-cv.html?es)
