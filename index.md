@@ -6,7 +6,15 @@ For the main landing page, see the repository readme visible at the [repository 
 
 ## Some links
 
-[Multilingual controlled vocabulary demo page](cvJson/display-cv.html)
+Multilingual controlled vocabulary demo page (still need to fix page to acknowledge translators):
+- [English](cvJson/display-cv.html?en)
+- [Dutch](cvJson/display-cv.html?nl)
+- [Spanish](cvJson/display-cv.html?es)
+- [French](cvJson/display-cv.html?fr)
+- [Russian](cvJson/display-cv.html?ru)
+- [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
+
+These JSON files still need to be modified to include translator metadata:
 
 [establishmentMeans JSON-LD metadata with .json extension](cvJson/establishmentMeans.json)
 
