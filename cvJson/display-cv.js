@@ -118,22 +118,22 @@ function setStatusOptions(isoLanguage) {
 					if (data[i]['@type'] == 'http://www.w3.org/2004/02/skos/core#Concept') {
 						iri = data[i]['@id']
 						if (isoLanguage=='en') {
-							text = text + 'Use this value with dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							text = text + 'Use this value with dwciri:establishmentMeans : ' + iri + '<br/>'
 							}
 						if (isoLanguage=='nl') {
-							text = text + 'Gebruik deze waarde met dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							text = text + 'Gebruik deze waarde met dwciri:establishmentMeans : ' + iri + '<br/>'
 							}
 						if (isoLanguage=='es') {
-							text = text + 'Utilice este valor con dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							text = text + 'Utilice este valor con dwciri:establishmentMeans : ' + iri + '<br/>'
 							}
 						if (isoLanguage=='fr') {
-							text = text + 'Utiliser cette valeur avec dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							text = text + 'Utiliser cette valeur avec dwciri:establishmentMeans : ' + iri + '<br/>'
 							}
 						if (isoLanguage=='ru') {
-							text = text + 'Используйте это значение с dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							text = text + 'Используйте это значение с dwciri:establishmentMeans : ' + iri + '<br/>'
 							}
 						if (isoLanguage=='zh-Hant') {
-							text = text + '使用此值於 dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							text = text + '使用此值於 dwciri:establishmentMeans : ' + iri + '<br/>'
 							}
 						}
 					text += '<br/>'
