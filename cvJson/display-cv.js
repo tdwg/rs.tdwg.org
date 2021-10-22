@@ -19,17 +19,17 @@ if (localID.length>1)
 function redrawLabels(isoLanguage) {
 	if (isoLanguage=='en') {
 	$("#boxLabel0").text("Language");
-	document.getElementById("pageHeader").innerHTML = "establishmentMeans controlled vocabulary demo";
+	document.getElementById("pageHeader").innerHTML = "establishmentMeans";
 	document.title = "establishmentMeans";
 	}
 	if (isoLanguage=='nl') {
 	$("#boxLabel0").text("Taal");
-	document.getElementById("pageHeader").innerHTML = "establishmentMeans Demonstratiepagina";
+	document.getElementById("pageHeader").innerHTML = "establishmentMeans";
 	document.title = "establishmentMeans";
 	}
 	if (isoLanguage=='es') {
 	$("#boxLabel0").text("Idioma");
-	document.getElementById("pageHeader").innerHTML = "Página de demostración de establishmentMeans";
+	document.getElementById("pageHeader").innerHTML = "establishmentMeans";
 	document.title = "establishmentMeans";
 	}
 	if (isoLanguage=='fr') {
@@ -73,17 +73,67 @@ function setStatusOptions(isoLanguage) {
 					for (j = 0; j < definitions.length; j++) {
 						if (isoLanguage==definitions[j]['@language']) {
 							value = definitions[j]['@value']
-							text = text + 'Definition: ' + value + '<br/>'
+							if (isoLanguage=='en') {
+								text = text + 'Definition: ' + value + '<br/>'
+								}
+							if (isoLanguage=='nl') {
+								text = text + 'Definitie: ' + value + '<br/>'
+								}
+							if (isoLanguage=='es') {
+								text = text + 'Definición: ' + value + '<br/>'
+								}
+							if (isoLanguage=='fr') {
+								text = text + 'Définition: ' + value + '<br/>'
+								}
+							if (isoLanguage=='ru') {
+								text = text + 'Определение: ' + value + '<br/>'
+								}
+							if (isoLanguage=='zh-Hant') {
+								text = text + '定義: ' + value + '<br/>'
+								}
 							}
 						}
 					if (data[i]['rdf:value']) {
 						cv_string = data[i]['rdf:value']
-						text = text + 'Use this value with dwc:establishmentMeans : ' + cv_string + '<br/>'
+						if (isoLanguage=='en') {
+							text = text + 'Use this value with dwc:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='nl') {
+							text = text + 'Gebruik deze waarde met dwc:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='es') {
+							text = text + 'Utilice este valor con dwc:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='fr') {
+							text = text + 'Utiliser cette valeur avec dwc:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='ru') {
+							text = text + 'Используйте это значение с dwc:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='zh-Hant') {
+							text = text + '使用此值於 dwc:establishmentMeans : ' + cv_string + '<br/>'
+							}
 						}
 
 					if (data[i]['@type'] == 'http://www.w3.org/2004/02/skos/core#Concept') {
 						iri = data[i]['@id']
-						text = text + 'Use this value with dwciri:establishmentMeans : ' + iri + '<br/>'
+						if (isoLanguage=='en') {
+							text = text + 'Use this value with dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='nl') {
+							text = text + 'Gebruik deze waarde met dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='es') {
+							text = text + 'Utilice este valor con dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='fr') {
+							text = text + 'Utiliser cette valeur avec dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='ru') {
+							text = text + 'Используйте это значение с dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							}
+						if (isoLanguage=='zh-Hant') {
+							text = text + '使用此值於 dwciri:establishmentMeans : ' + cv_string + '<br/>'
 						}
 					text += '<br/>'
 					}
