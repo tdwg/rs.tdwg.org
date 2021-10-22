@@ -134,6 +134,7 @@ function setStatusOptions(isoLanguage) {
 							}
 						if (isoLanguage=='zh-Hant') {
 							text = text + '使用此值於 dwciri:establishmentMeans : ' + cv_string + '<br/>'
+							}
 						}
 					text += '<br/>'
 					}
