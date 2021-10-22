@@ -10,6 +10,9 @@ if (localID.length>1)
 	if (isoLanguage=='en') {document.getElementById("box0").selectedIndex = "0";}
 	if (isoLanguage=='nl') {document.getElementById("box0").selectedIndex = "1";}
 	if (isoLanguage=='es') {document.getElementById("box0").selectedIndex = "2";}
+	if (isoLanguage=='fr') {document.getElementById("box0").selectedIndex = "3";}
+	if (isoLanguage=='ru') {document.getElementById("box0").selectedIndex = "4";}
+	if (isoLanguage=='zh-Hant') {document.getElementById("box0").selectedIndex = "5";}
 	redrawLabels(isoLanguage)
 	}
 
@@ -29,7 +32,22 @@ function redrawLabels(isoLanguage) {
 	document.getElementById("pageHeader").innerHTML = "Página de demostración de establishmentMeans";
 	document.title = "establishmentMeans";
 	}
-}
+	if (isoLanguage=='fr') {
+	$("#boxLabel0").text("Langue");
+	document.getElementById("pageHeader").innerHTML = "establishmentMeans";
+	document.title = "establishmentMeans";
+	}
+	if (isoLanguage=='ru') {
+	$("#boxLabel0").text("Язык");
+	document.getElementById("pageHeader").innerHTML = "establishmentMeans";
+	document.title = "establishmentMeans";
+	}
+	if (isoLanguage=='zh-Hant') {
+	$("#boxLabel0").text("語言");
+	document.getElementById("pageHeader").innerHTML = "establishmentMeans";
+	document.title = "establishmentMeans";
+	}
+	}
 
 function setStatusOptions(isoLanguage) {
 
