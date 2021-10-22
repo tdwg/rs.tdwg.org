@@ -24,6 +24,18 @@
         {
           "@language": "nl",
           "@value": "establishmentMeans gecontroleerd conceptschema"
+        },
+        {
+          "@language": "fr",
+          "@value": "Schéma conceptuel contrôlé pour le moyen d'implantation"
+        },
+        {
+          "@language": "ru",
+          "@value": "establishmentMeans контроллируемая схема концепции"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "拓殖方法控制詞彙結構"
         }
       ],
       "skos:definition": [
@@ -38,6 +50,18 @@
         {
           "@language": "nl",
           "@value": "Een SKOS Conceptschema te gebruiken als een gecontoleerde woordenschat voor de Darwin Core termen dwc:establishmentMeans en dwciri:establishmentMeans"
+        },
+        {
+          "@language": "fr",
+          "@value": "Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core  dwc:moyen d'implantation et dwciri:moyen d'implantation"
+        },
+        {
+          "@language": "ru",
+          "@value": "Концептуальная схема SKOS, которая будет использоваться в качестве контролируемого словаря для терминов Darwin Core dwc:establishmentMeans и dwciri:establishmentMeans"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -58,6 +82,18 @@
         {
           "@language": "nl",
           "@value": "inheems"
+        },
+        {
+          "@language": "fr",
+          "@value": "natif (indigène)"
+        },
+        {
+          "@language": "ru",
+          "@value": "естественный (нативный)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "原生"
         }
       ],
       "skos:definition": [
@@ -72,6 +108,18 @@
         {
           "@language": "nl",
           "@value": "Een taxon dat voorkomt binnen zijn natuurlijk verspreidingsgebied"
+        },
+        {
+          "@language": "fr",
+          "@value": "Un taxon présent dans son aire de répartition naturelle."
+        },
+        {
+          "@language": "ru",
+          "@value": "Таксон обитает в пределах естественного ареала."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "在自然範圍內活動的分類群"
         }
       ]
     },
@@ -92,6 +140,18 @@
         {
           "@language": "nl",
           "@value": "inheems: geherintroduceerd"
+        },
+        {
+          "@language": "fr",
+          "@value": "natif : réintroduit"
+        },
+        {
+          "@language": "ru",
+          "@value": "естественный: реинтродуцированный"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "原生：再引進"
         }
       ],
       "skos:definition": [
@@ -106,6 +166,18 @@
         {
           "@language": "nl",
           "@value": "Een taxon dat zich opnieuw vestigde door directe introductie door mensen in een gebied dat oorspronkelijk deel uitmaakte van zijn natuurlijk verspreidingsgebied, maar waar het was uitgestorven."
+        },
+        {
+          "@language": "fr",
+          "@value": "Un taxon réimplanté via introduction directe par des humains dans une zone qui faisait auparavant partie de son aire de répartition naturelle, mais d'où il avait disparu."
+        },
+        {
+          "@language": "ru",
+          "@value": "Таксон, ранее обитавший в данной местности, но потом исчезнувший по вине человека, вовращен путем реинтродукции."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -126,6 +198,18 @@
         {
           "@language": "nl",
           "@value": "geïntroduceerd (uitheems, niet-inheems)"
+        },
+        {
+          "@language": "fr",
+          "@value": "introduit (exotique, non-natif, non-indigène)"
+        },
+        {
+          "@language": "ru",
+          "@value": "интродуцирован (чужеродный, экзотичный, не местный, не свойствен для данной территории)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "引進（外來、非原生、非原住）"
         }
       ],
       "skos:definition": [
@@ -140,6 +224,18 @@
         {
           "@language": "nl",
           "@value": "Vestiging van een taxon door menselijk handelen in een gebied dat geen deel uitmaakt van zijn natuurlijk verspreidingsgebied"
+        },
+        {
+          "@language": "fr",
+          "@value": "Implantation d'un taxon dans une zone ne faisant pas partie de son aire de répartition naturelle."
+        },
+        {
+          "@language": "ru",
+          "@value": "Таксон, случайно (не намеренно) перевезенный людьми и адаптировавшийся на новом месте."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -160,6 +256,18 @@
         {
           "@language": "nl",
           "@value": "geïntroduceerd: geassisteerde kolonisatie"
+        },
+        {
+          "@language": "fr",
+          "@value": "introduit : colonisation assistée"
+        },
+        {
+          "@language": "ru",
+          "@value": "интродуцирован: преднамеренная интродукция"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "引進（協助拓殖）"
         }
       ],
       "skos:definition": [
@@ -174,6 +282,18 @@
         {
           "@language": "nl",
           "@value": "Vestiging van een taxon specifiek met het doel om een zich zelfonderhoudende wilde populatie te creëren in een gebied dat geen deel uitmaakt van het taxon zijn natuurlijk verspreidingsgebied"
+        },
+        {
+          "@language": "fr",
+          "@value": "Implantation d'un taxon avec l'intention spécifique de créer une population sauvage durable dans une zone qui ne fait pas partie de l'aire de répartition naturelle du taxon."
+        },
+        {
+          "@language": "ru",
+          "@value": "Таксон, преднамеренно перезенный людьми и адаптировавшийсй на новом месте."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -194,6 +314,18 @@
         {
           "@language": "nl",
           "@value": "zwervend (incidenteel)"
+        },
+        {
+          "@language": "fr",
+          "@value": "erratique (occasionnel)"
+        },
+        {
+          "@language": "ru",
+          "@value": "бродячий (случайная интродукция)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "流浪的"
         }
       ],
       "skos:definition": [
@@ -208,6 +340,18 @@
         {
           "@language": "nl",
           "@value": "Het tijdelijk voorkomen van een taxon ver buiten zijn natuurlijk verspreidingsgebied of trekgebied."
+        },
+        {
+          "@language": "fr",
+          "@value": "Une occurrence temporaire d'un taxon bien au-delà de son aire de répartition ou de migration naturelle."
+        },
+        {
+          "@language": "ru",
+          "@value": "Временное появление таксона далеко за пределами его естественного или миграционного ареала."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -228,6 +372,18 @@
         {
           "@language": "nl",
           "@value": "onzeker (onbekend, cryptogeen)"
+        },
+        {
+          "@language": "fr",
+          "@value": "incertain (inconnu, cryptogénique)"
+        },
+        {
+          "@language": "ru",
+          "@value": "неопределенный (неизвестный, криптический)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "不確定的（未知、隱源性）"
         }
       ],
       "skos:definition": [
@@ -242,6 +398,18 @@
         {
           "@language": "nl",
           "@value": "De oorsprong van het voorkomen van het taxon in een gebied is onbekend"
+        },
+        {
+          "@language": "fr",
+          "@value": "L'origine de l'occurrence du taxon dans la zone est obscure."
+        },
+        {
+          "@language": "ru",
+          "@value": "Появление таксона в регионе имеет неясное происхождение."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     }
