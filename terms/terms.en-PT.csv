@@ -211,7 +211,7 @@
 "institutionID:label","Label for Institution ID http://rs.tdwg.org/dwc/terms/institutionID",""
 "institutionID:rdfs_comment","Comment for Institution ID http://rs.tdwg.org/dwc/terms/institutionID",""
 "institutionID:dcterms_description","Description for Institution ID http://rs.tdwg.org/dwc/terms/institutionID",""
-"island:label","Label for Island http://rs.tdwg.org/dwc/terms/island",""
+"island:label","Label for Island http://rs.tdwg.org/dwc/terms/island","Island ahoy!"
 "island:rdfs_comment","Comment for Island http://rs.tdwg.org/dwc/terms/island",""
 "island:dcterms_description","Description for Island http://rs.tdwg.org/dwc/terms/island",""
 "islandGroup:label","Label for Island Group http://rs.tdwg.org/dwc/terms/islandGroup",""
