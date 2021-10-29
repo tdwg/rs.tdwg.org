@@ -40,7 +40,7 @@
 "collectionID:rdfs_comment","Comment for Collection ID http://rs.tdwg.org/dwc/terms/collectionID",""
 "collectionID:dcterms_description","Description for Collection ID http://rs.tdwg.org/dwc/terms/collectionID",""
 "continent:label","Label for Continent http://rs.tdwg.org/dwc/terms/continent",""
-"continent:rdfs_comment","Comment for Continent http://rs.tdwg.org/dwc/terms/continent",""
+"continent:rdfs_comment","Comment for Continent http://rs.tdwg.org/dwc/terms/continent","The name o' the land where the Treasure lies."
 "continent:dcterms_description","Description for Continent http://rs.tdwg.org/dwc/terms/continent",""
 "coordinatePrecision:label","Label for Coordinate Precision http://rs.tdwg.org/dwc/terms/coordinatePrecision",""
 "coordinatePrecision:rdfs_comment","Comment for Coordinate Precision http://rs.tdwg.org/dwc/terms/coordinatePrecision",""
