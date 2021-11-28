@@ -1,0 +1,317 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:inScheme": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v",
+      "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "variant concept scheme"
+        },
+        {
+          "@language": "ru",
+          "@value": "схема концепции variant"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "版本觀念結構"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A SKOS Concept Scheme for controlled values for ac:variant"
+        },
+        {
+          "@language": "ru",
+          "@value": "Концептуальная схема SKOS для контроллируемого словаря ac:variant"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v001",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Thumbnail",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Thumbnail"
+        },
+        {
+          "@language": "ru",
+          "@value": "Миниатюра"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "縮圖"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides a thumbnail image, short sound clip, or short movie clip that can be used in addition to the resource to represent the media object, typically at lower quality and higher compression than a preview object."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа в виде эскизного изображения, короткого звукового клипа или короткого фрагмента ролика, которые можно использовать в дополнение к ресурсу для представления мультимедийного объекта, как правило, с более низким качеством и более высоким сжатием, чем объект предварительного просмотра."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v002",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Trailer",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Trailer"
+        },
+        {
+          "@language": "ru",
+          "@value": "Трейлер"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "預告"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides video clip preview, in the form of a specifically authored \"Trailer\", which may provide somewhat different content than the original resource."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа в виде предварительного просмотра видеоклипа («трейлера»), который может предоставлять несколько иное содержание, чем исходный ресурс."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v003",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Lower Quality",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Lower Quality"
+        },
+        {
+          "@language": "ru",
+          "@value": "Низкое качество"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "低品質"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides a lower quality version of the media resource."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа в виде медиаресурса более низкого качества."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v004",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Medium Quality",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Medium Quality"
+        },
+        {
+          "@language": "ru",
+          "@value": "Среднее качество"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "中間品質"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides a medium quality version of the media resource."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа в виде медиаресурса среднего качества."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v005",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Good Quality",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Good Quality"
+        },
+        {
+          "@language": "ru",
+          "@value": "Хорошее качество"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "好品質"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides a good quality version of the media resource intended for resources displayed as primary information."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа в виде медиаресурса хорошего качества."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v006",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Best Quality",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Best Quality"
+        },
+        {
+          "@language": "ru",
+          "@value": "Наилучшее качество"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "最佳品質"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides the highest available quality of the media resource, whatever its resolution or quality level."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа в виде медиаресурса более хорошего качества."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v007",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Offline",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Offline"
+        },
+        {
+          "@language": "ru",
+          "@value": "Офлайн"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "離線"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides data about an offline resource."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа к сервису офлайн."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acvariant/values/v008",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "Visual",
+      "skos:inScheme": "http://rs.tdwg.org/acvariant/values/v",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Visual"
+        },
+        {
+          "@language": "ru",
+          "@value": "Визуальный"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "視覺"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Service Access Point provides a visual or graphic representation of a media resource that is not an image."
+        },
+        {
+          "@language": "ru",
+          "@value": "Точка доступа, обеспечивающая визуальное или графическое представление медиаресурса, не являющегося изображением."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    }
+  ]
+}
