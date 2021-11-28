@@ -1,0 +1,611 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:inScheme": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d",
+      "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "degreeOfEstablishment concept scheme"
+        },
+        {
+          "@language": "de",
+          "@value": ""
+        },
+        {
+          "@language": "es",
+          "@value": "esquema del concepto degreeOfEstablishment "
+        },
+        {
+          "@language": "fr",
+          "@value": "schema pour le concept du degré d'implantation "
+        },
+        {
+          "@language": "ko",
+          "@value": "정착수준 개념 체계"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:degreeOfEstablishment and dwciri:degreeOfEstablishment"
+        },
+        {
+          "@language": "de",
+          "@value": ""
+        },
+        {
+          "@language": "es",
+          "@value": "Un esquema conceptual SKOS que se utilizará como vocabulario controlado para los términos Darwin Core dwc:degreeOfEstablishment  y dwciri:degreeOfEstablishment "
+        },
+        {
+          "@language": "fr",
+          "@value": "Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core  dwc:establishmentMeans et dwciri:establishmentMeans"
+        },
+        {
+          "@language": "ko",
+          "@value": "다윈 핵심 용어 dwc:degreeOfEstablishement 및 dwciri:degreeOfEstablishement의 통제된 어휘로 사용되는 SKOS 개념 체계"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d001",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "native",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "native (category A)"
+        },
+        {
+          "@language": "de",
+          "@value": "einheimisch"
+        },
+        {
+          "@language": "es",
+          "@value": "nativo (categoría A)"
+        },
+        {
+          "@language": "fr",
+          "@value": "natif (catégorie A)"
+        },
+        {
+          "@language": "ko",
+          "@value": "토착 "
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Not transported beyond limits of native range."
+        },
+        {
+          "@language": "de",
+          "@value": "Nicht über die Grenzen des einheimischen Verbreitungsgebiets hinaus transportiert."
+        },
+        {
+          "@language": "es",
+          "@value": "No se transporta más allá de los límites del área de distribución nativa"
+        },
+        {
+          "@language": "fr",
+          "@value": "Non transportable au-delà des limites de la répartition native"
+        },
+        {
+          "@language": "ko",
+          "@value": "토착 범위의 한계를 넘어 운송되지 않음"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d002",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "captive",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "captive (category B1)"
+        },
+        {
+          "@language": "de",
+          "@value": "gefangen"
+        },
+        {
+          "@language": "es",
+          "@value": "en cautividad (categoría B1)"
+        },
+        {
+          "@language": "fr",
+          "@value": "captif (catégorie B1)"
+        },
+        {
+          "@language": "ko",
+          "@value": "감금"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals in captivity or quarantine (i.e., individuals provided with conditions suitable for them, but explicit measures of containment are in place)."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen in Gefangenschaft oder Quarantäne (d.h. Individuen, die unter für sie geeigneten Bedingungen gehalten werden, aber explizite Maßnahmen der Eindämmung sind umgesetzt)."
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos en cautiverio o cuarentena (es decir, individuos provistos de condiciones adecuadas para ellos, pero con medidas explícitas de contención)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus en captivité ou en quarantaine (i.e. individus dont les conditions sont acceptables pour eux, mais dont les conditions de captivité sont en place"
+        },
+        {
+          "@language": "ko",
+          "@value": "구금이나 격리된 개체들(개체들에 적합한 조건을 제공하지만, 오염이 제 자리에 있도록 명백한 조치가 취해지고 있음)"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d003",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "cultivated",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "cultivated (category B2)"
+        },
+        {
+          "@language": "de",
+          "@value": "gezüchtet"
+        },
+        {
+          "@language": "es",
+          "@value": "cultivado (categoría B2)"
+        },
+        {
+          "@language": "fr",
+          "@value": "cultivé (catégorie B2)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals in cultivation (i.e., individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best)."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen in Zucht (d.h. Individuen, denen geeignete Bedingungen geboten werden, aber explizite Maßnahmen zur bestmöglichen Verhinderung der Ausbreitung sind umgesetzt.)"
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos en cultivo (es decir, individuos provistos de condiciones adecuadas para ellos, pero las medidas explícitas para evitar la dispersión son limitadas en el mejor de los casos)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus en culture (i.e. individus dont les conditions sont acceptables mais dont les mesures de prévention de dispersion sont limités au maximum)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d004",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "released",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "released (category B3)"
+        },
+        {
+          "@language": "de",
+          "@value": "ausgesetzt"
+        },
+        {
+          "@language": "es",
+          "@value": "liberado (categoría B3)"
+        },
+        {
+          "@language": "fr",
+          "@value": "relâché (catégorie B3)"
+        },
+        {
+          "@language": "ko",
+          "@value": "탈출"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals directly released into novel environment."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen, die direkt in eine neue Umwelt entlassen werden."
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos liberados directamente en un entorno nuevo"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus directement relâchés dans un nouvel environnement"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d005",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "failing",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "failing (category C0)"
+        },
+        {
+          "@language": "de",
+          "@value": "erfolglos"
+        },
+        {
+          "@language": "es",
+          "@value": "en peligro (categoría C0)"
+        },
+        {
+          "@language": "fr",
+          "@value": "échec (catégorie C0)"
+        },
+        {
+          "@language": "ko",
+          "@value": "실패"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals released outside of captivity or cultivation in a location, but incapable of surviving for a significant period."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen, die außerhalb der Gefangenschaft oder der Zucht an einem Ort freigelassen werden, aber nicht in der Lage sind, über einen längeren Zeitraum zu überleben."
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos liberados fuera del cautiverio o del cultivo en un lugar, pero incapaces de sobrevivir durante un periodo significativo"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus relâchés en dehors de la zone de captivité ou de la culture dans un lieu mais qui sont incapables de survivre pour une période significative"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d006",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "casual",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "casual (category C1)"
+        },
+        {
+          "@language": "de",
+          "@value": "unbeständig"
+        },
+        {
+          "@language": "es",
+          "@value": "ocasional (categoría C1)"
+        },
+        {
+          "@language": "fr",
+          "@value": "moyen (catégorie C1)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals surviving outside of captivity or cultivation in a location with no reproduction."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen, die außerhalb von Gefangenschaft oder Zucht an einem Ort überleben, sich aber nicht fortpflanzen. "
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar sin reproducción"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus survivant en dehors de la zone de captivité ou de culture dans un lieu sans repoduction."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d007",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "reproducing",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "reproducing (category C2)"
+        },
+        {
+          "@language": "de",
+          "@value": "fortpflanzend"
+        },
+        {
+          "@language": "es",
+          "@value": "en reprodución (categoría C2)"
+        },
+        {
+          "@language": "fr",
+          "@value": "reproduction (catégorie C2)"
+        },
+        {
+          "@language": "ko",
+          "@value": "번식"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals surviving outside of captivity or cultivation in a location. Reproduction is occurring, but population not self-sustaining."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen, die außerhalb von Gefangenschaft oder Zucht an einem Ort überleben. Fortpflanzung ist erfolgreich, aber die Population ist nicht selbsterhaltend."
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar. Se reproduce, pero la población no es autosuficiente"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus survivant en dehors de la zone de captivité ou de la culture dans un lieu. La reproduction peut se faire mais la population ne se maintient pas tout seule."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d008",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "established",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "established (category C3)"
+        },
+        {
+          "@language": "de",
+          "@value": "etabliert"
+        },
+        {
+          "@language": "es",
+          "@value": "establecida (categoría C3)"
+        },
+        {
+          "@language": "fr",
+          "@value": "implanté (catégorie C3)"
+        },
+        {
+          "@language": "ko",
+          "@value": "정착"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Individuals surviving outside of captivity or cultivation in a location. Reproduction occurring, and population self-sustaining."
+        },
+        {
+          "@language": "de",
+          "@value": "Individuen, die außerhalb von Gefangenschaft oder Zucht an einem Ort überleben. Fortpflanzung ist erfolgreichund die Population ist selbsterhaltend."
+        },
+        {
+          "@language": "es",
+          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar. Se reproducen y la población es autosuficiente"
+        },
+        {
+          "@language": "fr",
+          "@value": "Individus survivant en dehors de la zone de captivité ou de la culture dans un lieu. La reproduction se fait et la population se maintient toute seule)."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d009",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "colonising",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "colonising (category D1)"
+        },
+        {
+          "@language": "de",
+          "@value": "kolonisierend"
+        },
+        {
+          "@language": "es",
+          "@value": "colonizadora (categoría D1)"
+        },
+        {
+          "@language": "fr",
+          "@value": "colonisant (catégorie D1)"
+        },
+        {
+          "@language": "ko",
+          "@value": "집단화"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Self-sustaining population outside of captivity or cultivation, with individuals surviving a significant distance from the original point of introduction."
+        },
+        {
+          "@language": "de",
+          "@value": "Sich selbst erhaltende Population außerhalb von Gefangenschaft oder Zucht, in der die Individuen eine große Entfernungen vom Aussetzungsortüberleben."
+        },
+        {
+          "@language": "es",
+          "@value": "Población autosuficiente fuera de cautiverio o cultivo, con individuos que sobreviven a una distancia significativa del punto de introducción original"
+        },
+        {
+          "@language": "fr",
+          "@value": "Population auto-maintenue en dehors de la zone de captivité ou de culture, avec des individus survivant à une distance significative du point d'introduction."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d010",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "invasive",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "invasive (category D2)"
+        },
+        {
+          "@language": "de",
+          "@value": "invasiv"
+        },
+        {
+          "@language": "es",
+          "@value": "invasivo (categoría D2)"
+        },
+        {
+          "@language": "fr",
+          "@value": "invasif (category D2)"
+        },
+        {
+          "@language": "ko",
+          "@value": "침입"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Self-sustaining population outside of captivity or cultivation, with individuals surviving and reproducing a significant distance from the original point of introduction."
+        },
+        {
+          "@language": "de",
+          "@value": "Sich selbst erhaltende Population außerhalb von Gefangenschaft oder Zucht, in der die Individuen überleben und sich in großer Entfernung vom Aussetzungsort erfolgreich fortpflanzen."
+        },
+        {
+          "@language": "es",
+          "@value": "Población autosuficiente fuera de cautiverio o cultivo, con individuos que sobreviven y se reproducen a una distancia significativa del punto de introducción original"
+        },
+        {
+          "@language": "fr",
+          "@value": "Population auto-maintenue en dehors de la zone de captivité ou de culture, avec des individus survivant et se reproduisant à une distance significative du point d'introduction."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcdoe/values/d011",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "widespreadInvasive",
+      "skos:inScheme": "http://rs.tdwg.org/dwcdoe/values/d",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "widespread invasive (category E)"
+        },
+        {
+          "@language": "de",
+          "@value": "verbreitet invasiv"
+        },
+        {
+          "@language": "es",
+          "@value": "invasivo generalizado (categoría E)"
+        },
+        {
+          "@language": "fr",
+          "@value": "largement invasif  (catégorie E)"
+        },
+        {
+          "@language": "ko",
+          "@value": "광범위한 침입"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Fully invasive species, with individuals dispersing, surviving and reproducing at multiple sites across a spectrum of habitats and geographic range."
+        },
+        {
+          "@language": "de",
+          "@value": "Vollständig invasive Art, deren Individuen sich über verschiedenen Lebensräumen henaus ausbreiten, dort überleben und sich an meheren Orten erfolgreich fortpflanzen."
+        },
+        {
+          "@language": "es",
+          "@value": "Especie totalmente invasora, con individuos que se dispersan, sobreviven y se reproducen en múltiples sitios a través de un espectro de hábitats y rango geográfico"
+        },
+        {
+          "@language": "fr",
+          "@value": "Espèces pleinement invasives, avec des individus se dispersant, survivant et se reproduisant dans des sites multiples avec un variété d'habitats et de zones géographiques."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        }
+      ]
+    }
+  ]
+}
