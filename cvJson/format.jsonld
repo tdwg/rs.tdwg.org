@@ -22,12 +22,52 @@
         {
           "@language": "en",
           "@value": "media types and physical media concept scheme"
+        },
+        {
+          "@language": "de",
+          "@value": "Konzeptschema Medientypen und physische Medien"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "미디어형식 및 물리적 매체 개념체계"
+        },
+        {
+          "@language": "nl",
+          "@value": "conceptueel schema voor IANA media types en verschillende fysieke media elementen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "concept scheme for IANA media types and various physical media items"
+        },
+        {
+          "@language": "de",
+          "@value": "Konzeptschema für IANA Medientypen und verschiedene physische Medien"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "IANA 미디어형식과 다양한 물리적 매체에 대한 개념체계"
+        },
+        {
+          "@language": "nl",
+          "@value": "conceptueel schema voor IANA media types en verschillende fysieke media elementen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -38,12 +78,52 @@
         {
           "@language": "en",
           "@value": "file extensions concept scheme"
+        },
+        {
+          "@language": "de",
+          "@value": "Konzeptschema Dateiendungen"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "파일확장자개념체계"
+        },
+        {
+          "@language": "nl",
+          "@value": "conceptueel schema gebaseerd op conventionele bestandsextensies voor media types"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "concept scheme based on conventional file extensions for media types"
+        },
+        {
+          "@language": "de",
+          "@value": "Konzeptschema für herkömmliche Dateiendungen für Medientypen"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "미디어 형식과 기존 파일 확장자명에 기초한 개념 체계"
+        },
+        {
+          "@language": "nl",
+          "@value": "conceptueel schema gebaseerd op conventionele bestandsextensies voor media types"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -56,12 +136,52 @@
         {
           "@language": "en",
           "@value": "application"
+        },
+        {
+          "@language": "de",
+          "@value": "Anwendungsprogramm"
+        },
+        {
+          "@language": "fr",
+          "@value": "application"
+        },
+        {
+          "@language": "ko",
+          "@value": "어플리케이션"
+        },
+        {
+          "@language": "nl",
+          "@value": "applicaties"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "應用"
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media type for application"
+        },
+        {
+          "@language": "de",
+          "@value": "Medientyp für Anwendungsprogramme"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "어플리케이션 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media type voor applicaties"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "供應用的媒體類型"
         }
       ]
     },
@@ -74,12 +194,52 @@
         {
           "@language": "en",
           "@value": "audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": "audio"
+        },
+        {
+          "@language": "ko",
+          "@value": "오디오"
+        },
+        {
+          "@language": "nl",
+          "@value": "geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "聲音"
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media type for audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Medientyp für Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "오디오 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media type voor geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "聲音的媒體類型"
         }
       ]
     },
@@ -92,12 +252,52 @@
         {
           "@language": "en",
           "@value": "image"
+        },
+        {
+          "@language": "de",
+          "@value": "Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image"
+        },
+        {
+          "@language": "ko",
+          "@value": "이미지"
+        },
+        {
+          "@language": "nl",
+          "@value": "plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "影像"
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media type for image"
+        },
+        {
+          "@language": "de",
+          "@value": "Medientyp für Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "이미지 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media type voor plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "影像的媒體類型"
         }
       ]
     },
@@ -110,12 +310,52 @@
         {
           "@language": "en",
           "@value": "model"
+        },
+        {
+          "@language": "de",
+          "@value": "Model"
+        },
+        {
+          "@language": "fr",
+          "@value": "modèle"
+        },
+        {
+          "@language": "ko",
+          "@value": "모델"
+        },
+        {
+          "@language": "nl",
+          "@value": "modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "模型"
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media type for model"
+        },
+        {
+          "@language": "de",
+          "@value": "Medientyp für Modelle"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "모델 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media type voor modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "模型的媒體類型"
         }
       ]
     },
@@ -128,12 +368,52 @@
         {
           "@language": "en",
           "@value": "text"
+        },
+        {
+          "@language": "de",
+          "@value": "Text"
+        },
+        {
+          "@language": "fr",
+          "@value": "texte"
+        },
+        {
+          "@language": "ko",
+          "@value": "텍스트"
+        },
+        {
+          "@language": "nl",
+          "@value": "tekst"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "文本"
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media type for text"
+        },
+        {
+          "@language": "de",
+          "@value": "Medientyp für Text"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "문자 형식 "
+        },
+        {
+          "@language": "nl",
+          "@value": "media type voor tekst"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "文本的媒體類型"
         }
       ]
     },
@@ -146,12 +426,52 @@
         {
           "@language": "en",
           "@value": "video"
+        },
+        {
+          "@language": "de",
+          "@value": "Video"
+        },
+        {
+          "@language": "fr",
+          "@value": "vidéo"
+        },
+        {
+          "@language": "ko",
+          "@value": "비디오"
+        },
+        {
+          "@language": "nl",
+          "@value": "videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "影片"
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media type for video"
+        },
+        {
+          "@language": "de",
+          "@value": "Medientyp für Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "비디오 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media type voor videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "影片的媒體類型"
         }
       ]
     },
@@ -165,12 +485,52 @@
         {
           "@language": "en",
           "@value": "PNG"
+        },
+        {
+          "@language": "de",
+          "@value": "PNG"
+        },
+        {
+          "@language": "fr",
+          "@value": "PNG"
+        },
+        {
+          "@language": "ko",
+          "@value": "PNG"
+        },
+        {
+          "@language": "nl",
+          "@value": "Portable Network Graphics plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for portable network graphics images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format PNG (portable network graphics)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "네트워크 그래픽 이미지 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Portable Network Graphics plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -184,12 +544,52 @@
         {
           "@language": "en",
           "@value": "JPEG"
+        },
+        {
+          "@language": "de",
+          "@value": "JPEG"
+        },
+        {
+          "@language": "fr",
+          "@value": "JPEG"
+        },
+        {
+          "@language": "ko",
+          "@value": "JPEG"
+        },
+        {
+          "@language": "nl",
+          "@value": "JPEG plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for JPEG images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format JPEG"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "JPEG 이미지 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor JPEG plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -203,12 +603,52 @@
         {
           "@language": "en",
           "@value": "BMP"
+        },
+        {
+          "@language": "de",
+          "@value": "BMP"
+        },
+        {
+          "@language": "fr",
+          "@value": "BMP"
+        },
+        {
+          "@language": "ko",
+          "@value": "BMP"
+        },
+        {
+          "@language": "nl",
+          "@value": "Bitmap plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for bitmap images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format bmp/bitmap"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "Bitmap 이미지 형식 "
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Bitmap plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -222,12 +662,52 @@
         {
           "@language": "en",
           "@value": "GIF"
+        },
+        {
+          "@language": "de",
+          "@value": "GIF"
+        },
+        {
+          "@language": "fr",
+          "@value": "GIF"
+        },
+        {
+          "@language": "ko",
+          "@value": "GIF"
+        },
+        {
+          "@language": "nl",
+          "@value": "GIF plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for GIF images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format GIF"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "GIF 이미지 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor GIF plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -241,12 +721,52 @@
         {
           "@language": "en",
           "@value": "TIFF"
+        },
+        {
+          "@language": "de",
+          "@value": "TIFF"
+        },
+        {
+          "@language": "fr",
+          "@value": "TIFF"
+        },
+        {
+          "@language": "ko",
+          "@value": "TIFF"
+        },
+        {
+          "@language": "nl",
+          "@value": "TIFF plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for TIFF images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format TIFF"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "TIFF 이미지 형식 "
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor TIFF plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -260,12 +780,52 @@
         {
           "@language": "en",
           "@value": "MP4 video"
+        },
+        {
+          "@language": "de",
+          "@value": "MP4 Video"
+        },
+        {
+          "@language": "fr",
+          "@value": "vidéo MP4"
+        },
+        {
+          "@language": "ko",
+          "@value": "MP4 비디오"
+        },
+        {
+          "@language": "nl",
+          "@value": "MP4 videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for MP4 videos"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format MP4"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "MP4 비디오 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor MP4 videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -279,12 +839,52 @@
         {
           "@language": "en",
           "@value": "MPEG"
+        },
+        {
+          "@language": "de",
+          "@value": "MPEG"
+        },
+        {
+          "@language": "fr",
+          "@value": "MPEG"
+        },
+        {
+          "@language": "ko",
+          "@value": "MPEG"
+        },
+        {
+          "@language": "nl",
+          "@value": "MPEG videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for MPEG videos"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format MPEG"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "MPEG 비디오 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor MPEG videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -298,12 +898,52 @@
         {
           "@language": "en",
           "@value": "QuickTime"
+        },
+        {
+          "@language": "de",
+          "@value": "QuickTime"
+        },
+        {
+          "@language": "fr",
+          "@value": "QuickTime"
+        },
+        {
+          "@language": "ko",
+          "@value": "Quick Time"
+        },
+        {
+          "@language": "nl",
+          "@value": "Quicktime videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for QuickTime videos"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im QuickTime-Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "Quick Time 비디오 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Quicktime videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -317,12 +957,52 @@
         {
           "@language": "en",
           "@value": "MP4 audio"
+        },
+        {
+          "@language": "de",
+          "@value": "MP4 Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": "audio MP4"
+        },
+        {
+          "@language": "ko",
+          "@value": "MP4 오디오"
+        },
+        {
+          "@language": "nl",
+          "@value": "MP4 geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for MP4 audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format MP4"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "MP4 오디오 형식 "
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor MP4 geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -336,12 +1016,52 @@
         {
           "@language": "en",
           "@value": "MP3"
+        },
+        {
+          "@language": "de",
+          "@value": "MP3"
+        },
+        {
+          "@language": "fr",
+          "@value": "MP3"
+        },
+        {
+          "@language": "ko",
+          "@value": "MP3"
+        },
+        {
+          "@language": "nl",
+          "@value": "MP3 geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for MP3 audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format MP3"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "MP3 오디오 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor MP3 geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -355,12 +1075,52 @@
         {
           "@language": "en",
           "@value": "X3D VRML"
+        },
+        {
+          "@language": "de",
+          "@value": "X3D VRML"
+        },
+        {
+          "@language": "fr",
+          "@value": "X3D VRML"
+        },
+        {
+          "@language": "ko",
+          "@value": "X3D VRML"
+        },
+        {
+          "@language": "nl",
+          "@value": "X3D VRML modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for X3D VRML models"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für X3D VRML Modelle"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "X3D VRML 모델 형식"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor X3D VRML modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -374,12 +1134,52 @@
         {
           "@language": "en",
           "@value": "PDF"
+        },
+        {
+          "@language": "de",
+          "@value": "PDF"
+        },
+        {
+          "@language": "fr",
+          "@value": "PDF"
+        },
+        {
+          "@language": "ko",
+          "@value": "PDF"
+        },
+        {
+          "@language": "nl",
+          "@value": "PDF documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for PDF documents"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für PDF Dokumente"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "PDF 문서 형식 "
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor PDF documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -393,12 +1193,52 @@
         {
           "@language": "en",
           "@value": "plain text"
+        },
+        {
+          "@language": "de",
+          "@value": "plain text / Klartext"
+        },
+        {
+          "@language": "fr",
+          "@value": "texte simple"
+        },
+        {
+          "@language": "ko",
+          "@value": "일반텍스트"
+        },
+        {
+          "@language": "nl",
+          "@value": "platte tekst bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for plain text"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für reine Textdateien (ohne Formatierung)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "일반 텍스트 형식 "
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor platte tekst bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -412,12 +1252,52 @@
         {
           "@language": "en",
           "@value": "Word (pre-2003) document"
+        },
+        {
+          "@language": "de",
+          "@value": "Word (bis 2003) Dokument"
+        },
+        {
+          "@language": "fr",
+          "@value": "Document Word (pré-2003)"
+        },
+        {
+          "@language": "ko",
+          "@value": "워드문서(2003버전이전)"
+        },
+        {
+          "@language": "nl",
+          "@value": "Microsoft Word (2003 en eerder) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Microsoft Word (2003 and before) documents"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Dokumente in Microsoft Word (2003 und ältere Versionen)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "마이크로소프트 워드2003 버전 이전의 문서들"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Microsoft Word (2003 en eerder) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -431,12 +1311,52 @@
         {
           "@language": "en",
           "@value": "Word (post-2007) document"
+        },
+        {
+          "@language": "de",
+          "@value": "Word (ab 2007) Dokument"
+        },
+        {
+          "@language": "fr",
+          "@value": "Document Word (pré-2007)"
+        },
+        {
+          "@language": "ko",
+          "@value": "워드문서(2007버전이후)"
+        },
+        {
+          "@language": "nl",
+          "@value": "Microsoft Word (2007 and later) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Microsoft Word (2007 and after) documents"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Dokumente in Microsoft Word (2007 und neuere Versionen)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": "마이크로소프트 워드2007 버전 이후의 문서들"
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Microsoft Word (2007 and later) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -450,12 +1370,52 @@
         {
           "@language": "en",
           "@value": "Digital Negative"
+        },
+        {
+          "@language": "de",
+          "@value": "Digitales Negativ"
+        },
+        {
+          "@language": "fr",
+          "@value": "Digital Negative"
+        },
+        {
+          "@language": "ko",
+          "@value": "  "
+        },
+        {
+          "@language": "nl",
+          "@value": "Digital Negative plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Digital Negative images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Digitale Negative"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Digital Negative plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -469,12 +1429,52 @@
         {
           "@language": "en",
           "@value": "CR2"
+        },
+        {
+          "@language": "de",
+          "@value": "CR2"
+        },
+        {
+          "@language": "fr",
+          "@value": "CR2"
+        },
+        {
+          "@language": "ko",
+          "@value": "CR2"
+        },
+        {
+          "@language": "nl",
+          "@value": "Canon Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Canon Raw images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format Canon Raw"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Canon Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -488,12 +1488,52 @@
         {
           "@language": "en",
           "@value": "JPEG 2000"
+        },
+        {
+          "@language": "de",
+          "@value": "JPEG 2000"
+        },
+        {
+          "@language": "fr",
+          "@value": "JPEG 2000"
+        },
+        {
+          "@language": "ko",
+          "@value": "JPEG2000"
+        },
+        {
+          "@language": "nl",
+          "@value": "JPEG 2000 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for JPEG 2000 images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format JPEG 2000"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor JPEG 2000 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -507,12 +1547,52 @@
         {
           "@language": "en",
           "@value": "WAVE"
+        },
+        {
+          "@language": "de",
+          "@value": "WAVE"
+        },
+        {
+          "@language": "fr",
+          "@value": "WAVE"
+        },
+        {
+          "@language": "ko",
+          "@value": "WACE"
+        },
+        {
+          "@language": "nl",
+          "@value": "WAVE geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for WAVE audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format WAVE"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor WAVE geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -526,12 +1606,52 @@
         {
           "@language": "en",
           "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "de",
+          "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "fr",
+          "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "ko",
+          "@value": "Nikon MEF Raw"
+        },
+        {
+          "@language": "nl",
+          "@value": "Nikon NEF Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Nikon NEF Raw images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format Nikon NEF Raw"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Nikon NEF Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -545,12 +1665,52 @@
         {
           "@language": "en",
           "@value": "M4V"
+        },
+        {
+          "@language": "de",
+          "@value": "M4V"
+        },
+        {
+          "@language": "fr",
+          "@value": "M4V"
+        },
+        {
+          "@language": "ko",
+          "@value": "M4V"
+        },
+        {
+          "@language": "nl",
+          "@value": "Apple M4V videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Apple M4V videos"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format Apple M4V"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Apple M4V videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -564,12 +1724,52 @@
         {
           "@language": "en",
           "@value": "3GPP"
+        },
+        {
+          "@language": "de",
+          "@value": "3GPP"
+        },
+        {
+          "@language": "fr",
+          "@value": "3GPP"
+        },
+        {
+          "@language": "ko",
+          "@value": "3GPP"
+        },
+        {
+          "@language": "nl",
+          "@value": "3GPP videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for 3GPP video"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format 3GPP"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor 3GPP videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -583,12 +1783,52 @@
         {
           "@language": "en",
           "@value": "AVI"
+        },
+        {
+          "@language": "de",
+          "@value": "AVI"
+        },
+        {
+          "@language": "fr",
+          "@value": "AVI"
+        },
+        {
+          "@language": "ko",
+          "@value": "AVI"
+        },
+        {
+          "@language": "nl",
+          "@value": "AVI videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for AVI video"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format AVI"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor AVI videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -602,12 +1842,52 @@
         {
           "@language": "en",
           "@value": "AMR"
+        },
+        {
+          "@language": "de",
+          "@value": "AMR"
+        },
+        {
+          "@language": "fr",
+          "@value": "AMR"
+        },
+        {
+          "@language": "ko",
+          "@value": "AMR"
+        },
+        {
+          "@language": "nl",
+          "@value": "Adaptive Multi-Rate geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Adaptive Multi-Rate audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format Adaptive Multi-Rate (AMR)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Adaptive Multi-Rate geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -621,12 +1901,52 @@
         {
           "@language": "en",
           "@value": "AIFF"
+        },
+        {
+          "@language": "de",
+          "@value": "AIFF"
+        },
+        {
+          "@language": "fr",
+          "@value": "AIFF"
+        },
+        {
+          "@language": "ko",
+          "@value": "AIFF"
+        },
+        {
+          "@language": "nl",
+          "@value": "Audio Interchange File Format geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Audio Interchange File Format audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Audio Interchange File Format (AIFF)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Audio Interchange File Format geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -640,12 +1960,52 @@
         {
           "@language": "en",
           "@value": "OGG audio"
+        },
+        {
+          "@language": "de",
+          "@value": "OGG Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": "audio OGG"
+        },
+        {
+          "@language": "ko",
+          "@value": "OGG 오디오"
+        },
+        {
+          "@language": "nl",
+          "@value": "OGG geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for OGG audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format OGG"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor OGG geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -659,12 +2019,52 @@
         {
           "@language": "en",
           "@value": "OGG video"
+        },
+        {
+          "@language": "de",
+          "@value": "OGG Video"
+        },
+        {
+          "@language": "fr",
+          "@value": "vidéo OGG"
+        },
+        {
+          "@language": "ko",
+          "@value": "OGG 비디오"
+        },
+        {
+          "@language": "nl",
+          "@value": "OGG videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for OGG video"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format OGG"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor OGG videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -678,12 +2078,52 @@
         {
           "@language": "en",
           "@value": "OGG multiplex"
+        },
+        {
+          "@language": "de",
+          "@value": "OGG Multiplex"
+        },
+        {
+          "@language": "fr",
+          "@value": "multiplexe OGG"
+        },
+        {
+          "@language": "ko",
+          "@value": "OGG"
+        },
+        {
+          "@language": "nl",
+          "@value": "Multiplex bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for OGG multiplex"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für OGG Multiplex-Dateien"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor OGG Multiplex bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -697,12 +2137,52 @@
         {
           "@language": "en",
           "@value": "Kodak Photo CD image"
+        },
+        {
+          "@language": "de",
+          "@value": "Kodak Photo CD Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "Kodak Photo CD image"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Kodak Photo CD plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Kodak Photo CD image"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Kodak Photo CD Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Kodak Photo CD plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -716,12 +2196,52 @@
         {
           "@language": "en",
           "@value": "Photoshop"
+        },
+        {
+          "@language": "de",
+          "@value": "Photoshop"
+        },
+        {
+          "@language": "fr",
+          "@value": "Photoshop"
+        },
+        {
+          "@language": "ko",
+          "@value": "포토샵 "
+        },
+        {
+          "@language": "nl",
+          "@value": "Photoshop plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Photoshop images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Photoshop-Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Photoshop plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -735,12 +2255,52 @@
         {
           "@language": "en",
           "@value": "extended MPEG-2 Transport Stream"
+        },
+        {
+          "@language": "de",
+          "@value": "erweiterter MPEG-2 Transportstrom"
+        },
+        {
+          "@language": "fr",
+          "@value": "extended MPEG-2 Transport Stream"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Extended MPEG-2 Transport Stream bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for extended MPEG-2 Transport Stream"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für erweiterte MPEG-2 Transportstrom"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Extended MPEG-2 Transport Stream bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -754,12 +2314,52 @@
         {
           "@language": "en",
           "@value": "FLAC"
+        },
+        {
+          "@language": "de",
+          "@value": "FLAC"
+        },
+        {
+          "@language": "fr",
+          "@value": "FLAC"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Free Lossless Audio Codec geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Free Lossless Audio Codec audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format Free Lossless Audio Codec"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Free Lossless Audio Codec geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -773,12 +2373,52 @@
         {
           "@language": "en",
           "@value": "WMA"
+        },
+        {
+          "@language": "de",
+          "@value": "WMA"
+        },
+        {
+          "@language": "fr",
+          "@value": "WMA"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Windows Media Audio geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Windows Media Audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Audio-Dateien im Format Windows Media Audio (WMA)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Windows Media Audio geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -792,12 +2432,52 @@
         {
           "@language": "en",
           "@value": "WMV"
+        },
+        {
+          "@language": "de",
+          "@value": "WMV"
+        },
+        {
+          "@language": "fr",
+          "@value": "WMV"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Windows Media Video videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Windows Media Video"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Videos im Format Windows Media Video (WMV)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Windows Media Video videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -811,12 +2491,52 @@
         {
           "@language": "en",
           "@value": "ASF"
+        },
+        {
+          "@language": "de",
+          "@value": "ASF"
+        },
+        {
+          "@language": "fr",
+          "@value": "ASF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Advanced System Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Advanced Systems Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Dateien im Advanced Systems Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Advanced System Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -830,12 +2550,52 @@
         {
           "@language": "en",
           "@value": "SVG"
+        },
+        {
+          "@language": "de",
+          "@value": "SVG"
+        },
+        {
+          "@language": "fr",
+          "@value": "SVG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "SVG plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for SVG images"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Bilder im Format SVG"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor SVG plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -849,12 +2609,52 @@
         {
           "@language": "en",
           "@value": "data CD"
+        },
+        {
+          "@language": "de",
+          "@value": "Daten-CD"
+        },
+        {
+          "@language": "fr",
+          "@value": "CD de données"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CD met data"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical data compact disc"
+        },
+        {
+          "@language": "de",
+          "@value": "physische Daten Compact Disc"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke compact disk met data"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -868,12 +2668,52 @@
         {
           "@language": "en",
           "@value": "audio CD"
+        },
+        {
+          "@language": "de",
+          "@value": "Audio-CD"
+        },
+        {
+          "@language": "fr",
+          "@value": "CD audio"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CD met geluid"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical audio compact disc"
+        },
+        {
+          "@language": "de",
+          "@value": "physische Audio Compact Disc"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke compact disk met geluid"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -887,12 +2727,52 @@
         {
           "@language": "en",
           "@value": "video CD"
+        },
+        {
+          "@language": "de",
+          "@value": "Video-CD"
+        },
+        {
+          "@language": "fr",
+          "@value": "CD vidéo"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CD met video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical video compact disc"
+        },
+        {
+          "@language": "de",
+          "@value": "physische Video Compact Disc"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke compact disk met video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -906,12 +2786,52 @@
         {
           "@language": "en",
           "@value": "data DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "Daten-DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": "DVD de données"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "DVD met data"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical data DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "physische Daten DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke DVD met data"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -925,12 +2845,52 @@
         {
           "@language": "en",
           "@value": "audio DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "Audio-DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": "DVD audio"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "DVD met geluid"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical audio DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "physische Audio DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke DVD met geluid"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -944,12 +2904,52 @@
         {
           "@language": "en",
           "@value": "PAL video DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "PAL Video DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": "DVD vidéo PAL"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "DVD met PAL video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical PAL video DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "physische PAL Video DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke DVD met PAL video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -963,12 +2963,52 @@
         {
           "@language": "en",
           "@value": "NTSC video DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "NTSC Video DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": "DVD vidéo NTSC"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "DVD met NTSC video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical NTSC video DVD"
+        },
+        {
+          "@language": "de",
+          "@value": "physische NTSC Video DVD"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke DVD met NTSC video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -982,12 +3022,52 @@
         {
           "@language": "en",
           "@value": "photographic slide"
+        },
+        {
+          "@language": "de",
+          "@value": "Fotodia"
+        },
+        {
+          "@language": "fr",
+          "@value": "photographie diapositive"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "dia "
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical photographic slide"
+        },
+        {
+          "@language": "de",
+          "@value": "physisches Fotodia"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke dia "
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1001,12 +3081,52 @@
         {
           "@language": "en",
           "@value": "photographic print"
+        },
+        {
+          "@language": "de",
+          "@value": "Fotoabzug"
+        },
+        {
+          "@language": "fr",
+          "@value": "photographie papier"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fotoafdruk"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical photographic print"
+        },
+        {
+          "@language": "de",
+          "@value": "physischer Fotoabzug"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke fotoafdruk"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1020,12 +3140,52 @@
         {
           "@language": "en",
           "@value": "Blu-ray video disc"
+        },
+        {
+          "@language": "de",
+          "@value": "Blu-ray Video Disc"
+        },
+        {
+          "@language": "fr",
+          "@value": "disque vidéo Blu-ray"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Blu-ray video disc"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical Blu-ray video disc"
+        },
+        {
+          "@language": "de",
+          "@value": "physische Blu-ray Video Disc"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke Blu-ray video disc"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1039,12 +3199,52 @@
         {
           "@language": "en",
           "@value": "physical artwork"
+        },
+        {
+          "@language": "de",
+          "@value": "Materielles Kunstwerk"
+        },
+        {
+          "@language": "fr",
+          "@value": "oeuvre d'art physique"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "tekening of schilderij (geen foto)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical drawing or painting (non-photographic)"
+        },
+        {
+          "@language": "de",
+          "@value": "physische(s) Zeichnung oder Malerei (kein Foto)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke tekening of schilderij (geen foto)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1058,12 +3258,52 @@
         {
           "@language": "en",
           "@value": "ZVI"
+        },
+        {
+          "@language": "de",
+          "@value": "ZVI"
+        },
+        {
+          "@language": "fr",
+          "@value": "ZVI"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ZVI"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "unofficial media subtype for Zeiss Vision Image images"
+        },
+        {
+          "@language": "de",
+          "@value": "inoffizieller Mediensubtyp für Zeiss Vision Image Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "unofficieel media subtype voor Zeiss Vision Image plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1077,12 +3317,52 @@
         {
           "@language": "en",
           "@value": "STL"
+        },
+        {
+          "@language": "de",
+          "@value": "STL"
+        },
+        {
+          "@language": "fr",
+          "@value": "STL"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "STL"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for steriolithography files"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Stereolithografie-Dateien"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor steriolithography bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1096,12 +3376,52 @@
         {
           "@language": "en",
           "@value": "reel-to-reel audio tape"
+        },
+        {
+          "@language": "de",
+          "@value": "Magnettonband"
+        },
+        {
+          "@language": "fr",
+          "@value": "cassette audio à bobine"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "analoge geluidstape"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical analogue audio tape (reel-to-reel)"
+        },
+        {
+          "@language": "de",
+          "@value": "physisches (analoges) Magnettonband"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke analoge geluidstape"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1115,12 +3435,52 @@
         {
           "@language": "en",
           "@value": "audio cassette"
+        },
+        {
+          "@language": "de",
+          "@value": "Ton-Kassette"
+        },
+        {
+          "@language": "fr",
+          "@value": "cassette audio"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "analoge geluidscassette"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical analogue audio cassette"
+        },
+        {
+          "@language": "de",
+          "@value": "physische (analoge) Ton-Kasette"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke analoge geluidscassette"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1134,12 +3494,52 @@
         {
           "@language": "en",
           "@value": "digital audio tape"
+        },
+        {
+          "@language": "de",
+          "@value": "Digital Audio Tape\n"
+        },
+        {
+          "@language": "fr",
+          "@value": "bande audio numérique"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Digital Audio Tape (DAT) cassette"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical digital audio tape (DAT)"
+        },
+        {
+          "@language": "de",
+          "@value": "physisches digitales Tonband"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke Digital Audio Tape (DAT) cassette"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1153,12 +3553,52 @@
         {
           "@language": "en",
           "@value": "MiniDisc"
+        },
+        {
+          "@language": "de",
+          "@value": "MiniDisc"
+        },
+        {
+          "@language": "fr",
+          "@value": "MiniDisc"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MiniDisc"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical MiniDisc "
+        },
+        {
+          "@language": "de",
+          "@value": "physische MiniDisc"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke MiniDisc"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1172,12 +3612,52 @@
         {
           "@language": "en",
           "@value": "vinyl record"
+        },
+        {
+          "@language": "de",
+          "@value": "Vinyl-Tonträger"
+        },
+        {
+          "@language": "fr",
+          "@value": "enregistrement vinyle"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "LP"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical vinyl record"
+        },
+        {
+          "@language": "de",
+          "@value": "physischer Vinyl-Tonträger"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke LP"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1191,12 +3671,52 @@
         {
           "@language": "en",
           "@value": "mixed CD (data and audio)"
+        },
+        {
+          "@language": "de",
+          "@value": "CD mit Daten und Tondateien"
+        },
+        {
+          "@language": "fr",
+          "@value": "CD mixte (données et audio)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CD met data en geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "physical compact disc containing both data and audio tracks"
+        },
+        {
+          "@language": "de",
+          "@value": "physische CD mit Daten und Tonaufnahmen"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "fysieke Compact Disc met data en geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1210,12 +3730,52 @@
         {
           "@language": "en",
           "@value": "OBJ"
+        },
+        {
+          "@language": "de",
+          "@value": "OBJ"
+        },
+        {
+          "@language": "fr",
+          "@value": "OBJ"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "OBJ"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for OBJ 3D models"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für OBJ 3D Modelle"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor OBJ 3D modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1229,12 +3789,52 @@
         {
           "@language": "en",
           "@value": "gLTF binary"
+        },
+        {
+          "@language": "de",
+          "@value": "gLTF Binärdatei"
+        },
+        {
+          "@language": "fr",
+          "@value": "binaire gLTF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Binary gLTF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Binary GL Transmission Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Binary GL Transmission Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Binary GL Transmission Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1248,12 +3848,52 @@
         {
           "@language": "en",
           "@value": "gLTF"
+        },
+        {
+          "@language": "de",
+          "@value": "gLTF"
+        },
+        {
+          "@language": "fr",
+          "@value": "gLTF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "gLTF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for GL Transmission Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für GL Transmission Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor GL Transmission Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1267,12 +3907,52 @@
         {
           "@language": "en",
           "@value": "VRML"
+        },
+        {
+          "@language": "de",
+          "@value": "VRML"
+        },
+        {
+          "@language": "fr",
+          "@value": "VRML"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "VRML"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Virtual Reality Modeling Language"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp für Virtual Reality Modeling Language"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor Virtual Reality Modeling Language bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1286,12 +3966,52 @@
         {
           "@language": "en",
           "@value": "DICOM"
+        },
+        {
+          "@language": "de",
+          "@value": "DICOM"
+        },
+        {
+          "@language": "fr",
+          "@value": "DICOM"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "DICOM"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for Digital Imaging and Communications in Medicine"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp  für Digital Imaging and Communications in Medicine"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor DICOM bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1305,12 +4025,52 @@
         {
           "@language": "en",
           "@value": "MTL"
+        },
+        {
+          "@language": "de",
+          "@value": "MTL"
+        },
+        {
+          "@language": "fr",
+          "@value": "MTL"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MTL"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for OBJ Material Template Library"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp  für OBJ Material Template Library"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor OBJ Material Template Library bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1324,12 +4084,52 @@
         {
           "@language": "en",
           "@value": "X3D XML"
+        },
+        {
+          "@language": "de",
+          "@value": "X3D XML"
+        },
+        {
+          "@language": "fr",
+          "@value": "X3D XML"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "X3D XML"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "media subtype for X3D XML models"
+        },
+        {
+          "@language": "de",
+          "@value": "Mediensubtyp  für X3D XML Modelle"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "media subtype voor X3D XML modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1343,12 +4143,52 @@
         {
           "@language": "en",
           "@value": "CIFF raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "CIFF raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute CIFF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CIFF Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "unofficial media subtype for Camera Image File Format raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "inoffizieller Mediensubtyp für Bilder im Camera Image File Format (CIFF) raw"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "unofficieel media subtype voor Camera Image File Format Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1362,12 +4202,52 @@
         {
           "@language": "en",
           "@value": "CR3 raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "CR3 raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute CR3"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CR3 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "unofficial media subtype for Canon Raw 3 image"
+        },
+        {
+          "@language": "de",
+          "@value": "inoffizieller Mediensubtyp für Canon Raw 3 Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "unofficieel media subtype voor Canon Raw 3 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1381,12 +4261,52 @@
         {
           "@language": "en",
           "@value": "ARW raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "ARW raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute ARW"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ARW plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "unofficial media subtype for Sony raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "inoffizieller Mediensubtyp für Sony raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "unofficieel media subtype voor Sony Raw 3 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1400,12 +4320,52 @@
         {
           "@language": "en",
           "@value": "RW2 raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "RW2 raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute RW2"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "RW2 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "unofficial media subtype for Panasonic raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "inoffizieller Mediensubtyp für Panasonic raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "unofficieel media subtype voor Parasonic Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1419,12 +4379,52 @@
         {
           "@language": "en",
           "@value": "plain text"
+        },
+        {
+          "@language": "de",
+          "@value": "Textdatei"
+        },
+        {
+          "@language": "fr",
+          "@value": "texte simple"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "platte tekst"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for palin text"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für (reine) Text-Dateien (ohne Formatierung)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor platte tekst"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1438,12 +4438,52 @@
         {
           "@language": "en",
           "@value": "Word (pre-2003) document"
+        },
+        {
+          "@language": "de",
+          "@value": "Word (pre-2003) Dokument"
+        },
+        {
+          "@language": "fr",
+          "@value": "Document Word (pré-2003)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Microsoft Word (2003 en eerder)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Microsoft Word (2003 and before) documents"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Dokumente in Microsoft Word (2003 und ältere Versionen)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Microsoft Word (2003 en eerder) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1457,12 +4497,52 @@
         {
           "@language": "en",
           "@value": "Word (post-2007) document"
+        },
+        {
+          "@language": "de",
+          "@value": "Word (post-2007) Dokument"
+        },
+        {
+          "@language": "fr",
+          "@value": "Document Word (pré-2007)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Microsoft Word (2007 en later)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Microsoft Word (2007 and after) documents"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Dokumente in Microsoft Word (2007 und neuere Versionen)"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Microsoft Word (2007 en later) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1476,12 +4556,52 @@
         {
           "@language": "en",
           "@value": "PNG"
+        },
+        {
+          "@language": "de",
+          "@value": "PNG"
+        },
+        {
+          "@language": "fr",
+          "@value": "PNG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Microsoft Word (2007 en later)"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for portable network graphics images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung portable network graphics Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Microsoft Word (2007 en later) documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1495,12 +4615,52 @@
         {
           "@language": "en",
           "@value": "JPEG"
+        },
+        {
+          "@language": "de",
+          "@value": "JPEG"
+        },
+        {
+          "@language": "fr",
+          "@value": "JPEG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "JPEG"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for JPEG images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für JPEG Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor JPEG plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1514,12 +4674,52 @@
         {
           "@language": "en",
           "@value": "PDF"
+        },
+        {
+          "@language": "de",
+          "@value": "PDF"
+        },
+        {
+          "@language": "fr",
+          "@value": "PDF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "PDF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for PDF documents"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für PDF Dokumente"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor PDF documenten"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1533,12 +4733,52 @@
         {
           "@language": "en",
           "@value": "TIFF"
+        },
+        {
+          "@language": "de",
+          "@value": "TIFF"
+        },
+        {
+          "@language": "fr",
+          "@value": "TIFF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "TIFF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for TIFF images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für TIFF Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor TIFF plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1552,12 +4792,52 @@
         {
           "@language": "en",
           "@value": "Digital Negative"
+        },
+        {
+          "@language": "de",
+          "@value": "Digitales Negative"
+        },
+        {
+          "@language": "fr",
+          "@value": "Digital Negative"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Digital Negative"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Digital Negative images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Digitale Negative"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Digital Negative plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1571,12 +4851,52 @@
         {
           "@language": "en",
           "@value": "Canon Raw"
+        },
+        {
+          "@language": "de",
+          "@value": "Canon Raw"
+        },
+        {
+          "@language": "fr",
+          "@value": "Canon Raw"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Canon Raw"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Canon Raw images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Canon Raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Canon Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1590,12 +4910,52 @@
         {
           "@language": "en",
           "@value": "JPEG 2000"
+        },
+        {
+          "@language": "de",
+          "@value": "JPEG 2000"
+        },
+        {
+          "@language": "fr",
+          "@value": "JPEG 2000"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "JPEG 2000"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for JPEG 2000 images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für JPEG 2000 Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor JPEG2000 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1609,12 +4969,52 @@
         {
           "@language": "en",
           "@value": "WAVE"
+        },
+        {
+          "@language": "de",
+          "@value": "WAVE"
+        },
+        {
+          "@language": "fr",
+          "@value": "WAVE"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "WAVE"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for WAVE audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für WAVE Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor WAV geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1628,12 +5028,52 @@
         {
           "@language": "en",
           "@value": "MP3"
+        },
+        {
+          "@language": "de",
+          "@value": "MP3"
+        },
+        {
+          "@language": "fr",
+          "@value": "MP3"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MP3"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "ffle extension for MP3 audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für MP3 Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor MP3 geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1647,12 +5087,52 @@
         {
           "@language": "en",
           "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "de",
+          "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "fr",
+          "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Nikon NEF Raw"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Nikon NEF Raw images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Nikon NEF Raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor  Nikon NEF Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1666,12 +5146,52 @@
         {
           "@language": "en",
           "@value": "MP4 audio"
+        },
+        {
+          "@language": "de",
+          "@value": "MP4 Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": "audio MP4"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MP4 geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for MP4 audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für MP4 Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor MP4 geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1685,12 +5205,52 @@
         {
           "@language": "en",
           "@value": "MP4 video"
+        },
+        {
+          "@language": "de",
+          "@value": "MP4 Video"
+        },
+        {
+          "@language": "fr",
+          "@value": "vidéo MP4"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MP4 videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for MP4 video"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für MP4 Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor MP4 videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1704,12 +5264,52 @@
         {
           "@language": "en",
           "@value": "GIF"
+        },
+        {
+          "@language": "de",
+          "@value": "GIF"
+        },
+        {
+          "@language": "fr",
+          "@value": "GIF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "GIF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for GIF images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für GIF Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor GIF plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1723,12 +5323,52 @@
         {
           "@language": "en",
           "@value": "BMP"
+        },
+        {
+          "@language": "de",
+          "@value": "BMP"
+        },
+        {
+          "@language": "fr",
+          "@value": "BMP"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "BMP"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for bitmap images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für bitmap Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor bitmap plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1742,12 +5382,52 @@
         {
           "@language": "en",
           "@value": "M4V"
+        },
+        {
+          "@language": "de",
+          "@value": "M4V"
+        },
+        {
+          "@language": "fr",
+          "@value": "M4V"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "M4V"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Apple M4V videos"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Apple M4V Videos"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Apple M4V videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1760,12 +5440,52 @@
         {
           "@language": "en",
           "@value": "PLY"
+        },
+        {
+          "@language": "de",
+          "@value": "PLY"
+        },
+        {
+          "@language": "fr",
+          "@value": "PLY"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "PLY"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Polygon File Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Polygon File Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Polygon File Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1779,12 +5499,52 @@
         {
           "@language": "en",
           "@value": "STL"
+        },
+        {
+          "@language": "de",
+          "@value": "STL"
+        },
+        {
+          "@language": "fr",
+          "@value": "STL"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "STL"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for steriolithography files"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Stereolithografie Dateien"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor steriolithography bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1798,12 +5558,52 @@
         {
           "@language": "en",
           "@value": "3GPP"
+        },
+        {
+          "@language": "de",
+          "@value": "3GPP"
+        },
+        {
+          "@language": "fr",
+          "@value": "3GPP"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "3GPP"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for 3GPP video"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für 3GPP Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor 3GPP video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1817,12 +5617,52 @@
         {
           "@language": "en",
           "@value": "ZVI"
+        },
+        {
+          "@language": "de",
+          "@value": "ZVI"
+        },
+        {
+          "@language": "fr",
+          "@value": "ZVI"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ZVI"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Zeiss Vision Image images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Zeiss Vision Image Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Zeiss Vision Image plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1836,12 +5676,52 @@
         {
           "@language": "en",
           "@value": "AVI"
+        },
+        {
+          "@language": "de",
+          "@value": "AVI"
+        },
+        {
+          "@language": "fr",
+          "@value": "AVI"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "AVI"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for AVI video"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für AVI Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor AVI video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1855,12 +5735,52 @@
         {
           "@language": "en",
           "@value": "AMR"
+        },
+        {
+          "@language": "de",
+          "@value": "AMR"
+        },
+        {
+          "@language": "fr",
+          "@value": "AMR"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "AMR"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Adaptive Multi-Rate audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Adaptive Multi-Rate Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Adaptive Multi-Rate geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1874,12 +5794,52 @@
         {
           "@language": "en",
           "@value": "AIFF"
+        },
+        {
+          "@language": "de",
+          "@value": "AIFF"
+        },
+        {
+          "@language": "fr",
+          "@value": "AIFF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "AIFF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Audio Interchange File Format audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Audio Interchange File Format Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Audio Interchange File Format geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1893,12 +5853,52 @@
         {
           "@language": "en",
           "@value": "OGG audio"
+        },
+        {
+          "@language": "de",
+          "@value": "OGG Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": "audio OGG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "OGG geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for OGG audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für OGG Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor OGG geluidsopnames"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1912,12 +5912,52 @@
         {
           "@language": "en",
           "@value": "OGG video"
+        },
+        {
+          "@language": "de",
+          "@value": "OGG Video"
+        },
+        {
+          "@language": "fr",
+          "@value": "vidéo OGG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "OGG video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for OGG video"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für OGG Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor OGG video"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1931,12 +5971,52 @@
         {
           "@language": "en",
           "@value": "OGG multiplex"
+        },
+        {
+          "@language": "de",
+          "@value": "OGG Multiplex"
+        },
+        {
+          "@language": "fr",
+          "@value": "multiplexe OGG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "OGG Multiplex"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for OGG multiplex"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für OGG Multiplex"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor OGG Multiplex bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1950,12 +6030,52 @@
         {
           "@language": "en",
           "@value": "Kodak Photo CD image"
+        },
+        {
+          "@language": "de",
+          "@value": "Kodak Photo CD Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "Kodak Photo CD image"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Kodak Photo CD plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Kodak Photo CD image"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Kodak Photo CD Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Kodak Photo CD plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1969,12 +6089,52 @@
         {
           "@language": "en",
           "@value": "QuickTime"
+        },
+        {
+          "@language": "de",
+          "@value": "QuickTime"
+        },
+        {
+          "@language": "fr",
+          "@value": "QuickTime"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "QuickTime"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Apple QuickTime video"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Apple QuickTime Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Apple Quicktime videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -1988,12 +6148,52 @@
         {
           "@language": "en",
           "@value": "Photoshop"
+        },
+        {
+          "@language": "de",
+          "@value": "Photoshop"
+        },
+        {
+          "@language": "fr",
+          "@value": "Photoshop"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Photoshop"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Photoshop images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Photoshop Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Photoshop plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2007,12 +6207,52 @@
         {
           "@language": "en",
           "@value": "FLAC"
+        },
+        {
+          "@language": "de",
+          "@value": "FLAC"
+        },
+        {
+          "@language": "fr",
+          "@value": "FLAC"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "FLAC"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Free Lossless Audio Codec audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Free Lossless Audio Codec Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Free Lossless Audio Codec geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2026,12 +6266,52 @@
         {
           "@language": "en",
           "@value": "MWA"
+        },
+        {
+          "@language": "de",
+          "@value": "MWA"
+        },
+        {
+          "@language": "fr",
+          "@value": "MWA"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MWA"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Windows Media Audio"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Windows Media Audio"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Windows Media geluidsbestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2045,12 +6325,52 @@
         {
           "@language": "en",
           "@value": "WMV"
+        },
+        {
+          "@language": "de",
+          "@value": "WMV"
+        },
+        {
+          "@language": "fr",
+          "@value": "WMV"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "WMV"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Windows Media Video"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Windows Media Video"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Windows Media videos"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2064,12 +6384,52 @@
         {
           "@language": "en",
           "@value": "ASF"
+        },
+        {
+          "@language": "de",
+          "@value": "ASF"
+        },
+        {
+          "@language": "fr",
+          "@value": "ASF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ASF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Advanced Systems Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Advanced Systems Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Advanced Systems Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2083,12 +6443,52 @@
         {
           "@language": "en",
           "@value": "SVG"
+        },
+        {
+          "@language": "de",
+          "@value": "SVG"
+        },
+        {
+          "@language": "fr",
+          "@value": "SVG"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "SVG"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for SVG images"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für SVG Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor SVG plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2102,12 +6502,52 @@
         {
           "@language": "en",
           "@value": "OBJ"
+        },
+        {
+          "@language": "de",
+          "@value": "OBJ"
+        },
+        {
+          "@language": "fr",
+          "@value": "OBJ"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "OBJ"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for OBJ"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für OBJ"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor OBJ bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2121,12 +6561,52 @@
         {
           "@language": "en",
           "@value": "gLTF binary"
+        },
+        {
+          "@language": "de",
+          "@value": "gLTF Binärdatei"
+        },
+        {
+          "@language": "fr",
+          "@value": "binaire gLTF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "binaire gLTF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Binary GL Transmission Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Binary GL Transmission Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Binary GL Transmission Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2140,12 +6620,52 @@
         {
           "@language": "en",
           "@value": "gLTF"
+        },
+        {
+          "@language": "de",
+          "@value": "gLTF"
+        },
+        {
+          "@language": "fr",
+          "@value": "gLTF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "gLTF"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for GL Transmission Format"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für GL Transmission Format"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor GL Transmission Format bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2159,12 +6679,52 @@
         {
           "@language": "en",
           "@value": "VRML"
+        },
+        {
+          "@language": "de",
+          "@value": "VRML"
+        },
+        {
+          "@language": "fr",
+          "@value": "VRML"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "VRML"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Virtual Reality Modeling Language"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Virtual Reality Modeling Language"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor  Virtual Reality Modeling Language bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2178,12 +6738,52 @@
         {
           "@language": "en",
           "@value": "DICOM"
+        },
+        {
+          "@language": "de",
+          "@value": "DICOM"
+        },
+        {
+          "@language": "fr",
+          "@value": "DICOM"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "DICOM"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Digital Imaging and Communications in Medicine"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Digital Imaging and Communications in Medicine"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Digital Imaging and Communications in Medicine (DICOM) bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2197,12 +6797,52 @@
         {
           "@language": "en",
           "@value": "MTL"
+        },
+        {
+          "@language": "de",
+          "@value": "MTL"
+        },
+        {
+          "@language": "fr",
+          "@value": "MTL"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "MTL"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for OBJ Material Template Library"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für OBJ Material Template Library"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor OBJ Material Template Library bestanden"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2216,12 +6856,52 @@
         {
           "@language": "en",
           "@value": "X3D VRML"
+        },
+        {
+          "@language": "de",
+          "@value": "X3D VRML"
+        },
+        {
+          "@language": "fr",
+          "@value": "X3D VRML"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "X3D VRML"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for X3D VRML models"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für X3D VRML Modelle"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor  X3D VRML modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2235,12 +6915,52 @@
         {
           "@language": "en",
           "@value": "X3D XML"
+        },
+        {
+          "@language": "de",
+          "@value": "X3D XML"
+        },
+        {
+          "@language": "fr",
+          "@value": "X3D XML"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "X3D XML"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for X3D XML models"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für XML Modelle"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor X3D XML modellen"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2254,12 +6974,52 @@
         {
           "@language": "en",
           "@value": "CIFF raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "CIFF raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute CIFF"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CIFF Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Camera Image File Format raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Camera Image File Format raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Camera Image File Format Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2273,12 +7033,52 @@
         {
           "@language": "en",
           "@value": "CR3 raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "CR3 raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute CR3"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "CR3 raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Canon Raw 3 image"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Canon Raw 3 Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Canon Raw 3 plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2292,12 +7092,52 @@
         {
           "@language": "en",
           "@value": "ARW raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "ARW raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute ARW"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ARW raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Sony raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Sony raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Sony Raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -2311,12 +7151,52 @@
         {
           "@language": "en",
           "@value": "RW2 raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "RW2 raw Bild"
+        },
+        {
+          "@language": "fr",
+          "@value": "image brute RW2"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "RW2 raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ],
       "skos:definition": [
         {
           "@language": "en",
           "@value": "file extension for Panasonic raw image"
+        },
+        {
+          "@language": "de",
+          "@value": "Dateierweiterung für Panasonic raw Bilder"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bestandsextensie voor Panasonic raw plaatjes"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     }
