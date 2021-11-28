@@ -1,0 +1,739 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:inScheme": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Drawing",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Drawing",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Drawing"
+        },
+        {
+          "@language": "ru",
+          "@value": "Рисунок"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "素描"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Visual works produced by drawing, which is the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of color."
+        },
+        {
+          "@language": "ru",
+          "@value": "Изображение на плоскости, часто на бумаге, создаваемое с помощью карандаша, ручки, мела или других инструментов, когда целью является отражение формы, а не цвета."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Painting",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Painting",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Painting"
+        },
+        {
+          "@language": "ru",
+          "@value": "Картина"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "繪畫"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface."
+        },
+        {
+          "@language": "ru",
+          "@value": "Изображение, сделанное с помощью пигментов, растворенных в масле, воде, яичном желтке, воске или других растворителях, формирующих визуальный эффект пространства."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Logo",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Logo",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Logo"
+        },
+        {
+          "@language": "ru",
+          "@value": "Лого"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "標誌"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Devices that are specifically symbol- or picture based, designed for ready recognition to identify a product, company, or organization and sometimes used as trademarks."
+        },
+        {
+          "@language": "ru",
+          "@value": "Изображение, созданное из символов или картины для специфичного представления проекта, компании или организации."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Icon",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Icon",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Icon"
+        },
+        {
+          "@language": "ru",
+          "@value": "Иконка"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "圖示"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Small pictures, pictograms, or symbols used on computer displays or in graphical user interfaces meant to represent files, objects, applications, actions, or messages."
+        },
+        {
+          "@language": "ru",
+          "@value": "Небольшие изображения, пиктограммы или символы, использующиеся на компьютере или в графических пользовательских интерфейсах, предназначенные для представления файлов, объектов, приложений, действий или сообщений."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Illustration",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Illustration",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Illustration"
+        },
+        {
+          "@language": "ru",
+          "@value": "Иллюстрация"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "插圖"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Pictures or diagrams that clarify or provide an example or visualization. They usually accompany a text; the term is most often used to refer to pictures in books or published journal."
+        },
+        {
+          "@language": "ru",
+          "@value": "Рисунки или диаграммы, которые поясняют или предоставляют пример или визуализацию. Обычно они сопровождают текст; этот термин чаще всего используется для обозначения изображений в книгах или опубликованных журналах."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Graphic",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Graphic",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Graphic"
+        },
+        {
+          "@language": "ru",
+          "@value": "Графика"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "圖形"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Visual images or designs preserved on some medium."
+        },
+        {
+          "@language": "ru",
+          "@value": "Визуальные образы или элементы дизайна, сохраненные на каком-либо носителе."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Photograph",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Photograph",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Photograph"
+        },
+        {
+          "@language": "ru",
+          "@value": "Фотография"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "照片"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Refers to still images produced from radiation-sensitive materials (sensitive to light, electron beams, or nuclear radiation), generally by means of the chemical action of light on a sensitive film, paper, glass, or metal. Photographs may be positive or negative, opaque or transparent. The concept may include photographs made by digital means."
+        },
+        {
+          "@language": "ru",
+          "@value": "Относится к неподвижным изображениям, полученным на чувствительных к излучению материалах (чувствительных к свету, электронным лучам или ядерному излучению), как правило, посредством химического воздействия света на чувствительную пленку, бумагу, стекло или металл. Фотографии могут быть позитивными или негативными, непрозрачными или прозрачными. В концепцию входят фотографии, сделанные с помощью цифровых средств."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Animation",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Animation",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Animation"
+        },
+        {
+          "@language": "ru",
+          "@value": "Анимация"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "動畫"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Works that present the illusion of movement and that may be created by a number of techniques including successive drawings, photographing positions of puppets or models, or using computers."
+        },
+        {
+          "@language": "ru",
+          "@value": "Работы, которые создают иллюзию движения и созданные с помощью ряда методов, включая последовательные рисунки, фотографирование положения моделей или использование компьютера."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Film",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Film",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Film"
+        },
+        {
+          "@language": "ru",
+          "@value": "Фильм"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "影片"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Works presented in the form of a series of pictures carried on photographic film or video tape, presented to the eye in such rapid succession as to give the illusion of natural movement."
+        },
+        {
+          "@language": "ru",
+          "@value": "Работы, созданные из серии изображений, записанных на фотопленку или видеопленку, показанных с такой быстротой, что создается иллюзия естественного движения."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/SlideShow",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "SlideShow",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Slide Show"
+        },
+        {
+          "@language": "ru",
+          "@value": "Слайд шоу"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "投影片"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Visual representations of information for the purpose of achieving favorable visibility and persuading an audience to believe or support the presentor's ideas, projects, or goals."
+        },
+        {
+          "@language": "ru",
+          "@value": "Визуальное представление информации для успешной демонстрации изображения и убеждения аудитории в идеях и целях докладчика."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/DesignPlan",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "DesignPlan",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Design Plan"
+        },
+        {
+          "@language": "ru",
+          "@value": "Дизайн проект"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "設計"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Refers to drawings, sketches, prints, computer graphics, or works in other media depicting a building or any object viewed from above, geometrically represented as projected on a horizontal plane."
+        },
+        {
+          "@language": "ru",
+          "@value": "Относится к чертежам, наброскам, распечаткам, компьютерной графике или работам на других носителях, изображающим здание или любой объект, рассматриваемый сверху, геометрически представленный в виде проекции на горизонтальную плоскость."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Diagram",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Diagram",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Diagram"
+        },
+        {
+          "@language": "ru",
+          "@value": "Диаграмма"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "圖解"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Graphic designs intended to explain rather than simply represent. "
+        },
+        {
+          "@language": "ru",
+          "@value": "Графический дизайн, предназначенный для представления аналитических результатов."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/Map",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "Map",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Map"
+        },
+        {
+          "@language": "ru",
+          "@value": "Карта"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "地圖"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection."
+        },
+        {
+          "@language": "ru",
+          "@value": "Относится к графическим или фотограмметрическим изображениям поверхности Земли или ее части, включая физические особенности и политические границы, где каждая точка соответствует географическому или небесному положению в соответствии с определенным масштабом или проекцией."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/MusicalNotation",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "MusicalNotation",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Musical Notation"
+        },
+        {
+          "@language": "ru",
+          "@value": "Нотная запись"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "音符"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "General term for systems used to visually represent music through written words or standard notations."
+        },
+        {
+          "@language": "ru",
+          "@value": "Общий термин, используемый для визуального представления музыки посредством письменных слов или стандартных обозначений."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/IdentificationKey",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "IdentificationKey",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Identification Key"
+        },
+        {
+          "@language": "ru",
+          "@value": "Ключ для определения"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "鑑定表"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A taxonomic key used for identifying unknown organisms."
+        },
+        {
+          "@language": "ru",
+          "@value": "Таксономический ключ, используемый для определения неизвестных организмов."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/ScannedText",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "ScannedText",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Scanned Text"
+        },
+        {
+          "@language": "ru",
+          "@value": "Отсканированный текст"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "掃瞄文本"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A body of physical type or written matter transformed into an electronic format that can be used to reproduce the original material on a screen.  "
+        },
+        {
+          "@language": "ru",
+          "@value": "Физический предмет или письменный материал, преобразованный в электронный формат, который можно использовать для воспроизведения исходного материала на экране."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/RecordedText",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "RecordedText",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Recorded Text"
+        },
+        {
+          "@language": "ru",
+          "@value": "Записанный из звука текст"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "紀錄文本"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A body of physical type or written matter read aloud by a narrator and recorded. "
+        },
+        {
+          "@language": "ru",
+          "@value": "Физический предмет или письменный источник, описанный или прочитанный рассказчиком вслух и записанный."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/RecordedOrganism",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "RecordedOrganism",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Recorded Organism"
+        },
+        {
+          "@language": "ru",
+          "@value": "Записанный организм"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "紀錄生物"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The sounds produced by an organism or organisms recorded on an audio medium."
+        },
+        {
+          "@language": "ru",
+          "@value": "Звуки, издаваемые организмом или организмами, записанные на звуковой носитель."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/TaxonPage",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "TaxonPage",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Taxon Page"
+        },
+        {
+          "@language": "ru",
+          "@value": "Страница таксона"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "分類頁"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A web page summarizing information about a particular taxon."
+        },
+        {
+          "@language": "ru",
+          "@value": "Веб-страница, обобщающая информацию о конкретном таксоне."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/MultimediaLearningObject",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "MultimediaLearningObject",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Multimedia Learning Object"
+        },
+        {
+          "@language": "ru",
+          "@value": "Образовательный мультимедиа-ресурс"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "多媒體學習物件"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Works that employ several distinct media forms to improve learning outcomes."
+        },
+        {
+          "@language": "ru",
+          "@value": "Работы, в которых используется несколько различных медиа-ресурсов для оптимизации результатов обучения."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/VirtualRealityEnvironment",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "VirtualRealityEnvironment",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Virtual Reality Environment"
+        },
+        {
+          "@language": "ru",
+          "@value": "Среда виртуального пространства"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "虛擬實境"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Use with regard to types of computer interface that produce compelling sensory output in response to user selections or movements."
+        },
+        {
+          "@language": "ru",
+          "@value": "Используется в отношении типов компьютерных интерфейсов, имеющих обратную связь в ответ на действия мышью или движения пользователя."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acsubtype/values/GlossaryPage",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "rdf:value": "GlossaryPage",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "Glossary Page"
+        },
+        {
+          "@language": "ru",
+          "@value": "Страница словаря"
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "詞彙表"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Alphabetical lists of terms related to a particular subject or area of interest, including definitions or explanations of usage."
+        },
+        {
+          "@language": "ru",
+          "@value": "Алфавитный список терминов, относящихся к конкретному предмету или области интересов, включая определения или руководства к использованию."
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
+        }
+      ]
+    }
+  ]
+}
