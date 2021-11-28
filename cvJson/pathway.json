@@ -1,0 +1,2764 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "skos:broader": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p",
+      "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "pathway concept scheme"
+        },
+        {
+          "@language": "es",
+          "@value": "equema conceptual de ruta"
+        },
+        {
+          "@language": "fr",
+          "@value": "schéma conceptuel contrôlé pour pathway"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:pathway and dwciri:pathway"
+        },
+        {
+          "@language": "es",
+          "@value": "Un Esquema Conceptual SKOS para ser utilizado como vocabulario controlado para los términos de Darwin Core dwc:pathway y dwciri:pathway"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p001",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "biologicalControl",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "biological control"
+        },
+        {
+          "@language": "es",
+          "@value": "control biológico"
+        },
+        {
+          "@language": "fr",
+          "@value": "contrôle biologique"
+        },
+        {
+          "@language": "ko",
+          "@value": "생물학적 방제"
+        },
+        {
+          "@language": "nl",
+          "@value": "biologische bestrijding"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms occuring in an area because they were introduced for the purpose of biological control of another organism."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos presentes en un área porque fueron introducidos con el propósito de llevar a cabo control biológico de otro organismo."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes introduits volontairement dans une zone pour y  contrôler d'autres organismes"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Organismen die voorkomen in een gebied door introductie of met de intentie voor biologische bestrijding van een ander organisme."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p002",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "erosionControl",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "erosion control"
+        },
+        {
+          "@language": "es",
+          "@value": "control de erosión"
+        },
+        {
+          "@language": "fr",
+          "@value": "contrôle de l’érosion"
+        },
+        {
+          "@language": "ko",
+          "@value": "침식방지"
+        },
+        {
+          "@language": "nl",
+          "@value": "erosiebestrijding"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms introduced for the purpose of erosion control/dune stabilization (windbreaks, hedges, etc.)."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos introducidos con el propósito de llevar a cabo control de erosión/estabilización de dunas (cortavientos, setos, etc.)."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes introduits dans le but de contrôler l'érosion, stabiliser les dunes (brise-vent, haies, etc.)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Geïntroduceerd organisme met een oog op duinstabilisatie of controle van erosie (hagen, windschermen etc.)"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p003",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "fisheryInTheWild",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "fishery in the wild"
+        },
+        {
+          "@language": "es",
+          "@value": "pesca silvestre"
+        },
+        {
+          "@language": "fr",
+          "@value": "pêche en milieu naturel"
+        },
+        {
+          "@language": "ko",
+          "@value": "어장"
+        },
+        {
+          "@language": "nl",
+          "@value": "visserij in het wild"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Fish stocked into the wild either to create a fishery or for recreational angling."
+        },
+        {
+          "@language": "es",
+          "@value": "Peces introducidos en ambientes naturales para crear una pesquería o para la pesca recreativa."
+        },
+        {
+          "@language": "fr",
+          "@value": "Poissons capturés en milieu naturel à des fins commerciales ou pour la pêche récréative."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Wild visserijbestand voor het creeëren van een visserij of voor de hengelsport."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p004",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "hunting",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "hunting"
+        },
+        {
+          "@language": "es",
+          "@value": "caza"
+        },
+        {
+          "@language": "fr",
+          "@value": "chasse"
+        },
+        {
+          "@language": "ko",
+          "@value": "사냥"
+        },
+        {
+          "@language": "nl",
+          "@value": "jacht"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Animals stocked into the wild specifically with the intention that they would be hunted for sport."
+        },
+        {
+          "@language": "es",
+          "@value": "Animales introducidos en ambientes naturales específicamente para ser objeto de caza deportiva."
+        },
+        {
+          "@language": "fr",
+          "@value": "Animaux sauvages ou lâchés dans la nature pour la chasse"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Dieren die in het wild gehouden worden met het oog op de jacht."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p005",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "landscapeImprovement",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "landscape improvement"
+        },
+        {
+          "@language": "es",
+          "@value": "mejoramiento de paisaje"
+        },
+        {
+          "@language": "fr",
+          "@value": "aménagement paysager"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "landschapsverbetering"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Landscape/flora/fauna \"improvement\" in the wild."
+        },
+        {
+          "@language": "es",
+          "@value": "\"Mejoramiento\" de paisaje/flora/fauna en la naturaleza."
+        },
+        {
+          "@language": "fr",
+          "@value": "Paysage/Faune/Flore amelioration naturelle"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Verbetering van het landschap, de flora en de fauna in het wild."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p006",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "conservationOrWildlifeManagement",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "conservation or wildlife management"
+        },
+        {
+          "@language": "es",
+          "@value": "conservación o manejo de vida silvestre"
+        },
+        {
+          "@language": "fr",
+          "@value": "conservation ou gestion de la vie sauvage"
+        },
+        {
+          "@language": "ko",
+          "@value": "보존 또는 야생생물 관리"
+        },
+        {
+          "@language": "nl",
+          "@value": "conservatie of natuurbeheer"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms introduced for conservation purposes or wildlife management."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos introducidos con fines de conservación o manejo de vida silvestre."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes introduits à des fins de conservation ou de gestion de la faune"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Geïntroduceerde organismen voor conservatiepraktijken of natuurbeheer."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p007",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "releasedForUse",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "released for use"
+        },
+        {
+          "@language": "es",
+          "@value": "liberado para uso"
+        },
+        {
+          "@language": "fr",
+          "@value": "libération pour usage"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "vrijgelaten met een doel"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Release in nature for use (other than above, e.g., fur, transport, medical use)."
+        },
+        {
+          "@language": "es",
+          "@value": "Liberado en la naturaleza para uso (distinto del anterior, e.g., peletería, transporte, uso medicinal)."
+        },
+        {
+          "@language": "fr",
+          "@value": "Rejet dans la nature pour utilisation (autre que ci-dessus, par exemple fourrure, transport, usage médical)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Vrijlating in de natuur met een doel (anders dan hierboven; bv. pels, transport ...)"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p008",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "otherIntentionalRelease",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p045",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "other intentional release"
+        },
+        {
+          "@language": "es",
+          "@value": "otra liberación intencional"
+        },
+        {
+          "@language": "fr",
+          "@value": "autre libération volontaire"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "andere intentionele vrijlating"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A catch-all term for intentional releases not for human use that are not covered by other more specific terms."
+        },
+        {
+          "@language": "es",
+          "@value": "Un término general para liberaciones intencionales no para uso humano que no estén cubiertas por otros términos más específicos."
+        },
+        {
+          "@language": "fr",
+          "@value": "Un terme fourre-tout pour les rejets intentionnels non destinés à un usage humain qui ne sont pas couverts par d'autres termes plus spécifiques"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Een overkoepelende term voor intentionele vrijlatingen (niet voor menselijke doeleinden)."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p009",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "agriculture",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "agriculture (including biofuel feedstocks)"
+        },
+        {
+          "@language": "es",
+          "@value": "agricultura (incluyendo materia prima para biocombustibles)"
+        },
+        {
+          "@language": "fr",
+          "@value": "agriculture (y compris les matières premières des biocarburants)"
+        },
+        {
+          "@language": "ko",
+          "@value": "경작"
+        },
+        {
+          "@language": "nl",
+          "@value": "landbouw (inclusief basismaterialen voor biobrandstof)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Plants grown with the intention of harvesting."
+        },
+        {
+          "@language": "es",
+          "@value": "Plantas cultivadas con la intención de cosecharlas."
+        },
+        {
+          "@language": "fr",
+          "@value": "Plantes cultivées avec l'intention de récolter"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Planten die gehouden worden om finaal geoogst te worden."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p010",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "aquacultureMariculture",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "aquaculture/mariculture"
+        },
+        {
+          "@language": "es",
+          "@value": "acuicultura/maricultura"
+        },
+        {
+          "@language": "fr",
+          "@value": "aquaculture/mariculture"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "aquacultuur/maricultuur"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The analog of agriculture and farmed animals, specifically related to aquatic organisms."
+        },
+        {
+          "@language": "es",
+          "@value": "El análogo de la agricultura y los animales de granja, específicamente relacionado a organismos acuáticos."
+        },
+        {
+          "@language": "fr",
+          "@value": "L'analogue de l'agriculture et des animaux d'élevage, spécifiquement liés aux organismes aquatiques"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p011",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "publicGardenZooAquaria",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "botanic garden/zoo/aquaria (excluding domestic aquaria)"
+        },
+        {
+          "@language": "es",
+          "@value": "jardín botánico/zoológico/acuarios (excluyendo acuarios domésticos)"
+        },
+        {
+          "@language": "fr",
+          "@value": "jardin botanique/zoo/aquarium (à l'exclusion des aquariums domestiques)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "plantentuin/dierentuin/aquarium (exclusief aquaria uit huiselijke kringen)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms in public collections of plants and/or animals."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos en colecciones públicas de plantas o animales."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes des collections publique de plantes et/oou d'animaux."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Organismen in openbare collecties van planten en/of dieren"
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p012",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "pet",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "pet/aquarium/terrarium species (including live food for such species)"
+        },
+        {
+          "@language": "es",
+          "@value": "especies mascota/de acuario/de terrario (incluyendo comida viva para esas especies)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Plantes ornementales, animaux de compagnie, organismes d’aquarium ainsi que leurs aliments vivants"
+        },
+        {
+          "@language": "ko",
+          "@value": "반려동물"
+        },
+        {
+          "@language": "nl",
+          "@value": "huisdier/aquarium/terrarium soorten (inclusief levende soorten gekweekt als voedsel)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Privately kept animals."
+        },
+        {
+          "@language": "es",
+          "@value": "Animales mantenidos en forma privada."
+        },
+        {
+          "@language": "fr",
+          "@value": "Les animaux gardé en privé."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Dieren die gehouden worden in huiselijke kringen."
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p013",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "farmedAnimals",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "farmed animals (including animals left under limited control)"
+        },
+        {
+          "@language": "es",
+          "@value": "animales de granja (incluyendo animales dejados bajo control limitado)"
+        },
+        {
+          "@language": "fr",
+          "@value": "animaux d'élevage (y compris les animaux laissés sous contrôle limité)"
+        },
+        {
+          "@language": "ko",
+          "@value": "축산"
+        },
+        {
+          "@language": "nl",
+          "@value": "gedomesticeerde dieren"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Animals cared for and bred with the specific intention of using their products, such as meat and milk."
+        },
+        {
+          "@language": "es",
+          "@value": "Animales cuidados y criados con la intención específica de utilizar sus productos, como la carne y la leche."
+        },
+        {
+          "@language": "fr",
+          "@value": "Les animaux soignés et élevés avec l'intentions spécifique d'utiliser leur prooduits, comme la viande et le lait. "
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p014",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "forestry",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "forestry (including reforestation)"
+        },
+        {
+          "@language": "es",
+          "@value": "silvicultura (incluyendo reforestación)"
+        },
+        {
+          "@language": "fr",
+          "@value": "foresterie ( y compris la reforestation)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "bosbeheer (inclusief herbebossing)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Trees specifically introduced to provide timber and other forestry products."
+        },
+        {
+          "@language": "es",
+          "@value": "Árboles introducidos específicamente para proporcionar madera y otros productos forestales."
+        },
+        {
+          "@language": "fr",
+          "@value": "Abres spécifiquement introduits pour fournir du bois et d'autre produits forestiers. "
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p015",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "fur",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "fur farms"
+        },
+        {
+          "@language": "es",
+          "@value": "granjas de pieles"
+        },
+        {
+          "@language": "fr",
+          "@value": "ferme à fourrure"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "pelsdierfokkerij"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms escaped from a fur farm, including unauthorised releases."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que han escapado de una granja de pieles, incluyendo liberaciones no autorizadas."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes echapée d'une ferme à fourrure et compris les relaches non autorisés."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p016",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "horticulture",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "horticulture"
+        },
+        {
+          "@language": "es",
+          "@value": "horticultura"
+        },
+        {
+          "@language": "fr",
+          "@value": "horticulture"
+        },
+        {
+          "@language": "ko",
+          "@value": "원예"
+        },
+        {
+          "@language": "nl",
+          "@value": "tuinbouw/horticultuur"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Plants distributed by the ornamental and decorative plants industry."
+        },
+        {
+          "@language": "es",
+          "@value": "Plantas distribuidas por la industria de plantas ornamentales y decorativas."
+        },
+        {
+          "@language": "fr",
+          "@value": "Plantes cultivées avec l'intention de récolter"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p017",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "ornamentalNonHorticulture",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ornamental purpose other than horticulture"
+        },
+        {
+          "@language": "es",
+          "@value": "con fin ornamental distinto a horticultura"
+        },
+        {
+          "@language": "fr",
+          "@value": "usage ornemental autre que l'horticulture"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "decoratieve doeleinden los van tuinbouw/horticultuur"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Ornamental plants introduced through pathways other than the horticultural industry."
+        },
+        {
+          "@language": "es",
+          "@value": "Plantas ornamentales introducidas por vías distintas a aquellas de la industria de la horticultura."
+        },
+        {
+          "@language": "fr",
+          "@value": "Plantes ornementales introduites par des voies autres que l'industrie horticole"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p018",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "research",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "research and ex-situ breeding (in facilities)"
+        },
+        {
+          "@language": "es",
+          "@value": "investigación y cría ex-situ (en instalaciones)"
+        },
+        {
+          "@language": "fr",
+          "@value": "recherche et élevage ex-situ"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "onderzoek en ex-situ kweken (in faciliteiten)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Plants and animals introduced for the purpose of breeding or scientific and medical research, including science education."
+        },
+        {
+          "@language": "es",
+          "@value": "Plantas y animales introducidos con el propósito de cría o de investigación científica o médica, incluyendo educación en ciencias."
+        },
+        {
+          "@language": "fr",
+          "@value": "Plantes et animaux introduits à des fins de reproduction ou de recherche scientifique et médicale, y compris l'enseignement des sciences"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p019",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "liveFoodLiveBait",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "live food and live bait"
+        },
+        {
+          "@language": "es",
+          "@value": "alimento vivo y cebo vivo"
+        },
+        {
+          "@language": "fr",
+          "@value": "nourriture et appât vivant"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "levend voer en aas"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Live food imported for human consumption or live bait, such as shellfish and snails."
+        },
+        {
+          "@language": "es",
+          "@value": "Alimento vivo importado para consumo humano o cebo vivo, como mariscos y caracoles."
+        },
+        {
+          "@language": "fr",
+          "@value": "Aliments vivants importés pour la consommation humaine ou appâts vivants, tels que les crustacés et les escargots"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p020",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "otherEscape",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p046",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "other escape from confinement"
+        },
+        {
+          "@language": "es",
+          "@value": "otros escapes de confinamiento"
+        },
+        {
+          "@language": "fr",
+          "@value": "autre evasion de confinement"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "andere ontsnapte organismen uit gevangenschap"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms brought into an area with the intention of keeping them in captivity permanently, but that have subsequently escaped."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos llevados a una región con la intención de mantenerlos en cautiverio de manera permanente, pero que han escapado."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes introduits dans une zone avec l'intention de les garder en captivité de façon permanente, mais qui se sont par la suite échappés"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p021",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "contaminantNursery",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "contaminant nursery material"
+        },
+        {
+          "@language": "es",
+          "@value": "material de vivero contaminante"
+        },
+        {
+          "@language": "fr",
+          "@value": "contaminant de matériel de pépinière"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "gecontamineerd materiaal uit kwekerij"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms transported into an area together with plant material."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados a un área junto con material vegetal."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes transportés dans une région avec des plantes"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p022",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "contaminateBait",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "contaminated bait"
+        },
+        {
+          "@language": "es",
+          "@value": "cebo contaminado"
+        },
+        {
+          "@language": "fr",
+          "@value": "appât contaminé"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "gecontamineerd aas"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Contaminants, pathogens and parasites transported with live, frozen or preserved bait used to catch fish or other organisms."
+        },
+        {
+          "@language": "es",
+          "@value": "Contaminantes, patógenos y parásitos transportados con cebo vivo, congelado o preservado, utilizado para capturar peces u otros organismos."
+        },
+        {
+          "@language": "fr",
+          "@value": "contaminant, pathogenes et parasites transportés avec des appats de poissons  congélés, vivants, ou préservés"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p023",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "foodContaminant",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "food contaminant (including of live food)"
+        },
+        {
+          "@language": "es",
+          "@value": "contaminante de alimentos (incluyendo alimento vivo)"
+        },
+        {
+          "@language": "fr",
+          "@value": "contamination alimentaire (y compris de la nourriture vivante)"
+        },
+        {
+          "@language": "ko",
+          "@value": "음식류"
+        },
+        {
+          "@language": "nl",
+          "@value": "gecontamineerd voedsel (inclusief levend voedsel)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Foods for human consumption, whether they are transported live or dead."
+        },
+        {
+          "@language": "es",
+          "@value": "Alimentos para consumo humano, transportados vivos o muertos."
+        },
+        {
+          "@language": "fr",
+          "@value": "Aliments pour la consommation humaine transportés vivants ou morts"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p024",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "contaminantOnAnimals",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "contaminant on animals (except parasites, organisms transported by host/vector)"
+        },
+        {
+          "@language": "es",
+          "@value": "contaminante de animales (excepto parásitos, organismos transportados por hospedador/vector)"
+        },
+        {
+          "@language": "fr",
+          "@value": "contamination des animaux (sauf les parasites et les organismes transportés par un hôte/vecteur)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "contaminant op dieren (uitgezonderd parasieten, organismen getransporteerd door gastheer/vector)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Contaminants carried either on or in the body of transported animals."
+        },
+        {
+          "@language": "es",
+          "@value": "Contaminantes llevados sobre o dentro del cuerpo de animales transportados."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p025",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "parasitesOnAnimals",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "parasites on animals (including organisms transported by host and vector)"
+        },
+        {
+          "@language": "es",
+          "@value": "parásitos de animales (incluyendo organismos transportados por hospedador y vector)"
+        },
+        {
+          "@language": "fr",
+          "@value": "parasites d'animaux (y compris les organismes transportés par un hôte/vecteur)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "parasieten op dieren (inclusief organismen getransporteerd door gastheer en vector)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Parasitic and pathogenic organisms transported with their host or vector animal."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos parásitos y patógenos transportados con su hospedador o animales vectores."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p026",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "contaminantOnPlants",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "contaminant on plants (except parasites, species transported by host/vector)"
+        },
+        {
+          "@language": "es",
+          "@value": "contaminante de plantas (excepto parásitos, especies transportadas por hospedador/vector)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Contamination des vegetaux (sauf parasites et les organismes transportés par un hôte/vecteur)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "contaminant op planten (inclusief soorten getransporteerd door gastheer en vector)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms transported on plant material."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados sobre material vegetal."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p027",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "parasitesOnPlants",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "parasites on plants (including species transported by host and vector)"
+        },
+        {
+          "@language": "es",
+          "@value": "parásitos de plantas (incluyendo especies transportadas por hospedador y vector)"
+        },
+        {
+          "@language": "fr",
+          "@value": "parasites de végétaux (y compris les organismes transportés par un hôte/vecteur)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "parasieten op planten (inclusief soorten getransporteerd door gastheer en vector)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Parasitic and pathogenic organisms transported with their host or vector plant."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos parásitos y patógenos transportados con su hospedador o plantas vectores."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p028",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "seedContaminant",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "seed contaminant"
+        },
+        {
+          "@language": "es",
+          "@value": "contaminante de semillas"
+        },
+        {
+          "@language": "fr",
+          "@value": "contaminant de semences"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "contaminant op zaden"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms contaminating transported seeds."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos contaminantes de semillas transportadas."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p029",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "timberTrade",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "timber trade"
+        },
+        {
+          "@language": "es",
+          "@value": "comercio maderero"
+        },
+        {
+          "@language": "fr",
+          "@value": "commerce du bois"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "houthandel"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Contaminants on unprocessed timber, processed wood and wood-derived products."
+        },
+        {
+          "@language": "es",
+          "@value": "Contaminantes en madera no procesada, procesada y productos derivados de madera."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p030",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "transportationHabitatMaterial",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p047",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "transportation of habitat material (soil, vegetation, wood etc)"
+        },
+        {
+          "@language": "es",
+          "@value": "transporte de material del hábitat (suelo, vegetación, madera, etc.)"
+        },
+        {
+          "@language": "fr",
+          "@value": "transport des matériaux de l'habitat (terre, végétation, bois, etc.)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "transport van habitatmateriaal (aarde, vegetatie, hout etc.)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms transported with their habitat material to a new location."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados con material de su hábitat a un nuevo lugar."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p031",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "fishingEquipment",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "angling/fishing equipment"
+        },
+        {
+          "@language": "es",
+          "@value": "equipamiento de pesca"
+        },
+        {
+          "@language": "fr",
+          "@value": "équipement de pêche/pêche à la ligne"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "hengel/visgerij"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Aquatic organisms moved between sites on equipment of recreational anglers and professional fishermen."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos acuáticos movilizados entre sitios sobre equipamiento de pescadores profesionales o aficionados."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p032",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "containerBulk",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "container/bulk"
+        },
+        {
+          "@language": "es",
+          "@value": "contenedores de carga"
+        },
+        {
+          "@language": "fr",
+          "@value": "conteneur/colis"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "container/bulk"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Stowaways transported in or on cargo containers or bulk cargo units."
+        },
+        {
+          "@language": "es",
+          "@value": "Polizones transportados en o sobre contenedores de carga o unidades de carga a granel."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p033",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "hitchhikersAirplane",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "hitchhikers in or on airplane"
+        },
+        {
+          "@language": "es",
+          "@value": "autostopista sobre o dentro de aeronave"
+        },
+        {
+          "@language": "fr",
+          "@value": "passager clandestin sur ou dans un avion"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "meeliftend organisme op vliegtuig"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms that enter airplanes or other aircraft, such as helicopters, and are transported by them to another location."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que ingresan en aviones u otras aeronaves, como helicópteros, y son transportados por ellos a otro lugar."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p034",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "hitchhikersShip",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "hitchhikers on ship/boat (excluding ballast water and hull fouling)"
+        },
+        {
+          "@language": "es",
+          "@value": "autostopista sobre embarcación (excluyendo agua de lastre y organismos adheridos al casco)"
+        },
+        {
+          "@language": "fr",
+          "@value": "passager clandestin sur un navire/bateau (à l'exclusion des eaux de ballast et de la contamination de la coque)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "meeliftend organisme op schip/boot (exclusief ballastwater)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms that enter directly onto boats or ships and are transported by them to another location."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que ingresan directamente sobre embarcaciones y son transportados por ellas a otro lugar."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p035",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "machineryEquipment",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "machinery/equipment"
+        },
+        {
+          "@language": "es",
+          "@value": "maquinaria/equipamiento"
+        },
+        {
+          "@language": "fr",
+          "@value": "machinerie/équipement"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "machines/gereedschap"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms carried on the surfaces of or within heavy machinery and equipment."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos acarreados sobre las superficies o dentro de maquinaria pesada y equipamiento."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p036",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "people",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "people and their luggage/equipment (in particular tourism)"
+        },
+        {
+          "@language": "es",
+          "@value": "personas y su equipaje/equipamiento (en particular turismo)"
+        },
+        {
+          "@language": "fr",
+          "@value": "personnes et leurs bagages/équipements (en particulier les touristes)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "mensen en baggage/gereedschap (tourisme)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms transported on people and/or their personal luggage."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados sobre las personas o su equipaje personal."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p037",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "packingMaterial",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "organic packing material, in particular wood packaging"
+        },
+        {
+          "@language": "es",
+          "@value": "material orgánico de embalaje, en particular embalaje de madera"
+        },
+        {
+          "@language": "fr",
+          "@value": "matériau d'emballage organique, notamment en bois"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "organisch inpakmateriaal (met name hout)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organic material, particularly unprocessed plant material that is used to pack transported goods."
+        },
+        {
+          "@language": "es",
+          "@value": "Material orgánico, particularmente material vegetal no procesado que es utilizado para embalar mercancías transportadas."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p038",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "ballastWater",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ship/boat ballast water"
+        },
+        {
+          "@language": "es",
+          "@value": "agua de lastre de embarcación"
+        },
+        {
+          "@language": "fr",
+          "@value": "eau de ballast des bateaux/navires"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ballastwater van schip/boot & begroeiing scheepsromp"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms transported within the water pumped into boats and ships to provide ballast."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados en el agua que es bombeada a embarcaciones para proporcionar lastre."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p039",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "hullFouling",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ship/boat hull fouling"
+        },
+        {
+          "@language": "es",
+          "@value": "organismos adheridos a casco de embarcación"
+        },
+        {
+          "@language": "fr",
+          "@value": "encrassement de coque de bateau"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "begroeiing scheepsromp"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms that attach themselves to the subsurface hull of boats and ships."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que se adhieren a la superficie del casco de las embarcaciones."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p040",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "vehicles",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "vehicles (car, train, etc.)"
+        },
+        {
+          "@language": "es",
+          "@value": "vehículos (automóvil, tren, etc.)"
+        },
+        {
+          "@language": "fr",
+          "@value": "véhicules (voiture, train, etc.)"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "voertuigen (auto, trein etc.)"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Other vehicle hitchhikers that have been unintentionally dispersed, but are not covered by other terms."
+        },
+        {
+          "@language": "es",
+          "@value": "Otros autostopistas sobre vehículos, que han sido dispersados de manera no intencional, pero que no están cubiertos por otros términos."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p041",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "otherTransport",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p048",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "other means of transport"
+        },
+        {
+          "@language": "es",
+          "@value": "otros medios de transporte"
+        },
+        {
+          "@language": "fr",
+          "@value": "autre moyen de transport"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ander transportmiddel"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "A catch-all term for any transport related dispersal that is not covered in other terms."
+        },
+        {
+          "@language": "es",
+          "@value": "Un término general para cualquier transporte relacionado con la dispersión que no esté cubierto en otros términos."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p042",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "waterwaysBasinsSeas",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p049",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "interconnected waterways/basins/seas"
+        },
+        {
+          "@language": "es",
+          "@value": "vías navegables/cuencas/mares interconectados"
+        },
+        {
+          "@language": "fr",
+          "@value": "voies navigables/bassins/mers interconnectés"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "geconnecteerde waterwegen/bassins/zee"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que se dispersaron a través de vías navegables artificiales creadas para conectar cuerpos de agua previamente no conectados."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes qui se sont dispersés dans les voies d'eau artificielles créées pour relier des masses d'eau auparavant non connectées."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p043",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "tunnelsBridges",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p049",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "tunnels and land bridges"
+        },
+        {
+          "@language": "es",
+          "@value": "túneles y puentes terrestres"
+        },
+        {
+          "@language": "fr",
+          "@value": "tunnels et ponts terrestres"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "tunnels en landbruggen"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Unintentional dispersal by organisms using artificial tunnels, bridges, roads and railways."
+        },
+        {
+          "@language": "es",
+          "@value": "Dispersión de organismos no intencional utilizando túneles artificiales, puentes, calles y vías férreas."
+        },
+        {
+          "@language": "fr",
+          "@value": "Dispersion involontaire par des organismes utilisant des tunnels artificiels, des ponts, des routes et des voies ferrées"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p044",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "naturalDispersal",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p050",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "natural dispersal across borders of invasive alien organisms"
+        },
+        {
+          "@language": "es",
+          "@value": "dispersión natural a través de fronteras de organismos exóticos invasores"
+        },
+        {
+          "@language": "fr",
+          "@value": "dispersion naturelle d'organismes exotiques envahissants à travers les frontières"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "natuurlijke dispersie over grenzen heen of invasieve exoten"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Dispersal of organisms to new regions by natural dispersal from regions in which they are alien."
+        },
+        {
+          "@language": "es",
+          "@value": "Dispersión de organismos a nuevas regiones por dispersión natural desde regiones en las cuales son exóticos."
+        },
+        {
+          "@language": "fr",
+          "@value": "Dispersion d'organismes vers de nouvelles régions par dispersion naturelle à partir de régions dans lesquelles ils sont étrangers"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p045",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "releaseInNature",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p051",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "release in nature"
+        },
+        {
+          "@language": "es",
+          "@value": "liberado en la naturaleza"
+        },
+        {
+          "@language": "fr",
+          "@value": "libération dans la nature"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "vrijgelaten in het wild"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms transported and released by humans in a (semi)natural environment with the intention that they should live there without further human aid."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados y liberados por el ser humano en un ambiente (semi)natural con la intención de que sobrevivan allí sin ninguna otra ayuda humana."
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes relachés dans leur milieu naturel"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p046",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "escapeFromConfinement",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p051",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "escape from confinement"
+        },
+        {
+          "@language": "es",
+          "@value": "escape de confinamiento"
+        },
+        {
+          "@language": "fr",
+          "@value": "fuite de confinement"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "ontsnapt uit gevangenschap"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms intentionally transported by humans and intended to be kept in captivity or cultivation, but having inadvertently escaped from human control."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos transportados intencionalmente por el ser humano con la intención de que sean mantenidos en cautiverio o cultivados, pero que han escapado inadvertidamente del control humano."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p047",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "transportContaminant",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p052",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "transport-contaminant"
+        },
+        {
+          "@language": "es",
+          "@value": "transporte contaminante"
+        },
+        {
+          "@language": "fr",
+          "@value": "contamination lors du transport"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "transport-contaminant"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "An umbrella term for all species transported as contaninents in other products."
+        },
+        {
+          "@language": "es",
+          "@value": "Un término general para todas las especies transportadas como contaminantes en otros productos."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p048",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "transportStowaway",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p052",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "transport-stowaway"
+        },
+        {
+          "@language": "es",
+          "@value": "polizón en transporte"
+        },
+        {
+          "@language": "fr",
+          "@value": "passager clandestin"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "verstekeling via transport"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "An umbrella term for all species transported by riding on forms of transport where the organism has a direct interaction with the transport and is not merely carried as part of, or a contaminant of cargo."
+        },
+        {
+          "@language": "es",
+          "@value": "Un término general para todas las especies transportadas sobre medios de transporte, donde el organismo tiene una interacción directa con el transporte y no es meramente acarreado como parte o contaminante del cargo."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p049",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "corridor",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p053",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "corridor"
+        },
+        {
+          "@language": "es",
+          "@value": "corredor"
+        },
+        {
+          "@language": "fr",
+          "@value": "corridor"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "corridor"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Infrastructure, such as bridges, tunnels and canals have removed natural barriers to dispersal and allowed a species to move into a novel location."
+        },
+        {
+          "@language": "es",
+          "@value": "Infraestructuras como puentes, túneles y canales que han eliminado las barreras naturales a la dispeción y han permitido que una espevie se traslade a un lugar nuevo"
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p050",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "unaided",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:broader": "http://rs.tdwg.org/dwcpw/values/p053",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "unaided"
+        },
+        {
+          "@language": "es",
+          "@value": "sin ayuda / no favorecido?"
+        },
+        {
+          "@language": "fr",
+          "@value": "sans assistance"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "zonder hulp"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms that spread by natural dispersal, without action or assistance by humans, from regions in which they are also alien."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que se prtopagan por dispersión natural, sin acción o asistencia por humanos, desde regiones donde ellos son tambien extraños"
+        },
+        {
+          "@language": "fr",
+          "@value": "Organismes qui se propagent par dispersion naturelle, sans action ou aide de l'homme, à partir de régions dans lesquelles ils sont également exotique."
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p051",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "intentional",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "intentional"
+        },
+        {
+          "@language": "es",
+          "@value": "intencional"
+        },
+        {
+          "@language": "fr",
+          "@value": "volontaire"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "intentioneel"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms were brought to new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos que fueron llevados a una nueva región con la intención específica de mantenerlos vivos en la nueva región, independientemente de si estaban destinados a ser cultivados o liberados en la naturaleza."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p052",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "unintentional",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "unintentional"
+        },
+        {
+          "@language": "es",
+          "@value": "no intencional"
+        },
+        {
+          "@language": "fr",
+          "@value": "involontaire"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "niet-intentioneel"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "The organism was unintentionally brought to a new region."
+        },
+        {
+          "@language": "es",
+          "@value": "El organismo fue llevado a una nueva región de modo no intencional.."
+        },
+        {
+          "@language": "fr",
+          "@value": ""
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/dwcpw/values/p053",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "rdf:value": "corridorAndDispersal",
+      "skos:inScheme": "http://rs.tdwg.org/dwcpw/values/p",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "corridor and dispersal"
+        },
+        {
+          "@language": "es",
+          "@value": "corredor y dispersión"
+        },
+        {
+          "@language": "fr",
+          "@value": "corridor et dispersion"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "corridor en dispersie"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "Organisms dispersed naturally, even if that dispersal was aided by changes in the landscape created by humans."
+        },
+        {
+          "@language": "es",
+          "@value": "Organismos dispersados de forma natural, incluso si esa dispersión se ve favorecida por los cambios en el paisaje creado por humanos"
+        },
+        {
+          "@language": "fr",
+          "@value": "Les organismes se sont dispersés naturellement, même si cette dispersion a été facilitée par les modifications du paysage créées par les humains"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        }
+      ]
+    }
+  ]
+}
