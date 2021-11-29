@@ -77,7 +77,7 @@
         },
         {
           "@language": "fr",
-          "@value": "natif (catégorie A)"
+          "@value": "native (catégorie A)"
         },
         {
           "@language": "ko",
@@ -99,7 +99,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Non transportable au-delà des limites de la répartition native"
+          "@value": "Non transportée au-delà des limites de la répartition native"
         },
         {
           "@language": "ko",
@@ -127,7 +127,7 @@
         },
         {
           "@language": "fr",
-          "@value": "captif (catégorie B1)"
+          "@value": "captive (catégorie B1)"
         },
         {
           "@language": "ko",
@@ -149,7 +149,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Individus en captivité ou en quarantaine (i.e. individus dont les conditions sont acceptables pour eux, mais dont les conditions de captivité sont en place"
+          "@value": "Individus en captivité ou en quarantaine (i.e. individus bénéficiant de conditions qui leur conviennent, mais où des mesures explicites de confinement sont en place)"
         },
         {
           "@language": "ko",
@@ -177,7 +177,7 @@
         },
         {
           "@language": "fr",
-          "@value": "cultivé (catégorie B2)"
+          "@value": "cultivée (catégorie B2)"
         },
         {
           "@language": "ko",
@@ -199,7 +199,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Individus en culture (i.e. individus dont les conditions sont acceptables mais dont les mesures de prévention de dispersion sont limités au maximum)"
+          "@value": "Individus en culture (i.e. individus bénéficiants de conditions qui leur conviennent, mais dont les mesures de prévention de dispersion sont limités au maximum)"
         },
         {
           "@language": "ko",
@@ -227,7 +227,7 @@
         },
         {
           "@language": "fr",
-          "@value": "relâché (catégorie B3)"
+          "@value": "relâchée (catégorie B3)"
         },
         {
           "@language": "ko",
@@ -299,7 +299,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Individus relâchés en dehors de la zone de captivité ou de la culture dans un lieu mais qui sont incapables de survivre pour une période significative"
+          "@value": "Individus relâchés dans un lieu en dehors de la zone de captivité ou d'élevage, mais qui sont incapables de survivre pour une période significative."
         },
         {
           "@language": "ko",
@@ -327,7 +327,7 @@
         },
         {
           "@language": "fr",
-          "@value": "moyen (catégorie C1)"
+          "@value": "acclimatée (catégorie C1) ; occasionnelle (catégorie C1)"
         },
         {
           "@language": "ko",
@@ -349,7 +349,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Individus survivant en dehors de la zone de captivité ou de culture dans un lieu sans repoduction."
+          "@value": "Individus survivant dans un lieu en dehors de la zone de captivité ou d'élevage, mais sans succès de repoduction."
         },
         {
           "@language": "ko",
@@ -399,7 +399,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Individus survivant en dehors de la zone de captivité ou de la culture dans un lieu. La reproduction peut se faire mais la population ne se maintient pas tout seule."
+          "@value": "Individus survivant dans un lieu en dehors de la zone de captivité ou d'élevage. La reproduction peut se faire mais la population ne se maintient pas tout seule."
         },
         {
           "@language": "ko",
@@ -427,7 +427,7 @@
         },
         {
           "@language": "fr",
-          "@value": "implanté (catégorie C3)"
+          "@value": "naturalisée (catégorie C3) ; établie (catégorie C3)"
         },
         {
           "@language": "ko",
@@ -449,7 +449,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Individus survivant en dehors de la zone de captivité ou de la culture dans un lieu. La reproduction se fait et la population se maintient toute seule)."
+          "@value": "Individus survivant dans un lieu en dehors de la zone de captivité ou d'élevage. La reproduction se fait et la population se maintient toute seule."
         },
         {
           "@language": "ko",
@@ -477,7 +477,7 @@
         },
         {
           "@language": "fr",
-          "@value": "colonisant (catégorie D1)"
+          "@value": "colonisante (catégorie D1)"
         },
         {
           "@language": "ko",
@@ -499,7 +499,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Population auto-maintenue en dehors de la zone de captivité ou de culture, avec des individus survivant à une distance significative du point d'introduction."
+          "@value": "Population autosuffisante en dehors de la captivité ou de l'élevage, avec des individus survivant à une distance significative du point d'introduction d'origine."
         },
         {
           "@language": "ko",
@@ -527,7 +527,7 @@
         },
         {
           "@language": "fr",
-          "@value": "invasif (category D2)"
+          "@value": "envahissante (category D2)"
         },
         {
           "@language": "ko",
@@ -549,7 +549,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Population auto-maintenue en dehors de la zone de captivité ou de culture, avec des individus survivant et se reproduisant à une distance significative du point d'introduction."
+          "@value": "Population autosuffisante en dehors de la captivité ou de l'élevage, avec des individus survivant et se reproduisant à une distance significative du point d'introduction d'origine."
         },
         {
           "@language": "ko",
@@ -577,7 +577,7 @@
         },
         {
           "@language": "fr",
-          "@value": "largement invasif  (catégorie E)"
+          "@value": "largement envahissante (catégorie E)"
         },
         {
           "@language": "ko",
@@ -599,7 +599,7 @@
         },
         {
           "@language": "fr",
-          "@value": "Espèces pleinement invasives, avec des individus se dispersant, survivant et se reproduisant dans des sites multiples avec un variété d'habitats et de zones géographiques."
+          "@value": "Espèce totalement envahissante, avec des individus qui se dispersent, survivent et se reproduisent sur plusieurs sites à travers un large éventail d'habitats et de zones géographiques."
         },
         {
           "@language": "ko",
