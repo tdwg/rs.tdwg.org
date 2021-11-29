@@ -20,28 +20,34 @@ The following JSON files still need to be modified to include translator metadat
 
 ### Darwin Core controlled vocabularies:
 
-[degreeOfEstablishment JSON-LD metadata with .json extension (content-type: application/json)](cvJson/degreeOfEstablishment.json)
-
-[degreeOfEstablishment JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/degreeOfEstablishment.jsonld)
-
-[establishmentMeans JSON-LD metadata with .json extension (content-type: application/json)](cvJson/establishmentMeans.json)
-
-[establishmentMeans JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/establishmentMeans.jsonld)
-
-[pathway JSON-LD metadata with .json extension (content-type: application/json)](cvJson/pathway.json)
-
-[pathway JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/pathway.jsonld)
+| controlled vocabulary | format | extension | media type |
+|---------------------- | ------ | --------- | ---------- |
+| degreeOfEstablishment | [JSON-LD](cvJson/degreeOfEstablishment.json) | json | application/json |
+| degreeOfEstablishment | [JSON-LD](cvJson/degreeOfEstablishment.jsonld) | jsonld | application/ld+json |
+| degreeOfEstablishment (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/degreeOfEstablishment/degreeOfEstablishment.csv) | csv | text/plain |
+| degreeOfEstablishment (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/degreeOfEstablishment/degreeOfEstablishment-translations.csv) | csv | text/plain |
+| establishmentMeans | [JSON-LD](cvJson/establishmentMeans.json) | json | application/json |
+| establishmentMeans | [JSON-LD](cvJson/establishmentMeans.jsonld) | jsonld | application/ld+json |
+| establishmentMeans (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/establishmentMeans/establishmentMeans.csv) | csv | text/plain |
+| establishmentMeans (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/establishmentMeans/establishmentMeans-translations.csv) | csv | text/plain |
+| pathway | [JSON-LD](cvJson/pathway.json) | json | application/json |
+| pathway | [JSON-LD](cvJson/pathway.jsonld) | jsonld | application/ld+json |
+| pathway (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/pathway/pathway.csv) | csv | text/plain |
+| pathway (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/pathway/pathway-translations.csv) | csv | text/plain |
 
 ### Audubon Core controlled vocabularies
 
-[format JSON-LD metadata with .json extension (content-type: application/json)](cvJson/format.json)
-
-[format JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/format.jsonld)
-
-[subtype JSON-LD metadata with .json extension (content-type: application/json)](cvJson/acsubtype.json)
-
-[subtype JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/acsubtype.jsonld)
-
-[variant JSON-LD metadata with .json extension (content-type: application/json)](cvJson/acvariant.json)
-
-[variant JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/acvariant.jsonld)
+| controlled vocabulary | format | extension | media type |
+|---------------------- | ------ | --------- | ---------- |
+| format | [JSON-LD](cvJson/format.json) | json | application/json |
+| format | [JSON-LD](cvJson/format.jsonld) | jsonld | application/ld+json |
+| format (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/format/format.csv) | csv | text/plain |
+| format (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/format/format-translations.csv) | csv | text/plain |
+| subtype | [JSON-LD](cvJson/acsubtype.json) | json | application/json |
+| subtype | [JSON-LD](cvJson/acsubtype.jsonld) | jsonld | application/ld+json |
+| subtype (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acsubtype/acsubtype.csv) | csv | text/plain |
+| subtype (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acsubtype/acsubtype-translations.csv) | csv | text/plain |
+| variant | [JSON-LD](cvJson/acvariant.json) | json | application/json |
+| variant | [JSON-LD](cvJson/acvariant.jsonld) | jsonld | application/ld+json |
+| variant (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant.csv) | csv | text/plain |
+| variant (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant-translations.csv) | csv | text/plain |
