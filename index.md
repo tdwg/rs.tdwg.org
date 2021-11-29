@@ -14,13 +14,13 @@ Multilingual `establishmentMeans` controlled vocabulary demo page (still need to
 - [Russian](cvJson/display-cv.html?ru)
 - [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
 
+NOTE: we are still working on acknowledging the translators in the machine-readable metadata.
+
 ### Field labels
 
 These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used along with the label and definition translations to construct multilingual tools like the one above.
 
 ### Darwin Core controlled vocabularies:
-
-The following JSON files still need to be modified to include translator metadata:
 
 | controlled vocabulary | format | extension | media type | languages |
 |---------------------- | ------ | --------- | ---------- | --------- |
@@ -57,45 +57,47 @@ The following JSON files still need to be modified to include translator metadat
 
 ### Translators acknowledgements
 
-Carla Novoa Sepúlveda, Staatliche Naturwissenschaftliche Sammlungen Bayerns - Botanische Staatssammlung München (SNSB-BSM; Bavarian Natural History Collections - Botanical State Collection Munich), https://orcid.org/0000-0001-6113-9725, español (Spanish): Audubon Core subtype, Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
+Thanks to all of the participants in our translation workshop. The names of the volunteer translators are given below (in no particular order). If you would like to finish any of the incomplete translations or add a translation in your language, please contact [Steve Baskauf](mailto:steve.baskauf@vanderbilt.edu). Also contact him if you find any errors or ommissions.
+
+Carla Novoa Sepúlveda, Staatliche Naturwissenschaftliche Sammlungen Bayerns - Botanische Staatssammlung München (SNSB-BSM; Bavarian Natural History Collections - Botanical State Collection Munich), <https://orcid.org/0000-0001-6113-9725>, español (Spanish): Audubon Core subtype, Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
 
 Julie Dionne Lavoie, Observatoire Global du Saint-Laurent, français (French): Audubon Core subtype
 
-Нина В. Филиппова (Nina V. Filippova), Югорский государственный университет (Yugra State University), https://orcid.org/0000-0002-9506-0991, Русский (Russian): Audubon Core subtype, Audubon Core variant, Darwin Core establishmentMeans
+Нина В. Филиппова (Nina V. Filippova), Югорский государственный университет (Yugra State University), <https://orcid.org/0000-0002-9506-0991>, Русский (Russian): Audubon Core subtype, Audubon Core variant, Darwin Core establishmentMeans
 
-柯智仁 (Chihjen Ko), https://orcid.org/0000-0001-5912-1761, 繁體中文 (Chinese - traditional): Audubon Core subtype, Audubon Core variant, Darwin Core establishmentMeans, Audubon Core format
+柯智仁 (Chihjen Ko), <https://orcid.org/0000-0001-5912-1761>, 繁體中文 (Chinese - traditional): Audubon Core subtype, Audubon Core variant, Darwin Core establishmentMeans, Audubon Core format
 
-Mareike Petersen, https://orcid.org/0000-0001-8666-1931, Deutsch (German): Darwin Core degreeOfEstablishment, Audubon Core format
+Mareike Petersen, <https://orcid.org/0000-0001-8666-1931>, Deutsch (German): Darwin Core degreeOfEstablishment, Audubon Core format
 
-វេស្សន្តរទេស អ៊ឹង (Visotheary Ung), ISYEB (CNRS-MNHN), https://orcid.org/0000-0002-4049-0820, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans
+វេស្សន្តរទេស អ៊ឹង (Visotheary Ung), ISYEB (CNRS-MNHN), <https://orcid.org/0000-0002-4049-0820>, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans
 
 Julie Dionne Lavoie, Observatoire Global du Saint-Laurent, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
 
 Francis Y, 한국인 (Korean): Darwin Core degreeOfEstablishment
 
-William Ulate Rodriguez, Missouri Botanical Garden, St. Louis, Missouri, USA, https://orcid.org/0000-0003-2863-2491, español (Spanish): Darwin Core establishmentMeans
+William Ulate Rodriguez, Missouri Botanical Garden, St. Louis, Missouri, USA, <https://orcid.org/0000-0003-2863-2491>, español (Spanish): Darwin Core establishmentMeans
 
-Sophie Pamerlon, GBIF France, https://orcid.org/0000-0003-4736-7419, français (French): Darwin Core establishmentMeans, Audubon Core format
+Sophie Pamerlon, GBIF France, <https://orcid.org/0000-0003-4736-7419>, français (French): Darwin Core establishmentMeans, Audubon Core format
 
-Maxime Coupremanne, Belgian Biodiversity Platform, https://orcid.org/0000-0002-9052-9500, français (French): Darwin Core establishmentMeans, Darwin Core pathway
+Maxime Coupremanne, Belgian Biodiversity Platform, <https://orcid.org/0000-0002-9052-9500>, français (French): Darwin Core establishmentMeans, Darwin Core pathway
 
-Braun Paul, Musée national d'histoire naturelle, Luxembourg, https://orcid.org/0000-0002-3620-6188, Deutsch (German): Audubon Core format
+Braun Paul, Musée national d'histoire naturelle, Luxembourg, <https://orcid.org/0000-0002-3620-6188>, Deutsch (German): Audubon Core format
 
 Anke Penzlin, Senckenberg, Deutsch (German): Audubon Core format
 
 김목영 (Mokyoung Kim), 국립생태원 (National Institute of Ecology), 한국인 (Korean): Audubon Core format, Darwin Core pathway
 
-Jorrit H. Poelen, Ronin Institute, https://orcid.org/0000-0003-3138-4118, Nederlands (Dutch): Audubon Core format
+Jorrit H. Poelen, Ronin Institute, <https://orcid.org/0000-0003-3138-4118>, Nederlands (Dutch): Audubon Core format
 
-Paula F Zermoglio, IEGEBA-CONICET (Argentina), https://orcid.org/0000-0002-6056-5084, español (Spanish): Darwin Core pathway, Darwin Core establishmentMeans
+Paula F Zermoglio, IEGEBA-CONICET (Argentina), <https://orcid.org/0000-0002-6056-5084>, español (Spanish): Darwin Core pathway, Darwin Core establishmentMeans
 
-Elie Tobi, Smithsonian Conservation Biology Institute, Gabon Biodiversity Program, https://orcid.org/0000-0002-6199-290X, français (French): Darwin Core pathway
+Elie Tobi, Smithsonian Conservation Biology Institute, Gabon Biodiversity Program, <https://orcid.org/0000-0002-6199-290X>, français (French): Darwin Core pathway
 
-Greg Jongsma, Florida Museum of Natural History, https://orcid.org/0000-0001-8790-2610, français (French): Darwin Core pathway
+Greg Jongsma, Florida Museum of Natural History, <https://orcid.org/0000-0001-8790-2610>, français (French): Darwin Core pathway
 
-Tim Claerhout, Ghent University, https://orcid.org/0000-0002-1519-4536, Nederlands (Dutch): Darwin Core pathway
+Tim Claerhout, Ghent University, <https://orcid.org/0000-0002-1519-4536>, Nederlands (Dutch): Darwin Core pathway
 
-Sofie Meeus, Plantentuin Meise (Meise Botanic Garden), https://orcid.org/0000-0003-0715-8647, Nederlands (Dutch): Darwin Core estlishmentMeans
+Sofie Meeus, Plantentuin Meise (Meise Botanic Garden), <https://orcid.org/0000-0003-0715-8647>, Nederlands (Dutch): Darwin Core estlishmentMeans
 
 -------
 Last modified 2021-11-29
