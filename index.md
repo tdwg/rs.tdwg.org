@@ -14,12 +14,34 @@ Multilingual `establishmentMeans` controlled vocabulary demo page (still need to
 - [Russian](cvJson/display-cv.html?ru)
 - [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
 
-These JSON files still need to be modified to include translator metadata:
+[multilingual field labels (JSON)](cvJson/field_labels.json)
 
-[establishmentMeans JSON-LD metadata with .json extension](cvJson/establishmentMeans.json)
+The following JSON files still need to be modified to include translator metadata:
 
-[establishmentMeans JSON-LD metadata with .jsonld extension](cvJson/establishmentMeans.jsonld)
+### Darwin Core controlled vocabularies:
 
-[format JSON-LD metadata with .json extension](cvJson/format.json)
+[degreeOfEstablishment JSON-LD metadata with .json extension (content-type: application/json)](cvJson/degreeOfEstablishment.json)
 
-[format JSON-LD metadata with .jsonld extension](cvJson/format.jsonld)
+[degreeOfEstablishment JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/degreeOfEstablishment.jsonld)
+
+[establishmentMeans JSON-LD metadata with .json extension (content-type: application/json)](cvJson/establishmentMeans.json)
+
+[establishmentMeans JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/establishmentMeans.jsonld)
+
+[pathway JSON-LD metadata with .json extension (content-type: application/json)](cvJson/pathway.json)
+
+[pathway JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/pathway.jsonld)
+
+### Audubon Core controlled vocabularies
+
+[format JSON-LD metadata with .json extension (content-type: application/json)](cvJson/format.json)
+
+[format JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/format.jsonld)
+
+[subtype JSON-LD metadata with .json extension (content-type: application/json)](cvJson/acsubtype.json)
+
+[subtype JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/acsubtype.jsonld)
+
+[variant JSON-LD metadata with .json extension (content-type: application/json)](cvJson/acvariant.json)
+
+[variant JSON-LD metadata with .jsonld extension (content-type: application/ld+json)](cvJson/acvariant.jsonld)
