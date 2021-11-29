@@ -14,7 +14,11 @@ Multilingual `establishmentMeans` controlled vocabulary demo page (still need to
 - [Russian](cvJson/display-cv.html?ru)
 - [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
 
-NOTE: we are still working on acknowledging the translators in the machine-readable metadata.
+### Note to developers
+
+We will try to keep the URLs linked below stable so that they can be periodically harvested by applications.
+
+We are still working on acknowledging the translators in the machine-readable metadata.
 
 ### Field labels
 
