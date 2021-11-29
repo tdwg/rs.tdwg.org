@@ -1717,7 +1717,7 @@
     {
       "@id": "http://rs.tdwg.org/format/values/m028",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept",
-      "rdf:value": "‎video/3gpp",
+      "rdf:value": "video/3gpp",
       "skos:inScheme": "http://rs.tdwg.org/format/values/m",
       "skos:broader": "http://rs.tdwg.org/format/values/m006",
       "skos:prefLabel": [
