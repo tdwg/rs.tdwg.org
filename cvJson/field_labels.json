@@ -1,0 +1,57 @@
+{
+    "use_with": 
+        {
+            "en": "Use this value with ",
+            "es": "Utilice este valor con ",
+            "nl": "Gebruik deze waarde met ",
+            "ru": "Используйте это значение с ",
+            "zh-Hant": "使用此值於",
+            "de": "Verwenden Sie diesen Wert mit ",
+            "fr": "Utiliser cette valeur avec ",
+            "ko": "이 값을 x와 사용하시오 "
+        },
+    "definition": 
+        {
+            "en": "Definition: ",
+            "es": "Definición: ",
+            "nl": "Definitie: ",
+            "ru": "Определение: ",
+            "zh-Hant": "定義：",
+            "de": "Definition: ",
+            "fr": "Définition: ",
+            "ko": "정의: "
+        },
+    "label": 
+        {
+            "en": "Label: ",
+            "es": "Etiqueta: ",
+            "nl": "Etiket: ",
+            "ru": "Ярлык: ",
+            "zh-Hant": "標籤：",
+            "de": "Bezeichner/Label: ",
+            "fr": "Étiquette: ",
+            "ko": "라벨: "
+        },
+    "language": 
+        {
+            "en": "Language: ",
+            "es": "Idioma: ",
+            "nl": "Taal: ",
+            "ru": "Язык: ",
+            "zh-Hant": "語言：",
+            "de": "Sprache: ",
+            "fr": "Langue: ",
+            "ko": "언어: "
+        },
+    "translated_by": 
+        {
+            "en": "Translated by ",
+            "es": "Traducido por ",
+            "nl": "Vertaald door ",
+            "ru": "переводчик ",
+            "zh-Hant": "譯者",
+            "de": "Übersetzt durch ",
+            "fr": "Traduit par ",
+            "ko": "x로 번역된다 "
+        }
+}
