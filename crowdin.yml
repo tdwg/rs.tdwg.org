@@ -1,0 +1,25 @@
+files:
+  - source: /**/*.en.csv
+    translation: /**/%file_name%.%locale%.csv
+    translation_replace:
+      .en.: .
+    languages_mapping:
+      locale:
+        ar: ar
+        da: da
+        de: de
+        de-DE: de
+        es-ES: es
+        fr: fr
+        ja: ja
+        ko: ko
+        ko-KR: ko
+        nl: nl
+        nl-NL: nl
+        pt-PT: pt
+        ru: ru
+        uk: uk
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+    first_line_contains_header: true
+    scheme: 'identifier,context,source_or_translation'
