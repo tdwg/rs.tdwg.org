@@ -118,10 +118,12 @@ for termfile in termfiles_to_translate:
             for col in output_translation_columns.keys():
                 for lang in languages:
                     if col+"_"+lang in translations:
-                        if ',' in translations[col+"_"+lang]:
-                            translationsFile.write(',"'+translations[col+"_"+lang]+'"')
+                        text = translations[col+"_"+lang]
+                        text = text.replace('"', '""')
+                        if ',' in text or '"' in text:
+                            translationsFile.write(',"'+text+'"')
                         else:
-                            translationsFile.write(','+translations[col+"_"+lang])
+                            translationsFile.write(','+text)
             translationsFile.write("\n")
 
     print("  Done.")
