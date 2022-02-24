@@ -18,10 +18,10 @@ echo "Fetching:"
 git fetch --all
 echo
 echo "Merging any new translations"
-git merge origin/crowdin_$branch
+git merge origin/crowdin_$branch --no-edit --commit
 echo
 echo "Merging any updated sources"
-git merge origin/master
+git merge origin/master --no-edit --commit
 echo
 echo "Update local master branch to latest origin/master"
 git pull origin master:master
