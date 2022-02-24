@@ -14,7 +14,6 @@
 import os
 import re
 import csv
-import pandas as pd
 from collections import OrderedDict
 
 # Source (English) files to push to Crowdin.
