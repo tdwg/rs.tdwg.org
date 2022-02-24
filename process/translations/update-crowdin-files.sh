@@ -8,7 +8,8 @@ shopt -s globstar
 branch=translations
 
 # Expects to run on the $branch branch.
-if [[ $(git branch --show-current) != "$branch" ]]; then
+# Git 2.22: git branch --show-current
+if [[ $(git rev-parse --abbrev-ref HEAD) != "$branch" ]]; then
     echo >&2 "Expected to run only on the $branch branch, to avoid polluting"
     echo >&2 "the repository with intermediate files."
     exit 1
