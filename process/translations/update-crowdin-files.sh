@@ -42,7 +42,7 @@ if $(git diff --cached --exit-code --quiet); then
 else
     git commit --message "Update translation source files for Crowdin."
 fi
-git push origin crowdin
+git push origin $branch
 echo
 
 echo "Commit any new translations to the master branch."
