@@ -124,6 +124,8 @@ for termfile in termfiles_to_translate:
                             translationsFile.write(',"'+text+'"')
                         else:
                             translationsFile.write(','+text)
+                    else:
+                        translationsFile.write(',')
             translationsFile.write("\n")
 
     print("  Done.")
