@@ -517,6 +517,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             print('The term list version was not found and there was no new_term_list_version.csv file.')
             sys.exit()
         newListRow = new_term_list_version[1]
+        mostRecentListNumber = 0 # dummy list number. Must have a value to be returned, but is not used for a new term list
     else:
         # find the most recent previous version of the term list
         mostRecent = 'a' # start the value of mostRecent as something earlier alphabetically than all of the list URIs
