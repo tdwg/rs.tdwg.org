@@ -3,6 +3,7 @@
 
 import csv
 import json
+from re import X
 import sys
 import os
 import shutil
@@ -326,7 +327,10 @@ def generate_term_versions_metadata(database, versions, version_namespace, mods_
     writeCsv('../' + versions + '/' + versions + '-replacements.csv', revised_versions_replacements_table)
 
 # This function contains the Step 5 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
-def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions):
+def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
+    pieces = termlist_uri.split('/')
+    list_localname_value = pieces[3] + '/' + pieces[4]
+
     term_modified_dateTime = findColumnWithHeader(terms_metadata[0], 'document_modified')[1]
     term_localName = findColumnWithHeader(terms_metadata[0], 'term_localName')[1]
     term_modified = findColumnWithHeader(terms_metadata[0], 'term_modified')[1]
@@ -405,16 +409,24 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
         # split the URI between the vocabulary and term list subpaths
         termlistVersionUri = uriPieces[0] + '//' + uriPieces[2] + '/' + uriPieces[3] + '/version/' + uriPieces[4] + '/' + date_issued
 
+    modified_datetime = findColumnWithHeader(term_lists_table[0], 'document_modified')[1]
     list_uri = findColumnWithHeader(term_lists_table[0], 'list')[1]
+    list_localName_column = findColumnWithHeader(term_lists_table[0], 'list_localName')[1]
+    list_label = findColumnWithHeader(term_lists_table[0], 'label')[1]
+    list_description = findColumnWithHeader(term_lists_table[0], 'description')[1]
     list_created = findColumnWithHeader(term_lists_table[0], 'list_created')[1]
     list_modified = findColumnWithHeader(term_lists_table[0], 'list_modified')[1]
-    modified_datetime = findColumnWithHeader(term_lists_table[0], 'document_modified')[1]
+    list_prefix_column = findColumnWithHeader(term_lists_table[0], 'vann_preferredNamespacePrefix')[1]
+    list_pref_namespace_column = findColumnWithHeader(term_lists_table[0], 'vann_preferredNamespaceUri')[1]
+    list_database_column = findColumnWithHeader(term_lists_table[0], 'database')[1]
+    list_versions_database_column = findColumnWithHeader(term_lists_table[0], 'versions_database')[1]
+    list_versions_uri_column = findColumnWithHeader(term_lists_table[0], 'versions_uri')[1]
     standard_column = findColumnWithHeader(term_lists_table[0], 'standard')[1]
-    list_description = findColumnWithHeader(term_lists_table[0], 'description')[1]
 
     aNewTermList = True
     for rowNumber in range(1, len(term_lists_table)):
         # by convention, the namespace URI used for the terms is the same as the URI of the term list
+        # Note 2022-04-20: I think that is only true for TDWG-minted term lists, not borrowed ones!
         if termlist_uri == term_lists_table[rowNumber][list_uri]:
             aNewTermList = False
             term_list_rowNumber = rowNumber
@@ -431,9 +443,26 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             sys.exit()
         # Note: no error trapping is done here, so make sure that the new_term_list columns are the same as term_lists_table
         new_term_list[1][modified_datetime] = isoTime(local_offset_from_utc)
+        new_term_list[1][list_uri] = termlist_uri
+        new_term_list[1][list_localName_column] = list_localname_value
         new_term_list[1][list_created] = date_issued
         new_term_list[1][list_modified] = date_issued
+        new_term_list[1][list_prefix_column] = pref_namespace_prefix
+        new_term_list[1][list_pref_namespace_column] = namespaceUri
+        new_term_list[1][list_database_column] = database
+        new_term_list[1][list_versions_database_column] = versions
+        new_term_list[1][list_versions_uri_column] = termlistVersionUri
+
+        # This is now about the only value that's dependent on filling out the new_term_list.csv file.
         standardUri = new_term_list[1][standard_column]
+
+        # Assign the label and description passed into the function if not empty string. Otherwise, fall back on what's 
+        # already in the new term list table.
+        if term_list_label != '':
+            new_term_list[1][list_label] = term_list_label
+        if term_list_description != '':
+            new_term_list[1][list_description] = term_list_description
+
         # the length of the table (including header row) will be one more than the last row number
         term_list_rowNumber = len(term_lists_table)
         term_lists_table.append(new_term_list[1])
@@ -503,11 +532,16 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
     writeCsv('../term-lists/term-lists-members.csv', term_lists_members)
 
     # find the columns than contain needed information
-    list_uri = findColumnWithHeader(term_lists_versions_metadata[0], 'list')[1]
     document_modified = findColumnWithHeader(term_lists_versions_metadata[0], 'document_modified')[1]
     version_uri = findColumnWithHeader(term_lists_versions_metadata[0], 'version')[1]
     version_modified = findColumnWithHeader(term_lists_versions_metadata[0], 'version_modified')[1]
     status_column = findColumnWithHeader(term_lists_versions_metadata[0], 'status')[1]
+    localname_column = findColumnWithHeader(term_lists_versions_metadata[0], 'list_localName')[1]
+    list_version_label = findColumnWithHeader(term_lists_versions_metadata[0], 'label')[1]
+    list_version_description = findColumnWithHeader(term_lists_versions_metadata[0], 'description')[1]
+    list_version_prefix_column = findColumnWithHeader(term_lists_versions_metadata[0], 'vann_preferredNamespacePrefix')[1]
+    list_version_namespace_uri_column = findColumnWithHeader(term_lists_versions_metadata[0], 'vann_preferredNamespaceUri')[1]
+    list_uri = findColumnWithHeader(term_lists_versions_metadata[0], 'list')[1]
 
     if aNewTermList:
         # get the template for the term list version from first data row in the new_term_list_version.csv file
@@ -518,6 +552,20 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             sys.exit()
         newListRow = new_term_list_version[1]
         mostRecentListNumber = 0 # dummy list number. Must have a value to be returned, but is not used for a new term list
+
+        newListRow[localname_column] = list_localname_value
+        newListRow[list_version_namespace_uri_column] = namespaceUri
+        newListRow[list_uri] = termlist_uri
+
+        # Assign the label, description, and pref prefix passed into the function if not empty string. Otherwise, fall back on what's 
+        # already in the new term list version table.
+        if term_list_label != '':
+            newListRow[list_version_label] = term_list_label
+        if term_list_description != '':
+            newListRow[list_version_description] = term_list_description
+        if pref_namespace_prefix != '':
+            newListRow[list_version_prefix_column] = pref_namespace_prefix
+
     else:
         # find the most recent previous version of the term list
         mostRecent = 'a' # start the value of mostRecent as something earlier alphabetically than all of the list URIs
@@ -983,6 +1031,24 @@ for namespace in namespaces:
     modifications_filename = namespace['modifications_file_path']
     version_namespace = namespaceUri + 'version/'
 
+    if new_term_list:
+        if 'label' in namespace:
+            term_list_label = namespace['label']
+        else:
+            term_list_label = ''
+        if 'description' in namespace:
+            term_list_description = namespace['description']
+        else:
+            term_list_description = ''
+        if 'pref_namespace_prefix' in namespace:
+            pref_namespace_prefix = namespace['pref_namespace_prefix']
+        else:
+            pref_namespace_prefix = ''
+    else:
+        term_list_label = ''
+        term_list_description = ''
+        pref_namespace_prefix = ''
+
     # For borrowed terms, the termlist_uri will differ from the namespace URI. 
     # For terms minted by TDWG that follow URI pattern conventions, this should be the empty string and 
     # the termlist_uri will be set to the namespace URI.
@@ -1016,7 +1082,7 @@ for namespace in namespaces:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
 
     # Step 5. Generate current terms metadata
-    standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions)
+    standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix)
 
     # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
     if not borrowed and not utility_namespace:

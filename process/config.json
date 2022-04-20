@@ -1,43 +1,79 @@
 {
-    "date_issued": "2021-10-05",
+    "date_issued": "2022-04-20",
     "local_offset_from_utc": "-05:00",
     "vocab_type": 1,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/ac/terms/",
-            "database": "audubon",
+            "namespace_uri": "http://rs.tdwg.org/ltc/terms/",
+            "pref_namespace_prefix": "ltc",
+            "database": "latimer",
             "borrowed": false,
-            "new_term_list": false,
+            "new_term_list": true,
+            "label": "Latimer Core namespace term list",
+            "description": "Term list for terms minted by Latimer Core",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/audubon.csv",
+            "modifications_file_path": "latimer/ltc.csv",
             "termlist_uri": ""
         },
         {
-            "namespace_uri": "http://ns.adobe.com/xap/1.0/",
-            "database": "xmp-for-ac",
+            "namespace_uri": "http://rs.tdwg.org/abcd/terms/",
+            "pref_namespace_prefix": "abcd",
+            "database": "abcd-for-ltc",
             "borrowed": true,
-            "new_term_list": false,
+            "new_term_list": true,
+            "label": "ABCD terms borrowed by Latimer Core",
+            "description": "Term list for ABCE terms borrowed by Latimer Core",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/xmp-for-ac.csv",
-            "termlist_uri": "http://rs.tdwg.org/ac/xmp/"
+            "modifications_file_path": "latimer/abcd.csv",
+            "termlist_uri": "http://rs.tdwg.org/ltc/abcd/"
         },
         {
-            "namespace_uri": "http://ns.adobe.com/xap/1.0/rights/",
-            "database": "xmpRights-for-ac",
+            "namespace_uri": "http://purl.org/dc/elements/1.1/",
+            "pref_namespace_prefix": "dc",
+            "database": "dc-for-ltc",
             "borrowed": true,
-            "new_term_list": false,
+            "new_term_list": true,
+            "label": "Dublin Core elements terms borrowed by Latimer Core",
+            "description": "Term list for terms from the Dublin Core dc: namespace borrowed by Latimer Core",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/xmpRights-for-ac.csv",
-            "termlist_uri": "http://rs.tdwg.org/ac/xmpRights/"
+            "modifications_file_path": "latimer/dc.csv",
+            "termlist_uri": "http://rs.tdwg.org/ltc/dc/"
         },
         {
             "namespace_uri": "http://purl.org/dc/terms/",
-            "database": "dcterms-for-ac",
+            "pref_namespace_prefix": "dcterms",
+            "database": "dcterms-for-ltc",
             "borrowed": true,
-            "new_term_list": false,
+            "new_term_list": true,
+            "label": "Dublin Core dcterms: terms borrowed by Latimer Core",
+            "description": "Term list for terms from the Dublin Core dcterms: namespace borrowed by Latimer Core",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2021-10-05/dcterms-for-ac.csv",
-            "termlist_uri": "http://rs.tdwg.org/ac/dcterms/"
+            "modifications_file_path": "latimer/dcterms.csv",
+            "termlist_uri": "http://rs.tdwg.org/ltc/dcterms/"
+        },
+        {
+            "namespace_uri": "http://rs.tdwg.org/dwc/terms/",
+            "pref_namespace_prefix": "dwc",
+            "database": "dwc-for-ltc",
+            "borrowed": true,
+            "new_term_list": true,
+            "label": "Darwin Core terms borrowed by Latimer Core",
+            "description": "Term list for Darwin Core terms borrowed by Latimer Core",
+            "utility_namespace": false,
+            "modifications_file_path": "latimer/dwc.csv",
+            "termlist_uri": "http://rs.tdwg.org/ltc/dwc/"
+        },
+        {
+            "namespace_uri": "https://schema.org/",
+            "pref_namespace_prefix": "schema",
+            "database": "schema-for-ltc",
+            "borrowed": true,
+            "new_term_list": true,
+            "label": "schema.org terms borrowed by Latimer Core",
+            "description": "Term list for schema.org terms borrowed by Latimer Core",
+            "utility_namespace": false,
+            "modifications_file_path": "latimer/schema.csv",
+            "termlist_uri": "http://rs.tdwg.org/ltc/schema/"
         }
     ]
 }
