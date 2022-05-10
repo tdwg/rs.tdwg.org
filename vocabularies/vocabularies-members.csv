@@ -21,3 +21,9 @@ http://rs.tdwg.org/format/,http://rs.tdwg.org/format/values/
 http://rs.tdwg.org/acsubtype/,http://rs.tdwg.org/acsubtype/values/
 http://rs.tdwg.org/chrono/,http://rs.tdwg.org/chrono/terms/
 http://rs.tdwg.org/chrono/,http://rs.tdwg.org/chrono/iri/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/terms/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/abcd/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/dc/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/dcterms/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/dwc/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/schema/
