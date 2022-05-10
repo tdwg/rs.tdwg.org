@@ -1,2 +1,2 @@
 document_modified,list,list_deprecated,list_localName,label,description,list_created,list_modified,vann_preferredNamespacePrefix,vann_preferredNamespaceUri,database,versions_database,versions_uri,standard
-,http://rs.tdwg.org/test/terms/,,test/terms/,test term list,Test term list for new vocabulary,,,test,http://rs.tdwg.org/test/terms/,test,test-versions,http://rs.tdwg.org/test/version/terms/,http://www.tdwg.org/standards/x
+,http://rs.tdwg.org/ltc/terms/,,ltc/terms/,Latimer Core namespace term list,Term list for terms minted by Latimer Core,,,ltc,http://rs.tdwg.org/ltc/terms/,latimer,latimer-versions,http://rs.tdwg.org/ltc/version/terms/,http://www.tdwg.org/standards/643
