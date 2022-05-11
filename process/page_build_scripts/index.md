@@ -4335,7 +4335,7 @@ A person (alive or dead). This concept should map to the Schema.org Person class
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>Jones</code>, <code>Keita</code>, <code>O'Rourke</code>, <code>Carre�o Qui�ones</code></td>
+			<td><code>Jones</code>, <code>Keita</code>, <code>O'Rourke</code>, <code>Carreño Quiñones</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
