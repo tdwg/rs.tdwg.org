@@ -94,7 +94,7 @@ http://rs.tdwg.org/dwc/index/,,,,,,https://orcid.org/0000-0002-5178-4170,,review
 http://rs.tdwg.org/dwc/terms/guides/rdf/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steve Baskauf
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0003-1144-0290,,,,,,author,John Wieczorek
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0002-5905-1617,,,,,,author,John Deck 
-http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0003-1031-3249,,,,,,author,Campbell Webb 
+http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0003-1031-3249,,,,,,author,Campbell Webb
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,,,,,,author,Paul J. Morris 
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0003-0632-7576,,,,,,author,Mark Schildhauer 
 http://rs.tdwg.org/dwc/terms/guides/text/,https://orcid.org/0000-0001-6215-3617,,,,,,,lead author,Tim Robertson
@@ -251,15 +251,15 @@ http://rs.tdwg.org/ncd/doc/specification/,,http://viaf.org/viaf/236192,,,,,,auth
 http://rs.tdwg.org/ncd/doc/specification/,,https://orcid.org/0000-0002-4737-745X,,,,,,author,Günter Waibel
 http://rs.tdwg.org/ncd/doc/specification/,,https://orcid.org/0000-0002-3090-1761,,,,,,author,Wouter Addink
 http://rs.tdwg.org/ncd/doc/specification/,,http://viaf.org/viaf/278739412,,,,,,author,Ruud Altenburg
-http://rs.tdwg.org/abcddna/doc/guide/,,http://rs.tdwg.org/contributor/12,,,,,,author,Gabriele Dröge
+http://rs.tdwg.org/abcddna/doc/guide/,,http://www.wikidata.org/entity/Q84993120,,,,,,author,Gabriele Dröge
 http://rs.tdwg.org/abcddna/doc/guide/,,http://viaf.org/viaf/77423299,,,,,,author,Holger Zetzsche
 http://rs.tdwg.org/abcddna/doc/guide/,,http://viaf.org/viaf/265750549,,,,,,author,Birgit Gemeinholzer
 http://rs.tdwg.org/abcddna/doc/guide/,,https://orcid.org/0000-0002-4325-4030,,,,,,author,Anton Güntsch
 http://rs.tdwg.org/abcddna/doc/guide/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/21e8d5c7-464f-41c3-9e9c-1ce09b0d4f1f,,,,,,author,Wolf-Henning Kusber
 http://rs.tdwg.org/abcddna/doc/guide/,,http://rs.tdwg.org/contributor/14,,,,,,author,Patricia Kelbert
-http://rs.tdwg.org/abcddna/doc/guide/,,http://www.bgbm.org/de/personal/joerg-holetschek,,,,,,author,Jörg Holetschek
+http://rs.tdwg.org/abcddna/doc/guide/,,http://www.wikidata.org/entity/Q110140814,,,,,,author,Jörg Holetschek
 http://rs.tdwg.org/abcddna/doc/guide/,,https://orcid.org/0000-0001-9945-7606,,,,,,author,Walter G. Berendsohn
-http://rs.tdwg.org/abcddna/doc/xmlschema/,,,http://rs.tdwg.org/contributor/12,,,,,editor,Gabriele Dröge
+http://rs.tdwg.org/abcddna/doc/xmlschema/,,,http://www.wikidata.org/entity/Q84993120,,,,,editor,Gabriele Dröge
 http://rs.tdwg.org/hispid/doc/specification/,,,https://orcid.org/0000-0001-9832-3809,,,,,editor,Barry J. Conn
 http://rs.tdwg.org/ebdc/doc/specification/,,http://viaf.org/viaf/61185227,,,,,,author,Frances E M Cook
 http://rs.tdwg.org/poss/doc/specification/,,http://viaf.org/viaf/17299201,,,,,,author,Hugh Synge
