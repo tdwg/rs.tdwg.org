@@ -7,14 +7,14 @@ http://rs.tdwg.org/ac/doc/termlist/2020-01-27,text/markdown,https://github.com/t
 http://rs.tdwg.org/ac/doc/termlist/2020-08-23,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist-2020-08-23.md
 http://rs.tdwg.org/ac/doc/termlist/2020-10-13,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist-2020-10-13.md
 http://rs.tdwg.org/ac/doc/termlist/2021-02-01,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist-2021-02-01.md
-http://rs.tdwg.org/ac/doc/termlist/2021-10-05,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist.md
+http://rs.tdwg.org/ac/doc/termlist/2021-10-05,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist-2021-10-05.md
 http://rs.tdwg.org/ac/doc/structure/2013-10-23,text/markdown,https://github.com/tdwg/ac/raw/master/docs/structure-2013-10-23.md
 http://rs.tdwg.org/ac/doc/structure/2020-01-27,text/markdown,https://github.com/tdwg/ac/raw/master/docs/structure-2020-01-27.md
 http://rs.tdwg.org/ac/doc/structure/2021-10-05,text/markdown,https://github.com/tdwg/ac/raw/master/docs/structure.md
 http://rs.tdwg.org/ac/doc/introduction/2013-10-23,text/markdown,https://github.com/tdwg/ac/raw/master/docs/introduction.md
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,text/markdown,https://github.com/tdwg/ac/raw/master/docs/guide.md
 http://rs.tdwg.org/ac/doc/format/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/format.md
-http://rs.tdwg.org/ac/doc/subtype/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/subtype.md
+http://rs.tdwg.org/ac/doc/subtype/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/subtype-2020-10-13.md
 http://rs.tdwg.org/ac/doc/variant/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant.md
 http://rs.tdwg.org/guid/doc/guidas/2010-09-09,application/pdf,https://github.com/tdwg/guid-as/blob/master/guid/tdwg_guid_applicability_statement.pdf
 http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,application/pdf,https://github.com/tdwg/guid-as/blob/master/lsid/tdwg_lsid_applicability_statement.pdf
@@ -80,3 +80,5 @@ http://rs.tdwg.org/tl/doc/s7/2008,text/html,http://www.sil.si.edu/DigitalCollect
 http://rs.tdwg.org/tl/doc/s8/2009,text/html,http://www.sil.si.edu/DigitalCollections/tl-2/browse.cfm?vol=15#page/7
 http://rs.tdwg.org/bph/doc/book/1968,print,urn:isbn:091319610X
 http://rs.tdwg.org/bph/doc/book/2004,print,urn:isbn:0913196789
+http://rs.tdwg.org/ac/doc/termlist/2022-02-23,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist.md
+http://rs.tdwg.org/ac/doc/subtype/2022-02-23,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/subtype.md
