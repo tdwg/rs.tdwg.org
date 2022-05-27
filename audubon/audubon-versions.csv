@@ -129,3 +129,8 @@ http://rs.tdwg.org/ac/terms/version/frameRate-2021-10-05,frameRate
 http://rs.tdwg.org/ac/terms/version/startTime-2021-10-05,startTime
 http://rs.tdwg.org/ac/terms/version/endTime-2021-10-05,endTime
 http://rs.tdwg.org/ac/terms/version/caption-2021-10-05,caption
+http://rs.tdwg.org/ac/terms/version/subjectOrientation-2022-02-23,subjectOrientation
+http://rs.tdwg.org/ac/terms/version/subjectPart-2022-02-23,subjectPart
+http://rs.tdwg.org/ac/terms/version/frameRate-2022-02-23,frameRate
+http://rs.tdwg.org/ac/terms/version/subjectOrientationLiteral-2022-02-23,subjectOrientationLiteral
+http://rs.tdwg.org/ac/terms/version/subjectPartLiteral-2022-02-23,subjectPartLiteral

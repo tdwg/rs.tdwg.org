@@ -908,3 +908,5 @@ http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/mediaSpeed
 http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/frameRate
 http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/startTime
 http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/endTime
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/subjectOrientationLiteral
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/subjectPartLiteral
