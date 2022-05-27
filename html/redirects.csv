@@ -1,5 +1,5 @@
 database,redirect,type,namespace,prefix,useNamespace,connector
-audubon,yes,term,ac,https://tdwg.github.io/ac/termlist/#,yes,_
+audubon,yes,term,ac,https://ac.tdwg.org/termlist/#,yes,_
 audubon-versions,no,termVersion,ac,,,
 curatorial,no,term,dwccuratorial,,,
 curatorial-versions,no,termVersion,dwccuratorial,,,
