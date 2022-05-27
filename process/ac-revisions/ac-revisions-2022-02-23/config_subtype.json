@@ -1,18 +1,18 @@
 {
     "date_issued": "2022-02-23",
     "local_offset_from_utc": "-05:00",
-    "vocab_type": 1,
+    "vocab_type": 2,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/ac/terms/",
-            "pref_namespace_prefix": "ac",
-            "database": "audubon",
+            "namespace_uri": "http://rs.tdwg.org/acsubtype/values/",
+            "pref_namespace_prefix": "acsubtype",
+            "database": "acsubtype",
             "borrowed": false,
             "new_term_list": false,
             "label": "",
             "description": "",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2022-02-23/audubon_changes.csv",
+            "modifications_file_path": "ac-revisions/ac-revisions-2022-02-23/acsubtype_changes.csv",
             "termlist_uri": ""
         }
     ]
