@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2021-10-09
+**Date Modified:** 2022-05-28
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -233,23 +233,31 @@ In many cases, the organizing class will be a well-known class previously define
 
 In order to use categories, edit the configuration section of the build script so that the value of `organized_in_categories` is `True`. Then create Python lists containing corresponding values for `display_order`, `display_labels`, `display_commnets`, and `display_id`. When the script builds the page, it will use these data to organize the terms and create appropriate section headings and notes for the categories. See the notebook `build-page-categories.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository for an example.
 
-# 5 Managing documents metadata
+# 5 Managing documents metadata via Python script
 
-Currently (2020-10-19), there is no automated method for generating the metadata about documents in the rs.tdwg.org GitHub repository. If a document (such as a list of terms document or any other document) is generated, the metadata tables that describe it need to be updated manually using a workflow similar to that which is automated by the scripts described above. The steps of that workflow are as follows:
+After the vocabulary-related metadata are updated, metadata about human-readable documents MUST also be updated. Typically, this will be one or more list of terms documents that make it possible for humans to read the normative content related to the vocabulary terms. The metadata about each list of terms document involved MUST be updated one at a time, using [a Python script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_workflow.ipynb) that updates the document-related CSV files in the rs.tdwg.org repository. (Currenty on 2022-05-28 this script is in a Jupyter notebook, although after more testing and use, it will eventually be moved to a stand-alone script.) 
 
-1. Create a new version of the document in docs-versions/docs-versions.csv
-2. Update mapping table docs/docs-versions.csv
-3. Update the metadata (or create new) of docs/docs.csv
-4. If 2nd or more version, add entry in docs-versions/docs-versions-replacements.csv
-5. Add entry in docs-versions/docs-versions-format.csv
-6. If necessary, create or update docs/docs-format.csv
-7. Update (or create) author records in docs/docs-authors.csv Use ORCID if available, otherwise create Wikidata record and use its identifier.
-8. Copy and paste as necessary to create an entry for the new version in docs-versions/docs-versions-authors.csv
-9. Revise (or create new if necessary) entries in docs-roles/docs-roles.csv . Use info from docs-authors.csv
-10. Add entry to standards/standards-parts.csv if a new document has been added to the standard.
-11. Add or update standards-versions/standards-versions-parts.csv if a document had been created or edited.
+Before using the script, the rs.tdwg.org repository SHOULD be cloned to a local file system. The required configuration variables are in the file `general_configuration.yaml`, which MUST be in the same directory as the script. The following variables are included in the file:
 
-If the document is a list of terms and is the place where redirects for human-readable term dereferencing goes, make sure that the redirect URL is correct in html/redirects.csv
+- `versionDate` (required). This date SHOULD match the version date for the corresponding vocabulary version.
+- `docIri` (required). This is the permanent current IRI assigned to the document following the IRI patterns established [here](http://rs.tdwg.org/index#2-iri-patterns). If this IRI does not match any existing document IRI in the documents metadata, the script treats the document as new, so if the document is a new version of an existing document, it's very important to get this IRI exactly right. The convention is that these documents have trailing slashes.
+- `mediaType`. If omitted, `text/markdown` is assumed.
+- `lastVersionAccessUri`. Omit for new documents. For existing documents, this is the path to the raw page source of the previous version of the document. If omitted, the previous value will remain unchanged.
+- `standardIri` (required). This is the permanent IRI assigned to the standard of which the document is a part. The convention is that these IRIs do not have trailing slashes.
+
+If the document is new, it is REQUIRED that the `authors_configuration.yaml` and `document_configuration.yaml` files be present in the same directory as the script. There are example files in the `example_config_files` subdirectory of the directory that contains the script. The last cells in the script notebook can also be used to generate these two configuration files with values based on any existing standards document. 
+
+If the document is a new version of an existing document, these two files are OPTIONAL.
+
+If `authors_configuration.yaml` is not present in the directory, the data from the previous version will be used. All fields in this file will be used to update the data table and if any of them are missing, those data will be missing in the metadata. All fields are REQUIRED except `affiliation` and `affiliation_uri`. Care should be taken to use exactly the same string for `contributor_role` as previously used in other rows unless the role is actually unique. 
+
+If the `document_configuration.yaml` is not present in the directory, the data from the previous version will be used, except for the `doc_modified` field, which is ignored and is given the value found in the general configuration file. For existing documents, providing values for fields is OPTIONAL. Any fields lacking values with be given the value from the most recent version. Any fields with values will replace previous values. NOTE: since the citation contains the current version date, it SHOULD be updated. Therefore, this file SHOULD be included in the directory.
+
+**IMPORTANT NOTE** These instructions assume that the document that is being updated is a list of terms document. If the document is an new version of some other standards document, and that document's metadata is being updated in the absence of a previous vocabulary update, the script will not generate a new version of the standard, including the metadata about all of the parts of the new standard version. Those rows will have to be created manually. If the non-list of terms document is being created or updated at the same times as a list of terms document, the script will correctly modify the parts of the previously-created new standard version to include the new version of the document. 
+
+## 5.1 Redirection for human-readable term metadata during content negotiation
+
+For term IRIs, redirection during content-negotiation for machine-readable representations is handled automatically by the server, since those representations are generated directly from the metadata stored in the rs.tdwg.org repo. However, the human-readable representations redirect to fragment identifiers in list of terms documents. For currently maintained vocabularies, these are usually GitHub Pages-generated web pages whose actual page URLs do not correspond to the term IRIs. Correct redirection is controlled by the redirect URL in the `redirects.csv` file in the `html` directory of the `rs.tdwg.org`. The data in this table will need to be updated if the actual URL of the list of pages document changes.
 
 # 6 Generating JSON-LD for controlled vocabularies
 
