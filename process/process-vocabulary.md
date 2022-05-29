@@ -20,7 +20,7 @@
 
 [4 Term list build script](#user-content-4-build-script-for-human-readable-document-listing-terms-and-their-metadata)
 
-[5 Managing documents metadata](#user-content-5-managing-documents-metadata)
+[5 Managing documents metadata](#5-managing-documents-metadata-via-python-script)
 
 [6 Generating JSON-LD for controlled vocabularies](#user-content-6-generating-json-ld-for-controlled-vocabularies)
 
