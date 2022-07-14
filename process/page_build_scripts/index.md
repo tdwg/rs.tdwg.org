@@ -512,15 +512,19 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/Address-2022-05-10">http://rs.tdwg.org/ltc/terms/version/Address-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/Address-2022-07-14">http://rs.tdwg.org/ltc/terms/version/Address-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Address</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -546,11 +550,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Address Country</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -580,11 +588,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Address Locality</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -618,11 +630,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Address Region</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -652,11 +668,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Address Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -690,11 +710,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Post Office Box Number</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -724,11 +748,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Postal Code</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -758,11 +786,15 @@ A physical postal address for an organisational unit or person.<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Street Address</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -795,11 +827,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Chronometric Age</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -829,11 +865,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Chronometric Age Protocol</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -863,11 +903,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Chronometric Age Remarks</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -897,11 +941,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Chronometric Age Uncertainty In Years</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -935,11 +983,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Chronometric Age</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -973,11 +1025,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Chronometric Age Reference System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1007,11 +1063,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Chronometric Age</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1049,11 +1109,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Chronometric Age Reference System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1087,11 +1151,15 @@ The age of a specimen or related materials that is generated from a dating assay
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Verbatim Chronometric Age</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1132,15 +1200,19 @@ A grouping of multiple ObjectGroups for a particular use case, purpose or implem
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/CollectionDescriptionScheme-2022-05-10">http://rs.tdwg.org/ltc/terms/version/CollectionDescriptionScheme-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/CollectionDescriptionScheme-2022-07-14">http://rs.tdwg.org/ltc/terms/version/CollectionDescriptionScheme-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Collection Description Scheme</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1170,15 +1242,19 @@ A grouping of multiple ObjectGroups for a particular use case, purpose or implem
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/basisOfScheme-2022-05-10">http://rs.tdwg.org/ltc/terms/version/basisOfScheme-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/basisOfScheme-2022-07-14">http://rs.tdwg.org/ltc/terms/version/basisOfScheme-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Basis Of Scheme</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1212,15 +1288,19 @@ A grouping of multiple ObjectGroups for a particular use case, purpose or implem
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/distinctObjects-2022-05-10">http://rs.tdwg.org/ltc/terms/version/distinctObjects-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/distinctObjects-2022-07-14">http://rs.tdwg.org/ltc/terms/version/distinctObjects-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Distinct Objects</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1258,15 +1338,19 @@ A grouping of multiple ObjectGroups for a particular use case, purpose or implem
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/schemeName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/schemeName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/schemeName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/schemeName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Scheme Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1299,15 +1383,19 @@ A record of current and past statuses of the object group and the reason for sta
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/CollectionStatusHistory-2022-05-10">http://rs.tdwg.org/ltc/terms/version/CollectionStatusHistory-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/CollectionStatusHistory-2022-07-14">http://rs.tdwg.org/ltc/terms/version/CollectionStatusHistory-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Collection Status History</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1337,15 +1425,19 @@ A record of current and past statuses of the object group and the reason for sta
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/status-2022-05-10">http://rs.tdwg.org/ltc/terms/version/status-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/status-2022-07-14">http://rs.tdwg.org/ltc/terms/version/status-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Status</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1379,15 +1471,19 @@ A record of current and past statuses of the object group and the reason for sta
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/statusChangeReason-2022-05-10">http://rs.tdwg.org/ltc/terms/version/statusChangeReason-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/statusChangeReason-2022-07-14">http://rs.tdwg.org/ltc/terms/version/statusChangeReason-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Status Change Reason</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1421,15 +1517,19 @@ A record of current and past statuses of the object group and the reason for sta
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/statusType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/statusType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/statusType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/statusType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Status Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1466,15 +1566,19 @@ Details of a method by which an entity such as a Person or OrganisationalUnit ma
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/ContactDetail-2022-05-10">http://rs.tdwg.org/ltc/terms/version/ContactDetail-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/ContactDetail-2022-07-14">http://rs.tdwg.org/ltc/terms/version/ContactDetail-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Contact Detail</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1504,15 +1608,19 @@ Details of a method by which an entity such as a Person or OrganisationalUnit ma
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/contactDetailCategory-2022-05-10">http://rs.tdwg.org/ltc/terms/version/contactDetailCategory-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/contactDetailCategory-2022-07-14">http://rs.tdwg.org/ltc/terms/version/contactDetailCategory-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Contact Detail Category</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1546,15 +1654,19 @@ Details of a method by which an entity such as a Person or OrganisationalUnit ma
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/contactDetailType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/contactDetailType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/contactDetailType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/contactDetailType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Contact Detail Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1584,15 +1696,19 @@ Details of a method by which an entity such as a Person or OrganisationalUnit ma
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/contactDetailValue-2022-05-10">http://rs.tdwg.org/ltc/terms/version/contactDetailValue-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/contactDetailValue-2022-07-14">http://rs.tdwg.org/ltc/terms/version/contactDetailValue-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Contact Detail Value</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1612,7 +1728,7 @@ Details of a method by which an entity such as a Person or OrganisationalUnit ma
 
 ### 4.6 Event
 
-An action that occurs at some location during some time. From dwc Class event (http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06). Examples include: A specimen collection process. A camera trap image capture. A marine trawl.<table>
+An action that occurs at some location during some time. Derived from dwc Class event (http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06). This class has been defined under the ltc namespace because it only has a subset of the properties of DwC:Event. All ltc:Event properties are borrowed from and reference the dwc namespace. Examples of an Event include: A specimen collection process. A camera trap image capture. A marine trawl.<table>
 	<thead>
 		<tr>
 			<th colspan="2"><a id="ltc_Event"></a>Term Name  ltc:Event</th>
@@ -1625,15 +1741,19 @@ An action that occurs at some location during some time. From dwc Class event (h
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/Event-2022-05-10">http://rs.tdwg.org/ltc/terms/version/Event-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/Event-2022-07-14">http://rs.tdwg.org/ltc/terms/version/Event-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Event</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1641,7 +1761,7 @@ An action that occurs at some location during some time. From dwc Class event (h
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>From dwc Class event (<a href="http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06">http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06</a>). Examples include: A specimen collection process. A camera trap image capture. A marine trawl.</td>
+			<td>Derived from dwc Class event (<a href="http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06">http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06</a>). This class has been defined under the ltc namespace because it only has a subset of the properties of DwC:Event. All ltc:Event properties are borrowed from and reference the dwc namespace. Examples of an Event include: A specimen collection process. A camera trap image capture. A marine trawl.</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1663,11 +1783,15 @@ An action that occurs at some location during some time. From dwc Class event (h
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Habitat</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1697,11 +1821,15 @@ An action that occurs at some location during some time. From dwc Class event (h
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Sampling Protocol</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1739,11 +1867,15 @@ An action that occurs at some location during some time. From dwc Class event (h
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Verbatim Event Date</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1776,15 +1908,19 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/GeographicOrigin-2022-05-10">http://rs.tdwg.org/ltc/terms/version/GeographicOrigin-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/GeographicOrigin-2022-07-14">http://rs.tdwg.org/ltc/terms/version/GeographicOrigin-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Geographic Origin</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1810,11 +1946,15 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Continent</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1852,11 +1992,15 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Locality</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1890,15 +2034,19 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/region-2022-05-10">http://rs.tdwg.org/ltc/terms/version/region-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/region-2022-07-14">http://rs.tdwg.org/ltc/terms/version/region-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Region</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1936,15 +2084,19 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/salinityType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/salinityType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/salinityType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/salinityType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Salinity Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1978,11 +2130,15 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Water Body</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2020,15 +2176,19 @@ The geographic location from which objects associated with the ObjectGroup were 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/waterBodyType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/waterBodyType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/waterBodyType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/waterBodyType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Waterbody Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2065,11 +2225,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Geological Context</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2099,11 +2263,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Bed</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2141,11 +2309,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Age Or Lowest Stage</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2183,11 +2355,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Eon Or Lowest Eonothem</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2225,11 +2401,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Epoch Or Lowest Series</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2267,11 +2447,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Era Or Lowest Erathem</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2309,11 +2493,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Earliest Period Or Lowest System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2351,11 +2539,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Formation</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2393,11 +2585,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Group</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2435,11 +2631,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Age Or Highest Stage</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2477,11 +2677,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Eon Or Highest Eonothem</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2519,11 +2723,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Epoch Or Highest Series</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2561,11 +2769,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Era Or Highest Erathem</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2603,11 +2815,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Latest Period Or Highest System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2645,11 +2861,15 @@ Geological information, such as stratigraphy, that qualifies a region or place.<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Member</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2690,15 +2910,19 @@ A numeric, textual value, or reference such as an IRI, that can be used to uniqu
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/Identifier-2022-05-10">http://rs.tdwg.org/ltc/terms/version/Identifier-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/Identifier-2022-07-14">http://rs.tdwg.org/ltc/terms/version/Identifier-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Identifier</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2728,11 +2952,15 @@ A numeric, textual value, or reference such as an IRI, that can be used to uniqu
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Identifier</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2774,15 +3002,19 @@ A numeric, textual value, or reference such as an IRI, that can be used to uniqu
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/identifierType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/identifierType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/identifierType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/identifierType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Identifier Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2816,11 +3048,15 @@ A numeric, textual value, or reference such as an IRI, that can be used to uniqu
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Identifier Source</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2865,11 +3101,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement or Fact</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2907,11 +3147,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Value</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2945,15 +3189,19 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/measurementDerivation-2022-05-10">http://rs.tdwg.org/ltc/terms/version/measurementDerivation-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/measurementDerivation-2022-07-14">http://rs.tdwg.org/ltc/terms/version/measurementDerivation-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Derivation</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2987,15 +3235,19 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/measurementFactText-2022-05-10">http://rs.tdwg.org/ltc/terms/version/measurementFactText-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/measurementFactText-2022-07-14">http://rs.tdwg.org/ltc/terms/version/measurementFactText-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Fact or Narrative Text</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3029,11 +3281,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Method</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3067,11 +3323,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Remarks</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3105,11 +3365,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3147,11 +3411,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Unit</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3189,11 +3457,15 @@ A measurement of or fact about the ObjectGroup representing the objects in the c
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Measurement Value</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3234,15 +3506,19 @@ An informal classification of the type of objects within the ObjectGroup, using 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/ObjectClassification-2022-05-10">http://rs.tdwg.org/ltc/terms/version/ObjectClassification-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/ObjectClassification-2022-07-14">http://rs.tdwg.org/ltc/terms/version/ObjectClassification-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Object Classification</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3272,15 +3548,19 @@ An informal classification of the type of objects within the ObjectGroup, using 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectClassificationLevel-2022-05-10">http://rs.tdwg.org/ltc/terms/version/objectClassificationLevel-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectClassificationLevel-2022-07-14">http://rs.tdwg.org/ltc/terms/version/objectClassificationLevel-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Object Classification Level</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3314,15 +3594,19 @@ An informal classification of the type of objects within the ObjectGroup, using 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectClassificationName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/objectClassificationName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectClassificationName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/objectClassificationName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Object Classification Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3356,15 +3640,19 @@ An informal classification of the type of objects within the ObjectGroup, using 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectClassificationParent-2022-05-10">http://rs.tdwg.org/ltc/terms/version/objectClassificationParent-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectClassificationParent-2022-07-14">http://rs.tdwg.org/ltc/terms/version/objectClassificationParent-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Object Classification Parent</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3397,15 +3685,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/ObjectGroup-2022-05-10">http://rs.tdwg.org/ltc/terms/version/ObjectGroup-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/ObjectGroup-2022-07-14">http://rs.tdwg.org/ltc/terms/version/ObjectGroup-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Object Group</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3431,15 +3723,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/baseTypeOfCollection-2022-05-10">http://rs.tdwg.org/ltc/terms/version/baseTypeOfCollection-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/baseTypeOfCollection-2022-07-14">http://rs.tdwg.org/ltc/terms/version/baseTypeOfCollection-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Base Type Of Collection</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3447,7 +3743,7 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent type properties could include hierarchical Audubon Core/Dublin Core terms, e.g. dc:type (<a href="http://purl.org/dc/elements/1.1/type">http://purl.org/dc/elements/1.1/type</a>), ac:subtype / ac:subtypeLiteral (<a href="http://rs.tdwg.org/ac/terms/subtypeLiteral">http://rs.tdwg.org/ac/terms/subtypeLiteral</a>), or (proposed) ac:3DResourceType.</td>
+			<td>For natural history collections baseTypeOfCollection describes types of occurrences and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfCollection is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (<a href="http://purl.org/dc/elements/1.1/type">http://purl.org/dc/elements/1.1/type</a>), ac:subtype / ac:subtypeLiteral (<a href="http://rs.tdwg.org/ac/terms/subtypeLiteral">http://rs.tdwg.org/ac/terms/subtypeLiteral</a>), or (proposed) ac:3DResourceType.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3473,15 +3769,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/collectionManagementSystem-2022-05-10">http://rs.tdwg.org/ltc/terms/version/collectionManagementSystem-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/collectionManagementSystem-2022-07-14">http://rs.tdwg.org/ltc/terms/version/collectionManagementSystem-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Collection Management System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3515,15 +3815,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/collectionName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/collectionName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/collectionName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/collectionName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Collection Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3531,7 +3835,7 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>The Leslie Hubricht Molluscan Collection</code>, <code>NHM Algae, Fungi and Plants collection</code>, <code>Crustacea & Cirripedes, Decapoda</code>, <code>Global Mesozoic and Paleozoic mollusc faunas/samples</code></td>
+			<td><code>The Leslie Hubricht Molluscan Collection</code>, <code>NHM Algae, Fungi and Plants collection</code>, <code>Crustacea – Cirripedes, Decapoda</code>, <code>Global Mesozoic and Paleozoic mollusc faunas/samples</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3553,15 +3857,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/conditionsOfAccess-2022-05-10">http://rs.tdwg.org/ltc/terms/version/conditionsOfAccess-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/conditionsOfAccess-2022-07-14">http://rs.tdwg.org/ltc/terms/version/conditionsOfAccess-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Conditions of Access</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3595,15 +3903,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/currentCollection-2022-05-10">http://rs.tdwg.org/ltc/terms/version/currentCollection-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/currentCollection-2022-07-14">http://rs.tdwg.org/ltc/terms/version/currentCollection-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Current Collection</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3637,11 +3949,15 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Degree of Establishment</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3683,11 +3999,15 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Description</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3725,15 +4045,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/discipline-2022-05-10">http://rs.tdwg.org/ltc/terms/version/discipline-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/discipline-2022-07-14">http://rs.tdwg.org/ltc/terms/version/discipline-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Discipline</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3767,23 +4091,31 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/knownToContainTypes-2022-05-10">http://rs.tdwg.org/ltc/terms/version/knownToContainTypes-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/knownToContainTypes-2022-07-14">http://rs.tdwg.org/ltc/terms/version/knownToContainTypes-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Known To Contain Types</td>
 		</tr>
 		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
+		</tr>
+		<tr>
 			<td>Definition</td>
 			<td>Flag property to indicate that the collection is known to include type specimens.</td>
 		</tr>
 		<tr>
+			<td>Notes</td>
+			<td><code>yes</code> - this collection contains types; <code>no</code> - this collections does not contain types; <code>unknown</code> - this collection has not been checked for types or the type concept is irrelevant for this discipline</td>
+		</tr>
+		<tr>
 			<td>Examples</td>
-			<td><code>yes</code> <code>no</code></td>
+			<td><code>yes</code> <code>no</code> <code>unknown</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3805,15 +4137,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/material-2022-05-10">http://rs.tdwg.org/ltc/terms/version/material-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/material-2022-07-14">http://rs.tdwg.org/ltc/terms/version/material-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Material</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3847,15 +4183,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/objectType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/objectType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/objectType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Object Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3871,7 +4211,7 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>tissue</code>, <code>specimen</code>, <code>culture</code>, <code>rna</code>, <code>mineral</code>, <code>dna</code>, <code>environmental sample</code>, <code>HTS Library</code>, <code>other</code></td>
+			<td><code>tissue</code>, <code>specimen</code>, <code>culture</code>, <code>rna</code>, <code>mineral</code>, <code>dna</code>, <code>environmental sample</code>, <code>HTS Library</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3893,15 +4233,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/period-2022-05-10">http://rs.tdwg.org/ltc/terms/version/period-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/period-2022-07-14">http://rs.tdwg.org/ltc/terms/version/period-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Period</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3939,15 +4283,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/preparationType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/preparationType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/preparationType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/preparationType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Preparation Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -3985,15 +4333,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/preservationMethod-2022-05-10">http://rs.tdwg.org/ltc/terms/version/preservationMethod-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/preservationMethod-2022-07-14">http://rs.tdwg.org/ltc/terms/version/preservationMethod-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Preservation Method</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4031,15 +4383,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/preservationMode-2022-05-10">http://rs.tdwg.org/ltc/terms/version/preservationMode-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/preservationMode-2022-07-14">http://rs.tdwg.org/ltc/terms/version/preservationMode-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Preservation Mode</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4077,15 +4433,19 @@ An intentionally grouped set of objects with one or more common characteristics.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/typeOfCollection-2022-05-10">http://rs.tdwg.org/ltc/terms/version/typeOfCollection-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/typeOfCollection-2022-07-14">http://rs.tdwg.org/ltc/terms/version/typeOfCollection-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Type Of Collection</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4109,7 +4469,7 @@ An intentionally grouped set of objects with one or more common characteristics.
 
 ### 4.13 Organisational Unit
 
-A unit within an organisational hierarchy which may be at, above or below the institutional level. This class can represent any level of organisational unit, incorporating institutions (e.g. a museum), higher units (e.g. a university to which a museum belongs) and more detailed structures (e.g the departments and divisions within a museum). It can be used to arrange these different units at different levels into a hierarchical structure. Derived from [org:OrganizationalUnit](http://www.w3.org/ns/org#OrganizationalUnit) but is not exactly the same. This class combines aspects of both, class [org:Organization](https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization) and class [org:OrganizationalUnit](https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit) from the [W3C Organization Ontology ORG](https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology). Recommended best practice is to associate a unique, persistent organizational identifier (PID) with each created organizational unit. This will allow an unambiguous and continual identification of the unit, as well as the creation of organizational hierarchies. Existing providers of PIDs for organizations are, e.g. https://grid.ac/ and https://ror.org/. The provision of organizational PIDs might be extended to intra-organizational units in the future. Properties of Class: Identifier can be used to add identifier information for organizational units.<table>
+A unit within an organisational hierarchy which may be at, above or below the institutional level. This class can represent any level of organisational unit, incorporating institutions (e.g. a museum), higher units (e.g. a university to which a museum belongs) and more detailed structures (e.g the departments and divisions within a museum). It can be used to arrange these different units at different levels into a hierarchical structure. This class combines aspects of both class org:Organization (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization) and class org:OrganizationalUnit (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit) from the W3C Organization Ontology ORG (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology). Recommended best practice is to associate a unique, persistent organisational identifier (PID) with each created organisational unit. This will allow an unambiguous and continual identification of the unit, as well as the creation of organisational hierarchies. Existing providers of PIDs for organisations are, e.g. https://grid.ac/ and https://ror.org/. The provision of organisational PIDs might be extended to intra-organisational units in the future. Properties of Class: Identifier can be used to add identifier information for organisational units.<table>
 	<thead>
 		<tr>
 			<th colspan="2"><a id="ltc_OrganisationalUnit"></a>Term Name  ltc:OrganisationalUnit</th>
@@ -4122,15 +4482,19 @@ A unit within an organisational hierarchy which may be at, above or below the in
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/OrganisationalUnit-2022-05-10">http://rs.tdwg.org/ltc/terms/version/OrganisationalUnit-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/OrganisationalUnit-2022-07-14">http://rs.tdwg.org/ltc/terms/version/OrganisationalUnit-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Organisational Unit</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4138,7 +4502,7 @@ A unit within an organisational hierarchy which may be at, above or below the in
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This class can represent any level of organisational unit, incorporating institutions (e.g. a museum), higher units (e.g. a university to which a museum belongs) and more detailed structures (e.g the departments and divisions within a museum). It can be used to arrange these different units at different levels into a hierarchical structure. This class combines aspects of both class org:Organization (<a href="https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization">https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization</a>) and class org:OrganizationalUnit (<a href="https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit">https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit</a>) from the W3C Organization Ontology ORG (<a href="https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology">https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology</a>). Recommended best practice is to associate a unique, persistent organizational identifier (PID) with each created organizational unit. This will allow an unambiguous and continual identification of the unit, as well as the creation of organizational hierarchies. Existing providers of PIDs for organizations are, e.g. <a href="https://grid.ac/">https://grid.ac/</a> and <a href="https://ror.org/">https://ror.org/</a>. The provision of organizational PIDs might be extended to intra-organizational units in the future. Properties of Class: Identifier can be used to add identifier information for organizational units.</td>
+			<td>This class can represent any level of organisational unit, incorporating institutions (e.g. a museum), higher units (e.g. a university to which a museum belongs) and more detailed structures (e.g the departments and divisions within a museum). It can be used to arrange these different units at different levels into a hierarchical structure. This class combines aspects of both class org:Organization (<a href="https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization">https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization</a>) and class org:OrganizationalUnit (<a href="https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit">https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit</a>) from the W3C Organization Ontology ORG (<a href="https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology">https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology</a>). Recommended best practice is to associate a unique, persistent organisational identifier (PID) with each created organisational unit. This will allow an unambiguous and continual identification of the unit, as well as the creation of organisational hierarchies. Existing providers of PIDs for organisations are, e.g. <a href="https://grid.ac/">https://grid.ac/</a> and <a href="https://ror.org/">https://ror.org/</a>. The provision of organisational PIDs might be extended to intra-organisational units in the future. Properties of Class: Identifier can be used to add identifier information for organisational units.</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4160,15 +4524,19 @@ A unit within an organisational hierarchy which may be at, above or below the in
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/organisationalUnitName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/organisationalUnitName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/organisationalUnitName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/organisationalUnitName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Organisational Unit Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4176,7 +4544,7 @@ A unit within an organisational hierarchy which may be at, above or below the in
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Repeatable where there are more than one official local language required for example Belgian Institutions where an official name exists in French, Dutch, German and English. See 'A Collection of Crosswalks from Fifteen Research Data Schemas to Schema.org' (<a href="https://www.rd-alliance.org/group/research-metadata-schemas-wg/outcomes/collection-crosswalks-fifteen-research-data-schemas">https://www.rd-alliance.org/group/research-metadata-schemas-wg/outcomes/collection-crosswalks-fifteen-research-data-schemas</a>) from RDA for crosswalks for properties with the function of Name, Title, etc. Take into account the note at the class level (Class:OrganisationalUnit) about associating an identifier in addition to a name with the organizational unit.</td>
+			<td>Repeatable where there are more than one official local language required for example Belgian Institutions where an official name exists in French, Dutch, German and English. See 'A Collection of Crosswalks from Fifteen Research Data Schemas to Schema.org' (<a href="https://www.rd-alliance.org/group/research-metadata-schemas-wg/outcomes/collection-crosswalks-fifteen-research-data-schemas">https://www.rd-alliance.org/group/research-metadata-schemas-wg/outcomes/collection-crosswalks-fifteen-research-data-schemas</a>) from RDA for crosswalks for properties with the function of Name, Title, etc. Take into account the note at the class level (Class:OrganisationalUnit) about associating an identifier in addition to a name with the organisational unit.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4202,15 +4570,19 @@ A unit within an organisational hierarchy which may be at, above or below the in
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/organisationalUnitType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/organisationalUnitType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/organisationalUnitType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/organisationalUnitType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Organisational Unit Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4247,15 +4619,19 @@ A person (alive or dead). This concept should map to the Schema.org Person class
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/Person-2022-05-10">http://rs.tdwg.org/ltc/terms/version/Person-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/Person-2022-07-14">http://rs.tdwg.org/ltc/terms/version/Person-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Person</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4289,11 +4665,15 @@ A person (alive or dead). This concept should map to the Schema.org Person class
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Additional Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4323,11 +4703,15 @@ A person (alive or dead). This concept should map to the Schema.org Person class
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Family Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4357,11 +4741,15 @@ A person (alive or dead). This concept should map to the Schema.org Person class
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Full Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4391,11 +4779,15 @@ A person (alive or dead). This concept should map to the Schema.org Person class
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Given Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4428,15 +4820,19 @@ A qualified association between a Person or OrganisationalUnit and an entity suc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/PersonRole-2022-05-10">http://rs.tdwg.org/ltc/terms/version/PersonRole-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/PersonRole-2022-07-14">http://rs.tdwg.org/ltc/terms/version/PersonRole-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Person Role</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4466,15 +4862,19 @@ A qualified association between a Person or OrganisationalUnit and an entity suc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/endedAtTime-2022-05-10">http://rs.tdwg.org/ltc/terms/version/endedAtTime-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/endedAtTime-2022-07-14">http://rs.tdwg.org/ltc/terms/version/endedAtTime-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Ended At Time</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4508,15 +4908,19 @@ A qualified association between a Person or OrganisationalUnit and an entity suc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/role-2022-05-10">http://rs.tdwg.org/ltc/terms/version/role-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/role-2022-07-14">http://rs.tdwg.org/ltc/terms/version/role-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Role</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4550,15 +4954,19 @@ A qualified association between a Person or OrganisationalUnit and an entity suc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/startedAtTime-2022-05-10">http://rs.tdwg.org/ltc/terms/version/startedAtTime-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/startedAtTime-2022-07-14">http://rs.tdwg.org/ltc/terms/version/startedAtTime-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Started At Time</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4595,15 +5003,19 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/RecordLevel-2022-05-10">http://rs.tdwg.org/ltc/terms/version/RecordLevel-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/RecordLevel-2022-07-14">http://rs.tdwg.org/ltc/terms/version/RecordLevel-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Record Level</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4633,19 +5045,27 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/collectionDescriptionPID-2022-05-10">http://rs.tdwg.org/ltc/terms/version/collectionDescriptionPID-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/collectionDescriptionPID-2022-07-14">http://rs.tdwg.org/ltc/terms/version/collectionDescriptionPID-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Collection Description PID</td>
 		</tr>
 		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
+		</tr>
+		<tr>
 			<td>Definition</td>
 			<td>An unambiguous reference to the collection description record.</td>
+		</tr>
+		<tr>
+			<td>Usage</td>
+			<td>The contents of this field must be an instance of ltc:Identifier</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -4675,15 +5095,19 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/derivedCollection-2022-05-10">http://rs.tdwg.org/ltc/terms/version/derivedCollection-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/derivedCollection-2022-07-14">http://rs.tdwg.org/ltc/terms/version/derivedCollection-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Derived Collection</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4691,7 +5115,7 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For example this would be set = Yes if the record is an automatically generated reconstruction of Darwin's finch collection which is now held at multiple institutions.</td>
+			<td>For example this would be set = Yes if the record is an automatically generated reconstruction of Darwin’s finch collection which is now held at multiple institutions.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4717,11 +5141,15 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>License</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4759,11 +5187,15 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Record Rights</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4801,11 +5233,15 @@ The machine-actionable information profile for the collection description digita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Rights Holder</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4846,11 +5282,15 @@ A reference to external resources and information related to the collection desc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Reference</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4884,11 +5324,15 @@ A reference to external resources and information related to the collection desc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Reference Details</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4922,11 +5366,15 @@ A reference to external resources and information related to the collection desc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Reference Text</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -4960,15 +5408,19 @@ A reference to external resources and information related to the collection desc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/referenceType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/referenceType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/referenceType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/referenceType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Reference Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5002,11 +5454,15 @@ A reference to external resources and information related to the collection desc
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Resource URI</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5043,11 +5499,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Resource Relationship</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5085,11 +5545,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Related Resource ID</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5119,15 +5583,19 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/relatedResourceName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/relatedResourceName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/relatedResourceName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/relatedResourceName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Related Resource Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5161,11 +5629,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Relationship According To</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5195,11 +5667,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Relationship Established Date</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5233,11 +5709,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Relationship Of Resource</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5271,11 +5751,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Relationship Remarks</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5305,11 +5789,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Resource ID</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5339,11 +5827,15 @@ A relationship between an instance of a class in the collection description stan
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Resource Relationship ID</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5376,15 +5868,19 @@ A type of measurement or fact used by the CollectionDescriptionScheme, and the r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/SchemeMeasurementOrFact-2022-05-10">http://rs.tdwg.org/ltc/terms/version/SchemeMeasurementOrFact-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/SchemeMeasurementOrFact-2022-07-14">http://rs.tdwg.org/ltc/terms/version/SchemeMeasurementOrFact-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Scheme Measurement Or Fact</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5414,15 +5910,19 @@ A type of measurement or fact used by the CollectionDescriptionScheme, and the r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/mandatoryMetric-2022-05-10">http://rs.tdwg.org/ltc/terms/version/mandatoryMetric-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/mandatoryMetric-2022-07-14">http://rs.tdwg.org/ltc/terms/version/mandatoryMetric-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Mandatory Metric</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5456,15 +5956,19 @@ A type of measurement or fact used by the CollectionDescriptionScheme, and the r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/repeatableMetric-2022-05-10">http://rs.tdwg.org/ltc/terms/version/repeatableMetric-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/repeatableMetric-2022-07-14">http://rs.tdwg.org/ltc/terms/version/repeatableMetric-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Repeatable Metric</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5498,15 +6002,19 @@ A type of measurement or fact used by the CollectionDescriptionScheme, and the r
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/schemeMeasurementType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/schemeMeasurementType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/schemeMeasurementType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/schemeMeasurementType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Scheme Measurement Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5543,15 +6051,19 @@ A Latimer Core term used by the CollectionDescriptionScheme and the rules relati
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/SchemeTerm-2022-05-10">http://rs.tdwg.org/ltc/terms/version/SchemeTerm-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/SchemeTerm-2022-07-14">http://rs.tdwg.org/ltc/terms/version/SchemeTerm-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Scheme Term</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5581,15 +6093,19 @@ A Latimer Core term used by the CollectionDescriptionScheme and the rules relati
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/mandatoryTerm-2022-05-10">http://rs.tdwg.org/ltc/terms/version/mandatoryTerm-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/mandatoryTerm-2022-07-14">http://rs.tdwg.org/ltc/terms/version/mandatoryTerm-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Mandatory Term</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5623,15 +6139,19 @@ A Latimer Core term used by the CollectionDescriptionScheme and the rules relati
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/repeatableTerm-2022-05-10">http://rs.tdwg.org/ltc/terms/version/repeatableTerm-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/repeatableTerm-2022-07-14">http://rs.tdwg.org/ltc/terms/version/repeatableTerm-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Repeatable Term</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5665,15 +6185,19 @@ A Latimer Core term used by the CollectionDescriptionScheme and the rules relati
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/termName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/termName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/termName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/termName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Term Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5710,15 +6234,19 @@ A physical location (such as a building, room, cabinet or drawer) within the hol
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/StorageLocation-2022-05-10">http://rs.tdwg.org/ltc/terms/version/StorageLocation-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/StorageLocation-2022-07-14">http://rs.tdwg.org/ltc/terms/version/StorageLocation-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Storage Location</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5744,15 +6272,19 @@ A physical location (such as a building, room, cabinet or drawer) within the hol
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/locationName-2022-05-10">http://rs.tdwg.org/ltc/terms/version/locationName-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/locationName-2022-07-14">http://rs.tdwg.org/ltc/terms/version/locationName-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Location Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> Yes -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5786,15 +6318,19 @@ A physical location (such as a building, room, cabinet or drawer) within the hol
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/locationType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/locationType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/locationType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/locationType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Location Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5831,11 +6367,15 @@ A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) consider
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Taxon</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5865,11 +6405,15 @@ A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) consider
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Genus</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5903,11 +6447,15 @@ A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) consider
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Kingdom</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5945,11 +6493,15 @@ A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) consider
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Scientific Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -5991,11 +6543,15 @@ A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) consider
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Taxon Rank</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -6019,7 +6575,7 @@ A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) consider
 
 ### 4.23 Temporal Coverage
 
-A record of a time range represented by the collection's establishment or change over time. This term is separate from the living or geologic periods represented by the objects in the collection. This class can be used to reflect temporal coverage of the collection within various contexts (defined by the temporalCoverageType property). Examples might include the time range in which objects within the collection were collected or the time period over which the collection was assembled.  It should not be used to document the time range within which the objects in the collection were alive, and if the time period you are trying to describe is better described by the CollectionHistory, GeologicalContext or ChronometricAge classes, or period property of the ObjectGroup class, then those classes or properties should be used instead. For example, the period property of the ObjectGroup class and/or GeologicalContext class should be used to record named time periods.<table>
+A record of a time range represented by the collection's establishment or change over time. This term is separate from the living or geologic periods represented by the objects in the collection. This class can be used to reflect temporal coverage of the collection within various contexts (defined by the temporalCoverageType property). Examples might include the time range in which objects within the collection were collected or the time period over which the collection was assembled.  It should not be used to document the time range within which the objects in the collection were alive, and if the time period you are trying to describe is better described by the `CollectionHistory`, `GeologicalContext` or `ChronometricAge` classes, or period property of the `ObjectGroup` class, then those classes or properties should be used instead. For example, the period property of the `ObjectGroup` class and/or `GeologicalContext` class should be used to record named time periods. `TemporalCoverage` is a repeatable class, but when present as a property of `Event` or `CollectionStatusHistory`, multiple occurences should be avoided and repeated occurences of the parent class should be used instead.<table>
 	<thead>
 		<tr>
 			<th colspan="2"><a id="ltc_TemporalCoverage"></a>Term Name  ltc:TemporalCoverage</th>
@@ -6032,15 +6588,19 @@ A record of a time range represented by the collection's establishment or change
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/TemporalCoverage-2022-05-10">http://rs.tdwg.org/ltc/terms/version/TemporalCoverage-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/TemporalCoverage-2022-07-14">http://rs.tdwg.org/ltc/terms/version/TemporalCoverage-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Temporal Coverage</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> Yes</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -6048,7 +6608,7 @@ A record of a time range represented by the collection's establishment or change
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This class can be used to reflect temporal coverage of the collection within various contexts (defined by the temporalCoverageType property). Examples might include the time range in which objects within the collection were collected or the time period over which the collection was assembled.  It should not be used to document the time range within which the objects in the collection were alive, and if the time period you are trying to describe is better described by the CollectionHistory, GeologicalContext or ChronometricAge classes, or period property of the ObjectGroup class, then those classes or properties should be used instead. For example, the period property of the ObjectGroup class and/or GeologicalContext class should be used to record named time periods.</td>
+			<td>This class can be used to reflect temporal coverage of the collection within various contexts (defined by the temporalCoverageType property). Examples might include the time range in which objects within the collection were collected or the time period over which the collection was assembled.  It should not be used to document the time range within which the objects in the collection were alive, and if the time period you are trying to describe is better described by the <code>CollectionHistory</code>, <code>GeologicalContext</code> or <code>ChronometricAge</code> classes, or period property of the <code>ObjectGroup</code> class, then those classes or properties should be used instead. For example, the period property of the <code>ObjectGroup</code> class and/or <code>GeologicalContext</code> class should be used to record named time periods. <code>TemporalCoverage</code> is a repeatable class, but when present as a property of <code>Event</code> or <code>CollectionStatusHistory</code>, multiple occurences should be avoided and repeated occurences of the parent class should be used instead.</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6070,15 +6630,19 @@ A record of a time range represented by the collection's establishment or change
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/temporalCoverageEndDate-2022-05-10">http://rs.tdwg.org/ltc/terms/version/temporalCoverageEndDate-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/temporalCoverageEndDate-2022-07-14">http://rs.tdwg.org/ltc/terms/version/temporalCoverageEndDate-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Temporal Coverage End Date</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -6112,15 +6676,19 @@ A record of a time range represented by the collection's establishment or change
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/temporalCoverageStartDate-2022-05-10">http://rs.tdwg.org/ltc/terms/version/temporalCoverageStartDate-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/temporalCoverageStartDate-2022-07-14">http://rs.tdwg.org/ltc/terms/version/temporalCoverageStartDate-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Temporal Coverage Start Date</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -6154,15 +6722,19 @@ A record of a time range represented by the collection's establishment or change
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-05-10</td>
+			<td>2022-07-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/ltc/terms/version/temporalCoverageType-2022-05-10">http://rs.tdwg.org/ltc/terms/version/temporalCoverageType-2022-05-10</a></td>
+			<td><a href="http://rs.tdwg.org/ltc/terms/version/temporalCoverageType-2022-07-14">http://rs.tdwg.org/ltc/terms/version/temporalCoverageType-2022-07-14</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Temporal Coverage Type</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>Required:</b> No -- <b>Repeatable:</b> No</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
