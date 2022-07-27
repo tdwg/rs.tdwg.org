@@ -239,6 +239,26 @@
         "http://rs.tdwg.org/acpart/values/p0024",
         "http://rs.tdwg.org/acpart/values/p0026"
       ]
+    },
+    {
+      "@id": "http://rs.tdwg.org/acpart/collection/g013",
+      "@type": "http://www.w3.org/2004/02/skos/core#Collection",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "non-bilaterally symmetric animals"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@language": "en",
+          "@value": "collection of concepts that apply to non-bilaterally symmetric animals"
+        }
+      ],
+      "skos:member": [
+        "http://rs.tdwg.org/acpart/values/p0000",
+        "http://rs.tdwg.org/acpart/values/p0001"
+      ]
     }
   ]
 }
