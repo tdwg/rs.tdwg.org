@@ -498,8 +498,10 @@ http://rs.tdwg.org/wgsrpd/doc/data/2001-08,http://viaf.org/viaf/41921927,Richard
 http://rs.tdwg.org/wgsrpd/doc/data/2001-08,https://orcid.org/0000-0002-6321-9398,Francisco Pando,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/wgsrpd/doc/data/2001-08,http://viaf.org/viaf/26204975,Susan Hollis,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/wgsrpd/doc/data/2001-08,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/1f870a85-7a31-473e-ad76-fcce00469c83,Neil A. Brummitt,author,http://www.wikidata.org/entity/Q482980,,
-http://rs.tdwg.org/xdf/doc/article/1992,http://viaf.org/viaf/232871584,Richard J. White,author,http://www.wikidata.org/entity/Q482980,,
-http://rs.tdwg.org/xdf/doc/article/1992,http://viaf.org/viaf/64067143,Robert Allkin,author,http://www.wikidata.org/entity/Q482980,,
+http://rs.tdwg.org/xdf/doc/article/1992,http://viaf.org/viaf/232871584,Richard J. White,author,http://www.wikidata.org/entity/Q482980,"Biology Department, The University, Southampton",https://www.wikidata.org/wiki/Q76473
+http://rs.tdwg.org/xdf/doc/article/1992,http://viaf.org/viaf/64067143,Robert Allkin,author,http://www.wikidata.org/entity/Q482980,"Computing Section, Royal Botanic Gardens, Kew",https://www.wikidata.org/wiki/Q18748726
+http://rs.tdwg.org/xdf/doc/specification/1989-11-02,http://viaf.org/viaf/64067143,Robert Allkin,author,http://www.wikidata.org/entity/Q482980,"Computing Section, Royal Botanic Gardens, Kew",https://www.wikidata.org/wiki/Q18748726
+http://rs.tdwg.org/xdf/doc/specification/1989-11-02,http://viaf.org/viaf/232871584,Richard J. White,author,http://www.wikidata.org/entity/Q482980,"Biology Department, The University, Southampton",https://www.wikidata.org/wiki/Q76473
 http://rs.tdwg.org/bphsup/doc/book/1991,http://viaf.org/viaf/41889168,Gavin D. R. Bridson,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/bphsup/doc/book/1991,http://viaf.org/viaf/76413207,Elizabeth R. Smith,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/ih/doc/book/1990,http://viaf.org/viaf/5004494,Patricia K. Holmgren,editor,http://www.wikidata.org/entity/Q1607826,,
