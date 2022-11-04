@@ -262,7 +262,7 @@ http://rs.tdwg.org/abcddna/doc/guide/,,http://www.wikidata.org/entity/Q110140814
 http://rs.tdwg.org/abcddna/doc/guide/,,https://orcid.org/0000-0001-9945-7606,,,,,,author,Walter G. Berendsohn
 http://rs.tdwg.org/abcddna/doc/xmlschema/,,,http://www.wikidata.org/entity/Q84993120,,,,,editor,Gabriele Dröge
 http://rs.tdwg.org/hispid/doc/specification/,,,https://orcid.org/0000-0001-9832-3809,,,,,editor,Barry J. Conn
-http://rs.tdwg.org/ebdc/doc/specification/,,http://viaf.org/viaf/61185227,,,,,,author,Frances E M Cook
+http://rs.tdwg.org/ebdc/doc/specification/,,,,,,,,author,Frances E M Cook
 http://rs.tdwg.org/poss/doc/specification/,,http://viaf.org/viaf/17299201,,,,,,author,Hugh Synge
 http://rs.tdwg.org/pnbd/doc/specification/,,http://viaf.org/viaf/44359106,,,,,,author,Frank A Bisby 
 http://rs.tdwg.org/apn/doc/data/,,http://viaf.org/viaf/41921927,,,,,,author,Richard K. Brummitt
@@ -273,6 +273,8 @@ http://rs.tdwg.org/wgsrpd/doc/data/,,http://viaf.org/viaf/26204975,,,,,,author,S
 http://rs.tdwg.org/wgsrpd/doc/data/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/1f870a85-7a31-473e-ad76-fcce00469c83,,,,,,author,Neil A. Brummitt
 http://rs.tdwg.org/xdf/doc/article/,,http://viaf.org/viaf/232871584,,,,,,author,Richard J. White
 http://rs.tdwg.org/xdf/doc/article/,,http://viaf.org/viaf/64067143,,,,,,author,Robert Allkin
+http://rs.tdwg.org/xdf/doc/specification/,,http://viaf.org/viaf/64067143,,,,,,author,Robert Allkin
+http://rs.tdwg.org/xdf/doc/specification/,,http://viaf.org/viaf/232871584,,,,,,author,Richard J. White
 http://rs.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/41889168,,,,,,author,Gavin D. R. Bridson
 http://rs.tdwg.org/bphsup/doc/book/,,http://viaf.org/viaf/76413207,,,,,,author,Elizabeth R. Smith
 http://rs.tdwg.org/ih/doc/book/,,,http://viaf.org/viaf/5004494,,,,,editor,Patricia K. Holmgren
