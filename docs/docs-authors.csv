@@ -75,7 +75,6 @@ http://rs.tdwg.org/ac/doc/guide/,https://orcid.org/0000-0003-4176-2274,Ivan Teag
 http://rs.tdwg.org/ac/doc/format/,https://orcid.org/0000-0003-4365-3135,Steven J Baskauf,lead author,http://www.wikidata.org/entity/Q482980,Vanderbilt University Heard Libraries,http://www.wikidata.org/entity/Q16849893
 http://rs.tdwg.org/ac/doc/format/,https://orcid.org/0000-0003-0623-6682,Matthew Blissett,contributor,http://www.wikidata.org/entity/Q20204892,Global Biodiversity Information Facility,http://www.wikidata.org/entity/Q1531570
 http://rs.tdwg.org/ac/doc/format/,http://www.wikidata.org/entity/Q100599637,Douglas Boyer,contributor,http://www.wikidata.org/entity/Q20204892,Duke University,http://www.wikidata.org/entity/Q168751
-http://rs.tdwg.org/ac/doc/subtype/,https://orcid.org/0000-0003-4365-3135,Steven J Baskauf,lead author,http://www.wikidata.org/entity/Q482980,Vanderbilt University Heard Libraries,http://www.wikidata.org/entity/Q16849893
 http://rs.tdwg.org/ac/doc/variant/,https://orcid.org/0000-0003-4365-3135,Steven J Baskauf,lead author,http://www.wikidata.org/entity/Q482980,Vanderbilt University Heard Libraries,http://www.wikidata.org/entity/Q16849893
 http://rs.tdwg.org/ac/doc/variant/,https://orcid.org/0000-0002-5887-9543,Ed Baker,contributor,http://www.wikidata.org/entity/Q482980,"Natural History Museum, London",http://www.wikidata.org/entity/Q309388
 http://rs.tdwg.org/ac/doc/variant/,https://orcid.org/0000-0001-8068-3769,Dan Stowell,contributor,http://www.wikidata.org/entity/Q482980,Queen Mary University of London,http://www.wikidata.org/entity/Q195668
@@ -328,3 +327,4 @@ http://rs.tdwg.org/tl/doc/s5/,http://viaf.org/viaf/11457657,Erik A. Mennega,auth
 http://rs.tdwg.org/tl/doc/s6/,http://viaf.org/viaf/11457657,Erik A. Mennega,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/tl/doc/s7/,http://viaf.org/viaf/84746223,Dan H. Nicolson,author,http://www.wikidata.org/entity/Q482980,,
 http://rs.tdwg.org/tl/doc/s8/,http://viaf.org/viaf/84746223,Dan H. Nicolson,author,http://www.wikidata.org/entity/Q482980,,
+http://rs.tdwg.org/ac/doc/subtype/,https://orcid.org/0000-0003-4365-3135,Steven J Baskauf,lead author,http://www.wikidata.org/entity/Q482980,Vanderbilt University Heard Libraries,http://www.wikidata.org/entity/Q16849893
