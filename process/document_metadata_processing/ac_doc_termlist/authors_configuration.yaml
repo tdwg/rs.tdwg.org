@@ -1,0 +1,118 @@
+- contributor_iri: https://orcid.org/0000-0002-6992-9446
+  contributor_literal: Robert A. Morris
+  contributor_role: lead author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: University of Massachusetts at Boston, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q15144
+
+- contributor_iri: https://orcid.org/0000-0001-7023-7386
+  contributor_literal: Gregor Hagedorn
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany
+  affiliation_uri: http://www.wikidata.org/entity/Q832099
+
+- contributor_iri: https://orcid.org/0000-0002-0772-0022
+  contributor_literal: Annette Olson
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: American Association for the Advancement of Science
+  affiliation_uri: http://www.wikidata.org/entity/Q40358
+
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steve Baskauf
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Vanderbilt University, Nashville, TN, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q29052
+
+- contributor_iri: https://orcid.org/0000-0002-4852-2567
+  contributor_literal: Vijay Barve
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: ''
+  affiliation_uri: ''
+
+- contributor_iri: https://orcid.org/0000-0002-8234-0599
+  contributor_literal: Mihail Carausu
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark
+  affiliation_uri: ''
+
+- contributor_iri: https://orcid.org/0000-0002-3425-6499
+  contributor_literal: Vishwas Chavan
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility, Copenhagen, Denmark
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: http://www.wikidata.org/entity/Q51883873
+  contributor_literal: José Cuadra
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: ''
+  affiliation_uri: ''
+
+- contributor_iri: https://orcid.org/0000-0002-2541-5822
+  contributor_literal: Chris Freeland
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Missouri Botanical Garden, St. Louis, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q1852803
+
+- contributor_iri: https://orcid.org/0000-0001-5172-8577
+  contributor_literal: Patrick Leary
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: ''
+  affiliation_uri: ''
+
+- contributor_iri: https://orcid.org/0000-0003-1593-1417
+  contributor_literal: Dimitry Mozzherin
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Encyclopedia of Life, Woods Hole, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q82486
+
+- contributor_iri: https://orcid.org/0000-0002-3850-9983
+  contributor_literal: Greg Riccardi
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Florida State University, Tallahassee, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q861548
+
+- contributor_iri: https://orcid.org/0000-0003-4176-2274
+  contributor_literal: Ivan Teage
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: ''
+  affiliation_uri: ''
+
+- contributor_iri: https://orcid.org/0000-0001-8068-3769
+  contributor_literal: Dan Stowell
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Queen Mary University of London
+  affiliation_uri: http://www.wikidata.org/entity/Q195668
+
+- contributor_iri: https://orcid.org/0000-0002-5887-9543
+  contributor_literal: Edward Baker
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Natural History Museum, London
+  affiliation_uri: http://www.wikidata.org/entity/Q309388
+
+- contributor_iri: https://orcid.org/0000-0003-0768-1286
+  contributor_literal: Richard Pyle
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Bernice P. Bishop Museum, Honolulu, HI, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q826520
+
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steve Baskauf
+  contributor_role: review manager
+  role_uri: http://www.wikidata.org/entity/Q2462658
+  affiliation: Vanderbilt University, Nashville, TN, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q29052
