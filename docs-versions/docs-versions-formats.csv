@@ -15,7 +15,7 @@ http://rs.tdwg.org/ac/doc/introduction/2013-10-23,text/markdown,https://raw.gith
 http://rs.tdwg.org/ac/doc/guide/2013-10-15,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/guide-2013-10-15.md
 http://rs.tdwg.org/ac/doc/format/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/format-2020-10-13.md
 http://rs.tdwg.org/ac/doc/subtype/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/subtype-2020-10-13.md
-http://rs.tdwg.org/ac/doc/variant/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant.md
+http://rs.tdwg.org/ac/doc/variant/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant-2020-10-13.md
 http://rs.tdwg.org/guid/doc/guidas/2010-09-09,application/pdf,https://github.com/tdwg/guid-as/blob/master/guid/tdwg_guid_applicability_statement.pdf
 http://rs.tdwg.org/guid/doc/lsidas/2009-09-03,application/pdf,https://github.com/tdwg/guid-as/blob/master/lsid/tdwg_lsid_applicability_statement.pdf
 http://rs.tdwg.org/dwc/index/2014-11-08,text/html,http://rs.tdwg.org/dwc/index.htm
@@ -89,3 +89,4 @@ http://rs.tdwg.org/ac/doc/guide/2023-02-24,text/markdown,https://github.com/tdwg
 http://rs.tdwg.org/ac/doc/introduction/2023-02-24,text/markdown,https://github.com/tdwg/ac/raw/master/docs/introduction.md
 http://rs.tdwg.org/ac/doc/structure/2023-02-24,text/markdown,https://github.com/tdwg/ac/raw/master/docs/structure.md
 http://rs.tdwg.org/ac/doc/termlist/2023-02-24,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist.md
+http://rs.tdwg.org/ac/doc/variant/2023-02-24,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant.md
