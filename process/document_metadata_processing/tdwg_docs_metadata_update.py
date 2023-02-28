@@ -172,6 +172,13 @@ versions_data['mediaType'] = config_data['mediaType']
 # Update the document versions metadata in the docs-versions folder
 versions_metadata_df = csv_read(repo_path + 'docs-versions/docs-versions.csv')
 versions_metadata_df = pd.concat([versions_metadata_df, pd.DataFrame([versions_data])])
+
+# Update the accessUrl and browserRedirectUrl for the most recent version
+if not new_document:
+    versions_metadata_df.loc[versions_metadata_df['version_iri'] == most_recent_version_iri, 'accessUrl'] = config_data['accessUrl']
+    versions_metadata_df.loc[versions_metadata_df['version_iri'] == most_recent_version_iri, 'browserRedirectUrl'] = config_data['browserRedirectUrl']
+    print('Check whether the accessUrl and browserRedirectUrl for the most recent version were correctly updated since the code was modified to add this and it has not been tested.')
+
 versions_metadata_df.to_csv(repo_path + 'docs-versions/docs-versions.csv', index = False)
 
 # Update the versions replacements unless the document is new
