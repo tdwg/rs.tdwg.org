@@ -1,0 +1,15 @@
+documentTitle: 'Controlled Vocabulary for Audiovisual Core subtype: List of Terms'
+current_iri: 
+doc_created: 
+doc_modified: 
+publisher: 
+license_statement: 
+license_uri: 
+citation: 'Audiovisual Core Maintenance Group. 2023. Controlled Vocabulary for Audubon
+  Core subtype: List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/subtype/2023-02-24'
+creator: TDWG Audiovisual Core Maintenance Group
+comment: 
+accessUrl: 
+browserRedirectUri: 
+dcterms_isPartOf: 
+abstract: Audiovisual Core uses the terms ac:subtype and ac:subtypeLiteral to refine the type of a media item to a level more specific than the Dublin Core Type Vocabulary, http://purl.org/dc/dcmitype/. This controlled vocabulary provides values for ac:subtype and ac:subtypeLiteral.

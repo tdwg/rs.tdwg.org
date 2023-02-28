@@ -16,66 +16,6 @@ http://rs.tdwg.org/vms/doc/specification/,,https://orcid.org/0000-0001-7694-8250
 http://rs.tdwg.org/vms/doc/specification/,,https://orcid.org/0000-0001-8332-2571,,,,,,author,Joel Sachs
 http://rs.tdwg.org/vms/doc/specification/,,https://orcid.org/0000-0002-2954-9027,,,,,,author,Greg Whitbread
 http://rs.tdwg.org/vms/doc/specification/,,,,,,https://orcid.org/0000-0002-2352-5497,,review manager,Dag Endresen
-http://rs.tdwg.org/ac/doc/termlist/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/termlist/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-0768-1286,,,,,,Richard Pyle,author
-http://rs.tdwg.org/ac/doc/termlist/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/structure/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/structure/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
-http://rs.tdwg.org/ac/doc/structure/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/introduction/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/introduction/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/introduction/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/guide/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/guide/,,http://www.wikidata.org/entity/Q28913578,,,,,,author,Éamonn Ó Tuama
-http://rs.tdwg.org/ac/doc/format/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
-http://rs.tdwg.org/ac/doc/format/,,,,,,,https://orcid.org/0000-0003-0623-6682,contributor,Matthew Blissett
-http://rs.tdwg.org/ac/doc/format/,,,,,,,http://www.wikidata.org/entity/Q100599637,contributor,Douglas Boyer
-http://rs.tdwg.org/ac/doc/subtype/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
-http://rs.tdwg.org/ac/doc/variant/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
-http://rs.tdwg.org/ac/doc/variant/,,,,,,,https://orcid.org/0000-0001-8068-3769,contributor,Dan Stowell
-http://rs.tdwg.org/ac/doc/variant/,,,,,,,https://orcid.org/0000-0002-5887-9543,contributor,Edward Baker
 http://rs.tdwg.org/guid/doc/guidas/,http://www.wikidata.org/entity/Q51883936,,,,,,,lead author,Kevin Richards
 http://rs.tdwg.org/guid/doc/guidas/,,,,,,https://orcid.org/0000-0002-6108-0572,,review manager,Ben Richardson
 http://rs.tdwg.org/guid/doc/lsidas/,,http://www.wikidata.org/entity/Q51883958,,,,,,author,Ricardo Scachetti-Pereira
@@ -325,3 +265,66 @@ http://rs.tdwg.org/tl/doc/s5/,,http://viaf.org/viaf/11457657,,,,,,author,Erik A.
 http://rs.tdwg.org/tl/doc/s6/,,http://viaf.org/viaf/11457657,,,,,,author,Erik A. Mennega
 http://rs.tdwg.org/tl/doc/s7/,,http://viaf.org/viaf/84746223,,,,,,author,Dan H. Nicolson
 http://rs.tdwg.org/tl/doc/s8/,,http://viaf.org/viaf/84746223,,,,,,author,Dan H. Nicolson
+http://rs.tdwg.org/ac/doc/subtype/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
+http://rs.tdwg.org/ac/doc/format/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
+http://rs.tdwg.org/ac/doc/format/,,,,,,,https://orcid.org/0000-0003-0623-6682,contributor,Matthew Blissett
+http://rs.tdwg.org/ac/doc/format/,,,,,,,http://www.wikidata.org/entity/Q100599637,contributor,Douglas Boyer
+http://rs.tdwg.org/ac/doc/guide/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
+http://rs.tdwg.org/ac/doc/guide/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
+http://rs.tdwg.org/ac/doc/guide/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/introduction/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
+http://rs.tdwg.org/ac/doc/introduction/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
+http://rs.tdwg.org/ac/doc/introduction/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/introduction/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
+http://rs.tdwg.org/ac/doc/structure/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
+http://rs.tdwg.org/ac/doc/structure/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/structure/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
+http://rs.tdwg.org/ac/doc/structure/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
+http://rs.tdwg.org/ac/doc/termlist/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
+http://rs.tdwg.org/ac/doc/termlist/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-0768-1286,,,,,,author,Richard Pyle
+http://rs.tdwg.org/ac/doc/termlist/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
+http://rs.tdwg.org/ac/doc/variant/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
+http://rs.tdwg.org/ac/doc/variant/,,,,,,,https://orcid.org/0000-0002-5887-9543,contributor,Ed Baker
+http://rs.tdwg.org/ac/doc/variant/,,,,,,,https://orcid.org/0000-0001-8068-3769,contributor,Dan Stowell

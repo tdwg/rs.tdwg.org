@@ -1,0 +1,17 @@
+documentTitle:
+current_iri:
+doc_created:
+doc_modified:
+publisher:
+license_statement:
+license_uri:
+citation: 'Audiovisual Core Maintenance Group. 2023. Controlled Vocabulary for Dublin
+  Core format: List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/format/2023-02-24'
+creator: TDWG Audiovisual Core Maintenance Group
+comment:
+accessUrl:
+browserRedirectUri:
+dcterms_isPartOf:
+abstract: Audiovisual Core borrows the Dublin Core terms dc:format and dcterms:format
+  to provide information about the physical or electronic format of a media item.
+  This controlled vocabulary provides values for those two terms.
