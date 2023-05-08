@@ -81,6 +81,8 @@ Thanks to all of the translators who have given their time to make our standards
 
 If you would like to finish any of the incomplete translations or add a translation in your language, please contact [Steve Baskauf](mailto:steve.baskauf@vanderbilt.edu). Also contact him if you find any errors or ommissions.
 
+------
+
 Laura Breitkreuz, <https://orcid.org/0000-0003-4776-5011>, Deutsch (German): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
 
 Tim Claerhout, Ghent University, <https://orcid.org/0000-0002-1519-4536>, Nederlands (Dutch): Darwin Core pathway
