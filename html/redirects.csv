@@ -38,7 +38,7 @@ chronometricage,yes,term,chrono,https://tdwg.github.io/chrono/list/#,yes,_
 chronoiri,yes,term,chronoiri,https://tdwg.github.io/chrono/list/#,yes,_
 chronometricage-versions,no,termVersion,chrono,,,
 chronoiri-versions,no,termVersion,chronoiri,,,
-acpart,yes,term,acpart,http://rs.tdwg.org/acpart/values/,yes,_
+acpart,yes,term,acpart,http://rs.tdwg.org/acpart/values/#,yes,_
 acpart-versions,no,termVersion,acpart,,,
-acorient,yes,term,acorient,http://rs.tdwg.org/acorient/values/,yes,_
+acorient,yes,term,acorient,http://rs.tdwg.org/acorient/values/#,yes,_
 acorient-versions,no,termVersion,acorient,,,
