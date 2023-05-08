@@ -4,15 +4,15 @@
     "vocab_type": 3,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/acorient/values/",
-            "pref_namespace_prefix": "acorient",
-            "database": "acorient",
+            "namespace_uri": "http://rs.tdwg.org/acpart/values/",
+            "pref_namespace_prefix": "acpart",
+            "database": "acpart",
             "borrowed": false,
             "new_term_list": true,
-            "label": "subjectOrientation controlled values list",
-            "description": "Controlled values list for the Audiovisual Core term subjectOrientation",
+            "label": "subjectPart controlled values list",
+            "description": "Controlled values list for the Audiovisual Core term subjectPart",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-views-cv-2023-04-26/subjectOrientation_cv.csv",
+            "modifications_file_path": "ac-revisions/ac-views-cv-2023-04-26/subjectPart_cv.csv",
             "termlist_uri": ""
         }
     ]
