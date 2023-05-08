@@ -6,6 +6,8 @@ For the main landing page, see the repository readme visible at the [repository 
 
 ## Multilingual translations
 
+### Web demo for establishmentMeans
+
 Multilingual `establishmentMeans` controlled vocabulary demo page (still need to fix page to acknowledge translators):
 - [English](cvJson/display-cv.html?en)
 - [Dutch](cvJson/display-cv.html?nl)
@@ -91,7 +93,7 @@ Maxime Coupremanne, Belgian Biodiversity Platform, <https://orcid.org/0000-0002-
 
 Torsten Dikow, Smithsonian Institution, <https://orcid.org/0000-0003-4816-2909>, Deutsch (German): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
 
-Vinicius Ferreira, portuguesa (Portuguese): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
+Vinicius Ferreira, Natural History Museum of Denmark, Zoological Museum, University of Copenhagen, Denmark, <https://orcid.org/0000-0001-8748-0358>, português (Portuguese): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
 
 Нина В. Филиппова (Nina V. Filippova), Югорский государственный университет (Yugra State University), <https://orcid.org/0000-0002-9506-0991>, Русский (Russian): Audiovisual Core subtype, Audiovisual Core variant, Darwin Core establishmentMeans
 
