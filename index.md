@@ -41,7 +41,7 @@ These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used a
 | pathway (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/pathway/pathway.csv) | csv | text/plain | en |
 | pathway (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/pathway/pathway-translations.csv) | csv | text/plain | en, es, fr (incomplete definitions), ko (incomplete), nl (incomplete definitions) |
 
-### Audubon Core controlled vocabularies
+### Audiovisual Core controlled vocabularies
 
 | controlled vocabulary | format | extension | media type |
 |---------------------- | ------ | --------- | ---------- |
@@ -53,11 +53,27 @@ These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used a
 | subtype | [JSON-LD](cvJson/acsubtype.jsonld) | jsonld | application/ld+json | en, ru, zh-Hant (labels only) |
 | subtype (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acsubtype/acsubtype.csv) | csv | text/plain | en |
 | subtype (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acsubtype/acsubtype-translations.csv) | csv | text/plain | en, ru, zh-Hant (labels only) |
+| subjectOrientation | [JSON-LD](cvJson/acorient.json) | json | application/json | en, es, pt, de |
+| subjectOrientation | [JSON-LD](cvJson/acorient.jsonld) | jsonld | application/ld+json | en, es, pt, de |
+| subjectOrientation (standard metadata) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acorient/acorient.csv) | csv | text/plain | en |
+| subjectOrientation (translations) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acorient/acorient-translations.csv) | csv | text/plain | en, es, pt, de |
+| subjectPart | [JSON-LD](cvJson/acpart.json) | json | application/json | en, es, pt, de |
+| subjectPart | [JSON-LD](cvJson/acpart.jsonld) | jsonld | application/ld+json | en, es, pt, de |
+| subjectPart (standard metadata) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acpart/acpart.csv) | csv | text/plain | en |
+| subjectPart (translations) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acpart/acpart-translations.csv) | csv | text/plain | en, es, pt, de |
+| subjectPart SKOS collections<sup>*</sup> | [JSON-LD](cvJson/acpart_collection.json) | json | application/json | en |
+| subjectPart SKOS collections<sup>*</sup> | [JSON-LD](cvJson/acpart_collection.jsonld) | jsonld | application/ld+json | en |
+| subjectOrientation SKOS collections<sup>**</sup> | [JSON-LD](cvJson/acorient_collection.json) | json | application/json | en |
+| subjectOrientation SKOS collections<sup>**</sup> | [JSON-LD](cvJson/acorient_collection.jsonld) | jsonld | application/ld+json | en |
+| subjectPart and subjectOrientation collections tabular data | [CSV](https://raw.githubusercontent.com/tdwg/ac/master/code/views_json_ld/part_collection_join.csv) | csv | text/plain | N/A |
 | variant | [JSON-LD](cvJson/acvariant.json) | json | application/json | en, ru, zh-Hant (labels only) |
 | variant | [JSON-LD](cvJson/acvariant.jsonld) | jsonld | application/ld+json | en, ru, zh-Hant (labels only) |
 | variant (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant.csv) | csv | text/plain | en |
 | variant (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant-translations.csv) | csv | text/plain | en, ru, zh-Hant (labels only) |
 
+<sup>*</sup> Collections of sujectPart values appropriate for various organism groups
+
+<sup>**</sup> Collections of subjectOrientation values appropriate for various subject parts.
 
 ### Translators acknowledgements
 
@@ -104,4 +120,4 @@ Tim Claerhout, Ghent University, <https://orcid.org/0000-0002-1519-4536>, Nederl
 Sofie Meeus, Plantentuin Meise (Meise Botanic Garden), <https://orcid.org/0000-0003-0715-8647>, Nederlands (Dutch): Darwin Core estlishmentMeans
 
 -------
-Last modified 2021-11-29
+Last modified 2023-05-08
