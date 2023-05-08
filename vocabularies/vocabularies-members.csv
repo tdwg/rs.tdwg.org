@@ -21,3 +21,5 @@ http://rs.tdwg.org/format/,http://rs.tdwg.org/format/values/
 http://rs.tdwg.org/acsubtype/,http://rs.tdwg.org/acsubtype/values/
 http://rs.tdwg.org/chrono/,http://rs.tdwg.org/chrono/terms/
 http://rs.tdwg.org/chrono/,http://rs.tdwg.org/chrono/iri/
+http://rs.tdwg.org/acorient/,http://rs.tdwg.org/acorient/values/
+http://rs.tdwg.org/acpart/,http://rs.tdwg.org/acpart/values/
