@@ -1,18 +1,18 @@
 {
-    "date_issued": "2022-02-23",
+    "date_issued": "2023-04-26",
     "local_offset_from_utc": "-05:00",
-    "vocab_type": 2,
+    "vocab_type": 3,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/acsubtype/values/",
-            "pref_namespace_prefix": "acsubtype",
-            "database": "acsubtype",
+            "namespace_uri": "http://rs.tdwg.org/acorient/values/",
+            "pref_namespace_prefix": "acorient",
+            "database": "acorient",
             "borrowed": false,
-            "new_term_list": false,
-            "label": "",
-            "description": "",
+            "new_term_list": true,
+            "label": "subjectOrientation controlled values list",
+            "description": "Controlled values list for the Audiovisual Core term subjectOrientation",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-revisions-2022-02-23/acsubtype_changes.csv",
+            "modifications_file_path": "ac-revisions/ac-views-cv-2023-04-26/subjectOrientation_cv.csv",
             "termlist_uri": ""
         }
     ]
