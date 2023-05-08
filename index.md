@@ -77,47 +77,56 @@ These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used a
 
 ### Translators acknowledgements
 
-Thanks to all of the participants in our translation workshop. The names of the volunteer translators are given below (in no particular order). If you would like to finish any of the incomplete translations or add a translation in your language, please contact [Steve Baskauf](mailto:steve.baskauf@vanderbilt.edu). Also contact him if you find any errors or ommissions.
+Thanks to all of the translators who have given their time to make our standards more broadly usable around the world. The names of the volunteer translators are given below along with the vocabularies they were involved in translating. If you use any of the translations in an application, please acknowledge the translators appropriately.
 
-Carla Novoa Sepúlveda, Staatliche Naturwissenschaftliche Sammlungen Bayerns - Botanische Staatssammlung München (SNSB-BSM; Bavarian Natural History Collections - Botanical State Collection Munich), <https://orcid.org/0000-0001-6113-9725>, español (Spanish): Audubon Core subtype, Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
+If you would like to finish any of the incomplete translations or add a translation in your language, please contact [Steve Baskauf](mailto:steve.baskauf@vanderbilt.edu). Also contact him if you find any errors or ommissions.
 
-Julie Dionne Lavoie, Observatoire Global du Saint-Laurent, français (French): Audubon Core subtype
-
-Нина В. Филиппова (Nina V. Filippova), Югорский государственный университет (Yugra State University), <https://orcid.org/0000-0002-9506-0991>, Русский (Russian): Audubon Core subtype, Audubon Core variant, Darwin Core establishmentMeans
-
-柯智仁 (Chihjen Ko), <https://orcid.org/0000-0001-5912-1761>, 繁體中文 (Chinese - traditional): Audubon Core subtype, Audubon Core variant, Darwin Core establishmentMeans, Audubon Core format
-
-Mareike Petersen, <https://orcid.org/0000-0001-8666-1931>, Deutsch (German): Darwin Core degreeOfEstablishment, Audubon Core format
-
-វេស្សន្តរទេស អ៊ឹង (Visotheary Ung), ISYEB (CNRS-MNHN), <https://orcid.org/0000-0002-4049-0820>, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans
-
-Julie Dionne Lavoie, Observatoire Global du Saint-Laurent, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
-
-Francis Y, 한국인 (Korean): Darwin Core degreeOfEstablishment
-
-William Ulate Rodriguez, Missouri Botanical Garden, St. Louis, Missouri, USA, <https://orcid.org/0000-0003-2863-2491>, español (Spanish): Darwin Core establishmentMeans
-
-Sophie Pamerlon, GBIF France, <https://orcid.org/0000-0003-4736-7419>, français (French): Darwin Core establishmentMeans, Audubon Core format
-
-Maxime Coupremanne, Belgian Biodiversity Platform, <https://orcid.org/0000-0002-9052-9500>, français (French): Darwin Core establishmentMeans, Darwin Core pathway
-
-Braun Paul, Musée national d'histoire naturelle, Luxembourg, <https://orcid.org/0000-0002-3620-6188>, Deutsch (German): Audubon Core format
-
-Anke Penzlin, Senckenberg, Deutsch (German): Audubon Core format
-
-김목영 (Mokyoung Kim), 국립생태원 (National Institute of Ecology), 한국인 (Korean): Audubon Core format, Darwin Core pathway
-
-Jorrit H. Poelen, Ronin Institute, <https://orcid.org/0000-0003-3138-4118>, Nederlands (Dutch): Audubon Core format
-
-Paula F Zermoglio, IEGEBA-CONICET (Argentina), <https://orcid.org/0000-0002-6056-5084>, español (Spanish): Darwin Core pathway, Darwin Core establishmentMeans
-
-Elie Tobi, Smithsonian Conservation Biology Institute, Gabon Biodiversity Program, <https://orcid.org/0000-0002-6199-290X>, français (French): Darwin Core pathway
-
-Greg Jongsma, Florida Museum of Natural History, <https://orcid.org/0000-0001-8790-2610>, français (French): Darwin Core pathway
+Laura Breitkreuz, <https://orcid.org/0000-0003-4776-5011>, Deutsch (German): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
 
 Tim Claerhout, Ghent University, <https://orcid.org/0000-0002-1519-4536>, Nederlands (Dutch): Darwin Core pathway
 
+Maxime Coupremanne, Belgian Biodiversity Platform, <https://orcid.org/0000-0002-9052-9500>, français (French): Darwin Core establishmentMeans, Darwin Core pathway
+
+Torsten Dikow, Smithsonian Institution, <https://orcid.org/0000-0003-4816-2909>, Deutsch (German): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
+
+Vinicius Ferreira, portuguesa (Portuguese): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
+
+Нина В. Филиппова (Nina V. Filippova), Югорский государственный университет (Yugra State University), <https://orcid.org/0000-0002-9506-0991>, Русский (Russian): Audiovisual Core subtype, Audiovisual Core variant, Darwin Core establishmentMeans
+
+Jennifer C. Girón Duque, Museum of Texas Tech University, <https://orcid.org/0000-0002-0851-6883>, español (Spanish): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
+
+Greg Jongsma, Florida Museum of Natural History, <https://orcid.org/0000-0001-8790-2610>, français (French): Darwin Core pathway
+
+김목영 (Mokyoung Kim), 국립생태원 (National Institute of Ecology), 한국인 (Korean): Audiovisual Core format, Darwin Core pathway
+
+柯智仁 (Chihjen Ko), <https://orcid.org/0000-0001-5912-1761>, 繁體中文 (Chinese - traditional): Audiovisual Core subtype, Audiovisual Core variant, Darwin Core establishmentMeans, Audiovisual Core format
+
+Julie Dionne Lavoie, Observatoire Global du Saint-Laurent, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway, Audiovisual Core subtype
+
 Sofie Meeus, Plantentuin Meise (Meise Botanic Garden), <https://orcid.org/0000-0003-0715-8647>, Nederlands (Dutch): Darwin Core estlishmentMeans
+
+Sophie Pamerlon, GBIF France, <https://orcid.org/0000-0003-4736-7419>, français (French): Darwin Core establishmentMeans, Audiovisual Core format
+
+Braun Paul, Musée national d'histoire naturelle, Luxembourg, <https://orcid.org/0000-0002-3620-6188>, Deutsch (German): Audiovisual Core format
+
+Anke Penzlin, Senckenberg, Deutsch (German): Audiovisual Core format
+
+Mareike Petersen, <https://orcid.org/0000-0001-8666-1931>, Deutsch (German): Darwin Core degreeOfEstablishment, Audiovisual Core format
+
+Jorrit H. Poelen, Ronin Institute, <https://orcid.org/0000-0003-3138-4118>, Nederlands (Dutch): Audiovisual Core format
+
+Carla Novoa Sepúlveda, Staatliche Naturwissenschaftliche Sammlungen Bayerns - Botanische Staatssammlung München (SNSB-BSM; Bavarian Natural History Collections - Botanical State Collection Munich), <https://orcid.org/0000-0001-6113-9725>, español (Spanish): Audiovisual Core subtype, Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
+
+Elie Tobi, Smithsonian Conservation Biology Institute, Gabon Biodiversity Program, <https://orcid.org/0000-0002-6199-290X>, français (French): Darwin Core pathway
+
+William Ulate Rodriguez, Missouri Botanical Garden, St. Louis, Missouri, USA, <https://orcid.org/0000-0003-2863-2491>, español (Spanish): Darwin Core establishmentMeans
+
+វេស្សន្តរទេស អ៊ឹង (Visotheary Ung), ISYEB (CNRS-MNHN), <https://orcid.org/0000-0002-4049-0820>, français (French): Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans
+
+Francis Y, 한국인 (Korean): Darwin Core degreeOfEstablishment
+
+Paula F Zermoglio, IEGEBA-CONICET (Argentina), <https://orcid.org/0000-0002-6056-5084>, español (Spanish): Darwin Core pathway, Darwin Core establishmentMeans
+
 
 -------
 Last modified 2023-05-08
