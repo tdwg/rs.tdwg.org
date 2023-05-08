@@ -329,7 +329,7 @@ def generate_term_versions_metadata(database, versions, version_namespace, mods_
 # This function contains the Step 5 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
 def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
     pieces = termlist_uri.split('/')
-    list_localname_value = pieces[3] + '/' + pieces[4]
+    list_localname_value = pieces[3] + '/' + pieces[4] + '/'
 
     term_modified_dateTime = findColumnWithHeader(terms_metadata[0], 'document_modified')[1]
     term_localName = findColumnWithHeader(terms_metadata[0], 'term_localName')[1]
