@@ -1,7 +1,7 @@
 # Update TDWG documents metadata
 
-# Author: Steve Baskauf - 2022-05-27
-# Version: 0.2
+# Author: Steve Baskauf - 2023-05-08
+# Version: 0.3
 # This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
 
 # This script is a companion to the other script that updates the vocabularies metadata and 
@@ -270,11 +270,11 @@ if not new_document:
         if config_data['lastVersionAccessUri']:
             versions_format_metadata_df.at[row_index, 'accessUri'] = config_data['lastVersionAccessUri']
             
-# Handle the edge case where the row for the previous document is missing.
-# Doesn't error trap the case where the old access URI isn't provided, but hey, it's an edge case and be more careful.
-if not_found:
-    versions_format_row_data = {'version_iri': most_recent_version_iri, 'mediaType': old_mediaType, 'accessUri': config_data['lastVersionAccessUri']}
-    versions_format_metadata_df = pd.concat([versions_format_metadata_df, pd.DataFrame([versions_format_row_data])])
+    # Handle the edge case where the row for the previous document is missing.
+    # Doesn't error trap the case where the old access URI isn't provided, but hey, it's an edge case and be more careful.
+    if not_found:
+        versions_format_row_data = {'version_iri': most_recent_version_iri, 'mediaType': old_mediaType, 'accessUri': config_data['lastVersionAccessUri']}
+        versions_format_metadata_df = pd.concat([versions_format_metadata_df, pd.DataFrame([versions_format_row_data])])
 
 # For versions, a new row is always added to the file
 versions_format_row_data = {'version_iri': doc_version_iri, 'mediaType': current_mediaType, 'accessUri': current_accessUrl}
