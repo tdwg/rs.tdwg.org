@@ -8,13 +8,13 @@
 - contributor_iri: https://orcid.org/0000-0002-5887-9543
   contributor_literal: Ed Baker
   contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q482980
+  role_uri: http://www.wikidata.org/entity/Q20204892
   affiliation: Natural History Museum, London
   affiliation_uri: http://www.wikidata.org/entity/Q309388
 
 - contributor_iri: https://orcid.org/0000-0001-8068-3769
   contributor_literal: Dan Stowell
   contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q482980
+  role_uri: http://www.wikidata.org/entity/Q20204892
   affiliation: Queen Mary University of London
   affiliation_uri: http://www.wikidata.org/entity/Q195668
