@@ -235,7 +235,7 @@ In order to use categories, edit the configuration section of the build script s
 
 # 5 Managing documents metadata via Python script
 
-After the vocabulary-related metadata are updated, metadata about human-readable documents MUST also be updated. Typically, this will be one or more list of terms documents that make it possible for humans to read the normative content related to the vocabulary terms. The metadata about each list of terms document involved MUST be updated one at a time, using [a Python script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_workflow.ipynb) that updates the document-related CSV files in the rs.tdwg.org repository. (Currenty on 2022-05-28 this script is in a Jupyter notebook, although after more testing and use, it will eventually be moved to a stand-alone script.) 
+After the vocabulary-related metadata are updated, metadata about human-readable documents MUST also be updated. Typically, this will be one or more list of terms documents that make it possible for humans to read the normative content related to the vocabulary terms. The metadata about each list of terms document involved MUST be updated one at a time, using [a Python script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_metadata_update.py) that updates the document-related CSV files in the rs.tdwg.org repository.  
 
 Before using the script, the rs.tdwg.org repository SHOULD be cloned to a local file system. The required configuration variables are in the file `general_configuration.yaml`, which MUST be in the same directory as the script. The following variables are included in the file:
 
