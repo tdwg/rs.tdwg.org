@@ -1,0 +1,18 @@
+documentTitle: "Controlled Vocabulary for Audiovisual Core subjectOrientation: List of Terms"
+current_iri: http://rs.tdwg.org/ac/doc/orient/
+doc_created: '2023-04-26'
+doc_modified: '2023-04-26'
+publisher: Biodiversity Information Standards (TDWG)
+license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
+license_uri: http://creativecommons.org/licenses/by/4.0/
+citation: "Views Controlled Vocabularies Task Group. 2023. Controlled Vocabulary for Audiovisual Core 
+subjectOrientation: List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/ac/doc/orient/2023-04-26"
+creator: TDWG Views Controlled Vocabularies Task Group
+comment: ''
+accessUrl: https://github.com/tdwg/ac/raw/master/docs/orient/index.md
+browserRedirectUri: https://ac.tdwg.org/orient/
+dcterms_isPartOf: http://www.tdwg.org/standards/638
+abstract: The Audiovisual Core term subjectOrientation describes the viewing orientation relative to an organism 
+or part of an organism depicted in a media item or region of interest. The subjectOrientation Controlled Vocabulary 
+provides terms that should be used as values for ac:subjectOrientation and its literal-valued analog 
+ac:subjectOrientationLiteral.

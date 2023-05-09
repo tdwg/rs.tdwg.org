@@ -1,0 +1,41 @@
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steven J. Baskauf
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Vanderbilt University Libraries, Nashville, TN, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q16849893
+
+- contributor_iri: https://orcid.org/0000-0002-6155-9444
+  contributor_literal: Neil S. Cobb
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Merriam-Powell Center for Environmental Research, Northern Arizona University, Flagstaff, AZ, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q139901
+
+- contributor_iri: https://orcid.org/0000-0002-0851-6883
+  contributor_literal: Jennifer C. Girón Duque
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Natural Science Research Laboratory, Museum of Texas Tech University, Lubbock, TX, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q6941030
+
+- contributor_iri: https://orcid.org/0000-0002-0388-1187
+  contributor_literal: Matthew Nielsen
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: University of Oulu, Oulu, Finland
+  affiliation_uri: http://www.wikidata.org/entity/Q1357517
+
+- contributor_iri: https://orcid.org/0000-0003-4277-8948
+  contributor_literal: Mervin E. Pérez
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Universidad de San Carlos de Guatemala, Guatemala City, Guatemala
+  affiliation_uri: http://www.wikidata.org/entity/Q607331
+
+- contributor_iri: https://orcid.org/0000-0003-2440-7625
+  contributor_literal: Randy Singer
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: University of Michigan, Ann Arbor, MI, USA
+  affiliation_uri: http://www.wikidata.org/entity/Q230492
