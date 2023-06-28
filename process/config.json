@@ -1,19 +1,55 @@
 {
-    "date_issued": "2023-04-26",
+    "date_issued": "2023-06-28",
     "local_offset_from_utc": "-05:00",
-    "vocab_type": 3,
+    "vocab_type": 1,
     "namespaces": [
         {
-            "namespace_uri": "http://rs.tdwg.org/acpart/values/",
-            "pref_namespace_prefix": "acpart",
-            "database": "acpart",
+            "namespace_uri": "http://rs.tdwg.org/dwc/terms/",
+            "pref_namespace_prefix": "dwc",
+            "database": "terms",
             "borrowed": false,
-            "new_term_list": true,
-            "label": "subjectPart controlled values list",
-            "description": "Controlled values list for the Audiovisual Core term subjectPart",
+            "new_term_list": false,
+            "label": "",
+            "description": "",
             "utility_namespace": false,
-            "modifications_file_path": "ac-revisions/ac-views-cv-2023-04-26/subjectPart_cv.csv",
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/terms_2023-06-28.csv",
             "termlist_uri": ""
+        },
+        {
+            "namespace_uri": "http://rs.tdwg.org/dwc/iri/",
+            "pref_namespace_prefix": "dwciri",
+            "database": "iri",
+            "borrowed": false,
+            "new_term_list": false,
+            "label": "",
+            "description": "",
+            "utility_namespace": false,
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/iri_2023-06-28.csv",
+            "termlist_uri": ""
+        },
+        {
+            "namespace_uri": "http://purl.org/dc/elements/1.1/",
+            "pref_namespace_prefix": "dc",
+            "database": "dc-for-dwc",
+            "borrowed": true,
+            "new_term_list": false,
+            "label": "",
+            "description": "",
+            "utility_namespace": false,
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/dc_2023-06-28.csv",
+            "termlist_uri": "http://rs.tdwg.org/dwc/dc/"
+        },
+        {
+            "namespace_uri": "http://purl.org/dc/terms/",
+            "pref_namespace_prefix": "dcterms",
+            "database": "dcterms-for-dwc",
+            "borrowed": true,
+            "new_term_list": false,
+            "label": "",
+            "description": "",
+            "utility_namespace": false,
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/dcterms_2023-06-28.csv",
+            "termlist_uri": "http://rs.tdwg.org/dwc/dcterms/"
         }
     ]
 }
