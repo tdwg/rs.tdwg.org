@@ -959,3 +959,14 @@ http://rs.tdwg.org/acpart/values/,http://rs.tdwg.org/acpart/values/p0029
 http://rs.tdwg.org/acpart/values/,http://rs.tdwg.org/acpart/values/p0030
 http://rs.tdwg.org/acpart/values/,http://rs.tdwg.org/acpart/values/p0031
 http://rs.tdwg.org/acpart/values/,http://rs.tdwg.org/acpart/values/p0032
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/caste
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/vitality
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/verbatimLabel
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/eventType
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/superfamily
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/tribe
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/subtribe
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/parentMeasurementID
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/caste
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/vitality
+http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/eventType
