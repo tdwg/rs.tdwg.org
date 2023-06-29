@@ -1,0 +1,14 @@
+documentTitle: Darwin Core List of Terms
+current_iri: http://rs.tdwg.org/dwc/doc/list/
+doc_created: '2020-08-12'
+doc_modified: '2023-06-28'
+publisher: Biodiversity Information Standards (TDWG)
+license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
+license_uri: http://creativecommons.org/licenses/by/4.0/
+citation: Darwin Core Maintenance Group. 2023. List of Darwin Core terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/doc/list/2023-06-28
+creator: TDWG Darwin Core Maintenance Group
+comment: ''
+accessUrl: https://github.com/tdwg/dwc/raw/master/docs/list/index.md
+browserRedirectUri: https://dwc.tdwg.org/list/
+dcterms_isPartOf: http://www.tdwg.org/standards/450
+abstract: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms in namespaces currently used in the vocabulary.
