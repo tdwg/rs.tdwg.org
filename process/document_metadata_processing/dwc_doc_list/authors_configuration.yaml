@@ -1,0 +1,118 @@
+- contributor_iri: https://orcid.org/0000-0003-1144-0290
+  contributor_literal: John Wieczorek
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0002-8442-8025
+  contributor_literal: Peter Desmet
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+  affiliation_uri: http://www.wikidata.org/entity/Q7315097
+
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steve Baskauf
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Vanderbilt University Libraries
+  affiliation_uri: http://www.wikidata.org/entity/Q16849893
+
+- contributor_iri: https://orcid.org/0000-0001-6215-3617
+  contributor_literal: Tim Robertson
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0001-7757-1889
+  contributor_literal: Markus Döring
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0002-0596-5376
+  contributor_literal: Quentin Groom
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Botanic Garden Meise
+  affiliation_uri: http://www.wikidata.org/entity/Q3052500
+
+- contributor_iri: https://orcid.org/0000-0001-6413-3185
+  contributor_literal: Stijn Van Hoey
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+  affiliation_uri: http://www.wikidata.org/entity/Q7315097
+
+- contributor_iri: https://orcid.org/0000-0003-1273-1807
+  contributor_literal: David Bloom
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0002-6056-5084
+  contributor_literal: Paula Zermoglio
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0001-6682-1504
+  contributor_literal: Robert Guralnick
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: University of Florida
+  affiliation_uri: http://www.wikidata.org/entity/Q501758
+
+- contributor_iri: https://orcid.org/0000-0002-5905-1617
+  contributor_literal: John Deck
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Genomic Biodiversity Working Group
+  affiliation_uri: http://www.wikidata.org/entity/Q98382041
+
+- contributor_iri: https://orcid.org/0000-0002-5178-4170
+  contributor_literal: Gail Kampmeier
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Illinois Natural History Survey
+  affiliation_uri: http://www.wikidata.org/entity/Q5999587
+
+- contributor_iri: https://orcid.org/0000-0002-6513-4996
+  contributor_literal: Dave Vieglais
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: KU Natural History Museum
+  affiliation_uri: http://www.wikidata.org/entity/Q1111807
+
+- contributor_iri: https://orcid.org/0000-0002-7104-7266
+  contributor_literal: Renato De Giovanni
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Centro de Referência em Informação Ambiental
+  affiliation_uri: http://www.wikidata.org/entity/Q29168927
+
+- contributor_iri: https://orcid.org/0000-0003-1031-3249
+  contributor_literal: Campbell Webb
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: TDWG RDF/OWL Task Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035
+  contributor_literal: Paul J. Morris
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Harvard University Herbaria/Museum of Comparative Zoölogy
+  affiliation_uri: http://www.wikidata.org/entity/Q51926077
+
+- contributor_iri: https://orcid.org/0000-0003-0632-7576
+  contributor_literal: Mark Schildhauer
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: National Center for Ecological Analysis and Synthesis
+  affiliation_uri: http://www.wikidata.org/entity/Q6971323
