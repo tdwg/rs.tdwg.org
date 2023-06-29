@@ -71,3 +71,8 @@ http://rs.tdwg.org/ac/version/terms/2022-02-23,http://rs.tdwg.org/ac/version/ter
 http://rs.tdwg.org/acsubtype/version/values/2022-02-23,http://rs.tdwg.org/acsubtype/version/values/2020-10-13
 http://rs.tdwg.org/dwc/version/terms/2023-06-28,http://rs.tdwg.org/dwc/version/terms/2021-07-15
 http://rs.tdwg.org/dwc/version/iri/2023-06-28,http://rs.tdwg.org/dwc/version/iri/2021-07-15
+http://rs.tdwg.org/dwc/version/dcterms/2020-08-12,http://rs.tdwg.org/dwc/version/dcterms/2015-03-07
+http://rs.tdwg.org/dwc/version/dcterms/2021-07-15,http://rs.tdwg.org/dwc/version/dcterms/2020-08-12
+http://rs.tdwg.org/dwc/version/dcterms/2023-06-28,http://rs.tdwg.org/dwc/version/dcterms/2021-07-15
+http://rs.tdwg.org/dwc/version/dc/2020-10-28,http://rs.tdwg.org/dwc/version/dc/2015-03-27
+http://rs.tdwg.org/dwc/version/dc/2023-06-28,http://rs.tdwg.org/dwc/version/dc/2020-10-28
