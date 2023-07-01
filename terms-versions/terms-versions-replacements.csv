@@ -563,3 +563,6 @@ http://rs.tdwg.org/dwc/terms/version/relationshipOfResourceID-2023-06-28,relatio
 http://rs.tdwg.org/dwc/terms/version/relationshipOfResource-2023-06-28,relationshipOfResource-2021-07-15
 http://rs.tdwg.org/dwc/terms/version/relationshipEstablishedDate-2023-06-28,relationshipEstablishedDate-2020-08-12
 http://rs.tdwg.org/dwc/terms/version/relationshipRemarks-2023-06-28,relationshipRemarks-2018-09-06
+http://rs.tdwg.org/dwc/terms/version/dataGeneralizations-2023-06-28,dataGeneralizations-2017-10-06
+http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2023-06-28,georeferenceProtocol-2020-08-20
+http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2023-06-28,identificationVerificationStatus-2017-10-06
