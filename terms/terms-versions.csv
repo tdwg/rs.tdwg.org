@@ -616,6 +616,7 @@ http://rs.tdwg.org/dwc/terms/version/datasetName-2023-06-28,datasetName
 http://rs.tdwg.org/dwc/terms/version/ownerInstitutionCode-2023-06-28,ownerInstitutionCode
 http://rs.tdwg.org/dwc/terms/version/basisOfRecord-2023-06-28,basisOfRecord
 http://rs.tdwg.org/dwc/terms/version/informationWithheld-2023-06-28,informationWithheld
+http://rs.tdwg.org/dwc/terms/version/dataGeneralizations-2023-06-28,dataGeneralizations
 http://rs.tdwg.org/dwc/terms/version/dynamicProperties-2023-06-28,dynamicProperties
 http://rs.tdwg.org/dwc/terms/version/Occurrence-2023-06-28,Occurrence
 http://rs.tdwg.org/dwc/terms/version/occurrenceID-2023-06-28,occurrenceID
@@ -712,6 +713,7 @@ http://rs.tdwg.org/dwc/terms/version/footprintSRS-2023-06-28,footprintSRS
 http://rs.tdwg.org/dwc/terms/version/footprintSpatialFit-2023-06-28,footprintSpatialFit
 http://rs.tdwg.org/dwc/terms/version/georeferencedBy-2023-06-28,georeferencedBy
 http://rs.tdwg.org/dwc/terms/version/georeferencedDate-2023-06-28,georeferencedDate
+http://rs.tdwg.org/dwc/terms/version/georeferenceProtocol-2023-06-28,georeferenceProtocol
 http://rs.tdwg.org/dwc/terms/version/georeferenceSources-2023-06-28,georeferenceSources
 http://rs.tdwg.org/dwc/terms/version/georeferenceRemarks-2023-06-28,georeferenceRemarks
 http://rs.tdwg.org/dwc/terms/version/geologicalContextID-2023-06-28,geologicalContextID
@@ -737,6 +739,7 @@ http://rs.tdwg.org/dwc/terms/version/identifiedBy-2023-06-28,identifiedBy
 http://rs.tdwg.org/dwc/terms/version/identifiedByID-2023-06-28,identifiedByID
 http://rs.tdwg.org/dwc/terms/version/dateIdentified-2023-06-28,dateIdentified
 http://rs.tdwg.org/dwc/terms/version/identificationReferences-2023-06-28,identificationReferences
+http://rs.tdwg.org/dwc/terms/version/identificationVerificationStatus-2023-06-28,identificationVerificationStatus
 http://rs.tdwg.org/dwc/terms/version/identificationRemarks-2023-06-28,identificationRemarks
 http://rs.tdwg.org/dwc/terms/version/taxonID-2023-06-28,taxonID
 http://rs.tdwg.org/dwc/terms/version/acceptedNameUsageID-2023-06-28,acceptedNameUsageID
