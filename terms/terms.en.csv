@@ -576,7 +576,7 @@ eventType:label,Label for Event Type http://rs.tdwg.org/dwc/terms/eventType,Even
 eventType:rdfs_comment,Comment for Event Type http://rs.tdwg.org/dwc/terms/eventType,The nature of the dwc:Event.
 eventType:dcterms_description,Description for Event Type http://rs.tdwg.org/dwc/terms/eventType,"Recommended best practice is to use a controlled vocabulary. Regardless of the dwc:eventType, the interval of the dwc:Event can be captured in dwc:eventDate. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value."
 superfamily:label,Label for Superfamily http://rs.tdwg.org/dwc/terms/superfamily,Superfamily
-superfamily:rdfs_comment,Comment for Superfamily http://rs.tdwg.org/dwc/terms/superfamily,The full scientific name of the family in which the dwc:Taxon is classified.
+superfamily:rdfs_comment,Comment for Superfamily http://rs.tdwg.org/dwc/terms/superfamily,The full scientific name of the superfamily in which the dwc:Taxon is classified.
 superfamily:dcterms_description,Description for Superfamily http://rs.tdwg.org/dwc/terms/superfamily,"A taxonomic category subordinate to an order and superior to a family. According to ICZN article 29.2, the suffix `-oidea` is used for a superfamily name."
 tribe:label,Label for Tribe http://rs.tdwg.org/dwc/terms/tribe,Tribe
 tribe:rdfs_comment,Comment for Tribe http://rs.tdwg.org/dwc/terms/tribe,The full scientific name of the tribe in which the dwc:Taxon is classified.
