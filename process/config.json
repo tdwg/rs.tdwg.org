@@ -1,5 +1,5 @@
 {
-    "date_issued": "2023-06-28",
+    "date_issued": "2023-07-07",
     "local_offset_from_utc": "-05:00",
     "vocab_type": 1,
     "namespaces": [
@@ -12,44 +12,8 @@
             "label": "",
             "description": "",
             "utility_namespace": false,
-            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/terms_2023-06-28.csv",
+            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-07-07/terms_2023-07-07.csv",
             "termlist_uri": ""
-        },
-        {
-            "namespace_uri": "http://rs.tdwg.org/dwc/iri/",
-            "pref_namespace_prefix": "dwciri",
-            "database": "iri",
-            "borrowed": false,
-            "new_term_list": false,
-            "label": "",
-            "description": "",
-            "utility_namespace": false,
-            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/iri_2023-06-28.csv",
-            "termlist_uri": ""
-        },
-        {
-            "namespace_uri": "http://purl.org/dc/elements/1.1/",
-            "pref_namespace_prefix": "dc",
-            "database": "dc-for-dwc",
-            "borrowed": true,
-            "new_term_list": false,
-            "label": "",
-            "description": "",
-            "utility_namespace": false,
-            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/dc_2023-06-28.csv",
-            "termlist_uri": "http://rs.tdwg.org/dwc/dc/"
-        },
-        {
-            "namespace_uri": "http://purl.org/dc/terms/",
-            "pref_namespace_prefix": "dcterms",
-            "database": "dcterms-for-dwc",
-            "borrowed": true,
-            "new_term_list": false,
-            "label": "",
-            "description": "",
-            "utility_namespace": false,
-            "modifications_file_path": "dwc-revisions/dwc-revisions-2023-06-28/dcterms_2023-06-28.csv",
-            "termlist_uri": "http://rs.tdwg.org/dwc/dcterms/"
         }
     ]
 }
