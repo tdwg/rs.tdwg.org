@@ -73,7 +73,7 @@ These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used a
 | variant (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant.csv) | csv | text/plain | en |
 | variant (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant-translations.csv) | csv | text/plain | en, ru, zh-Hant (labels only) |
 
-<sup>*</sup> Collections of sujectPart values appropriate for various organism groups
+<sup>*</sup> Collections of subjectPart values appropriate for various organism groups
 
 <sup>**</sup> Collections of subjectOrientation values appropriate for various subject parts.
 
