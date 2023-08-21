@@ -14,7 +14,7 @@
 
 **Previous version:** [http://rs.tdwg.org/index/2020-02-03](README-2020-02-03.md)
 
-**Abstract:** This repository contains the source CSV files containing the metadata necessary to generate human- and machine-readable representations of the various components of [Biodiversity Information Standards (TDWG)](http://www.tdwg.org/) standards in accordance with the [TDWG Standards Documentation Specification](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md)). This document represents the human-readable representation of the TDWG Standards data catalog.
+**Abstract:** The <https://github.com/tdwg/rs.tdwg.org> repository contains the source CSV files containing the metadata necessary to generate human- and machine-readable representations of the various components of [Biodiversity Information Standards (TDWG)](http://www.tdwg.org/) standards in accordance with the [TDWG Standards Documentation Specification](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md)). This document is the human-readable representation of the TDWG Standards data catalog. Dereferencing the data catalog as RDF is described in a section of this document.
 
 **Contributors:** Steve Baskauf (TDWG Technical Architecture Group, TDWG Audubon Core Maintenance Group, TDWG Darwin Core Maintenance Group)
 
