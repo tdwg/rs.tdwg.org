@@ -20,23 +20,7 @@
 
 **Bibliographic citation:** Biodiversity Information Standards. 2021. Biodiversity Information Standards (TDWG) Standards Metadata http://rs.tdwg.org/index
 
-# Table of Contents
-
-[1 Metadata model for TDWG standards](#model)  
-[2 IRI patterns](#patterns)  
-[2.1 Patterns for current resources in the standards hierarchy](#patterns-current)  
-[2.2 Patterns for versions of resources in the standards hierarchy](#patterns-versions)  
-[3 About directories in this repository](#directories)  
-[3.1 Relationship of parts of this repository to the metadata model](#directories-relationships)  
-[3.2 Files contained in current resources directories](#directories-files)  
-[3.3 Files contained in versions directories](#directories-versions)  
-[3.4 Retrieving machine readable metadata from the datasets](#directories-machine-readable)  
-[4 Relationships of directories to resources in the TDWG Standards model](#directories-resources)  
-[4.1 Metadata about ratified TDWG Standards](#standards-metadata)  
-[4.2 Utility metadata not governed by TDWG Standards](#utility-metadata)  
-[4.3 Metadata about obsolete pre-standard versions of Darwin Core](#obsolete-metadata)  
-
-# <a name="model"></a>1 Metadata model for TDWG standards
+## <a name="model"></a>1 Metadata model for TDWG standards
 
 ![TDWG hierarchy model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
 Fig. 1. TDWG Standards hierarchy model (image from [Standards Documentation Standard GitHub repository](https://github.com/tdwg/vocab/blob/master/hierarchy-model.md))
@@ -56,9 +40,9 @@ The state of most properties of a current resource at the present time are share
 
 A current resource is related to each of its versions by a *hasVersion* relationship.  A version of a resource is related to its current resource by an *isVersionOf* relationship.  A version is related to a previous version by a *replaces* relationship and to a subsequent version by an *isReplacedBy* relationship.  
 
-# <a name="patterns"></a>2 IRI patterns
+## <a name="patterns"></a>2 IRI patterns
 
-## <a name="patterns-current"></a>2.1 Patterns for current resources in the standards hierarchy
+### <a name="patterns-current"></a>2.1 Patterns for current resources in the standards hierarchy
 
 The IRI denoting [Biodiversity Information Standards (TDWG)](http://www.tdwg.org/) as an organization is:
 
@@ -66,7 +50,7 @@ The IRI denoting [Biodiversity Information Standards (TDWG)](http://www.tdwg.org
 https://www.grid.ac/institutes/grid.480498.9
 ```
 
-### **1st level:** IRIs denoting TDWG standards
+#### **1st level:** IRIs denoting TDWG standards
 
 are in the form:
 
@@ -80,7 +64,7 @@ where "nnn" is a number unique to a particular standard.  Example for the Darwin
 http://www.tdwg.org/standards/450
 ```
 
-### **2nd level:** IRIs denoting vocabularies
+#### **2nd level:** IRIs denoting vocabularies
 
 are in the form:
 
@@ -94,7 +78,7 @@ where "vvv" is a string unique to the vocabulary.  For example, "dwc" is the str
 http://rs.tdwg.org/dwc/
 ```
 
-### **2nd level:** IRIs denoting standards documents
+#### **2nd level:** IRIs denoting standards documents
 
 are in the form:
 
@@ -119,7 +103,7 @@ for the specification document of the Plant Names in Botanical Databases standar
 Some Darwin Core documents have legacy IRIs that do not follow this IRI pattern.
 
 
-### **3rd level** IRIs denoting term lists
+#### **3rd level** IRIs denoting term lists
 
 are in the form:
 
@@ -140,7 +124,7 @@ http://rs.tdwg.org/ac/terms/
 for terms defined by Audubon Core.
 
 
-### **4th level** IRIs denoting vocabulary terms
+#### **4th level** IRIs denoting vocabulary terms
 
 are in the form:
 
@@ -157,9 +141,9 @@ http://rs.tdwg.org/dwc/ac/caption
 
 Term IRIs are not followed by a trailing forward slash.  The "namespace" corresponding to the defining term list can be abbreviated to form a compact IRI ([CURIE](https://www.w3.org/TR/curie/)).  Since `dwciri:` abbreviates `http://rs.tdwg.org/dwc/iri/` and ac: abbreviates `http://rs.tdwg.org/dwc/ac/`, the two term IRIs given as examples above can be expressed as the CURIEs `dwciri:recordedBy` and `ac:caption`.
 
-## <a name="patterns-versions"></a>2.2 Patterns for versions of resources in the standards hierarchy
+### <a name="patterns-versions"></a>2.2 Patterns for versions of resources in the standards hierarchy
 
-### **1st level:** Standards
+#### **1st level:** Standards
 
 A standard with IRI in the form
 
@@ -180,7 +164,7 @@ http://www.tdwg.org/standards/450/version/2015-03-27
 ```
 
 
-### **2nd level:** Vocabularies
+#### **2nd level:** Vocabularies
 
 A vocabulary with IRI in the form
 
@@ -200,7 +184,7 @@ http://rs.tdwg.org/version/dwc/2014-12-23
 ```
 
 
-### **2nd level:** Standards Documents
+#### **2nd level:** Standards Documents
 
 A document in the form:
 
@@ -220,7 +204,7 @@ http://rs.tdwg.org/sds/doc/specification/2017-04-25
 ```
 
 
-### **3rd level:** Term Lists
+#### **3rd level:** Term Lists
 
 A term list with IRI in the form
 
@@ -240,7 +224,7 @@ Example for the Darwin Core IRI-value term list:
 http://rs.tdwg.org/dwc/version/iri/2015-03-27
 ```
 
-### **4th level:** Terms
+#### **4th level:** Terms
 
 A term with IRI in the form
 
@@ -260,15 +244,15 @@ Example for a version of `dwciri:recordedBy`:
 http://rs.tdwg.org/dwc/iri/version/recordedBy-2015-03-27
 ```
 
-# <a name="directories"></a>3 About directories in this repository
+## <a name="directories"></a>3 About directories in this repository
 
-## <a name="directories-relationships"></a>3.1 Relationship of parts of this repository to the metadata model
+### <a name="directories-relationships"></a>3.1 Relationship of parts of this repository to the metadata model
 
 Each directory in this repository contain metadata for a group of resources at some level in the hierarchy. The data described in each directory can be considered a `dcat:dataset` as described by the [W3C Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat/). 
 
 Directories whose names do not end in "-versions" contain metadata about current resources.  Directory names ending in "-versions" contain metadata for versions of the current resources described in the corresponding folders that do not end in "-versions".
 
-## <a name="directories-files"></a>3.2 Files contained in current resources directories
+### <a name="directories-files"></a>3.2 Files contained in current resources directories
 
 Within each current resource directory there is a file whose name corresponds to the containing directory, plus the ".csv" file extension.  That file contains the primary metadata about the resources described in that folder.  For example, in the `terms` directory, the file `terms.csv` is the primary metadata file.  The corresponding file with name ending in "-column-mappings.csv" maps the columns in the primary metadata file to standard metadata properties (similar in function to the meta.xml file of a Darwin Core Archive).  Example: `terms-column-mappings.csv`.  
 
@@ -276,11 +260,11 @@ The current resource directory also contains two files that contain link tables 
 
 There are other files in each directory that contain configuration information or other information necessary to generate the machine readable metadata for the resources described in that directory.
 
-## <a name="directories-versions"></a>3.3 Files contained in versions directories
+### <a name="directories-versions"></a>3.3 Files contained in versions directories
 
 Within each folder describing versions, the primary metadata is in the file whose name corresponds to the containing directory, plus the ".csv" file extension.  For example, in the directory `terms-versions`, the file `terms-versions.csv` is the primary metadata file.  The file with name ending in "-column-mappings.csv" (example: `terms-versions-column-mappings.csv`) maps the columns of the primary version metadata file to standard properties.  The file with name ending in "-replacements.csv" (example: `terms-versions-replacements.csv`) is a link table that links versions to versions that replace them.  Other files in the directory contain configuration or other information needed to generate machine readable metadata for the versions described in the directory.  
 
-## <a name="directories-machine-readable"></a>3.4 Retrieving machine readable metadata from the datasets
+### <a name="directories-machine-readable"></a>3.4 Retrieving machine readable metadata from the datasets
 
 ![TDWG Data Catalog model](index/dcat.png)
 
@@ -297,9 +281,9 @@ For more information, see [this blog post](http://baskauf.blogspot.com/2019/04/u
 
 To access machine-readable translations metadata, see the [Vocabulary Translations page](https://tdwg.github.io/rs.tdwg.org/translations/).
 
-# <a name="directories-resources"></a>4 Relationships of directories to resources in the TDWG Standards model
+## <a name="directories-resources"></a>4 Relationships of directories to resources in the TDWG Standards model
 
-## <a name="standards-metadata"></a>4.1 Metadata about ratified TDWG Standards
+### <a name="standards-metadata"></a>4.1 Metadata about ratified TDWG Standards
 
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
@@ -323,7 +307,7 @@ To access machine-readable translations metadata, see the [Vocabulary Translatio
  | [XMP](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/xap/1.0/ttt` | [xmp-for-ac](xmp-for-ac) | versions not fully supported | [xmp-for-ac-versions](xmp-for-ac-versions) |
  | [XMP rights](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/xap/1.0/rights/ttt` | [xmpRights-for-ac](xmpRights-for-ac) | versions not fully supported | [xmpRights-for-ac-versions](xmpRights-for-ac-versions) |
 
-## <a name="utility-metadata"></a>4.2 Utility metadata not governed by TDWG Standards
+### <a name="utility-metadata"></a>4.2 Utility metadata not governed by TDWG Standards
 
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
@@ -332,7 +316,7 @@ To access machine-readable translations metadata, see the [Vocabulary Translatio
  | Executive decisions history | `http://rs.tdwg.org/decisions/ttt` | [decisions](decisions)* | N/A** | N/A |
  | Darwin Core translations | multilingual labels (no IRIs) | [dwc-translations](dwc-translations) | N/A | N/A |
 
-## <a name="obsolete-metadata"></a>4.3 Metadata about obsolete pre-standard versions of Darwin Core
+### <a name="obsolete-metadata"></a>4.3 Metadata about obsolete pre-standard versions of Darwin Core
 
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
