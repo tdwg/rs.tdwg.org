@@ -286,7 +286,7 @@ Within each folder describing versions, the primary metadata is in the file whos
 
 The IRI `http://rs.tdwg.org/index` denotes the TDWG Data catalog. When dereferenced with an `Accept:` header of `text/html`, this document should be served. When dereferenced requesting `text/turtle`, `application/rdf+xml`, or `application/ld+json`, the data catalog should be served in the RDF/Turtle, RDF/XML, and JSON-LD machine-readable serializations respectively. (The machine-readable data catalogs can be retrieved using the explicit IRIs `http://rs-test.tdwg.org/index.ttl`, `http://rs-test.tdwg.org/index.rdf`, and `http://rs-test.tdwg.org/index.json`.) Note that as of 2020-02-03 the JSON-LD representation does not conform completely to the JSON-LD specification and should not be relied upon as a source of machine-readable metadata. It can, however, be consumed as generic JSON.
 
-The links in the machine-readable metadata can be followed to determine a `dcat:downloadURL` to retrieve a dump of each of the datasets included in the data catalog. The set download URLs can be dereferenced to obtain the complete set of TDWG standards metadata. The general form of a dataset dumpa is
+The links in the machine-readable metadata can be followed to determine a `dcat:downloadURL` to retrieve a dump of each of the datasets included in the data catalog. The set download URLs can be dereferenced to obtain the complete set of TDWG standards metadata. The general form of a dataset dump is
 
 ```
 http://rs.tdwg.org/dump/datasetname
@@ -294,6 +294,8 @@ http://rs.tdwg.org/dump/datasetname
 where "datasetname" is the name of the directory containing the dataset.
 
 For more information, see [this blog post](http://baskauf.blogspot.com/2019/04/understanding-tdwg-standards_24.html).
+
+To access machine-readable translations metadata, see the [Vocabulary Translations page](https://tdwg.github.io/rs.tdwg.org/translations/).
 
 # <a name="directories-resources"></a>4 Relationships of directories to resources in the TDWG Standards model
 
