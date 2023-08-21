@@ -1,6 +1,8 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
-- text: Home
+- text: Standards Metadata
   href: /
+- text: Translations 
+  href: /translations/
 - text: GitHub
   href: https://github.com/tdwg/rs.tdwg.org
