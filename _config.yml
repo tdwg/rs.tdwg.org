@@ -1,0 +1,32 @@
+# SITE SETTINGS
+title: TDWG Standards Metadata
+url: "https://tdwg.github.io/rs.tdwg.org/"
+
+# SOCIAL PROFILES
+social:
+  github: tdwg/tag
+
+# THEME SETTINGS
+theme: minima
+remote_theme: tdwg/petridish
+github_edit: false
+logo: /assets/theme/images/tdwg-logo-short.svg
+
+# BUILD SETTINGS
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# FRONTMATTER DEFAULTS
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      toc: true

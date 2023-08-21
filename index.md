@@ -6,25 +6,11 @@ For the main landing page, see the repository readme visible at the [repository 
 
 ## Multilingual translations
 
-### Web demo for establishmentMeans
-
-Multilingual `establishmentMeans` controlled vocabulary demo page (still need to fix page to acknowledge translators):
-- [English](cvJson/display-cv.html?en)
-- [Dutch](cvJson/display-cv.html?nl)
-- [Spanish](cvJson/display-cv.html?es)
-- [French](cvJson/display-cv.html?fr)
-- [Russian](cvJson/display-cv.html?ru)
-- [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
-
 ### Note to developers
 
 We will try to keep the URLs linked below stable so that they can be periodically harvested by applications.
 
 We are still working on acknowledging the translators in the machine-readable metadata.
-
-### Field labels
-
-These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used along with the label and definition translations to construct multilingual tools like the one above.
 
 ### Darwin Core controlled vocabularies:
 
@@ -130,6 +116,20 @@ William Ulate Rodriguez, Missouri Botanical Garden, St. Louis, Missouri, USA, <h
 Francis Y, 한국인 (Korean): Darwin Core degreeOfEstablishment
 
 Paula F Zermoglio, IEGEBA-CONICET (Argentina), <https://orcid.org/0000-0002-6056-5084>, español (Spanish): Darwin Core pathway, Darwin Core establishmentMeans
+
+### Field labels
+
+These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used along with the label and definition translations to construct multilingual tools like the one below.
+
+### Web demo for establishmentMeans
+
+Multilingual `establishmentMeans` controlled vocabulary demo page (still need to fix page to acknowledge translators):
+- [English](cvJson/display-cv.html?en)
+- [Dutch](cvJson/display-cv.html?nl)
+- [Spanish](cvJson/display-cv.html?es)
+- [French](cvJson/display-cv.html?fr)
+- [Russian](cvJson/display-cv.html?ru)
+- [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
 
 
 -------
