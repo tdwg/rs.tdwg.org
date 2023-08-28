@@ -1,7 +1,11 @@
-versionDate: "2023-07-07"
+# If the document being generated is a list of terms document, these values will be
+# set automatically when the process.py script is used to generate the machine-readable
+# metadata for the vocabulary. They should not be set manually because they will just be
+# overwritten.
+
+# However, for non-list of terms documents, these values
+# must be set manually here.
+
+versionDate: '2023-08-25'
 utcOffset: -05:00
-docIri: http://rs.tdwg.org/dwc/doc/list/
-mediaType: text/markdown
-lastVersionAccessUri: 
-lastVersionRedirectUri: # I don't think this actually does anything, so ignore it for now.
-standardIri: http://www.tdwg.org/standards/450
+docIri: http://rs.tdwg.org/dwc/doc/eco/

@@ -1,7 +1,7 @@
 # Update TDWG documents metadata
 
-# Author: Steve Baskauf - 2023-05-08
-# Version: 0.3
+# Author: Steve Baskauf - 2023-08-27
+# Version: 0.4
 # This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
 
 # This script is a companion to the other script that updates the vocabularies metadata and 
@@ -14,6 +14,7 @@
 import pandas as pd
 import yaml
 import json
+import re
 import sys
 import copy
 from os.path import exists
@@ -73,9 +74,53 @@ for key in config_data.keys():
 version_date = config_data['versionDate']
 doc_iri = config_data['docIri']
 
-standard_iri = config_data['standardIri']
+# Get this value from the document_configuration.yaml file instead of the general_configuration.yaml file.
+#standard_iri = config_data['standardIri']
+
+
+# Pass the document IRI and version date to the document_configuration.yaml file so that it can be used to
+# generate the human-readable list of terms document header. Start by opening the file and reading its text.
+with open(doc_config_path, 'rt') as file_object:
+    file_text = file_object.read()
+
+# Replace the text from "current_iri:" to the end of the line with the document IRI.
+file_text = re.sub('current_iri:.*\n', 'current_iri: ' + doc_iri + '\n', file_text)
+
+# Replace all the text between the key and the newline with the new date_issued value.
+file_text = re.sub('doc_modified:.*\n', "doc_modified: '" + version_date + "'\n", file_text)
+
+# Write the modified text back out to the file.
+with open(doc_config_path, 'wt') as file_object:
+    file_object.write(file_text)
+
+# --------------------------------
+# Notes about mediaType, accessUri/accessUrl, and browserRedirectUri values in metadata tables
+
+# The docs-versions.csv file has columns accessUrl and mediaType. As far as I can determine, these columns
+# are not used for anything (at least for modern vocabularies that have human-maintained list of terms documents) 
+# and are vestigial fields left to keept the columns stable. 
+# The fields that are actually used to provide this information are the mediaType and accessUri fields
+# in the docs-versions-formats.csv file. For that reason, the mediaType and accessUrl fields in the
+# docs-versions.csv file are not updated by this script.
+
+# The docs.csv file has a column for accessUrl. However, it is not exposed anywhere. Rather the accessUri column in
+# the docs-formats.csv file is used to provide the access IRI and the media type. So the accessUrl field in the
+# docs.csv file is not updated by this script.
+
+# The browserRedirectUri field in the docs.csv and docs-versions.csv file is accessed by the server to provide the URL
+# for redirects from the permanent document version IRIs to that actual web pages. So it is important for
+# it to be updated by this script.
+
+
+
+# --------------------------------
+# Load the current documents CSV file and try to locate a row for the current document.
+# --------------------------------
 
 current_docs_df = csv_read(repo_path + 'docs/docs.csv')
+
+# Get the keys of the current_docs_df DataFrame
+current_docs_df_keys = current_docs_df.keys()
 
 # Find the row index if the document already exists
 row_matches = current_docs_df.index[current_docs_df['current_iri']==doc_iri].tolist()
@@ -101,13 +146,37 @@ if exists(doc_config_path):
     with open(doc_config_path) as file_object:
         new_row_data = yaml.safe_load(file_object)
     
-    # Need to stash any new accessUrl that is provided
+    # Need to stash any new accessUrl, media type, and browser redirect URL that are provided
     if new_row_data['accessUrl'] != None: # Empty YAML values are read in as a None keyword.
         new_accessUrl = new_row_data['accessUrl']
 
-    # For new documents, the data from the file is used as the initial record.
+    if new_row_data['mediaType'] != None:
+        current_mediaType = new_row_data['mediaType']
+    else:
+        current_mediaType = ''
+
+    if new_row_data['browserRedirectUri'] != None:
+        current_browserRedirectUri = new_row_data['browserRedirectUri']
+    else:
+        current_browserRedirectUri = ''
+    
+    # The media type is not recorded in the current docs CSV file. It is recorded in the
+    # docs_formats.csv and docs_versions_formats.csv file. So it needs to be removed from the new_row_data
+    # dictionary to prevent it from added to the row data for the current document.
+    del new_row_data['mediaType']
+
+    # For new documents, the data from the document_configuration.yaml file is used as the initial record.
     if new_document:
-        row_data = new_row_data
+        # Create an empty row_data dictionary using the current_docs_df_keys
+        row_data = dict.fromkeys(current_docs_df_keys, '')
+
+        # Add the data from the new_row_data dictionary to the row_data dictionary
+        for key in new_row_data.keys():
+            if new_row_data[key] != None:
+                row_data[key] = new_row_data[key]
+            else:
+                row_data[key] = ''
+
     # For existing documents, any new data replaces the existing data.
     else:
         for key in new_row_data.keys():
@@ -121,6 +190,10 @@ else:
 
 # Replace any existing doc_modified date with the new version date
 row_data['doc_modified'] = version_date
+
+# Get the standard IRI from the dcterms_isPartOf value. This will come from any existing row data
+# or from the document_configuration.yaml file if it is provided.
+standard_iri = row_data['dcterms_isPartOf']
 
 #print('New row data:')
 #print(json.dumps(row_data, indent=2))
@@ -140,7 +213,7 @@ else: # The new values of the row cells replace the old one.
 current_docs_df.to_csv(repo_path + 'docs/docs.csv', index = False)
 
 # --------------------------------
-## Update the documents versions metadata
+# Update the documents versions metadata
 # --------------------------------
 
 # Generate a new version for the document based on the current document IRI and version_date.
@@ -167,11 +240,41 @@ del versions_data['doc_created']
 del versions_data['doc_modified']
 versions_data['version_issued'] = version_date
 versions_data['version_iri'] = doc_version_iri
-versions_data['mediaType'] = config_data['mediaType']
+versions_data['mediaType'] = current_mediaType
 
 # Update the document versions metadata in the docs-versions folder
 versions_metadata_df = csv_read(repo_path + 'docs-versions/docs-versions.csv')
 versions_metadata_df = pd.concat([versions_metadata_df, pd.DataFrame([versions_data])])
+
+# For pre-existing documents:
+# the browserRedirectUri value for the previous version needs to be changed from the current document URL to the
+# URL of the previous version. This will be done assuming that the standard pattern for version file naming within a
+# directory is followed. This is the current document URL (with trailing slash) followed by the version date with no
+# trailing slash. 
+
+if not new_document:
+    # Find the row for the pre-existing document
+    row_matches = versions_metadata_df.index[versions_metadata_df['version_iri']==most_recent_version_iri].tolist()
+    if len(row_matches) == 0:
+        print('Error: No row in the docs-versions/docs-versions.csv file matches the previous document IRI:' + most_recent_version_iri)
+        exit()
+    else:
+        if len(row_matches) > 1:
+            print('Warning: Multiple rows in the docs-versions/docs-versions.csv file match the previous document IRI.\n' + str(row_matches))
+            row_index = row_matches[0]
+        else:
+            row_index = row_matches[0]
+        
+        # Find the column index for the version_issued column
+        version_issued_column_index = versions_metadata_df.columns.get_loc('version_issued')
+        # Get the issued date
+        previous_version_date = versions_metadata_df.iat[row_index, version_issued_column_index]
+
+        # Find the column index for the browserRedirectUri column
+        browserRedirectUri_column_index = versions_metadata_df.columns.get_loc('browserRedirectUri')
+        # Now make the replacement
+        versions_metadata_df.iat[row_index, browserRedirectUri_column_index] = current_browserRedirectUri + previous_version_date
+
 versions_metadata_df.to_csv(repo_path + 'docs-versions/docs-versions.csv', index = False)
 
 # Update the versions replacements unless the document is new
@@ -207,12 +310,10 @@ if new_accessUrl:
 else:
     current_accessUrl = old_accessUrl
 
-if config_data['mediaType']:
-    current_mediaType = config_data['mediaType']
-else:
+if not current_mediaType:
     try:
         current_mediaType = old_mediaType
-    # Handle the case where the creator of a new document doesn't bother to create the format config file
+    # Handle the case where the creator of a new document doesn't bother to give the format in the doc config file
     except: # We assume the document is in Markdown if no information is given
         current_mediaType = 'text/markdown'
         
@@ -244,7 +345,7 @@ formats_metadata_df.to_csv(repo_path + 'docs/docs-formats.csv', index = False)
 # Load format information for versions.
 versions_format_metadata_df = csv_read(repo_path + 'docs-versions/docs-versions-formats.csv')
 
-# The previous version usually needs to have it's access URL changed since it's not the current version webpage any more.
+# The previous version needs to have its access URL changed since it's not the current version webpage any more.
 if not new_document:
     # Find the row for the pre-existing document
     not_found = False
@@ -258,10 +359,19 @@ if not new_document:
             row_index = row_matches[0]
         else:
             row_index = row_matches[0]
-        # Now make the replacement, using the URL provided in the format config file, if it was provided.
-        # If it wasn't provided, then whatever URL was already there will remain.
-        if config_data['lastVersionAccessUri']:
-            versions_format_metadata_df.at[row_index, 'accessUri'] = config_data['lastVersionAccessUri']
+
+        # We will generate the new access URL assuming that the standard pattern for version URLs is being used.
+        # That is, the current document file is named "index.md" and the previous version file is named with the date of the
+        # previous version, plus ".md". So we must find the previous version date, then construct the URL by replacing the
+        # "index" in the current URL with the date.
+
+        # Find the date of the previous version by matching the most_recent_version_iri to the version_iri column of the
+        # versions_metadata_df DataFrame, then getting the version_issued value from the same row.
+        previous_version_date = versions_metadata_df.loc[versions_metadata_df.version_iri == most_recent_version_iri, 'version_issued'].values[0]
+        #print(previous_version_date)
+
+        # Construct the new access URL by replacing the "index" in the current URL with the date.
+        versions_format_metadata_df.at[row_index, 'accessUri'] = current_accessUrl.replace('index', previous_version_date)
             
     # Handle the edge case where the row for the previous document is missing.
     # Doesn't error trap the case where the old access URI isn't provided, but hey, it's an edge case and be more careful.

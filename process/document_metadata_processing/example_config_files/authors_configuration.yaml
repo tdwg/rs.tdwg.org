@@ -1,118 +1,112 @@
-- contributor_iri: https://orcid.org/0000-0002-6992-9446
-  contributor_literal: Robert A. Morris
-  contributor_role: lead author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: University of Massachusetts at Boston, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q15144
+- contributor_iri: https://orcid.org/0000-0002-1720-0127
+  contributor_literal: Yanina V. Sica
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Yale University
+  affiliation_uri: http://www.wikidata.org/entity/Q49112
 
-- contributor_iri: https://orcid.org/0000-0001-7023-7386
-  contributor_literal: Gregor Hagedorn
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany
-  affiliation_uri: http://www.wikidata.org/entity/Q832099
-
-- contributor_iri: https://orcid.org/0000-0002-0772-0022
-  contributor_literal: Annette Olson
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: American Association for the Advancement of Science
-  affiliation_uri: http://www.wikidata.org/entity/Q40358
-
-- contributor_iri: https://orcid.org/0000-0003-4365-3135
-  contributor_literal: Steve Baskauf
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Vanderbilt University, Nashville, TN, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q29052
-
-- contributor_iri: https://orcid.org/0000-0002-4852-2567
-  contributor_literal: Vijay Barve
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: ''
-  affiliation_uri: ''
-
-- contributor_iri: https://orcid.org/0000-0002-8234-0599
-  contributor_literal: Mihail Carausu
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark
-  affiliation_uri: ''
-
-- contributor_iri: https://orcid.org/0000-0002-3425-6499
-  contributor_literal: Vishwas Chavan
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Global Biodiversity Information Facility, Copenhagen, Denmark
+- contributor_iri: https://orcid.org/0000-0001-5942-9053
+  contributor_literal: Kate Ingenloff
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility (GBIF)
   affiliation_uri: http://www.wikidata.org/entity/Q1531570
 
-- contributor_iri: http://www.wikidata.org/entity/Q51883873
-  contributor_literal: José Cuadra
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: ''
-  affiliation_uri: ''
+- contributor_iri: https://orcid.org/0000-0002-6056-5084
+  contributor_literal: Paula Zermoglio
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD), UNRN-CONICET
+  affiliation_uri: http://www.wikidata.org/entity/Q6156591
 
-- contributor_iri: https://orcid.org/0000-0002-2541-5822
-  contributor_literal: Chris Freeland
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Missouri Botanical Garden, St. Louis, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q1852803
+- contributor_iri: https://orcid.org/0000-0001-7087-2646
+  contributor_literal: Yi-Ming Gan
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Royal Belgian Institute of Natural Sciences
+  affiliation_uri: http://www.wikidata.org/entity/Q16665660
 
-- contributor_iri: https://orcid.org/0000-0001-5172-8577
-  contributor_literal: Patrick Leary
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: ''
-  affiliation_uri: ''
+- contributor_iri: https://orcid.org/0000-0001-9730-8340
+  contributor_literal: Peter Brenton
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Atlas of Living Australia, CSIRO
+  affiliation_uri: http://www.wikidata.org/entity/Q16335177
 
-- contributor_iri: https://orcid.org/0000-0003-1593-1417
-  contributor_literal: Dimitry Mozzherin
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Encyclopedia of Life, Woods Hole, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q82486
+- contributor_iri: https://orcid.org/0000-0003-1144-0290
+  contributor_literal: John Wieczorek
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
 
-- contributor_iri: https://orcid.org/0000-0002-3850-9983
-  contributor_literal: Greg Riccardi
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Florida State University, Tallahassee, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q861548
+- contributor_iri: https://orcid.org/0000-0002-0595-7827
+  contributor_literal: Wesley M. Hochachka
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Cornell Lab of Ornithology
+  affiliation_uri: http://www.wikidata.org/entity/Q2997535
 
-- contributor_iri: https://orcid.org/0000-0003-4176-2274
-  contributor_literal: Ivan Teage
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: ''
-  affiliation_uri: ''
+- contributor_iri: https://orcid.org/0000-0002-0500-0339
+  contributor_literal: Zachary R. Kachian
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Keller Science Action Center, Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
 
-- contributor_iri: https://orcid.org/0000-0001-8068-3769
-  contributor_literal: Dan Stowell
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Queen Mary University of London
-  affiliation_uri: http://www.wikidata.org/entity/Q195668
+- contributor_iri: https://orcid.org/0000-0003-1617-5895
+  contributor_literal: Robert D. Stevenson
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Department of Biology, University of Massachusetts Boston
+  affiliation_uri: http://www.wikidata.org/entity/Q15144
 
-- contributor_iri: https://orcid.org/0000-0002-5887-9543
-  contributor_literal: Edward Baker
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Natural History Museum, London
-  affiliation_uri: http://www.wikidata.org/entity/Q309388
+- contributor_iri: https://orcid.org/0000-0003-2475-132X
+  contributor_literal: Anahita J. N. Kazem
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena
+  affiliation_uri: http://www.wikidata.org/entity/Q1206134
 
-- contributor_iri: https://orcid.org/0000-0003-0768-1286
-  contributor_literal: Richard Pyle
-  contributor_role: author
-  role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Bernice P. Bishop Museum, Honolulu, HI, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q826520
+- contributor_iri: https://orcid.org/0000-0002-2919-1168
+  contributor_literal: Dmitry Schigel
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility (GBIF)
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
 
 - contributor_iri: https://orcid.org/0000-0003-4365-3135
   contributor_literal: Steve Baskauf
-  contributor_role: editor
-  role_uri: http://www.wikidata.org/entity/Q2462658
-  affiliation: Vanderbilt University, Nashville, TN, USA
-  affiliation_uri: http://www.wikidata.org/entity/Q29052
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Vanderbilt University Libraries
+  affiliation_uri: http://www.wikidata.org/entity/Q16849893
+
+- contributor_iri: https://orcid.org/0000-0001-5010-3452
+  contributor_literal: Tomomi Suwa
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Keller Science Action Center, Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
+
+- contributor_iri: https://orcid.org/0000-0001-6682-1504
+  contributor_literal: Robert Guralnick
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Florida Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q3074272
+
+- contributor_iri: https://orcid.org/0000-0001-8815-0078
+  contributor_literal: Ramona L. Walls
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: University of Arizona
+  affiliation_uri: http://www.wikidata.org/entity/Q503419
+
+- contributor_iri: https://orcid.org/0000-0002-1971-7277
+  contributor_literal: Walter Jetz
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Yale University
+  affiliation_uri: http://www.wikidata.org/entity/Q49112
+
