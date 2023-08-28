@@ -1,9 +1,11 @@
 # Written by Steve Baskauf 2020-06-29 CC0
 # Updated to run as a stand-alone script 2021-07-26
+# Additional modifications to require less manual work 2023-08-27
 
 import csv
 import json
-from re import X
+import yaml
+import re
 import sys
 import os
 import shutil
@@ -17,10 +19,8 @@ import pandas as pd
 
 # The mutable values come from a JSON configuration file, config.json, that is in the same directory as
 # the script. See the example at:
-with open('config.json', 'rt', encoding='utf-8') as file_object:
-    read_text = file_object.read()
-    config = json.loads(read_text)
-#print(json.dumps(config, indent=2))
+with open('config.yaml', 'rt', encoding='utf-8') as file_object:
+    config = yaml.safe_load(file_object)
 
 date_issued = config['date_issued'] # generally will be ratification date
 local_offset_from_utc = config['local_offset_from_utc'] # time zone used by system clock
@@ -962,22 +962,42 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
             for vocabularyVersion in standards_versions_parts:
                 # the first column contains the standard version
                 if standards_versions_metadata[mostRecentStandardNumber][version_uri] == vocabularyVersion[0]:
-                    newStandardMembersList.append(vocabularyVersion[1])
-
-                    # dissect the vocabulary version URI to pull out the local name of the vocabulary version
+                    # Must screen for vocabulary versions and exclude documents.
+                    # Check the third from end piece of the URI to see if it's 'version'
                     pieces = vocabularyVersion[1].split('/')
-                    versionLocalNamePiece = pieces[len(pieces)-2]
-                    vocabularyLocalNameList.append(versionLocalNamePiece)
+                    if pieces[len(pieces)-3] == 'version':
+                        newStandardMembersList.append(vocabularyVersion[1])
+
+                        # dissect the vocabulary version URI to pull out the local name of the vocabulary version
+                        pieces = vocabularyVersion[1].split('/')
+                        versionLocalNamePiece = pieces[len(pieces)-2]
+                        vocabularyLocalNameList.append(versionLocalNamePiece)
 
             if aNewVocabulary:
                 # the new vocabulary version needs to be added to the list
                 newStandardMembersList.append(vocabularyVersionUri)
             else:
                 # For the modified vocabulary, find its previous version and replace it with the new version.
+                print('modified vocabulary')
                 for vocabularyVersionRowNumber in range(0, len(newStandardMembersList)):
+                    print('vocab_subpath', vocab_subpath)
+                    print('vocabularyLocalNameList[vocabularyVersionRowNumber]', vocabularyLocalNameList[vocabularyVersionRowNumber])
                     if vocab_subpath == vocabularyLocalNameList[vocabularyVersionRowNumber]:
                         # change the vocabulary version on the list to the new one
                         newStandardMembersList[vocabularyVersionRowNumber] = vocabularyVersionUri
+                
+                # Thus far, only the vocabulary versions for the most recent standard version have been added to the list.
+                # The document versions that are not vocabulary versions must also be added to the list.
+                # Find the vocabulary versions for the most recent standard version
+                for standard_part_version in standards_versions_parts:
+                    # the first column contains the standard version
+                    if standards_versions_metadata[mostRecentStandardNumber][version_uri] == standard_part_version[0]:
+                        # Must screen for document versions.
+                        # Check the third from end piece of the URI to see if it's NOT 'version'
+                        # Note: legacy DwC documents don't follow the pattern, so you can't just look for 'doc'.
+                        pieces = standard_part_version[1].split('/')
+                        if pieces[len(pieces)-3] != 'version':
+                            newStandardMembersList.append(standard_part_version[1])
 
         # Now that the list of new vocabulary versions that are part of the new standard version list is created,
         # add a record for each one to the standard versions members table
@@ -1101,3 +1121,25 @@ for namespace in namespaces:
     if not utility_namespace: # utility namespaces are not part of any vocabularies or standards
         update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vocab_subpath, vocabularyUri, vocabularyVersionUri, aNewVocabulary)
     print('completed', namespaceUri, 'namespace')
+
+# -----------------------
+# Once the namespace loop is complete, values in the general_configuration
+# files must be updated using values from the config.yaml file.
+# -----------------------
+
+# Read the text of the general_configuration.yaml file.
+with open('document_metadata_processing/general_configuration.yaml', 'rt') as file_object:
+    general_config_text = file_object.read()
+
+# Replace versionDate value with the new date_issued value.
+general_config_text = re.sub('versionDate:.*\n', "versionDate: '" + date_issued + "'\n", general_config_text)
+
+# Replace the utcOfset value with the new local_offset_from_utc value.
+general_config_text = re.sub('utcOffset:.*\n', "utcOffset: " + local_offset_from_utc + "\n", general_config_text)
+
+# Replace the docIri with the new list_of_terms_iri value.
+general_config_text = re.sub('docIri:.*\n', "docIri: " + config['list_of_terms_iri'] + "\n", general_config_text)
+
+# Write the updated text to the file.
+with open('document_metadata_processing/general_configuration.yaml', 'wt') as file_object:
+    file_object.write(general_config_text)

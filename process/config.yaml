@@ -1,0 +1,60 @@
+# To use this configuration file, it must be in the process directory from which the
+# process.py script is run. Typically, a copy is stored with the modifications CSV file.
+
+# Date assigned to all versions, usually the date of approval by the Executive Committee
+date_issued: '2023-08-25'
+
+# UTC offset for the computer running the script
+local_offset_from_utc: -05:00
+
+# Only relevant when new term lists or vocabularies are created. It does nothing when
+# existing terms are changed. Categories:
+# 1: Simple vocabulary
+# 2: Simple controlled vocabulary
+# 3: Controlled vocabluary with broader hierarchy
+vocab_type: 1
+
+# Permanent IRI for the list of terms document that is associated with this vocabulary.
+# This is needed to automatically update the date_modified value of the list of terms document 
+# using the date_issued value above.
+list_of_terms_iri: http://rs.tdwg.org/dwc/doc/eco/
+
+namespaces:
+
+# Repeat the following data for each namespace
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: http://rs.tdwg.org/eco/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: eco
+
+  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
+  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  database: humboldt
+
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
+  # Set to false if namespace issued by TDWG.
+  borrowed: false
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  new_term_list: false
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: dwc-revisions/eco-2023-08-25/eco.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+  termlist_uri: ''
+
+  # Label used for the term list in machine-readable metadata.
+  label: Humboldt Extension terms
+
+  # Description of the term list used in machine-readable metadata.
+  description: This list includes terms defined by the Humboldt Extension for Ecological Inventories.
