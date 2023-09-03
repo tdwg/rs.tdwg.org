@@ -980,8 +980,6 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
                 # For the modified vocabulary, find its previous version and replace it with the new version.
                 print('modified vocabulary')
                 for vocabularyVersionRowNumber in range(0, len(newStandardMembersList)):
-                    print('vocab_subpath', vocab_subpath)
-                    print('vocabularyLocalNameList[vocabularyVersionRowNumber]', vocabularyLocalNameList[vocabularyVersionRowNumber])
                     if vocab_subpath == vocabularyLocalNameList[vocabularyVersionRowNumber]:
                         # change the vocabulary version on the list to the new one
                         newStandardMembersList[vocabularyVersionRowNumber] = vocabularyVersionUri
