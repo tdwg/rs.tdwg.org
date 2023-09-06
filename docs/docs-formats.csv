@@ -1,7 +1,7 @@
 doc_iri,mediaType,accessUri
 http://rs.tdwg.org/sds/doc/specification/,text/markdown,https://raw.githubusercontent.com/tdwg/vocab/master/sds/documentation-specification.md
 http://rs.tdwg.org/vms/doc/specification/,text/markdown,https://raw.githubusercontent.com/tdwg/vocab/master/vms/maintenance-specification.md
-http://rs.tdwg.org/ac/doc/termlist/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/termlist.md
+http://rs.tdwg.org/ac/doc/termlist/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist/index.md
 http://rs.tdwg.org/ac/doc/structure/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/structure.md
 http://rs.tdwg.org/ac/doc/introduction/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/introduction.md
 http://rs.tdwg.org/ac/doc/guide/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/guide.md
