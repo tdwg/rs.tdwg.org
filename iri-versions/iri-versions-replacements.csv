@@ -36,3 +36,6 @@ http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2023-06-28,samplingProtocol-
 http://rs.tdwg.org/dwc/iri/version/sex-2023-06-28,sex-2015-03-27
 http://rs.tdwg.org/dwc/iri/version/verbatimCoordinateSystem-2023-06-28,verbatimCoordinateSystem-2015-03-27
 http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28,verbatimSRS-2015-03-27
+http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-09-13,latestGeochronologicalEra-2015-03-27
+http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-09-13,earliestGeochronologicalEra-2015-03-27
+http://rs.tdwg.org/dwc/iri/version/vitality-2023-09-13,vitality-2023-06-28
