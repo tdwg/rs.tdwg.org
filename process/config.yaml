@@ -123,7 +123,7 @@ namespaces:
   # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
   # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
   # TDWG termlist IRI pattern.
-  termlist_uri: ''
+  termlist_uri: 'http://rs.tdwg.org/dwc/dcterms/'
 
   # Label used for the term list in machine-readable metadata.
   label: Darwin Core terms borrowed from the Dublin Core terms namespace
