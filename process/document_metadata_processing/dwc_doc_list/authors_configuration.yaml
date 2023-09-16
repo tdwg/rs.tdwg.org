@@ -116,3 +116,24 @@
   role_uri: http://www.wikidata.org/entity/Q20204892
   affiliation: National Center for Ecological Analysis and Synthesis
   affiliation_uri: http://www.wikidata.org/entity/Q6971323
+
+- contributor_iri: https://orcid.org/0000-0001-9284-7900
+  contributor_literal: Sophia Ratcliffe
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: National Biodiversity Network Trust
+  affiliation_uri: http://www.wikidata.org/entity/Q6970988
+
+- contributor_iri: https://orcid.org/0000-0002-1970-7044
+  contributor_literal: Teresa J. Mayfield-Meyer
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: The University of New Mexico, Arctos
+  affiliation_uri: http://www.wikidata.org/entity/Q1190812
+
+- contributor_iri: https://orcid.org/0000-0002-6544-1363
+  contributor_literal: Christian Bölling
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Museum für Naturkunde Berlin - Leibniz-Institut für Evolutions- und Biodiversitätsforschung
+  affiliation_uri: http://www.wikidata.org/entity/Q233098

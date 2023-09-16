@@ -970,3 +970,6 @@ http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/parentMeasurementID
 http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/caste
 http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/vitality
 http://rs.tdwg.org/dwc/iri/,http://rs.tdwg.org/dwc/iri/eventType
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/materialEntityRemarks
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/materialEntityID
+http://rs.tdwg.org/dwc/terms/,http://rs.tdwg.org/dwc/terms/MaterialEntity
