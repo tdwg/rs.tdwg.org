@@ -120,3 +120,6 @@ http://rs.tdwg.org/ac/version/dc/2023-09-05,http://rs.tdwg.org/ac/dc/
 http://rs.tdwg.org/ac/version/dcterms/2023-09-05,http://rs.tdwg.org/ac/dcterms/
 http://rs.tdwg.org/ac/version/exif/2023-09-05,http://rs.tdwg.org/ac/exif/
 http://rs.tdwg.org/ac/version/xmpRights/2023-09-05,http://rs.tdwg.org/ac/xmpRights/
+http://rs.tdwg.org/dwc/version/terms/2023-09-13,http://rs.tdwg.org/dwc/terms/
+http://rs.tdwg.org/dwc/version/iri/2023-09-13,http://rs.tdwg.org/dwc/iri/
+http://rs.tdwg.org/dwc/version/dcterms/2023-09-13,http://rs.tdwg.org/dwc/dcterms/

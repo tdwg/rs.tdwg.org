@@ -86,3 +86,6 @@ http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28,verbatimSRS
 http://rs.tdwg.org/dwc/iri/version/caste-2023-06-28,caste
 http://rs.tdwg.org/dwc/iri/version/vitality-2023-06-28,vitality
 http://rs.tdwg.org/dwc/iri/version/eventType-2023-06-28,eventType
+http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-09-13,latestGeochronologicalEra
+http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-09-13,earliestGeochronologicalEra
+http://rs.tdwg.org/dwc/iri/version/vitality-2023-09-13,vitality
