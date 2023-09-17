@@ -96,15 +96,19 @@ with open(doc_config_path, 'wt') as file_object:
 # --------------------------------
 # Notes about mediaType, accessUri/accessUrl, and browserRedirectUri values in metadata tables
 
-# The docs-versions.csv file has columns accessUrl and mediaType. As far as I can determine, these columns
-# are not used for anything (at least for modern vocabularies that have human-maintained list of terms documents) 
-# and are vestigial fields left to keept the columns stable. 
-# The fields that are actually used to provide this information are the mediaType and accessUri fields
-# in the docs-versions-formats.csv file. For that reason, the mediaType and accessUrl fields in the
-# docs-versions.csv file are not updated by this script.
+# The docs-versions.csv file has column accessUrl. As far as I can determine, this column
+# is not used for anything (at least for modern vocabularies that have human-maintained list of terms documents) 
+# and is a vestigial field left to keept the columns stable. 
+
+# The docs-versions.csv file has a column for mediaType. However, it is not exposed anywhere. It is the media type of 
+# the web page that is redirected to using the accessUrl field. Generally it is expected to be text/html. It is maintained
+# in the docs-versions.csv file in the event that a metadata link is added to the HTML page as a human-readable distribution.
+
+# The mediaType and accessUri fields in the docs-formats.csv and docs-versions-formats.csv files refer to the raw source 
+# files used to generate the HTML files that are served. 
 
 # The docs.csv file has a column for accessUrl. However, it is not exposed anywhere. Rather the accessUri column in
-# the docs-formats.csv file is used to provide the access IRI and the media type. So the accessUrl field in the
+# the docs-formats.csv file is used to provide the access IRI. So the accessUrl field in the
 # docs.csv file is not updated by this script.
 
 # The browserRedirectUri field in the docs.csv and docs-versions.csv file is accessed by the server to provide the URL
@@ -240,7 +244,11 @@ del versions_data['doc_created']
 del versions_data['doc_modified']
 versions_data['version_issued'] = version_date
 versions_data['version_iri'] = doc_version_iri
-versions_data['mediaType'] = current_mediaType
+
+# The media type recorded directly in the versions file is the media type of the redirected web page. So it will be assumed to be text/html.
+# NOTE: this is different from the media type recorded in the docs-formats.csv and docs-versions-formats.csv files, which is the media 
+# type of the document file. These values are set later on in the script.
+versions_data['mediaType'] = 'text/html'
 
 # Update the document versions metadata in the docs-versions folder
 versions_metadata_df = csv_read(repo_path + 'docs-versions/docs-versions.csv')
