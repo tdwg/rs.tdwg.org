@@ -32,3 +32,10 @@
   role_uri: http://www.wikidata.org/entity/Q20204892
   affiliation: KU Natural History Museum
   affiliation_uri: http://www.wikidata.org/entity/Q1111807
+
+- contributor_iri: https://orcid.org/0000-0002-5178-4170
+  contributor_literal: Gail Kampmeier
+  contributor_role: review manager
+  role_uri: http://www.wikidata.org/entity/Q2462658
+  affiliation: Illinois Natural History Survey
+  affiliation_uri: http://www.wikidata.org/entity/Q5999587
