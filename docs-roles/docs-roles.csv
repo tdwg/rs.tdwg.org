@@ -44,12 +44,6 @@ http://rs.tdwg.org/dwc/terms/guides/text/,,https://orcid.org/0000-0002-7104-7266
 http://rs.tdwg.org/dwc/terms/guides/text/,,https://orcid.org/0000-0002-6513-4996,,,,,,author,Dave Vieglais
 http://rs.tdwg.org/dwc/terms/guides/text/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
 http://rs.tdwg.org/dwc/terms/guides/text/,,,,,,https://orcid.org/0000-0002-5178-4170,,review manager,Gail E. Kampmeier
-http://rs.tdwg.org/dwc/terms/guides/xml/,https://orcid.org/0000-0003-1144-0290,,,,,,,lead author,John Wieczorek
-http://rs.tdwg.org/dwc/terms/guides/xml/,,https://orcid.org/0000-0001-7757-1889,,,,,,author,Markus Döring
-http://rs.tdwg.org/dwc/terms/guides/xml/,,https://orcid.org/0000-0002-7104-7266,,,,,,author,Renato De Giovanni
-http://rs.tdwg.org/dwc/terms/guides/xml/,,https://orcid.org/0000-0001-6215-3617,,,,,,author,Tim Robertson
-http://rs.tdwg.org/dwc/terms/guides/xml/,,https://orcid.org/0000-0002-6513-4996,,,,,,author,Dave Vieglais
-http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,https://orcid.org/0000-0002-5178-4170,,review manager,Gail E. Kampmeier
 http://rs.tdwg.org/dwc/terms/simple/,https://orcid.org/0000-0003-1144-0290,,,,,,,lead author,John Wieczorek
 http://rs.tdwg.org/dwc/terms/simple/,,https://orcid.org/0000-0001-7757-1889,,,,,,author,Markus Döring
 http://rs.tdwg.org/dwc/terms/simple/,,https://orcid.org/0000-0002-7104-7266,,,,,,author,Renato De Giovanni
@@ -344,3 +338,9 @@ http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-0632-7576,con
 http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-9284-7900,contributor,Sophia Ratcliffe
 http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-1970-7044,contributor,Teresa J. Mayfield-Meyer
 http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6544-1363,contributor,Christian Bölling
+http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
+http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0001-7757-1889,contributor,Markus Döring
+http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0002-7104-7266,contributor,Renato De Giovanni
+http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0001-6215-3617,contributor,Tim Robertson
+http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0002-6513-4996,contributor,Dave Vieglais
+http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,https://orcid.org/0000-0002-5178-4170,,review manager,Gail Kampmeier

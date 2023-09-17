@@ -160,7 +160,6 @@ http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/doc/
 http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/doc/pw/2021-09-01
 http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15
 http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/terms/guides/text/2021-07-15
-http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/terms/guides/xml/2021-07-15
 http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/terms/simple/2021-07-15
 http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/version/chrono/2021-02-21
 http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/version/dwc/2023-09-13
@@ -266,3 +265,4 @@ http://www.tdwg.org/standards/638/version/2023-09-05,http://rs.tdwg.org/ac/doc/t
 http://www.tdwg.org/standards/638/version/2023-09-05,http://rs.tdwg.org/ac/doc/variant/2023-02-24
 http://www.tdwg.org/standards/638/version/2023-09-05,http://rs.tdwg.org/version/acorient/2023-04-26
 http://www.tdwg.org/standards/638/version/2023-09-05,http://rs.tdwg.org/version/acpart/2023-04-26
+http://www.tdwg.org/standards/450/version/2023-09-13,http://rs.tdwg.org/dwc/terms/guides/xml/2023-09-13
