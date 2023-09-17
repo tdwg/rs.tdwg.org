@@ -20,6 +20,9 @@ import copy
 from os.path import exists
 import datetime
 
+print('This is still not updating the citations yet. Do not use this again until it is fixed.')
+print('See the DwC script for building non-list of terms pages from templates for the code to assemble the citation.')
+
 def csv_read(path, **kwargs):
     """Loads a CSV table into a Pandas DataFrame with all cells as strings and blank cells as empty strings
     
