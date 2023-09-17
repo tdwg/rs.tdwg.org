@@ -52,7 +52,7 @@ http://rs.tdwg.org/dwc/doc/pw/2021-09-01,text/markdown,https://raw.githubusercon
 http://rs.tdwg.org/dwc/terms/guides/rdf/2016-04-25,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/rdf/2016-04-25.md
 http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/rdf/index.md
 http://rs.tdwg.org/dwc/terms/guides/text/2014-11-08,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/2014-11-08.md
-http://rs.tdwg.org/dwc/terms/guides/text/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/index.md
+http://rs.tdwg.org/dwc/terms/guides/text/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/2021-07-15.md
 http://rs.tdwg.org/dwc/terms/guides/xml/2014-11-08,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/2014-11-08.md
 http://rs.tdwg.org/dwc/terms/guides/xml/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/2021-07-15.md
 http://rs.tdwg.org/dwc/terms/namespace/2018-08-26,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs//namespace/index.md
@@ -102,3 +102,4 @@ http://rs.tdwg.org/wgsrpd/doc/data/2001-08,application/pdf,https://raw.githubuse
 http://rs.tdwg.org/xdf/doc/article/1992,application/pdf,https://doi.org/10.1016/0895-7177(92)90163-F
 http://rs.tdwg.org/xdf/doc/specification/1989-11-02,application/pdf,https://github.com/tdwg/prior-standards/blob/master/xdf/xdf_description_and_manual_v3.3_1989.pdf
 http://rs.tdwg.org/dwc/terms/guides/xml/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/index.md
+http://rs.tdwg.org/dwc/terms/guides/text/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/index.md
