@@ -55,7 +55,7 @@ http://rs.tdwg.org/dwc/terms/guides/text/2014-11-08,text/markdown,https://raw.gi
 http://rs.tdwg.org/dwc/terms/guides/text/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/2021-07-15.md
 http://rs.tdwg.org/dwc/terms/guides/xml/2014-11-08,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/2014-11-08.md
 http://rs.tdwg.org/dwc/terms/guides/xml/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/2021-07-15.md
-http://rs.tdwg.org/dwc/terms/namespace/2018-08-26,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs//namespace/index.md
+http://rs.tdwg.org/dwc/terms/namespace/2018-08-26,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/namespace/2018-08-26.md
 http://rs.tdwg.org/dwc/terms/simple/2014-11-08,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/2014-11-08.md
 http://rs.tdwg.org/dwc/terms/simple/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/2021-07-15.md
 http://rs.tdwg.org/ebdc/doc/specification/1995,application/pdf,https://www.kew.org/sites/default/files/EconomicBotanyStandard_FEMCook_1995_TDWG_0.pdf
@@ -104,3 +104,4 @@ http://rs.tdwg.org/xdf/doc/specification/1989-11-02,application/pdf,https://gith
 http://rs.tdwg.org/dwc/terms/guides/xml/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/index.md
 http://rs.tdwg.org/dwc/terms/guides/text/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/index.md
 http://rs.tdwg.org/dwc/terms/simple/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/index.md
+http://rs.tdwg.org/dwc/terms/namespace/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/namespace/index.md
