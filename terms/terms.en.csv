@@ -109,7 +109,6 @@ establishmentMeans:rdfs_comment,Comment for Establishment Means http://rs.tdwg.o
 establishmentMeans:dcterms_description,Description for Establishment Means http://rs.tdwg.org/dwc/terms/establishmentMeans,"Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at http://rs.tdwg.org/dwc/doc/em/. For details, refer to https://doi.org/10.3897/biss.3.38084. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value."
 Event:label,Label for Event http://rs.tdwg.org/dwc/terms/Event,Event
 Event:rdfs_comment,Comment for Event http://rs.tdwg.org/dwc/terms/Event,An action that occurs at some location during some time.
-Event:examples,Examples for Event http://rs.tdwg.org/dwc/terms/Event,A specimen collection process. A camera trap image capture.  A marine trawl.
 eventDate:label,Label for Event Date http://rs.tdwg.org/dwc/terms/eventDate,Event Date
 eventDate:rdfs_comment,Comment for Event Date http://rs.tdwg.org/dwc/terms/eventDate,"The date-time or interval during which a dwc:Event occurred. For occurrences, this is the date-time when the dwc:Event was recorded. Not suitable for a time in a geological context."
 eventDate:dcterms_description,Description for Event Date http://rs.tdwg.org/dwc/terms/eventDate,Recommended best practice is to use a date that conforms to ISO 8601-1:2019.
@@ -148,7 +147,6 @@ formation:label,Label for Formation http://rs.tdwg.org/dwc/terms/formation,Forma
 formation:rdfs_comment,Comment for Formation http://rs.tdwg.org/dwc/terms/formation,The full name of the lithostratigraphic formation from which the dwc:MaterialEntity was collected.
 FossilSpecimen:label,Label for Fossil Specimen http://rs.tdwg.org/dwc/terms/FossilSpecimen,Fossil Specimen
 FossilSpecimen:rdfs_comment,Comment for Fossil Specimen http://rs.tdwg.org/dwc/terms/FossilSpecimen,A preserved specimen that is a fossil.
-FossilSpecimen:examples,Examples for Fossil Specimen http://rs.tdwg.org/dwc/terms/FossilSpecimen,A body fossil. A coprolite. A gastrolith. An ichnofossil. A piece of a petrified tree.
 genericName:label,Label for Generic Name http://rs.tdwg.org/dwc/terms/genericName,Generic Name
 genericName:rdfs_comment,Comment for Generic Name http://rs.tdwg.org/dwc/terms/genericName,The genus part of the dwc:scientificName without authorship.
 genericName:dcterms_description,Description for Generic Name http://rs.tdwg.org/dwc/terms/genericName,For synonyms the accepted genus and the genus part of the name may be different. The term dwc:genericName should be used together with dwc:specificEpithet to form a binomial and with dwc:infraspecificEpithet to form a trinomial. The term dwc:genericName should only be used for combinations. Uninomials of generic rank do not have a dwc:genericName.
@@ -160,7 +158,6 @@ geodeticDatum:rdfs_comment,Comment for Geodetic Datum http://rs.tdwg.org/dwc/ter
 geodeticDatum:dcterms_description,Description for Geodetic Datum http://rs.tdwg.org/dwc/terms/geodeticDatum,"Recommended best practice is to use the EPSG code of the SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value `unknown`. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value."
 GeologicalContext:label,Label for Geological Context http://rs.tdwg.org/dwc/terms/GeologicalContext,Geological Context
 GeologicalContext:rdfs_comment,Comment for Geological Context http://rs.tdwg.org/dwc/terms/GeologicalContext,"Geological information, such as stratigraphy, that qualifies a region or place."
-GeologicalContext:examples,Examples for Geological Context http://rs.tdwg.org/dwc/terms/GeologicalContext,A lithostratigraphic layer.
 geologicalContextID:label,Label for Geological Context ID http://rs.tdwg.org/dwc/terms/geologicalContextID,Geological Context ID
 geologicalContextID:rdfs_comment,Comment for Geological Context ID http://rs.tdwg.org/dwc/terms/geologicalContextID,"An identifier for the set of information associated with a dwc:GeologicalContext (the location within a geological context, such as stratigraphy). May be a global unique identifier or an identifier specific to the data set."
 georeferencedBy:label,Label for Georeferenced By http://rs.tdwg.org/dwc/terms/georeferencedBy,Georeferenced By
@@ -201,10 +198,8 @@ highestBiostratigraphicZone:label,Label for Highest Biostratigraphic Zone http:/
 highestBiostratigraphicZone:rdfs_comment,Comment for Highest Biostratigraphic Zone http://rs.tdwg.org/dwc/terms/highestBiostratigraphicZone,The full name of the highest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.
 HumanObservation:label,Label for Human Observation http://rs.tdwg.org/dwc/terms/HumanObservation,Human Observation
 HumanObservation:rdfs_comment,Comment for Human Observation http://rs.tdwg.org/dwc/terms/HumanObservation,An output of a human observation process.
-HumanObservation:examples,Examples for Human Observation http://rs.tdwg.org/dwc/terms/HumanObservation,Evidence of an Occurrence taken from field notes or literature. A record of an Occurrence without physical evidence nor evidence captured with a machine. 
 Identification:label,Label for Identification http://rs.tdwg.org/dwc/terms/Identification,Identification
 Identification:rdfs_comment,Comment for Identification http://rs.tdwg.org/dwc/terms/Identification,"A taxonomic determination (e.g., the assignment to a dwc:Taxon)."
-Identification:examples,Examples for Identification http://rs.tdwg.org/dwc/terms/Identification,A subspecies determination of an organism.
 identificationID:label,Label for Identification ID http://rs.tdwg.org/dwc/terms/identificationID,Identification ID
 identificationID:rdfs_comment,Comment for Identification ID http://rs.tdwg.org/dwc/terms/identificationID,An identifier for the dwc:Identification (the body of information associated with the assignment of a scientific name). May be a global unique identifier or an identifier specific to the data set.
 identificationQualifier:label,Label for Identification Qualifier http://rs.tdwg.org/dwc/terms/identificationQualifier,Identification Qualifier
@@ -270,7 +265,6 @@ lithostratigraphicTerms:label,Label for Lithostratigraphic Terms http://rs.tdwg.
 lithostratigraphicTerms:rdfs_comment,Comment for Lithostratigraphic Terms http://rs.tdwg.org/dwc/terms/lithostratigraphicTerms,The combination of all litho-stratigraphic names for the rock from which the dwc:MaterialEntity was collected.
 LivingSpecimen:label,Label for Living Specimen http://rs.tdwg.org/dwc/terms/LivingSpecimen,Living Specimen
 LivingSpecimen:rdfs_comment,Comment for Living Specimen http://rs.tdwg.org/dwc/terms/LivingSpecimen,A specimen that is alive.
-LivingSpecimen:examples,Examples for Living Specimen http://rs.tdwg.org/dwc/terms/LivingSpecimen,A living plant in a botanical garden. A living animal in a zoo.
 locality:label,Label for Locality http://rs.tdwg.org/dwc/terms/locality,Locality
 locality:rdfs_comment,Comment for Locality http://rs.tdwg.org/dwc/terms/locality,The specific description of the place.
 locality:dcterms_description,Description for Locality http://rs.tdwg.org/dwc/terms/locality,"Less specific geographic information can be provided in other geographic terms (dwc:higherGeography, dwc:continent, dwc:country, dwc:stateProvince, dwc:county, dwc:municipality, dwc:waterBody, dwc:island, dwc:islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description."
@@ -285,11 +279,9 @@ lowestBiostratigraphicZone:label,Label for Lowest Biostratigraphic Zone http://r
 lowestBiostratigraphicZone:rdfs_comment,Comment for Lowest Biostratigraphic Zone http://rs.tdwg.org/dwc/terms/lowestBiostratigraphicZone,The full name of the lowest possible geological biostratigraphic zone of the stratigraphic horizon from which the dwc:MaterialEntity was collected.
 MachineObservation:label,Label for Machine Observation http://rs.tdwg.org/dwc/terms/MachineObservation,Machine Observation
 MachineObservation:rdfs_comment,Comment for Machine Observation http://rs.tdwg.org/dwc/terms/MachineObservation,An output of a machine observation process.
-MachineObservation:examples,Examples for Machine Observation http://rs.tdwg.org/dwc/terms/MachineObservation,A photograph. A video. An audio recording. A remote sensing image. A Occurrence record based on telemetry.
 MaterialCitation:label,Label for Material Citation http://rs.tdwg.org/dwc/terms/MaterialCitation,Material Citation
 MaterialCitation:rdfs_comment,Comment for Material Citation http://rs.tdwg.org/dwc/terms/MaterialCitation,"A reference to or citation of one, a part of, or multiple specimens in scholarly publications."
-MaterialCitation:dcterms_description,Description for Material Citation http://rs.tdwg.org/dwc/terms/MaterialCitation,"This class constitutes a new value for the controlled vocabulary in the recommendations for basisOfRecord. When importing Darwin Core Archives of literature-based datasets to GBIF, the basisOfRecord should be changed from “Occurrence”, ""PreservedSpecimen"" or ""Literature"" to “MaterialCitation”."
-MaterialCitation:examples,Examples for Material Citation http://rs.tdwg.org/dwc/terms/MaterialCitation,"A citation of a physical specimen from a scientific collection in a taxonomic treatment in a scientific publication. A citation of a group of physical specimens, such as paratypes in a taxonomic treatment in a scientific publication. An occurrence mentioned in a field note book."
+MaterialCitation:dcterms_description,Description for Material Citation http://rs.tdwg.org/dwc/terms/MaterialCitation,"This class constitutes a new value for the controlled vocabulary in the recommendations for basisOfRecord. When importing Darwin Core Archives of literature-based datasets to GBIF, the basisOfRecord should be changed from ""Occurrence"", ""PreservedSpecimen"" or ""Literature"" to ""MaterialCitation""."
 MaterialEntity:label,Label for Material Entity http://rs.tdwg.org/dwc/terms/MaterialEntity,Material Entity
 MaterialEntity:rdfs_comment,Comment for Material Entity http://rs.tdwg.org/dwc/terms/MaterialEntity,"An entity that can be identified, exists for some period of time, and consists in whole or in part of physical matter while it exists."
 MaterialEntity:dcterms_description,Description for Material Entity http://rs.tdwg.org/dwc/terms/MaterialEntity,"The term is defined at the most general level to admit descriptions of any subtype of material entity within the scope of Darwin Core. In particular, any kind of material sample, preserved specimen, fossil, or exemplar from living collections is intended to be subsumed under this term."
@@ -375,7 +367,6 @@ nomenclaturalStatus:label,Label for Nomenclatural Status http://rs.tdwg.org/dwc/
 nomenclaturalStatus:rdfs_comment,Comment for Nomenclatural Status http://rs.tdwg.org/dwc/terms/nomenclaturalStatus,The status related to the original publication of the name and its conformance to the relevant rules of nomenclature. It is based essentially on an algorithm according to the business rules of the code. It requires no taxonomic opinion.
 Occurrence:label,Label for Occurrence http://rs.tdwg.org/dwc/terms/Occurrence,Occurrence
 Occurrence:rdfs_comment,Comment for Occurrence http://rs.tdwg.org/dwc/terms/Occurrence,An existence of a dwc:Organism at a particular place at a particular time.
-Occurrence:examples,Examples for Occurrence http://rs.tdwg.org/dwc/terms/Occurrence,A wolf pack on the shore of Kluane Lake in 1988. A virus in a plant leaf in the New York Botanical Garden at 15:29 on 2014-10-23. A fungus in Central Park in the summer of 1929.
 occurrenceID:label,Label for Occurrence ID http://rs.tdwg.org/dwc/terms/occurrenceID,Occurrence ID
 occurrenceID:rdfs_comment,Comment for Occurrence ID http://rs.tdwg.org/dwc/terms/occurrenceID,"An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique."
 occurrenceID:dcterms_description,Description for Occurrence ID http://rs.tdwg.org/dwc/terms/occurrenceID,"Recommended best practice is to use a persistent, globally unique identifier."
@@ -389,7 +380,6 @@ order:rdfs_comment,Comment for Order http://rs.tdwg.org/dwc/terms/order,The full
 Organism:label,Label for Organism http://rs.tdwg.org/dwc/terms/Organism,Organism
 Organism:rdfs_comment,Comment for Organism http://rs.tdwg.org/dwc/terms/Organism,A particular organism or defined group of organisms considered to be taxonomically homogeneous.
 Organism:dcterms_description,Description for Organism http://rs.tdwg.org/dwc/terms/Organism,"Instances of the dwc:Organism class are intended to facilitate linking one or more dwc:Identification instances to one or more dwc:Occurrence instances. Therefore, things that are typically assigned scientific names (such as viruses, hybrids, and lichens) and aggregates whose dwc:Occurrences are typically recorded (such as packs, clones, and colonies) are included in the scope of this class."
-Organism:examples,Examples for Organism http://rs.tdwg.org/dwc/terms/Organism,A specific bird. A specific wolf pack. A specific instance of a bacterial culture.
 organismID:label,Label for Organism ID http://rs.tdwg.org/dwc/terms/organismID,Organism ID
 organismID:rdfs_comment,Comment for Organism ID http://rs.tdwg.org/dwc/terms/organismID,An identifier for the dwc:Organism instance (as opposed to a particular digital record of the dwc:Organism). May be a globally unique identifier or an identifier specific to the data set.
 organismName:label,Label for Organism Name http://rs.tdwg.org/dwc/terms/organismName,Organism Name
@@ -446,7 +436,6 @@ preparations:rdfs_comment,Comment for Preparations http://rs.tdwg.org/dwc/terms/
 preparations:dcterms_description,Description for Preparations http://rs.tdwg.org/dwc/terms/preparations,"Recommended best practice is to separate the values in a list with space vertical bar space (` | `). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value."
 PreservedSpecimen:label,Label for Preserved Specimen http://rs.tdwg.org/dwc/terms/PreservedSpecimen,Preserved Specimen
 PreservedSpecimen:rdfs_comment,Comment for Preserved Specimen http://rs.tdwg.org/dwc/terms/PreservedSpecimen,A specimen that has been preserved.
-PreservedSpecimen:examples,Examples for Preserved Specimen http://rs.tdwg.org/dwc/terms/PreservedSpecimen,A plant on an herbarium sheet. A cataloged lot of fish in a jar.
 previousIdentifications:label,Label for Previous Identifications http://rs.tdwg.org/dwc/terms/previousIdentifications,Previous Identifications
 previousIdentifications:rdfs_comment,Comment for Previous Identifications http://rs.tdwg.org/dwc/terms/previousIdentifications,A list (concatenated and separated) of previous assignments of names to the dwc:Organism.
 previousIdentifications:dcterms_description,Description for Previous Identifications http://rs.tdwg.org/dwc/terms/previousIdentifications,Recommended best practice is to separate the values in a list with space vertical bar space (` | `).
@@ -530,7 +519,6 @@ superfamily:rdfs_comment,Comment for Superfamily http://rs.tdwg.org/dwc/terms/su
 superfamily:dcterms_description,Description for Superfamily http://rs.tdwg.org/dwc/terms/superfamily,"A taxonomic category subordinate to an order and superior to a family. According to ICZN article 29.2, the suffix `-oidea` is used for a superfamily name."
 Taxon:label,Label for Taxon http://rs.tdwg.org/dwc/terms/Taxon,Taxon
 Taxon:rdfs_comment,Comment for Taxon http://rs.tdwg.org/dwc/terms/Taxon,A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit.
-Taxon:examples,Examples for Taxon http://rs.tdwg.org/dwc/terms/Taxon,The genus Truncorotaloides as published by Brönnimann et al. in 1953 in the Journal of Paleontology Vol. 27(6) p. 817-820.
 taxonConceptID:label,Label for Taxon Concept ID http://rs.tdwg.org/dwc/terms/taxonConceptID,Taxon Concept ID
 taxonConceptID:rdfs_comment,Comment for Taxon Concept ID http://rs.tdwg.org/dwc/terms/taxonConceptID,An identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a dwc:Taxon.
 taxonID:label,Label for Taxon ID http://rs.tdwg.org/dwc/terms/taxonID,Taxon ID
