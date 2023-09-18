@@ -826,3 +826,15 @@ http://rs.tdwg.org/dwc/terms/version/preparations-2023-09-13,preparations
 http://rs.tdwg.org/dwc/terms/version/vitality-2023-09-13,vitality
 http://rs.tdwg.org/dwc/terms/version/MaterialSample-2023-09-13,MaterialSample
 http://rs.tdwg.org/dwc/terms/version/MaterialEntity-2023-09-13,MaterialEntity
+http://rs.tdwg.org/dwc/terms/version/Event-2023-09-18,Event
+http://rs.tdwg.org/dwc/terms/version/GeologicalContext-2023-09-18,GeologicalContext
+http://rs.tdwg.org/dwc/terms/version/Identification-2023-09-18,Identification
+http://rs.tdwg.org/dwc/terms/version/Occurrence-2023-09-18,Occurrence
+http://rs.tdwg.org/dwc/terms/version/Organism-2023-09-18,Organism
+http://rs.tdwg.org/dwc/terms/version/Taxon-2023-09-18,Taxon
+http://rs.tdwg.org/dwc/terms/version/LivingSpecimen-2023-09-18,LivingSpecimen
+http://rs.tdwg.org/dwc/terms/version/PreservedSpecimen-2023-09-18,PreservedSpecimen
+http://rs.tdwg.org/dwc/terms/version/FossilSpecimen-2023-09-18,FossilSpecimen
+http://rs.tdwg.org/dwc/terms/version/MaterialCitation-2023-09-18,MaterialCitation
+http://rs.tdwg.org/dwc/terms/version/HumanObservation-2023-09-18,HumanObservation
+http://rs.tdwg.org/dwc/terms/version/MachineObservation-2023-09-18,MachineObservation

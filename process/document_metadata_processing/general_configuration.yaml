@@ -6,6 +6,6 @@
 # However, for non-list of terms documents, these values
 # must be set manually here.
 
-versionDate: '2023-09-13'
+versionDate: '2023-09-18'
 utcOffset: -05:00
-docIri: http://rs.tdwg.org/dwc/terms/namespace/
+docIri: http://rs.tdwg.org/dwc/doc/list/
