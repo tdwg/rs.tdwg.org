@@ -2,7 +2,7 @@
 # process.py script is run. Typically, a copy is stored with the modifications CSV file.
 
 # Date assigned to all versions, usually the date of approval by the Executive Committee
-date_issued: '2023-09-13'
+date_issued: '2023-09-18'
 
 # UTC offset for the computer running the script
 local_offset_from_utc: -05:00
@@ -46,7 +46,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2023-09-13/terms_2023-09-13.csv
+  modifications_file_path: dwc-revisions/dwc-revisions-2023-09-18/terms_2023-09-18.csv
 
   # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
   # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
@@ -58,42 +58,6 @@ namespaces:
 
   # Description of the term list used in machine-readable metadata.
   description: This term list includes all currently valid terms that have been defined in the core Darwin Core namespace dwc:.  To comment on this schema, please create a new issue in https://github.com/tdwg/dwc/issues.
-
-# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
-# term lists, MUST follow conventional TDWG IRI patterns.
-- namespace_uri: http://rs.tdwg.org/dwc/iri/
-
-  # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: dwciri
-
-  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
-  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
-  database: iri
-
-  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
-  # Set to false if namespace issued by TDWG.
-  borrowed: false
-
-  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
-  new_term_list: false
-
-  # Normally set to false except for non-versioned namespaces like decisions.
-  utility_namespace: false
-
-  # Path to hand-edited changes CSV file. Relative to process directory from which the
-  # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2023-09-13/iri_2023-09-13.csv
-
-  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
-  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
-  # TDWG termlist IRI pattern.
-  termlist_uri: ''
-
-  # Label used for the term list in machine-readable metadata.
-  label: Darwin Core IRI-value Term Analogs
-
-  # Description of the term list used in machine-readable metadata.
-  description: The terms on this list are intended to be used with IRI values.
 
 # For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
 # term lists, MUST follow conventional TDWG IRI patterns.
@@ -118,7 +82,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2023-09-13/dcterms_2023-09-13.csv
+  modifications_file_path: dwc-revisions/dwc-revisions-2023-09-18/dcterms_2023-09-18.csv
 
   # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
   # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 

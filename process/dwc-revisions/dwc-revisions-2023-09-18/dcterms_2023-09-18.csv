@@ -1,0 +1,2 @@
+term_localName,label,rdfs_comment,dcterms_description,examples,rdf_type,tdwgutility_abcdEquivalence,tdwgutility_organizedInClass,tdwgutility_decision,tdwgutility_usageScope
+Location,Location,A spatial region or named place.,,"`the municipality of San Carlos de Bariloche, Río Negro, Argentina`; `the place defined by a georeference`",http://www.w3.org/2000/01/rdf-schema#Class,not in ABCD,,,simple
