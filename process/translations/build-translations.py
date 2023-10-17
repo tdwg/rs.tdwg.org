@@ -19,9 +19,9 @@ from collections import OrderedDict
 # Source (English) files to push to Crowdin.
 termfiles_to_translate = [
     'terms/terms',
-#    'establishmentMeans/establishmentMeans',
-#    'degreeOfEstablishment/degreeOfEstablishment',
-#    'pathway/pathway'
+    'establishmentMeans/establishmentMeans',
+    'degreeOfEstablishment/degreeOfEstablishment',
+    'pathway/pathway'
 ]
 
 # From those source files, these columns will be made available for translation
