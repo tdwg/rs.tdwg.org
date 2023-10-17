@@ -1,9 +1,9 @@
 term_localName,label_en,label_de,label_es,label_fr,label_ko,label_nl,label_ru,label_zh-Hans,label_zh-Hant,definition_en,definition_de,definition_es,definition_fr,definition_ko,definition_nl,definition_ru,definition_zh-Hans,definition_zh-Hant
 p,pathway concept scheme,,equema conceptual de ruta,,,,,,,,,,,,,,,
-p001,biological control,,control biológico,,,biologische bestrijding,,,,,,,,,,,,
+p001,biological control,,control biológico,,,biologische bestrijding,,,生物防治,,,,,,,,,
 p002,erosion control,,control de erosión,,,erosiebestrijding,,,,,,,,,,,,
 p003,fishery in the wild,,pesca silvestre,,,visserij in het wild,,,,,,,,,,,,
-p004,hunting,,caza,,,jacht,,,,,,,,,,,,
+p004,hunting,,caza,,,jacht,,,狩獵,,,,,,,,,
 p005,landscape improvement,,mejoramiento de paisaje,,,landschapsverbetering,,,,,,,,,,,,
 p006,conservation or wildlife management,,conservación o manejo de vida silvestre,,,conservatie of natuurbeheer,,,,,,,,,,,,
 p007,released for use,,liberado para uso,,,vrijgelaten met een doel,,,,,,,,,,,,
