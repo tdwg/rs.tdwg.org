@@ -85,6 +85,8 @@ Vinicius Ferreira, Natural History Museum of Denmark, Zoological Museum, Univers
 
 Jennifer C. Girón Duque, Museum of Texas Tech University, <https://orcid.org/0000-0002-0851-6883>, español (Spanish): Audiovisual Core subjectOrientation, Audiovisual Core subjectPart
 
+何芷蔚 (Daphne Z. Hoh), <https://orcid.org/0000-0002-7810-1034>, 繁體中文 (Chinese - traditional): Darwin Core establishmentMeans, Darwin Core degreeOfEstablishment
+
 Greg Jongsma, Florida Museum of Natural History, <https://orcid.org/0000-0001-8790-2610>, français (French): Darwin Core pathway
 
 김목영 (Mokyoung Kim), 국립생태원 (National Institute of Ecology), 한국인 (Korean): Audiovisual Core format, Darwin Core pathway
@@ -133,4 +135,4 @@ Multilingual `establishmentMeans` controlled vocabulary demo page (still need to
 
 
 -------
-Last modified 2023-05-08
+Last modified 2023-11-20
