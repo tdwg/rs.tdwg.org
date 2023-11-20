@@ -1,5 +1,5 @@
 term_localName,label_en,label_de,label_es,label_fr,label_ko,label_nl,label_ru,label_zh-Hans,label_zh-Hant,definition_en,definition_de,definition_es,definition_fr,definition_ko,definition_nl,definition_ru,definition_zh-Hans,definition_zh-Hant
-e,establishmentMeans controlled concept scheme,,esquema de conceptos controlado de establishmentMeans,,,establishmentMeans gecontroleerd conceptschema,,,,,,,,,,,,
+e,establishmentMeans controlled concept scheme,,esquema de conceptos controlado de establishmentMeans,,,establishmentMeans gecontroleerd conceptschema,,,原生或引進定義評估,,,,,,,,,
 e001,native (indigenous),,nativo (autóctono),,,inheems,,,原生,,,,,,,,,
 e002,native: reintroduced,,nativo: reintroducido,,,inheems: geherintroduceerd,,,原生：再引進,,,,,,,,,
 e003,"introduced (alien, exotic, non-native, nonindigenous)",,"introducido (exótico, no-nativo, no-autóctono)",,,"geïntroduceerd (uitheems, niet-inheems)",,,引進（外來、非原生、非原住）,,,,,,,,,
