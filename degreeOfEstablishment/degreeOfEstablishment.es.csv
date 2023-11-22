@@ -6,6 +6,7 @@
 "d001:notes","Notes for native (category A) http://rs.tdwg.org/dwc/terms/d001",""
 "d002:label","Label for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","en cautividad (categoría B1)"
 "d002:definition","Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","Individuos en cautiverio o cuarentena (es decir, individuos provistos de condiciones adecuadas para ellos, pero con medidas explícitas de contención)."
+"d002:usage","Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d002:notes","Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d003:label","Label for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003","cultivado (categoría B2)"
 "d003:definition","Definition for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003","Individuos en cultivo (es decir, individuos provistos de condiciones adecuadas para ellos, pero las medidas explícitas para evitar la dispersión son limitadas en el mejor de los casos)."
@@ -33,4 +34,5 @@
 "d010:notes","Notes for invasive (category D2) http://rs.tdwg.org/dwc/terms/d010",""
 "d011:label","Label for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011","invasivo generalizado (categoría E)"
 "d011:definition","Definition for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011","Especie totalmente invasora, con individuos que se dispersan, sobreviven y se reproducen en múltiples sitios a través de un espectro de hábitats y rango geográfico."
+"d011:usage","Usage for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011",""
 "d011:notes","Notes for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011",""
