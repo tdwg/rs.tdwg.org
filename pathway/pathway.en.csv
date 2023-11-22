@@ -36,6 +36,7 @@ p011:definition,Definition for botanic garden/zoo/aquaria (excluding domestic aq
 p011:notes,Notes for botanic garden/zoo/aquaria (excluding domestic aquaria) http://rs.tdwg.org/dwc/terms/p011,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p012:label,Label for pet/aquarium/terrarium species (including live food for such species) http://rs.tdwg.org/dwc/terms/p012,pet/aquarium/terrarium species (including live food for such species)
 p012:definition,Definition for pet/aquarium/terrarium species (including live food for such species) http://rs.tdwg.org/dwc/terms/p012,Privately kept animals.
+p012:usage,Usage for pet/aquarium/terrarium species (including live food for such species) http://rs.tdwg.org/dwc/terms/p012,"Animals kept for hunting, such as falcons and ferrets, SHOULD be included here, not under the hunting term."
 p012:notes,Notes for pet/aquarium/terrarium species (including live food for such species) http://rs.tdwg.org/dwc/terms/p012,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p013:label,Label for farmed animals (including animals left under limited control) http://rs.tdwg.org/dwc/terms/p013,farmed animals (including animals left under limited control)
 p013:definition,Definition for farmed animals (including animals left under limited control) http://rs.tdwg.org/dwc/terms/p013,"Animals cared for and bred with the specific intention of using their products, such as meat and milk."
@@ -48,6 +49,7 @@ p015:definition,Definition for fur farms http://rs.tdwg.org/dwc/terms/p015,"Orga
 p015:notes,Notes for fur farms http://rs.tdwg.org/dwc/terms/p015,Probably only applicable to vertebrates raised for their pelts and skins. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p016:label,Label for horticulture http://rs.tdwg.org/dwc/terms/p016,horticulture
 p016:definition,Definition for horticulture http://rs.tdwg.org/dwc/terms/p016,Plants distributed by the ornamental and decorative plants industry.
+p016:usage,Usage for horticulture http://rs.tdwg.org/dwc/terms/p016,"This term excludes plants and other organisms from aquaria and terrariums, which SHOULD be classified under the pet/aquarium/terrarium term."
 p016:notes,Notes for horticulture http://rs.tdwg.org/dwc/terms/p016,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p017:label,Label for ornamental purpose other than horticulture http://rs.tdwg.org/dwc/terms/p017,ornamental purpose other than horticulture
 p017:definition,Definition for ornamental purpose other than horticulture http://rs.tdwg.org/dwc/terms/p017,Ornamental plants introduced through pathways other than the horticultural industry.
@@ -72,12 +74,14 @@ p023:definition,Definition for food contaminant (including of live food) http://
 p023:notes,Notes for food contaminant (including of live food) http://rs.tdwg.org/dwc/terms/p023,"This term includes unintentional introduction of contaminants such as diseases on those foods and in the case of plants, should include seeds. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p024:label,"Label for contaminant on animals (except parasites, organisms transported by host/vector) http://rs.tdwg.org/dwc/terms/p024","contaminant on animals (except parasites, organisms transported by host/vector)"
 p024:definition,"Definition for contaminant on animals (except parasites, organisms transported by host/vector) http://rs.tdwg.org/dwc/terms/p024",Contaminants carried either on or in the body of transported animals.
+p024:usage,"Usage for contaminant on animals (except parasites, organisms transported by host/vector) http://rs.tdwg.org/dwc/terms/p024","This term excludes parasites and pathogens, which SHOULD be classified under their own specific term (""parasites on animals"")."
 p024:notes,"Notes for contaminant on animals (except parasites, organisms transported by host/vector) http://rs.tdwg.org/dwc/terms/p024","Transported animals carry other organisms in their coats, in their guts and in soil on their hooves and feet. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p025:label,Label for parasites on animals (including organisms transported by host and vector) http://rs.tdwg.org/dwc/terms/p025,parasites on animals (including organisms transported by host and vector)
 p025:definition,Definition for parasites on animals (including organisms transported by host and vector) http://rs.tdwg.org/dwc/terms/p025,Parasitic and pathogenic organisms transported with their host or vector animal.
 p025:notes,Notes for parasites on animals (including organisms transported by host and vector) http://rs.tdwg.org/dwc/terms/p025,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p026:label,"Label for contaminant on plants (except parasites, species transported by host/vector) http://rs.tdwg.org/dwc/terms/p026","contaminant on plants (except parasites, species transported by host/vector)"
 p026:definition,"Definition for contaminant on plants (except parasites, species transported by host/vector) http://rs.tdwg.org/dwc/terms/p026",Organisms transported on plant material.
+p026:usage,"Usage for contaminant on plants (except parasites, species transported by host/vector) http://rs.tdwg.org/dwc/terms/p026","This term excludes organisms carried on contaminant nursery material, seed contaminants, and the material from the timber trade, which SHOULD be classified under their own pathway terms."
 p026:notes,"Notes for contaminant on plants (except parasites, species transported by host/vector) http://rs.tdwg.org/dwc/terms/p026",See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p027:label,Label for parasites on plants (including species transported by host and vector) http://rs.tdwg.org/dwc/terms/p027,parasites on plants (including species transported by host and vector)
 p027:definition,Definition for parasites on plants (including species transported by host and vector) http://rs.tdwg.org/dwc/terms/p027,Parasitic and pathogenic organisms transported with their host or vector plant.
@@ -87,6 +91,7 @@ p028:definition,Definition for seed contaminant http://rs.tdwg.org/dwc/terms/p02
 p028:notes,Notes for seed contaminant http://rs.tdwg.org/dwc/terms/p028,"These may be parasites or pathogens of seeds or species that eat seeds, whether intended to be transported or not. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p029:label,Label for timber trade http://rs.tdwg.org/dwc/terms/p029,timber trade
 p029:definition,Definition for timber trade http://rs.tdwg.org/dwc/terms/p029,"Contaminants on unprocessed timber, processed wood and wood-derived products."
+p029:usage,Usage for timber trade http://rs.tdwg.org/dwc/terms/p029,"This term excludes packing material and habitat material made from wood, which SHOULD be included under their own terms (""packing material"" and ""transportation of habitat material"")."
 p029:notes,Notes for timber trade http://rs.tdwg.org/dwc/terms/p029,"Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p030:label,"Label for transportation of habitat material (soil, vegetation, wood etc) http://rs.tdwg.org/dwc/terms/p030","transportation of habitat material (soil, vegetation, wood etc)"
 p030:definition,"Definition for transportation of habitat material (soil, vegetation, wood etc) http://rs.tdwg.org/dwc/terms/p030",Organisms transported with their habitat material to a new location.
@@ -108,6 +113,7 @@ p035:definition,Definition for machinery/equipment http://rs.tdwg.org/dwc/terms/
 p035:notes,Notes for machinery/equipment http://rs.tdwg.org/dwc/terms/p035,"This includes military equipment, farm machinery and manufacturing equipment. This term does not include products carried by vehicles. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p036:label,Label for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036,people and their luggage/equipment (in particular tourism)
 p036:definition,Definition for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036,Organisms transported on people and/or their personal luggage.
+p036:usage,Usage for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036,"This term excludes recreational angling equipment, which SHOULD be classified under its own term (""angling/fishing equipment"")."
 p036:notes,Notes for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036,Examples include organisms transported by tourists. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p037:label,"Label for organic packing material, in particular wood packaging http://rs.tdwg.org/dwc/terms/p037","organic packing material, in particular wood packaging"
 p037:definition,"Definition for organic packing material, in particular wood packaging http://rs.tdwg.org/dwc/terms/p037","Organic material, particularly unprocessed plant material that is used to pack transported goods."
@@ -126,6 +132,7 @@ p041:definition,Definition for other means of transport http://rs.tdwg.org/dwc/t
 p041:notes,Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041,"Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p042:label,Label for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,interconnected waterways/basins/seas
 p042:definition,Definition for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.
+p042:usage,Usage for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,"Organisms transported along these corridors in ballast or as hull fouling SHOULD be categorised under the ""ship/boat ballast water"" or ""ship/boat hull fouling"" terms."
 p042:notes,Notes for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p043:label,Label for tunnels and land bridges http://rs.tdwg.org/dwc/terms/p043,tunnels and land bridges
 p043:definition,Definition for tunnels and land bridges http://rs.tdwg.org/dwc/terms/p043,"Unintentional dispersal by organisms using artificial tunnels, bridges, roads and railways."

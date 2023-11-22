@@ -6,6 +6,7 @@ d001:definition,Definition for native (category A) http://rs.tdwg.org/dwc/terms/
 d001:notes,Notes for native (category A) http://rs.tdwg.org/dwc/terms/d001,"Considered native and naturally occurring. See also ""category A"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
 d002:label,Label for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,captive (category B1)
 d002:definition,Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,"Individuals in captivity or quarantine (i.e., individuals provided with conditions suitable for them, but explicit measures of containment are in place)."
+d002:usage,Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,Only for cases where specific actions have been taken place to prevent escape of individuals or propagules.
 d002:notes,Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,"See also ""category B1"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
 d003:label,Label for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003,cultivated (category B2)
 d003:definition,Definition for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003,"Individuals in cultivation (i.e., individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best)."
@@ -33,4 +34,5 @@ d010:definition,Definition for invasive (category D2) http://rs.tdwg.org/dwc/ter
 d010:notes,Notes for invasive (category D2) http://rs.tdwg.org/dwc/terms/d010,"The population is maintained by reproduction, is spreading, and its progeny are also reproducing and spreading. See also ""category D2"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
 d011:label,Label for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011,widespread invasive (category E)
 d011:definition,Definition for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011,"Fully invasive species, with individuals dispersing, surviving and reproducing at multiple sites across a spectrum of habitats and geographic range."
+d011:usage,Usage for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011,This term is only used for those invasives with the highest degree of encroachment.
 d011:notes,Notes for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011,"See also ""category E"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
