@@ -1,5 +1,5 @@
 "identifier","context","text"
-"e:label","Label for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e",""
+"e:label","Label for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e","原生或引進定義評估"
 "e:definition","Definition for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e",""
 "e001:label","Label for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","原生"
 "e001:definition","Definition for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","在自然範圍內活動的分類群"
