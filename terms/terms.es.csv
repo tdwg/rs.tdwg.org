@@ -1,6 +1,6 @@
 "identifier","context","text"
 "acceptedNameUsage:label","Label for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage","Nombre aceptado en uso"
-"acceptedNameUsage:rdfs_comment","Comment for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
+"acceptedNameUsage:rdfs_comment","Comment for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage","El nombre completo, con autoría e información de fecha si se conoce, del taxón actualmente válido (zoológico) o aceptado (botánico) dwc:Taxon."
 "acceptedNameUsage:dcterms_description","Description for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
 "acceptedNameUsage:examples","Examples for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
 "acceptedNameUsageID:label","Label for Accepted Name Usage ID http://rs.tdwg.org/dwc/terms/acceptedNameUsageID",""
