@@ -23,15 +23,31 @@
         },
         {
           "@language": "es",
-          "@value": "esquema del concepto degreeOfEstablishment "
+          "@value": "esquema del concepto degreeOfEstablishment"
         },
         {
           "@language": "fr",
-          "@value": "schema pour le concept du degré d'implantation "
+          "@value": "schema pour le concept du degré d'implantation"
         },
         {
           "@language": "ko",
-          "@value": "정착수준 개념 체계"
+          "@value": "정착수위 개념 체계"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "拓殖程度"
         }
       ],
       "skos:definition": [
@@ -45,15 +61,31 @@
         },
         {
           "@language": "es",
-          "@value": "Un esquema conceptual SKOS que se utilizará como vocabulario controlado para los términos Darwin Core dwc:degreeOfEstablishment  y dwciri:degreeOfEstablishment "
+          "@value": "Un esquema conceptual SKOS que se utilizará como vocabulario controlado para los términos Darwin Core dwc:degreeOfEstablishment y dwciri:degreeOfEstablishment"
         },
         {
           "@language": "fr",
-          "@value": "Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core  dwc:establishmentMeans et dwciri:establishmentMeans"
+          "@value": "Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core dwc:establishmentMeans et dwciri:establishmentMeans"
         },
         {
           "@language": "ko",
           "@value": "다윈 핵심 용어 dwc:degreeOfEstablishement 및 dwciri:degreeOfEstablishement의 통제된 어휘로 사용되는 SKOS 개념 체계"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -77,11 +109,27 @@
         },
         {
           "@language": "fr",
-          "@value": "native (catégorie A)"
+          "@value": "natif (catégorie A)"
         },
         {
           "@language": "ko",
-          "@value": "토착 "
+          "@value": "토착"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "原生"
         }
       ],
       "skos:definition": [
@@ -95,15 +143,31 @@
         },
         {
           "@language": "es",
-          "@value": "No se transporta más allá de los límites del área de distribución nativa"
+          "@value": "No se transporta más allá de los límites del área de distribución nativa."
         },
         {
           "@language": "fr",
-          "@value": "Non transportée au-delà des limites de la répartition native"
+          "@value": "Non transportable au-delà des limites de la répartition native."
         },
         {
           "@language": "ko",
           "@value": "토착 범위의 한계를 넘어 운송되지 않음"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "未運輸至原本活動範圍之外"
         }
       ]
     },
@@ -127,11 +191,27 @@
         },
         {
           "@language": "fr",
-          "@value": "captive (catégorie B1)"
+          "@value": "captif (catégorie B1)"
         },
         {
           "@language": "ko",
-          "@value": "감금"
+          "@value": "포획"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "收容"
         }
       ],
       "skos:definition": [
@@ -145,15 +225,31 @@
         },
         {
           "@language": "es",
-          "@value": "Individuos en cautiverio o cuarentena (es decir, individuos provistos de condiciones adecuadas para ellos, pero con medidas explícitas de contención)"
+          "@value": "Individuos en cautiverio o cuarentena (es decir, individuos provistos de condiciones adecuadas para ellos, pero con medidas explícitas de contención)."
         },
         {
           "@language": "fr",
-          "@value": "Individus en captivité ou en quarantaine (i.e. individus bénéficiant de conditions qui leur conviennent, mais où des mesures explicites de confinement sont en place)"
+          "@value": "Individus en captivité ou en quarantaine (i.e. individus dont les conditions sont acceptables pour eux, mais dont les conditions de captivité sont en place)."
         },
         {
           "@language": "ko",
           "@value": "구금이나 격리된 개체들(개체들에 적합한 조건을 제공하지만, 오염이 제 자리에 있도록 명백한 조치가 취해지고 있음)"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": ""
         }
       ]
     },
@@ -177,11 +273,27 @@
         },
         {
           "@language": "fr",
-          "@value": "cultivée (catégorie B2)"
+          "@value": "cultivé (catégorie B2)"
         },
         {
           "@language": "ko",
+          "@value": "경작"
+        },
+        {
+          "@language": "nl",
           "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "栽培"
         }
       ],
       "skos:definition": [
@@ -195,14 +307,30 @@
         },
         {
           "@language": "es",
-          "@value": "Individuos en cultivo (es decir, individuos provistos de condiciones adecuadas para ellos, pero las medidas explícitas para evitar la dispersión son limitadas en el mejor de los casos)"
+          "@value": "Individuos en cultivo (es decir, individuos provistos de condiciones adecuadas para ellos, pero las medidas explícitas para evitar la dispersión son limitadas en el mejor de los casos)."
         },
         {
           "@language": "fr",
-          "@value": "Individus en culture (i.e. individus bénéficiants de conditions qui leur conviennent, mais dont les mesures de prévention de dispersion sont limités au maximum)"
+          "@value": "Individus en culture (i.e. individus dont les conditions sont acceptables mais dont les mesures de prévention de dispersion sont limités au maximum)."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -227,11 +355,27 @@
         },
         {
           "@language": "fr",
-          "@value": "relâchée (catégorie B3)"
+          "@value": "relâché (catégorie B3)"
         },
         {
           "@language": "ko",
-          "@value": "탈출"
+          "@value": "방출"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "野放"
         }
       ],
       "skos:definition": [
@@ -245,14 +389,30 @@
         },
         {
           "@language": "es",
-          "@value": "Individuos liberados directamente en un entorno nuevo"
+          "@value": "Individuos liberados directamente en un entorno nuevo."
         },
         {
           "@language": "fr",
-          "@value": "Individus directement relâchés dans un nouvel environnement"
+          "@value": "Individus directement relâchés dans un nouvel environnement."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -282,6 +442,22 @@
         {
           "@language": "ko",
           "@value": "실패"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "衰退中"
         }
       ],
       "skos:definition": [
@@ -295,14 +471,30 @@
         },
         {
           "@language": "es",
-          "@value": "Individuos liberados fuera del cautiverio o del cultivo en un lugar, pero incapaces de sobrevivir durante un periodo significativo"
+          "@value": "Individuos liberados fuera del cautiverio o del cultivo en un lugar, pero incapaces de sobrevivir durante un periodo significativo."
         },
         {
           "@language": "fr",
-          "@value": "Individus relâchés dans un lieu en dehors de la zone de captivité ou d'élevage, mais qui sont incapables de survivre pour une période significative."
+          "@value": "Individus relâchés en dehors de la zone de captivité ou de la culture dans un lieu mais qui sont incapables de survivre pour une période significative."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -327,11 +519,27 @@
         },
         {
           "@language": "fr",
-          "@value": "acclimatée (catégorie C1) ; occasionnelle (catégorie C1)"
+          "@value": "moyen (catégorie C1)"
         },
         {
           "@language": "ko",
+          "@value": "임시"
+        },
+        {
+          "@language": "nl",
           "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "偶然出現的"
         }
       ],
       "skos:definition": [
@@ -341,18 +549,34 @@
         },
         {
           "@language": "de",
-          "@value": "Individuen, die außerhalb von Gefangenschaft oder Zucht an einem Ort überleben, sich aber nicht fortpflanzen. "
+          "@value": "Individuen, die außerhalb von Gefangenschaft oder Zucht an einem Ort überleben, sich aber nicht fortpflanzen."
         },
         {
           "@language": "es",
-          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar sin reproducción"
+          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar sin reproducción."
         },
         {
           "@language": "fr",
-          "@value": "Individus survivant dans un lieu en dehors de la zone de captivité ou d'élevage, mais sans succès de repoduction."
+          "@value": "Individus survivant en dehors de la zone de captivité ou de culture dans un lieu sans repoduction."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -381,7 +605,23 @@
         },
         {
           "@language": "ko",
-          "@value": "번식"
+          "@value": "재생산"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "繁殖中"
         }
       ],
       "skos:definition": [
@@ -395,14 +635,30 @@
         },
         {
           "@language": "es",
-          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar. Se reproduce, pero la población no es autosuficiente"
+          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar. Se reproduce, pero la población no es autosuficiente."
         },
         {
           "@language": "fr",
-          "@value": "Individus survivant dans un lieu en dehors de la zone de captivité ou d'élevage. La reproduction peut se faire mais la population ne se maintient pas tout seule."
+          "@value": "Individus survivant en dehors de la zone de captivité ou de la culture dans un lieu. La reproduction peut se faire mais la population ne se maintient pas tout seule."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -427,11 +683,27 @@
         },
         {
           "@language": "fr",
-          "@value": "naturalisée (catégorie C3) ; établie (catégorie C3)"
+          "@value": "implanté (catégorie C3)"
         },
         {
           "@language": "ko",
           "@value": "정착"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "歸化"
         }
       ],
       "skos:definition": [
@@ -445,14 +717,30 @@
         },
         {
           "@language": "es",
-          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar. Se reproducen y la población es autosuficiente"
+          "@value": "Individuos que sobreviven fuera de la cautividad o del cultivo en un lugar. Se reproducen y la población es autosuficiente."
         },
         {
           "@language": "fr",
-          "@value": "Individus survivant dans un lieu en dehors de la zone de captivité ou d'élevage. La reproduction se fait et la population se maintient toute seule."
+          "@value": "Individus survivant en dehors de la zone de captivité ou de la culture dans un lieu. La reproduction se fait et la population se maintient toute seule."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -477,11 +765,27 @@
         },
         {
           "@language": "fr",
-          "@value": "colonisante (catégorie D1)"
+          "@value": "colonisant (catégorie D1)"
         },
         {
           "@language": "ko",
-          "@value": "집단화"
+          "@value": "서식"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "拓殖中"
         }
       ],
       "skos:definition": [
@@ -495,14 +799,30 @@
         },
         {
           "@language": "es",
-          "@value": "Población autosuficiente fuera de cautiverio o cultivo, con individuos que sobreviven a una distancia significativa del punto de introducción original"
+          "@value": "Población autosuficiente fuera de cautiverio o cultivo, con individuos que sobreviven a una distancia significativa del punto de introducción original."
         },
         {
           "@language": "fr",
-          "@value": "Population autosuffisante en dehors de la captivité ou de l'élevage, avec des individus survivant à une distance significative du point d'introduction d'origine."
+          "@value": "Population auto-maintenue en dehors de la zone de captivité ou de culture, avec des individus survivant à une distance significative du point d'introduction."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -527,11 +847,27 @@
         },
         {
           "@language": "fr",
-          "@value": "envahissante (category D2)"
+          "@value": "invasif (category D2)"
         },
         {
           "@language": "ko",
           "@value": "침입"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "入侵"
         }
       ],
       "skos:definition": [
@@ -545,14 +881,30 @@
         },
         {
           "@language": "es",
-          "@value": "Población autosuficiente fuera de cautiverio o cultivo, con individuos que sobreviven y se reproducen a una distancia significativa del punto de introducción original"
+          "@value": "Población autosuficiente fuera de cautiverio o cultivo, con individuos que sobreviven y se reproducen a una distancia significativa del punto de introducción original."
         },
         {
           "@language": "fr",
-          "@value": "Population autosuffisante en dehors de la captivité ou de l'élevage, avec des individus survivant et se reproduisant à une distance significative du point d'introduction d'origine."
+          "@value": "Population auto-maintenue en dehors de la zone de captivité ou de culture, avec des individus survivant et se reproduisant à une distance significative du point d'introduction."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]
@@ -577,11 +929,27 @@
         },
         {
           "@language": "fr",
-          "@value": "largement envahissante (catégorie E)"
+          "@value": "largement invasif (catégorie E)"
         },
         {
           "@language": "ko",
           "@value": "광범위한 침입"
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
+          "@value": "廣泛入侵"
         }
       ],
       "skos:definition": [
@@ -595,14 +963,30 @@
         },
         {
           "@language": "es",
-          "@value": "Especie totalmente invasora, con individuos que se dispersan, sobreviven y se reproducen en múltiples sitios a través de un espectro de hábitats y rango geográfico"
+          "@value": "Especie totalmente invasora, con individuos que se dispersan, sobreviven y se reproducen en múltiples sitios a través de un espectro de hábitats y rango geográfico."
         },
         {
           "@language": "fr",
-          "@value": "Espèce totalement envahissante, avec des individus qui se dispersent, survivent et se reproduisent sur plusieurs sites à travers un large éventail d'habitats et de zones géographiques."
+          "@value": "Espèces pleinement invasives, avec des individus se dispersant, survivant et se reproduisant dans des sites multiples avec un variété d'habitats et de zones géographiques."
         },
         {
           "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": ""
+        },
+        {
+          "@language": "ru",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
+          "@language": "zh-Hant",
           "@value": ""
         }
       ]

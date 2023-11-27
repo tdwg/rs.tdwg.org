@@ -18,24 +18,36 @@
           "@value": "establishmentMeans controlled concept scheme"
         },
         {
-          "@language": "es",
-          "@value": "esquema de conceptos controlado de establishmentMeans"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "establishmentMeans gecontroleerd conceptschema"
+          "@language": "es",
+          "@value": "esquema de conceptos controlado de establishmentMeans"
         },
         {
           "@language": "fr",
           "@value": "Schéma conceptuel contrôlé pour le moyen d'implantation"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "establishmentMeans gecontroleerd conceptschema"
+        },
+        {
           "@language": "ru",
           "@value": "establishmentMeans контроллируемая схема концепции"
         },
         {
+          "@language": "zh-Hans",
+          "@value": ""
+        },
+        {
           "@language": "zh-Hant",
-          "@value": "拓殖方法控制詞彙結構"
+          "@value": "原生或引進定義評估"
         }
       ],
       "skos:definition": [
@@ -44,20 +56,32 @@
           "@value": "A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:establishmentMeans and dwciri:establishmentMeans"
         },
         {
+          "@language": "de",
+          "@value": ""
+        },
+        {
           "@language": "es",
           "@value": "Un Esquema de Conceptos de SKOS para ser utilizado como vocabulario controlado para los términos de Darwin Core dwc:establishmentMeans y dwciri:establishmentMeans"
+        },
+        {
+          "@language": "fr",
+          "@value": "Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core dwc:moyen d'implantation et dwciri:moyen d'implantation"
+        },
+        {
+          "@language": "ko",
+          "@value": ""
         },
         {
           "@language": "nl",
           "@value": "Een SKOS Conceptschema te gebruiken als een gecontoleerde woordenschat voor de Darwin Core termen dwc:establishmentMeans en dwciri:establishmentMeans"
         },
         {
-          "@language": "fr",
-          "@value": "Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core  dwc:moyen d'implantation et dwciri:moyen d'implantation"
-        },
-        {
           "@language": "ru",
           "@value": "Концептуальная схема SKOS, которая будет использоваться в качестве контролируемого словаря для терминов Darwin Core dwc:establishmentMeans и dwciri:establishmentMeans"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -76,20 +100,32 @@
           "@value": "native (indigenous)"
         },
         {
-          "@language": "es",
-          "@value": "nativo (autóctono)"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "inheems"
+          "@language": "es",
+          "@value": "nativo (autóctono)"
         },
         {
           "@language": "fr",
           "@value": "natif (indigène)"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "inheems"
+        },
+        {
           "@language": "ru",
           "@value": "естественный (нативный)"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -102,20 +138,32 @@
           "@value": "A taxon occurring within its natural range."
         },
         {
-          "@language": "es",
-          "@value": "Un taxón que se encuentra dentro de su área de distribución natural"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "Een taxon dat voorkomt binnen zijn natuurlijk verspreidingsgebied"
+          "@language": "es",
+          "@value": "Un taxón que se encuentra dentro de su área de distribución natural."
         },
         {
           "@language": "fr",
           "@value": "Un taxon présent dans son aire de répartition naturelle."
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Een taxon dat voorkomt binnen zijn natuurlijk verspreidingsgebied."
+        },
+        {
           "@language": "ru",
           "@value": "Таксон обитает в пределах естественного ареала."
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -134,20 +182,32 @@
           "@value": "native: reintroduced"
         },
         {
-          "@language": "es",
-          "@value": "nativo: reintroducido"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "inheems: geherintroduceerd"
+          "@language": "es",
+          "@value": "nativo: reintroducido"
         },
         {
           "@language": "fr",
           "@value": "natif : réintroduit"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "inheems: geherintroduceerd"
+        },
+        {
           "@language": "ru",
           "@value": "естественный: реинтродуцированный"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -160,20 +220,32 @@
           "@value": "A taxon re-established by direct introduction by humans into an area that was once part of its natural range, but from where it had become extinct."
         },
         {
-          "@language": "es",
-          "@value": "Un taxón reestablecido por introducción humana directa en una zona que era parte de su área de distribución natural, pero en la cual estaba extinguido."
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "Een taxon dat zich opnieuw vestigde door directe introductie door mensen in een gebied dat oorspronkelijk deel uitmaakte van zijn natuurlijk verspreidingsgebied, maar waar het was uitgestorven."
+          "@language": "es",
+          "@value": "Un taxón reestablecido por introducción humana directa en una zona que era parte de su área de distribución natural, pero en la cual estaba extinguido."
         },
         {
           "@language": "fr",
           "@value": "Un taxon réimplanté via introduction directe par des humains dans une zone qui faisait auparavant partie de son aire de répartition naturelle, mais d'où il avait disparu."
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Een taxon dat zich opnieuw vestigde door directe introductie door mensen in een gebied dat oorspronkelijk deel uitmaakte van zijn natuurlijk verspreidingsgebied, maar waar het was uitgestorven."
+        },
+        {
           "@language": "ru",
           "@value": "Таксон, ранее обитавший в данной местности, но потом исчезнувший по вине человека, вовращен путем реинтродукции."
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -192,20 +264,32 @@
           "@value": "introduced (alien, exotic, non-native, nonindigenous)"
         },
         {
-          "@language": "es",
-          "@value": "introducido (exótico, no-nativo, no-autóctono)"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "geïntroduceerd (uitheems, niet-inheems)"
+          "@language": "es",
+          "@value": "introducido (exótico, no-nativo, no-autóctono)"
         },
         {
           "@language": "fr",
           "@value": "introduit (exotique, non-natif, non-indigène)"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "geïntroduceerd (uitheems, niet-inheems)"
+        },
+        {
           "@language": "ru",
           "@value": "интродуцирован (чужеродный, экзотичный, не местный, не свойствен для данной территории)"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -218,20 +302,32 @@
           "@value": "Establishment of a taxon by human agency into an area that is not part of its natural range."
         },
         {
-          "@language": "es",
-          "@value": "Establecimiento de un taxón por acción humana en una zona que no es parte de su área de distribución natural."
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "Vestiging van een taxon door menselijk handelen in een gebied dat geen deel uitmaakt van zijn natuurlijk verspreidingsgebied"
+          "@language": "es",
+          "@value": "Establecimiento de un taxón por acción humana en una zona que no es parte de su área de distribución natural."
         },
         {
           "@language": "fr",
           "@value": "Implantation d'un taxon dans une zone ne faisant pas partie de son aire de répartition naturelle."
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Vestiging van een taxon door menselijk handelen in een gebied dat geen deel uitmaakt van zijn natuurlijk verspreidingsgebied."
+        },
+        {
           "@language": "ru",
           "@value": "Таксон, случайно (не намеренно) перевезенный людьми и адаптировавшийся на новом месте."
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -250,20 +346,32 @@
           "@value": "introduced: assisted colonisation"
         },
         {
-          "@language": "es",
-          "@value": "introducido: colonización asistida"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "geïntroduceerd: geassisteerde kolonisatie"
+          "@language": "es",
+          "@value": "introducido: colonización asistida"
         },
         {
           "@language": "fr",
           "@value": "introduit : colonisation assistée"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "geïntroduceerd: geassisteerde kolonisatie"
+        },
+        {
           "@language": "ru",
           "@value": "интродуцирован: преднамеренная интродукция"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -276,20 +384,32 @@
           "@value": "Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon's natural range."
         },
         {
-          "@language": "es",
-          "@value": "Establecimiento de un taxón específicamente con la intención de crear una población salvaje autosostenible en una zona que no es parte del área de distribución natural del taxón."
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "Vestiging van een taxon specifiek met het doel om een zich zelfonderhoudende wilde populatie te creëren in een gebied dat geen deel uitmaakt van het taxon zijn natuurlijk verspreidingsgebied"
+          "@language": "es",
+          "@value": "Establecimiento de un taxón específicamente con la intención de crear una población salvaje autosostenible en una zona que no es parte del área de distribución natural del taxón."
         },
         {
           "@language": "fr",
           "@value": "Implantation d'un taxon avec l'intention spécifique de créer une population sauvage durable dans une zone qui ne fait pas partie de l'aire de répartition naturelle du taxon."
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Vestiging van een taxon specifiek met het doel om een zich zelfonderhoudende wilde populatie te creëren in een gebied dat geen deel uitmaakt van het taxon zijn natuurlijk verspreidingsgebied."
+        },
+        {
           "@language": "ru",
           "@value": "Таксон, преднамеренно перезенный людьми и адаптировавшийсй на новом месте."
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -308,20 +428,32 @@
           "@value": "vagrant (casual)"
         },
         {
-          "@language": "es",
-          "@value": "vagabundo (incidental)"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "zwervend (incidenteel)"
+          "@language": "es",
+          "@value": "vagabundo (incidental)"
         },
         {
           "@language": "fr",
           "@value": "erratique (occasionnel)"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "zwervend (incidenteel)"
+        },
+        {
           "@language": "ru",
           "@value": "бродячий (случайная интродукция)"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -334,20 +466,32 @@
           "@value": "The temporary occurrence of a taxon far outside its natural or migratory range."
         },
         {
-          "@language": "es",
-          "@value": "La presencia temporaria de un taxón muy por afuera de su área de distribución o de migración natural."
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "Het tijdelijk voorkomen van een taxon ver buiten zijn natuurlijk verspreidingsgebied of trekgebied."
+          "@language": "es",
+          "@value": "La presencia temporaria de un taxón muy por afuera de su área de distribución o de migración natural."
         },
         {
           "@language": "fr",
           "@value": "Une occurrence temporaire d'un taxon bien au-delà de son aire de répartition ou de migration naturelle."
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "Het tijdelijk voorkomen van een taxon ver buiten zijn natuurlijk verspreidingsgebied of trekgebied."
+        },
+        {
           "@language": "ru",
           "@value": "Временное появление таксона далеко за пределами его естественного или миграционного ареала."
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -366,20 +510,32 @@
           "@value": "uncertain (unknown, cryptogenic)"
         },
         {
-          "@language": "es",
-          "@value": "incierto (desconocido, criptogénico)"
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "onzeker (onbekend, cryptogeen)"
+          "@language": "es",
+          "@value": ""
         },
         {
           "@language": "fr",
           "@value": "incertain (inconnu, cryptogénique)"
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "onzeker (onbekend, cryptogeen)"
+        },
+        {
           "@language": "ru",
           "@value": "неопределенный (неизвестный, криптический)"
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
@@ -392,20 +548,32 @@
           "@value": "The origin of the occurrence of the taxon in an area is obscure."
         },
         {
-          "@language": "es",
-          "@value": "El origen de la presencia de un taxón en una zona no es bien conocido."
+          "@language": "de",
+          "@value": ""
         },
         {
-          "@language": "nl",
-          "@value": "De oorsprong van het voorkomen van het taxon in een gebied is onbekend"
+          "@language": "es",
+          "@value": ""
         },
         {
           "@language": "fr",
           "@value": "L'origine de l'occurrence du taxon dans la zone est obscure."
         },
         {
+          "@language": "ko",
+          "@value": ""
+        },
+        {
+          "@language": "nl",
+          "@value": "De oorsprong van het voorkomen van het taxon in een gebied is onbekend."
+        },
+        {
           "@language": "ru",
           "@value": "Появление таксона в регионе имеет неясное происхождение."
+        },
+        {
+          "@language": "zh-Hans",
+          "@value": ""
         },
         {
           "@language": "zh-Hant",
