@@ -1,6 +1,6 @@
 "identifier","context","text"
 "acceptedNameUsage:label","Label for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage","有效學名使用"
-"acceptedNameUsage:rdfs_comment","Comment for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
+"acceptedNameUsage:rdfs_comment","Comment for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage","目前有效（動物）或接受（植物）並包含命名作者及年代（若已知）的完整學名。"
 "acceptedNameUsage:dcterms_description","Description for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
 "acceptedNameUsage:examples","Examples for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
 "acceptedNameUsageID:label","Label for Accepted Name Usage ID http://rs.tdwg.org/dwc/terms/acceptedNameUsageID","有效學名使用識別碼"
