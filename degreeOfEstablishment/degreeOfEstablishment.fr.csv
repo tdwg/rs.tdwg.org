@@ -6,7 +6,7 @@
 "d001:notes","Notes for native (category A) http://rs.tdwg.org/dwc/terms/d001",""
 "d002:label","Label for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","captif (catégorie B1)"
 "d002:definition","Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","Individus en captivité ou en quarantaine (i.e. individus dont les conditions sont acceptables pour eux, mais dont les conditions de captivité sont en place)."
-"d002:usage","Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
+"d002:usage","Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","Uniquement dans les cas où des mesures spécifiques ont été prises pour empêcher la dispersion d'individus ou de propagules."
 "d002:notes","Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d003:label","Label for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003","cultivé (catégorie B2)"
 "d003:definition","Definition for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003","Individus en culture (i.e. individus dont les conditions sont acceptables mais dont les mesures de prévention de dispersion sont limités au maximum)."
