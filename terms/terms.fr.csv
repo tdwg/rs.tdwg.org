@@ -30,7 +30,7 @@
 "bed:rdfs_comment","Comment for Bed http://rs.tdwg.org/dwc/terms/bed",""
 "behavior:label","Label for Behavior http://rs.tdwg.org/dwc/terms/behavior","Comportement"
 "behavior:rdfs_comment","Comment for Behavior http://rs.tdwg.org/dwc/terms/behavior","Le comportement du sujet de l'observation au moment où la dwc:Occurrence a été enregistrée."
-"behavior:dcterms_description","Description for Behavior http://rs.tdwg.org/dwc/terms/behavior",""
+"behavior:dcterms_description","Description for Behavior http://rs.tdwg.org/dwc/terms/behavior","Ce terme a un équivalent dans le dwciri: namespace qui n'autorise qu'un IRI comme valeur, alors que ce terme autorise n'importe quelle valeur sous forme de chaîne de caractères."
 "caste:label","Label for Caste http://rs.tdwg.org/dwc/terms/caste","Caste"
 "caste:rdfs_comment","Comment for Caste http://rs.tdwg.org/dwc/terms/caste","Catégorisation des individus pour les espèces eusociales (y compris quelques mammifères et arthropodes)."
 "caste:dcterms_description","Description for Caste http://rs.tdwg.org/dwc/terms/caste","La pratique optimale recommandée est d'utiliser un vocabulaire contrôlé qui correspond le mieux au dwc:Taxon. Ce terme a un équivalent dans le dwciri: namespace qui n'autorise qu'un IRI comme valeur, alors que ce terme autorise n'importe quelle valeur sous forme de chaîne de caractères."
