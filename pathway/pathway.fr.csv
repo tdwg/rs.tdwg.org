@@ -140,7 +140,7 @@
 "p044:label","Label for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044","dispersion naturelle d'organismes exotiques envahissants à travers les frontières"
 "p044:definition","Definition for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044","Dispersion d'organismes vers de nouvelles régions par dispersion naturelle à partir de régions dans lesquelles ils sont étrangers."
 "p044:notes","Notes for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044","Cela désigne les espèces exotiques qui ont déjà été introduites par l'une des voies suivantes : libération dans la nature, échappée de confinement, contamination dans les transports, voyage clandestins dans les transports ou utilisation de couloirs. Voir également Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
-"p045:label","Label for release in nature http://rs.tdwg.org/dwc/terms/p045","libération dans la nature"
+"p045:label","Label for release in nature http://rs.tdwg.org/dwc/terms/p045","relâchement dans la nature"
 "p045:definition","Definition for release in nature http://rs.tdwg.org/dwc/terms/p045","Organismes déplacés et relâchés par l'Homme dans un environnement (semi-)naturel dans l'intention qu'ils y vivent par la suite sans aide humaine."
 "p045:notes","Notes for release in nature http://rs.tdwg.org/dwc/terms/p045","Voir également Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 "p046:label","Label for escape from confinement http://rs.tdwg.org/dwc/terms/p046","fuite de confinement"
