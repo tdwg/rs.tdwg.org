@@ -10,22 +10,24 @@ For the main landing page, see the repository readme visible at the [repository 
 
 We will try to keep the URLs linked below stable so that they can be periodically harvested by applications.
 
+The CSV files are updated dynamically via the CrowdIn translation system and should contain the most recent updates. The JSON-LD files are updated periodically, but may lag behind the CSV files. The were last updated on 2023-11-20.
+
 We are still working on acknowledging the translators in the machine-readable metadata.
 
 ### Darwin Core controlled vocabularies:
 
 | controlled vocabulary | format | extension | media type | languages |
 |---------------------- | ------ | --------- | ---------- | --------- |
-| degreeOfEstablishment | [JSON-LD](cvJson/degreeOfEstablishment.json) | json | application/json | en, de, es, fr, ko (incomplete) |
-| degreeOfEstablishment | [JSON-LD](cvJson/degreeOfEstablishment.jsonld) | jsonld | application/ld+json | en, de, es, fr, ko (incomplete) |
+| degreeOfEstablishment | [JSON-LD](../cvJson/degreeOfEstablishment.json) | json | application/json | en, de, es, fr, ko (incomplete) |
+| degreeOfEstablishment | [JSON-LD](../cvJson/degreeOfEstablishment.jsonld) | jsonld | application/ld+json | en, de, es, fr, ko (incomplete) |
 | degreeOfEstablishment (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/degreeOfEstablishment/degreeOfEstablishment.csv) | csv | text/plain | en |
 | degreeOfEstablishment (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/degreeOfEstablishment/degreeOfEstablishment-translations.csv) | csv | text/plain | en, de, es, fr, ko (incomplete) |
-| establishmentMeans | [JSON-LD](cvJson/establishmentMeans.json) | json | application/json | en, es, nl, fr, ru, zh-Hant (labels only) |
-| establishmentMeans | [JSON-LD](cvJson/establishmentMeans.jsonld) | jsonld | application/ld+json | en, es, nl, fr, ru, zh-Hant (labels only) |
+| establishmentMeans | [JSON-LD](../cvJson/establishmentMeans.json) | json | application/json | en, es, nl, fr, ru, zh-Hant (labels only) |
+| establishmentMeans | [JSON-LD](../cvJson/establishmentMeans.jsonld) | jsonld | application/ld+json | en, es, nl, fr, ru, zh-Hant (labels only) |
 | establishmentMeans (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/establishmentMeans/establishmentMeans.csv) | csv | text/plain | en |
 | establishmentMeans (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/establishmentMeans/establishmentMeans-translations.csv) | csv | text/plain | en, es, nl, fr, ru, zh-Hant (labels only) |
-| pathway | [JSON-LD](cvJson/pathway.json) | json | application/json | en, es, fr (incomplete definitions), ko (incomplete), nl (incomplete definitions) |
-| pathway | [JSON-LD](cvJson/pathway.jsonld) | jsonld | application/ld+json | en, es, fr (incomplete definitions), ko (incomplete), nl (incomplete definitions) |
+| pathway | [JSON-LD](../cvJson/pathway.json) | json | application/json | en, es, fr (incomplete definitions), ko (incomplete), nl (incomplete definitions) |
+| pathway | [JSON-LD](../cvJson/pathway.jsonld) | jsonld | application/ld+json | en, es, fr (incomplete definitions), ko (incomplete), nl (incomplete definitions) |
 | pathway (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/pathway/pathway.csv) | csv | text/plain | en |
 | pathway (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/pathway/pathway-translations.csv) | csv | text/plain | en, es, fr (incomplete definitions), ko (incomplete), nl (incomplete definitions) |
 
@@ -33,29 +35,29 @@ We are still working on acknowledging the translators in the machine-readable me
 
 | controlled vocabulary | format | extension | media type |
 |---------------------- | ------ | --------- | ---------- |
-| format | [JSON-LD](cvJson/format.json) | json | application/json | en, de, fr (labels only), ko (incomplete), nl, zh-Hant (incomplete) |
-| format | [JSON-LD](cvJson/format.jsonld) | jsonld | application/ld+json | en, de, fr (labels only), ko (incomplete), nl, zh-Hant (incomplete) |
+| format | [JSON-LD](../cvJson/format.json) | json | application/json | en, de, fr (labels only), ko (incomplete), nl, zh-Hant (incomplete) |
+| format | [JSON-LD](../cvJson/format.jsonld) | jsonld | application/ld+json | en, de, fr (labels only), ko (incomplete), nl, zh-Hant (incomplete) |
 | format (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/format/format.csv) | csv | text/plain | en |
 | format (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/format/format-translations.csv) | csv | text/plain | en, de, fr (labels only), ko (incomplete), nl, zh-Hant (incomplete) |
-| subtype | [JSON-LD](cvJson/acsubtype.json) | json | application/json | en, ru, zh-Hant (labels only) |
-| subtype | [JSON-LD](cvJson/acsubtype.jsonld) | jsonld | application/ld+json | en, ru, zh-Hant (labels only) |
+| subtype | [JSON-LD](../cvJson/acsubtype.json) | json | application/json | en, ru, zh-Hant (labels only) |
+| subtype | [JSON-LD](../cvJson/acsubtype.jsonld) | jsonld | application/ld+json | en, ru, zh-Hant (labels only) |
 | subtype (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acsubtype/acsubtype.csv) | csv | text/plain | en |
 | subtype (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acsubtype/acsubtype-translations.csv) | csv | text/plain | en, ru, zh-Hant (labels only) |
-| subjectOrientation | [JSON-LD](cvJson/acorient.json) | json | application/json | en, es, pt, de |
-| subjectOrientation | [JSON-LD](cvJson/acorient.jsonld) | jsonld | application/ld+json | en, es, pt, de |
+| subjectOrientation | [JSON-LD](../cvJson/acorient.json) | json | application/json | en, es, pt, de |
+| subjectOrientation | [JSON-LD](../cvJson/acorient.jsonld) | jsonld | application/ld+json | en, es, pt, de |
 | subjectOrientation (standard metadata) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acorient/acorient.csv) | csv | text/plain | en |
 | subjectOrientation (translations) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acorient/acorient-translations.csv) | csv | text/plain | en, es, pt, de |
-| subjectPart | [JSON-LD](cvJson/acpart.json) | json | application/json | en, es, pt, de |
-| subjectPart | [JSON-LD](cvJson/acpart.jsonld) | jsonld | application/ld+json | en, es, pt, de |
+| subjectPart | [JSON-LD](../cvJson/acpart.json) | json | application/json | en, es, pt, de |
+| subjectPart | [JSON-LD](../cvJson/acpart.jsonld) | jsonld | application/ld+json | en, es, pt, de |
 | subjectPart (standard metadata) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acpart/acpart.csv) | csv | text/plain | en |
 | subjectPart (translations) | [CSV](https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/acpart/acpart-translations.csv) | csv | text/plain | en, es, pt, de |
-| subjectPart SKOS collections<sup>*</sup> | [JSON-LD](cvJson/acpart_collection.json) | json | application/json | en |
-| subjectPart SKOS collections<sup>*</sup> | [JSON-LD](cvJson/acpart_collection.jsonld) | jsonld | application/ld+json | en |
-| subjectOrientation SKOS collections<sup>**</sup> | [JSON-LD](cvJson/acorient_collection.json) | json | application/json | en |
-| subjectOrientation SKOS collections<sup>**</sup> | [JSON-LD](cvJson/acorient_collection.jsonld) | jsonld | application/ld+json | en |
+| subjectPart SKOS collections<sup>*</sup> | [JSON-LD](../cvJson/acpart_collection.json) | json | application/json | en |
+| subjectPart SKOS collections<sup>*</sup> | [JSON-LD](../cvJson/acpart_collection.jsonld) | jsonld | application/ld+json | en |
+| subjectOrientation SKOS collections<sup>**</sup> | [JSON-LD](../cvJson/acorient_collection.json) | json | application/json | en |
+| subjectOrientation SKOS collections<sup>**</sup> | [JSON-LD](../cvJson/acorient_collection.jsonld) | jsonld | application/ld+json | en |
 | subjectPart and subjectOrientation collections tabular data | [CSV](https://raw.githubusercontent.com/tdwg/ac/master/code/views_json_ld/part_collection_join.csv) | csv | text/plain | N/A |
-| variant | [JSON-LD](cvJson/acvariant.json) | json | application/json | en, ru, zh-Hant (labels only) |
-| variant | [JSON-LD](cvJson/acvariant.jsonld) | jsonld | application/ld+json | en, ru, zh-Hant (labels only) |
+| variant | [JSON-LD](../cvJson/acvariant.json) | json | application/json | en, ru, zh-Hant (labels only) |
+| variant | [JSON-LD](../cvJson/acvariant.jsonld) | jsonld | application/ld+json | en, ru, zh-Hant (labels only) |
 | variant (standard metadata) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant.csv) | csv | text/plain | en |
 | variant (translations) | [CSV](https://github.com/tdwg/rs.tdwg.org/raw/master/acvariant/acvariant-translations.csv) | csv | text/plain | en, ru, zh-Hant (labels only) |
 
@@ -109,6 +111,8 @@ Jorrit H. Poelen, Ronin Institute, <https://orcid.org/0000-0003-3138-4118>, Nede
 
 Carla Novoa Sepúlveda, Staatliche Naturwissenschaftliche Sammlungen Bayerns - Botanische Staatssammlung München (SNSB-BSM; Bavarian Natural History Collections - Botanical State Collection Munich), <https://orcid.org/0000-0001-6113-9725>, español (Spanish): Audiovisual Core subtype, Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
 
+Elie Mario Saliba, Institut de Systématique, Évolution, Biodiversité (ISYEB), Muséum national d'Histoire naturelle, CNRS, Sorbonne Université, <https://orcid.org/0000-0001-9591-5016>, français (French): Darwin Core,  
+
 Elie Tobi, Smithsonian Conservation Biology Institute, Gabon Biodiversity Program, <https://orcid.org/0000-0002-6199-290X>, français (French): Darwin Core pathway
 
 William Ulate Rodriguez, Missouri Botanical Garden, St. Louis, Missouri, USA, <https://orcid.org/0000-0003-2863-2491>, español (Spanish): Darwin Core establishmentMeans
@@ -126,13 +130,13 @@ These [multilingual field labels (JSON)](cvJson/field_labels.json) can be used a
 ### Web demo for establishmentMeans
 
 Multilingual `establishmentMeans` controlled vocabulary demo page (still need to fix page to acknowledge translators):
-- [English](cvJson/display-cv.html?en)
-- [Dutch](cvJson/display-cv.html?nl)
-- [Spanish](cvJson/display-cv.html?es)
-- [French](cvJson/display-cv.html?fr)
-- [Russian](cvJson/display-cv.html?ru)
-- [Chinese (Traditional)](cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
+- [English](../cvJson/display-cv.html?en)
+- [Dutch](../cvJson/display-cv.html?nl)
+- [Spanish](../cvJson/display-cv.html?es)
+- [French](../cvJson/display-cv.html?fr)
+- [Russian](../cvJson/display-cv.html?ru)
+- [Chinese (Traditional)](../cvJson/display-cv.html?zh-Hant) - labels only, needs definition translations
 
 
 -------
-Last modified 2023-11-20
+Last modified 2024-01-22
