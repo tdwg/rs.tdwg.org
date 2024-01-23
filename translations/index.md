@@ -111,7 +111,7 @@ Jorrit H. Poelen, Ronin Institute, <https://orcid.org/0000-0003-3138-4118>, Nede
 
 Carla Novoa Sepúlveda, Staatliche Naturwissenschaftliche Sammlungen Bayerns - Botanische Staatssammlung München (SNSB-BSM; Bavarian Natural History Collections - Botanical State Collection Munich), <https://orcid.org/0000-0001-6113-9725>, español (Spanish): Audiovisual Core subtype, Darwin Core degreeOfEstablishment, Darwin Core establishmentMeans, Darwin Core pathway
 
-Elie Mario Saliba, Institut de Systématique, Évolution, Biodiversité (ISYEB), Muséum national d'Histoire naturelle, CNRS, Sorbonne Université, <https://orcid.org/0000-0001-9591-5016>, français (French): Darwin Core,  
+Elie Mario Saliba, Institut de Systématique, Évolution, Biodiversité (ISYEB), Muséum national d'Histoire naturelle, CNRS, Sorbonne Université, <https://orcid.org/0000-0001-9591-5016>, français (French): Darwin Core, Darwin Core establishmentMeans, Darwin Core pathway, Darwin Core degreeOfEstablishment
 
 Elie Tobi, Smithsonian Conservation Biology Institute, Gabon Biodiversity Program, <https://orcid.org/0000-0002-6199-290X>, français (French): Darwin Core pathway
 
@@ -139,4 +139,4 @@ Multilingual `establishmentMeans` controlled vocabulary demo page (still need to
 
 
 -------
-Last modified 2024-01-22
+Last modified 2024-01-23
