@@ -419,7 +419,7 @@
 "parentNameUsage:label","Label for Parent Name Usage http://rs.tdwg.org/dwc/terms/parentNameUsage",""
 "parentNameUsage:rdfs_comment","Comment for Parent Name Usage http://rs.tdwg.org/dwc/terms/parentNameUsage","Le nom complet, avec les informations relatives à l'auteur et à la date, si elles sont connues, du dwc:Taxon directement de rang supérieur (dans une classification) à l'élément le moins inclusif du dwc:scientificName."
 "parentNameUsageID:label","Label for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID",""
-"parentNameUsageID:rdfs_comment","Comment for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID",""
+"parentNameUsageID:rdfs_comment","Comment for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID","Un identifiant pour l'usage du nom (signification documentée du nom selon une source) du taxon de rang supérieur direct (dans une classification) de l'élément le moins inclusif du dwc:scientificName."
 "parentNameUsageID:dcterms_description","Description for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID",""
 "parentNameUsageID:examples","Examples for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID",""
 "pathway:label","Label for Pathway http://rs.tdwg.org/dwc/terms/pathway",""
