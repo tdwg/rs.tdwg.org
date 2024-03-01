@@ -25,6 +25,7 @@ with open('config.yaml', 'rt', encoding='utf-8') as file_object:
 date_issued = config['date_issued'] # generally will be ratification date
 local_offset_from_utc = config['local_offset_from_utc'] # time zone used by system clock
 vocab_type = config['vocab_type'] # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is c.v. with broader hierarchy
+standardUri = config['standard'] # IRI of containing standard
 namespaces = config['namespaces'] # list of namespace-specific configuration data
 
 # -------------
@@ -327,7 +328,7 @@ def generate_term_versions_metadata(database, versions, version_namespace, mods_
     writeCsv('../' + versions + '/' + versions + '-replacements.csv', revised_versions_replacements_table)
 
 # This function contains the Step 5 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
-def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
+def generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
     pieces = termlist_uri.split('/')
     list_localname_value = pieces[3] + '/' + pieces[4] + '/'
 
@@ -433,7 +434,8 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             term_lists_table[rowNumber][list_modified] = date_issued
             term_lists_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
             # here is the opportunity to find out the standard URI for the modified term list
-            standardUri = term_lists_table[rowNumber][standard_column]
+            # 2024-03-01 note: this is now provided in the config.yaml file.
+            #standardUri = term_lists_table[rowNumber][standard_column]
             # print(term_lists_table[rowNumber])
     if aNewTermList:  # this will happen if the term list did not previously exist
         try:
@@ -452,9 +454,11 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
         new_term_list[1][list_database_column] = database
         new_term_list[1][list_versions_database_column] = versions
         new_term_list[1][list_versions_uri_column] = termlistVersionUri
+        new_term_list[1][standard_column] = standardUri
 
         # This is now about the only value that's dependent on filling out the new_term_list.csv file.
-        standardUri = new_term_list[1][standard_column]
+        # 2024-03-01 note: this is now provided in the config.yaml file.
+        #standardUri = new_term_list[1][standard_column]
 
         # Assign the label and description passed into the function if not empty string. Otherwise, fall back on what's 
         # already in the new term list table.
@@ -596,7 +600,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
 
     # save as a file
     writeCsv('../term-lists-versions/term-lists-versions.csv', term_lists_versions_metadata)
-    return standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
+    return version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
 
 # This function contains the Step 6 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
 def update_termlist_version_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements):
@@ -1100,7 +1104,7 @@ for namespace in namespaces:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
 
     # Step 5. Generate current terms metadata
-    standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix)
+    version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix)
 
     # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
     if not borrowed and not utility_namespace:
