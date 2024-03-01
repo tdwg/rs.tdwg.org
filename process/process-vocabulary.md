@@ -107,7 +107,7 @@ The next section describes how to configure and run the processing script. Secti
 
 ## 2.1 Setup
 
-After the repo has been set up on your local drive (see 1.4.3 General workflow above), you MUST edit the `config.json` file to reflect the term lists (i.e. namespaces) you are creating or changing. If you are creating a new term list or vocabulary, you MUST modify files in the `process/files_for_new` directory as well. 
+After the repo has been set up on your local drive (see 1.4.3 General workflow above), you MUST edit the `config.yaml` file to reflect the term lists (i.e. namespaces) you are creating or changing. If you are creating a new term vocabulary, you MUST modify files in the `process/files_for_new` directory as well. 
 
 The script is designed to handle the creation of simple vocabularies or maintenance of existing vocabularies through a streamlined process. However, there are two more complicated circumstances that will require manual editing of files. If you are creating a new vocabulary and the hand-edited CSV file contains columns for additional properties beyond those required by the Standards Documentation Specification, you MUST manually edit the column header mapping file. This is discussed in section 3 below. If you are creating a new vocabulary that contains borrowed terms from multiple namespaces (as in the example spreadsheet [complex-vocabulary.csv](example-spreadsheets/complex-vocabulary.csv)), the rows for each namespace MUST be copied and pasted into separate CSV files (one for each namespace). Each of these separate CSV files MUST be described as separate JSON objects in the `namespaces` array of the JSON configuration file.
 
