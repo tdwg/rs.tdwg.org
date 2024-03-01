@@ -87,6 +87,9 @@ We really should not be deprecating terms anyway, so there should be only rare c
 3. Place the hand-generated CSV files in some subdirectory of the `process` directory of the repository. There are existing directories called `ac-revisions` for Audiovisual Core and `dwc-revisions` for Darwin Core. There are [example spreadsheets](https://github.com/tdwg/rs.tdwg.org/tree/master/process/example-spreadsheets) that can be used as an example. For more information, see the [instructions for creating a vocabulary](https://github.com/tdwg/rs.tdwg.org/blob/master/process/create-vocabulary.md#user-content-3-details-and-examples). NOTE: when updating terms in an existing vocabulary, it is best to copy cells from the existing primary metadata CSV file (the one that shares the name of the directory) to avoid typographical errors that would result in unwanted changes to the term metadata.
 4. Open the `config.yaml` file in a text editor. The existing file will have values from previous updates, which you can edit and use as a template.
 5. Enter the general configuration settings and settings for each of the namespaces to be updated. There are detailed comments in the YAML file to guide you. You can also look in recent existing revisions files for examples if you are unsure about how to edit the file.
+
+!! 
+
 6. For changes to existing vocabularies or standards, the vocabulary or standards-level metadata will be taken from the previous version. 
 If this is a new vocabulary, edit the appropriate files in the `process/files_for_new` directory of the repository. See the details below.
 7. Before running the script, make a commit that you can go back to if things don't go as anticipated. Run the script. 
@@ -114,87 +117,7 @@ The script is designed to handle the creation of simple vocabularies or maintena
 
 ### 2.1.1 Editing the configuration YAML file
 
-Each setting in the configuration file will be discussed separately below.
-
-```
-"date_issued": "2020-06-15"
-```
-The date issued is assigned as the date of issue for all versions and the modification date for current resources. It is also appended to version IRIs. The date SHOULD fall between the current date and the latest date on which all changes included in the version were ratified or completed. Typically, this will be the date of the approval by the Executive (if approval was needed for the change), but there isn't actually any rule that says it has to be. The main purpose of the date issued is to allow the versions to be ordered.
-
-```
-"local_offset_from_utc": "-05:00"
-```
-This SHOULD be the UTC offset for the computer running the script (i.e. the appropriate offset for values produced the python method `datetime.datetime.now()`).
-
-```
-"vocab_type": "2"
-```
-This value is only relevant when new term lists or vocabularies are created. It does nothing when existing terms are changed. It controls the template column mapping files copied into the current terms and versions directories. Those template mapping files have names ending in `-mappings` and are located [here for current terms](files_for_new/current_terms) and [here for versions](files_for_new/versions). The three categories:
-1 for simple vocabulary, 2 for simple controlled vocabulary, 3 for c.v. with broader hierarchy, correspond to the three template spreadsheet types [here](example_spreadsheets). If additional property columns are added beyond those already present in the template spreadsheets, select the most appropriate category, then edit the template mapping file as described in section 3 below.
-
-```
-list_of_terms_iri
-```
-Permanent IRI for the list of terms document that is associated with this vocabulary.
-
-```
-standard
-```
-IRI of containing standard. Examples listed in the configuration file notes.
-
-
-The following settings must be made for each term list (corresponding to a namespace) that is being changed by a separate CSV file.
-
-```
-"namespaceUri": "http://rs.tdwg.org/dwc/doe/"
-```
-For existing TDWG term lists and borrowed terms, the namespace IRI MUST be the one assigned by the existing standard. For proposed new term lists minted by TDWG, the namespace MUST conform to the [conventional TDWG IRI patterns](https://github.com/tdwg/rs.tdwg.org#2-iri-patterns).
-
-```
-pref_namespace_prefix: dwcdoe
-```
-Standard namespace abbreviation for the namespace IRI.
-
-```
-"database": "degreeOfEstablishment"
-```
-The database name is used to generate names for associated directories within the rs.tdwg.org repository and as the root for file names within those folders. The file name SHOULD be descriptive and lower camelCase is RECOMMENDED. It MUST NOT contain spaces. Terms that are borrowed SHOULD follow the naming convention established for Darwin and Audubon Cores, i.e. `descriptiveName-for-vocab`, where `vocab` is an abbreviation for the borrowing vocabulary. See examples [here](https://github.com/tdwg/rs.tdwg.org). Do not append `-versions` to this name -- the versions directory will be located or created automatically by the script.
-
-```
-"borrowed": true
-```
-MUST be set to `true` if the namespace is not issued by TDWG in the `http://rs.tdwg.org/` subdomain. MUST be set to `false` if the namespace is controlled by TDWG.
-
-```
-"new_term_list": false
-```
-MUST be set to `true` if it is a new term list that has never been processed before. Note that there are a number of files that must be set up for new term lists. See Section 2.1.2 for details. MUST be set to `false` if this is an existing term list that has been processed at some time in the past.
-
-```
-"utility_namespace": false
-```
-This is generally set to `false` except in the edge case of namespaces that do not have versions like the decisions namespace.
-
-
-```
-"modifications_file_path": "dwc-revisions/dwc-revisions-2021-07-15/dcterms_2021-07-15.csv"
-```
-This is the path to the CSV containing the hand-edited changes and additions. It is relative to the `process` directory in which the `process.py` script is running.
-
-```
-"termlist_uri": ""
-```
-For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG vocabulary, an [IRI for the borrowed term list conforming to the term list IRI pattern](https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be the standard component for the vocabulary that is borrowing the terms. The second level IRI component SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. See [this table](../term-lists/term-lists.csv) for examples.
-
-```
-label
-```
-Label used for the term list in machine-readable metadata.
-
-```
-description
-```
-Description of the term list used in machine-readable metadata.
+Detailed instructions are now included as comments in the config.yaml file.
 
 ### 2.1.2 Editing the template files for new term lists, vocabularies, and standards
 
