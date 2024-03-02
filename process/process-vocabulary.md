@@ -87,11 +87,7 @@ We really should not be deprecating terms anyway, so there should be only rare c
 3. Place the hand-generated CSV files in some subdirectory of the `process` directory of the repository. There are existing directories called `ac-revisions` for Audiovisual Core and `dwc-revisions` for Darwin Core. There are [example spreadsheets](https://github.com/tdwg/rs.tdwg.org/tree/master/process/example-spreadsheets) that can be used as an example. For more information, see the [instructions for creating a vocabulary](https://github.com/tdwg/rs.tdwg.org/blob/master/process/create-vocabulary.md#user-content-3-details-and-examples). NOTE: when updating terms in an existing vocabulary, it is best to copy cells from the existing primary metadata CSV file (the one that shares the name of the directory) to avoid typographical errors that would result in unwanted changes to the term metadata.
 4. Open the `config.yaml` file in a text editor. The existing file will have values from previous updates, which you can edit and use as a template.
 5. Enter the general configuration settings and settings for each of the namespaces to be updated. There are detailed comments in the YAML file to guide you. You can also look in recent existing revisions files for examples if you are unsure about how to edit the file.
-
-!! 
-
-6. For changes to existing vocabularies or standards, the vocabulary or standards-level metadata will be taken from the previous version. 
-If this is a new vocabulary, edit the appropriate files in the `process/files_for_new` directory of the repository. See the details below.
+6. The `vocab.yaml` file contains metadata about the vocabulary and standard that include the term changes. For changes to existing vocabularies, this file will not need to be changed. However, if changes are made to metadata fields in this file, such as the label or description, those changes will be reflected in the metadata for the vocabulary and standard. If a new vocabulary (or standard) is being created, an existing `vocab.yaml` file will need to be edited to reflect the new vocabulary (or standard).
 7. Before running the script, make a commit that you can go back to if things don't go as anticipated. Run the script. 
 8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If something did not go as planned, discard the changes to go back to the previous commit.  If really bad things happen and you want to start over, commit the changes, then delete the branch you created.
 9. When term changes have been ratified, the ratification decision needs to be recorded. First, create a new decision IRI in the [decisions.csv](https://github.com/tdwg/rs.tdwg.org/blob/master/decisions/decisions.csv) table. Then add this decision local name along with the term IRI of every changed term into the [decision-links.csv](https://github.com/tdwg/rs.tdwg.org/blob/master/decisions/decisions-links.csv) file. NOTE: this needs to be done before the next step in order for the decision to be included in the metadata for the term in the human-readable document. In the case where ratification has occurred and this step is done, the branch will have to be merged into the master in order for the changed to be picked up in the next step.
@@ -119,11 +115,9 @@ The script is designed to handle the creation of simple vocabularies or maintena
 
 Detailed instructions are now included as comments in the config.yaml file.
 
-### 2.1.2 Editing the template files for new term lists, vocabularies, and standards
+### 2.1.2 Editing the vocabulary and standards YAML file
 
-When existing metadata records are updated for term lists, vocabularies, and standards, the basic metadata for those resources (labels, descriptions, and other properties such as preferred namespace abbreviations) are copied from the previous version. Changes to those properties would need to be made manually prior to publishing the data. However, when a new term list, vocabulary, or standard is created, values for those basic metadata properties MUST be provided from template files. Those files are located [here](files_for_new). Follow the patterns in the files while changing the values to those appropriate for the new resource. It is not necessary to provide values for modified or created dates since they will be generated automatically.
-
-When a new resource is created, template files for resources below it in the standards hierarchy MUST also be created. It is not necessary to edit template files at a higher level if the higher-level resource already exists. For example, adding a new vocabulary to the Darwin Core standard would require editing the template `new_vocabulary.csv` and `new_term_list.csv` files, but not the `new_standard.csv` file.
+Changes are made via the `vocab.yaml` file.
 
 ### 2.1.3 Running the processing script for setup
 
@@ -195,9 +189,7 @@ Before using the script, the rs.tdwg.org repository SHOULD be cloned to a local 
 - `lastVersionAccessUri`. Omit for new documents. For existing documents, this is the path to the raw page source of the previous version of the document. If omitted, the previous value will remain unchanged.
 - `standardIri` (required). This is the permanent IRI assigned to the standard of which the document is a part. The convention is that these IRIs do not have trailing slashes.
 
-If the document is new, it is REQUIRED that the `authors_configuration.yaml` and `document_configuration.yaml` files be present in the same directory as the script. There are example files in the `example_config_files` subdirectory of the directory that contains the script. The last cells in the script notebook can also be used to generate these two configuration files with values based on any existing standards document. 
-
-If the document is a new version of an existing document, these two files are OPTIONAL.
+If the document is new, it is REQUIRED that the `authors_configuration.yaml` and `document_configuration.yaml` files be present in the same directory as the script. There are example files in the `example_config_files` subdirectory of the directory that contains the script. 
 
 If `authors_configuration.yaml` is not present in the directory, the data from the previous version will be used. All fields in this file will be used to update the data table and if any of them are missing, those data will be missing in the metadata. All fields are REQUIRED except `affiliation` and `affiliation_uri`. Care should be taken to use exactly the same string for `contributor_role` as previously used in other rows unless the role is actually unique. 
 
@@ -207,7 +199,7 @@ If the `document_configuration.yaml` is not present in the directory, the data f
 
 ## 5.1 Redirection for human-readable term metadata during content negotiation
 
-For term IRIs, redirection during content-negotiation for machine-readable representations is handled automatically by the server, since those representations are generated directly from the metadata stored in the rs.tdwg.org repo. However, the human-readable representations redirect to fragment identifiers in list of terms documents. For currently maintained vocabularies, these are usually GitHub Pages-generated web pages whose actual page URLs do not correspond to the term IRIs. Correct redirection is controlled by the redirect URL in the `redirects.csv` file in the `html` directory of the `rs.tdwg.org`. The data in this table will need to be updated if the actual URL of the list of pages document changes.
+For term IRIs, redirection during content-negotiation for machine-readable representations is handled automatically by the server, since those representations are generated directly from the metadata stored in the rs.tdwg.org repo. However, the human-readable representations redirect to fragment identifiers in List of Terms documents. For currently maintained vocabularies, these are usually GitHub Pages-generated web pages whose actual page URLs do not correspond to the term IRIs. Correct redirection is controlled by the redirect URL in the `redirects.csv` file in the `html` directory of the `rs.tdwg.org`. The data in this table will need to be updated if the actual URL of the List of Terms document changes.
 
 # 6 Generating JSON-LD for controlled vocabularies
 
