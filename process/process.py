@@ -213,9 +213,10 @@ def determine_state_of_data_tables(database, modifications_filename):
     for term_number in range(1, len(modifications_metadata)):
         mods_term_localName.append(modifications_metadata[term_number][mods_local_name])
 
-    # find new and modified terms
+    # Find new and modified terms.
     new_terms = []
     modified_terms = []
+
     for test_term in mods_term_localName:
         found = False
         for term in terms_metadata:
@@ -1160,6 +1161,10 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
 # -----------------------
 # Main routine
 # -----------------------
+        
+# Set up a list to keep track of the IRIs of terms that have changed so that they can later be added to the 
+# Executive Committee decisions CSV
+changed_terms_iris = []
 
 for namespace in namespaces:
     # Step 1 (from first cell in development Jupyter notebook simplified_process_rs_tdwg_org.ipynb)
@@ -1226,6 +1231,12 @@ for namespace in namespaces:
     # Step 3. Determine values needed to interpret and modify tables later
     terms_metadata, modifications_metadata, mods_local_name, metadata_localname_column, mods_term_localName, new_terms, modified_terms = determine_state_of_data_tables(database, modifications_filename)
 
+    # Add the IRIs of terms that have changed to the list of changed terms
+    for term in modified_terms:
+        changed_terms_iris.append(namespace + term)
+    for term in new_terms:
+        changed_terms_iris.append(namespace + term)
+
     # Step 4. Create term versions-related metadata. Generally only applies to TDWG-minted terms, not borrowed ones
     if not borrowed and not utility_namespace:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
@@ -1272,3 +1283,48 @@ general_config_text = re.sub('docIri:.*\n', "docIri: " + config['list_of_terms_i
 # Write the updated text to the file.
 with open('document_metadata_processing/general_configuration.yaml', 'wt') as file_object:
     file_object.write(general_config_text)
+
+# -----------------------
+# Update the Executive Committee decisions metadata
+# -----------------------
+    
+# Open and read in the Executive Committee decisions CSV file with all values as strings
+decisions_df = pd.read_csv('../decisions/decisions.csv', dtype=str)
+
+# Determine if the decision has already been made for a different vocabulary or document by checking whether the
+# rdfs_comment column in the last row is the same as the decisions_text value in the config.yaml file.
+if decisions_df['rdfs_comment'].iloc[-1] != config['decisions_text']:
+    # Find the decision number from the last token (i.e. number) of the label column of the last row
+    decision_number = int(decisions_df['label'].iloc[-1].split(' ')[-1])
+
+    # Increment the decision number by 1 and convert it to a string.
+    decision_number += 1
+    decision_number_string = str(decision_number)
+
+    # Add a new row to the decisions CSV file
+    row_dict = {}
+    row_dict['document_modified'] = isoTime(local_offset_from_utc)
+    row_dict['term_localName'] = 'decision-' + date_issued + '_' + decision_number_string
+    row_dict['term_isDefinedBy'] = 'http://rs.tdwg.org/decisions/'
+    row_dict['term_modified'] = date_issued
+    row_dict['label'] = 'TDWG Executive Committee decision ' + decision_number_string
+    row_dict['rdfs_comment'] = config['decisions_text']
+    decisions_df = decisions_df.append(row_dict, ignore_index=True)
+
+    # Write the updated decisions CSV file
+    decisions_df.to_csv('../decisions/decisions.csv', index=False)
+
+# For each term that has changed, add the IRI and decision term_localName as a row to the decisions-links.csv file.
+
+# Open and read in the decisions-links CSV file with all values as strings
+decisions_links_df = pd.read_csv('../decisions/decisions-links.csv', dtype=str)
+
+# Add a row to the decisions-links CSV file for each term that has changed
+for term_iri in changed_terms_iris:
+    row_dict = {}
+    row_dict['linked_affected_resource'] = term_iri
+    row_dict['decision_localName'] = 'decision-' + date_issued + '_' + decision_number_string
+    decisions_links_df = decisions_links_df.append(row_dict, ignore_index=True)
+
+# Write the updated decisions-links CSV file
+decisions_links_df.to_csv('../decisions/decisions-links.csv', index=False)
