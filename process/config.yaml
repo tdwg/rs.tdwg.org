@@ -77,7 +77,9 @@ namespaces:
   # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
   # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
   # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
-  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. 
+  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
+  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
+  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
   termlist_uri: ''
 
   # Label used for the term list in machine-readable metadata.
