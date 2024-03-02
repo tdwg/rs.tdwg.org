@@ -22,6 +22,10 @@ import pandas as pd
 with open('config.yaml', 'rt', encoding='utf-8') as file_object:
     config = yaml.safe_load(file_object)
 
+# Configuration for vocabulary and standard metadata. If changes are to an existing vocabulary, the values will be ignored.
+with open('vocab.yaml', 'rt', encoding='utf-8') as file_object:
+    config_vocab = yaml.safe_load(file_object)
+
 date_issued = config['date_issued'] # generally will be ratification date
 local_offset_from_utc = config['local_offset_from_utc'] # time zone used by system clock
 vocab_type = config['vocab_type'] # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is c.v. with broader hierarchy
@@ -684,10 +688,15 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         if versionRow[temp] == vocabularyVersionUri:
             alreadyAddedVocab = True
 
+    modified_datetime = findColumnWithHeader(vocabularies_table[0], 'document_modified')[1]
     vocabulary_uri = findColumnWithHeader(vocabularies_table[0], 'vocabulary')[1]
+    vocabulary_localName_column = findColumnWithHeader(vocabularies_table[0], 'vocabulary_localName')[1]
+    vocabulary_label = findColumnWithHeader(vocabularies_table[0], 'label')[1]
+    vocabulary_description = findColumnWithHeader(vocabularies_table[0], 'description')[1]
     vocabulary_created = findColumnWithHeader(vocabularies_table[0], 'vocabulary_created')[1]
     vocabulary_modified = findColumnWithHeader(vocabularies_table[0], 'vocabulary_modified')[1]
-    modified_datetime = findColumnWithHeader(vocabularies_table[0], 'document_modified')[1]
+    vocabulary_dc_creator_column = findColumnWithHeader(vocabularies_table[0], 'dc_creator')[1]
+    vocabulary_dcterms_license_column = findColumnWithHeader(vocabularies_table[0], 'dcterms_license')[1]
 
     aNewVocabulary = True
     for rowNumber in range(1, len(vocabularies_table)):
@@ -698,7 +707,14 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
             vocabularies_table[rowNumber][vocabulary_modified] = date_issued
             vocabularies_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
 
-    if aNewVocabulary: # this will happen if the vocabulary did not previously exist 
+            # Update the vocabulary_label, vocabulary_description, vocabulary_dc_creator_column, and vocabulary_dcterms_license columns from the vocabulary configuration file
+            vocabularies_table[rowNumber][vocabulary_label] = config_vocab['vocabulary_label']
+            vocabularies_table[rowNumber][vocabulary_description] = config_vocab['vocabulary_description']
+            vocabularies_table[rowNumber][vocabulary_dc_creator_column] = config_vocab['dc_creator']
+            vocabularies_table[rowNumber][vocabulary_dcterms_license_column] = config_vocab['dcterms_license']
+
+    if aNewVocabulary: # this will happen if the vocabulary did not previously exist
+        """ 
         try:
             new_vocabulary_row = readCsv('files_for_new/new_vocabulary.csv')[1]
         except:
@@ -707,6 +723,35 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         new_vocabulary_row[vocabulary_created] = date_issued
         new_vocabulary_row[vocabulary_modified] = date_issued
         new_vocabulary_row[modified_datetime] = isoTime(local_offset_from_utc)
+        vocabularies_table.append(new_vocabulary_row)
+        """
+        # Create a new row for the vocabulary table that is a list with length equal to the 0th row of the table
+        new_vocabulary_row = [''] * len(vocabularies_table[0])
+
+        new_vocabulary_row[modified_datetime] = isoTime(local_offset_from_utc)
+
+        # Assign the vocabulary URI to the new vocabulary row
+        new_vocabulary_row[vocabulary_uri] = vocabularyUri
+
+        # Generate the vocabulary local name from the last subpath of the vocabulary IRI
+        vocabularyLocalName = vocabularyUri.split('/')[-2] + '/'
+        new_vocabulary_row[vocabulary_localName_column] = vocabularyLocalName
+
+        # Assign the vocabulary label from the vocabulary configuration file to the new vocabulary row
+        new_vocabulary_row[vocabulary_label] = config_vocab['vocabulary_label']
+
+        # Assign the vocabulary description from the vocabulary configuration file to the new vocabulary row
+        new_vocabulary_row[vocabulary_description] = config_vocab['vocabulary_description']
+
+        # Assign the created and modified dates to the new vocabulary row
+        new_vocabulary_row[vocabulary_created] = date_issued
+        new_vocabulary_row[vocabulary_modified] = date_issued
+
+        # Assign the creator and license from the vocabulary configuration file to the new vocabulary row
+        new_vocabulary_row[vocabulary_dc_creator_column] = config_vocab['dc_creator']
+        new_vocabulary_row[vocabulary_dcterms_license_column] = config_vocab['dcterms_license']
+
+        # Append the new vocabulary row to the table
         vocabularies_table.append(new_vocabulary_row)
 
     writeCsv('../vocabularies/vocabularies.csv', vocabularies_table)
@@ -720,21 +765,32 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         writeCsv('../vocabularies/vocabularies-members.csv', vocabularies_members)
 
     # find the columns than contain needed information
-    vocabulary_uri = findColumnWithHeader(vocabularies_versions_metadata[0], 'vocabulary')[1]
     document_modified = findColumnWithHeader(vocabularies_versions_metadata[0], 'document_modified')[1]
     version_uri = findColumnWithHeader(vocabularies_versions_metadata[0], 'version')[1]
     version_issued = findColumnWithHeader(vocabularies_versions_metadata[0], 'version_issued')[1]
     status_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'vocabulary_status')[1]
+    label_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'label')[1]
+    description_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'description')[1]
+    vocabulary_uri = findColumnWithHeader(vocabularies_versions_metadata[0], 'vocabulary')[1]
+    creator_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'dc_creator')[1]
+    license_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'dcterms_license')[1]
 
     if not alreadyAddedVocab:
-        if aNewVocabulary: # this will happen if the vocabulary did not previously exist 
+        # Create a new empty row for the vocabulary versions table that is a list with length equal to the 0th row of the table
+        newVocabularyRow = [''] * len(vocabularies_versions_metadata[0])
+
+        if aNewVocabulary: # this will happen if the vocabulary did not previously exist
+            pass
+            """
             try:
                 newVocabularyRow = readCsv('files_for_new/new_vocabulary_version.csv')[1]
             except:
                 print('The vocabulary version was not found and there was no new_vocabulary_version.csv file.')
                 sys.exit()
+            
             # the new row will be added to the end and therefore will have an index number - number of rows before appending
             mostRecentVocabularyNumber = len(vocabularies_versions_metadata)
+            """
         else:
             # find the most recent previous version of the vocabulary
             mostRecent = 'a' # start the value of mostRecent as something earlier alphabetically than all of the vocabulary version URIs
@@ -752,13 +808,18 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
             vocabularies_versions_metadata[mostRecentVocabularyNumber][document_modified] = isoTime(local_offset_from_utc)
 
             # start the new vocabulary row with the metadata from the most recent vocabulary
-            newVocabularyRow = copy.deepcopy(vocabularies_versions_metadata[mostRecentVocabularyNumber])
+            #newVocabularyRow = copy.deepcopy(vocabularies_versions_metadata[mostRecentVocabularyNumber])
 
-        # substitute metadata to make the most recent vocabulary have the modified dates for the new vocabulary
+        # Insert metadata into the new vocabulary row
         newVocabularyRow[document_modified] = isoTime(local_offset_from_utc)
         newVocabularyRow[version_uri] = vocabularyVersionUri
         newVocabularyRow[version_issued] = date_issued
         newVocabularyRow[status_column] = 'recommended'
+        newVocabularyRow[label_column] = config_vocab['vocabulary_label']
+        newVocabularyRow[description_column] = config_vocab['vocabulary_description']
+        newVocabularyRow[vocabulary_uri] = vocabularyUri
+        newVocabularyRow[creator_column] = config_vocab['dc_creator']
+        newVocabularyRow[license_column] = config_vocab['dcterms_license']
 
         # append the new term list row to the old list of term lists
         vocabularies_versions_metadata.append(newVocabularyRow)
