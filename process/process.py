@@ -22,9 +22,14 @@ import pandas as pd
 with open('config.yaml', 'rt', encoding='utf-8') as file_object:
     config = yaml.safe_load(file_object)
 
+# Configuration for vocabulary and standard metadata. If changes are to an existing vocabulary, the values will be ignored.
+with open('vocab.yaml', 'rt', encoding='utf-8') as file_object:
+    config_vocab = yaml.safe_load(file_object)
+
 date_issued = config['date_issued'] # generally will be ratification date
 local_offset_from_utc = config['local_offset_from_utc'] # time zone used by system clock
 vocab_type = config['vocab_type'] # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is c.v. with broader hierarchy
+standardUri = config['standard'] # IRI of containing standard
 namespaces = config['namespaces'] # list of namespace-specific configuration data
 
 # -------------
@@ -327,7 +332,7 @@ def generate_term_versions_metadata(database, versions, version_namespace, mods_
     writeCsv('../' + versions + '/' + versions + '-replacements.csv', revised_versions_replacements_table)
 
 # This function contains the Step 5 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
-def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
+def generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
     pieces = termlist_uri.split('/')
     list_localname_value = pieces[3] + '/' + pieces[4] + '/'
 
@@ -433,39 +438,53 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             term_lists_table[rowNumber][list_modified] = date_issued
             term_lists_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
             # here is the opportunity to find out the standard URI for the modified term list
-            standardUri = term_lists_table[rowNumber][standard_column]
+            # 2024-03-01 note: this is now provided in the config.yaml file.
+            #standardUri = term_lists_table[rowNumber][standard_column]
             # print(term_lists_table[rowNumber])
     if aNewTermList:  # this will happen if the term list did not previously exist
+        # Create a new row for the term list table that is a list with length equal to the 0th row of the table
+        new_term_list_row = [''] * len(term_lists_table[0])
+        
+        """
         try:
             new_term_list = readCsv('files_for_new/new_term_list.csv')
         except:
             print('The term list was not found and there was no new_term_list.csv file.')
             sys.exit()
+        """
         # Note: no error trapping is done here, so make sure that the new_term_list columns are the same as term_lists_table
-        new_term_list[1][modified_datetime] = isoTime(local_offset_from_utc)
-        new_term_list[1][list_uri] = termlist_uri
-        new_term_list[1][list_localName_column] = list_localname_value
-        new_term_list[1][list_created] = date_issued
-        new_term_list[1][list_modified] = date_issued
-        new_term_list[1][list_prefix_column] = pref_namespace_prefix
-        new_term_list[1][list_pref_namespace_column] = namespaceUri
-        new_term_list[1][list_database_column] = database
-        new_term_list[1][list_versions_database_column] = versions
-        new_term_list[1][list_versions_uri_column] = termlistVersionUri
+        new_term_list_row[modified_datetime] = isoTime(local_offset_from_utc)
+        new_term_list_row[list_uri] = termlist_uri
+        new_term_list_row[list_localName_column] = list_localname_value
+        new_term_list_row[list_created] = date_issued
+        new_term_list_row[list_modified] = date_issued
+        new_term_list_row[list_prefix_column] = pref_namespace_prefix
+        new_term_list_row[list_pref_namespace_column] = namespaceUri
+        new_term_list_row[list_database_column] = database
+        new_term_list_row[list_versions_database_column] = versions
+        new_term_list_row[list_versions_uri_column] = termlistVersionUri
+        new_term_list_row[standard_column] = standardUri
 
         # This is now about the only value that's dependent on filling out the new_term_list.csv file.
-        standardUri = new_term_list[1][standard_column]
+        # 2024-03-01 note: this is now provided in the config.yaml file.
+        #standardUri = new_term_list[1][standard_column]
 
+        """
         # Assign the label and description passed into the function if not empty string. Otherwise, fall back on what's 
         # already in the new term list table.
         if term_list_label != '':
-            new_term_list[1][list_label] = term_list_label
+            new_term_list_row[list_label] = term_list_label
         if term_list_description != '':
-            new_term_list[1][list_description] = term_list_description
+            new_term_list_row[list_description] = term_list_description
+        """
+
+        # Label and description are now required in the config.yaml file, so no need to check for empty strings.
+        new_term_list_row[list_label] = term_list_label
+        new_term_list_row[list_description] = term_list_description
 
         # the length of the table (including header row) will be one more than the last row number
         term_list_rowNumber = len(term_lists_table)
-        term_lists_table.append(new_term_list[1])
+        term_lists_table.append(new_term_list_row)
         # after the new row is appended, its row number will be one more than the previous last row number
 
         # The new term list's dataset directory must be added to the dataset list. 
@@ -474,7 +493,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
                                 'http://rs.tdwg.org/index', # dcterms_isPartOf
                                 'http://rs.tdwg.org/index/' + database, # dataset_iri
                                 date_issued, # dcterms_modified
-                                new_term_list[1][list_description], # label
+                                new_term_list_row[list_description], # label
                                 ''] # rdfs_comment
         datasets_index.append(row_for_current_terms)
         
@@ -484,7 +503,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
                             'http://rs.tdwg.org/index', # dcterms_isPartOf
                             'http://rs.tdwg.org/index/' + versions, # dataset_iri
                             date_issued, # dcterms_modified
-                            new_term_list[1][list_description] + ' versions', # label
+                            new_term_list_row[list_description] + ' versions', # label
                             ''] # rdfs_comment
         datasets_index.append(row_for_versions)
         
@@ -544,19 +563,22 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
     list_uri = findColumnWithHeader(term_lists_versions_metadata[0], 'list')[1]
 
     if aNewTermList:
+        # Create a new row for the term list table that is a list with length equal to the 0th row of the table
+
+        """
         # get the template for the term list version from first data row in the new_term_list_version.csv file
         try:
             new_term_list_version = readCsv('files_for_new/new_term_list_version.csv')
         except:
             print('The term list version was not found and there was no new_term_list_version.csv file.')
             sys.exit()
-        newListRow = new_term_list_version[1]
+        """
+        #newListRow = new_term_list_version[1]
+
         mostRecentListNumber = 0 # dummy list number. Must have a value to be returned, but is not used for a new term list
 
-        newListRow[localname_column] = list_localname_value
-        newListRow[list_version_namespace_uri_column] = namespaceUri
-        newListRow[list_uri] = termlist_uri
-
+        # Label, description, and pref prefix are now required in the config.yaml file, so no need to check for empty strings.
+        """
         # Assign the label, description, and pref prefix passed into the function if not empty string. Otherwise, fall back on what's 
         # already in the new term list version table.
         if term_list_label != '':
@@ -565,6 +587,7 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
             newListRow[list_version_description] = term_list_description
         if pref_namespace_prefix != '':
             newListRow[list_version_prefix_column] = pref_namespace_prefix
+        """
 
     else:
         # find the most recent previous version of the term list
@@ -583,20 +606,28 @@ def generate_current_terms_metadata(terms_metadata, modifications_metadata, mods
         term_lists_versions_metadata[mostRecentListNumber][document_modified] = isoTime(local_offset_from_utc)
 
         # start the new list row with the metadata from the most recent list
-        newListRow = copy.deepcopy(term_lists_versions_metadata[mostRecentListNumber])
+        #newListRow = copy.deepcopy(term_lists_versions_metadata[mostRecentListNumber])
 
-    # substitute metadata to make the most recent list have the modified dates for the new list
+    newListRow = [''] * len(term_lists_versions_metadata[0])
+
+    # Insert metadata to make the most recent list have the updated values
     newListRow[document_modified] = isoTime(local_offset_from_utc)
     newListRow[version_uri] = termlistVersionUri
     newListRow[version_modified] = date_issued
     newListRow[status_column] = 'recommended'
+    newListRow[localname_column] = list_localname_value
+    newListRow[list_version_label] = term_list_label
+    newListRow[list_version_description] = term_list_description
+    newListRow[list_version_prefix_column] = pref_namespace_prefix
+    newListRow[list_version_namespace_uri_column] = namespaceUri
+    newListRow[list_uri] = termlist_uri
 
     # append the new term list row to the old list of term lists
     term_lists_versions_metadata.append(newListRow)
 
     # save as a file
     writeCsv('../term-lists-versions/term-lists-versions.csv', term_lists_versions_metadata)
-    return standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
+    return version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
 
 # This function contains the Step 6 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
 def update_termlist_version_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements):
@@ -680,10 +711,15 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         if versionRow[temp] == vocabularyVersionUri:
             alreadyAddedVocab = True
 
+    modified_datetime = findColumnWithHeader(vocabularies_table[0], 'document_modified')[1]
     vocabulary_uri = findColumnWithHeader(vocabularies_table[0], 'vocabulary')[1]
+    vocabulary_localName_column = findColumnWithHeader(vocabularies_table[0], 'vocabulary_localName')[1]
+    vocabulary_label = findColumnWithHeader(vocabularies_table[0], 'label')[1]
+    vocabulary_description = findColumnWithHeader(vocabularies_table[0], 'description')[1]
     vocabulary_created = findColumnWithHeader(vocabularies_table[0], 'vocabulary_created')[1]
     vocabulary_modified = findColumnWithHeader(vocabularies_table[0], 'vocabulary_modified')[1]
-    modified_datetime = findColumnWithHeader(vocabularies_table[0], 'document_modified')[1]
+    vocabulary_dc_creator_column = findColumnWithHeader(vocabularies_table[0], 'dc_creator')[1]
+    vocabulary_dcterms_license_column = findColumnWithHeader(vocabularies_table[0], 'dcterms_license')[1]
 
     aNewVocabulary = True
     for rowNumber in range(1, len(vocabularies_table)):
@@ -694,7 +730,14 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
             vocabularies_table[rowNumber][vocabulary_modified] = date_issued
             vocabularies_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
 
-    if aNewVocabulary: # this will happen if the vocabulary did not previously exist 
+            # Update the vocabulary_label, vocabulary_description, vocabulary_dc_creator_column, and vocabulary_dcterms_license columns from the vocabulary configuration file
+            vocabularies_table[rowNumber][vocabulary_label] = config_vocab['vocabulary_label']
+            vocabularies_table[rowNumber][vocabulary_description] = config_vocab['vocabulary_description']
+            vocabularies_table[rowNumber][vocabulary_dc_creator_column] = config_vocab['dc_creator']
+            vocabularies_table[rowNumber][vocabulary_dcterms_license_column] = config_vocab['dcterms_license']
+
+    if aNewVocabulary: # this will happen if the vocabulary did not previously exist
+        """ 
         try:
             new_vocabulary_row = readCsv('files_for_new/new_vocabulary.csv')[1]
         except:
@@ -703,6 +746,35 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         new_vocabulary_row[vocabulary_created] = date_issued
         new_vocabulary_row[vocabulary_modified] = date_issued
         new_vocabulary_row[modified_datetime] = isoTime(local_offset_from_utc)
+        vocabularies_table.append(new_vocabulary_row)
+        """
+        # Create a new row for the vocabulary table that is a list with length equal to the 0th row of the table
+        new_vocabulary_row = [''] * len(vocabularies_table[0])
+
+        new_vocabulary_row[modified_datetime] = isoTime(local_offset_from_utc)
+
+        # Assign the vocabulary URI to the new vocabulary row
+        new_vocabulary_row[vocabulary_uri] = vocabularyUri
+
+        # Generate the vocabulary local name from the last subpath of the vocabulary IRI
+        vocabularyLocalName = vocabularyUri.split('/')[-2] + '/'
+        new_vocabulary_row[vocabulary_localName_column] = vocabularyLocalName
+
+        # Assign the vocabulary label from the vocabulary configuration file to the new vocabulary row
+        new_vocabulary_row[vocabulary_label] = config_vocab['vocabulary_label']
+
+        # Assign the vocabulary description from the vocabulary configuration file to the new vocabulary row
+        new_vocabulary_row[vocabulary_description] = config_vocab['vocabulary_description']
+
+        # Assign the created and modified dates to the new vocabulary row
+        new_vocabulary_row[vocabulary_created] = date_issued
+        new_vocabulary_row[vocabulary_modified] = date_issued
+
+        # Assign the creator and license from the vocabulary configuration file to the new vocabulary row
+        new_vocabulary_row[vocabulary_dc_creator_column] = config_vocab['dc_creator']
+        new_vocabulary_row[vocabulary_dcterms_license_column] = config_vocab['dcterms_license']
+
+        # Append the new vocabulary row to the table
         vocabularies_table.append(new_vocabulary_row)
 
     writeCsv('../vocabularies/vocabularies.csv', vocabularies_table)
@@ -716,21 +788,32 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         writeCsv('../vocabularies/vocabularies-members.csv', vocabularies_members)
 
     # find the columns than contain needed information
-    vocabulary_uri = findColumnWithHeader(vocabularies_versions_metadata[0], 'vocabulary')[1]
     document_modified = findColumnWithHeader(vocabularies_versions_metadata[0], 'document_modified')[1]
     version_uri = findColumnWithHeader(vocabularies_versions_metadata[0], 'version')[1]
     version_issued = findColumnWithHeader(vocabularies_versions_metadata[0], 'version_issued')[1]
     status_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'vocabulary_status')[1]
+    label_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'label')[1]
+    description_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'description')[1]
+    vocabulary_uri = findColumnWithHeader(vocabularies_versions_metadata[0], 'vocabulary')[1]
+    creator_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'dc_creator')[1]
+    license_column = findColumnWithHeader(vocabularies_versions_metadata[0], 'dcterms_license')[1]
 
     if not alreadyAddedVocab:
-        if aNewVocabulary: # this will happen if the vocabulary did not previously exist 
+        # Create a new empty row for the vocabulary versions table that is a list with length equal to the 0th row of the table
+        newVocabularyRow = [''] * len(vocabularies_versions_metadata[0])
+
+        if aNewVocabulary: # this will happen if the vocabulary did not previously exist
+            pass
+            """
             try:
                 newVocabularyRow = readCsv('files_for_new/new_vocabulary_version.csv')[1]
             except:
                 print('The vocabulary version was not found and there was no new_vocabulary_version.csv file.')
                 sys.exit()
+            
             # the new row will be added to the end and therefore will have an index number - number of rows before appending
             mostRecentVocabularyNumber = len(vocabularies_versions_metadata)
+            """
         else:
             # find the most recent previous version of the vocabulary
             mostRecent = 'a' # start the value of mostRecent as something earlier alphabetically than all of the vocabulary version URIs
@@ -748,13 +831,18 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
             vocabularies_versions_metadata[mostRecentVocabularyNumber][document_modified] = isoTime(local_offset_from_utc)
 
             # start the new vocabulary row with the metadata from the most recent vocabulary
-            newVocabularyRow = copy.deepcopy(vocabularies_versions_metadata[mostRecentVocabularyNumber])
+            #newVocabularyRow = copy.deepcopy(vocabularies_versions_metadata[mostRecentVocabularyNumber])
 
-        # substitute metadata to make the most recent vocabulary have the modified dates for the new vocabulary
+        # Insert metadata into the new vocabulary row
         newVocabularyRow[document_modified] = isoTime(local_offset_from_utc)
         newVocabularyRow[version_uri] = vocabularyVersionUri
         newVocabularyRow[version_issued] = date_issued
         newVocabularyRow[status_column] = 'recommended'
+        newVocabularyRow[label_column] = config_vocab['vocabulary_label']
+        newVocabularyRow[description_column] = config_vocab['vocabulary_description']
+        newVocabularyRow[vocabulary_uri] = vocabularyUri
+        newVocabularyRow[creator_column] = config_vocab['dc_creator']
+        newVocabularyRow[license_column] = config_vocab['dcterms_license']
 
         # append the new term list row to the old list of term lists
         vocabularies_versions_metadata.append(newVocabularyRow)
@@ -846,8 +934,6 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
     standards_versions_replacements_filename = '../standards-versions/standards-versions-replacements.csv'
     standards_versions_replacements = readCsv(standards_versions_replacements_filename)
 
-    # the standard URI (variable: standardUri) was already found in section 5.2 above
-
     # find the standard number for the standard
     standard_number = standardUri.split('/')[4]
 
@@ -861,10 +947,12 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
         if versionRow[temp] == standardVersionUri:
             alreadyAddedStandard = True
 
+    modified_datetime = findColumnWithHeader(standards_table[0], 'document_modified')[1]
     standard_uri = findColumnWithHeader(standards_table[0], 'standard')[1]
+    standard_label = findColumnWithHeader(standards_table[0], 'label')[1]
+    standard_description = findColumnWithHeader(standards_table[0], 'description')[1]
     standard_created = findColumnWithHeader(standards_table[0], 'standard_created')[1]
     standard_modified = findColumnWithHeader(standards_table[0], 'standard_modified')[1]
-    modified_datetime = findColumnWithHeader(standards_table[0], 'document_modified')[1]
 
     aNewStandard = True
     for rowNumber in range(1, len(standards_table)):
@@ -875,7 +963,13 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
             standards_table[rowNumber][standard_modified] = date_issued
             standards_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
 
-    if aNewStandard: # this will happen if the standard did not previously exist 
+            # Update the standard_label and standard_description columns from the standard configuration file
+            standards_table[rowNumber][standard_label] = config_vocab['standard_label']
+            standards_table[rowNumber][standard_description] = config_vocab['standard_description']
+
+    if aNewStandard: # this will happen if the standard did not previously exist
+        pass
+        """
         try:
             new_standard_row = readCsv('files_for_new/new_standard.csv')[1]
         except:
@@ -886,6 +980,27 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
         new_standard_row[modified_datetime] = isoTime(local_offset_from_utc)
         # the row is set to what the last row will be after appending
         standard_rowNumber = len(standards_table)
+        standards_table.append(new_standard_row)
+        """
+        # Create a new row for the standard table that is a list with length equal to the 0th row of the table
+        new_standard_row = [''] * len(standards_table[0])
+
+        new_standard_row[modified_datetime] = isoTime(local_offset_from_utc)
+
+        # Assign the standard URI to the new standard row
+        new_standard_row[standard_uri] = standardUri
+
+        # Assign the standard label from the vocab configuration file to the new standard row
+        new_standard_row[standard_label] = config_vocab['standard_label']
+
+        # Assign the standard description from the vocab configuration file to the new standard row
+        new_standard_row[standard_description] = config_vocab['standard_description']
+
+        # Assign the created and modified dates to the new standard row
+        new_standard_row[standard_created] = date_issued
+        new_standard_row[standard_modified] = date_issued
+
+        # Append the new standard row to the table
         standards_table.append(new_standard_row)
 
     writeCsv('../standards/standards.csv', standards_table)
@@ -899,14 +1014,21 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
         writeCsv('../standards/standards-parts.csv', standards_parts)
 
     # find the columns than contain needed information
-    standard_uri = findColumnWithHeader(standards_versions_metadata[0], 'standard')[1]
     document_modified = findColumnWithHeader(standards_versions_metadata[0], 'document_modified')[1]
     version_uri = findColumnWithHeader(standards_versions_metadata[0], 'version')[1]
     version_issued = findColumnWithHeader(standards_versions_metadata[0], 'version_issued')[1]
     status_column = findColumnWithHeader(standards_versions_metadata[0], 'standard_status')[1]
+    label_column = findColumnWithHeader(standards_versions_metadata[0], 'label')[1]
+    description_column = findColumnWithHeader(standards_versions_metadata[0], 'description')[1]
+    standard_uri = findColumnWithHeader(standards_versions_metadata[0], 'standard')[1]
 
     if not alreadyAddedStandard:
-        if aNewStandard: # this will happen if the standard did not previously exist 
+        # Create a new empty row for the standards versions table that is a list with length equal to the 0th row of the table
+        newStandardRow = [''] * len(standards_versions_metadata[0])
+
+        if aNewStandard: # this will happen if the standard did not previously exist
+            pass
+            """
             try:
                 newStandardRow = readCsv('files_for_new/new_standard_version.csv')[1]
             except:
@@ -914,6 +1036,7 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
                 sys.exit()
             # the new row will be added to the end and therefore will have an index number - number of rows before appending
             mostRecentStandardNumber = len(standards_versions_metadata)
+            """
         else:
             # find the most recent previous version of the standard
             mostRecent = 'a' # start the value of mostRecent as something earlier alphabetically than all of the standard version URIs
@@ -931,13 +1054,16 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
             standards_versions_metadata[mostRecentStandardNumber][document_modified] = isoTime(local_offset_from_utc)
 
             # start the new standard row with the metadata from the most recent vocabulary
-            newStandardRow = copy.deepcopy(standards_versions_metadata[mostRecentStandardNumber])
+            #newStandardRow = copy.deepcopy(standards_versions_metadata[mostRecentStandardNumber])
 
         # substitute metadata to make the most recent standard version have the modified dates for the new standard version
         newStandardRow[document_modified] = isoTime(local_offset_from_utc)
         newStandardRow[version_uri] = standardVersionUri
         newStandardRow[version_issued] = date_issued
         newStandardRow[status_column] = 'recommended'
+        newStandardRow[label_column] = config_vocab['standard_label']
+        newStandardRow[description_column] = config_vocab['standard_description']
+        newStandardRow[standard_uri] = standardUri
 
         # append the new term list row to the old list of term lists
         standards_versions_metadata.append(newStandardRow)
@@ -1048,7 +1174,7 @@ for namespace in namespaces:
     versions = database + '-versions'
     modifications_filename = namespace['modifications_file_path']
     version_namespace = namespaceUri + 'version/'
-
+    """
     if new_term_list:
         if 'label' in namespace:
             term_list_label = namespace['label']
@@ -1066,6 +1192,11 @@ for namespace in namespaces:
         term_list_label = ''
         term_list_description = ''
         pref_namespace_prefix = ''
+    """
+    # No longer make it an option to provide these values in the namespace configuration file. They are now required.
+    term_list_label = namespace['label']
+    term_list_description = namespace['description']
+    pref_namespace_prefix = namespace['pref_namespace_prefix']
 
     # For borrowed terms, the termlist_uri will differ from the namespace URI. 
     # For terms minted by TDWG that follow URI pattern conventions, this should be the empty string and 
@@ -1100,7 +1231,7 @@ for namespace in namespaces:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
 
     # Step 5. Generate current terms metadata
-    standardUri, version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix)
+    version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix)
 
     # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
     if not borrowed and not utility_namespace:
