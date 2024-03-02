@@ -31,6 +31,9 @@ list_of_terms_iri: http://rs.tdwg.org/dwc/doc/eco/
 # Latimer Core - http://www.tdwg.org/standards/x
 standard: http://www.tdwg.org/standards/450
 
+# Text to describe the Executive Committee Decision that approved the change.
+decisions_text: Humboldt Extension for Ecological Inventories and controlled vocabulary for eco:taxonCompletenessReported ratified as a part of the Darwin Core Standard. See https://github.com/tdwg/hc/milestone/1
+
 namespaces:
 
 # Repeat the following data for each namespace
