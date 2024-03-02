@@ -8,7 +8,7 @@ vocabulary_description: A Darwin Core extension vocabulary for ecological invent
 
 # Current practice is to use the nane of the Task Group that created it. For vocabularies 
 # that have been heavily modified, the name of the Maintenance Group may be used. 
-dc_creator: Humboldt Extension Task Group
+dc_creator: TDWG Humboldt Extension Task Group
 
 # TDWG's standard license should be used.
 dcterms_license: https://creativecommons.org/licenses/by/4.0/
