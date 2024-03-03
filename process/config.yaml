@@ -98,7 +98,7 @@ namespaces:
   prepend_url: https://eco.tdwg.org/list/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
-  use_nameapace_in_fragment: true
+  use_namespace_in_fragment: true
 
   # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
   # If use_nameapace_in_fragment is false, this value is ignored.
