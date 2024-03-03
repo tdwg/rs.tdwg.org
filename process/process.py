@@ -657,8 +657,6 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
         # add the row to the end of the dataframe
         redirects_df = pd.concat([redirects_df, pd.DataFrame([term_redirects_row_data])])
 
-    redirects_df.to_csv('../html/redirects.csv', index = False)
-
     # Create row for term version redirect
     version_redirects_row_data = {'database': database + '-versions', 'redirect': 'no', 'type': 'termVersion', 'namespace': pref_namespace_prefix, 'prefix': '', 'useNamespace': '', 'connector': ''}
     matching_rows_index = redirects_df[redirects_df['database'] == database + '-versions'].index
@@ -671,6 +669,8 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
     else:
         # add the row to the end of the dataframe
         redirects_df = pd.concat([redirects_df, pd.DataFrame([version_redirects_row_data])])
+
+    redirects_df.to_csv('../html/redirects.csv', index = False)
 
     return version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
 
