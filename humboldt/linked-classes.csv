@@ -1,3 +1,0 @@
-link_column,link_property,suffix1,link_characters,suffix2,filename,forward_link
-term_localName,dcterms:isVersionOf,version,http,,humboldt-versions.csv,dcterms:hasVersion
-replaced_term_localName,dcterms:replaces,replacing_term,http,,humboldt-replacements.csv,dcterms:isReplacedBy
