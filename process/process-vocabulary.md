@@ -18,9 +18,9 @@
 
 [3 Creating a column header mapping file](#user-content-3-creating-a-column-header-mapping-file)
 
-[4 Term list build script](#user-content-4-build-script-for-human-readable-document-listing-terms-and-their-metadata)
+[4 Managing documents metadata](#4-managing-documents-metadata-via-python-script)
 
-[5 Managing documents metadata](#5-managing-documents-metadata-via-python-script)
+[5 Term list build script](#user-content-5-build-script-for-human-readable-document-listing-terms-and-their-metadata)
 
 [6 Generating JSON-LD for controlled vocabularies](#user-content-6-generating-json-ld-for-controlled-vocabularies)
 
@@ -91,10 +91,10 @@ We really should not be deprecating terms anyway, so there should be only rare c
 7. Before running the script, make a commit that you can go back to if things don't go as anticipated. Run the script. 
 8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If something did not go as planned, discard the changes to go back to the previous commit.  If really bad things happen and you want to start over, commit the changes, then delete the branch you created.
 9. In the case where ratification has occurred, this is an appropriate time to merge the branch to master. The advantage of doing the merge now is that term dereferencing for machine-readable metadata can be tested using the rs-test.tdwg.org server. For example, if the term `http://rs.tdwg.org/eco/terms/protocolNames` was changed (added or modified), the URL http://rs-test.tdwg.org/eco/terms/protocolNames.rdf should return RDF/XML that includes the changes. It is OPTIONAL to merge the branch at this time. The main implication is that when the human-readable term list documents are generated, the build script must be set to look at the correct branch ("master" if merged, or the working branch if not merged).
-10. If the changes look sensible, then you can run a script to generate a human readable document listing terms and their metadata (See section 4 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated.
-11. Once the human-readable term list documents have been generated, the metadata about them must be added or updated in the `rs.tdwg.org` repo using a new branch (or the previous working branch if not merged into master). See Section 5 below for details. Push the changes to GitHub and create a pull request to merge the changes from the branch into the master.
-12. If the vocabulary is new, a record determining how term IRI redirects are handled during content negotiation MUST be added to the `redirects.csv` file in the `html` directory of the `rs.tdwg.org` repository. See Section 5.1 below for details.
-13. In production, merging the changes into the master branch rebuilds and deploys the server that controls redirects and machine-readable metadata at http://rs-test.tdwg.org . After testing to make sure that its behavior is appropriate, a new release of the rs.tdwg.org repository should be made. That triggers deployment to the "real" http://rs.tdwg.org server and the changes should be "live". 
+10. Once the human-readable term list documents have been generated, the metadata about them must be added or updated in the `rs.tdwg.org` repo using a new branch (or the previous working branch if not merged into master). See Section 4 below for details. Push the changes to GitHub and create a pull request to merge the changes from the branch into the master.
+11. If the vocabulary is new, a record determining how term IRI redirects are handled during content negotiation MUST be added to the `redirects.csv` file in the `html` directory of the `rs.tdwg.org` repository. See Section 4.1 below for details.
+12. In production, merging the changes into the master branch rebuilds and deploys the server that controls redirects and machine-readable metadata at http://rs-test.tdwg.org . After testing to make sure that its behavior is appropriate, a new release of the rs.tdwg.org repository should be made. That triggers deployment to the "real" http://rs.tdwg.org server and the changes should be "live". 
+16. If the changes look sensible, then you can run a script to generate a human readable document listing terms and their metadata (See section 5 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated.
 
 # 2 Generating necessary CSV files from the hand-generated CSV file
 
@@ -158,27 +158,7 @@ The order of rows in the mapping file does not matter. The first column (`header
 
 It is also possible to generate a fixed value for all rows in the CSV table. See [this page](https://github.com/baskaufs/guid-o-matic/blob/master/use.md#recording-the-column-mappings-from--the-metadata-table-to-rdf-triples) for more details on the format of the mapping file. 
 
-# 4 Build script for human readable document listing terms and their metadata
-
-A document listing terms and their metadata is a Markdown document consisting of two or more parts. The first part is a hand-edited static file that contains the introductory material (header section, introduction, RFC 2119 keywords section, etc.). The second part is created by a script that generates the actual list of terms from the current terms files for term lists that are included in the listing. The script is relatively simple if all terms are found in a single term list. It is more complex if the vocabulary includes terms from several term lists or if the terms are categorized. There are two example build scripts that can be modified by a Python programmer if modifications are needed to make the term list document conform to the idiosyncrasies of a given vocabulary.
-
-## 4.1 Building a simple term list
-
-The notebook `build-page-simple.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository has an example set up for a controlled vocabulary with hierarchy. That directory also has a template Markdown file for the introductory section that can be modified as necessary.
-
-## 4.2 Categorizing terms
-
-It is reasonable to include the few terms of a simple vocabulary in a single section. However, documents listing the terms of larger and more complicated vocabularies may need to be organized into categories to make it easier to locate related terms. This approach was first used with Darwin Core and has also been adopted by Audubon Core. 
-
-The key to organizing the terms in this way is by using the property `tdwgutility:organizedInClass` where the value is a class under which the subject is organized. NOTE: the local name of this property should not mislead users to think that grouping property terms in this way indicates that the grouped properties have been declared to have the organizing class as a domain. TDWG-minted terms SHOULD NOT have ranges or domains as part of their basic metadata.
-
-In many cases, the organizing class will be a well-known class previously defined by TDWG or some other organization. Examples in Darwin Core are `dwc:Occurrence` and `dcterms:Location`. However, it is also possible to create a "convenience" class within the `tdwgutility:` namespace solely for the purpose of organizing related terms. For example, Audubon Core uses the class `tdwgutility:ResourceCreation` to group property terms related to the creation of multimedia resources. Terms in the `tdwgutility:` namespace are not generally governed by any standard, so organizational class terms can be added as necessary without going through any official change process.
-
-### 4.2.1 Using categories
-
-In order to use categories, edit the configuration section of the build script so that the value of `organized_in_categories` is `True`. Then create Python lists containing corresponding values for `display_order`, `display_labels`, `display_commnets`, and `display_id`. When the script builds the page, it will use these data to organize the terms and create appropriate section headings and notes for the categories. See the notebook `build-page-categories.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository for an example.
-
-# 5 Managing documents metadata via Python script
+# 4 Managing documents metadata via Python script
 
 After the vocabulary-related metadata are updated, metadata about human-readable documents MUST also be updated. Typically, this will be one or more list of terms documents that make it possible for humans to read the normative content related to the vocabulary terms. The metadata about each list of terms document involved MUST be updated one at a time, using [a Python script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_metadata_update.py) that updates the document-related CSV files in the rs.tdwg.org repository.  
 
@@ -198,9 +178,29 @@ If the `document_configuration.yaml` is not present in the directory, the data f
 
 **IMPORTANT NOTE** These instructions assume that the document that is being updated is a list of terms document. If the document is an new version of some other standards document, and that document's metadata is being updated in the absence of a previous vocabulary update, the script will not generate a new version of the standard, including the metadata about all of the parts of the new standard version. Those rows will have to be created manually. If the non-list of terms document is being created or updated at the same times as a list of terms document, the script will correctly modify the parts of the previously-created new standard version to include the new version of the document. 
 
-## 5.1 Redirection for human-readable term metadata during content negotiation
+## 4.1 Redirection for human-readable term metadata during content negotiation
 
 For term IRIs, redirection during content-negotiation for machine-readable representations is handled automatically by the server, since those representations are generated directly from the metadata stored in the rs.tdwg.org repo. However, the human-readable representations redirect to fragment identifiers in List of Terms documents. For currently maintained vocabularies, these are usually GitHub Pages-generated web pages whose actual page URLs do not correspond to the term IRIs. Correct redirection is controlled by the redirect URL in the `redirects.csv` file in the `html` directory of the `rs.tdwg.org`. The data in this table will need to be updated if the actual URL of the List of Terms document changes.
+
+# 5 Build script for human readable document listing terms and their metadata
+
+A document listing terms and their metadata is a Markdown document consisting of two or more parts. The first part is a hand-edited static file that contains the introductory material (header section, introduction, RFC 2119 keywords section, etc.). The second part is created by a script that generates the actual list of terms from the current terms files for term lists that are included in the listing. The script is relatively simple if all terms are found in a single term list. It is more complex if the vocabulary includes terms from several term lists or if the terms are categorized. There are two example build scripts that can be modified by a Python programmer if modifications are needed to make the term list document conform to the idiosyncrasies of a given vocabulary.
+
+## 5.1 Building a simple term list
+
+The notebook `build-page-simple.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository has an example set up for a controlled vocabulary with hierarchy. That directory also has a template Markdown file for the introductory section that can be modified as necessary.
+
+## 5.2 Categorizing terms
+
+It is reasonable to include the few terms of a simple vocabulary in a single section. However, documents listing the terms of larger and more complicated vocabularies may need to be organized into categories to make it easier to locate related terms. This approach was first used with Darwin Core and has also been adopted by Audubon Core. 
+
+The key to organizing the terms in this way is by using the property `tdwgutility:organizedInClass` where the value is a class under which the subject is organized. NOTE: the local name of this property should not mislead users to think that grouping property terms in this way indicates that the grouped properties have been declared to have the organizing class as a domain. TDWG-minted terms SHOULD NOT have ranges or domains as part of their basic metadata.
+
+In many cases, the organizing class will be a well-known class previously defined by TDWG or some other organization. Examples in Darwin Core are `dwc:Occurrence` and `dcterms:Location`. However, it is also possible to create a "convenience" class within the `tdwgutility:` namespace solely for the purpose of organizing related terms. For example, Audubon Core uses the class `tdwgutility:ResourceCreation` to group property terms related to the creation of multimedia resources. Terms in the `tdwgutility:` namespace are not generally governed by any standard, so organizational class terms can be added as necessary without going through any official change process.
+
+### 5.2.1 Using categories
+
+In order to use categories, edit the configuration section of the build script so that the value of `organized_in_categories` is `True`. Then create Python lists containing corresponding values for `display_order`, `display_labels`, `display_commnets`, and `display_id`. When the script builds the page, it will use these data to organize the terms and create appropriate section headings and notes for the categories. See the notebook `build-page-categories.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository for an example.
 
 # 6 Generating JSON-LD for controlled vocabularies
 
