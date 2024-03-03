@@ -90,3 +90,16 @@ namespaces:
 
   # Description of the term list used in machine-readable metadata.
   description: This list includes terms defined by the Humboldt Extension for Ecological Inventories.
+
+  # The following values are used to set up redirects to the list of terms document.
+
+  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
+  # dereferencing terms and an HTML representation is requested. 
+  prepend_url: https://eco.tdwg.org/list/#
+
+  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
+  use_nameapace_in_fragment: true
+
+  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
+  # If use_nameapace_in_fragment is false, this value is ignored.
+  separator: '_'  

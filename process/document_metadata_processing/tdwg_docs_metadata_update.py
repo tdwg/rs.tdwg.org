@@ -1,11 +1,11 @@
 # Update TDWG documents metadata
 
-# Author: Steve Baskauf - 2024-03-02
+# Author: Steve Baskauf - 2024-03-03
 # Version: 0.5
 # This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
 
 # This script is a companion to the other script that updates the vocabularies metadata and 
-# should be run after it is finished and any new list of terms documents have been created.
+# should be run after it is finished.
 
 # ---------------------------
 # Configuration and function definitions 
@@ -32,7 +32,7 @@ def csv_read(path, **kwargs):
     else:
         return dataframe
             
-def iso_iime(offset):
+def iso_time(offset):
     current_time = datetime.datetime.now()
     return current_time.strftime("%Y-%m-%dT%H:%M:%S") + offset
 
@@ -515,7 +515,7 @@ if std_modified != config_data['versionDate']:
     # Update the standard_modified value in the standards.csv file
     std_df.at[row_index, 'standard_modified'] = config_data['versionDate']
     # Change the document_modified value to the current date
-    std_df.at[row_index, 'document_modified'] = iso_iime(utc_offset)
+    std_df.at[row_index, 'document_modified'] = iso_time(utc_offset)
     std_df.to_csv(repo_path + 'standards/standards.csv', index = False)
     
     # Add a new row to the standards-versions.csv file in the standards folder
@@ -538,7 +538,7 @@ if std_modified != config_data['versionDate']:
 
     # Edit the most recent version row
     std_version_df.at[most_recent_version_index, 'standard_status'] = 'superseded'
-    std_version_df.at[most_recent_version_index, 'document_modified'] = iso_iime(utc_offset)
+    std_version_df.at[most_recent_version_index, 'document_modified'] = iso_time(utc_offset)
 
     # Add a new row for the new version
     # Convert the most recent row into a dictionary
@@ -548,7 +548,7 @@ if std_modified != config_data['versionDate']:
     # Change the status to 'recommended'
     std_version_row_data['standard_status'] = 'recommended'
     # Change the document_modified date to the current date
-    std_version_row_data['document_modified'] = iso_iime(utc_offset)
+    std_version_row_data['document_modified'] = iso_time(utc_offset)
     # Change the version_issued date to the version date in the config file
     std_version_row_data['version_issued'] = config_data['versionDate']
     # Add the new row to the DataFrame
