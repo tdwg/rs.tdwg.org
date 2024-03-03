@@ -628,6 +628,50 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
 
     # save as a file
     writeCsv('../term-lists-versions/term-lists-versions.csv', term_lists_versions_metadata)
+
+    # -----------------
+    # Code added 2024-03-03 to update the redirects file that controls redirects for current terms for this namespace.
+    # The redirect record is in the repo_path + 'html/redirects.csv' file.
+
+    redirects_df = pd.read_csv('../html/redirects.csv', dtype=str)
+    
+    # Create a row for namespace redirect
+    if config['use_namespace_in_fragment'] == True:
+        use_namespace = 'yes'
+        connector = config['separator']
+    else:
+        use_namespace = 'no'
+        connector = ''
+    term_redirects_row_data = {'database': database, 'redirect': 'yes', 'type': 'term', 'namespace': pref_namespace_prefix, 'prefix': config['prepend_url'], 'useNamespace': use_namespace, 'connector': connector}
+
+    # Find the row index for the namespace redirect in the pandas dataframe and replace it with the new data.
+    # If the row is not found, add it to the end of the pandasdataframe.
+    matching_rows_index = redirects_df[redirects_df['database'] == database].index
+    if len(matching_rows_index) > 1:
+        print('Error: More than one row found for the namespace redirect in the redirects.csv file.')
+        sys.exit()
+    elif len(matching_rows_index) == 1:
+        # replace the row with the new data
+        redirects_df.loc[matching_rows_index[0]] = term_redirects_row_data
+    else:
+        # add the row to the end of the dataframe
+        redirects_df = pd.concat([redirects_df, pd.DataFrame([term_redirects_row_data])])
+
+    redirects_df.to_csv('../html/redirects.csv', index = False)
+
+    # Create row for term version redirect
+    version_redirects_row_data = {'database': database + '-versions', 'redirect': 'no', 'type': 'termVersion', 'namespace': pref_namespace_prefix, 'prefix': '', 'useNamespace': '', 'connector': ''}
+    matching_rows_index = redirects_df[redirects_df['database'] == database + '-versions'].index
+    if len(matching_rows_index) > 1:
+        print('Error: More than one row found for the term version redirect in the redirects.csv file.')
+        sys.exit()
+    elif len(matching_rows_index) == 1:
+        # replace the row with the new data
+        redirects_df.loc[matching_rows_index[0]] = version_redirects_row_data
+    else:
+        # add the row to the end of the dataframe
+        redirects_df = pd.concat([redirects_df, pd.DataFrame([version_redirects_row_data])])
+
     return version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
 
 # This function contains the Step 6 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
