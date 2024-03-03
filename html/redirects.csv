@@ -42,5 +42,3 @@ acpart,yes,term,acpart,https://ac.tdwg.org/part/#,yes,_
 acpart-versions,no,termVersion,acpart,,,
 acorient,yes,term,acorient,https://ac.tdwg.org/orient/#,yes,_
 acorient-versions,no,termVersion,acorient,,,
-humboldt,yes,term,eco,https://eco.tdwg.org/list/#,yes,_
-humboldt-versions,no,termVersion,eco,,,
