@@ -189,12 +189,12 @@ if exists(doc_config_path):
 
     # Generate the citation from other metadata bits.
     citation_template = '{creator}. {year}. {document_title}. {publisher}. {current_iri}{ratification_date}'
-    citation_template.replace('{creator}', row_data['creator'])
-    citation_template.replace('{year}', row_data['doc_modified'][:4])
-    citation_template.replace('{document_title}', row_data['documentTitle'])
-    citation_template.replace('{publisher}', row_data['publisher'])
-    citation_template.replace('{current_iri}', doc_iri)
-    citation_template.replace('{ratification_date}', row_data['doc_modified'])
+    citation_template = citation_template.replace('{creator}', row_data['creator'])
+    citation_template = citation_template.replace('{year}', row_data['doc_modified'][:4])
+    citation_template = citation_template.replace('{document_title}', row_data['documentTitle'])
+    citation_template = citation_template.replace('{publisher}', row_data['publisher'])
+    citation_template = citation_template.replace('{current_iri}', doc_iri)
+    citation_template = citation_template.replace('{ratification_date}', row_data['doc_modified'])
     row_data['citation'] = citation_template
     
 else:
