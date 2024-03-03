@@ -62,25 +62,37 @@ During the initial vocabulary development process, a List of Terms build script 
 
 This document explains the steps for processing a hand-generated CSV file using a Python script. NOTE: term deprecations cannot be carried out using this workflow and they require a number of special steps. See the [notes at the start of the detailed Jupyter notebook](process_rs_tdwg_org.ipynb) for specific steps that are necessary for term deprecations.
 
-### 1.4.1 Requirements
+# 2 Using this document
 
-To carry out the process described in this document, you need:
-- to know how to use Git and GitHub. The simplest way to carry out the necessary operations is to download the [GitHub Desktop client](https://desktop.github.com/). An introduction to Git and GitHub is [here](http://vanderbi.lt/github).
-- to know how to edit a YAML configuration file using a text editor.
-- to know how to run a Python script, and have Python installed on your local computer.
+Since this document is intended for use by those who are responsible for maintaining the TDWG infrastructure, it is assumed that the user has a basic understanding of the TDWG infrastructure and the standards that are maintained by TDWG. 
 
-### 1.4.2 Processing script and configuration file
+## 2.1 Skills required
 
-The script [process.py](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py) will update multiple namespaces within a single vocabulary at one time. It uses a YAML configuration file, `config.yaml`, to know where the data are located and how to process the CSV files. An example configuration file is [here](https://github.com/tdwg/rs.tdwg.org/blob/da380f5baffbed3a035b64d3b8193e14e71933ab/process/config.yaml).
+To carry out the process described in this document, you need to know how:
+- to use Git and GitHub. The simplest way to carry out the necessary operations is to download the [GitHub Desktop client](https://desktop.github.com/). An introduction to Git and GitHub is [here](http://vanderbi.lt/github).
+- to edit a YAML configuration file using a text editor.
+- to run a Python script, and have Python installed on your local computer.
 
-There are also two Python scripts in Jupyter notebooks that were used to develop the script and formerly used to do the processing. They are no longer maintained, but contain a lot of comments that might help in understanding what the script does. They may also be useable for term deprecations. They are:
+![workflow diagram](workflow.jpg)
 
-1. The [simplified processing script](simplified_process_rs_tdwg_org.ipynb) presupposes no knowledge of Python and will work for most term additions and changes in existing standards and for creating simple vocabularies or term lists, including controlled vocabularies. **You MUST NOT use this script for term deprecations.**
-2. Because this script is not designed for use by the general public, it has limited error trapping. In cases where results are not as expected, or where unusual changes such as term deprecations are required, the [full processing script](process_rs_tdwg_org.ipynb) SHOULD be used. This script contains the same code as the simplified script, but separates the code among more cells and provides more feedback in the form of print statements. **Note on 2024-03-01: Since this script was written, the processing script has been significantly modified. You should not assume that the full processing script notebook is usable without modification.**
+## 2.2 Required inputs
 
-We really should not be deprecating terms anyway, so there should be only rare cases where using the full processing script is necessary.
+After cloning the rs.tdwg.org repository to your local drive, you will have a copy of two Python scripts:
+- `process.py` used to process hand-generated vocabulary metadata CSV files.
+- `tdwg_docs_metadata_update.py` used to update the metadata about human-readable documents.
 
-### 1.4.3 General workflow
+Prior to beginning the processing steps, several data files are required. These include the underlying metadata and some configuration files:
+
+- an `authors_configuration.yaml` file that contains metadata about the authors of the document. 
+- a `document_configuration.yaml` file that contains metadata about the document.
+- a separate hand-generated CSV file for each namespace to be processed (vocabularies/List of Terms only). Each hand generated file represents a term list. The term lists MUST be part of the same vocabulary. Processing of multiple vocabularies requires separate processing runs.
+- a `config.yaml` file that contains the configuration settings for the processing script (vocabularies/List of Terms only). This file is used to specify the location of the hand-generated CSV files and to specify how the processing script should process the data in those files. The configuration file also contains some term list-level metadata. 
+- a `vocab.yaml` file that contains metadata about the vocabulary and standard that include the term changes (vocabularies/List of Terms only).
+
+An additional file, `general_configuration.yaml`, is required for updating the metadata about human-readable documents. It is edited automatically in the case of List of Terms documents for vocabularies processed by the process.py script, but must be edited manually for other documents.
+
+
+# 3 Detailed workflow steps
 
 1. Clone the [rs.tdwg.org](https://github.com/tdwg/rs.tdwg.org) repository to your local drive.
 2. Create a new branch of the repository.
@@ -99,9 +111,7 @@ We really should not be deprecating terms anyway, so there should be only rare c
 
 There are several steps necessary to generate all of the metadata related to term additions or changes. A new version of the term is usually created, then the metadata record for the current term will be created (if the term is new) or modified (if the term is revised). The new version is then linked to its corresponding current term. 
 
-![TDWG metadata model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
 
-Ratification of a term addition or change triggers new versions at all of the higher levels in the TDWG standards hierarchy. New term versions trigger new term list versions. New term list versions trigger new vocabulary versions and new vocabulary versions trigger new standards versions. For more information about versioning of TDWG standards, see [Section 2.3 of the TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/).
 
 The next section describes how to configure and run the processing script. Sections 2.2 through 2.5 are informational and describe how the script changes metadata in various categories. These sections may be helpful when examining the diffs to see if the changes that were made make sense.
 
@@ -125,23 +135,7 @@ Run the `process.py` script, then check the diffs to make sure that the changes 
 
 ## 2.2 Generating term versions (informational)
 
-Each current term is related to at least one term version.
 
-![TDWG versions model](https://github.com/tdwg/vocab/raw/master/graphics/version-model.png)
-
-Each time a term's metadata is revised, a new version is created. The term version IRI is formed by appending the date of issue to the term local name. A `hasVersion` relationship is created between the term and its version, and the new version has a `replaces` relationship with the previous version. The metadata defining these relationships are generated by the processing script, and the definition, usage, and notes are copied from the hand-generated CSV file.
-
-## 2.3 Revising current term metadata (informational)
-
-If a term is being revised, its metadata are changed according to the information in the hand-generated CSV file and the last-modified date for that term is updated. If the term is new, its record is created and the last-modified date is set to be the same as the created date. 
-
-## 2.4 Assignment of term versions to a new term list version (informational)
-
-A term list is a group of related terms that share the same namespace part of their IRI. As with all TDWG resources, term lists also have versions. When a term is changed or added, the new term version is added to a new version of the term list (replacing any older version if necessary). If a term is new, it is also added to the existing term list. 
-
-## 2.5 Proliferation of new versions up the hierarchy (informational)
-
-A new term list version is updated in its parent vocabulary version and a new vocabulary version is updated in its parent standard version. A term list is only added to its parent vocabulary if it represents terms in a namespace that is not already represented in the vocabulary. Similarly, vocabularies are only added to a standard if they are new, although new versions of both the vocabulary and standard are recorded.
 
 # 3 Creating a column header mapping file
 
@@ -156,6 +150,18 @@ If additional property columns were added to the hand-generated CSV file, the ma
 The order of rows in the mapping file does not matter. The first column (`header`) contains the name of the column header in the hand-generated CSV file. The second column (`predicate`) contains the abbreviated IRI (also known as [CURIE](https://www.w3.org/TR/curie/) or [QName](https://www.w3.org/2001/tag/doc/qnameids)). If the namespace abbreviation of an added row is different from others already present in this column, check the `namespace.csv` file in the same directory to make sure that the abbreviation is already listed. If not, add it to that list of namespace abbreviations and IRIs. The third column, which describes the type of the value in the column, MUST have one of the following strings as its value: `iri`, `language`, `datatype`, or `plain`. For language-tagged strings, the `attribute` column contains the ISO 639-1 language code used in the tag. For strings having a `datatype`, the `attribute` column contains the abbreviated IRI for the datatype. If the column in the CSV file contains an unabbreviated full IRI, there is no value in the `value` column of the mapping table. If the column in the CSV contains the local name part of the IRI, the `value` column contains full namespace IRI to be prepended to the value from column in the CSV. 
 
 It is also possible to generate a fixed value for all rows in the CSV table. See [this page](https://github.com/baskaufs/guid-o-matic/blob/master/use.md#recording-the-column-mappings-from--the-metadata-table-to-rdf-triples) for more details on the format of the mapping file. 
+
+### 1.4.2 Processing script and configuration file
+
+The script [process.py](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py) will update multiple namespaces within a single vocabulary at one time. It uses a YAML configuration file, `config.yaml`, to know where the data are located and how to process the CSV files. An example configuration file is [here](https://github.com/tdwg/rs.tdwg.org/blob/da380f5baffbed3a035b64d3b8193e14e71933ab/process/config.yaml).
+
+There are also two Python scripts in Jupyter notebooks that were used to develop the script and formerly used to do the processing. They are no longer maintained, but contain a lot of comments that might help in understanding what the script does. They may also be useable for term deprecations. They are:
+
+1. The [simplified processing script](simplified_process_rs_tdwg_org.ipynb) presupposes no knowledge of Python and will work for most term additions and changes in existing standards and for creating simple vocabularies or term lists, including controlled vocabularies. **You MUST NOT use this script for term deprecations.**
+2. Because this script is not designed for use by the general public, it has limited error trapping. In cases where results are not as expected, or where unusual changes such as term deprecations are required, the [full processing script](process_rs_tdwg_org.ipynb) SHOULD be used. This script contains the same code as the simplified script, but separates the code among more cells and provides more feedback in the form of print statements. **Note on 2024-03-01: Since this script was written, the processing script has been significantly modified. You should not assume that the full processing script notebook is usable without modification.**
+
+We really should not be deprecating terms anyway, so there should be only rare cases where using the full processing script is necessary.
+
 
 # 4 Managing documents metadata via Python script
 
@@ -206,3 +212,29 @@ In order to use categories, edit the configuration section of the build script s
 In order to make controlled vocabularies as widely available as possible, multi-lingual translations of the term labels and definitions should be made available in as many languages as possible. A Python script (build-json-ld.ipynb) to generate JSON-LD is avaialable in the `cv_json_ld` directory. It can be run from any location, so maintenance groups should use it to generate JSON-LD representations of their controlled vocabularies on their own sites. This JSON-LD can then be used by developers to create multilingual tools to make it easier for users to select the right concept and acquire the controlled value string or IRI associated with that concept.
 
 Because the JSON-LD can easily be ingested, it can also be used to build multilingual web applications. Some Javascript code and an HTML file for a simple web page is also available in the directory. To see the page in action, visit [this page](https://heardlibrary.github.io/digital-scholarship/lod/json_ld_test/display-cv.html).
+
+# 6 Reference
+
+## 6.1 Standards hierarchy
+
+The TDWG standards hierarchy organizes resources at four major levels: standards, vocabularies, term lists, and terms. The hierarchy is shown in the diagram below. 
+
+![TDWG metadata model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
+
+Ratification of a term addition or change triggers new versions at all of the higher levels in the standards hierarchy. New term versions trigger new term list versions. New term list versions trigger new vocabulary versions and new vocabulary versions trigger new standards versions. For more information about versioning of TDWG standards, see [Section 2.3 of the TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/).
+
+## 6.2 Term versions
+
+Each current term is related to at least one term version. If a current term is new, its record is created and the last-modified date is set to be the same as the created date. A dated version is also created for the current term, with an issued date that is the same as the last-modified date of the current term.
+
+![TDWG versions model](https://github.com/tdwg/vocab/raw/master/graphics/version-model.png)
+
+Each time a term's metadata is revised, a new version is created. The term version IRI is formed by appending the date of issue to the term local name. A `hasVersion` relationship is created between the term and its version, and the new version has a `replaces` relationship with the previous version. The metadata defining these relationships are generated by the processing script. Other properties such as the definition, usage, and notes are copied from the hand-generated CSV file edited by the creators/maintainers.
+
+## 6.3 Assignment of term versions to a new term list version
+
+A term list is a group of related terms that share the same namespace part of their IRI. As with all TDWG resources, term lists also have versions. When a term is changed or added, the new term version is added to a new version of the term list (replacing any older version if necessary). If a term is new, it is also added to the existing term list. 
+
+## 6.4 Proliferation of new versions up the hierarchy
+
+A new term list version is updated in its parent vocabulary version and a new vocabulary version is updated in its parent standard version. A term list is only added to its parent vocabulary if it represents terms in a namespace that is not already represented in the vocabulary. Similarly, vocabularies are only added to a standard if they are new, although new versions of both the vocabulary and standard are recorded.
