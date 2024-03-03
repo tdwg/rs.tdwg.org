@@ -333,7 +333,7 @@ def generate_term_versions_metadata(database, versions, version_namespace, mods_
     writeCsv('../' + versions + '/' + versions + '-replacements.csv', revised_versions_replacements_table)
 
 # This function contains the Step 5 cell from the development Jupyter notebook simplified_process_rs_tdwg_org.ipynb
-def generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix):
+def generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix, use_namespace_in_fragment, prepend_url, separator):
     pieces = termlist_uri.split('/')
     list_localname_value = pieces[3] + '/' + pieces[4] + '/'
 
@@ -636,13 +636,13 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
     redirects_df = pd.read_csv('../html/redirects.csv', dtype=str)
     
     # Create a row for namespace redirect
-    if config['use_namespace_in_fragment'] == True:
+    if use_namespace_in_fragment:
         use_namespace = 'yes'
-        connector = config['separator']
+        connector = separator
     else:
         use_namespace = 'no'
         connector = ''
-    term_redirects_row_data = {'database': database, 'redirect': 'yes', 'type': 'term', 'namespace': pref_namespace_prefix, 'prefix': config['prepend_url'], 'useNamespace': use_namespace, 'connector': connector}
+    term_redirects_row_data = {'database': database, 'redirect': 'yes', 'type': 'term', 'namespace': pref_namespace_prefix, 'prefix': prepend_url, 'useNamespace': use_namespace, 'connector': connector}
 
     # Find the row index for the namespace redirect in the pandas dataframe and replace it with the new data.
     # If the row is not found, add it to the end of the pandasdataframe.
@@ -657,8 +657,6 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
         # add the row to the end of the dataframe
         redirects_df = pd.concat([redirects_df, pd.DataFrame([term_redirects_row_data])])
 
-    redirects_df.to_csv('../html/redirects.csv', index = False)
-
     # Create row for term version redirect
     version_redirects_row_data = {'database': database + '-versions', 'redirect': 'no', 'type': 'termVersion', 'namespace': pref_namespace_prefix, 'prefix': '', 'useNamespace': '', 'connector': ''}
     matching_rows_index = redirects_df[redirects_df['database'] == database + '-versions'].index
@@ -671,6 +669,8 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
     else:
         # add the row to the end of the dataframe
         redirects_df = pd.concat([redirects_df, pd.DataFrame([version_redirects_row_data])])
+
+    redirects_df.to_csv('../html/redirects.csv', index = False)
 
     return version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber
 
@@ -1216,10 +1216,13 @@ for namespace in namespaces:
     borrowed = namespace['borrowed']
     new_term_list = namespace['new_term_list']
     utility_namespace = namespace['utility_namespace']
+    use_namespace_in_fragment = namespace['use_namespace_in_fragment']
 
     # Set the values of namespace-specific configuration variables
     namespaceUri = namespace['namespace_uri']
     database = namespace['database']
+    prepend_url = namespace['prepend_url']
+    separator = namespace['separator']
     versions = database + '-versions'
     modifications_filename = namespace['modifications_file_path']
     version_namespace = namespaceUri + 'version/'
@@ -1277,16 +1280,16 @@ for namespace in namespaces:
 
     # Add the IRIs of terms that have changed to the list of changed terms
     for term in modified_terms:
-        changed_terms_iris.append(namespace + term)
+        changed_terms_iris.append(termlist_uri + term)
     for term in new_terms:
-        changed_terms_iris.append(namespace + term)
+        changed_terms_iris.append(termlist_uri + term)
 
     # Step 4. Create term versions-related metadata. Generally only applies to TDWG-minted terms, not borrowed ones
     if not borrowed and not utility_namespace:
         generate_term_versions_metadata(database, versions, version_namespace, mods_local_name, modified_terms,local_offset_from_utc, date_issued, modifications_metadata)
 
     # Step 5. Generate current terms metadata
-    version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix)
+    version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix, use_namespace_in_fragment, prepend_url, separator)
 
     # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
     if not borrowed and not utility_namespace:
