@@ -1,7 +1,7 @@
 # Update TDWG documents metadata
 
-# Author: Steve Baskauf - 2023-08-27
-# Version: 0.4
+# Author: Steve Baskauf - 2024-03-02
+# Version: 0.5
 # This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
 
 # This script is a companion to the other script that updates the vocabularies metadata and 
@@ -19,9 +19,6 @@ import sys
 import copy
 from os.path import exists
 import datetime
-
-print('This is still not updating the citations yet. Do not use this again until it is fixed.')
-print('See the DwC script for building non-list of terms pages from templates for the code to assemble the citation.')
 
 def csv_read(path, **kwargs):
     """Loads a CSV table into a Pandas DataFrame with all cells as strings and blank cells as empty strings
@@ -189,6 +186,16 @@ if exists(doc_config_path):
         for key in new_row_data.keys():
             if new_row_data[key] != None: # Empty YAML values are read in as a None keyword.
                 row_data[key] = new_row_data[key]
+
+    # Generate the citation from other metadata bits.
+    citation_template = '{creator}. {year}. {document_title}. {publisher}. {current_iri}{ratification_date}'
+    citation_template.replace('{creator}', row_data['creator'])
+    citation_template.replace('{year}', row_data['doc_modified'][:4])
+    citation_template.replace('{document_title}', row_data['documentTitle'])
+    citation_template.replace('{publisher}', row_data['publisher'])
+    citation_template.replace('{current_iri}', doc_iri)
+    citation_template.replace('{ratification_date}', row_data['doc_modified'])
+    row_data['citation'] = citation_template
     
 else:
     # If the document is new but there isn't a config file, there are no data to work with for the document
