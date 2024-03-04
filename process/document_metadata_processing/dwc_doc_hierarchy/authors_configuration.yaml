@@ -1,0 +1,69 @@
+- contributor_iri: https://orcid.org/0000-0001-7087-2646
+  contributor_literal: Yi-Ming Gan
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Royal Belgian Institute of Natural Sciences
+  affiliation_uri: http://www.wikidata.org/entity/Q16665660
+
+- contributor_iri: https://orcid.org/0000-0002-0595-7827
+  contributor_literal: Wesley M. Hochachka
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Cornell Lab of Ornithology
+  affiliation_uri: http://www.wikidata.org/entity/Q2997535
+
+- contributor_iri: https://orcid.org/0000-0003-1144-0290
+  contributor_literal: John Wieczorek
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: http://www.wikidata.org/entity/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0002-1720-0127
+  contributor_literal: Yanina V. Sica
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Yale University
+  affiliation_uri: http://www.wikidata.org/entity/Q49112
+
+- contributor_iri: https://orcid.org/0000-0001-9730-8340
+  contributor_literal: Peter Brenton
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Atlas of Living Australia, CSIRO
+  affiliation_uri: http://www.wikidata.org/entity/Q16335177
+
+- contributor_iri: https://orcid.org/0000-0003-1617-5895
+  contributor_literal: Robert D. Stevenson
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Department of Biology, University of Massachusetts Boston
+  affiliation_uri: http://www.wikidata.org/entity/Q15144
+
+- contributor_iri: https://orcid.org/0000-0003-2475-132X
+  contributor_literal: Anahita J. N. Kazem
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena
+  affiliation_uri: http://www.wikidata.org/entity/Q1206134
+
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steven J. Baskauf
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Vanderbilt University Libraries
+  affiliation_uri: http://www.wikidata.org/entity/Q16849893
+
+- contributor_iri: https://orcid.org/0000-0002-0500-0339
+  contributor_literal: Zachary R. Kachian
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Keller Science Action Center, Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
+
+- contributor_iri: https://orcid.org/0000-0001-5942-9053
+  contributor_literal: Kate Ingenloff
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility (GBIF)
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
