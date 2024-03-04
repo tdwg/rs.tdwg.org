@@ -69,3 +69,4 @@ http://rs.tdwg.org/ac/doc/orient/,text/markdown,https://github.com/tdwg/ac/raw/m
 http://rs.tdwg.org/ac/doc/part/,text/markdown,https://github.com/tdwg/ac/raw/master/docs/part/index.md
 http://rs.tdwg.org/dwc/doc/eco/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/list/index.md
 http://rs.tdwg.org/dwc/doc/hierarchy/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/hierarchy/index.md
+http://rs.tdwg.org/dwc/doc/inclusive/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/inclusive/index.md
