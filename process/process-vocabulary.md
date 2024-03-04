@@ -18,7 +18,7 @@
 
 [3 Detailed workflow steps](#3-detailed-workflow-steps)
 
-[4 Build script for a human readable List of Terms document](#4-managing-documents-metadata-via-python-script)
+[4 Build script for a human readable List of Terms document](#4-build-script-for-a-human-readable-list-of-terms-document)
 
 [5 Generating JSON-LS for controlled vocabularies](#5-generating-json-ld-for-controlled-vocabularies)
 
