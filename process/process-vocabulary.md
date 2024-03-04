@@ -12,17 +12,17 @@
 
 # Table of Contents
 
-[1 Introduction](#user-content-1-introduction)
+[1 Introduction](#1-introduction)
 
-[2 Generating necessary CSV files from the hand-generated CSV file](#user-content-2-generating-necessary-csv-files-from-the-hand-generated-csv-file)
+[2 Using this document](#2-using-this-document)
 
-[3 Creating a column header mapping file](#user-content-3-creating-a-column-header-mapping-file)
+[3 Detailed workflow steps](#3-detailed-workflow-steps)
 
-[4 Managing documents metadata](#4-managing-documents-metadata-via-python-script)
+[4 Build script for a human readable List of Terms document](#4-managing-documents-metadata-via-python-script)
 
-[5 Term list build script](#user-content-5-build-script-for-human-readable-document-listing-terms-and-their-metadata)
+[5 Generating JSON-LS for controlled vocabularies](#5-generating-json-ld-for-controlled-vocabularies)
 
-[6 Generating JSON-LD for controlled vocabularies](#user-content-6-generating-json-ld-for-controlled-vocabularies)
+[6 Reference](#6-reference)
 
 # 1 Introduction
 
@@ -133,7 +133,7 @@ There are two Python scripts in Jupyter notebooks that were used to develop the 
 
 We really should not be deprecating terms anyway, so there should be only rare cases where using the full processing script is necessary.
 
-# 4 Build script for a human readable document listing terms and their metadata
+# 4 Build script for a human readable List of Terms document
 
 A document listing terms and their metadata (a "List of Terms" document) is a Markdown document consisting of two or more parts. The first part is a hand-edited template file that contains the introductory material (header section, introduction, RFC 2119 keywords section, etc.). The second part is created by a script that generates the actual list of terms from the current terms files for term lists that are included in the listing. The script is relatively simple if all terms are found in a single term list. It is more complex if the vocabulary includes terms from several term lists or if the terms are categorized. There are two example build scripts that can be modified by a Python programmer if modifications are needed to make the term list document conform to the idiosyncrasies of a given vocabulary.
 
