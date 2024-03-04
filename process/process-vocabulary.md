@@ -2,7 +2,7 @@
 
 **Title:** Processing a vocabulary spreadsheet
 
-**Date Modified:** 2024-03-03
+**Date Modified:** 2024-03-04
 
 **Part of TDWG Standard:** Not part of any standard
 
@@ -38,7 +38,7 @@ This document is intended for those who are responsible for maintaining the TDWG
 
 ## 1.3 Background
 
-The [TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/) (SDS) indicates that all human and machine readable representations of vocabulary components should provide the same data. That can be achieved by using a script to generate those representations from a common data source: CSV files generated from a [basic hand-generated CSV file created by the vocabulary developers](create-vocabulary.md). The process is similar regardless of whether it is a new vocabulary or if modifications are being made to an existing vocabulary.
+The [TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/) (SDS) indicates that all human and machine readable representations of vocabulary components should provide the same data. That can be achieved by using a script to generate those representations from a common data source: CSV files generated from a [basic hand-generated CSV file created by the vocabulary developers](create-vocabulary.md). The process is similar regardless of whether it is a new vocabulary or if modifications are being made to an existing vocabulary. NOTE: term deprecations cannot be carried out using this workflow and they require a number of special steps. See the [notes at the start of the detailed Jupyter notebook](process_rs_tdwg_org.ipynb) for specific steps that are necessary for term deprecations.
 
 ![generation of metadata tables](images/table-generation.png)
 
@@ -52,15 +52,16 @@ Data in the generated current terms CSV file is used with a mapping table to gen
 
 ### 1.3.1 Human readable document listing terms
 
-The current terms CSV file can also be used along with a Python build script to create a human readable document listing terms and their metadata. 
+The current terms CSV file and metadata YAML files can also be used along with a Python build script to create a human readable document listing terms and their metadata (a "List of Terms" document). 
 
 **Note:** There is a distinction between this document listing terms and a "term list" document. *Term list* is a technical term defined in [section 3.3.3 of the SDS](http://rs.tdwg.org/sds/doc/specification/) denoting a list of terms incorporated into a vocabulary that share a common namespace. Therefore, a "term list" document is a document that describes all of the terms included in a term list. The document listing terms that is described here may or may not be the same as a "term list" document since it can include terms from a single namespace or terms from an entire vocabulary that consists of multiple term lists. Documents listing terms in a vocabulary are typically called "List of Terms" documents.
 
 During the initial vocabulary development process, a List of Terms build script can be used to generate drafts for review. Re-running the build script will cause changes or corrections made to the hand generated CSV file to be reflected in a revised document listing terms. Typically, the drafts are managed in a branch, since making the changes to the "master" branch could potentially make the drafts go "live".
 
-## 1.4 How to use this document
+### 1.3.2 Redirection for human-readable term metadata during content negotiation
 
-This document explains the steps for processing a hand-generated CSV file using a Python script. NOTE: term deprecations cannot be carried out using this workflow and they require a number of special steps. See the [notes at the start of the detailed Jupyter notebook](process_rs_tdwg_org.ipynb) for specific steps that are necessary for term deprecations.
+For term IRIs, redirection during content-negotiation for machine-readable representations is handled automatically by the server, since those representations are generated directly from the metadata stored in the rs.tdwg.org repo. However, the human-readable representations redirect to fragment identifiers in List of Terms documents. For currently maintained vocabularies, these are usually GitHub Pages-generated web pages whose actual page URLs do not correspond to the term IRIs. Correct redirection is controlled by the redirect URL in the [`redirects.csv` file](https://github.com/tdwg/rs.tdwg.org/blob/master/html/redirects.csv) in the `html` directory of the `rs.tdwg.org`. The `process.py` processing script will update this table automatically, but vocabulary maintainers MUST make sure that the fragment identifiers in the List of Terms documents follow a pattern that can be specified in the `config.yaml` file.
+
 
 # 2 Using this document
 
@@ -78,8 +79,8 @@ To carry out the process described in this document, you need to know how:
 ## 2.2 Required inputs
 
 After cloning the rs.tdwg.org repository to your local drive, you will have a copy of two Python scripts:
-- `process.py` used to process hand-generated vocabulary metadata CSV files.
 - `tdwg_docs_metadata_update.py` used to update the metadata about human-readable documents.
+- `process.py` used to process hand-generated vocabulary metadata CSV files (vocabularies/Lits of Terms only).
 
 Prior to beginning the processing steps, several data files are required. These include the underlying metadata and some configuration files:
 
@@ -95,55 +96,27 @@ An additional file, `general_configuration.yaml`, is required for updating the m
 # 3 Detailed workflow steps
 
 1. Clone the [rs.tdwg.org](https://github.com/tdwg/rs.tdwg.org) repository to your local drive.
-2. Create a new branch of the repository.
-3. Place the hand-generated CSV files in some subdirectory of the `process` directory of the repository. There are existing directories called `ac-revisions` for Audiovisual Core and `dwc-revisions` for Darwin Core. There are [example spreadsheets](https://github.com/tdwg/rs.tdwg.org/tree/master/process/example-spreadsheets) that can be used as an example. For more information, see the [instructions for creating a vocabulary](https://github.com/tdwg/rs.tdwg.org/blob/master/process/create-vocabulary.md#user-content-3-details-and-examples). NOTE: when updating terms in an existing vocabulary, it is best to copy cells from the existing primary metadata CSV file (the one that shares the name of the directory) to avoid typographical errors that would result in unwanted changes to the term metadata.
-4. Open the `config.yaml` file in a text editor. The existing file will have values from previous updates, which you can edit and use as a template. Alternatively, you can look for a similar configuration file from an earlier update that was stored in the `xx-revisions` directory for the vocabulary you are updating (e.g. `dwc-revisions`).
-5. Enter the general configuration settings and settings for each of the namespaces to be updated. There are detailed comments in the YAML file to guide you. You can also look in recent existing revisions files for examples if you are unsure about how to edit the file.
-6. The `vocab.yaml` file contains metadata about the vocabulary and standard that include the term changes. For changes to existing vocabularies, this file will not need to be changed from what was used in previous updates. However, if changes are made to metadata fields in this file, such as the label or description, those changes will be reflected in the metadata for the vocabulary and standard. If a new vocabulary (or standard) is being created, an existing `vocab.yaml` file will need to be edited to reflect the new vocabulary (or standard).
-7. Before running the script, make a commit that you can go back to if things don't go as anticipated. Run the script. NOTE: part of the script will update a record determining how term IRI redirects are handled during content negotiation in the `redirects.csv` file in the `html` directory of the `rs.tdwg.org` repository. See Section 4.1 below for details.
+2. Create a new branch of the repository. If you are creating or updating a human-readable document that is not a List of Terms document, you should skip to step 10.
+3. Place the hand-generated namespace CSV files in some subdirectory of [the `process` directory](https://github.com/tdwg/rs.tdwg.org/tree/master/process) of the repository. There are existing directories called [`ac-revisions` for Audiovisual Core](https://github.com/tdwg/rs.tdwg.org/tree/master/process/ac-revisions) and [`dwc-revisions` for Darwin Core](https://github.com/tdwg/rs.tdwg.org/tree/master/process/dwc-revisions). There are [example spreadsheets](https://github.com/tdwg/rs.tdwg.org/tree/master/process/example-spreadsheets) that can be used as an example. For more information, see the [instructions for creating a vocabulary](https://github.com/tdwg/rs.tdwg.org/blob/master/process/create-vocabulary.md#user-content-3-details-and-examples). NOTE: when updating terms in an existing vocabulary, it is best to copy cells from the existing primary metadata CSV file (the one that shares the name of the directory) to avoid typographical errors that would result in unwanted changes to the term metadata.
+4. Open the [`config.yaml` file](https://github.com/tdwg/rs.tdwg.org/blob/master/process/config.yaml) in a text editor. The existing file will have values from previous updates, which you can edit and use as a template. Alternatively, you can look for a similar configuration file from an earlier update that was stored in the `xx-revisions` directory for the vocabulary you are updating (e.g. `dwc-revisions`). 
+5. Enter the general configuration settings and settings for each of the namespaces to be updated. There are detailed comments in the YAML file to guide you. You can also look in recent existing revisions files for examples if you are unsure about how to edit the file. It is standard practice to save that edited file along with the hand-generated CSV file in an appropriate subdirectory for future use.
+6. The [`vocab.yaml` file](https://github.com/tdwg/rs.tdwg.org/blob/master/process/vocab.yaml) contains metadata about the vocabulary and standard that include the term changes. For changes to existing vocabularies, this file will not need to be changed from what was used in previous updates. However, if changes are made to metadata fields in this file, such as the label or description, those changes will be reflected in the metadata for the vocabulary and standard. If a new vocabulary (or standard) is being created, an existing `vocab.yaml` file will need to be edited to reflect the new vocabulary (or standard).
+7. Before running the [`process.py` script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py), make a commit that you can go back to if things don't go as anticipated. Run the script. NOTE: part of the script will update a record determining how term IRI redirects are handled during content negotiation in the [`redirects.csv` file](https://github.com/tdwg/rs.tdwg.org/blob/master/html/redirects.csv) in the `html` directory of the `rs.tdwg.org` repository. See Section 1.3.2 for details.
 8. After running the script, carefully examine the diffs for the changed files to make sure that they make sense. This can easily be done using the GitHub Desktop client. If something did not go as planned, discard the changes to go back to the previous commit.  If really bad things happen and you want to start over, commit the changes, then delete the branch you created. Otherwise, commit the changes.
-9. The metadata about the List of Terms document must be added or updated in the `rs.tdwg.org` repo using the `tdwg_docs_metadata_update.py` script. See Section 4 below for details. After examining the diffs to make sure everything is OK, commit the changes.
-10. At this point, you have the option to merge the branch to master. If ratification has not yet occurred, you should leave the data in a branch. The main implication is that if a human-readable term list documents is generated, the build script must be set to look at the working branch if not merged. If ratification has occurred, then it is appropriate to merge the branch to master. Once the merge to master has occurred, term dereferencing for machine-readable metadata can be tested using the rs-test.tdwg.org server. For example, if the term `http://rs.tdwg.org/eco/terms/protocolNames` was changed (added or modified), the URL http://rs-test.tdwg.org/eco/terms/protocolNames.rdf should return RDF/XML that includes the changes. 
-11. After testing to make sure that URL behavior is appropriate, a new release of the rs.tdwg.org repository should be made. That triggers deployment to the production http://rs.tdwg.org server and the changes should be "live". 
-12. Regardless of whether the working branch was merged, you can run a script to generate a human readable document listing terms and their metadata (See section 5 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated. This process can be repeated until ratification is complete.
+9. If you are creating a new vocabulary and the hand-edited CSV file contains columns for additional properties beyond those required by the Standards Documentation Specification, you MUST manually edit the column header mapping file. This is discussed in detail in section 3.1 below. 
+10. The metadata about human-readable documents, including a List of Terms document must be added or updated using the [`tdwg_docs_metadata_update.py` script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_metadata_update.py) in the `document_metadata_processing` directory. If there are more than one documents to be updated, the script MUST be run separately for each one. There are three YAML configuration files required to run the script. See the detailed comments in each one for details. 
+11. Required configuration variables are in the [file `general_configuration.yaml`](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/general_configuration.yaml), which MUST be in the same directory as the script. If List of Terms document metadata is being updated following a vocabulary update, the data in this file will be generated automatically. For all other documents, this file MUST be updated manually. 
+12. The two other configuration files that are required for the script to run are in subfolders of the `document_metadata_processing` directory that correspond to the pattern of the document's premanent IRI. The fields in the `authors_configuration.yaml` file ([example](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/dwc_doc_eco/authors_configuration.yaml)) will be used to update the data table. All fields are REQUIRED except `affiliation` and `affiliation_uri`. Fields in the `document_configuration.yaml` file ([example](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/dwc_doc_eco/document_configuration.yaml)) will be used to update the document metadata. 
+13. Run the script. After examining the diffs to make sure everything is OK, commit the changes. **IMPORTANT NOTE** As of 2024-03-03, the script will not create a new standard record. This is only significant if the first resource added to a standard is NOT a List of Terms document. If there are additional documents for a new standard that are not List of Terms documents, the List of Terms document should be created first. If the standard does not include a List of Terms document, new records in the standards tables will need to be created manually.
+14. At this point, you have the option to merge the branch to master. If ratification has not yet occurred, you should leave the data in a branch. The main implication is that if a human-readable term list documents is generated, the build script must be set to look at the working branch if not merged. If ratification has occurred, then it is appropriate to merge the branch to master. Once the merge to master has occurred, term dereferencing for machine-readable metadata can be tested using the rs-test.tdwg.org server. For example, if the term `http://rs.tdwg.org/eco/terms/protocolNames` was changed (added or modified), the URL http://rs-test.tdwg.org/eco/terms/protocolNames.rdf should return RDF/XML that includes the changes. 
+15. After testing to make sure that URL behavior is appropriate, a new release of the rs.tdwg.org repository should be made. That triggers deployment to the production http://rs.tdwg.org server and the changes should be "live". 
+16. Regardless of whether the working branch was merged, you can run a script to generate a human readable document listing terms and their metadata (See section 4 below). Revisions made based on drafts of this document should be made to the hand-generated CSV file. That revised CSV file should then be reprocessed in a new branch and the human readable document regenerated. This process can be repeated until ratification is complete.
 
-# 2 Generating necessary CSV files from the hand-generated CSV file
-
-There are several steps necessary to generate all of the metadata related to term additions or changes. A new version of the term is usually created, then the metadata record for the current term will be created (if the term is new) or modified (if the term is revised). The new version is then linked to its corresponding current term. 
-
-
-
-The next section describes how to configure and run the processing script. Sections 2.2 through 2.5 are informational and describe how the script changes metadata in various categories. These sections may be helpful when examining the diffs to see if the changes that were made make sense.
-
-## 2.1 Setup
-
-After the repo has been set up on your local drive (see 1.4.3 General workflow above), you MUST edit the `config.yaml` file to reflect the term lists (i.e. namespaces) you are creating or changing. There must also be a `vocab.yaml` file, containing vocabulary and standards information for the changed terms, in the same directory as the script. You may not need to edit this file if you are making changes to the same vocabulary described in the existing `vocab.yaml` file. If you are modifying a different vocabulary, you can look in an appropriate "xx-revisions" directory (e.g. "dwc-revisions") for a previously used `vocab.yaml` file for that vocabulary. If the vocabulary is new, you will need to edit the `vocab.yaml` file appropriately. It is advisable to save that edited file along with the hand-generated CSV file in an appropriate "xx-revisions" directory for future use.
-
-The script is designed to handle the creation of simple vocabularies or maintenance of existing vocabularies through a streamlined process. However, there are two more complicated circumstances that will require manual editing of files. If you are creating a new vocabulary and the hand-edited CSV file contains columns for additional properties beyond those required by the Standards Documentation Specification, you MUST manually edit the column header mapping file. This is discussed in section 3 below. If you are creating a new vocabulary that contains borrowed terms from multiple namespaces (as in the example spreadsheet [complex-vocabulary.csv](example-spreadsheets/complex-vocabulary.csv)), the rows for each namespace MUST be copied and pasted into separate CSV files (one for each namespace). Each of these separate CSV files MUST be described as separate JSON objects in the `namespaces` array of the JSON configuration file.
-
-### 2.1.1 Editing the configuration YAML file
-
-Detailed instructions are now included as comments in the config.yaml file.
-
-### 2.1.2 Editing the vocabulary and standards YAML file
-
-Changes are made via the `vocab.yaml` file.
-
-### 2.1.3 Running the processing script for setup
-
-Run the `process.py` script, then check the diffs to make sure that the changes made make sense. 
-
-## 2.2 Generating term versions (informational)
-
-
-
-# 3 Creating a column header mapping file
+## 3.1 Modifying the column header mapping file
 
 Because the SDS requires particular properties to be included in term metadata, if the template hand-generated CSV file is used without editing the column headers, a template column header mapping file can be used as well. The column header mapping file only needs to be modified if additional property columns are added to the template CSV file. This may happen if specialty properties are added to the required properties.
 
 Controlled vocabularies contain one or more additional properties that are not found in vocabularies that define properties and classes. That includes the controlled value string and may also include a property to indicate that a value has a `broader` relationship to another concept. So controlled vocabularies should use one of the template column header mapping files designed for controlled vocabularies. Setting the value of `vocab_type` in the configuration section determines whether the mapping template includes mappings for these extra term columns or not. See section 2.1.1 for details.
-
-## 3.1 Modifying the column header mapping file
 
 If additional property columns were added to the hand-generated CSV file, the mapping file in the current terms directory for that term list (i.e. the directory created having the name set as the value of `database` in the configuration section) must be manually edited. The name of the mapping file ends in `-mappings.csv`. 
 
@@ -151,51 +124,24 @@ The order of rows in the mapping file does not matter. The first column (`header
 
 It is also possible to generate a fixed value for all rows in the CSV table. See [this page](https://github.com/baskaufs/guid-o-matic/blob/master/use.md#recording-the-column-mappings-from--the-metadata-table-to-rdf-triples) for more details on the format of the mapping file. 
 
-### 1.4.2 Processing script and configuration file
+## 3.2 Legacy notebooks and term deprecations
 
-The script [process.py](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process.py) will update multiple namespaces within a single vocabulary at one time. It uses a YAML configuration file, `config.yaml`, to know where the data are located and how to process the CSV files. An example configuration file is [here](https://github.com/tdwg/rs.tdwg.org/blob/da380f5baffbed3a035b64d3b8193e14e71933ab/process/config.yaml).
-
-There are also two Python scripts in Jupyter notebooks that were used to develop the script and formerly used to do the processing. They are no longer maintained, but contain a lot of comments that might help in understanding what the script does. They may also be useable for term deprecations. They are:
+There are two Python scripts in Jupyter notebooks that were used to develop the script and formerly used to do the processing. They are no longer maintained, but contain a lot of comments that might help in understanding what the script does. They may also be useable for term deprecations. They are:
 
 1. The [simplified processing script](simplified_process_rs_tdwg_org.ipynb) presupposes no knowledge of Python and will work for most term additions and changes in existing standards and for creating simple vocabularies or term lists, including controlled vocabularies. **You MUST NOT use this script for term deprecations.**
 2. Because this script is not designed for use by the general public, it has limited error trapping. In cases where results are not as expected, or where unusual changes such as term deprecations are required, the [full processing script](process_rs_tdwg_org.ipynb) SHOULD be used. This script contains the same code as the simplified script, but separates the code among more cells and provides more feedback in the form of print statements. **Note on 2024-03-01: Since this script was written, the processing script has been significantly modified. You should not assume that the full processing script notebook is usable without modification.**
 
 We really should not be deprecating terms anyway, so there should be only rare cases where using the full processing script is necessary.
 
-
-# 4 Managing documents metadata via Python script
-
-After the vocabulary-related metadata are updated, metadata about human-readable documents MUST also be updated. Typically, this will be one or more list of terms documents that make it possible for humans to read the normative content related to the vocabulary terms. The metadata about each list of terms document involved MUST be updated one at a time, using [a Python script](https://github.com/tdwg/rs.tdwg.org/blob/master/process/document_metadata_processing/tdwg_docs_metadata_update.py) that updates the document-related CSV files in the rs.tdwg.org repository.  
-
-Before using the script, the rs.tdwg.org repository SHOULD be cloned to a local file system. If the human-readable document is a List of Terms document, this will already have been done. 
-
-The required configuration variables are in the file `general_configuration.yaml`, which MUST be in the same directory as the script. If List of Terms document metadata is being updated following a vocabulary update, the data in this file will be generated automatically. For all other documents, this file MUST be updated manually. The following variables are included in the file:
-
-- `versionDate` (REQUIRED). The date of ratification. For List of Terms documents, this date SHOULD match the version date for the corresponding vocabulary version.
-- `utcOffset` (RECOMMENDED). The offset from UTC time in the form `+hh:mm` or `-hh:mm` (e.g. `-06:00` for Central (US) Standard Time). This value is added to the date returned by the Python `datetime.datetime.now()` function to generate the modification date fields. Omitting it will make the modification date ambiguous.
-- `docIri` (REQUIRED). This is the permanent current IRI assigned to the document following the IRI patterns established [here](http://rs.tdwg.org/index#2-iri-patterns). If this IRI does not match any existing document IRI in the documents metadata, the script treats the document as new, so if the document is a new version of an existing document, it's very important to get this IRI exactly right. The convention is that these documents have trailing slashes.
-
-It is REQUIRED that the `authors_configuration.yaml` and `document_configuration.yaml` files be present in the same directory as the script. There are example files in the `example_config_files` subdirectory of the directory that contains the script. 
-
-All fields in the `authors_configuration.yaml` file will be used to update the data table. All fields are REQUIRED except `affiliation` and `affiliation_uri`. Care should be taken to use exactly the same string for `contributor_role` as previously used in other rows unless the role is actually unique. 
-
-All fields in the `document_configuration.yaml` will be used to update the document metadata. The value of `doc_modified` will automatically be changed to the date used in the `general_configuration.yaml` file. 
-
-**IMPORTANT NOTE** As of 2024-03-03, the script will not create a new standard record. This is only significant if the first resource added to a standard is NOT a List of Terms document. If there are additional documents for a new standard that are not List of Terms documents, the List of Terms document should be created first. If the standard does not include a List of Terms document, new records in the standards tables will need to be created manually.
-
-## 4.1 Redirection for human-readable term metadata during content negotiation
-
-For term IRIs, redirection during content-negotiation for machine-readable representations is handled automatically by the server, since those representations are generated directly from the metadata stored in the rs.tdwg.org repo. However, the human-readable representations redirect to fragment identifiers in List of Terms documents. For currently maintained vocabularies, these are usually GitHub Pages-generated web pages whose actual page URLs do not correspond to the term IRIs. Correct redirection is controlled by the redirect URL in the `redirects.csv` file in the `html` directory of the `rs.tdwg.org`. The data in this table will need to be updated if the actual URL of the List of Terms document changes.
-
-# 5 Build script for a human readable document listing terms and their metadata
+# 4 Build script for a human readable document listing terms and their metadata
 
 A document listing terms and their metadata (a "List of Terms" document) is a Markdown document consisting of two or more parts. The first part is a hand-edited template file that contains the introductory material (header section, introduction, RFC 2119 keywords section, etc.). The second part is created by a script that generates the actual list of terms from the current terms files for term lists that are included in the listing. The script is relatively simple if all terms are found in a single term list. It is more complex if the vocabulary includes terms from several term lists or if the terms are categorized. There are two example build scripts that can be modified by a Python programmer if modifications are needed to make the term list document conform to the idiosyncrasies of a given vocabulary.
 
-## 5.1 Building a simple term list
+## 4.1 Building a simple term list
 
 The notebook `build-page-simple.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository has an example set up for a controlled vocabulary with hierarchy. That directory also has a template Markdown file for the introductory section that can be modified as necessary.
 
-## 5.2 Categorizing terms
+## 4.2 Categorizing terms
 
 It is reasonable to include the few terms of a simple vocabulary in a single section. However, documents listing the terms of larger and more complicated vocabularies may need to be organized into categories to make it easier to locate related terms. This approach was first used with Darwin Core and has also been adopted by Audubon Core. 
 
@@ -203,15 +149,15 @@ The key to organizing the terms in this way is by using the property `tdwgutilit
 
 In many cases, the organizing class will be a well-known class previously defined by TDWG or some other organization. Examples in Darwin Core are `dwc:Occurrence` and `dcterms:Location`. However, it is also possible to create a "convenience" class within the `tdwgutility:` namespace solely for the purpose of organizing related terms. For example, Audubon Core uses the class `tdwgutility:ResourceCreation` to group property terms related to the creation of multimedia resources. Terms in the `tdwgutility:` namespace are not generally governed by any standard, so organizational class terms can be added as necessary without going through any official change process.
 
-### 5.2.1 Using categories
+### 4.2.1 Using categories
 
 In order to use categories, edit the configuration section of the build script so that the value of `organized_in_categories` is `True`. Then create Python lists containing corresponding values for `display_order`, `display_labels`, `display_commnets`, and `display_id`. When the script builds the page, it will use these data to organize the terms and create appropriate section headings and notes for the categories. See the notebook `build-page-categories.ipynb` in the `process/page_build_scripts` directory of the rs.tdwg.org repository for an example.
 
-# 6 Generating JSON-LD for controlled vocabularies
+# 5 Generating JSON-LD for controlled vocabularies
 
 In order to make controlled vocabularies as widely available as possible, multi-lingual translations of the term labels and definitions should be made available in as many languages as possible. A Python script (build-json-ld.ipynb) to generate JSON-LD is avaialable in the `cv_json_ld` directory. It can be run from any location, so maintenance groups should use it to generate JSON-LD representations of their controlled vocabularies on their own sites. This JSON-LD can then be used by developers to create multilingual tools to make it easier for users to select the right concept and acquire the controlled value string or IRI associated with that concept.
 
-Because the JSON-LD can easily be ingested, it can also be used to build multilingual web applications. Some Javascript code and an HTML file for a simple web page is also available in the directory. To see the page in action, visit [this page](https://heardlibrary.github.io/digital-scholarship/lod/json_ld_test/display-cv.html).
+Because the JSON-LD can easily be ingested, it can also be used to build multilingual web applications. Some Javascript code and an HTML file for a simple web page is also available in the directory. To see the page in action, visit [this page](https://heardlibrary.github.io/digital-scholarship/lod/json_ld_test/display-cv.html). NOTE on 2024-03-04, the management of translations documentation is still being worked out.
 
 # 6 Reference
 
