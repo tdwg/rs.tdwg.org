@@ -1360,6 +1360,9 @@ if decisions_df['rdfs_comment'].iloc[-1] != config['decisions_text']:
 
     # Write the updated decisions CSV file
     decisions_df.to_csv('../decisions/decisions.csv', index=False)
+else:
+    # The last decision is the same as in the config, so use its number as the decision number string
+    decision_number_string = str(int(decisions_df['label'].iloc[-1].split(' ')[-1]))
 
 # For each term that has changed, add the IRI and decision term_localName as a row to the decisions-links.csv file.
 

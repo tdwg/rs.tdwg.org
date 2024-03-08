@@ -129,7 +129,7 @@ current_docs_df_keys = current_docs_df.keys()
 # Find the row index if the document already exists
 row_matches = current_docs_df.index[current_docs_df['current_iri']==doc_iri].tolist()
 if len(row_matches) == 0:
-    print('Document IRI not found in existing data.')
+    print('Document IRI not found in existing data. A new document record will be created.')
     new_document = True
 elif len(row_matches) > 1:
     sys.exit('Multiple rows match the document IRI:' + str(row_matches))
