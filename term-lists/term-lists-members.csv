@@ -1028,3 +1028,7 @@ http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/verbatimSiteDescripti
 http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/verbatimSiteNames
 http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/verbatimTargetScope
 http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/voucherInstitutions
+http://rs.tdwg.org/ecotcr/values/,http://rs.tdwg.org/ecotcr/values/tcr
+http://rs.tdwg.org/ecotcr/values/,http://rs.tdwg.org/ecotcr/values/tcr00
+http://rs.tdwg.org/ecotcr/values/,http://rs.tdwg.org/ecotcr/values/tcr01
+http://rs.tdwg.org/ecotcr/values/,http://rs.tdwg.org/ecotcr/values/tcr02
