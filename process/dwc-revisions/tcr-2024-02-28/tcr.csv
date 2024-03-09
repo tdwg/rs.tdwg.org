@@ -1,0 +1,5 @@
+term_localName,label,skos_inScheme,definition,definition_derived_from,usage,notes,examples,controlled_value_string,type
+tcr,taxon completeness reported concept scheme,,a SKOS concept scheme for categorizing taxon completeness reporting,,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
+tcr00,not reported,tcr,Taxonomic completeness was not assessed or reported for the dwc:Event.,,,,,notReported,http://www.w3.org/2004/02/skos/core#Concept
+tcr01,reported complete,tcr,"Taxonomic completeness was assessed for the dwc:Event, and it was determined to be complete.",,,,,reportedComplete,http://www.w3.org/2004/02/skos/core#Concept
+tcr02,reported incomplete,tcr,"Taxonomic completeness was assessed for the dwc:Event, and it was determined to be incomplete.",,,,,reportedIncomplete,http://www.w3.org/2004/02/skos/core#Concept
