@@ -44,3 +44,5 @@ acorient,yes,term,acorient,https://ac.tdwg.org/orient/#,yes,_
 acorient-versions,no,termVersion,acorient,,,
 humboldt,yes,term,eco,https://eco.tdwg.org/list/#,yes,_
 humboldt-versions,no,termVersion,eco,,,
+taxonCompletenessReported,yes,term,ecotcr,https://eco.tdwg.org/tcr/#,yes,_
+taxonCompletenessReported-versions,no,termVersion,ecotcr,,,

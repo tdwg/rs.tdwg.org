@@ -1,0 +1,20 @@
+- contributor_iri: https://orcid.org/0000-0002-1720-0127
+  contributor_literal: Yanina V. Sica
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Yale University
+  affiliation_uri: http://www.wikidata.org/entity/Q49112
+
+- contributor_iri: https://orcid.org/0000-0002-0595-7827
+  contributor_literal: Wesley M. Hochachka
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Cornell Lab of Ornithology
+  affiliation_uri: http://www.wikidata.org/entity/Q2997535
+
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steven J. Baskauf
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Vanderbilt University Libraries
+  affiliation_uri: http://www.wikidata.org/entity/Q16849893
