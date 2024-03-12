@@ -1,0 +1,4 @@
+term_localName,label,skos_inScheme,definition,definition_derived_from,usage,notes,examples,controlled_value_string,type
+b,boolean values concept scheme,,A SKOS Concept Scheme for boolean values,,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
+b0,false,b,Concept representing a boolean false value,,"In systems where datatyping is possible, this value SHOULD be serialized using the datatyped value appropriate for false values in that system.",,,false,http://www.w3.org/2004/02/skos/core#Concept
+b1,true,b,Concept representing a boolean true value,,"In systems where datatyping is possible, this value SHOULD be serialized using the datatyped value appropriate for true values in that system.",,,true,http://www.w3.org/2004/02/skos/core#Concept
