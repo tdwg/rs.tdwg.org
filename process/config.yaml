@@ -3,7 +3,7 @@
 
 # Date assigned to all versions, usually the date of approval by the Executive Committee.
 # It is appended to all version IRIs. Format: YYYY-MM-DD
-date_issued: '2023-03-13'
+date_issued: '2024-02-28'
 
 # UTC offset for the computer running the script (i.e. the appropriate offset for values produced by the
 # Python method datetime.datime.now() .
@@ -23,16 +23,16 @@ vocab_type: 2
 # Permanent IRI for the list of terms document that is associated with this vocabulary.
 # This is needed to automatically update the date_modified value of the list of terms document 
 # using the date_issued value above.
-list_of_terms_iri: http://rs.tdwg.org/tag/doc/boolean/
+list_of_terms_iri: http://rs.tdwg.org/dwc/doc/tcr/
 
 # IRI of containing standard. Existing standards IRIs:
 # Darwin Core - http://www.tdwg.org/standards/450
 # Audiovisual Core - http://www.tdwg.org/standards/638
 # Latimer Core - http://www.tdwg.org/standards/x
-standard: http://www.tdwg.org/standards/x
+standard: http://www.tdwg.org/standards/450
 
 # Text to describe the Executive Committee Decision that approved the change.
-decisions_text: ""
+decisions_text: Humboldt Extension for Ecological Inventories and controlled vocabulary for eco:taxonCompletenessReported ratified as a part of the Darwin Core Standard. See https://github.com/tdwg/hc/milestone/1
 
 namespaces:
 
@@ -40,16 +40,16 @@ namespaces:
 
 # For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
 # term lists, MUST follow conventional TDWG IRI patterns.
-- namespace_uri: http://rs.tdwg.org/boolean/values/
+- namespace_uri: http://rs.tdwg.org/ecotcr/values/
 
   # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: boolean
+  pref_namespace_prefix: ecotcr
 
   # Database name for associated directories and files in the rs.tdwg.org repository. 
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: boolean
+  database: taxonCompletenessReported
 
   # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
   # MUST be set to false if namespace issued and controlled by TDWG.
@@ -67,7 +67,11 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: boolean/boolean.csv
+  modifications_file_path: dwc-revisions/tcr-2024-02-28/tcr.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
 
   # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
   # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
@@ -82,16 +86,16 @@ namespaces:
   termlist_uri: ''
 
   # Label used for the term list in machine-readable metadata.
-  label: boolean controlled values list
+  label: taxonCompletenessReported controlled values list
 
   # Description of the term list used in machine-readable metadata.
-  description: Controlled values list for any properties expected to have boolean values.
+  description: Controlled values list for the Humboldt Extension for Ecological Inventories term taxonCompletenessReported.
 
   # The following values are used to set up redirects to the list of terms document.
 
   # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
   # dereferencing terms and an HTML representation is requested. 
-  prepend_url: https://tag.tdwg.org/boolean/#
+  prepend_url: https://eco.tdwg.org/tcr/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
   use_namespace_in_fragment: true
