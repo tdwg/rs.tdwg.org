@@ -71,3 +71,4 @@ http://rs.tdwg.org/dwc/doc/eco/,text/markdown,https://raw.githubusercontent.com/
 http://rs.tdwg.org/dwc/doc/hierarchy/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/hierarchy/index.md
 http://rs.tdwg.org/dwc/doc/inclusive/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/inclusive/index.md
 http://rs.tdwg.org/dwc/doc/tcr/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/tcr/index.md
+http://rs.tdwg.org/tag/doc/boolean/,text/markdown,https://raw.githubusercontent.com/tdwg/tag/master/docs/boolean/index.md
