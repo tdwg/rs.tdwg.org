@@ -1,5 +1,5 @@
 replacing_term,replaced_term_localName
-http://rs.tdwg.org/chrono/terms/earliestChronometricAge,minimumChronometricAge
-http://rs.tdwg.org/chrono/terms/latestChronometricAge,maximumChronometricAge
-http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem,minimumChronometricAgeReferenceSystem
-http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem,maximumChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/earliestChronometricAge,maximumChronometricAge
+http://rs.tdwg.org/chrono/terms/latestChronometricAge,minimumChronometricAge
+http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem,maximumChronometricAgeReferenceSystem
+http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem,minimumChronometricAgeReferenceSystem
