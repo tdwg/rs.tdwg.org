@@ -1,12 +1,12 @@
 # This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
 # Author: Steven J. Baskauf
 # Date: 2022-06-07
+# NOTE on 2024-04-02: The server tends to throw errors, but usually works on the second try. So I added while loops to retry the download if it fails.
 
 import pandas as pd
 import requests
 
 local_upload_directory = '/Users/baskausj/triplestore_upload/'
-local_code_directory = '/Users/baskausj/triplestore_code/'
 
 def extract_local_name(iri):
     """Extracts the local name part of an IRI"""
@@ -26,30 +26,50 @@ for index, dataset in dataset_index_df.iterrows():
     dataset_dict['sd:graph'] = dataset['dataset_iri']
     filename = extract_local_name(dataset['dataset_iri']) + '.ttl'
     dataset_dict['filename'] = filename
-    dataset_dict['s3_upload_status'] = ''
+    dataset_dict['elapsed_time'] = ''
     dataset_dict['graph_load_status'] = ''
     associations_list.append(dataset_dict)
 
     print('downloading', filename)
     retrieve_url = 'http://rs.tdwg.org/dump/' + filename
     #print(retrieve_url)
-    response = requests.get(retrieve_url)
-    #print(response.text)
+    success = False
+    while not success:
+        try:
+            response = requests.get(retrieve_url)
+            success = True
+        except:
+            print()
+            print(response.text)
+            print()
+            print('retrying', retrieve_url)
+
     with open(local_upload_directory + filename, 'wt', encoding='utf-8') as file_object:
         file_object.write(response.text)
         
 # Now get the DCAT description of all of the datasets
 dcat_description_iri = 'http://rs.tdwg.org/index'
-associations_list.append({'sd:name': 'http://rs.tdwg.org/', 'sd:graph': dcat_description_iri, 'filename': 'index.ttl', 's3_upload_status': '', 'graph_load_status': ''})
+associations_list.append({'sd:name': 'http://rs.tdwg.org/', 'sd:graph': dcat_description_iri, 'filename': 'index.ttl', 'elapsed_time': '', 'graph_load_status': ''})
 print('downloading index.ttl')
-response = requests.get(dcat_description_iri + '.ttl')
+
+success = False
+while not success:
+    try:
+        response = requests.get(dcat_description_iri + '.ttl')
+        success = True
+    except:
+        print()
+        print(response.text)
+        print()
+        print('retrying', dcat_description_iri)
+
 with open(local_upload_directory + 'index.ttl', 'wt', encoding='utf-8') as file_object:
     file_object.write(response.text)
 
 print('saving metadata files')
 # Save the file assocations
 associations_df = pd.DataFrame(associations_list)
-associations_df.to_csv(local_code_directory + 'graph_file_associations.csv', index = False)
+associations_df.to_csv(local_upload_directory + 'graph_file_associations.csv', index = False)
 
 # Find the latest modification date of the datasets
 date_series = dataset_index_df.sort_values(by=['dcterms_modified'], ascending=False).iloc[0]
@@ -66,7 +86,7 @@ graphs_dict['tdwgutility:status'] = 'production'
 graphs_dict['load_status'] = ''
 
 named_graphs_df = pd.DataFrame([graphs_dict])
-named_graphs_df.to_csv(local_code_directory + 'named_graphs.csv', index = False)
+named_graphs_df.to_csv(local_upload_directory + 'named_graphs.csv', index = False)
 
 print('done')
  
