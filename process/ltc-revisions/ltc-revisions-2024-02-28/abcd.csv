@@ -1,0 +1,2 @@
+term_localName,label,definition,usage,notes,examples,rdf_type,tdwgutility_organizedInClass,tdwgutility_required,tdwgutility_repeatable
+fullName,Full Name,String of the preferred form of personal name for displaying.,,,"`James Ewert Bradshaw`, `T. van Hooijdonk`",http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,http://rs.tdwg.org/dwc/terms/attributes/Person,No,No
