@@ -111,7 +111,7 @@
   affiliation: University of Florida
   affiliation_uri: https://www.wikidata.org/wiki/Q501758
 
-- contributor_iri: 
+- contributor_iri: https://orcid.org/0009-0007-6673-7274
   contributor_literal: Gabriele Droege
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
