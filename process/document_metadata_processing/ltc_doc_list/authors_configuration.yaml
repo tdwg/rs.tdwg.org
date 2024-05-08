@@ -1,3 +1,18 @@
+
+- contributor_iri: https://orcid.org/0000-0002-0201-732X
+  contributor_literal: Sharon Grant
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
+
+- contributor_iri: https://orcid.org/0000-0002-1261-8049
+  contributor_literal: Janeen Jones
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
+
 - contributor_iri: https://orcid.org/0000-0001-6496-1423
   contributor_literal: Matt Woodburn
   contributor_role: contributor
@@ -12,79 +27,142 @@
   affiliation: Field Museum of Natural History
   affiliation_uri: http://www.wikidata.org/entity/Q1122595
 
-- contributor_iri: https://orcid.org/
-  contributor_literal: Janeen Jones
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
-  contributor_literal: Sharon Grant
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
-  contributor_literal: Deborah Paul
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
-  contributor_literal: Maarten Trekels
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
-  contributor_literal: Quentin Groom
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
+- contributor_iri: https://orcid.org/0000-0002-4012-0571
   contributor_literal: Sarah Vincent
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
+  affiliation: Natural History Museum, London
+  affiliation_uri: http://www.wikidata.org/entity/Q309388
 
-- contributor_iri: https://orcid.org/
-  contributor_literal: Gabi Droege
+- contributor_iri: https://orcid.org/0000-0001-8282-8765
+  contributor_literal: Maarten Trekels
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
+  affiliation: Agentschap Plantentuin Meise
+  affiliation_uri: https://www.wikidata.org/wiki/Q3052500
 
-- contributor_iri: https://orcid.org/
-  contributor_literal: William Ulate
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
-  contributor_literal: Mike Trizna
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
-  contributor_literal: Niels Raes
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
-
-- contributor_iri: https://orcid.org/
+- contributor_iri: https://orcid.org/0000-0002-7697-9214
   contributor_literal: Jutta Buschbom
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: http://www.wikidata.org/entity/
+  affiliation: Statistical Genetics (Ahrensburg, DE) & Natural History Museum, London
+  affiliation_uri: http://www.wikidata.org/entity/Q309388
+
+- contributor_iri: https://orcid.org/0000-0002-0596-5376
+  contributor_literal: Quentin Groom
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Agentschap Plantentuin Meise
+  affiliation_uri: https://www.wikidata.org/wiki/Q3052500
+
+- contributor_iri: https://orcid.org/0000-0002-5819-9134
+  contributor_literal: Ben Norton
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Ecosystem Planning & Restoration (Raleigh, NC, US)
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0003-4441-6852
+  contributor_literal: Robert Sanderson
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Yale University
+  affiliation_uri: https://www.wikidata.org/wiki/Q49112
+
+- contributor_iri: https://orcid.org/0000-0002-4191-690X
+  contributor_literal: Ian Engelbrecht
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: University of Pretoria
+  affiliation_uri: https://www.wikidata.org/wiki/Q604444
+
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steven Baskauf
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Vanderbilt University
+  affiliation_uri: https://www.wikidata.org/wiki/Q29052
+
+- contributor_iri: https://orcid.org/0000-0002-3090-1761
+  contributor_literal: Wouter Addink 
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Naturalis Biodiversity Center
+  affiliation_uri: https://www.wikidata.org/wiki/Q641676
+
+- contributor_iri: https://orcid.org/0000-0003-1273-1807
+  contributor_literal: David Bloom
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: VertNet
+  affiliation_uri: https://www.wikidata.org/wiki/Q98382028
+
+- contributor_iri: https://orcid.org/0000-0002-8472-3577
+  contributor_literal: Lissa Breugelmans
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Agentschap Plantentuin Meise 
+  affiliation_uri: https://www.wikidata.org/wiki/Q3052500
+
+- contributor_iri: https://orcid.org/0000-0002-0681-2515
+  contributor_literal: Cat Chapman
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: University of Florida
+  affiliation_uri: https://www.wikidata.org/wiki/Q501758
+
+- contributor_iri: https://orcid.org/0009-0007-6673-7274
+  contributor_literal: Gabriele Droege
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Botanic Garden and Botanical Museum Berlin Dahlem 
+  affiliation_uri: https://www.wikidata.org/wiki/Q163255
+
+- contributor_iri: https://orcid.org/0000-0002-2685-8078
+  contributor_literal: Marie Grosjean
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: https://www.wikidata.org/wiki/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0003-3918-4065
+  contributor_literal: Andrea Hahn
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: https://www.wikidata.org/wiki/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0003-3192-0080
+  contributor_literal: Erica Krimmel
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Independent
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0003-2639-7520
+  contributor_literal: Deborah Paul
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Illinois Natural History Survey
+  affiliation_uri: https://www.wikidata.org/wiki/Q5999587
+
+- contributor_iri: https://orcid.org/0000-0002-4329-4892
+  contributor_literal: Niels Raes
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Naturalis Biodiversity Center
+  affiliation_uri: https://www.wikidata.org/wiki/Q641676
+
+- contributor_iri: https://orcid.org/0000-0001-6215-3617
+  contributor_literal: Tim Robertson
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: https://www.wikidata.org/wiki/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0003-2863-2491
+  contributor_literal: William Ulate
+  contributor_role: contributor
+  role_uri: http://www.wikidata.org/entity/Q20204892
+  affiliation: Missouri Botanical Garden
+  affiliation_uri: https://www.wikidata.org/wiki/Q1852803
