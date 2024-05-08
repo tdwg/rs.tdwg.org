@@ -1291,7 +1291,7 @@ for namespace in namespaces:
     # Step 5. Generate current terms metadata
     version_uri, aNewTermList, term_lists_versions_members, term_lists_versions_metadata, mostRecentListNumber, termlistVersionUri, term_lists_versions_replacements, term_lists_table, term_list_rowNumber = generate_current_terms_metadata(standardUri, terms_metadata, modifications_metadata, mods_local_name, modified_terms, local_offset_from_utc, date_issued, namespaceUri, termlist_uri, database, versions, term_list_label, term_list_description, pref_namespace_prefix, use_namespace_in_fragment, prepend_url, separator)
 
-    # Step 6. Update list of termlist members and add the termlist replacement (TDWG namespaces only)
+    # Step 6. Update list of termlist version members and add the termlist replacement (TDWG namespaces only)
     if not borrowed and not utility_namespace:
         update_termlist_version_members(aNewTermList, mostRecentListNumber, date_issued, namespaceUri, new_terms, modified_terms, version_uri, termlistVersionUri, term_lists_versions_metadata, term_lists_versions_members, term_lists_versions_replacements)
     
