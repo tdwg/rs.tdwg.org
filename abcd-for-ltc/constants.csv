@@ -1,0 +1,2 @@
+domainRoot,coreClassFile,documentClass,creator,outputDirectory,outFileNameAfter,separator,baseIriColumn,modifiedColumn
+http://rs.tdwg.org/abcd/terms/,abcd-for-ltc.csv,foaf:document,Biodiversity Information Standards (TDWG),c:\test\output\,,",",term_localName,document_modified
