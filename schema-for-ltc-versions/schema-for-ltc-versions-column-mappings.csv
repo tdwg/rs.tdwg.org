@@ -14,5 +14,8 @@ definition_derived_from ,sawsdlrdf:modelReference,iri,,,$root
 usage,skos:scopeNote,language,,en,$root
 notes,dcterms:description,language,,en,$root
 examples,skos:example,language,,en,$root
-type,rdf:type,iri,,,$root
+rdf_type,rdf:type,iri,,,$root
 term_localName,dcterms:isVersionOf,iri,https://schema.org/,,$root
+tdwgutility_organizedInClass,tdwgutility:organizedInClass,iri,,,$root
+tdwgutility_required,tdwgutility:required,plain,,,$root
+tdwgutility_repeatable,tdwgutility:repeatable,plain,,,$root
