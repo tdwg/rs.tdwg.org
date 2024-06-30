@@ -50,3 +50,15 @@ boolean,yes,term,boolean,https://tag.tdwg.org/boolean/#,yes,_
 boolean-versions,no,termVersion,boolean,,,
 humboldt_iri,yes,term,ecoiri,https://eco.tdwg.org/list/#,yes,_
 humboldt_iri-versions,no,termVersion,ecoiri,,,
+latimer,yes,term,ltc,https://ltc.tdwg.org/terms/#,yes,_
+latimer-versions,no,termVersion,ltc,,,
+abcd-for-ltc,yes,term,abcd,https://ltc.tdwg.org/terms/#,yes,_
+abcd-for-ltc-versions,no,termVersion,abcd,,,
+chrono-for-ltc,yes,term,chrono,https://ltc.tdwg.org/terms/#,yes,_
+chrono-for-ltc-versions,no,termVersion,chrono,,,
+dcterms-for-ltc,yes,term,dcterms,https://ltc.tdwg.org/terms/#,yes,_
+dcterms-for-ltc-versions,no,termVersion,dcterms,,,
+dwc-for-ltc,yes,term,dwc,https://ltc.tdwg.org/terms/#,yes,_
+dwc-for-ltc-versions,no,termVersion,dwc,,,
+schema-for-ltc,yes,term,schema,https://ltc.tdwg.org/terms/#,yes,_
+schema-for-ltc-versions,no,termVersion,schema,,,

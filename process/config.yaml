@@ -3,7 +3,7 @@
 
 # Date assigned to all versions, usually the date of approval by the Executive Committee.
 # It is appended to all version IRIs. Format: YYYY-MM-DD
-date_issued: '2024-03-26'
+date_issued: '2024-02-28'
 
 # UTC offset for the computer running the script (i.e. the appropriate offset for values produced by the
 # Python method datetime.datime.now() .
@@ -23,16 +23,16 @@ vocab_type: 1
 # Permanent IRI for the list of terms document that is associated with this vocabulary.
 # This is needed to automatically update the date_modified value of the list of terms document 
 # using the date_issued value above.
-list_of_terms_iri: http://rs.tdwg.org/dwc/doc/eco/
+list_of_terms_iri: http://rs.tdwg.org/ltc/doc/list/
 
 # IRI of containing standard. Existing standards IRIs:
 # Darwin Core - http://www.tdwg.org/standards/450
 # Audiovisual Core - http://www.tdwg.org/standards/638
-# Latimer Core - http://www.tdwg.org/standards/x
-standard: http://www.tdwg.org/standards/450
+# Latimer Core - http://www.tdwg.org/standards/643
+standard: http://www.tdwg.org/standards/643
 
 # Text to describe the Executive Committee Decision that approved the change.
-decisions_text: Humboldt Extension for Ecological Inventories and controlled vocabulary for eco:taxonCompletenessReported ratified as a part of the Darwin Core Standard. See https://github.com/tdwg/hc/milestone/1
+decisions_text: Latimer Core ratified as a new TDWG standard.
 
 namespaces:
 
@@ -40,80 +40,16 @@ namespaces:
 
 # For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
 # term lists, MUST follow conventional TDWG IRI patterns.
-- namespace_uri: http://rs.tdwg.org/eco/terms/
+- namespace_uri: http://rs.tdwg.org/ltc/terms/
 
   # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: eco
+  pref_namespace_prefix: ltc
 
   # Database name for associated directories and files in the rs.tdwg.org repository. 
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: humboldt
-
-  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
-  # MUST be set to false if namespace issued and controlled by TDWG.
-  borrowed: false
-
-  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
-  # MUST be set to true if it is a new term list that has never been processed before. 
-  # Note that there are extra configuration files that must be set up for term lists that are 
-  # part of new vocabularies. See Section 2.1.2 for details. 
-  # MUST be set to false if this is an existing term list that has been processed at some time in the past.
-  new_term_list: false
-
-  # Normally set to false except for non-versioned namespaces like decisions.
-  utility_namespace: false
-
-  # Path to hand-edited changes CSV file. Relative to process directory from which the
-  # process.py script is run.
-  modifications_file_path: dwc-revisions/eco-2024-03-26/eco.csv
-
-  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
-  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
-  # TDWG termlist IRI pattern.
-
-  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
-  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
-  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
-  # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
-  # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
-  # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
-  # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
-  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
-  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
-  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
-  termlist_uri: ''
-
-  # Label used for the term list in machine-readable metadata.
-  label: Humboldt Extension terms
-
-  # Description of the term list used in machine-readable metadata.
-  description: This list includes terms defined by the Humboldt Extension for Ecological Inventories.
-
-  # The following values are used to set up redirects to the list of terms document.
-
-  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
-  # dereferencing terms and an HTML representation is requested. 
-  prepend_url: https://eco.tdwg.org/list/#
-
-  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
-  use_namespace_in_fragment: true
-
-  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
-  # If use_nameapace_in_fragment is false, this value is ignored.
-  separator: '_'  
-
-- namespace_uri: http://rs.tdwg.org/eco/iri/
-
-  # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: ecoiri
-
-  # Database name for associated directories and files in the rs.tdwg.org repository. 
-  # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
-  # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
-  # Do not append -versions to this name, the versions directory will be created automatically.
-  database: humboldt_iri
+  database: latimer
 
   # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
   # MUST be set to false if namespace issued and controlled by TDWG.
@@ -131,7 +67,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/eco-2024-03-26/ecoiri.csv
+  modifications_file_path: ltc-revisions/ltc-2024-02-28/ltc.csv
 
   # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
   # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
@@ -150,16 +86,16 @@ namespaces:
   termlist_uri: ''
 
   # Label used for the term list in machine-readable metadata.
-  label: Humboldt Extension IRI terms
+  label: Latimer Core terms
 
   # Description of the term list used in machine-readable metadata.
-  description: This list includes terms defined by the Humboldt Extension for Ecological Inventories for use with IRI values.
+  description: This list includes terms defined in the main Latimer Core namespace.
 
   # The following values are used to set up redirects to the list of terms document.
 
   # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
   # dereferencing terms and an HTML representation is requested. 
-  prepend_url: https://eco.tdwg.org/list/#
+  prepend_url: https://ltc.tdwg.org/terms/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
   use_namespace_in_fragment: true
@@ -167,3 +103,334 @@ namespaces:
   # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
   # If use_nameapace_in_fragment is false, this value is ignored.
   separator: '_'  
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: http://rs.tdwg.org/abcd/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: abcd
+
+  # Database name for associated directories and files in the rs.tdwg.org repository. 
+  # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
+  # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  # Do not append -versions to this name, the versions directory will be created automatically.
+  database: abcd-for-ltc
+
+  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
+  # MUST be set to false if namespace issued and controlled by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  # MUST be set to true if it is a new term list that has never been processed before. 
+  # Note that there are extra configuration files that must be set up for term lists that are 
+  # part of new vocabularies. See Section 2.1.2 for details. 
+  # MUST be set to false if this is an existing term list that has been processed at some time in the past.
+  new_term_list: true
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: ltc-revisions/ltc-2024-02-28/abcd.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+
+  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
+  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
+  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
+  # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
+  # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
+  # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
+  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
+  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
+  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
+  termlist_uri: http://rs.tdwg.org/ltc/abcd/
+
+  # Label used for the term list in machine-readable metadata.
+  label: ABCD terms borrowed by Latimer Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: List of terms borrowed from the Access to Biological Collection Data (ABCD) namespace for use with Latimer Core.
+
+  # The following values are used to set up redirects to the list of terms document.
+
+  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
+  # dereferencing terms and an HTML representation is requested. 
+  prepend_url: https://ltc.tdwg.org/terms/#
+
+  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
+  use_namespace_in_fragment: true
+
+  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
+  # If use_nameapace_in_fragment is false, this value is ignored.
+  separator: '_'  
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: http://rs.tdwg.org/chrono/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: chrono
+
+  # Database name for associated directories and files in the rs.tdwg.org repository. 
+  # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
+  # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  # Do not append -versions to this name, the versions directory will be created automatically.
+  database: chrono-for-ltc
+
+  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
+  # MUST be set to false if namespace issued and controlled by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  # MUST be set to true if it is a new term list that has never been processed before. 
+  # Note that there are extra configuration files that must be set up for term lists that are 
+  # part of new vocabularies. See Section 2.1.2 for details. 
+  # MUST be set to false if this is an existing term list that has been processed at some time in the past.
+  new_term_list: true
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: ltc-revisions/ltc-2024-02-28/chrono.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+
+  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
+  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
+  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
+  # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
+  # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
+  # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
+  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
+  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
+  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
+  termlist_uri: http://rs.tdwg.org/ltc/chrono/
+
+  # Label used for the term list in machine-readable metadata.
+  label: chrono terms borrowed by Latimer Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: List of terms borrowed from the Chronometric Age Extension namespace for use with Latimer Core.
+
+  # The following values are used to set up redirects to the list of terms document.
+
+  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
+  # dereferencing terms and an HTML representation is requested. 
+  prepend_url: https://ltc.tdwg.org/terms/#
+
+  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
+  use_namespace_in_fragment: true
+
+  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
+  # If use_nameapace_in_fragment is false, this value is ignored.
+  separator: '_'  
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: http://purl.org/dc/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: dcterms
+
+  # Database name for associated directories and files in the rs.tdwg.org repository. 
+  # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
+  # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  # Do not append -versions to this name, the versions directory will be created automatically.
+  database: dcterms-for-ltc
+
+  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
+  # MUST be set to false if namespace issued and controlled by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  # MUST be set to true if it is a new term list that has never been processed before. 
+  # Note that there are extra configuration files that must be set up for term lists that are 
+  # part of new vocabularies. See Section 2.1.2 for details. 
+  # MUST be set to false if this is an existing term list that has been processed at some time in the past.
+  new_term_list: true
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: ltc-revisions/ltc-2024-02-28/dcterms.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+
+  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
+  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
+  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
+  # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
+  # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
+  # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
+  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
+  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
+  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
+  termlist_uri: http://rs.tdwg.org/ltc/dcterms/
+
+  # Label used for the term list in machine-readable metadata.
+  label: dcterms terms borrowed by Latimer Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: List of terms borrowed from the Dublin Core namespace for use with Latimer Core.
+
+  # The following values are used to set up redirects to the list of terms document.
+
+  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
+  # dereferencing terms and an HTML representation is requested. 
+  prepend_url: https://ltc.tdwg.org/terms/#
+
+  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
+  use_namespace_in_fragment: true
+
+  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
+  # If use_nameapace_in_fragment is false, this value is ignored.
+  separator: '_'  
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: http://rs.tdwg.org/dwc/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: dwc
+
+  # Database name for associated directories and files in the rs.tdwg.org repository. 
+  # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
+  # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  # Do not append -versions to this name, the versions directory will be created automatically.
+  database: dwc-for-ltc
+
+  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
+  # MUST be set to false if namespace issued and controlled by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  # MUST be set to true if it is a new term list that has never been processed before. 
+  # Note that there are extra configuration files that must be set up for term lists that are 
+  # part of new vocabularies. See Section 2.1.2 for details. 
+  # MUST be set to false if this is an existing term list that has been processed at some time in the past.
+  new_term_list: true
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: ltc-revisions/ltc-2024-02-28/dwc.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+
+  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
+  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
+  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
+  # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
+  # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
+  # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
+  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
+  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
+  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
+  termlist_uri: http://rs.tdwg.org/ltc/dwc/
+
+  # Label used for the term list in machine-readable metadata.
+  label: Darwin Core terms borrowed by Latimer Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: List of terms borrowed from the main Darwin Core namespace for use with Latimer Core.
+
+  # The following values are used to set up redirects to the list of terms document.
+
+  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
+  # dereferencing terms and an HTML representation is requested. 
+  prepend_url: https://ltc.tdwg.org/terms/#
+
+  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
+  use_namespace_in_fragment: true
+
+  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
+  # If use_nameapace_in_fragment is false, this value is ignored.
+  separator: '_'  
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: https://schema.org/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: schema
+
+  # Database name for associated directories and files in the rs.tdwg.org repository. 
+  # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
+  # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  # Do not append -versions to this name, the versions directory will be created automatically.
+  database: schema-for-ltc
+
+  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
+  # MUST be set to false if namespace issued and controlled by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  # MUST be set to true if it is a new term list that has never been processed before. 
+  # Note that there are extra configuration files that must be set up for term lists that are 
+  # part of new vocabularies. See Section 2.1.2 for details. 
+  # MUST be set to false if this is an existing term list that has been processed at some time in the past.
+  new_term_list: true
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: ltc-revisions/ltc-2024-02-28/schema.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+
+  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
+  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
+  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
+  # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
+  # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
+  # the standard component for the vocabulary that is borrowing the terms. The second level IRI component 
+  # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
+  # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
+  # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
+  termlist_uri: http://rs.tdwg.org/ltc/schema/
+
+  # Label used for the term list in machine-readable metadata.
+  label: schema.org terms borrowed by Latimer Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: List of terms borrowed from the schema.org namespace for use with Latimer Core.
+
+  # The following values are used to set up redirects to the list of terms document.
+
+  # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
+  # dereferencing terms and an HTML representation is requested. 
+  prepend_url: https://ltc.tdwg.org/terms/#
+
+  # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
+  use_namespace_in_fragment: true
+
+  # String that us used to separate the namespace abbreviation from the term name in the fragment identifier.
+  # If use_nameapace_in_fragment is false, this value is ignored.
+  separator: '_'  
+

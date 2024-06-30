@@ -27,3 +27,9 @@ http://rs.tdwg.org/eco/,http://rs.tdwg.org/eco/terms/
 http://rs.tdwg.org/ecotcr/,http://rs.tdwg.org/ecotcr/values/
 http://rs.tdwg.org/boolean/,http://rs.tdwg.org/boolean/values/
 http://rs.tdwg.org/eco/,http://rs.tdwg.org/eco/iri/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/terms/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/abcd/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/chrono/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/dcterms/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/dwc/
+http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/schema/
