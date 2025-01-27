@@ -1,0 +1,473 @@
+identifier,context,text
+Address:label,Label for Address http://rs.tdwg.org/dwc/terms/Address,Address
+Address:definition,Definition for Address http://rs.tdwg.org/dwc/terms/Address,A physical address for an organisational unit or person.
+ChronometricAge:label,Label for Chronometric Age http://rs.tdwg.org/dwc/terms/ChronometricAge,Chronometric Age
+ChronometricAge:definition,Definition for Chronometric Age http://rs.tdwg.org/dwc/terms/ChronometricAge,The age of a specimen or related materials that is generated from a dating assay.
+ChronometricAge:notes,Notes for Chronometric Age http://rs.tdwg.org/dwc/terms/ChronometricAge,"To represent a single age, enter the same value in both earliestChronometricAge and latestChronometricAge. Leaving one or both of these fields blank indicates that the value is unknown, has yet to be recorded or is not applicable to the material being described. We recommend that you do not use this class to indicate chronostratigraphy: it is intended to be used to reflect a chronometric age or range of ages determined via one or more named analytical protocols, methods or techniques."
+CollectionStatusHistory:label,Label for Collection Status History http://rs.tdwg.org/dwc/terms/CollectionStatusHistory,Collection Status History
+CollectionStatusHistory:definition,Definition for Collection Status History http://rs.tdwg.org/dwc/terms/CollectionStatusHistory,A record of current and past statuses of the object group and the reason for status changes.
+CollectionStatusHistory:notes,Notes for Collection Status History http://rs.tdwg.org/dwc/terms/CollectionStatusHistory,"Use this class to record the history of and reason for changes in the status of the described collection. Types of status described by this class may, for example, include ownership, management, accessibility or accrual policy over time. Dates reflecting the start and end of the status described by this class should be recorded using an instance of TemporalCoverage. If temporalCoverageEndDateTime is empty, the status should be inferred to be the current status of the collection."
+ContactDetail:label,Label for Contact Detail http://rs.tdwg.org/dwc/terms/ContactDetail,Contact Detail
+ContactDetail:definition,Definition for Contact Detail http://rs.tdwg.org/dwc/terms/ContactDetail,Details of a method by which an entity such as a Person or OrganisationalUnit may be contacted.
+ContactDetail:notes,Notes for Contact Detail http://rs.tdwg.org/dwc/terms/ContactDetail,"The Address class should be used to store physical or postal addresses. For all other types of contact details, this class should be used."
+EcologicalContext:label,Label for Ecological Context http://rs.tdwg.org/dwc/terms/EcologicalContext,Ecological Context
+EcologicalContext:definition,Definition for Ecological Context http://rs.tdwg.org/dwc/terms/EcologicalContext,"The ecological and/or biogeographic classification of the region from which objects associated with the ObjectGroup were collected, or where an Event took place."
+EcologicalContext:notes,Notes for Ecological Context http://rs.tdwg.org/dwc/terms/EcologicalContext,"There is some conceptual overlap with the GeographicContext class with respect to geographic locations. This class should be used for biogeographic and ecological concepts, whereas for physical, political and administrative geographic locations, the GeographicContext class is more appropriate. Specific information about the habitat and ecological conditions that applied at the time that an event took place should be recorded in the `habitat` property of the Event class."
+Event:label,Label for Event http://rs.tdwg.org/dwc/terms/Event,Event
+Event:definition,Definition for Event http://rs.tdwg.org/dwc/terms/Event,An action that occurs at some location during some time.
+Event:notes,Notes for Event http://rs.tdwg.org/dwc/terms/Event,Derived from dwc Class event (http://rs.tdwg.org/dwc/terms/version/Event-2018-09-06). This class has been defined under the ltc namespace because it only has a subset of the properties of DwC:Event. All ltc:Event properties are borrowed from and reference the dwc namespace. Examples of an Event include: A specimen collection process. A camera trap image capture. A marine trawl.
+GeographicContext:label,Label for Geographic Context http://rs.tdwg.org/dwc/terms/GeographicContext,Geographic Context
+GeographicContext:definition,Definition for Geographic Context http://rs.tdwg.org/dwc/terms/GeographicContext,"The geographic location from which objects associated with the ObjectGroup were collected, or where an Event took place."
+GeologicalContext:label,Label for Geological Context http://rs.tdwg.org/dwc/terms/GeologicalContext,Geological Context
+GeologicalContext:definition,Definition for Geological Context http://rs.tdwg.org/dwc/terms/GeologicalContext,"Geological information, such as stratigraphy, that qualifies a region or place."
+Identifier:label,Label for Identifier http://rs.tdwg.org/dwc/terms/Identifier,Identifier
+Identifier:definition,Definition for Identifier http://rs.tdwg.org/dwc/terms/Identifier,"A numeric, textual value, or reference such as an IRI, that can be used to uniquely identify the object to which it is attached."
+Identifier:notes,Notes for Identifier http://rs.tdwg.org/dwc/terms/Identifier,"Use this class to document stable identifiers that describe the collections and associated entities being represented in the collection description. For example, person identifiers, taxon identifiers, institution identifiers, organisational unit identifiers, gazetteer identifiers. Identifiers represented by this class may be globally unique, or unique within a given context."
+LatimerCoreScheme:label,Label for Latimer Core Scheme http://rs.tdwg.org/dwc/terms/LatimerCoreScheme,Latimer Core Scheme
+LatimerCoreScheme:definition,Definition for Latimer Core Scheme http://rs.tdwg.org/dwc/terms/LatimerCoreScheme,"A grouping of multiple ObjectGroups for a particular use case, purpose or implementation."
+LatimerCoreScheme:notes,Notes for Latimer Core Scheme http://rs.tdwg.org/dwc/terms/LatimerCoreScheme,"Where the same objects within the same collection might be described by more than one ObjectGroup for different purposes (for examples, a 'Darwin Fossil Mammals' collection description might overlap with a 'Offsite Palaeontology' collection description), this class can be used to distinguish between them and avoid double-counting of metrics in queries against the data."
+MeasurementOrFact:label,Label for Measurement or Fact http://rs.tdwg.org/dwc/terms/MeasurementOrFact,Measurement or Fact
+MeasurementOrFact:definition,Definition for Measurement or Fact http://rs.tdwg.org/dwc/terms/MeasurementOrFact,"A measurement of or fact about a class within the standard, or a relationship between the ObjectGroup and an associated class."
+MeasurementOrFact:notes,Notes for Measurement or Fact http://rs.tdwg.org/dwc/terms/MeasurementOrFact,"This class can be used to apply measurements, facts or narratives to the ObjectGroup as a whole, or used to qualify the relationship between the ObjectGroup and an associated attribute. For example, an ObjectGroup may contain 100 objects, of which 40 are from Europe and 60 from Africa. In this example, one MeasurementOrFact (count of 100) would be attached to the ObjectGroup, and one to each of the two relationships between the ObjectGroup and GeographicContext (Europe: count of 40, Africa: count of 60)."
+ObjectClassification:label,Label for Object Classification http://rs.tdwg.org/dwc/terms/ObjectClassification,Object Classification
+ObjectClassification:definition,Definition for Object Classification http://rs.tdwg.org/dwc/terms/ObjectClassification,"An informal classification of the type of objects within the ObjectGroup, using a hierarchical structure."
+ObjectClassification:notes,Notes for Object Classification http://rs.tdwg.org/dwc/terms/ObjectClassification,"This class is used to categorise the ObjectGroup according to an informal, self-referential hierarchy. For example, this can be used to create a hierarchy encompassing biological, geological and anthropological collections, where a single formal taxonomy isn't appropriate."
+ObjectGroup:label,Label for Object Group http://rs.tdwg.org/dwc/terms/ObjectGroup,Object Group
+ObjectGroup:definition,Definition for Object Group http://rs.tdwg.org/dwc/terms/ObjectGroup,An intentionally grouped set of objects with one or more common characteristics.
+OrganisationalUnit:label,Label for Organisational Unit http://rs.tdwg.org/dwc/terms/OrganisationalUnit,Organisational Unit
+OrganisationalUnit:definition,Definition for Organisational Unit http://rs.tdwg.org/dwc/terms/OrganisationalUnit,"A unit within an organisational hierarchy which may be at, above or below the institutional level."
+OrganisationalUnit:notes,Notes for Organisational Unit http://rs.tdwg.org/dwc/terms/OrganisationalUnit,"This class can represent any level of organisational unit, incorporating institutions (e.g. a museum), higher units (e.g. a university to which a museum belongs) and more detailed structures (e.g the departments and divisions within a museum). It can be used to arrange these different units at different levels into a hierarchical structure. This class combines aspects of both class org:Organization (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:Organization) and class org:OrganizationalUnit (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#org:OrganizationalUnit) from the W3C Organization Ontology ORG (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#overview-of-ontology). Recommended best practice is to associate a unique, persistent organisational identifier (PID) with each created organisational unit. This will allow an unambiguous and continual identification of the unit, as well as the creation of organisational hierarchies. Existing providers of PIDs for organisations are, e.g. https://grid.ac/ and https://ror.org/. The provision of organisational PIDs might be extended to intra-organisational units in the future. Properties of Class: Identifier can be used to add identifier information for organisational units."
+Person:label,Label for Person http://rs.tdwg.org/dwc/terms/Person,Person
+Person:definition,Definition for Person http://rs.tdwg.org/dwc/terms/Person,"A person (alive, dead, undead, or fictional)."
+Person:usage,Usage for Person http://rs.tdwg.org/dwc/terms/Person,A person (alive or dead).
+Person:notes,Notes for Person http://rs.tdwg.org/dwc/terms/Person,"This concept should map to the Schema.org Person class (https://schema.org/Person), and the prov:Person class (http://www.w3.org/ns/prov#Person) in the PROV ontology. In the latter, it is a subclass of prov:Agent, which through which it can map to the RDA recommendations on attribution (http://dx.doi.org/10.15497/RDA00029). The definition is appropriated from the Schema.org class."
+PersonRole:label,Label for Person Role http://rs.tdwg.org/dwc/terms/PersonRole,Person Role
+PersonRole:definition,Definition for Person Role http://rs.tdwg.org/dwc/terms/PersonRole,A qualified association between a Person or OrganisationalUnit and an entity such as an ObjectGroup or MeasurementOrFact that enables the relationship to be contextualised with a specific role and time period.
+PersonRole:notes,Notes for Person Role http://rs.tdwg.org/dwc/terms/PersonRole,"This class is aligned with the prov:qualifiedAttribution property (http://www.w3.org/ns/prov#qualifiedAttribution). It should be used instead of the Activity and PersonActivity classes to link a Person or OrganisationalUnit to an entity in situations where an activity is not know or is irrelevant, for example for describing a person's role within an organisation. It is not mandatory to link to either a Person or a Role in this class, to support use cases where a role is known but the person who fulfilled it is not, and where a person is known to have been involved but the context is not. However, it's expected that at least one of the hasPerson and hasRole properties is populated."
+RecordLevel:label,Label for Record Level http://rs.tdwg.org/dwc/terms/RecordLevel,Record Level
+RecordLevel:definition,Definition for Record Level http://rs.tdwg.org/dwc/terms/RecordLevel,The machine-actionable information profile for the collection description digital object.
+RecordLevel:notes,Notes for Record Level http://rs.tdwg.org/dwc/terms/RecordLevel,Linked to the RDA PID Kernel recommendation (https://www.rd-alliance.org/system/files/RDA%20Recommendation%20on%20PID%20Kernel%20Information_final.pdf)
+Reference:label,Label for Reference http://rs.tdwg.org/dwc/terms/Reference,Reference
+Reference:definition,Definition for Reference http://rs.tdwg.org/dwc/terms/Reference,A reference to external resources and information related to the class.
+Reference:notes,Notes for Reference http://rs.tdwg.org/dwc/terms/Reference,"In Latimer Core, this class can be used to store references to publications, policies, datasets and other online resources such as websites, related to classes within the standard."
+ResourceRelationship:label,Label for Resource Relationship http://rs.tdwg.org/dwc/terms/ResourceRelationship,Resource Relationship
+ResourceRelationship:definition,Definition for Resource Relationship http://rs.tdwg.org/dwc/terms/ResourceRelationship,"A relationship of one rdfs:Resource (http://www.w3.org/2000/01/rdf-schema#Resource) to another, or to a simple named concept."
+ResourceRelationship:notes,Notes for Resource Relationship http://rs.tdwg.org/dwc/terms/ResourceRelationship,"Resources can be thought of as identifiable records or instances of classes and may include, but need not be limited to instances of ltc:ObjectGroup, ltc:OrganisationalUnit, ltc:Taxon, ltc:Event, ltc:GeographicContext, ltc:GeologicalContext, ltc:EcologicalContext, or ltc:ObjectClassification. In the context of Latimer Core, the main purposes of this class are 1. to define different semantic and hierarchical relationships between ObjectGroups, and 2. to support quantified and annotated relationships between ObjectGroups and other LtC classes (such as ltc:Taxon and ltc:GeographicContext) and properties (such as ltc:discipline and ltc:objectType) that describe the contents of the ObjectGroup, using the hasMeasurementOrFact property."
+Role:label,Label for Role http://rs.tdwg.org/dwc/terms/Role,Role
+Role:definition,Definition for Role http://rs.tdwg.org/dwc/terms/Role,The function of a Person with respect to an activity or entity.
+Role:notes,Notes for Role http://rs.tdwg.org/dwc/terms/Role,"While this class contains no mandatory properties, it's recommended that at least one of the roleName and hasIdentifier properties are used to specify the intended role. Where appropriate, the use of controlled vocabularies such as the CRediT contributor roles taxonomy (https://credit.niso.org) is encouraged."
+SchemeMeasurementOrFact:label,Label for Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/SchemeMeasurementOrFact,Scheme Measurement Or Fact
+SchemeMeasurementOrFact:definition,Definition for Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/SchemeMeasurementOrFact,"A type of measurement or fact used by the LatimerCoreScheme, and the rules relating to its application."
+SchemeMeasurementOrFact:notes,Notes for Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/SchemeMeasurementOrFact,"This class can be used to specify the qualitative and quantitative metrics that will be included in the LatimerCoreScheme using the MeasurementOrFact class, and dictate whether each will be mandatory and/or repeatable. This information can be used by software and queries to constrain and validate the Latimer Core dataset, and determine how and whether metrics can be aggregated and reported. The schemeMeasurementType property should correspond to the measurementType property of the MeasurementOrFact class in order to make the relevant association between the scheme definition and the stored data."
+SchemeTerm:label,Label for Scheme Term http://rs.tdwg.org/dwc/terms/SchemeTerm,Scheme Term
+SchemeTerm:definition,Definition for Scheme Term http://rs.tdwg.org/dwc/terms/SchemeTerm,A Latimer Core term used by the LatimerCoreScheme and the rules relating to its application.
+SchemeTerm:notes,Notes for Scheme Term http://rs.tdwg.org/dwc/terms/SchemeTerm,"This class can be used to define which of the terms (classes and/or properties) within the standard (e.g. GeographicContext, Taxon, preservationMethod) are expected to be used within the scheme, and specify whether they're mandatory and/or repeatable. This information can be used by software and queries to validate the data and understand the rules by which metrics can be reported against the specified term."
+StorageLocation:label,Label for Storage Location http://rs.tdwg.org/dwc/terms/StorageLocation,Storage Location
+StorageLocation:definition,Definition for Storage Location http://rs.tdwg.org/dwc/terms/StorageLocation,"A physical location (such as a building, room, cabinet or drawer) within the holding institution where objects associated with the collection description are stored or exhibited."
+Taxon:label,Label for Taxon http://rs.tdwg.org/dwc/terms/Taxon,Taxon
+Taxon:definition,Definition for Taxon http://rs.tdwg.org/dwc/terms/Taxon,A group of organisms (sensu http://purl.obolibrary.org/obo/OBI_0100026) considered by taxonomists to form a homogeneous unit.
+TemporalCoverage:label,Label for Temporal Coverage http://rs.tdwg.org/dwc/terms/TemporalCoverage,Temporal Coverage
+TemporalCoverage:definition,Definition for Temporal Coverage http://rs.tdwg.org/dwc/terms/TemporalCoverage,"The time period during which the related event, activity or status was occurring."
+TemporalCoverage:usage,Usage for Temporal Coverage http://rs.tdwg.org/dwc/terms/TemporalCoverage,"To represent an ongoing period of time, temporalCoverageStartDateTime should be populated and temporalCoverageEndDateTime left blank. To represent a single period in time, temporalCoverageStartDateTime and temporalCoverageEndDateTime should hold the same value."
+TemporalCoverage:notes,Notes for Temporal Coverage http://rs.tdwg.org/dwc/terms/TemporalCoverage,"This class can be used to reflect the period of time in which specified activities, events and states occurred. Examples might include the time range of the `Event` in which the objects were collected, the period during a `CollectionStatusHistory` over which the collection was actively growing, or the span of time someone was working in a particular `PersonRole`. If the time period you are trying to describe is better described by a categorical label rather than a date, `GeologicalContext`, `ChronometricAge` or `ObjectGroup.period` may be more suitable. "
+addressType:label,Label for Address Type http://rs.tdwg.org/dwc/terms/addressType,Address Type
+addressType:definition,Definition for Address Type http://rs.tdwg.org/dwc/terms/addressType,"A person or organization can have different addresses, for different purposes. For example, a postal address, a loan address, an address for visits and so on. This property is used to specify the kind of address."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasTemporalCoverage:label,Label for Has Temporal Coverage http://rs.tdwg.org/dwc/terms/hasTemporalCoverage,Has Temporal Coverage
+hasTemporalCoverage:definition,Definition for Has Temporal Coverage http://rs.tdwg.org/dwc/terms/hasTemporalCoverage,This property refers to one or more related instances of the TemporalCoverage class.
+status:label,Label for Status http://rs.tdwg.org/dwc/terms/status,Status
+status:definition,Definition for Status http://rs.tdwg.org/dwc/terms/status,The development status of the collection during a specified period.
+status:notes,Notes for Status http://rs.tdwg.org/dwc/terms/status,The values/vocabularies for a status are predicated by the statusType. The in the examples mentioned terms are a cumulative list of terms associated with several different statusTypes.
+statusChangeReason:label,Label for Status Change Reason http://rs.tdwg.org/dwc/terms/statusChangeReason,Status Change Reason
+statusChangeReason:definition,Definition for Status Change Reason http://rs.tdwg.org/dwc/terms/statusChangeReason,An explanation of why the collection transitioned to the value set in the status property.
+statusChangeReason:notes,Notes for Status Change Reason http://rs.tdwg.org/dwc/terms/statusChangeReason,statusChangeReason should be aligned with the value of statusType.
+statusType:label,Label for Status Type http://rs.tdwg.org/dwc/terms/statusType,Status Type
+statusType:definition,Definition for Status Type http://rs.tdwg.org/dwc/terms/statusType,A top-level classification of the different categories of status that can be applied to the collection.
+statusType:notes,Notes for Status Type http://rs.tdwg.org/dwc/terms/statusType,statusType forms the top level of a two-level hierarchy with the status property. Recommended best practice is to use a controlled vocabulary.
+contactDetailCategory:label,Label for Contact Detail Category http://rs.tdwg.org/dwc/terms/contactDetailCategory,Contact Detail Category
+contactDetailCategory:definition,Definition for Contact Detail Category http://rs.tdwg.org/dwc/terms/contactDetailCategory,The method of contact to which the contact detail applies.
+contactDetailCategory:notes,Notes for Contact Detail Category http://rs.tdwg.org/dwc/terms/contactDetailCategory,Recommended practice is to use a controlled vocabulary.
+contactDetailFunction:label,Label for Contact Detail Function http://rs.tdwg.org/dwc/terms/contactDetailFunction,Contact Detail Function
+contactDetailFunction:definition,Definition for Contact Detail Function http://rs.tdwg.org/dwc/terms/contactDetailFunction,A brief label describing the nature of the enquiry or enquiries that are appropriate to direct to the contact detail.
+contactDetailValue:label,Label for Contact Detail Value http://rs.tdwg.org/dwc/terms/contactDetailValue,Contact Detail Value
+contactDetailValue:definition,Definition for Contact Detail Value http://rs.tdwg.org/dwc/terms/contactDetailValue,"The value of the contact detail, such as the phone number or email address."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+biogeographicRealm:label,Label for Biogeographic Realm http://rs.tdwg.org/dwc/terms/biogeographicRealm,Biogeographic Realm
+biogeographicRealm:definition,Definition for Biogeographic Realm http://rs.tdwg.org/dwc/terms/biogeographicRealm,"The broadest biogeographic division of Earth's land and marine surface, based on distributional patterns of terrestrial and marine organisms."
+biogeographicRealm:notes,Notes for Biogeographic Realm http://rs.tdwg.org/dwc/terms/biogeographicRealm,"This term may commonly be used in a biogeographic hierarchy above marineProvince (marine only), ecoregion and ecosystem. It is recommended to use controlled vocabularies such as those adopted by the World Wildlife Fund (WWF) / Global 200 (Olson et at. 1998). "
+biome:label,Label for Biome http://rs.tdwg.org/dwc/terms/biome,Biome
+biome:definition,Definition for Biome http://rs.tdwg.org/dwc/terms/biome,A biogeographical unit consisting of a biological community that has formed in response to the physical environment in which they are found and a shared regional climate.
+biome:notes,Notes for Biome http://rs.tdwg.org/dwc/terms/biome,"This property can be used to record terrestrial, freshwater and marine biomes. It is recommended to use controlled vocabularies such as those adopted by the World Wildlife Fund (WWF) / Global 200 (Olson et at. 1998). "
+biomeType:label,Label for Biome Type http://rs.tdwg.org/dwc/terms/biomeType,Biome Type
+biomeType:definition,Definition for Biome Type http://rs.tdwg.org/dwc/terms/biomeType,A top level classification of the type of biome from which objects were collected or where an event took place.
+biomeType:notes,Notes for Biome Type http://rs.tdwg.org/dwc/terms/biomeType,"The biomeType is positioned at a level between the biosphere (the global sum of all ecosystems on Earth) and the more detailed terrestrial, marine and freshwater biomes. The latter should be recorded using the EcologicalContext.biome property."
+bioregion:label,Label for Bioregion http://rs.tdwg.org/dwc/terms/bioregion,Bioregion
+bioregion:definition,Definition for Bioregion http://rs.tdwg.org/dwc/terms/bioregion,"An ecologically and geographically defined area that is smaller than a biogeographic realm, but larger than an ecoregion or an ecosystem."
+bioregion:notes,Notes for Bioregion http://rs.tdwg.org/dwc/terms/bioregion,"This is analagous with the marine province concept for marine regions. It is recommended to use controlled vocabularies such as those adopted by the World Wildlife Fund (WWF) / Global 200 (Olson et at. 1998), from which this concept originated. "
+ecoregion:label,Label for Ecoregion http://rs.tdwg.org/dwc/terms/ecoregion,Ecoregion
+ecoregion:definition,Definition for Ecoregion http://rs.tdwg.org/dwc/terms/ecoregion,"An ecologically and geographically defined area that is smaller than a bioregion, which in turn is smaller than a biogeographic realm. Ecoregions cover relatively large areas of land or water, and contain characteristic, geographically distinct assemblages of natural communities and species."
+ecoregion:notes,Notes for Ecoregion http://rs.tdwg.org/dwc/terms/ecoregion,It is recommended to use controlled vocabularies such as those adopted by the World Wildlife Fund (WWF) / Global 200 (Olson et at. 1998).
+ecosystem:label,Label for Ecosystem http://rs.tdwg.org/dwc/terms/ecosystem,Ecosystem
+ecosystem:definition,Definition for Ecosystem http://rs.tdwg.org/dwc/terms/ecosystem,"A specific kind of ecological classification that considers all four elements of the definition of ecosystems: a biotic component, an abiotic complex, the interactions between and within them, and the physical space that they occupy."
+habitat:label,Label for Habitat http://rs.tdwg.org/dwc/terms/habitat,Habitat
+habitat:definition,Definition for Habitat http://rs.tdwg.org/dwc/terms/habitat,A description of the type of environment in which an organism lives.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+eventName:label,Label for Event Name http://rs.tdwg.org/dwc/terms/eventName,Event Name
+eventName:definition,Definition for Event Name http://rs.tdwg.org/dwc/terms/eventName,The name commonly used to identify or refer to the event.
+hasEcologicalContext:label,Label for Has Ecological Context http://rs.tdwg.org/dwc/terms/hasEcologicalContext,Has Ecological Context
+hasEcologicalContext:definition,Definition for Has Ecological Context http://rs.tdwg.org/dwc/terms/hasEcologicalContext,This property refers to one or more related instances of the EcologicalContext class.
+hasGeographicContext:label,Label for Has Geographic Context http://rs.tdwg.org/dwc/terms/hasGeographicContext,Has Geographic Context
+hasGeographicContext:definition,Definition for Has Geographic Context http://rs.tdwg.org/dwc/terms/hasGeographicContext,This property refers to one or more related instances of the GeographicContext class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasParentEvent:label,Label for Has Parent Event http://rs.tdwg.org/dwc/terms/hasParentEvent,Has Parent Event
+hasParentEvent:definition,Definition for Has Parent Event http://rs.tdwg.org/dwc/terms/hasParentEvent,This property refers to one or more related parent instances of the Event class.
+hasParentEvent:usage,Usage for Has Parent Event http://rs.tdwg.org/dwc/terms/hasParentEvent,This term should only contain Events that can be considered to be a parent of the current instance.
+hasPersonRole:label,Label for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,Has Person Role
+hasPersonRole:definition,Definition for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,This property refers to one or more related instances of the PersonRole class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasTemporalCoverage:label,Label for Has Temporal Coverage http://rs.tdwg.org/dwc/terms/hasTemporalCoverage,Has Temporal Coverage
+hasTemporalCoverage:definition,Definition for Has Temporal Coverage http://rs.tdwg.org/dwc/terms/hasTemporalCoverage,This property refers to one or more related instances of the TemporalCoverage class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+region:label,Label for Region http://rs.tdwg.org/dwc/terms/region,Region
+region:examples,Examples for Region http://rs.tdwg.org/dwc/terms/region,"Multi-country: `North European Plain`, Multi-state/Province: `Pacific Northwest`, Waterbody: `Southern`, Geological basins and provinces: `Michigan Basin`, `Mazon Creek`, `Bundenbach`"
+region:definition,Definition for Region http://rs.tdwg.org/dwc/terms/region,The name of a spatial region or named place of any size within an individual or multiple administrative areas.
+region:notes,Notes for Region http://rs.tdwg.org/dwc/terms/region,"Recommended best practice is to use this field in situations where the administrative location fields (country, stateProvince, county, etc.) provide insufficient description. For geological collections examples include basins, provinces, and fossil deposits."
+waterBodyType:label,Label for Waterbody Type http://rs.tdwg.org/dwc/terms/waterBodyType,Waterbody Type
+waterBodyType:definition,Definition for Waterbody Type http://rs.tdwg.org/dwc/terms/waterBodyType,A term that indicates the aquatic order of a waterbody.
+waterBodyType:notes,Notes for Waterbody Type http://rs.tdwg.org/dwc/terms/waterBodyType,"Recommendation is to use a controlled vocabulary, such as those fuind at https://www.usgs.gov/mission-areas/water-resources/science/types-water and https://sciencetrends.com/types-bodies-water-complete-list/."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+supergroup:label,Label for Supergroup http://rs.tdwg.org/dwc/terms/supergroup,Supergroup
+supergroup:definition,Definition for Supergroup http://rs.tdwg.org/dwc/terms/supergroup,The full name of the lithostratigraphic supergroup from which the cataloged item was collected.
+supergroup:usage,Usage for Supergroup http://rs.tdwg.org/dwc/terms/supergroup,A supergroup is a formal assemblage of related or superposed groups or of groups and formations. Such units have proved useful in regional and provincial syntheses. Supergroups should be named only where their recognition serves a clear purpose.
+supergroup:notes,Notes for Supergroup http://rs.tdwg.org/dwc/terms/supergroup,Recommended vocabulary. At time of inclusion this term is in progress of being included as part of dwc tdwg/dwc#234
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+identifierSource:label,Label for Identifier Source http://rs.tdwg.org/dwc/terms/identifierSource,Identifier Source
+identifierSource:definition,Definition for Identifier Source http://rs.tdwg.org/dwc/terms/identifierSource,The source or creator of the identifier.
+identifierSource:notes,Notes for Identifier Source http://rs.tdwg.org/dwc/terms/identifierSource,"This term refers to the organisation, framework, software or database that minted the identifier represented in the identifier property."
+identifierType:label,Label for Identifier Type http://rs.tdwg.org/dwc/terms/identifierType,Identifier Type
+identifierType:definition,Definition for Identifier Type http://rs.tdwg.org/dwc/terms/identifierType,The type and format of the value in the identifier field.
+identifierType:notes,Notes for Identifier Type http://rs.tdwg.org/dwc/terms/identifierType,This property should be used to help people and software understand how the identifier can be used (e.g. whether it's a resolvable IRI) and validate the identifier based on format and composition (e.g. a valid UUID).
+identifierValue:label,Label for Identifier http://rs.tdwg.org/dwc/terms/identifierValue,Identifier
+identifierValue:definition,Definition for Identifier http://rs.tdwg.org/dwc/terms/identifierValue,"A textual or numeric identifier, acronym or IRI that provides an unambiguous reference for an entity within a given context."
+identifierValue:notes,Notes for Identifier http://rs.tdwg.org/dwc/terms/identifierValue,"This may be a simple value or resolvable IRI, and can reflect any identifier used to identify an entity (such as a collection, taxon, institution or person) included in the Collection Description."
+basisOfScheme:label,Label for Basis Of Scheme http://rs.tdwg.org/dwc/terms/basisOfScheme,Basis Of Scheme
+basisOfScheme:definition,Definition for Basis Of Scheme http://rs.tdwg.org/dwc/terms/basisOfScheme,A summary of the basis or purpose for the LatimerCoreScheme.
+basisOfScheme:notes,Notes for Basis Of Scheme http://rs.tdwg.org/dwc/terms/basisOfScheme,"This property is intended to summarise the reason for grouping a number of ObjectGroups within the LatimerCoreScheme, and the purpose for which the data is intended to be used. This may also be reflected in the terms and metrics defined using the SchemeTerm and SchemeMeasurementOrFact classes respectively. Using this approach, standard and reusable profiles within the wider Latimer Core standard may be constructed for common collection descriptions use cases."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasObjectGroup:label,Label for Has Object Group http://rs.tdwg.org/dwc/terms/hasObjectGroup,Has Object Group
+hasObjectGroup:definition,Definition for Has Object Group http://rs.tdwg.org/dwc/terms/hasObjectGroup,This property refers to one or more related instances of the ObjectGroup class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasSchemeMeasurementOrFact:label,Label for Has Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasSchemeMeasurementOrFact,Has Scheme Measurement Or Fact
+hasSchemeMeasurementOrFact:definition,Definition for Has Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasSchemeMeasurementOrFact,This property refers to one or more related instances of the SchemeMeasurementOrFact class.
+hasSchemeTerm:label,Label for Has Scheme Term http://rs.tdwg.org/dwc/terms/hasSchemeTerm,Has Scheme Term
+hasSchemeTerm:definition,Definition for Has Scheme Term http://rs.tdwg.org/dwc/terms/hasSchemeTerm,This property refers to one or more related instances of the SchemeTerm class.
+isDistinctObjects:label,Label for Is Distinct Objects http://rs.tdwg.org/dwc/terms/isDistinctObjects,Is Distinct Objects
+isDistinctObjects:definition,Definition for Is Distinct Objects http://rs.tdwg.org/dwc/terms/isDistinctObjects,A flag to designate whether a physical object may be described by more than one ObjectGroup within the LatimerCoreScheme.
+isDistinctObjects:notes,Notes for Is Distinct Objects http://rs.tdwg.org/dwc/terms/isDistinctObjects,"If isDistinctObjects is set to 'true', then no collection object should be covered by more than one object group within the LatimerCoreScheme. This is important for aggregating and reporting on metrics such as object counts, as it prevents any physical object from being counted more than once."
+schemeName:label,Label for Scheme Name http://rs.tdwg.org/dwc/terms/schemeName,Scheme Name
+schemeName:definition,Definition for Scheme Name http://rs.tdwg.org/dwc/terms/schemeName,A short descriptive name given to the LatimerCoreScheme.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+measurementDerivation:label,Label for Measurement Derivation http://rs.tdwg.org/dwc/terms/measurementDerivation,Measurement Derivation
+measurementDerivation:definition,Definition for Measurement Derivation http://rs.tdwg.org/dwc/terms/measurementDerivation,"An indicator as to whether the measurement, fact, characteristic, or assertion being applied to the collection was derived from reported figures or aggregated/calculated from underlying data."
+measurementDerivation:notes,Notes for Measurement Derivation http://rs.tdwg.org/dwc/terms/measurementDerivation,"If there is more detailed information about the method by which a measurement or fact was derived, this should be captured using the measurementMethod property."
+measurementFactText:label,Label for Fact or Narrative Text http://rs.tdwg.org/dwc/terms/measurementFactText,Fact or Narrative Text
+measurementFactText:definition,Definition for Fact or Narrative Text http://rs.tdwg.org/dwc/terms/measurementFactText,"The value of the qualitative fact, characteristic, or assertion being made about the collection."
+measurementFactText:notes,Notes for Fact or Narrative Text http://rs.tdwg.org/dwc/terms/measurementFactText,"This property should also be used for storing textual information about the collection within a particular context, such as narratives or comments about digitisation readiness."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasParentObjectClassification:label,Label for Has Parent Object Classification http://rs.tdwg.org/dwc/terms/hasParentObjectClassification,Has Parent Object Classification
+hasParentObjectClassification:definition,Definition for Has Parent Object Classification http://rs.tdwg.org/dwc/terms/hasParentObjectClassification,This property refers to one or more related parent instances of the ObjectClassification class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+isTopParent:label,Label for Is Top Parent http://rs.tdwg.org/dwc/terms/isTopParent,Is Top Parent
+isTopParent:definition,Definition for Is Top Parent http://rs.tdwg.org/dwc/terms/isTopParent,A flag to indicate that the current instance of ObjectClassification is at the top of the hierarchy represented by multiple nested instances of the class.
+isTopParent:usage,Usage for Is Top Parent http://rs.tdwg.org/dwc/terms/isTopParent,"If this term is used, it should be set to `true` in the instance of ObjectClassification which represents the highest level of a hierarchy and `false` in the rest. If the direction of the hierarchy is self-evident or otherwise not notable, this term should not be populated. "
+objectClassificationLevel:label,Label for Object Classification Level http://rs.tdwg.org/dwc/terms/objectClassificationLevel,Object Classification Level
+objectClassificationLevel:definition,Definition for Object Classification Level http://rs.tdwg.org/dwc/terms/objectClassificationLevel,The level of the ObjectClassification in the hierarchy.
+objectClassificationLevel:notes,Notes for Object Classification Level http://rs.tdwg.org/dwc/terms/objectClassificationLevel,It is up to the user to name the levels to be relevant to the hierarchical classification scheme that they are defining.
+objectClassificationName:label,Label for Object Classification Name http://rs.tdwg.org/dwc/terms/objectClassificationName,Object Classification Name
+objectClassificationName:definition,Definition for Object Classification Name http://rs.tdwg.org/dwc/terms/objectClassificationName,"A short title describing this ObjectClassification as a class, unit or grouping."
+objectClassificationName:notes,Notes for Object Classification Name http://rs.tdwg.org/dwc/terms/objectClassificationName,"This is a user-determined name given for classifying their collection. This name, expressing an assigned classification, can be part of a self-referential hierarchy."
+alternativeCollectionName:label,Label for Alternative Collection Name http://rs.tdwg.org/dwc/terms/alternativeCollectionName,Alternative Collection Name
+alternativeCollectionName:definition,Definition for Alternative Collection Name http://rs.tdwg.org/dwc/terms/alternativeCollectionName,One or more short titles different to the one given in ObjectGroup.collectionName used to summarise the collection objects contained within the ObjectGroup.
+baseTypeOfObjectGroup:label,Label for Base Type Of Object Group http://rs.tdwg.org/dwc/terms/baseTypeOfObjectGroup,Base Type Of Object Group
+baseTypeOfObjectGroup:definition,Definition for Base Type Of Object Group http://rs.tdwg.org/dwc/terms/baseTypeOfObjectGroup,High-level terms describing the fundamental nature of objects in the ObjectGroup.
+baseTypeOfObjectGroup:notes,Notes for Base Type Of Object Group http://rs.tdwg.org/dwc/terms/baseTypeOfObjectGroup,"For natural history collections baseTypeOfObjectGroup describes types of material entities and may constrain the values available in objectType. Notes for ObjectGroups where baseTypeOfObjectGroup is 'InformationArtefact': subsequent ‘type’ properties could include hierarchical Audubon Core/Dublin Core terms – e.g. dc:type (http://purl.org/dc/elements/1.1/type), ac:subtype / ac:subtypeLiteral (http://rs.tdwg.org/ac/terms/subtypeLiteral), or (proposed) ac:3DResourceType."
+collectionManagementSystem:label,Label for Collection Management System http://rs.tdwg.org/dwc/terms/collectionManagementSystem,Collection Management System
+collectionManagementSystem:definition,Definition for Collection Management System http://rs.tdwg.org/dwc/terms/collectionManagementSystem,The collection management system which is used to hold and manage the primary data for the objects contained within the ObjectGroup.
+collectionManagementSystem:notes,Notes for Collection Management System http://rs.tdwg.org/dwc/terms/collectionManagementSystem,"This should reflect the system or database in which the object-level records reside, rather than the source of the Collection Description data."
+collectionName:label,Label for Collection Name http://rs.tdwg.org/dwc/terms/collectionName,Collection Name
+collectionName:definition,Definition for Collection Name http://rs.tdwg.org/dwc/terms/collectionName,A short title that summarises the collection objects contained within the ObjectGroup.
+conditionsOfAccess:label,Label for Conditions of Access http://rs.tdwg.org/dwc/terms/conditionsOfAccess,Conditions of Access
+conditionsOfAccess:definition,Definition for Conditions of Access http://rs.tdwg.org/dwc/terms/conditionsOfAccess,Information about who can access the collection being described or an indication of its security status.
+conditionsOfAccess:notes,Notes for Conditions of Access http://rs.tdwg.org/dwc/terms/conditionsOfAccess,"If available, this should be a URL to a stable policy page. For example, https://www.fieldmuseum.org/science/research/area/fossils-meteorites/fossils-meteorites-policies."
+description:label,Label for Description http://rs.tdwg.org/dwc/terms/description,Description
+description:definition,Definition for Description http://rs.tdwg.org/dwc/terms/description,A free text description or narrative about the collection.
+description:notes,Notes for Description http://rs.tdwg.org/dwc/terms/description,"Use this field to record information about the collection in a human-readable, narrative style to introduce the main characteristics of the collection to someone unfamiliar to it. It may include additional information or re-state information held elsewhere in the collection description record - for example, for more atomic, categorised textual descriptions and narratives the MeasurementOrFact class should be used."
+discipline:label,Label for Discipline http://rs.tdwg.org/dwc/terms/discipline,Discipline
+discipline:definition,Definition for Discipline http://rs.tdwg.org/dwc/terms/discipline,A high level classification of the scientific discipline to which the objects within the collection belong or are related.
+discipline:notes,Notes for Discipline http://rs.tdwg.org/dwc/terms/discipline,"The recommendation is to use a controlled vocabulary that is also common across other community collections, object and occurrence standards. Suggested list https://confluence.egi.eu/display/EGIG/Scientific+Disciplines"
+hasChronometricAge:label,Label for Has Chronometric Age http://rs.tdwg.org/dwc/terms/hasChronometricAge,Has Chronometric Age
+hasChronometricAge:definition,Definition for Has Chronometric Age http://rs.tdwg.org/dwc/terms/hasChronometricAge,This property refers to one or more related instances of the ChronometricAge class.
+hasCollectionStatusHistory:label,Label for Has Collection Status History http://rs.tdwg.org/dwc/terms/hasCollectionStatusHistory,Has Collection Status History
+hasCollectionStatusHistory:definition,Definition for Has Collection Status History http://rs.tdwg.org/dwc/terms/hasCollectionStatusHistory,This property refers to one or more related instances of the CollectionStatusHistory class.
+hasEcologicalContext:label,Label for Has Ecological Context http://rs.tdwg.org/dwc/terms/hasEcologicalContext,Has Ecological Context
+hasEcologicalContext:definition,Definition for Has Ecological Context http://rs.tdwg.org/dwc/terms/hasEcologicalContext,This property refers to one or more related instances of the EcologicalContext class.
+hasEvent:label,Label for Has Event http://rs.tdwg.org/dwc/terms/hasEvent,Has Event
+hasEvent:definition,Definition for Has Event http://rs.tdwg.org/dwc/terms/hasEvent,This property refers to one or more related instances of the Event class.
+hasGeographicContext:label,Label for Has Geographic Context http://rs.tdwg.org/dwc/terms/hasGeographicContext,Has Geographic Context
+hasGeographicContext:definition,Definition for Has Geographic Context http://rs.tdwg.org/dwc/terms/hasGeographicContext,This property refers to one or more related instances of the GeographicContext class.
+hasGeologicalContext:label,Label for Has Geological Context http://rs.tdwg.org/dwc/terms/hasGeologicalContext,Has Geological Context
+hasGeologicalContext:definition,Definition for Has Geological Context http://rs.tdwg.org/dwc/terms/hasGeologicalContext,This property refers to one or more related instances of the GeologicalContext class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasObjectClassification:label,Label for Has Object Classification http://rs.tdwg.org/dwc/terms/hasObjectClassification,Has Object Classification
+hasObjectClassification:definition,Definition for Has Object Classification http://rs.tdwg.org/dwc/terms/hasObjectClassification,This property refers to one or more related instances of the ObjectClassification class.
+hasOrganisationalUnit:label,Label for Has Organisational Unit http://rs.tdwg.org/dwc/terms/hasOrganisationalUnit,Has Organisational Unit
+hasOrganisationalUnit:definition,Definition for Has Organisational Unit http://rs.tdwg.org/dwc/terms/hasOrganisationalUnit,This property refers to one or more related instances of the OrganisationalUnit class.
+hasPersonRole:label,Label for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,Has Person Role
+hasPersonRole:definition,Definition for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,This property refers to one or more related instances of the PersonRole class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasResourceRelationship:label,Label for Has Resource Relationship http://rs.tdwg.org/dwc/terms/hasResourceRelationship,Has Resource Relationship
+hasResourceRelationship:definition,Definition for Has Resource Relationship http://rs.tdwg.org/dwc/terms/hasResourceRelationship,This property refers to one or more related instances of the ResourceRelationship class.
+hasStorageLocation:label,Label for Has Storage Location http://rs.tdwg.org/dwc/terms/hasStorageLocation,Has Storage Location
+hasStorageLocation:definition,Definition for Has Storage Location http://rs.tdwg.org/dwc/terms/hasStorageLocation,This property refers to one or more related instances of the StorageLocation class.
+hasTaxon:label,Label for Has Taxon http://rs.tdwg.org/dwc/terms/hasTaxon,Has Taxon
+hasTaxon:definition,Definition for Has Taxon http://rs.tdwg.org/dwc/terms/hasTaxon,This property refers to one or more related instances of the Taxon class.
+isCurrentCollection:label,Label for Is Current Collection http://rs.tdwg.org/dwc/terms/isCurrentCollection,Is Current Collection
+isCurrentCollection:definition,Definition for Is Current Collection http://rs.tdwg.org/dwc/terms/isCurrentCollection,A flag to indicate whether the collection still exists as a single entity.
+isCurrentCollection:notes,Notes for Is Current Collection http://rs.tdwg.org/dwc/terms/isCurrentCollection,Use this to indicate if the record describes the entirety of a known historical collection. If only part of the collection is present the value is 'false'.
+isKnownToContainTypes:label,Label for Is Known To Contain Types http://rs.tdwg.org/dwc/terms/isKnownToContainTypes,Is Known To Contain Types
+isKnownToContainTypes:definition,Definition for Is Known To Contain Types http://rs.tdwg.org/dwc/terms/isKnownToContainTypes,Flag property to indicate that the collection is known to include type specimens.
+isKnownToContainTypes:notes,Notes for Is Known To Contain Types http://rs.tdwg.org/dwc/terms/isKnownToContainTypes,`true` - this collection contains types; `false` - this collections does not contain types
+material:label,Label for Material http://rs.tdwg.org/dwc/terms/material,Material
+material:examples,Examples for Material http://rs.tdwg.org/dwc/terms/material,"`Biological body`, `Organism material (cp. objectType = `Organism product`)`, `Viable cells`, `Protein`, `RNA`, `DNA`, etc."
+material:definition,Definition for Material http://rs.tdwg.org/dwc/terms/material,"Material denotes the raw substance(s) from which the object is formed, in whole or in part."
+material:notes,Notes for Material http://rs.tdwg.org/dwc/terms/material,"This definition maps roughly to the concept of E57 'material' from the CIDOC CRM: https://cidoc-crm.org/Entity/E57-Material/version-7.1.1. The object, or artefact could contain biological parts, for example jewellery made of amber with insects in, or cloaks made of bird feathers. It should not be used for taxonomic identifications."
+objectType:label,Label for Object Type http://rs.tdwg.org/dwc/terms/objectType,Object Type
+objectType:examples,Examples for Object Type http://rs.tdwg.org/dwc/terms/objectType,"if baseTypeOfObjectGroup = `MaterialEntity`: `Specimen`, `Tissue`, `Culture`, `HTS Library`, `Lysate`, `Environmental sample`, `Extracted/Preserved DNA/RNA`, `Microscope slide`, `Spore print`, `Macrofossil`, `Mesofossil`, `Microfossil`, `Oversized fossil`; if typeOfObjectGroup = `Non-biological`: `Macro-object`, `Micro-object`, `Oversized object`, `Cut/polished gemstone`, `Core`, `Fluid`, `Hazardous material/object`, `Mixed`; if baseTypeOfObjectGroup = `InformationArtefact`: `Text`, `Audio`, `Visual`"
+objectType:definition,Definition for Object Type http://rs.tdwg.org/dwc/terms/objectType,High-level terms for the classification of curated objects.
+objectType:usage,Usage for Object Type http://rs.tdwg.org/dwc/terms/objectType,A more generic classification of items in the collection than described in preparationType.
+objectType:notes,Notes for Object Type http://rs.tdwg.org/dwc/terms/objectType,"Hands-on, practical attributes classifying the stored curated objects. You will expect to find these kinds and types of objects when you go to and access their storage location. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification)."
+period:label,Label for Period http://rs.tdwg.org/dwc/terms/period,Period
+period:definition,Definition for Period http://rs.tdwg.org/dwc/terms/period,Used to describe prehistoric or historic periods.
+period:usage,Usage for Period http://rs.tdwg.org/dwc/terms/period,Used to describe the prehistoric or historic period from which objects in the collection originated.
+period:notes,Notes for Period http://rs.tdwg.org/dwc/terms/period,"Often used to describe prehistoric or historic periods, but also geopolitical units and activities of settlements are regarded as special cases of Period. However, there are no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. This property maps to the Period class of the CIDOC-CRM conceptual reference model (http://www.cidoc-crm.org/Entity/e4-period/version-7.1.1)."
+preparationType:label,Label for Preparation Type http://rs.tdwg.org/dwc/terms/preparationType,Preparation Type
+preparationType:examples,Examples for Preparation Type http://rs.tdwg.org/dwc/terms/preparationType,"if objectType = `Specimen` or `Part of entity`: `Bones`, `Eggs`, `Pollen`, `Muscle`, `Leaf`, `Blood`, `Skins`, `Shells`, `Wood`, ... ; if typeOfObjectGroup = `human-made`: `Bowl`, `Textile`, ...; if typeOfObjectGroup = `digital`: `txt`, `jpg`, `mp4`, ...; etc"
+preparationType:definition,Definition for Preparation Type http://rs.tdwg.org/dwc/terms/preparationType,A term used to classify or describe an object that indicates the actions that have been taken upon it and/or the processes it has been put through to prepare it for scientific use or study.
+preparationType:usage,Usage for Preparation Type http://rs.tdwg.org/dwc/terms/preparationType,A more specific classification of items in the collection than described in objectType.
+preparationType:notes,Notes for Preparation Type http://rs.tdwg.org/dwc/terms/preparationType,"These attributes commonly identify the parts or states that are the outcome of the preparation process, which produced the curated object. This can be the same as PreservationMethod (e.g. Bone), but is not always. For cultural collections terms such as 'bowl', 'textile' are appropriate at this level. This should not be used for classifying objects by taxon. The best way to do that is to use the Taxon class (formal taxonomy and vernacular names) or ObjectClassification class (informal classification)."
+preservationMethod:label,Label for Preservation Method http://rs.tdwg.org/dwc/terms/preservationMethod,Preservation Method
+preservationMethod:examples,Examples for Preservation Method http://rs.tdwg.org/dwc/terms/preservationMethod,"`dried`, `dried_pressed`, `dried_pinned`, `Dried assemblage`, `Dried - not assembled`, `Dry preserved`, `papered/packaged`, `slide box`, `Skeletonized`, `Tanned`, `mounted`, `Slide mount`, `Embedded`, `gum_arabic`, `Blood sampling cards (biomedical)`, `Fluid preserved`, `Alcohol, formaledhyde`, `glycerin`, `EDTA`, `frozen / cryopreserved`, `Cryopreserved / frozen - 80C`, `refrigerated`, `freeze_dried`, `Surface coating`, `SEM stub`, `Stasis`, `cell culture`, `axenic culture`, `viable cells`, `Controlled atmosphere`, `Climate controlled conditions`, `Non climate controlled conditions`, `no_treatment`, etc."
+preservationMethod:definition,Definition for Preservation Method http://rs.tdwg.org/dwc/terms/preservationMethod,"A term used to classify or describe an object that indicates the primary or most recent action, measure or process that has been used in order to preserve the objects in the collection for long-term storage."
+preservationMethod:usage,Usage for Preservation Method http://rs.tdwg.org/dwc/terms/preservationMethod,For the purposes of a collection description preservationType should be used to describe the larger collection
+preservationMethod:notes,Notes for Preservation Method http://rs.tdwg.org/dwc/terms/preservationMethod,Preservation method generally describes the final storage state. Not intended to be used as the fossilization method. Use preservationMode for that. This field is intended to be use where a collection has a single or prominent preservationMethod. We recommend the Arctos PART_PRESERVATION vocabulary (https://arctos.database.museum/info/ctDocumentation.cfm?table=CTPART_PRESERVATION). For herbarium sheets use 'dried_pressed'. If an alcohol collection uses mixed percentages use 'alcohol'.
+preservationMode:label,Label for Preservation Mode http://rs.tdwg.org/dwc/terms/preservationMode,Preservation Mode
+preservationMode:definition,Definition for Preservation Mode http://rs.tdwg.org/dwc/terms/preservationMode,"The means by which a palaeontological specimen was preserved or created e.g. body, cast, mold, trace fossil, soft parts mineralised etc."
+preservationMode:usage,Usage for Preservation Mode http://rs.tdwg.org/dwc/terms/preservationMode,Use to describe the preservation mode of a collection as a whole (e.g. Amber collection).
+preservationMode:notes,Notes for Preservation Mode http://rs.tdwg.org/dwc/terms/preservationMode,This property should be only used in association with ObjectGroups that contain paleontological material. It is aligned with the concept of preservationMode in ABCD(EFG) (https://efg.geocase.eu/documentation/html/efg.html#element_PreservationMode_Link03032878).
+typeOfObjectGroup:label,Label for Type Of Object Group http://rs.tdwg.org/dwc/terms/typeOfObjectGroup,Type Of Object Group
+typeOfObjectGroup:examples,Examples for Type Of Object Group http://rs.tdwg.org/dwc/terms/typeOfObjectGroup,"if baseTypeOfObjectGroup = `MaterialEntity`: `Living`, `Preserved`, `Fossilized`, `Non-biological`, `Human-made`; if baseTypeOfObjectGroup = `InformationArtefact`: `Digital`, `Physical`"
+typeOfObjectGroup:definition,Definition for Type Of Object Group http://rs.tdwg.org/dwc/terms/typeOfObjectGroup,Additional information that describes the object(s) in the collection.
+typeOfObjectGroup:notes,Notes for Type Of Object Group http://rs.tdwg.org/dwc/terms/typeOfObjectGroup,"High-level information that enables the finding of the group and/or its object(s) in searches by users on the web using attributes commonly of interest. Recommended best practice is to use a controlled vocabulary. Terms such as soil, pollen, faeces, muscle, genomic DNA are currently put in preparationType."
+hasAddress:label,Label for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,Has Address
+hasAddress:definition,Definition for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,This property refers to one or more related instances of the Address class.
+hasContactDetail:label,Label for Has Contact Detail http://rs.tdwg.org/dwc/terms/hasContactDetail,Has Contact Detail
+hasContactDetail:definition,Definition for Has Contact Detail http://rs.tdwg.org/dwc/terms/hasContactDetail,This property refers to one or more related instances of the ContactDetail class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasParentOrganisationalUnit:label,Label for Has Parent Organisational Unit http://rs.tdwg.org/dwc/terms/hasParentOrganisationalUnit,Has Parent Organisational Unit
+hasParentOrganisationalUnit:definition,Definition for Has Parent Organisational Unit http://rs.tdwg.org/dwc/terms/hasParentOrganisationalUnit,This property refers to one or more related parent instances of the OrganisationalUnit class.
+hasPersonRole:label,Label for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,Has Person Role
+hasPersonRole:definition,Definition for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,This property refers to one or more related instances of the PersonRole class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+organisationalUnitName:label,Label for Organisational Unit Name http://rs.tdwg.org/dwc/terms/organisationalUnitName,Organisational Unit Name
+organisationalUnitName:definition,Definition for Organisational Unit Name http://rs.tdwg.org/dwc/terms/organisationalUnitName,An official name of the organisational unit in the local language.
+organisationalUnitName:notes,Notes for Organisational Unit Name http://rs.tdwg.org/dwc/terms/organisationalUnitName,"Repeatable where there are more than one official local language required for example Belgian Institutions where an official name exists in French, Dutch, German and English. See 'A Collection of Crosswalks from Fifteen Research Data Schemas to Schema.org' (https://www.rd-alliance.org/group/research-metadata-schemas-wg/outcomes/collection-crosswalks-fifteen-research-data-schemas) from RDA for crosswalks for properties with the function of Name, Title, etc. Take into account the note at the class level (Class:OrganisationalUnit) about associating an identifier in addition to a name with the organisational unit."
+organisationalUnitType:label,Label for Organisational Unit Type http://rs.tdwg.org/dwc/terms/organisationalUnitType,Organisational Unit Type
+organisationalUnitType:examples,Examples for Organisational Unit Type http://rs.tdwg.org/dwc/terms/organisationalUnitType,"`Department` (A group of people recognised by an organization as forming a cohesive group referred to by the organization as a department), `Division` (A group of people recognised by an organization as forming a cohesive group referred to by the organization as a division)"
+organisationalUnitType:definition,Definition for Organisational Unit Type http://rs.tdwg.org/dwc/terms/organisationalUnitType,The type or level of organisational unit within a hierarchy responsible for the management of the collection being described.
+organisationalUnitType:notes,Notes for Organisational Unit Type http://rs.tdwg.org/dwc/terms/organisationalUnitType,Example vocabulary list: https://vocab.org/aiiso/ . This property is likely related to the W3C class org:Role (https://www.w3.org/TR/2014/REC-vocab-org-20140116/#class-role).
+hasAddress:label,Label for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,Has Address
+hasAddress:definition,Definition for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,This property refers to one or more related instances of the Address class.
+hasContactDetail:label,Label for Has Contact Detail http://rs.tdwg.org/dwc/terms/hasContactDetail,Has Contact Detail
+hasContactDetail:definition,Definition for Has Contact Detail http://rs.tdwg.org/dwc/terms/hasContactDetail,This property refers to one or more related instances of the ContactDetail class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasAddress:label,Label for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,Has Address
+hasAddress:definition,Definition for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,This property refers to one or more related instances of the Address class.
+hasContactDetail:label,Label for Has Contact Detail http://rs.tdwg.org/dwc/terms/hasContactDetail,Has Contact Detail
+hasContactDetail:definition,Definition for Has Contact Detail http://rs.tdwg.org/dwc/terms/hasContactDetail,This property refers to one or more related instances of the ContactDetail class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasPerson:label,Label for Has Person http://rs.tdwg.org/dwc/terms/hasPerson,Has Person
+hasPerson:definition,Definition for Has Person http://rs.tdwg.org/dwc/terms/hasPerson,This property refers to one or more related instances of the Person class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasRole:label,Label for Has Role http://rs.tdwg.org/dwc/terms/hasRole,Has Role
+hasRole:definition,Definition for Has Role http://rs.tdwg.org/dwc/terms/hasRole,This property refers to one or more related instances of the Role class.
+hasRole:notes,Notes for Has Role http://rs.tdwg.org/dwc/terms/hasRole,This property maps to the PROV-O property hadRole (http://www.w3.org/ns/prov#hadRole).
+hasTemporalCoverage:label,Label for Has Temporal Coverage http://rs.tdwg.org/dwc/terms/hasTemporalCoverage,Has Temporal Coverage
+hasTemporalCoverage:definition,Definition for Has Temporal Coverage http://rs.tdwg.org/dwc/terms/hasTemporalCoverage,This property refers to one or more related instances of the TemporalCoverage class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,"This property refers to one or more related instances of the Identifier class. Every RecordLevel class must contain at least one Identifier, preferably a PID. "
+hasObjectGroup:label,Label for Has Object Group http://rs.tdwg.org/dwc/terms/hasObjectGroup,Has Object Group
+hasObjectGroup:definition,Definition for Has Object Group http://rs.tdwg.org/dwc/terms/hasObjectGroup,This property refers to one or more related instances of the ObjectGroup class.
+hasPersonRole:label,Label for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,Has Person Role
+hasPersonRole:definition,Definition for Has Person Role http://rs.tdwg.org/dwc/terms/hasPersonRole,This property refers to one or more related instances of the PersonRole class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasResourceRelationship:label,Label for Has Resource Relationship http://rs.tdwg.org/dwc/terms/hasResourceRelationship,Has Resource Relationship
+hasResourceRelationship:definition,Definition for Has Resource Relationship http://rs.tdwg.org/dwc/terms/hasResourceRelationship,This property refers to one or more related instances of the ResourceRelationship class.
+isDerivedCollection:label,Label for Is Derived Collection http://rs.tdwg.org/dwc/terms/isDerivedCollection,Is Derived Collection
+isDerivedCollection:definition,Definition for Is Derived Collection http://rs.tdwg.org/dwc/terms/isDerivedCollection,A flag to indicate that the collection description has been generated by aggregating data from one or more underlying datasets of its individual objects.
+isDerivedCollection:notes,Notes for Is Derived Collection http://rs.tdwg.org/dwc/terms/isDerivedCollection,"If `true`, the LtC record has been wholly generated through the synthesis of existing digital records, such as by a programmatic aggregation of specimen records. If `false`, the LtC record is known to have been generated through some other method, such as in response to an institutional survey. Leaving this field blank indicates that the method used to construct the record is unknown or has yet to be recorded."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+referenceDetails:label,Label for Reference Details http://rs.tdwg.org/dwc/terms/referenceDetails,Reference Details
+referenceDetails:definition,Definition for Reference Details http://rs.tdwg.org/dwc/terms/referenceDetails,Detailed information about the resource being referenced.
+referenceName:label,Label for Reference Name http://rs.tdwg.org/dwc/terms/referenceName,Reference Name
+referenceName:definition,Definition for Reference Name http://rs.tdwg.org/dwc/terms/referenceName,A name given to a reference.
+referenceName:notes,Notes for Reference Name http://rs.tdwg.org/dwc/terms/referenceName,"If the reference is to a publication, this field should hold the publication title; otherwise any appropriate, short, text label relevant to the resource being referenced may be used."
+referenceType:label,Label for Reference Type http://rs.tdwg.org/dwc/terms/referenceType,Reference Type
+referenceType:definition,Definition for Reference Type http://rs.tdwg.org/dwc/terms/referenceType,The type of resource being referenced.
+referenceType:notes,Notes for Reference Type http://rs.tdwg.org/dwc/terms/referenceType,This property is intended to be used for a high level categorisation of resource types.
+resourceIRI:label,Label for Resource IRI http://rs.tdwg.org/dwc/terms/resourceIRI,Resource IRI
+resourceIRI:definition,Definition for Resource IRI http://rs.tdwg.org/dwc/terms/resourceIRI,A preferably resolvable IRI providing access to the resource defined in the reference.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+relatedResourceName:label,Label for Related Resource Name http://rs.tdwg.org/dwc/terms/relatedResourceName,Related Resource Name
+relatedResourceName:definition,Definition for Related Resource Name http://rs.tdwg.org/dwc/terms/relatedResourceName,A short textual name for the related resource.
+relatedResourceName:notes,Notes for Related Resource Name http://rs.tdwg.org/dwc/terms/relatedResourceName,"This property can be used to list resources related to the source entity which lack an identifier, for example if a separate record for that resource doesn't yet exist. In the Collection Description standard, a use of this is to list named subcollections of a larger collections at a time when the resources might not be available to create a full Collection Description for each of them. If at a later point a Collection Description record is created for the subcollection, an identifier can be added to the relatedResourceID property to maintain the same relationship."
+relatedResourceType:label,Label for Related Resource Type http://rs.tdwg.org/dwc/terms/relatedResourceType,Related Resource Type
+relatedResourceType:definition,Definition for Related Resource Type http://rs.tdwg.org/dwc/terms/relatedResourceType,"The class or property within Latimer Core, or class, property or less formal concept outside of the Latimer Core standard, that is represented by the related resource."
+relatedResourceType:notes,Notes for Related Resource Type http://rs.tdwg.org/dwc/terms/relatedResourceType,"This property can be used to explicitly define the type of resource that the ID stored in the relatedResourceID property references, either to support IDs that don’t fully resolve and provide contextual metadata, or just for information purposes. It can also provide context for use cases where the relatedResourceName is used rather than the relatedResourceID to define the target, for example to attach a simple list of the names of related collections to an ObjectGroup."
+relationshipOfResource:label,Label for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource,Relationship Of Resource
+relationshipOfResource:definition,Definition for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource,The relationship of the resource identified by relatedResourceID to the subject (optionally identified by the resourceID).
+relationshipOfResource:notes,Notes for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource,Recommended best practice is to use a controlled vocabulary. https://schema.org/Property
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+roleName:label,Label for Role Name http://rs.tdwg.org/dwc/terms/roleName,Role Name
+roleName:definition,Definition for Role Name http://rs.tdwg.org/dwc/terms/roleName,A short descriptive name for the role.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+isMandatoryMetric:label,Label for Is Mandatory Metric http://rs.tdwg.org/dwc/terms/isMandatoryMetric,Is Mandatory Metric
+isMandatoryMetric:definition,Definition for Is Mandatory Metric http://rs.tdwg.org/dwc/terms/isMandatoryMetric,A flag to designate whether it is mandatory or optional for every collection description within the LatimerCoreScheme to include the measurement or fact defined by the schemeMeasurementType property.
+isMandatoryMetric:notes,Notes for Is Mandatory Metric http://rs.tdwg.org/dwc/terms/isMandatoryMetric,This flag can be used for software automation and data validation.
+isRepeatableMetric:label,Label for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric,Is Repeatable Metric
+isRepeatableMetric:definition,Definition for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric,A flag to designate whether multiple instances of the same schemeMeasurementType may be attached to a single entity.
+isRepeatableMetric:notes,Notes for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric,"For example, this property can be used to stipulate that, using the MeasurementOrFact class, only one 'Object count' may be attached to an ObjectGroup, but multiple 'Curator notes' may be attached to the same ObjectGroup."
+schemeMeasurementType:label,Label for Scheme Measurement Type http://rs.tdwg.org/dwc/terms/schemeMeasurementType,Scheme Measurement Type
+schemeMeasurementType:definition,Definition for Scheme Measurement Type http://rs.tdwg.org/dwc/terms/schemeMeasurementType,A category of quantitative metric or qualitative fact that can be included in the LatimerCoreScheme.
+schemeMeasurementType:notes,Notes for Scheme Measurement Type http://rs.tdwg.org/dwc/terms/schemeMeasurementType,"The schemeMeasurementType should correspond to, and be used to catalogue and/or constrain, the values that can be used in the measurementType property of the MeasurementOrFact class."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+isMandatoryTerm:label,Label for Is Mandatory Term http://rs.tdwg.org/dwc/terms/isMandatoryTerm,Is Mandatory Term
+isMandatoryTerm:definition,Definition for Is Mandatory Term http://rs.tdwg.org/dwc/terms/isMandatoryTerm,A flag to designate whether it is mandatory or optional for all ObjectGroups in the LatimerCoreScheme to include or be linked to valid data for the class or property defined in the termName property.
+isMandatoryTerm:notes,Notes for Is Mandatory Term http://rs.tdwg.org/dwc/terms/isMandatoryTerm,"This flag can be used for software automation and data validation. For example, if the termName is 'preservationMethod' (a property) and isMandatoryTerm is 'true', then an interface or query should always expect a value for that property, and can validate against that expectation. If the termName is Taxon (a class) and isMandatoryTerm is 'true', then similarly the expectation will be that at least one populated Taxon object is linked to every ObjectGroup. If the isRepeatableTerm property is set to 'false', then the expectation will be that exactly one populated Taxon object is linked to every ObjectGroup and no more."
+isRepeatableTerm:label,Label for Is Repeatable Term http://rs.tdwg.org/dwc/terms/isRepeatableTerm,Is Repeatable Term
+isRepeatableTerm:definition,Definition for Is Repeatable Term http://rs.tdwg.org/dwc/terms/isRepeatableTerm,A flag to designate whether multiple instances of the Latimer Core class or property defined in the termName property may be attached to a single ObjectGroup.
+isRepeatableTerm:notes,Notes for Is Repeatable Term http://rs.tdwg.org/dwc/terms/isRepeatableTerm,"This property essentially defines whether the property or class is used for a 'tagging' approach (e.g. attaching multiple Taxon records to the same ObjectGroup to reflect the taxonomic scope, or a 'dimensional' approach (e.g. attaching a single GeologicalContext to an ObjectGroup, to show that it represents only objects from the Mesozoic). This has implications on how metrics may be handled, and more information is available in the non-normative guidance."
+termName:label,Label for Term Name http://rs.tdwg.org/dwc/terms/termName,Term Name
+termName:definition,Definition for Term Name http://rs.tdwg.org/dwc/terms/termName,The name of a class or property within the Latimer Core standard that is included in the LatimerCoreScheme.
+termName:notes,Notes for Term Name http://rs.tdwg.org/dwc/terms/termName,The values of this property are constrained to the names of terms (classes or properties) within the Latimer Core standard.
+hasAddress:label,Label for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,Has Address
+hasAddress:definition,Definition for Has Address http://rs.tdwg.org/dwc/terms/hasAddress,This property refers to one or more related instances of the Address class.
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasParentStorageLocation:label,Label for Has Parent Storage Location http://rs.tdwg.org/dwc/terms/hasParentStorageLocation,Has Parent Storage Location
+hasParentStorageLocation:definition,Definition for Has Parent Storage Location http://rs.tdwg.org/dwc/terms/hasParentStorageLocation,This property refers to one or more related parent instances of the StorageLocation class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+locationDescription:label,Label for Location Description http://rs.tdwg.org/dwc/terms/locationDescription,Location Description
+locationDescription:definition,Definition for Location Description http://rs.tdwg.org/dwc/terms/locationDescription,Short textual description of the storage location of the group of items
+locationName:label,Label for Location Name http://rs.tdwg.org/dwc/terms/locationName,Location Name
+locationName:definition,Definition for Location Name http://rs.tdwg.org/dwc/terms/locationName,A label used to identify a place where the collection is stored.
+locationName:notes,Notes for Location Name http://rs.tdwg.org/dwc/terms/locationName,This is the lowest level of storage location for the object group (collection or sub-collection).
+locationType:label,Label for Location Type http://rs.tdwg.org/dwc/terms/locationType,Location Type
+locationType:definition,Definition for Location Type http://rs.tdwg.org/dwc/terms/locationType,The nature of the location where the collection is stored.
+locationType:notes,Notes for Location Type http://rs.tdwg.org/dwc/terms/locationType,"This defines the type of storage location named in locationName, and may refer to static locations or moveable containers."
+hasIdentifier:label,Label for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,Has Identifier
+hasIdentifier:definition,Definition for Has Identifier http://rs.tdwg.org/dwc/terms/hasIdentifier,This property refers to one or more related instances of the Identifier class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+hasMeasurementOrFact:label,Label for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,Has Measurement Or Fact
+hasMeasurementOrFact:definition,Definition for Has Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasMeasurementOrFact,This property refers to one or more related instances of the MeasurementOrFact class.
+hasReference:label,Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,Has Reference
+hasReference:definition,Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference,This property refers to one or more related instances of the Reference class.
+temporalCoverageEndDateTime:label,Label for Temporal Coverage End Date http://rs.tdwg.org/dwc/terms/temporalCoverageEndDateTime,Temporal Coverage End Date
+temporalCoverageEndDateTime:definition,Definition for Temporal Coverage End Date http://rs.tdwg.org/dwc/terms/temporalCoverageEndDateTime,Datetime at which the TemporalCoverage finished.
+temporalCoverageEndDateTime:usage,Usage for Temporal Coverage End Date http://rs.tdwg.org/dwc/terms/temporalCoverageEndDateTime,"If temporalCoverageEndDateTime is populated, temporalCoverageType is strongly recommended."
+temporalCoverageStartDateTime:label,Label for Temporal Coverage Start Date http://rs.tdwg.org/dwc/terms/temporalCoverageStartDateTime,Temporal Coverage Start Date
+temporalCoverageStartDateTime:definition,Definition for Temporal Coverage Start Date http://rs.tdwg.org/dwc/terms/temporalCoverageStartDateTime,Datetime at which the TemporalCoverage began.
+temporalCoverageStartDateTime:usage,Usage for Temporal Coverage Start Date http://rs.tdwg.org/dwc/terms/temporalCoverageStartDateTime,"If temporalCoverageStartDateTime is populated, temporalCoverageType is recommended."
+temporalCoverageType:label,Label for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType,Temporal Coverage Type
+temporalCoverageType:definition,Definition for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType,The type or context of the described TemporalCoverage.
+temporalCoverageType:usage,Usage for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType,"If temporalCoverageStartDateTime is populated, temporalCoverageType is recommended."
+temporalCoverageType:notes,Notes for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType,Recommendation is to use a controlled vocabulary.
