@@ -470,4 +470,4 @@
 "temporalCoverageType:label","Label for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType",""
 "temporalCoverageType:definition","Definition for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType",""
 "temporalCoverageType:usage","Usage for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType",""
-"temporalCoverageType:notes","Notes for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType",""
+"temporalCoverageType:notes","Notes for Temporal Coverage Type http://rs.tdwg.org/dwc/terms/temporalCoverageType","Il est recommandé d'utiliser un vocabulaire contrôlé."
