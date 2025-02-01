@@ -288,7 +288,7 @@
 "material:examples","Examples for Material http://rs.tdwg.org/dwc/terms/material",""
 "material:definition","Definition for Material http://rs.tdwg.org/dwc/terms/material",""
 "material:notes","Notes for Material http://rs.tdwg.org/dwc/terms/material",""
-"objectType:label","Label for Object Type http://rs.tdwg.org/dwc/terms/objectType",""
+"objectType:label","Label for Object Type http://rs.tdwg.org/dwc/terms/objectType","Type d'objet"
 "objectType:examples","Examples for Object Type http://rs.tdwg.org/dwc/terms/objectType",""
 "objectType:definition","Definition for Object Type http://rs.tdwg.org/dwc/terms/objectType",""
 "objectType:usage","Usage for Object Type http://rs.tdwg.org/dwc/terms/objectType",""
