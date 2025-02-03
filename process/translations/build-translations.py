@@ -25,7 +25,8 @@ termfiles_to_translate = [
     'establishmentMeans/establishmentMeans',
     'degreeOfEstablishment/degreeOfEstablishment',
     'pathway/pathway',
-    'latimer/latimer'
+    'latimer/latimer',
+    'humboldt/humboldt'
 ]
 
 # From those source files, these columns will be made available for translation
