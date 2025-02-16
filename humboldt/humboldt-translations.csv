@@ -1,9 +1,9 @@
 term_localName,label_en,label_de,label_es,label_fr,label_ko,label_nl,label_ru,label_zh-Hans,label_zh-Hant,definition_en,definition_de,definition_es,definition_fr,definition_ko,definition_nl,definition_ru,definition_zh-Hans,definition_zh-Hant,usage_en,usage_de,usage_es,usage_fr,usage_ko,usage_nl,usage_ru,usage_zh-Hans,usage_zh-Hant,notes_en,notes_de,notes_es,notes_fr,notes_ko,notes_nl,notes_ru,notes_zh-Hans,notes_zh-Hant
 absentTaxa,Absent Taxa,,,Taxon Absent,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-abundanceCap,Abundance Cap,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-areNonTargetTaxaFullyReported,Are Non-target Taxa Fully Reported,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-compilationSourceTypes,Compilation Source Types,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-compilationTypes,Compilation Types,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+abundanceCap,Abundance Cap,,,Plafond d'Abondance,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+areNonTargetTaxaFullyReported,Are Non-target Taxa Fully Reported,,,Les Taxons non Ciblés sont-ils Entièrement Répertoriés,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+compilationSourceTypes,Compilation Source Types,,,Types de Sources de la Compilation,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+compilationTypes,Compilation Types,,,Types de Compilation,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 eventDurationUnit,Event Duration Unit,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 eventDurationValue,Event Duration Value,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 excludedDegreeOfEstablishmentScope,Excluded Degree of Establishment Scope,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
