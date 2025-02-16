@@ -1,5 +1,5 @@
 "identifier","context","text"
-"absentTaxa:label","Label for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa",""
+"absentTaxa:label","Label for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa","Taxon Absent"
 "absentTaxa:rdfs_comment","Comment for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa",""
 "absentTaxa:dcterms_description","Description for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa",""
 "abundanceCap:label","Label for Abundance Cap http://rs.tdwg.org/dwc/terms/abundanceCap",""
@@ -159,4 +159,4 @@
 "verbatimTargetScope:dcterms_description","Description for Verbatim Target Scope http://rs.tdwg.org/dwc/terms/verbatimTargetScope",""
 "voucherInstitutions:label","Label for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions",""
 "voucherInstitutions:rdfs_comment","Comment for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions",""
-"voucherInstitutions:dcterms_description","Description for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions",""
+"voucherInstitutions:dcterms_description","Description for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions","La pratique optimale recommandée consiste à séparer les différentes valeurs d'une liste par une barre verticale ( | )."
