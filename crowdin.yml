@@ -6,6 +6,8 @@ files:
     languages_mapping:
       locale:
         ar: ar
+        cs: cs
+        cs-CZ: cs
         da: da
         de: de
         de-DE: de
@@ -14,6 +16,8 @@ files:
         ja: ja
         ko: ko
         ko-KR: ko
+        km: km
+        km-KH: km
         nl: nl
         nl-NL: nl
         pt-PT: pt
