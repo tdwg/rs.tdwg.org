@@ -10,7 +10,7 @@
 "p003:label","Label for fishery in the wild http://rs.tdwg.org/dwc/terms/p003",""
 "p003:definition","Definition for fishery in the wild http://rs.tdwg.org/dwc/terms/p003",""
 "p003:notes","Notes for fishery in the wild http://rs.tdwg.org/dwc/terms/p003",""
-"p004:label","Label for hunting http://rs.tdwg.org/dwc/terms/p004",""
+"p004:label","Label for hunting http://rs.tdwg.org/dwc/terms/p004","lov"
 "p004:definition","Definition for hunting http://rs.tdwg.org/dwc/terms/p004",""
 "p004:notes","Notes for hunting http://rs.tdwg.org/dwc/terms/p004",""
 "p005:label","Label for landscape improvement http://rs.tdwg.org/dwc/terms/p005",""
