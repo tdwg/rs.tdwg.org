@@ -149,7 +149,7 @@
 "totalAreaSampledValue:rdfs_comment","Comment for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue",""
 "totalAreaSampledValue:dcterms_description","Description for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue",""
 "verbatimSiteDescriptions:label","Label for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions",""
-"verbatimSiteDescriptions:rdfs_comment","Comment for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions",""
+"verbatimSiteDescriptions:rdfs_comment","Comment for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions","Description textuelle originale des sites."
 "verbatimSiteDescriptions:dcterms_description","Description for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions","Le site fait référence à l'endroit où les observations sont faites ou les échantillons/mesures sont prélevés. Le site peut se situer à n'importe quel niveau de la hiérarchie. La pratique optimale recommandée est de séparer les valeurs multiples dans une liste par un barre verticale ( | )."
 "verbatimSiteNames:label","Label for Verbatim Site Names http://rs.tdwg.org/dwc/terms/verbatimSiteNames",""
 "verbatimSiteNames:rdfs_comment","Comment for Verbatim Site Names http://rs.tdwg.org/dwc/terms/verbatimSiteNames","Une liste (concaténée et séparée) de noms originaux des sites."
