@@ -111,7 +111,7 @@
 "p035:label","Label for machinery/equipment http://rs.tdwg.org/dwc/terms/p035","stroje/zařízení"
 "p035:definition","Definition for machinery/equipment http://rs.tdwg.org/dwc/terms/p035","Organismy přenášené na povrchu nebo uvnitř těžkých strojů a zařízení."
 "p035:notes","Notes for machinery/equipment http://rs.tdwg.org/dwc/terms/p035","Patří sem vojenská technika, zemědělské stroje a výrobní zařízení. Tento pojem nezahrnuje výrobky přepravované vozidly. Viz také Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
-"p036:label","Label for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036",""
+"p036:label","Label for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036","lidé a jejich zavazadla/vybavení (zejména v cestovním ruchu)"
 "p036:definition","Definition for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036",""
 "p036:usage","Usage for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036",""
 "p036:notes","Notes for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036",""
