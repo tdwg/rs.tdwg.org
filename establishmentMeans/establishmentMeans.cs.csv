@@ -16,6 +16,6 @@
 "e005:label","Label for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005",""
 "e005:definition","Definition for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005","Dočasný výskyt taxonu daleko mimo jeho přirozený nebo migrační areál."
 "e005:notes","Notes for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005","Přírodní události a lidská činnost mohou nepředvídatelně rozptýlit organismy do míst, kde mohou zůstat nebo přežít po určitou dobu."
-"e006:label","Label for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006",""
+"e006:label","Label for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","nejistý (neznámý, kryptogenní)"
 "e006:definition","Definition for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","Původ výskytu taxonu v oblasti je nejasný."
 "e006:notes","Notes for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","Pokud chybí fosilní nebo historické důkazy o výskytu taxonu v dané oblasti, může být nemožné zjistit, zda je taxon v dané oblasti nový nebo původní."
