@@ -158,5 +158,5 @@
 "verbatimTargetScope:rdfs_comment","Comment for Verbatim Target Scope http://rs.tdwg.org/dwc/terms/verbatimTargetScope",""
 "verbatimTargetScope:dcterms_description","Description for Verbatim Target Scope http://rs.tdwg.org/dwc/terms/verbatimTargetScope","Doporučeným osvědčeným postupem je nejprve v co největší míře vyplnit explicitní termíny oboru (např. eco:targetTaxonomicScope). Nedoporučuje se používat tento termín při posuzování absence nebo úplnosti."
 "voucherInstitutions:label","Label for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions",""
-"voucherInstitutions:rdfs_comment","Comment for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions",""
+"voucherInstitutions:rdfs_comment","Comment for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions","Seznam (spojený a oddělený) názvů nebo zkratek institucí, u nichž byly uloženy poukázky shromážděné během dwc:Události."
 "voucherInstitutions:dcterms_description","Description for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions","Doporučeným postupem je oddělit více hodnot v seznamu mezerou svislou čarou mezerou ( | )."
