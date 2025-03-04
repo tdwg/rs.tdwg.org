@@ -416,7 +416,7 @@
 "isMandatoryMetric:notes","Notes for Is Mandatory Metric http://rs.tdwg.org/dwc/terms/isMandatoryMetric",""
 "isRepeatableMetric:label","Label for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric",""
 "isRepeatableMetric:definition","Definition for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric",""
-"isRepeatableMetric:notes","Notes for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric",""
+"isRepeatableMetric:notes","Notes for Is Repeatable Metric http://rs.tdwg.org/dwc/terms/isRepeatableMetric","Pomocí této vlastnosti lze například stanovit, že pomocí třídy MeasurementOrFact lze ke skupině objektů připojit pouze jeden ""Počet objektů"", ale ke stejné skupině objektů lze připojit více ""Poznámek kurátora""."
 "schemeMeasurementType:label","Label for Scheme Measurement Type http://rs.tdwg.org/dwc/terms/schemeMeasurementType",""
 "schemeMeasurementType:definition","Definition for Scheme Measurement Type http://rs.tdwg.org/dwc/terms/schemeMeasurementType",""
 "schemeMeasurementType:notes","Notes for Scheme Measurement Type http://rs.tdwg.org/dwc/terms/schemeMeasurementType",""
