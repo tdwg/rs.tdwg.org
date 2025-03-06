@@ -70,7 +70,7 @@
 "isGrowthFormScopeFullyReported:dcterms_description","Description for Is Growth Form Scope Fully Reported http://rs.tdwg.org/dwc/terms/isGrowthFormScopeFullyReported",""
 "isLeastSpecificTargetCategoryQuantityInclusive:label","Label for Is Least Specific Target Category Quantity Inclusive http://rs.tdwg.org/dwc/terms/isLeastSpecificTargetCategoryQuantityInclusive",""
 "isLeastSpecificTargetCategoryQuantityInclusive:rdfs_comment","Comment for Is Least Specific Target Category Quantity Inclusive http://rs.tdwg.org/dwc/terms/isLeastSpecificTargetCategoryQuantityInclusive",""
-"isLeastSpecificTargetCategoryQuantityInclusive:dcterms_description","Description for Is Least Specific Target Category Quantity Inclusive http://rs.tdwg.org/dwc/terms/isLeastSpecificTargetCategoryQuantityInclusive",""
+"isLeastSpecificTargetCategoryQuantityInclusive:dcterms_description","Description for Is Least Specific Target Category Quantity Inclusive http://rs.tdwg.org/dwc/terms/isLeastSpecificTargetCategoryQuantityInclusive","Les valeurs recommandées sont « true » et « false ». Ce terme n'est pertinent que si dwc:organismQuantity est un nombre. Pour une explication détaillée, voir http://rs.tdwg.org/eco/docs/inclusive/."
 "isLifeStageScopeFullyReported:label","Label for Is Life Stage Scope Fully Reported http://rs.tdwg.org/dwc/terms/isLifeStageScopeFullyReported",""
 "isLifeStageScopeFullyReported:rdfs_comment","Comment for Is Life Stage Scope Fully Reported http://rs.tdwg.org/dwc/terms/isLifeStageScopeFullyReported",""
 "isLifeStageScopeFullyReported:dcterms_description","Description for Is Life Stage Scope Fully Reported http://rs.tdwg.org/dwc/terms/isLifeStageScopeFullyReported",""
