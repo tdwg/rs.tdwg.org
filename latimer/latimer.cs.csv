@@ -248,7 +248,7 @@
 "discipline:label","Label for Discipline http://rs.tdwg.org/dwc/terms/discipline",""
 "discipline:definition","Definition for Discipline http://rs.tdwg.org/dwc/terms/discipline",""
 "discipline:notes","Notes for Discipline http://rs.tdwg.org/dwc/terms/discipline",""
-"hasChronometricAge:label","Label for Has Chronometric Age http://rs.tdwg.org/dwc/terms/hasChronometricAge",""
+"hasChronometricAge:label","Label for Has Chronometric Age http://rs.tdwg.org/dwc/terms/hasChronometricAge","Má Chronometrický věk"
 "hasChronometricAge:definition","Definition for Has Chronometric Age http://rs.tdwg.org/dwc/terms/hasChronometricAge",""
 "hasCollectionStatusHistory:label","Label for Has Collection Status History http://rs.tdwg.org/dwc/terms/hasCollectionStatusHistory",""
 "hasCollectionStatusHistory:definition","Definition for Has Collection Status History http://rs.tdwg.org/dwc/terms/hasCollectionStatusHistory",""
