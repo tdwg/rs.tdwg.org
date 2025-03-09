@@ -192,7 +192,7 @@
 "hasObjectGroup:label","Label for Has Object Group http://rs.tdwg.org/dwc/terms/hasObjectGroup",""
 "hasObjectGroup:definition","Definition for Has Object Group http://rs.tdwg.org/dwc/terms/hasObjectGroup",""
 "hasReference:label","Label for Has Reference http://rs.tdwg.org/dwc/terms/hasReference","Má odkaz"
-"hasReference:definition","Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference",""
+"hasReference:definition","Definition for Has Reference http://rs.tdwg.org/dwc/terms/hasReference","Tato vlastnost odkazuje na jednu nebo více souvisejících instancí třídy Reference."
 "hasSchemeMeasurementOrFact:label","Label for Has Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasSchemeMeasurementOrFact",""
 "hasSchemeMeasurementOrFact:definition","Definition for Has Scheme Measurement Or Fact http://rs.tdwg.org/dwc/terms/hasSchemeMeasurementOrFact",""
 "hasSchemeTerm:label","Label for Has Scheme Term http://rs.tdwg.org/dwc/terms/hasSchemeTerm",""
