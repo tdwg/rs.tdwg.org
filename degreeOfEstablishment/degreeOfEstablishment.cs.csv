@@ -32,7 +32,7 @@
 "d010:label","Label for invasive (category D2) http://rs.tdwg.org/dwc/terms/d010","invazívní (kategorie D2)"
 "d010:definition","Definition for invasive (category D2) http://rs.tdwg.org/dwc/terms/d010","Samostatně se udržující populace mimo zajetí nebo kultivaci, s jedinci přežívajícími a rozmnožujícími se ve značné vzdálenosti od původního místa introdukce."
 "d010:notes","Notes for invasive (category D2) http://rs.tdwg.org/dwc/terms/d010","Populace se udržuje rozmnožováním, šíří se a její potomci se také rozmnožují a šíří. Viz také ""kategorie D2"" v Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
-"d011:label","Label for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011",""
+"d011:label","Label for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011","rozšířená invazivní (kategorie E)"
 "d011:definition","Definition for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011","Plně invazivní druh, jehož jedinci se šíří, přežívají a rozmnožují na více místech napříč spektrem stanovišť a zeměpisným rozsahem."
 "d011:usage","Usage for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011","Tento termín se používá pouze pro invazní druhy s nejvyšším stupněm invaze."
 "d011:notes","Notes for widespread invasive (category E) http://rs.tdwg.org/dwc/terms/d011","Viz také „kategorie E“ v Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
