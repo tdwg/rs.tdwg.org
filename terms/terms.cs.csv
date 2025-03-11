@@ -565,7 +565,7 @@
 "verbatimTaxonRank:label","Label for Verbatim Taxon Rank http://rs.tdwg.org/dwc/terms/verbatimTaxonRank","Přesné zařazení taxonu"
 "verbatimTaxonRank:rdfs_comment","Comment for Verbatim Taxon Rank http://rs.tdwg.org/dwc/terms/verbatimTaxonRank","Taxonomické zařazení nejkonkrétnějšího jména v dwc:scientificName, jak je uvedeno v původním záznamu."
 "vernacularName:label","Label for Vernacular Name http://rs.tdwg.org/dwc/terms/vernacularName",""
-"vernacularName:rdfs_comment","Comment for Vernacular Name http://rs.tdwg.org/dwc/terms/vernacularName",""
+"vernacularName:rdfs_comment","Comment for Vernacular Name http://rs.tdwg.org/dwc/terms/vernacularName","Obecný nebo místní název."
 "verticalDatum:label","Label for Vertical Datum http://rs.tdwg.org/dwc/terms/verticalDatum",""
 "verticalDatum:rdfs_comment","Comment for Vertical Datum http://rs.tdwg.org/dwc/terms/verticalDatum","Svislý referenční bod, který se používá jako referenční bod, na němž jsou založeny hodnoty v nadmořských výškách."
 "verticalDatum:dcterms_description","Description for Vertical Datum http://rs.tdwg.org/dwc/terms/verticalDatum","Doporučeným osvědčeným postupem je používat řízený slovník. Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu umožňuje pouze IRI, zatímco tento termín umožňuje jakoukoli řetězcovou literální hodnotu."
