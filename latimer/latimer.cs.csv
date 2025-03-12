@@ -275,7 +275,7 @@
 "hasResourceRelationship:label","Label for Has Resource Relationship http://rs.tdwg.org/dwc/terms/hasResourceRelationship","Má vztah ke zdroji"
 "hasResourceRelationship:definition","Definition for Has Resource Relationship http://rs.tdwg.org/dwc/terms/hasResourceRelationship",""
 "hasStorageLocation:label","Label for Has Storage Location http://rs.tdwg.org/dwc/terms/hasStorageLocation",""
-"hasStorageLocation:definition","Definition for Has Storage Location http://rs.tdwg.org/dwc/terms/hasStorageLocation",""
+"hasStorageLocation:definition","Definition for Has Storage Location http://rs.tdwg.org/dwc/terms/hasStorageLocation","Tato vlastnost odkazuje na jednu nebo více souvisejících instancí třídy StorageLocation."
 "hasTaxon:label","Label for Has Taxon http://rs.tdwg.org/dwc/terms/hasTaxon","Má taxon"
 "hasTaxon:definition","Definition for Has Taxon http://rs.tdwg.org/dwc/terms/hasTaxon",""
 "isCurrentCollection:label","Label for Is Current Collection http://rs.tdwg.org/dwc/terms/isCurrentCollection",""
