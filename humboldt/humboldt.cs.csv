@@ -148,7 +148,7 @@
 "totalAreaSampledValue:label","Label for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue",""
 "totalAreaSampledValue:rdfs_comment","Comment for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue",""
 "totalAreaSampledValue:dcterms_description","Description for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue",""
-"verbatimSiteDescriptions:label","Label for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions",""
+"verbatimSiteDescriptions:label","Label for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions","Přesné popisy lokalit"
 "verbatimSiteDescriptions:rdfs_comment","Comment for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions",""
 "verbatimSiteDescriptions:dcterms_description","Description for Verbatim Site Descriptions http://rs.tdwg.org/dwc/terms/verbatimSiteDescriptions","Místem se rozumí místo, kde se provádějí pozorování nebo odebírají vzorky/měření. Místo může být na jakékoli úrovni hierarchie. Doporučeným osvědčeným postupem je oddělit více hodnot v seznamu mezerou svislou čarou mezerou ( | )."
 "verbatimSiteNames:label","Label for Verbatim Site Names http://rs.tdwg.org/dwc/terms/verbatimSiteNames",""
