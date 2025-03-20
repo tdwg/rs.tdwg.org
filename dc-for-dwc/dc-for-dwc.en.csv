@@ -1,0 +1,8 @@
+identifier,context,text
+language:label,Label for Language http://rs.tdwg.org/dwc/terms/language,Language
+language:rdfs_comment,Comment for Language http://rs.tdwg.org/dwc/terms/language,A language of the resource.
+language:dcterms_description,Description for Language http://rs.tdwg.org/dwc/terms/language,"Recommended best practice is to use a controlled vocabulary such as RFC 5646. This term has an equivalent in the dcterms: namespace that allows only an IRI as a value, whereas this term allows for any string literal value."
+language:examples,Examples for Language http://rs.tdwg.org/dwc/terms/language,`en` (for English); `es` (for Spanish)
+type:label,Label for Type http://rs.tdwg.org/dwc/terms/type,Type
+type:rdfs_comment,Comment for Type http://rs.tdwg.org/dwc/terms/type,The nature or genre of the resource.
+type:dcterms_description,Description for Type http://rs.tdwg.org/dwc/terms/type,Must be populated with a value from the DCMI type vocabulary (http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/).

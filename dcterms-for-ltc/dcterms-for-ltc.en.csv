@@ -1,0 +1,13 @@
+identifier,context,text
+license:label,Label for License http://rs.tdwg.org/dwc/terms/license,License
+license:definition,Definition for License http://rs.tdwg.org/dwc/terms/license,A legal document giving official permission to do something with the resource.
+license:usage,Usage for License http://rs.tdwg.org/dwc/terms/license,A legal document giving official permission to do something with the collection description record.
+license:notes,Notes for License http://rs.tdwg.org/dwc/terms/license,"Recommended practice is to identify the license document with a IRI. If this is not possible or feasible, a literal value that identifies the license may be provided."
+rights:label,Label for Rights http://rs.tdwg.org/dwc/terms/rights,Rights
+rights:definition,Definition for Rights http://rs.tdwg.org/dwc/terms/rights,Information about rights held in and over the resource.
+rights:usage,Usage for Rights http://rs.tdwg.org/dwc/terms/rights,A statement of any rights held in/over the collection description record.
+rights:notes,Notes for Rights http://rs.tdwg.org/dwc/terms/rights,"Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights. Recommended practice is to refer to a rights statement with a IRI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided."
+rightsHolder:label,Label for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder,Rights Holder
+rightsHolder:definition,Definition for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder,A person or organization owning or managing rights over the resource.
+rightsHolder:usage,Usage for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder,A person or organization owning or managing rights held in/over the collection description record.
+rightsHolder:notes,Notes for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder,"Recommended practice is to refer to the rights holder with a IRI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided."
