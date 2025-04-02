@@ -21,7 +21,7 @@
 "p006:notes","Notes for conservation or wildlife management http://rs.tdwg.org/dwc/terms/p006","Los organismos fueros liberados con la intención de mejorar el estado de conservación de las especies o el estado de conservación de otras especies en el hábitat. Véase también Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 "p007:label","Label for released for use http://rs.tdwg.org/dwc/terms/p007","liberado para uso"
 "p007:definition","Definition for released for use http://rs.tdwg.org/dwc/terms/p007","Liberado en la naturaleza para uso (distinto del anterior, e.g., peletería, transporte, uso medicinal)."
-"p007:notes","Notes for released for use http://rs.tdwg.org/dwc/terms/p007",""
+"p007:notes","Notes for released for use http://rs.tdwg.org/dwc/terms/p007","Este término se refiere al organismo que liberado intencional y directamente a la naturaleza para servir un propósito específico. Véase también Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 "p008:label","Label for other intentional release http://rs.tdwg.org/dwc/terms/p008","otra liberación intencional"
 "p008:definition","Definition for other intentional release http://rs.tdwg.org/dwc/terms/p008","Un término general para liberaciones intencionales no para uso humano que no estén cubiertas por otros términos más específicos."
 "p008:notes","Notes for other intentional release http://rs.tdwg.org/dwc/terms/p008",""
