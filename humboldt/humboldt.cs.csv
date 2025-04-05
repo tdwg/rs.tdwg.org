@@ -96,7 +96,7 @@
 "protocolNames:rdfs_comment","Comment for Protocol Names http://rs.tdwg.org/dwc/terms/protocolNames",""
 "protocolNames:dcterms_description","Description for Protocol Names http://rs.tdwg.org/dwc/terms/protocolNames","Doporučeným postupem je používat řízený slovník a oddělovat více hodnot v seznamu mezerou svislou čarou mezerou ( | ). Tento termín má ekvivalent ve jmenném prostoru dwciri:, který jako hodnotu povoluje pouze IRI, zatímco tento termín povoluje jakoukoli řetězcovou literální hodnotu."
 "protocolReferences:label","Label for Protocol References http://rs.tdwg.org/dwc/terms/protocolReferences",""
-"protocolReferences:rdfs_comment","Comment for Protocol References http://rs.tdwg.org/dwc/terms/protocolReferences",""
+"protocolReferences:rdfs_comment","Comment for Protocol References http://rs.tdwg.org/dwc/terms/protocolReferences","Odkazy na metody použité během dwc:Event."
 "protocolReferences:dcterms_description","Description for Protocol References http://rs.tdwg.org/dwc/terms/protocolReferences","Doporučeným postupem je oddělit více hodnot v seznamu mezerou svislou čarou mezerou ( | )."
 "reportedExtremeConditions:label","Label for Reported Extreme Conditions http://rs.tdwg.org/dwc/terms/reportedExtremeConditions",""
 "reportedExtremeConditions:rdfs_comment","Comment for Reported Extreme Conditions http://rs.tdwg.org/dwc/terms/reportedExtremeConditions",""
