@@ -13,7 +13,7 @@
 "e004:label","Label for introduced: assisted colonisation http://rs.tdwg.org/dwc/terms/e004","zaveden: asistovaná kolonizace"
 "e004:definition","Definition for introduced: assisted colonisation http://rs.tdwg.org/dwc/terms/e004","Založení taxonu speciálně se záměrem vytvořit soběstačnou divokou populaci v oblasti, která není součástí přirozeného areálu taxonu."
 "e004:notes","Notes for introduced: assisted colonisation http://rs.tdwg.org/dwc/terms/e004","V případě změny životního prostředí a zničení stanoviště je možností ochrany vysazení taxonu do oblasti, kde se přirozeně nevyskytoval."
-"e005:label","Label for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005",""
+"e005:label","Label for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005","kočovný (příležitostný)"
 "e005:definition","Definition for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005","Dočasný výskyt taxonu daleko mimo jeho přirozený nebo migrační areál."
 "e005:notes","Notes for vagrant (casual) http://rs.tdwg.org/dwc/terms/e005","Přírodní události a lidská činnost mohou nepředvídatelně rozptýlit organismy do míst, kde mohou zůstat nebo přežít po určitou dobu."
 "e006:label","Label for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","nejistý (neznámý, kryptogenní)"
