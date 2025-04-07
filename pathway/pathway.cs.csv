@@ -158,7 +158,7 @@
 "p050:label","Label for unaided http://rs.tdwg.org/dwc/terms/p050","bez lidské pomoci"
 "p050:definition","Definition for unaided http://rs.tdwg.org/dwc/terms/p050","Organismy, které se šíří přirozeným šířením, bez zásahu nebo pomoci člověka, z oblastí, v nichž jsou rovněž cizí."
 "p050:notes","Notes for unaided http://rs.tdwg.org/dwc/terms/p050","Tento termín se vztahuje na sekundární šíření z oblasti, kde je taxon rovněž cizí. Viz také Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
-"p051:label","Label for intentional http://rs.tdwg.org/dwc/terms/p051",""
+"p051:label","Label for intentional http://rs.tdwg.org/dwc/terms/p051","záměrný"
 "p051:definition","Definition for intentional http://rs.tdwg.org/dwc/terms/p051","Organismy byly přivezeny do nové oblasti s konkrétním záměrem udržet je v nové oblasti při životě, bez ohledu na to, zda byly určeny k pěstování nebo vypuštěny do volné přírody."
 "p051:notes","Notes for intentional http://rs.tdwg.org/dwc/terms/p051","Viz také Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 "p052:label","Label for unintentional http://rs.tdwg.org/dwc/terms/p052","neúmyslné"
