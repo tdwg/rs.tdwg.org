@@ -238,7 +238,7 @@
 "collectionManagementSystem:definition","Definition for Collection Management System http://rs.tdwg.org/dwc/terms/collectionManagementSystem","Systém správy sbírek, který se používá k uchovávání a správě primárních dat pro objekty obsažené ve skupině ObjectGroup."
 "collectionManagementSystem:notes","Notes for Collection Management System http://rs.tdwg.org/dwc/terms/collectionManagementSystem","To by mělo odrážet systém nebo databázi, ve které se nacházejí záznamy na úrovni objektu, a nikoli zdroj dat popisu sbírky."
 "collectionName:label","Label for Collection Name http://rs.tdwg.org/dwc/terms/collectionName","Název sbírky"
-"collectionName:definition","Definition for Collection Name http://rs.tdwg.org/dwc/terms/collectionName",""
+"collectionName:definition","Definition for Collection Name http://rs.tdwg.org/dwc/terms/collectionName","Krátký název, který shrnuje objekty sbírky obsažené ve skupině ObjectGroup."
 "conditionsOfAccess:label","Label for Conditions of Access http://rs.tdwg.org/dwc/terms/conditionsOfAccess",""
 "conditionsOfAccess:definition","Definition for Conditions of Access http://rs.tdwg.org/dwc/terms/conditionsOfAccess","Informace o tom, kdo má k popisované sbírce přístup, nebo údaj o jejím bezpečnostním statusu."
 "conditionsOfAccess:notes","Notes for Conditions of Access http://rs.tdwg.org/dwc/terms/conditionsOfAccess","Pokud je k dispozici, měla by to být adresa URL na stabilní stránku zásad. Například https://www.fieldmuseum.org/science/research/area/fossils-meteorites/fossils-meteorites-policies."
