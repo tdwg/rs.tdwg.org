@@ -1,6 +1,6 @@
 "identifier","context","text"
-"language:label","Label for Language http://rs.tdwg.org/dwc/terms/language",""
-"language:rdfs_comment","Comment for Language http://rs.tdwg.org/dwc/terms/language",""
+"language:label","Label for Language http://rs.tdwg.org/dwc/terms/language","Jazyk"
+"language:rdfs_comment","Comment for Language http://rs.tdwg.org/dwc/terms/language","Jazyk zdroje."
 "language:dcterms_description","Description for Language http://rs.tdwg.org/dwc/terms/language","Doporučeným osvědčeným postupem je použití řízeného slovníku, například RFC 5646. Tento termín má ekvivalent ve jmenném prostoru dcterms:, který umožňuje jako hodnotu pouze IRI, zatímco tento termín umožňuje jakoukoli řetězcovou literální hodnotu."
 "language:examples","Examples for Language http://rs.tdwg.org/dwc/terms/language","`en` (pro angličtinu); `es` (pro španělštinu)"
 "type:label","Label for Type http://rs.tdwg.org/dwc/terms/type","Typ"
