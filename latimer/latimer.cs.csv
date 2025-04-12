@@ -100,7 +100,7 @@
 "contactDetailCategory:label","Label for Contact Detail Category http://rs.tdwg.org/dwc/terms/contactDetailCategory","Kategorie podrobností kontaktu"
 "contactDetailCategory:definition","Definition for Contact Detail Category http://rs.tdwg.org/dwc/terms/contactDetailCategory","Způsob kontaktu, na který se údaj o kontaktu vztahuje."
 "contactDetailCategory:notes","Notes for Contact Detail Category http://rs.tdwg.org/dwc/terms/contactDetailCategory","Doporučeným postupem je používat řízený slovník."
-"contactDetailFunction:label","Label for Contact Detail Function http://rs.tdwg.org/dwc/terms/contactDetailFunction",""
+"contactDetailFunction:label","Label for Contact Detail Function http://rs.tdwg.org/dwc/terms/contactDetailFunction","Detail kontaktu Funkce"
 "contactDetailFunction:definition","Definition for Contact Detail Function http://rs.tdwg.org/dwc/terms/contactDetailFunction","Stručné označení popisující povahu dotazu nebo dotazů, které je vhodné směřovat na kontaktní údaje."
 "contactDetailValue:label","Label for Contact Detail Value http://rs.tdwg.org/dwc/terms/contactDetailValue",""
 "contactDetailValue:definition","Definition for Contact Detail Value http://rs.tdwg.org/dwc/terms/contactDetailValue","Hodnota údaje o kontaktu, například telefonní číslo nebo e-mailová adresa."
