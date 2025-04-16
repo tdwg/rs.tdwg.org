@@ -1,5 +1,5 @@
 "identifier","context","text"
-"e:label","Label for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e","Schéma conceptuel contrôlé pour le moyen d'implantation"
+"e:label","Label for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e","Schéma conceptuel contrôlé pour les establishmentMeans"
 "e:definition","Definition for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e","Un Schéma Conceptuel SKOS qui doit être utilisé comme un vocabulaire contrôlé pour les termes Darwin Core dwc:moyen d'implantation et dwciri:moyen d'implantation"
 "e001:label","Label for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","natif (indigène)"
 "e001:definition","Definition for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","Un taxon présent dans son aire de répartition naturelle."
