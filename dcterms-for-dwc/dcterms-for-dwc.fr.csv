@@ -21,6 +21,6 @@
 "references:label","Label for References http://rs.tdwg.org/dwc/terms/references","Références"
 "references:rdfs_comment","Comment for References http://rs.tdwg.org/dwc/terms/references","Une ressource apparentée qui est référencée, citée ou pointée d'une autre manière par la ressource décrite."
 "references:dcterms_description","Description for References http://rs.tdwg.org/dwc/terms/references",""
-"references:examples","Examples for References http://rs.tdwg.org/dwc/terms/references",""
+"references:examples","Examples for References http://rs.tdwg.org/dwc/terms/references","`http://arctos.database.museum/guid/MVZ:Mamm:165861` (exemple de MaterialEntity); `https://www.catalogueoflife.org/data/taxon/32664` (exemple de Taxon)"
 "rightsHolder:label","Label for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder","Titulaire des Droits"
 "rightsHolder:rdfs_comment","Comment for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder","Personne ou organisation possédant ou gérant des droits sur la ressource."
