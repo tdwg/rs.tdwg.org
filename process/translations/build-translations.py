@@ -101,7 +101,7 @@ for termfile in termfiles_to_translate:
 
     # Read any *.??.csv files (produced by Crowdin) and generate a *-translations.csv file
     with open(termfile+'-translations.csv', 'w', newline='') as translationsFile:
-        languages = ['en','de','es','fr','ko','nl','ru','zh-Hans', 'zh-Hant']
+        languages = ['en','cs','de','es','fr','ko','nl','ru','zh-Hans', 'zh-Hant']
 
         if termfile in dwc_structure:
             print("Special mapping for "+termfile+"-translations.csv")
