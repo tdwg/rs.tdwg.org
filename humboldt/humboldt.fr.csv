@@ -143,7 +143,7 @@
 "taxonCompletenessReported:rdfs_comment","Comment for Taxon Completeness Reported http://rs.tdwg.org/dwc/terms/taxonCompletenessReported","Déclaration indiquant si l'exhaustivité taxonomique du dwc:Event a été évaluée."
 "taxonCompletenessReported:dcterms_description","Description for Taxon Completeness Reported http://rs.tdwg.org/dwc/terms/taxonCompletenessReported",""
 "totalAreaSampledUnit:label","Label for Total Area Sampled Unit http://rs.tdwg.org/dwc/terms/totalAreaSampledUnit","Unité de la Surface Totale Inventoriée"
-"totalAreaSampledUnit:rdfs_comment","Comment for Total Area Sampled Unit http://rs.tdwg.org/dwc/terms/totalAreaSampledUnit",""
+"totalAreaSampledUnit:rdfs_comment","Comment for Total Area Sampled Unit http://rs.tdwg.org/dwc/terms/totalAreaSampledUnit","Les unités associées à eco:totalAreaSampledValue"
 "totalAreaSampledUnit:dcterms_description","Description for Total Area Sampled Unit http://rs.tdwg.org/dwc/terms/totalAreaSampledUnit","La pratique optimale recommandée est d'utiliser un vocabulaire contrôlé. Pour les unités contenant des exposants, utilisez les caractères du jeu de caractères Unicode Latin-1 Supplement (hex 00B2 pour la mise au carré et 00B3 pour la mise au cube). Ce terme a un équivalent dans le dwciri: namespace qui n'autorise qu'un IRI comme valeur, alors que ce terme autorise n'importe quelle valeur sous forme de chaîne de caractères."
 "totalAreaSampledValue:label","Label for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue","Valeur de la Surface Totale Inventoriée"
 "totalAreaSampledValue:rdfs_comment","Comment for Total Area Sampled Value http://rs.tdwg.org/dwc/terms/totalAreaSampledValue","Valeur numérique de la surface totale inventoriée au cours du dwc:Event."
