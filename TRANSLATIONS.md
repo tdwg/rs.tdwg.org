@@ -1,3 +1,5 @@
+[![Crowdin](https://badges.crowdin.net/darwin-core/localized.svg)](https://crowdin.com/project/darwin-core)
+
 # rs.tdwg.org translations
 
 We are using [Crowdin](https://crowdin.com/project/darwin-core) to translate Darwin Core, Latimer Core and related terms into several languages.  Crowdin tracks when changes are made to the source text, and suggests identical or near-identical translations from other sources such as the GBIF.org website  (GBIF also use Crowdin).

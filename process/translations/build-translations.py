@@ -32,7 +32,13 @@ termfiles_to_translate = [
     'humboldt/humboldt'
 ]
 
-# From those source files, these columns will be made available for translation
+# Additional column (beyond term_localName) to use to create an identifier, necessary if the same
+# term_localName is used e.g. in different classes.
+termfile_identifiers = {
+    'latimer/latimer': 'tdwgutility_organizedInClass'
+}
+
+# From those source files, these columns will be made available for translation if they exist in the standard
 translate_these_columns = {
     # This for everything
     'label': 'Label',
@@ -54,6 +60,11 @@ crowdin_fieldnames = ['identifier', 'context', 'text']
 
 for termfile in termfiles_to_translate:
     print("Processing source file "+termfile+".csv")
+
+    if (termfile in termfile_identifiers):
+        additionalIdentifier = termfile_identifiers[termfile]
+    else:
+        additionalIdentifier = None
 
     # Output file with column names known to Crowdin
     with open(termfile+'.en.csv', 'w', newline='') as crowdinEnglishFile:
@@ -78,35 +89,46 @@ for termfile in termfiles_to_translate:
                                 if len(examples_without_examples) < 2:
                                     continue
 
-                            identifier = originalRow['term_localName']+":"+translatableCol
-                            context = translate_these_columns[translatableCol]+" for "+originalRow['label'] + ' http://rs.tdwg.org/dwc/terms/'+originalRow['term_localName']
+                            identifier = originalRow['term_localName']+":"
+                            # Additional parts for identifiers, in case term_localName isn't enough
+                            if (additionalIdentifier):
+                                identifier += originalRow[additionalIdentifier].replace(':', '~')+":"
+                            identifier += translatableCol
+
+                            context = translate_these_columns[translatableCol]+" for "+originalRow['label']
+                            if (additionalIdentifier):
+                                context += ' (' + additionalIdentifier + ': ' + originalRow[additionalIdentifier] + ')'
+
+                            context += ' http://rs.tdwg.org/dwc/terms/'+originalRow['term_localName']
                             crowdinEnglishTerms.writerow([identifier, context, originalRow[translatableCol]])
 
     print("Generating file "+termfile+"-translations.csv")
 
     # Read any *.??.csv files (produced by Crowdin) and generate a *-translations.csv file
     with open(termfile+'-translations.csv', 'w', newline='') as translationsFile:
-        languages = ['en','cs','de','es','fr','ko','nl','ru','zh-Hans', 'zh-Hant']
+        languages = ['en','cs','de','es','fr','ko','nl','ru','zh-Hans','zh-Hant']
 
         # Output the translated columns, maintaining column order.
         current_output_translation_columns = list(filter(lambda c: c in translate_these_columns, originalTerms.fieldnames))
-
-        print("Will write these columns in "+termfile+'-translations.csv', current_output_translation_columns)
 
         # *-translations.csv file has columns
         # term_localName,label_en,label_…,definition_en,definition_…
         fieldnames = ['term_localName']
         translationsFile.write('term_localName')
+
+        if (additionalIdentifier):
+            fieldnames.append(additionalIdentifier)
+            translationsFile.write(","+additionalIdentifier)
         for col in current_output_translation_columns:
             for lang in languages:
-                fieldnames += col+'_'+lang
+                fieldnames.append(col+"_"+lang)
                 translationsFile.write(","+col+"_"+lang)
         translationsFile.write("\n")
 
+        print("Will write these columns in "+termfile+'-translations.csv', fieldnames)
+
         # Record each term in a dictionary with entries label_en etc.
         combinedTranslations = OrderedDict()
-
-        xfieldnames = ['identifier', 'context', 'text']
 
         for lang in languages:
             if (os.path.exists(termfile+'.'+lang+'.csv')):
@@ -118,14 +140,21 @@ for termfile in termfiles_to_translate:
                         wholeIdentifier = row['identifier'] # e.g. basisOfRecord:label
                         text = row['text']
 
-                        (localName, column) = wholeIdentifier.split(':')
-                        if localName not in combinedTranslations:
-                            combinedTranslations[localName] = dict()
-                        combinedTranslations[localName][column+'_'+lang] = text
+                        if (wholeIdentifier.count(':') == 1):
+                            (localName, column) = wholeIdentifier.split(':')
+                            key = localName
+                        elif (wholeIdentifier.count(':') == 2):
+                            (localName, additional, column) = wholeIdentifier.split(':')
+                            key = localName + ',' + additional.replace('~', ':')
+                        else:
+                            print("Identifier: «" + wholeIdentifier + "»," + str(wholeIdentifier.count(':')))
+                        if key not in combinedTranslations:
+                            combinedTranslations[key] = dict()
+                        combinedTranslations[key][column+'_'+lang] = text
 
         # Write a row with a term and the translations
-        for localName, translations in combinedTranslations.items():
-            translationsFile.write(localName)
+        for key, translations in combinedTranslations.items():
+            translationsFile.write(key)
             for col in current_output_translation_columns:
                 for lang in languages:
                     if col+"_"+lang in translations:
