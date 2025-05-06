@@ -403,7 +403,7 @@
 "originalNameUsageID:label","Label for Original Name Usage ID http://rs.tdwg.org/dwc/terms/originalNameUsageID",""
 "originalNameUsageID:rdfs_comment","Comment for Original Name Usage ID http://rs.tdwg.org/dwc/terms/originalNameUsageID",""
 "originalNameUsageID:dcterms_description","Description for Original Name Usage ID http://rs.tdwg.org/dwc/terms/originalNameUsageID",""
-"originalNameUsageID:examples","Examples for Original Name Usage ID http://rs.tdwg.org/dwc/terms/originalNameUsageID",""
+"originalNameUsageID:examples","Examples for Original Name Usage ID http://rs.tdwg.org/dwc/terms/originalNameUsageID","`tsn:41107` (ITIS); `urn:lsid:ipni.org:names:320035-2` (IPNI); `2704179` (GBIF); `6W3C4` (COL)"
 "otherCatalogNumbers:label","Label for Other Catalog Numbers http://rs.tdwg.org/dwc/terms/otherCatalogNumbers","其他館藏號"
 "otherCatalogNumbers:rdfs_comment","Comment for Other Catalog Numbers http://rs.tdwg.org/dwc/terms/otherCatalogNumbers",""
 "otherCatalogNumbers:dcterms_description","Description for Other Catalog Numbers http://rs.tdwg.org/dwc/terms/otherCatalogNumbers",""
