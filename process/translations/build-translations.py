@@ -42,7 +42,7 @@ translate_these_columns = {
     'dcterms_description': 'Description',
     'examples': 'Examples',
 
-    # These for establishmentMeans, degreeOfEstablishment, pathway
+    # These for establishmentMeans, degreeOfEstablishment, pathway, latimer
     'definition': 'Definition',
     'usage': 'Usage',
     'notes': 'Notes'
@@ -51,22 +51,6 @@ translate_these_columns = {
 # Output structure (defined in crowdin.yml)
 # identifier,context,source_or_translation
 crowdin_fieldnames = ['identifier', 'context', 'text']
-
-# Fields to be output into the *-translations.csv file
-output_translation_columns = {
-    'label': 'label',
-    'definition': 'definition',
-    'usage': 'usage',
-    'notes': 'notes'
-}
-# DWC has a different structure
-dwc_structure = ['terms/terms', 'dc-for-dwc/dc-for-dwc', 'dcterms-for-dwc/dcterms-for-dwc']
-dwc_output_translation_columns = {
-    'label': 'label',
-    'rdfs_comment': 'rdfs_comment',
-    'dcterms_description': 'dcterms_description',
-    'examples': 'examples'
-}
 
 for termfile in termfiles_to_translate:
     print("Processing source file "+termfile+".csv")
@@ -79,6 +63,7 @@ for termfile in termfiles_to_translate:
         # Input file
         with open(termfile+'.csv', newline='') as originalTermsFile:
             originalTerms = csv.DictReader(originalTermsFile)
+            print("Column headers in "+termfile+'.csv are', originalTerms.fieldnames)
 
             for originalRow in originalTerms:
                 # Don't (yet) bother translating deprecated terms
@@ -103,20 +88,19 @@ for termfile in termfiles_to_translate:
     with open(termfile+'-translations.csv', 'w', newline='') as translationsFile:
         languages = ['en','cs','de','es','fr','ko','nl','ru','zh-Hans', 'zh-Hant']
 
-        if termfile in dwc_structure:
-            print("Special mapping for "+termfile+"-translations.csv")
-            current_output_translation_columns = dwc_output_translation_columns
-        else:
-            current_output_translation_columns = output_translation_columns
+        # Output the translated columns, maintaining column order.
+        current_output_translation_columns = list(filter(lambda c: c in translate_these_columns, originalTerms.fieldnames))
+
+        print("Will write these columns in "+termfile+'-translations.csv', current_output_translation_columns)
 
         # *-translations.csv file has columns
         # term_localName,label_en,label_…,definition_en,definition_…
         fieldnames = ['term_localName']
         translationsFile.write('term_localName')
-        for col in current_output_translation_columns.keys():
+        for col in current_output_translation_columns:
             for lang in languages:
                 fieldnames += col+'_'+lang
-                translationsFile.write(","+current_output_translation_columns[col]+"_"+lang)
+                translationsFile.write(","+col+"_"+lang)
         translationsFile.write("\n")
 
         # Record each term in a dictionary with entries label_en etc.
@@ -142,7 +126,7 @@ for termfile in termfiles_to_translate:
         # Write a row with a term and the translations
         for localName, translations in combinedTranslations.items():
             translationsFile.write(localName)
-            for col in current_output_translation_columns.keys():
+            for col in current_output_translation_columns:
                 for lang in languages:
                     if col+"_"+lang in translations:
                         text = translations[col+"_"+lang]
