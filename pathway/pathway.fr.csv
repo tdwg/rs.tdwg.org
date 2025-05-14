@@ -1,5 +1,5 @@
 "identifier","context","text"
-"p:label","Label for pathway concept scheme http://rs.tdwg.org/dwc/terms/p","schéma conceptuel des voies d'envahissement"
+"p:label","Label for pathway concept scheme http://rs.tdwg.org/dwc/terms/p","schéma conceptuel des voies d'accès"
 "p:definition","Definition for pathway concept scheme http://rs.tdwg.org/dwc/terms/p","Un schéma conceptuel SKOS qui doit être utilisé comme vocabulaire contrôlé pour les termes dwc:pathway et dwciri:pathway du Darwin Core"
 "p001:label","Label for biological control http://rs.tdwg.org/dwc/terms/p001","contrôle biologique"
 "p001:definition","Definition for biological control http://rs.tdwg.org/dwc/terms/p001","Organismes introduits volontairement dans une zone pour y contrôler d'autres organismes."
