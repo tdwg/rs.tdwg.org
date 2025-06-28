@@ -1,0 +1,196 @@
+# To use this configuration file, it must be in the process directory from which the
+# process.py script is run. Typically, a copy is stored with the modifications CSV file.
+
+# Date assigned to all versions, usually the date of approval by the Executive Committee
+date_issued: '2025-06-12'
+
+# UTC offset for the computer running the script
+local_offset_from_utc: -05:00
+
+# Only relevant when new term lists or vocabularies are created. It does nothing when
+# existing terms are changed. Categories:
+# 1: Simple vocabulary
+# 2: Simple controlled vocabulary
+# 3: Controlled vocabluary with broader hierarchy
+vocab_type: 1
+
+# Permanent IRI for the list of terms document that is associated with this vocabulary.
+# This is needed to automatically update the date_modified value of the list of terms document 
+# using the date_issued value above.
+list_of_terms_iri: http://rs.tdwg.org/dwc/doc/list/
+
+namespaces:
+
+# Repeat the following data for each namespace
+
+# For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
+# term lists, MUST follow conventional TDWG IRI patterns.
+- namespace_uri: http://rs.tdwg.org/dwc/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: dwc
+
+  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
+  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  database: terms
+
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
+  # Set to false if namespace issued by TDWG.
+  borrowed: false
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  new_term_list: false
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: dwc-revisions/dwc-revisions-2025-06-12/dwc_2025-06-12.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+  termlist_uri: ''
+
+  # Label used for the term list in machine-readable metadata.
+  label: Core terms defined by Darwin Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: This term list includes all currently valid terms that have been defined in the core Darwin Core namespace dwc:.  To comment on this schema, please create a new issue in https://github.com/tdwg/dwc/issues.
+
+- namespace_uri: http://rs.tdwg.org/dwc/iri/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: dwciri
+
+  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
+  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  database: iri
+
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
+  # Set to false if namespace issued by TDWG.
+  borrowed: false
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  new_term_list: false
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: dwc-revisions/dwc-revisions-2025-06-12/iri_2025-06-12.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+  termlist_uri: ''
+
+  # Label used for the term list in machine-readable metadata.
+  label: Darwin Core IRI-value Term Analogs
+
+  # Description of the term list used in machine-readable metadata.
+  description: The terms on this list are intended to be used with IRI values.
+
+- namespace_uri: http://rs.tdwg.org/ac/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: ac
+
+  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
+  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  database: ac-for-dwc
+
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
+  # Set to false if namespace issued by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  new_term_list: false
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: dwc-revisions/dwc-revisions-2025-06-12/ac_2025-06-12.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+  termlist_uri: ''
+
+  # Label used for the term list in machine-readable metadata.
+  label: Audiovisual Core terms used by Darwin Core
+
+  # Description of the term list used in machine-readable metadata.
+  description: This term list includes all terms that have been adopted from the Audiovisual Core namespace ac:.
+
+- namespace_uri: http://purl.org/dc/elements/1.1/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: dc
+
+  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
+  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  database: dc-for-dwc
+
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
+  # Set to false if namespace issued by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  new_term_list: false
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: dwc-revisions/dwc-revisions-2025-06-12/dc_2025-06-12.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+  termlist_uri: 'http://rs.tdwg.org/dwc/dc/'
+
+  # Label used for the term list in machine-readable metadata.
+  label: Darwin Core terms borrowed from the Dublin Core namespace
+
+  # Description of the term list used in machine-readable metadata.
+  description: This list includes terms borrowed by Darwin Core from the (http://purl.org/dc/elements/1.1/) Dublin Core namespace.
+
+- namespace_uri: http://purl.org/dc/terms/
+
+  # Standard namespace abbreviation for the namespace IRI.
+  pref_namespace_prefix: dcterms
+
+  # Database name for associated directories and files. MUST NOT contain spaces. SHOULD use
+  # lowerCamelCase. Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
+  database: dcterms-for-dwc
+
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain. 
+  # Set to false if namespace issued by TDWG.
+  borrowed: true
+
+  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
+  new_term_list: false
+
+  # Normally set to false except for non-versioned namespaces like decisions.
+  utility_namespace: false
+
+  # Path to hand-edited changes CSV file. Relative to process directory from which the
+  # process.py script is run.
+  modifications_file_path: dwc-revisions/dwc-revisions-2025-06-12/dcterms_2025-06-12.csv
+
+  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
+  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
+  # TDWG termlist IRI pattern.
+  termlist_uri: 'http://rs.tdwg.org/dwc/dcterms/'
+
+  # Label used for the term list in machine-readable metadata.
+  label: Darwin Core terms borrowed from the Dublin Core terms namespace
+
+  # Description of the term list used in machine-readable metadata.
+  description: This list includes terms borrowed by Darwin Core from the terms (http://purl.org/dc/terms/) Dublin Core namespace.
