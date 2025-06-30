@@ -17,7 +17,7 @@ local_offset_from_utc: -05:00
 # Categories:
 # 1: Simple vocabulary
 # 2: Simple controlled vocabulary
-# 3: Controlled vocabluary with broader hierarchy
+# 3: Controlled vocabulary with broader hierarchy
 vocab_type: 2
 
 # Permanent IRI for the list of terms document that is associated with this vocabulary.

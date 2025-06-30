@@ -17,7 +17,7 @@ local_offset_from_utc: -05:00
 # Categories:
 # 1: Simple vocabulary
 # 2: Simple controlled vocabulary
-# 3: Controlled vocabluary with broader hierarchy
+# 3: Controlled vocabulary with broader hierarchy
 vocab_type: 1
 
 # Permanent IRI for the list of terms document that is associated with this vocabulary.
@@ -51,11 +51,11 @@ namespaces:
   # Do not append -versions to this name, the versions directory will be created automatically.
   database: humboldt
 
-  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
-  # MUST be set to false if namespace issued and controlled by TDWG.
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
+  # or if the terms are borrowed from another TDWG standard. 
+  # Set to false if namespace issued by TDWG and not borrowed from another standard.
   borrowed: false
 
-  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
   # MUST be set to true if it is a new term list that has never been processed before. 
   # Note that there are extra configuration files that must be set up for term lists that are 
   # part of new vocabularies. See Section 2.1.2 for details. 
@@ -69,13 +69,10 @@ namespaces:
   # process.py script is run.
   modifications_file_path: dwc-revisions/eco-2025-06-12/eco.csv
 
-  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
-  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
-  # TDWG termlist IRI pattern.
-
-  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
-  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
-  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
+  # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
+  # minted here, it MUST be the same as the namespace IRI (but better to just leave it blank). 
+  # When terms are borrowed from other vocabularies (TDWG or outside TDWG) to be included within a
   # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
   # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
   # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
@@ -115,11 +112,11 @@ namespaces:
   # Do not append -versions to this name, the versions directory will be created automatically.
   database: humboldt_iri
 
-  # MUST be set to true if namespace not issued by TDWG in the rs.tdwg.org subdomain. 
-  # MUST be set to false if namespace issued and controlled by TDWG.
+  # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
+  # or if the terms are borrowed from another TDWG standard. 
+  # Set to false if namespace issued by TDWG and not borrowed from another standard.
   borrowed: false
 
-  # Set to true if a new term list that has never been processed before. Otherwise, set to false.
   # MUST be set to true if it is a new term list that has never been processed before. 
   # Note that there are extra configuration files that must be set up for term lists that are 
   # part of new vocabularies. See Section 2.1.2 for details. 
@@ -133,13 +130,10 @@ namespaces:
   # process.py script is run.
   modifications_file_path: dwc-revisions/eco-2025-06-12/ecoiri.csv
 
-  # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
-  # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
-  # TDWG termlist IRI pattern.
-
-  # For TDWG-minted terms, this value SHOULD be the empty string and the termlist IRI will be set to be 
-  # the same as the namespace IRI. If a value is given for TDWG-minted terms, it MUST be the same as the 
-  # namespace IRI. When terms are borrowed from other non-TDWG vocabularies to be included within a TDWG 
+  # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
+  # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
+  # minted here, it MUST be the same as the namespace IRI (but better to just leave it blank). 
+  # When terms are borrowed from other vocabularies (TDWG or outside TDWG) to be included within a
   # vocabulary, an IRI for the borrowed term list conforming to the term list IRI pattern 
   # (https://github.com/tdwg/rs.tdwg.org#3rd-level-iris-denoting-term-lists) MUST be minted. 
   # The subdomain MUST be `rs.tdwg.org` and the first level IRI component following the subdomain MUST be 
