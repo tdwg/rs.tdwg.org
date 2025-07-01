@@ -47,7 +47,7 @@ def readCsv(filename):
 
 def writeCsv(fileName, array):
     fileObject = open(fileName, 'w', newline='', encoding='utf-8')
-    writerObject = csv.writer(fileObject)
+    writerObject = csv.writer(fileObject, lineterminator=os.linesep)
     for row in array:
         writerObject.writerow(row)
     fileObject.close()
