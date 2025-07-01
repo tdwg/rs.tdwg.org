@@ -49,7 +49,7 @@ namespaces:
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: chrono
+  database: chronometricage
 
   # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
   # or if the terms are borrowed from another TDWG standard. 
@@ -110,7 +110,7 @@ namespaces:
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: chrono_iri
+  database: chronoiri
 
   # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
   # or if the terms are borrowed from another TDWG standard. 
