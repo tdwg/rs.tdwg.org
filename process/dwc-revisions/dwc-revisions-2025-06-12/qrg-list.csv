@@ -226,7 +226,6 @@ http://rs.tdwg.org/dwc/terms/relationshipOfResource
 http://rs.tdwg.org/dwc/terms/relationshipAccordingTo
 http://rs.tdwg.org/dwc/terms/relationshipEstablishedDate
 http://rs.tdwg.org/dwc/terms/relationshipRemarks
-http://purl.org/dc/terms/language
 http://rs.tdwg.org/dwc/iri/behavior
 http://rs.tdwg.org/dwc/iri/caste
 http://rs.tdwg.org/dwc/iri/dataGeneralizations
@@ -254,6 +253,7 @@ http://rs.tdwg.org/dwc/iri/inCollection
 http://rs.tdwg.org/dwc/iri/inDataset
 http://rs.tdwg.org/dwc/iri/inDescribedPlace
 http://rs.tdwg.org/dwc/iri/informationWithheld
+http://purl.org/dc/terms/language
 http://rs.tdwg.org/dwc/iri/latestGeochronologicalEra
 http://rs.tdwg.org/dwc/iri/lifeStage
 http://rs.tdwg.org/dwc/iri/locationAccordingTo
