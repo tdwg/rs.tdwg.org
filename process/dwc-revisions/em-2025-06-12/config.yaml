@@ -93,6 +93,7 @@ namespaces:
   # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
   # dereferencing terms and an HTML representation is requested. 
   prepend_url: https://https://dwc.tdwg.org/em/#
+  prepend_url: https://dwc.tdwg.org/em/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
   use_namespace_in_fragment: true
