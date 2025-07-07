@@ -82,3 +82,11 @@ http://rs.tdwg.org/dwc/version/terms/2023-09-13,http://rs.tdwg.org/dwc/version/t
 http://rs.tdwg.org/dwc/version/iri/2023-09-13,http://rs.tdwg.org/dwc/version/iri/2023-06-28
 http://rs.tdwg.org/dwc/version/terms/2023-09-18,http://rs.tdwg.org/dwc/version/terms/2023-09-13
 http://rs.tdwg.org/eco/version/terms/2024-03-26,http://rs.tdwg.org/eco/version/terms/2024-02-28
+http://rs.tdwg.org/dwc/version/terms/2025-06-12,http://rs.tdwg.org/dwc/version/terms/2023-09-18
+http://rs.tdwg.org/dwc/version/iri/2025-06-12,http://rs.tdwg.org/dwc/version/iri/2023-09-13
+http://rs.tdwg.org/chrono/version/terms/2025-06-12,http://rs.tdwg.org/chrono/version/terms/2021-02-21
+http://rs.tdwg.org/chrono/version/iri/2025-06-12,http://rs.tdwg.org/chrono/version/iri/2021-02-02
+http://rs.tdwg.org/eco/version/terms/2025-06-12,http://rs.tdwg.org/eco/version/terms/2024-03-26
+http://rs.tdwg.org/eco/version/iri/2025-06-12,http://rs.tdwg.org/eco/version/iri/2024-03-26
+http://rs.tdwg.org/dwcem/version/values/2025-06-12,http://rs.tdwg.org/dwcem/version/values/2021-09-01
+http://rs.tdwg.org/dwcpw/version/values/2025-06-12,http://rs.tdwg.org/dwcpw/version/values/2021-09-01
