@@ -1013,3 +1013,8 @@ http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod,decision-2025-06-
 http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem,decision-2025-06-12_45
 http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem,decision-2025-06-12_45
 http://rs.tdwg.org/chrono/iri/materialDated,decision-2025-06-12_45
+http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive,decision-2025-06-12_46
+http://rs.tdwg.org/eco/terms/samplingEffortProtocol,decision-2025-06-12_46
+http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported,decision-2025-06-12_46
+http://rs.tdwg.org/eco/terms/samplingPerformedBy,decision-2025-06-12_46
+http://rs.tdwg.org/eco/iri/samplingEffortProtocol,decision-2025-06-12_46
