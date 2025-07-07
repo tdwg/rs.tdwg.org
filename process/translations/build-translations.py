@@ -29,7 +29,8 @@ termfiles_to_translate = [
     'pathway/pathway',
     'latimer/latimer',
     'dcterms-for-ltc/dcterms-for-ltc',
-    'humboldt/humboldt'
+    'humboldt/humboldt',
+    'ac-for-dwc/ac-for-dwc'
 ]
 
 # Additional column (beyond term_localName) to use to create an identifier, necessary if the same
