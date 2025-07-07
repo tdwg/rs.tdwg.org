@@ -5,4 +5,4 @@
 "language:examples","Examples for Language http://rs.tdwg.org/dwc/terms/language","`en` (para Inglés); `es` (para Español)"
 "type:label","Label for Type http://rs.tdwg.org/dwc/terms/type","Tipo"
 "type:rdfs_comment","Comment for Type http://rs.tdwg.org/dwc/terms/type","La naturaleza o género del recurso."
-"type:dcterms_description","Description for Type http://rs.tdwg.org/dwc/terms/type",""
+"type:dcterms_description","Description for Type http://rs.tdwg.org/dwc/terms/type","Debe completarse con un valor del vocabulario de tipo DCMI (https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2010-10-11/)."
