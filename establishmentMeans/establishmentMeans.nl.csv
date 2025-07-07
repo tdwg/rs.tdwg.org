@@ -19,3 +19,6 @@
 "e006:label","Label for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","onzeker (onbekend, cryptogeen)"
 "e006:definition","Definition for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","De oorsprong van het voorkomen van het taxon in een gebied is onbekend."
 "e006:notes","Notes for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006",""
+"e007:label","Label for native: endemic http://rs.tdwg.org/dwc/terms/e007",""
+"e007:definition","Definition for native: endemic http://rs.tdwg.org/dwc/terms/e007",""
+"e007:notes","Notes for native: endemic http://rs.tdwg.org/dwc/terms/e007",""
