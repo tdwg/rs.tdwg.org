@@ -1,4 +1,4 @@
 "identifier","context","text"
-"fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
-"fundingAttribution:rdfs_comment","Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
-"fundingAttribution:dcterms_description","Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
+"fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Atribución de Financiamiento"
+"fundingAttribution:rdfs_comment","Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Descripción textual de las organizaciones o personas que financiaron la creación del recurso."
+"fundingAttribution:dcterms_description","Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Especifique el nombre oficial completo de la entidad financiadora. Debe incluir el nombre completo sin abreviaturas, a menos que la abreviatura sea una forma oficial y comúnmente reconocida (por ejemplo, NSF para la Fundación Nacional de Ciencias). Se recomienda separar los valores en una lista con espacio ( | )."
