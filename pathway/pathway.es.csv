@@ -147,7 +147,7 @@
 "p046:definition","Definition for escape from confinement http://rs.tdwg.org/dwc/terms/p046","Organismos transportados intencionalmente por el ser humano con la intención de que sean mantenidos en cautiverio o cultivados, pero que han escapado inadvertidamente del control humano."
 "p046:notes","Notes for escape from confinement http://rs.tdwg.org/dwc/terms/p046",""
 "p047:label","Label for transport-contaminant http://rs.tdwg.org/dwc/terms/p047","transporte contaminante"
-"p047:definition","Definition for transport-contaminant http://rs.tdwg.org/dwc/terms/p047","Un término general para todas las especies transportadas como contaminantes en otros productos."
+"p047:definition","Definition for transport-contaminant http://rs.tdwg.org/dwc/terms/p047",""
 "p047:notes","Notes for transport-contaminant http://rs.tdwg.org/dwc/terms/p047",""
 "p048:label","Label for transport-stowaway http://rs.tdwg.org/dwc/terms/p048","polizón en transporte"
 "p048:definition","Definition for transport-stowaway http://rs.tdwg.org/dwc/terms/p048","Un término general para todas las especies transportadas sobre medios de transporte, donde el organismo tiene una interacción directa con el transporte y no es meramente acarreado como parte o contaminante del cargo."
