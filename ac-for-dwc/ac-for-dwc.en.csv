@@ -1,0 +1,4 @@
+identifier,context,text
+fundingAttribution:label,Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution,Funding Attribution
+fundingAttribution:rdfs_comment,Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution,Text description of organizations or individuals who funded the creation of the resource.
+fundingAttribution:dcterms_description,Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution,"Specify the full official name of the funding body. This should include the complete name without abbreviations, unless the abbreviation is an official and commonly recognized form (e.g., NSF for the National Science Foundation). The recommended best practice is to separate the values in a list with space vertical bar space ( | )."
