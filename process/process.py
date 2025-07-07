@@ -47,7 +47,7 @@ def readCsv(filename):
 
 def writeCsv(fileName, array):
     fileObject = open(fileName, 'w', newline='', encoding='utf-8')
-    writerObject = csv.writer(fileObject)
+    writerObject = csv.writer(fileObject, lineterminator=os.linesep)
     for row in array:
         writerObject.writerow(row)
     fileObject.close()
@@ -1356,7 +1356,7 @@ if decisions_df['rdfs_comment'].iloc[-1] != config['decisions_text']:
     row_dict['term_modified'] = date_issued
     row_dict['label'] = 'TDWG Executive Committee decision ' + decision_number_string
     row_dict['rdfs_comment'] = config['decisions_text']
-    decisions_df = decisions_df.append(row_dict, ignore_index=True)
+    decisions_df = decisions_df._append(row_dict, ignore_index=True)
 
     # Write the updated decisions CSV file
     decisions_df.to_csv('../decisions/decisions.csv', index=False)
@@ -1374,7 +1374,7 @@ for term_iri in changed_terms_iris:
     row_dict = {}
     row_dict['linked_affected_resource'] = term_iri
     row_dict['decision_localName'] = 'decision-' + date_issued + '_' + decision_number_string
-    decisions_links_df = decisions_links_df.append(row_dict, ignore_index=True)
+    decisions_links_df = decisions_links_df._append(row_dict, ignore_index=True)
 
 # Write the updated decisions-links CSV file
 decisions_links_df.to_csv('../decisions/decisions-links.csv', index=False)
