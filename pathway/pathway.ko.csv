@@ -147,7 +147,7 @@
 "p046:definition","Definition for escape from confinement http://rs.tdwg.org/dwc/terms/p046","인간이 사육하거나 재배할 목적으로 들여왔으나 부주의로 인간의 통제를 벗어난 유기체들"
 "p046:notes","Notes for escape from confinement http://rs.tdwg.org/dwc/terms/p046",""
 "p047:label","Label for transport-contaminant http://rs.tdwg.org/dwc/terms/p047","수송중오염물"
-"p047:definition","Definition for transport-contaminant http://rs.tdwg.org/dwc/terms/p047","기타 생산물의 요염물로 옮겨진 모든 종들을 포함하는 포괄적 용어"
+"p047:definition","Definition for transport-contaminant http://rs.tdwg.org/dwc/terms/p047",""
 "p047:notes","Notes for transport-contaminant http://rs.tdwg.org/dwc/terms/p047",""
 "p048:label","Label for transport-stowaway http://rs.tdwg.org/dwc/terms/p048","수송중밀반입"
 "p048:definition","Definition for transport-stowaway http://rs.tdwg.org/dwc/terms/p048","유기체가 운송 수단과 직접적인 상호작용을 하고 단순히 화물의 일부 또는 오염물로 운반되지 않는 운송 형태를 타고 운반되는 모든 종을 포괄하는 용어"
