@@ -34,8 +34,8 @@ pathway-versions,no,termVersion,dwcpw,,,
 acvariant-versions,no,termVersion,acvariant,,,
 format-versions,no,termVersion,acformat,,,
 acsubtype-versions,no,termVersion,acsubtype,,,
-chronometricage,yes,term,chrono,https://tdwg.github.io/chrono/list/#,yes,_
-chronoiri,yes,term,chronoiri,https://tdwg.github.io/chrono/list/#,yes,_
+chronometricage,yes,term,chrono,https://chrono.tdwg.org/list/#,yes,_
+chronoiri,yes,term,chronoiri,https://chrono.tdwg.org/list/#,yes,_
 chronometricage-versions,no,termVersion,chrono,,,
 chronoiri-versions,no,termVersion,chronoiri,,,
 acpart,yes,term,acpart,https://ac.tdwg.org/part/#,yes,_
