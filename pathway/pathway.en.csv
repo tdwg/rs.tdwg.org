@@ -129,7 +129,7 @@ p040:definition,"Definition for vehicles (car, train, etc.) http://rs.tdwg.org/d
 p040:notes,"Notes for vehicles (car, train, etc.) http://rs.tdwg.org/dwc/terms/p040",These organisms may be carried on or within the vehicle. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p041:label,Label for other means of transport http://rs.tdwg.org/dwc/terms/p041,other means of transport
 p041:definition,Definition for other means of transport http://rs.tdwg.org/dwc/terms/p041,A catch-all term for any transport related dispersal that is not covered in other terms.
-p041:notes,Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041,"Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
+p041:notes,Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041,"Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc.) See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p042:label,Label for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,interconnected waterways/basins/seas
 p042:definition,Definition for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.
 p042:usage,Usage for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,"Organisms transported along these corridors in ballast or as hull fouling SHOULD be categorised under the ""ship/boat ballast water"" or ""ship/boat hull fouling"" terms."
@@ -139,7 +139,7 @@ p043:definition,Definition for tunnels and land bridges http://rs.tdwg.org/dwc/t
 p043:notes,Notes for tunnels and land bridges http://rs.tdwg.org/dwc/terms/p043,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p044:label,Label for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044,natural dispersal across borders of invasive alien organisms
 p044:definition,Definition for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044,Dispersal of organisms to new regions by natural dispersal from regions in which they are alien.
-p044:notes,Notes for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044,"These are alien species that have previously been introduced through one of these pathways: release in nature, excape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
+p044:notes,Notes for natural dispersal across borders of invasive alien organisms http://rs.tdwg.org/dwc/terms/p044,"These are alien species that have previously been introduced through one of these pathways: release in nature, escape from confinement, transport-contaminant, transport-stowaway, or corridor. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p045:label,Label for release in nature http://rs.tdwg.org/dwc/terms/p045,release in nature
 p045:definition,Definition for release in nature http://rs.tdwg.org/dwc/terms/p045,Organisms transported and released by humans in a (semi)natural environment with the intention that they should live there without further human aid.
 p045:notes,Notes for release in nature http://rs.tdwg.org/dwc/terms/p045,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
@@ -147,7 +147,7 @@ p046:label,Label for escape from confinement http://rs.tdwg.org/dwc/terms/p046,e
 p046:definition,Definition for escape from confinement http://rs.tdwg.org/dwc/terms/p046,"Organisms intentionally transported by humans and intended to be kept in captivity or cultivation, but having inadvertently escaped from human control."
 p046:notes,Notes for escape from confinement http://rs.tdwg.org/dwc/terms/p046,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p047:label,Label for transport-contaminant http://rs.tdwg.org/dwc/terms/p047,transport-contaminant
-p047:definition,Definition for transport-contaminant http://rs.tdwg.org/dwc/terms/p047,An umbrella term for all species transported as contaninents in other products.
+p047:definition,Definition for transport-contaminant http://rs.tdwg.org/dwc/terms/p047,An umbrella term for all species transported as contaminants in other products.
 p047:notes,Notes for transport-contaminant http://rs.tdwg.org/dwc/terms/p047,An alien species is a contaminant if it had a trophic or biotic relationship to organisms or items being transported and was to some extent dependent on them for survival. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p048:label,Label for transport-stowaway http://rs.tdwg.org/dwc/terms/p048,transport-stowaway
 p048:definition,Definition for transport-stowaway http://rs.tdwg.org/dwc/terms/p048,"An umbrella term for all species transported by riding on forms of transport where the organism has a direct interaction with the transport and is not merely carried as part of, or a contaminant of cargo."
