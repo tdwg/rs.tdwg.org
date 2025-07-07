@@ -89,3 +89,10 @@ http://rs.tdwg.org/dwc/iri/version/eventType-2023-06-28,eventType
 http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-09-13,latestGeochronologicalEra
 http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-09-13,earliestGeochronologicalEra
 http://rs.tdwg.org/dwc/iri/version/vitality-2023-09-13,vitality
+http://rs.tdwg.org/dwc/iri/version/fundingAttribution-2025-06-12,fundingAttribution
+http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-06-12,identifiedBy
+http://rs.tdwg.org/dwc/iri/version/geodeticDatum-2025-06-12,geodeticDatum
+http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12,verbatimSRS
+http://rs.tdwg.org/dwc/iri/version/footprintSRS-2025-06-12,footprintSRS
+http://rs.tdwg.org/dwc/iri/version/toDigitalSpecimen-2025-06-12,toDigitalSpecimen
+http://rs.tdwg.org/dwc/iri/version/discipline-2025-06-12,discipline

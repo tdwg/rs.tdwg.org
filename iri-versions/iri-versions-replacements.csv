@@ -39,3 +39,7 @@ http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2023-06-28,verbatimSRS-2015-03-27
 http://rs.tdwg.org/dwc/iri/version/latestGeochronologicalEra-2023-09-13,latestGeochronologicalEra-2015-03-27
 http://rs.tdwg.org/dwc/iri/version/earliestGeochronologicalEra-2023-09-13,earliestGeochronologicalEra-2015-03-27
 http://rs.tdwg.org/dwc/iri/version/vitality-2023-09-13,vitality-2023-06-28
+http://rs.tdwg.org/dwc/iri/version/identifiedBy-2025-06-12,identifiedBy-2023-06-28
+http://rs.tdwg.org/dwc/iri/version/geodeticDatum-2025-06-12,geodeticDatum-2023-06-28
+http://rs.tdwg.org/dwc/iri/version/verbatimSRS-2025-06-12,verbatimSRS-2023-06-28
+http://rs.tdwg.org/dwc/iri/version/footprintSRS-2025-06-12,footprintSRS-2023-06-28

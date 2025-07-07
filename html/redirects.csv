@@ -62,3 +62,9 @@ dwc-for-ltc,yes,term,dwc,https://ltc.tdwg.org/terms/#,yes,_
 dwc-for-ltc-versions,no,termVersion,dwc,,,
 schema-for-ltc,yes,term,schema,https://ltc.tdwg.org/terms/#,yes,_
 schema-for-ltc-versions,no,termVersion,schema,,,
+ac-for-dwc,yes,term,ac,https://dwc.tdwg.org/list/#,yes,_
+ac-for-dwc-versions,no,termVersion,ac,,,
+dc-for-dwc,yes,term,dc,https://dwc.tdwg.org/list/#,yes,_
+dc-for-dwc-versions,no,termVersion,dc,,,
+dcterms-for-dwc,yes,term,dcterms,https://dwc.tdwg.org/list/#,yes,_
+dcterms-for-dwc-versions,no,termVersion,dcterms,,,
