@@ -223,3 +223,14 @@ http://rs.tdwg.org/version/ltc/2024-02-28,http://rs.tdwg.org/ltc/version/chrono/
 http://rs.tdwg.org/version/ltc/2024-02-28,http://rs.tdwg.org/ltc/version/dcterms/2024-02-28
 http://rs.tdwg.org/version/ltc/2024-02-28,http://rs.tdwg.org/ltc/version/dwc/2024-02-28
 http://rs.tdwg.org/version/ltc/2024-02-28,http://rs.tdwg.org/ltc/version/schema/2024-02-28
+http://rs.tdwg.org/version/dwc/2025-06-12,http://rs.tdwg.org/dwc/version/iri/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-06-12,http://rs.tdwg.org/dwc/version/dc/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-06-12,http://rs.tdwg.org/dwc/version/dcterms/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-06-12,http://rs.tdwg.org/dwc/version/terms/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-06-12,http://rs.tdwg.org/dwc/version/ac/2025-06-12
+http://rs.tdwg.org/version/chrono/2025-06-12,http://rs.tdwg.org/chrono/version/terms/2025-06-12
+http://rs.tdwg.org/version/chrono/2025-06-12,http://rs.tdwg.org/chrono/version/iri/2025-06-12
+http://rs.tdwg.org/version/eco/2025-06-12,http://rs.tdwg.org/eco/version/terms/2025-06-12
+http://rs.tdwg.org/version/eco/2025-06-12,http://rs.tdwg.org/eco/version/iri/2025-06-12
+http://rs.tdwg.org/version/dwcem/2025-06-12,http://rs.tdwg.org/dwcem/version/values/2025-06-12
+http://rs.tdwg.org/version/dwcpw/2025-06-12,http://rs.tdwg.org/dwcpw/version/values/2025-06-12

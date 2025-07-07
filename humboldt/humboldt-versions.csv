@@ -79,3 +79,7 @@ http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-03-26,targetTaxon
 http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-03-26,taxonCompletenessProtocols
 http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-03-26,taxonCompletenessReported
 http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-03-26,totalAreaSampledUnit
+http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2025-06-12,isLeastSpecificTargetCategoryQuantityInclusive
+http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-06-12,samplingEffortProtocol
+http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2025-06-12,areNonTargetTaxaFullyReported
+http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-06-12,samplingPerformedBy
