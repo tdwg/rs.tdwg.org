@@ -324,26 +324,6 @@ http://rs.tdwg.org/dwc/terms/namespace/,,,,,,,https://orcid.org/0000-0002-7104-7
 http://rs.tdwg.org/dwc/terms/namespace/,,,,,,,https://orcid.org/0000-0001-6215-3617,contributor,Tim Robertson
 http://rs.tdwg.org/dwc/terms/namespace/,,,,,,,https://orcid.org/0000-0002-6513-4996,contributor,Dave Vieglais
 http://rs.tdwg.org/dwc/terms/namespace/,,,,,,https://orcid.org/0000-0002-5178-4170,,review manager,Gail Kampmeier
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-8442-8025,contributor,Peter Desmet
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steve Baskauf
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-6215-3617,contributor,Tim Robertson
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-7757-1889,contributor,Markus Döring
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-0596-5376,contributor,Quentin Groom
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-6413-3185,contributor,Stijn Van Hoey
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-1273-1807,contributor,David Bloom
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula Zermoglio
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-6682-1504,contributor,Robert Guralnick
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-5905-1617,contributor,John Deck
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-5178-4170,contributor,Gail Kampmeier
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6513-4996,contributor,Dave Vieglais
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-7104-7266,contributor,Renato De Giovanni
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-1031-3249,contributor,Campbell Webb
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,contributor,Paul J. Morris
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-0632-7576,contributor,Mark Schildhauer
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-9284-7900,contributor,Sophia Ratcliffe
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-1970-7044,contributor,Teresa J. Mayfield-Meyer
-http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6544-1363,contributor,Christian Bölling
 http://rs.tdwg.org/dwc/doc/hierarchy/,,,,,,,https://orcid.org/0000-0001-7087-2646,contributor,Yi-Ming Gan
 http://rs.tdwg.org/dwc/doc/hierarchy/,,,,,,,https://orcid.org/0000-0002-0595-7827,contributor,Wesley M. Hochachka
 http://rs.tdwg.org/dwc/doc/hierarchy/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
@@ -365,22 +345,6 @@ http://rs.tdwg.org/dwc/doc/tcr/,,,,,,,https://orcid.org/0000-0002-0595-7827,cont
 http://rs.tdwg.org/dwc/doc/tcr/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steven J. Baskauf
 http://rs.tdwg.org/tag/doc/boolean/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steven J. Baskauf
 http://rs.tdwg.org/tag/doc/boolean/,,,,,,,https://orcid.org/0000-0002-5819-9134,contributor,Ben Norton
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-1720-0127,contributor,Yanina V. Sica
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-5942-9053,contributor,Kate Ingenloff
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula Zermoglio
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-7087-2646,contributor,Yi-Ming Gan
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-9730-8340,contributor,Peter Brenton
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-0595-7827,contributor,Wesley M. Hochachka
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-0500-0339,contributor,Zachary R. Kachian
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-1617-5895,contributor,Robert D. Stevenson
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-2475-132X,contributor,Anahita J. N. Kazem
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-2919-1168,contributor,Dmitry Schigel
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steven J. Baskauf
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-5010-3452,contributor,Tomomi Suwa
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-6682-1504,contributor,Robert Guralnick
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-8815-0078,contributor,Ramona L. Walls
-http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-1971-7277,contributor,Walter Jetz
 http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0002-0201-732X,contributor,Sharon Grant
 http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0002-1261-8049,contributor,Janeen Jones
 http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0001-6496-1423,contributor,Matt Woodburn
@@ -405,3 +369,39 @@ http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0003-2639-7520,con
 http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0002-4329-4892,contributor,Niels Raes
 http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0001-6215-3617,contributor,Tim Robertson
 http://rs.tdwg.org/ltc/doc/list/,,,,,,,https://orcid.org/0000-0003-2863-2491,contributor,William Ulate
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-8442-8025,contributor,Peter Desmet
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steve Baskauf
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-6215-3617,contributor,Tim Robertson
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-7757-1889,contributor,Markus Döring
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-0596-5376,contributor,Quentin Groom
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-6413-3185,contributor,Stijn Van Hoey
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-1273-1807,contributor,David Bloom
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula Zermoglio
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-6682-1504,contributor,Robert Guralnick
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-5905-1617,contributor,John Deck
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-5178-4170,contributor,Gail Kampmeier
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6513-4996,contributor,Dave Vieglais
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-7104-7266,contributor,Renato De Giovanni
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-1031-3249,contributor,Campbell Webb
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,contributor,Paul J. Morris
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0003-0632-7576,contributor,Mark Schildhauer
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0001-9284-7900,contributor,Sophia Ratcliffe
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-1970-7044,contributor,Teresa J. Mayfield-Meyer
+http://rs.tdwg.org/dwc/doc/list/,,,,,,,https://orcid.org/0000-0002-6544-1363,contributor,Christian Bölling
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-1720-0127,contributor,Yanina V. Sica
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-5942-9053,contributor,Kate Ingenloff
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula Zermoglio
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-7087-2646,contributor,Yi-Ming Gan
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-9730-8340,contributor,Peter Brenton
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-0595-7827,contributor,Wesley M. Hochachka
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-0500-0339,contributor,Zachary R. Kachian
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-1617-5895,contributor,Robert D. Stevenson
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-2475-132X,contributor,Anahita J. N. Kazem
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-2919-1168,contributor,Dmitry Schigel
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steven J. Baskauf
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-5010-3452,contributor,Tomomi Suwa
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-6682-1504,contributor,Robert Guralnick
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0001-8815-0078,contributor,Ramona L. Walls
+http://rs.tdwg.org/dwc/doc/eco/,,,,,,,https://orcid.org/0000-0002-1971-7277,contributor,Walter Jetz
