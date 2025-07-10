@@ -19,6 +19,6 @@
 "e006:label","Label for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","incertain (inconnu, cryptogénique)"
 "e006:definition","Definition for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","L'origine de l'occurrence du taxon dans la zone est obscure."
 "e006:notes","Notes for uncertain (unknown, cryptogenic) http://rs.tdwg.org/dwc/terms/e006","En l'absence de traces fossiles ou historiques témoignant de la présence d'un taxon dans une région, il peut être impossible de savoir si ce taxon est nouvellement présent dans la région ou s'il y est indigène."
-"e007:label","Label for native: endemic http://rs.tdwg.org/dwc/terms/e007",""
+"e007:label","Label for native: endemic http://rs.tdwg.org/dwc/terms/e007","natif : endémique"
 "e007:definition","Definition for native: endemic http://rs.tdwg.org/dwc/terms/e007",""
 "e007:notes","Notes for native: endemic http://rs.tdwg.org/dwc/terms/e007",""
