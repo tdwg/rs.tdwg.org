@@ -434,7 +434,7 @@
 "pointRadiusSpatialFit:dcterms_description","Description for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit","Podrobné vysvětlení s grafickými příklady lze nalézt v publikaci Georeferencing Best Practices, Chapman a Wieczorek, 2020 (https://doi.org/10.15468/doc-gg7h-s853)."
 "preparations:label","Label for Preparations http://rs.tdwg.org/dwc/terms/preparations","Uchovávání"
 "preparations:rdfs_comment","Comment for Preparations http://rs.tdwg.org/dwc/terms/preparations","Seznam (spojený a oddělený) přípravků a metod uchovávání pro dwc:MaterialEntity."
-"preparations:dcterms_description","Description for Preparations http://rs.tdwg.org/dwc/terms/preparations",""
+"preparations:dcterms_description","Description for Preparations http://rs.tdwg.org/dwc/terms/preparations","Doporučeným postupem je oddělit hodnoty v seznamu mezerou svislou čárkou mezerou ( | ). Tento termín má ekvivalent v namespace dwciri, který jako hodnotu povoluje pouze IRI, zatímco tento termín povoluje jakoukoli řetězcovou literální hodnotu."
 "PreservedSpecimen:label","Label for Preserved Specimen http://rs.tdwg.org/dwc/terms/PreservedSpecimen","Uchovaný exemplář"
 "PreservedSpecimen:rdfs_comment","Comment for Preserved Specimen http://rs.tdwg.org/dwc/terms/PreservedSpecimen","Zakonzervovaný exemplář."
 "previousIdentifications:label","Label for Previous Identifications http://rs.tdwg.org/dwc/terms/previousIdentifications","Předchozí identifikace"
