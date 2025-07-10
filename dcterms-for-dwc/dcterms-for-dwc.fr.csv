@@ -15,7 +15,7 @@
 "Location:label","Label for Location http://rs.tdwg.org/dwc/terms/Location","Localisation"
 "Location:rdfs_comment","Comment for Location http://rs.tdwg.org/dwc/terms/Location","Une région spatiale ou un lieu nommé."
 "modified:label","Label for Date Modified http://rs.tdwg.org/dwc/terms/modified","Date de Modification"
-"modified:rdfs_comment","Comment for Date Modified http://rs.tdwg.org/dwc/terms/modified",""
+"modified:rdfs_comment","Comment for Date Modified http://rs.tdwg.org/dwc/terms/modified","Date à laquelle la ressource a été modifiée."
 "modified:dcterms_description","Description for Date Modified http://rs.tdwg.org/dwc/terms/modified","La pratique optimale recommandée est d'utiliser une date conforme à la norme ISO 8601-1:2019."
 "modified:examples","Examples for Date Modified http://rs.tdwg.org/dwc/terms/modified",""
 "references:label","Label for References http://rs.tdwg.org/dwc/terms/references","Références"
