@@ -1,4 +1,4 @@
 "identifier","context","text"
-"fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
-"fundingAttribution:rdfs_comment","Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
-"fundingAttribution:dcterms_description","Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
+"fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Source du Financement"
+"fundingAttribution:rdfs_comment","Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Description textuelle des organisations ou des personnes qui ont financé la création de la ressource."
+"fundingAttribution:dcterms_description","Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Précisez le nom officiel complet de l'organisme qui finance. Il s'agit du nom complet sans abréviation, sauf si l'abréviation est une forme officielle et communément reconnue (par exemple, NSF pour la National Science Foundation). La pratique optimale recommandée consiste à séparer les valeurs d'une liste par une barre verticale ( | )."
