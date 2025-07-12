@@ -5,4 +5,4 @@
 "language:examples","Examples for Language http://rs.tdwg.org/dwc/terms/language","`en` (pour l'anglais); `es` (pour l'espagnol)"
 "type:label","Label for Type http://rs.tdwg.org/dwc/terms/type","Type"
 "type:rdfs_comment","Comment for Type http://rs.tdwg.org/dwc/terms/type","La nature ou le genre de la ressource."
-"type:dcterms_description","Description for Type http://rs.tdwg.org/dwc/terms/type",""
+"type:dcterms_description","Description for Type http://rs.tdwg.org/dwc/terms/type","Doit être rempli avec une valeur issue du vocabulaire DCMI type (https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2010-10-11/)."
