@@ -599,7 +599,7 @@
 "digitalSpecimenID:dcterms_description","Description for Digital Specimen Identifier http://rs.tdwg.org/dwc/terms/digitalSpecimenID",""
 "causeOfDeath:label","Label for Cause Of Death http://rs.tdwg.org/dwc/terms/causeOfDeath","Cause de la Mort"
 "causeOfDeath:rdfs_comment","Comment for Cause Of Death http://rs.tdwg.org/dwc/terms/causeOfDeath","Une indication de la cause connue ou supposée de la mort d'un dwc:Organism."
-"causeOfDeath:dcterms_description","Description for Cause Of Death http://rs.tdwg.org/dwc/terms/causeOfDeath",""
+"causeOfDeath:dcterms_description","Description for Cause Of Death http://rs.tdwg.org/dwc/terms/causeOfDeath","La cause peut être naturelle (par exemple, maladie, prédation), liée à des activités humaines (par exemple, animaux tués sur la route, pollution) ou à d'autres facteurs environnementaux (par exemple, phénomènes météorologiques extrêmes)."
 "verbatimMeasurementType:label","Label for Verbatim Measurement Type http://rs.tdwg.org/dwc/terms/verbatimMeasurementType",""
 "verbatimMeasurementType:rdfs_comment","Comment for Verbatim Measurement Type http://rs.tdwg.org/dwc/terms/verbatimMeasurementType",""
 "verbatimMeasurementType:dcterms_description","Description for Verbatim Measurement Type http://rs.tdwg.org/dwc/terms/verbatimMeasurementType",""
