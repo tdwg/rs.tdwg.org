@@ -129,7 +129,7 @@
 "p040:notes","Notes for vehicles (car, train, etc.) http://rs.tdwg.org/dwc/terms/p040","Tyto organismy mohou být přepravovány na vozidle nebo uvnitř vozidla. Viz také Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 "p041:label","Label for other means of transport http://rs.tdwg.org/dwc/terms/p041","jiné dopravní prostředky"
 "p041:definition","Definition for other means of transport http://rs.tdwg.org/dwc/terms/p041","Souhrnný termín pro jakýkoli způsob šíření v souvislosti s dopravou, který není zahrnut v jiných termínech."
-"p041:notes","Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041",""
+"p041:notes","Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041","Příklady zahrnují znečištění z ropných a plynových plošin na moři, z lokalit s obnovitelnými zdroji energie na moři (jako jsou větrné farmy, potrubí, kabelová doprava atd.) Viz také Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 "p042:label","Label for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042","propojené vodní cesty/povodí/moře"
 "p042:definition","Definition for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042","Organismy, které se rozšířily prostřednictvím umělých vodních toků vytvořených za účelem propojení dříve nespojených vodních ploch."
 "p042:usage","Usage for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042","Organismy přepravované těmito koridory v balastní vodě nebo jako znečištění trupu by měly být zařazeny do kategorie ""balastní voda z lodí/člunů"" nebo ""znečištění trupu lodí/člunů""."
