@@ -691,7 +691,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="{'http://terms.tdwg.org/wiki/abcd2:'||$path}" />
+      <http:header name="location" value="{'https://abcd.tdwg.org/2.06/terms/#'||$path}" />
     </http:response>
   </rest:response>
 };
@@ -702,7 +702,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="http://terms.tdwg.org/wiki/ABCD_2" />
+      <http:header name="location" value="https://abcd.tdwg.org/2.06/terms/" />
     </http:response>
   </rest:response>
 };
@@ -713,7 +713,7 @@ declare
   {
    <rest:response>
     <http:response status="303">
-      <http:header name="location" value="http://terms.tdwg.org/wiki/ABCD_2" />
+      <http:header name="location" value="https://abcd.tdwg.org/xml/documentation/primer/2.06/" />
     </http:response>
   </rest:response>
 };
