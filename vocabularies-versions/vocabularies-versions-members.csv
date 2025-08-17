@@ -236,3 +236,8 @@ http://rs.tdwg.org/version/dwcem/2025-06-12,http://rs.tdwg.org/dwcem/version/val
 http://rs.tdwg.org/version/dwcpw/2025-06-12,http://rs.tdwg.org/dwcpw/version/values/2025-06-12
 http://rs.tdwg.org/version/chrono/2025-07-10,http://rs.tdwg.org/chrono/version/terms/2025-06-12
 http://rs.tdwg.org/version/chrono/2025-07-10,http://rs.tdwg.org/chrono/version/iri/2025-07-10
+http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/iri/2025-07-10
+http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/dc/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/dcterms/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/terms/2025-06-12
+http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/ac/2025-06-12
