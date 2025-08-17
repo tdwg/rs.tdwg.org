@@ -7710,3 +7710,10 @@ http://rs.tdwg.org/dwcpw/version/values/2025-06-12,http://rs.tdwg.org/dwcpw/valu
 http://rs.tdwg.org/dwcpw/version/values/2025-06-12,http://rs.tdwg.org/dwcpw/values/version/p051-2021-09-01
 http://rs.tdwg.org/dwcpw/version/values/2025-06-12,http://rs.tdwg.org/dwcpw/values/version/p052-2021-09-01
 http://rs.tdwg.org/dwcpw/version/values/2025-06-12,http://rs.tdwg.org/dwcpw/values/version/p053-2021-09-01
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2025-07-10
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2025-07-10
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2025-07-10
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/chronometricAgeUncertaintyMethod-2025-07-10
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/earliestChronometricAgeReferenceSystem-2025-07-10
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2025-07-10
+http://rs.tdwg.org/chrono/version/iri/2025-07-10,http://rs.tdwg.org/chrono/iri/version/materialDated-2025-07-10

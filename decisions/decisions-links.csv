@@ -1023,3 +1023,10 @@ http://rs.tdwg.org/dwcem/values/e007,decision-2025-06-12_47
 http://rs.tdwg.org/dwcpw/values/p044,decision-2025-06-12_48
 http://rs.tdwg.org/dwcpw/values/p041,decision-2025-06-12_48
 http://rs.tdwg.org/dwcpw/values/p047,decision-2025-06-12_48
+http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol,decision-2025-07-10_49
+http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy,decision-2025-07-10_49
+http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol,decision-2025-07-10_49
+http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod,decision-2025-07-10_49
+http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem,decision-2025-07-10_49
+http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem,decision-2025-07-10_49
+http://rs.tdwg.org/chrono/iri/materialDated,decision-2025-07-10_49
