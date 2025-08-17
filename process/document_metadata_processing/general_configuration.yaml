@@ -21,4 +21,4 @@ utcOffset: -05:00
 # in the documents metadata, the script treats the document as new, so if the document is a new version of an
 # existing document, it's very important to get this IRI exactly right. The convention is that these documents
 # have trailing slashes
-docIri: http://rs.tdwg.org/dwc/doc/list/
+docIri: http://rs.tdwg.org/dwc/doc/eco/
