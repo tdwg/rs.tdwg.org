@@ -37,20 +37,6 @@ http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0002-5905-1617,
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0003-1031-3249,,,,,,author,Campbell Webb
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035,,,,,,author,Paul J. Morris 
 http://rs.tdwg.org/dwc/terms/guides/rdf/,,https://orcid.org/0000-0003-0632-7576,,,,,,author,Mark Schildhauer 
-http://rs.tdwg.org/dwc/doc/doe/,https://orcid.org/0000-0002-0596-5376,,,,,,,lead author,Quentin Groom
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0002-8442-8025,contributor,Peter Desmet
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-7484-9267,contributor,Lien Reyserhove
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-7268-4200,contributor,Tim Adriaens
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-3445-7562,contributor,Damiano Oldoni
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0002-6298-5373,contributor,Sonia Vanderhoeven
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steve Baskauf
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-1700-6962,contributor,Arthur Chapman
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-3388-2241,contributor,Melodie McGeoch
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-8815-0078,contributor,Ramona Walls
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-0174-3239,contributor,John R.U. Wilson
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula F Zermoglio
-http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-8338-5134,contributor,Annie Simpson
 http://rs.tdwg.org/dwc/doc/em/,https://orcid.org/0000-0002-0596-5376,,,,,,,lead author,Quentin Groom
 http://rs.tdwg.org/dwc/doc/em/,,,,,,,https://orcid.org/0000-0002-8442-8025,contributor,Peter Desmet
 http://rs.tdwg.org/dwc/doc/em/,,,,,,,https://orcid.org/0000-0001-7484-9267,contributor,Lien Reyserhove
@@ -405,3 +391,17 @@ http://rs.tdwg.org/dwc/doc/chrono/,,,,,,,https://orcid.org/0000-0002-8481-9034,c
 http://rs.tdwg.org/dwc/doc/chrono/,,,,,,,https://orcid.org/0000-0001-5620-4764,contributor,Eric Kansa
 http://rs.tdwg.org/dwc/doc/chrono/,,,,,,,https://orcid.org/0000-0001-7920-5321,contributor,Sarah Kansa
 http://rs.tdwg.org/dwc/doc/chrono/,,,,,,,https://orcid.org/0000-0001-9325-3100,contributor,Denné Reed
+http://rs.tdwg.org/dwc/doc/doe/,https://orcid.org/0000-0002-0596-5376,,,,,,,lead author,Quentin Groom
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0002-8442-8025,contributor,Peter Desmet
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-7484-9267,contributor,Lien Reyserhove
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-7268-4200,contributor,Tim Adriaens
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-3445-7562,contributor,Damiano Oldoni
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0002-6298-5373,contributor,Sonia Vanderhoeven
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-4365-3135,contributor,Steven J Baskauf
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-1700-6962,contributor,Arthur Chapman
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-3388-2241,contributor,Melodie McGeoch
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-8815-0078,contributor,Ramona Walls
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0003-0174-3239,contributor,John R.U. Wilson
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula F Zermoglio
+http://rs.tdwg.org/dwc/doc/doe/,,,,,,,https://orcid.org/0000-0001-8338-5134,contributor,Annie Simpson

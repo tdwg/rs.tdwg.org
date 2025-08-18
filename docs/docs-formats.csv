@@ -17,7 +17,7 @@ http://rs.tdwg.org/dwc/terms/guides/xml/,text/markdown,https://raw.githubusercon
 http://rs.tdwg.org/dwc/terms/simple/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/index.md
 http://rs.tdwg.org/dwc/terms/namespace/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/namespace/index.md
 http://rs.tdwg.org/dwc/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/list/index.md
-http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/index.md
+http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/doe/index.md
 http://rs.tdwg.org/dwc/doc/em/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/em/index.md
 http://rs.tdwg.org/dwc/doc/pw/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/index.md
 http://rs.tdwg.org/tapir/doc/summary/,text/html,http://www.tdwg.org/activities/tapir/executive-summary/
