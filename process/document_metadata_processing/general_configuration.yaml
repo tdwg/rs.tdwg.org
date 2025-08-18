@@ -14,11 +14,11 @@ versionDate: '2025-07-10'
 # (e.g. `-06:00` for Central (US) Standard Time). This value is added to the date returned by the
 # Python `datetime.datetime.now()` function to generate the modification date fields. Omitting it will make
 # the modification date ambiguous.
-utcOffset: -05:00
+utcOffset: -04:00
 
 # docIri is REQUIRED. This is the permanent current IRI assigned to the document following the IRI patterns
 # established at http://rs.tdwg.org/index#2-iri-patterns. If this IRI does not match any existing document IRI
 # in the documents metadata, the script treats the document as new, so if the document is a new version of an
 # existing document, it's very important to get this IRI exactly right. The convention is that these documents
 # have trailing slashes
-docIri: http://rs.tdwg.org/dwc/doc/eco/
+docIri: http://rs.tdwg.org/dwc/doc/list/
