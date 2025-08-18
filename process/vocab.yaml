@@ -1,1 +1,19 @@
-dwc-revisions/eco-2025-06-12/vocab.yaml
+# To use this configuration file, it must be in the process directory from which the
+# process.py script is run. Typically, a copy is stored with the modifications CSV file.
+
+# The following values are only required if the vocabulary is new. If they are provided for
+# an existing vocabulary, they will replace the existing values.
+vocabulary_label: Humboldt Extension Vocabulary
+vocabulary_description: A Darwin Core extension vocabulary for ecological inventories
+
+# Current practice is to use the nane of the Task Group that created it. For vocabularies 
+# that have been heavily modified, the name of the Maintenance Group may be used. 
+dc_creator: TDWG Humboldt Extension Task Group
+
+# TDWG's standard license should be used.
+dcterms_license: https://creativecommons.org/licenses/by/4.0/
+
+# The following values are only required if the standard is new. If they are provided for
+# an existing standard, they will replace the existing values.
+standard_label: Darwin Core
+standard_description: Darwin Core is a standard maintained by the Darwin Core maintenance group. It includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions. Darwin Core is primarily based on taxa, their occurrence in nature as documented by observations, specimens, samples, and related information.

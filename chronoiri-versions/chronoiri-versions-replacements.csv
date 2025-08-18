@@ -7,3 +7,10 @@ http://rs.tdwg.org/chrono/iri/version/chronometricAgeUncertaintyMethod-2025-06-1
 http://rs.tdwg.org/chrono/iri/version/earliestChronometricAgeReferenceSystem-2025-06-12,earliestChronometricAgeReferenceSystem-2021-01-26
 http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2025-06-12,latestChronometricAgeReferenceSystem-2021-01-26
 http://rs.tdwg.org/chrono/iri/version/materialDated-2025-06-12,materialDated-2021-01-26
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2025-07-10,chronometricAgeConversionProtocol-2025-06-12
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2025-07-10,chronometricAgeDeterminedBy-2025-06-12
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2025-07-10,chronometricAgeProtocol-2025-06-12
+http://rs.tdwg.org/chrono/iri/version/chronometricAgeUncertaintyMethod-2025-07-10,chronometricAgeUncertaintyMethod-2025-06-12
+http://rs.tdwg.org/chrono/iri/version/earliestChronometricAgeReferenceSystem-2025-07-10,earliestChronometricAgeReferenceSystem-2025-06-12
+http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2025-07-10,latestChronometricAgeReferenceSystem-2025-06-12
+http://rs.tdwg.org/chrono/iri/version/materialDated-2025-07-10,materialDated-2025-06-12
