@@ -17,9 +17,9 @@ http://rs.tdwg.org/dwc/terms/guides/xml/,text/markdown,https://raw.githubusercon
 http://rs.tdwg.org/dwc/terms/simple/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/index.md
 http://rs.tdwg.org/dwc/terms/namespace/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/namespace/index.md
 http://rs.tdwg.org/dwc/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/list/index.md
-http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/index.md
-http://rs.tdwg.org/dwc/doc/em/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/em/index.md
-http://rs.tdwg.org/dwc/doc/pw/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/index.md
+http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/doe/index.md
+http://rs.tdwg.org/dwc/doc/em/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/em/index.md
+http://rs.tdwg.org/dwc/doc/pw/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/pw/index.md
 http://rs.tdwg.org/tapir/doc/summary/,text/html,http://www.tdwg.org/activities/tapir/executive-summary/
 http://rs.tdwg.org/tapir/doc/specification/,text/html,http://tdwg.github.io/tapir/docs/tdwg_tapir_specification_2010-05-05.html
 http://rs.tdwg.org/tapir/doc/xmlschema/,application/xml,http://tdwg.github.io/tapir/schema/tapir.xsd
@@ -73,3 +73,4 @@ http://rs.tdwg.org/dwc/doc/inclusive/,text/markdown,https://raw.githubuserconten
 http://rs.tdwg.org/dwc/doc/tcr/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/tcr/index.md
 http://rs.tdwg.org/tag/doc/boolean/,text/markdown,https://raw.githubusercontent.com/tdwg/tag/master/docs/boolean/index.md
 http://rs.tdwg.org/ltc/doc/list/,text/html,https://raw.githubusercontent.com/tdwg/ltc/main/docs/terms/index.html
+http://rs.tdwg.org/dwc/doc/chrono/,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/master/docs/list/index.md

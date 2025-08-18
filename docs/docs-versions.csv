@@ -34,6 +34,7 @@ http://rs.tdwg.org/bph/doc/book/,http://rs.tdwg.org/bph/doc/book/2004
 http://rs.tdwg.org/bphsup/doc/book/,http://rs.tdwg.org/bphsup/doc/book/1991
 http://rs.tdwg.org/delta/doc/definition/,http://rs.tdwg.org/delta/doc/definition/2005-09-13
 http://rs.tdwg.org/dwc/doc/chrono/,http://rs.tdwg.org/dwc/doc/chrono/2021-04-27
+http://rs.tdwg.org/dwc/doc/chrono/,http://rs.tdwg.org/dwc/doc/chrono/2025-06-12
 http://rs.tdwg.org/dwc/doc/doe/,http://rs.tdwg.org/dwc/doc/doe/2020-10-13
 http://rs.tdwg.org/dwc/doc/doe/,http://rs.tdwg.org/dwc/doc/doe/2021-09-01
 http://rs.tdwg.org/dwc/doc/em/,http://rs.tdwg.org/dwc/doc/em/2020-10-13
@@ -116,3 +117,11 @@ http://rs.tdwg.org/dwc/doc/eco/,http://rs.tdwg.org/dwc/doc/eco/2024-03-26
 http://rs.tdwg.org/ltc/doc/list/,http://rs.tdwg.org/ltc/doc/list/2024-02-28
 http://rs.tdwg.org/dwc/doc/list/,http://rs.tdwg.org/dwc/doc/list/2025-06-12
 http://rs.tdwg.org/dwc/doc/eco/,http://rs.tdwg.org/dwc/doc/eco/2025-06-12
+http://rs.tdwg.org/dwc/doc/em/,http://rs.tdwg.org/dwc/doc/em/2025-06-12
+http://rs.tdwg.org/dwc/doc/pw/,http://rs.tdwg.org/dwc/doc/pw/2025-06-12
+http://rs.tdwg.org/dwc/doc/list/,http://rs.tdwg.org/dwc/doc/list/2025-07-10
+http://rs.tdwg.org/dwc/doc/eco/,http://rs.tdwg.org/dwc/doc/eco/2025-07-10
+http://rs.tdwg.org/dwc/doc/chrono/,http://rs.tdwg.org/dwc/doc/chrono/2025-07-10
+http://rs.tdwg.org/dwc/doc/doe/,http://rs.tdwg.org/dwc/doc/doe/2025-07-10
+http://rs.tdwg.org/dwc/doc/em/,http://rs.tdwg.org/dwc/doc/em/2025-07-10
+http://rs.tdwg.org/dwc/doc/pw/,http://rs.tdwg.org/dwc/doc/pw/2025-07-10
