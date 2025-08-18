@@ -35,7 +35,7 @@ http://rs.tdwg.org/bph/doc/book/2004,print,urn:isbn:0913196789
 http://rs.tdwg.org/bphsup/doc/book/1991,print,urn:isbn:0913196541
 http://rs.tdwg.org/delta/doc/definition/2005-09-13,application/pdf,https://raw.githubusercontent.com/tdwg/delta/master/107-516-1-ED.pdf
 http://rs.tdwg.org/dwc/doc/chrono/2021-04-27,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/master/docs/list/2021-04-27.md
-http://rs.tdwg.org/dwc/doc/chrono/2025-06-12,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/master/docs/list/index.md
+http://rs.tdwg.org/dwc/doc/chrono/2025-06-12,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/refs/heads/master/docs/list/2025-06-12.md
 http://rs.tdwg.org/dwc/doc/doe/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/2020-10-13.md
 http://rs.tdwg.org/dwc/doc/doe/2021-09-01,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/index.md
 http://rs.tdwg.org/dwc/doc/em/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/em/2020-10-13.md
@@ -120,3 +120,4 @@ http://rs.tdwg.org/dwc/doc/list/2025-06-12,text/markdown,https://raw.githubuserc
 http://rs.tdwg.org/dwc/doc/eco/2025-06-12,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/list/2025-06-12.md
 http://rs.tdwg.org/dwc/doc/list/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/list/index.md
 http://rs.tdwg.org/dwc/doc/eco/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/list/index.md
+http://rs.tdwg.org/dwc/doc/chrono/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/refs/heads/master/docs/list/index.md
