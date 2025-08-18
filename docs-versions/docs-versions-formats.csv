@@ -51,7 +51,7 @@ http://rs.tdwg.org/dwc/doc/list/2023-07-07,text/markdown,https://raw.githubuserc
 http://rs.tdwg.org/dwc/doc/list/2023-09-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/list/2023-09-13.md
 http://rs.tdwg.org/dwc/doc/pw/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/2020-10-13.md
 http://rs.tdwg.org/dwc/doc/pw/2021-09-01,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/2021-09-01.md
-http://rs.tdwg.org/dwc/doc/pw/2025-06-12,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/index.md
+http://rs.tdwg.org/dwc/doc/pw/2025-06-12,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/pw/2025-06-12.md
 http://rs.tdwg.org/dwc/terms/guides/rdf/2016-04-25,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/rdf/2016-04-25.md
 http://rs.tdwg.org/dwc/terms/guides/rdf/2021-07-15,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/rdf/index.md
 http://rs.tdwg.org/dwc/terms/guides/text/2014-11-08,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/2014-11-08.md
@@ -123,3 +123,4 @@ http://rs.tdwg.org/dwc/doc/eco/2025-07-10,text/markdown,https://raw.githubuserco
 http://rs.tdwg.org/dwc/doc/chrono/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/refs/heads/master/docs/list/index.md
 http://rs.tdwg.org/dwc/doc/doe/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/doe/index.md
 http://rs.tdwg.org/dwc/doc/em/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/em/index.md
+http://rs.tdwg.org/dwc/doc/pw/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/pw/index.md
