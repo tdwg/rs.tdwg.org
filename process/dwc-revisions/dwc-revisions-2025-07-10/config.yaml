@@ -17,7 +17,7 @@ local_offset_from_utc: -05:00
 # Categories:
 # 1: Simple vocabulary
 # 2: Simple controlled vocabulary
-# 3: Controlled vocabluary with broader hierarchy
+# 3: Controlled vocabulary with broader hierarchy
 vocab_type: 1
 
 # Permanent IRI for the list of terms document that is associated with this vocabulary.
@@ -32,7 +32,7 @@ list_of_terms_iri: http://rs.tdwg.org/dwc/doc/list/
 standard: http://www.tdwg.org/standards/450
 
 # Text to describe the Executive Committee Decision that approved the change.
-decisions_text: Darwin Core changes ratified as a part of the Darwin Core public review. https://github.com/tdwg/dwc/milestone/19.
+decisions_text: Namespace errata in Darwin Core main vocabulary corrected by Darwin Core Maintenance Group. See https://github.com/tdwg/dwc/issues/559
 
 namespaces:
 
