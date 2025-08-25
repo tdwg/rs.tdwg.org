@@ -15,3 +15,5 @@ dcterms_license: https://creativecommons.org/licenses/by/4.0/
 
 # The following values are only required if the standard is new. If they are provided for
 # an existing standard, they will replace the existing values.
+standard_label:
+standard_description:
