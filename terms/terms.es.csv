@@ -16,7 +16,7 @@
 "associatedOrganisms:rdfs_comment","Comment for Associated Organisms http://rs.tdwg.org/dwc/terms/associatedOrganisms","Una lista (concatenada y separada) de los identificadores de otros dwc:Organisms y las asociaciones de cada uno de ellos con el dwc:Organism."
 "associatedOrganisms:dcterms_description","Description for Associated Organisms http://rs.tdwg.org/dwc/terms/associatedOrganisms","Este término puede utilizarse para proporcionar una lista de asociaciones con otros dwc:Organisms. Cabe señalar que la clase de dwc:ResourceRelationship es una alternativa para representar asociaciones y permite incluir más detalle. La práctica recomendada es separar los valores en la lista con espacio barra vertical espacio (` | `)."
 "associatedReferences:label","Label for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences","Referencias asociadas"
-"associatedReferences:rdfs_comment","Comment for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences",""
+"associatedReferences:rdfs_comment","Comment for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences","Una lista (concatenada y separada) de los identificadores (publicación, referencia bibliográfica, identificador único global, URI) de la literatura asociada con el dwc:Occurrence."
 "associatedReferences:dcterms_description","Description for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences",""
 "associatedSequences:label","Label for Associated Sequences http://rs.tdwg.org/dwc/terms/associatedSequences","Secuencias asociadas"
 "associatedSequences:rdfs_comment","Comment for Associated Sequences http://rs.tdwg.org/dwc/terms/associatedSequences",""
