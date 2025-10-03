@@ -1,6 +1,6 @@
 "identifier","context","text"
-"acceptedNameUsage:label","Label for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
-"acceptedNameUsage:rdfs_comment","Comment for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
+"acceptedNameUsage:label","Label for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage","Accepted Name Usage"
+"acceptedNameUsage:rdfs_comment","Comment for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage","Полное название, с автором и датой описания, если известны, текущего валидного (в зоологии) или принятого (в ботанике) dwc:Taxon."
 "acceptedNameUsage:dcterms_description","Description for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
 "acceptedNameUsage:examples","Examples for Accepted Name Usage http://rs.tdwg.org/dwc/terms/acceptedNameUsage",""
 "acceptedNameUsageID:label","Label for Accepted Name Usage ID http://rs.tdwg.org/dwc/terms/acceptedNameUsageID",""
