@@ -102,7 +102,7 @@
 "reportedExtremeConditions:rdfs_comment","Comment for Reported Extreme Conditions http://rs.tdwg.org/dwc/terms/reportedExtremeConditions",""
 "reportedWeather:label","Label for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather",""
 "reportedWeather:rdfs_comment","Comment for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather",""
-"reportedWeather:dcterms_description","Description for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather",""
+"reportedWeather:dcterms_description","Description for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather","Рекомендуемой практикой является использование схемы кодирования key:value для формата обмена данными, например JSON."
 "samplingEffortProtocol:label","Label for Sampling Effort Protocol http://rs.tdwg.org/dwc/terms/samplingEffortProtocol",""
 "samplingEffortProtocol:rdfs_comment","Comment for Sampling Effort Protocol http://rs.tdwg.org/dwc/terms/samplingEffortProtocol",""
 "samplingEffortProtocol:dcterms_description","Description for Sampling Effort Protocol http://rs.tdwg.org/dwc/terms/samplingEffortProtocol",""
