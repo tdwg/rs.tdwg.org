@@ -16,7 +16,7 @@
 "Location:rdfs_comment","Comment for Location http://rs.tdwg.org/dwc/terms/Location",""
 "modified:label","Label for Date Modified http://rs.tdwg.org/dwc/terms/modified",""
 "modified:rdfs_comment","Comment for Date Modified http://rs.tdwg.org/dwc/terms/modified",""
-"modified:dcterms_description","Description for Date Modified http://rs.tdwg.org/dwc/terms/modified",""
+"modified:dcterms_description","Description for Date Modified http://rs.tdwg.org/dwc/terms/modified","Рекомендуется использовать дату в формате, соответствующем стандарту ISO 8601-1:2019."
 "modified:examples","Examples for Date Modified http://rs.tdwg.org/dwc/terms/modified",""
 "references:label","Label for References http://rs.tdwg.org/dwc/terms/references",""
 "references:rdfs_comment","Comment for References http://rs.tdwg.org/dwc/terms/references",""
