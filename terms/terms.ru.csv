@@ -31,7 +31,7 @@
 "behavior:label","Label for Behavior http://rs.tdwg.org/dwc/terms/behavior","Поведение"
 "behavior:rdfs_comment","Comment for Behavior http://rs.tdwg.org/dwc/terms/behavior","Поведение, продемонстрированное объектом наблюдения в момент регистрации dwc:Occurrence."
 "behavior:dcterms_description","Description for Behavior http://rs.tdwg.org/dwc/terms/behavior","Этот термин имеет эквивалент в пространстве имён dwciri:, который допускает только IRI в качестве значения, в то время как данный термин допускает использование любой строки в качестве литерала."
-"caste:label","Label for Caste http://rs.tdwg.org/dwc/terms/caste",""
+"caste:label","Label for Caste http://rs.tdwg.org/dwc/terms/caste","Каста"
 "caste:rdfs_comment","Comment for Caste http://rs.tdwg.org/dwc/terms/caste",""
 "caste:dcterms_description","Description for Caste http://rs.tdwg.org/dwc/terms/caste",""
 "catalogNumber:label","Label for Catalog Number http://rs.tdwg.org/dwc/terms/catalogNumber",""
