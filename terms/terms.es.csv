@@ -27,7 +27,7 @@
 "basisOfRecord:rdfs_comment","Comment for Basis Of Record http://rs.tdwg.org/dwc/terms/basisOfRecord","Denota el origen o evidencia específica de la que se deriva el registro."
 "basisOfRecord:dcterms_description","Description for Basis Of Record http://rs.tdwg.org/dwc/terms/basisOfRecord","Para este elemento se debe emplear el vocabulario controlado en inglés."
 "bed:label","Label for Bed http://rs.tdwg.org/dwc/terms/bed","Capa"
-"bed:rdfs_comment","Comment for Bed http://rs.tdwg.org/dwc/terms/bed",""
+"bed:rdfs_comment","Comment for Bed http://rs.tdwg.org/dwc/terms/bed","El nombre completo de la capa litoestratigráfica de la cual se colectó el dwc:MaterialEntity."
 "behavior:label","Label for Behavior http://rs.tdwg.org/dwc/terms/behavior","Comportamiento"
 "behavior:rdfs_comment","Comment for Behavior http://rs.tdwg.org/dwc/terms/behavior","El comportamiento mostrado por el organismo al momento de que el dwc:Occurrence fuera registrado."
 "behavior:dcterms_description","Description for Behavior http://rs.tdwg.org/dwc/terms/behavior","Este término tiene un equivalente en el dwciri: namespace que solo permite usar un IRI como valor, mientras que este término permite cualquier valor de cadena de texto libre."
