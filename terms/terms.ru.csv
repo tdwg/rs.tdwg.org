@@ -423,7 +423,7 @@
 "parentNameUsageID:rdfs_comment","Comment for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID","Идентификатор использования названия (документированного значения названия согласно источнику) прямого, ближайшего родительского таксона более высокого ранга (в классификации) для самого специфичного элемента dwc:scientificName."
 "parentNameUsageID:dcterms_description","Description for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID","Этот термин должен использоваться для правильных (действительных, валидных) названий для ссылки на dwc:taxonID записи dwc:Taxon, которая представляет следующий более высокий таксономический ранг в той же таксономической классификации. Для Darwin Core Archives связанная запись должна присутствовать локально в том же архиве."
 "parentNameUsageID:examples","Examples for Parent Name Usage ID http://rs.tdwg.org/dwc/terms/parentNameUsageID","`tsn:41074` (ITIS); `urn:lsid:ipni.org:names:30001404-2` (IPNI); `2704173` (GBIF); `6T8N` (COL)"
-"pathway:label","Label for Pathway http://rs.tdwg.org/dwc/terms/pathway",""
+"pathway:label","Label for Pathway http://rs.tdwg.org/dwc/terms/pathway","Путь"
 "pathway:rdfs_comment","Comment for Pathway http://rs.tdwg.org/dwc/terms/pathway",""
 "pathway:dcterms_description","Description for Pathway http://rs.tdwg.org/dwc/terms/pathway",""
 "phylum:label","Label for Phylum http://rs.tdwg.org/dwc/terms/phylum",""
