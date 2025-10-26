@@ -462,7 +462,7 @@
 "relationshipOfResource:label","Label for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource","Связь между ресурсами"
 "relationshipOfResource:rdfs_comment","Comment for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource","Связь между субъектом (идентифицируемым с помощью dwc:resourceID) и объектом (идентифицируемым с помощью dwc:relatedResourceID)."
 "relationshipOfResource:dcterms_description","Description for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource","Рекомендуется использовать контролируемый словарь."
-"relationshipOfResourceID:label","Label for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",""
+"relationshipOfResourceID:label","Label for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID","ID связи ресурса"
 "relationshipOfResourceID:rdfs_comment","Comment for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",""
 "relationshipOfResourceID:dcterms_description","Description for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",""
 "relationshipOfResourceID:examples","Examples for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID",""
