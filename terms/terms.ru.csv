@@ -429,7 +429,7 @@
 "phylum:label","Label for Phylum http://rs.tdwg.org/dwc/terms/phylum","Тип / Отдел"
 "phylum:rdfs_comment","Comment for Phylum http://rs.tdwg.org/dwc/terms/phylum","Полное научное название типа (отдела), к которому относится данный dwc:Taxon."
 "phylum:examples","Examples for Phylum http://rs.tdwg.org/dwc/terms/phylum","`Chordata` (тип); `Bryophyta` (отдел)"
-"pointRadiusSpatialFit:label","Label for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit",""
+"pointRadiusSpatialFit:label","Label for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit","Пространственное соответствие точки-радиуса"
 "pointRadiusSpatialFit:rdfs_comment","Comment for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit",""
 "pointRadiusSpatialFit:dcterms_description","Description for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit","Подробные объяснения с графическими примерами приведены в документе «Рекомендации по геопривязке» (Georeferencing Best Practices), Chapman and Wieczorek, 2020 (https://doi.org/10.15468/doc-gg7h-s853)."
 "preparations:label","Label for Preparations http://rs.tdwg.org/dwc/terms/preparations",""
