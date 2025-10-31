@@ -492,7 +492,7 @@ An identifier for the relationship type (predicate) that connects the subject id
 "samplingProtocol:label","Label for Sampling Protocol http://rs.tdwg.org/dwc/terms/samplingProtocol","Протокол выборки"
 "samplingProtocol:rdfs_comment","Comment for Sampling Protocol http://rs.tdwg.org/dwc/terms/samplingProtocol","Названия, ссылки или описания методов и протоколов, применявшихся во время dwc:Event."
 "samplingProtocol:dcterms_description","Description for Sampling Protocol http://rs.tdwg.org/dwc/terms/samplingProtocol","В качестве рекомендуемой практики предлагается описывать объект dwc:Event не более чем одним протоколом выборки. В случае сводного dwc:Event, включающего несколько протоколов, когда конкретный протокол не может быть однозначно ассоциирован с отдельными объектами dwc:Occurrence, рекомендуется разделять значения в списке с использованием пробела, вертикальной черты и пробела (` | `). Данный термин имеет эквивалент в пространстве имён dwciri:, который допускает только IRI в качестве значения, в то время как данный термин допускает использование любой строки в качестве значения."
-"scientificName:label","Label for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
+"scientificName:label","Label for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName","Научное название"
 "scientificName:rdfs_comment","Comment for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
 "scientificName:dcterms_description","Description for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
 "scientificName:examples","Examples for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
