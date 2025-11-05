@@ -1,6 +1,6 @@
 "identifier","context","text"
-"absentTaxa:label","Label for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa",""
-"absentTaxa:rdfs_comment","Comment for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa",""
+"absentTaxa:label","Label for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa","Отсутствующие таксоны"
+"absentTaxa:rdfs_comment","Comment for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa","Список (в форме строки с разделителями) таксонов, зарегистрированных как отсутствующие в ходе dwc:Event."
 "absentTaxa:dcterms_description","Description for Absent Taxa http://rs.tdwg.org/dwc/terms/absentTaxa",""
 "abundanceCap:label","Label for Abundance Cap http://rs.tdwg.org/dwc/terms/abundanceCap",""
 "abundanceCap:rdfs_comment","Comment for Abundance Cap http://rs.tdwg.org/dwc/terms/abundanceCap",""
