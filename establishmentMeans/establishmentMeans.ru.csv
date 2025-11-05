@@ -3,7 +3,7 @@
 "e:definition","Definition for establishmentMeans controlled concept scheme http://rs.tdwg.org/dwc/terms/e","Концептуальная схема SKOS, которая будет использоваться в качестве контролируемого словаря для терминов Darwin Core dwc:establishmentMeans и dwciri:establishmentMeans"
 "e001:label","Label for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","естественный (нативный)"
 "e001:definition","Definition for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","Таксон обитает в пределах естественного ареала."
-"e001:notes","Notes for native (indigenous) http://rs.tdwg.org/dwc/terms/e001",""
+"e001:notes","Notes for native (indigenous) http://rs.tdwg.org/dwc/terms/e001","Что считать естественным для какого-то ареала варьируется в зависимости от биогеографического прошлого этого региона и местного толкования того, что является ""естественным ареалом""."
 "e002:label","Label for native: reintroduced http://rs.tdwg.org/dwc/terms/e002","естественный: реинтродуцированный"
 "e002:definition","Definition for native: reintroduced http://rs.tdwg.org/dwc/terms/e002","Таксон, ранее обитавший в данной местности, но потом исчезнувший по вине человека, вовращен путем реинтродукции."
 "e002:notes","Notes for native: reintroduced http://rs.tdwg.org/dwc/terms/e002",""
