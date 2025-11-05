@@ -17,7 +17,7 @@
   contributor_role: author
   role_uri: http://www.wikidata.org/entity/Q482980
   affiliation: Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark
-  affiliation_uri: ''
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
 
 - contributor_iri: https://orcid.org/0000-0002-3425-6499
   contributor_literal: Vishwas Chavan
@@ -38,7 +38,7 @@
   contributor_role: author
   role_uri: http://www.wikidata.org/entity/Q482980
   affiliation: Missouri Botanical Garden, St. Louis, USA
-  affiliation_uri: ''
+  affiliation_uri: http://www.wikidata.org/entity/Q1852803
 
 - contributor_iri: https://orcid.org/0000-0001-7023-7386
   contributor_literal: Gregor Hagedorn
