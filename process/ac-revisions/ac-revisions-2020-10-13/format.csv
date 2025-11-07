@@ -1,123 +1,123 @@
-term_localName,label,skos_broader,skos_inScheme,skos_exactMatch,controlled_value_string,definition,usage,notes,examples,dcam_memberOf,type
-m,media types and physical media concept scheme,,,,,concept scheme for IANA media types and various physical media items,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
-e,file extensions concept scheme,,,,,concept scheme based on conventional file extensions for media types,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
-m001,application,,m,,application,media type for application,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m002,audio,,m,,audio,media type for audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m003,image,,m,,image,media type for image,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m004,model,,m,,model,media type for model,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m005,text,,m,,text,media type for text,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m006,video,,m,,video,media type for video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m007,PNG,m003,m,,image/png,media subtype for portable network graphics images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m008,JPEG,m003,m,,image/jpeg,media subtype for JPEG images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m009,BMP,m003,m,,image/bmp,media subtype for bitmap images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m010,GIF,m003,m,,image/gif,media subtype for GIF images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m011,TIFF,m003,m,,image/tiff,media subtype for TIFF images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m012,MP4 video,m006,m,,video/mp4,media subtype for MP4 videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m013,MPEG,m006,m,,video/mpeg,media subtype for MPEG videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m014,QuickTime,m006,m,,video/quicktime,media subtype for QuickTime videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m015,MP4 audio,m002,m,,audio/mp4,media subtype for MP4 audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m016,MP3,m002,m,,audio/mpeg,media subtype for MP3 audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m017,X3D VRML,m004,m,,model/x3d-vrml,media subtype for X3D VRML models,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m018,PDF,m001,m,,application/pdf,media subtype for PDF documents,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m019,plain text,m005,m,,text/plain,media subtype for plain text,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m020,Word (pre-2003) document,m001,m,,application/msword,media subtype for Microsoft Word (2003 and before) documents,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m021,Word (post-2007) document,m001,m,,application/vnd.openxmlformats-officedocument.wordprocessingml.document,media subtype for Microsoft Word (2007 and after) documents,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m022,Digital Negative,m003,m,,image/x-adobe-dng,media subtype for Digital Negative images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m023,CR2,m003,m,,image/x-canon-cr2,media subtype for Canon Raw images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m024,JPEG 2000,m003,m,,image/jp2,media subtype for JPEG 2000 images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m025,WAVE,m002,m,,audio/vnd.wave,media subtype for WAVE audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m026,Nikon NEF Raw,m003,m,,image/x-nikon-nef,media subtype for Nikon NEF Raw images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m027,M4V,m006,m,,video/x-m4v,media subtype for Apple M4V videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m028,3GPP,m006,m,,‎video/3gpp,media subtype for 3GPP video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m029,AVI,m006,m,,video/vnd.avi,media subtype for AVI video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m030,AMR,m002,m,,audio/AMR,media subtype for Adaptive Multi-Rate audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m031,AIFF,m002,m,,audio/x-aiff,media subtype for Audio Interchange File Format audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m032,OGG audio,m002,m,,audio/ogg,media subtype for OGG audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m033,OGG video,m006,m,,video/ogg,media subtype for OGG video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m034,OGG multiplex,m001,m,,application/ogg,media subtype for OGG multiplex,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m035,Kodak Photo CD image,m003,m,,image/x-photo-cd,media subtype for Kodak Photo CD image,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m036,Photoshop,m003,m,,image/vnd.adobe.photoshop,media subtype for Photoshop images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m037,extended MPEG-2 Transport Stream,m006,m,,video/vnd.dlna.mpeg-tts,media subtype for extended MPEG-2 Transport Stream,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m038,FLAC,m002,m,,audio/x-flac,media subtype for Free Lossless Audio Codec audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m039,WMA,m002,m,,audio/x-ms-wma,media subtype for Windows Media Audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m040,WMV,m006,m,,video/x-ms-asf,media subtype for Windows Media Video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m041,ASF,m001,m,,application/ms-asf,media subtype for Advanced Systems Format,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m042,SVG,m003,m,,image/svg+xml,media subtype for SVG images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m043,data CD,m001,m,,Data-CD,physical data compact disc,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m044,audio CD,m002,m,,Audio-CD,physical audio compact disc,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m045,video CD,m006,m,,Video-CD,physical video compact disc,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m046,data DVD,m001,m,,Data-DVD,physical data DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m047,audio DVD,m002,m,,Audio-DVD,physical audio DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m048,PAL video DVD,m006,m,,Video-DVD-PAL,physical PAL video DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m049,NTSC video DVD,m006,m,,Video-DVD-NTSC,physical NTSC video DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m050,photographic slide,m003,m,,photographic slide,physical photographic slide,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m051,photographic print,m003,m,,photographic print,physical photographic print,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m052,Blu-ray video disc,m006,m,,Blu-ray,physical Blu-ray video disc,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m053,physical artwork,m003,m,,physical artwork,physical drawing or painting (non-photographic),,,,,http://www.w3.org/2004/02/skos/core#Concept
-m054,ZVI,m003,m,,image/zvi,unofficial media subtype for Zeiss Vision Image images,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept
-m055,STL,m004,m,,model/stl,media subtype for steriolithography files,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m056,reel-to-reel audio tape,m002,m,,audio tape,physical analogue audio tape (reel-to-reel),,,,,http://www.w3.org/2004/02/skos/core#Concept
-m057,audio cassette,m002,m,,audio cassette,physical analogue audio cassette,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m058,digital audio tape,m002,m,,DAT,physical digital audio tape (DAT),,,,,http://www.w3.org/2004/02/skos/core#Concept
-m059,MiniDisc,m002,m,,MiniDisc,physical MiniDisc ,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m060,vinyl record,m002,m,,vinyl,physical vinyl record,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m061,mixed CD (data and audio),m001,m,,Mixed-CD,physical compact disc containing both data and audio tracks,,,,,http://www.w3.org/2004/02/skos/core#Concept
-m062,OBJ,m004,m,,model/obj,media subtype for OBJ 3D models,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m063,gLTF binary,m004,m,,model/gltf-binary,media subtype for Binary GL Transmission Format,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m064,gLTF,m004,m,,model/gltf+json,media subtype for GL Transmission Format,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m065,VRML,m004,m,,model/vrml,media subtype for Virtual Reality Modeling Language,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m066,DICOM,m001,m,,application/dicom,media subtype for Digital Imaging and Communications in Medicine,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m067,MTL,m004,m,,model/mtl,media subtype for OBJ Material Template Library,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m068,X3D XML,m004,m,,model/x3d+xml,media subtype for X3D XML models,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept
-m069,CIFF raw image,m003,m,,image/x-canon-crw,unofficial media subtype for Camera Image File Format raw image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept
-m070,CR3 raw image,m003,m,,image/x-canon-cr3,unofficial media subtype for Canon Raw 3 image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept
-m071,ARW raw image,m003,m,,image/x-sony-arw,unofficial media subtype for Sony raw image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept
-m072,RW2 raw image,m003,m,,image/x-panasonic-rw2,unofficial media subtype for Panasonic raw image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept
-e001,plain text,,e,m019,txt,file extension for palin text,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e002,Word (pre-2003) document,,e,m020,doc,file extension for Microsoft Word (2003 and before) documents,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e003,Word (post-2007) document,,e,m021,docx,file extension for Microsoft Word (2007 and after) documents,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e004,PNG,,e,m007,png,file extension for portable network graphics images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e005,JPEG,,e,m008,jpg,file extension for JPEG images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e006,PDF,,e,m018,pdf,file extension for PDF documents,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e007,TIFF,,e,m011,tif,file extension for TIFF images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e008,Digital Negative,,e,m022,dng,file extension for Digital Negative images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e009,Canon Raw,,e,m023,cr2,file extension for Canon Raw images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e010,JPEG 2000,,e,m024,jp2,file extension for JPEG 2000 images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e011,WAVE,,e,m025,wav,file extension for WAVE audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e012,MP3,,e,m016,mp3,ffle extension for MP3 audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e013,Nikon NEF Raw,,e,m026,nef,file extension for Nikon NEF Raw images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e014,MP4 audio,,e,m015,m4a,file extension for MP4 audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e015,MP4 video,,e,m012,mp4,file extension for MP4 video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e016,GIF,,e,m010,gif,file extension for GIF images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e017,BMP,,e,m009,bmp,file extension for bitmap images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e018,M4V,,e,m027,m4v,file extension for Apple M4V videos,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e019,PLY,,e,,ply,file extension for Polygon File Format,,"The media subtype is apparently text/plain, which would not be distinguishable from other types of plain text.",,,http://www.w3.org/2004/02/skos/core#Concept
-e020,STL,,e,m055,stl,file extension for steriolithography files,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e021,3GPP,,e,m028,3gp,file extension for 3GPP video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e022,ZVI,,e,m054,zvi,file extension for Zeiss Vision Image images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e023,AVI,,e,m029,avi,file extension for AVI video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e024,AMR,,e,m030,amr,file extension for Adaptive Multi-Rate audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e025,AIFF,,e,m031,aiff,file extension for Audio Interchange File Format audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e026,OGG audio,,e,m032,ogg,file extension for OGG audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e027,OGG video,,e,m033,ogv,file extension for OGG video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e028,OGG multiplex,,e,m034,ogx,file extension for OGG multiplex,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e029,Kodak Photo CD image,,e,m035,pcd,file extension for Kodak Photo CD image,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e030,QuickTime,,e,m014,mov,file extension for Apple QuickTime video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e031,Photoshop,,e,m036,psd,file extension for Photoshop images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e032,FLAC,,e,m038,flac,file extension for Free Lossless Audio Codec audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e033,MWA,,e,m039,wma,file extension for Windows Media Audio,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e034,WMV,,e,m040,wmv,file extension for Windows Media Video,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e035,ASF,,e,m041,asf,file extension for Advanced Systems Format,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e036,SVG,,e,m042,svg,file extension for SVG images,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e037,OBJ,,e,m062,obj,file extension for OBJ,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e038,gLTF binary,,e,m063,glb,file extension for Binary GL Transmission Format,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e039,gLTF,,e,m064,gltf,file extension for GL Transmission Format,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e040,VRML,,e,m065,wrl,file extension for Virtual Reality Modeling Language,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e041,DICOM,,e,m066,dcm,file extension for Digital Imaging and Communications in Medicine,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e042,MTL,,e,m067,mtl,file extension for OBJ Material Template Library,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e043,X3D VRML,,e,m017,x3dv,file extension for X3D VRML models,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e044,X3D XML,,e,m068,x3d,file extension for X3D XML models,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e045,CIFF raw image,,e,m069,crw,file extension for Camera Image File Format raw image,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e046,CR3 raw image,,e,m070,cr3,file extension for Canon Raw 3 image,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e047,ARW raw image,,e,m071,arw,file extension for Sony raw image,,,,,http://www.w3.org/2004/02/skos/core#Concept
-e048,RW2 raw image,,e,m072,rw2,file extension for Panasonic raw image,,,,,http://www.w3.org/2004/02/skos/core#Concept
+term_localName,label,skos_broader,skos_inScheme,skos_exactMatch,controlled_value_string,definition,usage,notes,examples,dcam_memberOf,type,tdwgutility_organizedInClass
+m,media types and physical media concept scheme,,,,,concept scheme for IANA media types and various physical media items,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme,
+e,file extensions concept scheme,,,,,concept scheme based on conventional file extensions for media types,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme,
+m001,application,,m,,application,media type for application,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m002,audio,,m,,audio,media type for audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m003,image,,m,,image,media type for image,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m004,model,,m,,model,media type for model,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m005,text,,m,,text,media type for text,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m006,video,,m,,video,media type for video,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m007,PNG,m003,m,,image/png,media subtype for portable network graphics images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m008,JPEG,m003,m,,image/jpeg,media subtype for JPEG images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m009,BMP,m003,m,,image/bmp,media subtype for bitmap images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m010,GIF,m003,m,,image/gif,media subtype for GIF images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m011,TIFF,m003,m,,image/tiff,media subtype for TIFF images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m012,MP4 video,m006,m,,video/mp4,media subtype for MP4 videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m013,MPEG,m006,m,,video/mpeg,media subtype for MPEG videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m014,QuickTime,m006,m,,video/quicktime,media subtype for QuickTime videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m015,MP4 audio,m002,m,,audio/mp4,media subtype for MP4 audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m016,MP3,m002,m,,audio/mpeg,media subtype for MP3 audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m017,X3D VRML,m004,m,,model/x3d-vrml,media subtype for X3D VRML models,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m018,PDF,m001,m,,application/pdf,media subtype for PDF documents,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m019,plain text,m005,m,,text/plain,media subtype for plain text,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m020,Word (pre-2003) document,m001,m,,application/msword,media subtype for Microsoft Word (2003 and before) documents,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m021,Word (post-2007) document,m001,m,,application/vnd.openxmlformats-officedocument.wordprocessingml.document,media subtype for Microsoft Word (2007 and after) documents,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m022,Digital Negative,m003,m,,image/x-adobe-dng,media subtype for Digital Negative images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m023,CR2,m003,m,,image/x-canon-cr2,media subtype for Canon Raw images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m024,JPEG 2000,m003,m,,image/jp2,media subtype for JPEG 2000 images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m025,WAVE,m002,m,,audio/vnd.wave,media subtype for WAVE audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m026,Nikon NEF Raw,m003,m,,image/x-nikon-nef,media subtype for Nikon NEF Raw images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m027,M4V,m006,m,,video/x-m4v,media subtype for Apple M4V videos,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m028,3GPP,m006,m,,‎video/3gpp,media subtype for 3GPP video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m029,AVI,m006,m,,video/vnd.avi,media subtype for AVI video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m030,AMR,m002,m,,audio/AMR,media subtype for Adaptive Multi-Rate audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m031,AIFF,m002,m,,audio/x-aiff,media subtype for Audio Interchange File Format audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m032,OGG audio,m002,m,,audio/ogg,media subtype for OGG audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m033,OGG video,m006,m,,video/ogg,media subtype for OGG video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m034,OGG multiplex,m001,m,,application/ogg,media subtype for OGG multiplex,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m035,Kodak Photo CD image,m003,m,,image/x-photo-cd,media subtype for Kodak Photo CD image,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m036,Photoshop,m003,m,,image/vnd.adobe.photoshop,media subtype for Photoshop images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m037,extended MPEG-2 Transport Stream,m006,m,,video/vnd.dlna.mpeg-tts,media subtype for extended MPEG-2 Transport Stream,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m038,FLAC,m002,m,,audio/x-flac,media subtype for Free Lossless Audio Codec audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m039,WMA,m002,m,,audio/x-ms-wma,media subtype for Windows Media Audio,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m040,WMV,m006,m,,video/x-ms-asf,media subtype for Windows Media Video,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m041,ASF,m001,m,,application/ms-asf,media subtype for Advanced Systems Format,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m042,SVG,m003,m,,image/svg+xml,media subtype for SVG images,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m043,data CD,m001,m,,Data-CD,physical data compact disc,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m044,audio CD,m002,m,,Audio-CD,physical audio compact disc,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m045,video CD,m006,m,,Video-CD,physical video compact disc,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m046,data DVD,m001,m,,Data-DVD,physical data DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m047,audio DVD,m002,m,,Audio-DVD,physical audio DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m048,PAL video DVD,m006,m,,Video-DVD-PAL,physical PAL video DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m049,NTSC video DVD,m006,m,,Video-DVD-NTSC,physical NTSC video DVD,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m050,photographic slide,m003,m,,photographic slide,physical photographic slide,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m051,photographic print,m003,m,,photographic print,physical photographic print,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m052,Blu-ray video disc,m006,m,,Blu-ray,physical Blu-ray video disc,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m053,physical artwork,m003,m,,physical artwork,physical drawing or painting (non-photographic),,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m054,ZVI,m003,m,,image/zvi,unofficial media subtype for Zeiss Vision Image images,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept,m
+m055,STL,m004,m,,model/stl,media subtype for steriolithography files,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m056,reel-to-reel audio tape,m002,m,,audio tape,physical analogue audio tape (reel-to-reel),,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m057,audio cassette,m002,m,,audio cassette,physical analogue audio cassette,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m058,digital audio tape,m002,m,,DAT,physical digital audio tape (DAT),,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m059,MiniDisc,m002,m,,MiniDisc,physical MiniDisc ,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m060,vinyl record,m002,m,,vinyl,physical vinyl record,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m061,mixed CD (data and audio),m001,m,,Mixed-CD,physical compact disc containing both data and audio tracks,,,,,http://www.w3.org/2004/02/skos/core#Concept,m
+m062,OBJ,m004,m,,model/obj,media subtype for OBJ 3D models,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m063,gLTF binary,m004,m,,model/gltf-binary,media subtype for Binary GL Transmission Format,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m064,gLTF,m004,m,,model/gltf+json,media subtype for GL Transmission Format,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m065,VRML,m004,m,,model/vrml,media subtype for Virtual Reality Modeling Language,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m066,DICOM,m001,m,,application/dicom,media subtype for Digital Imaging and Communications in Medicine,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m067,MTL,m004,m,,model/mtl,media subtype for OBJ Material Template Library,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m068,X3D XML,m004,m,,model/x3d+xml,media subtype for X3D XML models,,,,http://purl.org/dc/terms/IMT,http://www.w3.org/2004/02/skos/core#Concept,m
+m069,CIFF raw image,m003,m,,image/x-canon-crw,unofficial media subtype for Camera Image File Format raw image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept,m
+m070,CR3 raw image,m003,m,,image/x-canon-cr3,unofficial media subtype for Canon Raw 3 image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept,m
+m071,ARW raw image,m003,m,,image/x-sony-arw,unofficial media subtype for Sony raw image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept,m
+m072,RW2 raw image,m003,m,,image/x-panasonic-rw2,unofficial media subtype for Panasonic raw image,,"This media subtype is in use, but there is no subtype on the official IANA list.",,,http://www.w3.org/2004/02/skos/core#Concept,m
+e001,plain text,,e,m019,txt,file extension for palin text,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e002,Word (pre-2003) document,,e,m020,doc,file extension for Microsoft Word (2003 and before) documents,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e003,Word (post-2007) document,,e,m021,docx,file extension for Microsoft Word (2007 and after) documents,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e004,PNG,,e,m007,png,file extension for portable network graphics images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e005,JPEG,,e,m008,jpg,file extension for JPEG images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e006,PDF,,e,m018,pdf,file extension for PDF documents,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e007,TIFF,,e,m011,tif,file extension for TIFF images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e008,Digital Negative,,e,m022,dng,file extension for Digital Negative images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e009,Canon Raw,,e,m023,cr2,file extension for Canon Raw images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e010,JPEG 2000,,e,m024,jp2,file extension for JPEG 2000 images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e011,WAVE,,e,m025,wav,file extension for WAVE audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e012,MP3,,e,m016,mp3,ffle extension for MP3 audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e013,Nikon NEF Raw,,e,m026,nef,file extension for Nikon NEF Raw images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e014,MP4 audio,,e,m015,m4a,file extension for MP4 audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e015,MP4 video,,e,m012,mp4,file extension for MP4 video,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e016,GIF,,e,m010,gif,file extension for GIF images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e017,BMP,,e,m009,bmp,file extension for bitmap images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e018,M4V,,e,m027,m4v,file extension for Apple M4V videos,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e019,PLY,,e,,ply,file extension for Polygon File Format,,"The media subtype is apparently text/plain, which would not be distinguishable from other types of plain text.",,,http://www.w3.org/2004/02/skos/core#Concept,e
+e020,STL,,e,m055,stl,file extension for steriolithography files,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e021,3GPP,,e,m028,3gp,file extension for 3GPP video,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e022,ZVI,,e,m054,zvi,file extension for Zeiss Vision Image images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e023,AVI,,e,m029,avi,file extension for AVI video,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e024,AMR,,e,m030,amr,file extension for Adaptive Multi-Rate audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e025,AIFF,,e,m031,aiff,file extension for Audio Interchange File Format audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e026,OGG audio,,e,m032,ogg,file extension for OGG audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e027,OGG video,,e,m033,ogv,file extension for OGG video,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e028,OGG multiplex,,e,m034,ogx,file extension for OGG multiplex,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e029,Kodak Photo CD image,,e,m035,pcd,file extension for Kodak Photo CD image,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e030,QuickTime,,e,m014,mov,file extension for Apple QuickTime video,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e031,Photoshop,,e,m036,psd,file extension for Photoshop images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e032,FLAC,,e,m038,flac,file extension for Free Lossless Audio Codec audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e033,MWA,,e,m039,wma,file extension for Windows Media Audio,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e034,WMV,,e,m040,wmv,file extension for Windows Media Video,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e035,ASF,,e,m041,asf,file extension for Advanced Systems Format,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e036,SVG,,e,m042,svg,file extension for SVG images,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e037,OBJ,,e,m062,obj,file extension for OBJ,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e038,gLTF binary,,e,m063,glb,file extension for Binary GL Transmission Format,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e039,gLTF,,e,m064,gltf,file extension for GL Transmission Format,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e040,VRML,,e,m065,wrl,file extension for Virtual Reality Modeling Language,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e041,DICOM,,e,m066,dcm,file extension for Digital Imaging and Communications in Medicine,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e042,MTL,,e,m067,mtl,file extension for OBJ Material Template Library,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e043,X3D VRML,,e,m017,x3dv,file extension for X3D VRML models,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e044,X3D XML,,e,m068,x3d,file extension for X3D XML models,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e045,CIFF raw image,,e,m069,crw,file extension for Camera Image File Format raw image,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e046,CR3 raw image,,e,m070,cr3,file extension for Canon Raw 3 image,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e047,ARW raw image,,e,m071,arw,file extension for Sony raw image,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
+e048,RW2 raw image,,e,m072,rw2,file extension for Panasonic raw image,,,,,http://www.w3.org/2004/02/skos/core#Concept,e
