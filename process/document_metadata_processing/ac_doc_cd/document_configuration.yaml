@@ -6,7 +6,9 @@
 documentTitle: "Controlled Vocabulary for Audiovisual Core Content Description: List of Terms"
 
 # Abstract of document written by authors.
-abstract: Audiovisual Core uses the terms Iptc4xmpExt:CVterm and ac:CVtermLiteral to provide information about the content of all or part of a media item. This controlled vocabulary provides values for those terms.
+abstract: Audiovisual Core uses the terms Iptc4xmpExt:CVterm and ac:CVtermLiteral to provide 
+  information about the content of all or part of a media item. This controlled vocabulary provides 
+  values for those terms.
 
 # This value is generally the name of the task group that created the document.
 creator: TDWG Audiovisual Core Maintenance Group
