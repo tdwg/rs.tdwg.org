@@ -61,7 +61,7 @@
 "isAbundanceCapReported:dcterms_description","Description for Is Abundance Cap Reported http://rs.tdwg.org/dwc/terms/isAbundanceCapReported","Величины, характеризующие верхний предел обилия, должны указываться с использованием термина eco:abundanceCap."
 "isAbundanceReported:label","Label for Is Abundance Reported http://rs.tdwg.org/dwc/terms/isAbundanceReported","Обилие зарегистрировано"
 "isAbundanceReported:rdfs_comment","Comment for Is Abundance Reported http://rs.tdwg.org/dwc/terms/isAbundanceReported","Обилие dwc:Organisms, которые были собраны или наблюдались, указано в отчете."
-"isAbundanceReported:dcterms_description","Description for Is Abundance Reported http://rs.tdwg.org/dwc/terms/isAbundanceReported",""
+"isAbundanceReported:dcterms_description","Description for Is Abundance Reported http://rs.tdwg.org/dwc/terms/isAbundanceReported","Как правило, величины обилия указываются в терминах dwc:organismQuantity и dwc:organismQuantityType для дочерних записей dwc:Occurrence данного dwc:Event."
 "isDegreeOfEstablishmentScopeFullyReported:label","Label for Is Degree of Establishment Scope Fully Reported http://rs.tdwg.org/dwc/terms/isDegreeOfEstablishmentScopeFullyReported",""
 "isDegreeOfEstablishmentScopeFullyReported:rdfs_comment","Comment for Is Degree of Establishment Scope Fully Reported http://rs.tdwg.org/dwc/terms/isDegreeOfEstablishmentScopeFullyReported",""
 "isDegreeOfEstablishmentScopeFullyReported:dcterms_description","Description for Is Degree of Establishment Scope Fully Reported http://rs.tdwg.org/dwc/terms/isDegreeOfEstablishmentScopeFullyReported",""
