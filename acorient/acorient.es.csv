@@ -1,0 +1,31 @@
+identifier,context,text
+r:label,,esquema de concepto de orientación de sujeto
+r0000:label,,orientación no especificada
+r0001:label,,cara anterior
+r0002:label,,cara posterior
+r0003:label,,cara lateral
+r0004:label,,lado derecho
+r0005:label,,lado izquierdo
+r0006:label,,cara dorsal
+r0007:label,,cara ventral
+r0008:label,,cara adaxial
+r0009:label,,cara abaxial
+r0010:label,,lado apical
+r0011:label,,lado basal
+r0012:label,,cara oral
+r0013:label,,cara aboral
+r:definition,,un esquema de concepto SKOS para la orientación
+r0000:definition,,la orientación no se conoce porque no se especifica
+r0001:definition,,vista del lado hacia la cabeza o extremo delantero del organismo
+r0002:definition,,vista del lado opuesto a la cabeza o hacia el extremo posterior del organismo
+r0003:definition,,vista del lado perpendicular al eje principal del organismo
+r0004:definition,,vista del lado derecho de todo un organismo con simetría bilateral
+r0005:definition,,vista del lado izquierdo de todo un organismo bilateralmente simétrico
+r0006:definition,,vista del lado dorsal al plano frontal de un organismo bilateralmente simétrico
+r0007:definition,,vista del lado ventral al plano frontal de un organismo bilateralmente simétrico
+r0008:definition,,vista del lado de la parte orientada hacia el eje central de una planta (adaxial)
+r0009:definition,,vista del lado de la parte orientada lejos del eje central de una planta (abaxial)
+r0010:definition,,vista del lado de la parte orientada hacia el final del eje lejos de su punto de unión (el vértice)
+r0011:definition,,vista del lado de la parte orientada hacia el punto de unión del eje
+r0012:definition,,vista del lado del organismo orientado hacia la abertura oral
+r0013:definition,,vista del lado del organismo orientado lejos de la abertura oral

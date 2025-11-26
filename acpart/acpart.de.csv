@@ -1,0 +1,69 @@
+identifier,context,text
+p:label,,Schemenkonzept für die Orientierung des Objektes
+p0000:label,,nicht spezifizier Teil
+p0001:label,,vollständiger Organismus
+p0002:label,,Rinde
+p0003:label,,Zweig
+p0004:label,,Stamm
+p0005:label,,Blatt
+p0006:label,,Strobilus ( Zapfen)
+p0007:label,,Infloreszenz (Blütenstand)
+p0008:label,,Frucht
+p0009:label,,Samen
+p0010:label,,männlicher Zapfen
+p0011:label,,weiblicher Zapfen
+p0012:label,,Blüte
+p0013:label,,Kopf
+p0014:label,,Thorax (Brust)
+p0015:label,,Abdomen (Hinterleib)
+p0016:label,,Bein
+p0017:label,,Flügel
+p0018:label,,Antenne
+p0019:label,,Vorderflügel
+p0020:label,,Hinterflügel
+p0021:label,,Vorderbein
+p0022:label,,Mittleres Bein
+p0023:label,,Hinterbein
+p0024:label,,Auge
+p0025:label,,Schale
+p0026:label,,Genitalien
+p0027:label,,Schädel
+p0028:label,,Kranium
+p0029:label,,Manibula
+p0030:label,,Flosse
+p0031:label,,Ei
+p0032:label,,Knospe
+p:definition,,ein SKOS Schemenkonzept für die Orientierung
+p0000:definition,,"Teil ist nicht bekannt, da es nicht spezifiziert ist"
+p0001:definition,,Ein volständiger mehrzelliger Organismus
+p0002:definition,,Pflanzengewebe außerhalb des Zentralzylinders
+p0003:definition,,"Pflanzentriebachse, die sich aus Achselknospen entwickelt"
+p0004:definition,,"Pflanzentriebachse, die die Hauptachse der Pflanze definiert"
+p0005:definition,,Nicht reproduktives Phyllom von Pflanzen
+p0006:definition,,Reproduktionssystem der Pflanzen bestehend aus Sporophyllen
+p0007:definition,,"Reproduktives Verzerigungssystem einer Pflanze, die zur Blütenbildung dienen"
+p0008:definition,,"Pflanzenstruktur, die sich von einer Blüte entwickelt"
+p0009:definition,,"Pflanzenstruktur, die einen ruhenden Embryo enthält"
+p0010:definition,,Pollen-tragender Strobilus einer Pflanze
+p0011:definition,,Ovulae-tragender Strobilus einer Pflanze
+p0012:definition,,"Reproduktives Sprosssystem der Pflanzen, das ein Karpell enthällt"
+p0013:definition,,Vorderster Abschnitt des Körpers
+p0014:definition,,"Mittlerer Körperabschnitt eines Insekts, welcher die Gliedmaße zur Bewegung trägt"
+p0015:definition,,Hinterster Körperabschitt eines Insekts
+p0016:definition,,Gliedmaß zum Laufen
+p0017:definition,,für den Flug angepasster Fortsatz
+p0018:definition,,"Paarige Sinnesorgane am Kof, meistens mit mehreren Segmenten"
+p0019:definition,,"Paariger Insektenflügel, der am Mesonotum ansetzt"
+p0020:definition,,"Paariger Insektenflügel, der am Metanotum ansetzt"
+p0021:definition,,Bein des Prothorax
+p0022:definition,,Bein des Mesothorax
+p0023:definition,,Bein des Metathorax
+p0024:definition,,Lichtempfindliches Sinnesorgan
+p0025:definition,,"Harte Schicht, die ein Objekt umgibt"
+p0026:definition,,äußere Geschlechtsorgane
+p0027:definition,,Aus Cranium und Mandibel bestehender Teil des Kopfes
+p0028:definition,,Oberer Teil des Schädels
+p0029:definition,,Der einzige Knochen im Unterkiefer
+p0030:definition,,äußerliche Projektion eines aquatischen Tiers für die Fortbewegung oder Steuerung des Körpers
+p0031:definition,,"Hartschaliges reproduktives System, das von einem Tier produziert wird"
+p0032:definition,,Ein unentwickeltes Triebsystem

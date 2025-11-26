@@ -1,0 +1,31 @@
+identifier,context,text
+r:label,,Schemenkonzept der Orientierung
+r0000:label,,Ansichtsseite unbekannt
+r0001:label,,Vorderseite
+r0002:label,,Hinterseite
+r0003:label,,seitlich/Lateralseite
+r0004:label,,rechte Seite
+r0005:label,,linke Seite
+r0006:label,,Dorsalseite
+r0007:label,,Ventralseite
+r0008:label,,Adaxialseite
+r0009:label,,Abaxialseite
+r0010:label,,Apikalseite
+r0011:label,,Basalseite
+r0012:label,,Oralseite
+r0013:label,,Aboralseite
+r:definition,,Schemenkonzept der Orientierung
+r0000:definition,,Ansichtsseite unbekannt
+r0001:definition,,Ansicht der Vorderseite (zum Kopf oder zum Vorderende gerichtet) des Organismus
+r0002:definition,,Ansicht der Hinterseite (zum Hinterende gerichtet) des Organismus
+r0003:definition,,seitliche Ansicht des Körpers
+r0004:definition,,Ansicht der rechten Seite eines bilateralen Organismus
+r0005:definition,,Ansicht  der linken Seite eines bilateralen Organismus
+r0006:definition,,Ansicht der Oberseite (Dorsum) eines bilateralen Organsimus
+r0007:definition,,Ansicht der Unterseite (Ventrum) eines bilateralen Organsimus
+r0008:definition,,Ansicht der zur Zentralachse gerichteten Seite einer Pflanze
+r0009:definition,,Ansicht der von der Zentralachse weggerichteten Seite einer Pflanze
+r0010:definition,,Ansicht der von der Zentralachse abgewandten (äußeren) Seite  eines Merkmals
+r0011:definition,,Ansicht der von der Zentralachse zugewandten (inneren) Seite eines Merkmals
+r0012:definition,,Ansicht der von der Mundöffnung zugewandten Seite
+r0013:definition,,Ansicht der von der Mundöffnung abgewandten Seite

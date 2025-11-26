@@ -1,0 +1,69 @@
+identifier,context,text
+p:label,,esquema de concepto de parte de sujeto
+p0000:label,,parte no especificada
+p0001:label,,organismo entero
+p0002:label,,corteza
+p0003:label,,rama
+p0004:label,,tronco
+p0005:label,,hoja
+p0006:label,,estróbilo (cono)
+p0007:label,,inflorescencia
+p0008:label,,fruto
+p0009:label,,semilla
+p0010:label,,cono masculino
+p0011:label,,cono femenino
+p0012:label,,flor
+p0013:label,,cabeza
+p0014:label,,tórax
+p0015:label,,abdomen
+p0016:label,,pata
+p0017:label,,ala
+p0018:label,,antena
+p0019:label,,ala anterior
+p0020:label,,ala posterior
+p0021:label,,pata anterior
+p0022:label,,pata media
+p0023:label,,pata posterior
+p0024:label,,ojo
+p0025:label,,cascarón
+p0026:label,,genitalia
+p0027:label,,calavera
+p0028:label,,cráneo
+p0029:label,,mandíbula
+p0030:label,,aleta
+p0031:label,,huevo
+p0032:label,,brote
+p:definition,,un esquema conceptual de SKOS para ac:subjectOrientation
+p0000:definition,,No se conoce la parte porque no se especifica
+p0001:definition,,Un organismo multicelular entero
+p0002:definition,,Tejido vegetal fuera del cambium vascular
+p0003:definition,,Eje del brote de la planta desarrollado a partir de yemas axilares.
+p0004:definition,,Eje del brote de la planta que define el eje principal
+p0005:definition,,Filoma no reproductivo de plantas
+p0006:definition,,Sistema reproductivo vegetal que consta de esporófilos
+p0007:definition,,Sistema de brotes reproductivos de plantas que contienen flores
+p0008:definition,,Estructura vegetal que se desarrolla a partir de una flor
+p0009:definition,,Estructura vegetal que contiene un embrión latente
+p0010:definition,,Estróbilo de la planta que contiene polen
+p0011:definition,,Estróbilo de la planta que contiene óvulos
+p0012:definition,,Sistema de brotes reproductivos de plantas que contienen un carpelo
+p0013:definition,,División más anterior del cuerpo
+p0014:definition,,División media del cuerpo de un insecto que lleva apéndices locomotores
+p0015:definition,,División más posterior del cuerpo de un insecto
+p0016:definition,,Apéndice caminador
+p0017:definition,,Apéndice que tiene forma para producir y sustentar vuelo en el aire
+p0018:definition,,"Los órganos sensoriales pareados de la cabeza, generalmente con múltiples artejos"
+p0019:definition,,Ala de insecto pareada que se continúa con el mesonoto
+p0020:definition,,Ala de insecto pareada que se continúa con el metanoto
+p0021:definition,,Pata del segmento protorácico
+p0022:definition,,Pata del segmento mesotorácico
+p0023:definition,,Pata del segmento metatorácico
+p0024:definition,,Un órgano que percibe luz
+p0025:definition,,Una cubierta rígida que envuelve un objeto
+p0026:definition,,Órganos sexuales externos
+p0027:definition,,Parte de la cabeza que consiste enteramente en el cráneo y la mandíbula
+p0028:definition,,Parte superior del cráneo
+p0029:definition,,Hueso dentario que es el único hueso en una de las mitades laterales de la mandíbula inferior
+p0030:definition,,Proyección externa de un animal acuático utilizada para impulsar o guiar el cuerpo
+p0031:definition,,Cuerpo reproductivo de cascarón duro o coriáceo producido por un animal
+p0032:definition,,Un sistema de tallo sin desarrollar

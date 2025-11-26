@@ -1,0 +1,31 @@
+identifier,context,text
+r:label,,esquema de conceito de orientação de sujeito
+r0000:label,,orientação não especificada
+r0001:label,,lado anterior
+r0002:label,,lado posterior
+r0003:label,,vista lateral
+r0004:label,,lado direito
+r0005:label,,lado esquerdo
+r0006:label,,face dorsal
+r0007:label,,face ventral
+r0008:label,,face adaxial
+r0009:label,,vista abaxial
+r0010:label,,face apical
+r0011:label,,face basal
+r0012:label,,vista oral
+r0013:label,,vista aboral
+r:definition,,um esquema de conceito SKOS para orientação
+r0000:definition,,a orientação não é conhecida porque não foi especificada
+r0001:definition,,vista do lado em direção à cabeça ou extremidade anterior do organismo
+r0002:definition,,vista do lado afastado da cabeça ou em direção à extremidade posterior do organismo
+r0003:definition,,vista do lado perpendicular ao eixo principal do organismo
+r0004:definition,,vista do lado direito de um organismo completamente simétrico bilateralmente
+r0005:definition,,vista do lado esquerdo de um organismo completamente simétrico bilateralmente
+r0006:definition,,vista da face dorsal em relação ao plano frontal de um organismo completamente simétrico bilateralmente
+r0007:definition,,vista da face ventral em relação ao plano frontal de um organismo completamente simétrico bilateralmente
+r0008:definition,,vista da face da estrutura orientada para o eixo central de uma planta (adaxial)
+r0009:definition,,vista da face da estrutura orientada para fora do eixo central de uma planta (abaxial)
+r0010:definition,,vista da face da estrutura voltada para a extremidade do eixo afastada de seu ponto de fixação (o ápice)
+r0011:definition,,vista da face da estrutura voltada para o ponto de fixação de seu eixo
+r0012:definition,,vista da face do organismo voltada para a abertura oral
+r0013:definition,,vista do lado do organismo orientado contrário da abertura oral

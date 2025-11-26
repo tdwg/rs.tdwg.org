@@ -1,0 +1,69 @@
+identifier,context,text
+p:label,,esquema de conceito de partes de assunto
+p0000:label,,parte não especificada
+p0001:label,,organismo inteiro
+p0002:label,,casca
+p0003:label,,galho
+p0004:label,,tronco
+p0005:label,,folha
+p0006:label,,estróbilo (cone)
+p0007:label,,inflorescência
+p0008:label,,fruta
+p0009:label,,semente
+p0010:label,,cone masculino
+p0011:label,,cone feminino
+p0012:label,,flor
+p0013:label,,cabeça
+p0014:label,,tórax
+p0015:label,,abdomen
+p0016:label,,perna
+p0017:label,,asa
+p0018:label,,antena
+p0019:label,,asa dianteira
+p0020:label,,asa posterior
+p0021:label,,perna dianteira
+p0022:label,,perna do meio
+p0023:label,,perna traseira
+p0024:label,,olho
+p0025:label,,concha
+p0026:label,,genitália
+p0027:label,,caveira
+p0028:label,,crânio
+p0029:label,,mandíbula
+p0030:label,,barbatana
+p0031:label,,ovo
+p0032:label,,broto
+p:definition,,um esquema conceitual de SKOS para ac:subjectOrientation
+p0000:definition,,a parte não é conhecida porque não foi especificada
+p0001:definition,,um organismo multicelular inteiro
+p0002:definition,,Tecido vegetal fora do câmbio vascular
+p0003:definition,,Eixo do caule da planta desenvolvido a partir de gemas axilares
+p0004:definition,,Eixo do caule da planta que define o eixo principal
+p0005:definition,,Filoma não reprodutivo da planta
+p0006:definition,,Sistema reprodutivo vegetal constituído por esporófilos
+p0007:definition,,Sistema reprodutivo de plantas contendo flores
+p0008:definition,,Estrutura da planta se desenvolvendo a partir de uma flor
+p0009:definition,,Estrutura da planta contendo embrião dormente
+p0010:definition,,Estróbilos de plantas contendo pólen
+p0011:definition,,Estróbilos de plantas contendo óvulos
+p0012:definition,,Sistema reprodutivo de plantas contendo um carpelo
+p0013:definition,,Divisão mais anterior do corpo
+p0014:definition,,A divisão do meio do corpo do inseto com apêndices locomotores
+p0015:definition,,A divisão mais posterior do corpo do inseto
+p0016:definition,,Apêndice locomotor
+p0017:definition,,Apêndice que é moldado para produzir sustentação para o vôo pelo ar
+p0018:definition,,"Os órgãos sensoriais pareados da cabeça, geralmente com múltiplas articulações"
+p0019:definition,,A asa emparelhada de um inseto emparelhada que é contínua com o mesonoto
+p0020:definition,,A asa emparelhada de um inseto emparelhada que é contínua com o metanoto
+p0021:definition,,Perna do segmento protorácico
+p0022:definition,,Perna do segmento mesotorácico
+p0023:definition,,Perna do segmento metatorácico
+p0024:definition,,um órgão que detecta luz
+p0025:definition,,Uma cobertura rígida que envolve um objeto
+p0026:definition,,órgãos sexuais externos
+p0027:definition,,A parte da cabeça que consiste inteiramente de crânio e mandíbula
+p0028:definition,,Parte superior do crânio
+p0029:definition,,Um osso dentário que é o único osso em uma das metades laterais do maxilar inferior
+p0030:definition,,Uma projeção externa de um animal aquático usado para impulsionar ou guiar o corpo
+p0031:definition,,O corpo reprodutivo de casca dura produzido por um animal
+p0032:definition,,Um sistema de caule vegetal não desenvolvido

@@ -21,16 +21,34 @@ from collections import OrderedDict
 
 # Source (English) files to push to Crowdin.
 termfiles_to_translate = [
+    # Darwin Core
     'terms/terms',
     'dc-for-dwc/dc-for-dwc',
     'dcterms-for-dwc/dcterms-for-dwc',
     'establishmentMeans/establishmentMeans',
     'degreeOfEstablishment/degreeOfEstablishment',
     'pathway/pathway',
+    'humboldt/humboldt',
+    'ac-for-dwc/ac-for-dwc',
+
+    # Latimer Core
     'latimer/latimer',
     'dcterms-for-ltc/dcterms-for-ltc',
-    'humboldt/humboldt',
-    'ac-for-dwc/ac-for-dwc'
+
+    # Audiovisual Core
+    'acorient/acorient',
+    'acpart/acpart',
+    'acsubtype/acsubtype',
+    'acvariant/acvariant',
+    'dc-for-ac/dc-for-ac',
+    'dcterms-for-ac/dcterms-for-ac',
+    'dwc-for-ac/dwc-for-ac',
+    'exif-for-ac/exif-for-ac',
+    'Iptc4xmpExt-for-ac/Iptc4xmpExt-for-ac',
+    'mo-for-ac/mo-for-ac',
+    'photoshop-for-ac/photoshop-for-ac',
+    'xmp-for-ac/xmp-for-ac',
+    'xmpRights-for-ac/xmpRights-for-ac'
 ]
 
 # Additional column (beyond term_localName) to use to create an identifier, necessary if the same
@@ -107,7 +125,7 @@ for termfile in termfiles_to_translate:
 
     # Read any *.??.csv files (produced by Crowdin) and generate a *-translations.csv file
     with open(termfile+'-translations.csv', 'w', newline='') as translationsFile:
-        languages = ['en','cs','de','es','fr','ko','nl','ru','zh-Hans','zh-Hant']
+        languages = ['en', 'cs', 'de', 'es', 'fr', 'ko', 'nl', 'pt', 'ru', 'zh-Hans', 'zh-Hant']
 
         # Output the translated columns, maintaining column order.
         current_output_translation_columns = list(filter(lambda c: c in translate_these_columns, originalTerms.fieldnames))
