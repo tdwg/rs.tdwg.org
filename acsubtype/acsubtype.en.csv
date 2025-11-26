@@ -1,0 +1,47 @@
+identifier,context,text
+Drawing:label,Label for Drawing http://rs.tdwg.org/dwc/terms/Drawing,Drawing
+Drawing:definition,Definition for Drawing http://rs.tdwg.org/dwc/terms/Drawing,"Visual works produced by drawing, which is the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of color."
+Painting:label,Label for Painting http://rs.tdwg.org/dwc/terms/Painting,Painting
+Painting:definition,Definition for Painting http://rs.tdwg.org/dwc/terms/Painting,"Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface."
+Logo:label,Label for Logo http://rs.tdwg.org/dwc/terms/Logo,Logo
+Logo:definition,Definition for Logo http://rs.tdwg.org/dwc/terms/Logo,"Devices that are specifically symbol- or picture based, designed for ready recognition to identify a product, company, or organization and sometimes used as trademarks."
+Icon:label,Label for Icon http://rs.tdwg.org/dwc/terms/Icon,Icon
+Icon:definition,Definition for Icon http://rs.tdwg.org/dwc/terms/Icon,"Small pictures, pictograms, or symbols used on computer displays or in graphical user interfaces meant to represent files, objects, applications, actions, or messages."
+Illustration:label,Label for Illustration http://rs.tdwg.org/dwc/terms/Illustration,Illustration
+Illustration:definition,Definition for Illustration http://rs.tdwg.org/dwc/terms/Illustration,Pictures or diagrams that clarify or provide an example or visualization. They usually accompany a text; the term is most often used to refer to pictures in books or published journal.
+Graphic:label,Label for Graphic http://rs.tdwg.org/dwc/terms/Graphic,Graphic
+Graphic:definition,Definition for Graphic http://rs.tdwg.org/dwc/terms/Graphic,Visual images or designs preserved on some medium.
+Photograph:label,Label for Photograph http://rs.tdwg.org/dwc/terms/Photograph,Photograph
+Photograph:definition,Definition for Photograph http://rs.tdwg.org/dwc/terms/Photograph,"Refers to still images produced from radiation-sensitive materials (sensitive to light, electron beams, or nuclear radiation), generally by means of the chemical action of light on a sensitive film, paper, glass, or metal. Photographs may be positive or negative, opaque or transparent. The concept may include photographs made by digital means."
+Animation:label,Label for Animation http://rs.tdwg.org/dwc/terms/Animation,Animation
+Animation:definition,Definition for Animation http://rs.tdwg.org/dwc/terms/Animation,"Works that present the illusion of movement and that may be created by a number of techniques including successive drawings, photographing positions of puppets or models, or using computers."
+Film:label,Label for Film http://rs.tdwg.org/dwc/terms/Film,Film
+Film:definition,Definition for Film http://rs.tdwg.org/dwc/terms/Film,"Works presented in the form of a series of pictures carried on photographic film or video tape, presented to the eye in such rapid succession as to give the illusion of natural movement."
+Film:notes,Notes for Film http://rs.tdwg.org/dwc/terms/Film,Also known as motion pictures.
+SlideShow:label,Label for Slide Show http://rs.tdwg.org/dwc/terms/SlideShow,Slide Show
+SlideShow:definition,Definition for Slide Show http://rs.tdwg.org/dwc/terms/SlideShow,"Visual representations of information for the purpose of achieving favorable visibility and persuading an audience to believe or support the presentor's ideas, projects, or goals."
+DesignPlan:label,Label for Design Plan http://rs.tdwg.org/dwc/terms/DesignPlan,Design Plan
+DesignPlan:definition,Definition for Design Plan http://rs.tdwg.org/dwc/terms/DesignPlan,"Refers to drawings, sketches, prints, computer graphics, or works in other media depicting a building or any object viewed from above, geometrically represented as projected on a horizontal plane."
+Diagram:label,Label for Diagram http://rs.tdwg.org/dwc/terms/Diagram,Diagram
+Diagram:examples,Examples for Diagram http://rs.tdwg.org/dwc/terms/Diagram,"in geometry, a diagram may be a figure composed of lines, serving to illustrate a definition or statement, or to aid in the proof of a proposition"
+Diagram:definition,Definition for Diagram http://rs.tdwg.org/dwc/terms/Diagram,Graphic designs intended to explain rather than simply represent. 
+Map:label,Label for Map http://rs.tdwg.org/dwc/terms/Map,Map
+Map:definition,Definition for Map http://rs.tdwg.org/dwc/terms/Map,"Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection."
+MusicalNotation:label,Label for Musical Notation http://rs.tdwg.org/dwc/terms/MusicalNotation,Musical Notation
+MusicalNotation:definition,Definition for Musical Notation http://rs.tdwg.org/dwc/terms/MusicalNotation,General term for systems used to visually represent music through written words or standard notations.
+IdentificationKey:label,Label for Identification Key http://rs.tdwg.org/dwc/terms/IdentificationKey,Identification Key
+IdentificationKey:definition,Definition for Identification Key http://rs.tdwg.org/dwc/terms/IdentificationKey,A taxonomic key used for identifying unknown organisms.
+ScannedText:label,Label for Scanned Text http://rs.tdwg.org/dwc/terms/ScannedText,Scanned Text
+ScannedText:definition,Definition for Scanned Text http://rs.tdwg.org/dwc/terms/ScannedText,A body of physical type or written matter transformed into an electronic format that can be used to reproduce the original material on a screen.  
+RecordedText:label,Label for Recorded Text http://rs.tdwg.org/dwc/terms/RecordedText,Recorded Text
+RecordedText:definition,Definition for Recorded Text http://rs.tdwg.org/dwc/terms/RecordedText,A body of physical type or written matter read aloud by a narrator and recorded. 
+RecordedOrganism:label,Label for Recorded Organism http://rs.tdwg.org/dwc/terms/RecordedOrganism,Recorded Organism
+RecordedOrganism:definition,Definition for Recorded Organism http://rs.tdwg.org/dwc/terms/RecordedOrganism,The sounds produced by an organism or organisms recorded on an audio medium.
+TaxonPage:label,Label for Taxon Page http://rs.tdwg.org/dwc/terms/TaxonPage,Taxon Page
+TaxonPage:definition,Definition for Taxon Page http://rs.tdwg.org/dwc/terms/TaxonPage,A web page summarizing information about a particular taxon.
+MultimediaLearningObject:label,Label for Multimedia Learning Object http://rs.tdwg.org/dwc/terms/MultimediaLearningObject,Multimedia Learning Object
+MultimediaLearningObject:definition,Definition for Multimedia Learning Object http://rs.tdwg.org/dwc/terms/MultimediaLearningObject,Works that employ several distinct media forms to improve learning outcomes.
+VirtualRealityEnvironment:label,Label for Virtual Reality Environment http://rs.tdwg.org/dwc/terms/VirtualRealityEnvironment,Virtual Reality Environment
+VirtualRealityEnvironment:definition,Definition for Virtual Reality Environment http://rs.tdwg.org/dwc/terms/VirtualRealityEnvironment,Use with regard to types of computer interface that produce compelling sensory output in response to user selections or movements.
+GlossaryPage:label,Label for Glossary Page http://rs.tdwg.org/dwc/terms/GlossaryPage,Glossary Page
+GlossaryPage:definition,Definition for Glossary Page http://rs.tdwg.org/dwc/terms/GlossaryPage,"Alphabetical lists of terms related to a particular subject or area of interest, including definitions or explanations of usage."

@@ -1,0 +1,24 @@
+identifier,context,text
+v:label,Label for variant concept scheme http://rs.tdwg.org/dwc/terms/v,variant concept scheme
+v:definition,Definition for variant concept scheme http://rs.tdwg.org/dwc/terms/v,A SKOS Concept Scheme for controlled values for ac:variant
+v001:label,Label for Thumbnail http://rs.tdwg.org/dwc/terms/v001,Thumbnail
+v001:definition,Definition for Thumbnail http://rs.tdwg.org/dwc/terms/v001,"Service Access Point provides a thumbnail image, short sound clip, or short movie clip that can be used in addition to the resource to represent the media object, typically at lower quality and higher compression than a preview object."
+v001:notes,Notes for Thumbnail http://rs.tdwg.org/dwc/terms/v001, A typical size for a tiny thumbnail image may be 50-100 pixels in the longer dimension.
+v002:label,Label for Trailer http://rs.tdwg.org/dwc/terms/v002,Trailer
+v002:definition,Definition for Trailer http://rs.tdwg.org/dwc/terms/v002,"Service Access Point provides video clip preview, in the form of a specifically authored ""Trailer"", which may provide somewhat different content than the original resource."
+v003:label,Label for Lower Quality http://rs.tdwg.org/dwc/terms/v003,Lower Quality
+v003:examples,Examples for Lower Quality http://rs.tdwg.org/dwc/terms/v003,an image suitable for web sites
+v003:definition,Definition for Lower Quality http://rs.tdwg.org/dwc/terms/v003,Service Access Point provides a lower quality version of the media resource.
+v004:label,Label for Medium Quality http://rs.tdwg.org/dwc/terms/v004,Medium Quality
+v004:examples,Examples for Medium Quality http://rs.tdwg.org/dwc/terms/v004,"shortened in duration, reduced size, using lower resolution or higher compression causing moderate artifacts"
+v004:definition,Definition for Medium Quality http://rs.tdwg.org/dwc/terms/v004,Service Access Point provides a medium quality version of the media resource.
+v005:label,Label for Good Quality http://rs.tdwg.org/dwc/terms/v005,Good Quality
+v005:examples,Examples for Good Quality http://rs.tdwg.org/dwc/terms/v005,an image between 800 and 1600 pixels in width or height
+v005:definition,Definition for Good Quality http://rs.tdwg.org/dwc/terms/v005,Service Access Point provides a good quality version of the media resource intended for resources displayed as primary information.
+v006:label,Label for Best Quality http://rs.tdwg.org/dwc/terms/v006,Best Quality
+v006:definition,Definition for Best Quality http://rs.tdwg.org/dwc/terms/v006,"Service Access Point provides the highest available quality of the media resource, whatever its resolution or quality level."
+v007:label,Label for Offline http://rs.tdwg.org/dwc/terms/v007,Offline
+v007:definition,Definition for Offline http://rs.tdwg.org/dwc/terms/v007,Service Access Point provides data about an offline resource.
+v008:label,Label for Visual http://rs.tdwg.org/dwc/terms/v008,Visual
+v008:examples,Examples for Visual http://rs.tdwg.org/dwc/terms/v008,"a sonogram, an oscillogram"
+v008:definition,Definition for Visual http://rs.tdwg.org/dwc/terms/v008,Service Access Point provides a visual or graphic representation of a media resource that is not an image.

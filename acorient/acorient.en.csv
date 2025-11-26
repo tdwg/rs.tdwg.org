@@ -1,0 +1,35 @@
+identifier,context,text
+r:label,Label for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r,subject orientation concept scheme
+r:definition,Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r,a SKOS concept scheme for orientation
+r0000:label,Label for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000,unspecified orientation
+r0000:definition,Definition for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000,orientation is not known because it is not specified
+r0001:label,Label for anterior side http://rs.tdwg.org/dwc/terms/r0001,anterior side
+r0001:definition,Definition for anterior side http://rs.tdwg.org/dwc/terms/r0001,view of the side towards the head or forward end of the organism
+r0002:label,Label for posterior side http://rs.tdwg.org/dwc/terms/r0002,posterior side
+r0002:definition,Definition for posterior side http://rs.tdwg.org/dwc/terms/r0002,view of the side away from the head or towards the rear end of the organism
+r0003:label,Label for lateral side http://rs.tdwg.org/dwc/terms/r0003,lateral side
+r0003:definition,Definition for lateral side http://rs.tdwg.org/dwc/terms/r0003,view of the side perpendicular to the main axis of the organism
+r0004:label,Label for right side http://rs.tdwg.org/dwc/terms/r0004,right side
+r0004:definition,Definition for right side http://rs.tdwg.org/dwc/terms/r0004,view of the right side of a whole bilaterally symmetric organism
+r0005:label,Label for left side http://rs.tdwg.org/dwc/terms/r0005,left side
+r0005:definition,Definition for left side http://rs.tdwg.org/dwc/terms/r0005,view of the left side of a whole bilaterally symmetric organism
+r0006:label,Label for dorsal side http://rs.tdwg.org/dwc/terms/r0006,dorsal side
+r0006:definition,Definition for dorsal side http://rs.tdwg.org/dwc/terms/r0006,view of the side dorsal to the frontal plane of a bilaterally symmetric organism
+r0007:label,Label for ventral side http://rs.tdwg.org/dwc/terms/r0007,ventral side
+r0007:definition,Definition for ventral side http://rs.tdwg.org/dwc/terms/r0007,view of the side ventral to the frontal plane of a bilaterally symmetric organism
+r0008:label,Label for upper side http://rs.tdwg.org/dwc/terms/r0008,upper side
+r0008:definition,Definition for upper side http://rs.tdwg.org/dwc/terms/r0008,view of the side of the part oriented toward the central axis of a plant (adaxial)
+r0008:usage,Usage for upper side http://rs.tdwg.org/dwc/terms/r0008,"In plants, use this term rather than ""dorsal"". For types of plants or fungi having horizontal parts and lacking a clear central axis, this is the surface away from the ground. "
+r0008:notes,Notes for upper side http://rs.tdwg.org/dwc/terms/r0008,BSPO has adaxial/abaxial axis http://purl.obolibrary.org/obo/BSPO_0000195 but not the sides defined by that axis
+r0009:label,Label for lower side http://rs.tdwg.org/dwc/terms/r0009,lower side
+r0009:definition,Definition for lower side http://rs.tdwg.org/dwc/terms/r0009,view of the side of the part oriented away from the central axis of a plant (abaxial)
+r0009:usage,Usage for lower side http://rs.tdwg.org/dwc/terms/r0009,"In plants, use this term rather than ""ventral"". For types of plants or fungi having horizontal parts and lacking a clear central axis, this is the surface towards the ground. "
+r0009:notes,Notes for lower side http://rs.tdwg.org/dwc/terms/r0009,BSPO has adaxial/abaxial axis http://purl.obolibrary.org/obo/BSPO_0000195 but not the sides defined by that axis
+r0010:label,Label for apical side http://rs.tdwg.org/dwc/terms/r0010,apical side
+r0010:definition,Definition for apical side http://rs.tdwg.org/dwc/terms/r0010,view of the side of the part oriented towards the end of the axis away from its attachment point (the apex)
+r0011:label,Label for basal side http://rs.tdwg.org/dwc/terms/r0011,basal side
+r0011:definition,Definition for basal side http://rs.tdwg.org/dwc/terms/r0011,view of the side of the part oriented towards the attachment point of the axis
+r0012:label,Label for oral side http://rs.tdwg.org/dwc/terms/r0012,oral side
+r0012:definition,Definition for oral side http://rs.tdwg.org/dwc/terms/r0012,view of the side of the organism oriented towards the oral opening
+r0013:label,Label for aboral side http://rs.tdwg.org/dwc/terms/r0013,aboral side
+r0013:definition,Definition for aboral side http://rs.tdwg.org/dwc/terms/r0013,view of the side of the organism oriented away from the oral opening
