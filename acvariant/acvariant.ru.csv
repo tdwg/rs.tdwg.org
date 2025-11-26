@@ -1,6 +1,6 @@
 "identifier","context","text"
 "v:label","Label for variant concept scheme http://rs.tdwg.org/dwc/terms/v","схема концепции variant"
-"v:definition","Definition for variant concept scheme http://rs.tdwg.org/dwc/terms/v",Концептуальная схема SKOS для контроллируемого словаря ac:variant
+"v:definition","Definition for variant concept scheme http://rs.tdwg.org/dwc/terms/v","Концептуальная схема SKOS для контроллируемого словаря ac:variant"
 "v001:label","Label for Thumbnail http://rs.tdwg.org/dwc/terms/v001","Миниатюра"
 "v001:definition","Definition for Thumbnail http://rs.tdwg.org/dwc/terms/v001","Точка доступа в виде эскизного изображения, короткого звукового клипа или короткого фрагмента ролика, которые можно использовать в дополнение к ресурсу для представления мультимедийного объекта, как правило, с более низким качеством и более высоким сжатием, чем объект предварительного просмотра."
 "v001:notes","Notes for Thumbnail http://rs.tdwg.org/dwc/terms/v001",""
