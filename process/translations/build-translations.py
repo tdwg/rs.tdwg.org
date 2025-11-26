@@ -179,7 +179,7 @@ for termfile in termfiles_to_translate:
                     if col+"_"+lang in translations:
                         text = translations[col+"_"+lang]
                         text = text.replace('"', '""')
-                        if ',' in text or '"' in text:
+                        if ',' in text or '"' in text or '\n' in text:
                             translationsFile.write(',"'+text+'"')
                         else:
                             translationsFile.write(','+text)
