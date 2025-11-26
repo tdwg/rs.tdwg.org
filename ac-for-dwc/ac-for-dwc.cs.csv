@@ -1,4 +1,4 @@
 "identifier","context","text"
-"fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
+"fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Přidělení finančních prostředků"
 "fundingAttribution:rdfs_comment","Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Textový popis organizací nebo jednotlivců, kteří financovali vytvoření zdroje."
 "fundingAttribution:dcterms_description","Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution","Uveďte celý oficiální název financujícího subjektu. Mělo by se jednat o úplný název bez zkratek, pokud se nejedná o oficiální a všeobecně uznávanou formu zkratky (např. NSF pro National Science Foundation). Doporučeným osvědčeným postupem je oddělit hodnoty v seznamu mezerou svislou čárou mezerou ( | )."
