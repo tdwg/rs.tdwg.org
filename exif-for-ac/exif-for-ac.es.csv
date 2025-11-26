@@ -1,0 +1,7 @@
+"identifier","context","text"
+"PixelXDimension:label","Label for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension",""
+"PixelXDimension:rdfs_comment","Comment for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension",""
+"PixelXDimension:dcterms_description","Description for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension",""
+"PixelYDimension:label","Label for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension",""
+"PixelYDimension:rdfs_comment","Comment for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension",""
+"PixelYDimension:dcterms_description","Description for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension",""
