@@ -585,7 +585,7 @@
 "typifiedName:label","Label for Typified Name http://rs.tdwg.org/dwc/terms/typifiedName","Typizovaný název"
 "typifiedName:rdfs_comment","Comment for Typified Name http://rs.tdwg.org/dwc/terms/typifiedName","Vědecký název, který je založen na typovém exempláři."
 "typifiedName:dcterms_description","Description for Typified Name http://rs.tdwg.org/dwc/terms/typifiedName","Doporučeným postupem je také uvedení dwc:typeStatus exempláře."
-"fundingAttributionID:label","Label for Funding Attribution ID http://rs.tdwg.org/dwc/terms/fundingAttributionID",""
+"fundingAttributionID:label","Label for Funding Attribution ID http://rs.tdwg.org/dwc/terms/fundingAttributionID","ID přidělení finančních prostředků"
 "fundingAttributionID:rdfs_comment","Comment for Funding Attribution ID http://rs.tdwg.org/dwc/terms/fundingAttributionID","Seznam (spojený a oddělený) globálně jedinečných identifikátorů financujících organizací nebo agentur, které projekt podpořily."
 "fundingAttributionID:dcterms_description","Description for Funding Attribution ID http://rs.tdwg.org/dwc/terms/fundingAttributionID","Uveďte jedinečný identifikátor financujícího subjektu, například identifikátor používaný ve vládních nebo mezinárodních databázích. Pokud žádný oficiální identifikátor neexistuje, použijte trvalý a jedinečný identifikátor v rámci vaší organizace nebo datové sady. Doporučeným osvědčeným postupem je oddělit hodnoty v seznamu mezerou se svislou čárou ( | )."
 "projectID:label","Label for Project ID http://rs.tdwg.org/dwc/terms/projectID","ID Projektu"
