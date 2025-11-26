@@ -463,9 +463,7 @@
 "relationshipOfResource:rdfs_comment","Comment for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource","Связь между субъектом (идентифицируемым с помощью dwc:resourceID) и объектом (идентифицируемым с помощью dwc:relatedResourceID)."
 "relationshipOfResource:dcterms_description","Description for Relationship Of Resource http://rs.tdwg.org/dwc/terms/relationshipOfResource","Рекомендуется использовать контролируемый словарь."
 "relationshipOfResourceID:label","Label for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID","ID связи ресурса"
-"relationshipOfResourceID:rdfs_comment","Comment for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID","Идентификатор связи между ресурсом dwc:resourceID (субъектом) и связанным с ним ресурсом dwc:relatedResourceID (объектом).
-
-An identifier for the relationship type (predicate) that connects the subject identified by dwc:resourceID to its object identified by dwc:relatedResourceID."
+"relationshipOfResourceID:rdfs_comment","Comment for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID","Идентификатор связи между ресурсом dwc:resourceID (субъектом) и связанным с ним ресурсом dwc:relatedResourceID (объектом)."
 "relationshipOfResourceID:dcterms_description","Description for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID","Рекомендуется использовать идентификаторы терминов из контролируемых словарей, таких как OBO Relation Ontology."
 "relationshipOfResourceID:examples","Examples for Relationship Of Resource ID http://rs.tdwg.org/dwc/terms/relationshipOfResourceID","`http://purl.obolibrary.org/obo/RO_0002456` (для отношения `опыляется (кем)`); `http://purl.obolibrary.org/obo/RO_0002455` (для отношения `опыляет`); `https://www.inaturalist.org/observation_fields/879` (для отношения `является пищей для`)"
 "relationshipRemarks:label","Label for Relationship Remarks http://rs.tdwg.org/dwc/terms/relationshipRemarks","Примечания к связи"
