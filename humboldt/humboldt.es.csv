@@ -102,7 +102,7 @@
 "reportedExtremeConditions:rdfs_comment","Comment for Reported Extreme Conditions http://rs.tdwg.org/dwc/terms/reportedExtremeConditions",""
 "reportedWeather:label","Label for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather",""
 "reportedWeather:rdfs_comment","Comment for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather",""
-"reportedWeather:dcterms_description","Description for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather",""
+"reportedWeather:dcterms_description","Description for Reported Weather http://rs.tdwg.org/dwc/terms/reportedWeather","La mejor práctica recomendada es utilizar un esquema de codificación clave:valor para un formato de intercambio de datos como JSON."
 "samplingEffortProtocol:label","Label for Sampling Effort Protocol http://rs.tdwg.org/dwc/terms/samplingEffortProtocol",""
 "samplingEffortProtocol:rdfs_comment","Comment for Sampling Effort Protocol http://rs.tdwg.org/dwc/terms/samplingEffortProtocol",""
 "samplingEffortProtocol:dcterms_description","Description for Sampling Effort Protocol http://rs.tdwg.org/dwc/terms/samplingEffortProtocol","Esta descripción debe asociarse con los valores reportados en eco:samplingEffortValue y eco:samplingEffortUnit. Esta es una especialización de eco:protocolDescriptions centrada en el esfuerzo, distinta del método de encuesta. El esfuerzo se relaciona con la intensidad del muestreo y, por lo tanto, puede ayudar a interpretar las estimaciones de completitud. Este término tiene un equivalente en el espacio de nombres ecoiri: que solo permite un IRI como valor, mientras que este término permite cualquier valor literal de cadena."
