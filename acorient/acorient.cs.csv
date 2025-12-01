@@ -8,7 +8,7 @@
 "r0002:label","Label for posterior side http://rs.tdwg.org/dwc/terms/r0002","zadní strana"
 "r0002:definition","Definition for posterior side http://rs.tdwg.org/dwc/terms/r0002","pohled na stranu od hlavy nebo směrem k zadnímu konci organismu"
 "r0003:label","Label for lateral side http://rs.tdwg.org/dwc/terms/r0003","boční strana"
-"r0003:definition","Definition for lateral side http://rs.tdwg.org/dwc/terms/r0003",""
+"r0003:definition","Definition for lateral side http://rs.tdwg.org/dwc/terms/r0003","pohled na stranu kolmou k hlavní ose organismu"
 "r0004:label","Label for right side http://rs.tdwg.org/dwc/terms/r0004","pravá strana"
 "r0004:definition","Definition for right side http://rs.tdwg.org/dwc/terms/r0004","pohled na pravou stranu celého oboustranně symetrického organismu"
 "r0005:label","Label for left side http://rs.tdwg.org/dwc/terms/r0005","levá strana"
