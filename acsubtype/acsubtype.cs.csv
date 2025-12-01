@@ -1,6 +1,6 @@
 "identifier","context","text"
-"Drawing:label","Label for Drawing http://rs.tdwg.org/dwc/terms/Drawing",""
-"Drawing:definition","Definition for Drawing http://rs.tdwg.org/dwc/terms/Drawing",""
+"Drawing:label","Label for Drawing http://rs.tdwg.org/dwc/terms/Drawing","Kresba"
+"Drawing:definition","Definition for Drawing http://rs.tdwg.org/dwc/terms/Drawing","Vizuální díla vytvořená kresbou, což je nanášení čar na povrch, často papír, pomocí tužky, pera, křídy nebo jiného kreslicího nástroje, přičemž se klade důraz spíše na vykreslení tvaru než na použití barvy."
 "Painting:label","Label for Painting http://rs.tdwg.org/dwc/terms/Painting",""
 "Painting:definition","Definition for Painting http://rs.tdwg.org/dwc/terms/Painting",""
 "Logo:label","Label for Logo http://rs.tdwg.org/dwc/terms/Logo",""
