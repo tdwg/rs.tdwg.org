@@ -17,7 +17,7 @@
 "associatedOrganisms:dcterms_description","Description for Associated Organisms http://rs.tdwg.org/dwc/terms/associatedOrganisms","此術語可用於提供與其他出現紀錄關聯的清單。請注意，資源關係類別是表示關聯的替代方式，且能提供更詳細的資訊。建議最佳實務做法是使用空格、垂直線、空格（ | ）分隔。"
 "associatedReferences:label","Label for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences","相關參考資料"
 "associatedReferences:rdfs_comment","Comment for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences","與此出現紀錄相關的文獻(如出版刊物、學術引用、全球唯一識別碼或URI等)列表(使用標點符號分隔)。"
-"associatedReferences:dcterms_description","Description for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences",""
+"associatedReferences:dcterms_description","Description for Associated References http://rs.tdwg.org/dwc/terms/associatedReferences","。"
 "associatedSequences:label","Label for Associated Sequences http://rs.tdwg.org/dwc/terms/associatedSequences","相關基因序列"
 "associatedSequences:rdfs_comment","Comment for Associated Sequences http://rs.tdwg.org/dwc/terms/associatedSequences","與此出現紀錄相關的遺傳序列(如出版刊物、全球唯一識別碼或URI等)列表(使用標點符號分隔)。"
 "associatedTaxa:label","Label for Associated Taxa http://rs.tdwg.org/dwc/terms/associatedTaxa","相關物種"
