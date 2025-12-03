@@ -47,7 +47,7 @@
 "p0014:definition","Definition for thorax http://rs.tdwg.org/dwc/terms/p0014","Střední část těla hmyzu nesoucí pohybové končetiny"
 "p0015:label","Label for abdomen http://rs.tdwg.org/dwc/terms/p0015","břicho"
 "p0015:examples","Examples for abdomen http://rs.tdwg.org/dwc/terms/p0015","https://commons.wikimedia.org/wiki/File:Halictus_scabiosae,_specimen_exonie54,_from_Botevgrad,_Bulgaria_10_(dorsal,_abdomen).jpg"
-"p0015:definition","Definition for abdomen http://rs.tdwg.org/dwc/terms/p0015",""
+"p0015:definition","Definition for abdomen http://rs.tdwg.org/dwc/terms/p0015","Nejzadnější část těla hmyzu"
 "p0016:label","Label for leg http://rs.tdwg.org/dwc/terms/p0016","noha"
 "p0016:examples","Examples for leg http://rs.tdwg.org/dwc/terms/p0016","https://mczbase.mcz.harvard.edu/specimen_images/entomology/large/MCZ-ENT00000547_Halictus_albitarsis_hlg.jpg"
 "p0016:definition","Definition for leg http://rs.tdwg.org/dwc/terms/p0016","Končetina určená k chůzi"
