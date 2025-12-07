@@ -143,5 +143,5 @@
 "verbatimSRS:rdfs_comment","Comment for Verbatim SRS http://rs.tdwg.org/dwc/terms/verbatimSRS","Elipsoid, geodetický datový systém nebo prostorový referenční systém (SRS), na kterém jsou založeny souřadnice uvedené v verbatimLatitude a verbatimLongitude nebo verbatimCoordinates."
 "verbatimSRS:dcterms_description","Description for Verbatim SRS http://rs.tdwg.org/dwc/terms/verbatimSRS","Doporučeným postupem je použít kód EPSG systému SRS, pokud je znám. V opačném případě použijte řízený slovník pro název nebo kód geodetického datumu, pokud je znám. V opačném případě použijte řízený slovník pro název nebo kód elipsoidu, pokud je znám. Pokud není znám žádný z těchto údajů, použijte hodnotu `unknown`."
 "waterBody:label","Label for Water Body http://rs.tdwg.org/dwc/terms/waterBody","Vodní plocha"
-"waterBody:rdfs_comment","Comment for Water Body http://rs.tdwg.org/dwc/terms/waterBody",""
+"waterBody:rdfs_comment","Comment for Water Body http://rs.tdwg.org/dwc/terms/waterBody","Název vodního útvaru, který se v dané lokalitě nachází. Doporučeným postupem je použití řízeného slovníku, jako je například Getty Thesaurus of Geographic Names."
 "waterBody:dcterms_description","Description for Water Body http://rs.tdwg.org/dwc/terms/waterBody","Doporučeným osvědčeným postupem je používat řízený slovník, například Getty Thesaurus of Geographic Names."
