@@ -121,7 +121,7 @@
 "pointRadiusSpatialFit:label","Label for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit","Prostorové přizpůsobení bodu poloměru"
 "pointRadiusSpatialFit:rdfs_comment","Comment for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit",""
 "pointRadiusSpatialFit:dcterms_description","Description for Point Radius Spatial Fit http://rs.tdwg.org/dwc/terms/pointRadiusSpatialFit","Podrobné vysvětlení s grafickými příklady lze nalézt v publikaci Georeferencing Best Practices, Chapman a Wieczorek, 2020 (https://doi.org/10.15468/doc-gg7h-s853)."
-"stateProvince:label","Label for State Province http://rs.tdwg.org/dwc/terms/stateProvince",""
+"stateProvince:label","Label for State Province http://rs.tdwg.org/dwc/terms/stateProvince","Stát / kraj"
 "stateProvince:rdfs_comment","Comment for State Province http://rs.tdwg.org/dwc/terms/stateProvince","Název správního celku menšího než stát (stát, provincie, kanton, katastr, region atd.), ve kterém se nachází daná lokalita."
 "stateProvince:dcterms_description","Description for State Province http://rs.tdwg.org/dwc/terms/stateProvince","Doporučeným osvědčeným postupem je používat řízený slovník, například Getty Thesaurus of Geographic Names."
 "verbatimCoordinates:label","Label for Verbatim Coordinates http://rs.tdwg.org/dwc/terms/verbatimCoordinates","Přesné souřadnice"
