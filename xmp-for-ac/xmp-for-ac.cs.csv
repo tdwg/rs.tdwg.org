@@ -7,4 +7,4 @@
 "MetadataDate:dcterms_description","Description for Metadata Date http://rs.tdwg.org/dwc/terms/MetadataDate","Nejedná se o dcterms:modified, které odkazuje na samotný zdroj, nikoli na jeho metadata. Další vysvětlení a příklady najdete také ve wikipedii IS0 8601, https://en.wikipedia.org/wiki/ISO_8601."
 "Rating:label","Label for Rating http://rs.tdwg.org/dwc/terms/Rating","Hodnocení"
 "Rating:rdfs_comment","Comment for Rating http://rs.tdwg.org/dwc/terms/Rating","Hodnocení tohoto souboru přidělené uživatelem. Hodnota musí být -1 nebo v rozmezí [0..5], kde -1 znamená „zamítnuto“ a 0 znamená „nehodnoceno“.  Pokud xmp:Rating není k dispozici, měla by být použita hodnota 0."
-"Rating:dcterms_description","Description for Rating http://rs.tdwg.org/dwc/terms/Rating",""
+"Rating:dcterms_description","Description for Rating http://rs.tdwg.org/dwc/terms/Rating","Původ hodnocení není sdělen. Může být například založeno na zpětné vazbě uživatelů nebo na redakčních hodnoceních. Pod pojmem „přidělené uživatelem“ se rozumí přidělené původcem nebo editorem záznamu, který tento termín používá."
