@@ -1,6 +1,6 @@
 "identifier","context","text"
 "r:label","Label for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r","koncepční schéma orientace na předmět"
-"r:definition","Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r",""
+"r:definition","Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r","koncepční schéma SKOS pro orientaci"
 "r0000:label","Label for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000","nespecifikovaná orientace"
 "r0000:definition","Definition for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000","orientace není známa, protože není specifikována"
 "r0001:label","Label for anterior side http://rs.tdwg.org/dwc/terms/r0001","přední strana"
