@@ -1,5 +1,5 @@
 "identifier","context","text"
-"p:label","Label for subject part concept scheme http://rs.tdwg.org/dwc/terms/p",""
+"p:label","Label for subject part concept scheme http://rs.tdwg.org/dwc/terms/p","koncepční schéma předmětu"
 "p:definition","Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p","koncepční schéma SKOS pro ac:subjectOrientation"
 "p0000:label","Label for unspecified part http://rs.tdwg.org/dwc/terms/p0000","nespecifikovaná část"
 "p0000:definition","Definition for unspecified part http://rs.tdwg.org/dwc/terms/p0000","Část není známa, protože není specifikována"
