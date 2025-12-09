@@ -2,3 +2,4 @@ identifier,context,text
 Credit:label,Label for Credit http://rs.tdwg.org/dwc/terms/Credit,Credit
 Credit:rdfs_comment,Comment for Credit http://rs.tdwg.org/dwc/terms/Credit,The credit to person(s) and/or organisation(s) required by the supplier of the item to be used when published. This is a free-text field.
 Credit:dcterms_description,Description for Credit http://rs.tdwg.org/dwc/terms/Credit,"IPTC also refers to this generically as a ""Credit Line"" as it is frequently displayed with the media."
+Credit:skos_scopeNote,Usage for Credit http://rs.tdwg.org/dwc/terms/Credit,"free text for ""Please cite this as ..."""
