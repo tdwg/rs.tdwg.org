@@ -2,3 +2,4 @@
 "sample_rate:label","Label for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate",""
 "sample_rate:rdfs_comment","Comment for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate",""
 "sample_rate:dcterms_description","Description for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate",""
+"sample_rate:skos_scopeNote","Usage for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate",""
