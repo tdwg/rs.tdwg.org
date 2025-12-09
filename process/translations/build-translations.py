@@ -70,7 +70,10 @@ translate_these_columns = {
     # These for establishmentMeans, degreeOfEstablishment, pathway, latimer
     'definition': 'Definition',
     'usage': 'Usage',
-    'notes': 'Notes'
+    'notes': 'Notes',
+
+    # These for AC (dc-for-ac, audubon, xmp-for-ac, photoshop-for-ac, dwc-for-ac, mo-for-ac, Iptc4xmpExt-for-ac, exif-for-ac, xmpRights-for-ac, dcterms-for-ac)
+    'skos_scopeNote': 'Usage'
 }
 
 # Output structure (defined in crowdin.yml)
