@@ -2,6 +2,8 @@
 "PixelXDimension:label","Label for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension","Šířka obrázku"
 "PixelXDimension:rdfs_comment","Comment for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension","Informace specifické pro komprimovaná data. Při záznamu komprimovaného souboru se v tomto tagu zaznamená platná šířka smysluplného obrazu, bez ohledu na to, zda jsou v souboru výplňová data nebo značka restartu.  Tento tag nesmí být přítomen v nekomprimovaném souboru."
 "PixelXDimension:dcterms_description","Description for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension","Audiovisual Core používá tento termín pro jakýkoli typ obrázku, včetně těch, na které se nevztahuje EXIF, a těch, které nejsou komprimovaným typem souboru, jako je JPEG."
+"PixelXDimension:skos_scopeNote","Usage for Image Width http://rs.tdwg.org/dwc/terms/PixelXDimension",""
 "PixelYDimension:label","Label for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension","Výška obrázku"
 "PixelYDimension:rdfs_comment","Comment for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension","Informace specifické pro komprimovaná data. Při záznamu komprimovaného souboru se v tomto tagu zaznamená platná výška smysluplného obrazu, bez ohledu na to, zda jsou v souboru výplňová data nebo značka restartu.  Tento tag nesmí být přítomen v nekomprimovaném souboru."
 "PixelYDimension:dcterms_description","Description for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension","Audiovisual Core používá tento termín pro jakýkoli typ obrázku, včetně těch, na které se nevztahuje EXIF, a těch, které nejsou komprimovaným typem souboru, jako je JPEG."
+"PixelYDimension:skos_scopeNote","Usage for Image Height http://rs.tdwg.org/dwc/terms/PixelYDimension",""
