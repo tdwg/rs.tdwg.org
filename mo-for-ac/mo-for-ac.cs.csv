@@ -2,3 +2,4 @@
 "sample_rate:label","Label for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate","Vzorkovací frekvence"
 "sample_rate:rdfs_comment","Comment for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate","Přiřadí digitální signál k jeho vzorkovací frekvenci."
 "sample_rate:dcterms_description","Description for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate","Například přístupový bod služby může mít konkrétní rozlišení, kvalitu nebo formát. „Vzorkovací frekvence“ se liší od souvisejícího pojmu „přenosová rychlost“ u komprimovaných souborů, jako jsou MP3, a vztahuje se jak na nekomprimované, tak na komprimované soubory. Další informace naleznete na adrese http://musicontology.com/specification/#term-sample_rate."
+"sample_rate:skos_scopeNote","Usage for Sample Rate http://rs.tdwg.org/dwc/terms/sample_rate",""
