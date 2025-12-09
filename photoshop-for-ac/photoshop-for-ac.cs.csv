@@ -2,3 +2,4 @@
 "Credit:label","Label for Credit http://rs.tdwg.org/dwc/terms/Credit","Autor"
 "Credit:rdfs_comment","Comment for Credit http://rs.tdwg.org/dwc/terms/Credit","Údaje o osobě (osobách) a/nebo organizaci (organizacích), které dodavatel daného předmětu požaduje uvést při zveřejnění. Jedná se o volné textové pole."
 "Credit:dcterms_description","Description for Credit http://rs.tdwg.org/dwc/terms/Credit","IPTC to také obecně označuje jako „úvěrovou linku“, protože se často zobrazuje spolu s médii."
+"Credit:skos_scopeNote","Usage for Credit http://rs.tdwg.org/dwc/terms/Credit",""
