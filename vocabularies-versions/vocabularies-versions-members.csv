@@ -243,3 +243,15 @@ http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/terms/2
 http://rs.tdwg.org/version/dwc/2025-07-10,http://rs.tdwg.org/dwc/version/ac/2025-06-12
 http://rs.tdwg.org/version/eco/2025-07-10,http://rs.tdwg.org/eco/version/terms/2025-07-10
 http://rs.tdwg.org/version/eco/2025-07-10,http://rs.tdwg.org/eco/version/iri/2025-07-10
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/terms/2025-12-24
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/Iptc4xmpExt/2020-01-27
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/exif/2023-09-05
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/photoshop/2020-01-27
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/xmp/2021-10-05
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/xmpRights/2023-09-05
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/dc/2023-09-05
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/dcterms/2023-09-05
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/dwc/2020-10-28
+http://rs.tdwg.org/version/ac/2025-12-24,http://rs.tdwg.org/ac/version/mo/2020-10-13
+http://rs.tdwg.org/version/2003/2025-12-24,http://www.w3.org/2003/version/12/2025-12-24
+http://rs.tdwg.org/version/ontologies/2025-12-24,http://id.loc.gov/ontologies/version/bibframe/2025-12-24
