@@ -1,6 +1,6 @@
 database,redirect,type,namespace,prefix,useNamespace,connector
-audubon,yes,term,ac,https://ac.tdwg.org/termlist/#,yes,_
-audubon-versions,no,termVersion,ac,,,
+audubon,yes,term,bf,https://ac.tdwg.org/termlist/#,no,
+audubon-versions,no,termVersion,bf,,,
 curatorial,no,term,dwccuratorial,,,
 curatorial-versions,no,termVersion,dwccuratorial,,,
 dwcore,no,term,dwcore,,,
@@ -68,3 +68,7 @@ dc-for-dwc,yes,term,dc,https://dwc.tdwg.org/list/#,yes,_
 dc-for-dwc-versions,no,termVersion,dc,,,
 dcterms-for-dwc,yes,term,dcterms,https://dwc.tdwg.org/list/#,yes,_
 dcterms-for-dwc-versions,no,termVersion,dcterms,,,
+exif-for-ac,yes,term,exif,https://ac.tdwg.org/termlist/#,no,
+exif-for-ac-versions,no,termVersion,exif,,,
+ac3dtype,yes,term,ac3dtype,,no,
+ac3dtype-versions,no,termVersion,ac3dtype,,,
