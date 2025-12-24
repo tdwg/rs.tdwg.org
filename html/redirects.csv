@@ -70,3 +70,5 @@ dcterms-for-dwc,yes,term,dcterms,https://dwc.tdwg.org/list/#,yes,_
 dcterms-for-dwc-versions,no,termVersion,dcterms,,,
 exif-for-ac,yes,term,exif,https://ac.tdwg.org/termlist/#,no,
 exif-for-ac-versions,no,termVersion,exif,,,
+ac3dtype,yes,term,ac3dtype,,no,
+ac3dtype-versions,no,termVersion,ac3dtype,,,

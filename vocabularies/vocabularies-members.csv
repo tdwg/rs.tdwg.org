@@ -36,3 +36,4 @@ http://rs.tdwg.org/ltc/,http://rs.tdwg.org/ltc/schema/
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/dwc/ac/
 http://rs.tdwg.org/2003/,http://www.w3.org/2003/12/exif/ns#
 http://rs.tdwg.org/ontologies/,http://id.loc.gov/ontologies/bibframe/
+http://rs.tdwg.org/ac3dtype/,http://rs.tdwg.org/ac3dtype/values/
