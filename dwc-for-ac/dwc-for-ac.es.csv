@@ -18,7 +18,7 @@
 "lifeStage:dcterms_description","Description for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage",""
 "lifeStage:skos_scopeNote","Usage for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage",""
 "nameAccordingTo:label","Label for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo","Nombre de acuerdo a"
-"nameAccordingTo:rdfs_comment","Comment for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo",""
+"nameAccordingTo:rdfs_comment","Comment for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo","La referencia a la fuente en la que está definida o implícita la definición conceptual del taxón documentado en scientificName, tradicionalmente representado por el Latín “sensu” o “sec.” (de secundum, que significa “según”). Para los taxones que resultan de las identificaciones, una referencia a las claves, monografías, expertos y otras fuentes debe ser provista."
 "nameAccordingTo:dcterms_description","Description for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo",""
 "nameAccordingTo:skos_scopeNote","Usage for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo",""
 "preparations:label","Label for Subject Preparation Technique http://rs.tdwg.org/dwc/terms/preparations",""
