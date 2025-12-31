@@ -85,3 +85,15 @@ http://rs.tdwg.org/ac/terms/version/variant-2023-09-05,variant-2021-02-01
 http://rs.tdwg.org/ac/terms/version/variantLiteral-2023-09-05,variantLiteral-2021-02-01
 http://rs.tdwg.org/ac/terms/version/subjectOrientationLiteral-2023-09-05,subjectOrientationLiteral-2022-02-23
 http://rs.tdwg.org/ac/terms/version/subjectPartLiteral-2023-09-05,subjectPartLiteral-2022-02-23
+http://rs.tdwg.org/ac/terms/version/ac:3DResourceType-2025-12-24,ac:3DResourceType-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:colorBoolean-2025-12-24,ac:colorBoolean-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:faceCount-2025-12-24,ac:faceCount-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:normalsBoolean-2025-12-24,ac:normalsBoolean-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:numberOfImages-2025-12-24,ac:numberOfImages-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:pixelXSpacing-2025-12-24,ac:pixelXSpacing-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:pixelYSpacing-2025-12-24,ac:pixelYSpacing-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:pixelZSpacing-2025-12-24,ac:pixelZSpacing-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:pointCount-2025-12-24,ac:pointCount-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:resourceCreationTechnique-2025-12-24,ac:resourceCreationTechnique-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:textureMapType-2025-12-24,ac:textureMapType-2025-12-24
+http://rs.tdwg.org/ac/terms/version/ac:uvCoordinatesBoolean-2025-12-24,ac:uvCoordinatesBoolean-2025-12-24
