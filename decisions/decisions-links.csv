@@ -1111,3 +1111,10 @@ http://rs.tdwg.org/eco/iri/targetLifeStageScope,decision-2025-07-10_51
 http://rs.tdwg.org/eco/iri/targetTaxonomicScope,decision-2025-07-10_51
 http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols,decision-2025-07-10_51
 http://rs.tdwg.org/eco/iri/taxonCompletenessReported,decision-2025-07-10_51
+http://rs.tdwg.org/ac/terms/subjectCategoryVocabulary,decision-2026-01-23_52
+http://rs.tdwg.org/ac/terms/filterLowPass,decision-2026-01-23_52
+http://rs.tdwg.org/ac/terms/filterHighPass,decision-2026-01-23_52
+http://rs.tdwg.org/ac/terms/Digital3DResource,decision-2026-01-23_52
+http://rs.tdwg.org/ac/terms/commentDate,decision-2026-01-23_52
+http://rs.tdwg.org/ac/terms/CVtermLiteral,decision-2026-01-23_52
+http://rs.tdwg.org/ac/Iptc4xmpExt/CVterm,decision-2026-01-23_52
