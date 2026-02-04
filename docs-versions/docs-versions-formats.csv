@@ -26,7 +26,7 @@ http://rs.tdwg.org/ac/doc/termlist/2021-02-01,text/markdown,https://raw.githubus
 http://rs.tdwg.org/ac/doc/termlist/2021-10-05,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist-2022-02-23.md
 http://rs.tdwg.org/ac/doc/termlist/2022-02-23,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist.md
 http://rs.tdwg.org/ac/doc/termlist/2023-02-24,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist/2023-02-24.md
-http://rs.tdwg.org/ac/doc/termlist/2023-09-05,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist/index.md
+http://rs.tdwg.org/ac/doc/termlist/2023-09-05,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist/2023-09-05.md
 http://rs.tdwg.org/ac/doc/variant/2020-10-13,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant-2020-10-13.md
 http://rs.tdwg.org/ac/doc/variant/2023-02-24,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/variant.md
 http://rs.tdwg.org/apn/doc/data/1992,print,urn:isbn:1842460854
@@ -124,3 +124,5 @@ http://rs.tdwg.org/dwc/doc/chrono/2025-07-10,text/markdown,https://raw.githubuse
 http://rs.tdwg.org/dwc/doc/doe/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/doe/index.md
 http://rs.tdwg.org/dwc/doc/em/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/em/index.md
 http://rs.tdwg.org/dwc/doc/pw/2025-07-10,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/pw/index.md
+http://rs.tdwg.org/ac/doc/termlist/2026-01-23,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/termlist/index.md
+http://rs.tdwg.org/ac/doc/cd/2026-01-23,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/cd/index.md
