@@ -70,3 +70,5 @@ dcterms-for-dwc,yes,term,dcterms,https://dwc.tdwg.org/list/#,yes,_
 dcterms-for-dwc-versions,no,termVersion,dcterms,,,
 Iptc4xmpExt-for-ac,yes,term,Iptc4xmpExt,https://ac.tdwg.org/termlist/#,yes,_
 Iptc4xmpExt-for-ac-versions,no,termVersion,Iptc4xmpExt,,,
+accd,yes,term,accd,https://ac.tdwg.org/cd/#,yes,_
+accd-versions,no,termVersion,accd,,,
