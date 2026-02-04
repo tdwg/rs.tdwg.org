@@ -1008,9 +1008,11 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
             standards_table[rowNumber][standard_modified] = date_issued
             standards_table[rowNumber][modified_datetime] = isoTime(local_offset_from_utc)
 
-            # Update the standard_label and standard_description columns from the standard configuration file
-            standards_table[rowNumber][standard_label] = config_vocab['standard_label']
-            standards_table[rowNumber][standard_description] = config_vocab['standard_description']
+            # Update the standard_label and standard_description columns from the standard configuration file, if they exist.
+            if 'standard_label' in config_vocab:
+                standards_table[rowNumber][standard_label] = config_vocab['standard_label']
+            if 'standard_description' in config_vocab:
+                standards_table[rowNumber][standard_description] = config_vocab['standard_description']
 
     if aNewStandard: # this will happen if the standard did not previously exist
         pass
@@ -1106,8 +1108,15 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
         newStandardRow[version_uri] = standardVersionUri
         newStandardRow[version_issued] = date_issued
         newStandardRow[status_column] = 'recommended'
-        newStandardRow[label_column] = config_vocab['standard_label']
-        newStandardRow[description_column] = config_vocab['standard_description']
+        # Replace the standard label and description if a new one is provided. Otherwise, use the previous one.
+        if 'standard_label' in config_vocab:
+            newStandardRow[label_column] = config_vocab['standard_label']
+        else:
+            newStandardRow[label_column] = standards_versions_metadata[mostRecentStandardNumber][label_column]
+        if 'standard_description' in config_vocab:
+            newStandardRow[description_column] = config_vocab['standard_description']
+        else:
+            newStandardRow[description_column] = standards_versions_metadata[mostRecentStandardNumber][description_column]
         newStandardRow[standard_uri] = standardUri
 
         # append the new term list row to the old list of term lists
