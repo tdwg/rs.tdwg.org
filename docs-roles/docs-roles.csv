@@ -229,23 +229,6 @@ http://rs.tdwg.org/ac/doc/part/,,,,,,,https://orcid.org/0000-0002-0388-1187,cont
 http://rs.tdwg.org/ac/doc/part/,,,,,,,https://orcid.org/0000-0003-4277-8948,contributor,Mervin E. Pérez
 http://rs.tdwg.org/ac/doc/part/,,,,,,,https://orcid.org/0000-0003-2440-7625,contributor,Randy Singer
 http://rs.tdwg.org/ac/doc/part/,,,,,,,https://orcid.org/0000-0001-8939-0057,contributor,Anna M. L. Klompen
-http://rs.tdwg.org/ac/doc/termlist/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
-http://rs.tdwg.org/ac/doc/termlist/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
-http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-0768-1286,,,,,,author,Richard Pyle
-http://rs.tdwg.org/ac/doc/termlist/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
 http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0003-1144-0290,contributor,John Wieczorek
 http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0001-7757-1889,contributor,Markus Döring
 http://rs.tdwg.org/dwc/terms/guides/xml/,,,,,,,https://orcid.org/0000-0002-7104-7266,contributor,Renato De Giovanni
@@ -405,3 +388,24 @@ http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0003-1144-0290,contr
 http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0003-0174-3239,contributor,John R.U. Wilson
 http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula F Zermoglio
 http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0001-8338-5134,contributor,Annie Simpson
+http://rs.tdwg.org/ac/doc/termlist/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4365-3135,,,,,,author,Steve Baskauf
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-8234-0599,,,,,,author,Mihail Carausu
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3425-6499,,,,,,author,Vishwas Chavan
+http://rs.tdwg.org/ac/doc/termlist/,,http://www.wikidata.org/entity/Q51883873,,,,,,author,José Cuadra
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-2541-5822,,,,,,author,Chris Freeland
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-5172-8577,,,,,,author,Patrick Leary
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-1593-1417,,,,,,author,Dimitry Mozzherin
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-3850-9983,,,,,,author,Greg Riccardi
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-4176-2274,,,,,,author,Ivan Teage
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
+http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-0768-1286,,,,,,author,Richard Pyle
+http://rs.tdwg.org/ac/doc/termlist/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
+http://rs.tdwg.org/ac/doc/cd/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
+http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
+http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
+http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0003-2224-6821,,,,,,author,Niels Klazenga
