@@ -3,7 +3,7 @@
 
 # Date assigned to all versions, usually the date of approval by the Executive Committee.
 # It is appended to all version IRIs. Format: YYYY-MM-DD
-date_issued: '2025-07-10'
+date_issued: '2026-01-23'
 
 # UTC offset for the computer running the script (i.e. the appropriate offset for values produced by the
 # Python method datetime.datime.now() .
@@ -23,16 +23,16 @@ vocab_type: 1
 # Permanent IRI for the list of terms document that is associated with this vocabulary.
 # This is needed to automatically update the date_modified value of the list of terms document 
 # using the date_issued value above.
-list_of_terms_iri: http://rs.tdwg.org/dwc/doc/eco/
+list_of_terms_iri: http://rs.tdwg.org/ac/doc/termlist/
 
 # IRI of containing standard. Existing standards IRIs:
 # Darwin Core - http://www.tdwg.org/standards/450
 # Audiovisual Core - http://www.tdwg.org/standards/638
 # Latimer Core - http://www.tdwg.org/standards/x
-standard: http://www.tdwg.org/standards/450
+standard: http://www.tdwg.org/standards/638
 
 # Text to describe the Executive Committee Decision that approved the change.
-decisions_text: Namespace errata in Humboldt Extension corrected by Darwin Core Maintenance Group. See https://github.com/tdwg/dwc/issues/559
+decisions_text: Audiovisual Core term updates for CVterm, Digital3DResource, and audio filters
 
 namespaces:
 
@@ -40,16 +40,16 @@ namespaces:
 
 # For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
 # term lists, MUST follow conventional TDWG IRI patterns.
-- namespace_uri: http://rs.tdwg.org/eco/terms/
+- namespace_uri: http://rs.tdwg.org/ac/terms/
 
   # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: eco
+  pref_namespace_prefix: ac
 
   # Database name for associated directories and files in the rs.tdwg.org repository. 
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: humboldt
+  database: audubon
 
   # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
   # or if the terms are borrowed from another TDWG standard. 
@@ -67,7 +67,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/eco-2025-07-10/eco.csv
+  modifications_file_path: ac-revisions/ac-revisions-2026-01-23/audubon_2026-01-23.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -83,16 +83,16 @@ namespaces:
   termlist_uri: ''
 
   # Label used for the term list in machine-readable metadata.
-  label: Humboldt Extension terms
+  label: Core terms defined by Audiovisual Core
 
   # Description of the term list used in machine-readable metadata.
-  description: This list includes terms defined by the Humboldt Extension for Ecological Inventories.
+  description: This term list includes all currently valid terms that have been defined in the core Audiovisual Core namespace ac:.
 
   # The following values are used to set up redirects to the list of terms document.
 
   # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
   # dereferencing terms and an HTML representation is requested. 
-  prepend_url: https://eco.tdwg.org/list/#
+  prepend_url: https://ac.tdwg.org/termlist/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
   use_namespace_in_fragment: true
@@ -101,21 +101,21 @@ namespaces:
   # If use_nameapace_in_fragment is false, this value is ignored.
   separator: '_'  
 
-- namespace_uri: http://rs.tdwg.org/eco/iri/
+- namespace_uri: http://iptc.org/std/Iptc4xmpExt/2008-02-29/
 
   # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: ecoiri
+  pref_namespace_prefix: Iptc4xmpExt
 
   # Database name for associated directories and files in the rs.tdwg.org repository. 
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: humboldt_iri
+  database: Iptc4xmpExt-for-ac
 
   # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
   # or if the terms are borrowed from another TDWG standard. 
   # Set to false if namespace issued by TDWG and not borrowed from another standard.
-  borrowed: false
+  borrowed: true
 
   # MUST be set to true if it is a new term list that has never been processed before. 
   # Note that there are extra configuration files that must be set up for term lists that are 
@@ -128,7 +128,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/eco-2025-07-10/ecoiri.csv
+  modifications_file_path: ac-revisions/ac-revisions-2026-01-23/Iptc4xmpExt-for-ac_2026-01-23.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -141,19 +141,19 @@ namespaces:
   # SHOULD be a short, memorable string commonly associated with the borrowed vocabulary. Examples:
   # http://rs.tdwg.org/ac/xmp/ for the XMP terms borrowed by the Audiovisual Core
   # http://rs.tdwg.org/dwc/dcterms/ for the Dublin Core dcterms: terms borrowed by the Darwin Core
-  termlist_uri: ''
+  termlist_uri: http://rs.tdwg.org/ac/Iptc4xmpExt/
 
   # Label used for the term list in machine-readable metadata.
-  label: Humboldt Extension IRI terms
+  label: IPTC Photo Metadata Extension Iptc4xmpExt namespace terms borrowed by Audiovisual Core
 
   # Description of the term list used in machine-readable metadata.
-  description: This list includes terms defined by the Humboldt Extension for Ecological Inventories for use with IRI values.
+  description: This list includes Iptc4xmpExt namespace terms borrowed by Audiovisual Core from the IPTC Standard for Photo Metadata (http://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata-201007_1.pdf).  Its terms are not dereferenceable.
 
   # The following values are used to set up redirects to the list of terms document.
 
   # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
   # dereferencing terms and an HTML representation is requested. 
-  prepend_url: https://eco.tdwg.org/list/#
+  prepend_url: https://ac.tdwg.org/termlist/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
   use_namespace_in_fragment: true
