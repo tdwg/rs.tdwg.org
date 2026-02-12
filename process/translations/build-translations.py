@@ -36,6 +36,7 @@ termfiles_to_translate = [
     'dcterms-for-ltc/dcterms-for-ltc',
 
     # Audiovisual Core
+    'audubon/audubon',
     'acorient/acorient',
     'acpart/acpart',
     'acsubtype/acsubtype',
