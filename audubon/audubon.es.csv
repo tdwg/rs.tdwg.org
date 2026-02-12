@@ -1,5 +1,5 @@
 "identifier","context","text"
-"accessURI:label","Label for Access URI http://rs.tdwg.org/dwc/terms/accessURI",""
+"accessURI:label","Label for Access URI http://rs.tdwg.org/dwc/terms/accessURI","URI de acceso"
 "accessURI:rdfs_comment","Comment for Access URI http://rs.tdwg.org/dwc/terms/accessURI",""
 "accessURI:dcterms_description","Description for Access URI http://rs.tdwg.org/dwc/terms/accessURI",""
 "accessURI:skos_scopeNote","Usage for Access URI http://rs.tdwg.org/dwc/terms/accessURI",""
