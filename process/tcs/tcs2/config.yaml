@@ -1,0 +1,51 @@
+date_issued: '2025-12-11'
+local_offset_from_utc: "+10:00"
+vocab_type: 1
+list_of_terms_iri: http://rs.tdwg.org/tcs/doc/list/
+standard: http://www.tdwg.org/standards/177
+decisions_text: TCS 2
+
+namespaces:
+- namespace_uri: http://rs.tdwg.org/tcs/terms/
+  pref_namespace_prefix: tcs
+  database: tcs
+  borrowed: false
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: tcs/tcs2/tcs.csv
+  termlist_uri: ''
+  label: Taxon Concept Standards (TCS) terms
+  description: This list includes terms defined by the Taxon Concept Standard (TCS).
+  prepend_url: https://tcs.tdwg.org/terms/#
+  use_namespace_in_fragment: false
+  separator: '_'  
+
+- namespace_uri: http://rs.tdwg.org/dwc/terms/
+  pref_namespace_prefix: dwc
+  database: dwc-for-tcs
+  borrowed: true
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: tcs/tcs2/dwc-for-tcs.csv
+  termlist_uri: http://rs.tdwg.org/tcs/dwc/
+  label: Darwin Core terms borrowed by the TCS
+  description: This list includes Darwin Core terms that are borrowed by TCS.
+  prepend_url: https://tcs.tdwg.org/terms/#
+  use_namespace_in_fragment: true
+  separator: '_'  
+
+- namespace_uri: http://purl.org/dc/terms/
+  pref_namespace_prefix: dcterms
+  database: dcterms-for-tcs
+  borrowed: true
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: tcs/tcs2/dcterms-for-tcs.csv
+  termlist_uri: http://rs.tdwg.org/tcs/dcterms/
+  label: Dublin Core terms borrowed by TCS
+  description: >-
+      This list includes Dublin Core (http://rs.tdwg.org/tcs/dcterms/) terms
+      that are borrowed by TCS.
+  prepend_url: https://tcs.tdwg.org/terms/#
+  use_namespace_in_fragment: true
+  separator: '_'
