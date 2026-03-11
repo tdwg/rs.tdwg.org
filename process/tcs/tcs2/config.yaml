@@ -17,7 +17,7 @@ namespaces:
   label: Taxon Concept Standards (TCS) terms
   description: This list includes terms defined by the Taxon Concept Standard (TCS).
   prepend_url: https://tcs.tdwg.org/terms/#
-  use_namespace_in_fragment: false
+  use_namespace_in_fragment: true
   separator: '_'  
 
 - namespace_uri: http://rs.tdwg.org/dwc/terms/
