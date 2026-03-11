@@ -1,0 +1,16 @@
+vocabulary_label: TCS main vocabulary
+vocabulary_description: >-
+    This vocabulary contains TCS terms suitable for use with both literal and
+    IRI values
+dc_creator: TDWG Taxon Concept Standard Maintenance Group
+dcterms_license: https://creativecommons.org/licenses/by/4.0/
+standard_label: TCS
+standard_description: >-
+    The Taxon Concept Standard (TCS), is the TDWG standard for exchange of
+    taxonomic and nomenclatural data. Formerly an XML Schema, and called Taxon
+    Concept Schema, TCS is now a vocabulary standard with terms that can be used
+    in many formats, including CSV, JSON and RDF, and for individual objects as
+    well as entire data sets. TCS can be used alongside or instead of the Darwin
+    Core Taxon class. It defines Taxon Concept, Taxon Name, Taxon Concept
+    Mapping and Nomenclatural Type classes, which provide a semantic framework
+    for, and allow more accurate transfer of, taxonomic and nomenclatural data.
