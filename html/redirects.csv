@@ -72,3 +72,9 @@ Iptc4xmpExt-for-ac,yes,term,Iptc4xmpExt,https://ac.tdwg.org/termlist/#,yes,_
 Iptc4xmpExt-for-ac-versions,no,termVersion,Iptc4xmpExt,,,
 accd,yes,term,accd,https://ac.tdwg.org/cd/#,yes,_
 accd-versions,no,termVersion,accd,,,
+tcs,yes,term,tcs,https://tcs.tdwg.org/terms/#,no,
+tcs-versions,no,termVersion,tcs,,,
+dwc-for-tcs,yes,term,dwc,https://tcs.tdwg.org/terms/#,yes,_
+dwc-for-tcs-versions,no,termVersion,dwc,,,
+dcterms-for-tcs,yes,term,dcterms,https://tcs.tdwg.org/terms/#,yes,_
+dcterms-for-tcs-versions,no,termVersion,dcterms,,,
