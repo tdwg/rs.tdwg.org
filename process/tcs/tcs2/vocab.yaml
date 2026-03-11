@@ -4,7 +4,7 @@ vocabulary_description: >-
     IRI values
 dc_creator: TDWG Taxon Concept Standard Maintenance Group
 dcterms_license: https://creativecommons.org/licenses/by/4.0/
-standard_label: TCS
+standard_label: Taxon Concept Standard (TCS)
 standard_description: >-
     The Taxon Concept Standard (TCS), is the TDWG standard for exchange of
     taxonomic and nomenclatural data. Formerly an XML Schema, and called Taxon

@@ -75,3 +75,4 @@ http://rs.tdwg.org/tag/doc/boolean/,text/markdown,https://raw.githubusercontent.
 http://rs.tdwg.org/ltc/doc/list/,text/html,https://raw.githubusercontent.com/tdwg/ltc/main/docs/terms/index.html
 http://rs.tdwg.org/dwc/doc/chrono/,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/master/docs/list/index.md
 http://rs.tdwg.org/ac/doc/cd/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/cd/index.md
+http://rs.tdwg.org/tcs/doc/terms/,text/markdown,https://raw.githubusercontent.com/tdwg/tcs2/refs/heads/master/docs/terms/index.md
