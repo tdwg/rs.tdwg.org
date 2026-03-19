@@ -1,0 +1,2 @@
+term_localName,label,skos_broader,skos_inScheme,definition,definition_derived_from,usage,notes,examples,controlled_value_string,type
+r,subject orientation concept scheme,,,a SKOS concept scheme for the orientation of parts of organisms in Media Entities,,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
