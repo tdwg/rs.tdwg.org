@@ -388,6 +388,22 @@ http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0003-1144-0290,contr
 http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0003-0174-3239,contributor,John R.U. Wilson
 http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0002-6056-5084,contributor,Paula F Zermoglio
 http://rs.tdwg.org/dwc/doc/pw/,,,,,,,https://orcid.org/0000-0001-8338-5134,contributor,Annie Simpson
+http://rs.tdwg.org/ac/doc/cd/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
+http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
+http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
+http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0003-2224-6821,,,,,,author,Niels Klazenga
+http://rs.tdwg.org/tcs/doc/terms/,https://orcid.org/0000-0003-2224-6821,,,,,,,lead author,Niels Klazenga
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0002-2954-9027,,,,,,author,Greg Whitbread
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0001-9277-2478,,,,,,author,Thierry Bourgoin
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0001-7757-1889,,,,,,author,Markus Döring
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0001-5737-8803,,,,,,author,Anne Fuchs
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-0551-5989,,,,,,author,Jeff Gerbracht
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-0442-8162,,,,,,author,Johan Liljeblad
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0002-6740-2122,,,,,,author,Carlos Martínez Muñoz
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0009-0004-5278-4238,,,,,,author,Mieke Strong
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-2863-2491,,,,,,author,William Ulate
+http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-1031-3249,,,,,,author,Cam Webb
 http://rs.tdwg.org/ac/doc/termlist/,https://orcid.org/0000-0002-6992-9446,,,,,,,lead author,Robert A. Morris
 http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-7023-7386,,,,,,author,Gregor Hagedorn
 http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-0772-0022,,,,,,author,Annette Olson
@@ -405,19 +421,3 @@ http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0001-8068-3769,,,,,,
 http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
 http://rs.tdwg.org/ac/doc/termlist/,,https://orcid.org/0000-0003-0768-1286,,,,,,author,Richard Pyle
 http://rs.tdwg.org/ac/doc/termlist/,,,,,,https://orcid.org/0000-0003-4365-3135,,review manager,Steve Baskauf
-http://rs.tdwg.org/ac/doc/cd/,https://orcid.org/0000-0003-4365-3135,,,,,,,lead author,Steven J Baskauf
-http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0002-5887-9543,,,,,,author,Edward Baker
-http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0001-8068-3769,,,,,,author,Dan Stowell
-http://rs.tdwg.org/ac/doc/cd/,,https://orcid.org/0000-0003-2224-6821,,,,,,author,Niels Klazenga
-http://rs.tdwg.org/tcs/doc/terms/,https://orcid.org/0000-0003-2224-6821,,,,,,,lead author,Niels Klazenga
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0002-2954-9027,,,,,,author,Greg Whitbread
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0002-4852-2567,,,,,,author,Vijay Barve
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0001-9277-2478,,,,,,author,Thierry Bourgoin
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0001-7757-1889,,,,,,author,Markus Döring
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0001-5737-8803,,,,,,author,Anne Fuchs
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-0551-5989,,,,,,author,Jeff Gerbracht
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-0442-8162,,,,,,author,Johan Liljeblad
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0002-6740-2122,,,,,,author,Carlos Martínez Muñoz
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0009-0004-5278-4238,,,,,,author,Mieke Strong
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-2863-2491,,,,,,author,William Ulate
-http://rs.tdwg.org/tcs/doc/terms/,,https://orcid.org/0000-0003-1031-3249,,,,,,author,Cam Webb
