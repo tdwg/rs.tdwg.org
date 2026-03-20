@@ -250,3 +250,7 @@
 "CVtermLiteral:label","Label for Subject Category (literal) http://rs.tdwg.org/dwc/terms/CVtermLiteral",""
 "CVtermLiteral:rdfs_comment","Comment for Subject Category (literal) http://rs.tdwg.org/dwc/terms/CVtermLiteral",""
 "CVtermLiteral:skos_scopeNote","Usage for Subject Category (literal) http://rs.tdwg.org/dwc/terms/CVtermLiteral",""
+"Media:label","Label for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
+"Media:rdfs_comment","Comment for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
+"Media:dcterms_description","Description for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
+"Media:skos_scopeNote","Usage for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
