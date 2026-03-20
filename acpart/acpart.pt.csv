@@ -1,6 +1,6 @@
 "identifier","context","text"
 "p:label","Label for subject part concept scheme http://rs.tdwg.org/dwc/terms/p","esquema de conceito de partes de assunto"
-"p:definition","Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p","um esquema conceitual de SKOS para ac:subjectOrientation"
+"p:definition","Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p",""
 "p0000:label","Label for unspecified part http://rs.tdwg.org/dwc/terms/p0000","parte não especificada"
 "p0000:definition","Definition for unspecified part http://rs.tdwg.org/dwc/terms/p0000","a parte não é conhecida porque não foi especificada"
 "p0001:label","Label for entire organism http://rs.tdwg.org/dwc/terms/p0001","organismo inteiro"
