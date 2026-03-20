@@ -78,3 +78,15 @@ dwc-for-tcs,yes,term,dwc,https://tcs.tdwg.org/terms/#,yes,_
 dwc-for-tcs-versions,no,termVersion,dwc,,,
 dcterms-for-tcs,yes,term,dcterms,https://tcs.tdwg.org/terms/#,yes,_
 dcterms-for-tcs-versions,no,termVersion,dcterms,,,
+dcterms-for-ac,yes,term,dcterms,https://ac.tdwg.org/termlist/#,yes,_
+dcterms-for-ac-versions,no,termVersion,dcterms,,,
+dwc-for-ac,yes,term,dwc,https://ac.tdwg.org/termlist/#,yes,_
+dwc-for-ac-versions,no,termVersion,dwc,,,
+exif-for-ac,yes,term,exif,https://ac.tdwg.org/termlist/#,yes,_
+exif-for-ac-versions,no,termVersion,exif,,,
+photoshop-for-ac,yes,term,photoshop,https://ac.tdwg.org/termlist/#,yes,_
+photoshop-for-ac-versions,no,termVersion,photoshop,,,
+xmp-for-ac,yes,term,xmp,https://ac.tdwg.org/termlist/#,yes,_
+xmp-for-ac-versions,no,termVersion,xmp,,,
+xmpRights-for-ac,yes,term,xmpRights,https://ac.tdwg.org/termlist/#,yes,_
+xmpRights-for-ac-versions,no,termVersion,xmpRights,,,

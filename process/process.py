@@ -1289,9 +1289,9 @@ for namespace in namespaces:
 
     # Add the IRIs of terms that have changed to the list of changed terms
     for term in modified_terms:
-        changed_terms_iris.append(termlist_uri + term)
+        changed_terms_iris.append(namespaceUri + term)
     for term in new_terms:
-        changed_terms_iris.append(termlist_uri + term)
+        changed_terms_iris.append(namespaceUri + term)
 
     # Step 4. Create term versions-related metadata. Generally only applies to TDWG-minted terms, not borrowed ones
     if not borrowed and not utility_namespace:
