@@ -1,6 +1,6 @@
 "identifier","context","text"
 "r:label","Label for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r","esquema de concepto de orientación de sujeto"
-"r:definition","Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r","un esquema de concepto SKOS para la orientación"
+"r:definition","Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r",""
 "r0000:label","Label for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000","orientación no especificada"
 "r0000:definition","Definition for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000","la orientación no se conoce porque no se especifica"
 "r0001:label","Label for anterior side http://rs.tdwg.org/dwc/terms/r0001","cara anterior"
