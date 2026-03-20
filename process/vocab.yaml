@@ -3,8 +3,8 @@
 
 # The following values are only required if the vocabulary is new. If they are provided for
 # an existing vocabulary, they will replace the existing values.
-vocabulary_label: subjectOrientation controlled vocabulary
-vocabulary_description: Controlled vocabulary for Audiovisual Core term subjectOrientation
+vocabulary_label: subjectPart controlled vocabulary
+vocabulary_description: Controlled vocabulary for Audiovisual Core term subjectPart
 
 # Current practice is to use the nane of the Task Group that created it. For vocabularies 
 # that have been heavily modified, the name of the Maintenance Group may be used. 

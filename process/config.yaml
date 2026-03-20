@@ -23,7 +23,7 @@ vocab_type: 3
 # Permanent IRI for the list of terms document that is associated with this vocabulary.
 # This is needed to automatically update the date_modified value of the list of terms document 
 # using the date_issued value above.
-list_of_terms_iri: http://rs.tdwg.org/ac/doc/orient/
+list_of_terms_iri: http://rs.tdwg.org/ac/doc/part/
 
 # IRI of containing standard. Existing standards IRIs:
 # Darwin Core - http://www.tdwg.org/standards/450
@@ -32,7 +32,7 @@ list_of_terms_iri: http://rs.tdwg.org/ac/doc/orient/
 standard: http://www.tdwg.org/standards/638
 
 # Text to describe the Executive Committee Decision that approved the change.
-decisions_text: Corrections of minor errata in the ac:subjectOrientation controlled vocabulary by the AC Maintenance Group
+decisions_text: Corrections of minor errata in the ac:subjectPart controlled vocabulary by the AC Maintenance Group
 
 namespaces:
 
@@ -40,16 +40,16 @@ namespaces:
 
 # For existing term lists, MUST be namespace assigned by issuing organization. For TDWG
 # term lists, MUST follow conventional TDWG IRI patterns.
-- namespace_uri: http://rs.tdwg.org/acorient/values/
+- namespace_uri: http://rs.tdwg.org/acpart/values/
 
   # Standard namespace abbreviation for the namespace IRI.
-  pref_namespace_prefix: acorient
+  pref_namespace_prefix: acpart
 
   # Database name for associated directories and files in the rs.tdwg.org repository. 
   # MUST NOT contain spaces. SHOULD be descriptive and lowerCamelCase is RECOMMENDED. 
   # Borrowed term lists SHOULD use naming convention of Darwin and Audiovisual Cores.
   # Do not append -versions to this name, the versions directory will be created automatically.
-  database: acorient
+  database: acpart
 
   # Set to true if namespace not issued by TDWG and in the rs.tdwg.org domain
   # or if the terms are borrowed from another TDWG standard. 
@@ -67,7 +67,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: ac-revisions/ac-revisions-2026-02-24/subjectOrientation/subjectOrientation_cv.csv
+  modifications_file_path: ac-revisions/ac-revisions-2026-02-24/subjectPart/subjectPart_cv.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -83,16 +83,16 @@ namespaces:
   termlist_uri: ''
 
   # Label used for the term list in machine-readable metadata.
-  label: subjectOrientation controlled values list
+  label: subjectPart controlled values list
 
   # Description of the term list used in machine-readable metadata.
-  description: Controlled values list for the Audiovisual Core term subjectOrientation
+  description: Controlled values list for the Audiovisual Core term subjectPart
 
   # The following values are used to set up redirects to the list of terms document.
 
   # IRI string from List of Terms document URL to be prepended to the term fragment identifier when 
   # dereferencing terms and an HTML representation is requested. 
-  prepend_url: https://ac.tdwg.org/orient/#
+  prepend_url: https://ac.tdwg.org/part/#
 
   # Indicates whether the namespace abbreviation is included in the fragment identifier for the term.
   use_namespace_in_fragment: true
