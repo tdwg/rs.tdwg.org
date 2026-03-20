@@ -1,6 +1,6 @@
 identifier,context,text
 r:label,Label for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r,subject orientation concept scheme
-r:definition,Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r,a SKOS concept scheme for orientation
+r:definition,Definition for subject orientation concept scheme http://rs.tdwg.org/dwc/terms/r,a SKOS concept scheme for the orientation of parts of organisms in Media Entities
 r0000:label,Label for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000,unspecified orientation
 r0000:definition,Definition for unspecified orientation http://rs.tdwg.org/dwc/terms/r0000,orientation is not known because it is not specified
 r0001:label,Label for anterior side http://rs.tdwg.org/dwc/terms/r0001,anterior side

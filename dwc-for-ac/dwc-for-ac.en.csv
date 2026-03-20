@@ -16,11 +16,11 @@ identifiedBy:skos_scopeNote,Usage for Identified By http://rs.tdwg.org/dwc/terms
 lifeStage:label,Label for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage,Subject Life Stage
 lifeStage:rdfs_comment,Comment for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage,The age class or life stage of the biological individual(s) at the time the Occurrence was recorded.
 lifeStage:dcterms_description,Description for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage,Recommended best practice is to use a controlled vocabulary.
-lifeStage:skos_scopeNote,Usage for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage,"A description of the life-cycle stage of any organisms featured within the media, when relevant to the subject of the media, e. g., larvae, juvenile, adult."
+lifeStage:skos_scopeNote,Usage for Subject Life Stage http://rs.tdwg.org/dwc/terms/lifeStage,"A description of the life-cycle stage of any organisms featured within the media, when relevant to the subject of the media, e.g., larvae, juvenile, adult."
 nameAccordingTo:label,Label for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo,Name According To
 nameAccordingTo:rdfs_comment,Comment for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo,"The reference to the source in which the specific taxon concept circumscription is defined or implied - traditionally signified by the Latin ""sensu"" or ""sec."" (from secundum, meaning ""according to""). For taxa that result from identifications, a reference to the keys, monographs, experts and other sources should be given."
 nameAccordingTo:dcterms_description,Description for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo,"Examples are ""Flora of North America"", ""Landrum 1981, Monograph of the Genus Myrceugenia (Myrtaceae)"", ""Peterson Field Guide to Birds of North America"", or ""Expert identification by J.Smith""."
-nameAccordingTo:skos_scopeNote,Usage for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo,"The taxonomic authority used to apply the name to the taxon, e. g., a person, book or web service."
+nameAccordingTo:skos_scopeNote,Usage for Name According To http://rs.tdwg.org/dwc/terms/nameAccordingTo,"The taxonomic authority used to apply the name to the taxon, e.g., a person, book or web service."
 preparations:label,Label for Subject Preparation Technique http://rs.tdwg.org/dwc/terms/preparations,Subject Preparation Technique
 preparations:rdfs_comment,Comment for Subject Preparation Technique http://rs.tdwg.org/dwc/terms/preparations,A list (concatenated and separated) of preparations and preservation methods for a specimen.
 preparations:dcterms_description,Description for Subject Preparation Technique http://rs.tdwg.org/dwc/terms/preparations,"Examples for such techniques are: Insect under CO2, cooled to immobility, preservation with ethanol or formaldehyde. See also Resource Creation Technique for technical aspects of digital media object creation."
@@ -36,7 +36,7 @@ scientificNameID:dcterms_description,Description for Scientific Name ID http://r
 sex:label,Label for Subject Sex http://rs.tdwg.org/dwc/terms/sex,Subject Sex
 sex:rdfs_comment,Comment for Subject Sex http://rs.tdwg.org/dwc/terms/sex,The sex of the biological individual(s) represented in the Occurrence.
 sex:dcterms_description,Description for Subject Sex http://rs.tdwg.org/dwc/terms/sex,Recommended best practice is to use a controlled vocabulary.
-sex:skos_scopeNote,Usage for Subject Sex http://rs.tdwg.org/dwc/terms/sex,"A description of the sex of any organisms featured within the media, when relevant to the subject of the media, e. g., male, female, hermaphrodite, dioecious."
+sex:skos_scopeNote,Usage for Subject Sex http://rs.tdwg.org/dwc/terms/sex,"A description of the sex of any organisms featured within the media, when relevant to the subject of the media, e.g., male, female, hermaphrodite, dioecious."
 vernacularName:label,Label for Common Name http://rs.tdwg.org/dwc/terms/vernacularName,Common Name
 vernacularName:rdfs_comment,Comment for Common Name http://rs.tdwg.org/dwc/terms/vernacularName,A common or vernacular name.
 vernacularName:dcterms_description,Description for Common Name http://rs.tdwg.org/dwc/terms/vernacularName,"The ISO language code after the name should be formatted as in the following example: 'abete bianco (it); Tanne (de); White Fir (en)'. If names are known to be male- or female-specific, this may be specified as in: 'ewe (en-female); ram (en-male);'."

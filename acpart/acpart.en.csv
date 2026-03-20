@@ -1,6 +1,6 @@
 identifier,context,text
 p:label,Label for subject part concept scheme http://rs.tdwg.org/dwc/terms/p,subject part concept scheme
-p:definition,Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p,a SKOS concept scheme for ac:subjectOrientation
+p:definition,Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p,a SKOS concept scheme for parts of organisms
 p0000:label,Label for unspecified part http://rs.tdwg.org/dwc/terms/p0000,unspecified part
 p0000:definition,Definition for unspecified part http://rs.tdwg.org/dwc/terms/p0000,Part is not known because it is not specified
 p0001:label,Label for entire organism http://rs.tdwg.org/dwc/terms/p0001,entire organism
