@@ -1,6 +1,6 @@
 "identifier","context","text"
 "p:label","Label for subject part concept scheme http://rs.tdwg.org/dwc/terms/p","Schemenkonzept für die Orientierung des Objektes"
-"p:definition","Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p","ein SKOS Schemenkonzept für die Orientierung"
+"p:definition","Definition for subject part concept scheme http://rs.tdwg.org/dwc/terms/p",""
 "p0000:label","Label for unspecified part http://rs.tdwg.org/dwc/terms/p0000","nicht spezifizier Teil"
 "p0000:definition","Definition for unspecified part http://rs.tdwg.org/dwc/terms/p0000","Teil ist nicht bekannt, da es nicht spezifiziert ist"
 "p0001:label","Label for entire organism http://rs.tdwg.org/dwc/terms/p0001","vollständiger Organismus"
