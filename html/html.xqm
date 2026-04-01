@@ -108,7 +108,7 @@ declare function html:generate-header() as element()
 {
 <nav class="navbar navbar-expand navbar-dark bg-secondary">
     <div class="container">
-        <a class="navbar-brand mr-md-3" href="http://www.tdwg.org">TDWG</a>
+        <a class="navbar-brand mr-md-3" href="https://www.tdwg.org">TDWG</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-md-auto">
             </ul>
@@ -554,8 +554,8 @@ declare function html:generate-vocabulary-toc-etc-html($vocabularyIri as xs:stri
     <li><a href="#4">4 Term lists that are part of this vocabulary</a></li>
   </ul>
   <h2><a id="1">1 Introduction</a></h2>
-  <p>This document provides access to the parts and history of this vocabulary.  A TDWG vocabulary is composed of term lists that have been minted by TDWG as part of this vocabulary, or that may be composed of terms borrowed from other vocabularies within or outisde of TDWG.  The vocabulary changes over time as those lists change, or as new term lists are added to the vocabulary.  These changes are documented by versions of the vocabulary, which are &quot;snapshots&quot; of the vocabulary at the time that the version was issued.</p>
-  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="http://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
+  <p>This document provides access to the parts and history of this vocabulary.  A TDWG vocabulary is composed of term lists that have been minted by TDWG as part of this vocabulary, or that may be composed of terms borrowed from other vocabularies within or outside of TDWG.  The vocabulary changes over time as those lists change, or as new term lists are added to the vocabulary.  These changes are documented by versions of the vocabulary, which are &quot;snapshots&quot; of the vocabulary at the time that the version was issued.</p>
+  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="https://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
   <h2><a id="2">2 Vocabulary versions</a></h2>
   <p>To examine specific historical versions of this vocabulary, click on one of the links below.</p>
   <ul style="list-style: none;">{
@@ -688,7 +688,7 @@ declare function html:generate-vocabulary-version-toc-etc-html($vocabularyVersio
   <h2><a id="1">1 Introduction</a></h2>
   <p>A TDWG vocabulary is composed of term lists that have been minted by TDWG as part of that vocabulary, or that may be composed of terms borrowed from other vocabularies within or outisde of TDWG.  The vocabulary changes over time as those lists change, or as new term lists are added to the vocabulary.</p> 
   <p>This vocabulary version is a &quot;snapshot&quot; of the vocabulary at a particular moment in time.  The term list versions listed below includes those that were part of the vocabulary at the time this version was issued.  The status of an individual term list may have changed since the time that the vocabulary version was issued.  The version status indicates the status of the list at the present time, not at the time the vocabulary was issued.</p>
-  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="http://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
+  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="https://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
   <h2><a id="2">2 Vocabulary version distributions</a></h2>
   <p>This vocabulary versions list is available in the formats or distribution methods listed in the table below.  Please note that distribution access URLs may be subject to change over time.  Therefore, it is preferable to request the abstract IRI of the resources and request the desired Content-type through content negotiation.</p>
   <table border="1">{
@@ -864,7 +864,7 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
   </ul>
   <h2><a id="1">1 Introduction</a></h2>
   <p>This is a list of terms that may be part of a TDWG vocabulary.  If the terms on this list are defined by TDWG, the list corresponds to terms in a namespace whose IRI is listed in the header.  In the case where the terms are borrowed from a non-TDWG vocabulary, the list includes terms that are &quot;borrowed&quot; for inclusion in a TDWG vocabulary.  The list includes all &quot;current&quot; terms on the list, which may or may not be recommended for use.  Terms that are no longer recommended for use may have specified replacements - see the metadata about that specific term.</p>
-  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="http://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
+  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="https://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
   <h2><a id="2">2 List versions</a></h2>
   <p>List versions are &quot;snapshots&quot; of the term list at a particular point in time. To examine specific historical versions of this list, click on one of the links below.</p>
   <ul style="list-style: none;">{
@@ -1018,7 +1018,7 @@ declare function html:generate-list-versions-toc-etc-html($termListVersionIri as
   <h2><a id="1">1 Introduction</a></h2>
   <p>This is a list of term versions that may be part of a TDWG vocabulary.  If the terms whose versions are on this list were defined by TDWG, the list corresponds to term versions in a namespace whose IRI is listed in the header.  In the case where the terms were borrowed from a non-TDWG vocabulary, the list includes term versions that were &quot;borrowed&quot; for inclusion in a TDWG vocabulary.</p>
   <p>This list includes term versions that were part of the term list at the time this version was issued.  The status of the individual terms may have changed since the version was issued.  The version status indicates its status at the present time, not at the time the list version was issued.</p>
-  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="http://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
+  <p>For more information about the structure and version model of TDWG vocabularies, see the <a href="https://www.tdwg.org/standards/147">TDWG Standards Documentation Specification</a>.</p>
   <h2><a id="2">2 List version distributions</a></h2>
   <p>This term versions list is available in the formats or distribution methods listed in the table below.  Please note that distribution access URLs may be subject to change over time.  Therefore, it is preferable to request the abstract IRI of the resources and request the desired Content-type through content negotiation.</p>
   <table border="1">{
