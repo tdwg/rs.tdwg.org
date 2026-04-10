@@ -35,7 +35,7 @@
 "source:rdfs_comment","Comment for Published Source http://rs.tdwg.org/dwc/terms/source",""
 "source:dcterms_description","Description for Published Source http://rs.tdwg.org/dwc/terms/source",""
 "source:skos_scopeNote","Usage for Published Source http://rs.tdwg.org/dwc/terms/source",""
-"temporal:label","Label for Temporal Coverage http://rs.tdwg.org/dwc/terms/temporal",""
+"temporal:label","Label for Temporal Coverage http://rs.tdwg.org/dwc/terms/temporal","Cobertura Temporal"
 "temporal:rdfs_comment","Comment for Temporal Coverage http://rs.tdwg.org/dwc/terms/temporal",""
 "temporal:dcterms_description","Description for Temporal Coverage http://rs.tdwg.org/dwc/terms/temporal",""
 "temporal:skos_scopeNote","Usage for Temporal Coverage http://rs.tdwg.org/dwc/terms/temporal",""
