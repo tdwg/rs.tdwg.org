@@ -1365,7 +1365,7 @@ if decisions_df['rdfs_comment'].iloc[-1] != config['decisions_text']:
     row_dict['term_modified'] = date_issued
     row_dict['label'] = 'TDWG Executive Committee decision ' + decision_number_string
     row_dict['rdfs_comment'] = config['decisions_text']
-    decisions_df = decisions_df._append(row_dict, ignore_index=True)
+    decisions_df = pd.concat([decisions_df, pd.DataFrame([row_dict])], ignore_index=True)
 
     # Write the updated decisions CSV file
     decisions_df.to_csv('../decisions/decisions.csv', index=False)
@@ -1379,11 +1379,17 @@ else:
 decisions_links_df = pd.read_csv('../decisions/decisions-links.csv', dtype=str)
 
 # Add a row to the decisions-links CSV file for each term that has changed
+new_decision_link_rows = []
+
 for term_iri in changed_terms_iris:
     row_dict = {}
     row_dict['linked_affected_resource'] = term_iri
     row_dict['decision_localName'] = 'decision-' + date_issued + '_' + decision_number_string
-    decisions_links_df = decisions_links_df._append(row_dict, ignore_index=True)
+    new_decision_link_rows.append(row_dict)
 
+decisions_links_df = pd.concat(
+    [decisions_links_df, pd.DataFrame(new_decision_link_rows)],
+    ignore_index=True
+)
 # Write the updated decisions-links CSV file
 decisions_links_df.to_csv('../decisions/decisions-links.csv', index=False)
