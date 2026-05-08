@@ -1333,8 +1333,13 @@ general_config_text = re.sub('versionDate:.*\n', "versionDate: '" + date_issued 
 # Replace the utcOfset value with the new local_offset_from_utc value.
 general_config_text = re.sub('utcOffset:.*\n', "utcOffset: " + local_offset_from_utc + "\n", general_config_text)
 
-# Replace the docIri with the new list_of_terms_iri value.
-general_config_text = re.sub('docIri:.*\n', "docIri: " + config['list_of_terms_iri'] + "\n", general_config_text)
+# Replace the docIri with the new list_of_terms_iri value. Assumes "docIri" is at the beginning of the line in the yaml file. Commented docIri's are unaffected.
+general_config_text = re.sub(
+    r'^(docIri:\s*).*$',
+    r'\1' + config['list_of_terms_iri'],
+    general_config_text,
+    flags=re.MULTILINE
+)
 
 # Write the updated text to the file.
 with open('document_metadata_processing/general_configuration.yaml', 'wt') as file_object:
