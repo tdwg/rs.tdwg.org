@@ -19,7 +19,5 @@ RUN /usr/src/rs.tdwg.org/docker/initialize-database.sh ../ '' http://localhost:8
 USER root
 RUN rm -Rf /usr/src/rs.tdwg.org
 
-COPY docker/supervisord.conf /etc/supervisord.conf
-COPY docker/varnish_default.vcl /etc/varnish/default.vcl
-
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+ENV HOME=/basex
+CMD ["/usr/local/bin/basexhttp"]
