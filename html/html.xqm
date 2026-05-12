@@ -1,7 +1,7 @@
 xquery version "3.1";
 
 module namespace html = 'http://rs.tdwg.org/html';
-declare variable $html:stylesheetUrl := "https://www.tdwg.org/theme/css/main.css";
+declare variable $html:stylesheetUrl := "https://www.tdwg.org/assets/theme/css/main.css";
 
 declare function html:load-term-list-lookup() as element()*
 {
@@ -129,18 +129,13 @@ declare function html:generate-footer() as element()+
 {
  <footer>
     <div class="container">
-		<a href="https://www.tdwg.org/"><img src="https://www.tdwg.org/theme/images/footer_logo.png"/></a>
+		<a href="https://www.tdwg.org/"><img src="https://www.tdwg.org/assets/images/tdwg-logo-home.svg" height="60px"/></a>
 
         <div class="theme-license">
             Content on this site, made open by <a href="https://www.tdwg.org/">Biodiversity Information Standards (TDWG)</a> is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
         </div>
     </div>
-</footer>,
-
-<script src="https://www.tdwg.org/theme/js/jquery.min.js"></script>,
-<script src="https://www.tdwg.org/theme/js/popper.min.js"></script>,
-<script src="https://www.tdwg.org/theme/js/bootstrap.min.js"></script>,
-<script src="https://www.tdwg.org/theme/js/theme.js"></script>
+</footer>
 };
 
 (: go through the term list or list versions records and pull the metadata for the particular list. There should be exactly one record element returned :)
