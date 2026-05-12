@@ -1,0 +1,5 @@
+term_localName,label,skos_inScheme,controlled_value_string,definition,usage,notes,examples,definition_derived_from ,type
+discipline,discipline controlled vocabulary,,,A SKOS ConceptScheme to be used as a controlled vocabulary for the MIDS discipline TODO,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
+biology,Biology,discipline,biology,Biology is the science of life. It is concerned with the characteristics and behaviors of organisms,,,,https://w3id.org/skgo/modsci#Biology,http://www.w3.org/2004/02/skos/core#Concept
+geology,Geology,discipline,geology,"Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin",,,,https://apps.usgs.gov/thesaurus/USGSThesaurus/geology,http://www.w3.org/2004/02/skos/core#Concept
+paleontology,Paleontology,discipline,paleontology,Study of life in past geologic time based on fossil plants and animals,,,,https://apps.usgs.gov/thesaurus/USGSThesaurus/paleontology,http://www.w3.org/2004/02/skos/core#Concept

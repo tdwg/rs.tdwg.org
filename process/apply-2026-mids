@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+ln -sf mids-revisions/mids-cvh-2026-MM-DD/config.yaml mids-revisions/mids-cvh-2026-MM-DD/vocab.yaml .
+python3 process.py
+
+ln -sf mids-revisions/mids-cv-2026-MM-DD/config.yaml mids-revisions/mids-cv-2026-MM-DD/vocab.yaml .
+python3 process.py
+
+ln -sf mids-revisions/mids-v-2026-MM-DD/config.yaml mids-revisions/mids-v-2026-MM-DD/vocab.yaml .
+python3 process.py
+#git add -u
+#git add ../ac-for-dwc/ ../ac-for-dwc-versions/
+#git commit -m 'Apply DWC changes'
