@@ -1,7 +1,7 @@
 (: this module needs to be put in the webapp folder of your BaseX installation.  On my local computer it's at c:\Program Files (x86)\BaseX\webapp\ On the Tomcat installation, it's at opt/tomcat/webapps/gom/restxq.xqm, where gom is the context under which the BaseX server is running :)
 
 module namespace page = 'http://basex.org/modules/web-page';
-import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/html.xqm';
+import module namespace html = 'http://rs.tdwg.org/html' at '/usr/src/rs.tdwg.org/html/html.xqm';
 
 (:----------------------------------------------------------------------------------------------:)
 (: Main functions for handling URI patterns :)
@@ -75,7 +75,7 @@ declare
 
 declare function page:check-db($db)
 {
-  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv"}'/>)[2]
+  let $metadataDoc := file:read-text("/usr/src/rs.tdwg.org/index/index-datasets.csv")
   let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
   let $metadata := $xmlMetadata/csv/record
   for $record in $metadata
@@ -362,8 +362,8 @@ declare
   function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
-  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistFilePath := "/usr/src/rs.tdwg.org/term-lists/term-lists.csv"
+  let $termlistDoc := file:read-text($termlistFilePath)
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
 
@@ -385,8 +385,8 @@ declare
   function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
-  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistFilePath := "/usr/src/rs.tdwg.org/term-lists/term-lists.csv"
+  let $termlistDoc := file:read-text($termlistFilePath)
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
 
@@ -1102,8 +1102,8 @@ declare function page:return-representation($response-media-type,$lookup-string,
 (: Function to return a web page for vocabs etc. :)
 declare function page:handle-html($db,$lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/redirects.csv"
-let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
+let $redirectFilePath := "/usr/src/rs.tdwg.org/html/redirects.csv"
+let $redirectDoc := file:read-text($redirectFilePath)
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
@@ -1132,9 +1132,9 @@ return
 (: Function to redirect to a web page for standards documents :)
 declare function page:handle-docs-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
-let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
-let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectFilePath := "/usr/src/rs.tdwg.org/docs/docs.csv"
+let $redirectDoc := file:read-text($redirectFilePath)
+let $redirectDataRaw := csv:parse($redirectFilePath, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/current_iri/text() = $lookup-string
@@ -1144,9 +1144,9 @@ return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 (: Function to redirect to a web page for standards documents versions :)
 declare function page:handle-docs-versions-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs-versions/docs-versions.csv"
-let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
-let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectFilePath := "/usr/src/rs.tdwg.org/docs-versions/docs-versions.csv"
+let $redirectDoc := file:read-text($redirectFilePath)
+let $redirectDataRaw := csv:parse($redirectFilePath, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/version_iri/text() = $lookup-string
@@ -1248,7 +1248,7 @@ declare function page:substring-after-last
 
    replace ($arg,concat('^.*',page:escape-for-regex($delim)),'')
  } ;
- 
+
  declare function page:escape-for-regex
   ( $arg as xs:string? )  as xs:string {
 

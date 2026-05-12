@@ -1,12 +1,12 @@
 xquery version "3.1";
 
-module namespace html = 'http://rs.tdwg.com/html';
+module namespace html = 'http://rs.tdwg.org/html';
 declare variable $html:stylesheetUrl := "https://www.tdwg.org/theme/css/main.css";
 
 declare function html:load-term-list-lookup() as element()*
 {
 (: The term list table has columns containing the term list database name, abbreviations, etc. :)
-let $lookupDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"}'/>)[2]
+let $lookupDoc := file:read-text("/usr/src/rs.tdwg.org/term-lists/term-lists.csv")
 let $xmlLookup := csv:parse($lookupDoc, map { 'header' : true(),'separator' : "," })
 return $xmlLookup/csv
 };
@@ -98,7 +98,7 @@ declare function html:substring-before-last
 
 declare function html:load-configuration($repoPath as xs:string,$repoName as xs:string) as node()*
 {
-let $constantsDoc := http:send-request(<http:request method='get' href='{$repoPath||$repoName||'/constants.csv'}'/>)[2]
+let $constantsDoc := file:read-text($repoPath||$repoName||'/constants.csv')
 let $xmlConstants := csv:parse($constantsDoc, map { 'header' : true(),'separator' : "," })
 return $xmlConstants/csv/record
 };
@@ -146,12 +146,12 @@ declare function html:generate-footer() as element()+
 (: go through the term list or list versions records and pull the metadata for the particular list. There should be exactly one record element returned :)
 declare function html:load-metadata-record($list-iri as xs:string,$db as xs:string) as node()*
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
@@ -163,11 +163,11 @@ return $record
 (: Load the metadata for the classes that are linked to the core class :)
 declare function html:generateLinkedMetadata($db as xs:string) as node()*
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 let $metadataSeparator := $config/separator/text()
 
-let $linkedClassesDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||'linked-classes.csv'}'/>)[2]
+let $linkedClassesDoc := file:read-text($repoPath||$db||"/"||'linked-classes.csv')
 let $xmlLinkedClasses := csv:parse($linkedClassesDoc, map { 'header' : true(),'separator' : "," })
 let $linkedClasses := $xmlLinkedClasses/csv/record
 
@@ -176,11 +176,11 @@ let $linkedMetadata :=
       let $linkedDoc := $class/filename/text()
       let $linkedClassPrefix := substring-before($linkedDoc,".")
 
-      let $classMappingDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$linkedClassPrefix||"-column-mappings.csv"}'/>)[2]
+      let $classMappingDoc := file:read-text($repoPath||$db||"/"||$linkedClassPrefix||"-column-mappings.csv")
       let $xmlClassMapping := csv:parse($classMappingDoc, map { 'header' : true(),'separator' : "," })
-      let $classClassesDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$linkedClassPrefix||"-classes.csv"}'/>)[2]
+      let $classClassesDoc := file:read-text($repoPath||$db||"/"||$linkedClassPrefix||"-classes.csv")
       let $xmlClassClasses := csv:parse($classClassesDoc, map { 'header' : true(),'separator' : "," })
-      let $classMetadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$linkedDoc}'/>)[2]
+      let $classMetadataDoc := file:read-text($repoPath||$db||"/"||$linkedDoc)
       let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
       return
         (
@@ -242,13 +242,13 @@ declare function html:generate-vocabulary-term-list-members($vocabulary as xs:st
 (: go through the term list or term list versions records ($db) and pull the metadata for all lists that are part of a particular vocabulary. :)
 declare function html:load-list-records($termLists as xs:string+,$db as xs:string) as element()*
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $key := $config/baseIriColumn/text() (: determine which column in the source table contains the primary key for the record :)
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
@@ -368,13 +368,13 @@ return
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-term-html($db as xs:string,$ns as xs:string,$localName as xs:string) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
 let $baseIriColumn := $config/baseIriColumn/text()
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 let $linkedMetadataRaw := html:generateLinkedMetadata($db)
@@ -422,12 +422,12 @@ return
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-term-version-html($db as xs:string,$ns as xs:string,$localName as xs:string) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
@@ -894,12 +894,12 @@ declare function html:generate-list-toc-etc-html($termListIri as xs:string) as e
 (: Generate the HTML tables of metadata about the terms in the list and returns them as a div element :)
 declare function html:generate-list-html($db as xs:string,$ns as xs:string) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
@@ -1038,12 +1038,12 @@ declare function html:generate-list-versions-toc-etc-html($termListVersionIri as
 (: Generate the HTML table of metadata about the terms in the list:)
 declare function html:generate-list-versions-html($db as xs:string,$ns as xs:string,$members as xs:string+) as element()
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
@@ -1072,14 +1072,14 @@ fn:string-length($record/version/text())-11) (: find the part of the version bef
 (: This is the test template web page for the /home URI pattern :)
 declare function html:generate-list($db)
 {
-let $repoPath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/"
+let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
 let $metadataSeparator := $config/separator/text()
 let $baseIriColumn := $config/baseIriColumn/text()
 
-let $metadataDoc := http:send-request(<http:request method='get' href='{$repoPath||$db||"/"||$coreDoc}'/>)[2]
+let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
 let $metadata := $xmlMetadata/csv/record
 
