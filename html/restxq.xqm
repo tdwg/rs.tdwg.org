@@ -1134,7 +1134,7 @@ declare function page:handle-docs-html($lookup-string)
 {
 let $redirectFilePath := "/usr/src/rs.tdwg.org/docs/docs.csv"
 let $redirectDoc := file:read-text($redirectFilePath)
-let $redirectDataRaw := csv:parse($redirectFilePath, map { 'header' : true(),'separator' : "," })
+let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/current_iri/text() = $lookup-string
@@ -1146,7 +1146,7 @@ declare function page:handle-docs-versions-html($lookup-string)
 {
 let $redirectFilePath := "/usr/src/rs.tdwg.org/docs-versions/docs-versions.csv"
 let $redirectDoc := file:read-text($redirectFilePath)
-let $redirectDataRaw := csv:parse($redirectFilePath, map { 'header' : true(),'separator' : "," })
+let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/version_iri/text() = $lookup-string
