@@ -1,10 +1,17 @@
 import requests
 import csv
+import sys
 
-def read_csv_as_dicts_github(file_url):
-    r = requests.get(file_url)
-    file_text = r.text.split('\n')
-    file_rows = csv.DictReader(file_text)
+subdomain = sys.argv[0] if len(sys.argv) == 1 else 'http://test.rs.tdwg.org/'
+subdomain = 'http://localhost:8984/'
+headers = ['text/html', 'text/turtle', 'application/rdf+xml', 'application/ld+json']
+test_external = False
+
+def read_csv_as_dicts_github(file_name):
+    f = open(file_name, 'r')
+    body = f.read()
+    f.close()
+    file_rows = csv.DictReader(body.splitlines())
     csv_data = []
     for row in file_rows:
         csv_data.append(row)
@@ -23,19 +30,34 @@ def dereference_urls(outfilename, headers, subdomain, test_urls):
         for relative_url in test_urls:
             full_url = subdomain + relative_url
             hdr = {'Accept' : header}
-            r = requests.get(full_url, headers=hdr)
+            r = requests.get(full_url, headers=hdr, allow_redirects=test_external)
+
+            # Follow a local redirect (same server) if necessary
+            if r.status_code in [302, 303, 307]:
+                location = r.headers.get('location')
+                if not location.startswith('http'):
+                    if location.startswith('/'):
+                        r = requests.get(subdomain + location, headers=hdr, allow_redirects=False)
+                    else:
+                        base_path = full_url.rsplit('/', 1)[0] + '/'
+                        r = requests.get(base_path + location , headers=hdr, allow_redirects=False)
+
             if r.status_code == 404:
                 print('*** 404 !')
                 response = ""
+            elif r.status_code == 200 and len(r.content) == 0:
+                print('*** 200 empty!')
+                response = ""
+            elif r.status_code in [302, 303, 307]:
+                response = r.text[:20]
+                final_url = r.headers.get('location')
             else:
                 response = r.text[:20]
-            print(str(r.status_code) + "\t" + full_url + '\t' + r.url)
-            results.append([r.status_code, full_url, r.url, response])
+                final_url = r.url
+            print(str(r.status_code) + "\t" + full_url + '\t' + final_url)
+            results.append([r.status_code, full_url, final_url, response])
         print()
     write_csv(outfilename, results)
-
-subdomain = 'http://rs-test.tdwg.org/'
-headers = ['text/html', 'text/turtle', 'application/rdf+xml', 'application/ld+json']
 
 # ------------------------
 # Dereference example URLs from each database. This should test all of the URL patterns in use.
@@ -44,7 +66,7 @@ headers = ['text/html', 'text/turtle', 'application/rdf+xml', 'application/ld+js
 print('Testing URL patterns using examples from all databases')
 
 # load the database names from GitHub
-index_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv'
+index_url = 'index-datasets.csv'
 index_list = read_csv_as_dicts_github(index_url)
 print('retrieving data about databases:')
 database_test_urls = []
@@ -55,14 +77,18 @@ for database in index_list:
     # get the information necessary to acquire the URL from the database core CSV file
     dbname = database['term_localName']
     print(dbname)
-    config_file_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/' + dbname + '/constants.csv'
+
+    if (dbname in ['abcd-for-ltc', 'abcd-for-ltc-versions', 'chrono-for-ltc-versions', 'dcterms-for-ltc-versions', 'dwc-for-ltc-versions', 'schema-for-ltc-versions', 'dwc-for-tcs-versions', 'dcterms-for-tcs-versions']):
+        continue
+
+    config_file_url = '../' + dbname + '/constants.csv'
     config_data = read_csv_as_dicts_github(config_file_url)
     dbase_subdomain = config_data[0]['domainRoot'] # list item 0 because there's only one data row in the constant.csv file
     dbase_core_file = config_data[0]['coreClassFile']
     dbase_uri_column = config_data[0]['baseIriColumn']
 
     # retrieve the URL data from the core CSV file
-    core_file_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/' + dbname + '/' + dbase_core_file
+    core_file_url = '../' + dbname + '/' + dbase_core_file
     core_data = read_csv_as_dicts_github(core_file_url)
     example_url = dbase_subdomain + core_data[0][dbase_uri_column] # list item 0 to test the first resource in the database
     if example_url[0:19] == 'http://rs.tdwg.org/':  # skip term lists for borrowed terms outside of TDWG
@@ -82,7 +108,7 @@ print()
 print('Testing URLs of all standards-related documents')
 
 # load the document metadata from GitHub
-docs_data_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv'
+docs_data_url = '../docs/docs.csv'
 docs_data = read_csv_as_dicts_github(docs_data_url)
 
 docs_urls = []
@@ -107,7 +133,7 @@ print('Testing redirection of legacy rs.tdwg.org URLs')
 headers = ['text/html'] # headers are irrelevant since the redirects are to URLs that don't support content negotiation
 
 # load the URLs from GitHub
-legacy_data_url = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/legacy-urls.csv'
+legacy_data_url = 'legacy-urls.csv'
 legacy_data = read_csv_as_dicts_github(legacy_data_url)
 
 legacy_urls = []
