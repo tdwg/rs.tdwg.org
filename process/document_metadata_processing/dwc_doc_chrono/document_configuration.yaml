@@ -6,7 +6,7 @@
 documentTitle: "Chronometric Age Vocabulary List of Terms"
 
 # Abstract of document written by authors.
-abstract: The Chronometric Age Vocabulary is a standard for transmitting information about chronometric ages - the processes and results of an assay or other analysis used to determine the age of a MaterialSample. This document lists all terms in namespaces currently used in the vocabulary.
+abstract: The Chronometric Age Vocabulary is an enhancement to the Darwin Core standard for transmitting information about chronometric ages - the processes and results of an assay or other analysis used to determine the age of a MaterialEntity. This document lists all terms in namespaces currently used in the vocabulary.
 
 # This value is generally the name of the task group that created the document.
 creator: TDWG Darwin Core Chronometric Age Extension Task Group
@@ -69,4 +69,4 @@ comment: ''
 # This value will automatically get updated from the date_issued value in config.yaml if the document
 # is a list of terms document. For other types of documents, it is set from the general_configuration.yaml
 # file.
-doc_modified: '2026-04-07'
+doc_modified: '2026-05-26'

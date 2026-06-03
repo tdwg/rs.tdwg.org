@@ -6,18 +6,7 @@
 documentTitle: "Humboldt Extension Vocabulary List of Terms"
 
 # Abstract of document written by authors.
-abstract: The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to 
-  report key information about biodiversity inventories, checklists and surveys, maximizing the 
-  usability and interoperability 
-  of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively 
-  broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. 
-  Terms included in the extension are defined such that they can accommodate hierarchical data 
-  structures allowing the representation of complex, highly nested survey designs, permitting the 
-  computation of relative abundances of species. This document 
-  lists all terms currently used in the vocabulary providing comments and examples of their usage 
-  along with ancillary documents that provide guidance on the use and interpretation of terms and 
-  the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological 
-  inventories.
+abstract: The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to report key information about biodiversity inventories, checklists and surveys, maximizing the usability and interoperability of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. Terms included in the extension are defined such that they can accommodate hierarchical data structures allowing the representation of complex, highly nested survey designs, permitting the computation of relative abundances of species. This document lists all terms currently used in the vocabulary, providing comments and examples of their usage along with ancillary documents that provide guidance on the use and interpretation of terms and the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological inventories.
 
 # This value is generally the name of the task group that created the document.
 creator: TDWG Humboldt Extension Task Group
@@ -80,4 +69,4 @@ comment: ''
 # This value will automatically get updated from the date_issued value in config.yaml if the document
 # is a list of terms document. For other types of documents, it is set from the general_configuration.yaml
 # file.
-doc_modified: '2026-04-07'
+doc_modified: '2026-05-26'

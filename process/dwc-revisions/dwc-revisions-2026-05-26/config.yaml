@@ -3,7 +3,7 @@
 
 # Date assigned to all versions, usually the date of approval by the Executive Committee.
 # It is appended to all version IRIs. Format: YYYY-MM-DD
-date_issued: '2026-04-07'
+date_issued: '2026-05-26'
 
 # UTC offset for the computer running the script (i.e. the appropriate offset for values produced by the
 # Python method datetime.datime.now() .
@@ -67,7 +67,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2026-04-07/dwc_2026-04-07.csv
+  modifications_file_path: dwc-revisions/dwc-revisions-2026-05-26/dwc_2026-05-26.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -126,7 +126,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2026-04-07/dwciri_2026-04-07.csv
+  modifications_file_path: dwc-revisions/dwc-revisions-2026-05-26/dwciri_2026-05-26.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -185,7 +185,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2026-04-07/ac_2026-04-07.csv
+  modifications_file_path: dwc-revisions/dwc-revisions-2026-05-26/ac_2026-05-26.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -244,7 +244,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/dwc-revisions-2026-04-07/dcterms_2026-04-07.csv
+  modifications_file_path: dwc-revisions/dwc-revisions-2026-05-26/dcterms_2026-05-26.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
