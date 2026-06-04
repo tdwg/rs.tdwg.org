@@ -8,7 +8,7 @@
 
 # versionDate is REQUIRED. The date of ratification. For List of Terms documents, this date SHOULD
 # match the version date for the corresponding vocabulary version.
-versionDate: '2026-04-17'
+versionDate: '2026-05-26'
 
 # utcOffset is RECOMMENDED. The offset from UTC time in the form `+hh:mm` or `-hh:mm`
 # (e.g. `-06:00` for Central (US) Standard Time). This value is added to the date returned by the
@@ -22,10 +22,10 @@ utcOffset: -03:00
 # existing document, it's very important to get this IRI exactly right. The convention is that these documents
 # have trailing slashes
 #docIri: http://rs.tdwg.org/dwc/doc/chrono/
-#docIri: http://rs.tdwg.org/dwc/doc/cm/
+docIri: http://rs.tdwg.org/dwc/doc/cm/
 #docIri: http://rs.tdwg.org/dwc/doc/dp/
 #docIri: http://rs.tdwg.org/dwc/doc/eco/
 #docIri: http://rs.tdwg.org/dwc/doc/doe/
 #docIri: http://rs.tdwg.org/dwc/doc/em/
 #docIri: http://rs.tdwg.org/dwc/doc/pw/
-docIri: http://rs.tdwg.org/dwc/doc/list/
+#docIri: http://rs.tdwg.org/dwc/doc/list/
