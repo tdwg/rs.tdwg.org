@@ -22,8 +22,8 @@ utcOffset: -03:00
 # existing document, it's very important to get this IRI exactly right. The convention is that these documents
 # have trailing slashes
 #docIri: http://rs.tdwg.org/dwc/doc/chrono/
-docIri: http://rs.tdwg.org/dwc/doc/cm/
-#docIri: http://rs.tdwg.org/dwc/doc/dp/
+#docIri: http://rs.tdwg.org/dwc/doc/cm/
+docIri: http://rs.tdwg.org/dwc/doc/dp/
 #docIri: http://rs.tdwg.org/dwc/doc/eco/
 #docIri: http://rs.tdwg.org/dwc/doc/doe/
 #docIri: http://rs.tdwg.org/dwc/doc/em/
