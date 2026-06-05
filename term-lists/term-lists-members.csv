@@ -1404,3 +1404,15 @@ http://rs.tdwg.org/dwc/ac/,http://rs.tdwg.org/ac/terms/Media
 http://rs.tdwg.org/dwc/ac/,http://rs.tdwg.org/ac/terms/fundingAttribution
 http://rs.tdwg.org/dwc/dcterms/,http://purl.org/dc/terms/BibliographicResource
 http://rs.tdwg.org/dwc/dcterms/,http://purl.org/dc/terms/Agent
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/Survey
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/surveyID
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/SurveyTarget
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/surveyTargetID
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/surveyTargetType
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/surveyTargetValue
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/surveyTargetUnit
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/includeOrExclude
+http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported
+http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetType
+http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetValue
+http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetUnit

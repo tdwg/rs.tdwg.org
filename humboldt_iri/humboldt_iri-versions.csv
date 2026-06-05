@@ -46,3 +46,6 @@ http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2025-07-10,targetLifeSta
 http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10,targetTaxonomicScope
 http://rs.tdwg.org/eco/iri/version/taxonCompletenessProtocols-2025-07-10,taxonCompletenessProtocols
 http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2025-07-10,taxonCompletenessReported
+http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26,surveyTargetType
+http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-05-26,surveyTargetValue
+http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26,surveyTargetUnit
