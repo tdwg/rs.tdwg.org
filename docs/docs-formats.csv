@@ -73,7 +73,7 @@ http://rs.tdwg.org/dwc/doc/inclusive/,text/markdown,https://raw.githubuserconten
 http://rs.tdwg.org/dwc/doc/tcr/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/tcr/index.md
 http://rs.tdwg.org/tag/doc/boolean/,text/markdown,https://raw.githubusercontent.com/tdwg/tag/master/docs/boolean/index.md
 http://rs.tdwg.org/ltc/doc/list/,text/html,https://raw.githubusercontent.com/tdwg/ltc/main/docs/terms/index.html
-http://rs.tdwg.org/dwc/doc/chrono/,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/master/docs/list/index.md
+http://rs.tdwg.org/dwc/doc/chrono/,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/refs/heads/master/docs/list/index.md
 http://rs.tdwg.org/ac/doc/cd/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/cd/index.md
 http://rs.tdwg.org/tcs/doc/terms/,text/markdown,https://raw.githubusercontent.com/tdwg/tcs2/refs/heads/master/docs/terms/index.md
 http://rs.tdwg.org/dwc/doc/cm/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/cm/index.md

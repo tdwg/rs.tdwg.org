@@ -1347,3 +1347,11 @@ http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported,decision-2026-05-26_58
 http://rs.tdwg.org/eco/iri/surveyTargetType,decision-2026-05-26_58
 http://rs.tdwg.org/eco/iri/surveyTargetValue,decision-2026-05-26_58
 http://rs.tdwg.org/eco/iri/surveyTargetUnit,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem,decision-2026-05-26_58
+http://rs.tdwg.org/chrono/iri/materialDated,decision-2026-05-26_58
