@@ -67,7 +67,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/eco-2026-05-26/eco-2026-05-26.csv
+  modifications_file_path: dwc-revisions/eco-2026-05-26/eco_2026-05-26.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
@@ -128,7 +128,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/eco-2026-05-26/ecoiri-2026-05-26.csv
+  modifications_file_path: dwc-revisions/eco-2026-05-26/ecoiri_2026-05-26.csv
 
   # For non-borrowed terms where this is the defining term list, SHOULD be the empty string and the termlist 
   # IRI will be set to be the same as the namespace IRI. If a value is given for TDWG-minted terms that are being
