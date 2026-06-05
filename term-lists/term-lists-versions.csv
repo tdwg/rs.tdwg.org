@@ -167,3 +167,7 @@ http://rs.tdwg.org/ac/version/xmp/2026-02-24,http://rs.tdwg.org/ac/xmp/
 http://rs.tdwg.org/ac/version/xmpRights/2026-02-24,http://rs.tdwg.org/ac/xmpRights/
 http://rs.tdwg.org/acorient/version/values/2026-02-24,http://rs.tdwg.org/acorient/values/
 http://rs.tdwg.org/acpart/version/values/2026-02-24,http://rs.tdwg.org/acpart/values/
+http://rs.tdwg.org/dwc/version/terms/2026-05-26,http://rs.tdwg.org/dwc/terms/
+http://rs.tdwg.org/dwc/version/iri/2026-05-26,http://rs.tdwg.org/dwc/iri/
+http://rs.tdwg.org/dwc/version/ac/2026-05-26,http://rs.tdwg.org/dwc/ac/
+http://rs.tdwg.org/dwc/version/dcterms/2026-05-26,http://rs.tdwg.org/dwc/dcterms/
