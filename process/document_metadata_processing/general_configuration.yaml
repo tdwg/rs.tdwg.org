@@ -26,6 +26,6 @@ utcOffset: -03:00
 #docIri: http://rs.tdwg.org/dwc/doc/dp/
 #docIri: http://rs.tdwg.org/dwc/doc/eco/
 #docIri: http://rs.tdwg.org/dwc/doc/doe/
-docIri: http://rs.tdwg.org/dwc/doc/em/
+#docIri: http://rs.tdwg.org/dwc/doc/em/
 #docIri: http://rs.tdwg.org/dwc/doc/pw/
-#docIri: http://rs.tdwg.org/dwc/doc/list/
+docIri: http://rs.tdwg.org/dwc/doc/list/

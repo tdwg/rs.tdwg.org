@@ -1416,3 +1416,5 @@ http://rs.tdwg.org/eco/terms/,http://rs.tdwg.org/eco/terms/isSurveyTargetFullyRe
 http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetType
 http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetValue
 http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetUnit
+http://rs.tdwg.org/dwc/ac/,http://rs.tdwg.org/ac/terms/Media
+http://rs.tdwg.org/dwc/ac/,http://rs.tdwg.org/ac/terms/fundingAttribution
