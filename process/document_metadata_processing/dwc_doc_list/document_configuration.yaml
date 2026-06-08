@@ -7,7 +7,7 @@ documentTitle: Darwin Core List of Terms
 
 # Abstract of document written by authors.
 abstract: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This 
-  document lists all terms in namespaces currently used in the vocabulary.
+  document lists all terms currently used in the vocabulary.
 
 
 # This value is generally the name of the task group that created the document.
@@ -71,4 +71,4 @@ comment: ''
 # This value will automatically get updated from the date_issued value in config.yaml if the document
 # is a list of terms document. For other types of documents, it is set from the general_configuration.yaml
 # file.
-doc_modified: '2025-07-10'
+doc_modified: '2026-05-26'

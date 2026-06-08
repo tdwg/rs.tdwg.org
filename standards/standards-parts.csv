@@ -90,3 +90,5 @@ http://www.tdwg.org/standards/638,http://rs.tdwg.org/accd/,tdwgutility:Vocabular
 http://www.tdwg.org/standards/638,http://rs.tdwg.org/ac/doc/cd/,foaf:Document
 http://www.tdwg.org/standards/117,http://rs.tdwg.org/tcs/,tdwgutility:Vocabulary
 http://www.tdwg.org/standards/117,http://rs.tdwg.org/tcs/doc/terms/,foaf:Document
+http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/cm/,foaf:Document
+http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/dp/,foaf:Document
