@@ -9,17 +9,15 @@ RUN cp -pr /srv /basex
 RUN usermod -d /basex basex
 WORKDIR /basex
 
-# BaseX script
-COPY html/restxq.xqm /basex/basex/webapp
-
 # Initialize the database (sets password, starts up, imports data, shuts down)
 COPY . /usr/src/rs.tdwg.org
+RUN rm -Rf /usr/src/rs.tdwg.org/.git
 USER basex
 RUN /usr/src/rs.tdwg.org/docker/initialize-database.sh ../ '' http://localhost:8984/rest/
 USER root
-RUN rm -Rf /usr/src/rs.tdwg.org
 
-COPY docker/supervisord.conf /etc/supervisord.conf
-COPY docker/varnish_default.vcl /etc/varnish/default.vcl
+# BaseX script
+COPY html/restxq.xqm /basex/basex/webapp
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+ENV HOME=/basex
+CMD ["/usr/local/bin/basexhttp"]

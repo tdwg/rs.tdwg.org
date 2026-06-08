@@ -1,2 +1,6 @@
 .DS_Store
 .ipynb_checkpoints
+/.idea
+
+process/config.yaml
+process/vocab.yaml

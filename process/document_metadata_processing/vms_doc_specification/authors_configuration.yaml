@@ -1,0 +1,55 @@
+- contributor_iri: https://orcid.org/0000-0003-4365-3135
+  contributor_literal: Steve Baskauf
+  contributor_role: lead author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: TDWG Vocabulary Maintenance Specification Task Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: https://orcid.org/0000-0003-1144-0290
+  contributor_literal: John Wieczorek
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: TDWG Darwin Core Task Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: https://orcid.org/0000-0002-4419-6960
+  contributor_literal: Stan Blum
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: TDWG Process Interest Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: https://orcid.org/0000-0002-6992-9446
+  contributor_literal: Robert A. Morris
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: UMASS-Boston, TDWG Imaging Interest Group
+  affiliation_uri: http://www.wikidata.org/entity/Q15144
+
+- contributor_iri: https://orcid.org/0000-0001-7694-8250
+  contributor_literal: Jonathan Rees
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Duke University
+  affiliation_uri: http://www.wikidata.org/entity/Q168751
+
+- contributor_iri: https://orcid.org/0000-0001-8332-2571
+  contributor_literal: Joel Sachs
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: TDWG RDF Task Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: https://orcid.org/0000-0002-2954-9027
+  contributor_literal: Greg Whitbread
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: TDWG Technical Architecture Group
+  affiliation_uri: http://www.wikidata.org/entity/Q4914768
+
+- contributor_iri: https://orcid.org/0000-0002-2352-5497
+  contributor_literal: Dag Endresen
+  contributor_role: review manager
+  role_uri: http://www.wikidata.org/entity/Q2462658
+  affiliation: GBIF Norway/NHM University of Oslo
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
