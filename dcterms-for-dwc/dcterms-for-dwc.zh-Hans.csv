@@ -24,3 +24,8 @@
 "references:examples","Examples for References http://rs.tdwg.org/dwc/terms/references",""
 "rightsHolder:label","Label for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder",""
 "rightsHolder:rdfs_comment","Comment for Rights Holder http://rs.tdwg.org/dwc/terms/rightsHolder",""
+"BibliographicResource:label","Label for Bibliographic Resource http://rs.tdwg.org/dwc/terms/BibliographicResource",""
+"BibliographicResource:rdfs_comment","Comment for Bibliographic Resource http://rs.tdwg.org/dwc/terms/BibliographicResource",""
+"Agent:label","Label for Agent http://rs.tdwg.org/dwc/terms/Agent",""
+"Agent:rdfs_comment","Comment for Agent http://rs.tdwg.org/dwc/terms/Agent",""
+"Agent:dcterms_description","Description for Agent http://rs.tdwg.org/dwc/terms/Agent",""
