@@ -1,4 +1,7 @@
 "identifier","context","text"
+"Media:label","Label for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
+"Media:rdfs_comment","Comment for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
+"Media:dcterms_description","Description for Media Entity http://rs.tdwg.org/dwc/terms/Media",""
 "fundingAttribution:label","Label for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
 "fundingAttribution:rdfs_comment","Comment for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
 "fundingAttribution:dcterms_description","Description for Funding Attribution http://rs.tdwg.org/dwc/terms/fundingAttribution",""
