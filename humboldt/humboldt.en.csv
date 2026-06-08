@@ -160,3 +160,29 @@ verbatimTargetScope:dcterms_description,Description for Verbatim Target Scope ht
 voucherInstitutions:label,Label for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions,Voucher Institutions
 voucherInstitutions:rdfs_comment,Comment for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions,A list (concatenated and separated) of the names or acronyms of the institutions where vouchers collected during the dwc:Event were deposited.
 voucherInstitutions:dcterms_description,Description for Voucher Institutions http://rs.tdwg.org/dwc/terms/voucherInstitutions,Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).
+Survey:label,Label for Survey http://rs.tdwg.org/dwc/terms/Survey,Survey
+Survey:rdfs_comment,Comment for Survey http://rs.tdwg.org/dwc/terms/Survey,A biotic survey or inventory.
+Survey:dcterms_description,Description for Survey http://rs.tdwg.org/dwc/terms/Survey,"This class includes properties found in the Humboldt Extension to Darwin Core (eco: namespace), except for the target scope terms, which can be accommodated in eco:SurveyTarget."
+surveyID:label,Label for Survey ID http://rs.tdwg.org/dwc/terms/surveyID,Survey ID
+surveyID:rdfs_comment,Comment for Survey ID http://rs.tdwg.org/dwc/terms/surveyID,An identifier for an eco:Survey.
+surveyID:dcterms_description,Description for Survey ID http://rs.tdwg.org/dwc/terms/surveyID,Recommended best practice is to use a globally unique identifier.
+SurveyTarget:label,Label for SurveyTarget http://rs.tdwg.org/dwc/terms/SurveyTarget,SurveyTarget
+SurveyTarget:rdfs_comment,Comment for SurveyTarget http://rs.tdwg.org/dwc/terms/SurveyTarget,One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.
+surveyTargetID:label,Label for Survey Target ID http://rs.tdwg.org/dwc/terms/surveyTargetID,Survey Target ID
+surveyTargetID:rdfs_comment,Comment for Survey Target ID http://rs.tdwg.org/dwc/terms/surveyTargetID,An identifier for an eco:SurveyTarget.
+surveyTargetID:dcterms_description,Description for Survey Target ID http://rs.tdwg.org/dwc/terms/surveyTargetID,Recommended best practice is to use a globally unique identifier. Note: values of this term are not meant to be unique within an eco:SurveyTarget. A full eco:SurveyTarget is composed of all records that share the same eco:surveyTargetID.
+surveyTargetType:label,Label for Survey Target Type http://rs.tdwg.org/dwc/terms/surveyTargetType,Survey Target Type
+surveyTargetType:rdfs_comment,Comment for Survey Target Type http://rs.tdwg.org/dwc/terms/surveyTargetType,A category that best matches the nature of a scope in an eco:SurveyTarget.
+surveyTargetType:dcterms_description,Description for Survey Target Type http://rs.tdwg.org/dwc/terms/surveyTargetType,Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.
+surveyTargetValue:label,Label for Survey Target Value http://rs.tdwg.org/dwc/terms/surveyTargetValue,Survey Target Value
+surveyTargetValue:rdfs_comment,Comment for Survey Target Value http://rs.tdwg.org/dwc/terms/surveyTargetValue,A value to include or exclude in a scope categorized by eco:surveyTargetType.
+surveyTargetValue:dcterms_description,Description for Survey Target Value http://rs.tdwg.org/dwc/terms/surveyTargetValue,Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.
+surveyTargetUnit:label,Label for Survey Target Unit http://rs.tdwg.org/dwc/terms/surveyTargetUnit,Survey Target Unit
+surveyTargetUnit:rdfs_comment,Comment for Survey Target Unit http://rs.tdwg.org/dwc/terms/surveyTargetUnit,Unit associated with a value in eco:surveyTargetValue.
+surveyTargetUnit:dcterms_description,Description for Survey Target Unit http://rs.tdwg.org/dwc/terms/surveyTargetUnit,Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.
+includeOrExclude:label,Label for Include Or Exclude http://rs.tdwg.org/dwc/terms/includeOrExclude,Include Or Exclude
+includeOrExclude:rdfs_comment,Comment for Include Or Exclude http://rs.tdwg.org/dwc/terms/includeOrExclude,Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.
+includeOrExclude:dcterms_description,Description for Include Or Exclude http://rs.tdwg.org/dwc/terms/includeOrExclude,Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.
+isSurveyTargetFullyReported:label,Label for Is Survey Target Fully Reported http://rs.tdwg.org/dwc/terms/isSurveyTargetFullyReported,Is Survey Target Fully Reported
+isSurveyTargetFullyReported:rdfs_comment,Comment for Is Survey Target Fully Reported http://rs.tdwg.org/dwc/terms/isSurveyTargetFullyReported,Whether an eco:SurveyTarget can be used to infer absence of detection because all counts of detected dwc:Occurrences matching an eco:SurveyTarget were fully reported.
+isSurveyTargetFullyReported:dcterms_description,Description for Is Survey Target Fully Reported http://rs.tdwg.org/dwc/terms/isSurveyTargetFullyReported,"Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary http://rs.tdwg.org/tag/doc/boolean/. If True (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection)."
