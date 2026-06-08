@@ -108,3 +108,12 @@ http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2025-07-10,materialSamp
 http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-07-10,samplingPerformedBy
 http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10,samplingEffortProtocol
 http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2025-07-10,samplingEffortUnit
+http://rs.tdwg.org/eco/terms/version/Survey-2026-05-26,Survey
+http://rs.tdwg.org/eco/terms/version/surveyID-2026-05-26,surveyID
+http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-05-26,SurveyTarget
+http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-05-26,surveyTargetID
+http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-05-26,surveyTargetType
+http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-05-26,surveyTargetValue
+http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-05-26,surveyTargetUnit
+http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-05-26,includeOrExclude
+http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-05-26,isSurveyTargetFullyReported
