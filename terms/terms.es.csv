@@ -506,7 +506,7 @@
 "scientificName:label","Label for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
 "scientificName:rdfs_comment","Comment for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
 "scientificName:dcterms_description","Description for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
-"scientificName:examples","Examples for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName",""
+"scientificName:examples","Examples for Scientific Name http://rs.tdwg.org/dwc/terms/scientificName","`Coleoptera` (orden); `Vespertilionidae` (family); `Manis` (genus); `Ctenomys sociabilis` (genus + specificEpithet); `Ambystoma tigrinum diaboli` (genus + specificEpithet + infraspecificEpithet); `Roptrocerus typographi (Györfi, 1952)` (genus + specificEpithet + scientificNameAuthorship); `Quercus agrifolia var. oxiadenia (Torr.) J.T. Howell` (genus + specificEpithet + taxonRank + infraspecificEpithet + scientificNameAuthorship); `×Agropogon littoralis (Sm.) C. E. Hubb.`; `Mentha ×smithiana R. A. Graham`; `Agrostis stolonifera L. × Polypogon monspeliensis (L.) Desf.`"
 "scientificNameAuthorship:label","Label for Scientific Name Authorship http://rs.tdwg.org/dwc/terms/scientificNameAuthorship",""
 "scientificNameAuthorship:rdfs_comment","Comment for Scientific Name Authorship http://rs.tdwg.org/dwc/terms/scientificNameAuthorship",""
 "scientificNameID:label","Label for Scientific Name ID http://rs.tdwg.org/dwc/terms/scientificNameID","ID del nombre científico"
