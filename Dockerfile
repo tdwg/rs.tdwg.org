@@ -1,12 +1,15 @@
-FROM basex/basexhttp:9.1
+FROM alpine:3
 LABEL maintainer="mblissett@gbif.org"
 
-USER root
-RUN apk update && apk add --no-cache python3 py3-requests supervisor varnish shadow
+RUN apk update && apk add --no-cache openjdk8 curl unzip bash python3 py3-requests && \
+    adduser -h /basex -D -u 1984 basex
+RUN curl --fail --output /BaseX91.zip https://files.basex.org/releases/9.1/BaseX91.zip && \
+    unzip -d /basex /BaseX91.zip && \
+    rm /BaseX91.zip && \
+    chown -R basex /basex
+EXPOSE 8984
 
-# Use a different directory for BaseX, because the /srv directory is declared a non-persistent volume.
-RUN cp -pr /srv /basex
-RUN usermod -d /basex basex
+USER root
 WORKDIR /basex
 
 # Initialize the database (sets password, starts up, imports data, shuts down)
@@ -20,4 +23,4 @@ USER root
 COPY html/restxq.xqm /basex/basex/webapp
 
 ENV HOME=/basex
-CMD ["/usr/local/bin/basexhttp"]
+CMD ["/basex/basex/bin/basexhttp"]
