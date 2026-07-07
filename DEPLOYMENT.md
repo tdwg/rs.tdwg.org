@@ -31,8 +31,10 @@ and stored in GBIF's Docker repository, and that version being deployed to http:
 Specific branches on this repository can also be tracked and deployed, for example to aid generating metadata
 for a public review.  These branches are currently enabled:
 
+* `master`, deployed at http://test.rs.tdwg.org/
 * `bdq`, deployed at http://bdq-public-review.rs.tdwg.org/
 * `mids`, deployed at http://mids-public-review.rs.tdwg.org/
+* `dwc`, deployed at http://dwc-prerelease.rs.tdwg.org/
 
 If you need a new branch to be deployed, create an issue in this repository.
 
