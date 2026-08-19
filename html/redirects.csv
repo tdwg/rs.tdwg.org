@@ -90,3 +90,5 @@ xmp-for-ac,yes,term,xmp,https://ac.tdwg.org/termlist/#,yes,_
 xmp-for-ac-versions,no,termVersion,xmp,,,
 xmpRights-for-ac,yes,term,xmpRights,https://ac.tdwg.org/termlist/#,yes,_
 xmpRights-for-ac-versions,no,termVersion,xmpRights,,,
+bibframe-for-ac,yes,term,bf,https://ac.tdwg.org/termlist/#,yes,_
+bibframe-for-ac-versions,no,termVersion,bf,,,

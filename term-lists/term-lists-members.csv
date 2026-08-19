@@ -1418,3 +1418,17 @@ http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetValue
 http://rs.tdwg.org/eco/iri/,http://rs.tdwg.org/eco/iri/surveyTargetUnit
 http://rs.tdwg.org/dwc/ac/,http://rs.tdwg.org/ac/terms/Media
 http://rs.tdwg.org/dwc/ac/,http://rs.tdwg.org/ac/terms/fundingAttribution
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/digital3DResourceType
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/digital3DResourceTypeLiteral
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/colorBoolean
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/faceCount
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/normalsBoolean
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/numberOfImages
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/pixelXSpacing
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/pixelYSpacing
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/pixelZSpacing
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/pointCount
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/textureMapType
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/textureMapTypeLiteral
+http://rs.tdwg.org/ac/terms/,http://rs.tdwg.org/ac/terms/uvCoordinatesBoolean
+http://rs.tdwg.org/ac/bf/,http://id.loc.gov/ontologies/bibframe/Unit

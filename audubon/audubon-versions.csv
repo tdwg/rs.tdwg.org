@@ -178,3 +178,17 @@ http://rs.tdwg.org/ac/terms/version/derivedFrom-2026-02-24,derivedFrom
 http://rs.tdwg.org/ac/terms/version/relatedResourceID-2026-02-24,relatedResourceID
 http://rs.tdwg.org/ac/terms/version/commentDate-2026-02-24,commentDate
 http://rs.tdwg.org/ac/terms/version/digitizationDate-2026-02-24,digitizationDate
+http://rs.tdwg.org/ac/terms/version/digital3DResourceType-2026-08-18,digital3DResourceType
+http://rs.tdwg.org/ac/terms/version/digital3DResourceTypeLiteral-2026-08-18,digital3DResourceTypeLiteral
+http://rs.tdwg.org/ac/terms/version/colorBoolean-2026-08-18,colorBoolean
+http://rs.tdwg.org/ac/terms/version/faceCount-2026-08-18,faceCount
+http://rs.tdwg.org/ac/terms/version/normalsBoolean-2026-08-18,normalsBoolean
+http://rs.tdwg.org/ac/terms/version/numberOfImages-2026-08-18,numberOfImages
+http://rs.tdwg.org/ac/terms/version/pixelXSpacing-2026-08-18,pixelXSpacing
+http://rs.tdwg.org/ac/terms/version/pixelYSpacing-2026-08-18,pixelYSpacing
+http://rs.tdwg.org/ac/terms/version/pixelZSpacing-2026-08-18,pixelZSpacing
+http://rs.tdwg.org/ac/terms/version/pointCount-2026-08-18,pointCount
+http://rs.tdwg.org/ac/terms/version/resourceCreationTechnique-2026-08-18,resourceCreationTechnique
+http://rs.tdwg.org/ac/terms/version/textureMapType-2026-08-18,textureMapType
+http://rs.tdwg.org/ac/terms/version/textureMapTypeLiteral-2026-08-18,textureMapTypeLiteral
+http://rs.tdwg.org/ac/terms/version/uvCoordinatesBoolean-2026-08-18,uvCoordinatesBoolean
