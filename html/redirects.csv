@@ -92,3 +92,5 @@ xmpRights-for-ac,yes,term,xmpRights,https://ac.tdwg.org/termlist/#,yes,_
 xmpRights-for-ac-versions,no,termVersion,xmpRights,,,
 bibframe-for-ac,yes,term,bf,https://ac.tdwg.org/termlist/#,yes,_
 bibframe-for-ac-versions,no,termVersion,bf,,,
+ac3dmodality,yes,term,ac3dmodality,https://ac.tdwg.org/3dmodality/#,yes,_
+ac3dmodality-versions,no,termVersion,ac3dmodality,,,
