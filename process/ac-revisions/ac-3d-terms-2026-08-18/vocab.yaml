@@ -16,4 +16,10 @@ dcterms_license: http://creativecommons.org/licenses/by/4.0/
 # The following values are only required if the standard is new. If they are provided for
 # an existing standard, they will replace the existing values.
 standard_label: Audiovisual Core
-standard_description: The Audiovisual Core (AC) is a set of vocabularies designed to represent metadata for biodiversity multimedia resources and collections. These vocabularies aim to represent information that will help to determine whether a particular resource or collection will be fit for some particular biodiversity science application before acquiring the media. Among others, the vocabularies address such concerns as the management of the media and collections, descriptions of their content, their taxonomic, geographic, and temporal coverage, and the appropriate ways to retrieve, attribute and reproduce them.
+standard_description: The Audiovisual Core (AC) is a set of vocabularies designed to represent 
+  metadata for biodiversity multimedia resources and collections. These vocabularies aim to 
+  represent information that will help to determine whether a particular resource or collection 
+  will be fit for some particular biodiversity science application before acquiring the media. 
+  Among others, the vocabularies address such concerns as the management of the media and 
+  collections, descriptions of their content, their taxonomic, geographic, and temporal 
+  coverage, and the appropriate ways to retrieve, attribute and reproduce them.
