@@ -1,4 +1,4 @@
-term_lomalName,label,skos_broader,skos_inSmheme,controlled_value_string,definition,usage,notes,examples,definition_derived_from,type
+term_localName,label,skos_broader,skos_inSmheme,controlled_value_string,definition,usage,notes,examples,definition_derived_from,type
 m,3D modality controlled vocabulary,,,,A SKOS ConceptScheme to be used as a controlled vocabulary for the Audiovisual Core term ac:resourceCreationTechnique,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
 m0001,Penetrative,,m,penetrative,Imaging that uses any kind of penetrating wave.,,,,,http://www.w3.org/2004/02/skos/core#Concept
 m0002,X-ray,m0001,m,xRay,"X-Ray imaging is an imaging technique that uses X-rays to create images of the internal structures of an object. X-ray imaging is widely used in medical diagnosis and research, as well as in materials science and other fields to visualize the internal structure of objects.",,,,http://www.morphosource.org/terms/mscv/XRay,http://www.w3.org/2004/02/skos/core#Concept
