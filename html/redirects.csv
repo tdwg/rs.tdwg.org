@@ -94,3 +94,5 @@ bibframe-for-ac,yes,term,bf,https://ac.tdwg.org/termlist/#,yes,_
 bibframe-for-ac-versions,no,termVersion,bf,,,
 ac3dmodality,yes,term,ac3dmodality,https://ac.tdwg.org/3dmodality/#,yes,_
 ac3dmodality-versions,no,termVersion,ac3dmodality,,,
+ac3dtype,yes,term,ac3dtype,https://ac.tdwg.org/3dtype/#,yes,_
+ac3dtype-versions,no,termVersion,ac3dtype,,,
