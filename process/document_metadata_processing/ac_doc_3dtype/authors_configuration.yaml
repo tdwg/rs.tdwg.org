@@ -1,0 +1,55 @@
+- contributor_iri: https://orcid.org/0000-0002-8697-2999
+  contributor_literal: Doug M. Boyer
+  contributor_role: lead author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Duke University
+  affiliation_uri: http://www.wikidata.org/entity/Q168751
+
+- contributor_iri: https://orcid.org/0000-0003-2493-9912
+  contributor_literal: Jon Blundell
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Smithsonian Institution
+  affiliation_uri: http://www.wikidata.org/entity/Q131626
+
+- contributor_iri: https://orcid.org/0000-0002-6712-2139
+  contributor_literal: Gary J. Motz
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Indiana Geological and Water Survey
+  affiliation_uri: http://www.wikidata.org/entity/Q6023194
+
+- contributor_iri: https://orcid.org/0000-0003-0939-9102
+  contributor_literal: Adam N. Rountrey
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: University of Michigan Museum of Paleontology
+  affiliation_uri: http://www.wikidata.org/entity/Q96220204
+
+- contributor_iri: https://orcid.org/0000-0002-0028-6139
+  contributor_literal: Rebecca Snyder
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Smithsonian Institution
+  affiliation_uri: http://www.wikidata.org/entity/Q131626
+
+- contributor_iri: https://orcid.org/0000-0003-3452-2408
+  contributor_literal: Jocelyn Triplett
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Duke University
+  affiliation_uri: http://www.wikidata.org/entity/Q168751
+
+- contributor_iri: https://orcid.org/0000-0002-8347-0942
+  contributor_literal: Kate Webbink
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
+
+- contributor_iri: https://orcid.org/0000-0001-6578-764X
+  contributor_literal: Julie Winchester
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Duke University
+  affiliation_uri: http://www.wikidata.org/entity/Q168751
