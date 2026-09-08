@@ -60,7 +60,7 @@ optional `name` column of `rs.gbif.org` `scripts/xml/dna_derived_data_list.csv`.
 use it: the 91 MIxS terms, plus `gbif:dna_sequence`, whose IRI is lowercase while its
 column heading is `DNA_sequence`.
 
-### Dependency: this requires a fix to `dwcterms.py` upstream
+### Background: this needed a fix to `dwcterms.py` upstream (merged)
 
 `process.py` in this repository handles numeric local names correctly — it reads term data
 through its own `readCsv()`, which uses the stdlib `csv` module and yields strings.
@@ -79,13 +79,11 @@ versions, translations). All three are required: `term_localName` is the merge k
 them, and is used with the `.str` accessor when sorting, so the dtype must be consistent
 across all three or the merge raises.
 
-The fix is open as **https://github.com/tdwg/dwc/pull/1058**.
-
-**These term lists cannot be built by `rs.gbif.org` until that PR is merged.**
-`rs.gbif.org` re-downloads `dwcterms.py` from `tdwg/dwc` master on every
-`update-translations.sh` run, so it will pick the fix up automatically once merged. Until
-then, anyone trying to reproduce the generated extension from these sources will hit the
-`UFuncTypeError` above; that is expected, and is not a fault in these source files.
+That fix was merged as **https://github.com/tdwg/dwc/pull/1058**, so nothing here is
+blocked. `rs.gbif.org` re-downloads `dwcterms.py` from `tdwg/dwc` master on every
+`update-translations.sh` run and picks it up automatically. Recorded here because it
+explains why `term_localName` is numeric, and because anyone building against a
+`dwcterms.py` predating that merge will hit the `UFuncTypeError` above.
 
 No existing TDWG term list uses purely numeric local names — checked across every term list
 in this repository — which is why this had not surfaced before. It is a latent bug for any
