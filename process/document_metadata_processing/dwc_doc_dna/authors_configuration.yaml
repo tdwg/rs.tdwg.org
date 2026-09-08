@@ -1,12 +1,131 @@
 # Contributors to the DNA Derived Data List of Terms.
 #
-# PLACEHOLDER - this file exists because dwcterms.py load_contributors() hard-exits
-# if it 404s. It is loaded but not consumed by build-xml.py, so the extension builds
-# correctly with this content. Replace with the real task group membership before
-# this is proposed upstream.
-- contributor_iri: ''
-  contributor_literal: GBIF DNA Derived Data Task Group
-  contributor_role: lead author
+# Taken from the author list of "Publishing DNA-derived data through biodiversity data
+# platforms", v1.3 (2023), https://doi.org/10.35035/doc-vf1a-nr22. Order follows the
+# suggested citation: alphabetical by surname, with Frøslev last.
+#
+# Email addresses from the source document are omitted - the document metadata script
+# supports only contributor_iri, contributor_literal, contributor_role, role_uri,
+# affiliation and affiliation_uri. Affiliations are trimmed to institution and country,
+# following the convention in the other authors_configuration.yaml files in this
+# directory. affiliation_uri is OPTIONAL and is populated only where the Wikidata entity
+# is already attested in this repository; the rest are left blank rather than guessed.
+
+- contributor_iri: https://orcid.org/0000-0001-5526-4845
+  contributor_literal: Kessy Abarenkov
+  contributor_role: author
   role_uri: http://www.wikidata.org/entity/Q482980
-  affiliation: Global Biodiversity Information Facility
-  affiliation_uri: http://www.wikidata.org/entity/Q1531963
+  affiliation: Natural History Museum and Botanical Garden, University of Tartu, Estonia
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-3627-6899
+  contributor_literal: Anders F. Andersson
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Science for Life Laboratory, Department of Gene Technology, KTH Royal Institute of Technology, Sweden
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0001-7396-1484
+  contributor_literal: Andrew Bissett
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: CSIRO Oceans and Atmosphere, Australia
+  affiliation_uri: http://www.wikidata.org/entity/Q16335177
+
+- contributor_iri: https://orcid.org/0000-0003-4529-6266
+  contributor_literal: Anders G. Finstad
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Department of Natural History, Centre for Biodiversity Dynamics, Norwegian University of Science and Technology, Norway
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-7535-9574
+  contributor_literal: Frode Fossøy
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Centre for Biodiversity Genetics (NINAGEN), Norwegian Institute for Nature Research (NINA), Norway
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-2685-8078
+  contributor_literal: Marie Grosjean
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility (GBIF), Denmark
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0002-4827-3310
+  contributor_literal: Michael Hope
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Atlas of Living Australia, CSIRO National Collections & Marine Infrastructure, Australia
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0003-1691-239X
+  contributor_literal: Thomas S. Jeppesen
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility (GBIF), Denmark
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0002-5171-1668
+  contributor_literal: Urmas Kõljalg
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Natural History Museum and Botanical Garden, University of Tartu, Estonia
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-8779-6464
+  contributor_literal: Daniel Lundin
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Centre for Ecology and Evolution in Microbial model Systems (EEMiS), Linnaeus University, Sweden
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-8052-0107
+  contributor_literal: R. Henrik Nilsson
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Department of Biological and Environmental Sciences, University of Gothenburg, Sweden
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0003-4897-8422
+  contributor_literal: Maria Prager
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Department of Ecology, Environment and Plant Sciences, Stockholm University; Department of Microbiology, Tumor and Cell Biology, Karolinska Institutet, Sweden
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-4236-0384
+  contributor_literal: Pieter Provoost
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Ocean Biodiversity Information System (OBIS), Belgium
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-2919-1168
+  contributor_literal: Dmitry Schigel
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility (GBIF), Denmark
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri:
+  contributor_literal: Saara Suominen
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Ocean Biodiversity Information System (OBIS), Belgium
+  affiliation_uri:
+
+- contributor_iri: https://orcid.org/0000-0002-9216-2917
+  contributor_literal: Cecilie Svenningsen
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility (GBIF), Denmark
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
+
+- contributor_iri: https://orcid.org/0000-0002-3530-013X
+  contributor_literal: Tobias Guldberg Frøslev
+  contributor_role: author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility (GBIF), Denmark
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
