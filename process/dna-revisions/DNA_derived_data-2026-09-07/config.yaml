@@ -1,0 +1,74 @@
+# Configuration for the DNA derived data term lists.
+#
+# To use this file, copy it (and vocab.yaml) into the process/ directory and run
+# process.py from there. A copy is kept here alongside the modifications CSVs as
+# the record of what was run.
+#
+# All four namespaces below are BORROWED: the terms are governed by the Genomic
+# Standards Consortium (MIxS), GGBN, and GBIF respectively. Recording them here
+# documents their use by the GBIF DNA derived data extension; it does not assert
+# TDWG authority over them, and borrowed: true means no term versions are minted.
+
+date_issued: '2026-09-07'
+local_offset_from_utc: -03:00
+
+# 1 = simple vocabulary (properties), as used by Darwin Core itself.
+vocab_type: 1
+
+list_of_terms_iri: http://rs.tdwg.org/dwc/doc/dna/
+standard: http://www.tdwg.org/standards/450
+decisions_text: Term lists recording the MIxS, MIQE, GBIF and GGBN terms used by the GBIF DNA derived data extension. https://github.com/gbif/rs.gbif.org.
+
+namespaces:
+- namespace_uri: https://w3id.org/mixs/
+  pref_namespace_prefix: mixs
+  database: mixs-for-dna
+  borrowed: true
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: dna-revisions/DNA_derived_data-2026-09-07/mixs_2026-09-07.csv
+  termlist_uri: 'http://rs.tdwg.org/dwc/mixs/'
+  label: MIxS terms used by the DNA derived data extension
+  description: This term list includes all terms that have been adopted from the MIxS namespace mixs:, maintained by the Genomic Standards Consortium. NOTE - MIxS identifies its terms by opaque numeric IRIs (samp_name is MIXS:0001107), but term_localName here holds the MIxS slot name instead, because process.py and dwcterms.py both read these CSVs with pandas and coerce a purely numeric local name to an integer, stripping its leading zeros. The real term IRI is carried in the qualname column of scripts/xml/dna_derived_data_list.csv in rs.gbif.org, which is what the published extension emits.
+  prepend_url: https://dwc.tdwg.org/list/#
+  use_namespace_in_fragment: true
+  separator: '_'
+- namespace_uri: http://rs.gbif.org/terms/miqe/
+  pref_namespace_prefix: miqe
+  database: miqe-for-dna
+  borrowed: true
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: dna-revisions/DNA_derived_data-2026-09-07/miqe_2026-09-07.csv
+  termlist_uri: 'http://rs.tdwg.org/dwc/miqe/'
+  label: MIQE terms used by the DNA derived data extension
+  description: This term list includes all terms that have been adopted from the GBIF MIQE namespace miqe:, following the Minimum Information for Publication of Quantitative Real-Time PCR Experiments guidelines.
+  prepend_url: https://dwc.tdwg.org/list/#
+  use_namespace_in_fragment: true
+  separator: '_'
+- namespace_uri: http://rs.gbif.org/terms/
+  pref_namespace_prefix: gbif
+  database: gbif-for-dna
+  borrowed: true
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: dna-revisions/DNA_derived_data-2026-09-07/gbif_2026-09-07.csv
+  termlist_uri: 'http://rs.tdwg.org/dwc/gbif/'
+  label: GBIF terms used by the DNA derived data extension
+  description: This term list includes all terms that have been adopted from the GBIF namespace gbif:, minted by GBIF for use in the DNA derived data extension.
+  prepend_url: https://dwc.tdwg.org/list/#
+  use_namespace_in_fragment: true
+  separator: '_'
+- namespace_uri: http://data.ggbn.org/schemas/ggbn/terms/
+  pref_namespace_prefix: ggbn
+  database: ggbn-for-dna
+  borrowed: true
+  new_term_list: true
+  utility_namespace: false
+  modifications_file_path: dna-revisions/DNA_derived_data-2026-09-07/ggbn_2026-09-07.csv
+  termlist_uri: 'http://rs.tdwg.org/dwc/ggbn/'
+  label: GGBN terms used by the DNA derived data extension
+  description: This term list includes all terms that have been adopted from the Global Genome Biodiversity Network namespace ggbn:.
+  prepend_url: https://dwc.tdwg.org/list/#
+  use_namespace_in_fragment: true
+  separator: '_'

@@ -1,0 +1,6 @@
+term_localName,label,rdfs_comment,dcterms_description,examples,rdf_type,tdwgutility_abcdEquivalence,tdwgutility_organizedInClass,tdwgutility_decision,tdwgutility_usageScope
+concentration,Concentration,Concentration of DNA (weight ng/volume µl),,`67.5`,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,,,extension
+concentrationUnit,Concentration Unit,Unit used for concentration measurement,,`ng/µl`,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,,,extension
+methodDeterminationConcentrationAndRatios,Method Determination Concentration And Ratios,Description of method used for concentration measurement,,"`Nanodrop, Qubit`",http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,,,extension
+ratioOfAbsorbance260_230,Ratio Of Absorbance 260/230,"Ratio of absorbance at 260 nm and 230 nm assessing DNA purity (mostly secondary measure, indicates mainly EDTA, carbohydrates, phenol), (DNA samples only).",,`1.89`,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,,,extension
+ratioOfAbsorbance260_280,Ratio Of Absorbance 260/280,"Ratio of absorbance at 260 nm and 280 nm assessing DNA purity (mostly secondary measure, indicates mainly EDTA, carbohydrates, phenol), (DNA samples only).",,`1.91`,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,not in ABCD,,,extension

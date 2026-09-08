@@ -1,0 +1,36 @@
+# ----------------
+# Values set by the task group or maintainers of the standard.
+# ----------------
+
+# Official title of the document assigned by authors.
+documentTitle: "DNA Derived Data List of Terms"
+
+# Abstract of document written by authors.
+abstract: The DNA derived data extension captures information relating to DNA-derived occurrence records. It is based on MIxS (Minimum Information about any (x) Sequence), with additions from GGBN and MIQE. This document lists all terms in namespaces currently used by the extension.
+
+# This value is generally the name of the task group that created the document.
+creator: GBIF DNA Derived Data Task Group
+
+# Media type of source document used to generate the HTML version of the document.
+mediaType: text/markdown
+
+accessUrl: https://raw.githubusercontent.com/gbif/rs.gbif.org/refs/heads/master/docs/dna/index.md
+browserRedirectUri: https://rs.gbif.org/extension/gbif/1.0/dna_derived_data.xml
+
+dcterms_isPartOf: http://www.tdwg.org/standards/450
+current_iri: http://rs.tdwg.org/dwc/doc/dna/
+
+# Date of first ratification of the document. Will match the doc_modified value for the first
+# version of the document.
+doc_created: '2026-09-07'
+
+publisher: Biodiversity Information Standards (TDWG)
+license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
+license_uri: http://creativecommons.org/licenses/by/4.0/
+comment: ''
+
+# NOTE: build-xml.py reads doc_modified to compose the output filename
+# (sandbox/extension/gbif/1.0/dna_derived_data_<doc_modified>.xml). It is NOT today's
+# date and cannot be overridden from the command line - change it here to cut a new
+# dated version of the extension.
+doc_modified: '2026-09-07'

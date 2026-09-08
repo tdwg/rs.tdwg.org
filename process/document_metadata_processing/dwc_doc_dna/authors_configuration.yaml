@@ -1,0 +1,12 @@
+# Contributors to the DNA Derived Data List of Terms.
+#
+# PLACEHOLDER - this file exists because dwcterms.py load_contributors() hard-exits
+# if it 404s. It is loaded but not consumed by build-xml.py, so the extension builds
+# correctly with this content. Replace with the real task group membership before
+# this is proposed upstream.
+- contributor_iri: ''
+  contributor_literal: GBIF DNA Derived Data Task Group
+  contributor_role: lead author
+  role_uri: http://www.wikidata.org/entity/Q482980
+  affiliation: Global Biodiversity Information Facility
+  affiliation_uri: http://www.wikidata.org/entity/Q1531963
