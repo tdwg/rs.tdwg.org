@@ -33,66 +33,48 @@ Two follow-ups:
   `data.ggbn.org` itself. Someone should confirm the authoritative GGBN wording. The other
   four GGBN definitions are byte-identical to GBIF's copy and need no attention.
 
-## 2. `mixs-for-dna` — `term_localName` is the MIxS slot name, not the IRI local part
+## 2. `mixs-for-dna` — numeric term local names, and the upstream fix they depend on
 
-MIxS identifies its terms with opaque numeric IRIs (`samp_name` is
-`https://w3id.org/mixs/0001107`). Per `create-vocabulary.md` §2.3 the local name is what
-composes the term IRI, so `term_localName` should be `0001107`.
+MIxS identifies its terms with opaque zero-padded numeric IRIs: `samp_name` is
+`https://w3id.org/mixs/0001107`. Per `create-vocabulary.md` §2.3 the local name is what
+composes the term IRI, so `term_localName` here is `0001107`, not `samp_name`. All 91 MIxS
+local names are 7-digit strings and the composed IRIs match MIxS's declared `slot_uri`
+values exactly.
 
-It cannot be, because of a bug in one downstream consumer.
+The Darwin Core Archive column heading is a separate concern and is supplied by the
+optional `name` column of `rs.gbif.org` `scripts/xml/dna_derived_data_list.csv`. 92 rows
+use it: the 91 MIxS terms, plus `gbif:dna_sequence`, whose IRI is lowercase while its
+column heading is `DNA_sequence`.
+
+### Dependency: this requires a fix to `dwcterms.py` upstream
 
 `process.py` in this repository handles numeric local names correctly — it reads term data
-through its own `readCsv()`, which uses the stdlib `csv` module and yields strings (32 call
-sites). Its `pandas` calls are either guid-o-matic template files or already pass
-`dtype=str`. **The rs.tdwg.org side is not the problem.**
+through its own `readCsv()`, which uses the stdlib `csv` module and yields strings.
 
-The problem is `dwcterms.py` in `rs.gbif.org`, which consumes the published term lists to
-build the DNA derived data extension. At line 121 it reads them with no `dtype`:
+`dwcterms.py` in `tdwg/dwc` (`build/dwcterms.py`), which `rs.gbif.org` uses to build the
+extension, did not. It read the term lists with `pd.read_csv(..., keep_default_na=False)`
+and no `dtype`, so a column of nothing but digits was inferred as `int64` — `'0001107'`
+became `1107`, losing the leading zeros before anything else ran, then failing outright on
+the `term_iri` string concatenation with:
 
-    metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
-    ...
-    term_iri=lambda x: term_list['pref_ns_uri'] + x['term_localName']
+    UFuncTypeError: ufunc 'add' did not contain a loop with signature matching
+    types (dtype('<U22'), dtype('int64'))
 
-pandas infers a column of nothing but digits as `int64`, so `'0001107'` becomes the integer
-`1107` — the leading zeros are gone before anything else happens. Two failures follow:
+The fix adds `dtype=str` to all three reads in `create_metadata_table()` (current terms,
+versions, translations). All three are required: `term_localName` is the merge key joining
+them, and is used with the `.str` accessor when sorting, so the dtype must be consistent
+across all three or the merge raises.
 
-1. `UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types
-   (dtype('<U22'), dtype('int64'))` — string + int, which is the crash actually observed.
-2. Even with that fixed, the value is already wrong: the composed IRI would be
-   `https://w3id.org/mixs/1107`, a different identifier entirely.
+**These term lists cannot be built by `rs.gbif.org` until that fix is merged upstream.**
+`rs.gbif.org` re-downloads `dwcterms.py` from `tdwg/dwc` master on every
+`update-translations.sh` run, so it will pick the fix up automatically once merged.
 
-No existing TDWG term list uses purely numeric local names (checked across every term list
-in this repository), so this has never surfaced before.
-
-### Recommended resolution
-
-Add `dtype=str` to that `pd.read_csv` call:
-
-    metadata_df = pd.read_csv(metadata_url, keep_default_na=False, dtype=str)
-
-This matches what `process.py` already does at its own lines 636, 1353 and 1384. It must be
-made **upstream**, in `tdwg/dwc` `build/dwcterms.py` — `rs.gbif.org` re-downloads that file
-from master on every `update-translations.sh` run (line 6), so a local edit is erased.
-
-With that fix, `term_localName` in `mixs-for-dna.csv` can become `0001107`, the term IRI
-composes correctly, and the `qualname` override below is needed only for `DNA_sequence`.
-This is a latent bug for any future borrowed vocabulary that uses opaque numeric
-identifiers, not just MIxS, so it is worth raising on its own merits.
-
-### The interim workaround, and its cost
-
-Until then, `term_localName` holds the MIxS slot name and the real IRI is carried
-separately, in the `qualname` column of `rs.gbif.org`
-`scripts/xml/dna_derived_data_list.csv`. The 91 MIxS terms and 1 GBIF term
-(`DNA_sequence`, whose IRI is lowercase) use that override, and the published extension
-emits the correct `qualName` — verified for all 91 against MIxS v7.0.1.
-
-The cost is borne entirely by the term list: the IRI it composes,
-`https://w3id.org/mixs/samp_name`, is not the identifier MIxS declares for that term (MIxS
-gives `slot_uri: MIXS:0001107`). Whether `w3id.org` happens to redirect a name-based path
-has not been tested and is beside the point — it is not the term's identifier.
-
-This is the weakest part of the submission and needs a maintainer's decision.
+No existing TDWG term list uses purely numeric local names — checked across every term list
+in this repository — which is why this had not surfaced before. It is a latent bug for any
+borrowed vocabulary with opaque numeric identifiers, not a MIxS-specific problem. Verified
+against today's data: of the 191 CSVs the consumers read, only `term_deprecated` (bool) and
+`tdwgutility_layer` (int64) change dtype under the fix, neither changes behaviour, and both
+`build-csv_derivatives.py` and `build-webpages.py` produce byte-identical output.
 
 ## 3. Definitions and usage guidelines
 

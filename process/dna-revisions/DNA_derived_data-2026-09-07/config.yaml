@@ -29,7 +29,7 @@ namespaces:
   modifications_file_path: dna-revisions/DNA_derived_data-2026-09-07/mixs_2026-09-07.csv
   termlist_uri: 'http://rs.tdwg.org/dwc/mixs/'
   label: MIxS terms used by the DNA derived data extension
-  description: This term list includes all terms that have been adopted from the MIxS namespace mixs:, maintained by the Genomic Standards Consortium. NOTE - MIxS identifies its terms by opaque numeric IRIs (samp_name is MIXS:0001107), but term_localName here holds the MIxS slot name instead, because process.py and dwcterms.py both read these CSVs with pandas and coerce a purely numeric local name to an integer, stripping its leading zeros. The real term IRI is carried in the qualname column of scripts/xml/dna_derived_data_list.csv in rs.gbif.org, which is what the published extension emits.
+  description: This term list includes all terms that have been adopted from the MIxS namespace mixs:, maintained by the Genomic Standards Consortium. MIxS identifies its terms by opaque zero-padded numeric IRIs, so term_localName here is the numeric local part (samp_name is MIXS:0001107). The Darwin Core Archive column heading is carried separately, in the name column of scripts/xml/dna_derived_data_list.csv in rs.gbif.org.
   prepend_url: https://dwc.tdwg.org/list/#
   use_namespace_in_fragment: true
   separator: '_'
