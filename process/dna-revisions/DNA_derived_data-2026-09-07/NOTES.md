@@ -39,21 +39,60 @@ MIxS identifies its terms with opaque numeric IRIs (`samp_name` is
 `https://w3id.org/mixs/0001107`). Per `create-vocabulary.md` §2.3 the local name is what
 composes the term IRI, so `term_localName` should be `0001107`.
 
-It cannot be. Both `process.py` and `dwcterms.py` read these CSVs with
-`pandas.read_csv(..., keep_default_na=False)` and no `dtype`, which coerces a purely
-numeric column to `int64` **and strips its leading zeros** — `0001107` becomes `1107`.
-`dwcterms.py` is re-downloaded from upstream on every `update-translations.sh` run in
-`rs.gbif.org`, so it cannot be patched.
+It cannot be, because of a bug in one downstream consumer.
 
-Consequence: the term IRI these lists compose (`https://w3id.org/mixs/samp_name`) is
-synthetic and does not resolve. The real MIxS IRI is carried separately, in the `qualname`
-column of `rs.gbif.org` `scripts/xml/dna_derived_data_list.csv`, and that is what the
-published extension emits. The 91 MIxS terms and 1 GBIF term (`DNA_sequence`, whose IRI is
-lowercase) use that override.
+`process.py` in this repository handles numeric local names correctly — it reads term data
+through its own `readCsv()`, which uses the stdlib `csv` module and yields strings (32 call
+sites). Its `pandas` calls are either guid-o-matic template files or already pass
+`dtype=str`. **The rs.tdwg.org side is not the problem.**
 
-This is the weakest point in the whole submission and needs a maintainer's view. Fixing it
-properly means either a `dtype=str` in upstream `dwcterms.py`/`process.py`, or accepting
-that MIxS terms cannot be represented as a standard TDWG borrowed-term list.
+The problem is `dwcterms.py` in `rs.gbif.org`, which consumes the published term lists to
+build the DNA derived data extension. At line 121 it reads them with no `dtype`:
+
+    metadata_df = pd.read_csv(metadata_url, keep_default_na=False)
+    ...
+    term_iri=lambda x: term_list['pref_ns_uri'] + x['term_localName']
+
+pandas infers a column of nothing but digits as `int64`, so `'0001107'` becomes the integer
+`1107` — the leading zeros are gone before anything else happens. Two failures follow:
+
+1. `UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types
+   (dtype('<U22'), dtype('int64'))` — string + int, which is the crash actually observed.
+2. Even with that fixed, the value is already wrong: the composed IRI would be
+   `https://w3id.org/mixs/1107`, a different identifier entirely.
+
+No existing TDWG term list uses purely numeric local names (checked across every term list
+in this repository), so this has never surfaced before.
+
+### Recommended resolution
+
+Add `dtype=str` to that `pd.read_csv` call:
+
+    metadata_df = pd.read_csv(metadata_url, keep_default_na=False, dtype=str)
+
+This matches what `process.py` already does at its own lines 636, 1353 and 1384. It must be
+made **upstream**, in `tdwg/dwc` `build/dwcterms.py` — `rs.gbif.org` re-downloads that file
+from master on every `update-translations.sh` run (line 6), so a local edit is erased.
+
+With that fix, `term_localName` in `mixs-for-dna.csv` can become `0001107`, the term IRI
+composes correctly, and the `qualname` override below is needed only for `DNA_sequence`.
+This is a latent bug for any future borrowed vocabulary that uses opaque numeric
+identifiers, not just MIxS, so it is worth raising on its own merits.
+
+### The interim workaround, and its cost
+
+Until then, `term_localName` holds the MIxS slot name and the real IRI is carried
+separately, in the `qualname` column of `rs.gbif.org`
+`scripts/xml/dna_derived_data_list.csv`. The 91 MIxS terms and 1 GBIF term
+(`DNA_sequence`, whose IRI is lowercase) use that override, and the published extension
+emits the correct `qualName` — verified for all 91 against MIxS v7.0.1.
+
+The cost is borne entirely by the term list: the IRI it composes,
+`https://w3id.org/mixs/samp_name`, is not the identifier MIxS declares for that term (MIxS
+gives `slot_uri: MIXS:0001107`). Whether `w3id.org` happens to redirect a name-based path
+has not been tested and is beside the point — it is not the term's identifier.
+
+This is the weakest part of the submission and needs a maintainer's decision.
 
 ## 3. Definitions and usage guidelines
 
