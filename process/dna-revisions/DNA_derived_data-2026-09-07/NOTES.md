@@ -3,8 +3,22 @@
 Source files for the four borrowed term lists used by the GBIF DNA derived data
 extension (`mixs-for-dna`, `miqe-for-dna`, `gbif-for-dna`, `ggbn-for-dna`).
 
-Generated from `rs.gbif.org` `sandbox/extension/gbif/1.0/dna_derived_data_2026-09-07.xml`,
-which is the hand-maintained extension these lists replace as the source of truth.
+The term metadata was extracted from the hand-maintained extension these lists replace as
+the source of truth. Its provenance:
+
+- `rs.gbif.org` `extension/gbif/1.0/dna_derived_data_2024-07-11.xml` — the last published
+  release, and the last version maintained entirely by hand.
+- `rs.gbif.org` `sandbox/extension/gbif/1.0/dna_derived_data_2026-04-14.xml` — a sandbox
+  draft over that: typo fixes in two term names and one description, a usage comment split
+  out of one definition, and `url` renamed to `associated_resource`.
+- Five further MIxS v7 term renames applied on top of the sandbox draft
+  (`estimated_size` → `estimated_genome_size`, `single_cell_lysis_appr` →
+  `sc_lysis_approach`, `single_cell_lysis_prot` → `sc_lysis_method`, `_16s_recover` →
+  `x16s_recover`, `_16s_recover_software` → `x16s_recover_software`).
+
+From that point the term lists in this directory are the source of truth, and
+`sandbox/extension/gbif/1.0/dna_derived_data_2026-09-07.xml` is *generated* from them by
+`rs.gbif.org` `scripts/build-xml.py` — do not treat it as an input.
 
 Everything below is a deliberate departure from the documented process or from a source
 vocabulary. Each needs a reviewer's agreement before this is proposed upstream.
@@ -65,9 +79,13 @@ versions, translations). All three are required: `term_localName` is the merge k
 them, and is used with the `.str` accessor when sorting, so the dtype must be consistent
 across all three or the merge raises.
 
-**These term lists cannot be built by `rs.gbif.org` until that fix is merged upstream.**
+The fix is open as **https://github.com/tdwg/dwc/pull/1058**.
+
+**These term lists cannot be built by `rs.gbif.org` until that PR is merged.**
 `rs.gbif.org` re-downloads `dwcterms.py` from `tdwg/dwc` master on every
-`update-translations.sh` run, so it will pick the fix up automatically once merged.
+`update-translations.sh` run, so it will pick the fix up automatically once merged. Until
+then, anyone trying to reproduce the generated extension from these sources will hit the
+`UFuncTypeError` above; that is expected, and is not a fault in these source files.
 
 No existing TDWG term list uses purely numeric local names — checked across every term list
 in this repository — which is why this had not surfaced before. It is a latent bug for any
