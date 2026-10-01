@@ -1,4 +1,5 @@
 term_localName,label,definition,usage,notes,controlled_value_string,skos_inScheme,type
+m,materialEntityCategory controlled concept scheme,A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:materialEntityCategory and dwciri:materialEntityCategory,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
 m01,live organism,,,,liveOrganism,m,http://www.w3.org/2004/02/skos/core#Concept
 m02,dead organism,,,,deadOrganism,m,http://www.w3.org/2004/02/skos/core#Concept
 m03,part of organism,,,,partOfOrganism,m,http://www.w3.org/2004/02/skos/core#Concept
