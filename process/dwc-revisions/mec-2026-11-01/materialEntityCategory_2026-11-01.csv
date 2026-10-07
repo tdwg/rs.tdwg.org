@@ -1,14 +1,14 @@
-term_localName,label,definition,usage,notes,controlled_value_string,skos_inScheme,type
-m,materialEntityCategory controlled concept scheme,A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:materialEntityCategory and dwciri:materialEntityCategory,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
-m01,live organism,,,,liveOrganism,m,http://www.w3.org/2004/02/skos/core#Concept
-m02,dead organism,,,,deadOrganism,m,http://www.w3.org/2004/02/skos/core#Concept
-m03,part of organism,,,,partOfOrganism,m,http://www.w3.org/2004/02/skos/core#Concept
-m04,non-molecular biological extract,,,,nonMolecularBiologicalExtract,m,http://www.w3.org/2004/02/skos/core#Concept
-m05,molecular biological extract,,,,molecularBiologicalExtract,m,http://www.w3.org/2004/02/skos/core#Concept
-m06,mineral,,,,mineral,m,http://www.w3.org/2004/02/skos/core#Concept
-m07,rock,,,,rock,m,http://www.w3.org/2004/02/skos/core#Concept
-m08,fossil,,,,fossil,m,http://www.w3.org/2004/02/skos/core#Concept
-m09,chemical,,,,chemical,m,http://www.w3.org/2004/02/skos/core#Concept
-m10,human artifact with biological constituent,,,,humanArtifactWithBiologicalConstituent,m,http://www.w3.org/2004/02/skos/core#Concept
-m11,human artifact without biological constituent,,,,humanArtifactWithoutBiologicalConstituent,m,http://www.w3.org/2004/02/skos/core#Concept
-m12,mixed,,,,mixed,m,http://www.w3.org/2004/02/skos/core#Concept
+term_localName,label,definition,usage,notes,controlled_value_string,skos_inScheme,sawsdlrdf_modelReference,type
+m,materialEntityCategory controlled concept scheme,A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:materialEntityCategory and dwciri:materialEntityCategory,,,,,,http://www.w3.org/2004/02/skos/core#ConceptScheme
+m01,live organism,,,,liveOrganism,m,,http://www.w3.org/2004/02/skos/core#Concept
+m02,dead organism,,,,deadOrganism,m,,http://www.w3.org/2004/02/skos/core#Concept
+m03,part of organism,,,,partOfOrganism,m,,http://www.w3.org/2004/02/skos/core#Concept
+m04,non-molecular biological extract,,,,nonMolecularBiologicalExtract,m,,http://www.w3.org/2004/02/skos/core#Concept
+m05,molecular biological extract,,,,molecularBiologicalExtract,m,,http://www.w3.org/2004/02/skos/core#Concept
+m06,mineral,"A naturally occurring element or chemical compound of homogeneous composition, normally with a crystalline structure, and resulting from some geological process on Earth or in extraterrestrial bodies.",,,mineral,m,https://kos.geospecimens.org/def/geological-specimen-material-category/mineral,http://www.w3.org/2004/02/skos/core#Concept
+m07,rock,"Consolidated aggregate of one or more Earth materials, or a body of undifferentiated mineral matter, or of solid organic material. Includes mineral aggregates such as granite, shale, marble; glassy matter such as obsidian; and organic material such a coal. Excludes unconsolidated materials.",,,rock,m,https://kos.geospecimens.org/def/geological-specimen-material-category/rock,http://www.w3.org/2004/02/skos/core#Concept
+m08,fossil,"Any remains, trace, or imprint of a plant or animal preserved in the Earth's crust since some past geologic or prehistoric time; loosely, any evidence of past life.",,,fossil,m,https://kos.geospecimens.org/def/geological-specimen-material-category/fossil,http://www.w3.org/2004/02/skos/core#Concept
+m09,chemical,,,,chemical,m,,http://www.w3.org/2004/02/skos/core#Concept
+m10,human artifact with biological constituent,,,,humanArtifactWithBiologicalConstituent,m,,http://www.w3.org/2004/02/skos/core#Concept
+m11,human artifact without biological constituent,,,,humanArtifactWithoutBiologicalConstituent,m,,http://www.w3.org/2004/02/skos/core#Concept
+m12,mixed,,,,mixed,m,,http://www.w3.org/2004/02/skos/core#Concept
