@@ -24,8 +24,9 @@ as the explicit signal that they changed in this release. Document metadata and
 contributors are declared centrally in ``config.yaml``; creation and modification
 dates are derived from historical metadata and the target release date.
 
-Processing is transactional. The complete workflow runs first in a temporary
-copy of the repository. The staged repository delta is published to the caller's
+Processing is transactional. With ``--dry-run``, the complete workflow runs
+in staging and reports its proposed file delta without publishing anything.
+The complete workflow runs first in a temporary copy of the repository. The staged repository delta is published to the caller's
 working tree only after successful processing, with concurrent-edit detection and
 rollback if publication fails. Logs and release reports are published only after
 the metadata transaction succeeds.
@@ -38,6 +39,7 @@ human-readable standard documents themselves; those are built separately from
 the authoritative metadata produced here.
 """
 
+import argparse
 import csv
 import json
 import yaml
@@ -304,9 +306,20 @@ def _publish_release_reports(source_root, staged_root):
 
 
 def _run_transactionally_if_needed():
-    """Run the full processor in staging and publish only on successful completion."""
+    """Process in staging; optionally inspect results without publishing them."""
+    # The transaction child must run the processor without parsing CLI options.
     if os.environ.get(_TRANSACTION_ENV) == '1':
         return
+
+    parser = argparse.ArgumentParser(
+        description='Process a TDWG standards release transactionally.'
+    )
+    parser.add_argument(
+        '--dry-run', action='store_true',
+        help='Validate and process in a temporary workspace; report the proposed '
+             'changes without modifying the repository, logs, or reports.'
+    )
+    args = parser.parse_args()
 
     process_dir = Path(__file__).resolve().parent
     repository_root = process_dir.parent
@@ -333,6 +346,36 @@ def _run_transactionally_if_needed():
             raise SystemExit(result.returncode)
 
         after = _tree_manifest(staged_root)
+        if args.dry_run:
+            created = sorted(set(after) - set(before))
+            deleted = sorted(set(before) - set(after))
+            modified = sorted(
+                path for path in set(before) & set(after)
+                if before[path] != after[path]
+            )
+            report('DRY RUN: processing succeeded; no files were published.')
+            for heading, paths in (
+                ('CREATED', created),
+                ('MODIFIED', modified),
+                ('DELETED', deleted),
+            ):
+                report(heading + ' (' + str(len(paths)) + '):')
+                if paths:
+                    for path in paths:
+                        report('  ' + path)
+                else:
+                    report('  None')
+            for directory_name in ('reports', 'logs'):
+                output_dir = staged_root / 'process' / directory_name
+                names = sorted(
+                    path.name for path in output_dir.iterdir() if path.is_file()
+                ) if output_dir.is_dir() else []
+                report('Staged ' + directory_name + ' (' + str(len(names)) +
+                       '; not retained):')
+                for name in names:
+                    report('  ' + name)
+            report('DRY RUN complete. Repository, logs, and reports unchanged.')
+            raise SystemExit(0)
         try:
             _publish_transaction_delta(repository_root, staged_root, before, after)
         except Exception as error:

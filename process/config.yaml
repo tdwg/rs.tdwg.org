@@ -1,12 +1,12 @@
 standard_label: Darwin Core
 standard: http://www.tdwg.org/standards/450
 standard_description: Darwin Core is a standard maintained by the Darwin Core maintenance group intended to facilitate the sharing of information about biological diversity. It includes a conceptual model, specifications for sharing biodiversity data using various formats (RDF, TXT, XML, Data Package), glossaries of terms, and data sharing schemas.
-date_issued: '2026-09-17'
+date_issued: '2026-10-13'
 local_offset_from_utc: -03:00
 decision_number: 62
 decisions_text: Darwin Core changes ratified as a part of the Darwin Core public review. https://github.com/tdwg/dwc/milestone/22.
 revision_directory: dwc-revisions
-release_directory: dwc-revisions/dwc-revisions-2026-09-17
+release_directory: dwc-revisions/dwc-revisions-2026-10-13
 document_defaults:
   publisher: Biodiversity Information Standards (TDWG)
   license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
