@@ -97,3 +97,9 @@ http://rs.tdwg.org/dwc/iri/version/identifiedBy-2026-05-26,identifiedBy-2025-07-
 http://rs.tdwg.org/dwc/iri/version/eventType-2026-05-26,eventType-2025-07-10
 http://rs.tdwg.org/dwc/iri/version/fieldNumber-2026-05-26,fieldNumber-2023-06-28
 http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-05-26,samplingProtocol-2023-06-28
+http://rs.tdwg.org/dwc/iri/version/identificationVerificationStatus-2026-10-13,identificationVerificationStatus-2026-05-26
+http://rs.tdwg.org/dwc/iri/version/organismScope-2026-10-13,organismScope-2026-05-26
+http://rs.tdwg.org/dwc/iri/version/recordedBy-2026-10-13,recordedBy-2026-05-26
+http://rs.tdwg.org/dwc/iri/version/recordNumber-2026-10-13,recordNumber-2023-06-28
+http://rs.tdwg.org/dwc/iri/version/samplingProtocol-2026-10-13,samplingProtocol-2026-05-26
+http://rs.tdwg.org/dwc/iri/version/materialEntityType-2026-10-13,materialEntityType-2026-05-26
