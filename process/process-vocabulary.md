@@ -2,11 +2,11 @@
 
 **Title:** Processing vocabulary and document changes
 
-**Date Modified:** 2026-10-08
+**Date Modified:** 2026-10-15
 
 **Part of TDWG Standard:** Not part of any standard
 
-**Abstract:** This document describes the maintainer workflow for processing one complete TDWG standards release into the metadata maintained in `rs.tdwg.org`. The release processor reads a stable `config.yaml` together with release-specific namespace CSV files; validates the complete Standard, Vocabulary, Term List, and Document declaration; stages all generated metadata changes transactionally; and publishes the resulting repository delta only after successful processing. This document provides a short release recipe followed by detailed explanations of each step and of the metadata resources affected by processing.
+**Abstract:** This document describes the maintainer workflow for processing one complete TDWG standards release into the metadata maintained in `rs.tdwg.org`. The release processor reads a stable `config.yaml` together with release-specific namespace CSV files; validates the complete Standard, Vocabulary, Term List, and Document declaration; stages all generated metadata changes transactionally; supports a non-publishing `--dry-run` preview of the complete release; and publishes the resulting repository delta only after successful normal processing. This document provides a short release recipe followed by detailed explanations of each step and of the metadata resources affected by processing.
 
 **Contributors:** Steve Baskauf (TDWG Technical Architecture Group, TDWG Audiovisual Core Maintenance Group, TDWG Darwin Core Maintenance Group), John Wieczorek (TDWG Darwin Core Maintenance Group)
 
@@ -69,10 +69,11 @@ This section is the short recipe. Follow the links for the details and for expla
 2. **Prepare one release-input CSV for every configured namespace.** Include only the new or modified terms; use a header-only file when there are no term changes in that namespace. See [3.2](#32-prepare-namespace-release-input-csv-files).
 3. **Update `process/config.yaml` for the complete Standard release.** Declare the complete current Vocabulary, namespace/Term List, and Document composition—not only resources that changed. See [3.3](#33-configure-the-complete-release-in-configyaml).
 4. **Update the Document declarations in `config.yaml` where necessary.** For a changed non-List-of-Terms Document, set `modified: true` and update its declared metadata or contributors as needed. Do not set `modified` on Vocabulary-associated Lists-of-Terms Documents; their versioning is controlled by Vocabulary/Term List release state. See [3.4](#34-prepare-document-metadata).
-5. **Run `process.py` from the `process` directory.** Preflight validation and the complete release run occur in a staged temporary repository. Nothing is published to the working tree unless staged processing succeeds. See [3.5](#35-run-the-processor).
-6. **Inspect the generated release carefully.** Review console output, the generated release report, the processing log, `git diff --check`, `git status --short`, `git diff --stat`, and the substantive diff. See [3.6](#36-review-the-generated-release) and [section 4](#4-what-processpy-modifies).
-7. **If anything is wrong, correct the authoritative input and run `process.py` again on the same branch.** The processor is designed to converge on the state represented by the current inputs. An unchanged same-release rerun should produce no additional repository metadata changes. See [3.7](#37-correct-and-rerun).
-8. **When the release is correct, commit and publish it through the normal TDWG release process.** See [3.8](#38-commit-publish-and-test).
+5. **Preview the release with `python process.py --dry-run` from the `process` directory.** The complete release is validated and processed in a temporary repository; proposed file creations, modifications, and deletions are reported without publishing metadata, logs, or reports. See [3.5](#35-run-the-processor).
+6. **Run `python process.py` when the preview is satisfactory.** The complete release is processed again in staging and the validated metadata delta is published transactionally, followed by its log and report. See [3.5](#35-run-the-processor).
+7. **Inspect the generated release carefully.** Review console output, the generated release report, the processing log, `git diff --check`, `git status --short`, `git diff --stat`, and the substantive diff. See [3.6](#36-review-the-generated-release) and [section 4](#4-what-processpy-modifies).
+8. **If anything is wrong, correct the authoritative input and preview again before publishing.** The processor is designed to converge on the state represented by the current inputs. An unchanged same-release rerun should produce no additional repository metadata changes. See [3.7](#37-correct-and-rerun).
+9. **When the release is correct, commit and publish it through the normal TDWG release process.** See [3.8](#38-commit-publish-and-test).
 
 For draft work before ratification, use the same process in a fork or working branch; see [3.9](#39-generating-drafts).
 
@@ -177,13 +178,19 @@ See [4.5](#45-document-metadata).
 
 ## 3.5 Run the processor
 
-From the repository's `process` directory, run:
+From the repository's `process` directory, preview the complete release before publishing:
+
+```bash
+python process.py --dry-run
+```
+
+If the preview is satisfactory, run the publishing mode:
 
 ```bash
 python process.py
 ```
 
-The outer invocation does not write release metadata directly into the working repository. Instead it:
+Both invocations execute the same release-processing logic in a staged repository. The outer invocation does not write release metadata directly into the working repository. In normal mode it:
 
 1. copies the repository, excluding Git internals, Python caches, prior logs, and prior reports, to a temporary workspace;
 2. runs the complete processor in that staged repository;
@@ -195,6 +202,16 @@ The outer invocation does not write release metadata directly into the working r
 8. publishes the processing log and release report only after metadata publication succeeds.
 
 If staged processing fails, no generated metadata from that run is published to the caller's working tree. If publication itself fails after some files have been replaced, the publication layer attempts to restore all affected paths to their pre-publication state.
+
+### Dry-run preview
+
+With `--dry-run`, the processor performs the same preflight and full staged processing as normal mode, including generation of the release report and processing log inside the temporary workspace. It then compares staged repository files with the initial staged snapshot and prints three path lists: `CREATED`, `MODIFIED`, and `DELETED`, each with a count. It also lists the staged report and log filenames. The staged report and log contents are **not retained**, and no repository metadata, log, or report is published. The temporary workspace is removed on exit.
+
+The dry-run file comparison excludes `.git`, Python caches, and `process/logs` and `process/reports`. Consequently, the counts describe proposed changes to repository metadata and other tracked-scope files, **not** the number of generated log/report files. The printed `CREATED`/`MODIFIED`/`DELETED` lists are a preview of the transaction delta, not a substitute for inspecting the actual metadata content after a normal run.
+
+A successful dry run reports `DRY RUN complete. Repository, logs, and reports unchanged.` A processing or preflight failure exits unsuccessfully without publishing staged output. Dry-run mode does not perform the normal publication step or its concurrent-edit check; if the working tree changes after the preview, repeat the preview before publishing.
+
+Run `python process.py --help` to see the available command-line options.
 
 ### Preflight validation
 
@@ -219,7 +236,7 @@ Also inspect:
 - `process/logs/process-YYYY-MM-DD.log`; and
 - the console summary produced during processing.
 
-The log and report are operational review outputs rather than authoritative metadata. They are published after the metadata transaction succeeds and are normally excluded from the repository metadata transaction itself.
+The log and report are operational review outputs rather than authoritative metadata. They are published after the metadata transaction succeeds and are normally excluded from the repository metadata transaction itself. A dry run prints the names of the staged log and report but does not retain them; run `python process.py` to publish those outputs for review.
 
 For a substantive review, confirm that:
 
@@ -249,7 +266,13 @@ The processor is designed to be deterministic and same-release idempotent. In pa
 
 Deleting and recreating a processing branch between iterations is therefore not part of the normal workflow.
 
-If you want an explicit idempotence check during processor development, capture a file-hash manifest of the processed repository (excluding `.git`, `__pycache__`, `process/logs`, and `process/reports`), rerun `process.py`, and verify that the manifest is unchanged.
+For an explicit same-release idempotence check after successful normal processing, run:
+
+```bash
+python process.py --dry-run
+```
+
+The expected result is `CREATED (0)`, `MODIFIED (0)`, and `DELETED (0)`. This checks the staged repository delta without rewriting the published log and report. For deeper processor testing, a file-hash manifest of the processed repository (excluding `.git`, `__pycache__`, `process/logs`, and `process/reports`) can also be compared before and after a normal rerun.
 
 ## 3.8 Commit, publish, and test
 
@@ -271,10 +294,10 @@ The same workflow can be used before ratification in a fork or draft branch. Dra
 The normal draft cycle is:
 
 1. edit the release CSV/YAML inputs;
-2. run `process.py`;
-3. inspect the generated metadata and build downstream draft documents;
-4. correct the inputs; and
-5. rerun on the same branch.
+2. run `python process.py --dry-run` to validate the draft and preview the proposed metadata changes;
+3. run `python process.py` when generated metadata and reports are needed for review or downstream draft document builds;
+4. inspect the generated metadata and build downstream draft documents;
+5. correct the inputs as necessary, preview again, and rerun on the same branch.
 
 When the draft is finalized, preserve the release inputs in the normal review/ratification workflow. After ratification, ensure that `date_issued` is the actual release/ratification date and process the final release from the appropriate pre-release repository state.
 
@@ -435,7 +458,7 @@ A successful run writes:
 - `process/logs/process-YYYY-MM-DD.log`; and
 - `process/reports/release-report-YYYY-MM-DD.md`.
 
-These are generated in staging and published only after the metadata transaction succeeds. The log records namespace-level actions and created/modified files. The release report summarizes the resulting configured Standard, its Vocabulary and Term List release composition, and release-input term-change counts. It is suitable as a review aid or starting point for a GitHub Release description.
+These are generated in staging and published only after the metadata transaction succeeds in normal mode. In dry-run mode they are generated only within the temporary workspace; their filenames are reported, but the files are not retained. The log records namespace-level actions and created/modified files. The release report summarizes the resulting configured Standard, its Vocabulary and Term List release composition, and release-input term-change counts. It is suitable as a review aid or starting point for a GitHub Release description.
 
 Neither replaces review of the authoritative repository diff.
 
@@ -501,7 +524,7 @@ For modified terms, predecessor selection follows the same chronology principle:
 
 Release metadata timestamps generated by the processor are derived deterministically from the release date and configured UTC offset rather than the wall-clock time at which the script happens to run.
 
-Stable resource identities and relationship rows are reconciled so that a same-release rerun does not append duplicate versions, memberships, replacement assertions, decision links, or Document metadata scopes.
+Stable resource identities and relationship rows are reconciled so that a same-release rerun does not append duplicate versions, memberships, replacement assertions, decision links, or Document metadata scopes. After processing a release, `python process.py --dry-run` provides a direct check of this property by reporting whether the same inputs would produce any further file changes.
 
 The intended invariant is:
 
