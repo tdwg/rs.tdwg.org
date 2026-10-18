@@ -2,7 +2,7 @@
 "p:label","Label for pathway concept scheme http://rs.tdwg.org/dwc/terms/p",""
 "p:definition","Definition for pathway concept scheme http://rs.tdwg.org/dwc/terms/p",""
 "p001:label","Label for biological control http://rs.tdwg.org/dwc/terms/p001","biologische bestrijding"
-"p001:definition","Definition for biological control http://rs.tdwg.org/dwc/terms/p001","Organismen die voorkomen in een gebied door introductie of met de intentie voor biologische bestrijding van een ander organisme."
+"p001:definition","Definition for biological control http://rs.tdwg.org/dwc/terms/p001",""
 "p001:notes","Notes for biological control http://rs.tdwg.org/dwc/terms/p001",""
 "p002:label","Label for erosion control http://rs.tdwg.org/dwc/terms/p002","erosiebestrijding"
 "p002:definition","Definition for erosion control http://rs.tdwg.org/dwc/terms/p002","Geïntroduceerd organisme met een oog op duinstabilisatie of controle van erosie (hagen, windschermen etc.)."
