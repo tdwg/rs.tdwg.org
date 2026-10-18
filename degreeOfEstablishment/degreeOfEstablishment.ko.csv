@@ -5,7 +5,7 @@
 "d001:definition","Definition for native (category A) http://rs.tdwg.org/dwc/terms/d001","토착 범위의 한계를 넘어 운송되지 않음"
 "d001:notes","Notes for native (category A) http://rs.tdwg.org/dwc/terms/d001",""
 "d002:label","Label for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","포획"
-"d002:definition","Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","구금이나 격리된 개체들(개체들에 적합한 조건을 제공하지만, 오염이 제 자리에 있도록 명백한 조치가 취해지고 있음)"
+"d002:definition","Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d002:usage","Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d002:notes","Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d003:label","Label for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003","경작"
