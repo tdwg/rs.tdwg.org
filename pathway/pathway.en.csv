@@ -2,7 +2,7 @@ identifier,context,text
 p:label,Label for pathway concept scheme http://rs.tdwg.org/dwc/terms/p,pathway concept scheme
 p:definition,Definition for pathway concept scheme http://rs.tdwg.org/dwc/terms/p,A SKOS Concept Scheme to be used as a controlled vocabulary for the Darwin Core terms dwc:pathway and dwciri:pathway
 p001:label,Label for biological control http://rs.tdwg.org/dwc/terms/p001,biological control
-p001:definition,Definition for biological control http://rs.tdwg.org/dwc/terms/p001,Organisms occuring in an area because they were introduced for the purpose of biological control of another organism.
+p001:definition,Definition for biological control http://rs.tdwg.org/dwc/terms/p001,Organisms occurring in an area because they were introduced for the purpose of biological control of another organism.
 p001:notes,Notes for biological control http://rs.tdwg.org/dwc/terms/p001,Released intentionally into the (semi)natural environment with the purpose of controlling the population(s) of one or more organisms. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p002:label,Label for erosion control http://rs.tdwg.org/dwc/terms/p002,erosion control
 p002:definition,Definition for erosion control http://rs.tdwg.org/dwc/terms/p002,"Organisms introduced for the purpose of erosion control/dune stabilization (windbreaks, hedges, etc.)."
@@ -18,7 +18,7 @@ p005:definition,Definition for landscape improvement http://rs.tdwg.org/dwc/term
 p005:notes,Notes for landscape improvement http://rs.tdwg.org/dwc/terms/p005,"""Improvement"" in this context is intended for introductions for the purpose of aesthetic enhancement of the landscape, as opposed to practical introductions for the purpose of erosion control, agriculture, forestry etc. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p006:label,Label for conservation or wildlife management http://rs.tdwg.org/dwc/terms/p006,conservation or wildlife management
 p006:definition,Definition for conservation or wildlife management http://rs.tdwg.org/dwc/terms/p006,Organisms introduced for conservation purposes or wildlife management.
-p006:notes,Notes for conservation or wildlife management http://rs.tdwg.org/dwc/terms/p006,The organism was released with the intention of improving the conservation status of the species or the conservation status other species in the habitat. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
+p006:notes,Notes for conservation or wildlife management http://rs.tdwg.org/dwc/terms/p006,The organism was released with the intention of improving its conservation status of the species or the conservation status of other species in the habitat. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p007:label,Label for released for use http://rs.tdwg.org/dwc/terms/p007,released for use
 p007:definition,Definition for released for use http://rs.tdwg.org/dwc/terms/p007,"Release in nature for use (other than above, e.g., fur, transport, medical use)."
 p007:notes,Notes for released for use http://rs.tdwg.org/dwc/terms/p007,This term refers to organisms intentionally and directly released into the wild to serve a specific purpose. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
@@ -40,7 +40,7 @@ p012:usage,Usage for pet/aquarium/terrarium species (including live food for suc
 p012:notes,Notes for pet/aquarium/terrarium species (including live food for such species) http://rs.tdwg.org/dwc/terms/p012,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p013:label,Label for farmed animals (including animals left under limited control) http://rs.tdwg.org/dwc/terms/p013,farmed animals (including animals left under limited control)
 p013:definition,Definition for farmed animals (including animals left under limited control) http://rs.tdwg.org/dwc/terms/p013,"Animals cared for and bred with the specific intention of using their products, such as meat and milk."
-p013:notes,Notes for farmed animals (including animals left under limited control) http://rs.tdwg.org/dwc/terms/p013,"Farmed animals are generally kept in a defined area, such as a fields. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
+p013:notes,Notes for farmed animals (including animals left under limited control) http://rs.tdwg.org/dwc/terms/p013,"Farmed animals are generally kept in a defined area, such as a field. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p014:label,Label for forestry (including reforestation) http://rs.tdwg.org/dwc/terms/p014,forestry (including reforestation)
 p014:definition,Definition for forestry (including reforestation) http://rs.tdwg.org/dwc/terms/p014,Trees specifically introduced to provide timber and other forestry products.
 p014:notes,Notes for forestry (including reforestation) http://rs.tdwg.org/dwc/terms/p014,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
@@ -91,8 +91,8 @@ p028:definition,Definition for seed contaminant http://rs.tdwg.org/dwc/terms/p02
 p028:notes,Notes for seed contaminant http://rs.tdwg.org/dwc/terms/p028,"These may be parasites or pathogens of seeds or species that eat seeds, whether intended to be transported or not. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p029:label,Label for timber trade http://rs.tdwg.org/dwc/terms/p029,timber trade
 p029:definition,Definition for timber trade http://rs.tdwg.org/dwc/terms/p029,"Contaminants on unprocessed timber, processed wood and wood-derived products."
-p029:usage,Usage for timber trade http://rs.tdwg.org/dwc/terms/p029,"This term excludes packing material and habitat material made from wood, which SHOULD be included under their own terms (""packing material"" and ""transportation of habitat material"")."
-p029:notes,Notes for timber trade http://rs.tdwg.org/dwc/terms/p029,"Examples include wooden furniture, saw dust and fire wood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
+p029:usage,Usage for timber trade http://rs.tdwg.org/dwc/terms/p029,"This term excludes packing material and habitat material made from wood that SHOULD be included under their own terms (""packing material"" and ""transportation of habitat material"")."
+p029:notes,Notes for timber trade http://rs.tdwg.org/dwc/terms/p029,"Examples include wooden furniture, sawdust and firewood. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p030:label,"Label for transportation of habitat material (soil, vegetation, wood etc) http://rs.tdwg.org/dwc/terms/p030","transportation of habitat material (soil, vegetation, wood etc)"
 p030:definition,"Definition for transportation of habitat material (soil, vegetation, wood etc) http://rs.tdwg.org/dwc/terms/p030",Organisms transported with their habitat material to a new location.
 p030:notes,"Notes for transportation of habitat material (soil, vegetation, wood etc) http://rs.tdwg.org/dwc/terms/p030","Examples include materials such as soil, vegetation, straw and wood chips. Unless these materials are sterilised the organisms can be transported with their habitat to a new location. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
@@ -117,7 +117,7 @@ p036:usage,Usage for people and their luggage/equipment (in particular tourism) 
 p036:notes,Notes for people and their luggage/equipment (in particular tourism) http://rs.tdwg.org/dwc/terms/p036,Examples include organisms transported by tourists. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p037:label,"Label for organic packing material, in particular wood packaging http://rs.tdwg.org/dwc/terms/p037","organic packing material, in particular wood packaging"
 p037:definition,"Definition for organic packing material, in particular wood packaging http://rs.tdwg.org/dwc/terms/p037","Organic material, particularly unprocessed plant material that is used to pack transported goods."
-p037:notes,"Notes for organic packing material, in particular wood packaging http://rs.tdwg.org/dwc/terms/p037","Examples include woodern pallets, boxes, bags and baskets. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
+p037:notes,"Notes for organic packing material, in particular wood packaging http://rs.tdwg.org/dwc/terms/p037","Examples include wooden pallets, boxes, bags and baskets. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p038:label,Label for ship/boat ballast water http://rs.tdwg.org/dwc/terms/p038,ship/boat ballast water
 p038:definition,Definition for ship/boat ballast water http://rs.tdwg.org/dwc/terms/p038,Organisms transported within the water pumped into boats and ships to provide ballast.
 p038:notes,Notes for ship/boat ballast water http://rs.tdwg.org/dwc/terms/p038,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
@@ -128,10 +128,10 @@ p040:label,"Label for vehicles (car, train, etc.) http://rs.tdwg.org/dwc/terms/p
 p040:definition,"Definition for vehicles (car, train, etc.) http://rs.tdwg.org/dwc/terms/p040","Other vehicle hitchhikers that have been unintentionally dispersed, but are not covered by other terms."
 p040:notes,"Notes for vehicles (car, train, etc.) http://rs.tdwg.org/dwc/terms/p040",These organisms may be carried on or within the vehicle. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p041:label,Label for other means of transport http://rs.tdwg.org/dwc/terms/p041,other means of transport
-p041:definition,Definition for other means of transport http://rs.tdwg.org/dwc/terms/p041,A catch-all term for any transport related dispersal that is not covered in other terms.
-p041:notes,Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041,"Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc.) See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
+p041:definition,Definition for other means of transport http://rs.tdwg.org/dwc/terms/p041,A catchall term for any transport-related dispersal that is not covered in other terms.
+p041:notes,Notes for other means of transport http://rs.tdwg.org/dwc/terms/p041,"Examples include fouling from offshore oil and gas platforms, offshore renewable energy sites (such as wind farms, pipelines, cable transport, etc.). See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129"
 p042:label,Label for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,interconnected waterways/basins/seas
-p042:definition,Definition for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,Organisms that dispersed through artificial waterways created to connect previosuly unconnected water bodies.
+p042:definition,Definition for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,Organisms that dispersed through artificial waterways created to connect previously unconnected water bodies.
 p042:usage,Usage for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,"Organisms transported along these corridors in ballast or as hull fouling SHOULD be categorised under the ""ship/boat ballast water"" or ""ship/boat hull fouling"" terms."
 p042:notes,Notes for interconnected waterways/basins/seas http://rs.tdwg.org/dwc/terms/p042,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p043:label,Label for tunnels and land bridges http://rs.tdwg.org/dwc/terms/p043,tunnels and land bridges
@@ -153,13 +153,13 @@ p048:label,Label for transport-stowaway http://rs.tdwg.org/dwc/terms/p048,transp
 p048:definition,Definition for transport-stowaway http://rs.tdwg.org/dwc/terms/p048,"An umbrella term for all species transported by riding on forms of transport where the organism has a direct interaction with the transport and is not merely carried as part of, or a contaminant of cargo."
 p048:notes,Notes for transport-stowaway http://rs.tdwg.org/dwc/terms/p048,A stowaway has no trophic or biotic relationship to the organisms or items being transported. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p049:label,Label for corridor http://rs.tdwg.org/dwc/terms/p049,corridor
-p049:definition,Definition for corridor http://rs.tdwg.org/dwc/terms/p049,"Infrastructure, such as bridges, tunnels and canals have removed natural barriers to dispersal and allowed a species to move into a novel location."
+p049:definition,Definition for corridor http://rs.tdwg.org/dwc/terms/p049,"Infrastructures, such as bridges, tunnels and canals, have removed natural barriers to dispersal and allowed a species to move into a novel location."
 p049:notes,Notes for corridor http://rs.tdwg.org/dwc/terms/p049,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p050:label,Label for unaided http://rs.tdwg.org/dwc/terms/p050,unaided
 p050:definition,Definition for unaided http://rs.tdwg.org/dwc/terms/p050,"Organisms that spread by natural dispersal, without action or assistance by humans, from regions in which they are also alien."
 p050:notes,Notes for unaided http://rs.tdwg.org/dwc/terms/p050,The term refers to secondary dispersal from an area where the taxon is also alien. See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p051:label,Label for intentional http://rs.tdwg.org/dwc/terms/p051,intentional
-p051:definition,Definition for intentional http://rs.tdwg.org/dwc/terms/p051,"Organisms were brought to new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild."
+p051:definition,Definition for intentional http://rs.tdwg.org/dwc/terms/p051,"Organisms were brought to a new area with the specific intention of keeping them alive in the new region, regardless of whether they were intended to be cultivated or released into the wild."
 p051:notes,Notes for intentional http://rs.tdwg.org/dwc/terms/p051,See also Harrower et al. 2017. http://nora.nerc.ac.uk/id/eprint/519129
 p052:label,Label for unintentional http://rs.tdwg.org/dwc/terms/p052,unintentional
 p052:definition,Definition for unintentional http://rs.tdwg.org/dwc/terms/p052,The organism was unintentionally brought to a new region.

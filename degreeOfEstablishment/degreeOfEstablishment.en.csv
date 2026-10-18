@@ -5,9 +5,9 @@ d001:label,Label for native (category A) http://rs.tdwg.org/dwc/terms/d001,nativ
 d001:definition,Definition for native (category A) http://rs.tdwg.org/dwc/terms/d001,Not transported beyond limits of native range.
 d001:notes,Notes for native (category A) http://rs.tdwg.org/dwc/terms/d001,"Considered native and naturally occurring. See also ""category A"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
 d002:label,Label for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,captive (category B1)
-d002:definition,Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,"Individuals in captivity or quarantine (i.e., individuals provided with conditions suitable for them, but explicit measures of containment are in place)."
-d002:usage,Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,Only for cases where specific actions have been taken place to prevent escape of individuals or propagules.
-d002:notes,Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,"See also ""category B1"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
+d002:definition,Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,"Individuals in captivity or quarantine (i.e. individuals provided with conditions suitable for them, but explicit measures of containment are in place)"
+d002:usage,Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,Only for cases where specific actions have been taken to prevent escape of individuals or propagules
+d002:notes,Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002,See also Blackburn et al. 2011 https://doi.org/10.1016/j.tree.2011.03.023 category B1
 d003:label,Label for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003,cultivated (category B2)
 d003:definition,Definition for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003,"Individuals in cultivation (i.e., individuals provided with conditions suitable for them, but explicit measures to prevent dispersal are limited at best)."
 d003:notes,Notes for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003,"Examples include gardens, parks and farms. See also ""category B2"" in Blackburn et al. 2011. https://doi.org/10.1016/j.tree.2011.03.023"
