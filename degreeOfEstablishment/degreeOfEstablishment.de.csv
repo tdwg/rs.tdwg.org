@@ -5,7 +5,7 @@
 "d001:definition","Definition for native (category A) http://rs.tdwg.org/dwc/terms/d001","Nicht über die Grenzen des einheimischen Verbreitungsgebiets hinaus transportiert."
 "d001:notes","Notes for native (category A) http://rs.tdwg.org/dwc/terms/d001",""
 "d002:label","Label for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","gefangen"
-"d002:definition","Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002","Individuen in Gefangenschaft oder Quarantäne (d.h. Individuen, die unter für sie geeigneten Bedingungen gehalten werden, aber explizite Maßnahmen der Eindämmung sind umgesetzt)."
+"d002:definition","Definition for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d002:usage","Usage for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d002:notes","Notes for captive (category B1) http://rs.tdwg.org/dwc/terms/d002",""
 "d003:label","Label for cultivated (category B2) http://rs.tdwg.org/dwc/terms/d003","gezüchtet"
