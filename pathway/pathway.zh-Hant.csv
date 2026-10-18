@@ -2,7 +2,7 @@
 "p:label","Label for pathway concept scheme http://rs.tdwg.org/dwc/terms/p",""
 "p:definition","Definition for pathway concept scheme http://rs.tdwg.org/dwc/terms/p",""
 "p001:label","Label for biological control http://rs.tdwg.org/dwc/terms/p001","生物防治"
-"p001:definition","Definition for biological control http://rs.tdwg.org/dwc/terms/p001","物種因為用來防治另一種生物而引進在一區域出現。"
+"p001:definition","Definition for biological control http://rs.tdwg.org/dwc/terms/p001",""
 "p001:notes","Notes for biological control http://rs.tdwg.org/dwc/terms/p001",""
 "p002:label","Label for erosion control http://rs.tdwg.org/dwc/terms/p002",""
 "p002:definition","Definition for erosion control http://rs.tdwg.org/dwc/terms/p002",""
