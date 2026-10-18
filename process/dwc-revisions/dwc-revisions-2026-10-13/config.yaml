@@ -1,0 +1,1340 @@
+standard_label: Darwin Core
+standard: http://www.tdwg.org/standards/450
+standard_description: Darwin Core is a standard maintained by the Darwin Core maintenance group intended to facilitate the sharing of information about biological diversity. It includes a conceptual model, specifications for sharing biodiversity data using various formats (RDF, TXT, XML, Data Package), glossaries of terms, and data sharing schemas.
+date_issued: '2026-10-13'
+local_offset_from_utc: -03:00
+decision_number: 62
+decisions_text: Darwin Core changes ratified as a part of the Darwin Core public review. https://github.com/tdwg/dwc/milestone/22.
+revision_directory: dwc-revisions
+release_directory: dwc-revisions/dwc-revisions-2026-10-13
+document_defaults:
+  publisher: Biodiversity Information Standards (TDWG)
+  license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
+  license_uri: https://creativecommons.org/licenses/by/4.0/
+  comment: ''
+
+# DOCUMENTS
+documents:
+# DARWIN CORE LIST OF TERMS
+- document: http://rs.tdwg.org/dwc/doc/list/
+  documentTitle: Darwin Core List of Terms
+  abstract: Darwin Core is a vocabulary standard for transmitting information about biodiversity. This document lists all terms currently used in the standard, whether from the Darwin Core vocabulary, other TDWG vocabularies, or vocabularies external to TDWG.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/list/index.md
+  browserRedirectUri: https://dwc.tdwg.org/list/
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-8442-8025
+    contributor_literal: Peter Desmet
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steve Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7757-1889
+    contributor_literal: Markus Döring
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-0596-5376
+    contributor_literal: Quentin Groom
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Botanic Garden Meise
+    affiliation_uri: http://www.wikidata.org/entity/Q3052500
+  - contributor_iri: https://orcid.org/0000-0001-6413-3185
+    contributor_literal: Stijn Van Hoey
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0003-1273-1807
+    contributor_literal: David Bloom
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: VertNet
+    affiliation_uri: http://www.wikidata.org/entity/Q98382028
+  - contributor_iri: https://orcid.org/0000-0002-6056-5084
+    contributor_literal: Paula F Zermoglio
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)
+    affiliation_uri: https://www.wikidata.org/wiki/Q6978293
+  - contributor_iri: https://orcid.org/0000-0001-6682-1504
+    contributor_literal: Robert Guralnick
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Florida, Florida Museum of Natural History
+    affiliation_uri: http://www.wikidata.org/entity/Q501758
+  - contributor_iri: https://orcid.org/0000-0002-5905-1617
+    contributor_literal: John Deck
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Genomic Biodiversity Working Group
+    affiliation_uri: http://www.wikidata.org/entity/Q98382041
+  - contributor_iri: https://orcid.org/0000-0002-5178-4170
+    contributor_literal: Gail Kampmeier
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Illinois Natural History Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q5999587
+  - contributor_iri: https://orcid.org/0000-0002-6513-4996
+    contributor_literal: Dave Vieglais
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: KU Natural History Museum
+    affiliation_uri: http://www.wikidata.org/entity/Q1111807
+  - contributor_iri: https://orcid.org/0000-0002-7104-7266
+    contributor_literal: Renato De Giovanni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Centro de Referência em Informação Ambiental
+    affiliation_uri: http://www.wikidata.org/entity/Q29168927
+  - contributor_iri: https://orcid.org/0000-0003-1031-3249
+    contributor_literal: Campbell Webb
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: TDWG RDF/OWL Task Group
+    affiliation_uri: http://www.wikidata.org/entity/Q4914768
+  - contributor_iri: http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035
+    contributor_literal: Paul J. Morris
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Harvard University Herbaria/Museum of Comparative Zoölogy
+    affiliation_uri: http://www.wikidata.org/entity/Q51926077
+  - contributor_iri: https://orcid.org/0000-0003-0632-7576
+    contributor_literal: Mark Schildhauer
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: National Center for Ecological Analysis and Synthesis
+    affiliation_uri: http://www.wikidata.org/entity/Q6971323
+  - contributor_iri: https://orcid.org/0000-0001-9284-7900
+    contributor_literal: Sophia Ratcliffe
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: National Biodiversity Network Trust
+    affiliation_uri: http://www.wikidata.org/entity/Q6970988
+  - contributor_iri: https://orcid.org/0000-0002-1970-7044
+    contributor_literal: Teresa J. Mayfield-Meyer
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: The University of New Mexico, Arctos
+    affiliation_uri: http://www.wikidata.org/entity/Q1190812
+  - contributor_iri: https://orcid.org/0000-0002-6544-1363
+    contributor_literal: Christian Bölling
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Museum für Naturkunde Berlin - Leibniz-Institut für Evolutions- und Biodiversitätsforschung
+    affiliation_uri: http://www.wikidata.org/entity/Q233098
+  - contributor_iri: https://orcid.org/0000-0002-9284-8871
+    contributor_literal: Laura Brenskelle
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Florida
+    affiliation_uri: http://www.wikidata.org/entity/Q501758
+  - contributor_iri: https://orcid.org/0000-0002-4031-1968
+    contributor_literal: Kitty Emery
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Florida
+    affiliation_uri: http://www.wikidata.org/entity/Q501758
+  - contributor_iri: https://orcid.org/0000-0002-1741-9997
+    contributor_literal: Michelle LeFebvre
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Florida
+    affiliation_uri: http://www.wikidata.org/entity/Q501758
+  - contributor_iri: https://orcid.org/0000-0003-4740-286X
+    contributor_literal: Neill Wallis
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Florida
+    affiliation_uri: http://www.wikidata.org/entity/Q501758
+  - contributor_iri: https://orcid.org/0000-0002-8481-9034
+    contributor_literal: Marie Elise Lecoq
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: GBIF France
+    affiliation_uri: https://www.wikidata.org/wiki/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-5620-4764
+    contributor_literal: Eric Kansa
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Harvard University
+    affiliation_uri: http://www.wikidata.org/entity/Q13371
+  - contributor_iri: https://orcid.org/0000-0001-7920-5321
+    contributor_literal: Sarah Kansa
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: The Alexandria Archive Institute
+    affiliation_uri: https://www.wikidata.org/wiki/Q30257865
+  - contributor_iri: https://orcid.org/0000-0001-9325-3100
+    contributor_literal: Denné Reed
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Texas at Austin
+    affiliation_uri: https://www.wikidata.org/wiki/Q49213
+  - contributor_iri: https://orcid.org/0000-0002-1720-0127
+    contributor_literal: Yanina V. Sica
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Yale University
+    affiliation_uri: http://www.wikidata.org/entity/Q49112
+  - contributor_iri: https://orcid.org/0000-0001-5942-9053
+    contributor_literal: Kate Ingenloff
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility (GBIF)
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7087-2646
+    contributor_literal: Yi-Ming Gan
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Royal Belgian Institute of Natural Sciences
+    affiliation_uri: http://www.wikidata.org/entity/Q16665660
+  - contributor_iri: https://orcid.org/0000-0001-9730-8340
+    contributor_literal: Peter Brenton
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Atlas of Living Australia, CSIRO
+    affiliation_uri: http://www.wikidata.org/entity/Q16335177
+  - contributor_iri: https://orcid.org/0000-0002-0595-7827
+    contributor_literal: Wesley M. Hochachka
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Cornell Lab of Ornithology
+    affiliation_uri: http://www.wikidata.org/entity/Q2997535
+  - contributor_iri: https://orcid.org/0000-0002-0500-0339
+    contributor_literal: Zachary R. Kachian
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Keller Science Action Center, Field Museum of Natural History
+    affiliation_uri: http://www.wikidata.org/entity/Q1122595
+  - contributor_iri: https://orcid.org/0000-0003-1617-5895
+    contributor_literal: Robert D. Stevenson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Department of Biology, University of Massachusetts Boston
+    affiliation_uri: http://www.wikidata.org/entity/Q15144
+  - contributor_iri: https://orcid.org/0000-0003-2475-132X
+    contributor_literal: Anahita J. N. Kazem
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena
+    affiliation_uri: http://www.wikidata.org/entity/Q1206134
+  - contributor_iri: https://orcid.org/0000-0002-2919-1168
+    contributor_literal: Dmitry Schigel
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility (GBIF)
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-5010-3452
+    contributor_literal: Tomomi Suwa
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Keller Science Action Center, Field Museum of Natural History
+    affiliation_uri: http://www.wikidata.org/entity/Q1122595
+  - contributor_iri: https://orcid.org/0000-0001-8815-0078
+    contributor_literal: Ramona L. Walls
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Arizona
+    affiliation_uri: http://www.wikidata.org/entity/Q503419
+  - contributor_iri: https://orcid.org/0000-0002-1971-7277
+    contributor_literal: Walter Jetz
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Yale University
+    affiliation_uri: http://www.wikidata.org/entity/Q49112
+  - contributor_iri: https://orcid.org/0000-0002-6992-9446
+    contributor_literal: Robert A. Morris
+    contributor_role: lead author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: University of Massachusetts at Boston, USA
+    affiliation_uri: http://www.wikidata.org/entity/Q15144
+  - contributor_iri: https://orcid.org/0000-0001-7023-7386
+    contributor_literal: Gregor Hagedorn
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: JKI, Federal Research Institute for Cultivated Plants, Berlin, Germany
+    affiliation_uri: http://www.wikidata.org/entity/Q832099
+  - contributor_iri: https://orcid.org/0000-0002-0772-0022
+    contributor_literal: Annette Olson
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: American Association for the Advancement of Science
+    affiliation_uri: http://www.wikidata.org/entity/Q40358
+  - contributor_iri: https://orcid.org/0000-0002-4852-2567
+    contributor_literal: Vijay Barve
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: ''
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0002-8234-0599
+    contributor_literal: Mihail Carausu
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Danish Biodiversity Information Facility (DanBIF), Copenhagen, Denmark
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-3425-6499
+    contributor_literal: Vishwas Chavan
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Global Biodiversity Information Facility, Copenhagen, Denmark
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: http://www.wikidata.org/entity/Q51883873
+    contributor_literal: José Cuadra
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: ''
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0002-2541-5822
+    contributor_literal: Chris Freeland
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Missouri Botanical Garden, St. Louis, USA
+    affiliation_uri: http://www.wikidata.org/entity/Q1852803
+  - contributor_iri: https://orcid.org/0000-0001-5172-8577
+    contributor_literal: Patrick Leary
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: ''
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0003-1593-1417
+    contributor_literal: Dimitry Mozzherin
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Encyclopedia of Life, Woods Hole, USA
+    affiliation_uri: http://www.wikidata.org/entity/Q82486
+  - contributor_iri: https://orcid.org/0000-0002-3850-9983
+    contributor_literal: Greg Riccardi
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Florida State University, Tallahassee, USA
+    affiliation_uri: http://www.wikidata.org/entity/Q861548
+  - contributor_iri: https://orcid.org/0000-0003-4176-2274
+    contributor_literal: Ivan Teage
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: ''
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0001-8068-3769
+    contributor_literal: Dan Stowell
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Queen Mary University of London
+    affiliation_uri: http://www.wikidata.org/entity/Q195668
+  - contributor_iri: https://orcid.org/0000-0002-5887-9543
+    contributor_literal: Edward Baker
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Natural History Museum, London
+    affiliation_uri: http://www.wikidata.org/entity/Q309388
+  - contributor_iri: https://orcid.org/0000-0003-0768-1286
+    contributor_literal: Richard Pyle
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Bernice P. Bishop Museum, Honolulu, HI, USA
+    affiliation_uri: http://www.wikidata.org/entity/Q826520
+# DEGREE OF ESTABLISHMENT LIST OF TERMS
+- document: http://rs.tdwg.org/dwc/doc/doe/
+  documentTitle: Degree of Establishment Controlled Vocabulary List of Terms
+  abstract: The Darwin Core term `dwc:degreeOfEstablishment` provides information about degree to which a `dwc:Organism` survives, reproduces, and expands its range at the given place and time. The Degree of Establishment Controlled Vocabulary provides terms that should be used as values for `dwc:degreeOfEstablishment` and `dwciri:degreeOfEstablishment`.
+  creator: TDWG Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/index.md
+  browserRedirectUri: https://dwc.tdwg.org/doe/
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0002-0596-5376
+    contributor_literal: Quentin Groom
+    contributor_role: lead author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Botanic Garden Meise
+    affiliation_uri: http://www.wikidata.org/entity/Q3052500
+  - contributor_iri: https://orcid.org/0000-0002-8442-8025
+    contributor_literal: Peter Desmet
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-7484-9267
+    contributor_literal: Lien Reyserhove
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-7268-4200
+    contributor_literal: Tim Adriaens
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0003-3445-7562
+    contributor_literal: Damiano Oldoni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0002-6298-5373
+    contributor_literal: Sonia Vanderhoeven
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Belgian Biodiversity Platform
+    affiliation_uri: http://www.wikidata.org/entity/Q100600896
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steven J Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0003-1700-6962
+    contributor_literal: Arthur Chapman
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Australian Biodiversity Information Services
+    affiliation_uri: http://www.wikidata.org/entity/Q100600913
+  - contributor_iri: https://orcid.org/0000-0003-3388-2241
+    contributor_literal: Melodie McGeoch
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: McGeoch Research Group
+    affiliation_uri: http://www.wikidata.org/entity/Q100600923
+  - contributor_iri: https://orcid.org/0000-0001-8815-0078
+    contributor_literal: Ramona Walls
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Arizona
+    affiliation_uri: http://www.wikidata.org/entity/Q503419
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0003-0174-3239
+    contributor_literal: John R.U. Wilson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: South African National Biodiversity Institute
+    affiliation_uri: http://www.wikidata.org/entity/Q30296386
+  - contributor_iri: https://orcid.org/0000-0002-6056-5084
+    contributor_literal: Paula F Zermoglio
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)
+    affiliation_uri: https://www.wikidata.org/wiki/Q6978293
+  - contributor_iri: https://orcid.org/0000-0001-8338-5134
+    contributor_literal: Annie Simpson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: U.S. Geological Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q193755
+# ESTABLISHMENT MEANS LIST OF TERMS
+- document: http://rs.tdwg.org/dwc/doc/em/
+  documentTitle: Establishment Means Controlled Vocabulary List of Terms
+  abstract: The Darwin Core term `establishmentMeans` provides information about whether an organism or organisms have been introduced to a given place and time through the direct or indirect activity of modern humans. The Establishment Means Controlled Vocabulary provides terms that should be used as values for `dwc:establishmentMeans` and `dwciri:establishmentMeans`.
+  creator: TDWG Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/em/index.md
+  browserRedirectUri: https://dwc.tdwg.org/em/
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0002-0596-5376
+    contributor_literal: Quentin Groom
+    contributor_role: lead author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Botanic Garden Meise
+    affiliation_uri: http://www.wikidata.org/entity/Q3052500
+  - contributor_iri: https://orcid.org/0000-0002-8442-8025
+    contributor_literal: Peter Desmet
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-7484-9267
+    contributor_literal: Lien Reyserhove
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-7268-4200
+    contributor_literal: Tim Adriaens
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0003-3445-7562
+    contributor_literal: Damiano Oldoni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0002-6298-5373
+    contributor_literal: Sonia Vanderhoeven
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Belgian Biodiversity Platform
+    affiliation_uri: http://www.wikidata.org/entity/Q100600896
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steven J Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0003-1700-6962
+    contributor_literal: Arthur Chapman
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Australian Biodiversity Information Services
+    affiliation_uri: http://www.wikidata.org/entity/Q100600913
+  - contributor_iri: https://orcid.org/0000-0003-3388-2241
+    contributor_literal: Melodie McGeoch
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: McGeoch Research Group
+    affiliation_uri: http://www.wikidata.org/entity/Q100600923
+  - contributor_iri: https://orcid.org/0000-0001-8815-0078
+    contributor_literal: Ramona Walls
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Arizona
+    affiliation_uri: http://www.wikidata.org/entity/Q503419
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0003-0174-3239
+    contributor_literal: John R.U. Wilson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: South African National Biodiversity Institute
+    affiliation_uri: http://www.wikidata.org/entity/Q30296386
+  - contributor_iri: https://orcid.org/0000-0002-6056-5084
+    contributor_literal: Paula F Zermoglio
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)
+    affiliation_uri: https://www.wikidata.org/wiki/Q6978293
+  - contributor_iri: https://orcid.org/0000-0001-8338-5134
+    contributor_literal: Annie Simpson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: U.S. Geological Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q193755
+# PATHWAY LIST OF TERMS
+- document: http://rs.tdwg.org/dwc/doc/pw/
+  documentTitle: Pathway Controlled Vocabulary List of Terms
+  abstract: The Darwin Core term `pathway` provides information about the process by which an Organism came to be in a given place at a given time. The Pathway Controlled Vocabulary provides terms that should be used as values for `dwc:pathway` and `dwciri:pathway`.
+  creator: TDWG Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/index.md
+  browserRedirectUri: https://dwc.tdwg.org/pw/
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0002-0596-5376
+    contributor_literal: Quentin Groom
+    contributor_role: lead author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Botanic Garden Meise
+    affiliation_uri: http://www.wikidata.org/entity/Q3052500
+  - contributor_iri: https://orcid.org/0000-0002-8442-8025
+    contributor_literal: Peter Desmet
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-7484-9267
+    contributor_literal: Lien Reyserhove
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-7268-4200
+    contributor_literal: Tim Adriaens
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0003-3445-7562
+    contributor_literal: Damiano Oldoni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0002-6298-5373
+    contributor_literal: Sonia Vanderhoeven
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Belgian Biodiversity Platform
+    affiliation_uri: http://www.wikidata.org/entity/Q100600896
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steven J Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0003-1700-6962
+    contributor_literal: Arthur Chapman
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Australian Biodiversity Information Services
+    affiliation_uri: http://www.wikidata.org/entity/Q100600913
+  - contributor_iri: https://orcid.org/0000-0003-3388-2241
+    contributor_literal: Melodie McGeoch
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: McGeoch Research Group
+    affiliation_uri: http://www.wikidata.org/entity/Q100600923
+  - contributor_iri: https://orcid.org/0000-0001-8815-0078
+    contributor_literal: Ramona Walls
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: University of Arizona
+    affiliation_uri: http://www.wikidata.org/entity/Q503419
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0003-0174-3239
+    contributor_literal: John R.U. Wilson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: South African National Biodiversity Institute
+    affiliation_uri: http://www.wikidata.org/entity/Q30296386
+  - contributor_iri: https://orcid.org/0000-0002-6056-5084
+    contributor_literal: Paula F Zermoglio
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)
+    affiliation_uri: https://www.wikidata.org/wiki/Q6978293
+  - contributor_iri: https://orcid.org/0000-0001-8338-5134
+    contributor_literal: Annie Simpson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: U.S. Geological Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q193755
+# TAXON COMPLETENESS REPORTED LIST OF TERMS
+- document: http://rs.tdwg.org/dwc/doc/tcr/
+  documentTitle: Taxon Completeness Reported Controlled Vocabulary List of Terms
+  abstract: The Darwin Core term `eco:taxonCompletenessReported` provides information about whether taxonomic completeness was assessed for an `eco:Survey`. The Taxon Completeness Reported Controlled Vocabulary provides terms that should be used as values for `eco:taxonCompletenessReported` and `ecoiri:taxonCompletenessReported`.
+  creator: TDWG Humboldt Extension Task Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/tcr/index.md
+  browserRedirectUri: https://dwc.tdwg.org/tcr/
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0002-1720-0127
+    contributor_literal: Yanina V. Sica
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Yale University
+    affiliation_uri: http://www.wikidata.org/entity/Q49112
+  - contributor_iri: https://orcid.org/0000-0002-0595-7827
+    contributor_literal: Wesley M. Hochachka
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Cornell Lab of Ornithology
+    affiliation_uri: http://www.wikidata.org/entity/Q2997535
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steven J. Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+# DARWIN CORE CONCEPTUAL MODEL
+- document: http://rs.tdwg.org/dwc/doc/cm/
+  documentTitle: Darwin Core conceptual model
+  abstract: Guidelines for the semantics of relationships between Darwin Core classes.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/cm/index.md
+  browserRedirectUri: https://dwc.tdwg.org/cm/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-6056-5084
+    contributor_literal: Paula F Zermoglio
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET, Universidad Nacional de Río Negro)
+    affiliation_uri: https://www.wikidata.org/wiki/Q6978293
+  - contributor_iri: https://orcid.org/0000-0002-9216-2917
+    contributor_literal: Cecilie Svenningsen
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-5942-9053
+    contributor_literal: Kate Ingenloff
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7757-1889
+    contributor_literal: Markus Döring
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-8442-8025
+    contributor_literal: Peter Desmet
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0002-3530-013X
+    contributor_literal: Tobias Guldberg Frøslev
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+# DARWIN CORE DATA PACKAGE GUIDE
+- document: http://rs.tdwg.org/dwc/doc/dp/
+  documentTitle: Darwin Core Data Package guide
+  abstract: Specification for creating a Darwin Core Data Package.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/dp/index.md
+  browserRedirectUri: https://dwc.tdwg.org/dp/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0002-8442-8025
+    contributor_literal: Peter Desmet
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Instituut voor Natuur- en Bosonderzoek (INBO)
+    affiliation_uri: http://www.wikidata.org/entity/Q7315097
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+# DARWIN CORE SCHEMAS
+- document: http://rs.tdwg.org/dwc/doc/schemas/
+  documentTitle: Darwin Core schemas
+  abstract: This document is a reference for schemas maintained by the Darwin Core Maintenance Group.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/schemas/index.md
+  browserRedirectUri: https://dwc.tdwg.org/schemas/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steve Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+# DARWIN CORE TEXT GUIDE
+- document: http://rs.tdwg.org/dwc/terms/guides/text/
+  documentTitle: Darwin Core text guide
+  abstract: Guidelines for implementing Darwin Core in Text files.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/index.md
+  browserRedirectUri: https://dwc.tdwg.org/text/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7757-1889
+    contributor_literal: Markus Döring
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-7104-7266
+    contributor_literal: Renato De Giovanni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Centro de Referência em Informação Ambiental
+    affiliation_uri: http://www.wikidata.org/entity/Q29168927
+  - contributor_iri: https://orcid.org/0000-0002-6513-4996
+    contributor_literal: Dave Vieglais
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: KU Natural History Museum
+    affiliation_uri: http://www.wikidata.org/entity/Q1111807
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steve Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0002-5178-4170
+    contributor_literal: Gail Kampmeier
+    contributor_role: review manager
+    role_uri: http://www.wikidata.org/entity/Q2462658
+    affiliation: Illinois Natural History Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q5999587
+# DARWIN CORE RDF GUIDE
+- document: http://rs.tdwg.org/dwc/terms/guides/rdf/
+  documentTitle: Darwin Core RDF guide
+  abstract: This guide is intended to facilitate the use of Darwin Core terms in the Resource Description Framework (RDF). It explains basic features of RDF and provides details of how to expose data in the form of RDF using Darwin Core terms and terms from other key vocabularies. It defines terms in the namespace http://rs.tdwg.org/dwc/iri/ which are intended for use exclusively with non-literal objects.
+  creator: Darwin Core Maintenance Group and RDF/OWL Task Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/rdf/index.md
+  browserRedirectUri: https://dwc.tdwg.org/rdf/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steve Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Department of Biological Sciences
+    affiliation_uri: http://www.wikidata.org/entity/Q78041310
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-5905-1617
+    contributor_literal: John Deck
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Genomic Biodiversity Working Group
+    affiliation_uri: http://www.wikidata.org/entity/Q98382041
+  - contributor_iri: https://orcid.org/0000-0003-1031-3249
+    contributor_literal: Campbell Webb
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: TDWG RDF/OWL Task Group
+    affiliation_uri: http://www.wikidata.org/entity/Q4914768
+  - contributor_iri: http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/5e51de22-d841-4c47-b0c4-d5ad0bd03035
+    contributor_literal: Paul J. Morris
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Harvard University Herbaria/Museum of Comparative Zoölogy
+    affiliation_uri: http://www.wikidata.org/entity/Q51926077
+  - contributor_iri: https://orcid.org/0000-0003-0632-7576
+    contributor_literal: Mark Schildhauer
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: National Center for Ecological Analysis and Synthesis
+    affiliation_uri: http://www.wikidata.org/entity/Q6971323
+# DARWIN CORE XML GUIDE
+- document: http://rs.tdwg.org/dwc/terms/guides/xml/
+  documentTitle: Darwin Core XML guide
+  abstract: Guidelines for the implementation of Darwin Core in XML.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/index.md
+  browserRedirectUri: https://dwc.tdwg.org/xml/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7757-1889
+    contributor_literal: Markus Döring
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-7104-7266
+    contributor_literal: Renato De Giovanni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Centro de Referência em Informação Ambiental
+    affiliation_uri: http://www.wikidata.org/entity/Q29168927
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-6513-4996
+    contributor_literal: Dave Vieglais
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: KU Natural History Museum
+    affiliation_uri: http://www.wikidata.org/entity/Q1111807
+  - contributor_iri: https://orcid.org/0000-0002-5178-4170
+    contributor_literal: Gail Kampmeier
+    contributor_role: review manager
+    role_uri: http://www.wikidata.org/entity/Q2462658
+    affiliation: Illinois Natural History Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q5999587
+# DARWIN CORE NAMESPACE
+- document: http://rs.tdwg.org/dwc/terms/namespace/
+  documentTitle: Darwin Core namespace policy
+  abstract: All terms defined by Darwin Core must be assigned a unique Uniform Resource Identifier (URI). For convenience, the term URIs assigned and managed by Darwin Core are grouped into collections known as Darwin Core namespaces. Darwin Core also uses terms from namespaces maintained by other standards; those borrowed namespaces are not governed by this policy. This document describes how term URIs are allocated by the Darwin Core Maintenance Group and the policies associated with Darwin Core namespaces.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/namespace/index.md
+  browserRedirectUri: https://dwc.tdwg.org/namespace/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7757-1889
+    contributor_literal: Markus Döring
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-7104-7266
+    contributor_literal: Renato De Giovanni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Centro de Referência em Informação Ambiental
+    affiliation_uri: http://www.wikidata.org/entity/Q29168927
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-6513-4996
+    contributor_literal: Dave Vieglais
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: KU Natural History Museum
+    affiliation_uri: http://www.wikidata.org/entity/Q1111807
+  - contributor_iri: https://orcid.org/0000-0002-5178-4170
+    contributor_literal: Gail Kampmeier
+    contributor_role: review manager
+    role_uri: http://www.wikidata.org/entity/Q2462658
+    affiliation: Illinois Natural History Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q5999587
+# SIMPLE DARWIN CORE
+- document: http://rs.tdwg.org/dwc/terms/simple/
+  documentTitle: Simple Darwin Core
+  abstract: This document is a reference for the Simple Darwin Core standard.
+  creator: Darwin Core Maintenance Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/index.md
+  browserRedirectUri: https://dwc.tdwg.org/simple/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0001-7757-1889
+    contributor_literal: Markus Döring
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-7104-7266
+    contributor_literal: Renato De Giovanni
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Centro de Referência em Informação Ambiental
+    affiliation_uri: http://www.wikidata.org/entity/Q29168927
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Robertson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-6513-4996
+    contributor_literal: Dave Vieglais
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: KU Natural History Museum
+    affiliation_uri: http://www.wikidata.org/entity/Q1111807
+  - contributor_iri: https://orcid.org/0000-0002-5178-4170
+    contributor_literal: Gail Kampmeier
+    contributor_role: review manager
+    role_uri: http://www.wikidata.org/entity/Q2462658
+    affiliation: Illinois Natural History Survey
+    affiliation_uri: http://www.wikidata.org/entity/Q5999587
+# HIERARCHICAL EVENTS GUIDE
+- document: http://rs.tdwg.org/dwc/doc/hierarchy/
+  documentTitle: Properties of hierarchical events in the Humboldt Extension for Ecological Inventories
+  abstract: Ecological inventories in the context of Darwin Core can be considered as types of dwc:Events with the potential for hierarchical structure relating broader parent dwc:Events with narrower child dwc:Events. Many terms originating in the Humboldt Extension are properties of eco:Survey; other terms describe resources related to surveys, such as eco:SurveyTarget. This document explains how dwc:Event hierarchies for ecological inventories should be structured and provides guidance on the use of Humboldt Extension terms in the context of parent and child dwc:Events.
+  creator: TDWG Humboldt Extension Task Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/hierarchy/index.md
+  browserRedirectUri: https://dwc.tdwg.org/hierarchy/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0001-7087-2646
+    contributor_literal: Yi-Ming Gan
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Royal Belgian Institute of Natural Sciences
+    affiliation_uri: http://www.wikidata.org/entity/Q16665660
+  - contributor_iri: https://orcid.org/0000-0002-0595-7827
+    contributor_literal: Wesley M. Hochachka
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Cornell Lab of Ornithology
+    affiliation_uri: http://www.wikidata.org/entity/Q2997535
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-1720-0127
+    contributor_literal: Yanina V. Sica
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Yale University
+    affiliation_uri: http://www.wikidata.org/entity/Q49112
+  - contributor_iri: https://orcid.org/0000-0001-9730-8340
+    contributor_literal: Peter Brenton
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Atlas of Living Australia, CSIRO
+    affiliation_uri: http://www.wikidata.org/entity/Q16335177
+  - contributor_iri: https://orcid.org/0000-0003-1617-5895
+    contributor_literal: Robert D. Stevenson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Department of Biology, University of Massachusetts Boston
+    affiliation_uri: http://www.wikidata.org/entity/Q15144
+  - contributor_iri: https://orcid.org/0000-0003-2475-132X
+    contributor_literal: Anahita J. N. Kazem
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena
+    affiliation_uri: http://www.wikidata.org/entity/Q1206134
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steven J. Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+  - contributor_iri: https://orcid.org/0000-0002-0500-0339
+    contributor_literal: Zachary R. Kachian
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Keller Science Action Center, Field Museum of Natural History
+    affiliation_uri: http://www.wikidata.org/entity/Q1122595
+  - contributor_iri: https://orcid.org/0000-0001-5942-9053
+    contributor_literal: Kate Ingenloff
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility (GBIF)
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+# GUIDELINES FOR IS LEAST SPECIFIC TARGET CATEGORY INCLUSIVE
+- document: http://rs.tdwg.org/dwc/doc/inclusive/
+  documentTitle: isLeastSpecificTargetCategoryQuantityInclusive Guidelines
+  abstract: The term eco:isLeastSpecificTargetCategoryQuantityInclusive describes how to treat quantities of organisms when records from an eco:Survey include multiple target categories. This document describes how to use that term.
+  creator: TDWG Humboldt Extension Task Group
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/dwc/master/docs/inclusive/index.md
+  browserRedirectUri: https://dwc.tdwg.org/inclusive/
+  modified: true
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0001-7087-2646
+    contributor_literal: Yi-Ming Gan
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Royal Belgian Institute of Natural Sciences
+    affiliation_uri: http://www.wikidata.org/entity/Q16665660
+  - contributor_iri: https://orcid.org/0000-0002-0595-7827
+    contributor_literal: Wesley M. Hochachka
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Cornell Lab of Ornithology
+    affiliation_uri: http://www.wikidata.org/entity/Q2997535
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Rauthiflor LLC, Global Biodiversity Information Facility
+    affiliation_uri: http://www.wikidata.org/entity/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-1720-0127
+    contributor_literal: Yanina V. Sica
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Yale University
+    affiliation_uri: http://www.wikidata.org/entity/Q49112
+  - contributor_iri: https://orcid.org/0000-0001-9730-8340
+    contributor_literal: Peter Brenton
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Atlas of Living Australia, CSIRO
+    affiliation_uri: http://www.wikidata.org/entity/Q16335177
+  - contributor_iri: https://orcid.org/0000-0003-4365-3135
+    contributor_literal: Steven J. Baskauf
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Vanderbilt University Libraries
+    affiliation_uri: http://www.wikidata.org/entity/Q16849893
+# VOCABULARIES
+vocabularies:
+# DARWIN CORE
+- vocabulary: http://rs.tdwg.org/dwc/
+  vocab_type: 1
+  list_of_terms_iri: http://rs.tdwg.org/dwc/doc/list/
+  vocabulary_label: Darwin Core main vocabulary
+  vocabulary_description: This vocabulary contains Darwin Core and borrowed terms suitable for use with both literal and IRI values.
+  dc_creator: TDWG Darwin Core Maintenance Group
+  dcterms_license: https://creativecommons.org/licenses/by/4.0/
+# ESTABLISHMENT MEANS CONTROLLED VOCABULARY
+  namespaces:
+  # dwc:
+  - namespace_uri: http://rs.tdwg.org/dwc/terms/
+    label: Core terms defined by Darwin Core
+    description: This term list includes all currently valid terms that have been defined in the core Darwin Core namespace dwc:. To comment on this schema, please create a new issue in https://github.com/tdwg/dwc/issues.
+    pref_namespace_prefix: dwc
+    database: terms
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # dwciri:
+  - namespace_uri: http://rs.tdwg.org/dwc/iri/
+    label: Darwin Core IRI-value Term Analogs
+    description: The terms on this list are intended to be used with IRI values.
+    pref_namespace_prefix: dwciri
+    database: iri
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # eco:
+  - namespace_uri: http://rs.tdwg.org/eco/terms/
+    label: Humboldt Extension terms
+    description: This list includes terms defined by the Humboldt Extension for Ecological Inventories.
+    pref_namespace_prefix: eco
+    database: humboldt
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # ecoiri:
+  - namespace_uri: http://rs.tdwg.org/eco/iri/
+    label: Humboldt Extension IRI terms
+    description: This list includes terms defined by the Humboldt Extension for Ecological Inventories for use with IRI values.
+    pref_namespace_prefix: ecoiri
+    database: humboldt_iri
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # chrono:
+  - namespace_uri: http://rs.tdwg.org/chrono/terms/
+    label: Terms defined by the Chronometric Age Vocabulary
+    description: This list includes terms defined by the Chronometric Age Vocabulary
+    pref_namespace_prefix: chrono
+    database: chronometricage
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # chronoiri:
+  - namespace_uri: http://rs.tdwg.org/chrono/iri/
+    label: Darwin Core chronometric age extension (IRI-values)
+    description: Chronometric age extension (IRI values) for Darwin Core
+    pref_namespace_prefix: chronoiri
+    database: chronoiri
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # ac:
+  - namespace_uri: http://rs.tdwg.org/ac/terms/
+    label: Audiovisual Core terms used by Darwin Core
+    description: This term list includes all terms that have been adopted from the Audiovisual Core namespace ac:.
+    pref_namespace_prefix: ac
+    database: ac-for-dwc
+    borrowed: true
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: http://rs.tdwg.org/dwc/ac/
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # dc:
+  - namespace_uri: http://purl.org/dc/elements/1.1/
+    label: Darwin Core terms borrowed from the Dublin Core legacy namespace
+    description: "This list includes terms borrowed by Darwin Core from the legacy (http://purl.org/dc/elements/1.1/) Dublin Core namespace "
+    pref_namespace_prefix: dc
+    database: dc-for-dwc
+    borrowed: true
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: http://rs.tdwg.org/dwc/dc/
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+  # dcterms:
+  - namespace_uri: http://purl.org/dc/terms/
+    label: Darwin Core terms borrowed from the Dublin Core terms namespace
+    description: "This list includes terms borrowed by Darwin Core from the terms (http://purl.org/dc/terms/) Dublin Core namespace "
+    pref_namespace_prefix: dcterms
+    database: dcterms-for-dwc
+    borrowed: true
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: http://rs.tdwg.org/dwc/dcterms/
+    prepend_url: https://dwc.tdwg.org/list/#
+    use_namespace_in_fragment: true
+    separator: _
+- vocabulary: http://rs.tdwg.org/dwcem/
+  vocab_type: 2
+  list_of_terms_iri: http://rs.tdwg.org/dwc/doc/em/
+  vocabulary_label: Establishment Means Controlled Vocabulary
+  vocabulary_description: A controlled vocabulary for the Darwin Core term dwc:establishmentMeans.
+  dc_creator: TDWG Darwin Core Maintenance Group
+  dcterms_license: https://creativecommons.org/licenses/by/4.0/
+  namespaces:
+  - namespace_uri: http://rs.tdwg.org/dwcem/values/
+    label: establishmentMeans controlled values list
+    description: Controlled values list for the Darwin Core term establishmentMeans
+    pref_namespace_prefix: dwcem
+    database: establishmentMeans
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/em/#
+# DEGREE OF ESTABLISHMENT CONTROLLED VOCABULARY
+    use_namespace_in_fragment: true
+    separator: _
+- vocabulary: http://rs.tdwg.org/dwcdoe/
+  vocab_type: 2
+  list_of_terms_iri: http://rs.tdwg.org/dwc/doc/doe/
+  vocabulary_label: degreeOfEstablishment controlled vocabulary
+  vocabulary_description: Controlled vocabulary for the Darwin Core term degreeOfEstablishment
+  dc_creator: TDWG Darwin Core Maintenance Group
+  dcterms_license: https://creativecommons.org/licenses/by/4.0/
+  namespaces:
+  - namespace_uri: http://rs.tdwg.org/dwcdoe/values/
+    label: degreeOfEstablishment controlled values list
+    description: Controlled values list for the Darwin Core term degreeOfEstablishment
+    pref_namespace_prefix: dwcdoe
+    database: degreeOfEstablishment
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/doe/#
+# PATHWAY CONTROLLED VOCABULARY
+    use_namespace_in_fragment: true
+    separator: _
+- vocabulary: http://rs.tdwg.org/dwcpw/
+  vocab_type: 3
+  list_of_terms_iri: http://rs.tdwg.org/dwc/doc/pw/
+  vocabulary_label: Pathway Controlled Vocabulary
+  vocabulary_description: A controlled vocabulary for the Darwin Core term dwc:pathway.
+  dc_creator: TDWG Darwin Core Maintenance Group
+  dcterms_license: https://creativecommons.org/licenses/by/4.0/
+  namespaces:
+  - namespace_uri: http://rs.tdwg.org/dwcpw/values/
+    label: pathway controlled values list
+    description: Controlled values list for the Darwin Core term pathway
+    pref_namespace_prefix: dwcpw
+    database: pathway
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/pw/#
+# TAXON COMPLETENESS REPORTED CONTROLLED VOCABULARY
+    use_namespace_in_fragment: true
+    separator: _
+- vocabulary: http://rs.tdwg.org/ecotcr/
+  vocab_type: 2
+  list_of_terms_iri: http://rs.tdwg.org/dwc/doc/tcr/
+  vocabulary_label: Taxon Completeness Reported Controlled Vocabulary
+  vocabulary_description: A controlled vocabulary for the Humboldt Extension for Ecological Inventories term eco:taxonCompletenessReported.
+  dc_creator: TDWG Humboldt Extension Task Group
+  dcterms_license: https://creativecommons.org/licenses/by/4.0/
+  namespaces:
+  - namespace_uri: http://rs.tdwg.org/ecotcr/values/
+    label: taxonCompletenessReported controlled values list
+    description: Controlled values list for the Humboldt Extension for Ecological Inventories term taxonCompletenessReported.
+    pref_namespace_prefix: ecotcr
+    database: taxonCompletenessReported
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://dwc.tdwg.org/tcr/#
+    use_namespace_in_fragment: true
+    separator: _
