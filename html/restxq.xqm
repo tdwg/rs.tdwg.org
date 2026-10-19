@@ -228,6 +228,59 @@ declare
   };
 
 (:----------------------------------------------------------------------------------------------:)
+(: Data Package schemas :)
+
+(: Handle Darwin Core Data Package schema index with URI pattern "/dwc-dp/" :)
+declare
+  %rest:path("/dwc-dp")
+  function page:dwcdp-index()
+  {
+    (page:success(), file:read-text("/usr/src/rs.tdwg.org/dwc-dp/index.html"))
+  };
+
+(: Handle Darwin Core Data Package indices with URI patterns of "/dwc-dp/{$version}" :)
+declare
+  %rest:path("/dwc-dp/{$version}")
+  function page:dwcdp-file($version)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-dp/"
+  return
+    if (file:is-dir($base || $version))
+    then
+      (page:success(), file:read-text($base || $version || "/index.html"))
+    else
+      (page:not-found(), $version || " not found")
+  };
+
+(: Handle Darwin Core Data Package profiles with URI patterns of "/dwc-dp/{$version}/{$file}" :)
+declare
+  %rest:path("/dwc-dp/{$version}/{$file}")
+  function page:dwcdp-file($version, $file)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-dp/"
+  return
+    if (file:is-file($base || $version || "/" || $file))
+    then
+      (page:success-json(), file:read-text($base || $version || "/" || $file))
+    else
+      (page:not-found(), $version || "/" || $file || " not found")
+  };
+
+(: Handle Darwin Core Data Package schemas with URI patterns of "/dwc-dp/{$version}/table-schemas/{$file}" :)
+declare
+  %rest:path("/dwc-dp/{$version}/table-schemas/{$file}")
+  function page:dwcdp-json($version, $file)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-dp/"
+  return
+    if (file:is-file($base || $version || "/table-schemas/" || $file))
+    then
+      (page:success-json(), file:read-text($base || $version || "/table-schemas/" || $file))
+    else
+      (page:not-found(), $version || "/table-schemas/" || $file || " not found")
+  };
+
+(:----------------------------------------------------------------------------------------------:)
 (: Vocabularies and term lists patterns :)
 
 (: This is the handler function for URI patterns of "/{vocab}/" (vocabularies):)
@@ -1160,6 +1213,16 @@ declare function page:success()
     <http:response status="200" message="Success">
       <http:header name="Content-Language" value="en"/>
       <http:header name="Content-Type" value="text/html; charset=utf-8"/>
+    </http:response>
+  </rest:response>
+};
+
+(: 200 Success (JSON) response:)
+declare function page:success-json()
+{
+  <rest:response>
+    <http:response status="200" message="Success">
+      <http:header name="Content-Type" value="application/json; charset=utf-8"/>
     </http:response>
   </rest:response>
 };
