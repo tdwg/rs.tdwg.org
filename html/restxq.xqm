@@ -643,6 +643,28 @@ declare
 (: See documentation at http://docs.basex.org/wiki/RESTXQ#Forwards_and_Redirects :)
 (: 302 redirects :)
 
+(: Darwin Core schemas :)
+declare %rest:path("/dwc-dp/") function page:dwc-dp-redirect()
+ {<rest:redirect>{"https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-dp"}</rest:redirect>};
+
+declare %rest:path("/dwc-dp/{$dpversion}/") function page:dwc-dp-versions-redirect($dpversion)
+ {<rest:redirect>{"https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-dp/"||$dpversion}</rest:redirect>};
+
+declare %rest:path("/dwc-dp/{$dpversion}/{$path=.+}") function page:dwc-dp-version-profile-redirect($dpversion,$path)
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/refs/heads/master/dwc-dp/"||$dpversion||"/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc-dp/{$dpversion}/table-schemas/{$path=.+}") function page:dwc-dp-version-table-schemas-redirect($dpversion,$path)
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/refs/heads/master/dwc-dp/"||$dpversion||"/table-schemas/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc-a/schemas/") function page:dwc-a-schemas-redirect()
+ {<rest:redirect>{"https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-a/schemas"}</rest:redirect>};
+
+declare %rest:path("/dwc-a/schemas/{$path=.+}") function page:dwc-a-xsd-redirect($path)
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/refs/heads/master/dwc-a/schemas/"||$path}</rest:redirect>};
+
+declare %rest:path("/dwc-a/schemas/{$type}/{$path=.+}") function page:dwc-a-xml-redirect($path)
+ {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/refs/heads/master/dwc-a/schemas/"||$type||"/"||$path}</rest:redirect>};
+
 (: Tapir redirects :)
 declare %rest:path("/tapir/cns/{$path=.+}") function page:tapir-cns-redirect($path)
  {<rest:redirect>{"https://tdwg.github.io/tapir/cns/"||$path}</rest:redirect>};
