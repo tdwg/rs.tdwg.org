@@ -314,7 +314,7 @@ declare
     (page:success(), html:listing("/dwc-a/schemas/"))
   };
 
-(: Handle Darwin Core Data Package profiles with URI patterns of "/dwc-a/schemas/{$file}" :)
+(: Handle Darwin Core Archive schemas with URI patterns of "/dwc-a/schemas/{$file}" :)
 declare
   %rest:path("/dwc-a/schemas/{$file}")
   function page:dwca-file($file)
@@ -331,16 +331,24 @@ declare
       (page:not-found(), "/dwc-a/schemas/" || $file || " not found")
   };
 
-(: Handle Darwin Core Data Package schemas with URI patterns of "/dwc-a/schemas/{$dir}/{$file}" :)
+(: Handle Darwin Core Archive schemas with URI patterns of "/dwc-a/schemas/{$dir}/{$file}" :)
 declare
   %rest:path("/dwc-a/schemas/{$dir}/{$file}")
-  function page:dwca-dirfile($dir, $file)
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwca-dirfile($dir, $file, $acceptHeader)
   {
   let $base := "/usr/src/rs.tdwg.org/dwc-a/schemas/"
   return
     if (file:is-file($base || $dir || "/" || $file))
     then
-      (page:success-xml(), file:read-text($base || $dir || "/" || $file))
+      let $text := file:read-text($base || $dir || "/" || $file)
+      return
+        if (some $header in $acceptHeader satisfies contains($header, "text/html"))
+        then
+          (: Browsers are dropping native XSLT support, so for HTML clients insert the XSLT polyfill script into the XML :)
+          (page:success-xml(), page:insert-xslt-polyfill($text))
+        else
+          (page:success-xml(), $text)
     else
       (page:not-found(), $dir || "/" || $file || " not found")
   };
@@ -2356,6 +2364,21 @@ switch ($serialization)
   case "xml" return ".rdf"
   case "json" return ".json"
   default return ""
+};
+
+(: Insert the XSLT polyfill script as the first child of the document element of an XML string.
+   If the text can't be parsed as XML, it is returned unchanged. :)
+declare function page:insert-xslt-polyfill($text as xs:string) as xs:string
+{
+try {
+  let $doc := parse-xml($text)
+  let $modified := copy $d := $doc
+    modify insert node <script src="https://cdn.jsdelivr.net/npm/xslt-polyfill@1.0.31/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"></script> as first into $d/*
+    return $d
+  return serialize($modified, map { 'method': 'xml', 'omit-xml-declaration': 'no' })
+} catch * {
+  $text
+}
 };
 
 declare function page:extract-html-header($headers)
