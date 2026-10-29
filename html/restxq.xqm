@@ -1,7 +1,7 @@
 (: this module needs to be put in the webapp folder of your BaseX installation.  On my local computer it's at c:\Program Files (x86)\BaseX\webapp\ On the Tomcat installation, it's at opt/tomcat/webapps/gom/restxq.xqm, where gom is the context under which the BaseX server is running :)
 
 module namespace page = 'http://basex.org/modules/web-page';
-import module namespace html = 'http://rs.tdwg.com/html' at 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/html.xqm';
+import module namespace html = 'http://rs.tdwg.org/html' at '/usr/src/rs.tdwg.org/html/html.xqm';
 
 (:----------------------------------------------------------------------------------------------:)
 (: Main functions for handling URI patterns :)
@@ -75,7 +75,7 @@ declare
 
 declare function page:check-db($db)
 {
-  let $metadataDoc := http:send-request(<http:request method='get' href='{"https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/index/index-datasets.csv"}'/>)[2]
+  let $metadataDoc := file:read-text("/usr/src/rs.tdwg.org/index/index-datasets.csv")
   let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : ',' })
   let $metadata := $xmlMetadata/csv/record
   for $record in $metadata
@@ -362,8 +362,8 @@ declare
   function page:generic-terms($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
-  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistFilePath := "/usr/src/rs.tdwg.org/term-lists/term-lists.csv"
+  let $termlistDoc := file:read-text($termlistFilePath)
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
 
@@ -385,8 +385,8 @@ declare
   function page:generic-term-version($acceptHeader,$vocab,$ns,$local-id)
   {
   let $listLocalname := $vocab||"/"||$ns||"/"
-  let $termlistFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/term-lists/term-lists.csv"
-  let $termlistDoc := http:send-request(<http:request method='get' href='{$termlistFilePath}'/>)[2]
+  let $termlistFilePath := "/usr/src/rs.tdwg.org/term-lists/term-lists.csv"
+  let $termlistDoc := file:read-text($termlistFilePath)
   let $termlistDataRaw := csv:parse($termlistDoc, map { 'header' : true(),'separator' : "," })
   let $termlistData := $termlistDataRaw/csv/record
 
@@ -650,7 +650,7 @@ declare %rest:path("/tapir/cns/{$path=.+}") function page:tapir-cns-redirect($pa
 declare %rest:path("/tapir/cs/{$path=.+}") function page:tapir-cs-redirect($path)
  {<rest:redirect>{"https://tdwg.github.io/tapir/cs/"||$path}</rest:redirect>};
 
-(: This isn't working - gets a 404 
+(: This isn't working - gets a 404
 declare %rest:path("/tapir/1.0/schema/tdwg_tapir.xsd") function page:tapir10-schema-redirect()
  {<rest:redirect>{"https://raw.githubusercontent.com/tdwg/tapir/1.0/schema/tapir.xsd"}</rest:redirect>};
 :)
@@ -775,35 +775,35 @@ declare
   {
     let $header := page:extract-html-header($acceptHeader)
     return switch ($header)
-      case "application/rdf+xml" return 
+      case "application/rdf+xml" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.owl" />
             </http:response>
          </rest:response>
 
-      case "text/turtle" return 
+      case "text/turtle" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.ttl" />
             </http:response>
          </rest:response>
 
-      case "application/ld+json" return 
+      case "application/ld+json" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.jsonld" />
             </http:response>
          </rest:response>
 
-      case "text/html" return 
+      case "text/html" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="{'https://abcd.tdwg.org/terms/#'||$path}" />
             </http:response>
          </rest:response>
 
-      default return 
+      default return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_concepts.owl" />
@@ -820,35 +820,35 @@ declare
   {
     let $header := page:extract-html-header($acceptHeader)
     return switch ($header)
-      case "application/rdf+xml" return 
+      case "application/rdf+xml" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.owl" />
             </http:response>
          </rest:response>
 
-      case "text/turtle" return 
+      case "text/turtle" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.ttl" />
             </http:response>
          </rest:response>
 
-      case "application/ld+json" return 
+      case "application/ld+json" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.jsonld" />
             </http:response>
          </rest:response>
 
-      case "text/html" return 
+      case "text/html" return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="{'https://abcd.tdwg.org/mappings/#'||$path}" />
             </http:response>
          </rest:response>
 
-      default return 
+      default return
          <rest:response>
             <http:response status="303">
               <http:header name="location" value="https://abcd.tdwg.org/ontology/abcd_mappings.owl" />
@@ -1083,7 +1083,7 @@ declare function page:handle-repesentation($acceptHeader,$extension,$db,$lookup-
 declare function page:return-representation($response-media-type,$lookup-string,$flag,$db)
 {
   if ($flag = "html")
-  then 
+  then
     switch ($db)
       case "docs" return page:handle-docs-html($lookup-string)
       case "docs-versions" return page:handle-docs-versions-html($lookup-string)
@@ -1102,8 +1102,8 @@ declare function page:return-representation($response-media-type,$lookup-string,
 (: Function to return a web page for vocabs etc. :)
 declare function page:handle-html($db,$lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/html/redirects.csv"
-let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
+let $redirectFilePath := "/usr/src/rs.tdwg.org/html/redirects.csv"
+let $redirectDoc := file:read-text($redirectFilePath)
 let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
@@ -1132,9 +1132,9 @@ return
 (: Function to redirect to a web page for standards documents :)
 declare function page:handle-docs-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs/docs.csv"
-let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
-let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectFilePath := "/usr/src/rs.tdwg.org/docs/docs.csv"
+let $redirectDoc := file:read-text($redirectFilePath)
+let $redirectDataRaw := csv:parse($redirectFilePath, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/current_iri/text() = $lookup-string
@@ -1144,9 +1144,9 @@ return page:temp-redirect($redirectItem/browserRedirectUri/text(),"")
 (: Function to redirect to a web page for standards documents versions :)
 declare function page:handle-docs-versions-html($lookup-string)
 {
-let $redirectFilePath := "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/docs-versions/docs-versions.csv"
-let $redirectDoc := http:send-request(<http:request method='get' href='{$redirectFilePath}'/>)[2]
-let $redirectDataRaw := csv:parse($redirectDoc, map { 'header' : true(),'separator' : "," })
+let $redirectFilePath := "/usr/src/rs.tdwg.org/docs-versions/docs-versions.csv"
+let $redirectDoc := file:read-text($redirectFilePath)
+let $redirectDataRaw := csv:parse($redirectFilePath, map { 'header' : true(),'separator' : "," })
 let $redirectData := $redirectDataRaw/csv/record
 for $redirectItem in $redirectData
 where $redirectItem/version_iri/text() = $lookup-string
@@ -1248,7 +1248,7 @@ declare function page:substring-after-last
 
    replace ($arg,concat('^.*',page:escape-for-regex($delim)),'')
  } ;
- 
+
  declare function page:escape-for-regex
   ( $arg as xs:string? )  as xs:string {
 
@@ -1278,20 +1278,20 @@ let $classes := fn:collection($db)//base-classes/record
 let $linkedClasses := fn:collection($db)//linked-classes/record
 let $metadata := fn:collection($db)/metadata/record
 let $linkedMetadata := fn:collection($db)//linked-metadata/file
-  
+
 (: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
-return 
+return
   if ($outputToFile="true")
   then
     (: Creates the output directory specified in the constants.csv file if it doesn't already exist.  Then writes into a file having the name passed via the $id parameter concatenated with an appropriate file extension. uses default UTF-8 encoding :)
     (file:create-dir($outputDirectory),
-    
-    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:) 
-    if ($outFileNameAfter) 
+
+    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:)
+    if ($outFileNameAfter)
     then file:write-text($outputDirectory||page:substring-after-last($id, $outFileNameAfter)||page:extension($serialization),page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     else file:write-text($outputDirectory||$id||page:extension($serialization),page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     ,
-    
+
     (: put this in the Result window so that the user can tell that something happened :)
     "Completed file write of "||$id||page:extension($serialization)||" at "||fn:current-dateTime()
     )
@@ -1305,8 +1305,8 @@ declare function page:main($id,$serialization,$repoPath,$pcRepoLocation,$singleO
 {
 
 (: This is an attempt to allow the necessary CSV files to load on any platform without hard-coding any paths here.  I know it works for PCs, but am not sure how consistently it works on non-PCs :)
-let $localFilesFolderUnix := 
-(:  if (fn:substring(file:current-dir(),1,2) = "C:") 
+let $localFilesFolderUnix :=
+(:  if (fn:substring(file:current-dir(),1,2) = "C:")
   then :)
     (: the computer is a PC with a C: drive, the path specified in the function arguments are substituted :)
     "file:///"||$pcRepoLocation||$repoPath
@@ -1359,7 +1359,7 @@ let $linkedMetadata :=
       let $classMetadataDoc := file:read-text(concat($localFilesFolderUnix,$linkedDoc))
       let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
       return
-        ( 
+        (
         <file>{
           $class/link_column,
           $class/link_property,
@@ -1379,20 +1379,20 @@ let $linkedMetadata :=
           }</metadata>
        }</file>
        )
-  
+
 (: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
-return 
+return
   if ($outputToFile="true")
   then
     (: Creates the output directory specified in the constants.csv file if it doesn't already exist.  Then writes into a file having the name passed via the $id parameter concatenated with an appropriate file extension. uses default UTF-8 encoding :)
     (file:create-dir($outputDirectory),
-    
-    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:) 
-    if ($outFileNameAfter) 
+
+    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:)
+    if ($outFileNameAfter)
     then file:write-text($outputDirectory||page:substring-after-last($id, $outFileNameAfter)||page:extension($serialization),page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     else file:write-text($outputDirectory||$id||page:extension($serialization),page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     ,
-    
+
     (: put this in the Result window so that the user can tell that something happened :)
     "Completed file write of "||$id||page:extension($serialization)||" at "||fn:current-dateTime()
     )
@@ -1405,7 +1405,7 @@ return
 
 declare function page:main-github($id,$serialization,$baseURI,$repoName,$singleOrDump,$outputToFile)
 {
-    
+
 (: Despite the variable name, this is hacked to be the HTTP URI of the github repo online. :)
 let $localFilesFolderUnix := concat($baseURI,$repoName,"/")
 
@@ -1454,7 +1454,7 @@ let $linkedMetadata :=
       let $classMetadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix||$linkedDoc}'/>)[2]
       let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
       return
-        ( 
+        (
         <file>{
           $class/link_column,
           $class/link_property,
@@ -1474,20 +1474,20 @@ let $linkedMetadata :=
           }</metadata>
        }</file>
        )
-  
+
 (: The main function returns a single string formed by concatenating all of the assembled pieces of the document :)
-return 
+return
   if ($outputToFile="true")
   then
     (: Creates the output directory specified in the constants.csv file if it doesn't already exist.  Then writes into a file having the name passed via the $id parameter concatenated with an appropriate file extension. uses default UTF-8 encoding :)
     (file:create-dir($outputDirectory),
-    
-    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:) 
-    if ($outFileNameAfter) 
+
+    (: If the $id is a full IRI or long string, use only the part after the delimiter in $outFileNameAfter as the file name.  Otherwise, use the entire value of $id as the file name:)
+    if ($outFileNameAfter)
     then file:write-text($outputDirectory||page:substring-after-last($id, $outFileNameAfter)||page:extension($serialization),page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     else file:write-text($outputDirectory||$id||page:extension($serialization),page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
     ,
-    
+
     (: put this in the Result window so that the user can tell that something happened :)
     "Completed file write of "||$id||page:extension($serialization)||" at "||fn:current-dateTime()
     )
@@ -1502,8 +1502,8 @@ declare function page:find($id,$repoPath,$pcRepoLocation)
 {
 
 (: This is an attempt to allow the necessary CSV files to load on any platform without hard-coding any paths here.  I know it works for PCs, but am not sure how consistently it works on non-PCs :)
-let $localFilesFolderUnix := 
-(:  if (fn:substring(file:current-dir(),1,2) = "C:") 
+let $localFilesFolderUnix :=
+(:  if (fn:substring(file:current-dir(),1,2) = "C:")
   then :)
     (: the computer is a PC with a C: drive, the path specified in the function arguments are substituted :)
     "file:///"||$pcRepoLocation||$repoPath
@@ -1556,7 +1556,7 @@ let $linkedMetadata :=
       let $classMetadataDoc := file:read-text(concat($localFilesFolderUnix,$linkedDoc))
       let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
       return
-        ( 
+        (
         <file>{
           $class/link_column,
           $class/link_property,
@@ -1576,12 +1576,12 @@ let $linkedMetadata :=
           }</metadata>
        }</file>
        )
-  
-return 
+
+return
       (: each record in the database must be checked for a match to the requested URI :)
       for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()=$id
-      return true()      
+      return true()
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -1594,12 +1594,12 @@ let $constants := fn:collection($db)//constants/record
 let $baseIriColumn := $constants//baseIriColumn/text()
 
 let $metadata := fn:collection($db)/metadata/record
-  
-return 
+
+return
       (: each record in the database must be checked for a match to the requested URI :)
       for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()=$id
-      return true()      
+      return true()
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -1655,7 +1655,7 @@ let $linkedMetadata :=
       let $classMetadataDoc := http:send-request(<http:request method='get' href='{$localFilesFolderUnix,$linkedDoc}'/>)[2]
       let $xmlClassMetadata := csv:parse($classMetadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
       return
-        ( 
+        (
         <file>{
           $class/link_column,
           $class/link_property,
@@ -1675,7 +1675,7 @@ let $linkedMetadata :=
           }</metadata>
        }</file>
        )
-  
+
 return
       (: each record in the database must be checked for a match to the requested URI :)
       for $record in $metadata
@@ -1687,25 +1687,25 @@ return
 
 declare function page:generate-entire-document($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 {
-concat( 
+concat(
   (: the namespace abbreviations only needs to be generated once for the entire document :)
   page:list-namespaces($namespaces,$serialization),
   if($serialization = 'json')
   then
     (: When each each resource description in each record is generated as json, it has a trailing comma.  The last one must be removed before closing the container for the array and document :)
     page:remove-last-comma(page:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn))
-  else 
+  else
     page:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
   ,
-  page:close-container($serialization) 
-  ) 
+  page:close-container($serialization)
+  )
 };
 
 (:--------------------------------------------------------------------------------------------------:)
 
 declare function page:generate-records($id,$linkedMetadata,$metadata,$domainRoot,$classes,$columnInfo,$serialization,$namespaces,$constants,$singleOrDump,$baseIriColumn,$modifiedColumn)
 {
-string-join( 
+string-join(
   if ($singleOrDump = "dump")
   then
     (: this case outputs every record in the database :)
@@ -1720,22 +1720,22 @@ string-join(
     let $baseIRI := $domainRoot||$record/*[local-name()=$baseIriColumn]/text()
     let $modified := $record/*[local-name()=$modifiedColumn]/text()
     return page:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
-  )  
+  )
 };
 
 (:--------------------------------------------------------------------------------------------------:)
 
 declare function page:generate-a-record($record,$linkedMetadata,$baseIRI,$domainRoot,$modified,$classes,$columnInfo,$serialization,$namespaces,$constants)
 {
-        
+
           (: Generate unabbreviated URIs and blank node identifiers. This must be done for every record separately since the UUIDs generated for the blank node identifiers must be the same within a record, but differ among records. :)
-          
-          let $IRIs := page:construct-iri($baseIRI,$classes) 
+
+          let $IRIs := page:construct-iri($baseIRI,$classes)
           (: generate a description for each class of resource included in the record :)
           for $modifiedClass in $IRIs
-          return page:describe-resource($IRIs,$columnInfo,$record,$modifiedClass,$serialization,$namespaces,"") 
+          return page:describe-resource($IRIs,$columnInfo,$record,$modifiedClass,$serialization,$namespaces,"")
           ,
-          
+
           (: now step through each class that's linked to the root class by many-to-one relationships and generate the resource description for each linked resource in that class :)
           for $linkedClass in $linkedMetadata
           return (
@@ -1749,13 +1749,13 @@ declare function page:generate-a-record($record,$linkedMetadata,$baseIRI,$domain
                   if ( exists($linkedClass/forward_link/text()) )
                   then $linkedClass/forward_link/text()
                   else "null"
-            
+
             for $linkedClassRecord in $linkedClass/metadata/record
             where $baseIRI=$domainRoot||$linkedClassRecord/*[local-name()=$linkColumn]/text()
-            
-            (: generate an IRI or bnode for the instance of the linked class based on the convention for that class. 
+
+            (: generate an IRI or bnode for the instance of the linked class based on the convention for that class.
             If the value of $linkCharacters is "http", then use the value in the $suffix1 column as the URI of the linked class instance :)
-            let $linkedClassIRI := 
+            let $linkedClassIRI :=
                     if (fn:substring($suffix1,1,2)="_:")
                     then
                         concat("_:",random:uuid() )
@@ -1799,7 +1799,7 @@ declare function page:generate-a-record($record,$linkedMetadata,$baseIRI,$domain
                     )
             )
             ,
-            
+
             (: The document description is done once for each record. Suppress if the document class has a value of "null" :)
             if ($constants//documentClass/text() = "null")
             then
@@ -1821,19 +1821,19 @@ declare function page:describe-document($baseIRI,$modified,$serialization,$names
     page:subject($iri,$serialization),
     page:plain-literal("dc:format",page:media-type($serialization),$serialization),
     page:plain-literal("dc:creator",$constants//creator/text(),$serialization),
-    
+
     page:iri("dcterms:references",$baseIRI,$serialization,$namespaces),
     if ($modified)
     then page:datatyped-literal("dcterms:modified",$modified,"xsd:dateTime",$serialization,$namespaces)
     else "",
     page:type($type,$serialization,$namespaces),
-    
+
     (: each described resource must be separated by a comma in JSON. The final trailing comma for all resources will be removed after they are all concatenated. :)
     if ($serialization="json")
     then ",&#10;"
     else ""
 
-  )  
+  )
 };
 
 (:--------------------------------------------------------------------------------------------------:)
@@ -1867,13 +1867,13 @@ declare function page:replace-semicolon-with-period($temp)
 declare function page:last-item($propertyBlock, $serialization)
 {
 if ($serialization = 'json')
-then 
+then
   (: For JSON, only the trailing comma needs to be removed. :)
   page:remove-last-comma($propertyBlock)
-else 
+else
     if ($serialization = 'turtle')
     then
-        (: for Turtle, the trailing semicolon must be replaced with a final period :) 
+        (: for Turtle, the trailing semicolon must be replaced with a final period :)
         page:replace-semicolon-with-period($propertyBlock)
     else
         (: for XML there are no trailing delimiters, so nothing to remove. :)
@@ -1884,7 +1884,7 @@ else
 
 (: This generates the list of namespace abbreviations used :)
 declare function page:list-namespaces($namespaces,$serialization)
-{  
+{
 (: Because this is the beginning of the file, it also opens the root container for the serialization (if any) :)
 switch ($serialization)
     case "turtle" return concat(
@@ -1923,16 +1923,16 @@ declare function page:curie-value-pairs($namespaces,$serialization)
 
 (: This function describes a single instance of the type of resource being described by the table :)
 declare function page:describe-resource($IRIs,$columnInfo,$record,$class,$serialization,$namespaces,$extraTriple)
-{  
+{
 (: Note: the page:subject function sets up any string necessary to open the container, and the page:type function closes the container :)
 let $type := $class/class/text()
 let $id := $class/id/text()
 let $iri := $class/fullId/text()
-let $propertyBlock := 
+let $propertyBlock :=
   concat(
     page:subject($iri,$serialization),
     string-join(page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)),
-    
+
     (: make the backlink only for the instance of the primary class in a table :)
     if ($id="$root")
     then $extraTriple
@@ -1979,7 +1979,7 @@ declare function page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serial
      case "plain" return page:plain-literal($columnType/predicate/text(),$column//text(),$serialization)
      case "datatype" return page:datatyped-literal($columnType/predicate/text(),$column//text(),$columnType/attribute/text(),$serialization,$namespaces)
      case "language" return page:language-tagged-literal($columnType/predicate/text(),$column//text(),$columnType/attribute/text(),$serialization)
-     case "iri" return 
+     case "iri" return
        (:: check whether the value column in the mapping table has anything in it :)
        if ($columnType/value/text())
        then
@@ -1995,7 +1995,7 @@ declare function page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serial
   for $columnType in $columnInfo
   where "$link" = $columnType/header/text() and $columnType/subject_id/text() = $id
   let $suffix := $columnType/value/text()
-  return 
+  return
       for $iri in $IRIs
       where $iri/id/text()=$suffix
       let $object := $iri/fullId/text()
@@ -2006,7 +2006,7 @@ declare function page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serial
 
 (: this function closes the root container for the serialization (if any) :)
 declare function page:close-container($serialization)
-{  
+{
 switch ($serialization)
     case "turtle" return ""
     case "xml" return "</rdf:RDF>&#10;"
@@ -2025,7 +2025,7 @@ declare function page:construct-iri($baseIRI,$classes)
      <record>{
      if (fn:substring($suffix,1,2)="_:")
      then (<fullId>{concat("_:",random:uuid() ) }</fullId>, $class/id, $class/class )
-     else 
+     else
        if ($suffix="$root")
        then (<fullId>{$baseIRI}</fullId>, $class/id, $class/class )
        else (<fullId>{concat($baseIRI,$suffix) }</fullId>, $class/id, $class/class )
@@ -2037,7 +2037,7 @@ declare function page:construct-iri($baseIRI,$classes)
 declare function page:html($id,$serialization)
 {
  let $value := concat("Placeholder page for local ID=",$id,".")
-return 
+return
 <html>
   <body>
   {$value}
@@ -2059,11 +2059,11 @@ declare function page:escape-bad-characters($string,$serialization)
 {
 switch ($serialization)
     case "json"
-    case "turtle" 
+    case "turtle"
        return fn:replace(
                        fn:replace($string,'\\','\\\\')
                        ,'"','\\"')
-              
+
     case "xml"
        return page:escape-less-than(
                        fn:replace($string,'&amp;','&amp;amp;')
@@ -2075,7 +2075,7 @@ declare function page:escape-less-than($string)
 {
 string-join(
 for $char in page:chars($string)
-return 
+return
   if ($char = '<') then
      ``[&lt;]``
   else
@@ -2087,15 +2087,15 @@ declare function page:expand-iri($abbreviated,$namespaces)
 {
   (: if the passed URI is already expanded as an HTTP IRI or a URN, the function does nothing :)
 if (fn:substring($abbreviated,1,8)="https://")
-then 
+then
   $abbreviated
 else
   if (fn:substring($abbreviated,1,7)="http://")
-  then 
+  then
     $abbreviated
   else
     if (fn:substring($abbreviated,1,4)="urn:")
-    then 
+    then
       $abbreviated
     else
       let $curie := substring-before($abbreviated,":")
@@ -2109,15 +2109,15 @@ declare function page:wrap-turtle-iri($iri)
 {
   (: check whether an unabbreviated HTTP IRI or URN. If so, wrap in lt/gt brackets.  If not, do nothing :)
   if (fn:substring($iri,1,8)="https://")
-  then 
+  then
     concat('<',$iri,">")
   else
     if (fn:substring($iri,1,7)="http://")
-    then 
+    then
       concat('<',$iri,">")
     else
       if (fn:substring($iri,1,4)="urn:")
-      then 
+      then
         concat('<',$iri,">")
       else
         $iri
@@ -2127,13 +2127,13 @@ declare function page:subject($iri,$serialization)
 {
   (: Note: the subject iri begins the description, so the returned string includes characters necessary to open the container.  In turtle and xml, blank nodes have different formats than full URIs :)
 switch ($serialization)
-  case "turtle" return 
-       if (fn:substring($iri,1,2)="_:") 
-       then concat($iri,"&#10;") 
+  case "turtle" return
+       if (fn:substring($iri,1,2)="_:")
+       then concat($iri,"&#10;")
        else concat("<",$iri,">&#10;")
-  case "xml" return 
-       if (fn:substring($iri,1,2)="_:") 
-       then concat('<rdf:Description rdf:nodeID="',concat("U",fn:substring($iri,3,fn:string-length($iri)-2)),'">&#10;') 
+  case "xml" return
+       if (fn:substring($iri,1,2)="_:")
+       then concat('<rdf:Description rdf:nodeID="',concat("U",fn:substring($iri,3,fn:string-length($iri)-2)),'">&#10;')
        else concat('<rdf:Description rdf:about="',$iri,'">&#10;')
   case "json" return concat("{&#10;",'"@id": "',$iri,'",&#10;')
   default return ""
@@ -2172,10 +2172,10 @@ return switch ($serialization)
 declare function page:iri($predicate,$string,$serialization,$namespaces)
 {
 switch ($serialization)
-  case "turtle" return concat("     ",$predicate,' ',page:wrap-turtle-iri($string),";&#10;") 
-  case "xml" return 
-       if (fn:substring($string,1,2)="_:") 
-       then concat("     <",$predicate,' rdf:nodeID="',concat("U",fn:substring($string,3,fn:string-length($string)-2)),'"/>&#10;') 
+  case "turtle" return concat("     ",$predicate,' ',page:wrap-turtle-iri($string),";&#10;")
+  case "xml" return
+       if (fn:substring($string,1,2)="_:")
+       then concat("     <",$predicate,' rdf:nodeID="',concat("U",fn:substring($string,3,fn:string-length($string)-2)),'"/>&#10;')
        else concat("     <",$predicate,' rdf:resource="',page:expand-iri($string,$namespaces),'"/>&#10;')
   case "json" return concat('"',$predicate,'": {"@id": "',$string,'"},&#10;')
   default return ""
@@ -2184,7 +2184,7 @@ switch ($serialization)
 declare function page:type($type,$serialization,$namespaces)
 {
   (: Note: type is the last property listed, so the returned string includes characters necessary to close the container :)
-  (: There also is no trailing separator (if the serialization has one). :) 
+  (: There also is no trailing separator (if the serialization has one). :)
   (: A value of "null" suppresses declaring a type and simply closes the container. :)
 switch ($serialization)
   case "turtle" return
@@ -2222,12 +2222,12 @@ switch ($serialization)
 
 declare function page:extract-html-header($headers)
 {
-let $result :=  
-  for $header in $headers 
-  return if (contains($header, "text/html")) 
-    then true() 
+let $result :=
+  for $header in $headers
+  return if (contains($header, "text/html"))
+    then true()
     else false()
-return if ($result = true()) 
-  then "text/html" 
+return if ($result = true())
+  then "text/html"
   else $headers
 };

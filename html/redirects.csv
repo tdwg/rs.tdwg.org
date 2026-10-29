@@ -90,3 +90,9 @@ xmp-for-ac,yes,term,xmp,https://ac.tdwg.org/termlist/#,yes,_
 xmp-for-ac-versions,no,termVersion,xmp,,,
 xmpRights-for-ac,yes,term,xmpRights,https://ac.tdwg.org/termlist/#,yes,_
 xmpRights-for-ac-versions,no,termVersion,xmpRights,,,
+midsLevel,yes,term,midslevel,https://mids.tdwg.org/information-elements/#,no,
+midsLevel-versions,no,termVersion,midslevel,,,
+midsDisciplines,yes,term,midsdiscipline,https://mids.tdwg.org/information-elements/#,no,
+midsDisciplines-versions,no,termVersion,midsdiscipline,,,
+midsElements,yes,term,midselement,https://mids.tdwg.org/information-elements/#,no,
+midsElements-versions,no,termVersion,midselement,,,
