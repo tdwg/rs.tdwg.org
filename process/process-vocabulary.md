@@ -131,6 +131,8 @@ Each configured Document must resolve, after `document_defaults` and per-Documen
 
 A single processing run can contain multiple Vocabularies. Namespace prefixes and dataset names must be unambiguous across the complete release configuration.
 
+**Protocol (`http` or `https`).** The canonical protocol of TDWG IRIs is chosen per Vocabulary by the IRIs in `config.yaml`. The scheme of the `vocabulary` IRI is used for the Vocabulary and its versions (`{scheme}://rs.tdwg.org/version/{vocab}/{date}`), and the scheme of each `namespace_uri` is used for its Term List, terms, term versions, and Term List versions. Document IRIs are taken as configured. Vocabularies processed before this option was added use `http`, and their IRIs are unchanged. A new Standard MAY use `https`. Preflight validation requires each non-borrowed `rs.tdwg.org` Term List to use the same scheme as its Vocabulary, and rejects a Vocabulary or Term List that is already recorded under the other scheme: a scheme MUST NOT change after it is first processed. When dereferencing, `html/restxq.xqm` (`page:canonical-iri`) finds Vocabularies, Term Lists, their versions, and Documents under whichever scheme is recorded, so both `http` and `https` requests resolve to the recorded IRI.
+
 `vocab.yaml` is **not used by the current processor**. Vocabulary and Standard release configuration that earlier workflows split between files is now represented in `config.yaml`.
 
 Two consequences of this configuration model are particularly important:

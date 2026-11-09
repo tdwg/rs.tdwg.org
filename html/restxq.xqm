@@ -108,11 +108,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$stripped-local-name||"/"
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$stripped-local-name||"/",$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$local-id||"/",$db)
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -130,11 +130,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$local-id||"/"||$stripped-local-name,$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$date
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$local-id||"/"||$date,$db)
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id||"/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -369,7 +369,7 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
+      let $lookup-string := page:canonical-iri($stripped-local-name||"/",$db)
       return
       switch ($stripped-local-name)
         (: handle the special case of TDWG decisions :)
@@ -379,7 +379,7 @@ declare
         default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
+      let $lookup-string := page:canonical-iri($local-id||"/",$db)
       let $redirect-id := "/"||$local-id
       return
       switch ($local-id)
@@ -403,11 +403,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$stripped-local-name
+      let $lookup-string := page:canonical-iri("version/"||$vocab||"/"||$stripped-local-name,$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$local-id
+      let $lookup-string := page:canonical-iri("version/"||$vocab||"/"||$local-id,$db)
       let $redirect-id := "/version/"||$vocab||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -425,11 +425,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$stripped-local-name||"/"
+      let $lookup-string := page:canonical-iri($namespace||"/"||$stripped-local-name||"/",$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$local-id||"/"
+      let $lookup-string := page:canonical-iri($namespace||"/"||$local-id||"/",$db)
       let $redirect-id := "/"||$namespace||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -447,11 +447,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
+      let $lookup-string := page:canonical-iri($vocab||"/version/"||$term-list||"/"||$stripped-local-name,$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$local-id
+      let $lookup-string := page:canonical-iri($vocab||"/version/"||$term-list||"/"||$local-id,$db)
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -1746,6 +1746,24 @@ return
       for $record in $metadata
       where $record/*[local-name()=$baseIriColumn]/text()=$id
       return true()
+};
+
+(:--------------------------------------------------------------------------------------------------:)
+
+(: Return the IRI recorded in the database for an rs.tdwg.org path, under either scheme.
+   The canonical protocol (http or https) is a per-vocabulary choice recorded in the data,
+   not in the request: behind the proxy, the same path is received for http and https requests.
+   http is tried first, so existing vocabularies, which all use http, resolve exactly as before.
+   If the path is recorded under neither scheme, the http IRI is returned and the caller
+   responds with 404 as before. :)
+declare function page:canonical-iri($path,$db)
+{
+  let $http := "http://rs.tdwg.org/"||$path
+  let $https := "https://rs.tdwg.org/"||$path
+  return
+    if (exists(page:find-db($http,$db))) then $http
+    else if (exists(page:find-db($https,$db))) then $https
+    else $http
 };
 
 (:--------------------------------------------------------------------------------------------------:)

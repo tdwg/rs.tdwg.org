@@ -262,7 +262,8 @@ declare function html:term-metadata($record as element(),$version as xs:string,$
    <tr><td><strong>Term IRI:</strong></td><td>{$record/term_isDefinedBy/text()||$record/term_localName/text()}</td></tr>,
 
    (: terms not defined by TDWG may have different version patterns, or may not have versions :)
-   if (contains($record/term_isDefinedBy/text(), "http://rs.tdwg.org/" ))
+   (: TDWG term lists use http or https, chosen per vocabulary :)
+   if (matches($record/term_isDefinedBy/text(), "^https?://rs\.tdwg\.org/" ))
    then (
    <tr><td><strong>Term version IRI:</strong></td><td><a href='{$version}'>{$version}</a></td></tr>
    )
@@ -506,7 +507,9 @@ return
 (: Generates HTML metadata for a particular vocabulary and returns them as a div element :)
 declare function html:generate-vocabulary-metadata-html($record as element()) as element()
 {
-let $thisVersion := "http://rs.tdwg.org/version/"||$record/vocabulary_localName/text()||$record/vocabulary_modified/text()
+(: the version IRI uses the same scheme (http or https) as the vocabulary IRI :)
+let $scheme := if (starts-with($record/vocabulary/text(),"https://")) then "https" else "http"
+let $thisVersion := $scheme||"://rs.tdwg.org/version/"||$record/vocabulary_localName/text()||$record/vocabulary_modified/text()
 let $std := html:find-standard($record/vocabulary/text())
 return
 <div>{

@@ -585,6 +585,28 @@ def findColumnWithHeader(header_row_list, header_label):
     else:
         return [False, 0]
     
+def vocabularyVersionIri(vocabulary_iri, vocab_subpath, date_issued):
+    """Return the vocabulary version IRI, keeping the vocabulary IRI's scheme.
+
+    Vocabulary version IRIs follow the pattern
+    {scheme}://rs.tdwg.org/version/{vocab_subpath}/{date_issued}. The scheme
+    (http or https) is taken from the configured vocabulary IRI, so it is a
+    per-vocabulary choice. Every vocabulary created before this change uses
+    http and gets the same IRI as before.
+    """
+    scheme = urllib.parse.urlsplit(vocabulary_iri).scheme
+    if scheme not in ('http', 'https'):
+        raise ValueError('Vocabulary IRI must use http or https: ' + vocabulary_iri)
+    return scheme + '://rs.tdwg.org/version/' + vocab_subpath + '/' + date_issued
+
+def _other_scheme_iri(iri):
+    """Return iri with http and https swapped, or None for other schemes."""
+    if iri.startswith('http://'):
+        return 'https://' + iri[len('http://'):]
+    if iri.startswith('https://'):
+        return 'http://' + iri[len('https://'):]
+    return None
+
 def isoTime(offset):
     """Return the deterministic metadata timestamp for the target release.
 
@@ -1333,7 +1355,7 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
     vocab_subpath = vocabulary_path_parts[-1]
 
     # Generate the vocabulary version URI from the configured vocabulary.
-    vocabularyVersionUri = 'http://rs.tdwg.org/version/' + vocab_subpath + '/' + date_issued
+    vocabularyVersionUri = vocabularyVersionIri(vocabularyUri, vocab_subpath, date_issued)
 
     # check for the case where the script was previously run to update a different term list in the same new vocabulary version
     temp = findColumnWithHeader(vocabularies_versions_metadata[0], 'version')[1]
@@ -2201,6 +2223,25 @@ def preflight_validate_release():
                 )
             existing_term_list_iris = set(term_list_iris)
 
+    # The canonical protocol (http or https) is a per-vocabulary choice, taken from
+    # the configured IRIs. It must not change once a Vocabulary has been processed.
+    vocabulary_scheme = urllib.parse.urlsplit(str(vocabularyIri)).scheme
+    if vocabulary_scheme not in ('http', 'https'):
+        errors.append('vocabulary IRI must use http or https: ' + repr(vocabularyIri))
+    else:
+        vocabularies_table = _preflight_read_csv('../vocabularies/vocabularies.csv', errors)
+        if vocabularies_table is not None and 'vocabulary' in vocabularies_table[0]:
+            vocabulary_column = vocabularies_table[0].index('vocabulary')
+            if any(
+                len(row) > vocabulary_column and
+                row[vocabulary_column] == _other_scheme_iri(vocabularyIri)
+                for row in vocabularies_table[1:]
+            ):
+                errors.append(
+                    'vocabulary ' + vocabularyIri + ' is already recorded as ' +
+                    _other_scheme_iri(vocabularyIri) + '; its scheme must not change'
+                )
+
     for index, namespace_config in enumerate(namespace_items, start=1):
         context = 'namespaces[' + str(index) + ']'
         if not isinstance(namespace_config, dict):
@@ -2260,6 +2301,22 @@ def preflight_validate_release():
             errors.append(context + '.termlist_uri must be supplied for a borrowed namespace')
         if borrowed is False and configured_termlist_uri not in ('', namespace_uri):
             errors.append(context + '.termlist_uri must be empty or equal namespace_uri for a non-borrowed namespace')
+
+        # A TDWG-minted Term List uses the same scheme (http or https) as its
+        # Vocabulary, and keeps the scheme it was first processed with.
+        termlist_parts = urllib.parse.urlsplit(str(effective_termlist_uri))
+        if borrowed is False and termlist_parts.netloc == 'rs.tdwg.org':
+            if vocabulary_scheme in ('http', 'https') and termlist_parts.scheme != vocabulary_scheme:
+                errors.append(
+                    context + '.namespace_uri uses ' + termlist_parts.scheme +
+                    ' but its vocabulary ' + str(vocabularyIri) + ' uses ' + vocabulary_scheme
+                )
+            if (existing_term_list_iris is not None and
+                    _other_scheme_iri(effective_termlist_uri) in existing_term_list_iris):
+                errors.append(
+                    context + ' term list ' + effective_termlist_uri + ' is already recorded as ' +
+                    _other_scheme_iri(effective_termlist_uri) + '; its scheme must not change'
+                )
 
         # The configured new_term_list flag must agree with repository state.
         # This prevents the setup path from treating an existing Term List as new
@@ -4040,7 +4097,7 @@ def generate_release_report():
         ]
         if not path_parts:
             raise ValueError('Configured vocabulary IRI has no path component: ' + vocabulary_iri)
-        version_uri = 'http://rs.tdwg.org/version/' + path_parts[-1] + '/' + date_issued
+        version_uri = vocabularyVersionIri(vocabulary_iri, path_parts[-1], date_issued)
         version_rows = _rows_by_value(vocabulary_versions, 'version', version_uri)
         previous_version = (
             _replacement_predecessor(
