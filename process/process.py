@@ -1669,6 +1669,8 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
     standard_description = findColumnWithHeader(standards_table[0], 'description')[1]
     standard_created = findColumnWithHeader(standards_table[0], 'standard_created')[1]
     standard_modified = findColumnWithHeader(standards_table[0], 'standard_modified')[1]
+    standard_status = findColumnWithHeader(standards_table[0], 'status')[1]
+    standard_category = findColumnWithHeader(standards_table[0], 'category')[1]
 
     aNewStandard = True
     for rowNumber in range(1, len(standards_table)):
@@ -1684,6 +1686,11 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
                 standards_table[rowNumber][standard_label] = config['standard_label']
             if 'standard_description' in config:
                 standards_table[rowNumber][standard_description] = config['standard_description']
+            # Optional: the standard's status and category (e.g. 'Draft Standard', 'Current standard').
+            if 'standard_status' in config:
+                standards_table[rowNumber][standard_status] = config['standard_status']
+            if 'standard_category' in config:
+                standards_table[rowNumber][standard_category] = config['standard_category']
 
     if aNewStandard: # this will happen if the standard did not previously exist
         # Create a new row for the standard table that is a list with length equal to the 0th row of the table
@@ -1699,6 +1706,10 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
 
         # Assign the standard description from the vocab configuration file to the new standard row
         new_standard_row[standard_description] = config['standard_description']
+
+        # Optional status and category of the standard; left empty when not configured.
+        new_standard_row[standard_status] = config.get('standard_status', '')
+        new_standard_row[standard_category] = config.get('standard_category', '')
 
         # Assign the created and modified dates to the new standard row
         new_standard_row[standard_created] = date_issued
