@@ -2,34 +2,37 @@
 
 **Title:** Biodiversity Information Standards (TDWG) Standards Metadata
 
-**Date Version Issued:** 2021-02-01
+**Date Version Issued:** 2026-11-08
 
 **Date Created:** 2017-10-10
 
 **Part of TDWG Standard:** Not part of any standard
 
-**This version:** `http://rs.tdwg.org/index/2021-02-01`
+**This version:** `http://rs.tdwg.org/index/2026-11-08`
 
 **Latest version:** <http://rs.tdwg.org/index>
 
-**Previous version:** [http://rs.tdwg.org/index/2020-02-03](README-2020-02-03.md)
+**Previous version:** [http://rs.tdwg.org/index/2021-02-01](README-2021-02-01.md)
 
-**Abstract:** The <https://github.com/tdwg/rs.tdwg.org> repository contains the source CSV files containing the metadata necessary to generate human- and machine-readable representations of the various components of [Biodiversity Information Standards (TDWG)](http://www.tdwg.org/) standards in accordance with the [TDWG Standards Documentation Specification](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md)). This document is the human-readable representation of the TDWG Standards data catalog. Dereferencing the data catalog as RDF is described in a section of this document.
+**Abstract:** The <https://github.com/tdwg/rs.tdwg.org> repository contains the source CSV files containing the metadata necessary to generate human- and machine-readable representations of the various components of [Biodiversity Information Standards (TDWG)](http://www.tdwg.org/) standards in accordance with the [TDWG Standards Documentation Specification](http://rs.tdwg.org/sds/doc/specification/)). This document is the human-readable representation of the TDWG Standards data catalog. Dereferencing the data catalog as RDF is described in a section of this document.
 
-**Contributors:** Steve Baskauf (TDWG Technical Architecture Group, TDWG Audubon Core Maintenance Group, TDWG Darwin Core Maintenance Group)
+**Contributors:** Steve Baskauf (TDWG Technical Architecture Group, TDWG Audiovisual Core Maintenance Group, TDWG Darwin Core Maintenance Group)
 
-**Bibliographic citation:** Biodiversity Information Standards. 2021. Biodiversity Information Standards (TDWG) Standards Metadata http://rs.tdwg.org/index
+**Bibliographic citation:** Biodiversity Information Standards. 2026. Biodiversity Information Standards (TDWG) Standards Metadata http://rs.tdwg.org/index
 
 ## <a name="model"></a>1 Metadata model for TDWG standards
 
 ![TDWG hierarchy model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
-Fig. 1. TDWG Standards hierarchy model (image from [Standards Documentation Standard GitHub repository](https://github.com/tdwg/vocab/blob/master/hierarchy-model.md))
+Fig. 1.A. TDWG Standards hierarchy model (image from [Standards Documentation Standard GitHub repository](https://github.com/tdwg/vocab/blob/master/hierarchy-model.md))
 
-The TDWG Standards Documentation Specification (http://www.tdwg.org/standards/147) defines a hierarchical model for components of TDWG Standards (Fig. 1).  At the highest level (1st level) are Standards.  All TDWG Standards are linked by virtue of a common *publisher* relationship with TDWG itself.  Documents and Vocabularies (2nd level) are the parts of Standards.  Vocabularies are composed of Term Lists (3rd level), which correspond roughly to namespaces that define sets of terms.  The Term Lists are composed of Terms (4th level), which may be Properties, Classes, or Concepts.  
+![TDWG hierarchy model E-R diagram](https://raw.githubusercontent.com/tdwg/vocab/refs/heads/master/sds/tdwg_hierarchy_er.jpg)
+Fig. 1.B. TDWG Standards hierarchy model represented as an ER diagram.
+
+The TDWG Standards Documentation Specification (http://www.tdwg.org/standards/147) defines a hierarchical model for components of TDWG Standards (Figs. 1.A. and B.).  At the highest level (1st level) are Standards.  All TDWG Standards are linked by virtue of a common *publisher* relationship with TDWG itself.  Documents and Vocabularies (2nd level) are the parts of Standards.  Vocabularies are composed of Term Lists (3rd level), which correspond roughly to namespaces that define sets of terms.  The Term Lists are composed of Terms (4th level), which may be Properties, Classes, or Concepts.  
 
 Each of the levels in the standards hierarchy are linked to the level above by a *isPartOf* relationsip, and to the level below by a *hasPart* relationship.  
 
-![TDWG version model](https://github.com/tdwg/vocab/raw/master/graphics/version-model.png)
+![TDWG version model](https://raw.githubusercontent.com/tdwg/vocab/refs/heads/master/sds/version-model.png)
 Fig. 2. Version model used to describe standards-related resources (image from the [Standards Documentation Specification](https://github.com/tdwg/vocab/blob/master/sds/documentation-specification.md))
 
 Any resource in the hierarchy above can be considered to consist of an abstract resource that persists over time, referred to as a "current resource".  In Fig. 2, the arrow represents a current resource named *ex:resource*.  A current resource has a *creation* date, and a last *modified* date.
@@ -72,7 +75,7 @@ are in the form:
 http://rs.tdwg.org/vvv/
 ```
 
-where "vvv" is a string unique to the vocabulary.  For example, "dwc" is the string for the basic Darwin Core vocabulary and "ac" is the string for the Audubon Core vocabulary.  Example for the Darwin Core basic vocabulary:
+where "vvv" is a string unique to the vocabulary.  For example, "dwc" is the string for the basic Darwin Core vocabulary and "ac" is the string for the Audiovisual Core vocabulary.  Example for the Darwin Core main vocabulary:
 
 ```
 http://rs.tdwg.org/dwc/
@@ -92,7 +95,7 @@ where "sss" is a sequence of alphabetic characters representing the standard and
 http://rs.tdwg.org/ac/doc/structure/
 ```
 
-for the Audubon Core Structure document and 
+for the Audiovisual Core Structure document and 
 
 ```
 http://rs.tdwg.org/pnbd/doc/specification/
@@ -121,7 +124,9 @@ for Darwin Core IRI-value Terms and
 ```
 http://rs.tdwg.org/ac/terms/
 ```
-for terms defined by Audubon Core.
+for terms defined by Audiovisual Core.
+
+**Note:** In cases where term lists have been moved to a different vocabulary, this pattern may not be followed. For example, the `eco:` namespace terms have been moved from the Humboldt Vocabulary to the main Darwin Core vocabulary. But for stability the term list IRI (<http://rs.tdwg.org/eco/terms/>) has not been changed.
 
 
 #### **4th level** IRIs denoting vocabulary terms
@@ -285,36 +290,63 @@ To access machine-readable translations metadata, see the [Vocabulary Translatio
 
 ### <a name="standards-metadata"></a>4.1 Metadata about ratified TDWG Standards
 
+**Note:** The authoritative and up-to-date data about existing term lists, their IRI patterns, and directories are at <https://github.com/tdwg/rs.tdwg.org/blob/master/term-lists/term-lists.csv>.
+
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
- | Standard | `http://www.tdwg.org/standards/nnn` | [standards](standards) | `http://www.tdwg.org/standards/nnn/version/yyyy-mm-dd` | [standards-versions](standards-versions) |
- | Vocabulary | `http://rs.tdwg.org/vvv/` | [vocabularies](vocabularies) | `http://rs.tdwg.org/version/vvv/yyyy-mm-dd` | [vocabularies-versions](vocabularies-versions) |
- | Term List | `http://rs.tdwg.org/vvv/sss/` | [term-lists](term-lists) | `http://rs.tdwg.org/vvv/version/sss/yyyy-mm-dd` | [term-lists-versions](term-lists-versions) |
- | Document | `http://rs.tdwg.org/sss/doc/docname/` | [docs](docs) | `http://rs.tdwg.org/sss/doc/docname/yyyy-mm-dd` | [docs-versions](docs-versions) |
- | Document contributor roles | machine-readable links to contributors | [docs-roles](docs-roles) | N/A | N/A |
- | Literal-value [Darwin Core terms](http://www.tdwg.org/standards/450) | `http://rs.tdwg.org/dwc/terms/ttt` | [terms](terms) | `http://rs.tdwg.org/dwc/terms/version/ttt-yyyy-mm-dd` | [terms-versions](terms-versions) |
- | [Darwin Core](http://www.tdwg.org/standards/450) IRI-value terms | `http://rs.tdwg.org/dwc/iri/ttt` | [iri](iri) | `http://rs.tdwg.org/dwc/iri/version/ttt-yyyy-mm-dd` | [iri-versions](iri-versions) |
- | [dc:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3) terms borrowed by [Darwin Core](http://www.tdwg.org/standards/450) | `http://purl.org/dc/elements/1.1/ttt` | [dc-for-dwc](dc-for-dwc) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dc-for-dwc-versions](dc-for-dwc-versions) |
- | [dcterms:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-2) terms borrowed by [Darwin Core](http://www.tdwg.org/standards/450) | `http://purl.org/dc/terms/ttt` | [dcterms-for-dwc](dcterms-for-dwc) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dcterms-for-dwc-versions](dcterms-for-dwc-versions) |
- | Terms defined by [Audubon Core](http://www.tdwg.org/standards/638) | `http://rs.tdwg.org/ac/terms/ttt` | [audubon](audubon) | `http://rs.tdwg.org/ac/terms/version/ttt-yyyy-mm-dd` |
- | [dc:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) | `http://purl.org/dc/elements/1.1/ttt` | [dc-for-ac](dc-for-ac) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dc-for-ac-versions](dc-for-ac-versions)  |
- | [dcterms:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-2) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) | `http://purl.org/dc/terms/ttt` | [dcterms-for-ac](dcterms-for-ac) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dcterms-for-ac-versions](dcterms-for-ac-versions) |
- | [Darwin Core](http://www.tdwg.org/standards/450) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) | `http://rs.tdwg.org/dwc/terms/ttt` | [dwc-for-ac](dwc-for-ac) | `http://rs.tdwg.org/dwc/terms/version/ttt-yyyy-mm-dd` | [dwc-for-ac-versions](dcterms-for-ac-versions) |
- | [EXIF](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) | `http://ns.adobe.com/exif/1.0/ttt` | [exif-for-ac](exif-for-ac) | versions not fully supported | [dwc-for-ac-versions](dcterms-for-ac-versions) |
- | [IPTC](http://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata-201007_1.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) | `http://iptc.org/std/Iptc4xmpExt/2008-02-29/ttt` | [Iptc4xmpExt-for-ac](Iptc4xmpExt-for-ac) | versions not fully supported | [Iptc4xmpExt-for-ac-versions](Iptc4xmpExt-for-ac-versions) |
- | [Music Ontology](http://musicontology.com/specification/) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) |  `http://purl.org/ontology/mo/ttt` | [mo-for-ac](mo-for-ac) | versions not fully supported | [mo-for-ac-versions](mo-for-ac-versions) |
-| [photoshop](http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart2.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/photoshop/1.0/ttt` | [photoshop-for-ac](photoshop-for-ac) | versions not fully supported | [photoshop-for-ac-versions](photoshop-for-ac-versions) |
- | [XMP](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/xap/1.0/ttt` | [xmp-for-ac](xmp-for-ac) | versions not fully supported | [xmp-for-ac-versions](xmp-for-ac-versions) |
- | [XMP rights](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) terms borrowed by [Audubon Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/xap/1.0/rights/ttt` | [xmpRights-for-ac](xmpRights-for-ac) | versions not fully supported | [xmpRights-for-ac-versions](xmpRights-for-ac-versions) |
+ | Standard | `http://www.tdwg.org/standards/nnn` | [standards](https://github.com/tdwg/rs.tdwg.org/tree/master/standards) | `http://www.tdwg.org/standards/nnn/version/yyyy-mm-dd` | [standards-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/standards-versions) |
+ | Vocabulary | `http://rs.tdwg.org/vvv/` | [vocabularies](https://github.com/tdwg/rs.tdwg.org/tree/master/vocabularies) | `http://rs.tdwg.org/version/vvv/yyyy-mm-dd` | [vocabularies-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/vocabularies-versions) |
+ | Term List | `http://rs.tdwg.org/vvv/sss/` | [term-lists](https://github.com/tdwg/rs.tdwg.org/tree/master/term-lists) | `http://rs.tdwg.org/vvv/version/sss/yyyy-mm-dd` | [term-lists-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/term-lists-versions) |
+ | Document | `http://rs.tdwg.org/sss/doc/docname/` | [docs](https://github.com/tdwg/rs.tdwg.org/tree/master/docs) | `http://rs.tdwg.org/sss/doc/docname/yyyy-mm-dd` | [docs-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/docs-versions) |
+ | Document contributor roles | machine-readable links to contributors | [docs-roles](https://github.com/tdwg/rs.tdwg.org/tree/master/docs-roles) | N/A | N/A |
+ | Literal-value [Darwin Core terms](http://www.tdwg.org/standards/450) | `http://rs.tdwg.org/dwc/terms/ttt` | [terms](https://github.com/tdwg/rs.tdwg.org/tree/master/terms) | `http://rs.tdwg.org/dwc/terms/version/ttt-yyyy-mm-dd` | [terms-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/terms-versions) |
+ | [Darwin Core](http://www.tdwg.org/standards/450) IRI-value terms | `http://rs.tdwg.org/dwc/iri/ttt` | [iri](https://github.com/tdwg/rs.tdwg.org/tree/master/iri) | `http://rs.tdwg.org/dwc/iri/version/ttt-yyyy-mm-dd` | [iri-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/iri-versions) |
+ | [dc:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3) terms borrowed by [Darwin Core](http://www.tdwg.org/standards/450) | `http://purl.org/dc/elements/1.1/ttt` | [dc-for-dwc](https://github.com/tdwg/rs.tdwg.org/tree/master/dc-for-dwc) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dc-for-dwc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dc-for-dwc-versions) |
+ | [dcterms:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-2) terms borrowed by [Darwin Core](http://www.tdwg.org/standards/450) | `http://purl.org/dc/terms/ttt` | [dcterms-for-dwc](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-dwc) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dcterms-for-dwc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-dwc-versions) |
+ | [Audiovisual Core](http://www.tdwg.org/standards/638) terms borrowed by [Darwin Core](http://www.tdwg.org/standards/450) | `http://rs.tdwg.org/ac/terms/ttt` | [dwc-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/ac-for-dwc) | `http://rs.tdwg.org/ac/terms/version/ttt-yyyy-mm-dd` | [ac-for-dwc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/ac-for-dwc-versions) |
+ | Controlled values list for the Darwin Core term establishmentMeans | `http://rs.tdwg.org/dwcem/values/ttt` | [establishmentMeans](https://github.com/tdwg/rs.tdwg.org/tree/master/establishmentMeans) | `http://rs.tdwg.org/dwcem/values/version/ttt-yyyy-mm-dd` | [establishmentMeans-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/establishmentMeans-versions) |
+ | Controlled values list for the Darwin Core term degreeOfEstablishment | `http://rs.tdwg.org/dwcdoe/values/ttt` | [degreeOfEstablishment](https://github.com/tdwg/rs.tdwg.org/tree/master/degreeOfEstablishment) | `http://rs.tdwg.org/dwcdoe/values/version/ttt-yyyy-mm-dd` | [degreeOfEstablishment-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/degreeOfEstablishment-versions) |
+ | Controlled values list for the Darwin Core term pathway | `http://rs.tdwg.org/dwcpw/values/ttt` | [pathway](https://github.com/tdwg/rs.tdwg.org/tree/master/pathway) | `http://rs.tdwg.org/dwcpw/values/version/ttt-yyyy-mm-dd` | [pathway-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/pathway-versions) |
+ | Literal-valued terms for describing Chronometric Age | `http://rs.tdwg.org/chrono/terms/ttt` | [chronometricage](https://github.com/tdwg/rs.tdwg.org/tree/master/chronometricage) | `http://rs.tdwg.org/chrono/terms/version/ttt-yyyy-mm-dd` | [chronometricage-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/chronometricage-versions) |
+ | IRI-valued terms for describing Chronometric Age | `http://rs.tdwg.org/chrono/iri/ttt` | [chronoiri](https://github.com/tdwg/rs.tdwg.org/tree/master/chronoiri) | `http://rs.tdwg.org/chrono/iri/version/ttt-yyyy-mm-dd` | [chronoiri-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/chronoiri-versions) |
+ | Literal-valued terms defined by the Humboldt Extension for Ecological Inventories | `http://rs.tdwg.org/eco/terms/ttt` | [humboldt](https://github.com/tdwg/rs.tdwg.org/tree/master/humboldt) | `http://rs.tdwg.org/eco/terms/version/ttt-yyyy-mm-dd` | [humboldt-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/humboldt-versions) |
+ | IRI-valued terms defined by the Humboldt Extension for Ecological Inventories | `http://rs.tdwg.org/eco/iri/ttt` | [humboldt_iri](https://github.com/tdwg/rs.tdwg.org/tree/master/humboldt_iri) | `http://rs.tdwg.org/eco/iri/version/ttt-yyyy-mm-dd` | [humboldt_iri-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/humboldt_iri-versions) |
+ | Controlled values list for the Humboldt Extension for Ecological Inventories term taxonCompletenessReported | `http://rs.tdwg.org/ecotcr/values/ttt` | [taxonCompletenessReported](https://github.com/tdwg/rs.tdwg.org/tree/master/taxonCompletenessReported) | `http://rs.tdwg.org/ecotcr/values/version/ttt-yyyy-mm-dd` | [taxonCompletenessReported-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/taxonCompletenessReported-versions) |
+ | Terms defined by [Audiovisual Core](http://www.tdwg.org/standards/638) | `http://rs.tdwg.org/ac/terms/ttt` | [audubon](https://github.com/tdwg/rs.tdwg.org/tree/master/audubon) | `http://rs.tdwg.org/ac/terms/version/ttt-yyyy-mm-dd` | [audubon-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/audubon-versions) |
+ | [dc:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-3) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) | `http://purl.org/dc/elements/1.1/ttt` | [dc-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/dc-for-ac) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dc-for-ac-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dc-for-ac-versions)  |
+ | [dcterms:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-2) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) | `http://purl.org/dc/terms/ttt` | [dcterms-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-ac) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dcterms-for-ac-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-ac-versions) |
+ | [Darwin Core](http://www.tdwg.org/standards/450) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) | `http://rs.tdwg.org/dwc/terms/ttt` | [dwc-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-for-ac) | `http://rs.tdwg.org/dwc/terms/version/ttt-yyyy-mm-dd` | [dwc-for-ac-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-for-ac-versions) |
+ | [EXIF](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) | `http://ns.adobe.com/exif/1.0/ttt` | [exif-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/exif-for-ac) | versions not fully supported | [exif-for-ac-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/exif-for-ac-versions) |
+ | [IPTC](http://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata-201007_1.pdf) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) | `http://iptc.org/std/Iptc4xmpExt/2008-02-29/ttt` | [Iptc4xmpExt-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/Iptc4xmpExt-for-ac) | versions not fully supported | [Iptc4xmpExt-for-ac-versions](Iptc4xmpExt-for-ac-versions) |
+ | [Music Ontology](http://musicontology.com/specification/) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) |  `http://purl.org/ontology/mo/ttt` | [mo-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/mo-for-ac) | versions not fully supported | [mo-for-ac-versions](mo-for-ac-versions) |
+| [photoshop](http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart2.pdf) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/photoshop/1.0/ttt` | [photoshop-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/photoshop-for-ac) | versions not fully supported | [photoshop-for-ac-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/photoshop-for-ac-versions) |
+ | [XMP](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/xap/1.0/ttt` | [https://github.com/tdwg/rs.tdwg.org/tree/master/xmp-for-ac](xmp-for-ac) | versions not fully supported | [https://github.com/tdwg/rs.tdwg.org/tree/master/xmp-for-ac-versions](xmp-for-ac-versions) |
+ | [XMP rights](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf) terms borrowed by [Audiovisual Core](http://www.tdwg.org/standards/638) |  `http://ns.adobe.com/xap/1.0/rights/ttt` | [xmpRights-for-ac](https://github.com/tdwg/rs.tdwg.org/tree/master/xmpRights-for-ac) | versions not fully supported | [xmpRights-for-ac-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/xmpRights-for-ac-versions) |
+ | Controlled values list for the Audiovisual Core term variant | `http://rs.tdwg.org/acvariant/values/ttt` | [acvariant](https://github.com/tdwg/rs.tdwg.org/tree/master/acvariant) | `http://rs.tdwg.org/acvariant/values/version/ttt-yyyy-mm-dd` | [acvariant-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/acvariant-versions) |
+ | Controlled values list for Dublin Core format | `http://rs.tdwg.org/format/values/ttt` | [format](https://github.com/tdwg/rs.tdwg.org/tree/master/format) | `http://rs.tdwg.org/format/values/version/ttt-yyyy-mm-dd` | [format-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/format-versions) |
+ | Controlled values list for the Audiovisual Core term subtype | `http://rs.tdwg.org/acsubtype/values/ttt` | [acsubtype](https://github.com/tdwg/rs.tdwg.org/tree/master/acsubtype) | `http://rs.tdwg.org/acsubtype/values/version/ttt-yyyy-mm-dd` | [acsubtype-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/acsubtype-versions) |
+ | Controlled values list for the Audiovisual Core term subjectOrientation | `http://rs.tdwg.org/acorient/values/ttt` | [acorient](https://github.com/tdwg/rs.tdwg.org/tree/master/acorient) | `http://rs.tdwg.org/acorient/values/version/ttt-yyyy-mm-dd` | [acorient-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/acorient-versions) |
+ | Controlled values list for the Audiovisual Core term subjectPart | `http://rs.tdwg.org/acpart/values/ttt` | [acpart](https://github.com/tdwg/rs.tdwg.org/tree/master/acpart) | `http://rs.tdwg.org/acpart/values/version/ttt-yyyy-mm-dd` | [acpart-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/acpart-versions) |
+ |Controlled value list used for description of the content of a media item | `http://rs.tdwg.org/accd/values/ttt` | [accd](https://github.com/tdwg/rs.tdwg.org/tree/master/accd) | `http://rs.tdwg.org/accd/values/version/ttt-yyyy-mm-dd` | [accd-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/accd-versions) |
+ | Terms defined by the [Taxon Concept Standard (TCS)](http://www.tdwg.org/standards/117) | `http://rs.tdwg.org/tcs/terms/ttt` | [tcs](https://github.com/tdwg/rs.tdwg.org/tree/master/tcs) | `http://rs.tdwg.org/tcs/terms/version/ttt-yyyy-mm-dd` | [tcs-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/tcs-versions) |
+ | [Darwin Core](http://www.tdwg.org/standards/450) terms borrowed by [Taxon Concept Standard (TCS)](http://www.tdwg.org/standards/117) | `http://rs.tdwg.org/dwc/terms/ttt` | [dwc-for-tcs](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-for-tcs) | `http://rs.tdwg.org/dwc/terms/version/ttt-yyyy-mm-dd` | [dwc-for-tcs-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-for-tcs-versions) |
+ | [dcterms:](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-2) terms borrowed by [Taxon Concept Standard (TCS)](http://www.tdwg.org/standards/117) | `http://purl.org/dc/terms/ttt` | [dcterms-for-tcs](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-tcs) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dcterms-for-tcs-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-tcs-versions) |
+ | Terms defined by [Latimer Core](http://www.tdwg.org/standards/643) | `http://rs.tdwg.org/ltc/terms/ttt` | [latimer](https://github.com/tdwg/rs.tdwg.org/tree/master/latimer) | `http://rs.tdwg.org/ltc/terms/version/ttt-yyyy-mm-dd` | [latimer-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/latimer-versions) |
+ | Terms borrowed from the [Access to Biological Collection Data (ABCD)](http://www.tdwg.org/standards/115) namespace for use with [Latimer Core](http://www.tdwg.org/standards/643) | `http://rs.tdwg.org/abcd/terms/ttt` | [abcd-for-ltc](https://github.com/tdwg/rs.tdwg.org/tree/master/abcd-for-ltc) | `http://rs.tdwg.org/abcd/terms/version/ttt-yyyy-mm-dd` | [abcd-for-ltc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/abcd-for-ltc-versions) |
+ | Terms borrowed from the Chronometric Age Extension namespace for use with [Latimer Core](http://www.tdwg.org/standards/643) | `http://rs.tdwg.org/chrono/terms/ttt` | [chrono-for-ltc](https://github.com/tdwg/rs.tdwg.org/tree/master/chrono-for-ltc) | `http://rs.tdwg.org/chrono/terms/version/ttt-yyyy-mm-dd` | [chrono-for-ltc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/chrono-for-ltc-versions) |
+ | Terms borrowed from the Dublin Core dcterms: namespace for use with [Latimer Core](http://www.tdwg.org/standards/643) | `http://purl.org/dc/terms/ttt` | [dcterms-for-ltc](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-ltc) | `http://dublincore.org/usage/terms/history/#ttt-nnn` | [dcterms-for-ltc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dcterms-for-ltc-versions) |
+ | [Darwin Core](http://www.tdwg.org/standards/450) terms borrowed by [Latimer Core](http://www.tdwg.org/standards/643) | `http://rs.tdwg.org/dwc/terms/ttt` | [dwc-for-ltc](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-for-ltc) | `http://rs.tdwg.org/dwc/terms/version/ttt-yyyy-mm-dd` | [dwc-for-ltc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-for-ltc-versions) |
+ | Terms borrowed from the schema.org namespace for use with [Latimer Core](http://www.tdwg.org/standards/643) | `https://schema.org/ttt` | [schema-for-ltc](https://github.com/tdwg/rs.tdwg.org/tree/master/schema-for-ltc) | versions not fully supported | [schema-for-ltc-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/schema-for-ltc-versions) |
 
 ### <a name="utility-metadata"></a>4.2 Utility metadata not governed by TDWG Standards
 
  | Level | Current resource IRI pattern | Directory | Version IRI pattern | Directory |
  |---|---|---|---|---|
- | TDWG utility (`dwcutility:`) terms | `http://rs.tdwg.org/dwc/terms/attributes/ttt` | [utility](utility) | `http://rs.tdwg.org/dwc/terms/attributes/version/ttt-yyyy-mm-dd` | [utility-versions](utility-versions) |
- | Data catalog (DCAT) metadata | `http://rs.tdwg.org/dump/datasetname` | [index](index) | N/A | N/A |
- | Executive decisions history | `http://rs.tdwg.org/decisions/ttt` | [decisions](decisions)* | N/A** | N/A |
- | Darwin Core translations | multilingual labels (no IRIs) | [dwc-translations](dwc-translations) | N/A | N/A |
+ | TDWG utility (`dwcutility:`) terms | `http://rs.tdwg.org/dwc/terms/attributes/ttt` | [utility](https://github.com/tdwg/rs.tdwg.org/tree/master/utility) | `http://rs.tdwg.org/dwc/terms/attributes/version/ttt-yyyy-mm-dd` | [https://github.com/tdwg/rs.tdwg.org/tree/master/utility-versions](utility-versions) |
+ | Controlled values list for any properties expected to have boolean values | `http://rs.tdwg.org/boolean/values/ttt` | [boolean](https://github.com/tdwg/rs.tdwg.org/tree/master/boolean) | `http://rs.tdwg.org/boolean/values/version/ttt-yyyy-mm-dd` | [boolean-versions](https://github.com/tdwg/rs.tdwg.org/tree/master/boolean-versions) |
+ | Data catalog (DCAT) metadata | `http://rs.tdwg.org/dump/datasetname` | [index](https://github.com/tdwg/rs.tdwg.org/tree/master/index) | N/A | N/A |
+ | Executive decisions history | `http://rs.tdwg.org/decisions/ttt` | [decisions](https://github.com/tdwg/rs.tdwg.org/tree/master/decisions)* | N/A** | N/A |
+ | Darwin Core translations | multilingual labels (no IRIs) | [dwc-translations](https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-translations) | N/A | N/A |
 
 ### <a name="obsolete-metadata"></a>4.3 Metadata about obsolete pre-standard versions of Darwin Core
 
