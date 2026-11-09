@@ -131,6 +131,8 @@ Each configured Document must resolve, after `document_defaults` and per-Documen
 
 A single processing run can contain multiple Vocabularies. Namespace prefixes and dataset names must be unambiguous across the complete release configuration.
 
+**Protocol (`http` or `https`).** The canonical protocol of TDWG IRIs is chosen per Vocabulary by the IRIs in `config.yaml`. The scheme of the `vocabulary` IRI is used for the Vocabulary and its versions (`{scheme}://rs.tdwg.org/version/{vocab}/{date}`), and the scheme of each `namespace_uri` is used for its Term List, terms, term versions, and Term List versions. Document IRIs are taken as configured. Vocabularies processed before this option was added use `http`, and their IRIs are unchanged. A new Standard MAY use `https`. Preflight validation requires each non-borrowed `rs.tdwg.org` Term List to use the same scheme as its Vocabulary, and rejects a Vocabulary or Term List that is already recorded under the other scheme: a scheme MUST NOT change after it is first processed. When dereferencing, `html/restxq.xqm` (`page:canonical-iri`) finds Vocabularies, Term Lists, their versions, and Documents under whichever scheme is recorded, so both `http` and `https` requests resolve to the recorded IRI.
+
 `vocab.yaml` is **not used by the current processor**. Vocabulary and Standard release configuration that earlier workflows split between files is now represented in `config.yaml`.
 
 Two consequences of this configuration model are particularly important:
@@ -213,6 +215,16 @@ A successful dry run reports `DRY RUN complete. Repository, logs, and reports un
 
 Run `python process.py --help` to see the available command-line options.
 
+### Configuration file
+
+By default the processor reads `config.yaml` in the directory it is run from, normally `process/`. The `--config PATH` option reads another release configuration file instead, for example the copy kept in a release directory:
+
+```bash
+python process.py --dry-run --config bdq-revisions/bdq-revisions-YYYY-MM-DD/config.yaml
+```
+
+This allows release declarations for different Standards to be kept and processed on the same branch without replacing `process/config.yaml`. A file inside the repository is read from the staged copy of the repository; relative paths in the configuration, such as `release_directory`, are still relative to `process/`.
+
 ### Preflight validation
 
 Preflight checks include release/configuration structure, required namespace input CSVs, duplicate current identities, duplicate dated resource versions, ambiguous historical resource/date combinations, invalid historical dates, `new_term_list` consistency, and the existence/shape of metadata tables required for existing Term Lists. The intent is to reject histories that cannot be interpreted deterministically rather than resolving them by CSV row order or URI-string heuristics.
@@ -263,6 +275,8 @@ The processor is designed to be deterministic and same-release idempotent. In pa
 - generated identities are reconciled rather than duplicated;
 - current containment is reconciled from configuration; and
 - target Vocabulary and Standard membership snapshots are reconstructed from current membership and applicable dated child versions.
+
+This also holds for resources that the release itself creates. A Term List or Document whose only versions are dated `date_issued` was created by an earlier run of the same release, and is processed again as it was the first time, with no predecessor. After the first run, set `new_term_list: false` for a new Term List, because it now exists. Templates are copied only when `new_term_list` is `true`, so edits to the generated mapping files are kept.
 
 Deleting and recreating a processing branch between iterations is therefore not part of the normal workflow.
 

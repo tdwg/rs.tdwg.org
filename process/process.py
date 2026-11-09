@@ -90,6 +90,9 @@ def report(message='', indent=0, file=None):
 # Only a successful staged run is allowed to publish its file delta back to the
 # caller's working tree.
 _TRANSACTION_ENV = 'TDWG_PROCESS_TRANSACTION_CHILD'
+# Path of the release configuration file passed from the outer invocation to the
+# transaction child, which does not parse command-line options.
+_CONFIG_ENV = 'TDWG_PROCESS_CONFIG'
 
 
 def _transaction_ignored(relative_path):
@@ -319,11 +322,20 @@ def _run_transactionally_if_needed():
         help='Validate and process in a temporary workspace; report the proposed '
              'changes without modifying the repository, logs, or reports.'
     )
+    parser.add_argument(
+        '--config', default='config.yaml', metavar='PATH',
+        help='Release configuration file (default: config.yaml in the current '
+             'directory, normally process/). A file inside the repository is read '
+             'from the staged copy of the repository.'
+    )
     args = parser.parse_args()
 
     process_dir = Path(__file__).resolve().parent
     repository_root = process_dir.parent
     relative_script = Path(__file__).resolve().relative_to(repository_root)
+    config_path = Path(args.config).resolve()
+    if not config_path.is_file():
+        parser.error('configuration file not found: ' + args.config)
 
     with tempfile.TemporaryDirectory(prefix='tdwg-process-') as temp_dir:
         staged_root = Path(temp_dir) / 'repository'
@@ -332,6 +344,10 @@ def _run_transactionally_if_needed():
 
         env = os.environ.copy()
         env[_TRANSACTION_ENV] = '1'
+        try:
+            env[_CONFIG_ENV] = str(staged_root / config_path.relative_to(repository_root))
+        except ValueError:
+            env[_CONFIG_ENV] = str(config_path)  # configuration outside the repository
         staged_script = staged_root / relative_script
         result = subprocess.run(
             [sys.executable, staged_script.name],
@@ -399,7 +415,7 @@ _run_transactionally_if_needed()
 # -----------------------
 
 # Release configuration. One invocation processes one complete standards release.
-with open('config.yaml', 'rt', encoding='utf-8') as file_object:
+with open(os.environ.get(_CONFIG_ENV, 'config.yaml'), 'rt', encoding='utf-8') as file_object:
     config = yaml.safe_load(file_object)
 
 _required_release_config_keys = {
@@ -585,6 +601,28 @@ def findColumnWithHeader(header_row_list, header_label):
     else:
         return [False, 0]
     
+def vocabularyVersionIri(vocabulary_iri, vocab_subpath, date_issued):
+    """Return the vocabulary version IRI, keeping the vocabulary IRI's scheme.
+
+    Vocabulary version IRIs follow the pattern
+    {scheme}://rs.tdwg.org/version/{vocab_subpath}/{date_issued}. The scheme
+    (http or https) is taken from the configured vocabulary IRI, so it is a
+    per-vocabulary choice. Every vocabulary created before this change uses
+    http and gets the same IRI as before.
+    """
+    scheme = urllib.parse.urlsplit(vocabulary_iri).scheme
+    if scheme not in ('http', 'https'):
+        raise ValueError('Vocabulary IRI must use http or https: ' + vocabulary_iri)
+    return scheme + '://rs.tdwg.org/version/' + vocab_subpath + '/' + date_issued
+
+def _other_scheme_iri(iri):
+    """Return iri with http and https swapped, or None for other schemes."""
+    if iri.startswith('http://'):
+        return 'https://' + iri[len('http://'):]
+    if iri.startswith('https://'):
+        return 'http://' + iri[len('https://'):]
+    return None
+
 def isoTime(offset):
     """Return the deterministic metadata timestamp for the target release.
 
@@ -805,6 +843,12 @@ def determine_state_of_data_tables(database, versions, borrowed, utility_namespa
             modified_terms.append(test_term)
 
     return terms_metadata, modifications_metadata, mods_local_name, metadata_localname_column, mods_term_localName, new_terms, modified_terms
+
+def _created_by_this_release(issued_dates, date_issued):
+    """True if a resource's versions (given by their issued dates) include one on
+    date_issued and none earlier, i.e. it was created by an earlier run of this release."""
+    dates = [datetime.date.fromisoformat(value) for value in issued_dates]
+    return bool(dates) and min(dates) == datetime.date.fromisoformat(date_issued)
 
 def find_predecessor_row(metadata, resource_column, resource_value, issued_column, date_issued, context):
     """Return the row index of the latest version issued before date_issued."""
@@ -1137,6 +1181,16 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
 
         mostRecentListNumber = None # no predecessor exists for a new term list
 
+    elif _created_by_this_release(
+        [row[version_modified] for row in term_lists_versions_metadata[1:] if row[list_uri] == termlist_uri],
+        date_issued
+    ):
+        # The term list was created by an earlier run of this same release: it has a
+        # version on date_issued and none before. Process it as the first run did, with
+        # no predecessor, so that a same-release rerun converges (process-vocabulary.md 7.4).
+        aNewTermList = True
+        mostRecentListNumber = None
+
     else:
         # Find the latest previous version by its explicit version date.
         mostRecentListNumber = find_predecessor_row(
@@ -1333,7 +1387,7 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
     vocab_subpath = vocabulary_path_parts[-1]
 
     # Generate the vocabulary version URI from the configured vocabulary.
-    vocabularyVersionUri = 'http://rs.tdwg.org/version/' + vocab_subpath + '/' + date_issued
+    vocabularyVersionUri = vocabularyVersionIri(vocabularyUri, vocab_subpath, date_issued)
 
     # check for the case where the script was previously run to update a different term list in the same new vocabulary version
     temp = findColumnWithHeader(vocabularies_versions_metadata[0], 'version')[1]
@@ -1631,6 +1685,8 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
     standard_description = findColumnWithHeader(standards_table[0], 'description')[1]
     standard_created = findColumnWithHeader(standards_table[0], 'standard_created')[1]
     standard_modified = findColumnWithHeader(standards_table[0], 'standard_modified')[1]
+    standard_status = findColumnWithHeader(standards_table[0], 'status')[1]
+    standard_category = findColumnWithHeader(standards_table[0], 'category')[1]
 
     aNewStandard = True
     for rowNumber in range(1, len(standards_table)):
@@ -1646,6 +1702,11 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
                 standards_table[rowNumber][standard_label] = config['standard_label']
             if 'standard_description' in config:
                 standards_table[rowNumber][standard_description] = config['standard_description']
+            # Optional: the standard's status and category (e.g. 'Draft Standard', 'Current standard').
+            if 'standard_status' in config:
+                standards_table[rowNumber][standard_status] = config['standard_status']
+            if 'standard_category' in config:
+                standards_table[rowNumber][standard_category] = config['standard_category']
 
     if aNewStandard: # this will happen if the standard did not previously exist
         # Create a new row for the standard table that is a list with length equal to the 0th row of the table
@@ -1661,6 +1722,10 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
 
         # Assign the standard description from the vocab configuration file to the new standard row
         new_standard_row[standard_description] = config['standard_description']
+
+        # Optional status and category of the standard; left empty when not configured.
+        new_standard_row[standard_status] = config.get('standard_status', '')
+        new_standard_row[standard_category] = config.get('standard_category', '')
 
         # Assign the created and modified dates to the new standard row
         new_standard_row[standard_created] = date_issued
@@ -2201,6 +2266,25 @@ def preflight_validate_release():
                 )
             existing_term_list_iris = set(term_list_iris)
 
+    # The canonical protocol (http or https) is a per-vocabulary choice, taken from
+    # the configured IRIs. It must not change once a Vocabulary has been processed.
+    vocabulary_scheme = urllib.parse.urlsplit(str(vocabularyIri)).scheme
+    if vocabulary_scheme not in ('http', 'https'):
+        errors.append('vocabulary IRI must use http or https: ' + repr(vocabularyIri))
+    else:
+        vocabularies_table = _preflight_read_csv('../vocabularies/vocabularies.csv', errors)
+        if vocabularies_table is not None and 'vocabulary' in vocabularies_table[0]:
+            vocabulary_column = vocabularies_table[0].index('vocabulary')
+            if any(
+                len(row) > vocabulary_column and
+                row[vocabulary_column] == _other_scheme_iri(vocabularyIri)
+                for row in vocabularies_table[1:]
+            ):
+                errors.append(
+                    'vocabulary ' + vocabularyIri + ' is already recorded as ' +
+                    _other_scheme_iri(vocabularyIri) + '; its scheme must not change'
+                )
+
     for index, namespace_config in enumerate(namespace_items, start=1):
         context = 'namespaces[' + str(index) + ']'
         if not isinstance(namespace_config, dict):
@@ -2260,6 +2344,22 @@ def preflight_validate_release():
             errors.append(context + '.termlist_uri must be supplied for a borrowed namespace')
         if borrowed is False and configured_termlist_uri not in ('', namespace_uri):
             errors.append(context + '.termlist_uri must be empty or equal namespace_uri for a non-borrowed namespace')
+
+        # A TDWG-minted Term List uses the same scheme (http or https) as its
+        # Vocabulary, and keeps the scheme it was first processed with.
+        termlist_parts = urllib.parse.urlsplit(str(effective_termlist_uri))
+        if borrowed is False and termlist_parts.netloc == 'rs.tdwg.org':
+            if vocabulary_scheme in ('http', 'https') and termlist_parts.scheme != vocabulary_scheme:
+                errors.append(
+                    context + '.namespace_uri uses ' + termlist_parts.scheme +
+                    ' but its vocabulary ' + str(vocabularyIri) + ' uses ' + vocabulary_scheme
+                )
+            if (existing_term_list_iris is not None and
+                    _other_scheme_iri(effective_termlist_uri) in existing_term_list_iris):
+                errors.append(
+                    context + ' term list ' + effective_termlist_uri + ' is already recorded as ' +
+                    _other_scheme_iri(effective_termlist_uri) + '; its scheme must not change'
+                )
 
         # The configured new_term_list flag must agree with repository state.
         # This prevents the setup path from treating an existing Term List as new
@@ -3422,6 +3522,14 @@ def _document_predecessor(versions_metadata_df, document_iri):
         if issued_date < target_date:
             candidates.append((issued_date, row['version_iri']))
 
+    if not candidates and _created_by_this_release(
+        [row['version_issued'] for _, row in versions_metadata_df.iterrows()
+         if row['current_iri'] == document_iri],
+        date_issued
+    ):
+        # The Document was created by an earlier run of this same release: no
+        # predecessor, as in the first run, so that a same-release rerun converges.
+        return None, None
     if not candidates:
         raise ValueError(
             'No predecessor Document version issued before ' + date_issued +
@@ -4040,7 +4148,7 @@ def generate_release_report():
         ]
         if not path_parts:
             raise ValueError('Configured vocabulary IRI has no path component: ' + vocabulary_iri)
-        version_uri = 'http://rs.tdwg.org/version/' + path_parts[-1] + '/' + date_issued
+        version_uri = vocabularyVersionIri(vocabulary_iri, path_parts[-1], date_issued)
         version_rows = _rows_by_value(vocabulary_versions, 'version', version_uri)
         previous_version = (
             _replacement_predecessor(

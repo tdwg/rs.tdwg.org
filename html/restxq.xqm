@@ -108,11 +108,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$stripped-local-name||"/"
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$stripped-local-name||"/",$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$local-id||"/",$db)
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -130,11 +130,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($date,".")
       let $extension := substring-after($date,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$stripped-local-name
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$local-id||"/"||$stripped-local-name,$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/doc/"||$local-id||"/"||$date
+      let $lookup-string := page:canonical-iri($vocab||"/doc/"||$local-id||"/"||$date,$db)
       let $redirect-id := "/"||$vocab||"/doc/"||$local-id||"/"||$date
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -369,7 +369,7 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$stripped-local-name||"/"
+      let $lookup-string := page:canonical-iri($stripped-local-name||"/",$db)
       return
       switch ($stripped-local-name)
         (: handle the special case of TDWG decisions :)
@@ -379,7 +379,7 @@ declare
         default return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$local-id||"/"
+      let $lookup-string := page:canonical-iri($local-id||"/",$db)
       let $redirect-id := "/"||$local-id
       return
       switch ($local-id)
@@ -403,11 +403,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$stripped-local-name
+      let $lookup-string := page:canonical-iri("version/"||$vocab||"/"||$stripped-local-name,$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/version/"||$vocab||"/"||$local-id
+      let $lookup-string := page:canonical-iri("version/"||$vocab||"/"||$local-id,$db)
       let $redirect-id := "/version/"||$vocab||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -425,11 +425,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$stripped-local-name||"/"
+      let $lookup-string := page:canonical-iri($namespace||"/"||$stripped-local-name||"/",$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$namespace||"/"||$local-id||"/"
+      let $lookup-string := page:canonical-iri($namespace||"/"||$local-id||"/",$db)
       let $redirect-id := "/"||$namespace||"/"||$local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -447,11 +447,11 @@ declare
       (: has an extension :)
       let $stripped-local-name := substring-before($local-id,".")
       let $extension := substring-after($local-id,".")
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$stripped-local-name
+      let $lookup-string := page:canonical-iri($vocab||"/version/"||$term-list||"/"||$stripped-local-name,$db)
       return page:handle-repesentation($acceptHeader,$extension,$db,$lookup-string)
     else
       (: no extension :)
-      let $lookup-string := "http://rs.tdwg.org/"||$vocab||"/version/"||$term-list||"/"||$local-id
+      let $lookup-string := page:canonical-iri($vocab||"/version/"||$term-list||"/"||$local-id,$db)
       let $redirect-id := $local-id
       return page:see-also($acceptHeader,$redirect-id,$db,$lookup-string)
   };
@@ -1750,6 +1750,24 @@ return
 
 (:--------------------------------------------------------------------------------------------------:)
 
+(: Return the IRI recorded in the database for an rs.tdwg.org path, under either scheme.
+   The canonical protocol (http or https) is a per-vocabulary choice recorded in the data,
+   not in the request: behind the proxy, the same path is received for http and https requests.
+   http is tried first, so existing vocabularies, which all use http, resolve exactly as before.
+   If the path is recorded under neither scheme, the http IRI is returned and the caller
+   responds with 404 as before. :)
+declare function page:canonical-iri($path,$db)
+{
+  let $http := "http://rs.tdwg.org/"||$path
+  let $https := "https://rs.tdwg.org/"||$path
+  return
+    if (exists(page:find-db($http,$db))) then $http
+    else if (exists(page:find-db($https,$db))) then $https
+    else $http
+};
+
+(:--------------------------------------------------------------------------------------------------:)
+
 declare function page:find-github($id,$baseURI,$repoName)
 {
 
@@ -2077,7 +2095,13 @@ let $iri := $class/fullId/text()
 let $propertyBlock :=
   concat(
     page:subject($iri,$serialization),
-    string-join(page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)),
+    string-join(
+      let $pairs := page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)
+      return
+        if ($serialization = "json")
+        then page:group-json-pairs($pairs)
+        else $pairs
+    ),
 
     (: make the backlink only for the instance of the primary class in a table :)
     if ($id="$root")
@@ -2102,6 +2126,31 @@ return (
 };
 
 (:--------------------------------------------------------------------------------------------------:)
+
+(: In JSON-LD, a property with several values must be one key whose value is an array;
+   repeated keys in one object are not valid JSON-LD, and JSON parsers keep only the last.
+   Takes the JSON property/value pair strings ('"predicate": value,&#10;') of one resource,
+   and merges pairs with the same predicate into '"predicate": [value1, value2],&#10;' at the
+   position of the first. A predicate with a single value keeps its pair string unchanged. :)
+declare function page:group-json-pairs($all-pairs as xs:string*) as xs:string*
+{
+  let $pairs := $all-pairs[. != '']   (: unsupported mapping types yield empty strings :)
+  let $predicates := for $pair in $pairs return substring-before(substring-after($pair,'"'),'": ')
+  for $pair at $position in $pairs
+  let $predicate := $predicates[$position]
+  where index-of($predicates,$predicate)[1] = $position
+  let $members := index-of($predicates,$predicate)
+  return
+    if (count($members) = 1)
+    then $pair
+    else concat('"',$predicate,'": [',
+                string-join(
+                  for $member in $members
+                  let $value := substring-after($pairs[$member],'": ')
+                  return substring($value,1,string-length($value)-2),  (: drop the trailing ',&#10;' :)
+                  ', '),
+                '],&#10;')
+};
 
 (: generate sequence of non-type property/value pair strings :)
 declare function page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)

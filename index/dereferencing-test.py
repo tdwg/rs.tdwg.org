@@ -17,6 +17,14 @@ def read_csv_as_dicts_github(file_name):
         csv_data.append(row)
     return csv_data
 
+def relative_tdwg_url(url):
+    # TDWG IRIs use http or https, chosen per vocabulary. Return the path relative to
+    # rs.tdwg.org, or None if the IRI is not an rs.tdwg.org IRI.
+    for tdwg_prefix in ('http://rs.tdwg.org/', 'https://rs.tdwg.org/'):
+        if url.startswith(tdwg_prefix):
+            return url[len(tdwg_prefix):]
+    return None
+
 def write_csv(filename, array):
     with open(filename, 'w', newline='', encoding='utf-8') as file_object:
         writer_object = csv.writer(file_object)
@@ -91,8 +99,9 @@ for database in index_list:
     core_file_url = '../' + dbname + '/' + dbase_core_file
     core_data = read_csv_as_dicts_github(core_file_url)
     example_url = dbase_subdomain + core_data[0][dbase_uri_column] # list item 0 to test the first resource in the database
-    if example_url[0:19] == 'http://rs.tdwg.org/':  # skip term lists for borrowed terms outside of TDWG
-        database_test_urls.append(example_url[19:]) # save only the relative URL
+    relative_url = relative_tdwg_url(example_url)
+    if relative_url is not None:  # skip term lists for borrowed terms outside of TDWG
+        database_test_urls.append(relative_url) # save only the relative URL
 print()
 
 outfilename = 'pattern-dereferencing-results.csv'
@@ -113,8 +122,9 @@ docs_data = read_csv_as_dicts_github(docs_data_url)
 
 docs_urls = []
 for row in docs_data:
-    relative_url = row['current_iri'][19:]
-    docs_urls.append(relative_url)
+    relative_url = relative_tdwg_url(row['current_iri'])
+    if relative_url is not None:
+        docs_urls.append(relative_url)
 
 outfilename = 'document-dereferencing-results.csv'
 print('dereferencing document URLs')
