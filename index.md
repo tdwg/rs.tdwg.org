@@ -22,13 +22,13 @@
 
 ## <a name="model"></a>1 Metadata model for TDWG standards
 
-![TDWG hierarchy model](https://raw.githubusercontent.com/tdwg/vocab/master/tdwg-standards-hierarchy-2017-01-23.png)
+![TDWG hierarchy model](https://raw.githubusercontent.com/tdwg/vocab/refs/heads/master/sds/tdwg_hierarchy_graph.jpg)
 Fig. 1.A. TDWG Standards hierarchy model (image from [Standards Documentation Standard GitHub repository](https://github.com/tdwg/vocab/blob/master/hierarchy-model.md))
 
 ![TDWG hierarchy model E-R diagram](https://raw.githubusercontent.com/tdwg/vocab/refs/heads/master/sds/tdwg_hierarchy_er.jpg)
 Fig. 1.B. TDWG Standards hierarchy model represented as an ER diagram.
 
-The TDWG Standards Documentation Specification (http://www.tdwg.org/standards/147) defines a hierarchical model for components of TDWG Standards (Figs. 1.A. and B.).  At the highest level (1st level) are Standards.  All TDWG Standards are linked by virtue of a common *publisher* relationship with TDWG itself.  Documents and Vocabularies (2nd level) are the parts of Standards.  Vocabularies are composed of Term Lists (3rd level), which correspond roughly to namespaces that define sets of terms.  The Term Lists are composed of Terms (4th level), which may be Properties, Classes, or Concepts.  
+The TDWG Standards Documentation Specification (<http://www.tdwg.org/standards/147>) defines a hierarchical model for components of TDWG Standards (Figs. 1.A. and B.).  At the highest level (1st level) are Standards.  All TDWG Standards are linked by virtue of a common *publisher* relationship with TDWG itself.  Documents and Vocabularies (2nd level) are the parts of Standards.  Vocabularies are composed of Term Lists (3rd level), which correspond roughly to namespaces that define sets of terms.  The Term Lists are composed of Terms (4th level), which may be Properties, Classes, or Concepts.  
 
 Each of the levels in the standards hierarchy are linked to the level above by a *isPartOf* relationsip, and to the level below by a *hasPart* relationship.  
 
@@ -144,7 +144,7 @@ http://rs.tdwg.org/dwc/iri/recordedBy
 http://rs.tdwg.org/dwc/ac/caption
 ```
 
-Term IRIs are not followed by a trailing forward slash.  The "namespace" corresponding to the defining term list can be abbreviated to form a compact IRI ([CURIE](https://www.w3.org/TR/curie/)).  Since `dwciri:` abbreviates `http://rs.tdwg.org/dwc/iri/` and ac: abbreviates `http://rs.tdwg.org/dwc/ac/`, the two term IRIs given as examples above can be expressed as the CURIEs `dwciri:recordedBy` and `ac:caption`.
+Term IRIs are not followed by a trailing forward slash.  The "namespace" corresponding to the defining term list can be abbreviated to form a compact IRI ([CURIE](https://www.w3.org/TR/curie/)).  Since `dwciri:` abbreviates `http://rs.tdwg.org/dwc/iri/` and `ac:` abbreviates `http://rs.tdwg.org/dwc/ac/`, the two term IRIs given as examples above can be expressed as the CURIEs `dwciri:recordedBy` and `ac:caption`.
 
 ### <a name="patterns-versions"></a>2.2 Patterns for versions of resources in the standards hierarchy
 
