@@ -276,6 +276,8 @@ The processor is designed to be deterministic and same-release idempotent. In pa
 - current containment is reconciled from configuration; and
 - target Vocabulary and Standard membership snapshots are reconstructed from current membership and applicable dated child versions.
 
+This also holds for resources that the release itself creates. A Term List or Document whose only versions are dated `date_issued` was created by an earlier run of the same release, and is processed again as it was the first time, with no predecessor. After the first run, set `new_term_list: false` for a new Term List, because it now exists. Templates are copied only when `new_term_list` is `true`, so edits to the generated mapping files are kept.
+
 Deleting and recreating a processing branch between iterations is therefore not part of the normal workflow.
 
 For an explicit same-release idempotence check after successful normal processing, run:
