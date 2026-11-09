@@ -271,6 +271,8 @@ Within each folder describing versions, the primary metadata are in the file who
 
 ### <a name="directories-machine-readable"></a>3.4 Retrieving machine readable metadata from the datasets
 
+#### <a name="directories-machine-readable-rdf"></a>3.4.1 Retrieving machine readable metadata as RDF
+
 ![TDWG Data Catalog model](index/dcat.png)
 
 The IRI `http://rs.tdwg.org/index` denotes the TDWG Data catalog. When dereferenced with an `Accept:` header of `text/html`, this document should be served. When dereferenced requesting `text/turtle`, `application/rdf+xml`, or `application/ld+json`, the data catalog should be served in the RDF/Turtle, RDF/XML, and JSON-LD machine-readable serializations respectively. (The machine-readable data catalogs can be retrieved using the explicit IRIs `http://rs-test.tdwg.org/index.ttl`, `http://rs-test.tdwg.org/index.rdf`, and `http://rs-test.tdwg.org/index.json`.) Note that as of 2020-02-03 the JSON-LD representation does not conform completely to the JSON-LD specification and should not be relied upon as a source of machine-readable metadata. It can, however, be consumed as generic JSON.
@@ -285,6 +287,12 @@ where "datasetname" is the name of the directory containing the dataset.
 For more information, see [this blog post](http://baskauf.blogspot.com/2019/04/understanding-tdwg-standards_24.html).
 
 To access machine-readable translations metadata, see the [Vocabulary Translations page](https://tdwg.github.io/rs.tdwg.org/translations/). **Note:** As of 2026-11-08, translations for Darwin Core and Audiovisual Core are automated using the CrowdIn system. The files linked here are maintained for historical purposes, but are not being updated. For more information, contact a member of the [Darwin Core](https://www.tdwg.org/community/dwc/) or [Audiovisual Core](https://www.tdwg.org/community/ac/) Maintenance Groups.
+
+#### <a name="directories-machine-readable-csv"></a>3.4.2 Retrieving machine readable metadata as CSV
+
+Because all of the kinds of RDF serializations of TDWG standards metadata are generated from the source CSV files in this repository, and because the CSV files can be accessed programatically from GitHub as raw files, the CSV files themselves represent a type of machine-readable serialization of the those metadata. However, unlike RDF, the CSV files cannot be fully understood in isolation. 
+
+For most purposes, the primary metadata CSV file within a current resources directory (see [Section 3.2](#32-files-contained-in-current-resources-directories)) will contain the core metadata about that resource category. However, the column headers for that CSV cannot be understood without also referring to the corresponding "-column-mappings.csv" file within that directory, since the "-column-mappings.csv" table maps column headers to property [CURIEs](https://www.w3.org/TR/curie), and establishes the value type and language tag or datatype for the column. Additionally, the relationship of the current resource to its versions requires an additional tables as described in [Section 3.2](#32-files-contained-in-current-resources-directories).
 
 ## <a name="directories-resources"></a>4 Relationships of directories to resources in the TDWG Standards model
 
@@ -371,6 +379,6 @@ To access machine-readable translations metadata, see the [Vocabulary Translatio
 | dwc-a | Contains ratified schemas for Darwin Core Archives (DwC-A). Maintained as part of the Darwin Core Standard. See the [Darwin Core schemas](http://rs.tdwg.org/dwc/doc/schemas/) document for more information. |
 | dwc-dp |Contains ratified schemas for Darwin Core Data Package (DwC-DP). Maintained as part of the Darwin Core Standard. See the [Darwin Core schemas](http://rs.tdwg.org/dwc/doc/schemas/) document for more information. |
 | process | Contains utility scripts and source data for updating the data in rs.tdwg.org directories. See [Creating a Vocabulary Spreadsheet](https://github.com/tdwg/rs.tdwg.org/blob/master/process/create-vocabulary.md) and [Processing vocabulary and document changes](https://github.com/tdwg/rs.tdwg.org/blob/master/process/process-vocabulary.md) for details and use instructions. |
-| html | Archives the BaseX server script (restxq.xqm) and hosts the table that controls the redirects from term IRIs to HTML element IDs in Lists of Terms (redirects.csv) |
+| html | Archives the BaseX server script (restxq.xqm), the server script module that generates HTML about resources on the fly (html.xqm), and hosts the table that controls the redirects from term IRIs to HTML element IDs in Lists of Terms (redirects.csv) |
 | docker | Custom Dockerfile for BaseX deployment |
 
