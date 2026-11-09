@@ -2,5 +2,7 @@
 .ipynb_checkpoints
 /.idea
 
-process/config.yaml
-process/vocab.yaml
+process/logs/
+__pycache__
+
+process/reports/

@@ -1109,3 +1109,46 @@ return
 declare function html:term-lists-versions($lookup-string as xs:string) as element()
 {
 };
+
+
+(:--------------------------------------------------------------------------------------------------:)
+(: Generates an HTML listing of the subdirectories and files in a directory ////////////////////////:)
+(: $path is relative to the root directory: "" for the root, or e.g. "dwc-dp/1.0/"                  :)
+(:--------------------------------------------------------------------------------------------------:)
+declare function html:listing($path as xs:string)
+{
+  let $base := "/usr/src/rs.tdwg.org/" || $path
+  let $url := replace($path, '[/\\]$', '')
+  let $entries :=
+    for $entry in file:list($base)
+    (: file:list appends a separator to directory names; remove it :)
+    let $name := replace($entry, '[/\\]$', '')
+    where not(starts-with($name, '.'))
+    return $name
+  let $dirs := for $name in $entries where file:is-dir($base || $name) order by $name return $name
+  let $files := for $name in $entries where file:is-file($base || $name) order by $name return $name
+  let $title := "Darwin Core schemas" || (if ($path != "") then " " || replace($path, '/$', '') else "")
+  let $up := replace($url, '[^/]+$', '')
+  return
+    <html lang="en">
+      <head>
+        <meta charset="utf-8"/>
+        <title>{$title}</title>
+        <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
+      </head>
+      <body>{
+        html:generate-header(),
+        <h1>{$title}</h1>,
+        <ul>{
+          if ($url != "/dwc-a" and $url != "/dwc-dp")
+          then <li><a href="{$up}">&#11188;</a></li>
+          else (),
+          for $dir in $dirs
+          return <li><a href="{$url || "/" || $dir}/">{$dir}</a></li>,
+          for $file in $files
+          return <li><a href="{$url || "/" || $file}">{$file}</a></li>
+        }</ul>,
+        html:generate-footer()
+      }</body>
+    </html>
+};

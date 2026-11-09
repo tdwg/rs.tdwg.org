@@ -1,5 +1,7 @@
 #!/bin/bash -eu
 
+set -e
+
 # Generate a random password
 password=$(< /dev/urandom tr -dc _A-Za-z0-9- | head -c20)
 salt=$(< /dev/urandom tr -dc 0-9 | head -c15)
@@ -21,7 +23,7 @@ cat > /basex/basex/data/users.xml <<EOF
 EOF
 
 # Start BaseX
-/usr/local/bin/basexhttp &
+/basex/basex/bin/basexhttp &
 
 # Wait until it has started up.
 sleep 5
@@ -31,4 +33,4 @@ cd /usr/src/rs.tdwg.org/index
 
 python3 load-db-from-github.py "$1" "$2" "$3" $password
 
-/usr/local/bin/basexhttp stop
+/basex/basex/bin/basexhttp stop

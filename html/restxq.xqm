@@ -228,6 +228,132 @@ declare
   };
 
 (:----------------------------------------------------------------------------------------------:)
+(: Data Package schemas :)
+
+(: Handle Darwin Core Data Package schema index with URI pattern "/dwc-dp/" :)
+(: Generates a listing of the subdirectories (versions) and files in the dwc-dp directory :)
+declare
+  %rest:path("/dwc-dp")
+  %output:method("html")
+  %output:html-version("5.0")
+  function page:dwcdp-index()
+  {
+    (page:success(), html:listing("/dwc-dp/"))
+  };
+
+(: Handle Darwin Core Data Package indices with URI patterns of "/dwc-dp/{$version}" :)
+(: Generates a listing of the subdirectories and files in the version directory :)
+declare
+  %rest:path("/dwc-dp/{$version}")
+  %output:method("html")
+  %output:html-version("5.0")
+  function page:dwcdp-file($version)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-dp/"
+  return
+    if (not(contains($version, "..")) and file:is-dir($base || $version))
+    then
+      (page:success(), html:listing("/dwc-dp/" || $version || "/"))
+    else
+      (page:not-found(), $version || " not found")
+  };
+
+(: Handle Darwin Core Data Package profiles with URI patterns of "/dwc-dp/{$version}/{$file}" :)
+declare
+  %rest:path("/dwc-dp/{$version}/{$file}")
+  function page:dwcdp-file($version, $file)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-dp/"
+  return
+    if (file:is-file($base || $version || "/" || $file))
+    then
+      (page:success-json(), file:read-text($base || $version || "/" || $file))
+    else if (not(contains($version || $file, "..")) and file:is-dir($base || $version || "/" || $file))
+    then
+      (page:success(), html:listing("/dwc-dp/" || $version || "/" || $file || "/"))
+    else
+      (page:not-found(), $version || "/" || $file || " not found")
+  };
+
+(: Handle Darwin Core Data Package schemas with URI patterns of "/dwc-dp/{$version}/table-schemas/{$file}" :)
+declare
+  %rest:path("/dwc-dp/{$version}/table-schemas/{$file}")
+  function page:dwcdp-json($version, $file)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-dp/"
+  return
+    if (file:is-file($base || $version || "/table-schemas/" || $file))
+    then
+      (page:success-json(), file:read-text($base || $version || "/table-schemas/" || $file))
+    else
+      (page:not-found(), $version || "/table-schemas/" || $file || " not found")
+  };
+
+(:----------------------------------------------------------------------------------------------:)
+(: Archive schemas :)
+
+(: Handle Darwin Core Archive schema index with URI pattern "/dwc-a/" :)
+(: Generates a listing of the subdirectories and files in the dwc-a directory :)
+declare
+  %rest:path("/dwc-a")
+  %output:method("html")
+  %output:html-version("5.0")
+  function page:dwca-index()
+  {
+    (page:success(), html:listing("/dwc-a/"))
+  };
+
+(: Handle Darwin Core Archive schema index with URI pattern "/dwc-a/" :)
+(: Generates a listing of the subdirectories and files in the dwc-a directory :)
+declare
+  %rest:path("/dwc-a/schemas")
+  %output:method("html")
+  %output:html-version("5.0")
+  function page:dwca-schema-index()
+  {
+    (page:success(), html:listing("/dwc-a/schemas/"))
+  };
+
+(: Handle Darwin Core Archive schemas with URI patterns of "/dwc-a/schemas/{$file}" :)
+declare
+  %rest:path("/dwc-a/schemas/{$file}")
+  function page:dwca-file($file)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-a/schemas/"
+  return
+    if (file:is-file($base || "/" || $file))
+    then
+      (page:success-xml(), file:read-text($base || "/" || $file))
+    else if (not(contains($file, "..")) and file:is-dir($base || "/" || $file))
+    then
+      (page:success(), html:listing("/dwc-a/schemas/" || $file || "/"))
+    else
+      (page:not-found(), "/dwc-a/schemas/" || $file || " not found")
+  };
+
+(: Handle Darwin Core Archive schemas with URI patterns of "/dwc-a/schemas/{$dir}/{$file}" :)
+declare
+  %rest:path("/dwc-a/schemas/{$dir}/{$file}")
+  %rest:header-param("Accept","{$acceptHeader}")
+  function page:dwca-dirfile($dir, $file, $acceptHeader)
+  {
+  let $base := "/usr/src/rs.tdwg.org/dwc-a/schemas/"
+  return
+    if (file:is-file($base || $dir || "/" || $file))
+    then
+      let $text := file:read-text($base || $dir || "/" || $file)
+      return
+        if (some $header in $acceptHeader satisfies contains($header, "text/html"))
+        then
+          (: Browsers are dropping native XSLT support, so for HTML clients insert the XSLT polyfill script into the XML :)
+          (page:success-xml(), page:insert-xslt-polyfill($text))
+        else
+          (page:success-xml(), $text)
+    else
+      (page:not-found(), $dir || "/" || $file || " not found")
+  };
+
+(:----------------------------------------------------------------------------------------------:)
 (: Vocabularies and term lists patterns :)
 
 (: This is the handler function for URI patterns of "/{vocab}/" (vocabularies):)
@@ -1160,6 +1286,26 @@ declare function page:success()
     <http:response status="200" message="Success">
       <http:header name="Content-Language" value="en"/>
       <http:header name="Content-Type" value="text/html; charset=utf-8"/>
+    </http:response>
+  </rest:response>
+};
+
+(: 200 Success (JSON) response:)
+declare function page:success-json()
+{
+  <rest:response>
+    <http:response status="200" message="Success">
+      <http:header name="Content-Type" value="application/json; charset=utf-8"/>
+    </http:response>
+  </rest:response>
+};
+
+(: 200 Success (XML) response:)
+declare function page:success-xml()
+{
+  <rest:response>
+    <http:response status="200" message="Success">
+      <http:header name="Content-Type" value="application/xml; charset=utf-8"/>
     </http:response>
   </rest:response>
 };
@@ -2218,6 +2364,21 @@ switch ($serialization)
   case "xml" return ".rdf"
   case "json" return ".json"
   default return ""
+};
+
+(: Insert the XSLT polyfill script as the first child of the document element of an XML string.
+   If the text can't be parsed as XML, it is returned unchanged. :)
+declare function page:insert-xslt-polyfill($text as xs:string) as xs:string
+{
+try {
+  let $doc := parse-xml($text)
+  let $modified := copy $d := $doc
+    modify insert node <script src="https://cdn.jsdelivr.net/npm/xslt-polyfill@1.0.31/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"></script> as first into $d/*
+    return $d
+  return serialize($modified, map { 'method': 'xml', 'omit-xml-declaration': 'no' })
+} catch * {
+  $text
+}
 };
 
 declare function page:extract-html-header($headers)

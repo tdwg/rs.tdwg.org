@@ -11,15 +11,15 @@ http://rs.tdwg.org/ac/doc/variant/,text/markdown,https://raw.githubusercontent.c
 http://rs.tdwg.org/guid/doc/guidas/,application/pdf,https://github.com/tdwg/guid-as/blob/master/guid/tdwg_guid_applicability_statement.pdf
 http://rs.tdwg.org/guid/doc/lsidas/,application/pdf,https://github.com/tdwg/guid-as/blob/master/lsid/tdwg_lsid_applicability_statement.pdf
 http://rs.tdwg.org/dwc/index/,text/html,http://rs.tdwg.org/dwc/index.htm
-http://rs.tdwg.org/dwc/terms/guides/rdf/,text/markdown,https://github.com/tdwg/dwc/raw/master/docs/rdf/index.md
+http://rs.tdwg.org/dwc/terms/guides/rdf/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/rdf/index.md
 http://rs.tdwg.org/dwc/terms/guides/text/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/text/index.md
 http://rs.tdwg.org/dwc/terms/guides/xml/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/xml/index.md
 http://rs.tdwg.org/dwc/terms/simple/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/simple/index.md
 http://rs.tdwg.org/dwc/terms/namespace/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/namespace/index.md
 http://rs.tdwg.org/dwc/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/list/index.md
-http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/doe/index.md
-http://rs.tdwg.org/dwc/doc/em/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/em/index.md
-http://rs.tdwg.org/dwc/doc/pw/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/docs/pw/index.md
+http://rs.tdwg.org/dwc/doc/doe/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/doe/index.md
+http://rs.tdwg.org/dwc/doc/em/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/em/index.md
+http://rs.tdwg.org/dwc/doc/pw/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/pw/index.md
 http://rs.tdwg.org/tapir/doc/summary/,text/html,http://www.tdwg.org/activities/tapir/executive-summary/
 http://rs.tdwg.org/tapir/doc/specification/,text/html,http://tdwg.github.io/tapir/docs/tdwg_tapir_specification_2010-05-05.html
 http://rs.tdwg.org/tapir/doc/xmlschema/,application/xml,http://tdwg.github.io/tapir/schema/tapir.xsd
@@ -68,9 +68,9 @@ http://rs.tdwg.org/bph/doc/book/,print,urn:isbn:0913196789
 http://rs.tdwg.org/ac/doc/orient/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/orient/index.md
 http://rs.tdwg.org/ac/doc/part/,text/markdown,https://raw.githubusercontent.com/tdwg/ac/master/docs/part/index.md
 http://rs.tdwg.org/dwc/doc/eco/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/list/index.md
-http://rs.tdwg.org/dwc/doc/hierarchy/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/hierarchy/index.md
-http://rs.tdwg.org/dwc/doc/inclusive/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/inclusive/index.md
-http://rs.tdwg.org/dwc/doc/tcr/,text/markdown,https://raw.githubusercontent.com/tdwg/hc/main/docs/tcr/index.md
+http://rs.tdwg.org/dwc/doc/hierarchy/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/hierarchy/index.md
+http://rs.tdwg.org/dwc/doc/inclusive/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/inclusive/index.md
+http://rs.tdwg.org/dwc/doc/tcr/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/tcr/index.md
 http://rs.tdwg.org/tag/doc/boolean/,text/markdown,https://raw.githubusercontent.com/tdwg/tag/master/docs/boolean/index.md
 http://rs.tdwg.org/ltc/doc/list/,text/html,https://raw.githubusercontent.com/tdwg/ltc/main/docs/terms/index.html
 http://rs.tdwg.org/dwc/doc/chrono/,text/markdown,https://raw.githubusercontent.com/tdwg/chrono/refs/heads/master/docs/list/index.md
@@ -78,3 +78,4 @@ http://rs.tdwg.org/ac/doc/cd/,text/markdown,https://raw.githubusercontent.com/td
 http://rs.tdwg.org/tcs/doc/terms/,text/markdown,https://raw.githubusercontent.com/tdwg/tcs2/refs/heads/master/docs/terms/index.md
 http://rs.tdwg.org/dwc/doc/cm/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/cm/index.md
 http://rs.tdwg.org/dwc/doc/dp/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/dp/index.md
+http://rs.tdwg.org/dwc/doc/schemas/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/schemas/index.md

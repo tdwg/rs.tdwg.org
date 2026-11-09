@@ -279,3 +279,16 @@ http://rs.tdwg.org/version/eco/2026-05-26,http://rs.tdwg.org/eco/version/iri/202
 http://rs.tdwg.org/version/chrono/2026-05-26,http://rs.tdwg.org/chrono/version/terms/2026-05-26
 http://rs.tdwg.org/version/chrono/2026-05-26,http://rs.tdwg.org/chrono/version/iri/2026-05-26
 http://rs.tdwg.org/version/dwcem/2026-05-26,http://rs.tdwg.org/dwcem/version/values/2026-05-26
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/dwc/version/terms/2026-10-13
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/dwc/version/dc/2025-06-12
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/dwc/version/dcterms/2026-05-26
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/dwc/version/ac/2026-05-26
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/chrono/version/terms/2026-05-26
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/chrono/version/iri/2026-05-26
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/dwc/version/iri/2026-10-13
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/eco/version/terms/2026-10-13
+http://rs.tdwg.org/version/dwc/2026-10-13,http://rs.tdwg.org/eco/version/iri/2026-10-13
+http://rs.tdwg.org/version/dwcem/2026-10-13,http://rs.tdwg.org/dwcem/version/values/2026-10-13
+http://rs.tdwg.org/version/dwcdoe/2026-10-13,http://rs.tdwg.org/dwcdoe/version/values/2026-10-13
+http://rs.tdwg.org/version/dwcpw/2026-10-13,http://rs.tdwg.org/dwcpw/version/values/2026-10-13
+http://rs.tdwg.org/version/ecotcr/2026-10-13,http://rs.tdwg.org/ecotcr/version/values/2026-10-13

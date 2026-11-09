@@ -1,0 +1,2 @@
+term_localName,label,definition,usage,notes,controlled_value_string,skos_inScheme,type
+d002,captive (category B1),"Individuals in captivity or quarantine (i.e. individuals provided with conditions suitable for them, but explicit measures of containment are in place)",Only for cases where specific actions have been taken to prevent escape of individuals or propagules,See also Blackburn et al. 2011 https://doi.org/10.1016/j.tree.2011.03.023 category B1,captive,d,http://www.w3.org/2004/02/skos/core#Concept

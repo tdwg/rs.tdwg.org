@@ -1,0 +1,2 @@
+term_localName,label,definition,usage,notes,controlled_value_string,skos_inScheme,type
+e004,introduced: assisted colonisation,Establishment of a taxon specifically with the intention of creating a self-sustaining wild population in an area that is not part of the taxon's natural range,,"In the event of environmental change and habitat destruction, a conservation option is to introduce a taxon into an area it did not naturally occur.",introducedAssistedColonisation,e,http://www.w3.org/2004/02/skos/core#Concept
