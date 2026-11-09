@@ -215,6 +215,16 @@ A successful dry run reports `DRY RUN complete. Repository, logs, and reports un
 
 Run `python process.py --help` to see the available command-line options.
 
+### Configuration file
+
+By default the processor reads `config.yaml` in the directory it is run from, normally `process/`. The `--config PATH` option reads another release configuration file instead, for example the copy kept in a release directory:
+
+```bash
+python process.py --dry-run --config bdq-revisions/bdq-revisions-YYYY-MM-DD/config.yaml
+```
+
+This allows release declarations for different Standards to be kept and processed on the same branch without replacing `process/config.yaml`. A file inside the repository is read from the staged copy of the repository; relative paths in the configuration, such as `release_directory`, are still relative to `process/`.
+
 ### Preflight validation
 
 Preflight checks include release/configuration structure, required namespace input CSVs, duplicate current identities, duplicate dated resource versions, ambiguous historical resource/date combinations, invalid historical dates, `new_term_list` consistency, and the existence/shape of metadata tables required for existing Term Lists. The intent is to reject histories that cannot be interpreted deterministically rather than resolving them by CSV row order or URI-string heuristics.

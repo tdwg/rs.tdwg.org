@@ -90,6 +90,9 @@ def report(message='', indent=0, file=None):
 # Only a successful staged run is allowed to publish its file delta back to the
 # caller's working tree.
 _TRANSACTION_ENV = 'TDWG_PROCESS_TRANSACTION_CHILD'
+# Path of the release configuration file passed from the outer invocation to the
+# transaction child, which does not parse command-line options.
+_CONFIG_ENV = 'TDWG_PROCESS_CONFIG'
 
 
 def _transaction_ignored(relative_path):
@@ -319,11 +322,20 @@ def _run_transactionally_if_needed():
         help='Validate and process in a temporary workspace; report the proposed '
              'changes without modifying the repository, logs, or reports.'
     )
+    parser.add_argument(
+        '--config', default='config.yaml', metavar='PATH',
+        help='Release configuration file (default: config.yaml in the current '
+             'directory, normally process/). A file inside the repository is read '
+             'from the staged copy of the repository.'
+    )
     args = parser.parse_args()
 
     process_dir = Path(__file__).resolve().parent
     repository_root = process_dir.parent
     relative_script = Path(__file__).resolve().relative_to(repository_root)
+    config_path = Path(args.config).resolve()
+    if not config_path.is_file():
+        parser.error('configuration file not found: ' + args.config)
 
     with tempfile.TemporaryDirectory(prefix='tdwg-process-') as temp_dir:
         staged_root = Path(temp_dir) / 'repository'
@@ -332,6 +344,10 @@ def _run_transactionally_if_needed():
 
         env = os.environ.copy()
         env[_TRANSACTION_ENV] = '1'
+        try:
+            env[_CONFIG_ENV] = str(staged_root / config_path.relative_to(repository_root))
+        except ValueError:
+            env[_CONFIG_ENV] = str(config_path)  # configuration outside the repository
         staged_script = staged_root / relative_script
         result = subprocess.run(
             [sys.executable, staged_script.name],
@@ -399,7 +415,7 @@ _run_transactionally_if_needed()
 # -----------------------
 
 # Release configuration. One invocation processes one complete standards release.
-with open('config.yaml', 'rt', encoding='utf-8') as file_object:
+with open(os.environ.get(_CONFIG_ENV, 'config.yaml'), 'rt', encoding='utf-8') as file_object:
     config = yaml.safe_load(file_object)
 
 _required_release_config_keys = {
