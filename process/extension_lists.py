@@ -16,6 +16,7 @@ A vocabulary in config.yaml declares its extension term lists with:
       database: bdqffdq                  # dataset directory that holds the axioms file
       axioms_file: bdqffdq-axioms.ttl    # in the release directory when the axioms change
       distribution_base_url: https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/
+      browser_redirect: https://...       # optional: human-readable document for HTML requests
 
 When the release directory contains the axioms file and its axioms differ from the
 current ones (or the list is new), this step:
@@ -238,6 +239,18 @@ def process_extension_list(ext, vocabulary_namespaces, ctx):
     if previous:
         replacements.append([version_iri, previous])
     write_csv('../term-lists-versions/term-lists-versions-replacements.csv', replacements)
+
+    # Join of the list and its versions (dcterms:hasVersion), as for any term list.
+    joins = read_csv('../term-lists/term-lists-versions.csv')
+    joins = [joins[0]] + [r for r in joins[1:] if r[0] != version_iri] + [[version_iri, list_uri]]
+    write_csv('../term-lists/term-lists-versions.csv', joins)
+
+    # Browser redirect of the list and its versions to the human-readable document (SDS 3.3.3).
+    if ext.get('browser_redirect'):
+        redirects = _read(read_csv, '../term-lists/term-lists-redirects.csv', ['iri', 'redirect'])
+        redirects = [redirects[0]] + [r for r in redirects[1:] if r[0] not in (list_uri, version_iri)]
+        redirects += [[list_uri, ext['browser_redirect']], [version_iri, ext['browser_redirect']]]
+        write_csv('../term-lists/term-lists-redirects.csv', redirects)
 
     # Distributions (SDS 2.2.4), following current TDWG practice for Document distributions
     # (docs/docs-formats.csv): dcterms:hasFormat to the access URL, typed foaf:Document,
