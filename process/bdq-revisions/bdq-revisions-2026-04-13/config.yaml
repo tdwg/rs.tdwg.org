@@ -549,3 +549,4 @@ vocabularies:
     database: bdqffdq
     axioms_file: bdqffdq-axioms.ttl
     distribution_base_url: https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/
+    browser_redirect: https://bdq.tdwg.org/draft/docs/extension/bdqffdq/
