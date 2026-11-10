@@ -245,6 +245,13 @@ def process_extension_list(ext, vocabulary_namespaces, ctx):
     joins = [joins[0]] + [r for r in joins[1:] if r[0] != version_iri] + [[version_iri, list_uri]]
     write_csv('../term-lists/term-lists-versions.csv', joins)
 
+    # Axioms files of the list and its versions, which rs.tdwg.org appends to their RDF (restxq.xqm).
+    axioms_lookup = _read(read_csv, '../term-lists/term-lists-axioms.csv', ['iri', 'file'])
+    axioms_lookup = [axioms_lookup[0]] + [r for r in axioms_lookup[1:] if r[0] not in (list_uri, version_iri)]
+    axioms_lookup += [[list_uri, database + '/' + database + '-axioms'],
+                      [version_iri, database + '/axioms-versions/' + database + '-axioms-' + date_issued]]
+    write_csv('../term-lists/term-lists-axioms.csv', axioms_lookup)
+
     # Browser redirect of the list and its versions to the human-readable document (SDS 3.3.3).
     if ext.get('browser_redirect'):
         redirects = _read(read_csv, '../term-lists/term-lists-redirects.csv', ['iri', 'redirect'])
