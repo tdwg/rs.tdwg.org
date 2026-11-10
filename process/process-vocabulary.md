@@ -495,7 +495,7 @@ Where `tdwgutility:organizedInClass` is used for presentation grouping, it is an
 
 ## 3.12 Ontologies: term lists with axioms
 
-A vocabulary that is an OWL ontology is kept as a term list, an axioms file holding the axioms that need blank nodes (a vocabulary extension term list, TDWG Standards Documentation Specification, Section 4.4.2.2), and its vocabulary record, which gives the ontology header. `process/build_ontology.py` combines them into the ontology as Turtle, RDF/XML, and JSON-LD, and can validate it with ROBOT. See [`process-ontology.md`](process-ontology.md).
+A vocabulary that is an OWL ontology is kept as a term list, an axioms file holding the axioms that need blank nodes (a vocabulary extension term list, TDWG Standards Documentation Specification, Section 4.4.2.2), and its vocabulary record, which gives the ontology header. The axioms file is processed as a vocabulary extension term list, declared with `extension_lists` in `config.yaml`. `process/build_ontology.py` combines the parts into the ontology as Turtle, RDF/XML, and JSON-LD, and can validate it with ROBOT. See [`process-ontology.md`](process-ontology.md).
 
 # 6 Generating JSON-LD for controlled vocabularies
 
