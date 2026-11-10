@@ -3088,6 +3088,36 @@ for vocabulary_config in vocabularies:
                 indent=4
             )
 
+    # Vocabulary extension term lists (TDWG SDS 4.4.2.2): axioms about the vocabulary's
+    # terms that cannot be term-list rows. Only vocabularies that declare
+    # extension_lists in config.yaml are affected; see extension_lists.py.
+    for extension_list in (vocabulary_config.get('extension_lists') or []):
+        import extension_lists
+        (extension_changed, extension_table, extension_row, extension_version,
+         extension_is_new) = extension_lists.process_extension_list(
+            extension_list, namespaces, {
+                'readCsv': readCsv, 'writeCsv': writeCsv, 'isoTime': isoTime,
+                'date_issued': date_issued, 'local_offset_from_utc': local_offset_from_utc,
+                'release_directory': release_directory, 'standardUri': standardUri,
+            })
+        if extension_changed:
+            aNewVocabulary, vocab_subpath, vocabularyUri, vocabularyVersionUri = update_vocabulary_metadata(
+                date_issued, local_offset_from_utc, extension_table, extension_row,
+                extension_version, vocabularyIri, extension_is_new, extension_list['list_uri']
+            )
+            update_standard_metadata(
+                date_issued, local_offset_from_utc, standardUri, vocab_subpath,
+                vocabularyUri, vocabularyVersionUri, aNewVocabulary
+            )
+            update_dataset_index_modified(
+                ('term-lists', 'term-lists-versions'), date_issued, local_offset_from_utc
+            )
+            higher_level_update_performed = True
+            report('Extension term list ' + extension_list['list_uri'] + ': axioms changed; created version ' +
+                   extension_version + '.', indent=2)
+        else:
+            report('Extension term list ' + extension_list['list_uri'] + ': no axiom changes.', indent=2)
+
     # A containment-only release still requires new higher-level versions even when
     # every configured namespace has a header-only modifications file. Use one
     # existing configured Term List only as the entry point; the update functions

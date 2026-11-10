@@ -802,3 +802,11 @@ vocabularies:
     prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqffdq/#
     use_namespace_in_fragment: false
     separator: ''
+  extension_lists:
+  - list_uri: https://rs.tdwg.org/bdqffdq/extension/
+    label: Fitness For Use Framework Ontology Vocabulary Extension
+    description: 'Axioms about bdqffdq terms that need blank nodes: restrictions on classes, owl:AllDisjointClasses, and owl:AllDifferent (a vocabulary extension term list, TDWG Standards Documentation Specification 4.4.2.2).'
+    database: bdqffdq
+    axioms_file: bdqffdq-axioms.ttl
+    distribution_base_url: https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/
+    browser_redirect: https://bdq.tdwg.org/draft/docs/extension/bdqffdq/

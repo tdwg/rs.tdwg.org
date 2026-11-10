@@ -1210,6 +1210,11 @@ declare function page:return-representation($response-media-type,$lookup-string,
 {
   if ($flag = "html")
   then
+    let $termListRedirect := page:term-list-redirect($db,$lookup-string)
+    return
+    if ($termListRedirect)
+    then page:temp-redirect($termListRedirect,"")
+    else
     switch ($db)
       case "docs" return page:handle-docs-html($lookup-string)
       case "docs-versions" return page:handle-docs-versions-html($lookup-string)
@@ -1223,6 +1228,18 @@ declare function page:return-representation($response-media-type,$lookup-string,
     </output:serialization-parameters>
   </rest:response>,
   page:main-db($lookup-string,$flag,"single",$db)
+};
+
+(: Browser redirect for a term list or term list version whose human-readable representation is a
+   separate document, such as a vocabulary extension term list (TDWG SDS 3.3.3, 4.4.2.2). The lookup
+   table has rows only for such lists; for any other resource this returns the empty sequence. :)
+declare function page:term-list-redirect($db,$lookup-string)
+{
+  if ($db = ("term-lists","term-lists-versions") and file:exists("/usr/src/rs.tdwg.org/term-lists/term-lists-redirects.csv"))
+  then
+    let $redirectData := csv:parse(file:read-text("/usr/src/rs.tdwg.org/term-lists/term-lists-redirects.csv"), map { 'header' : true(),'separator' : "," })/csv/record
+    return ($redirectData[iri/text() = $lookup-string]/redirect/text())[1]
+  else ()
 };
 
 (: Function to return a web page for vocabs etc. :)
