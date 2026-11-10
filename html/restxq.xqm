@@ -1227,7 +1227,65 @@ declare function page:return-representation($response-media-type,$lookup-string,
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  page:main-db($lookup-string,$flag,"single",$db)
+  page:with-axioms(page:main-db($lookup-string,$flag,"single",$db),$flag,$db,$lookup-string)
+};
+
+(: Vocabulary extension term lists (TDWG SDS 4.4.2.2): the RDF of the list and of each of its versions
+   is its metadata from the tables plus its axioms, which need blank nodes and so are kept as files.
+   term-lists/term-lists-axioms.csv has rows only for such lists (IRI, path of the axioms files without
+   extension); for any other resource the serialization is returned unchanged. :)
+declare function page:with-axioms($serialized,$flag,$db,$lookup-string)
+{
+  let $lookupPath := "/usr/src/rs.tdwg.org/term-lists/term-lists-axioms.csv"
+  let $file :=
+    if ($db = ("term-lists","term-lists-versions") and file:exists($lookupPath))
+    then (csv:parse(file:read-text($lookupPath), map { 'header' : true(),'separator' : "," })/csv/record[iri/text() = $lookup-string]/file/text())[1]
+    else ()
+  return
+    if (empty($file))
+    then $serialized
+    else
+      let $base := "/usr/src/rs.tdwg.org/"||$file
+      return switch ($flag)
+        case "turtle" return concat($serialized,"&#10;",file:read-text($base||".ttl"))
+        case "xml" return page:merge-rdf-xml($serialized,file:read-text($base||".rdf"))
+        case "json" return page:merge-json-ld($serialized,file:read-text($base||".jsonld"))
+        default return $serialized
+};
+
+(: Inserts the node elements of an RDF/XML document into another, declaring on the root any namespace
+   prefixes that the inserted document uses and the other lacks. :)
+declare function page:merge-rdf-xml($serialized,$axioms)
+{
+  let $axiomsRoot := parse-xml($axioms)/*
+  let $serializedRoot := parse-xml($serialized)/*
+  let $declared := in-scope-prefixes($serializedRoot)
+  let $declarations := string-join(
+      for $prefix in in-scope-prefixes($axiomsRoot)
+      where $prefix != "xml" and $prefix != "" and not($prefix = $declared)
+      return concat(' xmlns:',$prefix,'="',namespace-uri-for-prefix($prefix,$axiomsRoot),'"'))
+  let $content := substring-before(substring-after(substring-after($axioms,"<rdf:RDF"),">"),"</rdf:RDF>")
+  return concat(
+    "<rdf:RDF",$declarations,
+    substring-before(substring-after($serialized,"<rdf:RDF"),"</rdf:RDF>"),
+    $content,"</rdf:RDF>&#10;")
+};
+
+(: Appends the node objects of an expanded JSON-LD array to the @graph of a serialized JSON-LD document. :)
+declare function page:merge-json-ld($serialized,$axioms)
+{
+  let $inner := normalize-space(replace($axioms,"^\s*\[|\]\s*$",""))
+  let $graphEnd := page:last-index-of($serialized,"]")
+  return
+    if ($inner = "" or $graphEnd = 0)
+    then $serialized
+    else concat(substring($serialized,1,$graphEnd - 1),",&#10;",$inner,"&#10;",substring($serialized,$graphEnd))
+};
+
+declare function page:last-index-of($string,$char)
+{
+  let $positions := index-of(string-to-codepoints($string),string-to-codepoints($char))
+  return if (empty($positions)) then 0 else $positions[last()]
 };
 
 (: Browser redirect for a term list or term list version whose human-readable representation is a
