@@ -493,6 +493,10 @@ A List-of-Terms build commonly combines:
 
 Where `tdwgutility:organizedInClass` is used for presentation grouping, it is an organizational relationship and does not imply an RDF domain declaration for the grouped property.
 
+## 3.12 Ontologies: term lists with axioms
+
+A vocabulary that is an OWL ontology is kept as a term list, an axioms file holding the axioms that need blank nodes (a vocabulary extension term list, TDWG Standards Documentation Specification, Section 4.4.2.2), and its vocabulary record, which gives the ontology header. `process/build_ontology.py` combines them into the ontology as Turtle, RDF/XML, and JSON-LD, and can validate it with ROBOT. See [`process-ontology.md`](process-ontology.md).
+
 # 6 Generating JSON-LD for controlled vocabularies
 
 Generation of multilingual JSON-LD for controlled vocabularies is ancillary to the `rs.tdwg.org` release processor. Translation workflows for actively maintained standards may instead be integrated with systems such as CrowdIn and standard-specific build pipelines.
