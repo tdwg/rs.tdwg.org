@@ -79,9 +79,3 @@ http://rs.tdwg.org/tcs/doc/terms/,text/markdown,https://raw.githubusercontent.co
 http://rs.tdwg.org/dwc/doc/cm/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/cm/index.md
 http://rs.tdwg.org/dwc/doc/dp/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/dp/index.md
 http://rs.tdwg.org/dwc/doc/schemas/,text/markdown,https://raw.githubusercontent.com/tdwg/dwc/master/docs/schemas/index.md
-https://rs.tdwg.org/bdqdim/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdqdim/index.md
-https://rs.tdwg.org/bdqenh/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdqenh/index.md
-https://rs.tdwg.org/bdqcrit/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdqcrit/index.md
-https://rs.tdwg.org/bdquc/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdquc/index.md
-https://rs.tdwg.org/bdqval/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdqval/index.md
-https://rs.tdwg.org/bdqffdq/doc/list/,text/markdown,https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdqffdq/index.md
