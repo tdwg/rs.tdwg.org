@@ -113,3 +113,5 @@ document_modified,term_localName,dcterms_isPartOf,dataset_iri,dcterms_modified,l
 2026-11-09T00:00:00-05:00,bdquc-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/bdquc-versions,2026-11-09,Controlled values list for the BDQ Use Case Controlled Vocabulary versions,
 2026-11-09T00:00:00-05:00,bdqval,http://rs.tdwg.org/index,http://rs.tdwg.org/index/bdqval,2026-11-09,Controlled values list for the BDQ Controlled Vocabulary,
 2026-11-09T00:00:00-05:00,bdqval-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/bdqval-versions,2026-11-09,Controlled values list for the BDQ Controlled Vocabulary versions,
+2026-11-09T00:00:00-05:00,bdqffdq,http://rs.tdwg.org/index,http://rs.tdwg.org/index/bdqffdq,2026-11-09,"Classes, properties, and named individuals of the Biodiversity Data Quality Fitness for Use Framework (Ontology)",
+2026-11-09T00:00:00-05:00,bdqffdq-versions,http://rs.tdwg.org/index,http://rs.tdwg.org/index/bdqffdq-versions,2026-11-09,"Classes, properties, and named individuals of the Biodiversity Data Quality Fitness for Use Framework (Ontology) versions",
