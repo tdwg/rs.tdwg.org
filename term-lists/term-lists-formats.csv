@@ -1,4 +1,1 @@
 termList,mediaType,accessUri
-https://rs.tdwg.org/bdqffdq/extension/,text/turtle,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/bdqffdq-axioms.ttl
-https://rs.tdwg.org/bdqffdq/extension/,application/rdf+xml,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/bdqffdq-axioms.rdf
-https://rs.tdwg.org/bdqffdq/extension/,application/ld+json,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/bdqffdq-axioms.jsonld

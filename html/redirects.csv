@@ -90,15 +90,3 @@ xmp-for-ac,yes,term,xmp,https://ac.tdwg.org/termlist/#,yes,_
 xmp-for-ac-versions,no,termVersion,xmp,,,
 xmpRights-for-ac,yes,term,xmpRights,https://ac.tdwg.org/termlist/#,yes,_
 xmpRights-for-ac-versions,no,termVersion,xmpRights,,,
-bdqffdq,yes,term,bdqffdq,https://bdq.tdwg.org/draft/docs/list/bdqffdq/#,no,
-bdqffdq-versions,no,termVersion,bdqffdq,,,
-bdqdim,yes,term,bdqdim,https://bdq.tdwg.org/draft/docs/list/bdqdim/#,yes,_
-bdqdim-versions,no,termVersion,bdqdim,,,
-bdqenh,yes,term,bdqenh,https://bdq.tdwg.org/draft/docs/list/bdqenh/#,yes,_
-bdqenh-versions,no,termVersion,bdqenh,,,
-bdqcrit,yes,term,bdqcrit,https://bdq.tdwg.org/draft/docs/list/bdqcrit/#,yes,_
-bdqcrit-versions,no,termVersion,bdqcrit,,,
-bdquc,yes,term,bdquc,https://bdq.tdwg.org/draft/docs/list/bdquc/#,yes,_
-bdquc-versions,no,termVersion,bdquc,,,
-bdqval,yes,term,bdqval,https://bdq.tdwg.org/draft/docs/list/bdqval/#,yes,_
-bdqval-versions,no,termVersion,bdqval,,,
