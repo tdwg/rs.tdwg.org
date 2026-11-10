@@ -7,7 +7,7 @@ The BDQ release is a sequence of releases, one directory per date (plan Section 
 - `config.yaml`: the release declaration (standard, vocabularies, namespaces, List of Terms documents);
 - `<prefix>.csv`: one release-input CSV per namespace declared in the release, with the terms new or changed on that date (header only if none);
 - `mappings/<dataset>/`: in the release that creates a term list, and where they change, the BDQ column mapping files and `namespace.csv` for each dataset. They follow BDQ's own RDF (plan Section 8.3).
-- `bdqffdq-axioms.ttl`: the statements about `bdqffdq` terms that cannot be rows of `bdqffdq.csv` (restrictions and other axioms with blank nodes), a vocabulary extension term list in the sense of the TDWG Standards Documentation Specification, Section 4.4.2.2 (plan Section 9.5).
+- `bdqffdq-axioms.ttl` (in the releases where the axioms change: the faithful axioms in 2024-09-30, the first release by which every term they refer to exists, and the decided axioms in 2026-11-09): the statements about `bdqffdq` terms that cannot be rows of `bdqffdq.csv` (restrictions and other axioms with blank nodes). They are the vocabulary extension term list `https://rs.tdwg.org/bdqffdq/extension/` (TDWG Standards Documentation Specification, Section 4.4.2.2), declared under `extension_lists` in `config.yaml` and processed by `process.py` (see `../process-ontology.md`, Section 4; plan Section 9.6).
 
 Together, these files were generated from `tg2/_review/vocabulary/*_term_versions.csv`, `tg2/_review/vocabulary/bdqffdq.owl`, and the List of Terms `document_configuration.yaml` files in [tdwg/bdq](https://github.com/tdwg/bdq).
 
@@ -29,16 +29,15 @@ The converters wrote a single release; `bdq_split_by_date.py` then split it into
 
 ## Processing
 
-Process the releases in date order, from the `process` directory. After each release, copy that release's BDQ mapping files (and the `bdqffdq` axioms file) into the dataset directories; `process.py` creates a new term list's mapping files from the templates, and the BDQ files replace them:
+Process the releases in date order, from the `process` directory. After each release, copy that release's BDQ mapping files into the dataset directories; `process.py` creates a new term list's mapping files from the templates, and the BDQ files replace them. The axioms file is handled by `process.py`:
 
 ```bash
 for d in $(ls -d bdq-revisions/bdq-revisions-20* | sort); do
   python process.py --config $d/config.yaml || break
   if [ -d $d/mappings ]; then (cd $d/mappings && for m in */; do cp "$m"* "../../../../$m"; done); fi
-  if [ -f $d/bdqffdq-axioms.ttl ]; then cp $d/bdqffdq-axioms.ttl ../bdqffdq/; fi
 done
 ```
 
-Use `--dry-run` first to check a release. The axioms file is kept next to the current terms (`bdqffdq/bdqffdq.csv`); it is not loaded into BaseX.
+Use `--dry-run` first to check a release. For the extension term list, `process.py` writes the current axioms (`bdqffdq/bdqffdq-axioms.{ttl,rdf,jsonld}`) and an immutable copy per version (`bdqffdq/axioms-versions/`), and records the list, its versions, members, and distributions in `term-lists/` and `term-lists-versions/`. The distributions' access URLs point to the `bdq` branch (`distribution_base_url` in `config.yaml`).
 
 Each release's `config.yaml` sets `new_term_list: true` only for the term lists that the release creates. A release can be rerun on the same date (for example the last one, after correcting its inputs); for an earlier release, rebuild from the first release, because each later release depends on it.

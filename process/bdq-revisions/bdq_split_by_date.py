@@ -79,6 +79,14 @@ for v, (header, rows) in inputs.items():
             sys.exit(f'no draft date for {v}:{row[0]}')
         by_date.setdefault(dates[key], {}).setdefault(v, []).append(row)
 draft_dates = sorted(by_date)
+# The faithful axioms belong to the first draft release by which every term they refer to exists.
+faithful_axioms = rdflib.Graph().parse(faithful / 'bdqffdq-axioms.ttl', format='turtle')
+axiom_terms = {str(n)[len(B):] for t in faithful_axioms for n in t
+               if isinstance(n, rdflib.URIRef) and str(n).startswith(B) and str(n) != B}
+missing = sorted(t for t in axiom_terms if (FFDQ, t) not in dates)
+if missing:
+    sys.exit('axioms refer to terms with no draft date: ' + ', '.join(missing))
+axioms_date = max(dates[(FFDQ, t)] for t in axiom_terms)
 if draft_dates[-1] >= final_date:
     sys.exit('a draft date is not before the final release')
 first_date = {v: min(d for d in draft_dates if v in by_date[d]) for v in inputs}
@@ -110,6 +118,9 @@ def write_config(directory, date, vocabularies_present):
     c['vocabularies'] = [v for v in c['vocabularies'] if v['namespaces'][0]['database'] in vocabularies_present]
     for v in c['vocabularies']:
         v['namespaces'][0]['new_term_list'] = (first_date[v['namespaces'][0]['database']] == date)
+    for v in c['vocabularies']:                     # the extension term list exists from axioms_date on
+        if 'extension_lists' in v and date < axioms_date:
+            del v['extension_lists']
     lists = {v['list_of_terms_iri'] for v in c['vocabularies']}
     c['documents'] = [d for d in c['documents'] if d['document'] in lists]
     header = (f'# BDQ draft release {date} for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).\n'
@@ -133,8 +144,8 @@ for date in draft_dates:
             for ds in (v, v + '-versions'):
                 src = (faithful if v == FFDQ else final) / 'mappings' / ds
                 shutil.copytree(src, d / 'mappings' / ds)
-            if v == FFDQ:
-                shutil.copy(faithful / 'bdqffdq-axioms.ttl', d / 'bdqffdq-axioms.ttl')
+    if date == axioms_date:
+        shutil.copy(faithful / 'bdqffdq-axioms.ttl', d / 'bdqffdq-axioms.ttl')
     present |= set(by_date[date])
     for v in sorted(present - set(by_date[date])):    # every declared vocabulary needs a release-input CSV
         write_csv(d / f'{v}.csv', inputs[v][0], [])
