@@ -1,0 +1,2 @@
+term_localName,label,prefLabel,definition,usage,notes,controlled_value_string,skos_inScheme,type,type1,hasFitnessRequirements
+defaultOccurrenceStatus,defaultOccurrenceStatus,defaultOccurrenceStatus,A provided default value for dwc:occurrenceStatus that is used when a required dwc:occurrenceStatus is bdqval:Empty.,,,defaultOccurrenceStatus,https://rs.tdwg.org/bdqval/terms/,https://rs.tdwg.org/bdqffdq/terms/Parameter,http://www.w3.org/2002/07/owl#NamedIndividual,

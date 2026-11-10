@@ -1,0 +1,21 @@
+term_localName,label,prefLabel,definition,notes,usage,controlled_value_string,type,type1,subClassOf,subClassOf1,subClassOf2,subPropertyOf,subPropertyOf1,subPropertyOf2,subPropertyOf3,range,differentFrom,differentFrom1
+AmendmentResponse,Amendment Response,Amendment Response,A bdqffdq:Response expressing the result of a bdqffdq:Implementation evaluating a bdqffdq:Amendment supporting a particular bdqffdq:DataQualityNeed to improve a particular bdqffdq:DataResource.,"The bdqffdq:AmendmentResponse type is a Report layer concept (see Figure 3 in Veiga et al., 2017) that describes the results of the execution of a Test that performs a bdqffdq:AmendmentMethod following a bdqffdq:Specification to propose changes based on a bdqffdq:Amendment. 
+
+A bdqffdq:AmendmentResponse is expected to carry, through bdqffdq:hasResponseStatus, a bdqffdq:ResponseStatus result that includes a status bdqffdq:FILLED_IN or bdqffdq:AMENDED, as well as a bdqffdq:hasResponseResultValue that asserts proposed changes to values from the original data.
+
+DQA(dr) = { dqa | dqa ∈ RespA ⋀ (dr, dqa) ∈ rel_DQA }",,,http://www.w3.org/2002/07/owl#Class,,https://rs.tdwg.org/bdqffdq/terms/AmendmentConcept,https://rs.tdwg.org/bdqffdq/terms/Response,,,,,,,,
+IssueResponse,Issue Response,Issue Response,A bdqffdq:Response expressing the result of a bdqffdq:Implementation evaluating a bdqffdq:Issue for a particular bdqffdq:DataQualityNeed in a particular bdqffdq:DataResource.,"The bdqffdq:DataQualityReport concept describing the output of a Test in the negative (i.e., identifying the potential absence of data quality). 
+
+If a problem was found, the bdqffdq:IssueResponse is expected to carry, through bdqffdq:hasResponseResult, a bdqffdq:ResponseResult value of bdqffdq:IS_ISSUE, if a potential problem was found that requires human review, the bdqffdq:ResponseResult is expected to be bdqffdq:POTENTIAL_ISSUE, otherwise if the bdqffdq:ResponseStatus is bdqffdq:RUN_HAS_RESULT, the bdqffdq:ResponseResult is expected to be bdqffdq:NOT_ISSUE.
+
+DQI(dr) = { dqi | dqi ∈ RespI ⋀ (dr, dqi) ∈ rel_DQI }",,,http://www.w3.org/2002/07/owl#Class,,https://rs.tdwg.org/bdqffdq/terms/IssueConcept,https://rs.tdwg.org/bdqffdq/terms/Response,,,,,,,,
+MeasurementResponse,Measurement Response,Measurement Response,A bdqffdq:Response expressing the result of a bdqffdq:Implementation measuring a particular bdqffdq:DataQualityNeed in a particular bdqffdq:DataResource.,"A bdqffdq:MeasurementResponse is a Report layer concept (see Figure 3 in Veiga et al., 2017) that describes the output of the execution of a Test that performs a bdqffdq:MeasurementMethod following a bdqffdq:Specification to assess a data quality bdqffdq:Measure. 
+
+A MeasuremenResponse is expected to carry a bdqffdq:ResponseResult, through bdqffdq:hasResponseResult of bdqffdq:COMPLETE or bdqffdq:NOT_COMPLETE or a numeric measured value (e.g., a bdqffdq:Measure of a dwc:eventDate duration in seconds).
+
+DQM(dr) = { dqm | dqm ∈ RespM ⋀ (dr, dqm) ∈ rel_DQM }",,,http://www.w3.org/2002/07/owl#Class,,https://rs.tdwg.org/bdqffdq/terms/MeasurementConcept,https://rs.tdwg.org/bdqffdq/terms/Response,,,,,,,,
+ValidationResponse,Validation Response,Validation Response,A bdqffdq:Response expressing the result of a bdqffdq:Implementation validating compliance with a particular bdqffdq:DataQualityNeed in a particular bdqffdq:DataResource.,"The bdqffdq:ValidationResponse is a Report layer concept (see Figure 3 in Veiga et al., 2017) that describes the output of the execution of a Test that performs a bdqffdq:ValidationMethod following a bdqffdq:Specification to assess the validity of some data with respect to the bdqffdq:Criteria of a bdqffdq:Validation. 
+
+The bdqffdq:ValidationResponse concept is expected to carry through bdqffdq:hasResponseResult a bdqffdq:ResponseResult of bdqffdq:COMPLIANT or bdqffdq:NON_COMPLIANT.
+
+DQV(dr) = { dqv | dqv ∈ RespV ⋀ (dr, dqv) ∈ rel_DQV }",,,http://www.w3.org/2002/07/owl#Class,,https://rs.tdwg.org/bdqffdq/terms/Response,https://rs.tdwg.org/bdqffdq/terms/ValidationConcept,,,,,,,,
