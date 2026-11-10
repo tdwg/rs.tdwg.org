@@ -1,81 +1,88 @@
-# bdqffdq axioms: a vocabulary extension term list (TDWG Standards Documentation
-# Specification, Section 4.4.2.2). Statements that cannot be rows of bdqffdq.csv: the
-# ontology header, the owl:Restriction ranges, and the owl:AllDisjointClasses axioms.
-# process/build_ontology.py combines this file with the term list into the ontology,
-# and adds owl:versionIRI, dcterms:issued, and the declarations.
+# bdqffdq vocabulary extension term list (TDWG Standards Documentation Specification,
+# Section 4.4.2.2): axioms about bdqffdq terms that cannot be rows of bdqffdq.csv because
+# they need blank nodes. process/build_ontology.py combines this file with the term list
+# into the ontology https://rs.tdwg.org/bdqffdq/ (plan Section 9.5).
+# - owl:AllDisjointClasses: the four Test types; the three kinds of information element.
+# - Ranges as restrictions on the subject classes (owl:allValuesFrom), as described in
+#   the bdqffdq Concepts and Use guide, Section 3.1.
+# - owl:AllDifferent: the bdqffdq:ResponseStatus and bdqffdq:ResponseResult codes are distinct.
 @prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://rs.tdwg.org/bdqffdq/terms> a owl:Ontology ;
-    rdfs:label "Biodiversity Data Quality Fitness for Use Framework (Ontology)"@en ;
-    skos:note "The classes and object properties found in this ontology are dedicated to fundamental and derived concepts from the Fitness For Use Framework described in the paper by Veiga et al., available at: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178731 as modified to describe data quality fitness for use Tests in the TDWG BDQ Standard."@en .
+<https://rs.tdwg.org/bdqffdq/extension/> a owl:Ontology ;
+    rdfs:label "Fitness For Use Framework Ontology Vocabulary Extension"@en .
 
-bdqffdq:forAmendment rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:forAmendment ;
-            owl:someValuesFrom bdqffdq:Amendment ] .
+bdqffdq:AmendmentMethod rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Amendment ;
+            owl:onProperty bdqffdq:forAmendment ] .
 
-bdqffdq:forIssue rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:forIssue ;
-            owl:someValuesFrom bdqffdq:Issue ] .
+bdqffdq:DataQualityMethod rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Specification ;
+            owl:onProperty bdqffdq:hasSpecification ] .
 
-bdqffdq:forMeasure rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:forMeasure ;
-            owl:someValuesFrom bdqffdq:Measure ] .
+bdqffdq:DataQualityNeed rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:DataQualityDimension ;
+            owl:onProperty bdqffdq:hasDataQualityDimension ] .
 
-bdqffdq:forValidation rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:forValidation ;
-            owl:someValuesFrom bdqffdq:Validation ] .
+bdqffdq:Implementation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Mechanism ;
+            owl:onProperty bdqffdq:implementedBy ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Specification ;
+            owl:onProperty bdqffdq:usesSpecification ] .
 
-bdqffdq:hasCriterion rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:hasCriterion ;
-            owl:someValuesFrom bdqffdq:Criterion ] .
+bdqffdq:IssueMethod rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Issue ;
+            owl:onProperty bdqffdq:forIssue ] .
 
-bdqffdq:hasDataQualityDimension rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:hasDataQualityDimension ;
-            owl:someValuesFrom bdqffdq:DataQualityDimension ] .
+bdqffdq:MeasurementMethod rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Measure ;
+            owl:onProperty bdqffdq:forMeasure ] .
 
-bdqffdq:hasEnhancement rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:hasEnhancement ;
-            owl:someValuesFrom bdqffdq:Enhancement ] .
+bdqffdq:Policy rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:UseCase ;
+            owl:onProperty bdqffdq:hasUseCase ] .
 
-bdqffdq:hasSpecification rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:hasSpecification ;
-            owl:someValuesFrom bdqffdq:Specification ] .
+bdqffdq:ValidationMethod rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Validation ;
+            owl:onProperty bdqffdq:forValidation ] .
 
-bdqffdq:hasUseCase rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:hasUseCase ;
-            owl:someValuesFrom bdqffdq:UseCase ] .
+bdqffdq:ImprovementTarget rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Validation ;
+            owl:onProperty bdqffdq:targetedValidation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Issue ;
+            owl:onProperty bdqffdq:targetedIssue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Measure ;
+            owl:onProperty bdqffdq:targetedMeasure ] .
 
-bdqffdq:implementedBy rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:implementedBy ;
-            owl:someValuesFrom bdqffdq:Mechanism ] .
+bdqffdq:Amendment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:ImprovementTarget ;
+            owl:onProperty bdqffdq:improvedBy ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Enhancement ;
+            owl:onProperty bdqffdq:hasEnhancement ] .
 
-bdqffdq:improvedBy rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:improvedBy ;
-            owl:someValuesFrom bdqffdq:Amendment ] .
+bdqffdq:Issue rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Criterion ;
+            owl:onProperty bdqffdq:hasCriterion ] .
 
-bdqffdq:targetedIssue rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:targetedIssue ;
-            owl:someValuesFrom bdqffdq:Issue ] .
-
-bdqffdq:targetedMeasure rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:targetedMeasure ;
-            owl:someValuesFrom bdqffdq:Measure ] .
-
-bdqffdq:targetedValidation rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:targetedValidation ;
-            owl:someValuesFrom bdqffdq:Validation ] .
-
-bdqffdq:usesSpecification rdfs:range [ a owl:Restriction ;
-            owl:onProperty bdqffdq:usesSpecification ;
-            owl:someValuesFrom bdqffdq:Specification ] .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( bdqffdq:AbstractInformationElement bdqffdq:ActedUpon bdqffdq:Consulted ) .
+bdqffdq:Validation rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom bdqffdq:Criterion ;
+            owl:onProperty bdqffdq:hasCriterion ] .
 
 [] a owl:AllDisjointClasses ;
     owl:members ( bdqffdq:Amendment bdqffdq:Issue bdqffdq:Measure bdqffdq:Validation ) .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( bdqffdq:COMPLETE bdqffdq:COMPLIANT bdqffdq:IS_ISSUE bdqffdq:NOT_COMPLETE bdqffdq:NOT_COMPLIANT bdqffdq:NOT_ISSUE bdqffdq:POTENTIAL_ISSUE ) .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( bdqffdq:AMENDED bdqffdq:EXTERNAL_PREREQUISITES_NOT_MET bdqffdq:FILLED_IN bdqffdq:INTERNAL_PREREQUISITES_NOT_MET bdqffdq:NOT_AMENDED bdqffdq:RUN_HAS_RESULT ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( bdqffdq:AbstractInformationElement bdqffdq:ActedUpon bdqffdq:Consulted ) .
 

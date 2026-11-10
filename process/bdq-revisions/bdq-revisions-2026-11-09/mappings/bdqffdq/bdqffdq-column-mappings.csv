@@ -27,5 +27,3 @@ subPropertyOf1,rdfs:subPropertyOf,iri,,,$root
 subPropertyOf2,rdfs:subPropertyOf,iri,,,$root
 subPropertyOf3,rdfs:subPropertyOf,iri,,,$root
 range,rdfs:range,iri,,,$root
-differentFrom,owl:differentFrom,iri,,,$root
-differentFrom1,owl:differentFrom,iri,,,$root
