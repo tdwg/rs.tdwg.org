@@ -116,6 +116,7 @@ The axioms file is a vocabulary extension term list (SDS 2.2.3, 3.3.3, 4.4.2.2):
     database: bdqffdq                  # dataset directory for the axioms files
     axioms_file: bdqffdq-axioms.ttl    # in the release directory when the axioms change
     distribution_base_url: https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/
+    browser_redirect: https://...       # the human-readable document, for HTML requests
 ```
 
 Declare it from the first release that contains the axioms file. In each release whose directory contains the axioms file, `process.py` (with `extension_lists.py`) compares the axioms with the current ones. If they differ, or the list is new, it:
@@ -126,4 +127,4 @@ Declare it from the first release that contains the axioms file. In each release
 - writes the distributions (`term-lists/term-lists-formats.csv`, `term-lists-versions/term-lists-versions-formats.csv`), following rs.tdwg.org's practice for Document distributions (`docs/docs-formats.csv`): `dcterms:hasFormat` to the access URL, typed `foaf:Document`, with `dc:format`. The access URL is the distribution's IRI; SDS 4.4.3 suggests `ac:accessURI`, which rs.tdwg.org does not use;
 - adds the extension term list to the vocabulary and creates the vocabulary and standard versions, as for any term list.
 
-The extension term list then dereferences like any term list. Its axioms are delivered as its distributions; the term list record itself is typed `tdwgutility:TermList` (the axioms files type it `owl:Ontology`). Unchanged axioms create no version, and a same-release rerun rewrites the version of that date. A release can declare the list without an axioms file when the axioms do not change. The axioms files are written deterministically.
+The extension term list then dereferences like any term list, with `dcterms:hasVersion` to its versions. HTML requests for the list and its versions redirect to `browser_redirect` (`term-lists/term-lists-redirects.csv`; SDS 3.3.3: the human-readable representation of an extension list is a separate document). Its axioms are delivered as its distributions; the term list record itself is typed `tdwgutility:TermList` (the axioms files type it `owl:Ontology`). Unchanged axioms create no version, and a same-release rerun rewrites the version of that date. A release can declare the list without an axioms file when the axioms do not change. The axioms files are written deterministically.
