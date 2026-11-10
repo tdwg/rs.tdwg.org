@@ -1,11 +1,10 @@
-# BDQ release declaration for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).
-# Generated from tdwg/bdq tg2/_review/vocabulary/*_term_versions.csv, bdqffdq.owl, and the List of Terms
-# document_configuration.yaml files (plan Section 8.3). Run with:
-#   python process.py --config bdq-revisions/bdq-revisions-2026-11-09/config.yaml
+# BDQ draft release 2026-11-09 for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).
+# Placeholder term versions dated from the BDQ draft; on ratification they become
+# real term versions with the release date (plan Section 8.5).
+# Run with: python process.py --config bdq-revisions/bdq-revisions-2026-11-09/config.yaml
 # Placeholders for the public review: standard YYY, decision_number YYY (plan 8.2.1).
 # Provisional: prepend_url and browserRedirectUri (/draft/ locations, plan 8.6), and the
 # vocabulary and term list labels and descriptions (drafted, to be reviewed by BDQ).
-# After the first run, set new_term_list: false for reruns (plan 8.3, Rerunning).
 standard_label: Biodiversity Data Quality (BDQ)
 standard: http://www.tdwg.org/standards/YYY
 standard_description: BDQ is a standard maintained by the Biodiversity Data Quality Maintenance Interest Group (to be constituted) and designed to facilitate the consistent development and use of a set of biodiversity data quality tests and assertions. The standard consists of vocabularies needed to define the tests, a guide to support the implementation of tests, a guide to support the interpretation of outputs of implemented tests, test data and expected responses from tests against this data to validate implemented tests.
@@ -797,7 +796,7 @@ vocabularies:
     pref_namespace_prefix: bdqffdq
     database: bdqffdq
     borrowed: false
-    new_term_list: true
+    new_term_list: false
     utility_namespace: false
     termlist_uri: ''
     prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqffdq/#
