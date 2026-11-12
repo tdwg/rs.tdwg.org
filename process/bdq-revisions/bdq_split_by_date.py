@@ -79,14 +79,20 @@ for v, (header, rows) in inputs.items():
             sys.exit(f'no draft date for {v}:{row[0]}')
         by_date.setdefault(dates[key], {}).setdefault(v, []).append(row)
 draft_dates = sorted(by_date)
-# The faithful axioms belong to the first draft release by which every term they refer to exists.
+# The faithful axioms are dated by their history in tdwg/bdq: the axioms of bdqffdq.owl
+# (restriction ranges, owl:AllDisjointClasses) last changed on 2024-10-01 (commit 8005faba)
+# before the decided changes (plan Section 9.6). Every term they refer to must exist by then.
+FAITHFUL_AXIOMS_DATE = '2024-10-01'
 faithful_axioms = rdflib.Graph().parse(faithful / 'bdqffdq-axioms.ttl', format='turtle')
 axiom_terms = {str(n)[len(B):] for t in faithful_axioms for n in t
                if isinstance(n, rdflib.URIRef) and str(n).startswith(B) and str(n) != B}
 missing = sorted(t for t in axiom_terms if (FFDQ, t) not in dates)
 if missing:
     sys.exit('axioms refer to terms with no draft date: ' + ', '.join(missing))
-axioms_date = max(dates[(FFDQ, t)] for t in axiom_terms)
+axioms_date = FAITHFUL_AXIOMS_DATE
+late = sorted(t for t in axiom_terms if dates[(FFDQ, t)] > axioms_date)
+if late:
+    sys.exit('axioms refer to terms first versioned after ' + axioms_date + ': ' + ', '.join(late))
 if draft_dates[-1] >= final_date:
     sys.exit('a draft date is not before the final release')
 first_date = {v: min(d for d in draft_dates if v in by_date[d]) for v in inputs}
@@ -132,12 +138,12 @@ def write_config(directory, date, vocabularies_present):
 
 
 present = set()
-for date in draft_dates:
+for date in sorted(set(draft_dates) | {axioms_date}):    # the axioms may have a release of their own
     d = revisions / f'bdq-revisions-{date}'
     if d.exists():
         shutil.rmtree(d)
     d.mkdir(parents=True)
-    for v, rows in sorted(by_date[date].items()):
+    for v, rows in sorted(by_date.get(date, {}).items()):
         header = inputs[v][0]
         write_csv(d / f'{v}.csv', header, rows)
         if first_date[v] == date:        # the release that creates the term list carries its mappings
@@ -146,11 +152,11 @@ for date in draft_dates:
                 shutil.copytree(src, d / 'mappings' / ds)
     if date == axioms_date:
         shutil.copy(faithful / 'bdqffdq-axioms.ttl', d / 'bdqffdq-axioms.ttl')
-    present |= set(by_date[date])
-    for v in sorted(present - set(by_date[date])):    # every declared vocabulary needs a release-input CSV
+    present |= set(by_date.get(date, {}))
+    for v in sorted(present - set(by_date.get(date, {}))):    # every declared vocabulary needs a release-input CSV
         write_csv(d / f'{v}.csv', inputs[v][0], [])
     write_config(d, date, present)
-    print(date, {v: len(r) for v, r in sorted(by_date[date].items())})
+    print(date, {v: len(r) for v, r in sorted(by_date.get(date, {}).items())}, '+ axioms' if date == axioms_date else '')
 
 # Reduce the final release to the changed bdqffdq rows; keep its decided mappings and axioms.
 for v in SIMPLE:
