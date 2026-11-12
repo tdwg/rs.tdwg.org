@@ -18,8 +18,11 @@ A vocabulary in config.yaml declares its extension term lists with:
       distribution_base_url: https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/
       browser_redirect: https://...       # optional: human-readable document for HTML requests
 
-When the release directory contains the axioms file and its axioms differ from the
-current ones (or the list is new), this step:
+The list is versioned as any term list is: a release creates a new version when the list
+is new, when its axioms change (the release directory contains the axioms file and its
+axioms differ from the current ones), or when one of its member terms has a new version
+since the latest earlier version of the list. The version thus takes the date of the most
+recent change of the axioms or of a linked term. When it creates a version, this step:
 
 - writes the current axioms to <database>/<database>-axioms.{ttl,rdf,jsonld} and an
   immutable copy for the version to <database>/axioms-versions/<database>-axioms-<date>.*;
@@ -31,8 +34,8 @@ current ones (or the list is new), this step:
   distributions (term-lists-versions-formats.csv);
 - returns what the release loop needs to update the vocabulary and standard versions.
 
-Unchanged axioms create nothing, and a same-release rerun rewrites the version of that
-date in place. Requires rdflib.
+Otherwise nothing is written. A same-release rerun leaves or rewrites the version of that
+date identically. Requires rdflib.
 """
 import datetime
 import os
@@ -151,28 +154,32 @@ def process_extension_list(ext, vocabulary_namespaces, ctx):
     rows = [n for n in range(1, len(term_lists)) if term_lists[n][col['list']] == list_uri]
     is_new = not rows
 
-    if not os.path.exists(release_axioms):
-        if is_new:
-            raise ValueError('New extension term list ' + list_uri + ' has no axioms file ' + release_axioms)
+    OWL, RDF = rdflib.namespace.OWL, rdflib.namespace.RDF
+    subject = rdflib.URIRef(list_uri)
+
+    def normalized(g):
+        """The axioms without the list's owl:versionIRI, with its owl:Ontology type."""
+        out = rdflib.Graph()
+        for t in g:
+            if not (t[0] == subject and t[1] == OWL.versionIRI):
+                out.add(t)
+        out.add((subject, RDF.type, OWL.Ontology))
+        return out
+
+    release_has_axioms = os.path.exists(release_axioms)
+    current = normalized(rdflib.Graph().parse(current_base + '.ttl', format='turtle')) \
+        if os.path.exists(current_base + '.ttl') else None
+    if is_new and not release_has_axioms:
+        raise ValueError('New extension term list ' + list_uri + ' has no axioms file ' + release_axioms)
+    if release_has_axioms:
+        graph = normalized(rdflib.Graph().parse(release_axioms, format='turtle'))
+    elif current is not None:
+        graph = current
+    else:
         return False, term_lists, rows[0], None, False
 
-    graph = rdflib.Graph().parse(release_axioms, format='turtle')
-    tlv = read_csv('../term-lists-versions/term-lists-versions.csv')
-    th = tlv[0]
-    tcol = {name: th.index(name) for name in th}
-    earlier = [r for r in tlv[1:] if r[tcol['list']] == list_uri and r[tcol['version_modified']] < date_issued]
-    same_date = [r for r in tlv[1:] if r[tcol['list']] == list_uri and r[tcol['version_modified']] == date_issued]
-    if not is_new and not same_date and os.path.exists(current_base + '.ttl'):
-        current = rdflib.Graph().parse(current_base + '.ttl', format='turtle')
-        current.remove((rdflib.URIRef(list_uri), rdflib.namespace.OWL.versionIRI, None))
-        compare = rdflib.Graph()
-        for t in graph:
-            compare.add(t)
-        compare.add((rdflib.URIRef(list_uri), rdflib.namespace.RDF.type, rdflib.namespace.OWL.Ontology))
-        if rdflib.compare.isomorphic(current, compare):
-            return False, term_lists, rows[0], None, False
-
-    # Members: the terms of the vocabulary's term lists that the axioms are about.
+    # Members: the terms of the vocabulary's term lists that the axioms are about, and
+    # their term versions applicable on the release date.
     term_iris = {}
     for namespace in vocabulary_namespaces:
         if namespace.get('utility_namespace') or namespace.get('borrowed'):
@@ -188,6 +195,21 @@ def process_extension_list(ext, vocabulary_namespaces, ctx):
     member_versions = []
     for db, ns in sorted(set(term_iris[m] for m in members)):
         member_versions += _applicable_term_versions(read_csv, db, [m for m in members if term_iris[m] == (db, ns)], ns, date_issued)
+
+    # A version is created, as for any term list, when the list is new, when its axioms
+    # change, or when one of its member terms has a new version since the latest earlier
+    # version of the list: the version then takes the date of the most recent change of
+    # the axioms or of a linked term. A same-release rerun rewrites the version of that date.
+    tlv = read_csv('../term-lists-versions/term-lists-versions.csv')
+    th = tlv[0]
+    tcol = {name: th.index(name) for name in th}
+    earlier = [r for r in tlv[1:] if r[tcol['list']] == list_uri and r[tcol['version_modified']] < date_issued]
+    previous = max(earlier, key=lambda r: r[tcol['version_modified']])[tcol['version']] if earlier else None
+    axioms_changed = is_new or current is None or (release_has_axioms and not rdflib.compare.isomorphic(current, graph))
+    previous_members = {r[1] for r in read_csv('../term-lists-versions/term-lists-versions-members.csv')[1:] if r[0] == previous}
+    members_changed = previous is None or set(member_versions) != previous_members
+    if not (axioms_changed or members_changed):
+        return False, term_lists, rows[0], None, False
 
     # Axioms files: current, and an immutable copy for this version.
     version_base = os.path.join('..', database, 'axioms-versions', database + '-axioms-' + date_issued)
@@ -233,7 +255,6 @@ def process_extension_list(ext, vocabulary_namespaces, ctx):
     tlvm = [tlvm[0]] + [r for r in tlvm[1:] if r[0] != version_iri] + [[version_iri, v] for v in member_versions]
     write_csv('../term-lists-versions/term-lists-versions-members.csv', tlvm)
 
-    previous = max(earlier, key=lambda r: r[tcol['version_modified']])[tcol['version']] if earlier else None
     replacements = read_csv('../term-lists-versions/term-lists-versions-replacements.csv')
     replacements = [replacements[0]] + [r for r in replacements[1:] if r[0] != version_iri]
     if previous:
