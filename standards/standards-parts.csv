@@ -101,3 +101,13 @@ http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqcrit/doc/list/,foaf:Doc
 http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdquc/doc/list/,foaf:Document
 http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqval/doc/list/,foaf:Document
 http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqffdq/doc/list/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqffdq/doc/ontology/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqffdq/doc/extension/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqffdq/doc/guide/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqtest/doc/guide/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqtest/doc/qrg/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdq/doc/implementers/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdq/doc/users/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdq/doc/synthetic/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdq/doc/supplement/,foaf:Document
+http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdq/doc/tutorial/,foaf:Document
