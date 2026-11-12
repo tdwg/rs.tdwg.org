@@ -3113,10 +3113,10 @@ for vocabulary_config in vocabularies:
                 ('term-lists', 'term-lists-versions'), date_issued, local_offset_from_utc
             )
             higher_level_update_performed = True
-            report('Extension term list ' + extension_list['list_uri'] + ': axioms changed; created version ' +
+            report('Extension term list ' + extension_list['list_uri'] + ': axioms or member terms changed; created version ' +
                    extension_version + '.', indent=2)
         else:
-            report('Extension term list ' + extension_list['list_uri'] + ': no axiom changes.', indent=2)
+            report('Extension term list ' + extension_list['list_uri'] + ': no changes to its axioms or member terms.', indent=2)
 
     # A containment-only release still requires new higher-level versions even when
     # every configured namespace has a header-only modifications file. Use one
