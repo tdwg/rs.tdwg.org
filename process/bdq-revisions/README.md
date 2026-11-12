@@ -25,7 +25,13 @@ python -I bdq-revisions/bdqffdq_to_rs.py <path to tdwg/bdq> <path to rs.tdwg.org
 
 The converters wrote a single release; `bdq_split_by_date.py` then split it into the sequence, taking each term's draft date from `issued` in the BDQ term-version files and `dcterms:issued` in the draft `bdqffdq.owl` (tdwg/bdq `4aff59f0`; `bdqffdq:aggregatesResponsesFrom` has no date there and gets 2026-04-23, when it was added). The `bdqffdq` rows of the draft releases are the faithful conversion (`e229ed37`); `bdq-revisions-2026-11-09/` holds the 7 rows that the decided changes alter.
 
-`bdq_to_rs.py`, `bdqffdq_to_rs.py`, and `bdq_split_by_date.py` are for the public review only. They bootstrap these inputs from the files in tdwg/bdq, and are intended to be replaced by authoritative information kept in this repository: from now on, the files in the release directory are the source and are edited directly. Rerunning the scripts overwrites them.
+The BDQ documents other than the Lists of Terms (the ontology, Vocabulary Extension, guides, Quick Reference Guide, supplement, and tutorial; plan Section 11) were added to the `documents` of `bdq-revisions-2026-11-09/config.yaml` by `bdq_docs_to_rs.py` (from tdwg/bdq master `097a86ad`), with the document IRIs decided in plan Section 11.3. On the review site each has only its latest version, so they are declared only in the last release:
+
+```bash
+python -I bdq-revisions/bdq_docs_to_rs.py <path to tdwg/bdq> bdq-revisions/bdq-revisions-2026-11-09/config.yaml
+```
+
+`bdq_to_rs.py`, `bdqffdq_to_rs.py`, `bdq_split_by_date.py`, and `bdq_docs_to_rs.py` are for the public review only. They bootstrap these inputs from the files in tdwg/bdq, and are intended to be replaced by authoritative information kept in this repository: from now on, the files in the release directory are the source and are edited directly. Rerunning the scripts overwrites them.
 
 ## Processing
 
