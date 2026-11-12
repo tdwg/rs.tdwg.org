@@ -2931,6 +2931,8 @@ def vocabulary_metadata_changed(vocabulary_config):
 
 # Release-wide accumulators.
 changed_terms_iris = []
+# Extension term lists (extension_lists.py) that receive a new version in this release.
+changed_extension_list_iris = []
 namespace_results = []
 vocabulary_results = []
 displaced_vocabulary_iris = set()
@@ -3113,6 +3115,7 @@ for vocabulary_config in vocabularies:
                 ('term-lists', 'term-lists-versions'), date_issued, local_offset_from_utc
             )
             higher_level_update_performed = True
+            changed_extension_list_iris.append(extension_list['list_uri'])
             report('Extension term list ' + extension_list['list_uri'] + ': axioms or member terms changed; created version ' +
                    extension_version + '.', indent=2)
         else:
@@ -3371,6 +3374,8 @@ else:
     decisions_df.to_csv('../decisions/decisions.csv', index=False)
 
 # For each term that has changed, add the IRI and decision term_localName as a row to the decisions-links.csv file.
+# An extension term list that receives a new version (its axioms or member terms changed)
+# is linked in the same way, by its IRI, as terms are linked by their current IRIs.
 
 # Open and read in the decisions-links CSV file with all values as strings
 decisions_links_df = pd.read_csv('../decisions/decisions-links.csv', dtype=str)
@@ -3379,7 +3384,7 @@ decision_links_before = len(decisions_links_df)
 # Add a row to the decisions-links CSV file for each term that has changed
 new_decision_link_rows = []
 
-for term_iri in changed_terms_iris:
+for term_iri in changed_terms_iris + changed_extension_list_iris:
     row_dict = {}
     row_dict['linked_affected_resource'] = term_iri
     row_dict['decision_localName'] = decision_local_name
