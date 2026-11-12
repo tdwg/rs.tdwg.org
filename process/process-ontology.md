@@ -128,3 +128,37 @@ Declare it from the first release that contains the axioms file, and in every re
 - adds the extension term list to the vocabulary and creates the vocabulary and standard versions, as for any term list.
 
 The extension term list then dereferences like any term list, with `dcterms:hasVersion` to its versions. HTML requests for the list and its versions redirect to `browser_redirect` (`term-lists/term-lists-redirects.csv`; SDS 3.3.3: the human-readable representation of an extension list is a separate document). Its RDF (Turtle, RDF/XML, JSON-LD), for the list and for each version, is its metadata from the tables followed by its axioms: `term-lists/term-lists-axioms.csv` gives the axioms files of each extension list IRI, and `html/restxq.xqm` appends them (`page:with-axioms`). So `owl:imports <https://rs.tdwg.org/bdqffdq/extension/>` retrieves the axioms from rs.tdwg.org, and a version IRI retrieves that version's axioms. The axioms files are also listed as distributions. The term list record is typed `tdwgutility:TermList`; the axioms type the list `owl:Ontology`. If neither the axioms nor the member terms change, no version is created, and a same-release rerun leaves or rewrites the version of that date identically. A release declares the list without an axioms file when the axioms do not change; the current axioms are then used to find the members. The axioms files are written deterministically.
+
+## 5 Changing the axioms
+
+The source of an ontology's axioms is the axioms file in the release directories: the one in the latest release whose directory contains it holds the current axioms. The derived files (`<database>/<database>-axioms.*` and `<database>/axioms-versions/`) are written by `process.py`, and the generated ontology (Section 3) and any copies of it published elsewhere are outputs; editing them changes nothing. A change to the axioms is made, like a change to a term, as a new release.
+
+### 5.1 Procedure
+
+1. Create the release directory for the date of the change, with:
+   - `config.yaml`: the complete release declaration, as in the previous release, with the new `date_issued` and `release_directory`, `new_term_list: false` for every namespace, and the `extension_lists` declaration;
+   - a release-input CSV for every declared namespace: header only, unless terms also change in this release;
+   - the axioms file (`axioms_file`): a copy of the current axioms with the change, keeping the header that types the extension term list `owl:Ontology`. The `owl:versionIRI` is not part of the input; `process.py` adds it.
+
+   If the changed axioms refer to a new term, add the term to the term list's release-input CSV in the same release: the axioms may refer only to terms that exist on the release date. To correct the axioms of a release that has not been published yet, edit that release's axioms file and rerun it on the same date instead (Section 3.7 of `process-vocabulary.md`); the version of that date is rewritten.
+2. Run `python process.py --dry-run --config <release directory>/config.yaml`, then without `--dry-run`. The report says that the extension term list's axioms or member terms changed, and names the new version.
+3. Check the changes: `git diff --stat` and the shared tables, as after any release.
+4. Generate the ontology (Section 3), with ROBOT, to check that the changed axioms are still OWL 2 DL and consistent.
+
+### 5.2 Resulting versions
+
+| Resource | Effect of a release that changes only the axioms |
+|---|---|
+| Extension term list | new version dated by the release (e.g. `https://rs.tdwg.org/bdqffdq/version/extension/<date>`), with its immutable axioms files and distributions; members recomputed from the new axioms (the term versions applicable on the date); it replaces the previous version, which becomes superseded. The list's current axioms files and record are updated, so the list IRI returns the new axioms. |
+| Vocabulary | new version, whose members are the current term list version (unchanged) and the new extension term list version; it replaces the previous vocabulary version. |
+| Standard | new version. |
+| Generated ontology | `owl:versionIRI` becomes the new vocabulary version; `dcterms:issued` the release date. |
+| Terms, term versions, basic term list | unchanged: the axioms are not part of the term rows, and a term's RDF does not include them. |
+| List of Terms document | no new version. |
+
+Conversely, a release that changes a member term (a term the axioms are about) and not the axioms also creates a new extension term list version, with unchanged axioms and the new term version among its members (Section 4).
+
+### 5.3 Not yet covered
+
+- **Decision links.** `process.py` records the release's decision (`decisions/decisions.csv`) and links it to each changed term (`decisions/decisions-links.csv`, `linked_affected_resource`). A release that changes only the axioms therefore records a decision that links to nothing. The decision should also link to the extension term list when the release creates a version of it. Existing decision links point to the current resource (term IRIs, never version IRIs), so by analogy the link would be to the extension term list IRI. Not implemented: it needs a change to `process.py` and the agreement of the rs.tdwg.org maintainers.
+- **The human-readable document.** HTML requests for the extension term list redirect to `browser_redirect`, a document maintained by the standard's own build (for BDQ, the Vocabulary Extension document). That document is not a document record in rs.tdwg.org, so a change to the axioms creates no document version; the standard's build regenerates the document separately.
