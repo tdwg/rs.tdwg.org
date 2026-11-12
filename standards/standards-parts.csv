@@ -89,15 +89,3 @@ http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/terms/namespace/,foaf:D
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/terms/simple/,foaf:Document
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/hierarchy/,foaf:Document
 http://www.tdwg.org/standards/450,http://rs.tdwg.org/dwc/doc/inclusive/,foaf:Document
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqdim/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqenh/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqcrit/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdquc/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqval/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqffdq/,tdwgutility:Vocabulary
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqdim/doc/list/,foaf:Document
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqenh/doc/list/,foaf:Document
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqcrit/doc/list/,foaf:Document
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdquc/doc/list/,foaf:Document
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqval/doc/list/,foaf:Document
-http://www.tdwg.org/standards/YYY,https://rs.tdwg.org/bdqffdq/doc/list/,foaf:Document
