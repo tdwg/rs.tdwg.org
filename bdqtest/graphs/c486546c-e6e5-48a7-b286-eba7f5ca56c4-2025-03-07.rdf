@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/c486546c-e6e5-48a7-b286-eba7f5ca56c4-2025-03-07">
+    <dcterms:description>Is there a value in dwc:occurrenceID?</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/c486546c-e6e5-48a7-b286-eba7f5ca56c4"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:issued>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
+    <rdfs:label>VALIDATION_OCCURRENCEID_NOTEMPTY</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/47</skos:historyNote>
+    <skos:note></skos:note>
+    <skos:prefLabel>Validation dwc:occurrenceID Not Empty for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:c25c5737-ece9-4b6d-a5f2-6e661d35c325"/>
+    <bdqffdq:hasCriterion rdf:resource="https://rs.tdwg.org/bdqcrit/terms/NotEmpty"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Completeness"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-17</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Completeness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:296e08b2-c044-4cef-930e-8d29c579c8d6">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_OCCURRENCEID_NOTEMPTY with Specification for: VALIDATION_OCCURRENCEID_NOTEMPTY</rdfs:label>
+    <skos:historyNote>Source: VertNet</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L173</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)</skos:note>
+    <skos:note>TG2 Validation OTHER CODED Test Completeness CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_OCCURRENCEID_NOTEMPTY with Specification for: VALIDATION_OCCURRENCEID_NOTEMPTY</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c486546c-e6e5-48a7-b286-eba7f5ca56c4-2025-03-07"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:3d9e1339-19d7-47e7-af9e-11905df82b6a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c486546c-e6e5-48a7-b286-eba7f5ca56c4-2025-03-07"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:c25c5737-ece9-4b6d-a5f2-6e661d35c325">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:occurrenceID</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:occurrenceID</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/NotEmpty">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>NotEmpty</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:3d9e1339-19d7-47e7-af9e-11905df82b6a">
+    <dcterms:description>COMPLIANT if dwc:occurrenceID is bdqval:NotEmpty; otherwise NOT_COMPLIANT</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: VALIDATION_OCCURRENCEID_NOTEMPTY</rdfs:label>
+    <skos:example>dwc:occurrenceID="": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dwc:occurrenceID is bdqval:Empty"</skos:example>
+    <skos:example>dwc:occurrenceID="https://www.inaturalist.org/observations/43047701": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="dwc:occurrenceID conforms to GUID structure"</skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>COMPLIANT if dwc:occurrenceID is bdqval:NotEmpty; otherwise NOT_COMPLIANT</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

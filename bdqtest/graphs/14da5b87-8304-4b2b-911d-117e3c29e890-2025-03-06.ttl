@@ -1,0 +1,70 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/14da5b87-8304-4b2b-911d-117e3c29e890-2025-03-06> .
+
+<urn:uuid:dbb803cb-8b37-4db3-a562-b4f6036f9d17> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_TAXONRANK_NOTEMPTY with Specification for: VALIDATION_TAXONRANK_NOTEMPTY" ;
+    skos:historyNote "Source: TDWG2018" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2127",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_TAXONRANK_NOTEMPTY with Specification for: VALIDATION_TAXONRANK_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/14da5b87-8304-4b2b-911d-117e3c29e890-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:c619ec9b-92ec-4047-a8d3-931e3324bf3e> .
+
+<https://rs.gbif.org/vocabulary/gbif/rank.xml> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "GBIF (2015) Taxonomic Rank GBIF Vocabulary. https://rs.gbif.org/vocabulary/gbif/rank.xml" .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:taxonRank" ;
+    skos:prefLabel "Information Element ActedUpon dwc:taxonRank" ;
+    bdqffdq:composedOf dwc:taxonRank .
+
+<urn:uuid:c619ec9b-92ec-4047-a8d3-931e3324bf3e> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_TAXONRANK_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if dwc:taxonRank is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:taxonRank=\" \": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:taxonRank is bdqval:Empty\"",
+        "dwc:taxonRank=\"genus\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:taxonRank is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if dwc:taxonRank is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/14da5b87-8304-4b2b-911d-117e3c29e890-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_TAXONRANK_NOTEMPTY" ;
+    dcterms:description "Is there a value in dwc:taxonRank?" ;
+    dcterms:isVersionOf bdqtest:14da5b87-8304-4b2b-911d-117e3c29e890 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://rs.gbif.org/vocabulary/gbif/rank.xml> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/161" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:taxonRank Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

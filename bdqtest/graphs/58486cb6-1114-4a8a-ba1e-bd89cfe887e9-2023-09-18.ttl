@@ -1,0 +1,89 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/58486cb6-1114-4a8a-ba1e-bd89cfe887e9-2023-09-18> .
+
+<urn:uuid:1f014694-573d-46e0-b38a-2acf71b32071> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_LOCATION_NOTEMPTY with Specification for: VALIDATION_LOCATION_NOTEMPTY" ;
+    skos:historyNote "Source: Lee Belbin" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L672",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_LOCATION_NOTEMPTY with Specification for: VALIDATION_LOCATION_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/58486cb6-1114-4a8a-ba1e-bd89cfe887e9-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:30ed5e2d-ef30-4988-8dbb-12c119e94ac3> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:033157e4-b8c3-466b-ba9a-38bc9b3ad86d> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:higherGeographyID, dwc:higherGeography, dwc:continent, dwc:country, dwc:countryCode, dwc:stateProvince, dwc:county, dwc:municipality, dwc:waterBody, dwc:island, dwc:islandGroup, dwc:locality, dwc:locationID, dwc:verbatimLocality, dwc:decimalLatitude, dwc:decimalLongitude, dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:footprintWKT" ;
+    skos:prefLabel "Information Element ActedUpon dwc:higherGeographyID, dwc:higherGeography, dwc:continent, dwc:country, dwc:countryCode, dwc:stateProvince, dwc:county, dwc:municipality, dwc:waterBody, dwc:island, dwc:islandGroup, dwc:locality, dwc:locationID, dwc:verbatimLocality, dwc:decimalLatitude, dwc:decimalLongitude, dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:footprintWKT" ;
+    bdqffdq:composedOf dwc:continent,
+        dwc:country,
+        dwc:countryCode,
+        dwc:county,
+        dwc:decimalLatitude,
+        dwc:decimalLongitude,
+        dwc:footprintWKT,
+        dwc:higherGeography,
+        dwc:higherGeographyID,
+        dwc:island,
+        dwc:islandGroup,
+        dwc:locality,
+        dwc:locationID,
+        dwc:municipality,
+        dwc:stateProvince,
+        dwc:verbatimCoordinates,
+        dwc:verbatimLatitude,
+        dwc:verbatimLocality,
+        dwc:verbatimLongitude,
+        dwc:waterBody .
+
+<urn:uuid:30ed5e2d-ef30-4988-8dbb-12c119e94ac3> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_LOCATION_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if at least one term needed to determine the location of the entity exists and is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:locationID=\"\", dwc:higherGeographyID=\"\", dwc:higherGeography=\"\", dwc:continent=\"\", dwc:waterBody=\"\", dwc:islandGroup=\"\", dwc:island=\"\", dwc:country=\"\", dwc:countryCode=\"\", dwc:stateProvince=\"\", dwc:county=\"\", dwc:municipality=\"\", dwc:locality=\"\", dwc:verbatimLocality=\"\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\", dwc:coordinateUncertaintyInMeters=\"\", dwc:geodeticDatum=\"\", dwc:verbatimCoordinates=\"\", dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:footprintWKT=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"All location fields are bdqval:Empty\"",
+        "dwc:locationID=\"https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9\", dwc:higherGeographyID=\"\", dwc:higherGeography=\"\",dwc:continent=\"\", dwc:waterBody=\"\", dwc:islandGroup=\"\", dwc:island=\"\", dwc:country=\"\", dwc:countryCode=\"\", dwc:stateProvince=\"\", dwc:county=\"\", dwc:municipality=\"\", dwc:locality=\"\", dwc:verbatimLocality=\"\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\", dwc:coordinateUncertaintyInMeters=\"\", dwc:geodeticDatum=\"\", dwc:verbatimCoordinates=\"\", dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:footprintWKT=\"\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:LocationID is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if at least one term needed to determine the location of the entity exists and is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/58486cb6-1114-4a8a-ba1e-bd89cfe887e9-2023-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_LOCATION_NOTEMPTY" ;
+    dcterms:description "Is there a value in any of the Darwin Core spatial terms that could specify a location?" ;
+    dcterms:isVersionOf bdqtest:58486cb6-1114-4a8a-ba1e-bd89cfe887e9 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/40" ;
+    skos:note "Only fails if all of the relevant fields of the Darwin Core Location class are EMPTY or do not exist. Relevant Darwin Core fields include dwc:locationID, dwc:higherGeographyID, dwc:higherGeography, dwc:continent, dwc:waterBody, dwc:islandGroup, dwc:island, dwc:country, dwc:countryCode, dwc:stateProvince, dwc:county, dwc:municipality, dwc:locality, dwc:verbatimLocality, dwc:decimalLatitude, dwc:decimalLongitude, dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:footprintWKT. Elevation and/or depth alone are deemed insufficient to meaningfully locate a position on the earth." ;
+    skos:prefLabel "Validation dcterms:Location Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:033157e4-b8c3-466b-ba9a-38bc9b3ad86d> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

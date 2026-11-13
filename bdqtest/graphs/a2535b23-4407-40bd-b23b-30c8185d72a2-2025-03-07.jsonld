@@ -1,0 +1,265 @@
+[
+  {
+    "@id": "https://doi.org/10.1371/journal.pone.0178731",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Completeness",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Completeness"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/MultiRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MultiRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Measure"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Measure if all VALIDATION_DECIMALLATITUDE_NOTEMPTY in a record set are COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/a2535b23-4407-40bd-b23b-30c8185d72a2"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://doi.org/10.1371/journal.pone.0178731"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/295"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "For Quality Assurance, filter record set until this measure is COMPLETE."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Measurement over MultiRecord for QualityAssurance of Validation dwc:decimalLatitude Not Empty for MultiRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:66a62ee2-d3be-4370-a42b-6d488b5c9b84"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Completeness"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/MultiRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Alien-Species"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Spatial-Temporal_Patterns"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:47010a99-41fa-41b7-9aac-189de9edc232",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "COMPLETE if every VALIDATION_DECIMALLATITUDE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "COMPLETE if every VALIDATION_DECIMALLATITUDE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE."
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:63076250-647e-470e-9d0d-14a81681266f",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: TG2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "TG2 Validation SPACE CODED Test Completeness CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forMeasure": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:47010a99-41fa-41b7-9aac-189de9edc232"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:66a62ee2-d3be-4370-a42b-6d488b5c9b84",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DECIMALLATITUDE_NOTEMPTY.Response"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Aggregated Response outcomes produced by VALIDATION_DECIMALLATITUDE_NOTEMPTY across a MultiRecord."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DECIMALLATITUDE_NOTEMPTY.Response"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/aggregatesResponsesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/7d2485d5-1ba7-4f25-90cb-f4480ff1a275"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07"
+      }
+    ]
+  }
+]

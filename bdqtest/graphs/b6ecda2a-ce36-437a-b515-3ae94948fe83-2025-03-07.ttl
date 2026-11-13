@@ -1,0 +1,88 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b6ecda2a-ce36-437a-b515-3ae94948fe83-2025-03-07> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b6ecda2a-ce36-437a-b515-3ae94948fe83-2025-03-07> .
+
+<urn:uuid:6f3a7ebb-e857-42e0-8051-4d06feeb4ab2> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_DECIMALLATITUDE_INRANGE with Specification for: VALIDATION_DECIMALLATITUDE_INRANGE" ;
+    skos:historyNote "Source: ALA, GBIF, OBIS" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2140",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test Conformance CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DECIMALLATITUDE_INRANGE with Specification for: VALIDATION_DECIMALLATITUDE_INRANGE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/b6ecda2a-ce36-437a-b515-3ae94948fe83-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:a5111c0c-d198-4ecc-af10-809ae2b3ae01> .
+
+<urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b6ecda2a-ce36-437a-b515-3ae94948fe83-2025-03-07> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+bdqcrit:InRange a bdqffdq:Criterion ;
+    rdfs:label "InRange" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:a5111c0c-d198-4ecc-af10-809ae2b3ae01> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_DECIMALLATITUDE_INRANGE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:decimalLatitude is bdqval:Empty or the value is not interpretable as a number; COMPLIANT if the value of dwc:decimalLatitude is between -90 and 90, inclusive; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:decimalLatitude=\"0.0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:decimalLatitude is in RANGE\"",
+        "dwc:decimalLatitude=\"121.0534\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:decimalLatitude is in not in RANGE\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:decimalLatitude is bdqval:Empty or the value is not interpretable as a number; COMPLIANT if the value of dwc:decimalLatitude is between -90 and 90, inclusive; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:e7528e9b-e4d8-42bf-b6e1-169587ca69b8> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:decimalLatitude" ;
+    skos:prefLabel "Information Element ActedUpon dwc:decimalLatitude" ;
+    bdqffdq:composedOf dwc:decimalLatitude .
+
+<https://rs.tdwg.org/bdqtest/terms/version/b6ecda2a-ce36-437a-b515-3ae94948fe83-2025-03-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_DECIMALLATITUDE_INRANGE" ;
+    dcterms:description "Is the value of dwc:decimalLatitude a number between -90 and 90 inclusive?" ;
+    dcterms:isVersionOf bdqtest:b6ecda2a-ce36-437a-b515-3ae94948fe83 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/79" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:decimalLatitude In Range for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e7528e9b-e4d8-42bf-b6e1-169587ca69b8> ;
+    bdqffdq:hasCriterion bdqcrit:InRange ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

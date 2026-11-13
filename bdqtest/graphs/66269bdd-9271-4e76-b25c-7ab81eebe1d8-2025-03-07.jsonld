@@ -1,0 +1,276 @@
+[
+  {
+    "@id": "https://en.wikipedia.org/wiki/ISO_8601",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqcrit/terms/Standard",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Criterion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Standard"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Conformance"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2025-03-07",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Validation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Is the value of dwc:dateIdentified a valid ISO date?"
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/66269bdd-9271-4e76-b25c-7ab81eebe1d8"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/ISO_8601"
+      },
+      {
+        "@id": "https://www.iso.org/obp/ui/"
+      },
+      {
+        "@id": "https://www.loc.gov/standards/datetime/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "VALIDATION_DATEIDENTIFIED_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/69"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Validation dwc:dateIdentified Standard for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasCriterion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqcrit/terms/Standard"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-09-16"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Spatial-Temporal_Patterns"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.iso.org/obp/ui/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.loc.gov/standards/datetime/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2025-03-07"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:4c6a5522-ae8c-42d3-a396-8fc3aee49ef9",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationMethod: VALIDATION_DATEIDENTIFIED_STANDARD with Specification for: VALIDATION_DATEIDENTIFIED_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCOtherDateDQ.java#L61"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)"
+      },
+      {
+        "@value": "TG2 Validation TIME CODED Test Conformance ISO/DCMI STANDARD CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationMethod: VALIDATION_DATEIDENTIFIED_STANDARD with Specification for: VALIDATION_DATEIDENTIFIED_STANDARD"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forValidation": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2025-03-07"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:89f8b2ea-fc35-4941-929a-0e32cfbeb1a6"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:89f8b2ea-fc35-4941-929a-0e32cfbeb1a6",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:dateIdentified is bdqval:Empty; COMPLIANT if the value of dwc:dateIdentified contains a valid ISO 8601 date; otherwise NOT_COMPLIANT"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: VALIDATION_DATEIDENTIFIED_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:dateIdentified=\"1963-03-08T14:07\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:dateIdentified is a valid ISO 8601-1:2019 date\""
+      },
+      {
+        "@value": "dwc:dateIdentified=\"1963-03-08X14:07-0600\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:dateIdentified is not a valid ISO 8601-1:2019 date\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:dateIdentified is bdqval:Empty; COMPLIANT if the value of dwc:dateIdentified contains a valid ISO 8601 date; otherwise NOT_COMPLIANT"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:dateIdentified"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:dateIdentified"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/dateIdentified"
+      }
+    ]
+  }
+]

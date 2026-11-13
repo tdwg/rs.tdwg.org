@@ -1,0 +1,68 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (91) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/56b6c695-adf1-418e-95d2-da04cad7be53-2024-09-16> .
+
+<urn:uuid:d5732888-e5d4-4fa7-89dd-09baf1773e07> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MEASURE_EVENTDATE_DURATIONINSECONDS with Specification Specification for: MEASURE_EVENTDATE_DURATIONINSECONDS" ;
+    skos:historyNote "Source: Alex Thompson" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L120",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Measure TIME CODED Test CORE" ;
+    skos:prefLabel "MeasurementMethod: MEASURE_EVENTDATE_DURATIONINSECONDS with Specification Specification for: MEASURE_EVENTDATE_DURATIONINSECONDS" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/56b6c695-adf1-418e-95d2-da04cad7be53-2024-09-16> ;
+    bdqffdq:hasSpecification <urn:uuid:be93a0ef-9bf7-417f-a26e-daae5d00dabb> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqdim:Resolution a bdqffdq:DataQualityDimension ;
+    rdfs:label "Resolution" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<urn:uuid:be93a0ef-9bf7-417f-a26e-daae5d00dabb> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MEASURE_EVENTDATE_DURATIONINSECONDS" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or if the value of dwc:eventDate is not a valid ISO 8601 date; otherwise RUN_HAS_RESULT with the result being the duration (sensu ISO 8601) expressed in the dwc:eventDate, in seconds." ;
+    skos:example "dwc:eventDate=\"1880-05-08/10\": Response.status=RUN_HAS_RESULT, Response.result=\"259200\", Response.comment=\"dwc:eventDate duration is 3 days = 259,200 seconds\"",
+        "dwc:eventDate=\"95\": Response.status=INTERNAL_PREREQUISITES_NOT_MET, Response.result=NOT_REPORTED, Response.comment=\"dwc:eventDate does not contain a valid ISO 8601-1:2019 date\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or if the value of dwc:eventDate is not a valid ISO 8601 date; otherwise RUN_HAS_RESULT with the result being the duration (sensu ISO 8601) expressed in the dwc:eventDate, in seconds." .
+
+<urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:eventDate" ;
+    skos:prefLabel "Information Element ActedUpon dwc:eventDate" ;
+    bdqffdq:composedOf dwc:eventDate .
+
+<https://rs.tdwg.org/bdqtest/terms/version/56b6c695-adf1-418e-95d2-da04cad7be53-2024-09-16> a bdqffdq:Measure ;
+    rdfs:label "MEASURE_EVENTDATE_DURATIONINSECONDS" ;
+    dcterms:description "What is the duration of dwc:eventDate in seconds?" ;
+    dcterms:isVersionOf bdqtest:56b6c695-adf1-418e-95d2-da04cad7be53 ;
+    dcterms:issued "2024-09-16"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/140" ;
+    skos:note "The duration of a day is 86400 seconds. Implementations should treat all days as 86400 seconds, but should include leap days (but not leap seconds) in durations that encompass them. Consumers should treat assertions about event date duration as approximations, see: https://xkcd.com/2867/" ;
+    skos:prefLabel "Measure dwc:eventDate Duration in Seconds for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Resolution ;
+    bdqffdq:hasDateLastUpdated "2024-09-16"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

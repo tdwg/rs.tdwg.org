@@ -1,0 +1,79 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/7bdb13a4-8a51-4ee5-be7f-20693fdb183e-2025-03-06> .
+
+<urn:uuid:e95df0f4-b6b6-4e04-ad00-95eef6e8d993> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_TAXONRANK_STANDARD with Specification for: VALIDATION_TAXONRANK_STANDARD" ;
+    skos:historyNote "Source: TDWG2018" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2161",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_TAXONRANK_STANDARD with Specification for: VALIDATION_TAXONRANK_STANDARD" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/7bdb13a4-8a51-4ee5-be7f-20693fdb183e-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:c8964200-630e-47c6-baad-7e334fddbbdb> .
+
+<https://registry.gbif.org/vocabulary/TaxonRank/concepts> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "GBIF Registry (2023) GBIF Vocabulary: Taxonomic Rank. https://registry.gbif.org/vocabulary/TaxonRank/concepts" .
+
+bdqcrit:Standard a bdqffdq:Criterion ;
+    rdfs:label "Standard" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:taxonRank" ;
+    skos:prefLabel "Information Element ActedUpon dwc:taxonRank" ;
+    bdqffdq:composedOf dwc:taxonRank .
+
+<urn:uuid:c8964200-630e-47c6-baad-7e334fddbbdb> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_TAXONRANK_STANDARD" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:taxonRank is bdqval:Empty; COMPLIANT if the value of dwc:taxonRank is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = \"GBIF TaxonRank Vocabulary\" [https://api.gbif.org/v1/vocabularies/TaxonRank]} {\"dwc:taxonRank vocabulary API\" [https://api.gbif.org/v1/vocabularies/TaxonRank/concepts]}" ;
+    skos:example "dwc:taxonRank=\"kingdom\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:taxonRank has an equivalent in the bdqval:sourceAuthority\"",
+        "dwc:taxonRank=\"sp.\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:taxonRank does not have an equivalent in the bdqval:sourceAuthority\"" ;
+    bdqffdq:hasArgument <urn:uuid:da536dda-d467-450e-8b0a-6b6903fd1a1b> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"GBIF TaxonRank Vocabulary\" [https://api.gbif.org/v1/vocabularies/TaxonRank]} {\"dwc:taxonRank vocabulary API\" [https://api.gbif.org/v1/vocabularies/TaxonRank/concepts]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:taxonRank is bdqval:Empty; COMPLIANT if the value of dwc:taxonRank is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT." .
+
+<urn:uuid:da536dda-d467-450e-8b0a-6b6903fd1a1b> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF TaxonRank Vocabulary\"" ;
+    bdqffdq:hasArgumentValue "GBIF TaxonRank Vocabulary" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<https://rs.tdwg.org/bdqtest/terms/version/7bdb13a4-8a51-4ee5-be7f-20693fdb183e-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_TAXONRANK_STANDARD" ;
+    dcterms:description "Does the value of dwc:taxonRank occur in the bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:7bdb13a4-8a51-4ee5-be7f-20693fdb183e ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://registry.gbif.org/vocabulary/TaxonRank/concepts> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/162" ;
+    skos:note "This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters." ;
+    skos:prefLabel "Validation dwc:taxonRank Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e> ;
+    bdqffdq:hasCriterion bdqcrit:Standard ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

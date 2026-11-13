@@ -1,0 +1,272 @@
+[
+  {
+    "@id": "https://doi.org/10.15468/doc-gg7h-s853",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Completeness",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Completeness"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqenh/terms/FilledInFrom",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Enhancement"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "FilledInFrom"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2024-08-30",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Amendment"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Proposes an amendment or amendments to the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be interpreted from dwc:verbatimElevation."
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/2d638c8b-4c62-44a0-a14d-fa147bf9823d"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-30"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://doi.org/10.15468/doc-gg7h-s853"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/68"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "If the dwc:verbatimElevation as a single value rather than a range, the minimum and maximum values should be amended with the same value. When transforming units, the transformation should be reversible, not adjusting the number of significant digits or adjusting the rounding. For example, transform yards to meters by multiplying by 0.9144 and retaining added significant digits (verbatim elevation of 10 yards to minimum and maximum depths in meters of 9.144). Implementations should be capable of interpreting verbatim data in at least meters,yards, feet, and kilometers in the form of either a single value or a range. The units must be specified in the verbatim data to be interpretable."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Amendment dwc:minimumElevationInMeters dwc:maximumElevationInMeters from dwc:verbatimElevation for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:3d5994c8-29df-4399-965c-c2c596a6767f"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasConsultedInformationElement": [
+      {
+        "@id": "urn:uuid:0c598386-f49e-40b3-bbcc-b217e7d2b449"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Completeness"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-30"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasEnhancement": [
+      {
+        "@id": "https://rs.tdwg.org/bdqenh/terms/FilledInFrom"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Spatial-Temporal_Patterns"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:0c598386-f49e-40b3-bbcc-b217e7d2b449",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Consulted"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element Consulted dwc:verbatimElevation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element Consulted dwc:verbatimElevation"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/verbatimElevation"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:3d5994c8-29df-4399-965c-c2c596a6767f",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:minimumElevationInMeters, dwc:maximumElevationInMeters"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:minimumElevationInMeters, dwc:maximumElevationInMeters"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/maximumElevationInMeters"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/minimumElevationInMeters"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:47bdaece-0c20-4ba3-b453-4c78b92b4c94",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AmendmentMethod: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1775"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)"
+      },
+      {
+        "@value": "TG2 Amendment SPACE CODED Test Completeness CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "AmendmentMethod: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forAmendment": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2024-08-30"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:84195393-4797-465f-bfc1-b764df67c5c2"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:84195393-4797-465f-bfc1-b764df67c5c2",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters or dwc:maximumElevationInMeters are bdqval:NotEmpty or dwc:verbatimElevation is bdqval:Empty; FILLED_IN the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be unambiguously interpreted from dwc:verbatimElevation; otherwise NOT_AMENDED"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:verbatimElevation=\"100 feet\", dwc:minimumElevationInMeters=\"\", dwc:maximumElevationInMeters=\"\": Response.status=FILLED_IN, Response.result=dwc:minimumElevationInMeters=\"30.48\", dwc:maximumElevationInMeters=\"30.48\", Response.comment=\"dwc:verbatimElevation contains an interpretable value\""
+      },
+      {
+        "@value": "dwc:verbatimElevation=\"x\", dwc:minimumElevationInMeters=\"\", dwc:maximumElevationInMeters=\"\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:verbatimElevation contains an uninterpretable value\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters or dwc:maximumElevationInMeters are bdqval:NotEmpty or dwc:verbatimElevation is bdqval:Empty; FILLED_IN the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be unambiguously interpreted from dwc:verbatimElevation; otherwise NOT_AMENDED"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AmendmentPolicy: (10) amendments  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2024-08-30"
+      }
+    ]
+  }
+]

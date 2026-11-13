@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="urn:uuid:ca6b9d39-4a1d-4ec5-925a-d1d67f95bea0">
+    <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL PREREQUISITES_NOT_MET if dwc:taxonRank is bdqval:Empty; AMENDED the value of dwc:taxonRank if it can be unambiguously matched to a term in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = "GBIF TaxonRank Vocabulary" [https://api.gbif.org/v1/vocabularies/TaxonRank]} {"dwc:taxonRank vocabulary API" [https://api.gbif.org/v1/vocabularies/TaxonRank/concepts]}}</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: AMENDMENT_TAXONRANK_STANDARDIZED</rdfs:label>
+    <skos:example>dwc:taxonRank="sic.": Response.status=NOT_AMENDED, Response.result="", Response.comment="dwc:taxonRank does not contain an interpretable value in the bdqval:sourceAuthority"</skos:example>
+    <skos:example>dwc:taxonRank="sp.": Response.status=AMENDED, Response.result=dwc:taxonRank="species", Response.comment="dwc:taxonRank contains an interpretable value in the bdqval:sourceAuthority"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:ef83a8c4-62f3-4e18-b589-07bc6f178cd7"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:sourceAuthority default = "GBIF TaxonRank Vocabulary" [https://api.gbif.org/v1/vocabularies/TaxonRank]} {"dwc:taxonRank vocabulary API" [https://api.gbif.org/v1/vocabularies/TaxonRank/concepts]}}</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL PREREQUISITES_NOT_MET if dwc:taxonRank is bdqval:Empty; AMENDED the value of dwc:taxonRank if it can be unambiguously matched to a term in the bdqval:sourceAuthority; otherwise NOT_AMENDED</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://registry.gbif.org/vocabulary/TaxonRank/concepts">
+    <dcterms:bibliographicCitation>GBIF Registry (2023) GBIF Vocabulary: Taxonomic Rank. https://registry.gbif.org/vocabulary/TaxonRank/concepts</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/e39098df-ef46-464c-9aef-bcdeee2a88cb-2023-09-18">
+    <dcterms:description>Proposes an amendment to the value of dwc:taxonRank using the bdqval:sourceAuthority.</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/e39098df-ef46-464c-9aef-bcdeee2a88cb"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:issued>
+    <dcterms:references rdf:resource="https://registry.gbif.org/vocabulary/TaxonRank/concepts"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Amendment"/>
+    <rdfs:label>AMENDMENT_TAXONRANK_STANDARDIZED</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/163</skos:historyNote>
+    <skos:note>For reference, information about possible values of dwc:taxonRank can be found at https://registry.gbif.org/vocabulary/TaxonRank/concepts</skos:note>
+    <skos:prefLabel>Amendment dwc:taxonRank Standardized for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasEnhancement rdf:resource="https://rs.tdwg.org/bdqenh/terms/Standardized"/>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:e9b8e041-3579-483a-a6aa-74bea442f6bd">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"/>
+    <rdfs:label>AmendmentMethod: AMENDMENT_TAXONRANK_STANDARDIZED with Specification Specification for: AMENDMENT_TAXONRANK_STANDARDIZED</rdfs:label>
+    <skos:historyNote>Source: TDWG2018</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2272</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris &amp; Dou 2025)</skos:note>
+    <skos:note>TG2 Amendment NAME CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>AmendmentMethod: AMENDMENT_TAXONRANK_STANDARDIZED with Specification Specification for: AMENDMENT_TAXONRANK_STANDARDIZED</skos:prefLabel>
+    <bdqffdq:forAmendment rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/e39098df-ef46-464c-9aef-bcdeee2a88cb-2023-09-18"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:ca6b9d39-4a1d-4ec5-925a-d1d67f95bea0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:taxonRank</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:taxonRank</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/taxonRank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:ef83a8c4-62f3-4e18-b589-07bc6f178cd7">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:sourceAuthority:"GBIF TaxonRank Vocabulary"</rdfs:label>
+    <bdqffdq:hasArgumentValue>GBIF TaxonRank Vocabulary</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Taxon-Management">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Taxon-Management</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqenh/terms/Standardized">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Enhancement"/>
+    <rdfs:label>Standardized</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:f44333a6-6c09-42f7-bb14-82540abcbff5">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"/>
+    <rdfs:label>AmendmentPolicy: (2) amendments  in UseCase bdquc:Taxon-Management</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/e39098df-ef46-464c-9aef-bcdeee2a88cb-2023-09-18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

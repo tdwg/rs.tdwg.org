@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Alien-Species">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Alien-Species</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/060e7734-607d-4737-8b2c-bfa17788bf1a-2024-02-09">
+    <dcterms:description>Does the value of dwc:degreeOfEstablishment occur in the bdqval:sourceAuthority?</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/060e7734-607d-4737-8b2c-bfa17788bf1a"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-09</dcterms:issued>
+    <dcterms:references rdf:resource="http://dwc.tdwg.org/doe/"/>
+    <dcterms:references rdf:resource="https://doi.org/10.3897/biss.3.38084"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
+    <rdfs:label>VALIDATION_DEGREEOFESTABLISHMENT_STANDARD</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/275</skos:historyNote>
+    <skos:note>This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters.</skos:note>
+    <skos:prefLabel>Validation dwc:degreeofEstablishment Standard for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:c5abcb06-a1d0-4ed5-9513-c04c194293e6"/>
+    <bdqffdq:hasCriterion rdf:resource="https://rs.tdwg.org/bdqcrit/terms/Standard"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-09</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dwc.tdwg.org/doe/">
+    <dcterms:bibliographicCitation>Darwin Core Maintenance Group (2021) Degree of Establishment Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). http://dwc.tdwg.org/doe/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/Standard">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>Standard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:8aac7359-311a-405f-8117-79bb4873011d">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:sourceAuthority:"Degree of Establishment Controlled Vocabulary List of Terms"</rdfs:label>
+    <bdqffdq:hasArgumentValue>Degree of Establishment Controlled Vocabulary List of Terms</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.3897/biss.3.38084">
+    <dcterms:bibliographicCitation>Groom et al. (2019) Improving Darwin Core for research and management of alien species. Biodiversity Information Science and Standards 3: e38084. https://doi.org/10.3897/biss.3.38084</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:fd15e0a4-f49d-4566-b700-a9b46c284e68">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD with Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1694</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)</skos:note>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD with Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/060e7734-607d-4737-8b2c-bfa17788bf1a-2024-02-09"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:fec2103b-5d46-4723-b2ec-8c8119b44aaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (26) validations  in UseCase bdquc:Alien-Species</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (26) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/060e7734-607d-4737-8b2c-bfa17788bf1a-2024-02-09"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:fec2103b-5d46-4723-b2ec-8c8119b44aaf">
+    <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:degreeOfEstablishment is bdqval:Empty; COMPLIANT if the value of dwc:degreeOfEstablishment is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = "Degree of Establishment Controlled Vocabulary List of Terms" {[https://dwc.tdwg.org/doe/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts]}</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD</rdfs:label>
+    <skos:example>dwc:degreeOfEstablishment="cultivated": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="dwc:degreeOfEstablishment found in the bdqval:sourceAuthority"</skos:example>
+    <skos:example>dwc:degreeOfEstablishment="grown in garden": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dwc:degreeOfEstablishment not found in the bdqval:sourceAuthority"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:8aac7359-311a-405f-8117-79bb4873011d"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:sourceAuthority default = "Degree of Establishment Controlled Vocabulary List of Terms" {[https://dwc.tdwg.org/doe/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts]}</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:degreeOfEstablishment is bdqval:Empty; COMPLIANT if the value of dwc:degreeOfEstablishment is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:c5abcb06-a1d0-4ed5-9513-c04c194293e6">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:degreeOfEstablishment</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:degreeOfEstablishment</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/degreeOfEstablishment"/>
+  </rdf:Description>
+</rdf:RDF>

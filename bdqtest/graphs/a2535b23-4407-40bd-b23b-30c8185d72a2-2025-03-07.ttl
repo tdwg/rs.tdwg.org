@@ -1,0 +1,71 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:63076250-647e-470e-9d0d-14a81681266f> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test Completeness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:47010a99-41fa-41b7-9aac-189de9edc232> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:47010a99-41fa-41b7-9aac-189de9edc232> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY" ;
+    dcterms:description "COMPLETE if every VALIDATION_DECIMALLATITUDE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_DECIMALLATITUDE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." .
+
+<urn:uuid:66a62ee2-d3be-4370-a42b-6d488b5c9b84> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DECIMALLATITUDE_NOTEMPTY.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_DECIMALLATITUDE_NOTEMPTY across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DECIMALLATITUDE_NOTEMPTY.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:7d2485d5-1ba7-4f25-90cb-f4480ff1a275 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/a2535b23-4407-40bd-b23b-30c8185d72a2-2025-03-07> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_DECIMALLATITUDE_NOTEMPTY" ;
+    dcterms:description "Measure if all VALIDATION_DECIMALLATITUDE_NOTEMPTY in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:a2535b23-4407-40bd-b23b-30c8185d72a2 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:decimalLatitude Not Empty for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:66a62ee2-d3be-4370-a42b-6d488b5c9b84> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

@@ -1,0 +1,82 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:abdca718-5564-4dbd-9d98-0a1707d6ecf2> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_OCCURRENCESTATUS_STANDARDIZED with Specification Specification for: AMENDMENT_OCCURRENCESTATUS_STANDARDIZED" ;
+    skos:historyNote "Source: ALA" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1119",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_OCCURRENCESTATUS_STANDARDIZED with Specification Specification for: AMENDMENT_OCCURRENCESTATUS_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/f8f3a093-042c-47a3-971a-a482aaaf3b75-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:fae50773-a832-4e44-87fe-d66a1332c3e7> .
+
+<urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f8f3a093-042c-47a3-971a-a482aaaf3b75-2025-03-07> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f8f3a093-042c-47a3-971a-a482aaaf3b75-2025-03-07> .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:59635d6c-f265-45dd-8814-b80a1dc41540> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"Regex present/absent\"" ;
+    bdqffdq:hasArgumentValue "Regex present/absent" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:e251108c-ae49-46fa-b5db-d955fd0f4fa4> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:occurrenceStatus" ;
+    skos:prefLabel "Information Element ActedUpon dwc:occurrenceStatus" ;
+    bdqffdq:composedOf dwc:occurrenceStatus .
+
+<urn:uuid:fae50773-a832-4e44-87fe-d66a1332c3e7> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_OCCURRENCESTATUS_STANDARDIZED" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:ocurrenceStatus is bdqval:Empty; AMENDED the value of dwc:occurrenceStatus if it can be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = \"Regex present/absent\" {[\"^(present|absent)$\"]}" ;
+    skos:example "dwc:occurrenceStatus=\"1\": Response.status=AMENDED, Response.result=dwc:occurrenceStatus=\"present\", Response.comment=\"Input field contains an interpretable value. \"",
+        "dwc:occurrenceStatus=\"X\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"Input field contains uninterpretable value \"X\"" ;
+    bdqffdq:hasArgument <urn:uuid:59635d6c-f265-45dd-8814-b80a1dc41540> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"Regex present/absent\" {[\"^(present|absent)$\"]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:ocurrenceStatus is bdqval:Empty; AMENDED the value of dwc:occurrenceStatus if it can be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/f8f3a093-042c-47a3-971a-a482aaaf3b75-2025-03-07> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_OCCURRENCESTATUS_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dwc:occurrenceStatus using the bdqval:sourceAuthority." ;
+    dcterms:isVersionOf bdqtest:f8f3a093-042c-47a3-971a-a482aaaf3b75 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/115" ;
+    skos:note "The recommended controlled vocabulary for this term consists of \"present\" and \"absent\", which are the only two appropriate terms for a Darwin Core Occurrence. This is reflected in the suggested dwc:occurrenceStatus vocabulary for this Test. Other values for dwc:occurrenceStatus should only arise under circumstances that do not refer to an Occurrence. The GBIF API is listed in the sourceAuthority. However, there is currently a mismatch between the lower case recommended values at https://dwc.tdwg.org/terms/#dwc:occurrenceStatus and the GBIF vocabulary at bdqval:sourceAuthority that uses an upper case first letter (https://api.gbif.org/v1/vocabularies/OccurrenceStatus/concepts), thus implementations using the GBIF API should ensure that matches on alternate terms in that vocabulary are converted to the all lower case values in the present/absent vocabulary recommended in Darwin Core. Implementations should interpret the numeric value 1 as present, and the numeric value 0 as absent." ;
+    skos:prefLabel "Amendment dwc:occurrenceStatus Standardized for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e251108c-ae49-46fa-b5db-d955fd0f4fa4> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2025-03-03"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

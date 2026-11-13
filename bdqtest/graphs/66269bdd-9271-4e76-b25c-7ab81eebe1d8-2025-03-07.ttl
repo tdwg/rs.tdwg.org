@@ -1,0 +1,77 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2025-03-07> .
+
+<urn:uuid:4c6a5522-ae8c-42d3-a396-8fc3aee49ef9> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_DATEIDENTIFIED_STANDARD with Specification for: VALIDATION_DATEIDENTIFIED_STANDARD" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCOtherDateDQ.java#L61",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Conformance ISO/DCMI STANDARD CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DATEIDENTIFIED_STANDARD with Specification for: VALIDATION_DATEIDENTIFIED_STANDARD" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:89f8b2ea-fc35-4941-929a-0e32cfbeb1a6> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqcrit:Standard a bdqffdq:Criterion ;
+    rdfs:label "Standard" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<https://www.loc.gov/standards/datetime/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/" .
+
+<urn:uuid:89f8b2ea-fc35-4941-929a-0e32cfbeb1a6> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_DATEIDENTIFIED_STANDARD" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:dateIdentified is bdqval:Empty; COMPLIANT if the value of dwc:dateIdentified contains a valid ISO 8601 date; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:dateIdentified=\"1963-03-08T14:07\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:dateIdentified is a valid ISO 8601-1:2019 date\"",
+        "dwc:dateIdentified=\"1963-03-08X14:07-0600\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:dateIdentified is not a valid ISO 8601-1:2019 date\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:dateIdentified is bdqval:Empty; COMPLIANT if the value of dwc:dateIdentified contains a valid ISO 8601 date; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:dateIdentified" ;
+    skos:prefLabel "Information Element ActedUpon dwc:dateIdentified" ;
+    bdqffdq:composedOf dwc:dateIdentified .
+
+<https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2025-03-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_DATEIDENTIFIED_STANDARD" ;
+    dcterms:description "Is the value of dwc:dateIdentified a valid ISO date?" ;
+    dcterms:isVersionOf bdqtest:66269bdd-9271-4e76-b25c-7ab81eebe1d8 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/>,
+        <https://www.loc.gov/standards/datetime/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/69" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:dateIdentified Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371> ;
+    bdqffdq:hasCriterion bdqcrit:Standard ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-09-16"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

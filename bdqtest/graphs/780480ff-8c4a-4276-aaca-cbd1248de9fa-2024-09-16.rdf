@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="urn:uuid:b6cbae5f-c4bd-4947-9a76-930592c52bb1">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DAY_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DAY_INRANGE</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation TIME CODED Test Conformance CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DAY_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DAY_INRANGE</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/780480ff-8c4a-4276-aaca-cbd1248de9fa-2024-09-16"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:df76475a-0207-4f98-b898-c1623d759442"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/780480ff-8c4a-4276-aaca-cbd1248de9fa-2024-09-16">
+    <dcterms:description>Count the number of VALIDATION_DAY_INRANGE in a record set that are COMPLIANT.</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/780480ff-8c4a-4276-aaca-cbd1248de9fa"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-16</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
+    <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_DAY_INRANGE</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/296</skos:historyNote>
+    <skos:note>For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set.</skos:note>
+    <skos:prefLabel>Measurement over MultiRecord Counting Compliance of Validation dwc:day In Range for MultiRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:3acc77f6-1bbc-46b7-9aee-f75af5537d2a"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-16</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:df76475a-0207-4f98-b898-c1623d759442">
+    <dcterms:description>Count the number of VALIDATION_DAY_INRANGE in the MultiRecord that have Response.result=COMPLIANT.</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DAY_INRANGE</rdfs:label>
+    <skos:example></skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>Count the number of VALIDATION_DAY_INRANGE in the MultiRecord that have Response.result=COMPLIANT.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:3acc77f6-1bbc-46b7-9aee-f75af5537d2a">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DAY_INRANGE.Response</rdfs:label>
+    <skos:note>Aggregated Response outcomes produced by VALIDATION_DAY_INRANGE across a MultiRecord.</skos:note>
+    <skos:prefLabel>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DAY_INRANGE.Response</skos:prefLabel>
+    <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/8d787cb5-73e2-4c39-9cd1-67c7361dc02e"/>
+    <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (91) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/780480ff-8c4a-4276-aaca-cbd1248de9fa-2024-09-16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>MultiRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.1371/journal.pone.0178731">
+    <dcterms:bibliographicCitation>Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

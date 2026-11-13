@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Alien-Species">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Alien-Species</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e">
+    <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:pathway is bdqval:Empty; COMPLIANT if the value of dwc:pathway is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = "Pathway Controlled Vocabulary List of Terms" {[https://dwc.tdwg.org/pw/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/Pathway/concepts]}</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: VALIDATION_PATHWAY_STANDARD</rdfs:label>
+    <skos:example>dwc:pathway="escapee": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dwc:pathway not found in the bdqval:sourceAuthority"</skos:example>
+    <skos:example>dwc:pathway="transportStowaway": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="dwc:pathway found in the bdqval:sourceAuthority"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:136039c5-6ceb-41ec-90b3-eb1cd37d6eed"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:sourceAuthority default = "Pathway Controlled Vocabulary List of Terms" {[https://dwc.tdwg.org/pw/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/Pathway/concepts]}</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:pathway is bdqval:Empty; COMPLIANT if the value of dwc:pathway is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/Standard">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>Standard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:ffae8e47-2181-4a83-b1c7-d0a893e79b67">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification for: VALIDATION_PATHWAY_STANDARD</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1875</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)</skos:note>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification for: VALIDATION_PATHWAY_STANDARD</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2025-03-07"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.3897/biss.3.38084">
+    <dcterms:bibliographicCitation>Groom et al. (2019) Improving Darwin Core for research and management of alien species. Biodiversity Information Science and Standards 3: e38084. https://doi.org/10.3897/biss.3.38084</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:f3141ff8-76fa-4953-9c6c-9300816358cc">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:pathway</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:pathway</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/pathway"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2025-03-07">
+    <dcterms:description>Does the value of dwc:pathway occur in the bdqval:sourceAuthority?</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/5424e933-bee7-4125-839e-d8743ea69f93"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.3897/biss.3.38084"/>
+    <dcterms:references rdf:resource="https://dwc.tdwg.org/pw/"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
+    <rdfs:label>VALIDATION_PATHWAY_STANDARD</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/277</skos:historyNote>
+    <skos:note>This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters.</skos:note>
+    <skos:prefLabel>Validation dwc:pathway Standard for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:f3141ff8-76fa-4953-9c6c-9300816358cc"/>
+    <bdqffdq:hasCriterion rdf:resource="https://rs.tdwg.org/bdqcrit/terms/Standard"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-09</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2025-03-07"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:136039c5-6ceb-41ec-90b3-eb1cd37d6eed">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:sourceAuthority:"Pathway Controlled Vocabulary List of Terms"</rdfs:label>
+    <bdqffdq:hasArgumentValue>Pathway Controlled Vocabulary List of Terms</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://dwc.tdwg.org/pw/">
+    <dcterms:bibliographicCitation>Darwin Core Maintenance Group (2021) Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). https://dwc.tdwg.org/pw/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+</rdf:RDF>

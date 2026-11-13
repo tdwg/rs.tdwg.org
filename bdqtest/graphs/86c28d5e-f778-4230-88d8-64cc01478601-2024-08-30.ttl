@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (80) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/86c28d5e-f778-4230-88d8-64cc01478601-2024-08-30> .
+
+<urn:uuid:e2857b1c-9c3d-4445-9f1e-32000e2243ce> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/86c28d5e-f778-4230-88d8-64cc01478601-2024-08-30> ;
+    bdqffdq:hasSpecification <urn:uuid:d95305ad-cf84-4473-8c24-09a4a236e262> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Consistency a bdqffdq:DataQualityDimension ;
+    rdfs:label "Consistency" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:d95305ad-cf84-4473-8c24-09a4a236e262> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    dcterms:description "COMPLETE if every VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." .
+
+<urn:uuid:fb262b9b-a67b-45f9-92eb-fbcf58c72b0f> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:adb27d29-9f0d-4d52-b760-a77ba57a69c9 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/86c28d5e-f778-4230-88d8-64cc01478601-2024-08-30> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    dcterms:description "Measure if all VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:86c28d5e-f778-4230-88d8-64cc01478601 ;
+    dcterms:issued "2024-08-30"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation Coordinates dwc:countryCode Consistent for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:fb262b9b-a67b-45f9-92eb-fbcf58c72b0f> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Consistency ;
+    bdqffdq:hasDateLastUpdated "2024-08-30"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

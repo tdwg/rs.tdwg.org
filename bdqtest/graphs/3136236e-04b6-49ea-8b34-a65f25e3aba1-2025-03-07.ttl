@@ -1,0 +1,82 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:180c1a90-94c3-48b5-a9fe-4223d6f2bd60> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification for: VALIDATION_LICENSE_STANDARD" ;
+    skos:historyNote "Source: John Wieczorek" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L635",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification for: VALIDATION_LICENSE_STANDARD" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:2a9dbd16-d427-471e-8db5-c1de2b2cf030> .
+
+<urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2025-03-07> .
+
+<https://creativecommons.org/licenses/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Creative Commons (n.dat.) About the Licenses. https://creativecommons.org/licenses/" .
+
+bdqcrit:Standard a bdqffdq:Criterion ;
+    rdfs:label "Standard" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Dublin Core (2020) Dublin Core Metadata Initiative. License Document. https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/" .
+
+<urn:uuid:2a9dbd16-d427-471e-8db5-c1de2b2cf030> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_LICENSE_STANDARD" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dcterms:license is bdqval:Empty; COMPLIANT if the value of the term dcterms:license is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"Creative Commons 4.0 Licenses or CC0\" {[https://creativecommons.org/]} { Regular Expression ^(http(s){0,1}://creativecommons.org/licenses/(by&#124;by-sa&#124;by-nc&#124;by-nc-sa&#124;by-nd&#124;by-nc-nd)/4.0/((deed&#124;legalcode)(.(id&#124;eu&#124;da&#124;de&#124;en&#124;es&#124;fr&#124;fy&#124;hr&#124;it&#124;lv&#124;lt&#124;mi&#124;ni&#124;no&#124;pl&#124;pt&#124;ro&#124;si&#124;fi&#124;sv&#124;tr&#124;cs&#124;el&#124;ru&#124;uk&#124;ar&#124;jp&#124;zh-hans&#124;zh-hant&#124;ko)){0,1})&#124;(http(s){0,1}://creativecommons.org/publicdomain/zero/1.0/((deed&#124;legalcode)(.(id&#124;eu&#124;da&#124;de&#124;en&#124;es&#124;fr&#124;fy&#124;hr&#124;it&#124;lv&#124;lt&#124;ni&#124;no&#124;pl&#124;pt&#124;ro&#124;si&#124;fi&#124;sv&#124;tr&#124;cs&#124;el&#124;ru&#124;uk&#124;ar&#124;jp&#124;zh-hans&#124;zh-hant&#124;ko)){0,1})))$ }" ;
+    skos:example "dcterms:license=\"GPL\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dcterms:license does not match a term in the bdqval:sourceAuthority\"",
+        "dcterms:license=\"https://creativecommons.org/licenses/by/4.0/\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT,Response.comment=\"dcterms:license matches a term in the bdqval:sourceAuthority\"" ;
+    bdqffdq:hasArgument <urn:uuid:7308bf21-2648-40d8-bb2c-3f36d2789552> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"Creative Commons 4.0 Licenses or CC0\" {[https://creativecommons.org/]} { Regular Expression ^(http(s){0,1}://creativecommons.org/licenses/(by&#124;by-sa&#124;by-nc&#124;by-nc-sa&#124;by-nd&#124;by-nc-nd)/4.0/((deed&#124;legalcode)(.(id&#124;eu&#124;da&#124;de&#124;en&#124;es&#124;fr&#124;fy&#124;hr&#124;it&#124;lv&#124;lt&#124;mi&#124;ni&#124;no&#124;pl&#124;pt&#124;ro&#124;si&#124;fi&#124;sv&#124;tr&#124;cs&#124;el&#124;ru&#124;uk&#124;ar&#124;jp&#124;zh-hans&#124;zh-hant&#124;ko)){0,1})&#124;(http(s){0,1}://creativecommons.org/publicdomain/zero/1.0/((deed&#124;legalcode)(.(id&#124;eu&#124;da&#124;de&#124;en&#124;es&#124;fr&#124;fy&#124;hr&#124;it&#124;lv&#124;lt&#124;ni&#124;no&#124;pl&#124;pt&#124;ro&#124;si&#124;fi&#124;sv&#124;tr&#124;cs&#124;el&#124;ru&#124;uk&#124;ar&#124;jp&#124;zh-hans&#124;zh-hant&#124;ko)){0,1})))$ }" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dcterms:license is bdqval:Empty; COMPLIANT if the value of the term dcterms:license is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:7308bf21-2648-40d8-bb2c-3f36d2789552> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"Creative Commons 4.0 Licenses or CC0\"" ;
+    bdqffdq:hasArgumentValue "Creative Commons 4.0 Licenses or CC0" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dcterms:license" ;
+    skos:prefLabel "Information Element ActedUpon dcterms:license" ;
+    bdqffdq:composedOf dcterms:license .
+
+<https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2025-03-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_LICENSE_STANDARD" ;
+    dcterms:description "Does the value of dcterms:license occur in bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:3136236e-04b6-49ea-8b34-a65f25e3aba1 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://creativecommons.org/licenses/>,
+        <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/38" ;
+    skos:note "The license at the record level might be derived from the license of the dataset from which the record is retrieved. This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters. The canonical form of the Creative Commons license IRI has nothing after the version (e.g., https://creativecommons.org/licenses/by/4.0/), but may be followed by deed or legalcode e.g. https://creativecommons.org/licenses/by/4.0/deed and this may be followed by a language code. However, only some two-letter language codes have translations, and some translations are identified by a longer string than the two-letter language code. Errors in the language code, or specifying a language code for which a translation doesn't exist returns a 404 error instead of redirecting to the more general license IRI. As of 2024-02-28 deed.mi doesn't exist yet, but legalcode.mi does." ;
+    skos:prefLabel "Validation dcterms:license Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351> ;
+    bdqffdq:hasCriterion bdqcrit:Standard ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-03-21"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:180c1a90-94c3-48b5-a9fe-4223d6f2bd60">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification for: VALIDATION_LICENSE_STANDARD</rdfs:label>
+    <skos:historyNote>Source: John Wieczorek</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L635</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)</skos:note>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification for: VALIDATION_LICENSE_STANDARD</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2024-03-21"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:2a9dbd16-d427-471e-8db5-c1de2b2cf030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/">
+    <dcterms:bibliographicCitation>Dublin Core (2020) Dublin Core Metadata Initiative. License Document. https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/Standard">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>Standard</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2024-03-21">
+    <dcterms:description>Does the value of dcterms:license occur in bdqval:sourceAuthority?</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/3136236e-04b6-49ea-8b34-a65f25e3aba1"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-21</dcterms:issued>
+    <dcterms:references rdf:resource="https://creativecommons.org/licenses/"/>
+    <dcterms:references rdf:resource="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
+    <rdfs:label>VALIDATION_LICENSE_STANDARD</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/38</skos:historyNote>
+    <skos:note>The license at the record level might be derived from the license of the dataset from which the record is retrieved. This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters. The canonical form of the Creative Commons license IRI has nothing after the version (e.g., https://creativecommons.org/licenses/by/4.0/), but may be followed by deed or legalcode e.g. https://creativecommons.org/licenses/by/4.0/deed and this may be followed by a language code. However, only some two-letter language codes have translations, and some translations are identified by a longer string than the two-letter language code. Errors in the language code, or specifying a language code for which a translation doesn't exist returns a 404 error instead of redirecting to the more general license IRI. As of 2024-02-28 deed.mi doesn't exist yet, but legalcode.mi does.</skos:note>
+    <skos:prefLabel>Validation dcterms:license Standard for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351"/>
+    <bdqffdq:hasCriterion rdf:resource="https://rs.tdwg.org/bdqcrit/terms/Standard"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-21</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:2a9dbd16-d427-471e-8db5-c1de2b2cf030">
+    <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dcterms:license is bdqval:Empty; COMPLIANT if the value of the term dcterms:license is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = "Creative Commons 4.0 Licenses or CC0" {[https://creativecommons.org/]} { Regular Expression ^(http(s){0,1}://creativecommons.org/licenses/(by&amp;#124;by-sa&amp;#124;by-nc&amp;#124;by-nc-sa&amp;#124;by-nd&amp;#124;by-nc-nd)/4.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;mi&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})&amp;#124;(http(s){0,1}://creativecommons.org/publicdomain/zero/1.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})))$ }</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: VALIDATION_LICENSE_STANDARD</rdfs:label>
+    <skos:example>dcterms:license="GPL": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dcterms:license does not match a term in the bdqval:sourceAuthority"</skos:example>
+    <skos:example>dcterms:license="https://creativecommons.org/licenses/by/4.0/": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT,Response.comment="dcterms:license matches a term in the bdqval:sourceAuthority"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:7308bf21-2648-40d8-bb2c-3f36d2789552"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:sourceAuthority default = "Creative Commons 4.0 Licenses or CC0" {[https://creativecommons.org/]} { Regular Expression ^(http(s){0,1}://creativecommons.org/licenses/(by&amp;#124;by-sa&amp;#124;by-nc&amp;#124;by-nc-sa&amp;#124;by-nd&amp;#124;by-nc-nd)/4.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;mi&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})&amp;#124;(http(s){0,1}://creativecommons.org/publicdomain/zero/1.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})))$ }</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dcterms:license is bdqval:Empty; COMPLIANT if the value of the term dcterms:license is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dcterms:license</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dcterms:license</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://purl.org/dc/terms/license"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (13) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (13) validations  in UseCase bdquc:SDM-Trees</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2024-03-21"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:7308bf21-2648-40d8-bb2c-3f36d2789552">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:sourceAuthority:"Creative Commons 4.0 Licenses or CC0"</rdfs:label>
+    <bdqffdq:hasArgumentValue>Creative Commons 4.0 Licenses or CC0</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://creativecommons.org/licenses/">
+    <dcterms:bibliographicCitation>Creative Commons (n.dat.) About the Licenses. https://creativecommons.org/licenses/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

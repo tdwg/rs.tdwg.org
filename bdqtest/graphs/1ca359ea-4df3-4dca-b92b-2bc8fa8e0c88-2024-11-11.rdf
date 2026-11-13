@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="urn:uuid:521ea0c6-8eb7-4d41-b1b6-40bbf1b2651e">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_TYPESTATUS_STANDARD.Response</rdfs:label>
+    <skos:note>Aggregated Response outcomes produced by VALIDATION_TYPESTATUS_STANDARD across a MultiRecord.</skos:note>
+    <skos:prefLabel>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_TYPESTATUS_STANDARD.Response</skos:prefLabel>
+    <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/4833a522-12eb-4fe0-b4cf-7f7a337a6048"/>
+    <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88-2024-11-11">
+    <dcterms:description>Measure if all VALIDATION_TYPESTATUS_STANDARD in a record set are COMPLIANT.</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-11</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
+    <rdfs:label>MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/295</skos:historyNote>
+    <skos:note>For Quality Assurance, filter record set until this measure is COMPLETE.</skos:note>
+    <skos:prefLabel>Measurement over MultiRecord for QualityAssurance of Validation dwc:typeStatus Standard for MultiRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:521ea0c6-8eb7-4d41-b1b6-40bbf1b2651e"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-11</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Alien-Species">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Alien-Species</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (62) measures  in UseCase bdquc:Alien-Species</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88-2024-11-11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:e581e111-a7ef-4f16-9899-175b131b304e">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88-2024-11-11"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:296980d9-a8bf-4fe4-8596-ee2bbd140e38"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:296980d9-a8bf-4fe4-8596-ee2bbd140e38">
+    <dcterms:description>COMPLETE if every VALIDATION_TYPESTATUS_STANDARD in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD</rdfs:label>
+    <skos:example></skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_TYPESTATUS_STANDARD in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>MultiRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.1371/journal.pone.0178731">
+    <dcterms:bibliographicCitation>Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,77 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (49) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (49) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/853b79a2-b314-44a2-ae46-34a1e7ed85e4-2024-11-10> .
+
+<urn:uuid:930eb72e-fe83-48ae-9698-ca46713721a3> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_COUNTRYCODE_NOTEMPTY with Specification for: VALIDATION_COUNTRYCODE_NOTEMPTY" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2308",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test VOCABULARY Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_COUNTRYCODE_NOTEMPTY with Specification for: VALIDATION_COUNTRYCODE_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/853b79a2-b314-44a2-ae46-34a1e7ed85e4-2024-11-10> ;
+    bdqffdq:hasSpecification <urn:uuid:d153d4bd-b39d-43b0-b00a-395ff3e2ca62> .
+
+<https://datahub.io/core/country-list> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "DataHub (2018) List of all countries with their two digit codes (ISO 3166-1). https://datahub.io/core/country-list" .
+
+<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat) 3166-1 alpha-2. https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/iso-3166-country-codes.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat.) ISO 3166 Country Codes. https://www.iso.org/iso-3166-country-codes.html" .
+
+<urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:countryCode" ;
+    skos:prefLabel "Information Element ActedUpon dwc:countryCode" ;
+    bdqffdq:composedOf dwc:countryCode .
+
+<urn:uuid:d153d4bd-b39d-43b0-b00a-395ff3e2ca62> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_COUNTRYCODE_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if dwc:countryCode is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:countryCode=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:countryCode is bdqval:Empty\"",
+        "dwc:countryCode=\"Australia\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:countryCode is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if dwc:countryCode is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/853b79a2-b314-44a2-ae46-34a1e7ed85e4-2024-11-10> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_COUNTRYCODE_NOTEMPTY" ;
+    dcterms:description "Is there a value in dwc:countryCode?" ;
+    dcterms:isVersionOf bdqtest:853b79a2-b314-44a2-ae46-34a1e7ed85e4 ;
+    dcterms:issued "2024-11-10"^^xsd:date ;
+    dcterms:references <https://datahub.io/core/country-list>,
+        <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
+        <https://www.iso.org/iso-3166-country-codes.html> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/98" ;
+    skos:note "Darwin Core recommends that data from the high seas (outside national jurisdictions) use dwc:countryCode = \"XZ\"." ;
+    skos:prefLabel "Validation dwc:countryCode Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-11-10"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

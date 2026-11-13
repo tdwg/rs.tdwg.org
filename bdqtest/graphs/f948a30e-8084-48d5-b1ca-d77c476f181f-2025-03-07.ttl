@@ -1,0 +1,79 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f948a30e-8084-48d5-b1ca-d77c476f181f-2025-03-07> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f948a30e-8084-48d5-b1ca-d77c476f181f-2025-03-07> .
+
+<urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f948a30e-8084-48d5-b1ca-d77c476f181f-2025-03-07> .
+
+<urn:uuid:cf1fc4ae-bcec-4d85-ac3e-bbc50f116d66> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DECIMALLONGITUDE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DECIMALLONGITUDE_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test Completeness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DECIMALLONGITUDE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DECIMALLONGITUDE_NOTEMPTY" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/f948a30e-8084-48d5-b1ca-d77c476f181f-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:123392d9-c81c-4f3a-82bd-6f053eb41b65> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:123392d9-c81c-4f3a-82bd-6f053eb41b65> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DECIMALLONGITUDE_NOTEMPTY" ;
+    dcterms:description "Count the number of VALIDATION_DECIMALLONGITUDE_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "Count the number of VALIDATION_DECIMALLONGITUDE_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." .
+
+<urn:uuid:72a0dee0-ad16-4a3c-8045-c79c54f6193e> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DECIMALLONGITUDE_NOTEMPTY.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_DECIMALLONGITUDE_NOTEMPTY across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DECIMALLONGITUDE_NOTEMPTY.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:9beb9442-d942-4f42-8b6a-fcea01ee086a ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/f948a30e-8084-48d5-b1ca-d77c476f181f-2025-03-07> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_DECIMALLONGITUDE_NOTEMPTY" ;
+    dcterms:description "Count the number of VALIDATION_DECIMALLONGITUDE_NOTEMPTY in a record set that are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:f948a30e-8084-48d5-b1ca-d77c476f181f ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;
+    skos:note "For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set." ;
+    skos:prefLabel "Measurement over MultiRecord Counting Compliance of Validation dwc:decimalLongitude Not Empty for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:72a0dee0-ad16-4a3c-8045-c79c54f6193e> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

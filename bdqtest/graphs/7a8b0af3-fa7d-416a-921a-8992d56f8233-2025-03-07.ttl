@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/7a8b0af3-fa7d-416a-921a-8992d56f8233-2025-03-07> .
+
+<urn:uuid:d1b7295f-9a2a-4a52-a066-6e3eac61b0c2> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test VOCABULARY Consistency CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/7a8b0af3-fa7d-416a-921a-8992d56f8233-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:809d2925-781f-432e-b5d6-4a91f1afe56c> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Consistency a bdqffdq:DataQualityDimension ;
+    rdfs:label "Consistency" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:463c35d2-41c0-4e68-af22-4bb4c200b376> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:f18a470b-3fe1-4aae-9c65-a6d3db6b550c ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:809d2925-781f-432e-b5d6-4a91f1afe56c> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    dcterms:description "COMPLETE if every VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET; otherwise NOT_COMPLETE." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/7a8b0af3-fa7d-416a-921a-8992d56f8233-2025-03-07> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    dcterms:description "Measure if all VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:7a8b0af3-fa7d-416a-921a-8992d56f8233 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation Coordinates dwc:stateProvince Consistent for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:463c35d2-41c0-4e68-af22-4bb4c200b376> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Consistency ;
+    bdqffdq:hasDateLastUpdated "2024-08-30"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+
