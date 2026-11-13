@@ -2,7 +2,7 @@
 
 Inputs for processing the Biodiversity Data Quality (BDQ) standard for the public review at `bdq-public-review.rs.tdwg.org` ([tdwg/bdq#340](https://github.com/tdwg/bdq/issues/340); plan: [`tg2/_make_review/deployment_rs_tdwg_org.md`](https://github.com/tdwg/bdq/blob/master/tg2/_make_review/deployment_rs_tdwg_org.md), Section 8).
 
-The BDQ release is a sequence of releases, one directory per date (plan Section 8.5). Each term's first version on bdq-public-review.rs.tdwg.org is dated when its current content last changed in the BDQ draft. In the draft, these versions are placeholders (that happen to reflect the terms' history); on ratification they become real term versions with the release date. The draft releases, `bdq-revisions-2024-04-13/` to `bdq-revisions-2026-05-16/`, each add the terms whose content dates from that day; `bdq-revisions-2026-11-09/` holds the decided `bdqffdq` changes (plan Section 9.5). `bdq-revisions-2026-11-12/` holds the new definitions of the `bdqval` terms `AllValidationTestsRunOnSingleRecord` and `AllAmendmentTestsRunOnSingleRecord` (plan Section 10.9.7), the first release edited directly in this repository rather than converted from tdwg/bdq. The vocabularies are the five simple vocabularies (`bdqdim`, `bdqenh`, `bdqcrit`, `bdquc`, `bdqval`) and the Fitness For Use Framework ontology (`bdqffdq`). Each release directory holds:
+The BDQ release is a sequence of releases, one directory per date (plan Section 8.5). Each term's first version on bdq-public-review.rs.tdwg.org is dated when its current content last changed in the BDQ draft. In the draft, these versions are placeholders (that happen to reflect the terms' history); on ratification they become real term versions with the release date. The draft releases, `bdq-revisions-2022-03-25/` to `bdq-revisions-2026-05-16/`, each add the terms whose content dates from that day (for `bdqtest`, the versions dated by each Test's `DateLastUpdated` and `issued`; see `bdqtest` below); `bdq-revisions-2026-11-09/` holds the decided `bdqffdq` changes (plan Section 9.5). `bdq-revisions-2026-11-12/` holds the new definitions of the `bdqval` terms `AllValidationTestsRunOnSingleRecord` and `AllAmendmentTestsRunOnSingleRecord` (plan Section 10.9.7), the first release edited directly in this repository rather than converted from tdwg/bdq. The vocabularies are the five simple vocabularies (`bdqdim`, `bdqenh`, `bdqcrit`, `bdquc`, `bdqval`), the Fitness For Use Framework ontology (`bdqffdq`), and the BDQ Tests (`bdqtest`). Each release directory holds:
 
 - `config.yaml`: the release declaration (standard, vocabularies, namespaces, List of Terms documents);
 - `<prefix>.csv`: one release-input CSV per namespace declared in the release, with the terms new or changed on that date (header only if none);
@@ -33,6 +33,31 @@ python -I bdq-revisions/bdq_docs_to_rs.py <path to tdwg/bdq> bdq-revisions/bdq-r
 
 `bdq_to_rs.py`, `bdqffdq_to_rs.py`, `bdq_split_by_date.py`, and `bdq_docs_to_rs.py` are for the public review only. They bootstrap these inputs from the files in tdwg/bdq, and are intended to be replaced by authoritative information kept in this repository: from now on, the files in the release directory are the source and are edited directly. Rerunning the scripts overwrites them.
 
+## bdqtest
+
+The BDQ Tests (`bdqtest`, option T3 of the plan, Sections 10 and 10.9) are a flat term list with versions, one row per Test version; the full graph of each Test version (its Method, Specification, Arguments, information elements, and Policies) is generated after processing and appended to its RDF by `html/restxq.xqm`.
+
+`bdqtest_to_rs.py` (review only, from tdwg/bdq master `16e3b988`) converted `tg2/_review/vocabulary/bdqtest_term_versions.csv`:
+
+```bash
+git -C <bdq> show ac825581^:tg2/_review/vocabulary/bdqtest_term_versions.csv > old.csv
+python -I bdq-revisions/bdqtest_to_rs.py <path to tdwg/bdq> <path to rs.tdwg.org> old.csv
+```
+
+- **Columns.** All columns are carried, renamed to legal XML names (`bdqtest_columns.py`, which is also the mapping back to the published names; plan Section 10.8). Derived columns hold the IRIs on the Test node (`type`, `hasResourceType`, `hasDataQualityDimension`, `hasCriterion` for Validations and Issues, `hasEnhancement` for Amendments). The term-level RDF mirrors the Test node (label, definition, description, note, history note, `bdqffdq:hasDateLastUpdated`, type, resource type, dimension, criterion, enhancement); the prefLabel composed as "<prefLabel> for <Resource Type>" is made by the graph generator.
+- **Versions** (plan Section 10.9.3). Each Test has a version on its `DateLastUpdated` (the behavioral version that implementations cite) and one on its `issued` date (the latest), one where the two are equal: 511 versions on 41 dates, from 2022-03-25, interleaved with the other releases (new release directories, declared as the release before them). The versions are placeholders with the Test's current content, except for the four single-record Measures that count Test outcomes (plan Section 10.9.7), whose versions before their remodeling on 2026-11-12 have their content from before tdwg/bdq `ac825581`.
+- **Graph inputs.** The generator's GUID tables (tdwg/bdq `tg2/core/TG2_tests_additional_guids.csv`, `information_element_guids.csv`, `TG2_policy_guids.csv`, `TG2_citation_guids.csv`) are in `bdqtest-graph-inputs/` of the releases where they change: from the first `bdqtest` release, as before `ac825581`; from 2026-11-12, the current information element table.
+
+After processing all releases, generate the graphs (from the `process` directory):
+
+```bash
+python bdq-revisions/bdqtest_graphs.py ..
+```
+
+It builds each version's graph with `bdqtest_rdf.py`, a pinned copy of tdwg/bdq `tg2/_build_review/build_bdqtest_rdf.py` (at `ac825581`) with marked changes: canonical version IRIs (`https://rs.tdwg.org/bdqtest/terms/version/<uuid>-<date>`), `bdqffdq:hasDateLastUpdated`, labels that depend on other Tests taken from the Tests current on the version's date, and no ontology-support statements. It writes `bdqtest/graphs/<uuid>-<date>.{ttl,rdf,jsonld}` and `bdqtest/bdqtest-graphs.csv` (the graph of each version IRI, and of each term IRI: its current version's), deterministically, and checks that the current versions' graphs together equal the graph of all current Tests (apart from Policy labels, which give the Policy's size on the version's date).
+
+`html/sds-version-iri-redirects.csv` opts the BDQ term lists in to a redirect from the SDS 2.3.2 version IRI form `…/terms/<local name>-<date>` to the canonical `…/terms/version/<local name>-<date>` (plan Section 10.9.6).
+
 ## Processing
 
 Process the releases in date order, from the `process` directory. After each release, copy that release's BDQ mapping files into the dataset directories; `process.py` creates a new term list's mapping files from the templates, and the BDQ files replace them. The axioms file is handled by `process.py`:
@@ -42,6 +67,7 @@ for d in $(ls -d bdq-revisions/bdq-revisions-20* | sort); do
   python process.py --config $d/config.yaml || break
   if [ -d $d/mappings ]; then (cd $d/mappings && for m in */; do cp "$m"* "../../../../$m"; done); fi
 done
+python bdq-revisions/bdqtest_graphs.py ..    # the bdqtest graphs, after the last release
 ```
 
 Use `--dry-run` first to check a release. For the extension term list, `process.py` writes the current axioms (`bdqffdq/bdqffdq-axioms.{ttl,rdf,jsonld}`) and an immutable copy per version (`bdqffdq/axioms-versions/`), and records the list, its versions, members, and distributions in `term-lists/` and `term-lists-versions/`. The distributions' access URLs point to the `bdq` branch (`distribution_base_url` in `config.yaml`).

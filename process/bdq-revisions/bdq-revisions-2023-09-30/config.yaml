@@ -1,0 +1,154 @@
+# BDQ draft release 2023-09-30 for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).
+# Placeholder bdqtest versions dated from the BDQ draft (DateLastUpdated and issued;
+# plan Sections 8.5, 10.9.3). Created by bdqtest_to_rs.py from the release before it.
+# Run with: python process.py --config bdq-revisions/bdq-revisions-2023-09-30/config.yaml
+# Placeholders for the public review: standard YYY, decision_number YYY (plan 8.2.1).
+# Provisional: prepend_url and browserRedirectUri (/draft/ locations, plan 8.6), and the
+# vocabulary and term list labels and descriptions (drafted, to be reviewed by BDQ).
+standard_label: Biodiversity Data Quality (BDQ)
+standard: http://www.tdwg.org/standards/YYY
+standard_description: BDQ is a standard maintained by the Biodiversity Data Quality Maintenance Interest Group (to be constituted) and designed to facilitate the consistent development and use of a set of biodiversity data quality tests and assertions. The standard consists of vocabularies needed to define the tests, a guide to support the implementation of tests, a guide to support the interpretation of outputs of implemented tests, test data and expected responses from tests against this data to validate implemented tests.
+standard_status: Draft Standard
+date_issued: '2023-09-30'
+local_offset_from_utc: -05:00
+decision_number: YYY
+decisions_text: BDQ terms published for public review; not ratified.
+revision_directory: bdq-revisions
+release_directory: bdq-revisions/bdq-revisions-2023-09-30
+document_defaults:
+  publisher: Biodiversity Information Standards (TDWG)
+  license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
+  license_uri: https://creativecommons.org/licenses/by/4.0/
+  comment: Draft Standard for Review
+documents:
+- document: https://rs.tdwg.org/bdqtest/doc/list/
+  documentTitle: BDQ Tests List of Terms
+  abstract: 'This document is a reference for the BDQ standard, documenting the Tests in the bdqtest: vocabulary, using terms from the Fitness For Use Framework ontology.'
+  creator: 'TDWG Biodiversity Data Quality Interest Group Task Group 2: Data Quality Tests and Assertions'
+  mediaType: text/markdown
+  accessUrl: https://raw.githubusercontent.com/tdwg/bdq/master/tg2/_review/docs/list/bdqtest/index.md
+  browserRedirectUri: https://bdq.tdwg.org/draft/docs/list/bdqtest/
+  contributors:
+  - contributor_iri: https://orcid.org/0000-0001-8900-6203
+    contributor_literal: Lee Belbin
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Blatant Fabrications
+    affiliation_uri: https://www.wikidata.org/wiki/Q130304884
+  - contributor_iri: https://orcid.org/0000-0003-1700-6962
+    contributor_literal: Arthur D. Chapman
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Australian Biodiversity Information Services
+    affiliation_uri: http://www.wikidata.org/entity/Q100600913
+  - contributor_iri: https://orcid.org/0000-0002-3673-444X
+    contributor_literal: Paul J. Morris
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Museum of Comparative Zoology, Harvard University
+    affiliation_uri: http://www.wikidata.org/entity/Q1420782
+  - contributor_iri: https://orcid.org/0000-0003-1144-0290
+    contributor_literal: John Wieczorek
+    contributor_role: author
+    role_uri: http://www.wikidata.org/entity/Q482980
+    affiliation: Rauthiflor LLC
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0001-7087-2646
+    contributor_literal: Yi-Ming Gan
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Royal Belgian Institute of Natural Sciences
+    affiliation_uri: http://www.wikidata.org/entity/Q16665660
+  - contributor_iri: https://orcid.org/0000-0003-2283-1123
+    contributor_literal: António Mauro Saraiva
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Universidade de São Paulo
+    affiliation_uri: https://www.wikidata.org/wiki/Q835960
+  - contributor_iri: http://orcid.org/0000-0003-2672-8115
+    contributor_literal: Alan Koch Veiga
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Universidade de São Paulo
+    affiliation_uri: https://www.wikidata.org/wiki/Q835960
+  - contributor_iri: https://orcid.org/0000-0002-6056-5084
+    contributor_literal: Paula F Zermoglio
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: 'Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD, CONICET-UNRN): San Carlos de Bariloche'
+    affiliation_uri: https://www.irnad.com/
+  - contributor_iri: https://orcid.org/0000-0002-8981-4048
+    contributor_literal: Alexander Thompson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Google
+    affiliation_uri: https://www.wikidata.org/wiki/Q95
+  - contributor_iri: https://github.com/lowery
+    contributor_literal: David Lowery
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: ''
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0003-4898-4291
+    contributor_literal: Christian Gendreau
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Agriculture and Agri-Food Canada
+    affiliation_uri: http://www.wikidata.org/entity/Q1046164
+  - contributor_iri: https://orcid.org/0000-0001-6215-3617
+    contributor_literal: Tim Roberston
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: https://www.wikidata.org/wiki/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-2919-1168
+    contributor_literal: Dmitry Schigel
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Global Biodiversity Information Facility
+    affiliation_uri: https://www.wikidata.org/wiki/Q1531570
+  - contributor_iri: https://orcid.org/0000-0002-6992-9446
+    contributor_literal: Robert A. Morris
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: ''
+    affiliation_uri: ''
+  - contributor_iri: https://orcid.org/0000-0002-3302-0070
+    contributor_literal: Miles Nicholls
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Atlas of Living Australia
+    affiliation_uri: https://www.wikidata.org/wiki/Q16335177
+  - contributor_iri: https://orcid.org/0000-0003-0112-6716
+    contributor_literal: Emily Rose Rees
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: Atlas of Living Australia
+    affiliation_uri: https://www.wikidata.org/wiki/Q16335177
+  - contributor_iri: https://orcid.org/0000-0002-4391-107X
+    contributor_literal: Abigail Benson
+    contributor_role: contributor
+    role_uri: http://www.wikidata.org/entity/Q20204892
+    affiliation: U.S. Geological Survey
+    affiliation_uri: https://www.wikidata.org/wiki/Q193755
+vocabularies:
+- vocabulary: https://rs.tdwg.org/bdqtest/
+  vocab_type: 1
+  list_of_terms_iri: https://rs.tdwg.org/bdqtest/doc/list/
+  vocabulary_label: BDQ Tests Vocabulary
+  vocabulary_description: 'The BDQ Tests: each a bdqffdq:Validation, bdqffdq:Issue, bdqffdq:Measure, or bdqffdq:Amendment, with its Method, Specification, Arguments, information elements, and the Policies that include it.'
+  dc_creator: 'TDWG Biodiversity Data Quality Interest Group Task Group 2: Data Quality Tests and Assertions'
+  dcterms_license: https://creativecommons.org/licenses/by/4.0/
+  namespaces:
+  - namespace_uri: https://rs.tdwg.org/bdqtest/terms/
+    label: Data Quality Test terms
+    description: Term list for the BDQ Tests vocabulary.
+    pref_namespace_prefix: bdqtest
+    database: bdqtest
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
+    use_namespace_in_fragment: true
+    separator: _
