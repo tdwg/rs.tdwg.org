@@ -253,8 +253,79 @@ where $record/*[local-name()=$key]/text()=$termList (: the primary key of the re
 return $record
 };
 
+(: Definition and Type in the HTML term tables (tdwg/bdq#340, plan question 18).
+   Which column of a dataset holds a term's definition and which its type is declared by the dataset's
+   column mappings (<core file>-column-mappings.csv): the column mapped to skos:definition (else
+   rdfs:comment), and the column mapped to rdf:type. The RDF serializations follow these mappings;
+   the HTML tables hard-coded the names rdfs_comment and rdf_type, which only some datasets use (the
+   templates for new term lists, process/files_for_new/, name the columns definition and type).
+   For records of https vocabularies (the BDQ vocabularies; scheme chosen per vocabulary, plan Section
+   7.4) the tables now take the columns from the mappings, and Type is the local name after the last
+   "#", "/", or ":" (BDQ types are IRIs without "#", or, for bdqtest, prefixed names). Records of http
+   vocabularies are shown exactly as before; generalizing this means dropping the https condition in
+   html:uses-mapped-columns. :)
+declare function html:mapped-columns($repoPath as xs:string, $db as xs:string, $coreDoc as xs:string?) as element()
+{
+  let $file := $repoPath||$db||"/"||substring-before(string($coreDoc), ".csv")||"-column-mappings.csv"
+  let $mappings :=
+    if (string($coreDoc) != "" and file:exists($file))
+    then csv:parse(file:read-text($file), map { 'header' : true(),'separator' : "," })/csv/record
+    else ()
+  return
+  <columns>
+    (: a definition in English or without a language first (e.g. dwc-translations maps one column per
+       language to skos:definition) :)
+    <definition>{string((($mappings[predicate/text()="skos:definition"][string(attribute)=("en","")])[1]/header/text(),
+                         ($mappings[predicate/text()="rdfs:comment"][string(attribute)=("en","")])[1]/header/text(),
+                         ($mappings[predicate/text()="skos:definition"])[1]/header/text())[1])}</definition>
+    {
+    (: every column mapped to rdf:type, in mapping order (e.g. the BDQ vocabularies' type and type1) :)
+    for $header in distinct-values($mappings[predicate/text()="rdf:type"]/header/text())
+    return <type>{$header}</type>
+    }
+  </columns>
+};
+
+declare function html:uses-mapped-columns($iri as xs:string?) as xs:boolean
+{
+  starts-with(string($iri), "https://rs.tdwg.org/")
+};
+
+(: The value of the record's column named by $column; or of $legacy if $column is empty or the record
+   has no such column (a dataset's mappings can name a column its table lacks, e.g. ac-for-dwc). :)
+declare function html:column-value($record as element(), $column as xs:string?, $legacy as xs:string) as xs:string
+{
+  let $name := if (string($column) != "" and exists($record/*[local-name() = string($column)]))
+               then string($column) else $legacy
+  return string($record/*[local-name() = $name][1])
+};
+
+declare function html:mapped-definition($record as element(), $columns as element()?) as xs:string
+{
+  html:column-value($record, $columns/definition/text(), "rdfs_comment")
+};
+
+(: The local names of all the record's types, from every column mapped to rdf:type, comma-separated;
+   from rdf_type if no column is mapped or none is present in the record. :)
+declare function html:mapped-type-local-name($record as element(), $columns as element()?) as xs:string
+{
+  let $present := for $column in $columns/type/text()
+                   where exists($record/*[local-name() = string($column)])
+                   return string($column)
+  let $values :=
+    if (exists($present))
+    then for $column in $present return html:column-value($record, $column, "rdf_type")
+    else html:column-value($record, (), "rdf_type")
+  return string-join(distinct-values(for $value in $values[. != ""] return replace($value, "^.*[#/:]", "")), ", ")
+};
+
 (: generate a table with metadata about a single term :)
 declare function html:term-metadata($record as element(),$version as xs:string,$replacements as element()*,$ns as xs:string) as element()
+{
+  html:term-metadata($record,$version,$replacements,$ns,())
+};
+
+declare function html:term-metadata($record as element(),$version as xs:string,$replacements as element()*,$ns as xs:string,$columns as element()?) as element()
 {
    <table>{
    <tr><td><strong>Term Name:</strong></td><td>{$ns||":"||$record/term_localName/text()}</td></tr>,
@@ -270,11 +341,18 @@ declare function html:term-metadata($record as element(),$version as xs:string,$
    else (),
 
    <tr><td><strong>Modified:</strong></td><td>{$record/term_modified/text()}</td></tr>,
+   if (html:uses-mapped-columns($record/term_isDefinedBy/text()))
+   then (
+     <tr><td><strong>Definition:</strong></td><td>{html:mapped-definition($record, $columns)}</td></tr>,
+     <tr><td><strong>Type:</strong></td><td>{html:mapped-type-local-name($record, $columns)}</td></tr>
+   )
+   else (
    <tr><td><strong>Definition:</strong></td><td>{$record/rdfs_comment/text()}</td></tr>,
 
    if (contains($record/rdf_type/text(),"#"))
    then <tr><td><strong>Type:</strong></td><td>{substring-after($record/rdf_type/text(),"#")}</td></tr>
-   else <tr><td><strong>Type:</strong></td><td>{$record/rdf_type/text()}</td></tr>,
+   else <tr><td><strong>Type:</strong></td><td>{$record/rdf_type/text()}</td></tr>
+   ),
 
    if ($record/term_deprecated/text() != "")
    then (
@@ -308,14 +386,26 @@ declare function html:term-metadata($record as element(),$version as xs:string,$
 (: generate a table with metadata about a single term version :)
 declare function html:term-version-metadata($record as element(),$versionOf as xs:string,$replacements as element()*,$ns as xs:string) as element()
 {
+  html:term-version-metadata($record,$versionOf,$replacements,$ns,())
+};
+
+declare function html:term-version-metadata($record as element(),$versionOf as xs:string,$replacements as element()*,$ns as xs:string,$columns as element()?) as element()
+{
  <table>{
    <tr><td><a name="{$ns||"_"||$record/term_localName/text()}"><strong>Term Name:</strong></a></td><td>{$ns||":"||$record/term_localName/text()}</td></tr>,
    <tr><td><strong>Label:</strong></td><td>{$record/label/text()}</td></tr>,
    <tr><td><strong>Term version IRI:</strong></td><td>{$record/version/text()}</td></tr>,
    <tr><td><strong>Version of:</strong></td><td><a href='{$versionOf}'>{$versionOf}</a></td></tr>,
    <tr><td><strong>Issued:</strong></td><td>{$record/version_issued/text()}</td></tr>,
+   if (html:uses-mapped-columns($record/version/text()))
+   then (
+     <tr><td><strong>Definition:</strong></td><td>{html:mapped-definition($record, $columns)}</td></tr>,
+     <tr><td><strong>Type:</strong></td><td>{html:mapped-type-local-name($record, $columns)}</td></tr>
+   )
+   else (
    <tr><td><strong>Definition:</strong></td><td>{$record/rdfs_comment/text()}</td></tr>,
-   <tr><td><strong>Type:</strong></td><td>{substring-after($record/rdf_type/text(),"#")}</td></tr>,
+   <tr><td><strong>Type:</strong></td><td>{substring-after($record/rdf_type/text(),"#")}</td></tr>
+   ),
    <tr><td><strong>Status:</strong></td><td>{$record/version_status/text()}</td></tr>,
 
    if ($record/replaces_version/text() != "")
@@ -368,6 +458,7 @@ let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
+let $columns := html:mapped-columns($repoPath, $db, $coreDoc)
 let $metadataSeparator := $config/separator/text()
 let $baseIriColumn := $config/baseIriColumn/text()
 let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
@@ -391,7 +482,7 @@ return
   </head>
   <body>{
     html:generate-header(),
-    html:term-metadata($record,$version,$linkedMetadata,$ns),
+    html:term-metadata($record,$version,$linkedMetadata,$ns,$columns),
     <br/>,
     <p><strong>Metadata about this term are available in the following formats/serializations:</strong></p>,
     <table border="1">{
@@ -422,6 +513,7 @@ let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
+let $columns := html:mapped-columns($repoPath, $db, $coreDoc)
 let $metadataSeparator := $config/separator/text()
 let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
@@ -449,7 +541,7 @@ return
     html:generate-header(),
      <strong>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</strong>,
      <br/>,
-    html:term-version-metadata($record,$versionOf,$replacements,$ns),
+    html:term-version-metadata($record,$versionOf,$replacements,$ns,$columns),
     <br/>,
     <p><strong>Metadata about this term version are available in the following formats/serializations:</strong></p>,
     <table border="1">{
@@ -896,6 +988,7 @@ let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
+let $columns := html:mapped-columns($repoPath, $db, $coreDoc)
 let $metadataSeparator := $config/separator/text()
 let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
@@ -912,7 +1005,7 @@ return
        let $version := html:most-recent-version($linkedMetadata,$localName)[last()]
        order by $localName
        return (
-         html:term-metadata($record,$version,$linkedMetadata,$ns),<br/>
+         html:term-metadata($record,$version,$linkedMetadata,$ns,$columns),<br/>
          )
        }
      </div>
@@ -1040,6 +1133,7 @@ let $repoPath := "/usr/src/rs.tdwg.org/"
 let $config := html:load-configuration($repoPath, $db)
 
 let $coreDoc := $config/coreClassFile/text()
+let $columns := html:mapped-columns($repoPath, $db, $coreDoc)
 let $metadataSeparator := $config/separator/text()
 let $metadataDoc := file:read-text($repoPath||$db||"/"||$coreDoc)
 let $xmlMetadata := csv:parse($metadataDoc, map { 'header' : true(),'separator' : $metadataSeparator })
@@ -1057,7 +1151,7 @@ return
 fn:string-length($record/version/text())-11) (: find the part of the version before the ISO 8601 date :)
        let $versionOf := replace($versionRoot,'version/','')
        return (
-         html:term-version-metadata($record,$versionOf,$replacements,$ns),
+         html:term-version-metadata($record,$versionOf,$replacements,$ns,$columns),
          <br/>
          )
        }
