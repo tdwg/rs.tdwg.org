@@ -1761,7 +1761,7 @@ def update_standard_metadata(date_issued, local_offset_from_utc, standardUri, vo
                 'Standard ' + standardUri + ' already contains part ' +
                 vocabularyUri + ' with a type other than tdwgutility:Vocabulary.'
             )
-    else:
+    elif vocabularyUri is not None:  # None: a Standard version for Document versions only
         standards_parts.append(
             [standardUri, vocabularyUri, 'tdwgutility:Vocabulary']
         )
@@ -4009,6 +4009,9 @@ document_config_by_iri = {
     document_config['document']: document_config
     for document_config in documents
 }
+# Whether this release created any Document version; a release that creates Document
+# versions but changes no Vocabulary still requires a new Standard version.
+document_versions_created = False
 
 # Vocabulary-associated Lists-of-Terms Documents are versioned according to
 # Vocabulary/Term List release state, not by a per-Document modified flag.
@@ -4021,6 +4024,7 @@ for vocabulary_config in vocabularies:
     document_config = document_config_by_iri[document_iri]
     if vocabulary_result['document_changed']:
         update_document_metadata(document_config)
+        document_versions_created = True
         report(
             'Document: processed List-of-Terms metadata for ' +
             vocabulary_config['vocabulary_label'] + '.'
@@ -4040,6 +4044,7 @@ for document_config in documents:
         continue
     if generic_document_changed(document_config):
         update_document_metadata(document_config)
+        document_versions_created = True
         report('Document: processed metadata for ' + document_iri + '.')
     else:
         report('Document: retained existing version for ' + document_iri + '.')
@@ -4048,6 +4053,22 @@ for document_config in documents:
 # Only now, after every new Document has acquired its first version, make the
 # unversioned and target-version Standard composition exactly match config.
 reconcile_current_standard_composition()
+
+# A release that creates Document versions (a new Document, or one declared
+# `modified: true`) but no Term List, Vocabulary, or extension list version has
+# not created the target Standard version above. Create it now, from the current
+# composition, so that the Standard has a version for its new Document versions.
+# Releases that create a Standard version through their Vocabularies are unaffected.
+_standard_versions = readCsv('../standards-versions/standards-versions.csv')
+_sv_version_column = findColumnWithHeader(_standard_versions[0], 'version')[1]
+if document_versions_created and not any(
+        row[_sv_version_column] == standardUri + '/version/' + date_issued
+        for row in _standard_versions[1:]):
+    update_standard_metadata(date_issued, local_offset_from_utc, standardUri,
+                             None, None, None, False)
+    report('Standard: created version ' + standardUri + '/version/' + date_issued +
+           ' for Document versions only.')
+
 reconcile_target_standard_version_parts()
 
 # -----------------------

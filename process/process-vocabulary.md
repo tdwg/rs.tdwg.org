@@ -168,6 +168,8 @@ For Documents that are not Vocabulary-associated Lists of Terms:
 - an existing Document receives a new target-date version only when its declaration contains `modified: true`; and
 - an existing Document without `modified: true` retains its latest applicable version.
 
+A release that creates Document versions but no Term List, Vocabulary, or extension list version (for example, one that only adds a Document or declares one `modified: true`) still creates a new Standard version on the target date, whose parts are the current composition (Section 7.3).
+
 The processor derives the target lifecycle dates from `date_issued`; maintainers do not enter `doc_modified` as a release-control field.
 
 A same-release rerun does not create a duplicate Document version when the target-date version already exists.
