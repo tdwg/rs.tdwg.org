@@ -1327,10 +1327,12 @@ declare function page:merge-rdf-xml($serialized,$axioms)
 (: Appends the node objects of an expanded JSON-LD array to the @graph of a serialized JSON-LD document. :)
 declare function page:merge-json-ld($serialized,$axioms)
 {
-  let $inner := normalize-space(replace($axioms,"^\s*\[|\]\s*$",""))
+  (: Only the enclosing brackets and the whitespace around them are removed: whitespace inside
+     string values must be kept. :)
+  let $inner := replace($axioms,"^\s*\[\s*|\s*\]\s*$","")
   let $graphEnd := page:last-index-of($serialized,"]")
   return
-    if ($inner = "" or $graphEnd = 0)
+    if (normalize-space($inner) = "" or $graphEnd = 0)
     then $serialized
     else concat(substring($serialized,1,$graphEnd - 1),",&#10;",$inner,"&#10;",substring($serialized,$graphEnd))
 };
