@@ -20,3 +20,5 @@ https://rs.tdwg.org/bdqval/terms/version/Empty-2026-04-22,Empty
 https://rs.tdwg.org/bdqval/terms/version/NotEmpty-2026-04-22,NotEmpty
 https://rs.tdwg.org/bdqval/terms/version/AggregatedTestResponseOutcomes-2026-04-23,AggregatedTestResponseOutcomes
 https://rs.tdwg.org/bdqval/terms/version/defaultOccurrenceStatus-2026-04-27,defaultOccurrenceStatus
+https://rs.tdwg.org/bdqval/terms/version/AllAmendmentTestsRunOnSingleRecord-2026-11-12,AllAmendmentTestsRunOnSingleRecord
+https://rs.tdwg.org/bdqval/terms/version/AllValidationTestsRunOnSingleRecord-2026-11-12,AllValidationTestsRunOnSingleRecord
