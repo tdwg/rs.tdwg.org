@@ -278,7 +278,11 @@ declare function html:mapped-columns($repoPath as xs:string, $db as xs:string, $
     <definition>{string((($mappings[predicate/text()="skos:definition"][string(attribute)=("en","")])[1]/header/text(),
                          ($mappings[predicate/text()="rdfs:comment"][string(attribute)=("en","")])[1]/header/text(),
                          ($mappings[predicate/text()="skos:definition"])[1]/header/text())[1])}</definition>
-    <type>{string(($mappings[predicate/text()="rdf:type"])[1]/header/text())}</type>
+    {
+    (: every column mapped to rdf:type, in mapping order (e.g. the BDQ vocabularies' type and type1) :)
+    for $header in distinct-values($mappings[predicate/text()="rdf:type"]/header/text())
+    return <type>{$header}</type>
+    }
   </columns>
 };
 
@@ -301,9 +305,18 @@ declare function html:mapped-definition($record as element(), $columns as elemen
   html:column-value($record, $columns/definition/text(), "rdfs_comment")
 };
 
+(: The local names of all the record's types, from every column mapped to rdf:type, comma-separated;
+   from rdf_type if no column is mapped or none is present in the record. :)
 declare function html:mapped-type-local-name($record as element(), $columns as element()?) as xs:string
 {
-  replace(html:column-value($record, $columns/type/text(), "rdf_type"), "^.*[#/:]", "")
+  let $present := for $column in $columns/type/text()
+                   where exists($record/*[local-name() = string($column)])
+                   return string($column)
+  let $values :=
+    if (exists($present))
+    then for $column in $present return html:column-value($record, $column, "rdf_type")
+    else html:column-value($record, (), "rdf_type")
+  return string-join(distinct-values(for $value in $values[. != ""] return replace($value, "^.*[#/:]", "")), ", ")
 };
 
 (: generate a table with metadata about a single term :)
