@@ -1,0 +1,299 @@
+[
+  {
+    "@id": "https://doi.org/10.3897/biss.3.38084",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Groom et al. (2019) Improving Darwin Core for research and management of alien species. Biodiversity Information Science and Standards 3: e38084. https://doi.org/10.3897/biss.3.38084"
+      }
+    ]
+  },
+  {
+    "@id": "https://dwc.tdwg.org/pw/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Darwin Core Maintenance Group (2021) Pathway Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). https://dwc.tdwg.org/pw/"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqcrit/terms/Standard",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Criterion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Standard"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Conformance"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2024-02-09",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Validation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Does the value of dwc:pathway occur in the bdqval:sourceAuthority?"
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/5424e933-bee7-4125-839e-d8743ea69f93"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-09"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://doi.org/10.3897/biss.3.38084"
+      },
+      {
+        "@id": "https://dwc.tdwg.org/pw/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "VALIDATION_PATHWAY_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/277"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Validation dwc:pathway Standard for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:f3141ff8-76fa-4953-9c6c-9300816358cc"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasCriterion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqcrit/terms/Standard"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-09"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Alien-Species"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/sourceAuthority",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "urn:uuid:136039c5-6ceb-41ec-90b3-eb1cd37d6eed",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:sourceAuthority:\"Pathway Controlled Vocabulary List of Terms\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "Pathway Controlled Vocabulary List of Terms"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/sourceAuthority"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationPolicy: (26) validations  in UseCase bdquc:Alien-Species"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationPolicy: (26) validations  in UseCase bdquc:Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2024-02-09"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:pathway is bdqval:Empty; COMPLIANT if the value of dwc:pathway is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = \"Pathway Controlled Vocabulary List of Terms\" {[https://dwc.tdwg.org/pw/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/Pathway/concepts]}"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: VALIDATION_PATHWAY_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:pathway=\"escapee\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:pathway not found in the bdqval:sourceAuthority\""
+      },
+      {
+        "@value": "dwc:pathway=\"transportStowaway\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:pathway found in the bdqval:sourceAuthority\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
+      {
+        "@id": "urn:uuid:136039c5-6ceb-41ec-90b3-eb1cd37d6eed"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": "bdqval:sourceAuthority default = \"Pathway Controlled Vocabulary List of Terms\" {[https://dwc.tdwg.org/pw/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/Pathway/concepts]}"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:pathway is bdqval:Empty; COMPLIANT if the value of dwc:pathway is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT."
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:f3141ff8-76fa-4953-9c6c-9300816358cc",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:pathway"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:pathway"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/pathway"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:ffae8e47-2181-4a83-b1c7-d0a893e79b67",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification for: VALIDATION_PATHWAY_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: TG2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1875"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)"
+      },
+      {
+        "@value": "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification for: VALIDATION_PATHWAY_STANDARD"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forValidation": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2024-02-09"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e"
+      }
+    ]
+  }
+]

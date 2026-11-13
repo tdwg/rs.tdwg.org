@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0f4b32e4-23c8-49ec-aa9f-3b7970d52b19> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_MONTH_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_MONTH_STANDARD" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation TIME CODED Test Conformance CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_MONTH_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_MONTH_STANDARD" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/b3c2bb86-e239-4532-ae0c-b121ec1ee025-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:8fae3a40-10fd-433c-bd4a-368bd356a7f1> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b3c2bb86-e239-4532-ae0c-b121ec1ee025-2025-03-06> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:5a033f48-4b60-4241-b5c3-4a7cb8de33f2> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_MONTH_STANDARD.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_MONTH_STANDARD across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_MONTH_STANDARD.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:01c6dafa-0886-4b7e-9881-2c3018c98bdc ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:8fae3a40-10fd-433c-bd4a-368bd356a7f1> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_MONTH_STANDARD" ;
+    dcterms:description "COMPLETE if every VALIDATION_MONTH_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_MONTH_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/b3c2bb86-e239-4532-ae0c-b121ec1ee025-2025-03-06> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_MONTH_STANDARD" ;
+    dcterms:description "Measure if all VALIDATION_MONTH_STANDARD in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:isVersionOf bdqtest:b3c2bb86-e239-4532-ae0c-b121ec1ee025 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:month Standard for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:5a033f48-4b60-4241-b5c3-4a7cb8de33f2> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

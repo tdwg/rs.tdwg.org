@@ -1,0 +1,75 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:47bdaece-0c20-4ba3-b453-4c78b92b4c94> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1775",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Amendment SPACE CODED Test Completeness CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:84195393-4797-465f-bfc1-b764df67c5c2> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2025-03-07> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqenh:FilledInFrom a bdqffdq:Enhancement ;
+    rdfs:label "FilledInFrom" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:0c598386-f49e-40b3-bbcc-b217e7d2b449> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:verbatimElevation" ;
+    skos:prefLabel "Information Element Consulted dwc:verbatimElevation" ;
+    bdqffdq:composedOf dwc:verbatimElevation .
+
+<urn:uuid:3d5994c8-29df-4399-965c-c2c596a6767f> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:minimumElevationInMeters, dwc:maximumElevationInMeters" ;
+    skos:prefLabel "Information Element ActedUpon dwc:minimumElevationInMeters, dwc:maximumElevationInMeters" ;
+    bdqffdq:composedOf dwc:maximumElevationInMeters,
+        dwc:minimumElevationInMeters .
+
+<urn:uuid:84195393-4797-465f-bfc1-b764df67c5c2> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters or dwc:maximumElevationInMeters are bdqval:NotEmpty or dwc:verbatimElevation is bdqval:Empty; FILLED_IN the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be unambiguously interpreted from dwc:verbatimElevation; otherwise NOT_AMENDED" ;
+    skos:example "dwc:verbatimElevation=\"100 feet\", dwc:minimumElevationInMeters=\"\", dwc:maximumElevationInMeters=\"\": Response.status=FILLED_IN, Response.result=dwc:minimumElevationInMeters=\"30.48\", dwc:maximumElevationInMeters=\"30.48\", Response.comment=\"dwc:verbatimElevation contains an interpretable value\"",
+        "dwc:verbatimElevation=\"x\", dwc:minimumElevationInMeters=\"\", dwc:maximumElevationInMeters=\"\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:verbatimElevation contains an uninterpretable value\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters or dwc:maximumElevationInMeters are bdqval:NotEmpty or dwc:verbatimElevation is bdqval:Empty; FILLED_IN the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be unambiguously interpreted from dwc:verbatimElevation; otherwise NOT_AMENDED" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2025-03-07> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_MINELEVATIONMAXELEVATION_FROM_VERBATIM" ;
+    dcterms:description "Proposes an amendment or amendments to the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be interpreted from dwc:verbatimElevation." ;
+    dcterms:isVersionOf bdqtest:2d638c8b-4c62-44a0-a14d-fa147bf9823d ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/68" ;
+    skos:note "If the dwc:verbatimElevation as a single value rather than a range, the minimum and maximum values should be amended with the same value. When transforming units, the transformation should be reversible, not adjusting the number of significant digits or adjusting the rounding. For example, transform yards to meters by multiplying by 0.9144 and retaining added significant digits (verbatim elevation of 10 yards to minimum and maximum depths in meters of 9.144). Implementations should be capable of interpreting verbatim data in at least meters,yards, feet, and kilometers in the form of either a single value or a range. The units must be specified in the verbatim data to be interpretable." ;
+    skos:prefLabel "Amendment dwc:minimumElevationInMeters dwc:maximumElevationInMeters from dwc:verbatimElevation for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:3d5994c8-29df-4399-965c-c2c596a6767f> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:0c598386-f49e-40b3-bbcc-b217e7d2b449> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-08-30"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:FilledInFrom ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

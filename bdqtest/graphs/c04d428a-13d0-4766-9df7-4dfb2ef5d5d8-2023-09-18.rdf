@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/c04d428a-13d0-4766-9df7-4dfb2ef5d5d8-2023-09-18">
+    <dcterms:description>Measure if all VALIDATION_ENDDAYOFYEAR_INRANGE in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value).</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/c04d428a-13d0-4766-9df7-4dfb2ef5d5d8"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
+    <rdfs:label>MULTIRECORD_MEASURE_QA_ENDDAYOFYEAR_INRANGE</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/297</skos:historyNote>
+    <skos:note>For Quality Assurance, filter record set until this measure is COMPLETE.</skos:note>
+    <skos:prefLabel>Measurement over MultiRecord for QualityAssurance of Validation dwc:endDayOfYear In Range for MultiRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:dda8a095-0878-4b93-8a55-9b95f1700dae"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:dda8a095-0878-4b93-8a55-9b95f1700dae">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_ENDDAYOFYEAR_INRANGE.Response</rdfs:label>
+    <skos:note>Aggregated Response outcomes produced by VALIDATION_ENDDAYOFYEAR_INRANGE across a MultiRecord.</skos:note>
+    <skos:prefLabel>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_ENDDAYOFYEAR_INRANGE.Response</skos:prefLabel>
+    <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/9a39d88c-7eee-46df-b32a-c109f9f81fb8"/>
+    <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:893fd474-eab3-4265-865f-6cfe7635aa6b">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_ENDDAYOFYEAR_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_ENDDAYOFYEAR_INRANGE</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation TIME CODED Test Conformance CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_ENDDAYOFYEAR_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_ENDDAYOFYEAR_INRANGE</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c04d428a-13d0-4766-9df7-4dfb2ef5d5d8-2023-09-18"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:c211fdc8-fae5-4fa5-a8b8-0664a643b6a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:c211fdc8-fae5-4fa5-a8b8-0664a643b6a5">
+    <dcterms:description>COMPLETE if every VALIDATION_ENDDAYOFYEAR_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE.</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: MULTIRECORD_MEASURE_QA_ENDDAYOFYEAR_INRANGE</rdfs:label>
+    <skos:example></skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_ENDDAYOFYEAR_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>MultiRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (60) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c04d428a-13d0-4766-9df7-4dfb2ef5d5d8-2023-09-18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.1371/journal.pone.0178731">
+    <dcterms:bibliographicCitation>Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

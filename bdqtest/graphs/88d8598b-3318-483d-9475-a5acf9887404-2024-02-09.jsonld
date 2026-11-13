@@ -1,0 +1,285 @@
+[
+  {
+    "@id": "https://rs.gbif.org/vocabulary/gbif/sex.xml",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "GBIF (2015) Darwin Core Vocabulary: Sex GBIF Vocabulary. https://rs.gbif.org/vocabulary/gbif/sex.xml"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqcrit/terms/Standard",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Criterion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Standard"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Conformance"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/88d8598b-3318-483d-9475-a5acf9887404-2024-02-09",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Validation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Does the value of dwc:sex occur in bdqval:sourceAuthority?"
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/88d8598b-3318-483d-9475-a5acf9887404"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-09"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://rs.gbif.org/vocabulary/gbif/sex.xml"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "VALIDATION_SEX_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/283"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters. For reference, a list of synonyms for dwc:sex values can be found at https://registry.gbif.org/vocabulary/Sex/concepts."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Validation dwc:sex Standard for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:81029ffa-2df8-4e9e-a7dd-fc67faad9205"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasCriterion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqcrit/terms/Standard"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-09"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Alien-Species"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/sourceAuthority",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "urn:uuid:2964d61f-eab0-4a21-9ac6-3f6a7c4fbf86",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:sourceAuthority:\"GBIF Sex Vocabulary\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "GBIF Sex Vocabulary"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/sourceAuthority"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationPolicy: (26) validations  in UseCase bdquc:Alien-Species"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationPolicy: (26) validations  in UseCase bdquc:Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/88d8598b-3318-483d-9475-a5acf9887404-2024-02-09"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:72471db4-226c-454f-bbe8-5c1718e6c834",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:sex is bdqval:Empty; COMPLIANT if the value of dwc:sex is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = \"GBIF Sex Vocabulary\" [https://api.gbif.org/v1/vocabularies/Sex]} {\"dwc:sex vocabulary API\" [https://api.gbif.org/v1/vocabularies/Sex/concepts]}"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: VALIDATION_SEX_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:sex=\"Male\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:sex found in the bdqval:sourceAuthority\""
+      },
+      {
+        "@value": "dwc:sex=\"f\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:sex not found in the bdqval:sourceAuthority\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
+      {
+        "@id": "urn:uuid:2964d61f-eab0-4a21-9ac6-3f6a7c4fbf86"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": "bdqval:sourceAuthority default = \"GBIF Sex Vocabulary\" [https://api.gbif.org/v1/vocabularies/Sex]} {\"dwc:sex vocabulary API\" [https://api.gbif.org/v1/vocabularies/Sex/concepts]}"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:sex is bdqval:Empty; COMPLIANT if the value of dwc:sex is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT."
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:81029ffa-2df8-4e9e-a7dd-fc67faad9205",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:sex"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:sex"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/sex"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:a0c48217-97a2-41e2-9540-61939f2628c5",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationMethod: VALIDATION_SEX_STANDARD with Specification for: VALIDATION_SEX_STANDARD"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: VertNet"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L2084"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)"
+      },
+      {
+        "@value": "TG2 Validation OTHER CODED Test VOCABULARY Parameterized CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationMethod: VALIDATION_SEX_STANDARD with Specification for: VALIDATION_SEX_STANDARD"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forValidation": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/88d8598b-3318-483d-9475-a5acf9887404-2024-02-09"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:72471db4-226c-454f-bbe8-5c1718e6c834"
+      }
+    ]
+  }
+]

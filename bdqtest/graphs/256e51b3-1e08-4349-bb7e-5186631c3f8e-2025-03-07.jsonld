@@ -1,0 +1,342 @@
+[
+  {
+    "@id": "https://doi.org/10.3897/biss.7.110728",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Waller JT (2023) Processing Country Centroids at the Global Biodiversity Information Facility. Biodiversity Information Science and Standards 7: e110728. https://doi.org/10.3897/biss.7.110728"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqcrit/terms/Likely",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Criterion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Likely"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Conformance"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Issue"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Are the supplied geographic coordinates within a defined buffer of the center of the country?"
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/256e51b3-1e08-4349-bb7e-5186631c3f8e"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://doi.org/10.3897/biss.7.110728"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ISSUE_COORDINATES_CENTEROFCOUNTRY"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/287"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "We have increased the buffer to 5000 meters to cater for differences that may have arisen due to the difference in geodetic datums."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Issue Coordinates Center of Country for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:6f6a46c6-9979-41a2-83c2-fd196e89c8c1"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasConsultedInformationElement": [
+      {
+        "@id": "urn:uuid:5be9ff68-1232-4f09-a3ef-5d78ccdecf8c"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasCriterion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqcrit/terms/Likely"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-28"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Spatial-Temporal_Patterns"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/sourceAuthority",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "urn:uuid:0239b59b-db0e-4e6a-8ba8-2f89abf9e78e",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/IssueMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: GBIF"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3632"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)"
+      },
+      {
+        "@value": "TG2 Issue SPACE CODED Test Conformance Parameterized CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forIssue": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:693aa9a5-6058-4399-a474-43268a8e503b"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:2c441806-b56b-4252-9944-e331f9f3fee6",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:sourceAuthority:\"GBIF Catalogue of Country Centroides\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "GBIF Catalogue of Country Centroides"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/sourceAuthority"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:5be9ff68-1232-4f09-a3ef-5d78ccdecf8c",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Consulted"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element Consulted dwc:coordinateUncertaintyInMeters"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element Consulted dwc:coordinateUncertaintyInMeters"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:693aa9a5-6058-4399-a474-43268a8e503b",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if any of dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude are bdqval:Empty; POTENTIAL_ISSUE if (1) the geographic coordinates are within the distance given by bdqval:spatialBufferInMeters from the center of the supplied dwc:countryCode as represented in the bdqval:sourceAuthority (or one of the centers, if the bdqval:sourceAuthority provides more than one per country code) and (2) the dwc:coordinateUncertaintyInMeters is bdqval:Empty or less than half the square root of the area of the country; otherwise NOT_ISSUE. bdqval:spatialBufferInMeters default = \"5000\",bdqval:sourceAuthority default = \"GBIF Catalogue of Country Centroides\" {[https://raw.githubusercontent.com/jhnwllr/catalogue-of-centroids/master/PCLI.tsv]}"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:decimalLatitude=\"-34.184199\", dwc:decimalLongitude=\"-65.509403\", dwc:countryCode=\"AR\": Response.status=RUN_HAS_RESULT, Response.result=NOT_ISSUE, Response.comment=\"coordinates fall outside buffered distance in the bdqval:sourceAuthority for dwc:countryCode\""
+      },
+      {
+        "@value": "dwc:decimalLatitude=\"-35.38804\", dwc:decimalLongitude=\"-65.154964\", dwc:countryCode=\"AR\": Response.status=RUN_HAS_RESULT, Response.result=POTENTIAL_ISSUE, Response.comment=\"coordinates fall within buffered distance in the bdqval:sourceAuthority for dwc:countryCode which may mean that coordinates have been generalized\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
+      {
+        "@id": "urn:uuid:2c441806-b56b-4252-9944-e331f9f3fee6"
+      },
+      {
+        "@id": "urn:uuid:9c0a82d5-4b24-4160-a000-ee9429bef8f7"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": "bdqval:spatialBufferInMeters default = \"5000\",bdqval:sourceAuthority default = \"GBIF Catalogue of Country Centroides\" {[https://raw.githubusercontent.com/jhnwllr/catalogue-of-centroids/master/PCLI.tsv]}"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if any of dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude are bdqval:Empty; POTENTIAL_ISSUE if (1) the geographic coordinates are within the distance given by bdqval:spatialBufferInMeters from the center of the supplied dwc:countryCode as represented in the bdqval:sourceAuthority (or one of the centers, if the bdqval:sourceAuthority provides more than one per country code) and (2) the dwc:coordinateUncertaintyInMeters is bdqval:Empty or less than half the square root of the area of the country; otherwise NOT_ISSUE."
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:6f6a46c6-9979-41a2-83c2-fd196e89c8c1",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/countryCode"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/decimalLatitude"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/decimalLongitude"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:9c0a82d5-4b24-4160-a000-ee9429bef8f7",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:spatialBufferInMeters:\"5000\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "5000"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters"
+      }
+    ]
+  }
+]

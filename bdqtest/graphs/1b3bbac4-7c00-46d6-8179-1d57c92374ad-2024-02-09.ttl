@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (52) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/1b3bbac4-7c00-46d6-8179-1d57c92374ad-2024-02-09> .
+
+<urn:uuid:92c8e64a-7279-4934-8071-5807d1796cbd> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_SEX_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation OTHER CODED Test VOCABULARY Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_SEX_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/1b3bbac4-7c00-46d6-8179-1d57c92374ad-2024-02-09> ;
+    bdqffdq:hasSpecification <urn:uuid:1449904c-2de3-4fd7-a63e-53882160a132> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+<urn:uuid:1449904c-2de3-4fd7-a63e-53882160a132> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD" ;
+    dcterms:description "COMPLETE if every VALIDATION_SEX_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_SEX_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." .
+
+<urn:uuid:c449482f-64cd-4152-a434-3492ebdd4401> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SEX_STANDARD.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_SEX_STANDARD across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SEX_STANDARD.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:88d8598b-3318-483d-9475-a5acf9887404 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/1b3bbac4-7c00-46d6-8179-1d57c92374ad-2024-02-09> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_SEX_STANDARD" ;
+    dcterms:description "Measure if all VALIDATION_SEX_STANDARD in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:isVersionOf bdqtest:1b3bbac4-7c00-46d6-8179-1d57c92374ad ;
+    dcterms:issued "2024-02-09"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:sex Standard for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:c449482f-64cd-4152-a434-3492ebdd4401> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-02-09"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

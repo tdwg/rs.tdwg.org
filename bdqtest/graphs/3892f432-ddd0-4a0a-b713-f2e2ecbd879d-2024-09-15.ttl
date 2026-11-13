@@ -1,0 +1,85 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:8ca96a50-f1f5-4a4e-853e-755cc5aa82a7> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY with Specification Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
+    skos:historyNote "Source: TG2-Gainesville" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1395",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Amendment TIME CODED Test Completeness CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY with Specification Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2024-09-15> ;
+    bdqffdq:hasSpecification <urn:uuid:bda7e8a3-3366-43d5-8a8b-e206101dc90d> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (11) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2024-09-15> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqenh:FilledInFrom a bdqffdq:Enhancement ;
+    rdfs:label "FilledInFrom" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<https://www.loc.gov/standards/datetime/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/" .
+
+<urn:uuid:05f8a834-4582-4d50-8ac6-2bd766c3ae28> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:year, dwc:month, dwc:day" ;
+    skos:prefLabel "Information Element Consulted dwc:year, dwc:month, dwc:day" ;
+    bdqffdq:composedOf dwc:day,
+        dwc:month,
+        dwc:year .
+
+<urn:uuid:bda7e8a3-3366-43d5-8a8b-e206101dc90d> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
+    dcterms:description "INTERNAL _PREREQUISITES_NOT_MET if dwc:eventDate is not EMPTY or dwc:year is EMPTY or is not interpretable as an integer; FILLED_IN the value of dwc:eventDate if an ISO 8601 date was interpreted from the values in dwc:year, dwc:month and dwc:day; otherwise NOT_AMENDED" ;
+    skos:example "dwc:eventDate=\"\", dwc:year=\"1420\", dwc:month=\"10\", dwc:day=\"29\": Response.status=FILLED_IN, Response.result=dwc:eventDate=\"1420-10-29\", Response.comment=\"dwc:year, dwc:month and dwc:day are interpretable, even if pre-Linnaeus\"",
+        "dwc:eventDate=\"\", dwc:year=\"2024\", dwc:month=\"2\", dwc:day=\"30\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"Not a valid date\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL _PREREQUISITES_NOT_MET if dwc:eventDate is not EMPTY or dwc:year is EMPTY or is not interpretable as an integer; FILLED_IN the value of dwc:eventDate if an ISO 8601 date was interpreted from the values in dwc:year, dwc:month and dwc:day; otherwise NOT_AMENDED" .
+
+<urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:eventDate" ;
+    skos:prefLabel "Information Element ActedUpon dwc:eventDate" ;
+    bdqffdq:composedOf dwc:eventDate .
+
+<https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2024-09-15> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
+    dcterms:description "Proposes an amendment to the value of dwc:eventDate from values in dwc:year, dwc:month and dwc:day." ;
+    dcterms:isVersionOf bdqtest:3892f432-ddd0-4a0a-b713-f2e2ecbd879d ;
+    dcterms:issued "2024-09-15"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/>,
+        <https://www.loc.gov/standards/datetime/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/93" ;
+    skos:note "An attempt to populate dwc:eventDate from dwc:verbatimEventDate and from dwc:startDayOfYear and dwc:endDayOfYear should be made before this Test is run. If dwc:year and dwc:day are present and interpretable, but dwc:month is not supplied or is not interpretable, then just the year should be given as the proposed amendment. This Test assumes that that dwc:year, dwc:month, dwc:day are in a Gregorian calendar, and that only those three pieces of information are needed to produce a dwc:eventDate (explicitly in ISO 8601-1 format, and thus using the Gregorian calendar). When running the Test, the original precision, e.g. dwc:year=1980, dwc:month=1 should be retained, e.g. dwc:eventDate should become 1980-01, not 1980-01-01/1980-01-31." ;
+    skos:prefLabel "Amendment dwc:eventDate from dwc:year dwc:month dwc:day for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:05f8a834-4582-4d50-8ac6-2bd766c3ae28> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-09-15"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:FilledInFrom ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

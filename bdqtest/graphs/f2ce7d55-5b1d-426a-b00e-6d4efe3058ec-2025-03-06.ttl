@@ -1,0 +1,88 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f2ce7d55-5b1d-426a-b00e-6d4efe3058ec-2025-03-06> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/f2ce7d55-5b1d-426a-b00e-6d4efe3058ec-2025-03-06> .
+
+<urn:uuid:b6cb27ac-e9b8-4a0c-b986-3e34069d8449> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_GENUS_FOUND with Specification for: VALIDATION_GENUS_FOUND" ;
+    skos:historyNote "Source: iDigBio" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1999",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_GENUS_FOUND with Specification for: VALIDATION_GENUS_FOUND" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/f2ce7d55-5b1d-426a-b00e-6d4efe3058ec-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:15bbda19-dd18-471a-a5c3-56c7e543012f> .
+
+<https://doi.org/10.15468/39omei> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "GBIF Secretariat (2023) GBIF Backbone Taxonomy. Checklist dataset. https://doi.org/10.15468/39omei" .
+
+bdqcrit:Found a bdqffdq:Criterion ;
+    rdfs:label "Found" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:15bbda19-dd18-471a-a5c3-56c7e543012f> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_GENUS_FOUND" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:genus is bdqval:Empty; COMPLIANT if the value of dwc:genus is found as a value at the rank of genus in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    skos:example "dwc:genus=\"Egernea\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:genus does not have an equivalent at the rank of Genus in the bdqval:sourceAuthority. This may be fixed using fuzzy matching at the AMENDMENT stage\"",
+        "dwc:genus=\"Egernia\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:genus has an equivalent at the rank of Genus in the Parameterized Source Authority\"" ;
+    bdqffdq:hasArgument <urn:uuid:6304e753-423d-4188-bba4-0301c1a01769> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:genus is bdqval:Empty; COMPLIANT if the value of dwc:genus is found as a value at the rank of genus in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:6304e753-423d-4188-bba4-0301c1a01769> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Backbone Taxonomy\"" ;
+    bdqffdq:hasArgumentValue "GBIF Backbone Taxonomy" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:6417eb42-b07d-4b42-9a6a-13c592aeb5ea> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:genus" ;
+    skos:prefLabel "Information Element ActedUpon dwc:genus" ;
+    bdqffdq:composedOf dwc:genus .
+
+<https://rs.tdwg.org/bdqtest/terms/version/f2ce7d55-5b1d-426a-b00e-6d4efe3058ec-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_GENUS_FOUND" ;
+    dcterms:description "Does the value of dwc:genus occur at the rank of Genus in the bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:f2ce7d55-5b1d-426a-b00e-6d4efe3058ec ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/39omei> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/122" ;
+    skos:note "The purpose of this Test is to check whether the value is a name that is a result of a nomenclatural act at this rank. This excludes unpublished names, misspellings and vernacular names. It is expected that the Test will designate the source authority against which to check. The same Test might return distinct results when using distinct source authorities.  **Review Note: GBIF has indicated that we should switch to the Catalog of Life for the default source authority for this test. That change is planned prior to ratification.**" ;
+    skos:prefLabel "Validation dwc:genus Found for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:6417eb42-b07d-4b42-9a6a-13c592aeb5ea> ;
+    bdqffdq:hasCriterion bdqcrit:Found ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

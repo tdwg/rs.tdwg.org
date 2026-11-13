@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:66a9248a-4d93-443e-8f86-88b04e859d88> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_MAXDEPTH_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_MAXDEPTH_INRANGE" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test Conformance Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_MAXDEPTH_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_MAXDEPTH_INRANGE" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/c73d49d1-06e4-4272-8249-6a26e7f8abca-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:dc982344-5bc9-49b5-85f8-434f1e304eba> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (60) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/c73d49d1-06e4-4272-8249-6a26e7f8abca-2023-09-18> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:3a4ce2f7-01a4-4a60-8dd3-2be0ac41cdf0> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_MAXDEPTH_INRANGE.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_MAXDEPTH_INRANGE across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_MAXDEPTH_INRANGE.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:3f1db29a-bfa5-40db-9fd1-fde020d81939 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:dc982344-5bc9-49b5-85f8-434f1e304eba> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_MAXDEPTH_INRANGE" ;
+    dcterms:description "COMPLETE if every VALIDATION_MAXDEPTH_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_MAXDEPTH_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/c73d49d1-06e4-4272-8249-6a26e7f8abca-2023-09-18> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_MAXDEPTH_INRANGE" ;
+    dcterms:description "Measure if all VALIDATION_MAXDEPTH_INRANGE in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:isVersionOf bdqtest:c73d49d1-06e4-4272-8249-6a26e7f8abca ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:maximumDepthInMeters In Range for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:3a4ce2f7-01a4-4a60-8dd3-2be0ac41cdf0> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

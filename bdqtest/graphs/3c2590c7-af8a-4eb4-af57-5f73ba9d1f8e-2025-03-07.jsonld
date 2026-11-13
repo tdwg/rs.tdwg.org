@@ -1,0 +1,292 @@
+[
+  {
+    "@id": "https://doi.org/10.15468/doc-gg7h-s853",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Completeness",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Completeness"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqenh/terms/FilledInFrom",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Enhancement"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "FilledInFrom"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2025-03-07",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Amendment"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Proposes an amendment to the values of dwc:decimalLatitude, dwc:decimalLongitude, and dwc:geodeticDatum from geographic coordinate information in the verbatim coordinates terms."
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://doi.org/10.15468/doc-gg7h-s853"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AMENDMENT_COORDINATES_FROM_VERBATIM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/32"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Transformations between coordinate reference systems should not be made as a part of this Test. Though coordinate precision of the verbatim coordinates could also be interpreted during the process of amending decimal coordinates from verbatim coordinates, that amendment is recommended to be an independent Test. Note that dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimCoordinates might all be populated, and they may or not be perfectly consistent with each other. An ideal implementation should check for the consistency of these three fields and not amend them if they are inconsistent."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Amendment Coordinates from Verbatim for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:10a04e3b-9254-49b6-8095-166179cd3707"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasConsultedInformationElement": [
+      {
+        "@id": "urn:uuid:2ad22c2b-cebb-4924-b0e4-b36c64535010"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Completeness"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-20"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasEnhancement": [
+      {
+        "@id": "https://rs.tdwg.org/bdqenh/terms/FilledInFrom"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Spatial-Temporal_Patterns"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:10a04e3b-9254-49b6-8095-166179cd3707",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude, dwc:geodeticDatum"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude, dwc:geodeticDatum"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/decimalLatitude"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/decimalLongitude"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/geodeticDatum"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:10ad79a1-c93f-4ab2-accf-780867f93957",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: ALA"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L402"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)"
+      },
+      {
+        "@value": "TG2 Amendment SPACE CODED Test Completeness CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forAmendment": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2025-03-07"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:1e16fbb3-0c8d-4f23-bf55-68e159ab2b04"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:1e16fbb3-0c8d-4f23-bf55-68e159ab2b04",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if 1) either dwc:decimalLatitude or dwc:decimalLongitude are bdqval:NotEmpty, or 2) dwc:verbatimCoordinates and one of dwc:verbatimLatitude and dwc:verbatimLongitude are bdqval:Empty; FILLED_IN the values of dwc:decimalLatitude, dwc:decimalLongitude and dwc:geodeticDatum (provided that the dwc:verbatimCoordinates can be unambiguously interpreted as geographic coordinates) from 1) dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimSRS or 2) dwc:verbatimCoordinates and dwc:verbatimSRS; otherwise NOT_AMENDED."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:verbatimLatitude=\"-23.712\", dwc:verbatimLongitude=\"139.92\", dwc:verbatimCoordinates=\"\", dwc:verbatimSRS=\"EPSG:4326\", dwc:verbatimCoordinateSystem=\"decimal degrees\",dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\": Response.status=FILLED_IN, Response.result=dwc:decimalLatitude=\"-23.712\", dwc:decimalLongitude=\"139.92\", dwc:geodeticDatum=\"EPSG:4326\", Response.comment=\"Input fields contain interpretable values\""
+      },
+      {
+        "@value": "dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:verbatimCoordinates=\"54K 0390210 7377243\", dwc:verbatimSRS=\"EPSG:32754\", dwc:verbatimCoordinateSystem=\"decimal degrees\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\":: Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"In the wrong coordinate system\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if 1) either dwc:decimalLatitude or dwc:decimalLongitude are bdqval:NotEmpty, or 2) dwc:verbatimCoordinates and one of dwc:verbatimLatitude and dwc:verbatimLongitude are bdqval:Empty; FILLED_IN the values of dwc:decimalLatitude, dwc:decimalLongitude and dwc:geodeticDatum (provided that the dwc:verbatimCoordinates can be unambiguously interpreted as geographic coordinates) from 1) dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimSRS or 2) dwc:verbatimCoordinates and dwc:verbatimSRS; otherwise NOT_AMENDED."
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:2ad22c2b-cebb-4924-b0e4-b36c64535010",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Consulted"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/verbatimCoordinates"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/verbatimLatitude"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/verbatimLongitude"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/verbatimSRS"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2025-03-07"
+      }
+    ]
+  }
+]

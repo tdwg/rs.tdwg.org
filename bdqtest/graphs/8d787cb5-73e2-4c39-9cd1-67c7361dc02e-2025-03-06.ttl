@@ -1,0 +1,80 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/8d787cb5-73e2-4c39-9cd1-67c7361dc02e-2025-03-06> .
+
+<urn:uuid:bb12babf-ca13-4289-9a3d-dde52bb8aff8> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_DAY_INRANGE with Specification for: VALIDATION_DAY_INRANGE" ;
+    skos:historyNote "Source: TG2-Gainesville" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L829",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Conformance CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DAY_INRANGE with Specification for: VALIDATION_DAY_INRANGE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/8d787cb5-73e2-4c39-9cd1-67c7361dc02e-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:2563ae15-a5bf-48fc-91f3-6df869aece2d> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqcrit:InRange a bdqffdq:Criterion ;
+    rdfs:label "InRange" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<https://www.loc.gov/standards/datetime/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/" .
+
+<urn:uuid:2563ae15-a5bf-48fc-91f3-6df869aece2d> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_DAY_INRANGE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:day is bdqval:Empty, or (2) dwc:day is not interpretable as an integer, or (3) dwc:day is interpretable as an integer between 29 and 31 inclusive and dwc:month is not interpretable as an integer between 1 and 12, or (4) dwc:month is interpretable as the integer 2 and dwc:day is interpretable as the integer 29 and dwc:year is not interpretable as a valid ISO 8601 year; COMPLIANT if (1) the value of dwc:day is interpretable as an integer between 1 and 28 inclusive, or (2) dwc:day is interpretable as an integer between 29 and 30 and dwc:month is interpretable as an integer in the set (4,6,9,11), or (3) dwc:day is interpretable as an integer between 29 and 31 and dwc:month is interpretable as an integer in the set (1,3,5,7,8,10,12), or (4) dwc:day is interpretable as the integer 29 and dwc:month is interpretable as the integer 2 and dwc:year is interpretable as is a valid leap year (evenly divisible by 400 or (evenly divisible by 4 but not evenly divisible by 100)); otherwise NOT_COMPLIANT." ;
+    skos:example "dwc:day=\"15\", dwc:month=\"\", dwc:year=\"\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:day is in range\"",
+        "dwc:day=\"30\", dwc:month=\"2\", dwc:year=\"1952\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:day is not in range\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:day is bdqval:Empty, or (2) dwc:day is not interpretable as an integer, or (3) dwc:day is interpretable as an integer between 29 and 31 inclusive and dwc:month is not interpretable as an integer between 1 and 12, or (4) dwc:month is interpretable as the integer 2 and dwc:day is interpretable as the integer 29 and dwc:year is not interpretable as a valid ISO 8601 year; COMPLIANT if (1) the value of dwc:day is interpretable as an integer between 1 and 28 inclusive, or (2) dwc:day is interpretable as an integer between 29 and 30 and dwc:month is interpretable as an integer in the set (4,6,9,11), or (3) dwc:day is interpretable as an integer between 29 and 31 and dwc:month is interpretable as an integer in the set (1,3,5,7,8,10,12), or (4) dwc:day is interpretable as the integer 29 and dwc:month is interpretable as the integer 2 and dwc:year is interpretable as is a valid leap year (evenly divisible by 400 or (evenly divisible by 4 but not evenly divisible by 100)); otherwise NOT_COMPLIANT." .
+
+<urn:uuid:3b27257d-cfe4-4e47-8352-1bc4bad44ad4> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:day, dwc:month, dwc:year" ;
+    skos:prefLabel "Information Element ActedUpon dwc:day, dwc:month, dwc:year" ;
+    bdqffdq:composedOf dwc:day,
+        dwc:month,
+        dwc:year .
+
+<https://rs.tdwg.org/bdqtest/terms/version/8d787cb5-73e2-4c39-9cd1-67c7361dc02e-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_DAY_INRANGE" ;
+    dcterms:description "Is the value of dwc:day interpretable as a valid integer between 1 and 28 inclusive, or is it validly 29, 30 or 31 given the dwc:month and dwc:year?" ;
+    dcterms:isVersionOf bdqtest:8d787cb5-73e2-4c39-9cd1-67c7361dc02e ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/>,
+        <https://www.loc.gov/standards/datetime/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/125" ;
+    skos:note "This Test must take into account the given month and year, if present, to account for leap years. This is part of a group of similar Tests (VALIDATION_DAY_INRANGE (8d787cb5-73e2-4c39-9cd1-67c7361dc02e, #VALIDATION_STARTDAYOFYEAR_INRANGE (85803c7e-2a5a-42e1-b8d3-299a44cafc46), VALIDATION_ENDDAYOFYEAR_INRANGE9a39d88c-7eee-46df-b32a-c109f9f81fb8))." ;
+    skos:prefLabel "Validation dwc:day In Range for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:3b27257d-cfe4-4e47-8352-1bc4bad44ad4> ;
+    bdqffdq:hasCriterion bdqcrit:InRange ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-09-16"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

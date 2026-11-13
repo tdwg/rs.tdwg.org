@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="urn:uuid:b7c56646-56f1-4094-b2be-8546c7e18102">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:sourceAuthority:"10m-admin-1 boundaries"</rdfs:label>
+    <bdqffdq:hasArgumentValue>10m-admin-1 boundaries</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:4dd617df-a984-419f-b7b5-098b2023c4ab">
+    <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the values of dwc:decimalLatitude or dwc:decimalLongitude are bdqval:Empty or invalid, or dwc:stateProvince is bdqval:Empty or not found in the bdqval:sourceAuthority; COMPLIANT if the geographic coordinates fall on or within the boundary in the bdqval:sourceAuthority for the given dwc:stateProvince (after coordinate reference system transformations, if any, have been accounted for), or within the distance given by bdqval:spatialBufferInMeters outside that boundary; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = "10m-admin-1 boundaries" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/]},bdqval:spatialBufferInMeters default = "3000"</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT</rdfs:label>
+    <skos:example>dwc:stateProvince="Córdoba", dwc:decimalLatitude="-41.0525925872862", dwc:decimalLongitude="-71.5310546742521": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="Input fields contain interpretable values but coordinates don't match dwc:stateProvince with buffer"</skos:example>
+    <skos:example>dwc:stateProvince="Tasmania", dwc:decimalLatitude="-42.85", dwc:decimalLongitude="146.75": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="Input fields contain interpretable values"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:b7c56646-56f1-4094-b2be-8546c7e18102"/>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:cceaf335-6cd3-44a0-9562-6fe8e7743854"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:sourceAuthority default = "10m-admin-1 boundaries" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/]},bdqval:spatialBufferInMeters default = "3000"</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the values of dwc:decimalLatitude or dwc:decimalLongitude are bdqval:Empty or invalid, or dwc:stateProvince is bdqval:Empty or not found in the bdqval:sourceAuthority; COMPLIANT if the geographic coordinates fall on or within the boundary in the bdqval:sourceAuthority for the given dwc:stateProvince (after coordinate reference system transformations, if any, have been accounted for), or within the distance given by bdqval:spatialBufferInMeters outside that boundary; otherwise NOT_COMPLIANT.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:315a198d-3811-40dd-918a-756f598f3294">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT with Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT</rdfs:label>
+    <skos:historyNote>Source: ALA</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1378</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris &amp; Lowery 2025b)</skos:note>
+    <skos:note>TG2 Validation SPACE CODED Test VOCABULARY Consistency CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT with Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/f18a470b-3fe1-4aae-9c65-a6d3db6b550c-2024-08-30"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:4dd617df-a984-419f-b7b5-098b2023c4ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
+    <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:de507979-dc94-4cb9-9c87-9d33972f4a4e">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:stateProvince, dwc:decimalLatitude, dwc:decimalLongitude</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:stateProvince, dwc:decimalLatitude, dwc:decimalLongitude</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/decimalLongitude"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/stateProvince"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/f18a470b-3fe1-4aae-9c65-a6d3db6b550c-2024-08-30">
+    <dcterms:description>Do the geographic coordinates fall on or within the boundary from the bdqval:sourceAuthority for the given dwc:stateProvince or within the distance given by bdqval:spatialBufferInMeters outside that boundary?</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/f18a470b-3fe1-4aae-9c65-a6d3db6b550c"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</dcterms:issued>
+    <dcterms:references rdf:resource="http://www.fao.org/3/a0118e/a0118e00.htm#Contents"/>
+    <dcterms:references rdf:resource="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse"/>
+    <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
+    <dcterms:references rdf:resource="https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2"/>
+    <dcterms:references rdf:resource="https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf"/>
+    <dcterms:references rdf:resource="https://www.arcgis.com/home/item.html?id=f0ceb8af000a4ffbae75d742538c548b"/>
+    <dcterms:references rdf:resource="https://www.geonames.org/"/>
+    <dcterms:references rdf:resource="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
+    <rdfs:label>VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/56</skos:historyNote>
+    <skos:note>The geographic determination service is expected to return a list of names of first-level administrative divisions for geometries that the geographic point falls on or within, including a 3 km buffer around the administrative geometry. A match on any of those names should constitute a consistency, and dwc:countryCode should not be needed to make this determination, that is, this Test does not attempt to disambiguate potential duplicate first-level administrative division names. The level of buffering may be related to the scale of the underlying GIS layer being used. At a global scale, typical map scales used for borders and coastal areas are either 1:3M or 1:1M (Dooley 2005, Chapter 4). Horizontal accuracy at those scales is around 1.5-2.5km and 0.5-0.85 km respectively (Chapman &amp; Wieczorek 2020).</skos:note>
+    <skos:prefLabel>Validation Coordinates dwc:stateProvince Consistent for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:de507979-dc94-4cb9-9c87-9d33972f4a4e"/>
+    <bdqffdq:hasCriterion rdf:resource="https://rs.tdwg.org/bdqcrit/terms/Consistent"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Consistency"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (38) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (38) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/f18a470b-3fe1-4aae-9c65-a6d3db6b550c-2024-08-30"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse">
+    <dcterms:bibliographicCitation>Google Maps Platform (2020) Reverse Geocoding API. https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Consistency">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Consistency</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:cceaf335-6cd3-44a0-9562-6fe8e7743854">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:spatialBufferInMeters:"3000"</rdfs:label>
+    <bdqffdq:hasArgumentValue>3000</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/">
+    <dcterms:bibliographicCitation>Natural Earth (2022) Admin 1 – States, provinces. v5.1.1 2022-05-12. https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/Consistent">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>Consistent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fao.org/3/a0118e/a0118e00.htm#Contents">
+    <dcterms:bibliographicCitation>Dooley, JF Jnr. (2005) An inventory and comparison of globally consistent geospatial databases and libraries. Rome: FAO. http://www.fao.org/3/a0118e/a0118e00.htm#Contents</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.geonames.org/">
+    <dcterms:bibliographicCitation>ProgrammableWeb (2006) GeoNames API. https://www.geonames.org/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2">
+    <dcterms:bibliographicCitation>Natural Earth (2022) Natural Earth Free vector and raster map data at 1:10m, 1:50m, and 1:110m scales. v5.1.2. https://www.naturalearthdata.com/,https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.arcgis.com/home/item.html?id=f0ceb8af000a4ffbae75d742538c548b">
+    <dcterms:bibliographicCitation>ESRI (2020) World Administrative Divisions. https://www.arcgis.com/home/item.html?id=f0ceb8af000a4ffbae75d742538c548b</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf">
+    <dcterms:bibliographicCitation>Kelso NV and Patterson T (2010) Introducing Natural Earth data—Naturalearthdata.com. Geographica Technica. Special issue, 2010 pp 82–89. https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+</rdf:RDF>

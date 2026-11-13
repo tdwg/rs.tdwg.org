@@ -1,0 +1,95 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/3cff4dc4-72e9-4abe-9bf3-8a30f1618432-2025-03-06> .
+
+<urn:uuid:17f89e32-0174-4bf9-805e-ba7aec59477b> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_EVENTDATE_INRANGE with Specification for: VALIDATION_EVENTDATE_INRANGE" ;
+    skos:historyNote "Source: VertNet" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L2365",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_EVENTDATE_INRANGE with Specification for: VALIDATION_EVENTDATE_INRANGE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/3cff4dc4-72e9-4abe-9bf3-8a30f1618432-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:29a1fdc6-326b-4017-880d-d11ff0225b8f> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqcrit:InRange a bdqffdq:Criterion ;
+    rdfs:label "InRange" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:earliestValidDate a bdqffdq:Parameter .
+
+bdqval:latestValidDate a bdqffdq:Parameter .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<https://www.loc.gov/standards/datetime/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/" .
+
+<urn:uuid:29a1fdc6-326b-4017-880d-d11ff0225b8f> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_EVENTDATE_INRANGE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or if the value of dwc:eventDate is not a valid ISO 8601 date; COMPLIANT if the range of dwc:eventDate is entirely within the range bdqval:earliestValidDate to bdqval:latestValidDate, inclusive, otherwise NOT_COMPLIANT bdqval:earliestValidDate default =\"1582-11-15\",bdqval:latestValidDate default = \"{current year}\"" ;
+    skos:example "dwc:eventDate=\"1962-11-01T10:00-0600\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:eventDate is IN_RANGE\"",
+        "dwc:eventDate=\"2300-11-01T10:00\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:eventDate is NOT_IN_RANGE\"" ;
+    bdqffdq:hasArgument <urn:uuid:2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc>,
+        <urn:uuid:8b223050-f314-4601-9e20-d5f3d59d8e79> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:earliestValidDate default =\"1582-11-15\",bdqval:latestValidDate default = \"{current year}\"" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or if the value of dwc:eventDate is not a valid ISO 8601 date; COMPLIANT if the range of dwc:eventDate is entirely within the range bdqval:earliestValidDate to bdqval:latestValidDate, inclusive, otherwise NOT_COMPLIANT" .
+
+<urn:uuid:2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:latestValidDate:\"{current year}\"" ;
+    bdqffdq:hasArgumentValue "{current year}" ;
+    bdqffdq:hasParameter bdqval:latestValidDate .
+
+<urn:uuid:8b223050-f314-4601-9e20-d5f3d59d8e79> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:earliestValidDate:\"1582-11-15\"" ;
+    bdqffdq:hasArgumentValue "1582-11-15" ;
+    bdqffdq:hasParameter bdqval:earliestValidDate .
+
+<urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:eventDate" ;
+    skos:prefLabel "Information Element ActedUpon dwc:eventDate" ;
+    bdqffdq:composedOf dwc:eventDate .
+
+<https://rs.tdwg.org/bdqtest/terms/version/3cff4dc4-72e9-4abe-9bf3-8a30f1618432-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_EVENTDATE_INRANGE" ;
+    dcterms:description "Is the value of dwc:eventDate entirely with the Parameter range?" ;
+    dcterms:isVersionOf bdqtest:3cff4dc4-72e9-4abe-9bf3-8a30f1618432 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/>,
+        <https://www.loc.gov/standards/datetime/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/36" ;
+    skos:note "This Test provides for a default earliest date, which is 1582-11-15 by convention. That date was chosen because ISO 8601-1 asserts that \"the use of proleptic Gregorian calendar dates prior are not allowed in ISO 8601-1 without prior agreement of the parties exchanging data\", and Darwin Core does not comment on this. Different calendars have been used at different times in different places, and the transcription of an original date in one calendar into dwc:eventDate, where a Gregorian Calendar is assumed, may or may not have been done with the correct translation of the date, and metadata may or not be present to even identify such records. Given the complexity, and ongoing nature of transitions between calendars, we do not advocate using this Test for quality assurance by selecting a transition date and using it as a threshold." ;
+    skos:prefLabel "Validation dwc:eventDate In Range for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> ;
+    bdqffdq:hasCriterion bdqcrit:InRange ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-09-16"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

@@ -1,0 +1,530 @@
+[
+  {
+    "@id": "http://www.fao.org/3/a0118e/a0118e00.htm#Contents",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Dooley, JF Jnr. (2005) An inventory and comparison of globally consistent geospatial databases and libraries. Rome: FAO. http://www.fao.org/3/a0118e/a0118e00.htm#Contents"
+      }
+    ]
+  },
+  {
+    "@id": "https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Google Maps Platform (2020) Reverse Geocoding API. https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse"
+      }
+    ]
+  },
+  {
+    "@id": "https://doi.org/10.15468/doc-gg7h-s853",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853"
+      }
+    ]
+  },
+  {
+    "@id": "https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Natural Earth (2022) Natural Earth Free vector and raster map data at 1:10m, 1:50m, and 1:110m scales. v5.1.2. https://www.naturalearthdata.com/,https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2"
+      }
+    ]
+  },
+  {
+    "@id": "https://obis.org/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "OBIS (2024) Ocean Biodiversity Information System (OBIS). https://obis.org/"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqcrit/terms/Consistent",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Criterion"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Consistent"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Consistency",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Consistency"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/b9c184ce-a859-410c-9d12-71a338200380-2024-08-30",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Validation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Does the marine/non-marine biome of a taxon from the bdqval:sourceAuthority match the biome at the location given by the coordinates?"
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/b9c184ce-a859-410c-9d12-71a338200380"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-30"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "http://www.fao.org/3/a0118e/a0118e00.htm#Contents"
+      },
+      {
+        "@id": "https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse"
+      },
+      {
+        "@id": "https://doi.org/10.15468/doc-gg7h-s853"
+      },
+      {
+        "@id": "https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2"
+      },
+      {
+        "@id": "https://obis.org/"
+      },
+      {
+        "@id": "https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf"
+      },
+      {
+        "@id": "https://www.irmng.org/"
+      },
+      {
+        "@id": "https://www.marinespecies.org/"
+      },
+      {
+        "@id": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      },
+      {
+        "@id": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-minor-islands/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/51"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "dwc:coordinatePrecision and dwc:coordinateUncertaintyInMeters (if present) imply a potential displacement of the provided coordinates. These two terms can be considered spatial buffers. Likewise, country polygons cannot be 100% accurate at all scales (Dooley 2005), so a spatial buffer of the country boundaries is justified. Taking the spatial buffers into account does however greatly complicate both the logic and the implementation of such Tests. The same applies to potential conversion of the Spatial Reference System (SRS) of dwc:decimalLatitude and dwc:decimalLongitude to the SRS used in the bdqval:sourceAuthority. Note that in the current implementation Tests treat \"brackish\" in WoRMS as both marine and terrestrial. Note that both bdqval:taxonIsMarine and bdqval:geospatialLand are bdqval:sourceAuthorities, but as they form two parameters, distinct names are used for them."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Validation Coordinates Terrestrial Marine for SingleRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:9d387033-c581-4fb5-9af2-73ec89c99e77"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasConsultedInformationElement": [
+      {
+        "@id": "urn:uuid:328124cc-fa45-495a-9c39-b7b5d9aa79c5"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasCriterion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqcrit/terms/Consistent"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Consistency"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-30"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/SingleRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Spatial-Temporal_Patterns"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/assumptionOnUnknownBiome",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/geospatialLand",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqval/terms/taxonIsMarine",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Parameter"
+    ]
+  },
+  {
+    "@id": "https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Kelso NV and Patterson T (2010) Introducing Natural Earth data—Naturalearthdata.com. Geographica Technica. Special issue, 2010 pp 82–89. https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.irmng.org/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Rees T (compiler) (2024) Interim Register of Marine and Nonmarine Genera (IRMNG) VLIZ, Belgium. https://www.irmng.org/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.marinespecies.org/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "WoRMS (2019) WoRMS - World Register of Marine Species. https://www.marinespecies.org/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Natural Earth (2022) Admin 1 – States, provinces. v5.1.1 2022-05-12. https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-minor-islands/",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Natural Earth (2009) Minor Islands. https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-minor-islands/"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationPolicy: (38) validations  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationPolicy: (38) validations  in UseCase bdquc:Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/b9c184ce-a859-410c-9d12-71a338200380-2024-08-30"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:2bb364f7-118b-4258-8afe-978901e5cf67",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ValidationMethod: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT with Specification for: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: ALA, OBIS"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3198"
+      },
+      {
+        "@value": "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)"
+      },
+      {
+        "@value": "TG2 Validation SPACE CODED Test VOCABULARY Consistency Parameterized CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "ValidationMethod: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT with Specification for: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forValidation": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/b9c184ce-a859-410c-9d12-71a338200380-2024-08-30"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:45cb9e13-7944-4535-a5ef-f6ededb77305"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:328124cc-fa45-495a-9c39-b7b5d9aa79c5",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Consulted"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element Consulted dwc:scientificName"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element Consulted dwc:scientificName"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:3968f8d0-7364-4f3d-9993-96b8678f1653",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:taxonIsMarine:\"World Register of Marine Species (WoRMS)\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "World Register of Marine Species (WoRMS)"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/taxonIsMarine"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:45cb9e13-7944-4535-a5ef-f6ededb77305",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if either bdqval:taxonIsMarine or bdqval:geospatialLand are not available; INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:scientificName is bdqval:Empty or (2) the values of dwc:decimalLatitude or dwc:decimalLongitude are bdqval:Empty or (3) if bdqval:assumptionOnUnknownBiome is noassumption and the marine/nonmarine status of the taxon is not interpretable from bdqval:taxonIsMarine; COMPLIANT if (1) the taxon marine/nonmarine status from bdqval:taxonIsMarine matches the marine/nonmarine status of dwc:decimalLatitude and dwc:decimalLongitude on the boundaries given by bdqval:geospatialLand plus an exterior buffer given by bdqval:spatialBufferInMeters or (2) if the marine/nonmarine status of the taxon is not interpretable from bdqval:taxonIsMarine and bdqval:assumptionOnUnknownBiome matches the marine/nonmarine status of dwc:decimalLatitude and dwc:decimalLongitude on the boundaries given by bdqval:geospatialLand plus an exterior buffer given by bdqval:spatialBufferInMeters; otherwise NOT_COMPLIANT bdqval:taxonIsMarine default = \"World Register of Marine Species (WoRMS)\" {[https://www.marinespecies.org/]} {Web service [https://www.marinespecies.org/aphia.php?p=webservice]},bdqval:geospatialLand default = \"Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands\" {[https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip], [https://naciscdn.org/naturalearth/10m/physical/ne_10m_minor_islands.zip]},bdqval:spatialBufferInMeters default = \"3000\",bdqval:assumptionOnUnknownBiome default = \"noassumption\""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": "dwc:decimalLatitude=\"-41.0525925872862\", dwc:decimalLongitude=\"-71.5310546742521\", dwc:scientificName=\"Aegla neuquensis\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"The species is freshwater aquatic and the coordinates fall in a lake and thus COMPLIANT\""
+      },
+      {
+        "@value": "dwc:decimalLatitude=\"20.0\", dwc:decimalLongitude=\"-30.0\", dwc:scientificName=\"Viviparus contectus (Millet, 1813)\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificName is non-marine according to dwc:taxonIsMarine but coordinates are marine\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
+      {
+        "@id": "urn:uuid:3968f8d0-7364-4f3d-9993-96b8678f1653"
+      },
+      {
+        "@id": "urn:uuid:b3bf69d3-061c-4e2a-ac53-a73cb51ecbe2"
+      },
+      {
+        "@id": "urn:uuid:cbb3483c-2bf7-4b42-9d74-71ddc0e41c5e"
+      },
+      {
+        "@id": "urn:uuid:e7012224-eb6d-4bb9-a4ef-2d40fd3b3471"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": "bdqval:taxonIsMarine default = \"World Register of Marine Species (WoRMS)\" {[https://www.marinespecies.org/]} {Web service [https://www.marinespecies.org/aphia.php?p=webservice]},bdqval:geospatialLand default = \"Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands\" {[https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip], [https://naciscdn.org/naturalearth/10m/physical/ne_10m_minor_islands.zip]},bdqval:spatialBufferInMeters default = \"3000\",bdqval:assumptionOnUnknownBiome default = \"noassumption\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "EXTERNAL_PREREQUISITES_NOT_MET if either bdqval:taxonIsMarine or bdqval:geospatialLand are not available; INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:scientificName is bdqval:Empty or (2) the values of dwc:decimalLatitude or dwc:decimalLongitude are bdqval:Empty or (3) if bdqval:assumptionOnUnknownBiome is noassumption and the marine/nonmarine status of the taxon is not interpretable from bdqval:taxonIsMarine; COMPLIANT if (1) the taxon marine/nonmarine status from bdqval:taxonIsMarine matches the marine/nonmarine status of dwc:decimalLatitude and dwc:decimalLongitude on the boundaries given by bdqval:geospatialLand plus an exterior buffer given by bdqval:spatialBufferInMeters or (2) if the marine/nonmarine status of the taxon is not interpretable from bdqval:taxonIsMarine and bdqval:assumptionOnUnknownBiome matches the marine/nonmarine status of dwc:decimalLatitude and dwc:decimalLongitude on the boundaries given by bdqval:geospatialLand plus an exterior buffer given by bdqval:spatialBufferInMeters; otherwise NOT_COMPLIANT"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:9d387033-c581-4fb5-9af2-73ec89c99e77",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/decimalLatitude"
+      },
+      {
+        "@id": "http://rs.tdwg.org/dwc/terms/decimalLongitude"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:b3bf69d3-061c-4e2a-ac53-a73cb51ecbe2",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:spatialBufferInMeters:\"3000\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "3000"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:cbb3483c-2bf7-4b42-9d74-71ddc0e41c5e",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:geospatialLand:\"Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/geospatialLand"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:e7012224-eb6d-4bb9-a4ef-2d40fd3b3471",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Default value for bdqval:assumptionOnUnknownBiome:\"noassumption\""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasArgumentValue": [
+      {
+        "@value": "noassumption"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasParameter": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/assumptionOnUnknownBiome"
+      }
+    ]
+  }
+]

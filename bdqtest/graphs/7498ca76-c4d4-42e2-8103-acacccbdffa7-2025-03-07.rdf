@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Completeness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/7498ca76-c4d4-42e2-8103-acacccbdffa7-2025-03-07">
+    <dcterms:description>Proposes an amendment to fill in dwc:geodeticDatum using a parameterized value if the dwc:geodeticDatum is empty.</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/7498ca76-c4d4-42e2-8103-acacccbdffa7"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
+    <dcterms:references rdf:resource="https://epsg.io/"/>
+    <dcterms:references rdf:resource="https://epsg.org/"/>
+    <dcterms:references rdf:resource="https://epsg.org/about.html"/>
+    <dcterms:references rdf:resource="https://georeferencing.org/calculator/"/>
+    <dcterms:references rdf:resource="https://spatialreference.org/"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Amendment"/>
+    <rdfs:label>AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/102</skos:historyNote>
+    <skos:note>The value of dwc:geodeticDatum applies to dwc:decimalLatitude and dwc:decimalLongitude, thus EPSG:4326 (https://epsg.org/crs_4326/WGS-84.html) is the appropriate EPSG code as it applies to the WGS84 datum used with a geographic coordinate system. If the dwc:coordinateUncertaintyInMeters is bdqval:Empty, not interpretable, or not valid, this amendment should not provide a dwc:coordinateUncertaintyInMeters. If the dwc:coordinateUncertaintyInMeters is bdqval:NotEmpty and is valid, this amendment should add to the dwc:coordinateUncertaintyInMeters the uncertainty contributed by the maximum datum shift at the given coordinates. Since different systems have differing requirements for what the default datum should be, it is left unspecified, but should match whatever the target datum is in AMENDMENT_COORDINATES_CONVERTED (620749b9-7d9c-4890-97d2-be3d1cde6da8). After the amendment is performed, the dwc:geodeticDatum field should be the assumed default datum as parameterized. An example implementation to determine the uncertainty added by asserting a default datum (datum shift) where a known datum is not declared can be found in [datumshiftproj.py](https://github.com/VertNet/georefcalculator/blob/master/source/python/datumshiftproj.py) in the source code for the [Georeferencing Calculator](https://georeferencing.org/calculator/) (Wieczorek &amp; Wieczorek 2021). Included in the source code is a [5-degree grid](https://github.com/VertNet/georefcalculator/blob/master/datumerrordata.js) of datum shifts from an unknown datum to WGS84.</skos:note>
+    <skos:prefLabel>Amendment dwc:geodeticDatum Assumed Default for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:a543e69c-08a5-4408-a25a-3cdc53d4ce71"/>
+    <bdqffdq:hasConsultedInformationElement rdf:resource="urn:uuid:c3849b5d-feb7-4388-ab95-ec54ff1031ea"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Completeness"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-12</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasEnhancement rdf:resource="https://rs.tdwg.org/bdqenh/terms/AssumedDefault"/>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:95627fe5-326a-4468-b220-82af19a6ce98">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"/>
+    <rdfs:label>AmendmentMethod: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT with Specification Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</rdfs:label>
+    <skos:historyNote>Source: ALA, GBIF</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2349</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris &amp; Lowery 2025b)</skos:note>
+    <skos:note>TG2 Amendment SPACE CODED Test Completeness Parameterized CORE</skos:note>
+    <skos:prefLabel>AmendmentMethod: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT with Specification Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</skos:prefLabel>
+    <bdqffdq:forAmendment rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/7498ca76-c4d4-42e2-8103-acacccbdffa7-2025-03-07"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:da49fa95-ce7b-46cf-825a-91d53f21a997"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
+    <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:7fd3889a-0d1d-4054-8e68-807cfa5410f2">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:defaultGeodeticDatum:"EPSG:4326"</rdfs:label>
+    <bdqffdq:hasArgumentValue>EPSG:4326</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/defaultGeodeticDatum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://spatialreference.org/">
+    <dcterms:bibliographicCitation>Spatial Reference (2024) What is SpatialReference.org. https://spatialreference.org/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:c3849b5d-feb7-4388-ab95-ec54ff1031ea">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
+    <rdfs:label>Information Element Consulted dwc:decimalLatitude, dwc:decimalLongitude</rdfs:label>
+    <skos:prefLabel>Information Element Consulted dwc:decimalLatitude, dwc:decimalLongitude</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/decimalLongitude"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:da49fa95-ce7b-46cf-825a-91d53f21a997">
+    <dcterms:description>If dwc:geodeticDatum is bdqval:Empty, fill in dwc:geodeticDatum using the value of bdqval:defaultGeodeticDatum, report FILLED_IN and, if dwc:coordinateUncertaintyInMeters, dwc:decimalLatitude and dwc:decimalLongitude are bdqval:NotEmpty, amend the value of dwc:coordinateUncertaintyInMeters by adding the maximum datum shift between the specified bdqval:defaultGeodeticDatum and any other datum at the provided dwc:decimalLatitude and dwc:decimalLongitude and instead report AMENDED; otherwise NOT_AMENDED. bdqval:defaultGeodeticDatum default = "EPSG:4326"</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</rdfs:label>
+    <skos:example>dwc:geodeticDatum="WGS84", dwc:decimalLatitude="", dwc:decimalLongitude="", dwc:coordinateUncertaintyInMeters="": Response.status=NOT_AMENDED, Response.result="", Response.comment="dwc:geodeticDatum contains a value"</skos:example>
+    <skos:example>dwc:geodeticDatum="[null]", dwc:decimalLatitude="-30.00", dwc:decimalLongitude="130.00", dwc:coordinateUncertaintyInMeters="50": Response.status=AMENDED, Response.result=dwc:geodeticDatum="EPSG:4326", dwc:coordinateUncertaintyInMeters="2836", Response.comment="dwc:godeticDatum is bdqval:Empty so filled in with default and dwc:coordinateUncertaintyInMeters amended to maximum possible value"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:7fd3889a-0d1d-4054-8e68-807cfa5410f2"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:defaultGeodeticDatum default = "EPSG:4326"</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>If dwc:geodeticDatum is bdqval:Empty, fill in dwc:geodeticDatum using the value of bdqval:defaultGeodeticDatum, report FILLED_IN and, if dwc:coordinateUncertaintyInMeters, dwc:decimalLatitude and dwc:decimalLongitude are bdqval:NotEmpty, amend the value of dwc:coordinateUncertaintyInMeters by adding the maximum datum shift between the specified bdqval:defaultGeodeticDatum and any other datum at the provided dwc:decimalLatitude and dwc:decimalLongitude and instead report AMENDED; otherwise NOT_AMENDED.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"/>
+    <rdfs:label>AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/7498ca76-c4d4-42e2-8103-acacccbdffa7-2025-03-07"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqenh/terms/AssumedDefault">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Enhancement"/>
+    <rdfs:label>AssumedDefault</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:a543e69c-08a5-4408-a25a-3cdc53d4ce71">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:geodeticDatum, dwc:coordinateUncertaintyInMeters</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:geodeticDatum, dwc:coordinateUncertaintyInMeters</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/geodeticDatum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://epsg.io/">
+    <dcterms:bibliographicCitation>Maptiler (2019) EPSG.io. https://epsg.io/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://georeferencing.org/calculator/">
+    <dcterms:bibliographicCitation>Wieczorek C and Wieczorek J (2021) Georeferencing Calculator. https://georeferencing.org/calculator/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://epsg.org/about.html">
+    <dcterms:bibliographicCitation>Geomatic Solutions (2026) GeoRepository. https://epsg.org/about.html</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://epsg.org/">
+    <dcterms:bibliographicCitation>EPSG (2024) About the EPSG Dataset. https://epsg.org/</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/defaultGeodeticDatum">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,113 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:5e55d983-5667-438c-9754-a71dfe2472af> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_COUNTRYCODE_FROM_COORDINATES with Specification Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
+    skos:historyNote "Source: ALA, GBIF, iDigBio" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.1.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2019",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Amendment SPACE CODED Test VOCABULARY Completeness ISO/DCMI STANDARD Parameterized CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_COUNTRYCODE_FROM_COORDINATES with Specification Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:95ac057e-a941-416f-b7dc-ad7aca875cff> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae-2025-03-07> .
+
+<http://www.fao.org/3/a0118e/a0118e00.htm#Contents> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Dooley, JF Jnr. (2005) An inventory and comparison of globally consistent geospatial databases and libraries. Rome: FAO. http://www.fao.org/3/a0118e/a0118e00.htm#Contents" .
+
+<https://datahub.io/core/country-list> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "DataHub (2018) List of all countries with their two digit codes (ISO 3166-1). https://datahub.io/core/country-list" .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat) 3166-1 alpha-2. https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" .
+
+<https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Natural Earth (2022) Natural Earth Free vector and raster map data at 1:10m, 1:50m, and 1:110m scales. v5.1.2. https://www.naturalearthdata.com/,https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqenh:FilledInFrom a bdqffdq:Enhancement ;
+    rdfs:label "FilledInFrom" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Kelso NV and Patterson T (2010) Introducing Natural Earth data—Naturalearthdata.com. Geographica Technica. Special issue, 2010 pp 82–89. https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf" .
+
+<https://www.marineregions.org/downloads.php#marbound> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "VLIZ (2023) Marineregions.org. https://www.marineregions.org/downloads.php#marbound" .
+
+<https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Natural Earth (2022) Admin 1 – States, provinces. v5.1.1 2022-05-12. https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" .
+
+<urn:uuid:82350b56-1855-4b5a-8b44-9040efb0bf05> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"10m-admin-1 boundaries UNION with Exclusive Economic Zones\"" ;
+    bdqffdq:hasArgumentValue "10m-admin-1 boundaries UNION with Exclusive Economic Zones" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:95ac057e-a941-416f-b7dc-ad7aca875cff> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if either dwc:decimalLatitude or dwc:decimalLongitude is bdqval:Empty, or if dwc:countryCode is bdqval:NotEmpty; FILLED_IN dwc:countryCode if dwc:decimalLatitude and dwc:decimalLongitude fall within a boundary in the bdqval:sourceAuthority that is attributable to a single valid country code; otherwise NOT_AMENDED. bdqval:sourceAuthority default = \"10m-admin-1 boundaries UNION with Exclusive Economic Zones\" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/] spatial UNION [https://www.marineregions.org/downloads.php#marbound]}" ;
+    skos:example "dwc:decimalLatitude=\"-25.23\", dwc:decimalLongitude=\"135.43\", dwc:countryCode=\"\": Response.status=FILLED_IN, Response.result=dwc:countryCode=\"AU\", Response.comment=\"dwc:decimalLatitude and dwc:decimalLongitude contain interpretable values\"",
+        "dwc:decimalLatitude=\"-38.280937\", dwc:decimalLongitude=\"72.047790\", dwc:countryCode=\"\": Response.status=FILLED_IN, Response.result=dwc:countryCode=\"XZ\", Response.comment=\"Coordinates do not fall in the boundary of any national jurisdiction, using XZ for high seas\"" ;
+    bdqffdq:hasArgument <urn:uuid:82350b56-1855-4b5a-8b44-9040efb0bf05> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"10m-admin-1 boundaries UNION with Exclusive Economic Zones\" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/] spatial UNION [https://www.marineregions.org/downloads.php#marbound]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if either dwc:decimalLatitude or dwc:decimalLongitude is bdqval:Empty, or if dwc:countryCode is bdqval:NotEmpty; FILLED_IN dwc:countryCode if dwc:decimalLatitude and dwc:decimalLongitude fall within a boundary in the bdqval:sourceAuthority that is attributable to a single valid country code; otherwise NOT_AMENDED." .
+
+<urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:countryCode" ;
+    skos:prefLabel "Information Element ActedUpon dwc:countryCode" ;
+    bdqffdq:composedOf dwc:countryCode .
+
+<urn:uuid:c3849b5d-feb7-4388-ab95-ec54ff1031ea> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:decimalLatitude, dwc:decimalLongitude" ;
+    skos:prefLabel "Information Element Consulted dwc:decimalLatitude, dwc:decimalLongitude" ;
+    bdqffdq:composedOf dwc:decimalLatitude,
+        dwc:decimalLongitude .
+
+<https://rs.tdwg.org/bdqtest/terms/version/8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae-2025-03-07> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
+    dcterms:description "Proposes an amendment to the value of dwc:countryCode if dwc:decimalLatitude and dwc:decimalLongitude fall within a boundary from the bdqval:countryShapes that is attributable to a single valid ISO 3166-1-alpha-2 country code." ;
+    dcterms:isVersionOf bdqtest:8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
+        <https://datahub.io/core/country-list>,
+        <https://doi.org/10.15468/doc-gg7h-s853>,
+        <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
+        <https://github.com/nvkelso/natural-earth-vector/releases/tag/v5.1.2>,
+        <https://technicalgeography.org/pdf/sp_i_2010/12_introducing_natural_earth_data__naturaleart.pdf>,
+        <https://www.marineregions.org/downloads.php#marbound>,
+        <https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/73" ;
+    skos:note "This amendment simply fills dwc:countryCode from a lookup of dwc:decimalLatitude and dwc:decimalLongitude.  If the coordinate falls in the high seas outside any national jurisdiction dwc:countryCode=\"XZ\" should be asserted.  Values in dwc:coordinateUncertaintyInMeters and dwc:coordinatePrecision (if present) imply a buffer around the provided coordinates. Likewise, country polygons cannot be 100% accurate at all scales (Dooley 2005), so a spatial buffer of the country boundaries is also justified. Taking spatial buffers into account does, however, greatly complicate the logic and the implementation of this and related Tests. In this Test, a detection of multiple country codes by sampling within the buffer, while possible, is not considered." ;
+    skos:prefLabel "Amendment dwc:countryCode from Coordinates for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:c3849b5d-feb7-4388-ab95-ec54ff1031ea> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-08-18"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:FilledInFrom ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

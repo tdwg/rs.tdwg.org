@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:624278a4-eebe-4d0d-89ea-416b697cdb9a> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test Completeness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_NOTEMPTY" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/63fbaf3c-3d41-4ab6-bfc0-904f1b26835f-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:a8a6e3a3-7df2-477a-ba35-552151f6f771> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (60) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/63fbaf3c-3d41-4ab6-bfc0-904f1b26835f-2023-09-18> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:01835b18-0e6a-4947-a3e7-a39daec2061f> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_GEODETICDATUM_NOTEMPTY.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_GEODETICDATUM_NOTEMPTY across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_GEODETICDATUM_NOTEMPTY.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:239ec40e-a729-4a8e-ba69-e0bf03ac1c44 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:a8a6e3a3-7df2-477a-ba35-552151f6f771> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_NOTEMPTY" ;
+    dcterms:description "Count the number of VALIDATION_GEODETICDATUM_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "Count the number of VALIDATION_GEODETICDATUM_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/63fbaf3c-3d41-4ab6-bfc0-904f1b26835f-2023-09-18> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_NOTEMPTY" ;
+    dcterms:description "Count the number of VALIDATION_GEODETICDATUM_NOTEMPTY in a record set that are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:63fbaf3c-3d41-4ab6-bfc0-904f1b26835f ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;
+    skos:note "For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set." ;
+    skos:prefLabel "Measurement over MultiRecord Counting Compliance of Validation dwc:geodeticDatum Not Empty for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:01835b18-0e6a-4947-a3e7-a39daec2061f> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

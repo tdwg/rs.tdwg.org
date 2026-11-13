@@ -1,0 +1,88 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07> .
+
+<urn:uuid:0ff56b48-f00e-45bd-822e-e04afbcef3e1> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_DECIMALLONGITUDE_INRANGE with Specification for: VALIDATION_DECIMALLONGITUDE_INRANGE" ;
+    skos:historyNote "Source: ALA, GBIF, OBIS" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L343",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test Conformance CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DECIMALLONGITUDE_INRANGE with Specification for: VALIDATION_DECIMALLONGITUDE_INRANGE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:1a504f7f-21a7-49e1-a0dc-f51146957fa4> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07> .
+
+<urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+bdqcrit:InRange a bdqffdq:Criterion ;
+    rdfs:label "InRange" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:1a504f7f-21a7-49e1-a0dc-f51146957fa4> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_DECIMALLONGITUDE_INRANGE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:decimalLongitude is bdqval:Empty or the value is not a number; COMPLIANT if the value of dwc:decimalLongitude is between -180 and 180 degrees, inclusive; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:decimalLongitude=\"0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:decimalLongitude is in range\"",
+        "dwc:decimalLongitude=\"181.0554\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:decimalLongitude >180\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:decimalLongitude is bdqval:Empty or the value is not a number; COMPLIANT if the value of dwc:decimalLongitude is between -180 and 180 degrees, inclusive; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:bda769d4-d876-4bd0-8026-89bed5aad0eb> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:decimalLongitude" ;
+    skos:prefLabel "Information Element ActedUpon dwc:decimalLongitude" ;
+    bdqffdq:composedOf dwc:decimalLongitude .
+
+<https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_DECIMALLONGITUDE_INRANGE" ;
+    dcterms:description "Is the value of dwc:decimalLongitude a number between -180 and 180 inclusive?" ;
+    dcterms:isVersionOf bdqtest:0949110d-c06b-450e-9649-7c1374d940d1 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/30" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:decimalLongitude In Range for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:bda769d4-d876-4bd0-8026-89bed5aad0eb> ;
+    bdqffdq:hasCriterion bdqcrit:InRange ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-17"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

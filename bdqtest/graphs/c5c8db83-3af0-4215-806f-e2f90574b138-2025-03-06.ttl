@@ -1,0 +1,71 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:5a90c547-205b-423f-9158-400652da905f> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_GENUS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_GENUS_FOUND" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_GENUS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_GENUS_FOUND" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:0c659160-9952-4ada-ac10-5a46ee52423a> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2025-03-06> .
+
+<urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2025-03-06> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:0c659160-9952-4ada-ac10-5a46ee52423a> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_GENUS_FOUND" ;
+    dcterms:description "COMPLETE if every VALIDATION_GENUS_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_GENUS_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." .
+
+<urn:uuid:de43b1ab-4e58-4510-97cf-c4c84e04c9bd> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_GENUS_FOUND.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_GENUS_FOUND across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_GENUS_FOUND.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:f2ce7d55-5b1d-426a-b00e-6d4efe3058ec ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2025-03-06> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_GENUS_FOUND" ;
+    dcterms:description "Measure if all VALIDATION_GENUS_FOUND in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:isVersionOf bdqtest:c5c8db83-3af0-4215-806f-e2f90574b138 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:genus Found for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:de43b1ab-4e58-4510-97cf-c4c84e04c9bd> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

@@ -1,0 +1,79 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/374b091a-fc90-4791-91e5-c1557c649169-2023-09-18> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (21) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (21) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/374b091a-fc90-4791-91e5-c1557c649169-2023-09-18> .
+
+<urn:uuid:95c2e363-5a99-4276-937d-98008ca893f9> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_DCTYPE_NOTEMPTY with Specification for: VALIDATION_DCTYPE_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L308",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Validation OTHER CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DCTYPE_NOTEMPTY with Specification for: VALIDATION_DCTYPE_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/374b091a-fc90-4791-91e5-c1557c649169-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:e1286c46-2a95-480d-89e4-f02681372eb7> .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Dublin Core (2012) DCMI Type Vocabulary. https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/" .
+
+<urn:uuid:2aee4d8d-4064-41ca-b67f-d5f591b41526> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dc:type" ;
+    skos:prefLabel "Information Element ActedUpon dc:type" ;
+    bdqffdq:composedOf dc:type .
+
+<urn:uuid:e1286c46-2a95-480d-89e4-f02681372eb7> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_DCTYPE_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if dc:type is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    skos:example "dc:type=\" \": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dc:type is bdqval:Empty\"",
+        "dc:type=\"?\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dc:type is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if dc:type is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/374b091a-fc90-4791-91e5-c1557c649169-2023-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_DCTYPE_NOTEMPTY" ;
+    dcterms:description "Is there a value in dc:type?" ;
+    dcterms:isVersionOf bdqtest:374b091a-fc90-4791-91e5-c1557c649169 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/103" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dc:type Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:2aee4d8d-4064-41ca-b67f-d5f591b41526> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

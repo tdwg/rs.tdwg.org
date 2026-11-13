@@ -1,0 +1,77 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:1f38a0bc-4e1f-47a4-bd4a-b6be1c9a456a> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_DCTYPE_STANDARDIZED with Specification Specification for: AMENDMENT_DCTYPE_STANDARDIZED" ;
+    skos:historyNote "Source: VertNet" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L724",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Amendment OTHER CODED Test Conformance ISO/DCMI STANDARD CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_DCTYPE_STANDARDIZED with Specification Specification for: AMENDMENT_DCTYPE_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/bd385eeb-44a2-464b-a503-7abe407ef904-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:317e79db-680a-4bbe-8a3e-e805c69514b8> .
+
+<urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/bd385eeb-44a2-464b-a503-7abe407ef904-2025-03-07> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/bd385eeb-44a2-464b-a503-7abe407ef904-2025-03-07> .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Dublin Core (2012) DCMI Type Vocabulary. https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/" .
+
+<urn:uuid:2aee4d8d-4064-41ca-b67f-d5f591b41526> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dc:type" ;
+    skos:prefLabel "Information Element ActedUpon dc:type" ;
+    bdqffdq:composedOf dc:type .
+
+<urn:uuid:317e79db-680a-4bbe-8a3e-e805c69514b8> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_DCTYPE_STANDARDIZED" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the value of dc:type is bdqval:Empty; AMENDED the value of dc:type if it can be unambiguously interpreted as a term name in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority = \"DCMI Type Vocabulary\" {[http://purl.org/dc/terms/DCMIType]} {\"DCMI Type Vocabulary List of Terms\" [https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2010-10-11/]}" ;
+    skos:example "dc:type=\"X\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dc:type contains an uninterpretable value\"",
+        "dc:type=\"evnt\": Response.status=AMENDED, Response.result=dc:type=\"Event\", Response.comment=\"dc:type contains an interpretable value\"" ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority = \"DCMI Type Vocabulary\" {[http://purl.org/dc/terms/DCMIType]} {\"DCMI Type Vocabulary List of Terms\" [https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2010-10-11/]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the value of dc:type is bdqval:Empty; AMENDED the value of dc:type if it can be unambiguously interpreted as a term name in the bdqval:sourceAuthority; otherwise NOT_AMENDED" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/bd385eeb-44a2-464b-a503-7abe407ef904-2025-03-07> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_DCTYPE_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dc:type using the DCMI type vocabulary." ;
+    dcterms:isVersionOf bdqtest:bd385eeb-44a2-464b-a503-7abe407ef904 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/41" ;
+    skos:note "dc:type holds literals (e.g. PhysicalObject), while dcterms:type holds an IRI for the resource (e.g. http://purl.org/dc/dcmitype/PhysicalObject), see the Darwin Core RDF guide https://dwc.tdwg.org/rdf/#32-imported-dublin-core-terms-for-which-only-literal-objects-are-appropriate-normative. Implementations of this Amendment are expected be able to amend IRI values to the literals, as well as removing leading/trailing whitespace and correcting case errors in the literal." ;
+    skos:prefLabel "Amendment dc:type Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:2aee4d8d-4064-41ca-b67f-d5f591b41526> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-08-16"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

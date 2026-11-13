@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/942f63bd-d19d-4214-bf8e-cec0055b8909-2025-03-07> .
+
+<urn:uuid:cde5acd3-b95d-444b-817c-8a20adadf279> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test VOCABULARY Completeness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/942f63bd-d19d-4214-bf8e-cec0055b8909-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:17bebf9d-e049-497b-bcca-dd08939398ea> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:17bebf9d-e049-497b-bcca-dd08939398ea> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY" ;
+    dcterms:description "COMPLETE if every VALIDATION_COUNTRYCODE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_COUNTRYCODE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." .
+
+<urn:uuid:67e7259e-3421-4f5d-a31d-a92ce73d0baa> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COUNTRYCODE_NOTEMPTY.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_COUNTRYCODE_NOTEMPTY across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COUNTRYCODE_NOTEMPTY.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:853b79a2-b314-44a2-ae46-34a1e7ed85e4 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/942f63bd-d19d-4214-bf8e-cec0055b8909-2025-03-07> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY" ;
+    dcterms:description "Measure if all VALIDATION_COUNTRYCODE_NOTEMPTY in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:942f63bd-d19d-4214-bf8e-cec0055b8909 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:countryCode Not Empty for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:67e7259e-3421-4f5d-a31d-a92ce73d0baa> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-11-10"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

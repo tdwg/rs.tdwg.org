@@ -1,0 +1,65 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:3dcd847e-25bf-4ae2-8428-8e74e054d9e6> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MEASURE_AMENDMENTS_PROPOSED with Specification Specification for: MEASURE_AMENDMENTS_PROPOSED" ;
+    skos:historyNote "Source: John Wieczorek" ;
+    skos:note "TG2 Measure NAME SPACE TIME OTHER Test CORE" ;
+    skos:prefLabel "MeasurementMethod: MEASURE_AMENDMENTS_PROPOSED with Specification Specification for: MEASURE_AMENDMENTS_PROPOSED" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/03049fe5-a575-404f-b564-ae63f5a1cf8b-2026-11-12> ;
+    bdqffdq:hasSpecification <urn:uuid:7e365897-cfc0-413e-a613-99c6050edc4b> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/03049fe5-a575-404f-b564-ae63f5a1cf8b-2026-11-12> .
+
+<urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/03049fe5-a575-404f-b564-ae63f5a1cf8b-2026-11-12> .
+
+bdqdim:Reliability a bdqffdq:DataQualityDimension ;
+    rdfs:label "Reliability" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:7e365897-cfc0-413e-a613-99c6050edc4b> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MEASURE_AMENDMENTS_PROPOSED" ;
+    dcterms:description "RUN_HAS_RESULT with the result being the number of distinct AMENDMENT Tests run on the record that have Response.status=AMENDED or Response.status=FILLED_IN." ;
+    skos:example "[Response.status=RUN_HAS_RESULT, Response.result=\"17\", Response.comment=\"17 AMENDMENT Tests had Response.status=AMENDED or FILLED_IN.\"]" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "RUN_HAS_RESULT with the result being the number of distinct AMENDMENT Tests run on the record that have Response.status=AMENDED or Response.status=FILLED_IN." .
+
+<urn:uuid:fd84c789-375d-4c5a-8b5a-2ecf9d107fa1> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AllAmendmentTestsRunOnSingleRecord" ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AllAmendmentTestsRunOnSingleRecord" ;
+    bdqffdq:composedOf bdqval:AllAmendmentTestsRunOnSingleRecord .
+
+<https://rs.tdwg.org/bdqtest/terms/version/03049fe5-a575-404f-b564-ae63f5a1cf8b-2026-11-12> a bdqffdq:Measure ;
+    rdfs:label "MEASURE_AMENDMENTS_PROPOSED" ;
+    dcterms:description "A count of the distinct AMENDMENT Tests run on a record that have Response.status=AMENDED or FILLED_IN." ;
+    dcterms:isVersionOf bdqtest:03049fe5-a575-404f-b564-ae63f5a1cf8b ;
+    dcterms:issued "2026-11-12"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/65" ;
+    skos:note "If no AMENDMENT Tests were run on the record, the result is 0." ;
+    skos:prefLabel "Measure Amendments Proposed for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:fd84c789-375d-4c5a-8b5a-2ecf9d107fa1> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Reliability ;
+    bdqffdq:hasDateLastUpdated "2026-11-12"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

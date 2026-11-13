@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:10cfdb9f-a8d4-42fa-81be-3811d3c9f03a> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATES_NOTZERO with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATES_NOTZERO" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test Likeliness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATES_NOTZERO with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATES_NOTZERO" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/151b2d29-3460-4ba5-a226-86971dc8ad03-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:663022f5-df42-471d-861c-c8198ffbde65> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/151b2d29-3460-4ba5-a226-86971dc8ad03-2025-03-07> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Likeliness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Likeliness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:0dd0bc56-a3c4-4a11-bde2-8051b8944ead> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATES_NOTZERO.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_COORDINATES_NOTZERO across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATES_NOTZERO.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:1bf0e210-6792-4128-b8cc-ab6828aa4871 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:663022f5-df42-471d-861c-c8198ffbde65> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_COORDINATES_NOTZERO" ;
+    dcterms:description "COMPLETE if every VALIDATION_COORDINATES_NOTZERO in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_COORDINATES_NOTZERO in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/151b2d29-3460-4ba5-a226-86971dc8ad03-2025-03-07> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_COORDINATES_NOTZERO" ;
+    dcterms:description "Measure if all VALIDATION_COORDINATES_NOTZERO in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:151b2d29-3460-4ba5-a226-86971dc8ad03 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation Coordinates Not Zero for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:0dd0bc56-a3c4-4a11-bde2-8051b8944ead> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Likeliness ;
+    bdqffdq:hasDateLastUpdated "2023-06-20"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

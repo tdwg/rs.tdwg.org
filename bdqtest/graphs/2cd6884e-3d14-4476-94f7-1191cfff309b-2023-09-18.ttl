@@ -1,0 +1,87 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (21) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (21) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/2cd6884e-3d14-4476-94f7-1191cfff309b-2023-09-18> .
+
+<urn:uuid:6d096b24-0eb1-4e6e-804f-6810e781d16f> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_CLASS_FOUND with Specification for: VALIDATION_CLASS_FOUND" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1345",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_CLASS_FOUND with Specification for: VALIDATION_CLASS_FOUND" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/2cd6884e-3d14-4476-94f7-1191cfff309b-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:a2b39526-d08a-4a91-8b6d-aacf73677789> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (16) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (16) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/2cd6884e-3d14-4476-94f7-1191cfff309b-2023-09-18> .
+
+<https://doi.org/10.15468/39omei> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "GBIF Secretariat (2023) GBIF Backbone Taxonomy. Checklist dataset. https://doi.org/10.15468/39omei" .
+
+bdqcrit:Found a bdqffdq:Criterion ;
+    rdfs:label "Found" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:5b155af3-2ce0-432e-ab10-2e21d6ccd32a> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:class" ;
+    skos:prefLabel "Information Element ActedUpon dwc:class" ;
+    bdqffdq:composedOf dwc:class .
+
+<urn:uuid:a2b39526-d08a-4a91-8b6d-aacf73677789> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_CLASS_FOUND" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:class is bdqval:Empty; COMPLIANT if the value of dwc:class is found as a value at the rank of Class in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    skos:example "dwc:class=\"Insecta\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:class has an equivalent at the rank of Class in the bdqval:sourceAuthority\"",
+        "dwc:class=\"Magnoleopsida\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT,Response.comment=\"dwc:class does not have an equivalent at the rank of Class in the bdqval:sourceAuthority\"" ;
+    bdqffdq:hasArgument <urn:uuid:cd12d17c-8404-40fa-bc15-5583564ddd14> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:class is bdqval:Empty; COMPLIANT if the value of dwc:class is found as a value at the rank of Class in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:cd12d17c-8404-40fa-bc15-5583564ddd14> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Backbone Taxonomy\"" ;
+    bdqffdq:hasArgumentValue "GBIF Backbone Taxonomy" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<https://rs.tdwg.org/bdqtest/terms/version/2cd6884e-3d14-4476-94f7-1191cfff309b-2023-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_CLASS_FOUND" ;
+    dcterms:description "Does the value of dwc:class occur at the rank of Class in bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:2cd6884e-3d14-4476-94f7-1191cfff309b ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/39omei> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/77" ;
+    skos:note "The purpose of this Test is to check whether the value is a name that is a result of a nomenclatural act at this rank. This excludes unpublished names, misspellings and vernacular names. It is expected that the Test will designate the source authority against which to check. The same Test might return distinct results when using distinct source authorities.  **Review Note: GBIF has indicated that we should switch to the Catalog of Life for the default source authority for this test. That change is planned prior to ratification.**" ;
+    skos:prefLabel "Validation dwc:class Found for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:5b155af3-2ce0-432e-ab10-2e21d6ccd32a> ;
+    bdqffdq:hasCriterion bdqcrit:Found ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

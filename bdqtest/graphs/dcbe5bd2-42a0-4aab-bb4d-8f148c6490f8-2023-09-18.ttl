@@ -1,0 +1,81 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (1) amendments  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2023-09-18> .
+
+<urn:uuid:d040474f-edc7-47b8-80a0-3a3859359897> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_LICENSE_STANDARDIZED with Specification Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
+    skos:historyNote "Source: VertNet" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1226",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_LICENSE_STANDARDIZED with Specification Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:825f551a-2adf-4509-9f95-5a42601a8e88> .
+
+<https://creativecommons.org/licenses/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Creative Commons (n.dat.) About the Licenses. https://creativecommons.org/licenses/" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Dublin Core (2020) Dublin Core Metadata Initiative. License Document. https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/" .
+
+<urn:uuid:7ecc692d-e65f-4ea5-9d54-04421ec96ab4> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"Creative Commons\"" ;
+    bdqffdq:hasArgumentValue "Creative Commons" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:825f551a-2adf-4509-9f95-5a42601a8e88> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; AMENDED value of dcterms:license if it could be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED. bdqval:sourceAuthority default = \"Creative Commons\" {[https://creativecommons.org/]} {Creative Commons licenses [https://creativecommons.org/about/cclicenses/]}" ;
+    skos:example "dcterms:license=\"CC0\": Response.status=AMENDED, Response.result=dcterms:license=\"https://creativecommons.org/publicdomain/zero/1.0/legalcode\", Response.comment=\"Input field contains interpretable value\"",
+        "dcterms:license=\"X\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dcterms:license contains uninterpretable value \"X\"\"" ;
+    bdqffdq:hasArgument <urn:uuid:7ecc692d-e65f-4ea5-9d54-04421ec96ab4> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"Creative Commons\" {[https://creativecommons.org/]} {Creative Commons licenses [https://creativecommons.org/about/cclicenses/]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; AMENDED value of dcterms:license if it could be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED." .
+
+<urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dcterms:license" ;
+    skos:prefLabel "Information Element ActedUpon dcterms:license" ;
+    bdqffdq:composedOf dcterms:license .
+
+<https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2023-09-18> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_LICENSE_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dcterms:license using the bdqval:sourceAuthority." ;
+    dcterms:isVersionOf bdqtest:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://creativecommons.org/licenses/>,
+        <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/133" ;
+    skos:note "The license at the record level might be derived from the license of the dataset from which the record is retrieved." ;
+    skos:prefLabel "Amendment dcterms:license Standardized for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

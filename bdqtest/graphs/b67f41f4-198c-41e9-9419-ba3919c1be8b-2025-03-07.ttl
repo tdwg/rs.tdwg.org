@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:66e40165-c61e-461b-b91d-7d2b3c3427fe> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COORDINATESTERRESTRIALMARINE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation SPACE CODED Test VOCABULARY Consistency Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COORDINATESTERRESTRIALMARINE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/b67f41f4-198c-41e9-9419-ba3919c1be8b-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:dbedc71f-74ba-4046-812d-1d96f9382a91> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b67f41f4-198c-41e9-9419-ba3919c1be8b-2025-03-07> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Consistency a bdqffdq:DataQualityDimension ;
+    rdfs:label "Consistency" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:351049a9-bc84-42f6-af70-493e2e063153> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:b9c184ce-a859-410c-9d12-71a338200380 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:dbedc71f-74ba-4046-812d-1d96f9382a91> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
+    dcterms:description "Count the number of VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT in the MultiRecord that have Response.result=COMPLIANT." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "Count the number of VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT in the MultiRecord that have Response.result=COMPLIANT." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/b67f41f4-198c-41e9-9419-ba3919c1be8b-2025-03-07> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
+    dcterms:description "Count the number of VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT in a record set that are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:b67f41f4-198c-41e9-9419-ba3919c1be8b ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;
+    skos:note "For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set." ;
+    skos:prefLabel "Measurement over MultiRecord Counting Compliance of Validation Coordinates Terrestrial Marine for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:351049a9-bc84-42f6-af70-493e2e063153> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Consistency ;
+    bdqffdq:hasDateLastUpdated "2024-08-30"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:a36114dc-3370-4c9e-8cad-e0f871754365> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/97928242-11a9-4ab0-9dd7-3f0465834824-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:6a4e4bdf-dc92-4a93-b127-093224b44c19> .
+
+<urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/97928242-11a9-4ab0-9dd7-3f0465834824-2025-03-06> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:53ba0552-5eb5-4317-a5e7-dcaee30608b1> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_FAMILY_FOUND.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_FAMILY_FOUND across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_FAMILY_FOUND.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:3667556d-d8f5-454c-922b-af8af38f613c ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:6a4e4bdf-dc92-4a93-b127-093224b44c19> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND" ;
+    dcterms:description "Count the number of VALIDATION_FAMILY_FOUND in the MultiRecord that have Response.result=COMPLIANT." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "Count the number of VALIDATION_FAMILY_FOUND in the MultiRecord that have Response.result=COMPLIANT." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/97928242-11a9-4ab0-9dd7-3f0465834824-2025-03-06> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND" ;
+    dcterms:description "Count the number of VALIDATION_FAMILY_FOUND in a record set that are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:97928242-11a9-4ab0-9dd7-3f0465834824 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;
+    skos:note "For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set." ;
+    skos:prefLabel "Measurement over MultiRecord Counting Compliance of Validation dwc:family Found for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:53ba0552-5eb5-4317-a5e7-dcaee30608b1> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-17"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

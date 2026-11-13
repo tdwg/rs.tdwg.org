@@ -1,0 +1,72 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/41267642-60ff-4116-90eb-499fee2cd83f-2025-03-06> .
+
+<urn:uuid:87d34104-0a79-4f51-aeeb-1115ec56e237> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_EVENTTEMPORAL_NOTEMPTY with Specification for: VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
+    skos:historyNote "Source: @Tasilee" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1968",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_EVENTTEMPORAL_NOTEMPTY with Specification for: VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/41267642-60ff-4116-90eb-499fee2cd83f-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:b57460c4-16e1-4c1d-8a07-a53aee9e8922> .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:9467c6f2-761f-40fd-b738-530f0fc9b597> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:eventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear, dwc:verbatimEventDate" ;
+    skos:prefLabel "Information Element ActedUpon dwc:eventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear, dwc:verbatimEventDate" ;
+    bdqffdq:composedOf dwc:day,
+        dwc:endDayOfYear,
+        dwc:eventDate,
+        dwc:month,
+        dwc:startDayOfYear,
+        dwc:verbatimEventDate,
+        dwc:year .
+
+<urn:uuid:b57460c4-16e1-4c1d-8a07-a53aee9e8922> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if any of dwc:eventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear, dwc:verbatimEventDate are bdqval:NotEmpty; otherwise NOT_COMPLIANT." ;
+    skos:example "dwc:dateIdentified=\"\", dwc:day=\"\", dwc:month=\"\", dwc:year=\"\", dwc:eventDate=\"\", dwc:verbatimEventDate=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"All input fields bdqval:Empty\"",
+        "dwc:day=\"\", dwc:month=\"\", dwc:year=\"\", dwc:eventDate=\"1962-11-01T10:00-0600\", dwc:verbatimEventDate=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:eventDate is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if any of dwc:eventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear, dwc:verbatimEventDate are bdqval:NotEmpty; otherwise NOT_COMPLIANT." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/41267642-60ff-4116-90eb-499fee2cd83f-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
+    dcterms:description "Is there a value in any of the terms dwc:eventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear, dwc:verbatimEventDate?" ;
+    dcterms:isVersionOf bdqtest:41267642-60ff-4116-90eb-499fee2cd83f ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/88" ;
+    skos:note "Only fails if all of the relevant fields of the Darwin Core Event class are bdqval:Empty or do not exist. Relevant Darwin Core fields include dwc:eventDate, dwc:verbatimEventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear. The terms dwc:eventID (if populated may or may not point to temporal information accessible to the user of the data) and dwc:eventTime (which is rare) are not included." ;
+    skos:prefLabel "Validation dwc:Event Temporal Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:9467c6f2-761f-40fd-b738-530f0fc9b597> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-30"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+
