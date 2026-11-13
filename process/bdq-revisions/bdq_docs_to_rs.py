@@ -12,6 +12,8 @@ Guide is one document (its term descriptions and index pages are supporting
 parts of it); the index of normative sections is not a document; the landing
 page is covered by the standard record; on the review site each document has
 only its latest version, so the documents are declared only in the last release.
+Decided 2026-11-13: that release is bdq-revisions-2026-11-13, in which the documents
+are first issued (they had been declared in bdq-revisions-2026-11-09).
 
 The metadata come from tg2/_build_review/templates/*/document_configuration.yaml
 in tdwg/bdq and the shared tg2/_build_review/authors_configuration.yaml. Their
