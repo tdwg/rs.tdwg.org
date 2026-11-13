@@ -496,12 +496,36 @@ declare
   let $result :=
     for $termlist in $termlistData
     where $termlist/list_localName/text() = $listLocalname
-    return page:generic-simple-id($local-id,$termlist/database/text(),$acceptHeader)
+    return page:term-or-sds-version($local-id,$termlist/database/text(),$acceptHeader,$listLocalname)
   return
     if (count($result)=0)
     then page:not-found()
     else $result
   };
+
+(: TDWG SDS 2.3.2 forms a version IRI by appending the date to the term IRI ({term}-{date}), while
+   rs.tdwg.org mints {namespace}version/{local name}-{date}. For the term lists named in
+   html/sds-version-iri-redirects.csv (opt-in, e.g. the BDQ vocabularies), a request for
+   {namespace}{local name}-{date} that matches no term but names an existing version is redirected
+   (301) to that version's IRI. For every other term list, and every term, nothing changes. :)
+declare function page:term-or-sds-version($local-id,$db,$acceptHeader,$listLocalname)
+{
+  let $id := if (contains($local-id,".")) then substring-before($local-id,".") else $local-id
+  let $optInPath := "/usr/src/rs.tdwg.org/html/sds-version-iri-redirects.csv"
+  return
+    if (matches($id,"-\d{4}-\d{2}-\d{2}$")
+        and file:exists($optInPath)
+        and csv:parse(file:read-text($optInPath), map { 'header' : true(),'separator' : "," })/csv/record/list_localName/text() = $listLocalname
+        and not(page:find-db($id,$db))
+        and page:find-db($id,$db||"-versions"))
+    then
+      <rest:response>
+        <http:response status="301">
+          <http:header name="location" value="{ '/'||$listLocalname||'version/'||$local-id }"/>
+        </http:response>
+      </rest:response>
+    else page:generic-simple-id($local-id,$db,$acceptHeader)
+};
 
 
 (: Handler for URI patterns where the local name follows the "/{vocab}/{namespace}/version/" subpath (generic term versions) :)
@@ -1227,7 +1251,36 @@ declare function page:return-representation($response-media-type,$lookup-string,
       <output:media-type value='{$response-media-type}'/>
     </output:serialization-parameters>
   </rest:response>,
-  page:with-axioms(page:main-db($lookup-string,$flag,"single",$db),$flag,$db,$lookup-string)
+  page:with-graph(page:with-axioms(page:main-db($lookup-string,$flag,"single",$db),$flag,$db,$lookup-string),$flag,$db,$lookup-string)
+};
+
+(: Datasets whose resources are each described by a graph kept as files (for BDQ, bdqtest: the
+   graph of each Test version, its Method, Specification, Arguments, information elements and
+   Policies, which cannot be rows). <dataset>/<dataset>-graphs.csv, for a term dataset and its
+   versions dataset, gives the graph files (path without extension) of each term IRI and version
+   IRI; their RDF is the metadata from the tables followed by that graph. Datasets without such a
+   file are returned unchanged. :)
+declare function page:with-graph($serialized,$flag,$db,$lookup-string)
+{
+  let $base := replace($db,"-versions$","")
+  let $lookupPath := "/usr/src/rs.tdwg.org/"||$base||"/"||$base||"-graphs.csv"
+  let $file :=
+    if (file:exists($lookupPath))
+    then
+      let $constants := fn:collection($db)//constants/record
+      let $iri := $constants//domainRoot/text()||$lookup-string
+      return (csv:parse(file:read-text($lookupPath), map { 'header' : true(),'separator' : "," })/csv/record[iri/text() = $iri]/graph/text())[1]
+    else ()
+  return
+    if (empty($file))
+    then $serialized
+    else
+      let $path := "/usr/src/rs.tdwg.org/"||$file
+      return switch ($flag)
+        case "turtle" return concat($serialized,"&#10;",file:read-text($path||".ttl"))
+        case "xml" return page:merge-rdf-xml($serialized,file:read-text($path||".rdf"))
+        case "json" return page:merge-json-ld($serialized,file:read-text($path||".jsonld"))
+        default return $serialized
 };
 
 (: Vocabulary extension term lists (TDWG SDS 4.4.2.2): the RDF of the list and of each of its versions
