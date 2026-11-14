@@ -1,0 +1,109 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (43) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (43) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/dc8aae4b-134f-4d75-8a71-c4186239178e-2024-09-16> .
+
+<urn:uuid:67ddf706-c8ee-4cf2-a9d0-d161fc6b7d69> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_DATEIDENTIFIED_INRANGE with Specification for: VALIDATION_DATEIDENTIFIED_INRANGE" ;
+    skos:historyNote "Source: GBIF, ALA" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCOtherDateDQ.java#L124",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Likeliness ISO/DCMI STANDARD Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DATEIDENTIFIED_INRANGE with Specification for: VALIDATION_DATEIDENTIFIED_INRANGE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/dc8aae4b-134f-4d75-8a71-c4186239178e-2024-09-16> ;
+    bdqffdq:hasSpecification <urn:uuid:a25786df-a624-4ff2-8962-6b23e8b07b0b> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqcrit:InRange a bdqffdq:Criterion ;
+    rdfs:label "InRange" .
+
+bdqdim:Likeliness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Likeliness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:earliestValidDate a bdqffdq:Parameter .
+
+bdqval:includeEventDate a bdqffdq:Parameter .
+
+bdqval:latestValidDate a bdqffdq:Parameter .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<https://www.loc.gov/standards/datetime/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/" .
+
+<urn:uuid:030797c0-0b00-4272-9219-16d701e9da7c> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:latestValidDate:\"{current day}\"" ;
+    bdqffdq:hasArgumentValue "{current day}" ;
+    bdqffdq:hasParameter bdqval:latestValidDate .
+
+<urn:uuid:13c17157-1714-4f67-848b-9dc031917fee> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:earliestValidDate:\"1753-01-01\"" ;
+    bdqffdq:hasArgumentValue "1753-01-01" ;
+    bdqffdq:hasParameter bdqval:earliestValidDate .
+
+<urn:uuid:73513536-e916-4290-800a-c2daf8932e28> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:eventDate" ;
+    skos:prefLabel "Information Element Consulted dwc:eventDate" ;
+    bdqffdq:composedOf dwc:eventDate .
+
+<urn:uuid:739faad3-eb8a-4593-af8f-35b22630a920> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:includeEventDate:\"true\"" ;
+    bdqffdq:hasArgumentValue "true" ;
+    bdqffdq:hasParameter bdqval:includeEventDate .
+
+<urn:uuid:a25786df-a624-4ff2-8962-6b23e8b07b0b> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_DATEIDENTIFIED_INRANGE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:dateIdentified is bdqval:Empty, or (2) dwc:dateIdentified contains an invalid value according to ISO 8601, or (3) bdqval:includeEventDate=true and dwc:eventDate is not a valid ISO 8601 date; COMPLIANT if the value of dwc:dateIdentified is between bdqval:earliestValidDate and bdqval:latestValidDate inclusive and either (1) dwc:eventDate is bdqval:Empty or bdqval:includeEventDate=false, or (2) if dwc:eventDate is a valid ISO 8601 date and dwc:dateIdentified overlaps or is later than the dwc:eventDate; otherwise NOT_COMPLIANT bdqval:earliestValidDate default = \"1753-01-01\",bdqval:latestValidDate default = \"{current day}\",bdqval:includeEventDate default = \"true\"" ;
+    skos:example "dwc:dateIdentified=\"1963-03-08T14:07-0600\", dwc:eventDate=\"1962-11-01T10:00-0600\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:dateIdentified is in range\"",
+        "dwc:dateIdentified=\"1963-03-08T14:07-0600\", dwc:eventDate=\"1964-11-01T10:00-0600\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:dateIdentified before dwc:eventDate\"" ;
+    bdqffdq:hasArgument <urn:uuid:030797c0-0b00-4272-9219-16d701e9da7c>,
+        <urn:uuid:13c17157-1714-4f67-848b-9dc031917fee>,
+        <urn:uuid:739faad3-eb8a-4593-af8f-35b22630a920> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:earliestValidDate default = \"1753-01-01\",bdqval:latestValidDate default = \"{current day}\",bdqval:includeEventDate default = \"true\"" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:dateIdentified is bdqval:Empty, or (2) dwc:dateIdentified contains an invalid value according to ISO 8601, or (3) bdqval:includeEventDate=true and dwc:eventDate is not a valid ISO 8601 date; COMPLIANT if the value of dwc:dateIdentified is between bdqval:earliestValidDate and bdqval:latestValidDate inclusive and either (1) dwc:eventDate is bdqval:Empty or bdqval:includeEventDate=false, or (2) if dwc:eventDate is a valid ISO 8601 date and dwc:dateIdentified overlaps or is later than the dwc:eventDate; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:dateIdentified" ;
+    skos:prefLabel "Information Element ActedUpon dwc:dateIdentified" ;
+    bdqffdq:composedOf dwc:dateIdentified .
+
+<https://rs.tdwg.org/bdqtest/terms/version/dc8aae4b-134f-4d75-8a71-c4186239178e-2024-09-16> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_DATEIDENTIFIED_INRANGE" ;
+    dcterms:description "Is the value of dwc:dateIdentified within Parameters range and does it overlap with or is it later than dwc:eventDate?" ;
+    dcterms:isVersionOf bdqtest:dc8aae4b-134f-4d75-8a71-c4186239178e ;
+    dcterms:issued "2024-09-16"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/>,
+        <https://www.loc.gov/standards/datetime/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/76" ;
+    skos:note "There may be valid identifications prior to Linnaeus, but this Test will flag these under the default value of bdqval:earliestValidDate, as for most biodiversity data, pre-Linnaean identification dates are likely to be errors. If a parameter is not set, then the default is 1753-01-01. This Test will, by design, flag as problematic cases (such as LTER plots and marine mammal sightings) where a known individual organism is identified by a specialist and then subsequently observed without new taxonomic identifications being made." ;
+    skos:prefLabel "Validation dwc:dateIdentified In Range for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:73513536-e916-4290-800a-c2daf8932e28> ;
+    bdqffdq:hasCriterion bdqcrit:InRange ;
+    bdqffdq:hasDataQualityDimension bdqdim:Likeliness ;
+    bdqffdq:hasDateLastUpdated "2024-09-16"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

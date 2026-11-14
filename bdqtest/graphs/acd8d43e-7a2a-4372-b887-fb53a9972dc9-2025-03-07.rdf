@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:5f5af361-e5fe-44de-9be4-5b02795a2adb">
+    <dcterms:description>COMPLETE if every VALIDATION_LICENSE_STANDARD in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD</rdfs:label>
+    <skos:example></skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_LICENSE_STANDARD in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:f7786d53-07c1-4253-add9-3bf24d8a97c4">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/acd8d43e-7a2a-4372-b887-fb53a9972dc9-2025-03-07"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:5f5af361-e5fe-44de-9be4-5b02795a2adb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/acd8d43e-7a2a-4372-b887-fb53a9972dc9-2025-03-07">
+    <dcterms:description>Measure if all VALIDATION_LICENSE_STANDARD in a record set are COMPLIANT.</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/acd8d43e-7a2a-4372-b887-fb53a9972dc9"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
+    <rdfs:label>MULTIRECORD_MEASURE_QA_LICENSE_STANDARD</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/295</skos:historyNote>
+    <skos:note>For Quality Assurance, filter record set until this measure is COMPLETE.</skos:note>
+    <skos:prefLabel>Measurement over MultiRecord for QualityAssurance of Validation dcterms:license Standard for MultiRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:cbb53f33-ddc6-444c-b2f1-c06bb6759225"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-21</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:cbb53f33-ddc6-444c-b2f1-c06bb6759225">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LICENSE_STANDARD.Response</rdfs:label>
+    <skos:note>Aggregated Response outcomes produced by VALIDATION_LICENSE_STANDARD across a MultiRecord.</skos:note>
+    <skos:prefLabel>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LICENSE_STANDARD.Response</skos:prefLabel>
+    <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/3136236e-04b6-49ea-8b34-a65f25e3aba1"/>
+    <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (26) measures  in UseCase bdquc:SDM-Trees</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/acd8d43e-7a2a-4372-b887-fb53a9972dc9-2025-03-07"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>MultiRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.1371/journal.pone.0178731">
+    <dcterms:bibliographicCitation>Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+</rdf:RDF>

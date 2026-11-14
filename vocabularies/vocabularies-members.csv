@@ -38,3 +38,11 @@ http://rs.tdwg.org/dwc/,http://rs.tdwg.org/eco/terms/
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/eco/iri/
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/chrono/terms/
 http://rs.tdwg.org/dwc/,http://rs.tdwg.org/chrono/iri/
+https://rs.tdwg.org/bdqtest/,https://rs.tdwg.org/bdqtest/terms/
+https://rs.tdwg.org/bdqffdq/,https://rs.tdwg.org/bdqffdq/terms/
+https://rs.tdwg.org/bdqdim/,https://rs.tdwg.org/bdqdim/terms/
+https://rs.tdwg.org/bdqenh/,https://rs.tdwg.org/bdqenh/terms/
+https://rs.tdwg.org/bdqcrit/,https://rs.tdwg.org/bdqcrit/terms/
+https://rs.tdwg.org/bdqffdq/,https://rs.tdwg.org/bdqffdq/extension/
+https://rs.tdwg.org/bdquc/,https://rs.tdwg.org/bdquc/terms/
+https://rs.tdwg.org/bdqval/,https://rs.tdwg.org/bdqval/terms/

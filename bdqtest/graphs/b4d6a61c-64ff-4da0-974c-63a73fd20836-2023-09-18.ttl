@@ -1,0 +1,79 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:63695de6-91f6-4f10-8bf7-59163c6e3ad9> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_NOTEMPTY" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/b4d6a61c-64ff-4da0-974c-63a73fd20836-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:03c7280e-d1b9-459b-8bec-8bbd7ee6c886> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b4d6a61c-64ff-4da0-974c-63a73fd20836-2023-09-18> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (60) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b4d6a61c-64ff-4da0-974c-63a73fd20836-2023-09-18> .
+
+<urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (32) measures  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b4d6a61c-64ff-4da0-974c-63a73fd20836-2023-09-18> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:03c7280e-d1b9-459b-8bec-8bbd7ee6c886> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_NOTEMPTY" ;
+    dcterms:description "COMPLETE if every VALIDATION_SCIENTIFICNAME_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_SCIENTIFICNAME_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." .
+
+<urn:uuid:0938b920-e3f0-4b1b-8e82-3bb2bcb26ad9> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAME_NOTEMPTY.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_SCIENTIFICNAME_NOTEMPTY across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAME_NOTEMPTY.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:7c4b9498-a8d9-4ebb-85f1-9f200c788595 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/terms/version/b4d6a61c-64ff-4da0-974c-63a73fd20836-2023-09-18> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_NOTEMPTY" ;
+    dcterms:description "Measure if all VALIDATION_SCIENTIFICNAME_NOTEMPTY in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:b4d6a61c-64ff-4da0-974c-63a73fd20836 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:scientificName Not Empty for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:0938b920-e3f0-4b1b-8e82-3bb2bcb26ad9> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

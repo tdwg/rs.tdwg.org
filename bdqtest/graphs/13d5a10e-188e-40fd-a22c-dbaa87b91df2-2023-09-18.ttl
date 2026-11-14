@@ -1,0 +1,81 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3> a bdqffdq:IssuePolicy ;
+    rdfs:label "IssuePolicy: (2) issues  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2023-09-18> .
+
+<urn:uuid:5daad04c-fd7c-4972-ac3a-66f149170bf3> a bdqffdq:IssueMethod ;
+    rdfs:label "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
+    skos:historyNote "Source: ALA" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/d742991440f2f5fc6ffc75dfe3b6d2ab5b6826b2/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L138",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Issue NAME SPACE TIME CODED Test Resolution CORE" ;
+    skos:prefLabel "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
+    bdqffdq:forIssue <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:90618419-452d-4f35-b39a-7c342ca0791b> .
+
+<urn:uuid:62aa9551-8412-4ee9-a58d-dd6baea1dc35> a bdqffdq:IssuePolicy ;
+    rdfs:label "IssuePolicy: (1) issues  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2023-09-18> .
+
+<https://doi.org/10.15468/doc-5jp4-5g10> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD (2020) Current Best Practices for Generalizing Sensitive Species Occurrence Data. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-5jp4-5g10" .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Resolution a bdqffdq:DataQualityDimension ;
+    rdfs:label "Resolution" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:8c10d361-5bf7-4c9d-8464-c813cdf7dda3> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:dataGeneralizations" ;
+    skos:prefLabel "Information Element ActedUpon dwc:dataGeneralizations" ;
+    bdqffdq:composedOf dwc:dataGeneralizations .
+
+<urn:uuid:90618419-452d-4f35-b39a-7c342ca0791b> a bdqffdq:Specification ;
+    rdfs:label "Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
+    dcterms:description "POTENTIAL_ISSUE if dwc:dataGeneralizations is bdqval:NotEmpty; otherwise NOT_ISSUE" ;
+    skos:example "dwc:dataGeneralizations=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_ISSUE, Response.comment=\"dwc:dataGeneralizations is bdqval:Empty\"",
+        "dwc:dataGeneralizations=\"placed on quarter degree grid\": Response.status=RUN_HAS_RESULT, Response.result=POTENTIAL_ISSUE, Response.comment=\"dwc:dataGeneralizations is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "POTENTIAL_ISSUE if dwc:dataGeneralizations is bdqval:NotEmpty; otherwise NOT_ISSUE" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2023-09-18> a bdqffdq:Issue ;
+    rdfs:label "ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
+    dcterms:description "Is there a value in dwc:dataGeneralizations?" ;
+    dcterms:isVersionOf bdqtest:13d5a10e-188e-40fd-a22c-dbaa87b91df2 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-5jp4-5g10>,
+        <https://doi.org/10.15468/doc-gg7h-s853> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/72" ;
+    skos:note "This is not specific to spatial data, any value in the dwc:dataGeneralizations field will cause this flag to be raised, but the primary Use Case is expected to be that dwc:dataGeneralizations demonstrates obfuscated locations." ;
+    skos:prefLabel "Issue dwc:dataGeneralizations Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:8c10d361-5bf7-4c9d-8464-c813cdf7dda3> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Resolution ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

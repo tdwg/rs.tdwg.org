@@ -1,0 +1,79 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:7072bf93-bffc-4d83-ad51-b351c6e53260> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_KINGDOM_FOUND with Specification for: VALIDATION_KINGDOM_FOUND" ;
+    skos:historyNote "Source: GBIF" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1386",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_KINGDOM_FOUND with Specification for: VALIDATION_KINGDOM_FOUND" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/125b5493-052d-4a0d-a3e1-ed5bf792689e-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:a90e100a-3522-4742-aa73-3b98a35ab826> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (16) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (16) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/125b5493-052d-4a0d-a3e1-ed5bf792689e-2023-09-18> .
+
+<https://doi.org/10.15468/39omei> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "GBIF Secretariat (2023) GBIF Backbone Taxonomy. Checklist dataset. https://doi.org/10.15468/39omei" .
+
+bdqcrit:Found a bdqffdq:Criterion ;
+    rdfs:label "Found" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:a5055cb3-b1e5-4070-90df-f875b0d9ae8a> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Backbone Taxonomy\"" ;
+    bdqffdq:hasArgumentValue "GBIF Backbone Taxonomy" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:a90e100a-3522-4742-aa73-3b98a35ab826> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_KINGDOM_FOUND" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:kingdom is bdqval:Empty; COMPLIANT if the value of dwc:kingdom is found as a value at the rank of kingdom in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    skos:example "dwc:kingdom=\"Animalia\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:kingdom has an equivalent at the rank of Kingdom in the bdqval:sourceAuthority\"",
+        "dwc:kingdom=\"Metazoa\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:kingdom does not strictly have an equivalent at the rank of Kingdom in the Parameterized Source Authority (Metazoa is synonym of Animalia)\"" ;
+    bdqffdq:hasArgument <urn:uuid:a5055cb3-b1e5-4070-90df-f875b0d9ae8a> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:kingdom is bdqval:Empty; COMPLIANT if the value of dwc:kingdom is found as a value at the rank of kingdom in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:b856f48c-bf6f-4637-b8de-37d379831801> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:kingdom" ;
+    skos:prefLabel "Information Element ActedUpon dwc:kingdom" ;
+    bdqffdq:composedOf dwc:kingdom .
+
+<https://rs.tdwg.org/bdqtest/terms/version/125b5493-052d-4a0d-a3e1-ed5bf792689e-2023-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_KINGDOM_FOUND" ;
+    dcterms:description "Does the value of dwc:kingdom occur at the rank of Kingdom in the bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:125b5493-052d-4a0d-a3e1-ed5bf792689e ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/39omei> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/81" ;
+    skos:note "The purpose of this Test is to check whether the value is a name that is a result of a nomenclatural act at this rank. This excludes unpublished names, misspellings and vernacular names. It is expected that the Test will designate the source authority against which to check. The same Test might return distinct results when using distinct source authorities. **Review Note: GBIF has indicated that we should switch to the Catalog of Life for the default source authority for this test. That change is planned prior to ratification.**" ;
+    skos:prefLabel "Validation dwc:kingdom Found for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:b856f48c-bf6f-4637-b8de-37d379831801> ;
+    bdqffdq:hasCriterion bdqcrit:Found ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

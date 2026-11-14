@@ -1,0 +1,436 @@
+[
+  {
+    "@id": "_:cb1866912d1d03f9b0b72f66e3211202886e81807cfa8f53d341f4a2b6a0d2071f9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/targetedValidation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Validation"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b4e569e4067a278496b3e2f7e6d74d57755a9800e7625a617bc565b15c619d30",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/forValidation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Validation"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1ce2d2ba2790f5565539388e4c9adcb2f0c1028fdd78ee7c090a922011e276dd8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/hasUseCase"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1cf336134efc4cd95f59a8548a1fc335813a4aa425f593e04c5a01f6b349bf98f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/forMeasure"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Measure"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1e63c2209850a222ea6e056237b8a2d0fc89a9582ce3e40a65d180a1604ccb221",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/usesSpecification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Specification"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21862f5be4aad4a38170d6c7ee9c2bc2c6096922932b50bf4f8eb1c933719e03c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/forAmendment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Amendment"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb230eec949184199b0d768f44c5ca29e55d9bc133198339ec1a68ca493bb476825",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/hasCriterion"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Criterion"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb23411fbe632481aaeda772df12a97f172671645fe2e9473c4706cc4c1c71e75b9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/hasSpecification"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Specification"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb27a5448f2c2fb144d7d00c680d5fc1cf595d256ee0a0866c637d14187c3e59b0d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/forIssue"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Issue"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb29e461129ac4d31c36f3cb7e742eb9ac458ce19a72155db11ee6b960c3016b733",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/improvedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Amendment"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2abce67671a2d25674a9a8a84dbdcadcb9e9b420d729c69c0b6b4b0aaaca31c5e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/hasEnhancement"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Enhancement"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2b2efd6df57704eb13b71313e490cafaf17c753ea6ccb02cd502dc01fffc51281",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/targetedIssue"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Issue"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2b68f9def688e1c80297997fa9f3154872ed71985b43ee15b1769e0fe77456ba8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2caee229c3608ce34a9eb6e55bf9f2c8e98dd2308ae5bf17d68d8ed4fad9a3fc4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/implementedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Mechanism"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2f761519961a266ccd3a9e101f708e391c0e0a2f058c74dd6879ae4d15c1ab4ea",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/targetedMeasure"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/Measure"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbb56c7c9b0751963ca43928a539dec044fa3caa55bb3ec2d9c3943b52cc4ce3a3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/Amendment"
+          },
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/Issue"
+          },
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/Measure"
+          },
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/Validation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:cbf16d02649f468c21e3d55032ad2e6b0607d60f1ea8334ef4615f22f02e2272ec",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/AbstractInformationElement"
+          },
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+          },
+          {
+            "@id": "https://rs.tdwg.org/bdqffdq/terms/Consulted"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/extension/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/version/extension/2024-10-01"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Biodiversity Data Quality Fitness for Use Framework (Ontology)"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "The classes and object properties found in this ontology are dedicated to fundamental and derived concepts from the Fitness For Use Framework described in the paper by Veiga et al., available at: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178731 as modified to describe data quality fitness for use Tests in the TDWG BDQ Standard."
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/forAmendment",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb21862f5be4aad4a38170d6c7ee9c2bc2c6096922932b50bf4f8eb1c933719e03c"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/forIssue",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb27a5448f2c2fb144d7d00c680d5fc1cf595d256ee0a0866c637d14187c3e59b0d"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/forMeasure",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb1cf336134efc4cd95f59a8548a1fc335813a4aa425f593e04c5a01f6b349bf98f"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/forValidation",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb1b4e569e4067a278496b3e2f7e6d74d57755a9800e7625a617bc565b15c619d30"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/hasCriterion",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb230eec949184199b0d768f44c5ca29e55d9bc133198339ec1a68ca493bb476825"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb2b68f9def688e1c80297997fa9f3154872ed71985b43ee15b1769e0fe77456ba8"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/hasEnhancement",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb2abce67671a2d25674a9a8a84dbdcadcb9e9b420d729c69c0b6b4b0aaaca31c5e"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/hasSpecification",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb23411fbe632481aaeda772df12a97f172671645fe2e9473c4706cc4c1c71e75b9"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/hasUseCase",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb1ce2d2ba2790f5565539388e4c9adcb2f0c1028fdd78ee7c090a922011e276dd8"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/implementedBy",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb2caee229c3608ce34a9eb6e55bf9f2c8e98dd2308ae5bf17d68d8ed4fad9a3fc4"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/improvedBy",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb29e461129ac4d31c36f3cb7e742eb9ac458ce19a72155db11ee6b960c3016b733"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/targetedIssue",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb2b2efd6df57704eb13b71313e490cafaf17c753ea6ccb02cd502dc01fffc51281"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/targetedMeasure",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb2f761519961a266ccd3a9e101f708e391c0e0a2f058c74dd6879ae4d15c1ab4ea"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/targetedValidation",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb1866912d1d03f9b0b72f66e3211202886e81807cfa8f53d341f4a2b6a0d2071f9"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/usesSpecification",
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:cb1e63c2209850a222ea6e056237b8a2d0fc89a9582ce3e40a65d180a1604ccb221"
+      }
+    ]
+  }
+]

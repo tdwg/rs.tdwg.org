@@ -1,0 +1,100 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (45) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (45) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/4daa7986-d9b0-4dd5-ad17-2d7a771ea71a-2024-09-18> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (30) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (30) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/4daa7986-d9b0-4dd5-ad17-2d7a771ea71a-2024-09-18> .
+
+<urn:uuid:eebb4a3c-30e8-43e5-96f5-eded890dd174> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_STATEPROVINCE_FOUND with Specification for: VALIDATION_STATEPROVINCE_FOUND" ;
+    skos:historyNote "Source: ALA, GBIF" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2802",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_STATEPROVINCE_FOUND with Specification for: VALIDATION_STATEPROVINCE_FOUND" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/4daa7986-d9b0-4dd5-ad17-2d7a771ea71a-2024-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:d261fac1-ce61-4879-bc04-870fa885b578> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat) 3166-1 alpha-2. https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" .
+
+bdqcrit:Found a bdqffdq:Criterion ;
+    rdfs:label "Found" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<https://www.getty.edu/research/tools/vocabularies/tgn/index.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Getty Research Institute (2017) Getty Thesaurus of Geographic Names Online. https://www.getty.edu/research/tools/vocabularies/tgn/index.html" .
+
+<https://www.iso.org/iso-3166-country-codes.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat.) ISO 3166 Country Codes. https://www.iso.org/iso-3166-country-codes.html" .
+
+<urn:uuid:0e6f3880-8203-445f-9bff-f44f52120abe> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:stateProvince" ;
+    skos:prefLabel "Information Element ActedUpon dwc:stateProvince" ;
+    bdqffdq:composedOf dwc:stateProvince .
+
+<urn:uuid:41461142-2c1e-4fc1-bc97-f83a7b2a893d> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"The Getty Thesaurus of Geographic Names (TGN)\"" ;
+    bdqffdq:hasArgumentValue "The Getty Thesaurus of Geographic Names (TGN)" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:d261fac1-ce61-4879-bc04-870fa885b578> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_STATEPROVINCE_FOUND" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:stateProvince is bdqval:Empty; COMPLIANT if the value of dwc:stateProvince occurs as an administrative entity that is a child to at least one entity representing an ISO 3166 country-like entity in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"The Getty Thesaurus of Geographic Names (TGN)\" {[https://www.getty.edu/research/tools/vocabularies/tgn/index.html]}" ;
+    skos:example "dwc:stateProvince=\"Florida\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:stateProvince found in bdqval:sourceAuthority\"",
+        "dwc:stateProvince=\"Taswegian\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:stateProvince not found in bdqval:sourceAuthority\"" ;
+    bdqffdq:hasArgument <urn:uuid:41461142-2c1e-4fc1-bc97-f83a7b2a893d> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"The Getty Thesaurus of Geographic Names (TGN)\" {[https://www.getty.edu/research/tools/vocabularies/tgn/index.html]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:stateProvince is bdqval:Empty; COMPLIANT if the value of dwc:stateProvince occurs as an administrative entity that is a child to at least one entity representing an ISO 3166 country-like entity in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/4daa7986-d9b0-4dd5-ad17-2d7a771ea71a-2024-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_STATEPROVINCE_FOUND" ;
+    dcterms:description "Does the value of dwc:stateProvince occur in the bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:4daa7986-d9b0-4dd5-ad17-2d7a771ea71a ;
+    dcterms:issued "2024-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
+        <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
+        <https://www.getty.edu/research/tools/vocabularies/tgn/index.html>,
+        <https://www.iso.org/iso-3166-country-codes.html> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/199" ;
+    skos:note "Multiple values in the dwc:stateProvince field (whether to signify on a border or in a list of possibilities) will fail this Test. This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters." ;
+    skos:prefLabel "Validation dwc:stateProvince Found for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:0e6f3880-8203-445f-9bff-f44f52120abe> ;
+    bdqffdq:hasCriterion bdqcrit:Found ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

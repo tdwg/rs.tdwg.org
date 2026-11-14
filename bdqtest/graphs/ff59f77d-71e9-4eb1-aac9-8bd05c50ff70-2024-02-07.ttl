@@ -1,0 +1,66 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2024-02-07> .
+
+<urn:uuid:f8024a02-76c0-482a-b805-097d0cdc82e2> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3090",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2024-02-07> ;
+    bdqffdq:hasSpecification <urn:uuid:f09fc9ad-a449-4422-b32f-63d8ccf2501f> .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:eb155979-58ca-4429-989d-8475e15fdcc6> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:namePublishedInYear" ;
+    skos:prefLabel "Information Element ActedUpon dwc:namePublishedInYear" ;
+    bdqffdq:composedOf dwc:namePublishedInYear .
+
+<urn:uuid:f09fc9ad-a449-4422-b32f-63d8ccf2501f> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if dwc:namePublishedInYear is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:namePublishedInYear=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:namePublishedInYear is bdqval:Empty\"",
+        "dwc:namePublishedInYear=\"2024\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:namePublishedInYear is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if dwc:namePublishedInYear is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2024-02-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    dcterms:description "Is there a value in dwc:namePublishedInYear?" ;
+    dcterms:isVersionOf bdqtest:ff59f77d-71e9-4eb1-aac9-8bd05c50ff70 ;
+    dcterms:issued "2024-02-07"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/259" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:namePublishedInYear Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:eb155979-58ca-4429-989d-8475e15fdcc6> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-02-07"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

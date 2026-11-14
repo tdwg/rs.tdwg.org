@@ -1,0 +1,71 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/5618f083-d55a-4ac2-92b5-b9fb227b832f-2025-03-06> .
+
+<urn:uuid:449f44fe-0fef-42ff-a446-d693653b55d4> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_EVENT_CONSISTENT with Specification for: VALIDATION_EVENT_CONSISTENT" ;
+    skos:historyNote "Source: GBIF" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1754",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Consistency CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_EVENT_CONSISTENT with Specification for: VALIDATION_EVENT_CONSISTENT" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/5618f083-d55a-4ac2-92b5-b9fb227b832f-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:83d057ea-a6f6-49e6-ac3c-0c418776a0e0> .
+
+bdqcrit:Consistent a bdqffdq:Criterion ;
+    rdfs:label "Consistent" .
+
+bdqdim:Consistency a bdqffdq:DataQualityDimension ;
+    rdfs:label "Consistency" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+<urn:uuid:83d057ea-a6f6-49e6-ac3c-0c418776a0e0> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_EVENT_CONSISTENT" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty, or all of dwc:year, dwc:month, dwc:day, dwc:startDayOfYear and dwc:endDayOfYear are bdqval:Empty; COMPLIANT if all of the following conditions are met (1) dwc:year is bdqval:Empty or dwc:eventDate has a precision of one year or finer and and is within a single year and the provided value of dwc:year matches the year expressed in dwc:eventDate, and (2) dwc:month is bdqval:Empty or dwc:eventDate has a precision of one month or finer and is within a single month and the provided value in dwc:month matches the month represented by dwc:eventDate, and (3) dwc:day is bdqval:Empty or dwc:eventDate has a precision of a day or less and is within a single day and the provided value in dwc:day matches the day represented by dwc:eventDate, and (4) dwc:startDayOfYear is empty or dwc:eventDate has a precision of one day or finer and the provided value in dwc:startDayOfYear matches the start day of the year of the range represented by dwc:eventDate, and (5) dwc:endDayOfYear is empty or dwc:eventDate has a precision of one day or finer and the provided value in dwc:endDayOfYear matches the end day of the year of the range represented by dwc:eventDate; otherwise NOT_COMPLIANT." ;
+    skos:example "dwc:day=\"15\", dwc:month=\"9\", dwc:year=\"1949\", dwc:eventDate=\"1949-09-15T12:34\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:day, dwc:month and dwc:year match dwc:eventDate\"",
+        "dwc:day=\"15\", dwc:month=\"9\", dwc:year=\"1949\", dwc:eventDate=\"1949-09-16T12:34\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:day does not match dwc:eventDate\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty, or all of dwc:year, dwc:month, dwc:day, dwc:startDayOfYear and dwc:endDayOfYear are bdqval:Empty; COMPLIANT if all of the following conditions are met (1) dwc:year is bdqval:Empty or dwc:eventDate has a precision of one year or finer and and is within a single year and the provided value of dwc:year matches the year expressed in dwc:eventDate, and (2) dwc:month is bdqval:Empty or dwc:eventDate has a precision of one month or finer and is within a single month and the provided value in dwc:month matches the month represented by dwc:eventDate, and (3) dwc:day is bdqval:Empty or dwc:eventDate has a precision of a day or less and is within a single day and the provided value in dwc:day matches the day represented by dwc:eventDate, and (4) dwc:startDayOfYear is empty or dwc:eventDate has a precision of one day or finer and the provided value in dwc:startDayOfYear matches the start day of the year of the range represented by dwc:eventDate, and (5) dwc:endDayOfYear is empty or dwc:eventDate has a precision of one day or finer and the provided value in dwc:endDayOfYear matches the end day of the year of the range represented by dwc:eventDate; otherwise NOT_COMPLIANT." .
+
+<urn:uuid:fbbdd989-9249-4cee-8895-c50e8f65157a> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:eventDate, dwc:day, dwc:month, dwc:year, dwc:startDayOfYear, dwc:endDayOfYear" ;
+    skos:prefLabel "Information Element ActedUpon dwc:eventDate, dwc:day, dwc:month, dwc:year, dwc:startDayOfYear, dwc:endDayOfYear" ;
+    bdqffdq:composedOf dwc:day,
+        dwc:endDayOfYear,
+        dwc:eventDate,
+        dwc:month,
+        dwc:startDayOfYear,
+        dwc:year .
+
+<https://rs.tdwg.org/bdqtest/terms/version/5618f083-d55a-4ac2-92b5-b9fb227b832f-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_EVENT_CONSISTENT" ;
+    dcterms:description "Are the values in dwc:eventDate consistent with the values in dwc:year, dwc:month, dwc:day, dwc:startDayOfYear and dwc:endDayOfYear?" ;
+    dcterms:isVersionOf bdqtest:5618f083-d55a-4ac2-92b5-b9fb227b832f ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/67" ;
+    skos:note "This Test does not take a position on whether the value in dwc:eventDate, or the values in the atomic terms are correct, it simply points out the presence of inconsistencies. For this Test, dwc:eventTime is explicitly ignored. It may be useful to consider an additional Test that does evaluate dwc:eventTime and dwc:eventDate. In that case, but not in this Test, if the time is present in both dwc:eventDate and dwc:eventTime, and it is inconsistent, it may indicate an error in the dwc:eventDate, thus making it a problem that someone needs to evaluate. This Test will only assert consistency if the data are both internally consistent and are compliant with the term definitions, for example dwc:day, by its definition, can only be the day of an dwc:eventDate that has a precision of a day or better and is not a range that spans more than a single day. A dwc:day that was internally consistent with the first day of the year (that is, 1) of an dwc:eventDate that only had precision to a year would be consistent internally, but not consistent with the Darwin Core term definitions, and would not return COMPLIANT from this Test." ;
+    skos:prefLabel "Validation dwc:Event Consistent for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:fbbdd989-9249-4cee-8895-c50e8f65157a> ;
+    bdqffdq:hasCriterion bdqcrit:Consistent ;
+    bdqffdq:hasDataQualityDimension bdqdim:Consistency ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

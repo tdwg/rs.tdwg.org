@@ -1,0 +1,108 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2025-03-06> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2025-03-06> .
+
+<urn:uuid:9c5798cd-6176-41ed-8e91-35e3df1fa6d4> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_TAXON_NOTEMPTY with Specification for: VALIDATION_TAXON_NOTEMPTY" ;
+    skos:historyNote "Source: Lee Belbin" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1761",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_TAXON_NOTEMPTY with Specification for: VALIDATION_TAXON_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:f38e3644-354d-4180-bc7c-c437cef1d606> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2025-03-06> .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:d6aed829-5a37-4d2c-9acd-18dc3d020116> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:taxonID, dwc:scientificNameID, dwc:acceptedNameUsageID, dwc:parentNameUsageID, dwc:originalNameUsageID, dwc:taxonConceptID, dwc:scientificName, dwc:higherClassification, dwc:kingdom, dwc:phylum, dwc:class, dwc:order, dwc:superfamily, dwc:family, dwc:subfamily, dwc:tribe, dwc:subtribe, dwc:genus, dwc:genericName, dwc:subgenus, dwc:infragenericEpithet, dwc:specificEpithet, dwc:infraspecificEpithet, dwc:vernacularName, dwc:cultivarEpithet" ;
+    skos:prefLabel "Information Element ActedUpon dwc:taxonID, dwc:scientificNameID, dwc:acceptedNameUsageID, dwc:parentNameUsageID, dwc:originalNameUsageID, dwc:taxonConceptID, dwc:scientificName, dwc:higherClassification, dwc:kingdom, dwc:phylum, dwc:class, dwc:order, dwc:superfamily, dwc:family, dwc:subfamily, dwc:tribe, dwc:subtribe, dwc:genus, dwc:genericName, dwc:subgenus, dwc:infragenericEpithet, dwc:specificEpithet, dwc:infraspecificEpithet, dwc:vernacularName, dwc:cultivarEpithet" ;
+    bdqffdq:composedOf dwc:acceptedNameUsageID,
+        dwc:class,
+        dwc:cultivarEpithet,
+        dwc:family,
+        dwc:genericName,
+        dwc:genus,
+        dwc:higherClassification,
+        dwc:infragenericEpithet,
+        dwc:infraspecificEpithet,
+        dwc:kingdom,
+        dwc:order,
+        dwc:originalNameUsageID,
+        dwc:parentNameUsageID,
+        dwc:phylum,
+        dwc:scientificName,
+        dwc:scientificNameID,
+        dwc:specificEpithet,
+        dwc:subfamily,
+        dwc:subgenus,
+        dwc:subtribe,
+        dwc:superfamily,
+        dwc:taxonConceptID,
+        dwc:taxonID,
+        dwc:tribe,
+        dwc:vernacularName .
+
+<urn:uuid:f38e3644-354d-4180-bc7c-c437cef1d606> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_TAXON_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if at least one term needed to determine the taxon of the entity exists and is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:taxonID=\"\", dwc:scientificNameID=\"\", dwc:acceptedNameUsageID=\"\", dwc:parentNameUsageID=\"\", dwc:originalNameUsageID=\"\", dwc:taxonConceptID=\"\", dwc:scientificName=\"\", dwc:higherClassification=\"\", dwc:kingdom=\"\", dwc:phylum=\"\", dwc:class=\"\", dwc:order=\"\", dwc:superfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\",dwc:family=\"\", dwc:genus=\"\", dwc:subgenus=\"\", dwc:specificEpithet=\"\", dwc:infraspecificEpithet=\"\", dwc:vernacularName=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"All input fields are bdqval:Empty or missing\"",
+        "dwc:taxonID=\"\", dwc:scientificNameID=\"\", dwc:acceptedNameUsageID=\"\", dwc:parentNameUsageID=\"\", dwc:originalNameUsageID=\"\", dwc:taxonConceptID=\"\", dwc:scientificName=\"Eucalyptus gunnii\", dwc:higherClassification=\"\", dwc:kingdom=\"\", dwc:phylum=\"\", dwc:class=\"\", dwc:order=\"\", dwc:superfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\",dwc:family=\"\", dwc:genus=\"\", dwc:subgenus=\"\", dwc:specificEpithet=\"\", dwc:infraspecificEpithet=\"\", dwc:vernacularName=\"\" : Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"at least enough terms exist that identify that an entity exists\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if at least one term needed to determine the taxon of the entity exists and is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_TAXON_NOTEMPTY" ;
+    dcterms:description "Is there a value in any of the terms needed to determine that the taxon exists?" ;
+    dcterms:isVersionOf bdqtest:06851339-843f-4a43-8422-4e61b9a00e75 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/105" ;
+    skos:note "This tests for records that have no taxonomic (NAME) information. If there is any value for any of the Information Elements, this may be useful information. See example." ;
+    skos:prefLabel "Validation dwc:Taxon Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:d6aed829-5a37-4d2c-9acd-18dc3d020116> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

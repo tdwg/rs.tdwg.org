@@ -1,0 +1,22 @@
+header,predicate,type,value,attribute,subject_id
+term_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
+term_isDefinedBy,dcterms:isPartOf,iri,,,$root
+term_created,dcterms:created,datatype,,xsd:date,$root
+term_modified,dcterms:modified,datatype,,xsd:date,$root
+term_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
+replaces_term,dcterms:replaces,iri,,,$root
+replaces1_term,dcterms:replaces,iri,,,$root
+replaces2_term,dcterms:replaces,iri,,,$root
+definition_derived_from ,sawsdlrdf:modelReference,iri,,,$root
+label,rdfs:label,language,,en,$root
+definition,rdfs:comment,language,,en,$root
+definition,skos:definition,language,,en,$root
+description,dcterms:description,language,,en,$root
+notes,skos:note,language,,en,$root
+historyNoteUrl,skos:historyNote,datatype,,xsd:string,$root
+dateLastUpdated,bdqffdq:hasDateLastUpdated,datatype,,xsd:date,$root
+type,rdf:type,iri,,,$root
+hasResourceType,bdqffdq:hasResourceType,iri,,,$root
+hasDataQualityDimension,bdqffdq:hasDataQualityDimension,iri,,,$root
+hasCriterion,bdqffdq:hasCriterion,iri,,,$root
+hasEnhancement,bdqffdq:hasEnhancement,iri,,,$root

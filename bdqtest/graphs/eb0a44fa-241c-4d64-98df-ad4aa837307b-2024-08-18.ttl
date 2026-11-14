@@ -1,0 +1,81 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:cca7732f-c336-47b0-9d69-4514d39f5950> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR with Specification Specification for: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
+    skos:historyNote "Source: TG2-Gainesville" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1296",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Amendment TIME CODED Test Completeness CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR with Specification Specification for: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/eb0a44fa-241c-4d64-98df-ad4aa837307b-2024-08-18> ;
+    bdqffdq:hasSpecification <urn:uuid:647bf697-e432-4b31-9a69-778396e14a82> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (7) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/eb0a44fa-241c-4d64-98df-ad4aa837307b-2024-08-18> .
+
+<https://en.wikipedia.org/wiki/ISO_8601> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2020) ISO 8601. https://en.wikipedia.org/wiki/ISO_8601" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqenh:FilledInFrom a bdqffdq:Enhancement ;
+    rdfs:label "FilledInFrom" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
+
+<urn:uuid:647bf697-e432-4b31-9a69-778396e14a82> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:NotEmpty or any of dwc:year, dwc:startDayOfYear, or dwc:endDayOfYear are bdqval:Empty; FILLED_IN the value of dwc:eventDate from values in dwc:year, dwc:startDayOfYear and dwc:endDayOfYear if the values in each are independently interpretable and if the value of dwc:startDayOfYear is less than the value of dwc:endDayOfYear; otherwise NOT_AMENDED" ;
+    skos:example "dwc:year=\"1901\", dwc:startDayOfYear=\"15\", dwc:endDayOfYear=\"25\", dwc:eventDate=\"\": Response.status=FILLED_IN, Response.result=dwc:eventDate=\"1901-01-15/1901-01-25\", Response.comment=\"dwc:eventDate was interpreted from dwc:year, dwc:startDayOfYear and dwc:endDayOfYear\"",
+        "dwc:year=\"1901\", dwc:startDayOfYear=\"25\", dwc:endDayOfYear=\"15\", dwc:eventDate=\"\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:startDayOfYear > dwc:endDayOfyear\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:NotEmpty or any of dwc:year, dwc:startDayOfYear, or dwc:endDayOfYear are bdqval:Empty; FILLED_IN the value of dwc:eventDate from values in dwc:year, dwc:startDayOfYear and dwc:endDayOfYear if the values in each are independently interpretable and if the value of dwc:startDayOfYear is less than the value of dwc:endDayOfYear; otherwise NOT_AMENDED" .
+
+<urn:uuid:a7362af8-77a9-45c3-8520-1a12b8b31804> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:year, dwc:startDayOfYear, dwc:endDayOfYear" ;
+    skos:prefLabel "Information Element Consulted dwc:year, dwc:startDayOfYear, dwc:endDayOfYear" ;
+    bdqffdq:composedOf dwc:endDayOfYear,
+        dwc:startDayOfYear,
+        dwc:year .
+
+<urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:eventDate" ;
+    skos:prefLabel "Information Element ActedUpon dwc:eventDate" ;
+    bdqffdq:composedOf dwc:eventDate .
+
+<https://rs.tdwg.org/bdqtest/terms/version/eb0a44fa-241c-4d64-98df-ad4aa837307b-2024-08-18> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
+    dcterms:description "Proposes an amendment to the value of dwc:eventDate from values in dwc:year, dwc:startDayOfYear and dwc:endDayOfYear." ;
+    dcterms:isVersionOf bdqtest:eb0a44fa-241c-4d64-98df-ad4aa837307b ;
+    dcterms:issued "2024-08-18"^^xsd:date ;
+    dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
+        <https://www.iso.org/obp/ui/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/132" ;
+    skos:note "An attempt to populate dwc:eventDate from dwc:verbatimEventDate should be made before this Test is run. While year=1999, startDayOfYear=123 could be validly represented as an ISO date as either 1999-123 or 1999-05-03, the latter of these two forms SHOULD be used, thus, do not simply concatenate dwc:year and dwc:startDayOfYear. This Test is only for cases that fall within the one year (as given in dwc:year) and hence dwc:startDayOfYear will always be less than dwc:endDayOfYear." ;
+    skos:prefLabel "Amendment dwc:eventDate from dwc:year dwc:startDayOfYear dwc:endDayOfYear for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:a7362af8-77a9-45c3-8520-1a12b8b31804> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-08-18"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:FilledInFrom ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="urn:uuid:1aa9c50e-7e8a-445f-9cf3-12af51a9ec10">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_MINELEVATION_INRANGE with Specification for: VALIDATION_MINELEVATION_INRANGE</rdfs:label>
+    <skos:historyNote>Source: ALA, GBIF</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L582</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris &amp; Lowery 2025b)</skos:note>
+    <skos:note>TG2 Validation SPACE CODED Test Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_MINELEVATION_INRANGE with Specification for: VALIDATION_MINELEVATION_INRANGE</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/0bb8297d-8f8a-42d2-80c1-558f29efe798-2025-03-07"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:2bb79221-0312-410a-aef6-f569485df6a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:2bb79221-0312-410a-aef6-f569485df6a6">
+    <dcterms:description>INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters is bdqval:Empty or the value is not a number; COMPLIANT if the value of dwc:minimumElevationInMeters is within the range of bdqval:minimumValidElevationInMeters to bdqval:maximumValidElevationInMeters inclusive; otherwise NOT_COMPLIANT bdqval:minimumValidElevationInMeters default = "-430",bdqval:maximumValidElevationInMeters default = "8850"</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: VALIDATION_MINELEVATION_INRANGE</rdfs:label>
+    <skos:example>dwc:minimumElevationInMeters="-500": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dwc:minimumElevationInMeters is NOT_IN_RANGE (&lt;-430)"</skos:example>
+    <skos:example>dwc:minimumElevationInMeters="0": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="dwc:minimumElevationInMeters is IN_RANGE"</skos:example>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:307b78fe-e168-422b-977f-cdb4e1c5e636"/>
+    <bdqffdq:hasArgument rdf:resource="urn:uuid:6e07e4fe-ce7a-4e5f-9fa3-c26877b273a7"/>
+    <bdqffdq:hasAuthoritiesDefaults>bdqval:minimumValidElevationInMeters default = "-430",bdqval:maximumValidElevationInMeters default = "8850"</bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters is bdqval:Empty or the value is not a number; COMPLIANT if the value of dwc:minimumElevationInMeters is within the range of bdqval:minimumValidElevationInMeters to bdqval:maximumValidElevationInMeters inclusive; otherwise NOT_COMPLIANT</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
+    <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Extreme_points_of_Antarctica">
+    <dcterms:bibliographicCitation>Wikipedia (2020) Extreme points of Antarctica. https://en.wikipedia.org/wiki/Extreme_points_of_Antarctica</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/0bb8297d-8f8a-42d2-80c1-558f29efe798-2025-03-07">
+    <dcterms:description>Is the value of dwc:minimumElevationInMeters within the Parameter range?</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/0bb8297d-8f8a-42d2-80c1-558f29efe798"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
+    <dcterms:references rdf:resource="https://en.wikipedia.org/wiki/Extreme_points_of_Antarctica"/>
+    <dcterms:references rdf:resource="https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country_"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
+    <rdfs:label>VALIDATION_MINELEVATION_INRANGE</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/39</skos:historyNote>
+    <skos:note>We have rounded up the Parameter values. We are aware of sub-ice elevations in Antarctica to -3,500m and possible sampling in the atmosphere above the elevation of the top of Mt Everest should fail this Test if captured as elevation rather than as distanceAboveSurfaceInMeters. Elevations below the maximum elevation yet above the local surface will be false positives.</skos:note>
+    <skos:prefLabel>Validation dwc:minimumElevationInMeters In Range for SingleRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:af5393af-6a71-4e39-aa70-7609ee10d1d0"/>
+    <bdqffdq:hasCriterion rdf:resource="https://rs.tdwg.org/bdqcrit/terms/InRange"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-17</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/0bb8297d-8f8a-42d2-80c1-558f29efe798-2025-03-07"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:6e07e4fe-ce7a-4e5f-9fa3-c26877b273a7">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:minimumValidElevationInMeters:"-430"</rdfs:label>
+    <bdqffdq:hasArgumentValue>-430</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/minimumValidElevationInMeters"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country_">
+    <dcterms:bibliographicCitation>Wikipedia (2020) List of elevations extremes by country. https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country_</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:af5393af-6a71-4e39-aa70-7609ee10d1d0">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:minimumElevationInMeters</rdfs:label>
+    <skos:prefLabel>Information Element ActedUpon dwc:minimumElevationInMeters</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/minimumElevationInMeters"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/minimumValidElevationInMeters">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/InRange">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>InRange</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:307b78fe-e168-422b-977f-cdb4e1c5e636">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
+    <rdfs:label>Default value for bdqval:maximumValidElevationInMeters:"8850"</rdfs:label>
+    <bdqffdq:hasArgumentValue>8850</bdqffdq:hasArgumentValue>
+    <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/maximumValidElevationInMeters"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>SingleRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/maximumValidElevationInMeters">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

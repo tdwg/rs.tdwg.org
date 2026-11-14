@@ -1,0 +1,91 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/3f1db29a-bfa5-40db-9fd1-fde020d81939-2023-09-18> .
+
+<urn:uuid:ed60f87e-7ab7-446a-8565-903dbe6408d2> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_MAXDEPTH_INRANGE with Specification for: VALIDATION_MAXDEPTH_INRANGE" ;
+    skos:historyNote "Source: ALA, GBIF" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2726",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_MAXDEPTH_INRANGE with Specification for: VALIDATION_MAXDEPTH_INRANGE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/3f1db29a-bfa5-40db-9fd1-fde020d81939-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:cebc8ba0-ca02-4f1e-830e-ec693bc628e4> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+<https://en.wikipedia.org/wiki/Extreme_points_of_Earth> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2024) Extreme points on Earth. https://en.wikipedia.org/wiki/Extreme_points_of_Earth" .
+
+bdqcrit:InRange a bdqffdq:Criterion ;
+    rdfs:label "InRange" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:maximumValidDepthInMeters a bdqffdq:Parameter .
+
+bdqval:minimumValidDepthInMeters a bdqffdq:Parameter .
+
+<urn:uuid:cebc8ba0-ca02-4f1e-830e-ec693bc628e4> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_MAXDEPTH_INRANGE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumDepthInMeters is bdqval:Empty or is not interpretable as a number greater than or equal to zero; COMPLIANT if the value of dwc:maximumDepthInMeters is within the range of bdqval:minimumValidDepthInMeters to bdqval:maximumValidDepthInMeters inclusive; otherwise NOT_COMPLIANT bdqval:minimumValidDepthInMeters default=\"0\",bdqval:maximumValidDepthInMeters default=\"11000\"" ;
+    skos:example "dwc:maximumDepthInMeters=\"1200\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:maximumDepthInMeters is in range (<11,000)\"",
+        "dwc:maximumDepthInMeters=\"99999\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:maximumDepthInMeters is not in range (>11,000)\"" ;
+    bdqffdq:hasArgument <urn:uuid:edf69c59-056d-4c8a-b1fb-647ea684eb18>,
+        <urn:uuid:f41be58e-2e1e-409e-a322-1de95df2ce0b> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:minimumValidDepthInMeters default=\"0\",bdqval:maximumValidDepthInMeters default=\"11000\"" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumDepthInMeters is bdqval:Empty or is not interpretable as a number greater than or equal to zero; COMPLIANT if the value of dwc:maximumDepthInMeters is within the range of bdqval:minimumValidDepthInMeters to bdqval:maximumValidDepthInMeters inclusive; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:ced8854b-d1ce-4d71-9b77-e5d67a74c4f9> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:maximumDepthInMeters" ;
+    skos:prefLabel "Information Element ActedUpon dwc:maximumDepthInMeters" ;
+    bdqffdq:composedOf dwc:maximumDepthInMeters .
+
+<urn:uuid:edf69c59-056d-4c8a-b1fb-647ea684eb18> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:minimumValidDepthInMeters:\"0\"" ;
+    bdqffdq:hasArgumentValue "0" ;
+    bdqffdq:hasParameter bdqval:minimumValidDepthInMeters .
+
+<urn:uuid:f41be58e-2e1e-409e-a322-1de95df2ce0b> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:maximumValidDepthInMeters:\"11000\"" ;
+    bdqffdq:hasArgumentValue "11000" ;
+    bdqffdq:hasParameter bdqval:maximumValidDepthInMeters .
+
+<https://rs.tdwg.org/bdqtest/terms/version/3f1db29a-bfa5-40db-9fd1-fde020d81939-2023-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_MAXDEPTH_INRANGE" ;
+    dcterms:description "Is the value of dwc:maximumDepthInMeters within the Parameter range?" ;
+    dcterms:isVersionOf bdqtest:3f1db29a-bfa5-40db-9fd1-fde020d81939 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
+        <https://en.wikipedia.org/wiki/Extreme_points_of_Earth> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/187" ;
+    skos:note "The Challenger Deep in the Mariana Trench is the deepest known point in Earth's oceans at 10,994 meters below sea level. We have rounded up bdqval:maximumValidDepthInMeters." ;
+    skos:prefLabel "Validation dwc:maximumDepthInMeters In Range for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:ced8854b-d1ce-4d71-9b77-e5d67a74c4f9> ;
+    bdqffdq:hasCriterion bdqcrit:InRange ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

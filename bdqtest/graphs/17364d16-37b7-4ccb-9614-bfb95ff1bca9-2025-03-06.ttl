@@ -1,0 +1,63 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:f643ba35-9ddb-4e70-9959-01a6849331ed> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/17364d16-37b7-4ccb-9614-bfb95ff1bca9-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:db818cf0-569e-4eb9-a309-a151d04b7bb4> .
+
+<urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/17364d16-37b7-4ccb-9614-bfb95ff1bca9-2025-03-06> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:6fa9dcd8-4e43-4fc7-acb6-1aff70e87f51> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_PHYLUM_FOUND.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_PHYLUM_FOUND across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_PHYLUM_FOUND.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:db818cf0-569e-4eb9-a309-a151d04b7bb4> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
+    dcterms:description "COMPLETE if every VALIDATION_PHYLUM_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_PHYLUM_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/17364d16-37b7-4ccb-9614-bfb95ff1bca9-2025-03-06> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
+    dcterms:description "Measure if all VALIDATION_PHYLUM_FOUND in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:isVersionOf bdqtest:17364d16-37b7-4ccb-9614-bfb95ff1bca9 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:phylum Found for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:6fa9dcd8-4e43-4fc7-acb6-1aff70e87f51> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2022-03-25"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

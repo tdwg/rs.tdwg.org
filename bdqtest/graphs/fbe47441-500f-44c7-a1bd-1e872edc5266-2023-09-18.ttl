@@ -1,0 +1,71 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:73019d00-f6a5-4617-808b-6dc940f36654> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/fbe47441-500f-44c7-a1bd-1e872edc5266-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:7c49e2d3-5d57-460f-b98a-8bba82b7156f> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/fbe47441-500f-44c7-a1bd-1e872edc5266-2023-09-18> .
+
+<urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (60) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/fbe47441-500f-44c7-a1bd-1e872edc5266-2023-09-18> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:3c6be17f-a7fc-4449-9d91-a528d012f415> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DCTYPE_STANDARD.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_DCTYPE_STANDARD across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DCTYPE_STANDARD.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:cdaabb0d-a863-49d0-bc0f-738d771acba5 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:7c49e2d3-5d57-460f-b98a-8bba82b7156f> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
+    dcterms:description "Count the number of VALIDATION_DCTYPE_STANDARD in the MultiRecord that have Response.result=COMPLIANT." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "Count the number of VALIDATION_DCTYPE_STANDARD in the MultiRecord that have Response.result=COMPLIANT." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/fbe47441-500f-44c7-a1bd-1e872edc5266-2023-09-18> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
+    dcterms:description "Count the number of VALIDATION_DCTYPE_STANDARD in a record set that are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:fbe47441-500f-44c7-a1bd-1e872edc5266 ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;
+    skos:note "For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set." ;
+    skos:prefLabel "Measurement over MultiRecord Counting Compliance of Validation dc:type Standard for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:3c6be17f-a7fc-4449-9d91-a528d012f415> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

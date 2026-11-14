@@ -1,0 +1,66 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (30) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/01c6dafa-0886-4b7e-9881-2c3018c98bdc-2023-09-18> .
+
+<urn:uuid:bb630881-2a79-4750-ae0f-36d0df2191f7> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification for: VALIDATION_MONTH_STANDARD" ;
+    skos:historyNote "Source: TG2-Gainesville (MONTH_INVALID/MONTH_IN_RANGE previously in spreadsheet, from ALA?)" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L690 Unit test in [DwcEventDQTest]{https://github.com/FilteredPush/event_date_qc/blob/v3.0.0/src/test/java/org/filteredpush/qc/date/DwcEventDQTest.java#L242)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Validation TIME CODED Test Conformance CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification for: VALIDATION_MONTH_STANDARD" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/01c6dafa-0886-4b7e-9881-2c3018c98bdc-2023-09-18> ;
+    bdqffdq:hasSpecification <urn:uuid:2c5dbdbb-feab-474c-bcca-bf6d1b90ae66> .
+
+bdqcrit:Standard a bdqffdq:Criterion ;
+    rdfs:label "Standard" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:2c5dbdbb-feab-474c-bcca-bf6d1b90ae66> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_MONTH_STANDARD" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:month is bdqval:Empty; COMPLIANT if the value of dwc:month is interpretable as an integer between 1 and 12 inclusive; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:month=\"10\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:month is in range\"",
+        "dwc:month=\"v\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:month is ambiguous as \"v\" or \"5\"\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:month is bdqval:Empty; COMPLIANT if the value of dwc:month is interpretable as an integer between 1 and 12 inclusive; otherwise NOT_COMPLIANT" .
+
+<urn:uuid:a16e8cb6-dbf5-44a9-becc-8bef83a37456> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:month" ;
+    skos:prefLabel "Information Element ActedUpon dwc:month" ;
+    bdqffdq:composedOf dwc:month .
+
+<https://rs.tdwg.org/bdqtest/terms/version/01c6dafa-0886-4b7e-9881-2c3018c98bdc-2023-09-18> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_MONTH_STANDARD" ;
+    dcterms:description "Is the value of dwc:month interpretable as an integer between 1 and 12 inclusive?" ;
+    dcterms:isVersionOf bdqtest:01c6dafa-0886-4b7e-9881-2c3018c98bdc ;
+    dcterms:issued "2023-09-18"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/126" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:month Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:a16e8cb6-dbf5-44a9-becc-8bef83a37456> ;
+    bdqffdq:hasCriterion bdqcrit:Standard ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

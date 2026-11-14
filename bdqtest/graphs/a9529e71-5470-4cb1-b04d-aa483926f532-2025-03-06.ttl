@@ -1,0 +1,71 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:8857d693-f25b-48aa-ba9b-29b692011bf2> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE" ;
+    bdqffdq:forMeasure <https://rs.tdwg.org/bdqtest/terms/version/a9529e71-5470-4cb1-b04d-aa483926f532-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:a908512b-be44-4987-bbc9-a27c4d2d6bd6> .
+
+<urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/a9529e71-5470-4cb1-b04d-aa483926f532-2025-03-06> .
+
+<urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/a9529e71-5470-4cb1-b04d-aa483926f532-2025-03-06> .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:951358d6-b8f5-42e0-a089-42bb2ecfa79b> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAMEID_COMPLETE.Response" ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_SCIENTIFICNAMEID_COMPLETE across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAMEID_COMPLETE.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:6eeac3ed-f691-457f-a42e-eaa9c8a71ce8 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<urn:uuid:a908512b-be44-4987-bbc9-a27c4d2d6bd6> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE" ;
+    dcterms:description "COMPLETE if every VALIDATION_SCIENTIFICNAMEID_COMPLETE in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLETE if every VALIDATION_SCIENTIFICNAMEID_COMPLETE in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." .
+
+<https://rs.tdwg.org/bdqtest/terms/version/a9529e71-5470-4cb1-b04d-aa483926f532-2025-03-06> a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE" ;
+    dcterms:description "Measure if all VALIDATION_SCIENTIFICNAMEID_COMPLETE in a record set are COMPLIANT." ;
+    dcterms:isVersionOf bdqtest:a9529e71-5470-4cb1-b04d-aa483926f532 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
+    skos:note "For Quality Assurance, filter record set until this measure is COMPLETE." ;
+    skos:prefLabel "Measurement over MultiRecord for QualityAssurance of Validation dwc:scientificNameID Complete for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:951358d6-b8f5-42e0-a089-42bb2ecfa79b> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+

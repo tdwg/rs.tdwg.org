@@ -1,0 +1,90 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (1) amendments  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/15d15927-7a22-43f8-88d6-298f5eb45c4c-2024-02-08> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (2) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/15d15927-7a22-43f8-88d6-298f5eb45c4c-2024-02-08> .
+
+<urn:uuid:fcd9e46a-a31e-47f5-a18a-bb7ee5d1394a> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED with Specification Specification for: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1502",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED with Specification Specification for: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/15d15927-7a22-43f8-88d6-298f5eb45c4c-2024-02-08> ;
+    bdqffdq:hasSpecification <urn:uuid:fa4e531e-f45e-4dea-8c4b-27d364117808> .
+
+<http://rs.tdwg.org/dwc/doc/em/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Darwin Core Maintenance Group (2021) Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/doc/em/" .
+
+<https://doi.org/10.3897/biss.3.38084> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Groom et al. (2019) Improving Darwin Core for research and management of alien species. Biodiversity Information Science and Standards 3: e38084. https://doi.org/10.3897/biss.3.38084" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:09023be7-9359-48a8-873b-3e65d43427ba> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:establishmentMeans" ;
+    skos:prefLabel "Information Element ActedUpon dwc:establishmentMeans" ;
+    bdqffdq:composedOf dwc:establishmentMeans .
+
+<urn:uuid:17d785ee-6ac9-4ab4-9806-f4a2b0d8bbf1> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"Establishment Means Controlled Vocabulary List of Terms\"" ;
+    bdqffdq:hasArgumentValue "Establishment Means Controlled Vocabulary List of Terms" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:fa4e531e-f45e-4dea-8c4b-27d364117808> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL PREREQUISITES_NOT_MET if dwc:establishmentMeans is bdqval:Empty; AMENDED the value of dwc:establishmentMeans if it can be unambiguously matched to a term in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = \"Establishment Means Controlled Vocabulary List of Terms\" {[https://dwc.tdwg.org/em/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts]}" ;
+    skos:example "dwc:establishmentMeans=\"cultivated\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:establishmentMeans is not an interpretable value in the bdqval:sourceAuthority\"",
+        "dwc:establishmentMeans=\"vag.\": Response.status=AMENDED, Response.result=dwc:establishmentMeans=\"vagrant\", Response.comment=\"dwc:establishmentMeans contains an interpretable value in the bdqval:sourceAuthority\"" ;
+    bdqffdq:hasArgument <urn:uuid:17d785ee-6ac9-4ab4-9806-f4a2b0d8bbf1> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"Establishment Means Controlled Vocabulary List of Terms\" {[https://dwc.tdwg.org/em/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL PREREQUISITES_NOT_MET if dwc:establishmentMeans is bdqval:Empty; AMENDED the value of dwc:establishmentMeans if it can be unambiguously matched to a term in the bdqval:sourceAuthority; otherwise NOT_AMENDED" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/15d15927-7a22-43f8-88d6-298f5eb45c4c-2024-02-08> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dwc:establishmentMeans using the bdqval:sourceAuthority." ;
+    dcterms:isVersionOf bdqtest:15d15927-7a22-43f8-88d6-298f5eb45c4c ;
+    dcterms:issued "2024-02-08"^^xsd:date ;
+    dcterms:references <http://rs.tdwg.org/dwc/doc/em/>,
+        <https://doi.org/10.3897/biss.3.38084> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/269" ;
+    skos:note "" ;
+    skos:prefLabel "Amendment dwc:establishmentMeans Standardized for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:09023be7-9359-48a8-873b-3e65d43427ba> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-02-08"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

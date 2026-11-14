@@ -1,0 +1,83 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/6eeac3ed-f691-457f-a42e-eaa9c8a71ce8-2025-03-06> .
+
+<urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/6eeac3ed-f691-457f-a42e-eaa9c8a71ce8-2025-03-06> .
+
+<urn:uuid:f2f40350-4081-4402-8b2b-95f9ad8893a7> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_SCIENTIFICNAMEID_COMPLETE with Specification for: VALIDATION_SCIENTIFICNAMEID_COMPLETE" ;
+    skos:historyNote "Source: TG2 December 2023" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2903",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_SCIENTIFICNAMEID_COMPLETE with Specification for: VALIDATION_SCIENTIFICNAMEID_COMPLETE" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/6eeac3ed-f691-457f-a42e-eaa9c8a71ce8-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:e6c02558-8541-4292-9a11-2f4408d69699> .
+
+<https://doi.org/10.15468/39omei> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "GBIF Secretariat (2023) GBIF Backbone Taxonomy. Checklist dataset. https://doi.org/10.15468/39omei" .
+
+<https://en.wikipedia.org/wiki/LSID> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wikipedia (2024) LSID (Life Science Identifier). https://en.wikipedia.org/wiki/LSID" .
+
+bdqcrit:Complete a bdqffdq:Criterion ;
+    rdfs:label "Complete" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<urn:uuid:92a6c199-f1d7-493e-b643-57d09c5131dd> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:scientificNameID" ;
+    skos:prefLabel "Information Element ActedUpon dwc:scientificNameID" ;
+    bdqffdq:composedOf dwc:scientificNameID .
+
+<urn:uuid:e6c02558-8541-4292-9a11-2f4408d69699> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_SCIENTIFICNAMEID_COMPLETE" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:scientificNameID is bdqval:Empty; COMPLIANT if (1) dwc:scientificNameID is a validly formed LSID, or (2) dwc:scientificNameID is a validly formed URN with at least NID and NSS present, or (3) dwc:scientificNameID is in the form scope:value, or (4) dwc:scientificNameID is a validly formed URI with host and path where path consists of more than just \"/\"; otherwise NOT_COMPLIANT" ;
+    skos:example "dwc:scientificNameID=\"Hakea decurrens ssp. physocarpa\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificNameID does not contain a URI\"",
+        "dwc:scientificNameID=\"urn:lsid:zoobank.org:act:17ADF24F-027F-44F6-9543-D3D0260CE79E\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:scientificNameID contains a URI and a namespace indicator\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:scientificNameID is bdqval:Empty; COMPLIANT if (1) dwc:scientificNameID is a validly formed LSID, or (2) dwc:scientificNameID is a validly formed URN with at least NID and NSS present, or (3) dwc:scientificNameID is in the form scope:value, or (4) dwc:scientificNameID is a validly formed URI with host and path where path consists of more than just \"/\"; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/6eeac3ed-f691-457f-a42e-eaa9c8a71ce8-2025-03-06> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_SCIENTIFICNAMEID_COMPLETE" ;
+    dcterms:description "Does the value of dwc:scientificNameID contain a complete identifier?" ;
+    dcterms:isVersionOf bdqtest:6eeac3ed-f691-457f-a42e-eaa9c8a71ce8 ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/39omei>,
+        <https://en.wikipedia.org/wiki/LSID> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/212" ;
+    skos:note "If any single bdqval:sourceAuthority such as GBIF is used, a valid and complete dwc:scientificNameID based on an alternative source authority is unlikely to provide a valid match. A text or number string as a namespace indicator without a URI will be ambiguous. As an example, GBIF's backbone taxonomy dataset can be found at https://doi.org/10.15468/39omei. When referencing a GBIF taxon by GBIF's identifier for that taxon, use the the pseudo-namespace \"gbif:\" and the form \"gbif:{integer}\" as the value for dwc:scientificNameID. Note that GBIF currently uses \"TaxonID\" for this entity. The terms NID, NSS, and URN are all Uniform Resource Identifiers - see the Wikipedia (2024) reference.  **Review Note: GBIF has indicated that we should switch to the Catalog of Life for the default source authority for this test. That change is planned prior to ratification.**" ;
+    skos:prefLabel "Validation dwc:scientificNameID Complete for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:92a6c199-f1d7-493e-b643-57d09c5131dd> ;
+    bdqffdq:hasCriterion bdqcrit:Complete ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

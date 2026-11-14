@@ -1,0 +1,90 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:3c402f21-5347-419c-a720-8bbad7c38577> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_BASISOFRECORD_STANDARDIZED with Specification Specification for: AMENDMENT_BASISOFRECORD_STANDARDIZED" ;
+    skos:historyNote "Source: VertNet" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L834",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_BASISOFRECORD_STANDARDIZED with Specification Specification for: AMENDMENT_BASISOFRECORD_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/07c28ace-561a-476e-a9b9-3d5ad6e35933-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:76ee10e7-7be9-432b-ad9c-655b127bff27> .
+
+<urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:SDM-Trees" ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/07c28ace-561a-476e-a9b9-3d5ad6e35933-2025-03-07> .
+
+<urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/07c28ace-561a-476e-a9b9-3d5ad6e35933-2025-03-07> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/07c28ace-561a-476e-a9b9-3d5ad6e35933-2025-03-07> .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<urn:uuid:1b66a16a-5e76-4eca-a400-d097ac136ac1> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"Darwin Core basisOfRecord\"" ;
+    bdqffdq:hasArgumentValue "Darwin Core basisOfRecord" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:2c09df64-3803-4834-a6e9-30ba80f8eac8> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:basisOfRecord" ;
+    skos:prefLabel "Information Element ActedUpon dwc:basisOfRecord" ;
+    bdqffdq:composedOf dwc:basisOfRecord .
+
+<urn:uuid:76ee10e7-7be9-432b-ad9c-655b127bff27> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_BASISOFRECORD_STANDARDIZED" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:basisOfRecord is bdqval:Empty; AMENDED the value of dwc:basisOfRecord if it could be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = \"Darwin Core basisOfRecord\" {[https://dwc.tdwg.org/terms/#dwc:basisOfRecord]} {dwc:basisOfRecord vocabulary [https://rs.gbif.org/vocabulary/dwc/basis_of_record.xml]}" ;
+    skos:example "dwc:basisOfRecord=\"FossilSpecimen\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:basisOfRecord contains match in the bdqval:sourceAuthority so NOT_AMENDED\"",
+        "dwc:basisOfRecord=\"Human obs\": Response.status=AMENDED, Response.result=dwc:basisOfRecord=\"HumanObservation\", Response.comment=\"dwc:basisOfRecord contains interpretable value\"" ;
+    bdqffdq:hasArgument <urn:uuid:1b66a16a-5e76-4eca-a400-d097ac136ac1> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"Darwin Core basisOfRecord\" {[https://dwc.tdwg.org/terms/#dwc:basisOfRecord]} {dwc:basisOfRecord vocabulary [https://rs.gbif.org/vocabulary/dwc/basis_of_record.xml]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:basisOfRecord is bdqval:Empty; AMENDED the value of dwc:basisOfRecord if it could be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/07c28ace-561a-476e-a9b9-3d5ad6e35933-2025-03-07> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_BASISOFRECORD_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dwc:basisOfRecord using the bdqval:sourceAuthority." ;
+    dcterms:isVersionOf bdqtest:07c28ace-561a-476e-a9b9-3d5ad6e35933 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/63" ;
+    skos:note "The term dwc:basisOfRecord has the comment \"Recommended best practice is to use a controlled vocabulary such as the set of local names of the identifiers for classes in Darwin Core.\" The list of these values can be determined by searching https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv for rows with status=\"recommended\" and rdf_type=\"http://www.w3.org/2000/01/rdf-schema#Class\". For example, the term http://rs.tdwg.org/dwc/terms/PreservedSpecimen has a local name PreservedSpecimen. For Tests against a dwc:Occurrence record, the set of valid terms is more limited and embodied in the resource found at https://rs.gbif.org/vocabulary/dwc/basis_of_record.xml, which contains the local name for the identifier, as well as preferred and alternate labels from which to standardize values." ;
+    skos:prefLabel "Amendment dwc:basisOfRecord Standardized for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:2c09df64-3803-4834-a6e9-30ba80f8eac8> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-07-24"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

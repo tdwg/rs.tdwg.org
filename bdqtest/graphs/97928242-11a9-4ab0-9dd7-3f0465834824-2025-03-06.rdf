@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bdqffdq="https://rs.tdwg.org/bdqffdq/terms/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="urn:uuid:53ba0552-5eb5-4317-a5e7-dcaee30608b1">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_FAMILY_FOUND.Response</rdfs:label>
+    <skos:note>Aggregated Response outcomes produced by VALIDATION_FAMILY_FOUND across a MultiRecord.</skos:note>
+    <skos:prefLabel>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_FAMILY_FOUND.Response</skos:prefLabel>
+    <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/3667556d-d8f5-454c-922b-af8af38f613c"/>
+    <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/97928242-11a9-4ab0-9dd7-3f0465834824-2025-03-06">
+    <dcterms:description>Count the number of VALIDATION_FAMILY_FOUND in a record set that are COMPLIANT.</dcterms:description>
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/terms/97928242-11a9-4ab0-9dd7-3f0465834824"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:issued>
+    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
+    <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND</rdfs:label>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/296</skos:historyNote>
+    <skos:note>For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set.</skos:note>
+    <skos:prefLabel>Measurement over MultiRecord Counting Compliance of Validation dwc:family Found for MultiRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="urn:uuid:53ba0552-5eb5-4317-a5e7-dcaee30608b1"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-17</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:a36114dc-3370-4c9e-8cad-e0f871754365">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND</rdfs:label>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/97928242-11a9-4ab0-9dd7-3f0465834824-2025-03-06"/>
+    <bdqffdq:hasSpecification rdf:resource="urn:uuid:6a4e4bdf-dc92-4a93-b127-093224b44c19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:6a4e4bdf-dc92-4a93-b127-093224b44c19">
+    <dcterms:description>Count the number of VALIDATION_FAMILY_FOUND in the MultiRecord that have Response.result=COMPLIANT.</dcterms:description>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_FAMILY_FOUND</rdfs:label>
+    <skos:example></skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>Count the number of VALIDATION_FAMILY_FOUND in the MultiRecord that have Response.result=COMPLIANT.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
+    <rdfs:label>MultiRecord</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/97928242-11a9-4ab0-9dd7-3f0465834824-2025-03-06"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Taxon-Management">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Taxon-Management</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.1371/journal.pone.0178731">
+    <dcterms:bibliographicCitation>Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,90 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/7e0c0418-fe16-4a39-98bd-80e19d95b9d1-2025-03-07> .
+
+<urn:uuid:344cb9f6-68e1-4d7c-a976-7edcd9f20935> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_GEODETICDATUM_STANDARD with Specification for: VALIDATION_GEODETICDATUM_STANDARD" ;
+    skos:historyNote "Source: ALA, GBIF" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1500",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test VOCABULARY Conformance CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_GEODETICDATUM_STANDARD with Specification for: VALIDATION_GEODETICDATUM_STANDARD" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/7e0c0418-fe16-4a39-98bd-80e19d95b9d1-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:5cc05662-c029-4ba9-b32e-fb487ccba71c> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+<https://epsg.io/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Maptiler (2019) EPSG.io. https://epsg.io/" .
+
+<https://epsg.org/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "EPSG (2024) About the EPSG Dataset. https://epsg.org/" .
+
+<https://epsg.org/about.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Geomatic Solutions (2026) GeoRepository. https://epsg.org/about.html" .
+
+<https://georeferencing.org/calculator/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Wieczorek C and Wieczorek J (2021) Georeferencing Calculator. https://georeferencing.org/calculator/" .
+
+bdqcrit:Standard a bdqffdq:Criterion ;
+    rdfs:label "Standard" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://spatialreference.org/> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Spatial Reference (2024) What is SpatialReference.org. https://spatialreference.org/" .
+
+<urn:uuid:2d1e1a48-f915-4db5-beba-ae73017f3f8b> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:geodeticDatum" ;
+    skos:prefLabel "Information Element ActedUpon dwc:geodeticDatum" ;
+    bdqffdq:composedOf dwc:geodeticDatum .
+
+<urn:uuid:5cc05662-c029-4ba9-b32e-fb487ccba71c> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_GEODETICDATUM_STANDARD" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available, INTERNAL_PREREQUISITES_NOT_MET if dwc:geodeticDatum is bdqval:Empty; COMPLIANT if the value of dwc:geodeticDatum is a valid code from the bdqval:sourceAuthority (in the form Authority:Number) for a Datum, or ellipsoid, or for a CRS appropriate for a 2D geographic coordinate in degrees, or is the value \"not recorded\"; otherwise NOT_COMPLIANT bdqval:sourceAuthority = \"EPSG\" {[https://epsg.org]} {API for EPSG codes [https://apps.epsg.org/api/swagger/ui/index]}" ;
+    skos:example "dwc:geodeticDatum=\"7030\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:geodeticDatum doesn't match values in the bdqval:sourceAuthority, 7030 is a bare number without an authority.",
+        "dwc:geodeticDatum=\"EPSG:4326\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:geodeticDatum matches an unambiguous alphanumeric CRS or datum code value in the bdqval:sourceAuthority\"" ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority = \"EPSG\" {[https://epsg.org]} {API for EPSG codes [https://apps.epsg.org/api/swagger/ui/index]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available, INTERNAL_PREREQUISITES_NOT_MET if dwc:geodeticDatum is bdqval:Empty; COMPLIANT if the value of dwc:geodeticDatum is a valid code from the bdqval:sourceAuthority (in the form Authority:Number) for a Datum, or ellipsoid, or for a CRS appropriate for a 2D geographic coordinate in degrees, or is the value \"not recorded\"; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/7e0c0418-fe16-4a39-98bd-80e19d95b9d1-2025-03-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_GEODETICDATUM_STANDARD" ;
+    dcterms:description "Does the value of dwc:geodeticDatum occur as a valid geographic CRS, geodetic Datum or ellipsoid in bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:7e0c0418-fe16-4a39-98bd-80e19d95b9d1 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
+        <https://epsg.io/>,
+        <https://epsg.org/>,
+        <https://epsg.org/about.html>,
+        <https://georeferencing.org/calculator/>,
+        <https://spatialreference.org/> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/59" ;
+    skos:note "Darwin Core recommends best practice is to use a controlled vocabulary. This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters. Chapman and Wieczorek (2020) recommend best practice is to use EPSG geographic CRS or Datum codes (https://epsg.io/) as a controlled vocabulary. Ideally, amend to the EPSG code for the geographic coordinate reference system (CRS), if known. Otherwise use the EPSG code for the geodetic datum, if known. Otherwise use the EPSG code of the ellipsoid, if known. If none of these is known, use the explicit value \"not recorded\". While \"not recorded\" is not a valid EPSG code, it is a valid value according to Darwin Core. The reference vocabularies of values for geodetic datums and ellipsoids needs to be made available and should map alternative representations of dwc:geodeticDatum strings to EPSG codes, such as \"WGS84\", \"WGS_84\", \"WGS:84\", \"WGS 84\" all with standard value \"EPSG:4326\"." ;
+    skos:prefLabel "Validation dwc:geodeticDatum Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:2d1e1a48-f915-4db5-beba-ae73017f3f8b> ;
+    bdqffdq:hasCriterion bdqcrit:Standard ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2025-03-03"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

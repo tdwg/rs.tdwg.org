@@ -1,0 +1,78 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://rs.tdwg.org/bdqffdq/extension/> a owl:Ontology ;
+    owl:versionIRI <https://rs.tdwg.org/bdqffdq/version/extension/2024-10-01> .
+
+<https://rs.tdwg.org/bdqffdq/terms> a owl:Ontology ;
+    rdfs:label "Biodiversity Data Quality Fitness for Use Framework (Ontology)"@en ;
+    skos:note "The classes and object properties found in this ontology are dedicated to fundamental and derived concepts from the Fitness For Use Framework described in the paper by Veiga et al., available at: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178731 as modified to describe data quality fitness for use Tests in the TDWG BDQ Standard."@en .
+
+<https://rs.tdwg.org/bdqffdq/terms/forAmendment> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/forAmendment> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Amendment> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/forIssue> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/forIssue> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Issue> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/forMeasure> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/forMeasure> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Measure> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/forValidation> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/forValidation> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Validation> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/hasCriterion> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/hasCriterion> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Criterion> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/hasEnhancement> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/hasEnhancement> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Enhancement> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/hasSpecification> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/hasSpecification> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Specification> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/hasUseCase> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/hasUseCase> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/UseCase> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/implementedBy> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/implementedBy> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Mechanism> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/improvedBy> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/improvedBy> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Amendment> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/targetedIssue> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/targetedIssue> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Issue> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/targetedMeasure> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/targetedMeasure> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Measure> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/targetedValidation> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/targetedValidation> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Validation> ] .
+
+<https://rs.tdwg.org/bdqffdq/terms/usesSpecification> rdfs:range [ a owl:Restriction ;
+            owl:onProperty <https://rs.tdwg.org/bdqffdq/terms/usesSpecification> ;
+            owl:someValuesFrom <https://rs.tdwg.org/bdqffdq/terms/Specification> ] .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( <https://rs.tdwg.org/bdqffdq/terms/Amendment> <https://rs.tdwg.org/bdqffdq/terms/Issue> <https://rs.tdwg.org/bdqffdq/terms/Measure> <https://rs.tdwg.org/bdqffdq/terms/Validation> ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( <https://rs.tdwg.org/bdqffdq/terms/AbstractInformationElement> <https://rs.tdwg.org/bdqffdq/terms/ActedUpon> <https://rs.tdwg.org/bdqffdq/terms/Consulted> ) .
+

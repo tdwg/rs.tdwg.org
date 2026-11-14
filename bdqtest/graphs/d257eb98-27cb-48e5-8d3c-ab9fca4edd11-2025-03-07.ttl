@@ -1,0 +1,96 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/d257eb98-27cb-48e5-8d3c-ab9fca4edd11-2025-03-07> .
+
+<urn:uuid:f1a7f272-9040-42da-9b64-62abedefb1b0> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS with Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
+    skos:historyNote "Source: VertNet, Kurator" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3020",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Validation SPACE CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS with Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/d257eb98-27cb-48e5-8d3c-ab9fca4edd11-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:e5efdd20-d1fc-4287-91f9-15b9ce3f3aac> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat) 3166-1 alpha-2. https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" .
+
+<https://github.com/VertNet/DwCVocabs/tree/master/vocabs> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Vertnet (2022) DwC Vocabs. https://github.com/VertNet/DwCVocabs/tree/master/vocabs" .
+
+bdqcrit:Unambiguous a bdqffdq:Criterion ;
+    rdfs:label "Unambiguous" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+<https://www.getty.edu/research/tools/vocabularies/tgn/index.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Getty Research Institute (2017) Getty Thesaurus of Geographic Names Online. https://www.getty.edu/research/tools/vocabularies/tgn/index.html" .
+
+<https://www.iso.org/iso-3166-country-codes.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat.) ISO 3166 Country Codes. https://www.iso.org/iso-3166-country-codes.html" .
+
+<urn:uuid:63ee37ac-d0ae-4578-82f8-7a956d92baf0> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:country, dwc:stateProvince" ;
+    skos:prefLabel "Information Element ActedUpon dwc:country, dwc:stateProvince" ;
+    bdqffdq:composedOf dwc:country,
+        dwc:stateProvince .
+
+<urn:uuid:aabaaac7-b26c-478e-9f04-3e2fbdba4a96> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"The Getty Thesaurus of Geographic Names (TGN)\"" ;
+    bdqffdq:hasArgumentValue "The Getty Thesaurus of Geographic Names (TGN)" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:e5efdd20-d1fc-4287-91f9-15b9ce3f3aac> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the terms dwc:country and dwc:stateProvince are bdqval:Empty; COMPLIANT if the combination of values of dwc:country and dwc:stateProvince are unambiguously resolved to a single result with a child-parent relationship in the bdqval:sourceAuthority and the entity matching the value of dwc:country in the bdqval:sourceAuthority is an ISO 3166 country-like administrative entity in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"The Getty Thesaurus of Geographic Names (TGN)\" {[https://www.getty.edu/research/tools/vocabularies/tgn/index.html]}" ;
+    skos:example "dwc:country=\"\", dwc:stateProvince=\"WA\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:country and dwc:stateProvince are ambiguous. Matches Western Australia, Washington State (US)\"",
+        "dwc:country=\"Argentina\", dwc:stateProvince=\"Rio Negro\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:country and dwc:stateProvince are unambiguous\"" ;
+    bdqffdq:hasArgument <urn:uuid:aabaaac7-b26c-478e-9f04-3e2fbdba4a96> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"The Getty Thesaurus of Geographic Names (TGN)\" {[https://www.getty.edu/research/tools/vocabularies/tgn/index.html]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the terms dwc:country and dwc:stateProvince are bdqval:Empty; COMPLIANT if the combination of values of dwc:country and dwc:stateProvince are unambiguously resolved to a single result with a child-parent relationship in the bdqval:sourceAuthority and the entity matching the value of dwc:country in the bdqval:sourceAuthority is an ISO 3166 country-like administrative entity in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/d257eb98-27cb-48e5-8d3c-ab9fca4edd11-2025-03-07> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
+    dcterms:description "Is the combination of the values of the terms dwc:country, dwc:stateProvince unique in the bdqval:sourceAuthority?" ;
+    dcterms:isVersionOf bdqtest:d257eb98-27cb-48e5-8d3c-ab9fca4edd11 ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
+        <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
+        <https://github.com/VertNet/DwCVocabs/tree/master/vocabs>,
+        <https://www.getty.edu/research/tools/vocabularies/tgn/index.html>,
+        <https://www.iso.org/iso-3166-country-codes.html> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/201" ;
+    skos:note "See table https://github.com/tdwg/bdq/issues/95#issuecomment-1226450014. A fail condition may arise from the content being internally inconsistent (not all of the information can be true at the same time), or from the vocabulary being incapable of uniquely resolving the combination of term values. This Test specifically does not consider the content of dwc:higherGeography. If dwc:country contains a value and dwc:stateProvince does not, this Test will return NOT_COMPLIANT. Use cases where knowledge to the level of country is adequate for the fitness of the data should not include this Test. @tucotuco: \"Of #200 and #201, #201 is the strongest Test. If it passes for a record, #200 must necessarily also pass and doesn't tell you anything. If #201 fails, #200 could still pass and that would tell you that there are multiple matches on the dwc:country/dwc:stateProvince combo: It would tell you the nature of the problem. Along with #42 (dwc:country not empty), #200 would tell you whether there was an ambiguous combination of country (not empty) and dwc:stateProvince, such as would happen with Argentina/Buenos Aires. While if country is empty, then the ambiguity is purely at the dwc:stateProvince level\"." ;
+    skos:prefLabel "Validation dwc:country dwc:stateProvince Unambiguous for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:63ee37ac-d0ae-4578-82f8-7a956d92baf0> ;
+    bdqffdq:hasCriterion bdqcrit:Unambiguous ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-09-18"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

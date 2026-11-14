@@ -1,0 +1,265 @@
+[
+  {
+    "@id": "https://doi.org/10.1371/journal.pone.0178731",
+    "@type": [
+      "http://purl.org/dc/terms/BibliographicResource"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Conformance"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqffdq/terms/MultiRecord",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ResourceType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MultiRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2023-09-18",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Measure"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "Measure if all VALIDATION_GENUS_FOUND in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)."
+      }
+    ],
+    "http://purl.org/dc/terms/isVersionOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/c5c8db83-3af0-4215-806f-e2f90574b138"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/references": [
+      {
+        "@id": "https://doi.org/10.1371/journal.pone.0178731"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MULTIRECORD_MEASURE_QA_GENUS_FOUND"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "https://github.com/tdwg/bdq/issues/297"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "For Quality Assurance, filter record set until this measure is COMPLETE."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Measurement over MultiRecord for QualityAssurance of Validation dwc:genus Found for MultiRecord"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [
+      {
+        "@id": "urn:uuid:de43b1ab-4e58-4510-97cf-c4c84e04c9bd"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDataQualityDimension": [
+      {
+        "@id": "https://rs.tdwg.org/bdqdim/terms/Conformance"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasDateLastUpdated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasResourceType": [
+      {
+        "@id": "https://rs.tdwg.org/bdqffdq/terms/MultiRecord"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Alien-Species"
+      }
+    ]
+  },
+  {
+    "@id": "https://rs.tdwg.org/bdquc/terms/Taxon-Management",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/UseCase"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bdquc:Taxon-Management"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:0c659160-9952-4ada-ac10-5a46ee52423a",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/Specification"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "COMPLETE if every VALIDATION_GENUS_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Specification for: MULTIRECORD_MEASURE_QA_GENUS_FOUND"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
+      {
+        "@value": ""
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
+      {
+        "@value": "COMPLETE if every VALIDATION_GENUS_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE."
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:5a90c547-205b-423f-9158-400652da905f",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_GENUS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_GENUS_FOUND"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@value": "Source: TG2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_GENUS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_GENUS_FOUND"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/forMeasure": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2023-09-18"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasSpecification": [
+      {
+        "@id": "urn:uuid:0c659160-9952-4ada-ac10-5a46ee52423a"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MeasurementPolicy: (42) measures  in UseCase bdquc:Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Alien-Species"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2023-09-18"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:de43b1ab-4e58-4510-97cf-c4c84e04c9bd",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_GENUS_FOUND.Response"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@value": "Aggregated Response outcomes produced by VALIDATION_GENUS_FOUND across a MultiRecord."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_GENUS_FOUND.Response"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/aggregatesResponsesFrom": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/f2ce7d55-5b1d-426a-b00e-6d4efe3058ec"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/composedOf": [
+      {
+        "@id": "https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"
+      }
+    ]
+  },
+  {
+    "@id": "urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092",
+    "@type": [
+      "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "MeasurementPolicy: (32) measures  in UseCase bdquc:Taxon-Management"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
+      {
+        "@id": "https://rs.tdwg.org/bdquc/terms/Taxon-Management"
+      }
+    ],
+    "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c5c8db83-3af0-4215-806f-e2f90574b138-2023-09-18"
+      }
+    ]
+  }
+]

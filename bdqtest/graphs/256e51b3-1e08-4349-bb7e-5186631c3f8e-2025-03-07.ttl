@@ -1,0 +1,94 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:0239b59b-db0e-4e6a-8ba8-2f89abf9e78e> a bdqffdq:IssueMethod ;
+    rdfs:label "IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
+    skos:historyNote "Source: GBIF" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3632",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Issue SPACE CODED Test Conformance Parameterized CORE" ;
+    skos:prefLabel "IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
+    bdqffdq:forIssue <https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07> ;
+    bdqffdq:hasSpecification <urn:uuid:693aa9a5-6058-4399-a474-43268a8e503b> .
+
+<urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3> a bdqffdq:IssuePolicy ;
+    rdfs:label "IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07> .
+
+<https://doi.org/10.3897/biss.7.110728> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Waller JT (2023) Processing Country Centroids at the Global Biodiversity Information Facility. Biodiversity Information Science and Standards 7: e110728. https://doi.org/10.3897/biss.7.110728" .
+
+bdqcrit:Likely a bdqffdq:Criterion ;
+    rdfs:label "Likely" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdqval:sourceAuthority a bdqffdq:Parameter .
+
+bdqval:spatialBufferInMeters a bdqffdq:Parameter .
+
+<urn:uuid:2c441806-b56b-4252-9944-e331f9f3fee6> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Catalogue of Country Centroides\"" ;
+    bdqffdq:hasArgumentValue "GBIF Catalogue of Country Centroides" ;
+    bdqffdq:hasParameter bdqval:sourceAuthority .
+
+<urn:uuid:5be9ff68-1232-4f09-a3ef-5d78ccdecf8c> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:coordinateUncertaintyInMeters" ;
+    skos:prefLabel "Information Element Consulted dwc:coordinateUncertaintyInMeters" ;
+    bdqffdq:composedOf dwc:coordinateUncertaintyInMeters .
+
+<urn:uuid:693aa9a5-6058-4399-a474-43268a8e503b> a bdqffdq:Specification ;
+    rdfs:label "Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if any of dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude are bdqval:Empty; POTENTIAL_ISSUE if (1) the geographic coordinates are within the distance given by bdqval:spatialBufferInMeters from the center of the supplied dwc:countryCode as represented in the bdqval:sourceAuthority (or one of the centers, if the bdqval:sourceAuthority provides more than one per country code) and (2) the dwc:coordinateUncertaintyInMeters is bdqval:Empty or less than half the square root of the area of the country; otherwise NOT_ISSUE. bdqval:spatialBufferInMeters default = \"5000\",bdqval:sourceAuthority default = \"GBIF Catalogue of Country Centroides\" {[https://raw.githubusercontent.com/jhnwllr/catalogue-of-centroids/master/PCLI.tsv]}" ;
+    skos:example "dwc:decimalLatitude=\"-34.184199\", dwc:decimalLongitude=\"-65.509403\", dwc:countryCode=\"AR\": Response.status=RUN_HAS_RESULT, Response.result=NOT_ISSUE, Response.comment=\"coordinates fall outside buffered distance in the bdqval:sourceAuthority for dwc:countryCode\"",
+        "dwc:decimalLatitude=\"-35.38804\", dwc:decimalLongitude=\"-65.154964\", dwc:countryCode=\"AR\": Response.status=RUN_HAS_RESULT, Response.result=POTENTIAL_ISSUE, Response.comment=\"coordinates fall within buffered distance in the bdqval:sourceAuthority for dwc:countryCode which may mean that coordinates have been generalized\"" ;
+    bdqffdq:hasArgument <urn:uuid:2c441806-b56b-4252-9944-e331f9f3fee6>,
+        <urn:uuid:9c0a82d5-4b24-4160-a000-ee9429bef8f7> ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:spatialBufferInMeters default = \"5000\",bdqval:sourceAuthority default = \"GBIF Catalogue of Country Centroides\" {[https://raw.githubusercontent.com/jhnwllr/catalogue-of-centroids/master/PCLI.tsv]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if any of dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude are bdqval:Empty; POTENTIAL_ISSUE if (1) the geographic coordinates are within the distance given by bdqval:spatialBufferInMeters from the center of the supplied dwc:countryCode as represented in the bdqval:sourceAuthority (or one of the centers, if the bdqval:sourceAuthority provides more than one per country code) and (2) the dwc:coordinateUncertaintyInMeters is bdqval:Empty or less than half the square root of the area of the country; otherwise NOT_ISSUE." .
+
+<urn:uuid:6f6a46c6-9979-41a2-83c2-fd196e89c8c1> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude" ;
+    skos:prefLabel "Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude" ;
+    bdqffdq:composedOf dwc:countryCode,
+        dwc:decimalLatitude,
+        dwc:decimalLongitude .
+
+<urn:uuid:9c0a82d5-4b24-4160-a000-ee9429bef8f7> a bdqffdq:Argument ;
+    rdfs:label "Default value for bdqval:spatialBufferInMeters:\"5000\"" ;
+    bdqffdq:hasArgumentValue "5000" ;
+    bdqffdq:hasParameter bdqval:spatialBufferInMeters .
+
+<https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07> a bdqffdq:Issue ;
+    rdfs:label "ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
+    dcterms:description "Are the supplied geographic coordinates within a defined buffer of the center of the country?" ;
+    dcterms:isVersionOf bdqtest:256e51b3-1e08-4349-bb7e-5186631c3f8e ;
+    dcterms:issued "2025-03-07"^^xsd:date ;
+    dcterms:references <https://doi.org/10.3897/biss.7.110728> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/287" ;
+    skos:note "We have increased the buffer to 5000 meters to cater for differences that may have arisen due to the difference in geodetic datums." ;
+    skos:prefLabel "Issue Coordinates Center of Country for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:6f6a46c6-9979-41a2-83c2-fd196e89c8c1> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:5be9ff68-1232-4f09-a3ef-5d78ccdecf8c> ;
+    bdqffdq:hasCriterion bdqcrit:Likely ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-08-28"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

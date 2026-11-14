@@ -1,0 +1,80 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:29b2e2ac-9667-4774-ac06-45333555c620> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_COUNTRYCODE_STANDARDIZED with Specification Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L931",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Amendment SPACE CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_COUNTRYCODE_STANDARDIZED with Specification Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/fec5ffe6-3958-4312-82d9-ebcca0efb350-2024-11-09> ;
+    bdqffdq:hasSpecification <urn:uuid:3e076cfa-56ff-4b79-9739-736d062eac5a> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (16) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/fec5ffe6-3958-4312-82d9-ebcca0efb350-2024-11-09> .
+
+<https://datahub.io/core/country-list> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "DataHub (2018) List of all countries with their two digit codes (ISO 3166-1). https://datahub.io/core/country-list" .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat) 3166-1 alpha-2. https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://www.iso.org/iso-3166-country-codes.html> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "ISO (n.dat.) ISO 3166 Country Codes. https://www.iso.org/iso-3166-country-codes.html" .
+
+<urn:uuid:3e076cfa-56ff-4b79-9739-736d062eac5a> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
+    dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the value of dwc:countryCode is bdqval:Empty; AMENDED the value of dwc:countryCode if it can be unambiguously interpreted to a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = \"ISO 3166-1-alpha-2\" {[https://www.iso.org/iso-3166-country-codes.html]} {ISO 3166-1-alpha-2 Country Code search [https://www.iso.org/obp/ui/#search]}" ;
+    skos:example "dwc:countryCode=\"Aust.\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"dwc:countryCode contains an ambiguous value\"",
+        "dwc:countryCode=\"Australia\": Response.status=AMENDED, Response.result=dwc:countryCode=\"AU\", Response.comment=\"dwc:countryCode contains an interpretable value\"" ;
+    bdqffdq:hasAuthoritiesDefaults "bdqval:sourceAuthority default = \"ISO 3166-1-alpha-2\" {[https://www.iso.org/iso-3166-country-codes.html]} {ISO 3166-1-alpha-2 Country Code search [https://www.iso.org/obp/ui/#search]}" ;
+    bdqffdq:hasExpectedResponse "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the value of dwc:countryCode is bdqval:Empty; AMENDED the value of dwc:countryCode if it can be unambiguously interpreted to a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED" .
+
+<urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:countryCode" ;
+    skos:prefLabel "Information Element ActedUpon dwc:countryCode" ;
+    bdqffdq:composedOf dwc:countryCode .
+
+<https://rs.tdwg.org/bdqtest/terms/version/fec5ffe6-3958-4312-82d9-ebcca0efb350-2024-11-09> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dwc:countryCode if it can be interpreted as an ISO 3166-1-alpha-2 country code." ;
+    dcterms:isVersionOf bdqtest:fec5ffe6-3958-4312-82d9-ebcca0efb350 ;
+    dcterms:issued "2024-11-09"^^xsd:date ;
+    dcterms:references <https://datahub.io/core/country-list>,
+        <https://doi.org/10.15468/doc-gg7h-s853>,
+        <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
+        <https://www.iso.org/iso-3166-country-codes.html> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/48" ;
+    skos:note "This Test supports conformance with the recommendation in the comment on dwc:countryCode: \"Recommended best practice is to use an ISO 3166-1-alpha-2 country code.\" Darwin Core also recommends the use of the XZ for high seas and ZZ for unknown. Three letter codes should be amended to the matching two-letter code." ;
+    skos:prefLabel "Amendment dwc:countryCode Standard for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-11-09"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

@@ -1,0 +1,81 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:10ad79a1-c93f-4ab2-accf-780867f93957> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM" ;
+    skos:historyNote "Source: ALA" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L402",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "TG2 Amendment SPACE CODED Test Completeness CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2024-08-20> ;
+    bdqffdq:hasSpecification <urn:uuid:1e16fbb3-0c8d-4f23-bf55-68e159ab2b04> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (8) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2024-08-20> .
+
+<https://doi.org/10.15468/doc-gg7h-s853> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqenh:FilledInFrom a bdqffdq:Enhancement ;
+    rdfs:label "FilledInFrom" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:10a04e3b-9254-49b6-8095-166179cd3707> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude, dwc:geodeticDatum" ;
+    skos:prefLabel "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude, dwc:geodeticDatum" ;
+    bdqffdq:composedOf dwc:decimalLatitude,
+        dwc:decimalLongitude,
+        dwc:geodeticDatum .
+
+<urn:uuid:1e16fbb3-0c8d-4f23-bf55-68e159ab2b04> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if 1) either dwc:decimalLatitude or dwc:decimalLongitude are bdqval:NotEmpty, or 2) dwc:verbatimCoordinates and one of dwc:verbatimLatitude and dwc:verbatimLongitude are bdqval:Empty; FILLED_IN the values of dwc:decimalLatitude, dwc:decimalLongitude and dwc:geodeticDatum (provided that the dwc:verbatimCoordinates can be unambiguously interpreted as geographic coordinates) from 1) dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimSRS or 2) dwc:verbatimCoordinates and dwc:verbatimSRS; otherwise NOT_AMENDED." ;
+    skos:example "dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:verbatimCoordinates=\"54K 0390210 7377243\", dwc:verbatimSRS=\"EPSG:32754\", dwc:verbatimCoordinateSystem=\"decimal degrees\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\":: Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"In the wrong coordinate system\"",
+        "dwc:verbatimLatitude=\"-23.712\", dwc:verbatimLongitude=\"139.92\", dwc:verbatimCoordinates=\"\", dwc:verbatimSRS=\"EPSG:4326\", dwc:verbatimCoordinateSystem=\"decimal degrees\",dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\": Response.status=FILLED_IN, Response.result=dwc:decimalLatitude=\"-23.712\", dwc:decimalLongitude=\"139.92\", dwc:geodeticDatum=\"EPSG:4326\", Response.comment=\"Input fields contain interpretable values\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if 1) either dwc:decimalLatitude or dwc:decimalLongitude are bdqval:NotEmpty, or 2) dwc:verbatimCoordinates and one of dwc:verbatimLatitude and dwc:verbatimLongitude are bdqval:Empty; FILLED_IN the values of dwc:decimalLatitude, dwc:decimalLongitude and dwc:geodeticDatum (provided that the dwc:verbatimCoordinates can be unambiguously interpreted as geographic coordinates) from 1) dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimSRS or 2) dwc:verbatimCoordinates and dwc:verbatimSRS; otherwise NOT_AMENDED." .
+
+<urn:uuid:2ad22c2b-cebb-4924-b0e4-b36c64535010> a bdqffdq:Consulted ;
+    rdfs:label "Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS" ;
+    skos:prefLabel "Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS" ;
+    bdqffdq:composedOf dwc:verbatimCoordinateSystem,
+        dwc:verbatimCoordinates,
+        dwc:verbatimLatitude,
+        dwc:verbatimLongitude,
+        dwc:verbatimSRS .
+
+<https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2024-08-20> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_COORDINATES_FROM_VERBATIM" ;
+    dcterms:description "Proposes an amendment to the values of dwc:decimalLatitude, dwc:decimalLongitude, and dwc:geodeticDatum from geographic coordinate information in the verbatim coordinates terms." ;
+    dcterms:isVersionOf bdqtest:3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e ;
+    dcterms:issued "2024-08-20"^^xsd:date ;
+    dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/32" ;
+    skos:note "Transformations between coordinate reference systems should not be made as a part of this Test. Though coordinate precision of the verbatim coordinates could also be interpreted during the process of amending decimal coordinates from verbatim coordinates, that amendment is recommended to be an independent Test. Note that dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimCoordinates might all be populated, and they may or not be perfectly consistent with each other. An ideal implementation should check for the consistency of these three fields and not amend them if they are inconsistent." ;
+    skos:prefLabel "Amendment Coordinates from Verbatim for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:10a04e3b-9254-49b6-8095-166179cd3707> ;
+    bdqffdq:hasConsultedInformationElement <urn:uuid:2ad22c2b-cebb-4924-b0e4-b36c64535010> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-08-20"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:FilledInFrom ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

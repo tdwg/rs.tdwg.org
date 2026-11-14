@@ -1,0 +1,22 @@
+header,predicate,type,value,attribute,subject_id
+version_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
+version_isDefinedBy,dcterms:isPartOf,iri,,,$root
+version_issued,dcterms:issued,datatype,,xsd:date,$root
+version_status,tdwgutility:status,datatype,,xsd:string,$root
+replaces_version,dcterms:replaces,iri,,,$root
+replaces1_version,dcterms:replaces,iri,,,$root
+replaces2_version,dcterms:replaces,iri,,,$root
+definition_derived_from ,sawsdlrdf:modelReference,iri,,,$root
+term_localName,dcterms:isVersionOf,iri,https://rs.tdwg.org/bdqtest/terms/,,$root
+label,rdfs:label,language,,en,$root
+definition,rdfs:comment,language,,en,$root
+definition,skos:definition,language,,en,$root
+description,dcterms:description,language,,en,$root
+notes,skos:note,language,,en,$root
+historyNoteUrl,skos:historyNote,datatype,,xsd:string,$root
+dateLastUpdated,bdqffdq:hasDateLastUpdated,datatype,,xsd:date,$root
+type,rdf:type,iri,,,$root
+hasResourceType,bdqffdq:hasResourceType,iri,,,$root
+hasDataQualityDimension,bdqffdq:hasDataQualityDimension,iri,,,$root
+hasCriterion,bdqffdq:hasCriterion,iri,,,$root
+hasEnhancement,bdqffdq:hasEnhancement,iri,,,$root

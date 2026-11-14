@@ -1,0 +1,65 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:c15d57ce-301c-4db0-8146-399cd59382ad> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_DAY_STANDARDIZED with Specification Specification for: AMENDMENT_DAY_STANDARDIZED" ;
+    skos:historyNote "Source: TG2-Gainesville" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1621",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "TG2 Amendment TIME CODED Test Conformance CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_DAY_STANDARDIZED with Specification Specification for: AMENDMENT_DAY_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/b129fa4d-b25b-43f7-9645-5ed4d44b357b-2025-03-06> ;
+    bdqffdq:hasSpecification <urn:uuid:3eae7451-19c6-403c-ba36-29f8204d15ff> .
+
+<urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (21) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/b129fa4d-b25b-43f7-9645-5ed4d44b357b-2025-03-06> .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<urn:uuid:3eae7451-19c6-403c-ba36-29f8204d15ff> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_DAY_STANDARDIZED" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:day is bdqval:Empty; AMENDED the value of dwc:day if the value is unambiguously interpreted as an integer between 1 and 31 inclusive; otherwise NOT_AMENDED" ;
+    skos:example "dwc:day=\"23rd\": Response.status=AMENDED, Response.result=dwc:day=\"23\", Response.comment=\"dwc:day is interpretable as \"23\"\"",
+        "dwc:day=\"X\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:day is ambiguous, either a \"X\", \"No data\" or \"10\"\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:day is bdqval:Empty; AMENDED the value of dwc:day if the value is unambiguously interpreted as an integer between 1 and 31 inclusive; otherwise NOT_AMENDED" .
+
+<urn:uuid:d7853c0b-2e3a-4bbf-89c6-89123ca626bf> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:day" ;
+    skos:prefLabel "Information Element ActedUpon dwc:day" ;
+    bdqffdq:composedOf dwc:day .
+
+<https://rs.tdwg.org/bdqtest/terms/version/b129fa4d-b25b-43f7-9645-5ed4d44b357b-2025-03-06> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_DAY_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dwc:day as an integer between 1 and 31 inclusive." ;
+    dcterms:isVersionOf bdqtest:b129fa4d-b25b-43f7-9645-5ed4d44b357b ;
+    dcterms:issued "2025-03-06"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/127" ;
+    skos:note "If dwc:day contains text that may be interpreted as Roman numerals, the result will be NOT_AMENDED as this is not standard. Values such as \"3rd\" or \"12th\" can be interpreted as the integers \"3\" and \"12\". Text such as \"5th Friday\" is ambiguous." ;
+    skos:prefLabel "Amendment dwc:day Standardized for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <urn:uuid:d7853c0b-2e3a-4bbf-89c6-89123ca626bf> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2023-09-18"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+
