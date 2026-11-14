@@ -93,14 +93,17 @@ for v in VOCABS:
         types = [expand(t) for t in r['rdf_type'].split(',') if t.strip()]
         if len(types) > 2:
             raise SystemExit(f'{v}:{name}: more than two rdf:type values')
-        if r['controlled_value_string'] != name:
-            report.append(f'{v}:{name}: rdf:value from term_localName {name!r}; '
-                          f'controlled_value_string column was {r["controlled_value_string"]!r}')
+        # rdf:value is the controlled value string; it differs from the term name for two bdquc terms
+        # ("Spatial-Temporal Patterns", "Species-Distribution-Modeling-Trees"), which are the intended
+        # values (decided 2026-11-14; earlier this script used term_localName).
+        value = r['controlled_value_string'].strip() or name
+        if value != name:
+            report.append(f'{v}:{name}: rdf:value {value!r} differs from term_localName')
         out.append([
             name, r['label'].rstrip(), r['prefLabel'].rstrip(), r['definition'].rstrip(),
             (r.get('scopeNote') or '').rstrip(),
             xml_literal(r['comments'], f'{v}:{name}:comments'),
-            name,                    # rdf:value, as in BDQ's RDF (term_localName)
+            value,                   # rdf:value: the controlled value string
             ns,                      # skos:inScheme the term list IRI, as in BDQ's RDF
             types[0], types[1] if len(types) > 1 else '',
             xml_literal(r.get('hasFitnessRequirements', ''), f'{v}:{name}:hasFitnessRequirements'),
