@@ -29,8 +29,15 @@ Check: the graphs of the current versions together equal the graph of all curren
 built at once, apart from the Policy labels of current versions issued before the Policy
 last grew.
 
+With --whole DIR, it writes instead the graph of all current Tests, with the statements that
+support the ontology (class declarations and hierarchy of the nodes used), as
+DIR/bdqtest.{ttl,rdf,jsonld}, and writes nothing else. This is the whole-vocabulary serialization that
+tdwg/bdq publishes in tg2/_review/dist/ (its export_rs_baseline.py runs this from a pinned commit), so
+both repositories use the same builder (deployment_rs_tdwg_org.md Section 13.1).
+
 Requires rdflib. Usage, from the process directory:
     python bdqtest_graphs.py ..
+    python bdqtest_graphs.py .. --whole <output directory>
 """
 import csv, os, pathlib, sys
 
@@ -48,6 +55,7 @@ import bdqtest_rdf  # noqa: E402
 from bdqtest_columns import COLUMNS  # noqa: E402
 
 root = pathlib.Path(sys.argv[1]).resolve()
+WHOLE = pathlib.Path(sys.argv[sys.argv.index('--whole') + 1]).resolve() if '--whole' in sys.argv else None
 NS = 'https://rs.tdwg.org/bdqtest/terms/'
 GRAPHS = root / 'bdqtest' / 'graphs'
 TABLES = {
@@ -145,6 +153,17 @@ def write(graph, base):
 
 
 versions = read_rows(root / 'bdqtest-versions' / 'bdqtest-versions.csv')
+if WHOLE:
+    # The graph of all current Tests, with the ontology-support statements, as of the latest version.
+    latest = max(v['version_issued'] for v in versions)
+    rows = [published(v) for v in snapshot(versions, latest)]
+    labels, sizes = context(rows)
+    additional, ie, policy, citation = tables(latest)
+    whole = bdqtest_rdf.build_graph(rows, additional, ie, policy, citation, term_iri_to_label=labels,
+                                    policy_sizes=sizes, ontology_support=True)
+    write(whole, WHOLE / 'bdqtest')
+    print(f'bdqtest whole graph: {len(rows)} current Tests, {len(whole)} triples, in {WHOLE}/bdqtest.{{ttl,rdf,jsonld}}')
+    sys.exit(0)
 lookup = []
 current_graphs = {}
 latest = max(v['version_issued'] for v in versions)
