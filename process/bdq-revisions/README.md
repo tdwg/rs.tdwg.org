@@ -69,6 +69,8 @@ It builds each version's graph with `bdqtest_rdf.py`, a pinned copy of tdwg/bdq 
 
 Implementations cite the version on the Test's `DateLastUpdated` (`https://rs.tdwg.org/bdqtest/terms/version/<uuid>-<DateLastUpdated>`), so a substantive change gives them a new version IRI to cite, and a non-substantive change does not.
 
+With `--whole <directory>`, `bdqtest_graphs.py` writes instead the graph of all current Tests, with the ontology-support statements, as `bdqtest.{ttl,rdf,jsonld}`, and nothing else: tdwg/bdq's `tg2/_make_review/export_rs_baseline.py` runs it from a pinned commit to generate its `tg2/_review/dist/bdqtest.*`, so the served graphs and the published whole-vocabulary files come from the same builder (decided 2026-11-14).
+
 `html/sds-version-iri-redirects.csv` opts the BDQ term lists in to a redirect from the SDS 2.3.2 version IRI form `…/terms/<local name>-<date>` to the canonical `…/terms/version/<local name>-<date>` (plan Section 10.9.6).
 
 ## Processing
