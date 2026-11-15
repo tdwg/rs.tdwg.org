@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+bd91e45d-691a-4d7e-9917-7b6231c05c43,"Default value for bdqval:sourceAuthority:""GBIF Backbone Taxonomy""",bdqffdq:Argument,urn:uuid:bd91e45d-691a-4d7e-9917-7b6231c05c43,GBIF Backbone Taxonomy,https://rs.tdwg.org/bdqval/terms/sourceAuthority,eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f

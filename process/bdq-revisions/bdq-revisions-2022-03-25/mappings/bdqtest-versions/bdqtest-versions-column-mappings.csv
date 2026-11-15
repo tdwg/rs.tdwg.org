@@ -20,3 +20,5 @@ hasResourceType,bdqffdq:hasResourceType,iri,,,$root
 hasDataQualityDimension,bdqffdq:hasDataQualityDimension,iri,,,$root
 hasCriterion,bdqffdq:hasCriterion,iri,,,$root
 hasEnhancement,bdqffdq:hasEnhancement,iri,,,$root
+hasActedUponInformationElementVersion,bdqffdq:hasActedUponInformationElement,iri,,,$root
+hasConsultedInformationElementVersion,bdqffdq:hasConsultedInformationElement,iri,,,$root

@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,prefLabel,definition,note,aggregatesResponsesFrom,composedOf
+2c32cfc9-66d2-4512-9ebb-b3253c7b5dd5,"Information Element Consulted dwc:individualCount, dwc:organismQuantity",bdqffdq:Consulted,urn:uuid:2c32cfc9-66d2-4512-9ebb-b3253c7b5dd5,"Information Element Consulted dwc:individualCount, dwc:organismQuantity","An information element of type bdqffdq:Consulted, composed of dwc:individualCount, dwc:organismQuantity.",,,http://rs.tdwg.org/dwc/terms/individualCount|http://rs.tdwg.org/dwc/terms/organismQuantity

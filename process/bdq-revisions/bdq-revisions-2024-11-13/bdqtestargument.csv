@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+a558165b-7014-4029-839f-33badcb0842f,"Default value for bdqval:defaultOccurrenceStatus:""present""",bdqffdq:Argument,urn:uuid:a558165b-7014-4029-839f-33badcb0842f,present,https://rs.tdwg.org/bdqval/terms/defaultOccurrenceStatus,96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5

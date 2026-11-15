@@ -1,0 +1,3 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+9167035f-14a8-4a0f-81eb-86a5a93bf6d9,"Default value for bdqval:earliestValidDate:""1582""",bdqffdq:Argument,urn:uuid:9167035f-14a8-4a0f-81eb-86a5a93bf6d9,1582,https://rs.tdwg.org/bdqval/terms/earliestValidDate,ad0c8855-de69-4843-a80c-a5387d20fbc8
+fa6e83af-40c3-4330-aca0-937fc22b3a27,"Default value for bdqval:latestValidDate:""{current year}""",bdqffdq:Argument,urn:uuid:fa6e83af-40c3-4330-aca0-937fc22b3a27,{current year},https://rs.tdwg.org/bdqval/terms/latestValidDate,ad0c8855-de69-4843-a80c-a5387d20fbc8

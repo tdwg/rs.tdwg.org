@@ -1,0 +1,6 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+030797c0-0b00-4272-9219-16d701e9da7c,"Default value for bdqval:latestValidDate:""{current day}""",bdqffdq:Argument,urn:uuid:030797c0-0b00-4272-9219-16d701e9da7c,{current day},https://rs.tdwg.org/bdqval/terms/latestValidDate,dc8aae4b-134f-4d75-8a71-c4186239178e
+13c17157-1714-4f67-848b-9dc031917fee,"Default value for bdqval:earliestValidDate:""1753-01-01""",bdqffdq:Argument,urn:uuid:13c17157-1714-4f67-848b-9dc031917fee,1753-01-01,https://rs.tdwg.org/bdqval/terms/earliestValidDate,dc8aae4b-134f-4d75-8a71-c4186239178e
+2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc,"Default value for bdqval:latestValidDate:""{current year}""",bdqffdq:Argument,urn:uuid:2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc,{current year},https://rs.tdwg.org/bdqval/terms/latestValidDate,3cff4dc4-72e9-4abe-9bf3-8a30f1618432
+739faad3-eb8a-4593-af8f-35b22630a920,"Default value for bdqval:includeEventDate:""true""",bdqffdq:Argument,urn:uuid:739faad3-eb8a-4593-af8f-35b22630a920,true,https://rs.tdwg.org/bdqval/terms/includeEventDate,dc8aae4b-134f-4d75-8a71-c4186239178e
+8b223050-f314-4601-9e20-d5f3d59d8e79,"Default value for bdqval:earliestValidDate:""1582-11-15""",bdqffdq:Argument,urn:uuid:8b223050-f314-4601-9e20-d5f3d59d8e79,1582-11-15,https://rs.tdwg.org/bdqval/terms/earliestValidDate,3cff4dc4-72e9-4abe-9bf3-8a30f1618432

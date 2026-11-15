@@ -1,0 +1,4 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+0127389b-a68d-4393-a84c-aa9c690bd0e7,"Default value for bdqval:sourceAuthority:""GBIF Backbone Taxonomy""",bdqffdq:Argument,urn:uuid:0127389b-a68d-4393-a84c-aa9c690bd0e7,GBIF Backbone Taxonomy,https://rs.tdwg.org/bdqval/terms/sourceAuthority,f01fb3f9-2f7e-418b-9f51-adf50f202aea
+82350b56-1855-4b5a-8b44-9040efb0bf05,"Default value for bdqval:sourceAuthority:""10m-admin-1 boundaries UNION with Exclusive Economic Zones""",bdqffdq:Argument,urn:uuid:82350b56-1855-4b5a-8b44-9040efb0bf05,10m-admin-1 boundaries UNION with Exclusive Economic Zones,https://rs.tdwg.org/bdqval/terms/sourceAuthority,8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae
+a723528a-ee73-44a7-818d-5315323ec4e9,"Default value for bdqval:sourceAuthority:""Darwin Core basisOfRecord""",bdqffdq:Argument,urn:uuid:a723528a-ee73-44a7-818d-5315323ec4e9,Darwin Core basisOfRecord,https://rs.tdwg.org/bdqval/terms/sourceAuthority,42408a00-bf71-4892-a399-4325e2bc1fb8

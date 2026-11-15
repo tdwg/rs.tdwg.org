@@ -2041,3 +2041,63 @@ vocabularies:
     prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
     use_namespace_in_fragment: true
     separator: _
+  - namespace_uri: https://rs.tdwg.org/bdqtest/argument/
+    label: Data Quality Test Argument terms
+    description: 'The Arguments of the Specifications of the BDQ Tests: default values of their Parameters.'
+    pref_namespace_prefix: bdqtestargument
+    database: bdqtestargument
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
+    use_namespace_in_fragment: true
+    separator: _
+  - namespace_uri: https://rs.tdwg.org/bdqtest/specification/
+    label: Data Quality Test Specification terms
+    description: The Specifications of the BDQ Tests.
+    pref_namespace_prefix: bdqtestspecification
+    database: bdqtestspecification
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
+    use_namespace_in_fragment: true
+    separator: _
+  - namespace_uri: https://rs.tdwg.org/bdqtest/informationelement/
+    label: Data Quality Test information element terms
+    description: The information elements that the BDQ Tests act upon or consult.
+    pref_namespace_prefix: bdqtestinformationelement
+    database: bdqtestinformationelement
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
+    use_namespace_in_fragment: true
+    separator: _
+  - namespace_uri: https://rs.tdwg.org/bdqtest/method/
+    label: Data Quality Test Method terms
+    description: The Methods of the BDQ Tests, each linking a Test to its Specification.
+    pref_namespace_prefix: bdqtestmethod
+    database: bdqtestmethod
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
+    use_namespace_in_fragment: true
+    separator: _
+  - namespace_uri: https://rs.tdwg.org/bdqtest/policy/
+    label: Data Quality Test Policy terms
+    description: 'The Policies of the BDQ Use Cases: for each Use Case and type of Test, the Tests it includes.'
+    pref_namespace_prefix: bdqtestpolicy
+    database: bdqtestpolicy
+    borrowed: false
+    new_term_list: false
+    utility_namespace: false
+    termlist_uri: ''
+    prepend_url: https://bdq.tdwg.org/draft/docs/list/bdqtest/#
+    use_namespace_in_fragment: true
+    separator: _

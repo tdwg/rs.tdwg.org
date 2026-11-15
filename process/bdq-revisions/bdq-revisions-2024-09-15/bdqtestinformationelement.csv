@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,prefLabel,definition,note,aggregatesResponsesFrom,composedOf
+05f8a834-4582-4d50-8ac6-2bd766c3ae28,"Information Element Consulted dwc:year, dwc:month, dwc:day",bdqffdq:Consulted,urn:uuid:05f8a834-4582-4d50-8ac6-2bd766c3ae28,"Information Element Consulted dwc:year, dwc:month, dwc:day","An information element of type bdqffdq:Consulted, composed of dwc:day, dwc:month, dwc:year.",,,http://rs.tdwg.org/dwc/terms/day|http://rs.tdwg.org/dwc/terms/month|http://rs.tdwg.org/dwc/terms/year
