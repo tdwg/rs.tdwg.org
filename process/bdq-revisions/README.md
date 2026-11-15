@@ -88,7 +88,7 @@ The Methods, Specifications, Arguments, information elements, and Policies of th
 
 Each element keeps its UUID as local name and states `owl:sameAs` its bare `urn:uuid:`, as each Test does. A term's RDF links current resources (a Method `bdqffdq:forValidation` `bdqtest:<uuid>`); a version's RDF links versions (its Test version, and the versions of the parts current on its date): the two sets of link columns are mapped in the current-term and the `-versions` datasets respectively. Links with many values (a Policy's Tests, an information element's `composedOf` terms) are carried as `|`-separated columns, and written by `bdqtest_graphs.py` as linked tables whose `link_property` is `null` (forward links only; `html/restxq.xqm`). The HTML redirects are `<dataset>/<dataset>-redirects.csv`, also written by `bdqtest_graphs.py` (`html/restxq.xqm`, `page:dataset-redirect`).
 
-The graph of a Test from its term IRI is the current graph, between current resources; from a version IRI, the graph between the versions current on its date (`bdqtest/graphs/<uuid>.*` and `<uuid>-<date>.*`).
+The graph of a Test from its term IRI is the current graph, between current resources, in which each Test and element states its most recent version (`dcterms:hasVersion`) and that version's date (`dcterms:modified`); from a version IRI, the graph between the versions current on its date (`bdqtest/graphs/<uuid>.*` and `<uuid>-<date>.*`).
 
 ## Processing
 
