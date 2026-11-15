@@ -58,16 +58,6 @@
     <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/4343a7e0-7f0b-434d-99d4-e939ecb16e1f"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
-    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09-2024-08-30"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</dcterms:modified>
@@ -141,6 +131,16 @@
   <rdf:Description rdf:about="https://doi.org/10.14284/628">
     <dcterms:bibliographicCitation>Flanders Marine Institute (2023) Maritime Boundaries Geodatabase, version 12. Available online at https://www.marineregions.org/. https://doi.org/10.14284/628</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>

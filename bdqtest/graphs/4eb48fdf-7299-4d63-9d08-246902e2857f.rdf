@@ -38,6 +38,16 @@
     <bdqffdq:hasArgumentValue>Establishment Means Controlled Vocabulary List of Terms</bdqffdq:hasArgumentValue>
     <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>
+    <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/4eb48fdf-7299-4d63-9d08-246902e2857f"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/f1d3bf9c-5558-41dc-8e33-b17c499be016">
     <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:establishmentMeans is bdqval:Empty; COMPLIANT if the value of dwc:establishmentMeans is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = "Establishment Means Controlled Vocabulary List of Terms" {[https://dwc.tdwg.org/em/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/EstablishmentMeans/concepts]}</dcterms:description>
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/f1d3bf9c-5558-41dc-8e33-b17c499be016-2024-02-08"/>
@@ -54,16 +64,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
-    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/4eb48fdf-7299-4d63-9d08-246902e2857f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/4eb48fdf-7299-4d63-9d08-246902e2857f">
     <dcterms:description>Does the value of dwc:establishmentMeans occur in the bdqval:sourceAuthority?</dcterms:description>
@@ -92,16 +92,6 @@
     <skos:prefLabel>Information Element ActedUpon dwc:establishmentMeans</skos:prefLabel>
     <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/establishmentMeans"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>
-    <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/4eb48fdf-7299-4d63-9d08-246902e2857f"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
@@ -109,6 +99,16 @@
   <rdf:Description rdf:about="https://doi.org/10.3897/biss.3.38084">
     <dcterms:bibliographicCitation>Groom et al. (2019) Improving Darwin Core for research and management of alien species. Biodiversity Information Science and Standards 3: e38084. https://doi.org/10.3897/biss.3.38084</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/4eb48fdf-7299-4d63-9d08-246902e2857f"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rs.tdwg.org/dwc/doc/em/">
     <dcterms:bibliographicCitation>Darwin Core Maintenance Group (2021) Establishment Means Controlled Vocabulary List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/dwc/doc/em/</dcterms:bibliographicCitation>

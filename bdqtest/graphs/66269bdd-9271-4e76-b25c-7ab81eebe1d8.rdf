@@ -55,16 +55,6 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
-    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/66269bdd-9271-4e76-b25c-7ab81eebe1d8"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/4c6a5522-ae8c-42d3-a396-8fc3aee49ef9">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/4c6a5522-ae8c-42d3-a396-8fc3aee49ef9-2025-03-07"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
@@ -93,6 +83,16 @@
   <rdf:Description rdf:about="https://www.loc.gov/standards/datetime/">
     <dcterms:bibliographicCitation>Library of Congress (2019) Extended Date/Time Format (EDTF). https://www.loc.gov/standards/datetime/</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/66269bdd-9271-4e76-b25c-7ab81eebe1d8"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

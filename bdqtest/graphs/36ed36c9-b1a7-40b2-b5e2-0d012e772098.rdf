@@ -22,18 +22,14 @@
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/e6f0a9ce-3e72-40fb-9fad-63cf5962f93e"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f"/>
     <skos:prefLabel>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</skos:prefLabel>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/36ed36c9-b1a7-40b2-b5e2-0d012e772098"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
-    <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/36ed36c9-b1a7-40b2-b5e2-0d012e772098">
     <dcterms:description>Is there a value in dwc:kingdom?</dcterms:description>
@@ -50,6 +46,10 @@
     <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Completeness"/>
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-28</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/e6f0a9ce-3e72-40fb-9fad-63cf5962f93e">
     <dcterms:description>COMPLIANT if dwc:kingdom is bdqval:NotEmpty; otherwise NOT_COMPLIANT</dcterms:description>

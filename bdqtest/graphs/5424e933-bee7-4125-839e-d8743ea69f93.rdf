@@ -56,19 +56,19 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
     <rdfs:label>Standard</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
-    <rdfs:label>Conformance</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>
     <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/5424e933-bee7-4125-839e-d8743ea69f93"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
+    <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e">
     <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:pathway is bdqval:Empty; COMPLIANT if the value of dwc:pathway is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = "Pathway Controlled Vocabulary List of Terms" {[https://dwc.tdwg.org/pw/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/Pathway/concepts]}</dcterms:description>

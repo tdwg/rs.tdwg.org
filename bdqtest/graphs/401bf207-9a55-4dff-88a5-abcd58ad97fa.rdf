@@ -67,24 +67,24 @@
     <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/401bf207-9a55-4dff-88a5-abcd58ad97fa"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/02242018-3e73-4e0a-8d6f-d1db06cf81a3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f"/>
-    <skos:prefLabel>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/401bf207-9a55-4dff-88a5-abcd58ad97fa"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>
     <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/401bf207-9a55-4dff-88a5-abcd58ad97fa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f"/>
+    <skos:prefLabel>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/401bf207-9a55-4dff-88a5-abcd58ad97fa"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Taxon-Management">

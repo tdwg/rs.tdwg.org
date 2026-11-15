@@ -40,6 +40,16 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>
+    <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/49f1d386-5bed-43ae-bd43-deabf7df64fc"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b">
     <dcterms:description>COMPLIANT if dwc:scientificNameAuthorship is bdqval:NotEmpty; otherwise NOT_COMPLIANT</dcterms:description>
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b-2024-02-04"/>
@@ -53,8 +63,8 @@
     <bdqffdq:hasExpectedResponse>COMPLIANT if dwc:scientificNameAuthorship is bdqval:NotEmpty; otherwise NOT_COMPLIANT</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f"/>
@@ -75,16 +85,6 @@
     <skos:prefLabel>ValidationMethod: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY with Specification for: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY</skos:prefLabel>
     <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/49f1d386-5bed-43ae-bd43-deabf7df64fc"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>
-    <skos:prefLabel>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/49f1d386-5bed-43ae-bd43-deabf7df64fc"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Taxon-Management">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
