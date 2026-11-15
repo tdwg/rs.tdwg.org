@@ -1235,9 +1235,15 @@ declare function page:return-representation($response-media-type,$lookup-string,
   if ($flag = "html")
   then
     let $termListRedirect := page:term-list-redirect($db,$lookup-string)
+    let $datasetRedirect := page:dataset-redirect($db,$lookup-string)
     return
     if ($termListRedirect)
     then page:temp-redirect($termListRedirect,"")
+    else if (exists($datasetRedirect))
+    then
+      if ($datasetRedirect/redirect/text())
+      then page:temp-redirect($datasetRedirect/redirect/text(),"")
+      else page:dataset-term-html($db,$lookup-string)
     else
     switch ($db)
       case "docs" return page:handle-docs-html($lookup-string)
@@ -1353,6 +1359,26 @@ declare function page:term-list-redirect($db,$lookup-string)
     let $redirectData := csv:parse(file:read-text("/usr/src/rs.tdwg.org/term-lists/term-lists-redirects.csv"), map { 'header' : true(),'separator' : "," })/csv/record
     return ($redirectData[iri/text() = $lookup-string]/redirect/text())[1]
   else ()
+};
+
+(: Opt-in, per dataset (for BDQ, the bdqtest element term lists): <dataset>/<dataset>-redirects.csv
+   (localName, redirect) gives where a term requested as HTML is redirected, in place of the
+   prefix and local name of html/redirects.csv, which cannot express it; an empty redirect gives
+   rs.tdwg.org's own term page. Datasets without such a table are unaffected. :)
+declare function page:dataset-redirect($db,$lookup-string)
+{
+  let $path := "/usr/src/rs.tdwg.org/"||$db||"/"||$db||"-redirects.csv"
+  return
+    if (file:exists($path))
+    then (csv:parse(file:read-text($path), map { 'header' : true(),'separator' : "," })/csv/record[localName/text() = $lookup-string])[1]
+    else ()
+};
+
+declare function page:dataset-term-html($db,$lookup-string)
+{
+  let $redirectData := csv:parse(file:read-text("/usr/src/rs.tdwg.org/html/redirects.csv"), map { 'header' : true(),'separator' : "," })/csv/record
+  let $namespace := ($redirectData[database/text() = $db]/namespace/text())[1]
+  return (page:success(),html:generate-term-html($db,$namespace,$lookup-string))
 };
 
 (: Function to return a web page for vocabs etc. :)
@@ -2060,7 +2086,13 @@ declare function page:generate-a-record($record,$linkedMetadata,$baseIRI,$domain
                             else
                             $baseIRI||"#"||$linkedClassRecord/*[local-name()=$suffix1]/text()||$linkCharacters||$linkedClassRecord/*[local-name()=$suffix2]/text()
             return (
-                    (: Construct the descriptions of the linked class instances :)
+                    (: Construct the descriptions of the linked class instances. A link_property of "null"
+                       (for BDQ, the bdqtest element term lists' links with many values) declares a linked
+                       table that only gives values of the forward link: the linked resources are not
+                       described, and there is no back-link. No other linked table uses "null". :)
+                    if ($linkProperty = "null")
+                    then ()
+                    else
                     let $linkedIRIs := page:construct-iri($linkedClassIRI,$linkedClass/classes/record)
                     let $extraTriple := if ($linkProperty = "null")
                                         then ""
