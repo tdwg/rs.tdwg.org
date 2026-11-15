@@ -1378,7 +1378,7 @@ declare function page:dataset-term-html($db,$lookup-string)
 {
   let $redirectData := csv:parse(file:read-text("/usr/src/rs.tdwg.org/html/redirects.csv"), map { 'header' : true(),'separator' : "," })/csv/record
   let $namespace := ($redirectData[database/text() = $db]/namespace/text())[1]
-  return (page:success(),html:generate-term-html($db,$namespace,$lookup-string))
+  return (page:success(),html:review-links(html:generate-term-html($db,$namespace,$lookup-string)))
 };
 
 (: Function to return a web page for vocabs etc. :)
@@ -1394,13 +1394,13 @@ return
   if ($redirectItem/redirect/text() = "no")
   then
     switch ($redirectItem/type/text())
-      case "term" return (page:success(),html:generate-term-html($db,$redirectItem/namespace/text(),$lookup-string))
-      case "termVersion" return (page:success(),html:generate-term-version-html($db,$redirectItem/namespace/text(),$lookup-string))
-      case "termList" return (page:success(),html:generate-term-list-html($lookup-string))
-      case "termListVersion" return (page:success(),html:generate-term-list-version-html($lookup-string))
-      case "vocabulary" return (page:success(),html:generate-vocabulary-html($lookup-string))
-      case "vocabularyVersion" return (page:success(),html:generate-vocabulary-version-html($lookup-string))
-      case "decisions" return (page:success(),html:generate-decisions-html($lookup-string))
+      case "term" return (page:success(),html:review-links(html:generate-term-html($db,$redirectItem/namespace/text(),$lookup-string)))
+      case "termVersion" return (page:success(),html:review-links(html:generate-term-version-html($db,$redirectItem/namespace/text(),$lookup-string)))
+      case "termList" return (page:success(),html:review-links(html:generate-term-list-html($lookup-string)))
+      case "termListVersion" return (page:success(),html:review-links(html:generate-term-list-version-html($lookup-string)))
+      case "vocabulary" return (page:success(),html:review-links(html:generate-vocabulary-html($lookup-string)))
+      case "vocabularyVersion" return (page:success(),html:review-links(html:generate-vocabulary-version-html($lookup-string)))
+      case "decisions" return (page:success(),html:review-links(html:generate-decisions-html($lookup-string)))
       default return page:not-found()
   else
     (: this sort of redirect only makes sense for terms and term versions :)
