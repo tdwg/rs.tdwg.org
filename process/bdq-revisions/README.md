@@ -60,6 +60,15 @@ It builds each version's graph with `bdqtest_rdf.py`, a pinned copy of tdwg/bdq 
 
 `bdq-source` is the source of `bdqtest`: a Test is changed here, in a new release, not in tdwg/bdq's `bdqtest_term_versions.csv` (which, until the BDQ build reads this repository, must be kept in step by hand; plan Section 13). Each change creates a new version of the Test on the release date; existing versions and their graphs never change.
 
+Steps 1, 2, and 5 can be done with `bdq_new_release.py`, from proposed Test rows in the published BDQ column names (as in tdwg/bdq `bdqtest_term_versions.csv`, or from an issue's table with `bdq_issue_to_csv`; only the columns given are changed, keyed on `term_localName`):
+
+```bash
+python bdq-revisions/bdq_new_release.py YYYY-MM-DD --bdqtest proposals.csv \
+    [--substantive <uuid> ...] [--modified-document <document IRI> ...] [--comment "<why>"]
+```
+
+It writes the release directory with the latest release's `config.yaml` for the new date (and `modified: true` only on the documents given; the Quick Reference Guide shows the Tests' examples, notes, and parameters), header-only CSVs for the other namespaces, and `bdqtest.csv` with each proposed Test's row from the latest release that has it, changed as proposed. `dateLastUpdated` becomes the release date only for the Tests given with `--substantive`. Then continue with step 3 (if needed) and step 4.
+
 1. **Create the release directory** `bdq-revisions-YYYY-MM-DD/` with the release date. Copy `config.yaml` from the latest release, and set `date_issued` and `release_directory` to the new date. Add a header-only CSV for each other namespace (copy the header row of the latest release's CSVs).
 2. **Write the changed Test as a row of `bdqtest.csv`**: copy its row from the current `bdqtest/bdqtest.csv` (or from the release that last changed it), keep `term_localName` (the Test's UUID), and edit the values. Columns use the names in `bdqtest_columns.py` (which maps them back to the published names in tdwg/bdq). Set `dateLastUpdated` to the release date if the change is substantive, that is, if it changes the behavior implementations must follow (plan Section 10.9.3); leave it unchanged for any other change (wording, notes, references). `issued` is the release date, set by `process.py`. A new Test is a row with a new UUID. A Test is not deprecated by this workflow (`../process-vocabulary.md`, Section 3.11).
 3. **Change the graph inputs if needed.** If the change adds or changes information elements, citations, Policies (use cases), or other GUID-identified nodes, put the updated GUID tables in `bdqtest-graph-inputs/` of the release (`TG2_tests_additional_guids.csv`, `information_element_guids.csv`, `TG2_policy_guids.csv`, `TG2_citation_guids.csv`, as in tdwg/bdq `tg2/core/`). The graph of a version uses the tables of the latest release on or before its date that has them, so tables are added only where they change; existing GUIDs must not be changed or reused.
