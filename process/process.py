@@ -1546,6 +1546,16 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
 
     target_date = datetime.date.fromisoformat(date_issued)
 
+    # A Vocabulary may create several Term Lists in one release. The namespaces are
+    # processed one at a time, so a Term List created by a namespace processed later
+    # in this run has no version yet; it joins the target Vocabulary version when its
+    # namespace is processed, and this function runs again.
+    pending_new_term_lists = {
+        namespace_config['termlist_uri'] or namespace_config['namespace_uri']
+        for namespace_config in config_vocab['namespaces']
+        if namespace_config['new_term_list']
+    }
+
     def applicable_term_list_version(term_list_uri):
         candidates = []
         for row in term_lists_versions_metadata[1:]:
@@ -1561,6 +1571,8 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
             if candidate_date <= target_date:
                 candidates.append((candidate_date, row[tlv_version_column]))
         if not candidates:
+            if term_list_uri in pending_new_term_lists:
+                return None
             raise ValueError(
                 'Vocabulary ' + vocabularyUri + ' declares Term List ' +
                 term_list_uri + ', but no Term List version exists on or before ' +
@@ -1575,10 +1587,14 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
             )
         return latest[0]
 
-    resolved_vocabulary_members = [
-        applicable_term_list_version(term_list_uri)
+    resolved_pairs = [
+        (term_list_uri, applicable_term_list_version(term_list_uri))
         for term_list_uri in declared_term_lists
     ]
+    resolved_vocabulary_members = [version for _, version in resolved_pairs if version is not None]
+    # The declared Term Lists that the target snapshot represents: all of them once the
+    # Term Lists created in this release have been processed.
+    represented_term_lists = [term_list_uri for term_list_uri, version in resolved_pairs if version is not None]
 
     # Reconcile the target-release membership without disturbing rows that are
     # already correct. Existing required memberships are retained in place;
@@ -1618,7 +1634,7 @@ def update_vocabulary_metadata(date_issued, local_offset_from_utc, term_lists_ta
         )][tlv_list_column]
         for member_uri in resolved_vocabulary_members
     ]
-    if generated_identities != declared_term_lists:
+    if generated_identities != represented_term_lists:
         raise ValueError(
             'Generated Vocabulary version ' + vocabularyVersionUri +
             ' does not exactly represent current Vocabulary membership.'
