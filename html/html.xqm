@@ -124,6 +124,30 @@ declare function html:generate-header() as element()
 </nav>
 };
 
+(: Opt-in, per IRI prefix: html/review-banner.csv (columns iri_prefix, banner) gives a notice shown below the
+   navigation bar of each HTML page whose IRI starts with iri_prefix, e.g. "Under Review" for the BDQ
+   vocabularies during their public review. Without the file, or for other IRIs, pages are unchanged. :)
+declare function html:review-banner($iri as xs:string?) as element()*
+{
+  let $path := "/usr/src/rs.tdwg.org/html/review-banner.csv"
+  return
+    if (empty($iri) or $iri = "" or not(file:exists($path)))
+    then ()
+    else
+      for $row in csv:parse(file:read-text($path), map { 'header' : true(),'separator' : "," })/csv/record
+      where $row/iri_prefix/text() != "" and starts-with($iri, $row/iri_prefix/text())
+      return
+        <div class="container">
+          <div class="alert alert-warning mt-3" role="note"><strong>{$row/banner/text()}</strong></div>
+        </div>
+};
+
+(: The header, followed by the review banner (if any) for the page with this IRI :)
+declare function html:generate-header($iri as xs:string?) as element()+
+{
+  (html:generate-header(), html:review-banner($iri))
+};
+
 (: Generate a footer :)
 declare function html:generate-footer() as element()+
 {
@@ -481,7 +505,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($record/term_isDefinedBy/text()||$localName),
     html:term-metadata($record,$version,$linkedMetadata,$ns,$columns),
     <br/>,
     <p><strong>Metadata about this term are available in the following formats/serializations:</strong></p>,
@@ -538,7 +562,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($record/version/text()),
      <strong>{"Metadata for the "||$record/version_issued/text()||" version of the term "||$ns||":"||$record/term_localName/text()}</strong>,
      <br/>,
     html:term-version-metadata($record,$versionOf,$replacements,$ns,$columns),
@@ -584,7 +608,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($vocabularyIri),
     html:generate-vocabulary-metadata-html($vocabularyMetadata),
     html:generate-vocabulary-toc-etc-html($vocabularyIri),
     html:generate-vocabulary-table-html($vocabularyIri),
@@ -721,7 +745,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($vocabularyVersionIri),
     html:generate-vocabulary-version-metadata-html($vocabularyVersionMetadata),
     html:generate-vocabulary-version-toc-etc-html($vocabularyVersionIri),
     html:generate-vocabulary-version-table-html($vocabularyVersionIri),
@@ -853,7 +877,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($termListIri),
     html:generate-list-metadata-html($listMetadata,$std,$version),
     html:generate-list-toc-etc-html($termListIri),
     html:generate-list-html(html:find-list-dbname($termListIri),$ns),
@@ -883,7 +907,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($termListIri),
     html:generate-list-metadata-html($listMetadata,$std,$version),
 
   if ($termListIri = "http://rs.tdwg.org/dwc/terms/")
@@ -1034,7 +1058,7 @@ return
     <link href="{$html:stylesheetUrl}" rel="stylesheet"/>
   </head>
   <body>{
-    html:generate-header(),
+    html:generate-header($termListVersionIri),
     html:generate-list-versions-metadata-html($listMetadata,$std,$termListIri),
     html:generate-list-versions-toc-etc-html($termListVersionIri),
     html:generate-list-versions-html(html:find-list-version-dbname($termListIri),$ns,$members),
