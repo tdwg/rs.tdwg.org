@@ -229,7 +229,7 @@ def process_extension_list(ext, vocabulary_namespaces, ctx):
         row = term_lists[row_number]
     for name, value in (('document_modified', now), ('list', list_uri), ('list_localName', local_name),
                         ('label', ext['label']), ('description', ext['description']), ('list_modified', date_issued),
-                        ('versions_uri', version_iri), ('standard', ctx['standardUri'])):
+                        ('versions_uri', term_list_version_iri(list_uri, '')), ('standard', ctx['standardUri'])):
         if name in col:
             row[col[name]] = value
     write_csv('../term-lists/term-lists.csv', term_lists)

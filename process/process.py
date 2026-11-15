@@ -1054,6 +1054,12 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
     termlistVersionUri = urllib.parse.urlunsplit((
         termlist_parts.scheme, termlist_parts.netloc, termlist_version_path, '', ''
     ))
+    # The base of the list's version IRIs (versions_uri in term-lists.csv), to which
+    # html:find-version-for-list appends list_modified for "This version".
+    termlistVersionsBase = urllib.parse.urlunsplit((
+        termlist_parts.scheme, termlist_parts.netloc,
+        '/' + '/'.join([termlist_path_parts[0], 'version'] + termlist_path_parts[1:]) + '/', '', ''
+    ))
 
     modified_datetime = findColumnWithHeader(term_lists_table[0], 'document_modified')[1]
     list_uri = findColumnWithHeader(term_lists_table[0], 'list')[1]
@@ -1098,7 +1104,7 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
         new_term_list_row[list_pref_namespace_column] = namespaceUri
         new_term_list_row[list_database_column] = database
         new_term_list_row[list_versions_database_column] = versions
-        new_term_list_row[list_versions_uri_column] = termlistVersionUri
+        new_term_list_row[list_versions_uri_column] = termlistVersionsBase
         new_term_list_row[standard_column] = standardUri
 
         # Label and description are now required in the config.yaml file, so no need to check for empty strings.
