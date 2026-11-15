@@ -59,6 +59,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/8c10d361-5bf7-4c9d-8464-c813cdf7dda3-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon dwc:dataGeneralizations"
@@ -84,6 +95,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/5daad04c-fd7c-4972-ac3a-66f149170bf3",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/IssueMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -132,6 +154,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -157,6 +190,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/policy/62aa9551-8412-4ee9-a58d-dd6baea1dc35",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -187,6 +231,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "POTENTIAL_ISSUE if dwc:dataGeneralizations is bdqval:NotEmpty; otherwise NOT_ISSUE"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/90618419-452d-4f35-b39a-7c342ca0791b-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -226,6 +281,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Is there a value in dwc:dataGeneralizations?"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
       }
     ],
     "http://purl.org/dc/terms/references": [

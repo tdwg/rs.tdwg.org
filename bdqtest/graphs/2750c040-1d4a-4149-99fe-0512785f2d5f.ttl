@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/b751c2ed-11a5-4bff-9c37-1eccc8138191> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_CLASSIFICATION_CONSISTENT with Specification for: VALIDATION_CLASSIFICATION_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/b751c2ed-11a5-4bff-9c37-1eccc8138191-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:b751c2ed-11a5-4bff-9c37-1eccc8138191> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2563",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -31,6 +35,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -50,12 +56,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/d6bc8db2-014b-47dc-9737-b0ecd98bf5bb> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Backbone Taxonomy\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/d6bc8db2-014b-47dc-9737-b0ecd98bf5bb-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:d6bc8db2-014b-47dc-9737-b0ecd98bf5bb> ;
     bdqffdq:hasArgumentValue "GBIF Backbone Taxonomy" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/15c13417-6f82-4595-ad4b-992b30d5e41c> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:kingdom, dwc:phylum, dwc:class, dwc:order, dwc:superfamily, dwc:family, dwc:subfamily, dwc:tribe, dwc:subtribe, dwc:genus" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/15c13417-6f82-4595-ad4b-992b30d5e41c-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:15c13417-6f82-4595-ad4b-992b30d5e41c> ;
     skos:prefLabel "Information Element ActedUpon dwc:kingdom, dwc:phylum, dwc:class, dwc:order, dwc:superfamily, dwc:family, dwc:subfamily, dwc:tribe, dwc:subtribe, dwc:genus" ;
     bdqffdq:composedOf dwc:class,
@@ -72,6 +82,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/21d0b5f6-5b3e-4810-8413-c975b7cf343a> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_CLASSIFICATION_CONSISTENT" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if all of the fields dwc:kingdom dwc:phylum, dwc:class, dwc:order, dwc:superfamily, dwc:family, dwc:subfamily, dwc:tribe, dwc:subtribe, dwc:genus are bdqval:Empty; COMPLIANT if the combination of values of higher classification taxonomic terms (dwc:kingdom, dwc:phylum, dwc:class, dwc:order, dwc:superfamily, dwc:family, dwc:subfamily, dwc:tribe, dwc:subtribe, dwc:genus) are consistent with the lowest ranking matched element in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/21d0b5f6-5b3e-4810-8413-c975b7cf343a-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:21d0b5f6-5b3e-4810-8413-c975b7cf343a> ;
     skos:example "dwc:kingdom=\"\", dwc:phylum=\"\", dwc:class=\"\", dwc:order=\"Myrtales\", dwc:superfamily=\"\", dwc:family=\"Myrtaceae\", dwc:subfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\",dwc:genus=\"Punica\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"The combination of values of higher classification taxonomic terms can be unambiguously resolved in the bdqval:sourceAuthority\"",
         "dwc:kingdom=\"\", dwc:phylum=\"Chordata\", dwc:class=\"\", dwc:order=\"Rhopalocera\", dwc:superfamly=\"\", dwc:family=\"Muricidae\", dwc:subfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\", dwc:genus=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"The combination of values of higher classification taxonomic terms cannot be unambiguously resolved in the bdqval:sourceAuthority\"" ;
@@ -90,6 +102,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:2750c040-1d4a-4149-99fe-0512785f2d5f a bdqffdq:Validation ;
     rdfs:label "VALIDATION_CLASSIFICATION_CONSISTENT" ;
     dcterms:description "Is the combination of higher classification taxonomic terms consistent using bdqval:sourceAuthority?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/2750c040-1d4a-4149-99fe-0512785f2d5f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:2750c040-1d4a-4149-99fe-0512785f2d5f> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/123" ;

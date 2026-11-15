@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/7b36926a-b3b2-4a3e-828e-696fb28a1d6e> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATEUNCERTAINTY_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATEUNCERTAINTY_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7b36926a-b3b2-4a3e-828e-696fb28a1d6e-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:7b36926a-b3b2-4a3e-828e-696fb28a1d6e> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test Conformance CORE" ;
@@ -20,12 +22,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:d94b0130-7a13-4fa8-955c-eff5c47bd9de .
 
 <https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:SDM-Trees" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
     bdqffdq:hasUseCase bdquc:SDM-Trees ;
     bdqffdq:includedInPolicy bdqtest:d94b0130-7a13-4fa8-955c-eff5c47bd9de .
@@ -41,6 +47,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/e96e00be-9b67-42df-a914-4873e05f9a34> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATEUNCERTAINTY_INRANGE.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/e96e00be-9b67-42df-a914-4873e05f9a34-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:e96e00be-9b67-42df-a914-4873e05f9a34> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_COORDINATEUNCERTAINTY_INRANGE across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COORDINATEUNCERTAINTY_INRANGE.Response" ;
@@ -50,6 +58,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/b749a6bd-db12-4808-a137-52c96c66ce03> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_COORDINATEUNCERTAINTY_INRANGE" ;
     dcterms:description "COMPLETE if every VALIDATION_COORDINATEUNCERTAINTY_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/b749a6bd-db12-4808-a137-52c96c66ce03-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:b749a6bd-db12-4808-a137-52c96c66ce03> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -64,6 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:d94b0130-7a13-4fa8-955c-eff5c47bd9de a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_COORDINATEUNCERTAINTY_INRANGE" ;
     dcterms:description "Measure if all VALIDATION_COORDINATEUNCERTAINTY_INRANGE in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d94b0130-7a13-4fa8-955c-eff5c47bd9de-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:d94b0130-7a13-4fa8-955c-eff5c47bd9de> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;

@@ -37,6 +37,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/e8c9ef54-af43-4c20-98a8-a7865cc169ac-2023-09-17"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-17"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon dwc:eventDate"
@@ -62,6 +73,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/d5732888-e5d4-4fa7-89dd-09baf1773e07",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/d5732888-e5d4-4fa7-89dd-09baf1773e07-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -110,6 +132,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-11-12"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -139,6 +172,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or if the value of dwc:eventDate is not a valid ISO 8601 date; otherwise RUN_HAS_RESULT with the result being the duration (sensu ISO 8601) expressed in the dwc:eventDate, in seconds."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/be93a0ef-9bf7-417f-a26e-daae5d00dabb-2024-09-16"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-09-16"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -178,6 +222,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "What is the duration of dwc:eventDate in seconds?"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/56b6c695-adf1-418e-95d2-da04cad7be53-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
       }
     ],
     "http://purl.org/dc/terms/references": [

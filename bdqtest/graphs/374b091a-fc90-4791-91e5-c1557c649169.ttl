@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/95c2e363-5a99-4276-937d-98008ca893f9> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_DCTYPE_NOTEMPTY with Specification for: VALIDATION_DCTYPE_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/95c2e363-5a99-4276-937d-98008ca893f9-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:95c2e363-5a99-4276-937d-98008ca893f9> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L308",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -30,6 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -46,6 +52,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/2aee4d8d-4064-41ca-b67f-d5f591b41526> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dc:type" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/2aee4d8d-4064-41ca-b67f-d5f591b41526-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:2aee4d8d-4064-41ca-b67f-d5f591b41526> ;
     skos:prefLabel "Information Element ActedUpon dc:type" ;
     bdqffdq:composedOf dc:type .
@@ -53,6 +61,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/e1286c46-2a95-480d-89e4-f02681372eb7> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_DCTYPE_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dc:type is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/e1286c46-2a95-480d-89e4-f02681372eb7-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:e1286c46-2a95-480d-89e4-f02681372eb7> ;
     skos:example "dc:type=\" \": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dc:type is bdqval:Empty\"",
         "dc:type=\"?\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dc:type is bdqval:NotEmpty\"" ;
@@ -71,6 +81,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:374b091a-fc90-4791-91e5-c1557c649169 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DCTYPE_NOTEMPTY" ;
     dcterms:description "Is there a value in dc:type?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/374b091a-fc90-4791-91e5-c1557c649169-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> ;
     owl:sameAs <urn:uuid:374b091a-fc90-4791-91e5-c1557c649169> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/103" ;

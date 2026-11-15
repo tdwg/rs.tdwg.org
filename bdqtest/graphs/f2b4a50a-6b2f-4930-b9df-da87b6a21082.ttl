@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/2f59ef74-5439-44db-8d5a-85c9773c0cef> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_COORDINATES_TRANSPOSED with Specification Specification for: AMENDMENT_COORDINATES_TRANSPOSED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:2f59ef74-5439-44db-8d5a-85c9773c0cef> ;
     skos:historyNote "Source: iDigBio, GBIF, BISON, FP, Kurator, ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3473",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:f2b4a50a-6b2f-4930-b9df-da87b6a21082 .
@@ -42,12 +46,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/95e1332e-eeca-4b41-8698-88ffc33cef3f> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"10m-admin-1 boundaries UNION with Exclusive Economic Zones\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/95e1332e-eeca-4b41-8698-88ffc33cef3f-2024-11-11> ;
+    dcterms:modified "2024-11-11"^^xsd:date ;
     owl:sameAs <urn:uuid:95e1332e-eeca-4b41-8698-88ffc33cef3f> ;
     bdqffdq:hasArgumentValue "10m-admin-1 boundaries UNION with Exclusive Economic Zones" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/9d387033-c581-4fb5-9af2-73ec89c99e77> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/9d387033-c581-4fb5-9af2-73ec89c99e77-2023-06-20> ;
+    dcterms:modified "2023-06-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9d387033-c581-4fb5-9af2-73ec89c99e77> ;
     skos:prefLabel "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude" ;
     bdqffdq:composedOf dwc:decimalLatitude,
@@ -55,6 +63,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/d24a7b73-972a-4fdd-a790-91acb5fcf725> a bdqffdq:Consulted ;
     rdfs:label "Information Element Consulted dwc:countryCode" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/d24a7b73-972a-4fdd-a790-91acb5fcf725-2024-09-27> ;
+    dcterms:modified "2024-09-27"^^xsd:date ;
     owl:sameAs <urn:uuid:d24a7b73-972a-4fdd-a790-91acb5fcf725> ;
     skos:prefLabel "Information Element Consulted dwc:countryCode" ;
     bdqffdq:composedOf dwc:countryCode .
@@ -62,6 +72,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/46caea46-0c94-4efb-9e5f-1b170f2ad54e> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_COORDINATES_TRANSPOSED" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if any of dwc:decimalLatitude or dwc:decimalLongitude or dwc:countryCode are bdqval:Empty; AMENDED dwc:decimalLatitude and dwc:decimalLongitude if the coordinates were transposed or one or more of the signs of the coordinates were reversed to align the location with dwc:countryCode according to the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = \"10m-admin-1 boundaries UNION with Exclusive Economic Zones\" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/] spatial UNION [https://www.marineregions.org/downloads.php#marbound]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/46caea46-0c94-4efb-9e5f-1b170f2ad54e-2024-11-11> ;
+    dcterms:modified "2024-11-11"^^xsd:date ;
     owl:sameAs <urn:uuid:46caea46-0c94-4efb-9e5f-1b170f2ad54e> ;
     skos:example "dwc:decimalLatitude=\"25.46\", dwc:decimalLongitude=\"135.87\", dwc:countryCode=\"AU\": Response.status=AMENDED, Response.result=dwc:decimalLatitude=\"-25.46\", dwc:decimalLongitude=\"135.87\", Response.comment=\"dwc:decimalLatitude sign reversed to fit dwc:countryCode=AU\"",
         "dwc:decimalLatitude=\"25.46\", dwc:decimalLongitude=\"135.87\", dwc:countryCode=\"AX\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"dwc:countryCode is uninterpretable\"" ;
@@ -77,6 +89,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:f2b4a50a-6b2f-4930-b9df-da87b6a21082 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_COORDINATES_TRANSPOSED" ;
     dcterms:description "Proposes an amendment transposing or changing the signs of dwc:decimalLatitude and/or dwc:decimalLongitude to align the location with the dwc:countryCode." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:f2b4a50a-6b2f-4930-b9df-da87b6a21082> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/54" ;

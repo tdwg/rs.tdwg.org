@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/afb83bc1-4c79-4254-9938-ee470d2eecc2> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/afb83bc1-4c79-4254-9938-ee470d2eecc2-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:afb83bc1-4c79-4254-9938-ee470d2eecc2> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test Completeness CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:342bd81c-e2b7-41d8-b32b-013992d19f99 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/8a63ca58-36c5-45d8-9d4c-7f0fd476d87c> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_KINGDOM_NOTEMPTY.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/8a63ca58-36c5-45d8-9d4c-7f0fd476d87c-2024-01-28> ;
+    dcterms:modified "2024-01-28"^^xsd:date ;
     owl:sameAs <urn:uuid:8a63ca58-36c5-45d8-9d4c-7f0fd476d87c> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_KINGDOM_NOTEMPTY across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_KINGDOM_NOTEMPTY.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/1e548db5-3f69-43b3-ad99-98c75305762e> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_KINGDOM_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/1e548db5-3f69-43b3-ad99-98c75305762e-2024-01-28> ;
+    dcterms:modified "2024-01-28"^^xsd:date ;
     owl:sameAs <urn:uuid:1e548db5-3f69-43b3-ad99-98c75305762e> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:342bd81c-e2b7-41d8-b32b-013992d19f99 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_KINGDOM_NOTEMPTY in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/342bd81c-e2b7-41d8-b32b-013992d19f99-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:342bd81c-e2b7-41d8-b32b-013992d19f99> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

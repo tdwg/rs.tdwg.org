@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/e0078022-251d-4c34-9b52-d63f94f601dd> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_LOCATION_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_LOCATION_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e0078022-251d-4c34-9b52-d63f94f601dd-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:e0078022-251d-4c34-9b52-d63f94f601dd> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test Completeness CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:3b2e4791-1a5a-4087-9e8d-09c67cf8c816 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/fd9bc73a-2b67-4940-ac2a-ad1dda03d0b7> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LOCATION_NOTEMPTY.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/fd9bc73a-2b67-4940-ac2a-ad1dda03d0b7-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:fd9bc73a-2b67-4940-ac2a-ad1dda03d0b7> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_LOCATION_NOTEMPTY across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LOCATION_NOTEMPTY.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/977ed65e-416f-46e8-85a3-079c6b735fa8> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_LOCATION_NOTEMPTY" ;
     dcterms:description "COMPLETE if every VALIDATION_LOCATION_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/977ed65e-416f-46e8-85a3-079c6b735fa8-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:977ed65e-416f-46e8-85a3-079c6b735fa8> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:3b2e4791-1a5a-4087-9e8d-09c67cf8c816 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_LOCATION_NOTEMPTY" ;
     dcterms:description "Measure if all VALIDATION_LOCATION_NOTEMPTY in a record set are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3b2e4791-1a5a-4087-9e8d-09c67cf8c816-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:3b2e4791-1a5a-4087-9e8d-09c67cf8c816> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

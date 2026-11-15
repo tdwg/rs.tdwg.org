@@ -37,6 +37,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/90508628-7333-4e71-b191-d1a0e0d431e6-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_TAXONRANK_STANDARD.Response"
@@ -72,6 +83,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/e9dd8019-0fbd-45a3-817e-f99bea3f8b19",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/e9dd8019-0fbd-45a3-817e-f99bea3f8b19-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -114,6 +136,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-11-12"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management"
@@ -143,6 +176,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "COMPLETE if every VALIDATION_TAXONRANK_STANDARD in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/aa2e919c-5655-488e-90ca-10f8bbd233ca-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -179,6 +223,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Measure if all VALIDATION_TAXONRANK_STANDARD in a record set are COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f320ca83-8487-4011-b1ff-f4b1b4dd86ec-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
       }
     ],
     "http://purl.org/dc/terms/references": [

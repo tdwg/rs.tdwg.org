@@ -48,6 +48,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/Argument"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/argument/version/2c441806-b56b-4252-9944-e331f9f3fee6-2024-08-28"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-28"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Default value for bdqval:sourceAuthority:\"GBIF Catalogue of Country Centroides\""
@@ -73,6 +84,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/argument/9c0a82d5-4b24-4160-a000-ee9429bef8f7",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/Argument"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/argument/version/9c0a82d5-4b24-4160-a000-ee9429bef8f7-2024-08-28"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-28"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -100,6 +122,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/Consulted"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/5be9ff68-1232-4f09-a3ef-5d78ccdecf8c-2024-08-28"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-28"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element Consulted dwc:coordinateUncertaintyInMeters"
@@ -125,6 +158,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/informationelement/6f6a46c6-9979-41a2-83c2-fd196e89c8c1",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/6f6a46c6-9979-41a2-83c2-fd196e89c8c1-2024-08-28"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-28"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -157,6 +201,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/IssueMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -205,6 +260,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -234,6 +300,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if any of dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude are bdqval:Empty; POTENTIAL_ISSUE if (1) the geographic coordinates are within the distance given by bdqval:spatialBufferInMeters from the center of the supplied dwc:countryCode as represented in the bdqval:sourceAuthority (or one of the centers, if the bdqval:sourceAuthority provides more than one per country code) and (2) the dwc:coordinateUncertaintyInMeters is bdqval:Empty or less than half the square root of the area of the country; otherwise NOT_ISSUE. bdqval:spatialBufferInMeters default = \"5000\",bdqval:sourceAuthority default = \"GBIF Catalogue of Country Centroides\" {[https://raw.githubusercontent.com/jhnwllr/catalogue-of-centroids/master/PCLI.tsv]}"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/693aa9a5-6058-4399-a474-43268a8e503b-2024-08-28"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-28"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -281,6 +358,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Are the supplied geographic coordinates within a defined buffer of the center of the country?"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
       }
     ],
     "http://purl.org/dc/terms/references": [

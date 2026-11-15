@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/35ac2bb4-d1f8-4a32-a591-32f614d97429> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_GEODETICDATUM_STANDARDIZED with Specification Specification for: AMENDMENT_GEODETICDATUM_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/35ac2bb4-d1f8-4a32-a591-32f614d97429-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:35ac2bb4-d1f8-4a32-a591-32f614d97429> ;
     skos:historyNote "Source: Paul Morris" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1568",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:0345b325-836d-4235-96d0-3b5caf150fc0 .
@@ -53,6 +57,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/2d1e1a48-f915-4db5-beba-ae73017f3f8b> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:geodeticDatum" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/2d1e1a48-f915-4db5-beba-ae73017f3f8b-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:2d1e1a48-f915-4db5-beba-ae73017f3f8b> ;
     skos:prefLabel "Information Element ActedUpon dwc:geodeticDatum" ;
     bdqffdq:composedOf dwc:geodeticDatum .
@@ -60,6 +66,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/5daf8c2f-50df-423c-a740-55079b625c10> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_GEODETICDATUM_STANDARDIZED" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:geodeticDatum is bdqval:Empty; AMENDED the value of dwc:geodeticDatum if it could be unambiguously interpreted as a valid code from the bdqval:sourceAuthority (in the form Authority:Number) for a Datum, Ellipsoid or a CRS appropriate for a 2D geographic coordinate in degrees, or as the value \"not recorded\"; otherwise NOT_AMENDED bdqval:sourceAuthority = \"EPSG\" {[https://epsg.org]} {API for EPSG codes [https://apps.epsg.org/api/swagger/ui/index#/Datum]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/5daf8c2f-50df-423c-a740-55079b625c10-2025-03-03> ;
+    dcterms:modified "2025-03-03"^^xsd:date ;
     owl:sameAs <urn:uuid:5daf8c2f-50df-423c-a740-55079b625c10> ;
     skos:example "dwc:geodeticDatum=\"WGS8\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:geodeticDatum contains an ambiguous value\"",
         "dwc:geodeticDatum=\"WGS84\": Response.status=AMENDED, Response.result=dwc:geodeticDatum=\"EPSG:4326\", Response.comment=\"dwc:geodeticDatum contains a valid code in the bdqval:sourceAuthority\"" ;
@@ -75,6 +83,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:0345b325-836d-4235-96d0-3b5caf150fc0 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_GEODETICDATUM_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:geodeticDatum using the bdqval:sourceAuthority." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/0345b325-836d-4235-96d0-3b5caf150fc0-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://epsg.io/>,
         <https://epsg.org/>,

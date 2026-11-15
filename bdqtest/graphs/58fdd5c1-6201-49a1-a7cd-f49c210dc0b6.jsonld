@@ -37,6 +37,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/03715043-0512-48a0-a1ac-45e6e2043a44-2024-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-09-18"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_STATEPROVINCE_FOUND.Response"
@@ -72,6 +83,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/a6efb3ed-c977-4e6f-9b60-ba9d639bdd86",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/a6efb3ed-c977-4e6f-9b60-ba9d639bdd86-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -114,6 +136,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species"
@@ -139,6 +172,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-11-12"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -169,6 +213,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Count the number of VALIDATION_STATEPROVINCE_FOUND in the MultiRecord that have Response.result=COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/778976c3-2c33-4b8d-9135-a4d8ef36385f-2024-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-09-18"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -205,6 +260,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Count the number of VALIDATION_STATEPROVINCE_FOUND in a record set that are COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/58fdd5c1-6201-49a1-a7cd-f49c210dc0b6-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
       }
     ],
     "http://purl.org/dc/terms/references": [

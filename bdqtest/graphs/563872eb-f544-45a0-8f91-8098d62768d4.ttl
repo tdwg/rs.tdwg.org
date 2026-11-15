@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/4d16917f-0c46-4d05-a7da-0512e6a37627> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/4d16917f-0c46-4d05-a7da-0512e6a37627-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:4d16917f-0c46-4d05-a7da-0512e6a37627> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Conformance ISO/DCMI STANDARD CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:563872eb-f544-45a0-8f91-8098d62768d4 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/bbb2cdf1-1565-48b9-8d6c-f5cee70a6e56> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DATEIDENTIFIED_STANDARD.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/bbb2cdf1-1565-48b9-8d6c-f5cee70a6e56-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:bbb2cdf1-1565-48b9-8d6c-f5cee70a6e56> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_DATEIDENTIFIED_STANDARD across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DATEIDENTIFIED_STANDARD.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/79471c9d-a97c-4cb0-8c61-e74f1f15abce> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_STANDARD" ;
     dcterms:description "COMPLETE if every VALIDATION_DATEIDENTIFIED_STANDARD in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/79471c9d-a97c-4cb0-8c61-e74f1f15abce-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:79471c9d-a97c-4cb0-8c61-e74f1f15abce> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:563872eb-f544-45a0-8f91-8098d62768d4 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_STANDARD" ;
     dcterms:description "Measure if all VALIDATION_DATEIDENTIFIED_STANDARD in a record set are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/563872eb-f544-45a0-8f91-8098d62768d4-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:563872eb-f544-45a0-8f91-8098d62768d4> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

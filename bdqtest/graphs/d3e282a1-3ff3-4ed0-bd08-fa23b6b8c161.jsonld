@@ -37,6 +37,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/b6c0e87e-4b9a-4f6b-bbaf-9cf23b02ddee-2023-09-30"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-30"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_EVENTTEMPORAL_NOTEMPTY.Response"
@@ -72,6 +83,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/9409ef24-baf9-4dfc-b4a8-7b6459cc1d54",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/9409ef24-baf9-4dfc-b4a8-7b6459cc1d54-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -114,6 +136,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-11-12"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -143,6 +176,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Count the number of VALIDATION_EVENTTEMPORAL_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/5e402929-b1c0-48e2-aaf6-cc6e365c9c42-2023-09-30"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-30"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -179,6 +223,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Count the number of VALIDATION_EVENTTEMPORAL_NOTEMPTY in a record set that are COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/d3e282a1-3ff3-4ed0-bd08-fa23b6b8c161-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
       }
     ],
     "http://purl.org/dc/terms/references": [

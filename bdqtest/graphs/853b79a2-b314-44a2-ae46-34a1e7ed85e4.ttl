@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/930eb72e-fe83-48ae-9698-ca46713721a3> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COUNTRYCODE_NOTEMPTY with Specification for: VALIDATION_COUNTRYCODE_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/930eb72e-fe83-48ae-9698-ca46713721a3-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:930eb72e-fe83-48ae-9698-ca46713721a3> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2308",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
@@ -22,6 +24,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -44,6 +48,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/c3620a97-65d6-4f9c-8a03-32e0d240a423> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:countryCode" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/c3620a97-65d6-4f9c-8a03-32e0d240a423-2024-08-18> ;
+    dcterms:modified "2024-08-18"^^xsd:date ;
     owl:sameAs <urn:uuid:c3620a97-65d6-4f9c-8a03-32e0d240a423> ;
     skos:prefLabel "Information Element ActedUpon dwc:countryCode" ;
     bdqffdq:composedOf dwc:countryCode .
@@ -51,6 +57,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/d153d4bd-b39d-43b0-b00a-395ff3e2ca62> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COUNTRYCODE_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dwc:countryCode is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/d153d4bd-b39d-43b0-b00a-395ff3e2ca62-2024-11-10> ;
+    dcterms:modified "2024-11-10"^^xsd:date ;
     owl:sameAs <urn:uuid:d153d4bd-b39d-43b0-b00a-395ff3e2ca62> ;
     skos:example "dwc:countryCode=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:countryCode is bdqval:Empty\"",
         "dwc:countryCode=\"Australia\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:countryCode is bdqval:NotEmpty\"" ;
@@ -66,6 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:853b79a2-b314-44a2-ae46-34a1e7ed85e4 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COUNTRYCODE_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:countryCode?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/853b79a2-b314-44a2-ae46-34a1e7ed85e4-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://datahub.io/core/country-list>,
         <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
         <https://www.iso.org/iso-3166-country-codes.html> ;

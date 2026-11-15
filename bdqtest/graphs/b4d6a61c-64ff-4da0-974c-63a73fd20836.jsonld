@@ -37,6 +37,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/0938b920-e3f0-4b1b-8e82-3bb2bcb26ad9-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAME_NOTEMPTY.Response"
@@ -72,6 +83,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/63695de6-91f6-4f10-8bf7-59163c6e3ad9",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/63695de6-91f6-4f10-8bf7-59163c6e3ad9-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -114,6 +136,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species"
@@ -140,6 +173,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-11-12"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -165,6 +209,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-11-12"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -195,6 +250,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "COMPLETE if every VALIDATION_SCIENTIFICNAME_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/03c7280e-d1b9-459b-8bec-8bbd7ee6c886-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -231,6 +297,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Measure if all VALIDATION_SCIENTIFICNAME_NOTEMPTY in a record set are COMPLIANT."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/b4d6a61c-64ff-4da0-974c-63a73fd20836-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
       }
     ],
     "http://purl.org/dc/terms/references": [

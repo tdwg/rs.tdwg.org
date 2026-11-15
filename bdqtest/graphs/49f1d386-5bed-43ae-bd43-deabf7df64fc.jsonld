@@ -37,6 +37,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c-2024-02-04"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-04"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon dwc:scientificNameAuthorship"
@@ -62,6 +73,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/f6c58791-279d-458b-b4ee-058a73a002ee",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/f6c58791-279d-458b-b4ee-058a73a002ee-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -110,6 +132,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species"
@@ -140,6 +173,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -175,6 +219,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "COMPLIANT if dwc:scientificNameAuthorship is bdqval:NotEmpty; otherwise NOT_COMPLIANT"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b-2024-02-04"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-04"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -214,6 +269,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Is there a value in dwc:scientificNameAuthorship?"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/49f1d386-5bed-43ae-bd43-deabf7df64fc-2025-03-06"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-06"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

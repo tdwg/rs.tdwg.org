@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/1f38a0bc-4e1f-47a4-bd4a-b6be1c9a456a> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_DCTYPE_STANDARDIZED with Specification Specification for: AMENDMENT_DCTYPE_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/1f38a0bc-4e1f-47a4-bd4a-b6be1c9a456a-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:1f38a0bc-4e1f-47a4-bd4a-b6be1c9a456a> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L724",
@@ -23,12 +25,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:bd385eeb-44a2-464b-a503-7abe407ef904 .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:bd385eeb-44a2-464b-a503-7abe407ef904 .
@@ -44,6 +50,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/2aee4d8d-4064-41ca-b67f-d5f591b41526> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dc:type" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/2aee4d8d-4064-41ca-b67f-d5f591b41526-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:2aee4d8d-4064-41ca-b67f-d5f591b41526> ;
     skos:prefLabel "Information Element ActedUpon dc:type" ;
     bdqffdq:composedOf dc:type .
@@ -51,6 +59,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/317e79db-680a-4bbe-8a3e-e805c69514b8> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_DCTYPE_STANDARDIZED" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the value of dc:type is bdqval:Empty; AMENDED the value of dc:type if it can be unambiguously interpreted as a term name in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority = \"DCMI Type Vocabulary\" {[http://purl.org/dc/terms/DCMIType]} {\"DCMI Type Vocabulary List of Terms\" [https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/2010-10-11/]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/317e79db-680a-4bbe-8a3e-e805c69514b8-2024-08-16> ;
+    dcterms:modified "2024-08-16"^^xsd:date ;
     owl:sameAs <urn:uuid:317e79db-680a-4bbe-8a3e-e805c69514b8> ;
     skos:example "dc:type=\"X\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dc:type contains an uninterpretable value\"",
         "dc:type=\"evnt\": Response.status=AMENDED, Response.result=dc:type=\"Event\", Response.comment=\"dc:type contains an interpretable value\"" ;
@@ -69,6 +79,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:bd385eeb-44a2-464b-a503-7abe407ef904 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_DCTYPE_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dc:type using the DCMI type vocabulary." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/bd385eeb-44a2-464b-a503-7abe407ef904-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> ;
     owl:sameAs <urn:uuid:bd385eeb-44a2-464b-a503-7abe407ef904> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/41" ;

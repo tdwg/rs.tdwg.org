@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/bb630881-2a79-4750-ae0f-36d0df2191f7> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification for: VALIDATION_MONTH_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/bb630881-2a79-4750-ae0f-36d0df2191f7-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:bb630881-2a79-4750-ae0f-36d0df2191f7> ;
     skos:historyNote "Source: TG2-Gainesville (MONTH_INVALID/MONTH_IN_RANGE previously in spreadsheet, from ALA?)" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L690 Unit test in [DwcEventDQTest]{https://github.com/FilteredPush/event_date_qc/blob/v3.0.0/src/test/java/org/filteredpush/qc/date/DwcEventDQTest.java#L242)",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -39,6 +43,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/a16e8cb6-dbf5-44a9-becc-8bef83a37456> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:month" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/a16e8cb6-dbf5-44a9-becc-8bef83a37456-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:a16e8cb6-dbf5-44a9-becc-8bef83a37456> ;
     skos:prefLabel "Information Element ActedUpon dwc:month" ;
     bdqffdq:composedOf dwc:month .
@@ -46,6 +52,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/2c5dbdbb-feab-474c-bcca-bf6d1b90ae66> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_MONTH_STANDARD" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:month is bdqval:Empty; COMPLIANT if the value of dwc:month is interpretable as an integer between 1 and 12 inclusive; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/2c5dbdbb-feab-474c-bcca-bf6d1b90ae66-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:2c5dbdbb-feab-474c-bcca-bf6d1b90ae66> ;
     skos:example "dwc:month=\"10\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:month is in range\"",
         "dwc:month=\"v\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:month is ambiguous as \"v\" or \"5\"\"" ;
@@ -58,6 +66,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:01c6dafa-0886-4b7e-9881-2c3018c98bdc a bdqffdq:Validation ;
     rdfs:label "VALIDATION_MONTH_STANDARD" ;
     dcterms:description "Is the value of dwc:month interpretable as an integer between 1 and 12 inclusive?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/01c6dafa-0886-4b7e-9881-2c3018c98bdc-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:01c6dafa-0886-4b7e-9881-2c3018c98bdc> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/126" ;
     skos:note "" ;

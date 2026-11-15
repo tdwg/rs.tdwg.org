@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/c7fe0448-b77d-4eb2-8123-d96a63ef4aa8> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/c7fe0448-b77d-4eb2-8123-d96a63ef4aa8-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:c7fe0448-b77d-4eb2-8123-d96a63ef4aa8> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test Completeness CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:6887c881-dc52-409b-8979-9c2f05e55569 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/545ce7c8-64e1-463e-a578-be2580d7d3c5> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COUNTRY_NOTEMPTY.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/545ce7c8-64e1-463e-a578-be2580d7d3c5-2024-09-27> ;
+    dcterms:modified "2024-09-27"^^xsd:date ;
     owl:sameAs <urn:uuid:545ce7c8-64e1-463e-a578-be2580d7d3c5> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_COUNTRY_NOTEMPTY across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COUNTRY_NOTEMPTY.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/2a5be256-6d25-4d05-bcc7-3b43a383d443> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_COUNTRY_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/2a5be256-6d25-4d05-bcc7-3b43a383d443-2024-09-27> ;
+    dcterms:modified "2024-09-27"^^xsd:date ;
     owl:sameAs <urn:uuid:2a5be256-6d25-4d05-bcc7-3b43a383d443> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:6887c881-dc52-409b-8979-9c2f05e55569 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_COUNTRY_NOTEMPTY in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/6887c881-dc52-409b-8979-9c2f05e55569-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:6887c881-dc52-409b-8979-9c2f05e55569> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

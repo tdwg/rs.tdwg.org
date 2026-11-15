@@ -7,8 +7,19 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/5be9ff68-1232-4f09-a3ef-5d78ccdecf8c">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/5be9ff68-1232-4f09-a3ef-5d78ccdecf8c-2024-08-28"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-28</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
+    <rdfs:label>Information Element Consulted dwc:coordinateUncertaintyInMeters</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:5be9ff68-1232-4f09-a3ef-5d78ccdecf8c"/>
+    <skos:prefLabel>Information Element Consulted dwc:coordinateUncertaintyInMeters</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/256e51b3-1e08-4349-bb7e-5186631c3f8e">
     <dcterms:description>Are the supplied geographic coordinates within a defined buffer of the center of the country?</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.3897/biss.7.110728"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Issue"/>
     <rdfs:label>ISSUE_COORDINATES_CENTEROFCOUNTRY</rdfs:label>
@@ -25,6 +36,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/693aa9a5-6058-4399-a474-43268a8e503b">
     <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if any of dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude are bdqval:Empty; POTENTIAL_ISSUE if (1) the geographic coordinates are within the distance given by bdqval:spatialBufferInMeters from the center of the supplied dwc:countryCode as represented in the bdqval:sourceAuthority (or one of the centers, if the bdqval:sourceAuthority provides more than one per country code) and (2) the dwc:coordinateUncertaintyInMeters is bdqval:Empty or less than half the square root of the area of the country; otherwise NOT_ISSUE. bdqval:spatialBufferInMeters default = "5000",bdqval:sourceAuthority default = "GBIF Catalogue of Country Centroides" {[https://raw.githubusercontent.com/jhnwllr/catalogue-of-centroids/master/PCLI.tsv]}</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/693aa9a5-6058-4399-a474-43268a8e503b-2024-08-28"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-28</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
     <rdfs:label>Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:693aa9a5-6058-4399-a474-43268a8e503b"/>
@@ -40,6 +53,8 @@
     <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssueMethod"/>
     <rdfs:label>IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:0239b59b-db0e-4e6a-8ba8-2f89abf9e78e"/>
@@ -52,6 +67,8 @@
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/693aa9a5-6058-4399-a474-43268a8e503b"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/9c0a82d5-4b24-4160-a000-ee9429bef8f7">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/9c0a82d5-4b24-4160-a000-ee9429bef8f7-2024-08-28"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-28</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
     <rdfs:label>Default value for bdqval:spatialBufferInMeters:"5000"</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:9c0a82d5-4b24-4160-a000-ee9429bef8f7"/>
@@ -59,6 +76,8 @@
     <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/6f6a46c6-9979-41a2-83c2-fd196e89c8c1">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/6f6a46c6-9979-41a2-83c2-fd196e89c8c1-2024-08-28"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-28</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
     <rdfs:label>Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:6f6a46c6-9979-41a2-83c2-fd196e89c8c1"/>
@@ -68,6 +87,8 @@
     <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/decimalLongitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/2c441806-b56b-4252-9944-e331f9f3fee6">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/2c441806-b56b-4252-9944-e331f9f3fee6-2024-08-28"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-28</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
     <rdfs:label>Default value for bdqval:sourceAuthority:"GBIF Catalogue of Country Centroides"</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:2c441806-b56b-4252-9944-e331f9f3fee6"/>
@@ -90,18 +111,13 @@
     <rdfs:label>Likely</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"/>
     <rdfs:label>IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3"/>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/256e51b3-1e08-4349-bb7e-5186631c3f8e"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/5be9ff68-1232-4f09-a3ef-5d78ccdecf8c">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
-    <rdfs:label>Information Element Consulted dwc:coordinateUncertaintyInMeters</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:5be9ff68-1232-4f09-a3ef-5d78ccdecf8c"/>
-    <skos:prefLabel>Information Element Consulted dwc:coordinateUncertaintyInMeters</skos:prefLabel>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>

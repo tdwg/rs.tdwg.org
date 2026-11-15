@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/3925c15a-2795-4cef-8a30-6e6e5e480eae> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT with Specification for: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3925c15a-2795-4cef-8a30-6e6e5e480eae-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3925c15a-2795-4cef-8a30-6e6e5e480eae> ;
     skos:historyNote "Source: GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1675",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -45,6 +49,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/9cada38d-ed7c-485d-8b9b-ea57e4124253> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:country, dwc:countryCode" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/9cada38d-ed7c-485d-8b9b-ea57e4124253-2024-09-25> ;
+    dcterms:modified "2024-09-25"^^xsd:date ;
     owl:sameAs <urn:uuid:9cada38d-ed7c-485d-8b9b-ea57e4124253> ;
     skos:prefLabel "Information Element ActedUpon dwc:country, dwc:countryCode" ;
     bdqffdq:composedOf dwc:country,
@@ -53,6 +59,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/6f1093a0-0da5-4691-a95e-184d6d55eeb0> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if either of the terms dwc:country or dwc:countryCode are bdqval:Empty; COMPLIANT if the values of dwc:country and dwc:countryCode match national-level country name and matching country code respectively in the bdqval:sourceAuthority bdqval:sourceAuthority default = \"The Getty Thesaurus of Geographic Names (TGN)\" {[https://www.getty.edu/research/tools/vocabularies/tgn/index.html]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/6f1093a0-0da5-4691-a95e-184d6d55eeb0-2024-09-25> ;
+    dcterms:modified "2024-09-25"^^xsd:date ;
     owl:sameAs <urn:uuid:6f1093a0-0da5-4691-a95e-184d6d55eeb0> ;
     skos:example "dwc:country=\"Australia\", dwc:countryCode=\"AU\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:country matches dwc:countryCode\"",
         "dwc:country=\"United States Minor Outlying Islands\", dwc:countryCode=\"US\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:country does not match dwc:countryCode\"" ;
@@ -68,6 +76,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:b23110e7-1be7-444a-a677-cdee0cf4330c a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "Does the ISO country code, determined from the value of dwc:country, equal the value of dwc:countryCode?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b23110e7-1be7-444a-a677-cdee0cf4330c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://datahub.io/core/country-list>,
         <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://www.iso.org/iso-3166-country-codes.html> ;

@@ -48,6 +48,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/30db5994-81fa-4684-ac54-cfc226209d27-2024-08-19"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-19"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element ActedUpon dwc:country"
@@ -74,6 +85,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/Consulted"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/d24a7b73-972a-4fdd-a790-91acb5fcf725-2024-09-27"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-09-27"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element Consulted dwc:countryCode"
@@ -99,6 +121,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/23e9d641-1349-4998-bdff-117e32c30eff",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/23e9d641-1349-4998-bdff-117e32c30eff-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -142,6 +175,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -176,6 +220,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "COMPLIANT if dwc:country is bdqval:NotEmpty or dwc:countryCode has a value of \"XZ\" and either dwc:country is bdqval:Empty or has a value of \"High seas\"; otherwise NOT_COMPLIANT"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/34ef6ea2-de06-4d2c-88fe-2c779de8f7db-2024-09-27"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-09-27"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -215,6 +270,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Is there a value in dwc:country?"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/6ce2b2b4-6afe-4d13-82a0-390d31ade01c-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
       }
     ],
     "http://purl.org/dc/terms/references": [

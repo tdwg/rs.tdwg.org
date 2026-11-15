@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/2afcbce1-7cf8-4c5c-9df4-d267dc2df704> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2afcbce1-7cf8-4c5c-9df4-d267dc2df704-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:2afcbce1-7cf8-4c5c-9df4-d267dc2df704> ;
     skos:historyNote "Source: ALA, GBIF, iDigBio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1005",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -55,18 +59,24 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"10m-admin-1 boundaries UNION with Exclusive Economic Zones\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09> ;
     bdqffdq:hasArgumentValue "10m-admin-1 boundaries UNION with Exclusive Economic Zones" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/argument/972320cd-3ba3-4076-a8eb-f797095509cd> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:spatialBufferInMeters:\"3000\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/972320cd-3ba3-4076-a8eb-f797095509cd-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:972320cd-3ba3-4076-a8eb-f797095509cd> ;
     bdqffdq:hasArgumentValue "3000" ;
     bdqffdq:hasParameter bdqval:spatialBufferInMeters .
 
 <https://rs.tdwg.org/bdqtest/informationelement/6f6a46c6-9979-41a2-83c2-fd196e89c8c1> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/6f6a46c6-9979-41a2-83c2-fd196e89c8c1-2024-08-28> ;
+    dcterms:modified "2024-08-28"^^xsd:date ;
     owl:sameAs <urn:uuid:6f6a46c6-9979-41a2-83c2-fd196e89c8c1> ;
     skos:prefLabel "Information Element ActedUpon dwc:countryCode, dwc:decimalLatitude, dwc:decimalLongitude" ;
     bdqffdq:composedOf dwc:countryCode,
@@ -76,6 +86,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/4343a7e0-7f0b-434d-99d4-e939ecb16e1f> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if one or more of dwc:decimalLatitude, dwc:decimalLongitude, or dwc:countryCode are bdqval:Empty or invalid; COMPLIANT if the geographic coordinates fall on or within the boundary defined by the union of the boundary of the country from dwc:countryCode plus it's Exclusive Economic Zone as found in the bdqval:sourceAuthority, if any, plus an exterior buffer given by bdqval:spatialBufferInMeters; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"10m-admin-1 boundaries UNION with Exclusive Economic Zones\" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/] spatial UNION [https://www.marineregions.org/downloads.php#marbound]},bdqval:spatialBufferInMeters default = \"3000\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/4343a7e0-7f0b-434d-99d4-e939ecb16e1f-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:4343a7e0-7f0b-434d-99d4-e939ecb16e1f> ;
     skos:example "dwc:countryCode=\"AR\", dwc:decimalLatitude=\"-41.0525925872862\", dwc:decimalLongitude=\"-71.5310546742521\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"Coordinates match dwc:countryCode\"",
         "dwc:countryCode=\"CL\", dwc:decimalLatitude=\"-41.0525925872862\", dwc:decimalLongitude=\"-71.5310546742521\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"Coordinates are in Argentina, not Chile\"",
@@ -104,6 +116,8 @@ bdqval:spatialBufferInMeters a bdqffdq:Parameter .
 bdqtest:adb27d29-9f0d-4d52-b760-a77ba57a69c9 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "Do the geographic coordinates fall on or within the boundaries of the territory given in dwc:countryCode or its Exclusive Economic Zone?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/adb27d29-9f0d-4d52-b760-a77ba57a69c9-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
         <https://doi.org/10.14284/628>,
         <https://doi.org/10.15468/doc-gg7h-s853>,

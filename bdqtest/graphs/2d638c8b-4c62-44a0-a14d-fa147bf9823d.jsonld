@@ -48,6 +48,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/Consulted"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/0c598386-f49e-40b3-bbcc-b217e7d2b449-2024-08-30"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-30"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "Information Element Consulted dwc:verbatimElevation"
@@ -73,6 +84,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/informationelement/3d5994c8-29df-4399-965c-c2c596a6767f",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/ActedUpon"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/informationelement/version/3d5994c8-29df-4399-965c-c2c596a6767f-2023-09-18"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-09-18"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -102,6 +124,17 @@
     "@id": "https://rs.tdwg.org/bdqtest/method/47bdaece-0c20-4ba3-b453-4c78b92b4c94",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/47bdaece-0c20-4ba3-b453-4c78b92b4c94-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -145,6 +178,17 @@
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"
     ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-04-24"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns"
@@ -174,6 +218,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumElevationInMeters or dwc:maximumElevationInMeters are bdqval:NotEmpty or dwc:verbatimElevation is bdqval:Empty; FILLED_IN the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be unambiguously interpreted from dwc:verbatimElevation; otherwise NOT_AMENDED"
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/84195393-4797-465f-bfc1-b764df67c5c2-2024-08-30"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-08-30"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -213,6 +268,17 @@
     "http://purl.org/dc/terms/description": [
       {
         "@value": "Proposes an amendment or amendments to the values of dwc:minimumElevationInMeters and dwc:maximumElevationInMeters if they can be interpreted from dwc:verbatimElevation."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/2d638c8b-4c62-44a0-a14d-fa147bf9823d-2025-03-07"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-07"
       }
     ],
     "http://purl.org/dc/terms/references": [

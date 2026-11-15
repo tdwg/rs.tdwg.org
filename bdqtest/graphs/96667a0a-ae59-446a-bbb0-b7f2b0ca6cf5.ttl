@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT with Specification Specification for: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1021",
@@ -24,12 +26,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 .
@@ -45,12 +51,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/a558165b-7014-4029-839f-33badcb0842f> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:defaultOccurrenceStatus:\"present\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/a558165b-7014-4029-839f-33badcb0842f-2024-11-13> ;
+    dcterms:modified "2024-11-13"^^xsd:date ;
     owl:sameAs <urn:uuid:a558165b-7014-4029-839f-33badcb0842f> ;
     bdqffdq:hasArgumentValue "present" ;
     bdqffdq:hasParameter bdqval:defaultOccurrenceStatus .
 
 <https://rs.tdwg.org/bdqtest/informationelement/2c32cfc9-66d2-4512-9ebb-b3253c7b5dd5> a bdqffdq:Consulted ;
     rdfs:label "Information Element Consulted dwc:individualCount, dwc:organismQuantity" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/2c32cfc9-66d2-4512-9ebb-b3253c7b5dd5-2024-11-13> ;
+    dcterms:modified "2024-11-13"^^xsd:date ;
     owl:sameAs <urn:uuid:2c32cfc9-66d2-4512-9ebb-b3253c7b5dd5> ;
     skos:prefLabel "Information Element Consulted dwc:individualCount, dwc:organismQuantity" ;
     bdqffdq:composedOf dwc:individualCount,
@@ -58,6 +68,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/e251108c-ae49-46fa-b5db-d955fd0f4fa4> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:occurrenceStatus" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/e251108c-ae49-46fa-b5db-d955fd0f4fa4-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:e251108c-ae49-46fa-b5db-d955fd0f4fa4> ;
     skos:prefLabel "Information Element ActedUpon dwc:occurrenceStatus" ;
     bdqffdq:composedOf dwc:occurrenceStatus .
@@ -65,6 +77,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/9c150f88-1fc4-47b7-b826-f6357c104946> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:occurrenceStatus is bdqval:NotEmpty; FILLED_IN the value of dwc:occurrenceStatus using the bdqval:defaultOccurrenceStatus Parameter value if dwc:occurrenceStatus,dwc:individualCount and dwc:organismQuantity are bdqval:Empty; otherwise NOT_AMENDED bdqval:defaultOccurrenceStatus default = \"present\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/9c150f88-1fc4-47b7-b826-f6357c104946-2024-11-13> ;
+    dcterms:modified "2024-11-13"^^xsd:date ;
     owl:sameAs <urn:uuid:9c150f88-1fc4-47b7-b826-f6357c104946> ;
     skos:example "dwc:occurrenceStatus=\"\", dwc:individualCount=\"\", dwc:organismQuantity=\"\": Response.status=FILLED_IN, Response.result=dwc:occurrenceStatus=\"present\", Response.comment=\"dwc:occurrenceStatus is bdqval:Empty; assumed \"present\"\"",
         "dwc:occurrenceStatus=\"X\", dwc:individualCount=\"10\", dwc:organismQuantity=\"\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:occurrenceStatus is bdqval:NotEmpty\"" ;
@@ -83,6 +97,8 @@ bdqval:defaultOccurrenceStatus a bdqffdq:Parameter .
 bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT" ;
     dcterms:description "Proposes an amendment of the value of dwc:occurrenceStatus to the default parameter value if dwc:occurrenceStatus, dwc:individualCount and dwc:organismQuantity are empty." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/75" ;
     skos:note "There is currently a capitalization mismatch between https://dwc.tdwg.org/terms/#dwc:occurrenceStatus recommended values and the GBIF vocabulary at (https://api.gbif.org/v1/vocabularies/OccurrenceStatus/concepts)." ;

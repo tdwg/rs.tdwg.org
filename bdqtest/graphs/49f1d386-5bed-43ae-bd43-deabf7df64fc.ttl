@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/f6c58791-279d-458b-b4ee-058a73a002ee> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY with Specification for: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f6c58791-279d-458b-b4ee-058a73a002ee-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:f6c58791-279d-458b-b4ee-058a73a002ee> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3055",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -30,6 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -46,6 +52,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:scientificNameAuthorship" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c-2024-02-04> ;
+    dcterms:modified "2024-02-04"^^xsd:date ;
     owl:sameAs <urn:uuid:ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c> ;
     skos:prefLabel "Information Element ActedUpon dwc:scientificNameAuthorship" ;
     bdqffdq:composedOf dwc:scientificNameAuthorship .
@@ -53,6 +61,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dwc:scientificNameAuthorship is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b-2024-02-04> ;
+    dcterms:modified "2024-02-04"^^xsd:date ;
     owl:sameAs <urn:uuid:e9ffc3b0-0fb8-4a7c-a588-a00085ba980b> ;
     skos:example "dwc:scientificNameAuthorship=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificNameAuthorship is bdqval:Empty\"",
         "dwc:scientificNameAuthorship=\"(Györfi, 1952)\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:scientificNameAuthorship is bdqval:NotEmpty\"" ;
@@ -68,6 +78,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:49f1d386-5bed-43ae-bd43-deabf7df64fc a bdqffdq:Validation ;
     rdfs:label "VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:scientificNameAuthorship?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/49f1d386-5bed-43ae-bd43-deabf7df64fc-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:49f1d386-5bed-43ae-bd43-deabf7df64fc> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/244" ;
     skos:note "" ;

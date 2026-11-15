@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/9409ef24-baf9-4dfc-b4a8-7b6459cc1d54> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_EVENTTEMPORAL_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_EVENTTEMPORAL_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9409ef24-baf9-4dfc-b4a8-7b6459cc1d54-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:9409ef24-baf9-4dfc-b4a8-7b6459cc1d54> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Completeness CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:d3e282a1-3ff3-4ed0-bd08-fa23b6b8c161 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/b6c0e87e-4b9a-4f6b-bbaf-9cf23b02ddee> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_EVENTTEMPORAL_NOTEMPTY.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/b6c0e87e-4b9a-4f6b-bbaf-9cf23b02ddee-2023-09-30> ;
+    dcterms:modified "2023-09-30"^^xsd:date ;
     owl:sameAs <urn:uuid:b6c0e87e-4b9a-4f6b-bbaf-9cf23b02ddee> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_EVENTTEMPORAL_NOTEMPTY across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_EVENTTEMPORAL_NOTEMPTY.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/5e402929-b1c0-48e2-aaf6-cc6e365c9c42> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_EVENTTEMPORAL_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_EVENTTEMPORAL_NOTEMPTY in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/5e402929-b1c0-48e2-aaf6-cc6e365c9c42-2023-09-30> ;
+    dcterms:modified "2023-09-30"^^xsd:date ;
     owl:sameAs <urn:uuid:5e402929-b1c0-48e2-aaf6-cc6e365c9c42> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:d3e282a1-3ff3-4ed0-bd08-fa23b6b8c161 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_EVENTTEMPORAL_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_EVENTTEMPORAL_NOTEMPTY in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d3e282a1-3ff3-4ed0-bd08-fa23b6b8c161-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:d3e282a1-3ff3-4ed0-bd08-fa23b6b8c161> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

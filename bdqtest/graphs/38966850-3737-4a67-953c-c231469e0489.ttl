@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/d7d0977d-c8d4-4f76-9fec-5da1c0b242f7> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRYCODE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRYCODE_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d7d0977d-c8d4-4f76-9fec-5da1c0b242f7-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:d7d0977d-c8d4-4f76-9fec-5da1c0b242f7> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:38966850-3737-4a67-953c-c231469e0489 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/fb80d5bf-7777-4d88-b09f-116a38ab7bfa> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COUNTRYCODE_STANDARD.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/fb80d5bf-7777-4d88-b09f-116a38ab7bfa-2024-09-19> ;
+    dcterms:modified "2024-09-19"^^xsd:date ;
     owl:sameAs <urn:uuid:fb80d5bf-7777-4d88-b09f-116a38ab7bfa> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_COUNTRYCODE_STANDARD across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_COUNTRYCODE_STANDARD.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/4365c5a8-2a44-493c-acbc-c6ed57b2c6ad> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRYCODE_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_COUNTRYCODE_STANDARD in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/4365c5a8-2a44-493c-acbc-c6ed57b2c6ad-2024-09-19> ;
+    dcterms:modified "2024-09-19"^^xsd:date ;
     owl:sameAs <urn:uuid:4365c5a8-2a44-493c-acbc-c6ed57b2c6ad> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:38966850-3737-4a67-953c-c231469e0489 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRYCODE_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_COUNTRYCODE_STANDARD in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/38966850-3737-4a67-953c-c231469e0489-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:38966850-3737-4a67-953c-c231469e0489> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

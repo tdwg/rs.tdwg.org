@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test Conformance Parameterized CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:1ba18c8b-66a6-47d9-a709-404439332dba .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/5cdd4160-7979-4e15-be8f-c8e3cc88e472> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_MINELEVATION_INRANGE.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/5cdd4160-7979-4e15-be8f-c8e3cc88e472-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:5cdd4160-7979-4e15-be8f-c8e3cc88e472> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_MINELEVATION_INRANGE across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_MINELEVATION_INRANGE.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/657e5f22-d146-4109-8f57-676fe7eb777f> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE" ;
     dcterms:description "COMPLETE if every VALIDATION_MINELEVATION_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/657e5f22-d146-4109-8f57-676fe7eb777f-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:657e5f22-d146-4109-8f57-676fe7eb777f> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:1ba18c8b-66a6-47d9-a709-404439332dba a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE" ;
     dcterms:description "Measure if all VALIDATION_MINELEVATION_INRANGE in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/1ba18c8b-66a6-47d9-a709-404439332dba-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:1ba18c8b-66a6-47d9-a709-404439332dba> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;

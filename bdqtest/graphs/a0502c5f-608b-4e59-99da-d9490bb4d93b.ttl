@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/7647f9b5-28e4-4c31-948e-80b984422b0a> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_YEAR_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_YEAR_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7647f9b5-28e4-4c31-948e-80b984422b0a-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:7647f9b5-28e4-4c31-948e-80b984422b0a> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Conformance Parameterized CORE" ;
@@ -20,18 +22,24 @@
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:a0502c5f-608b-4e59-99da-d9490bb4d93b .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:a0502c5f-608b-4e59-99da-d9490bb4d93b .
 
 <https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:SDM-Trees" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
     bdqffdq:hasUseCase bdquc:SDM-Trees ;
     bdqffdq:includedInPolicy bdqtest:a0502c5f-608b-4e59-99da-d9490bb4d93b .
@@ -47,6 +55,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/904e3e78-82d3-4d8a-90db-2be4bead51cc> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_YEAR_INRANGE.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/904e3e78-82d3-4d8a-90db-2be4bead51cc-2024-08-23> ;
+    dcterms:modified "2024-08-23"^^xsd:date ;
     owl:sameAs <urn:uuid:904e3e78-82d3-4d8a-90db-2be4bead51cc> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_YEAR_INRANGE across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_YEAR_INRANGE.Response" ;
@@ -56,6 +66,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/4bb3b33e-d8fd-44d0-96f2-7a0f8b373e46> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_YEAR_INRANGE" ;
     dcterms:description "COMPLETE if every VALIDATION_YEAR_INRANGE in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/4bb3b33e-d8fd-44d0-96f2-7a0f8b373e46-2024-08-23> ;
+    dcterms:modified "2024-08-23"^^xsd:date ;
     owl:sameAs <urn:uuid:4bb3b33e-d8fd-44d0-96f2-7a0f8b373e46> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -73,6 +85,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:a0502c5f-608b-4e59-99da-d9490bb4d93b a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_YEAR_INRANGE" ;
     dcterms:description "Measure if all VALIDATION_YEAR_INRANGE in a record set are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/a0502c5f-608b-4e59-99da-d9490bb4d93b-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:a0502c5f-608b-4e59-99da-d9490bb4d93b> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

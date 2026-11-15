@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/b4b92d16-40bf-4a3d-a802-112e9c282f23> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASSIFICATION_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASSIFICATION_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/b4b92d16-40bf-4a3d-a802-112e9c282f23-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:b4b92d16-40bf-4a3d-a802-112e9c282f23> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Consistency Parameterized CORE" ;
@@ -20,12 +22,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:a56fb342-c8ee-4611-8aab-e6c6357e8875 .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:a56fb342-c8ee-4611-8aab-e6c6357e8875 .
@@ -41,6 +47,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/264375b3-9ecd-4a3e-bad2-e74fbab0dcf4> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_CLASSIFICATION_CONSISTENT.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/264375b3-9ecd-4a3e-bad2-e74fbab0dcf4-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:264375b3-9ecd-4a3e-bad2-e74fbab0dcf4> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_CLASSIFICATION_CONSISTENT across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_CLASSIFICATION_CONSISTENT.Response" ;
@@ -50,6 +58,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/0f948339-0ec9-451f-b6ea-6272404be2c1> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASSIFICATION_CONSISTENT" ;
     dcterms:description "Count the number of VALIDATION_CLASSIFICATION_CONSISTENT in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/0f948339-0ec9-451f-b6ea-6272404be2c1-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:0f948339-0ec9-451f-b6ea-6272404be2c1> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -64,6 +74,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:a56fb342-c8ee-4611-8aab-e6c6357e8875 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASSIFICATION_CONSISTENT" ;
     dcterms:description "Count the number of VALIDATION_CLASSIFICATION_CONSISTENT in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/a56fb342-c8ee-4611-8aab-e6c6357e8875-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:a56fb342-c8ee-4611-8aab-e6c6357e8875> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

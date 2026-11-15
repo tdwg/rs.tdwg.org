@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/5c06b6ae-7229-49cc-a0e8-4c0bae153b4b> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5c06b6ae-7229-49cc-a0e8-4c0bae153b4b-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:5c06b6ae-7229-49cc-a0e8-4c0bae153b4b> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:SDM-Trees" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
     bdqffdq:hasUseCase bdquc:SDM-Trees ;
     bdqffdq:includedInPolicy bdqtest:9d5be694-f5da-465d-8c7e-27e6dac69f9f .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/cbb53f33-ddc6-444c-b2f1-c06bb6759225> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LICENSE_STANDARD.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/cbb53f33-ddc6-444c-b2f1-c06bb6759225-2024-03-21> ;
+    dcterms:modified "2024-03-21"^^xsd:date ;
     owl:sameAs <urn:uuid:cbb53f33-ddc6-444c-b2f1-c06bb6759225> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_LICENSE_STANDARD across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LICENSE_STANDARD.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/68e86c5a-f444-4aff-b54c-47bc100bcf4b> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_LICENSE_STANDARD in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/68e86c5a-f444-4aff-b54c-47bc100bcf4b-2024-03-21> ;
+    dcterms:modified "2024-03-21"^^xsd:date ;
     owl:sameAs <urn:uuid:68e86c5a-f444-4aff-b54c-47bc100bcf4b> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:SDM-Trees a bdqffdq:UseCase ;
 bdqtest:9d5be694-f5da-465d-8c7e-27e6dac69f9f a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_LICENSE_STANDARD in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/9d5be694-f5da-465d-8c7e-27e6dac69f9f-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:9d5be694-f5da-465d-8c7e-27e6dac69f9f> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

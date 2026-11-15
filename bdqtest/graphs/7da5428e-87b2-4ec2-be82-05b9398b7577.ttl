@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/f7719d75-d067-401b-af69-92cf82b12ba1> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_POLYNOMIAL_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_POLYNOMIAL_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f7719d75-d067-401b-af69-92cf82b12ba1-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:f7719d75-d067-401b-af69-92cf82b12ba1> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test Consistency CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:7da5428e-87b2-4ec2-be82-05b9398b7577 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/54ae4594-8bf0-47b5-9977-49c73ce10a74> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_POLYNOMIAL_CONSISTENT.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/54ae4594-8bf0-47b5-9977-49c73ce10a74-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:54ae4594-8bf0-47b5-9977-49c73ce10a74> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_POLYNOMIAL_CONSISTENT across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_POLYNOMIAL_CONSISTENT.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/88fe8922-3eb1-4faa-b4aa-fe3daf742438> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_POLYNOMIAL_CONSISTENT" ;
     dcterms:description "Count the number of VALIDATION_POLYNOMIAL_CONSISTENT in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/88fe8922-3eb1-4faa-b4aa-fe3daf742438-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:88fe8922-3eb1-4faa-b4aa-fe3daf742438> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:7da5428e-87b2-4ec2-be82-05b9398b7577 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_POLYNOMIAL_CONSISTENT" ;
     dcterms:description "Count the number of VALIDATION_POLYNOMIAL_CONSISTENT in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7da5428e-87b2-4ec2-be82-05b9398b7577-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:7da5428e-87b2-4ec2-be82-05b9398b7577> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

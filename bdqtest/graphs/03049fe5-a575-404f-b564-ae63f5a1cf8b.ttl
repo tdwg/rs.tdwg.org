@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/3dcd847e-25bf-4ae2-8428-8e74e054d9e6> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MEASURE_AMENDMENTS_PROPOSED with Specification Specification for: MEASURE_AMENDMENTS_PROPOSED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3dcd847e-25bf-4ae2-8428-8e74e054d9e6-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:3dcd847e-25bf-4ae2-8428-8e74e054d9e6> ;
     skos:historyNote "Source: John Wieczorek" ;
     skos:note "TG2 Measure NAME SPACE TIME OTHER Test CORE" ;
@@ -20,12 +22,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:03049fe5-a575-404f-b564-ae63f5a1cf8b .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:03049fe5-a575-404f-b564-ae63f5a1cf8b .
@@ -38,6 +44,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/fd84c789-375d-4c5a-8b5a-2ecf9d107fa1> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AllAmendmentTestsRunOnSingleRecord" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/fd84c789-375d-4c5a-8b5a-2ecf9d107fa1-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fd84c789-375d-4c5a-8b5a-2ecf9d107fa1> ;
     skos:prefLabel "Information Element ActedUpon bdqval:AllAmendmentTestsRunOnSingleRecord" ;
     bdqffdq:composedOf bdqval:AllAmendmentTestsRunOnSingleRecord .
@@ -45,6 +53,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/7e365897-cfc0-413e-a613-99c6050edc4b> a bdqffdq:Specification ;
     rdfs:label "Specification for: MEASURE_AMENDMENTS_PROPOSED" ;
     dcterms:description "RUN_HAS_RESULT with the result being the number of distinct AMENDMENT Tests run on the record that have Response.status=AMENDED or Response.status=FILLED_IN." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/7e365897-cfc0-413e-a613-99c6050edc4b-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:7e365897-cfc0-413e-a613-99c6050edc4b> ;
     skos:example "[Response.status=RUN_HAS_RESULT, Response.result=\"17\", Response.comment=\"17 AMENDMENT Tests had Response.status=AMENDED or FILLED_IN.\"]" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -59,6 +69,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:03049fe5-a575-404f-b564-ae63f5a1cf8b a bdqffdq:Measure ;
     rdfs:label "MEASURE_AMENDMENTS_PROPOSED" ;
     dcterms:description "A count of the distinct AMENDMENT Tests run on a record that have Response.status=AMENDED or FILLED_IN." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/03049fe5-a575-404f-b564-ae63f5a1cf8b-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:03049fe5-a575-404f-b564-ae63f5a1cf8b> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/65" ;
     skos:note "If no AMENDMENT Tests were run on the record, the result is 0." ;

@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/fd15e0a4-f49d-4566-b700-a9b46c284e68> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD with Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/fd15e0a4-f49d-4566-b700-a9b46c284e68-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:fd15e0a4-f49d-4566-b700-a9b46c284e68> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1694",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -46,12 +50,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/8aac7359-311a-405f-8117-79bb4873011d> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"Degree of Establishment Controlled Vocabulary List of Terms\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/8aac7359-311a-405f-8117-79bb4873011d-2024-02-09> ;
+    dcterms:modified "2024-02-09"^^xsd:date ;
     owl:sameAs <urn:uuid:8aac7359-311a-405f-8117-79bb4873011d> ;
     bdqffdq:hasArgumentValue "Degree of Establishment Controlled Vocabulary List of Terms" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/c5abcb06-a1d0-4ed5-9513-c04c194293e6> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:degreeOfEstablishment" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/c5abcb06-a1d0-4ed5-9513-c04c194293e6-2024-02-09> ;
+    dcterms:modified "2024-02-09"^^xsd:date ;
     owl:sameAs <urn:uuid:c5abcb06-a1d0-4ed5-9513-c04c194293e6> ;
     skos:prefLabel "Information Element ActedUpon dwc:degreeOfEstablishment" ;
     bdqffdq:composedOf dwc:degreeOfEstablishment .
@@ -59,6 +67,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/fec2103b-5d46-4723-b2ec-8c8119b44aaf> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:degreeOfEstablishment is bdqval:Empty; COMPLIANT if the value of dwc:degreeOfEstablishment is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = \"Degree of Establishment Controlled Vocabulary List of Terms\" {[https://dwc.tdwg.org/doe/]} {GBIF vocabulary API [https://api.gbif.org/v1/vocabularies/DegreeOfEstablishment/concepts]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/fec2103b-5d46-4723-b2ec-8c8119b44aaf-2024-02-09> ;
+    dcterms:modified "2024-02-09"^^xsd:date ;
     owl:sameAs <urn:uuid:fec2103b-5d46-4723-b2ec-8c8119b44aaf> ;
     skos:example "dwc:degreeOfEstablishment=\"cultivated\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:degreeOfEstablishment found in the bdqval:sourceAuthority\"",
         "dwc:degreeOfEstablishment=\"grown in garden\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:degreeOfEstablishment not found in the bdqval:sourceAuthority\"" ;
@@ -74,6 +84,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:060e7734-607d-4737-8b2c-bfa17788bf1a a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DEGREEOFESTABLISHMENT_STANDARD" ;
     dcterms:description "Does the value of dwc:degreeOfEstablishment occur in the bdqval:sourceAuthority?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/060e7734-607d-4737-8b2c-bfa17788bf1a-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <http://dwc.tdwg.org/doe/>,
         <https://doi.org/10.3897/biss.3.38084> ;
     owl:sameAs <urn:uuid:060e7734-607d-4737-8b2c-bfa17788bf1a> ;

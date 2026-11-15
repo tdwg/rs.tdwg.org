@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/908fc823-75a9-437e-be7c-5c72cd6b149e> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_DECIMALLONGITUDE_NOTEMPTY with Specification for: VALIDATION_DECIMALLONGITUDE_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/908fc823-75a9-437e-be7c-5c72cd6b149e-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:908fc823-75a9-437e-be7c-5c72cd6b149e> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2273",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
@@ -22,6 +24,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -29,6 +33,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -36,6 +42,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
     bdqffdq:hasUseCase bdquc:SDM-Trees ;
@@ -55,6 +63,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/bda769d4-d876-4bd0-8026-89bed5aad0eb> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:decimalLongitude" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/bda769d4-d876-4bd0-8026-89bed5aad0eb-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:bda769d4-d876-4bd0-8026-89bed5aad0eb> ;
     skos:prefLabel "Information Element ActedUpon dwc:decimalLongitude" ;
     bdqffdq:composedOf dwc:decimalLongitude .
@@ -62,6 +72,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/c893ee17-ee8b-43ec-bf17-97ac814ea502> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_DECIMALLONGITUDE_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dwc:decimalLongitude is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/c893ee17-ee8b-43ec-bf17-97ac814ea502-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:c893ee17-ee8b-43ec-bf17-97ac814ea502> ;
     skos:example "dwc:decimalLongitude=\" \": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:decimalLongitude is bdqval:Empty\"",
         "dwc:decimalLongitude=\"0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:decimalLongitude is bdqval:NotEmpty\"" ;
@@ -80,6 +92,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:9beb9442-d942-4f42-8b6a-fcea01ee086a a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DECIMALLONGITUDE_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:decimalLongitude?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/9beb9442-d942-4f42-8b6a-fcea01ee086a-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:9beb9442-d942-4f42-8b6a-fcea01ee086a> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/96" ;

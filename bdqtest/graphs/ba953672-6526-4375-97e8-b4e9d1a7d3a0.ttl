@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/a5a657d0-7c16-4938-b542-057ffe4150cd> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a5a657d0-7c16-4938-b542-057ffe4150cd-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:a5a657d0-7c16-4938-b542-057ffe4150cd> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:ba953672-6526-4375-97e8-b4e9d1a7d3a0 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/3ea77d56-e4b4-45b2-88d7-c6ab7c1d0f36> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DEGREEOFESTABLISHMENT_STANDARD.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/3ea77d56-e4b4-45b2-88d7-c6ab7c1d0f36-2024-02-09> ;
+    dcterms:modified "2024-02-09"^^xsd:date ;
     owl:sameAs <urn:uuid:3ea77d56-e4b4-45b2-88d7-c6ab7c1d0f36> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_DEGREEOFESTABLISHMENT_STANDARD across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DEGREEOFESTABLISHMENT_STANDARD.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/50d4e600-ca37-4f18-8022-e7646f622fe2> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD" ;
     dcterms:description "COMPLETE if every VALIDATION_DEGREEOFESTABLISHMENT_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/50d4e600-ca37-4f18-8022-e7646f622fe2-2024-02-09> ;
+    dcterms:modified "2024-02-09"^^xsd:date ;
     owl:sameAs <urn:uuid:50d4e600-ca37-4f18-8022-e7646f622fe2> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Alien-Species a bdqffdq:UseCase ;
 bdqtest:ba953672-6526-4375-97e8-b4e9d1a7d3a0 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD" ;
     dcterms:description "Measure if all VALIDATION_DEGREEOFESTABLISHMENT_STANDARD in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ba953672-6526-4375-97e8-b4e9d1a7d3a0-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:ba953672-6526-4375-97e8-b4e9d1a7d3a0> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;

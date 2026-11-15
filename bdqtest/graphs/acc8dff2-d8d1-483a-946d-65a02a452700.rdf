@@ -9,6 +9,8 @@
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/acc8dff2-d8d1-483a-946d-65a02a452700">
     <dcterms:description>Is there a value in dwc:establishmentMeans?</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/acc8dff2-d8d1-483a-946d-65a02a452700-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Issue"/>
     <rdfs:label>ISSUE_ESTABLISHMENTMEANS_NOTEMPTY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:acc8dff2-d8d1-483a-946d-65a02a452700"/>
@@ -29,31 +31,9 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/c69007a2-6391-463e-96bc-baa18d24beb7">
-    <dcterms:description>POTENTIAL_ISSUE if dwc:establishmentMeans is bdqval:NotEmpty; otherwise NOT_ISSUE</dcterms:description>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
-    <rdfs:label>Specification for: ISSUE_ESTABLISHMENTMEANS_NOTEMPTY</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:c69007a2-6391-463e-96bc-baa18d24beb7"/>
-    <skos:example>dwc:establishmentMeans="": Response.status=RUN_HAS_RESULT, Response.result=NOT_ISSUE, Response.comment="dwc:establishmentMeans is bdqval:Empty"</skos:example>
-    <skos:example>dwc:establishmentMeans="?": Response.status=RUN_HAS_RESULT, Response.result=POTENTIAL_ISSUE, Response.comment="dwc:establishmentMeans is bdqval:NotEmpty"</skos:example>
-    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
-    <bdqffdq:hasExpectedResponse>POTENTIAL_ISSUE if dwc:establishmentMeans is bdqval:NotEmpty; otherwise NOT_ISSUE</bdqffdq:hasExpectedResponse>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"/>
-    <rdfs:label>IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/acc8dff2-d8d1-483a-946d-65a02a452700"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/09023be7-9359-48a8-873b-3e65d43427ba">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
-    <rdfs:label>Information Element ActedUpon dwc:establishmentMeans</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:09023be7-9359-48a8-873b-3e65d43427ba"/>
-    <skos:prefLabel>Information Element ActedUpon dwc:establishmentMeans</skos:prefLabel>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/establishmentMeans"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/8fc9b64a-557b-46ee-aa51-d23b6cf26d75">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/8fc9b64a-557b-46ee-aa51-d23b6cf26d75-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssueMethod"/>
     <rdfs:label>IssueMethod: ISSUE_ESTABLISHMENTMEANS_NOTEMPTY with Specification Specification for: ISSUE_ESTABLISHMENTMEANS_NOTEMPTY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:8fc9b64a-557b-46ee-aa51-d23b6cf26d75"/>
@@ -65,11 +45,30 @@
     <bdqffdq:forIssue rdf:resource="https://rs.tdwg.org/bdqtest/terms/acc8dff2-d8d1-483a-946d-65a02a452700"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/c69007a2-6391-463e-96bc-baa18d24beb7"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/NotEmpty">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
-    <rdfs:label>NotEmpty</rdfs:label>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/09023be7-9359-48a8-873b-3e65d43427ba">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/09023be7-9359-48a8-873b-3e65d43427ba-2023-09-18"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:establishmentMeans</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:09023be7-9359-48a8-873b-3e65d43427ba"/>
+    <skos:prefLabel>Information Element ActedUpon dwc:establishmentMeans</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/establishmentMeans"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/c69007a2-6391-463e-96bc-baa18d24beb7">
+    <dcterms:description>POTENTIAL_ISSUE if dwc:establishmentMeans is bdqval:NotEmpty; otherwise NOT_ISSUE</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/c69007a2-6391-463e-96bc-baa18d24beb7-2023-09-18"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
+    <rdfs:label>Specification for: ISSUE_ESTABLISHMENTMEANS_NOTEMPTY</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:c69007a2-6391-463e-96bc-baa18d24beb7"/>
+    <skos:example>dwc:establishmentMeans="": Response.status=RUN_HAS_RESULT, Response.result=NOT_ISSUE, Response.comment="dwc:establishmentMeans is bdqval:Empty"</skos:example>
+    <skos:example>dwc:establishmentMeans="?": Response.status=RUN_HAS_RESULT, Response.result=POTENTIAL_ISSUE, Response.comment="dwc:establishmentMeans is bdqval:NotEmpty"</skos:example>
+    <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
+    <bdqffdq:hasExpectedResponse>POTENTIAL_ISSUE if dwc:establishmentMeans is bdqval:NotEmpty; otherwise NOT_ISSUE</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/c06368d9-fff3-4b51-8283-e0e4803d1cf3">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/c06368d9-fff3-4b51-8283-e0e4803d1cf3-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"/>
     <rdfs:label>IssuePolicy: (2) issues  in UseCase bdquc:Alien-Species</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:c06368d9-fff3-4b51-8283-e0e4803d1cf3"/>
@@ -79,6 +78,19 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"/>
+    <rdfs:label>IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/acc8dff2-d8d1-483a-946d-65a02a452700"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/NotEmpty">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
+    <rdfs:label>NotEmpty</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

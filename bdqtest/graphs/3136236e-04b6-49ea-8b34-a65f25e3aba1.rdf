@@ -7,11 +7,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/180c1a90-94c3-48b5-a9fe-4223d6f2bd60">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/180c1a90-94c3-48b5-a9fe-4223d6f2bd60-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
     <rdfs:label>ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification for: VALIDATION_LICENSE_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:180c1a90-94c3-48b5-a9fe-4223d6f2bd60"/>
@@ -32,6 +30,8 @@
     <rdfs:label>Standard</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/7308bf21-2648-40d8-bb2c-3f36d2789552">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/7308bf21-2648-40d8-bb2c-3f36d2789552-2024-03-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-21</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
     <rdfs:label>Default value for bdqval:sourceAuthority:"Creative Commons 4.0 Licenses or CC0"</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:7308bf21-2648-40d8-bb2c-3f36d2789552"/>
@@ -40,6 +40,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/2a9dbd16-d427-471e-8db5-c1de2b2cf030">
     <dcterms:description>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dcterms:license is bdqval:Empty; COMPLIANT if the value of the term dcterms:license is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = "Creative Commons 4.0 Licenses or CC0" {[https://creativecommons.org/]} { Regular Expression ^(http(s){0,1}://creativecommons.org/licenses/(by&amp;#124;by-sa&amp;#124;by-nc&amp;#124;by-nc-sa&amp;#124;by-nd&amp;#124;by-nc-nd)/4.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;mi&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})&amp;#124;(http(s){0,1}://creativecommons.org/publicdomain/zero/1.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})))$ }</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/2a9dbd16-d427-471e-8db5-c1de2b2cf030-2024-03-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-21</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
     <rdfs:label>Specification for: VALIDATION_LICENSE_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:2a9dbd16-d427-471e-8db5-c1de2b2cf030"/>
@@ -49,19 +51,14 @@
     <bdqffdq:hasAuthoritiesDefaults>bdqval:sourceAuthority default = "Creative Commons 4.0 Licenses or CC0" {[https://creativecommons.org/]} { Regular Expression ^(http(s){0,1}://creativecommons.org/licenses/(by&amp;#124;by-sa&amp;#124;by-nc&amp;#124;by-nc-sa&amp;#124;by-nd&amp;#124;by-nc-nd)/4.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;mi&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})&amp;#124;(http(s){0,1}://creativecommons.org/publicdomain/zero/1.0/((deed&amp;#124;legalcode)(.(id&amp;#124;eu&amp;#124;da&amp;#124;de&amp;#124;en&amp;#124;es&amp;#124;fr&amp;#124;fy&amp;#124;hr&amp;#124;it&amp;#124;lv&amp;#124;lt&amp;#124;ni&amp;#124;no&amp;#124;pl&amp;#124;pt&amp;#124;ro&amp;#124;si&amp;#124;fi&amp;#124;sv&amp;#124;tr&amp;#124;cs&amp;#124;el&amp;#124;ru&amp;#124;uk&amp;#124;ar&amp;#124;jp&amp;#124;zh-hans&amp;#124;zh-hant&amp;#124;ko)){0,1})))$ }</bdqffdq:hasAuthoritiesDefaults>
     <bdqffdq:hasExpectedResponse>EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dcterms:license is bdqval:Empty; COMPLIANT if the value of the term dcterms:license is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT</bdqffdq:hasExpectedResponse>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/d3daaab7-b042-4dc7-a92f-77f19988f351">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
-    <rdfs:label>Information Element ActedUpon dcterms:license</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351"/>
-    <skos:prefLabel>Information Element ActedUpon dcterms:license</skos:prefLabel>
-    <bdqffdq:composedOf rdf:resource="http://purl.org/dc/terms/license"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/3136236e-04b6-49ea-8b34-a65f25e3aba1">
     <dcterms:description>Does the value of dcterms:license occur in bdqval:sourceAuthority?</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <dcterms:references rdf:resource="https://creativecommons.org/licenses/"/>
     <dcterms:references rdf:resource="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
@@ -76,10 +73,18 @@
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-21</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/d3daaab7-b042-4dc7-a92f-77f19988f351">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/d3daaab7-b042-4dc7-a92f-77f19988f351-2023-09-18"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dcterms:license</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351"/>
+    <skos:prefLabel>Information Element ActedUpon dcterms:license</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://purl.org/dc/terms/license"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
@@ -90,6 +95,13 @@
   <rdf:Description rdf:about="https://creativecommons.org/licenses/">
     <dcterms:bibliographicCitation>Creative Commons (n.dat.) About the Licenses. https://creativecommons.org/licenses/</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/7c915d24-1fda-4d72-97d4-8bd5e2136c97> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_VERBATIM with Specification Specification for: AMENDMENT_EVENTDATE_FROM_VERBATIM" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7c915d24-1fda-4d72-97d4-8bd5e2136c97-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:7c915d24-1fda-4d72-97d4-8bd5e2136c97> ;
     skos:historyNote "Source: VertNet, FP, Kurator" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L334. For a minimum set of unit tests see: [DwcEventDQTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/test/java/org/filteredpush/qc/date/DwcEventDQTest.java#L605), see also unit tests for underlying implementation in [DateUtilsTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/test/java/org/filteredpush/qc/date/DateUtilsTest.java#L632) and [DateUtilsTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/test/java/org/filteredpush/qc/date/DateUtilsTest.java#L788)",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:6d0a0c10-5e4a-4759-b448-88932f399812 .
@@ -41,12 +45,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/697cf278-3c46-48f4-84ab-385a7cd9db3c> a bdqffdq:Consulted ;
     rdfs:label "Information Element Consulted dwc:verbatimEventDate" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/697cf278-3c46-48f4-84ab-385a7cd9db3c-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:697cf278-3c46-48f4-84ab-385a7cd9db3c> ;
     skos:prefLabel "Information Element Consulted dwc:verbatimEventDate" ;
     bdqffdq:composedOf dwc:verbatimEventDate .
 
 <https://rs.tdwg.org/bdqtest/informationelement/e8c9ef54-af43-4c20-98a8-a7865cc169ac> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:eventDate" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/e8c9ef54-af43-4c20-98a8-a7865cc169ac-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> ;
     skos:prefLabel "Information Element ActedUpon dwc:eventDate" ;
     bdqffdq:composedOf dwc:eventDate .
@@ -54,6 +62,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/b417d971-8b0f-49ab-9431-3364ba8694e2> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_EVENTDATE_FROM_VERBATIM" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:NotEmpty or the value of dwc:verbatimEventDate is bdqval:Empty; FILLED_IN the value of dwc:eventDate if an unambiguous ISO 8601 date is interpreted from dwc:verbatimEventDate; otherwise NOT_AMENDED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/b417d971-8b0f-49ab-9431-3364ba8694e2-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:b417d971-8b0f-49ab-9431-3364ba8694e2> ;
     skos:example "dwc:eventDate=\"\", dwc:verbatimEventDate=\"03/04/2020\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:verbatimEventDate is ambiguous - could be either 3rd April or 4th March\"",
         "dwc:eventDate=\"\", dwc:verbatimEventDate=\"Friday 29th Oct. 2021\": Response.status=FILLED_IN, Response.result=dwc:eventDate=\"2021-10-29\", Response.comment=\"dwc:verbatimEventDate contains an interpretable value (assuming some external lookup thesauri)\"" ;
@@ -72,6 +82,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:6d0a0c10-5e4a-4759-b448-88932f399812 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENTDATE_FROM_VERBATIM" ;
     dcterms:description "Proposes an amendment to the value of dwc:eventDate from the content of dwc:verbatimEventDate." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/6d0a0c10-5e4a-4759-b448-88932f399812-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

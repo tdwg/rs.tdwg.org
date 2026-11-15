@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/17f89e32-0174-4bf9-805e-ba7aec59477b> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_EVENTDATE_INRANGE with Specification for: VALIDATION_EVENTDATE_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/17f89e32-0174-4bf9-805e-ba7aec59477b-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:17f89e32-0174-4bf9-805e-ba7aec59477b> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L2365",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -43,18 +47,24 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:latestValidDate:\"{current year}\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:2e5c3e37-b6a9-4928-8436-0d83bdb3f0fc> ;
     bdqffdq:hasArgumentValue "{current year}" ;
     bdqffdq:hasParameter bdqval:latestValidDate .
 
 <https://rs.tdwg.org/bdqtest/argument/8b223050-f314-4601-9e20-d5f3d59d8e79> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:earliestValidDate:\"1582-11-15\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/8b223050-f314-4601-9e20-d5f3d59d8e79-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:8b223050-f314-4601-9e20-d5f3d59d8e79> ;
     bdqffdq:hasArgumentValue "1582-11-15" ;
     bdqffdq:hasParameter bdqval:earliestValidDate .
 
 <https://rs.tdwg.org/bdqtest/informationelement/e8c9ef54-af43-4c20-98a8-a7865cc169ac> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:eventDate" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/e8c9ef54-af43-4c20-98a8-a7865cc169ac-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:e8c9ef54-af43-4c20-98a8-a7865cc169ac> ;
     skos:prefLabel "Information Element ActedUpon dwc:eventDate" ;
     bdqffdq:composedOf dwc:eventDate .
@@ -62,6 +72,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/29a1fdc6-326b-4017-880d-d11ff0225b8f> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_EVENTDATE_INRANGE" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or if the value of dwc:eventDate is not a valid ISO 8601 date; COMPLIANT if the range of dwc:eventDate is entirely within the range bdqval:earliestValidDate to bdqval:latestValidDate, inclusive, otherwise NOT_COMPLIANT bdqval:earliestValidDate default =\"1582-11-15\",bdqval:latestValidDate default = \"{current year}\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/29a1fdc6-326b-4017-880d-d11ff0225b8f-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:29a1fdc6-326b-4017-880d-d11ff0225b8f> ;
     skos:example "dwc:eventDate=\"1962-11-01T10:00-0600\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:eventDate is IN_RANGE\"",
         "dwc:eventDate=\"2300-11-01T10:00\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:eventDate is NOT_IN_RANGE\"" ;
@@ -86,6 +98,8 @@ bdqval:latestValidDate a bdqffdq:Parameter .
 bdqtest:3cff4dc4-72e9-4abe-9bf3-8a30f1618432 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_EVENTDATE_INRANGE" ;
     dcterms:description "Is the value of dwc:eventDate entirely with the Parameter range?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3cff4dc4-72e9-4abe-9bf3-8a30f1618432-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

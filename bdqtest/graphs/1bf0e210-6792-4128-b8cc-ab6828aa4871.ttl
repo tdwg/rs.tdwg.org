@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/8454615d-9cd4-49af-8fd3-c67e6be9c777> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COORDINATES_NOTZERO with Specification for: VALIDATION_COORDINATES_NOTZERO" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8454615d-9cd4-49af-8fd3-c67e6be9c777-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:8454615d-9cd4-49af-8fd3-c67e6be9c777> ;
     skos:historyNote "Source: ALA, GBIF, OBIS" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2193",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -42,6 +46,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/9d387033-c581-4fb5-9af2-73ec89c99e77> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/9d387033-c581-4fb5-9af2-73ec89c99e77-2023-06-20> ;
+    dcterms:modified "2023-06-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9d387033-c581-4fb5-9af2-73ec89c99e77> ;
     skos:prefLabel "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude" ;
     bdqffdq:composedOf dwc:decimalLatitude,
@@ -50,6 +56,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/b482148e-9ac2-47ad-99b5-462508e9f360> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COORDINATES_NOTZERO" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:decimalLatitude is bdqval:Empty or is not interpretable as a number, or dwc:decimalLongitude is bdqval:Empty or is not interpretable as a number; COMPLIANT if either the value of dwc:decimalLatitude is not = 0 or the value of dwc:decimalLongitude is not = 0; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/b482148e-9ac2-47ad-99b5-462508e9f360-2023-06-20> ;
+    dcterms:modified "2023-06-20"^^xsd:date ;
     owl:sameAs <urn:uuid:b482148e-9ac2-47ad-99b5-462508e9f360> ;
     skos:example "dwc:decimalLatitude=\"0\", dwc:decimalLongitude=\"0\",: Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:decimalLatitude and dwc:decimalLongitude are zero\"",
         "dwc:decimalLatitude=\"21.0534\", dwc:decimalLongitude=\"81.0554\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:decimalLatitude and dwc:decimalLongitude are not zero\"" ;
@@ -62,6 +70,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:1bf0e210-6792-4128-b8cc-ab6828aa4871 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COORDINATES_NOTZERO" ;
     dcterms:description "Are the values of either dwc:decimalLatitude or dwc:decimalLongitude numbers that are not equal to 0?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/1bf0e210-6792-4128-b8cc-ab6828aa4871-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:1bf0e210-6792-4128-b8cc-ab6828aa4871> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/87" ;

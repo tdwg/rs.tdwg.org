@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/f1a7f272-9040-42da-9b64-62abedefb1b0> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS with Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f1a7f272-9040-42da-9b64-62abedefb1b0-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:f1a7f272-9040-42da-9b64-62abedefb1b0> ;
     skos:historyNote "Source: VertNet, Kurator" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3020",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -49,12 +53,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/aabaaac7-b26c-478e-9f04-3e2fbdba4a96> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"The Getty Thesaurus of Geographic Names (TGN)\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/aabaaac7-b26c-478e-9f04-3e2fbdba4a96-2024-09-18> ;
+    dcterms:modified "2024-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:aabaaac7-b26c-478e-9f04-3e2fbdba4a96> ;
     bdqffdq:hasArgumentValue "The Getty Thesaurus of Geographic Names (TGN)" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/63ee37ac-d0ae-4578-82f8-7a956d92baf0> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:country, dwc:stateProvince" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/63ee37ac-d0ae-4578-82f8-7a956d92baf0-2024-09-18> ;
+    dcterms:modified "2024-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:63ee37ac-d0ae-4578-82f8-7a956d92baf0> ;
     skos:prefLabel "Information Element ActedUpon dwc:country, dwc:stateProvince" ;
     bdqffdq:composedOf dwc:country,
@@ -63,6 +71,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/e5efdd20-d1fc-4287-91f9-15b9ce3f3aac> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the terms dwc:country and dwc:stateProvince are bdqval:Empty; COMPLIANT if the combination of values of dwc:country and dwc:stateProvince are unambiguously resolved to a single result with a child-parent relationship in the bdqval:sourceAuthority and the entity matching the value of dwc:country in the bdqval:sourceAuthority is an ISO 3166 country-like administrative entity in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"The Getty Thesaurus of Geographic Names (TGN)\" {[https://www.getty.edu/research/tools/vocabularies/tgn/index.html]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/e5efdd20-d1fc-4287-91f9-15b9ce3f3aac-2024-09-18> ;
+    dcterms:modified "2024-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:e5efdd20-d1fc-4287-91f9-15b9ce3f3aac> ;
     skos:example "dwc:country=\"\", dwc:stateProvince=\"WA\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:country and dwc:stateProvince are ambiguous. Matches Western Australia, Washington State (US)\"",
         "dwc:country=\"Argentina\", dwc:stateProvince=\"Rio Negro\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:country and dwc:stateProvince are unambiguous\"" ;
@@ -84,6 +94,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:d257eb98-27cb-48e5-8d3c-ab9fca4edd11 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
     dcterms:description "Is the combination of the values of the terms dwc:country, dwc:stateProvince unique in the bdqval:sourceAuthority?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d257eb98-27cb-48e5-8d3c-ab9fca4edd11-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
         <https://github.com/VertNet/DwCVocabs/tree/master/vocabs>,

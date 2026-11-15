@@ -9,6 +9,8 @@
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/1e16fbb3-0c8d-4f23-bf55-68e159ab2b04">
     <dcterms:description>INTERNAL_PREREQUISITES_NOT_MET if 1) either dwc:decimalLatitude or dwc:decimalLongitude are bdqval:NotEmpty, or 2) dwc:verbatimCoordinates and one of dwc:verbatimLatitude and dwc:verbatimLongitude are bdqval:Empty; FILLED_IN the values of dwc:decimalLatitude, dwc:decimalLongitude and dwc:geodeticDatum (provided that the dwc:verbatimCoordinates can be unambiguously interpreted as geographic coordinates) from 1) dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimSRS or 2) dwc:verbatimCoordinates and dwc:verbatimSRS; otherwise NOT_AMENDED.</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/1e16fbb3-0c8d-4f23-bf55-68e159ab2b04-2024-08-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-20</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
     <rdfs:label>Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:1e16fbb3-0c8d-4f23-bf55-68e159ab2b04"/>
@@ -18,6 +20,8 @@
     <bdqffdq:hasExpectedResponse>INTERNAL_PREREQUISITES_NOT_MET if 1) either dwc:decimalLatitude or dwc:decimalLongitude are bdqval:NotEmpty, or 2) dwc:verbatimCoordinates and one of dwc:verbatimLatitude and dwc:verbatimLongitude are bdqval:Empty; FILLED_IN the values of dwc:decimalLatitude, dwc:decimalLongitude and dwc:geodeticDatum (provided that the dwc:verbatimCoordinates can be unambiguously interpreted as geographic coordinates) from 1) dwc:verbatimLatitude, dwc:verbatimLongitude and dwc:verbatimSRS or 2) dwc:verbatimCoordinates and dwc:verbatimSRS; otherwise NOT_AMENDED.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-24</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"/>
     <rdfs:label>AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22"/>
@@ -25,6 +29,8 @@
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/10a04e3b-9254-49b6-8095-166179cd3707">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/10a04e3b-9254-49b6-8095-166179cd3707-2024-08-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-20</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
     <rdfs:label>Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude, dwc:geodeticDatum</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:10a04e3b-9254-49b6-8095-166179cd3707"/>
@@ -41,7 +47,22 @@
     <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/2ad22c2b-cebb-4924-b0e4-b36c64535010">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/2ad22c2b-cebb-4924-b0e4-b36c64535010-2024-08-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-20</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
+    <rdfs:label>Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:2ad22c2b-cebb-4924-b0e4-b36c64535010"/>
+    <skos:prefLabel>Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimCoordinates"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimLatitude"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimLongitude"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimSRS"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/10ad79a1-c93f-4ab2-accf-780867f93957">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/10ad79a1-c93f-4ab2-accf-780867f93957-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"/>
     <rdfs:label>AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:10ad79a1-c93f-4ab2-accf-780867f93957"/>
@@ -55,6 +76,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e">
     <dcterms:description>Proposes an amendment to the values of dwc:decimalLatitude, dwc:decimalLongitude, and dwc:geodeticDatum from geographic coordinate information in the verbatim coordinates terms.</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Amendment"/>
     <rdfs:label>AMENDMENT_COORDINATES_FROM_VERBATIM</rdfs:label>
@@ -68,17 +91,6 @@
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-20</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasEnhancement rdf:resource="https://rs.tdwg.org/bdqenh/terms/FilledInFrom"/>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/2ad22c2b-cebb-4924-b0e4-b36c64535010">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
-    <rdfs:label>Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:2ad22c2b-cebb-4924-b0e4-b36c64535010"/>
-    <skos:prefLabel>Information Element Consulted dwc:verbatimCoordinates, dwc:verbatimLatitude, dwc:verbatimLongitude, dwc:verbatimCoordinateSystem, dwc:verbatimSRS</skos:prefLabel>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimCoordinateSystem"/>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimCoordinates"/>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimLatitude"/>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimLongitude"/>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/verbatimSRS"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqenh/terms/FilledInFrom">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Enhancement"/>

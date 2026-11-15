@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/d040474f-edc7-47b8-80a0-3a3859359897> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_LICENSE_STANDARDIZED with Specification Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d040474f-edc7-47b8-80a0-3a3859359897-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:d040474f-edc7-47b8-80a0-3a3859359897> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1226",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/60c7e911-e72e-421f-be9b-4fb81eef1a54> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:SDM-Trees" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54> ;
     bdqffdq:hasUseCase bdquc:SDM-Trees ;
     bdqffdq:includedInPolicy bdqtest:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8 .
@@ -41,12 +45,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/7ecc692d-e65f-4ea5-9d54-04421ec96ab4> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"Creative Commons\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/7ecc692d-e65f-4ea5-9d54-04421ec96ab4-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:7ecc692d-e65f-4ea5-9d54-04421ec96ab4> ;
     bdqffdq:hasArgumentValue "Creative Commons" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/d3daaab7-b042-4dc7-a92f-77f19988f351> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dcterms:license" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/d3daaab7-b042-4dc7-a92f-77f19988f351-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:d3daaab7-b042-4dc7-a92f-77f19988f351> ;
     skos:prefLabel "Information Element ActedUpon dcterms:license" ;
     bdqffdq:composedOf dcterms:license .
@@ -54,6 +62,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/825f551a-2adf-4509-9f95-5a42601a8e88> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; AMENDED value of dcterms:license if it could be unambiguously interpreted as a value in the bdqval:sourceAuthority; otherwise NOT_AMENDED. bdqval:sourceAuthority default = \"Creative Commons\" {[https://creativecommons.org/]} {Creative Commons licenses [https://creativecommons.org/about/cclicenses/]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/825f551a-2adf-4509-9f95-5a42601a8e88-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:825f551a-2adf-4509-9f95-5a42601a8e88> ;
     skos:example "dcterms:license=\"CC0\": Response.status=AMENDED, Response.result=dcterms:license=\"https://creativecommons.org/publicdomain/zero/1.0/legalcode\", Response.comment=\"Input field contains interpretable value\"",
         "dcterms:license=\"X\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dcterms:license contains uninterpretable value \"X\"\"" ;
@@ -72,6 +82,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_LICENSE_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dcterms:license using the bdqval:sourceAuthority." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://creativecommons.org/licenses/>,
         <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> ;
     owl:sameAs <urn:uuid:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8> ;

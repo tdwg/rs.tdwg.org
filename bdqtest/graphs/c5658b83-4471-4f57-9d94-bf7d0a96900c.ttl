@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/2f73a662-b833-44ad-942c-a87f82262b7c> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2f73a662-b833-44ad-942c-a87f82262b7c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:2f73a662-b833-44ad-942c-a87f82262b7c> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1121",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
@@ -22,6 +24,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:c5658b83-4471-4f57-9d94-bf7d0a96900c .
@@ -40,6 +44,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/06adabf0-e6d4-4f99-819f-7dd38c796617> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:minimumDepthInMeters, dwc:maximumDepthInMeters" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/06adabf0-e6d4-4f99-819f-7dd38c796617-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:06adabf0-e6d4-4f99-819f-7dd38c796617> ;
     skos:prefLabel "Information Element ActedUpon dwc:minimumDepthInMeters, dwc:maximumDepthInMeters" ;
     bdqffdq:composedOf dwc:maximumDepthInMeters,
@@ -47,6 +53,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/6ce80718-30e4-4458-beb3-6b03d30f66ed> a bdqffdq:Consulted ;
     rdfs:label "Information Element Consulted dwc:verbatimDepth" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/6ce80718-30e4-4458-beb3-6b03d30f66ed-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:6ce80718-30e4-4458-beb3-6b03d30f66ed> ;
     skos:prefLabel "Information Element Consulted dwc:verbatimDepth" ;
     bdqffdq:composedOf dwc:verbatimDepth .
@@ -54,6 +62,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/4db033ea-b0f7-4d01-a5fc-a0459a73a67d> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumDepthInMeters or dwc:maximumDepthInMeters are bdqval:NotEmpty or dwc:verbatimDepth is bdqval:Empty; FILLED_IN the value of dwc:minimumDepthInMeters and dwc:maximumDepthInMeters if they can be unambiguously interpreted from dwc:verbatimDepth; otherwise NOT_AMENDED." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/4db033ea-b0f7-4d01-a5fc-a0459a73a67d-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:4db033ea-b0f7-4d01-a5fc-a0459a73a67d> ;
     skos:example " dwc:minimumDepthInMeters=\"\", dwc:maximumDepthInMeters=\"\", dwc:verbatimDepth=\"x\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"dwc:verbatimDepth does not contain an interpretable value\"",
         "dwc:minimumDepthInMeters=\"\", dwc:maximumDepthInMeters=\"\", dwc:verbatimDepth=\"10 feet\": Response.status=FILLED_IN, Response.result=dwc:minimumDepthInMeters=\"3.048\", dwc:maximumDepthInMeters=\"3.048\", Response.comment=\"dwc:verbatimDepth contains interpretable values\"" ;
@@ -66,6 +76,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:c5658b83-4471-4f57-9d94-bf7d0a96900c a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
     dcterms:description "Proposes amendments of the values of dwc:minimumDepthInMeters and dwc:maximumDepthInMeters if they can be interpreted from dwc:verbatimDepth." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/c5658b83-4471-4f57-9d94-bf7d0a96900c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:c5658b83-4471-4f57-9d94-bf7d0a96900c> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/55" ;

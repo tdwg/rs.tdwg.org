@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/31c40ce6-eecd-4304-bda7-0234993b079d> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_BASISOFRECORD_NOTEMPTY with Specification for: VALIDATION_BASISOFRECORD_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/31c40ce6-eecd-4304-bda7-0234993b079d-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:31c40ce6-eecd-4304-bda7-0234993b079d> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L207",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -30,6 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -37,6 +43,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees" ;
     bdqffdq:hasUseCase bdquc:SDM-Trees ;
@@ -53,6 +61,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/2c09df64-3803-4834-a6e9-30ba80f8eac8> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:basisOfRecord" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/2c09df64-3803-4834-a6e9-30ba80f8eac8-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:2c09df64-3803-4834-a6e9-30ba80f8eac8> ;
     skos:prefLabel "Information Element ActedUpon dwc:basisOfRecord" ;
     bdqffdq:composedOf dwc:basisOfRecord .
@@ -60,6 +70,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/5aabe3d4-d2c0-415c-8972-c834b543971a> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_BASISOFRECORD_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dwc:basisOfRecord is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/5aabe3d4-d2c0-415c-8972-c834b543971a-2023-09-17> ;
+    dcterms:modified "2023-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:5aabe3d4-d2c0-415c-8972-c834b543971a> ;
     skos:example "dwc:basisOfRecord=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:basisOfRecord is bdqval:Empty\"",
         "dwc:basisOfRecord=\"PreservedSpecimen\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:basisOfRecord is bdqval:NotEmpty\"" ;
@@ -78,6 +90,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:ac2b7648-d5f9-48ca-9b07-8ad5879a2536 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_BASISOFRECORD_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:basisOfRecord?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ac2b7648-d5f9-48ca-9b07-8ad5879a2536-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:ac2b7648-d5f9-48ca-9b07-8ad5879a2536> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/58" ;
     skos:note "" ;

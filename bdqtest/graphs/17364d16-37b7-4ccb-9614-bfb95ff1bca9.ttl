@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/f643ba35-9ddb-4e70-9959-01a6849331ed> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f643ba35-9ddb-4e70-9959-01a6849331ed-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:f643ba35-9ddb-4e70-9959-01a6849331ed> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:17364d16-37b7-4ccb-9614-bfb95ff1bca9 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/6fa9dcd8-4e43-4fc7-acb6-1aff70e87f51> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_PHYLUM_FOUND.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/6fa9dcd8-4e43-4fc7-acb6-1aff70e87f51-2022-03-25> ;
+    dcterms:modified "2022-03-25"^^xsd:date ;
     owl:sameAs <urn:uuid:6fa9dcd8-4e43-4fc7-acb6-1aff70e87f51> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_PHYLUM_FOUND across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_PHYLUM_FOUND.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/db818cf0-569e-4eb9-a309-a151d04b7bb4> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
     dcterms:description "COMPLETE if every VALIDATION_PHYLUM_FOUND in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/db818cf0-569e-4eb9-a309-a151d04b7bb4-2022-03-25> ;
+    dcterms:modified "2022-03-25"^^xsd:date ;
     owl:sameAs <urn:uuid:db818cf0-569e-4eb9-a309-a151d04b7bb4> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:17364d16-37b7-4ccb-9614-bfb95ff1bca9 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_PHYLUM_FOUND" ;
     dcterms:description "Measure if all VALIDATION_PHYLUM_FOUND in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/17364d16-37b7-4ccb-9614-bfb95ff1bca9-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:17364d16-37b7-4ccb-9614-bfb95ff1bca9> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;

@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/f5bd0eee-4cdf-4455-876d-a46d92373a4e> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_KINGDOM_NOTEMPTY with Specification for: VALIDATION_KINGDOM_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f5bd0eee-4cdf-4455-876d-a46d92373a4e-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:f5bd0eee-4cdf-4455-876d-a46d92373a4e> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3021",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -39,6 +43,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/b856f48c-bf6f-4637-b8de-37d379831801> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:kingdom" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/b856f48c-bf6f-4637-b8de-37d379831801-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:b856f48c-bf6f-4637-b8de-37d379831801> ;
     skos:prefLabel "Information Element ActedUpon dwc:kingdom" ;
     bdqffdq:composedOf dwc:kingdom .
@@ -46,6 +52,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/e6f0a9ce-3e72-40fb-9fad-63cf5962f93e> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_KINGDOM_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dwc:kingdom is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/e6f0a9ce-3e72-40fb-9fad-63cf5962f93e-2024-01-28> ;
+    dcterms:modified "2024-01-28"^^xsd:date ;
     owl:sameAs <urn:uuid:e6f0a9ce-3e72-40fb-9fad-63cf5962f93e> ;
     skos:example "dwc:kingdom=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:kingdom is bdqval:Empty\"",
         "dwc:kingdom=\"Fungi\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:kingdom is bdqval:NotEmpty\"" ;
@@ -58,6 +66,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:36ed36c9-b1a7-40b2-b5e2-0d012e772098 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_KINGDOM_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:kingdom?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/36ed36c9-b1a7-40b2-b5e2-0d012e772098-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:36ed36c9-b1a7-40b2-b5e2-0d012e772098> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/216" ;
     skos:note "" ;

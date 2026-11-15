@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/f84d0f30-9c93-43a4-8f75-8c853fc18fb5> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_TYPESTATUS_STANDARD with Specification for: VALIDATION_TYPESTATUS_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f84d0f30-9c93-43a4-8f75-8c853fc18fb5-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:f84d0f30-9c93-43a4-8f75-8c853fc18fb5> ;
     skos:historyNote "Source: ALA, GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L2246",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -43,12 +47,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/63b0193f-a8df-4345-8d60-caf667cd62b0> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF TypeStatus Vocabulary\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/63b0193f-a8df-4345-8d60-caf667cd62b0-2024-11-11> ;
+    dcterms:modified "2024-11-11"^^xsd:date ;
     owl:sameAs <urn:uuid:63b0193f-a8df-4345-8d60-caf667cd62b0> ;
     bdqffdq:hasArgumentValue "GBIF TypeStatus Vocabulary" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/63b75539-9290-4ce4-86e3-938bc924e3cd> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:typeStatus" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/63b75539-9290-4ce4-86e3-938bc924e3cd-2024-11-11> ;
+    dcterms:modified "2024-11-11"^^xsd:date ;
     owl:sameAs <urn:uuid:63b75539-9290-4ce4-86e3-938bc924e3cd> ;
     skos:prefLabel "Information Element ActedUpon dwc:typeStatus" ;
     bdqffdq:composedOf dwc:typeStatus .
@@ -56,6 +64,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/e4dbf38d-bdd7-4cf7-8c60-5b3bfc6af4ff> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_TYPESTATUS_STANDARD" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:typeStatus is bdqval:Empty; COMPLIANT if the value of the first word in each &#124; delimited portion of dwc:typeStatus is in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = \"GBIF TypeStatus Vocabulary\" {[https://api.gbif.org/v1/vocabularies/TypeStatus]} {dwc:typeStatus vocabulary API [https://api.gbif.org/v1/vocabularies/TypeStatus/concepts]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/e4dbf38d-bdd7-4cf7-8c60-5b3bfc6af4ff-2024-11-11> ;
+    dcterms:modified "2024-11-11"^^xsd:date ;
     owl:sameAs <urn:uuid:e4dbf38d-bdd7-4cf7-8c60-5b3bfc6af4ff> ;
     skos:example "dwc:typeStatus=\"Holotype\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:typeStatus found in the bdqval:sourceAuthority\"",
         "dwc:typeStatus=\"cleptotype\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:typeStatus not found in the bdqval:sourceAuthority\"" ;
@@ -71,6 +81,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:4833a522-12eb-4fe0-b4cf-7f7a337a6048 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_TYPESTATUS_STANDARD" ;
     dcterms:description "Does the value of dwc:typeStatus occur in bdqval:sourceAuthority?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/4833a522-12eb-4fe0-b4cf-7f7a337a6048-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <http://rs.gbif.org/vocabulary/gbif/type_status> ;
     owl:sameAs <urn:uuid:4833a522-12eb-4fe0-b4cf-7f7a337a6048> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/285" ;

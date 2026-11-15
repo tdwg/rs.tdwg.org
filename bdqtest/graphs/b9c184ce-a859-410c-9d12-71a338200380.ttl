@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/2bb364f7-118b-4258-8afe-978901e5cf67> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT with Specification for: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2bb364f7-118b-4258-8afe-978901e5cf67-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:2bb364f7-118b-4258-8afe-978901e5cf67> ;
     skos:historyNote "Source: ALA, OBIS" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3198",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -55,36 +59,48 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/3968f8d0-7364-4f3d-9993-96b8678f1653> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:taxonIsMarine:\"World Register of Marine Species (WoRMS)\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/3968f8d0-7364-4f3d-9993-96b8678f1653-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:3968f8d0-7364-4f3d-9993-96b8678f1653> ;
     bdqffdq:hasArgumentValue "World Register of Marine Species (WoRMS)" ;
     bdqffdq:hasParameter bdqval:taxonIsMarine .
 
 <https://rs.tdwg.org/bdqtest/argument/b3bf69d3-061c-4e2a-ac53-a73cb51ecbe2> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:spatialBufferInMeters:\"3000\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/b3bf69d3-061c-4e2a-ac53-a73cb51ecbe2-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:b3bf69d3-061c-4e2a-ac53-a73cb51ecbe2> ;
     bdqffdq:hasArgumentValue "3000" ;
     bdqffdq:hasParameter bdqval:spatialBufferInMeters .
 
 <https://rs.tdwg.org/bdqtest/argument/cbb3483c-2bf7-4b42-9d74-71ddc0e41c5e> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:geospatialLand:\"Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/cbb3483c-2bf7-4b42-9d74-71ddc0e41c5e-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:cbb3483c-2bf7-4b42-9d74-71ddc0e41c5e> ;
     bdqffdq:hasArgumentValue "Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands" ;
     bdqffdq:hasParameter bdqval:geospatialLand .
 
 <https://rs.tdwg.org/bdqtest/argument/e7012224-eb6d-4bb9-a4ef-2d40fd3b3471> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:assumptionOnUnknownBiome:\"noassumption\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/e7012224-eb6d-4bb9-a4ef-2d40fd3b3471-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:e7012224-eb6d-4bb9-a4ef-2d40fd3b3471> ;
     bdqffdq:hasArgumentValue "noassumption" ;
     bdqffdq:hasParameter bdqval:assumptionOnUnknownBiome .
 
 <https://rs.tdwg.org/bdqtest/informationelement/328124cc-fa45-495a-9c39-b7b5d9aa79c5> a bdqffdq:Consulted ;
     rdfs:label "Information Element Consulted dwc:scientificName" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/328124cc-fa45-495a-9c39-b7b5d9aa79c5-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:328124cc-fa45-495a-9c39-b7b5d9aa79c5> ;
     skos:prefLabel "Information Element Consulted dwc:scientificName" ;
     bdqffdq:composedOf dwc:scientificName .
 
 <https://rs.tdwg.org/bdqtest/informationelement/9d387033-c581-4fb5-9af2-73ec89c99e77> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/9d387033-c581-4fb5-9af2-73ec89c99e77-2023-06-20> ;
+    dcterms:modified "2023-06-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9d387033-c581-4fb5-9af2-73ec89c99e77> ;
     skos:prefLabel "Information Element ActedUpon dwc:decimalLatitude, dwc:decimalLongitude" ;
     bdqffdq:composedOf dwc:decimalLatitude,
@@ -93,6 +109,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/45cb9e13-7944-4535-a5ef-f6ededb77305> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if either bdqval:taxonIsMarine or bdqval:geospatialLand are not available; INTERNAL_PREREQUISITES_NOT_MET if (1) dwc:scientificName is bdqval:Empty or (2) the values of dwc:decimalLatitude or dwc:decimalLongitude are bdqval:Empty or (3) if bdqval:assumptionOnUnknownBiome is noassumption and the marine/nonmarine status of the taxon is not interpretable from bdqval:taxonIsMarine; COMPLIANT if (1) the taxon marine/nonmarine status from bdqval:taxonIsMarine matches the marine/nonmarine status of dwc:decimalLatitude and dwc:decimalLongitude on the boundaries given by bdqval:geospatialLand plus an exterior buffer given by bdqval:spatialBufferInMeters or (2) if the marine/nonmarine status of the taxon is not interpretable from bdqval:taxonIsMarine and bdqval:assumptionOnUnknownBiome matches the marine/nonmarine status of dwc:decimalLatitude and dwc:decimalLongitude on the boundaries given by bdqval:geospatialLand plus an exterior buffer given by bdqval:spatialBufferInMeters; otherwise NOT_COMPLIANT bdqval:taxonIsMarine default = \"World Register of Marine Species (WoRMS)\" {[https://www.marinespecies.org/]} {Web service [https://www.marinespecies.org/aphia.php?p=webservice]},bdqval:geospatialLand default = \"Union of NaturalEarth 10m-physical-vectors for Land and NaturalEarth Minor Islands\" {[https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip], [https://naciscdn.org/naturalearth/10m/physical/ne_10m_minor_islands.zip]},bdqval:spatialBufferInMeters default = \"3000\",bdqval:assumptionOnUnknownBiome default = \"noassumption\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/45cb9e13-7944-4535-a5ef-f6ededb77305-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:45cb9e13-7944-4535-a5ef-f6ededb77305> ;
     skos:example "dwc:decimalLatitude=\"-41.0525925872862\", dwc:decimalLongitude=\"-71.5310546742521\", dwc:scientificName=\"Aegla neuquensis\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"The species is freshwater aquatic and the coordinates fall in a lake and thus COMPLIANT\"",
         "dwc:decimalLatitude=\"20.0\", dwc:decimalLongitude=\"-30.0\", dwc:scientificName=\"Viviparus contectus (Millet, 1813)\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificName is non-marine according to dwc:taxonIsMarine but coordinates are marine\"" ;
@@ -132,6 +150,8 @@ bdqval:taxonIsMarine a bdqffdq:Parameter .
 bdqtest:b9c184ce-a859-410c-9d12-71a338200380 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COORDINATESTERRESTRIALMARINE_CONSISTENT" ;
     dcterms:description "Does the marine/non-marine biome of a taxon from the bdqval:sourceAuthority match the biome at the location given by the coordinates?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b9c184ce-a859-410c-9d12-71a338200380-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
         <https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse>,
         <https://doi.org/10.15468/doc-gg7h-s853>,

@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/3cce3c7b-a343-4aed-be6d-7a66c4fa03a0> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_ORDER_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_ORDER_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3cce3c7b-a343-4aed-be6d-7a66c4fa03a0-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:3cce3c7b-a343-4aed-be6d-7a66c4fa03a0> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:f4fa449c-4b74-4dcf-b4cf-0b73e1496375 .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/9f20b037-e607-47ce-8b54-c46fc6c83407> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_ORDER_FOUND.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/9f20b037-e607-47ce-8b54-c46fc6c83407-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:9f20b037-e607-47ce-8b54-c46fc6c83407> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_ORDER_FOUND across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_ORDER_FOUND.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/53c80627-1b2c-491e-bc9f-1b5ccf121a08> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_ORDER_FOUND" ;
     dcterms:description "Count the number of VALIDATION_ORDER_FOUND in the MultiRecord that have Response.result=COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/53c80627-1b2c-491e-bc9f-1b5ccf121a08-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:53c80627-1b2c-491e-bc9f-1b5ccf121a08> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:f4fa449c-4b74-4dcf-b4cf-0b73e1496375 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_ORDER_FOUND" ;
     dcterms:description "Count the number of VALIDATION_ORDER_FOUND in a record set that are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f4fa449c-4b74-4dcf-b4cf-0b73e1496375-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:f4fa449c-4b74-4dcf-b4cf-0b73e1496375> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

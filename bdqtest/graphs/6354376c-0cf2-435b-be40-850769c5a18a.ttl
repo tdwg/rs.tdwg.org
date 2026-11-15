@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/5f314145-e988-4684-b507-7429c796d996> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5f314145-e988-4684-b507-7429c796d996-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:5f314145-e988-4684-b507-7429c796d996> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Likeliness ISO/DCMI STANDARD Parameterized CORE" ;
@@ -20,6 +22,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:6354376c-0cf2-435b-be40-850769c5a18a .
@@ -35,6 +39,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/ba87601b-dcc0-424d-973d-3869f35586d0> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DATEIDENTIFIED_INRANGE.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/ba87601b-dcc0-424d-973d-3869f35586d0-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:ba87601b-dcc0-424d-973d-3869f35586d0> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_DATEIDENTIFIED_INRANGE across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_DATEIDENTIFIED_INRANGE.Response" ;
@@ -44,6 +50,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/8949abb1-4c5f-4733-9d3a-89c981fe6d30> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_INRANGE" ;
     dcterms:description "COMPLETE if every VALIDATION_DATEIDENTIFIED_INRANGE in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/8949abb1-4c5f-4733-9d3a-89c981fe6d30-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:8949abb1-4c5f-4733-9d3a-89c981fe6d30> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -55,6 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:6354376c-0cf2-435b-be40-850769c5a18a a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_DATEIDENTIFIED_INRANGE" ;
     dcterms:description "Measure if all VALIDATION_DATEIDENTIFIED_INRANGE in a record set are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/6354376c-0cf2-435b-be40-850769c5a18a-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:6354376c-0cf2-435b-be40-850769c5a18a> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

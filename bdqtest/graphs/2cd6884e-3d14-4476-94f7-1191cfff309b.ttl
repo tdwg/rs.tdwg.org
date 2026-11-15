@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/6d096b24-0eb1-4e6e-804f-6810e781d16f> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_CLASS_FOUND with Specification for: VALIDATION_CLASS_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/6d096b24-0eb1-4e6e-804f-6810e781d16f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:6d096b24-0eb1-4e6e-804f-6810e781d16f> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1345",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -30,6 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -49,12 +55,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/cd12d17c-8404-40fa-bc15-5583564ddd14> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Backbone Taxonomy\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/cd12d17c-8404-40fa-bc15-5583564ddd14-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:cd12d17c-8404-40fa-bc15-5583564ddd14> ;
     bdqffdq:hasArgumentValue "GBIF Backbone Taxonomy" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/5b155af3-2ce0-432e-ab10-2e21d6ccd32a> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:class" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/5b155af3-2ce0-432e-ab10-2e21d6ccd32a-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:5b155af3-2ce0-432e-ab10-2e21d6ccd32a> ;
     skos:prefLabel "Information Element ActedUpon dwc:class" ;
     bdqffdq:composedOf dwc:class .
@@ -62,6 +72,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/a2b39526-d08a-4a91-8b6d-aacf73677789> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_CLASS_FOUND" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if dwc:class is bdqval:Empty; COMPLIANT if the value of dwc:class is found as a value at the rank of Class in the bdqval:sourceAuthority; otherwise NOT_COMPLIANT bdqval:sourceAuthority default = \"GBIF Backbone Taxonomy\" {[https://doi.org/10.15468/39omei]} {API endpoint [https://api.gbif.org/v1/species?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&name=]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/a2b39526-d08a-4a91-8b6d-aacf73677789-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:a2b39526-d08a-4a91-8b6d-aacf73677789> ;
     skos:example "dwc:class=\"Insecta\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:class has an equivalent at the rank of Class in the bdqval:sourceAuthority\"",
         "dwc:class=\"Magnoleopsida\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT,Response.comment=\"dwc:class does not have an equivalent at the rank of Class in the bdqval:sourceAuthority\"" ;
@@ -80,6 +92,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:2cd6884e-3d14-4476-94f7-1191cfff309b a bdqffdq:Validation ;
     rdfs:label "VALIDATION_CLASS_FOUND" ;
     dcterms:description "Does the value of dwc:class occur at the rank of Class in bdqval:sourceAuthority?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/2cd6884e-3d14-4476-94f7-1191cfff309b-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:2cd6884e-3d14-4476-94f7-1191cfff309b> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/77" ;

@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/315a198d-3811-40dd-918a-756f598f3294> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT with Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/315a198d-3811-40dd-918a-756f598f3294-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:315a198d-3811-40dd-918a-756f598f3294> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1378",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -52,18 +56,24 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/b7c56646-56f1-4094-b2be-8546c7e18102> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"10m-admin-1 boundaries\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/b7c56646-56f1-4094-b2be-8546c7e18102-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:b7c56646-56f1-4094-b2be-8546c7e18102> ;
     bdqffdq:hasArgumentValue "10m-admin-1 boundaries" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/argument/cceaf335-6cd3-44a0-9562-6fe8e7743854> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:spatialBufferInMeters:\"3000\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/cceaf335-6cd3-44a0-9562-6fe8e7743854-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:cceaf335-6cd3-44a0-9562-6fe8e7743854> ;
     bdqffdq:hasArgumentValue "3000" ;
     bdqffdq:hasParameter bdqval:spatialBufferInMeters .
 
 <https://rs.tdwg.org/bdqtest/informationelement/de507979-dc94-4cb9-9c87-9d33972f4a4e> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:stateProvince, dwc:decimalLatitude, dwc:decimalLongitude" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/de507979-dc94-4cb9-9c87-9d33972f4a4e-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:de507979-dc94-4cb9-9c87-9d33972f4a4e> ;
     skos:prefLabel "Information Element ActedUpon dwc:stateProvince, dwc:decimalLatitude, dwc:decimalLongitude" ;
     bdqffdq:composedOf dwc:decimalLatitude,
@@ -73,6 +83,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/4dd617df-a984-419f-b7b5-098b2023c4ab> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL_PREREQUISITES_NOT_MET if the values of dwc:decimalLatitude or dwc:decimalLongitude are bdqval:Empty or invalid, or dwc:stateProvince is bdqval:Empty or not found in the bdqval:sourceAuthority; COMPLIANT if the geographic coordinates fall on or within the boundary in the bdqval:sourceAuthority for the given dwc:stateProvince (after coordinate reference system transformations, if any, have been accounted for), or within the distance given by bdqval:spatialBufferInMeters outside that boundary; otherwise NOT_COMPLIANT. bdqval:sourceAuthority default = \"10m-admin-1 boundaries\" {[https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/]},bdqval:spatialBufferInMeters default = \"3000\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/4dd617df-a984-419f-b7b5-098b2023c4ab-2024-08-30> ;
+    dcterms:modified "2024-08-30"^^xsd:date ;
     owl:sameAs <urn:uuid:4dd617df-a984-419f-b7b5-098b2023c4ab> ;
     skos:example "dwc:stateProvince=\"Córdoba\", dwc:decimalLatitude=\"-41.0525925872862\", dwc:decimalLongitude=\"-71.5310546742521\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"Input fields contain interpretable values but coordinates don't match dwc:stateProvince with buffer\"",
         "dwc:stateProvince=\"Tasmania\", dwc:decimalLatitude=\"-42.85\", dwc:decimalLongitude=\"146.75\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"Input fields contain interpretable values\"" ;
@@ -103,6 +115,8 @@ bdqval:spatialBufferInMeters a bdqffdq:Parameter .
 bdqtest:f18a470b-3fe1-4aae-9c65-a6d3db6b550c a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT" ;
     dcterms:description "Do the geographic coordinates fall on or within the boundary from the bdqval:sourceAuthority for the given dwc:stateProvince or within the distance given by bdqval:spatialBufferInMeters outside that boundary?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f18a470b-3fe1-4aae-9c65-a6d3db6b550c-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
         <https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse>,
         <https://doi.org/10.15468/doc-gg7h-s853>,

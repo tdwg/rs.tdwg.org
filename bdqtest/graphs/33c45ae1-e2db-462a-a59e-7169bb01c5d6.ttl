@@ -13,6 +13,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/97fb9cdf-68c2-4b0b-8b1d-351435d30722> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_SEX_STANDARDIZED with Specification Specification for: AMENDMENT_SEX_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/97fb9cdf-68c2-4b0b-8b1d-351435d30722-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:97fb9cdf-68c2-4b0b-8b1d-351435d30722> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L2148",
@@ -24,6 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:33c45ae1-e2db-462a-a59e-7169bb01c5d6 .
@@ -42,12 +46,16 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/e35dd18a-9c69-4aef-9b70-3d36d7eb6bd4> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:sourceAuthority:\"GBIF Sex Vocabulary\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/e35dd18a-9c69-4aef-9b70-3d36d7eb6bd4-2024-03-25> ;
+    dcterms:modified "2024-03-25"^^xsd:date ;
     owl:sameAs <urn:uuid:e35dd18a-9c69-4aef-9b70-3d36d7eb6bd4> ;
     bdqffdq:hasArgumentValue "GBIF Sex Vocabulary" ;
     bdqffdq:hasParameter bdqval:sourceAuthority .
 
 <https://rs.tdwg.org/bdqtest/informationelement/81029ffa-2df8-4e9e-a7dd-fc67faad9205> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:sex" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/81029ffa-2df8-4e9e-a7dd-fc67faad9205-2024-02-09> ;
+    dcterms:modified "2024-02-09"^^xsd:date ;
     owl:sameAs <urn:uuid:81029ffa-2df8-4e9e-a7dd-fc67faad9205> ;
     skos:prefLabel "Information Element ActedUpon dwc:sex" ;
     bdqffdq:composedOf dwc:sex .
@@ -55,6 +63,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/08a4abb0-8977-4805-a4a1-c1a96b532322> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_SEX_STANDARDIZED" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:sourceAuthority is not available; INTERNAL PREREQUISITES_NOT_MET if dwc:sex is bdqval:Empty; AMENDED the value of dwc:sex if it can be unambiguously matched to a term in the bdqval:sourceAuthority; otherwise NOT_AMENDED bdqval:sourceAuthority default = \"GBIF Sex Vocabulary\" [https://api.gbif.org/v1/vocabularies/Sex]} {\"dwc:sex vocabulary API\" [https://api.gbif.org/v1/vocabularies/Sex/concepts]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/08a4abb0-8977-4805-a4a1-c1a96b532322-2024-03-25> ;
+    dcterms:modified "2024-03-25"^^xsd:date ;
     owl:sameAs <urn:uuid:08a4abb0-8977-4805-a4a1-c1a96b532322> ;
     skos:example "dwc:sex=\"f\": Response.status=AMENDED, Response.result=dwc:sex=\"Female\", Response.comment=\"dwc:sex found in the bdqval:sourceAuthority\"",
         "dwc:sex=\"x\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:sex not found in the bdqval:sourceAuthority\"" ;
@@ -70,6 +80,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:33c45ae1-e2db-462a-a59e-7169bb01c5d6 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_SEX_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:sex using the bdqval:sourceAuthority." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/33c45ae1-e2db-462a-a59e-7169bb01c5d6-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://rs.gbif.org/vocabulary/gbif/sex.xml> ;
     owl:sameAs <urn:uuid:33c45ae1-e2db-462a-a59e-7169bb01c5d6> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/284" ;

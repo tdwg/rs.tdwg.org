@@ -8,6 +8,8 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/2f73a662-b833-44ad-942c-a87f82262b7c">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/2f73a662-b833-44ad-942c-a87f82262b7c-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"/>
     <rdfs:label>AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:2f73a662-b833-44ad-942c-a87f82262b7c"/>
@@ -19,6 +21,8 @@
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/4db033ea-b0f7-4d01-a5fc-a0459a73a67d"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-24</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"/>
     <rdfs:label>AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22"/>
@@ -27,6 +31,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/4db033ea-b0f7-4d01-a5fc-a0459a73a67d">
     <dcterms:description>INTERNAL_PREREQUISITES_NOT_MET if dwc:minimumDepthInMeters or dwc:maximumDepthInMeters are bdqval:NotEmpty or dwc:verbatimDepth is bdqval:Empty; FILLED_IN the value of dwc:minimumDepthInMeters and dwc:maximumDepthInMeters if they can be unambiguously interpreted from dwc:verbatimDepth; otherwise NOT_AMENDED.</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/4db033ea-b0f7-4d01-a5fc-a0459a73a67d-2024-08-30"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
     <rdfs:label>Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:4db033ea-b0f7-4d01-a5fc-a0459a73a67d"/>
@@ -39,20 +45,10 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
-    <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
-    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/06adabf0-e6d4-4f99-819f-7dd38c796617">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
-    <rdfs:label>Information Element ActedUpon dwc:minimumDepthInMeters, dwc:maximumDepthInMeters</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:06adabf0-e6d4-4f99-819f-7dd38c796617"/>
-    <skos:prefLabel>Information Element ActedUpon dwc:minimumDepthInMeters, dwc:maximumDepthInMeters</skos:prefLabel>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters"/>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/c5658b83-4471-4f57-9d94-bf7d0a96900c">
     <dcterms:description>Proposes amendments of the values of dwc:minimumDepthInMeters and dwc:maximumDepthInMeters if they can be interpreted from dwc:verbatimDepth.</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c5658b83-4471-4f57-9d94-bf7d0a96900c-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Amendment"/>
     <rdfs:label>AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM</rdfs:label>
@@ -67,11 +63,27 @@
     <bdqffdq:hasEnhancement rdf:resource="https://rs.tdwg.org/bdqenh/terms/FilledInFrom"/>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
+    <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/06adabf0-e6d4-4f99-819f-7dd38c796617">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/06adabf0-e6d4-4f99-819f-7dd38c796617-2023-09-18"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:minimumDepthInMeters, dwc:maximumDepthInMeters</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:06adabf0-e6d4-4f99-819f-7dd38c796617"/>
+    <skos:prefLabel>Information Element ActedUpon dwc:minimumDepthInMeters, dwc:maximumDepthInMeters</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/maximumDepthInMeters"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/minimumDepthInMeters"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqenh/terms/FilledInFrom">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Enhancement"/>
     <rdfs:label>FilledInFrom</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/6ce80718-30e4-4458-beb3-6b03d30f66ed">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/6ce80718-30e4-4458-beb3-6b03d30f66ed-2024-08-30"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
     <rdfs:label>Information Element Consulted dwc:verbatimDepth</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:6ce80718-30e4-4458-beb3-6b03d30f66ed"/>

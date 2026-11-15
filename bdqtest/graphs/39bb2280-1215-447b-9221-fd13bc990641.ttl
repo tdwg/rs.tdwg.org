@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/0836e914-75d8-4cda-a39f-f21a08382732> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_DATEIDENTIFIED_STANDARDIZED with Specification Specification for: AMENDMENT_DATEIDENTIFIED_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0836e914-75d8-4cda-a39f-f21a08382732-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:0836e914-75d8-4cda-a39f-f21a08382732> ;
     skos:historyNote "Source: Kurator" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCOtherDateDQ.java#L300",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
+    dcterms:modified "2026-04-24"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:39bb2280-1215-447b-9221-fd13bc990641 .
@@ -41,6 +45,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/e4f1fc86-c84d-4e92-9cf2-5250f243b371> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:dateIdentified" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/e4f1fc86-c84d-4e92-9cf2-5250f243b371-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:e4f1fc86-c84d-4e92-9cf2-5250f243b371> ;
     skos:prefLabel "Information Element ActedUpon dwc:dateIdentified" ;
     bdqffdq:composedOf dwc:dateIdentified .
@@ -48,6 +54,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/16e40618-e9bd-479a-b1e8-8aee3467109f> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_DATEIDENTIFIED_STANDARDIZED" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:dateIdentified is bdqval:Empty; AMENDED if the value of dwc:dateIdentified is not a properly formatted ISO 8601 date but is unambiguous and altered to be a valid ISO 8601 date; otherwise NOT_AMENDED." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/16e40618-e9bd-479a-b1e8-8aee3467109f-2024-09-16> ;
+    dcterms:modified "2024-09-16"^^xsd:date ;
     owl:sameAs <urn:uuid:16e40618-e9bd-479a-b1e8-8aee3467109f> ;
     skos:example "dwc:dateIdentified=\"2021-28-10\": Response.status=AMENDED, Response.result=dwc:dateIdentified=\"2021-10-28\", Response.comment=\"dwc:dateIdentified assuming dwc:year, dwc:day and dwc:month\"",
         "dwc:dateIdentified=\"21-10-28\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"dwc:dateIdentified contains ambiguous values. It could be dd-mm-yy or yy-mm-dd\"" ;
@@ -66,6 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:39bb2280-1215-447b-9221-fd13bc990641 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_DATEIDENTIFIED_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:dateIdentified to a valid ISO date." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/39bb2280-1215-447b-9221-fd13bc990641-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

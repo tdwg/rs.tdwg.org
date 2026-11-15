@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/0dacd2f5-591c-47c1-9d05-2de81675b6cc> a bdqffdq:IssueMethod ;
     rdfs:label "IssueMethod: ISSUE_ANNOTATION_NOTEMPTY with Specification Specification for: ISSUE_ANNOTATION_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0dacd2f5-591c-47c1-9d05-2de81675b6cc-2024-09-17> ;
+    dcterms:modified "2024-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0dacd2f5-591c-47c1-9d05-2de81675b6cc> ;
     skos:historyNote "Source: ALA, Lee Belbin" ;
     skos:note "TG2 Issue OTHER Test CORE" ;
@@ -21,12 +23,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/966d36a1-f90b-4c0b-a7f7-ff3e8b547b7b> a bdqffdq:IssuePolicy ;
     rdfs:label "IssuePolicy: (1) issues  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/966d36a1-f90b-4c0b-a7f7-ff3e8b547b7b-2024-09-17> ;
+    dcterms:modified "2024-09-17"^^xsd:date ;
     owl:sameAs <urn:uuid:966d36a1-f90b-4c0b-a7f7-ff3e8b547b7b> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:fecaa8a3-bbd8-4c5a-a424-13c37c4bb7b1 .
 
 <https://rs.tdwg.org/bdqtest/policy/c06368d9-fff3-4b51-8283-e0e4803d1cf3> a bdqffdq:IssuePolicy ;
     rdfs:label "IssuePolicy: (2) issues  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/c06368d9-fff3-4b51-8283-e0e4803d1cf3-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:c06368d9-fff3-4b51-8283-e0e4803d1cf3> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:fecaa8a3-bbd8-4c5a-a424-13c37c4bb7b1 .
@@ -42,18 +48,24 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/argument/8c52d108-f9fe-4835-9939-6acc4430c9ee> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:annotationSystem:\"W3C Web Annotation\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/8c52d108-f9fe-4835-9939-6acc4430c9ee-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:8c52d108-f9fe-4835-9939-6acc4430c9ee> ;
     bdqffdq:hasArgumentValue "W3C Web Annotation" ;
     bdqffdq:hasParameter bdqval:annotationSystem .
 
 <https://rs.tdwg.org/bdqtest/argument/de022674-06c8-48cf-86b6-2cd362e24667> a bdqffdq:Argument ;
     rdfs:label "Default value for bdqval:annotationAlertIf:\"oa:Annotation with oa:hasTarget having as object any dwciri:term instance that is part of the SingleRecord under Test.\"" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/argument/version/de022674-06c8-48cf-86b6-2cd362e24667-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:de022674-06c8-48cf-86b6-2cd362e24667> ;
     bdqffdq:hasArgumentValue "oa:Annotation with oa:hasTarget having as object any dwciri:term instance that is part of the SingleRecord under Test." ;
     bdqffdq:hasParameter bdqval:annotationAlertIf .
 
 <https://rs.tdwg.org/bdqtest/informationelement/b7a02234-c4d0-40fd-a437-af8330cc700f> a bdqffdq:Consulted ;
     rdfs:label "Information Element Consulted oa:hasTarget" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/b7a02234-c4d0-40fd-a437-af8330cc700f-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:b7a02234-c4d0-40fd-a437-af8330cc700f> ;
     skos:prefLabel "Information Element Consulted oa:hasTarget" ;
     bdqffdq:composedOf <http://www.w3.org/ns/hasTarget> .
@@ -61,6 +73,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/1999e4e0-ce3a-46e3-b131-24412bd94bd1> a bdqffdq:Specification ;
     rdfs:label "Specification for: ISSUE_ANNOTATION_NOTEMPTY" ;
     dcterms:description "EXTERNAL_PREREQUISITES_NOT_MET if the bdqval:annotationSystem is not available; POTENTIAL_ISSUE if an annotation in the bdqval:annotationSystem exists and has an oa:hasTarget referencing the bdqffdq:SingleRecord under evaluation with matching bdqval:annotationAlertIf criteria; otherwise NOT_ISSUE. bdqval:annotationSystem default = \"W3C Web Annotation\" {[https://www.w3.org/annotation/]} {\"oa:Annotation vocabulary\" [https://www.w3.org/TR/annotation-vocab/]},bdqval:annotationAlertIf default = \"oa:Annotation with oa:hasTarget having as object any dwciri:term instance that is part of the SingleRecord under Test.\" {[https://www.w3.org/TR/annotation-vocab/]}" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/1999e4e0-ce3a-46e3-b131-24412bd94bd1-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:1999e4e0-ce3a-46e3-b131-24412bd94bd1> ;
     skos:example "bdqval:annotationAlertIf=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_ISSUE, Response.comment=\"bdqval:annotationAlertIf is bdqval:Empty\"",
         "bdqval:annotationAlertIf=\"?\": Response.status=RUN_HAS_RESULT, Response.result=POTENTIAL_ISSUE, Response.comment=\"bdqval:annotationAlertIf is bdqval:NotEmpty\"" ;
@@ -91,6 +105,8 @@ bdqval:annotationSystem a bdqffdq:Parameter .
 bdqtest:fecaa8a3-bbd8-4c5a-a424-13c37c4bb7b1 a bdqffdq:Issue ;
     rdfs:label "ISSUE_ANNOTATION_NOTEMPTY" ;
     dcterms:description "Are there any annotations associated with the record?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/fecaa8a3-bbd8-4c5a-a424-13c37c4bb7b1-2024-09-17> ;
+    dcterms:modified "2024-09-17"^^xsd:date ;
     dcterms:references <urn:uuid:3c0146df-5ce2-4f35-a066-5cf14de8c79a>,
         <urn:uuid:71c9c3d1-fb9d-4774-8f31-63bc7a4ef49b>,
         <urn:uuid:e9d0f3c8-848c-409e-9af3-70425650a575> ;

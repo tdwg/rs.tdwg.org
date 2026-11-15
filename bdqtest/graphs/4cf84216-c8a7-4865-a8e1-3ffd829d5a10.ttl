@@ -11,6 +11,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/e3f80cb9-61c0-4fa4-9767-d7d4f415321d> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e3f80cb9-61c0-4fa4-9767-d7d4f415321d-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:e3f80cb9-61c0-4fa4-9767-d7d4f415321d> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test Completeness CORE" ;
@@ -20,12 +22,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
+    dcterms:modified "2025-03-07"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:4cf84216-c8a7-4865-a8e1-3ffd829d5a10 .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
+    dcterms:modified "2026-11-12"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:4cf84216-c8a7-4865-a8e1-3ffd829d5a10 .
@@ -41,6 +47,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/05d4f647-0387-4e37-883f-810840711e6d> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAMEID_NOTEMPTY.Response" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/05d4f647-0387-4e37-883f-810840711e6d-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:05d4f647-0387-4e37-883f-810840711e6d> ;
     skos:note "Aggregated Response outcomes produced by VALIDATION_SCIENTIFICNAMEID_NOTEMPTY across a MultiRecord." ;
     skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAMEID_NOTEMPTY.Response" ;
@@ -50,6 +58,8 @@ bdqffdq:MultiRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/336865b2-1b21-49f6-a5f6-1112ed397400> a bdqffdq:Specification ;
     rdfs:label "Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_NOTEMPTY" ;
     dcterms:description "COMPLETE if every VALIDATION_SCIENTIFICNAMEID_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/336865b2-1b21-49f6-a5f6-1112ed397400-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:336865b2-1b21-49f6-a5f6-1112ed397400> ;
     skos:example "" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
@@ -64,6 +74,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:4cf84216-c8a7-4865-a8e1-3ffd829d5a10 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_NOTEMPTY" ;
     dcterms:description "Measure if all VALIDATION_SCIENTIFICNAMEID_NOTEMPTY in a record set are COMPLIANT." ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/4cf84216-c8a7-4865-a8e1-3ffd829d5a10-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:4cf84216-c8a7-4865-a8e1-3ffd829d5a10> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

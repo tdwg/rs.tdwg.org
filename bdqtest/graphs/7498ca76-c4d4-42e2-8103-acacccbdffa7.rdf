@@ -8,6 +8,8 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/7fd3889a-0d1d-4054-8e68-807cfa5410f2">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/7fd3889a-0d1d-4054-8e68-807cfa5410f2-2024-11-12"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-12</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Argument"/>
     <rdfs:label>Default value for bdqval:defaultGeodeticDatum:"EPSG:4326"</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:7fd3889a-0d1d-4054-8e68-807cfa5410f2"/>
@@ -16,6 +18,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/7498ca76-c4d4-42e2-8103-acacccbdffa7">
     <dcterms:description>Proposes an amendment to fill in dwc:geodeticDatum using a parameterized value if the dwc:geodeticDatum is empty.</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/7498ca76-c4d4-42e2-8103-acacccbdffa7-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
     <dcterms:references rdf:resource="https://epsg.io/"/>
     <dcterms:references rdf:resource="https://epsg.org/"/>
@@ -36,6 +40,8 @@
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-24</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"/>
     <rdfs:label>AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22"/>
@@ -44,6 +50,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/da49fa95-ce7b-46cf-825a-91d53f21a997">
     <dcterms:description>If dwc:geodeticDatum is bdqval:Empty, fill in dwc:geodeticDatum using the value of bdqval:defaultGeodeticDatum, report FILLED_IN and, if dwc:coordinateUncertaintyInMeters, dwc:decimalLatitude and dwc:decimalLongitude are bdqval:NotEmpty, amend the value of dwc:coordinateUncertaintyInMeters by adding the maximum datum shift between the specified bdqval:defaultGeodeticDatum and any other datum at the provided dwc:decimalLatitude and dwc:decimalLongitude and instead report AMENDED; otherwise NOT_AMENDED. bdqval:defaultGeodeticDatum default = "EPSG:4326"</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/da49fa95-ce7b-46cf-825a-91d53f21a997-2024-11-12"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-12</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
     <rdfs:label>Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:da49fa95-ce7b-46cf-825a-91d53f21a997"/>
@@ -54,6 +62,8 @@
     <bdqffdq:hasExpectedResponse>If dwc:geodeticDatum is bdqval:Empty, fill in dwc:geodeticDatum using the value of bdqval:defaultGeodeticDatum, report FILLED_IN and, if dwc:coordinateUncertaintyInMeters, dwc:decimalLatitude and dwc:decimalLongitude are bdqval:NotEmpty, amend the value of dwc:coordinateUncertaintyInMeters by adding the maximum datum shift between the specified bdqval:defaultGeodeticDatum and any other datum at the provided dwc:decimalLatitude and dwc:decimalLongitude and instead report AMENDED; otherwise NOT_AMENDED.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/c3849b5d-feb7-4388-ab95-ec54ff1031ea">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/c3849b5d-feb7-4388-ab95-ec54ff1031ea-2024-08-18"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-18</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Consulted"/>
     <rdfs:label>Information Element Consulted dwc:decimalLatitude, dwc:decimalLongitude</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:c3849b5d-feb7-4388-ab95-ec54ff1031ea"/>
@@ -69,7 +79,19 @@
     <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/a543e69c-08a5-4408-a25a-3cdc53d4ce71">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/a543e69c-08a5-4408-a25a-3cdc53d4ce71-2024-11-12"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-12</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
+    <rdfs:label>Information Element ActedUpon dwc:geodeticDatum, dwc:coordinateUncertaintyInMeters</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:a543e69c-08a5-4408-a25a-3cdc53d4ce71"/>
+    <skos:prefLabel>Information Element ActedUpon dwc:geodeticDatum, dwc:coordinateUncertaintyInMeters</skos:prefLabel>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters"/>
+    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/geodeticDatum"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/95627fe5-326a-4468-b220-82af19a6ce98">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/95627fe5-326a-4468-b220-82af19a6ce98-2025-03-07"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentMethod"/>
     <rdfs:label>AmendmentMethod: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT with Specification Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:95627fe5-326a-4468-b220-82af19a6ce98"/>
@@ -80,14 +102,6 @@
     <skos:prefLabel>AmendmentMethod: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT with Specification Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT</skos:prefLabel>
     <bdqffdq:forAmendment rdf:resource="https://rs.tdwg.org/bdqtest/terms/7498ca76-c4d4-42e2-8103-acacccbdffa7"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/da49fa95-ce7b-46cf-825a-91d53f21a997"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/a543e69c-08a5-4408-a25a-3cdc53d4ce71">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ActedUpon"/>
-    <rdfs:label>Information Element ActedUpon dwc:geodeticDatum, dwc:coordinateUncertaintyInMeters</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:a543e69c-08a5-4408-a25a-3cdc53d4ce71"/>
-    <skos:prefLabel>Information Element ActedUpon dwc:geodeticDatum, dwc:coordinateUncertaintyInMeters</skos:prefLabel>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters"/>
-    <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/geodeticDatum"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://spatialreference.org/">
     <dcterms:bibliographicCitation>Spatial Reference (2024) What is SpatialReference.org. https://spatialreference.org/</dcterms:bibliographicCitation>

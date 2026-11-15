@@ -12,6 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/dbb803cb-8b37-4db3-a562-b4f6036f9d17> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_TAXONRANK_NOTEMPTY with Specification for: VALIDATION_TAXONRANK_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/dbb803cb-8b37-4db3-a562-b4f6036f9d17-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:dbb803cb-8b37-4db3-a562-b4f6036f9d17> ;
     skos:historyNote "Source: TDWG2018" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2127",
@@ -23,6 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -42,6 +46,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/informationelement/72421b97-1e66-4429-88d8-cbe647a4c88e> a bdqffdq:ActedUpon ;
     rdfs:label "Information Element ActedUpon dwc:taxonRank" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/informationelement/version/72421b97-1e66-4429-88d8-cbe647a4c88e-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:72421b97-1e66-4429-88d8-cbe647a4c88e> ;
     skos:prefLabel "Information Element ActedUpon dwc:taxonRank" ;
     bdqffdq:composedOf dwc:taxonRank .
@@ -49,6 +55,8 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/c619ec9b-92ec-4047-a8d3-931e3324bf3e> a bdqffdq:Specification ;
     rdfs:label "Specification for: VALIDATION_TAXONRANK_NOTEMPTY" ;
     dcterms:description "COMPLIANT if dwc:taxonRank is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/c619ec9b-92ec-4047-a8d3-931e3324bf3e-2023-09-18> ;
+    dcterms:modified "2023-09-18"^^xsd:date ;
     owl:sameAs <urn:uuid:c619ec9b-92ec-4047-a8d3-931e3324bf3e> ;
     skos:example "dwc:taxonRank=\" \": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:taxonRank is bdqval:Empty\"",
         "dwc:taxonRank=\"genus\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:taxonRank is bdqval:NotEmpty\"" ;
@@ -61,6 +69,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:14da5b87-8304-4b2b-911d-117e3c29e890 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_TAXONRANK_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:taxonRank?" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/14da5b87-8304-4b2b-911d-117e3c29e890-2025-03-06> ;
+    dcterms:modified "2025-03-06"^^xsd:date ;
     dcterms:references <https://rs.gbif.org/vocabulary/gbif/rank.xml> ;
     owl:sameAs <urn:uuid:14da5b87-8304-4b2b-911d-117e3c29e890> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/161" ;
