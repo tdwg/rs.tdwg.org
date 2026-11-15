@@ -143,6 +143,26 @@ declare function html:review-banner($iri as xs:string?) as element()*
 };
 
 (: The header, followed by the review banner (if any) for the page with this IRI :)
+(: Opt-in rewrite of links to resources under review (tdwg/bdq#340): in a page that rs.tdwg.org generates,
+   a link whose target starts with an iri_prefix in html/review-links.csv is made host-relative
+   (https://rs.tdwg.org/bdqval/terms/ -> /bdqval/terms/), so that it is followed on the host serving the
+   page (e.g. bdq-public-review.rs.tdwg.org) while the link text still shows the IRI. Without the
+   file, or for other links, the page is unchanged. :)
+declare function html:review-links($page as item()*) as item()*
+{ let $path := "/usr/src/rs.tdwg.org/html/review-links.csv"
+  return if (not(file:exists($path))) then $page
+  else
+    let $prefixes := csv:parse(file:read-text($path), map { 'header' : true(),'separator' : "," })/csv/record/iri_prefix/text()[. != ""]
+    for $item in $page
+    return if (not($item instance of element())) then $item
+    else copy $p := $item modify (
+      for $a in $p//@href
+      let $v := string($a)
+      where some $x in $prefixes satisfies starts-with($v, $x)
+      return replace value of node $a with replace($v, '^https?://[^/]+', '')
+    ) return $p
+};
+
 declare function html:generate-header($iri as xs:string?) as element()+
 {
   (html:generate-header(), html:review-banner($iri))
