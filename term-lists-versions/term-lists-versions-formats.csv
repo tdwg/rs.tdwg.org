@@ -1,1 +1,7 @@
 termListVersion,mediaType,accessUri
+https://rs.tdwg.org/bdqffdq/version/extension/2024-10-01,text/turtle,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/axioms-versions/bdqffdq-axioms-2024-10-01.ttl
+https://rs.tdwg.org/bdqffdq/version/extension/2024-10-01,application/rdf+xml,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/axioms-versions/bdqffdq-axioms-2024-10-01.rdf
+https://rs.tdwg.org/bdqffdq/version/extension/2024-10-01,application/ld+json,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/axioms-versions/bdqffdq-axioms-2024-10-01.jsonld
+https://rs.tdwg.org/bdqffdq/version/extension/2026-11-09,text/turtle,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/axioms-versions/bdqffdq-axioms-2026-11-09.ttl
+https://rs.tdwg.org/bdqffdq/version/extension/2026-11-09,application/rdf+xml,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/axioms-versions/bdqffdq-axioms-2026-11-09.rdf
+https://rs.tdwg.org/bdqffdq/version/extension/2026-11-09,application/ld+json,https://raw.githubusercontent.com/tdwg/rs.tdwg.org/bdq/bdqffdq/axioms-versions/bdqffdq-axioms-2026-11-09.jsonld

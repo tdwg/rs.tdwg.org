@@ -1,0 +1,67 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix bdqval: <https://rs.tdwg.org/bdqval/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://rs.tdwg.org/bdqtest/method/5c06b6ae-7229-49cc-a0e8-4c0bae153b4b> a bdqffdq:MeasurementMethod ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
+    owl:sameAs <urn:uuid:5c06b6ae-7229-49cc-a0e8-4c0bae153b4b> ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
+    bdqffdq:forMeasure bdqtest:9d5be694-f5da-465d-8c7e-27e6dac69f9f ;
+    bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/68e86c5a-f444-4aff-b54c-47bc100bcf4b> .
+
+<https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
+    rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:SDM-Trees" ;
+    owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
+    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:includedInPolicy bdqtest:9d5be694-f5da-465d-8c7e-27e6dac69f9f .
+
+<https://doi.org/10.1371/journal.pone.0178731> a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731" .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqffdq:MultiRecord a bdqffdq:ResourceType ;
+    rdfs:label "MultiRecord" .
+
+<https://rs.tdwg.org/bdqtest/informationelement/cbb53f33-ddc6-444c-b2f1-c06bb6759225> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LICENSE_STANDARD.Response" ;
+    owl:sameAs <urn:uuid:cbb53f33-ddc6-444c-b2f1-c06bb6759225> ;
+    skos:note "Aggregated Response outcomes produced by VALIDATION_LICENSE_STANDARD across a MultiRecord." ;
+    skos:prefLabel "Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_LICENSE_STANDARD.Response" ;
+    bdqffdq:aggregatesResponsesFrom bdqtest:3136236e-04b6-49ea-8b34-a65f25e3aba1 ;
+    bdqffdq:composedOf bdqval:AggregatedTestResponseOutcomes .
+
+<https://rs.tdwg.org/bdqtest/specification/68e86c5a-f444-4aff-b54c-47bc100bcf4b> a bdqffdq:Specification ;
+    rdfs:label "Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
+    dcterms:description "Count the number of VALIDATION_LICENSE_STANDARD in the MultiRecord that have Response.result=COMPLIANT." ;
+    owl:sameAs <urn:uuid:68e86c5a-f444-4aff-b54c-47bc100bcf4b> ;
+    skos:example "" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "Count the number of VALIDATION_LICENSE_STANDARD in the MultiRecord that have Response.result=COMPLIANT." .
+
+bdquc:SDM-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:SDM-Trees" .
+
+bdqtest:9d5be694-f5da-465d-8c7e-27e6dac69f9f a bdqffdq:Measure ;
+    rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD" ;
+    dcterms:description "Count the number of VALIDATION_LICENSE_STANDARD in a record set that are COMPLIANT." ;
+    dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
+    owl:sameAs <urn:uuid:9d5be694-f5da-465d-8c7e-27e6dac69f9f> ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;
+    skos:note "For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set." ;
+    skos:prefLabel "Measurement over MultiRecord Counting Compliance of Validation dcterms:license Standard for MultiRecord" ;
+    bdqffdq:hasActedUponInformationElement <https://rs.tdwg.org/bdqtest/informationelement/cbb53f33-ddc6-444c-b2f1-c06bb6759225> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2024-03-21"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:MultiRecord .
+
