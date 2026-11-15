@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+3e00109a-13d3-416d-9a91-127c99b47473,"Default value for bdqval:sourceAuthority:""The Getty Thesaurus of Geographic Names (TGN)""",bdqffdq:Argument,urn:uuid:3e00109a-13d3-416d-9a91-127c99b47473,The Getty Thesaurus of Geographic Names (TGN),https://rs.tdwg.org/bdqval/terms/sourceAuthority,69b2efdc-6269-45a4-aecb-4cb99c2ae134

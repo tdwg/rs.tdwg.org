@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+ff9e9459-d1a5-43a6-ada9-8be41772b711,"Default value for bdqval:sourceAuthority:""Degree of Establishment Controlled Vocabulary List of Terms""",bdqffdq:Argument,urn:uuid:ff9e9459-d1a5-43a6-ada9-8be41772b711,Degree of Establishment Controlled Vocabulary List of Terms,https://rs.tdwg.org/bdqval/terms/sourceAuthority,74ef1034-e289-4596-b5b0-cde73796697d

@@ -1,0 +1,3 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+2c441806-b56b-4252-9944-e331f9f3fee6,"Default value for bdqval:sourceAuthority:""GBIF Catalogue of Country Centroides""",bdqffdq:Argument,urn:uuid:2c441806-b56b-4252-9944-e331f9f3fee6,GBIF Catalogue of Country Centroides,https://rs.tdwg.org/bdqval/terms/sourceAuthority,256e51b3-1e08-4349-bb7e-5186631c3f8e
+9c0a82d5-4b24-4160-a000-ee9429bef8f7,"Default value for bdqval:spatialBufferInMeters:""5000""",bdqffdq:Argument,urn:uuid:9c0a82d5-4b24-4160-a000-ee9429bef8f7,5000,https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters,256e51b3-1e08-4349-bb7e-5186631c3f8e

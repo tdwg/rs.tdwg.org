@@ -20,3 +20,6 @@ hasResourceType,bdqffdq:hasResourceType,iri,,,$root
 hasDataQualityDimension,bdqffdq:hasDataQualityDimension,iri,,,$root
 hasCriterion,bdqffdq:hasCriterion,iri,,,$root
 hasEnhancement,bdqffdq:hasEnhancement,iri,,,$root
+sameAs,owl:sameAs,iri,,,$root
+hasActedUponInformationElement,bdqffdq:hasActedUponInformationElement,iri,,,$root
+hasConsultedInformationElement,bdqffdq:hasConsultedInformationElement,iri,,,$root

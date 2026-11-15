@@ -16,3 +16,10 @@ bdqdim,https://rs.tdwg.org/bdqdim/terms/
 bdqcrit,https://rs.tdwg.org/bdqcrit/terms/
 bdqenh,https://rs.tdwg.org/bdqenh/terms/
 bdqtest,https://rs.tdwg.org/bdqtest/terms/
+bdqval,https://rs.tdwg.org/bdqval/terms/
+bdquc,https://rs.tdwg.org/bdquc/terms/
+bdqtestargument,https://rs.tdwg.org/bdqtest/argument/
+bdqtestspecification,https://rs.tdwg.org/bdqtest/specification/
+bdqtestinformationelement,https://rs.tdwg.org/bdqtest/informationelement/
+bdqtestmethod,https://rs.tdwg.org/bdqtest/method/
+bdqtestpolicy,https://rs.tdwg.org/bdqtest/policy/

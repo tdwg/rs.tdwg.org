@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+1b66a16a-5e76-4eca-a400-d097ac136ac1,"Default value for bdqval:sourceAuthority:""Darwin Core basisOfRecord""",bdqffdq:Argument,urn:uuid:1b66a16a-5e76-4eca-a400-d097ac136ac1,Darwin Core basisOfRecord,https://rs.tdwg.org/bdqval/terms/sourceAuthority,07c28ace-561a-476e-a9b9-3d5ad6e35933

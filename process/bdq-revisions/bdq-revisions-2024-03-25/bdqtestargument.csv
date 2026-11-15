@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+e35dd18a-9c69-4aef-9b70-3d36d7eb6bd4,"Default value for bdqval:sourceAuthority:""GBIF Sex Vocabulary""",bdqffdq:Argument,urn:uuid:e35dd18a-9c69-4aef-9b70-3d36d7eb6bd4,GBIF Sex Vocabulary,https://rs.tdwg.org/bdqval/terms/sourceAuthority,33c45ae1-e2db-462a-a59e-7169bb01c5d6

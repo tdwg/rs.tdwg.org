@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+7fd3889a-0d1d-4054-8e68-807cfa5410f2,"Default value for bdqval:defaultGeodeticDatum:""EPSG:4326""",bdqffdq:Argument,urn:uuid:7fd3889a-0d1d-4054-8e68-807cfa5410f2,EPSG:4326,https://rs.tdwg.org/bdqval/terms/defaultGeodeticDatum,7498ca76-c4d4-42e2-8103-acacccbdffa7

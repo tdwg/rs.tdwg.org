@@ -1,0 +1,14 @@
+header,predicate,type,value,attribute,subject_id
+term_isDefinedBy,rdfs:isDefinedBy,iri,,,$root
+term_isDefinedBy,dcterms:isPartOf,iri,,,$root
+term_created,dcterms:created,datatype,,xsd:date,$root
+term_modified,dcterms:modified,datatype,,xsd:date,$root
+term_deprecated,owl:deprecated,datatype,,xsd:boolean,$root
+replaces_term,dcterms:replaces,iri,,,$root
+replaces1_term,dcterms:replaces,iri,,,$root
+replaces2_term,dcterms:replaces,iri,,,$root
+label,rdfs:label,language,,en,$root
+type,rdf:type,iri,,,$root
+sameAs,owl:sameAs,iri,,,$root
+argumentValue,bdqffdq:hasArgumentValue,datatype,,xsd:string,$root
+hasParameter,bdqffdq:hasParameter,iri,,,$root

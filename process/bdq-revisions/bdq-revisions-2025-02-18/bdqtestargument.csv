@@ -1,0 +1,2 @@
+term_localName,label,type,sameAs,argumentValue,hasParameter,test
+74716bc2-c82e-49f3-938b-2298094554b4,"Default value for bdqval:sourceAuthority:""Regex present/absent""",bdqffdq:Argument,urn:uuid:74716bc2-c82e-49f3-938b-2298094554b4,Regex present/absent,https://rs.tdwg.org/bdqval/terms/sourceAuthority,7af25f1e-a4e2-4ff4-b161-d1f25a5c3e47
