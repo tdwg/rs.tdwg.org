@@ -12,7 +12,8 @@ includedInPolicy. The graph is built with the pinned builder (bdqtest_rdf.py), i
 
 - the current graph of each Test term, between current resources: the Test bdqtest:<uuid>, its
   Method https://rs.tdwg.org/bdqtest/method/<uuid>, and so on, each owl:sameAs its bare
-  urn:uuid:; written to bdqtest/graphs/<uuid>.{ttl,rdf,jsonld};
+  urn:uuid:, dcterms:hasVersion its most recent version, and dcterms:modified that version's date;
+  written to bdqtest/graphs/<uuid>.{ttl,rdf,jsonld};
 - the graph of each Test version, between versions: the Test version, and the versions of its
   Method, Specification, Arguments, information elements, and Policies current on its date
   (from the element term lists' versions, processed by process.py from the inputs that
@@ -215,21 +216,29 @@ def versioned(graph, date):
     return out
 
 
-def current_form(graph, tests):
-    """The current graph of Tests (term local name -> date of the version built), between current resources."""
+def current_form(graph, tests, date):
+    """The current graph of Tests (term local name -> date of the version built), between current resources.
+
+    Each Test and element states its most recent version on date (dcterms:hasVersion; SDS 2.3.2), and that
+    version's date (dcterms:modified; SDS 4.3)."""
     nodes = element_nodes(graph)
     mapping = {n: rdflib.URIRef(ENS[k] + str(n)[9:]) for n, k in nodes.items()}
     terms = {}
-    for local, date in tests.items():
-        terms[rdflib.URIRef(f'{NS}version/{local}-{date}')] = rdflib.URIRef(NS + local)
+    for local, built in tests.items():
+        terms[rdflib.URIRef(f'{NS}version/{local}-{built}')] = rdflib.URIRef(NS + local)
     mapping.update(terms)
     out = renamed(graph, mapping)
-    for term in terms.values():
+    for version, term in terms.items():
         out.remove((term, DCT.isVersionOf, None))
         out.remove((term, DCT.issued, None))
         out.add((term, OWL.sameAs, rdflib.URIRef('urn:uuid:' + str(term)[len(NS):])))
-    for n in nodes:
+        out.add((term, DCT.hasVersion, version))
+        out.add((term, DCT.modified, rdflib.Literal(str(version)[-10:], datatype=rdflib.XSD.date)))
+    for n, k in nodes.items():
         out.add((mapping[n], OWL.sameAs, n))
+        version = element_version(k, str(n)[9:], date)
+        out.add((mapping[n], DCT.hasVersion, version))
+        out.add((mapping[n], DCT.modified, rdflib.Literal(str(version)[-10:], datatype=rdflib.XSD.date)))
     out.bind('owl', OWL)
     return out
 
@@ -245,7 +254,7 @@ if WHOLE:
     additional, ie, policy, citation = tables(latest)
     whole = bdqtest_rdf.build_graph(current_rows, additional, ie, policy, citation, term_iri_to_label=labels,
                                     policy_sizes=sizes, ontology_support=True)
-    whole = current_form(whole, current_dates)
+    whole = current_form(whole, current_dates, latest)
     write(whole, WHOLE / 'bdqtest')
     print(f'bdqtest whole graph: {len(current_rows)} current Tests, {len(whole)} triples, in {WHOLE}/bdqtest.{{ttl,rdf,jsonld}}')
     sys.exit(0)
@@ -265,7 +274,7 @@ for version in sorted(versions, key=lambda v: (v['version_issued'], v['version']
 current_graphs = {}
 for version in current_versions:
     local = version['term_localName']
-    graph = current_form(build([published(version)], latest, labels, sizes), {local: version['version_issued']})
+    graph = current_form(build([published(version)], latest, labels, sizes), {local: version['version_issued']}, latest)
     write(graph, GRAPHS / local)
     lookup.append([NS + local, f'bdqtest/graphs/{local}'])
     current_graphs[local] = graph
@@ -274,7 +283,7 @@ with open(root / 'bdqtest' / 'bdqtest-graphs.csv', 'w', newline='', encoding='ut
     csv.writer(f, lineterminator='\n').writerows([['iri', 'graph']] + sorted(lookup))
 
 # Check: the current graphs of the Tests together are the current graph of all current Tests.
-whole = current_form(build(current_rows, latest, labels, sizes), current_dates)
+whole = current_form(build(current_rows, latest, labels, sizes), current_dates, latest)
 union = rdflib.Graph()
 for graph in current_graphs.values():
     for triple in graph:
