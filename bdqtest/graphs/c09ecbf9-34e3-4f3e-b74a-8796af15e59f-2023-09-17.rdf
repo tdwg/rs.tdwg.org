@@ -6,14 +6,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2023-09-17">
-    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (5) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
-    <skos:prefLabel>ValidationPolicy: (5) validations  in UseCase bdquc:SDM-Trees</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2023-09-17"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Alien-Species">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Alien-Species</rdfs:label>
@@ -25,6 +17,10 @@
     <skos:prefLabel>ValidationPolicy: (5) validations  in UseCase bdquc:Alien-Species</skos:prefLabel>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2023-09-17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
@@ -41,6 +37,14 @@
     <skos:prefLabel>ValidationMethod: VALIDATION_YEAR_NOTEMPTY with Specification for: VALIDATION_YEAR_NOTEMPTY</skos:prefLabel>
     <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2023-09-17"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/42f331f4-a5a8-48b4-a08e-57048d1d1a77-2023-09-17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2023-09-17">
+    <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (5) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (5) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2023-09-17"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2023-09-17">
     <dcterms:description>Is there a value in dwc:year?</dcterms:description>
@@ -85,10 +89,6 @@
     <skos:prefLabel>ValidationPolicy: (8) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2023-09-17"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/NotEmpty">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>

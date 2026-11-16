@@ -46,6 +46,10 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Alien-Species</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
@@ -107,10 +111,10 @@
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
+    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
-    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/ad0c8855-de69-4843-a80c-a5387d20fbc8"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/InRange">
@@ -126,10 +130,6 @@
     <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/ad0c8855-de69-4843-a80c-a5387d20fbc8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/latestValidDate">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>

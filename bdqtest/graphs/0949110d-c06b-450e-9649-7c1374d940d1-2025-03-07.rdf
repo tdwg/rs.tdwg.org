@@ -9,9 +9,9 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07">
     <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
-    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/version/0949110d-c06b-450e-9649-7c1374d940d1-2025-03-07">
@@ -33,6 +33,10 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Alien-Species">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Alien-Species</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07">
     <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
@@ -94,10 +98,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/InRange">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
     <rdfs:label>InRange</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

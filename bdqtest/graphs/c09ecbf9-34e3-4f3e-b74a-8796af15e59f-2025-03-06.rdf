@@ -40,10 +40,14 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-06">
     <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
-    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c09ecbf9-34e3-4f3e-b74a-8796af15e59f-2025-03-06"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
@@ -85,10 +89,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Spatial-Temporal_Patterns</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/NotEmpty">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>

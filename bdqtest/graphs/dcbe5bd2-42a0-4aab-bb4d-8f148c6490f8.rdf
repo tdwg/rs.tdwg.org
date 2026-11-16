@@ -16,6 +16,10 @@
     <bdqffdq:hasArgumentValue>Creative Commons</bdqffdq:hasArgumentValue>
     <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/sourceAuthority"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8">
     <dcterms:description>Proposes an amendment to the value of dcterms:license using the bdqval:sourceAuthority.</dcterms:description>
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2025-03-07"/>
@@ -82,18 +86,14 @@
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2025-03-07"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/AmendmentPolicy"/>
-    <rdfs:label>AmendmentPolicy: (5) amendments  in UseCase bdquc:SDM-Trees</rdfs:label>
+    <rdfs:label>AmendmentPolicy: (5) amendments  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://creativecommons.org/licenses/">
     <dcterms:bibliographicCitation>Creative Commons (n.dat.) About the Licenses. https://creativecommons.org/licenses/</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqenh/terms/Standardized">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Enhancement"/>

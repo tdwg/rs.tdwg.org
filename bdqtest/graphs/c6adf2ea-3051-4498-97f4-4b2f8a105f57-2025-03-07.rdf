@@ -9,9 +9,9 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07">
     <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</rdfs:label>
-    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:SDM-Trees</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/SDM-Trees"/>
+    <rdfs:label>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+    <skos:prefLabel>ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c6adf2ea-3051-4498-97f4-4b2f8a105f57-2025-03-07"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/version/a5bbeae3-9dc8-4a0c-9f68-58526e5d6a76-2025-03-07">
@@ -25,6 +25,10 @@
     <skos:prefLabel>ValidationMethod: VALIDATION_COORDINATEUNCERTAINTY_INRANGE with Specification for: VALIDATION_COORDINATEUNCERTAINTY_INRANGE</skos:prefLabel>
     <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c6adf2ea-3051-4498-97f4-4b2f8a105f57-2025-03-07"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/f8dfc3fc-6580-4518-b2b4-595c29e9042e-2023-09-18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2025-03-07">
     <dcterms:isVersionOf rdf:resource="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
@@ -83,10 +87,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/InRange">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
     <rdfs:label>InRange</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/SDM-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:SDM-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Great-circle_distance">
     <dcterms:bibliographicCitation>Wikipedia (2020) Great-circle distance. https://en.wikipedia.org/wiki/Great-circle_distance</dcterms:bibliographicCitation>

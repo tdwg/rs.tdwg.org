@@ -27,9 +27,9 @@
     bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2025-03-06> .
 
 <https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2025-03-06> a bdqffdq:IssuePolicy ;
-    rdfs:label "IssuePolicy: (1) issues  in UseCase bdquc:SDM-Trees" ;
+    rdfs:label "IssuePolicy: (1) issues  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/policy/62aa9551-8412-4ee9-a58d-dd6baea1dc35> ;
-    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2025-03-06> .
 
 <https://doi.org/10.15468/doc-5jp4-5g10> a dcterms:BibliographicResource ;
@@ -62,11 +62,11 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
     bdqffdq:hasAuthoritiesDefaults "" ;
     bdqffdq:hasExpectedResponse "POTENTIAL_ISSUE if dwc:dataGeneralizations is bdqval:NotEmpty; otherwise NOT_ISSUE" .
 
-bdquc:SDM-Trees a bdqffdq:UseCase ;
-    rdfs:label "bdquc:SDM-Trees" .
-
 bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
     rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Species-Distribution-Modeling-Trees" .
 
 <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2025-03-06> a bdqffdq:Issue ;
     rdfs:label "ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;

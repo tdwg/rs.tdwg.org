@@ -121,12 +121,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "MeasurementPolicy: (18) measures  in UseCase bdquc:SDM-Trees"
+        "@value": "MeasurementPolicy: (18) measures  in UseCase bdquc:Species-Distribution-Modeling-Trees"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasUseCase": [
       {
-        "@id": "https://rs.tdwg.org/bdquc/terms/SDM-Trees"
+        "@id": "https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/includedInPolicy": [
@@ -240,13 +240,13 @@
     ]
   },
   {
-    "@id": "https://rs.tdwg.org/bdquc/terms/SDM-Trees",
+    "@id": "https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees",
     "@type": [
       "https://rs.tdwg.org/bdqffdq/terms/UseCase"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "bdquc:SDM-Trees"
+        "@value": "bdquc:Species-Distribution-Modeling-Trees"
       }
     ]
   }

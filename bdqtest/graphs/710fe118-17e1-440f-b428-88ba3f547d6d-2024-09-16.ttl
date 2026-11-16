@@ -21,9 +21,9 @@
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/version/46992280-0ed6-4c42-9e89-ed388ca1d43b-2024-09-16> .
 
 <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2024-09-16> a bdqffdq:AmendmentPolicy ;
-    rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:SDM-Trees" ;
+    rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/policy/60c7e911-e72e-421f-be9b-4fb81eef1a54> ;
-    bdqffdq:hasUseCase bdquc:SDM-Trees ;
+    bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/710fe118-17e1-440f-b428-88ba3f547d6d-2024-09-16> .
 
 <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2024-09-16> a bdqffdq:AmendmentPolicy ;
@@ -69,11 +69,11 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
     bdqffdq:hasAuthoritiesDefaults "" ;
     bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or contains an invalid value according to ISO 8601; FILLED_IN if any of (1) dwc:day from dwc:eventDate if dwc:day is bdqval:Empty and dwc:eventDate has a precision of a day or finer and is within a single day, (2) dwc:month from dwc:eventDate if dwc:month is bdqval:Empty and dwc:eventDate has a precision of a single month or finer and is within a single month, (3) dwc:year from dwc:eventDate if dwc:year is bdqval:Empty and dwc:eventDate has a precision of a single year or finer and is within a single year, (4) dwc:startDayOfYear and dwc:endDayOfYear if they are bdqval:Empty and dwc:eventDate has a precision of a day or better; otherwise NOT_AMENDED." .
 
-bdquc:SDM-Trees a bdqffdq:UseCase ;
-    rdfs:label "bdquc:SDM-Trees" .
-
 bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
     rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Species-Distribution-Modeling-Trees" .
 
 <https://www.iso.org/obp/ui/> a dcterms:BibliographicResource ;
     dcterms:bibliographicCitation "ISO (2019) ISO 8601-1:2019(en) Date and time — Representations for information interchange — Part 1: Basic rules. https://www.iso.org/obp/ui/" .
