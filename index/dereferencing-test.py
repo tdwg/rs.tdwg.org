@@ -78,6 +78,7 @@ index_url = 'index-datasets.csv'
 index_list = read_csv_as_dicts_github(index_url)
 print('retrieving data about databases:')
 database_test_urls = []
+database_example_iris = []  # (relative URL, IRI with the vocabulary's own scheme)
 
 # for each database, build a list of URLs for the first resource each database describes
 for database in index_list:
@@ -102,12 +103,39 @@ for database in index_list:
     relative_url = relative_tdwg_url(example_url)
     if relative_url is not None:  # skip term lists for borrowed terms outside of TDWG
         database_test_urls.append(relative_url) # save only the relative URL
+        database_example_iris.append((relative_url, example_url))
 print()
 
 outfilename = 'pattern-dereferencing-results.csv'
 print('dereferencing database pattern test URLs')
 # dereference a URL from each database using the various Accept headers
 dereference_urls(outfilename, headers, subdomain, database_test_urls)
+print()
+
+# ------------------------
+# Check that each vocabulary's RDF uses its own scheme. The protocol is chosen per vocabulary
+# (http for the existing TDWG vocabularies, https for BDQ); both schemes resolve to the same
+# resource, and the RDF must describe it by the IRI recorded in the tables, not the other scheme.
+# ------------------------
+
+print('Checking the scheme of the subject IRI in the Turtle of each example resource')
+scheme_results = []
+for relative_url, iri in database_example_iris:
+    other = ('https://' + iri[len('http://'):]) if iri.startswith('http://') else ('http://' + iri[len('https://'):])
+    r = requests.get(subdomain + relative_url, headers={'Accept': 'text/turtle'}, allow_redirects=True)
+    if r.status_code != 200:
+        status = 'not checked (HTTP ' + str(r.status_code) + ')'
+    elif ('<' + iri + '>') in r.text:
+        status = 'ok'
+    elif ('<' + other + '>') in r.text:
+        status = '*** described with the other scheme: ' + other
+    else:
+        status = '*** IRI not found in the Turtle'
+    if status != 'ok':
+        print(status + '\t' + iri)
+    scheme_results.append([status, iri])
+write_csv('scheme-check-results.csv', [['status', 'iri']] + scheme_results)
+print(str(sum(1 for s, i in scheme_results if s == 'ok')) + ' of ' + str(len(scheme_results)) + ' example resources use their own scheme')
 print()
 
 # ------------------------
