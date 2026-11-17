@@ -49,6 +49,11 @@ Key behavioural invariants that mirror the Java implementation:
 #      one Test can be built with the labels of the whole set;
 #   4. build_graph() can leave out the ontology-support rdfs:subClassOf statements, which
 #      belong to bdqffdq, not to a Test.
+#   5. Method labels from release 2026-11-17 read "{Method}: {Test} with Specification:
+#      Specification for: {Test}" for every kind of Method. Before it, ValidationMethods read
+#      "... with Specification for: ..." and the others "... with Specification Specification
+#      for: ...". The wording depends on the version's date (the row's issued), so the graphs
+#      and element rows of earlier versions are unchanged (METHOD_LABEL_FIXED).
 
 
 import argparse
@@ -629,6 +634,10 @@ def _add_argument_nodes(g: Graph, row: dict, spec_uri: URIRef,
 
 # ── Main graph builder ────────────────────────────────────────────────────────
 
+# rs.tdwg.org: the release from which Method labels read "with Specification: Specification for:" (change 5).
+METHOD_LABEL_FIXED = '2026-11-17'
+
+
 def build_graph(rows: list, additional_guids: dict, ie_guids: dict,
                 policy_guids: dict, citation_guids: tuple,
                 term_iri_to_label: dict = None, policy_sizes: dict = None,
@@ -794,8 +803,14 @@ def build_graph(rows: list, additional_guids: dict, ie_guids: dict,
 
             # Label / prefLabel — Validation uses "with Specification for:",
             # all other types use "with Specification Specification for:".
+            # rs.tdwg.org: from release METHOD_LABEL_FIXED on, every type uses
+            # "with Specification: Specification for:" (by the version's date, so earlier
+            # versions keep their labels).
             mn = _method_class_name(test_type)
-            if test_type == 'Validation':
+            if issued >= METHOD_LABEL_FIXED:
+                m_label = (f"{mn}: {label}"
+                           f" with Specification: Specification for: {label}")
+            elif test_type == 'Validation':
                 m_label = (f"{mn}: {label}"
                            f" with Specification for: {label}")
             else:

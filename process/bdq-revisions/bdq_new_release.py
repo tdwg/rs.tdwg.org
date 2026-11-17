@@ -22,6 +22,11 @@ DateLastUpdated: a change is substantive if it changes the behavior implementati
 release date in the proposal), and their dateLastUpdated becomes the release date; other changes
 keep the Test's dateLastUpdated. A new Test's dateLastUpdated is the release date.
 
+A Test row with no change is refused, unless --unchanged-test is given: for a release whose change
+is in the Test's elements as the pinned builder derives them (for example the wording of Method
+labels, bdqtest_rdf.py), each such Test gets a new version with the same row, and
+bdqtest_elements_to_rs.py derives the new versions of its elements.
+
 The script does not change GUID tables (step 3: put changed tables in bdqtest-graph-inputs/ of the
 release by hand), and does not process. Then, from process/:
 
@@ -32,6 +37,7 @@ release by hand), and does not process. Then, from process/:
 Usage, from process/:
     python bdq-revisions/bdq_new_release.py <date> --bdqtest <proposals.csv>
         [--substantive <uuid> ...] [--modified-document <document IRI> ...] [--comment <text>]
+        [--unchanged-test]
 
 Requires pyyaml.
 """
@@ -119,6 +125,8 @@ def main():
     parser.add_argument('--modified-document', action='append', default=[], metavar='IRI',
                         help='a document (not a List of Terms) whose content changes in this release')
     parser.add_argument('--comment', default='', help='a line for the header comment of config.yaml')
+    parser.add_argument('--unchanged-test', action='store_true',
+                        help='accept Test rows with no change (a new version for a change in derived elements)')
     args = parser.parse_args()
 
     try:
@@ -157,7 +165,7 @@ def main():
             substantive = uuid in args.substantive or given == args.date
             row['dateLastUpdated'] = args.date if substantive else base['dateLastUpdated']
             changed = [c for c in changed if c != 'dateLastUpdated']
-            if not changed and not substantive:
+            if not changed and not substantive and not args.unchanged_test:
                 fail(uuid + ' (' + base['label'] + '): no change from its row in release ' + base_date)
             report.append('%s %s: from release %s; changed %s; dateLastUpdated %s (%s)' % (
                 uuid, row['label'], base_date, ', '.join(changed) or 'nothing else',
