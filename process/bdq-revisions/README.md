@@ -64,10 +64,13 @@ Steps 1, 2, and 5 can be done with `bdq_new_release.py`, from proposed Test rows
 
 ```bash
 python bdq-revisions/bdq_new_release.py YYYY-MM-DD --bdqtest proposals.csv \
-    [--substantive <uuid> ...] [--modified-document <document IRI> ...] [--comment "<why>"]
+    [--substantive <uuid> ...] [--modified-document <document IRI> ...] [--comment "<why>"] \
+    [--unchanged-test]
 ```
 
 It writes the release directory with the latest release's `config.yaml` for the new date (and `modified: true` only on the documents given; the Quick Reference Guide shows the Tests' examples, notes, and parameters), header-only CSVs for the other namespaces, and `bdqtest.csv` with each proposed Test's row from the latest release that has it, changed as proposed. `dateLastUpdated` becomes the release date only for the Tests given with `--substantive`. Then continue with step 3 (if needed) and step 4.
+
+A proposed row that changes nothing is refused, unless `--unchanged-test` is given. Use it when the change is not in the Test's row but in the elements that the pinned builder `bdqtest_rdf.py` derives from it, such as the wording of Method labels: each Test given gets a new, non-substantive version with the same row (`dateLastUpdated` unchanged), and step 4 derives the new versions of its elements. The builder's change must depend on the date of the version being built (as `METHOD_LABEL_FIXED` does for the Method labels of release 2026-11-17), so that the elements and graphs of earlier versions stay as they are; check that step 4 rewrites nothing in the earlier releases and that `bdqtest_graphs.py` changes no existing version graph. Release 2026-11-17 is an example, for all 254 Tests.
 
 1. **Create the release directory** `bdq-revisions-YYYY-MM-DD/` with the release date. Copy `config.yaml` from the latest release, and set `date_issued` and `release_directory` to the new date. Add a header-only CSV for each other namespace (copy the header row of the latest release's CSVs).
 2. **Write the changed Test as a row of `bdqtest.csv`**: copy its row from the current `bdqtest/bdqtest.csv` (or from the release that last changed it), keep `term_localName` (the Test's UUID), and edit the values. Columns use the names in `bdqtest_columns.py` (which maps them back to the published names in tdwg/bdq). Set `dateLastUpdated` to the release date if the change is substantive, that is, if it changes the behavior implementations must follow (plan Section 10.9.3); leave it unchanged for any other change (wording, notes, references). `issued` is the release date, set by `process.py`. A new Test is a row with a new UUID. A Test is not deprecated by this workflow (`../process-vocabulary.md`, Section 3.11).
