@@ -1,5 +1,5 @@
 # BDQ release 2026-11-17 for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).
-# Method labels: every Method label reads "{Method}: {Test} with Specification: Specification for: {Test}" (bdqtest_rdf.py change 5); non-substantive new versions of all 254 Tests.
+# Method labels: every Method label reads "{Method}: {Test} with Specification: Specification for: {Test}" (bdqtest_rdf.py change 5); non-substantive new versions of all 254 Tests. Modified: the bdqffdq and bdqtest guides (their example Method labels) and the Quick Reference Guide (the Tests' current version IRIs).
 # Created by bdq_new_release.py from release 2026-11-16.
 # Run with: python process.py --config bdq-revisions/bdq-revisions-2026-11-17/config.yaml
 # Placeholders for the public review: standard YYY, decision_number YYY (plan 8.2.1).
@@ -1009,6 +1009,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdqtest/doc/guide/
   documentTitle: 'BDQ Tests: Concepts and Use'
   abstract: 'This document is a reference for the BDQ standard, providing context for and normative guidance on use of the bdqtest: vocabulary.'
@@ -1119,6 +1120,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdqtest/doc/qrg/
   documentTitle: BDQ Tests Quick Reference Guide
   abstract: This document is intended to be an easy-to-read quick reference to the current BDQ Tests using a subset of descriptors maintained as part of the BDQ standard.
@@ -1229,6 +1231,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdq/doc/implementers/
   documentTitle: BDQ Implementer's Guide
   abstract: This document is an implementer's guide for the BDQ standard, providing guidance for those wishing to create software implementations (bdqffdq:Mechanism) of BDQ Tests.
