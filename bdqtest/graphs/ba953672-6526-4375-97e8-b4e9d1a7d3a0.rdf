@@ -7,6 +7,18 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/a5a657d0-7c16-4938-b542-057ffe4150cd">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/a5a657d0-7c16-4938-b542-057ffe4150cd-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:a5a657d0-7c16-4938-b542-057ffe4150cd"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/ba953672-6526-4375-97e8-b4e9d1a7d3a0"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/50d4e600-ca37-4f18-8022-e7646f622fe2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/3ea77d56-e4b4-45b2-88d7-c6ab7c1d0f36">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/3ea77d56-e4b4-45b2-88d7-c6ab7c1d0f36-2024-02-09"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-09</dcterms:modified>
@@ -18,23 +30,14 @@
     <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/060e7734-607d-4737-8b2c-bfa17788bf1a"/>
     <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/ba953672-6526-4375-97e8-b4e9d1a7d3a0"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Alien-Species">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Alien-Species</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/ba953672-6526-4375-97e8-b4e9d1a7d3a0">
     <dcterms:description>Measure if all VALIDATION_DEGREEOFESTABLISHMENT_STANDARD in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value).</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/ba953672-6526-4375-97e8-b4e9d1a7d3a0-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/ba953672-6526-4375-97e8-b4e9d1a7d3a0-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD</rdfs:label>
@@ -46,6 +49,15 @@
     <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-09</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/ba953672-6526-4375-97e8-b4e9d1a7d3a0"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/50d4e600-ca37-4f18-8022-e7646f622fe2">
     <dcterms:description>COMPLETE if every VALIDATION_DEGREEOFESTABLISHMENT_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE.</dcterms:description>
@@ -65,18 +77,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>
     <rdfs:label>MultiRecord</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/a5a657d0-7c16-4938-b542-057ffe4150cd">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/a5a657d0-7c16-4938-b542-057ffe4150cd-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:a5a657d0-7c16-4938-b542-057ffe4150cd"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_DEGREEOFESTABLISHMENT_STANDARD</skos:prefLabel>
-    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/ba953672-6526-4375-97e8-b4e9d1a7d3a0"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/50d4e600-ca37-4f18-8022-e7646f622fe2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://doi.org/10.1371/journal.pone.0178731">
     <dcterms:bibliographicCitation>Veiga AK, Saraiva AM, Chapman AD, Morris PJ, Gendreau C, Schigel D, Robertson TJ (2017). A conceptual framework for quality assessment and management of biodiversity data. PLOS ONE 12(6): e0178731. https://doi.org/10.1371/journal.pone.0178731</dcterms:bibliographicCitation>

@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/f89147ba-03e5-432b-8040-0a2a4921d676> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_ESTABLISHMENTMEANS_STANDARD with Specification for: VALIDATION_ESTABLISHMENTMEANS_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f89147ba-03e5-432b-8040-0a2a4921d676-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_ESTABLISHMENTMEANS_STANDARD with Specification: Specification for: VALIDATION_ESTABLISHMENTMEANS_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f89147ba-03e5-432b-8040-0a2a4921d676-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f89147ba-03e5-432b-8040-0a2a4921d676> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1429",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_ESTABLISHMENTMEANS_STANDARD with Specification for: VALIDATION_ESTABLISHMENTMEANS_STANDARD" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_ESTABLISHMENTMEANS_STANDARD with Specification: Specification for: VALIDATION_ESTABLISHMENTMEANS_STANDARD" ;
     bdqffdq:forValidation bdqtest:4eb48fdf-7299-4d63-9d08-246902e2857f ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/f1d3bf9c-5558-41dc-8e33-b17c499be016> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -35,8 +35,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -96,8 +96,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:4eb48fdf-7299-4d63-9d08-246902e2857f a bdqffdq:Validation ;
     rdfs:label "VALIDATION_ESTABLISHMENTMEANS_STANDARD" ;
     dcterms:description "Does the value of dwc:establishmentMeans occur in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/4eb48fdf-7299-4d63-9d08-246902e2857f-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/4eb48fdf-7299-4d63-9d08-246902e2857f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <http://rs.tdwg.org/dwc/doc/em/>,
         <https://doi.org/10.3897/biss.3.38084> ;
     owl:sameAs <urn:uuid:4eb48fdf-7299-4d63-9d08-246902e2857f> ;

@@ -19,21 +19,21 @@
     <bdqffdq:hasExpectedResponse>Count the number of VALIDATION_MAXELEVATION_INRANGE in the MultiRecord that have Response.result=COMPLIANT.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/00aa23d4-1278-4726-b6b2-6f08c37fce85">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/00aa23d4-1278-4726-b6b2-6f08c37fce85-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/00aa23d4-1278-4726-b6b2-6f08c37fce85-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:00aa23d4-1278-4726-b6b2-6f08c37fce85"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation SPACE CODED Test Likeliness Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/6a3baf78-5ec3-4a84-8c6b-6876b3a4e3b5"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/43bdbdf5-cfa7-455c-80e3-dbd14117bb69"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/6a3baf78-5ec3-4a84-8c6b-6876b3a4e3b5">
     <dcterms:description>Count the number of VALIDATION_MAXELEVATION_INRANGE in a record set that are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/6a3baf78-5ec3-4a84-8c6b-6876b3a4e3b5-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/6a3baf78-5ec3-4a84-8c6b-6876b3a4e3b5-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_MAXELEVATION_INRANGE</rdfs:label>
@@ -45,6 +45,15 @@
     <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/6a3baf78-5ec3-4a84-8c6b-6876b3a4e3b5"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/5079eace-ec39-4d44-b4ce-7894854b9eed">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/5079eace-ec39-4d44-b4ce-7894854b9eed-2023-09-18"/>
@@ -60,15 +69,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/6a3baf78-5ec3-4a84-8c6b-6876b3a4e3b5"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

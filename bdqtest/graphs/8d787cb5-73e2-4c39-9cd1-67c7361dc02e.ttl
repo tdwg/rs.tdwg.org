@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/bb12babf-ca13-4289-9a3d-dde52bb8aff8> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_DAY_INRANGE with Specification for: VALIDATION_DAY_INRANGE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/bb12babf-ca13-4289-9a3d-dde52bb8aff8-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_DAY_INRANGE with Specification: Specification for: VALIDATION_DAY_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/bb12babf-ca13-4289-9a3d-dde52bb8aff8-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:bb12babf-ca13-4289-9a3d-dde52bb8aff8> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L829",
         "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
         "TG2 Validation TIME CODED Test Conformance CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_DAY_INRANGE with Specification for: VALIDATION_DAY_INRANGE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DAY_INRANGE with Specification: Specification for: VALIDATION_DAY_INRANGE" ;
     bdqffdq:forValidation bdqtest:8d787cb5-73e2-4c39-9cd1-67c7361dc02e ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/2563ae15-a5bf-48fc-91f3-6df869aece2d> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -77,8 +77,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:8d787cb5-73e2-4c39-9cd1-67c7361dc02e a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DAY_INRANGE" ;
     dcterms:description "Is the value of dwc:day interpretable as a valid integer between 1 and 28 inclusive, or is it validly 29, 30 or 31 given the dwc:month and dwc:year?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8d787cb5-73e2-4c39-9cd1-67c7361dc02e-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8d787cb5-73e2-4c39-9cd1-67c7361dc02e-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

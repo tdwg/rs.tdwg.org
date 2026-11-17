@@ -16,24 +16,10 @@
     <skos:prefLabel>Information Element ActedUpon dwc:namePublishedInYear</skos:prefLabel>
     <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/namePublishedInYear"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/f8024a02-76c0-482a-b805-097d0cdc82e2">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/f8024a02-76c0-482a-b805-097d0cdc82e2-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
-    <rdfs:label>ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:f8024a02-76c0-482a-b805-097d0cdc82e2"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3090</skos:note>
-    <skos:note>Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris &amp; Dou 2025)</skos:note>
-    <skos:note>TG2 Validation NAME CODED Test Completeness CORE</skos:note>
-    <skos:prefLabel>ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY</skos:prefLabel>
-    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/f09fc9ad-a449-4422-b32f-63d8ccf2501f"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70">
     <dcterms:description>Is there a value in dwc:namePublishedInYear?</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
     <rdfs:label>VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:ff59f77d-71e9-4eb1-aac9-8bd05c50ff70"/>
@@ -47,8 +33,8 @@
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f"/>
@@ -71,6 +57,20 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Completeness">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/f8024a02-76c0-482a-b805-097d0cdc82e2">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/f8024a02-76c0-482a-b805-097d0cdc82e2-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification: Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:f8024a02-76c0-482a-b805-097d0cdc82e2"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3090</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris &amp; Dou 2025)</skos:note>
+    <skos:note>TG2 Validation NAME CODED Test Completeness CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification: Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/f09fc9ad-a449-4422-b32f-63d8ccf2501f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/NotEmpty">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>

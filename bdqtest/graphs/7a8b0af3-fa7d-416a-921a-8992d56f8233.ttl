@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/d1b7295f-9a2a-4a52-a066-6e3eac61b0c2> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d1b7295f-9a2a-4a52-a066-6e3eac61b0c2-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d1b7295f-9a2a-4a52-a066-6e3eac61b0c2-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:d1b7295f-9a2a-4a52-a066-6e3eac61b0c2> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test VOCABULARY Consistency CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
     bdqffdq:forMeasure bdqtest:7a8b0af3-fa7d-416a-921a-8992d56f8233 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/809d2925-781f-432e-b5d6-4a91f1afe56c> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:7a8b0af3-fa7d-416a-921a-8992d56f8233 .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:7a8b0af3-fa7d-416a-921a-8992d56f8233 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_COORDINATESSTATEPROVINCE_CONSISTENT" ;
     dcterms:description "Measure if all VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7a8b0af3-fa7d-416a-921a-8992d56f8233-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7a8b0af3-fa7d-416a-921a-8992d56f8233-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:7a8b0af3-fa7d-416a-921a-8992d56f8233> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

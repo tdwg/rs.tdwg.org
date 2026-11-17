@@ -127,18 +127,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/2f73a662-b833-44ad-942c-a87f82262b7c-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/2f73a662-b833-44ad-942c-a87f82262b7c-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM"
+        "@value": "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification: Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -159,7 +159,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM"
+        "@value": "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification: Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forAmendment": [
@@ -180,13 +180,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-04-24"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -272,13 +272,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c5658b83-4471-4f57-9d94-bf7d0a96900c-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c5658b83-4471-4f57-9d94-bf7d0a96900c-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

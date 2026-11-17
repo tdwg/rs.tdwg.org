@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/0f6f7d29-be39-4285-8e17-d71a9e350d38> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0f6f7d29-be39-4285-8e17-d71a9e350d38-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0f6f7d29-be39-4285-8e17-d71a9e350d38-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0f6f7d29-be39-4285-8e17-d71a9e350d38> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND" ;
     bdqffdq:forMeasure bdqtest:012eade5-fc64-458a-a13a-a614491bf4e0 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/5fc8b4cc-9da2-4f6a-8fb9-00f6ca3576f7> .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:012eade5-fc64-458a-a13a-a614491bf4e0 .
@@ -63,8 +63,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:012eade5-fc64-458a-a13a-a614491bf4e0 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND" ;
     dcterms:description "Count the number of VALIDATION_KINGDOM_FOUND in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/012eade5-fc64-458a-a13a-a614491bf4e0-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/012eade5-fc64-458a-a13a-a614491bf4e0-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:012eade5-fc64-458a-a13a-a614491bf4e0> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

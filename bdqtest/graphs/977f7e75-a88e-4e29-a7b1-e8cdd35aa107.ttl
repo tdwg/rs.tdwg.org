@@ -10,28 +10,28 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/0cfe094e-c200-4a8c-b144-7fb0545e4cab> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0cfe094e-c200-4a8c-b144-7fb0545e4cab-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0cfe094e-c200-4a8c-b144-7fb0545e4cab-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0cfe094e-c200-4a8c-b144-7fb0545e4cab> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND" ;
     bdqffdq:forMeasure bdqtest:977f7e75-a88e-4e29-a7b1-e8cdd35aa107 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/fcbc5474-422f-4e72-8419-48fee6bf578e> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:977f7e75-a88e-4e29-a7b1-e8cdd35aa107 .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:977f7e75-a88e-4e29-a7b1-e8cdd35aa107 .
@@ -74,8 +74,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:977f7e75-a88e-4e29-a7b1-e8cdd35aa107 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_GENUS_FOUND" ;
     dcterms:description "Count the number of VALIDATION_GENUS_FOUND in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/977f7e75-a88e-4e29-a7b1-e8cdd35aa107-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/977f7e75-a88e-4e29-a7b1-e8cdd35aa107-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:977f7e75-a88e-4e29-a7b1-e8cdd35aa107> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

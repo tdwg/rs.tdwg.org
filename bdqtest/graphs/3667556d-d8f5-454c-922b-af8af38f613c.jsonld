@@ -124,18 +124,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/0997d841-9db9-40a8-b6ec-5867e9091532-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/0997d841-9db9-40a8-b6ec-5867e9091532-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification for: VALIDATION_FAMILY_FOUND"
+        "@value": "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification: Specification for: VALIDATION_FAMILY_FOUND"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -161,7 +161,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification for: VALIDATION_FAMILY_FOUND"
+        "@value": "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification: Specification for: VALIDATION_FAMILY_FOUND"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forValidation": [
@@ -182,13 +182,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-15"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -284,13 +284,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/3667556d-d8f5-454c-922b-af8af38f613c-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/3667556d-d8f5-454c-922b-af8af38f613c-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

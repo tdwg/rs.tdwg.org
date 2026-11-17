@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/8b06bef9-7fd4-4020-b08c-a07a1bf695b6> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_DCTYPE_STANDARD with Specification for: VALIDATION_DCTYPE_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8b06bef9-7fd4-4020-b08c-a07a1bf695b6-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_DCTYPE_STANDARD with Specification: Specification for: VALIDATION_DCTYPE_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8b06bef9-7fd4-4020-b08c-a07a1bf695b6-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:8b06bef9-7fd4-4020-b08c-a07a1bf695b6> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1070",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Validation OTHER CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_DCTYPE_STANDARD with Specification for: VALIDATION_DCTYPE_STANDARD" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DCTYPE_STANDARD with Specification: Specification for: VALIDATION_DCTYPE_STANDARD" ;
     bdqffdq:forValidation bdqtest:cdaabb0d-a863-49d0-bc0f-738d771acba5 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/b85129f0-28c2-4ede-aff2-5ce3791c6e86> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -34,8 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -81,8 +81,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:cdaabb0d-a863-49d0-bc0f-738d771acba5 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DCTYPE_STANDARD" ;
     dcterms:description "Does the value of dc:type occur as a value in the DCMI type vocabulary?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/cdaabb0d-a863-49d0-bc0f-738d771acba5-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/cdaabb0d-a863-49d0-bc0f-738d771acba5-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/> ;
     owl:sameAs <urn:uuid:cdaabb0d-a863-49d0-bc0f-738d771acba5> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/91" ;

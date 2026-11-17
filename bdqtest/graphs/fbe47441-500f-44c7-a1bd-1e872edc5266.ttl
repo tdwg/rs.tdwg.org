@@ -10,28 +10,28 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/73019d00-f6a5-4617-808b-6dc940f36654> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/73019d00-f6a5-4617-808b-6dc940f36654-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/73019d00-f6a5-4617-808b-6dc940f36654-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:73019d00-f6a5-4617-808b-6dc940f36654> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
     bdqffdq:forMeasure bdqtest:fbe47441-500f-44c7-a1bd-1e872edc5266 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/7c49e2d3-5d57-460f-b98a-8bba82b7156f> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:fbe47441-500f-44c7-a1bd-1e872edc5266 .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:fbe47441-500f-44c7-a1bd-1e872edc5266 .
@@ -74,8 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:fbe47441-500f-44c7-a1bd-1e872edc5266 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_DCTYPE_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_DCTYPE_STANDARD in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/fbe47441-500f-44c7-a1bd-1e872edc5266-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/fbe47441-500f-44c7-a1bd-1e872edc5266-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:fbe47441-500f-44c7-a1bd-1e872edc5266> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

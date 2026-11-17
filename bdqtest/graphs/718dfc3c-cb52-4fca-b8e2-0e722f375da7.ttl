@@ -11,30 +11,30 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/381b0edb-0fb4-4a8e-a77b-badcfa286961> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_STANDARDIZED with Specification Specification for: AMENDMENT_EVENTDATE_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/381b0edb-0fb4-4a8e-a77b-badcfa286961-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_STANDARDIZED with Specification: Specification for: AMENDMENT_EVENTDATE_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/381b0edb-0fb4-4a8e-a77b-badcfa286961-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:381b0edb-0fb4-4a8e-a77b-badcfa286961> ;
     skos:historyNote "Source: Paul Morris, Lee Belbin" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L559 A minimal set of unit tests is in [DwCEventDQTestDefinitions](https://github.com/FilteredPush/event_date_qc/blob/v3.0.0/src/test/java/org/filteredpush/qc/date/DwCEventDQTestDefinitions.java#L338) unit tests for the underlying verbatim date extraction code are in [DateUtilsTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.0/src/test/java/org/filteredpush/qc/date/DateUtilsTest.java#L632) and [DateUtilsTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.0/src/test/java/org/filteredpush/qc/date/DateUtilsTest.java#L788)",
         "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
         "TG2 Amendment TIME CODED Test Conformance ISO/DCMI STANDARD CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_EVENTDATE_STANDARDIZED with Specification Specification for: AMENDMENT_EVENTDATE_STANDARDIZED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_EVENTDATE_STANDARDIZED with Specification: Specification for: AMENDMENT_EVENTDATE_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:718dfc3c-cb52-4fca-b8e2-0e722f375da7 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/6e0e22a1-c233-4c13-baa7-0ab48a4340e4> .
 
 <https://rs.tdwg.org/bdqtest/policy/60c7e911-e72e-421f-be9b-4fb81eef1a54> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:718dfc3c-cb52-4fca-b8e2-0e722f375da7 .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
-    dcterms:modified "2026-04-24"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:718dfc3c-cb52-4fca-b8e2-0e722f375da7 .
@@ -85,8 +85,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:718dfc3c-cb52-4fca-b8e2-0e722f375da7 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENTDATE_STANDARDIZED" ;
     dcterms:description "Proposes an amendment of the value of dwc:eventDate to a valid ISO date." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/718dfc3c-cb52-4fca-b8e2-0e722f375da7-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/718dfc3c-cb52-4fca-b8e2-0e722f375da7-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

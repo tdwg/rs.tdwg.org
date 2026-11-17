@@ -10,28 +10,28 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/a6efb3ed-c977-4e6f-9b60-ba9d639bdd86> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a6efb3ed-c977-4e6f-9b60-ba9d639bdd86-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a6efb3ed-c977-4e6f-9b60-ba9d639bdd86-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:a6efb3ed-c977-4e6f-9b60-ba9d639bdd86> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND" ;
     bdqffdq:forMeasure bdqtest:58fdd5c1-6201-49a1-a7cd-f49c210dc0b6 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/778976c3-2c33-4b8d-9135-a4d8ef36385f> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:58fdd5c1-6201-49a1-a7cd-f49c210dc0b6 .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:58fdd5c1-6201-49a1-a7cd-f49c210dc0b6 .
@@ -74,8 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:58fdd5c1-6201-49a1-a7cd-f49c210dc0b6 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_STATEPROVINCE_FOUND" ;
     dcterms:description "Count the number of VALIDATION_STATEPROVINCE_FOUND in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/58fdd5c1-6201-49a1-a7cd-f49c210dc0b6-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/58fdd5c1-6201-49a1-a7cd-f49c210dc0b6-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:58fdd5c1-6201-49a1-a7cd-f49c210dc0b6> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

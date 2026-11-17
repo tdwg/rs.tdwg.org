@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/a6035033-0779-4a75-99ea-f7112c1dde2b> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_MAXELEVATION_INRANGE with Specification for: VALIDATION_MAXELEVATION_INRANGE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a6035033-0779-4a75-99ea-f7112c1dde2b-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_MAXELEVATION_INRANGE with Specification: Specification for: VALIDATION_MAXELEVATION_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a6035033-0779-4a75-99ea-f7112c1dde2b-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:a6035033-0779-4a75-99ea-f7112c1dde2b> ;
     skos:historyNote "Source: ALA, GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2622",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Validation SPACE CODED Test Likeliness Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_MAXELEVATION_INRANGE with Specification for: VALIDATION_MAXELEVATION_INRANGE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_MAXELEVATION_INRANGE with Specification: Specification for: VALIDATION_MAXELEVATION_INRANGE" ;
     bdqffdq:forValidation bdqtest:c971fe3f-84c1-4636-9f44-b1ec31fd63c7 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/f9471802-a5f7-4f4e-9810-f3f4f43dad1a> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -98,8 +98,8 @@ bdqval:minimumValidElevationInMeters a bdqffdq:Parameter .
 bdqtest:c971fe3f-84c1-4636-9f44-b1ec31fd63c7 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_MAXELEVATION_INRANGE" ;
     dcterms:description "Is the value of dwc:maximumElevationInMeters within the Parameter range?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/c971fe3f-84c1-4636-9f44-b1ec31fd63c7-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/c971fe3f-84c1-4636-9f44-b1ec31fd63c7-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://en.wikipedia.org/wiki/Extreme_points_of_Antarctica>,
         <https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country_> ;

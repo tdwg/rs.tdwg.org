@@ -30,8 +30,8 @@
     <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (26) measures  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9"/>
@@ -39,21 +39,21 @@
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/9d5be694-f5da-465d-8c7e-27e6dac69f9f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/5c06b6ae-7229-49cc-a0e8-4c0bae153b4b">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/5c06b6ae-7229-49cc-a0e8-4c0bae153b4b-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/5c06b6ae-7229-49cc-a0e8-4c0bae153b4b-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:5c06b6ae-7229-49cc-a0e8-4c0bae153b4b"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/9d5be694-f5da-465d-8c7e-27e6dac69f9f"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/68e86c5a-f444-4aff-b54c-47bc100bcf4b"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/9d5be694-f5da-465d-8c7e-27e6dac69f9f">
     <dcterms:description>Count the number of VALIDATION_LICENSE_STANDARD in a record set that are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/9d5be694-f5da-465d-8c7e-27e6dac69f9f-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/9d5be694-f5da-465d-8c7e-27e6dac69f9f-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_LICENSE_STANDARD</rdfs:label>

@@ -18,24 +18,15 @@
     <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
     <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_SEX_STANDARD in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/1b3bbac4-7c00-46d6-8179-1d57c92374ad"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/92c8e64a-7279-4934-8071-5807d1796cbd">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/92c8e64a-7279-4934-8071-5807d1796cbd-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/92c8e64a-7279-4934-8071-5807d1796cbd-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_SEX_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_SEX_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:92c8e64a-7279-4934-8071-5807d1796cbd"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_SEX_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_SEX_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_SEX_STANDARD</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/1b3bbac4-7c00-46d6-8179-1d57c92374ad"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/1449904c-2de3-4fd7-a63e-53882160a132"/>
   </rdf:Description>
@@ -43,10 +34,19 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
     <rdfs:label>bdquc:Alien-Species</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/1b3bbac4-7c00-46d6-8179-1d57c92374ad"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/1b3bbac4-7c00-46d6-8179-1d57c92374ad">
     <dcterms:description>Measure if all VALIDATION_SEX_STANDARD in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value).</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/1b3bbac4-7c00-46d6-8179-1d57c92374ad-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/1b3bbac4-7c00-46d6-8179-1d57c92374ad-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_SEX_STANDARD</rdfs:label>

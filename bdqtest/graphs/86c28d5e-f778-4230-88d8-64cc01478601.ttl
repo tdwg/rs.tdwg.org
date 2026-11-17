@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/e2857b1c-9c3d-4445-9f1e-32000e2243ce> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e2857b1c-9c3d-4445-9f1e-32000e2243ce-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e2857b1c-9c3d-4445-9f1e-32000e2243ce-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:e2857b1c-9c3d-4445-9f1e-32000e2243ce> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
     bdqffdq:forMeasure bdqtest:86c28d5e-f778-4230-88d8-64cc01478601 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/d95305ad-cf84-4473-8c24-09a4a236e262> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:86c28d5e-f778-4230-88d8-64cc01478601 .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:86c28d5e-f778-4230-88d8-64cc01478601 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_COORDINATESCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "Measure if all VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/86c28d5e-f778-4230-88d8-64cc01478601-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/86c28d5e-f778-4230-88d8-64cc01478601-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:86c28d5e-f778-4230-88d8-64cc01478601> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

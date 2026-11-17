@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/95b63dab-dd45-49e0-892f-44a73e76fc00> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/95b63dab-dd45-49e0-892f-44a73e76fc00-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/95b63dab-dd45-49e0-892f-44a73e76fc00-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:95b63dab-dd45-49e0-892f-44a73e76fc00> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test VOCABULARY Conformance CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD" ;
     bdqffdq:forMeasure bdqtest:8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/d2f89397-78f3-4e67-8994-79102470d305> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63 .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_GEODETICDATUM_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_GEODETICDATUM_STANDARD in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

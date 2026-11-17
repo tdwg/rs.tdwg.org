@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/449f44fe-0fef-42ff-a446-d693653b55d4> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_EVENT_CONSISTENT with Specification for: VALIDATION_EVENT_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/449f44fe-0fef-42ff-a446-d693653b55d4-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_EVENT_CONSISTENT with Specification: Specification for: VALIDATION_EVENT_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/449f44fe-0fef-42ff-a446-d693653b55d4-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:449f44fe-0fef-42ff-a446-d693653b55d4> ;
     skos:historyNote "Source: GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1754",
         "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
         "TG2 Validation TIME CODED Test Consistency CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_EVENT_CONSISTENT with Specification for: VALIDATION_EVENT_CONSISTENT" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_EVENT_CONSISTENT with Specification: Specification for: VALIDATION_EVENT_CONSISTENT" ;
     bdqffdq:forValidation bdqtest:5618f083-d55a-4ac2-92b5-b9fb227b832f ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/83d057ea-a6f6-49e6-ac3c-0c418776a0e0> .
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -71,8 +71,8 @@ bdquc:Alien-Species a bdqffdq:UseCase ;
 bdqtest:5618f083-d55a-4ac2-92b5-b9fb227b832f a bdqffdq:Validation ;
     rdfs:label "VALIDATION_EVENT_CONSISTENT" ;
     dcterms:description "Are the values in dwc:eventDate consistent with the values in dwc:year, dwc:month, dwc:day, dwc:startDayOfYear and dwc:endDayOfYear?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/5618f083-d55a-4ac2-92b5-b9fb227b832f-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/5618f083-d55a-4ac2-92b5-b9fb227b832f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:5618f083-d55a-4ac2-92b5-b9fb227b832f> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/67" ;
     skos:note "This Test does not take a position on whether the value in dwc:eventDate, or the values in the atomic terms are correct, it simply points out the presence of inconsistencies. For this Test, dwc:eventTime is explicitly ignored. It may be useful to consider an additional Test that does evaluate dwc:eventTime and dwc:eventDate. In that case, but not in this Test, if the time is present in both dwc:eventDate and dwc:eventTime, and it is inconsistent, it may indicate an error in the dwc:eventDate, thus making it a problem that someone needs to evaluate. This Test will only assert consistency if the data are both internally consistent and are compliant with the term definitions, for example dwc:day, by its definition, can only be the day of an dwc:eventDate that has a precision of a day or better and is not a range that spans more than a single day. A dwc:day that was internally consistent with the first day of the year (that is, 1) of an dwc:eventDate that only had precision to a year would be consistent internally, but not consistent with the Darwin Core term definitions, and would not return COMPLIANT from this Test." ;

@@ -18,22 +18,10 @@
     <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
     <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_MINELEVATION_INRANGE in the MultiRecord has Response.result=COMPLIANT or Response.status=INTERNAL_PREREQUISITES_NOT_MET, otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>TG2 Validation SPACE CODED Test Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE</skos:prefLabel>
-    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/1ba18c8b-66a6-47d9-a709-404439332dba"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/657e5f22-d146-4109-8f57-676fe7eb777f"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/1ba18c8b-66a6-47d9-a709-404439332dba">
     <dcterms:description>Measure if all VALIDATION_MINELEVATION_INRANGE in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value).</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/1ba18c8b-66a6-47d9-a709-404439332dba-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/1ba18c8b-66a6-47d9-a709-404439332dba-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE</rdfs:label>
@@ -46,9 +34,21 @@
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-17</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:3ec54cad-c181-4dd6-8bd6-6119eb6ad6c0"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation SPACE CODED Test Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_INRANGE</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/1ba18c8b-66a6-47d9-a709-404439332dba"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/657e5f22-d146-4109-8f57-676fe7eb777f"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>

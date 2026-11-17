@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/2f59ef74-5439-44db-8d5a-85c9773c0cef> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_COORDINATES_TRANSPOSED with Specification Specification for: AMENDMENT_COORDINATES_TRANSPOSED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_COORDINATES_TRANSPOSED with Specification: Specification for: AMENDMENT_COORDINATES_TRANSPOSED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:2f59ef74-5439-44db-8d5a-85c9773c0cef> ;
     skos:historyNote "Source: iDigBio, GBIF, BISON, FP, Kurator, ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3473",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Amendment SPACE CODED Test Consistency CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_COORDINATES_TRANSPOSED with Specification Specification for: AMENDMENT_COORDINATES_TRANSPOSED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_COORDINATES_TRANSPOSED with Specification: Specification for: AMENDMENT_COORDINATES_TRANSPOSED" ;
     bdqffdq:forAmendment bdqtest:f2b4a50a-6b2f-4930-b9df-da87b6a21082 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/46caea46-0c94-4efb-9e5f-1b170f2ad54e> .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
-    dcterms:modified "2026-04-24"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:f2b4a50a-6b2f-4930-b9df-da87b6a21082 .
@@ -89,8 +89,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:f2b4a50a-6b2f-4930-b9df-da87b6a21082 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_COORDINATES_TRANSPOSED" ;
     dcterms:description "Proposes an amendment transposing or changing the signs of dwc:decimalLatitude and/or dwc:decimalLongitude to align the location with the dwc:countryCode." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:f2b4a50a-6b2f-4930-b9df-da87b6a21082> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/54" ;

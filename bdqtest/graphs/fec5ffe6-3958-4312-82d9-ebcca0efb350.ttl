@@ -11,21 +11,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/29b2e2ac-9667-4774-ac06-45333555c620> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_COUNTRYCODE_STANDARDIZED with Specification Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/29b2e2ac-9667-4774-ac06-45333555c620-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_COUNTRYCODE_STANDARDIZED with Specification: Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/29b2e2ac-9667-4774-ac06-45333555c620-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:29b2e2ac-9667-4774-ac06-45333555c620> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L931",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Amendment SPACE CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_COUNTRYCODE_STANDARDIZED with Specification Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_COUNTRYCODE_STANDARDIZED with Specification: Specification for: AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:fec5ffe6-3958-4312-82d9-ebcca0efb350 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/3e076cfa-56ff-4b79-9739-736d062eac5a> .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
-    dcterms:modified "2026-04-24"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:fec5ffe6-3958-4312-82d9-ebcca0efb350 .
@@ -76,8 +76,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:fec5ffe6-3958-4312-82d9-ebcca0efb350 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_COUNTRYCODE_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:countryCode if it can be interpreted as an ISO 3166-1-alpha-2 country code." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/fec5ffe6-3958-4312-82d9-ebcca0efb350-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/fec5ffe6-3958-4312-82d9-ebcca0efb350-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://datahub.io/core/country-list>,
         <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,

@@ -9,8 +9,8 @@
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/a9529e71-5470-4cb1-b04d-aa483926f532">
     <dcterms:description>Measure if all VALIDATION_SCIENTIFICNAMEID_COMPLETE in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/a9529e71-5470-4cb1-b04d-aa483926f532-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/a9529e71-5470-4cb1-b04d-aa483926f532-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE</rdfs:label>
@@ -31,9 +31,18 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/a9529e71-5470-4cb1-b04d-aa483926f532"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>
@@ -41,14 +50,14 @@
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/a9529e71-5470-4cb1-b04d-aa483926f532"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/8857d693-f25b-48aa-ba9b-29b692011bf2">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/8857d693-f25b-48aa-ba9b-29b692011bf2-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/8857d693-f25b-48aa-ba9b-29b692011bf2-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE with Specification: Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:8857d693-f25b-48aa-ba9b-29b692011bf2"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation NAME CODED Test Completeness CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE with Specification: Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAMEID_COMPLETE</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/a9529e71-5470-4cb1-b04d-aa483926f532"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/a908512b-be44-4987-bbc9-a27c4d2d6bd6"/>
   </rdf:Description>
@@ -73,15 +82,6 @@
     <skos:prefLabel>Information Element ActedUpon bdqval:AggregatedTestResponseOutcomes for bdqtest:VALIDATION_SCIENTIFICNAMEID_COMPLETE.Response</skos:prefLabel>
     <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/6eeac3ed-f691-457f-a42e-eaa9c8a71ce8"/>
     <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/a9529e71-5470-4cb1-b04d-aa483926f532"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Taxon-Management">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>

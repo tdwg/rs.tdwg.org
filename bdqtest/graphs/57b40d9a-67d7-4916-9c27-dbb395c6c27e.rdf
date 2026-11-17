@@ -8,14 +8,14 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/cda169b0-4a95-447d-8654-bdab5e180947">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/cda169b0-4a95-447d-8654-bdab5e180947-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/cda169b0-4a95-447d-8654-bdab5e180947-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:cda169b0-4a95-447d-8654-bdab5e180947"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/57b40d9a-67d7-4916-9c27-dbb395c6c27e"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/daa9df47-98f7-44f4-9aed-acc8f8d9289b"/>
   </rdf:Description>
@@ -32,8 +32,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/57b40d9a-67d7-4916-9c27-dbb395c6c27e">
     <dcterms:description>Measure if all VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/57b40d9a-67d7-4916-9c27-dbb395c6c27e-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/57b40d9a-67d7-4916-9c27-dbb395c6c27e-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_COUNTRYCOUNTRYCODE_CONSISTENT</rdfs:label>
@@ -47,8 +47,8 @@
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>

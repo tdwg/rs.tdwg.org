@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/7de2e2b3-2734-4f0d-b4d1-25942d628a6f> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION with Specification Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7de2e2b3-2734-4f0d-b4d1-25942d628a6f-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION with Specification: Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7de2e2b3-2734-4f0d-b4d1-25942d628a6f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:7de2e2b3-2734-4f0d-b4d1-25942d628a6f> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test Conformance CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION with Specification Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION with Specification: Specification for: MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION" ;
     bdqffdq:forMeasure bdqtest:44f00697-ca66-43cf-8f16-646b40c0f514 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/e7ca116b-2b24-4995-af09-44ee80824188> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:44f00697-ca66-43cf-8f16-646b40c0f514 .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:44f00697-ca66-43cf-8f16-646b40c0f514 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_MINELEVATION_LESSTHAN_MAXELEVATION" ;
     dcterms:description "Measure if all VALIDATION_MINELEVATION_LESSTHAN_MAXELEVATION in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/44f00697-ca66-43cf-8f16-646b40c0f514-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/44f00697-ca66-43cf-8f16-646b40c0f514-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:44f00697-ca66-43cf-8f16-646b40c0f514> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;

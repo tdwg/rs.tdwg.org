@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/9cc301b1-e303-4abb-9d24-d31506de9436> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_MINDEPTH_INRANGE with Specification for: VALIDATION_MINDEPTH_INRANGE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9cc301b1-e303-4abb-9d24-d31506de9436-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_MINDEPTH_INRANGE with Specification: Specification for: VALIDATION_MINDEPTH_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9cc301b1-e303-4abb-9d24-d31506de9436-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9cc301b1-e303-4abb-9d24-d31506de9436> ;
     skos:historyNote "Source: ALA, GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2421",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Validation SPACE CODED Test Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_MINDEPTH_INRANGE with Specification for: VALIDATION_MINDEPTH_INRANGE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_MINDEPTH_INRANGE with Specification: Specification for: VALIDATION_MINDEPTH_INRANGE" ;
     bdqffdq:forValidation bdqtest:04b2c8f3-c71b-4e95-8e43-f70374c5fb92 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/f3e03531-7ee5-4721-aae2-f554389e0544> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -95,8 +95,8 @@ bdqval:minimumValidDepthInMeters a bdqffdq:Parameter .
 bdqtest:04b2c8f3-c71b-4e95-8e43-f70374c5fb92 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_MINDEPTH_INRANGE" ;
     dcterms:description "Is the value of dwc:minimumDepthInMeters within the Parameter range?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/04b2c8f3-c71b-4e95-8e43-f70374c5fb92-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/04b2c8f3-c71b-4e95-8e43-f70374c5fb92-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://en.wikipedia.org/wiki/Extreme_points_of_Earth> ;
     owl:sameAs <urn:uuid:04b2c8f3-c71b-4e95-8e43-f70374c5fb92> ;

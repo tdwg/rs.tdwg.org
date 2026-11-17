@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/0997d841-9db9-40a8-b6ec-5867e9091532> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification for: VALIDATION_FAMILY_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0997d841-9db9-40a8-b6ec-5867e9091532-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification: Specification for: VALIDATION_FAMILY_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0997d841-9db9-40a8-b6ec-5867e9091532-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0997d841-9db9-40a8-b6ec-5867e9091532> ;
     skos:historyNote "Source: iDigBio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L171",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
         "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification for: VALIDATION_FAMILY_FOUND" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_FAMILY_FOUND with Specification: Specification for: VALIDATION_FAMILY_FOUND" ;
     bdqffdq:forValidation bdqtest:3667556d-d8f5-454c-922b-af8af38f613c ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/16f999d9-1cf5-4208-b2ca-1a93d6700085> .
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -81,8 +81,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:3667556d-d8f5-454c-922b-af8af38f613c a bdqffdq:Validation ;
     rdfs:label "VALIDATION_FAMILY_FOUND" ;
     dcterms:description "Does the value of dwc:family occur at the rank of Family in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3667556d-d8f5-454c-922b-af8af38f613c-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3667556d-d8f5-454c-922b-af8af38f613c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:3667556d-d8f5-454c-922b-af8af38f613c> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/28" ;

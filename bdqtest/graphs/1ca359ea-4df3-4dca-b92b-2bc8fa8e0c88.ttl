@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/e581e111-a7ef-4f16-9899-175b131b304e> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e581e111-a7ef-4f16-9899-175b131b304e-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e581e111-a7ef-4f16-9899-175b131b304e-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:e581e111-a7ef-4f16-9899-175b131b304e> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD" ;
     bdqffdq:forMeasure bdqtest:1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/296980d9-a8bf-4fe4-8596-ee2bbd140e38> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88 .
@@ -63,8 +63,8 @@ bdquc:Alien-Species a bdqffdq:UseCase ;
 bdqtest:1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_TYPESTATUS_STANDARD" ;
     dcterms:description "Measure if all VALIDATION_TYPESTATUS_STANDARD in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:1ca359ea-4df3-4dca-b92b-2bc8fa8e0c88> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

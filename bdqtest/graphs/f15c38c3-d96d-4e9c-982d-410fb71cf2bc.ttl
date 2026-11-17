@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/9489fa31-fe80-4e3a-b4ed-d547df73c29a> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9489fa31-fe80-4e3a-b4ed-d547df73c29a-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9489fa31-fe80-4e3a-b4ed-d547df73c29a-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9489fa31-fe80-4e3a-b4ed-d547df73c29a> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND" ;
     bdqffdq:forMeasure bdqtest:f15c38c3-d96d-4e9c-982d-410fb71cf2bc ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/4badb4f9-f739-486f-aa0f-4fa351ed2e84> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:f15c38c3-d96d-4e9c-982d-410fb71cf2bc .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:f15c38c3-d96d-4e9c-982d-410fb71cf2bc a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_COUNTRY_FOUND" ;
     dcterms:description "Count the number of VALIDATION_COUNTRY_FOUND in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f15c38c3-d96d-4e9c-982d-410fb71cf2bc-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f15c38c3-d96d-4e9c-982d-410fb71cf2bc-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:f15c38c3-d96d-4e9c-982d-410fb71cf2bc> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/99103239-1019-4d2e-b435-ecb28c190a3c> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_BASISOFRECORD_STANDARD with Specification for: VALIDATION_BASISOFRECORD_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/99103239-1019-4d2e-b435-ecb28c190a3c-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_BASISOFRECORD_STANDARD with Specification: Specification for: VALIDATION_BASISOFRECORD_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/99103239-1019-4d2e-b435-ecb28c190a3c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:99103239-1019-4d2e-b435-ecb28c190a3c> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L342",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_BASISOFRECORD_STANDARD with Specification for: VALIDATION_BASISOFRECORD_STANDARD" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_BASISOFRECORD_STANDARD with Specification: Specification for: VALIDATION_BASISOFRECORD_STANDARD" ;
     bdqffdq:forValidation bdqtest:42408a00-bf71-4892-a399-4325e2bc1fb8 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/f094b94f-09b6-4fb0-8ba4-24252a2101c4> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -35,8 +35,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -44,8 +44,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
@@ -102,8 +102,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:42408a00-bf71-4892-a399-4325e2bc1fb8 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_BASISOFRECORD_STANDARD" ;
     dcterms:description "Does the value of dwc:basisOfRecord occur in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/42408a00-bf71-4892-a399-4325e2bc1fb8-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/42408a00-bf71-4892-a399-4325e2bc1fb8-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:42408a00-bf71-4892-a399-4325e2bc1fb8> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/104" ;
     skos:note "The term dwc:basisOfRecord has the comment \"Recommended best practice is to use a controlled vocabulary such as the set of local names of the identifiers for classes in Darwin Core.\" The list of these values can be determined by searching https://github.com/tdwg/dwc/blob/master/vocabulary/term_versions.csv for rows with status=\"recommended\" and rdf_type=\"http://www.w3.org/2000/01/rdf-schema#Class\". For Tests against a dwc:Occurrence record, the set of valid terms is more limited and embodied in the resource found at https://rs.gbif.org/vocabulary/dwc/basis_of_record.xml. This Test must return NOT_COMPLIANT if there is leading or trailing whitespace or there are leading or trailing non-printing characters." ;

@@ -7,10 +7,24 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/2afcbce1-7cf8-4c5c-9df4-d267dc2df704">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/2afcbce1-7cf8-4c5c-9df4-d267dc2df704-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification: Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:2afcbce1-7cf8-4c5c-9df4-d267dc2df704"/>
+    <skos:historyNote>Source: ALA, GBIF, iDigBio</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1005</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris &amp; Lowery 2025b)</skos:note>
+    <skos:note>TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD Parameterized CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification: Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/4343a7e0-7f0b-434d-99d4-e939ecb16e1f"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9">
     <dcterms:description>Do the geographic coordinates fall on or within the boundaries of the territory given in dwc:countryCode or its Exclusive Economic Zone?</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/adb27d29-9f0d-4d52-b760-a77ba57a69c9-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/adb27d29-9f0d-4d52-b760-a77ba57a69c9-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="http://www.fao.org/3/a0118e/a0118e00.htm#Contents"/>
     <dcterms:references rdf:resource="https://doi.org/10.14284/628"/>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
@@ -31,6 +45,16 @@
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-30</bdqffdq:hasDateLastUpdated>
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/SingleRecord"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
     <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
@@ -43,20 +67,6 @@
     <owl:sameAs rdf:resource="urn:uuid:972320cd-3ba3-4076-a8eb-f797095509cd"/>
     <bdqffdq:hasArgumentValue>3000</bdqffdq:hasArgumentValue>
     <bdqffdq:hasParameter rdf:resource="https://rs.tdwg.org/bdqval/terms/spatialBufferInMeters"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/2afcbce1-7cf8-4c5c-9df4-d267dc2df704">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/2afcbce1-7cf8-4c5c-9df4-d267dc2df704-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
-    <rdfs:label>ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:2afcbce1-7cf8-4c5c-9df4-d267dc2df704"/>
-    <skos:historyNote>Source: ALA, GBIF, iDigBio</skos:historyNote>
-    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1005</skos:note>
-    <skos:note>Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris &amp; Lowery 2025b)</skos:note>
-    <skos:note>TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD Parameterized CORE</skos:note>
-    <skos:prefLabel>ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT</skos:prefLabel>
-    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/4343a7e0-7f0b-434d-99d4-e939ecb16e1f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/8a3f5702-a4e5-4b21-acb6-a4eae9a1ae09-2024-08-30"/>
@@ -131,16 +141,6 @@
   <rdf:Description rdf:about="https://doi.org/10.14284/628">
     <dcterms:bibliographicCitation>Flanders Marine Institute (2023) Maritime Boundaries Geodatabase, version 12. Available online at https://www.marineregions.org/. https://doi.org/10.14284/628</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
-    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/adb27d29-9f0d-4d52-b760-a77ba57a69c9"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqval/terms/sourceAuthority">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Parameter"/>

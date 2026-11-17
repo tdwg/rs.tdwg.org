@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/ffae8e47-2181-4a83-b1c7-d0a893e79b67> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification for: VALIDATION_PATHWAY_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/ffae8e47-2181-4a83-b1c7-d0a893e79b67-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification: Specification for: VALIDATION_PATHWAY_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/ffae8e47-2181-4a83-b1c7-d0a893e79b67-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:ffae8e47-2181-4a83-b1c7-d0a893e79b67> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1875",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification for: VALIDATION_PATHWAY_STANDARD" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification: Specification for: VALIDATION_PATHWAY_STANDARD" ;
     bdqffdq:forValidation bdqtest:5424e933-bee7-4125-839e-d8743ea69f93 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e> .
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -84,8 +84,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:5424e933-bee7-4125-839e-d8743ea69f93 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_PATHWAY_STANDARD" ;
     dcterms:description "Does the value of dwc:pathway occur in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.3897/biss.3.38084>,
         <https://dwc.tdwg.org/pw/> ;
     owl:sameAs <urn:uuid:5424e933-bee7-4125-839e-d8743ea69f93> ;

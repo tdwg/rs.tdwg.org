@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/36fcff08-e64e-4640-984f-5263b0407a97> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/36fcff08-e64e-4640-984f-5263b0407a97-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/36fcff08-e64e-4640-984f-5263b0407a97-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:36fcff08-e64e-4640-984f-5263b0407a97> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Completeness CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY" ;
     bdqffdq:forMeasure bdqtest:f22539ef-029b-4edb-ad17-add4363f7395 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/3fc9b6a6-8c20-4fb7-a772-7f26d5aeaad0> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:f22539ef-029b-4edb-ad17-add4363f7395 .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:f22539ef-029b-4edb-ad17-add4363f7395 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_EVENTTEMPORAL_NOTEMPTY" ;
     dcterms:description "Measure if all VALIDATION_EVENTTEMPORAL_NOTEMPTY in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f22539ef-029b-4edb-ad17-add4363f7395-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f22539ef-029b-4edb-ad17-add4363f7395-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:f22539ef-029b-4edb-ad17-add4363f7395> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

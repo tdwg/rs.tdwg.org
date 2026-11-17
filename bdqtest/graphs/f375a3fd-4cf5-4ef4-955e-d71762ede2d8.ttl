@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/4383a0b8-ae96-4fbd-9537-394ffe6ce310> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/4383a0b8-ae96-4fbd-9537-394ffe6ce310-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/4383a0b8-ae96-4fbd-9537-394ffe6ce310-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:4383a0b8-ae96-4fbd-9537-394ffe6ce310> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Consistency CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT with Specification Specification for: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT with Specification: Specification for: MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT" ;
     bdqffdq:forMeasure bdqtest:f375a3fd-4cf5-4ef4-955e-d71762ede2d8 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/06899170-252f-4938-9f98-95089ac0bc07> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:f375a3fd-4cf5-4ef4-955e-d71762ede2d8 .
@@ -63,8 +63,8 @@ bdquc:Alien-Species a bdqffdq:UseCase ;
 bdqtest:f375a3fd-4cf5-4ef4-955e-d71762ede2d8 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_EVENT_CONSISTENT" ;
     dcterms:description "Measure if all VALIDATION_EVENT_CONSISTENT in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f375a3fd-4cf5-4ef4-955e-d71762ede2d8-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f375a3fd-4cf5-4ef4-955e-d71762ede2d8-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:f375a3fd-4cf5-4ef4-955e-d71762ede2d8> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

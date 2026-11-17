@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/b12c8663-25e8-4c8a-abfc-edf4334d1aef> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_DECIMALLATITUDE_NOTEMPTY with Specification for: VALIDATION_DECIMALLATITUDE_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/b12c8663-25e8-4c8a-abfc-edf4334d1aef-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_DECIMALLATITUDE_NOTEMPTY with Specification: Specification for: VALIDATION_DECIMALLATITUDE_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/b12c8663-25e8-4c8a-abfc-edf4334d1aef-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:b12c8663-25e8-4c8a-abfc-edf4334d1aef> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2688",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Validation SPACE CODED Test Completeness CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_DECIMALLATITUDE_NOTEMPTY with Specification for: VALIDATION_DECIMALLATITUDE_NOTEMPTY" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_DECIMALLATITUDE_NOTEMPTY with Specification: Specification for: VALIDATION_DECIMALLATITUDE_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:7d2485d5-1ba7-4f25-90cb-f4480ff1a275 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/0067fa60-5503-490e-8c94-93fb79cc7da2> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -34,8 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -43,8 +43,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
@@ -93,8 +93,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:7d2485d5-1ba7-4f25-90cb-f4480ff1a275 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DECIMALLATITUDE_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:decimalLatitude?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7d2485d5-1ba7-4f25-90cb-f4480ff1a275-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7d2485d5-1ba7-4f25-90cb-f4480ff1a275-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:7d2485d5-1ba7-4f25-90cb-f4480ff1a275> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/119" ;

@@ -98,18 +98,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY"
+        "@value": "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification: Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -135,7 +135,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY"
+        "@value": "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification: Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forIssue": [
@@ -156,13 +156,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -193,13 +193,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -285,13 +285,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

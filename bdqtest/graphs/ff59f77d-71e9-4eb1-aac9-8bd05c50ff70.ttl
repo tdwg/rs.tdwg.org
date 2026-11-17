@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/f8024a02-76c0-482a-b805-097d0cdc82e2> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f8024a02-76c0-482a-b805-097d0cdc82e2-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification: Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f8024a02-76c0-482a-b805-097d0cdc82e2-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f8024a02-76c0-482a-b805-097d0cdc82e2> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3090",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
         "TG2 Validation NAME CODED Test Completeness CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification: Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:ff59f77d-71e9-4eb1-aac9-8bd05c50ff70 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/f09fc9ad-a449-4422-b32f-63d8ccf2501f> .
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -66,8 +66,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:ff59f77d-71e9-4eb1-aac9-8bd05c50ff70 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:namePublishedInYear?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:ff59f77d-71e9-4eb1-aac9-8bd05c50ff70> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/259" ;
     skos:note "" ;

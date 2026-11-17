@@ -9,8 +9,8 @@
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/13d5a10e-188e-40fd-a22c-dbaa87b91df2">
     <dcterms:description>Is there a value in dwc:dataGeneralizations?</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-5jp4-5g10"/>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Issue"/>
@@ -46,44 +46,44 @@
     <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
     <bdqffdq:hasExpectedResponse>POTENTIAL_ISSUE if dwc:dataGeneralizations is bdqval:NotEmpty; otherwise NOT_ISSUE</bdqffdq:hasExpectedResponse>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
+    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/5daad04c-fd7c-4972-ac3a-66f149170bf3">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssueMethod"/>
-    <rdfs:label>IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY</rdfs:label>
+    <rdfs:label>IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification: Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:5daad04c-fd7c-4972-ac3a-66f149170bf3"/>
     <skos:historyNote>Source: ALA</skos:historyNote>
     <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/d742991440f2f5fc6ffc75dfe3b6d2ab5b6826b2/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L138</skos:note>
     <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)</skos:note>
     <skos:note>TG2 Issue NAME SPACE TIME CODED Test Resolution CORE</skos:note>
-    <skos:prefLabel>IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY</skos:prefLabel>
+    <skos:prefLabel>IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification: Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY</skos:prefLabel>
     <bdqffdq:forIssue rdf:resource="https://rs.tdwg.org/bdqtest/terms/13d5a10e-188e-40fd-a22c-dbaa87b91df2"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/90618419-452d-4f35-b39a-7c342ca0791b"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/62aa9551-8412-4ee9-a58d-dd6baea1dc35">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"/>
-    <rdfs:label>IssuePolicy: (1) issues  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:62aa9551-8412-4ee9-a58d-dd6baea1dc35"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
+    <rdfs:label>IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/13d5a10e-188e-40fd-a22c-dbaa87b91df2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees">
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/UseCase"/>
-    <rdfs:label>bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://doi.org/10.15468/doc-gg7h-s853">
     <dcterms:bibliographicCitation>Chapman AD and Wieczorek JR (2020) Georeferencing Best Practices. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gg7h-s853</dcterms:bibliographicCitation>
     <rdf:type rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/62aa9551-8412-4ee9-a58d-dd6baea1dc35">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/IssuePolicy"/>
-    <rdfs:label>IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <rdfs:label>IssuePolicy: (1) issues  in UseCase bdquc:Species-Distribution-Modeling-Trees</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:62aa9551-8412-4ee9-a58d-dd6baea1dc35"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Species-Distribution-Modeling-Trees"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/13d5a10e-188e-40fd-a22c-dbaa87b91df2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns">

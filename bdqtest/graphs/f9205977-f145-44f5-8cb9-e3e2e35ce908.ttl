@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/5e1ab035-a79f-4048-9330-e073d4b6c2c9> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_PATHWAY_STANDARDIZED with Specification Specification for: AMENDMENT_PATHWAY_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5e1ab035-a79f-4048-9330-e073d4b6c2c9-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_PATHWAY_STANDARDIZED with Specification: Specification for: AMENDMENT_PATHWAY_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5e1ab035-a79f-4048-9330-e073d4b6c2c9-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:5e1ab035-a79f-4048-9330-e073d4b6c2c9> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1941",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_PATHWAY_STANDARDIZED with Specification Specification for: AMENDMENT_PATHWAY_STANDARDIZED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_PATHWAY_STANDARDIZED with Specification: Specification for: AMENDMENT_PATHWAY_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:f9205977-f145-44f5-8cb9-e3e2e35ce908 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/fef3a7f9-edd8-41c9-9704-4798814077e3> .
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:f9205977-f145-44f5-8cb9-e3e2e35ce908 .
@@ -80,8 +80,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:f9205977-f145-44f5-8cb9-e3e2e35ce908 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_PATHWAY_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:pathway using the bdqval:sourceAuthority." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f9205977-f145-44f5-8cb9-e3e2e35ce908-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f9205977-f145-44f5-8cb9-e3e2e35ce908-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://dwc.tdwg.org/pw/> ;
     owl:sameAs <urn:uuid:f9205977-f145-44f5-8cb9-e3e2e35ce908> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/278" ;

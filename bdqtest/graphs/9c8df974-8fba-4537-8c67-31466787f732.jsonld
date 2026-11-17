@@ -86,18 +86,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/f9cd9d66-e4d2-42da-877a-90e4a7ac3cf3-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/f9cd9d66-e4d2-42da-877a-90e4a7ac3cf3-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY"
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -117,7 +117,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY"
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_COUNTRY_NOTEMPTY"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forMeasure": [
@@ -138,13 +138,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-12"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -227,13 +227,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/9c8df974-8fba-4537-8c67-31466787f732-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/9c8df974-8fba-4537-8c67-31466787f732-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

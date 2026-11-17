@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/5e55d983-5667-438c-9754-a71dfe2472af> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_COUNTRYCODE_FROM_COORDINATES with Specification Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5e55d983-5667-438c-9754-a71dfe2472af-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_COUNTRYCODE_FROM_COORDINATES with Specification: Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5e55d983-5667-438c-9754-a71dfe2472af-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:5e55d983-5667-438c-9754-a71dfe2472af> ;
     skos:historyNote "Source: ALA, GBIF, iDigBio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.1.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2019",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Amendment SPACE CODED Test VOCABULARY Completeness ISO/DCMI STANDARD Parameterized CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_COUNTRYCODE_FROM_COORDINATES with Specification Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_COUNTRYCODE_FROM_COORDINATES with Specification: Specification for: AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
     bdqffdq:forAmendment bdqtest:8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/95ac057e-a941-416f-b7dc-ad7aca875cff> .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
-    dcterms:modified "2026-04-24"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae .
@@ -110,8 +110,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_COUNTRYCODE_FROM_COORDINATES" ;
     dcterms:description "Proposes an amendment to the value of dwc:countryCode if dwc:decimalLatitude and dwc:decimalLongitude fall within a boundary from the bdqval:countryShapes that is attributable to a single valid ISO 3166-1-alpha-2 country code." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8c5fe9c9-4ba9-49ef-b15a-9ccd0424e6ae-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
         <https://datahub.io/core/country-list>,
         <https://doi.org/10.15468/doc-gg7h-s853>,

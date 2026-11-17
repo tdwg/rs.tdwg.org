@@ -7,18 +7,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/4de30040-b177-4b0d-a2f3-4c659f179494">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/4de30040-b177-4b0d-a2f3-4c659f179494-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:4de30040-b177-4b0d-a2f3-4c659f179494"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>TG2 Validation OTHER CODED Test Completeness CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY</skos:prefLabel>
-    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/4fccf163-9336-4f48-996c-57f5f66e72db"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/2549297e-3643-41bb-b9d1-29a29b9026ed"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/2549297e-3643-41bb-b9d1-29a29b9026ed">
     <dcterms:description>COMPLETE if every VALIDATION_LICENSE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</dcterms:description>
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/2549297e-3643-41bb-b9d1-29a29b9026ed-2023-09-18"/>
@@ -32,8 +20,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/4fccf163-9336-4f48-996c-57f5f66e72db">
     <dcterms:description>Measure if all VALIDATION_LICENSE_NOTEMPTY in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/4fccf163-9336-4f48-996c-57f5f66e72db-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/4fccf163-9336-4f48-996c-57f5f66e72db-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY</rdfs:label>
@@ -50,9 +38,21 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/4de30040-b177-4b0d-a2f3-4c659f179494">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/4de30040-b177-4b0d-a2f3-4c659f179494-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:4de30040-b177-4b0d-a2f3-4c659f179494"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation OTHER CODED Test Completeness CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_LICENSE_NOTEMPTY</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/4fccf163-9336-4f48-996c-57f5f66e72db"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/2549297e-3643-41bb-b9d1-29a29b9026ed"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>

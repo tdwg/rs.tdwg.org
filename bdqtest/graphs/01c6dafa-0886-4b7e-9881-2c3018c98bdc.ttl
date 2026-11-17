@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/bb630881-2a79-4750-ae0f-36d0df2191f7> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification for: VALIDATION_MONTH_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/bb630881-2a79-4750-ae0f-36d0df2191f7-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification: Specification for: VALIDATION_MONTH_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/bb630881-2a79-4750-ae0f-36d0df2191f7-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:bb630881-2a79-4750-ae0f-36d0df2191f7> ;
     skos:historyNote "Source: TG2-Gainesville (MONTH_INVALID/MONTH_IN_RANGE previously in spreadsheet, from ALA?)" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L690 Unit test in [DwcEventDQTest]{https://github.com/FilteredPush/event_date_qc/blob/v3.0.0/src/test/java/org/filteredpush/qc/date/DwcEventDQTest.java#L242)",
         "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
         "TG2 Validation TIME CODED Test Conformance CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification for: VALIDATION_MONTH_STANDARD" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_MONTH_STANDARD with Specification: Specification for: VALIDATION_MONTH_STANDARD" ;
     bdqffdq:forValidation bdqtest:01c6dafa-0886-4b7e-9881-2c3018c98bdc ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/2c5dbdbb-feab-474c-bcca-bf6d1b90ae66> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -66,8 +66,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:01c6dafa-0886-4b7e-9881-2c3018c98bdc a bdqffdq:Validation ;
     rdfs:label "VALIDATION_MONTH_STANDARD" ;
     dcterms:description "Is the value of dwc:month interpretable as an integer between 1 and 12 inclusive?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/01c6dafa-0886-4b7e-9881-2c3018c98bdc-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/01c6dafa-0886-4b7e-9881-2c3018c98bdc-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:01c6dafa-0886-4b7e-9881-2c3018c98bdc> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/126" ;
     skos:note "" ;

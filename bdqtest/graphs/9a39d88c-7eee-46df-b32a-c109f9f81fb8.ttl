@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/ca1bc131-fa85-4fdf-902d-ad20bd4ba0f4> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_ENDDAYOFYEAR_INRANGE with Specification for: VALIDATION_ENDDAYOFYEAR_INRANGE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/ca1bc131-fa85-4fdf-902d-ad20bd4ba0f4-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_ENDDAYOFYEAR_INRANGE with Specification: Specification for: VALIDATION_ENDDAYOFYEAR_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/ca1bc131-fa85-4fdf-902d-ad20bd4ba0f4-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:ca1bc131-fa85-4fdf-902d-ad20bd4ba0f4> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1189",
         "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
         "TG2 Validation TIME CODED Test Conformance CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_ENDDAYOFYEAR_INRANGE with Specification for: VALIDATION_ENDDAYOFYEAR_INRANGE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_ENDDAYOFYEAR_INRANGE with Specification: Specification for: VALIDATION_ENDDAYOFYEAR_INRANGE" ;
     bdqffdq:forValidation bdqtest:9a39d88c-7eee-46df-b32a-c109f9f81fb8 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/62f754b5-a0a1-4b24-9982-b76e4e169f71> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -74,8 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:9a39d88c-7eee-46df-b32a-c109f9f81fb8 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_ENDDAYOFYEAR_INRANGE" ;
     dcterms:description "Is the value of dwc:endDayOfYear an integer between 1 and 365 inclusive, or 366 if a leap year?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/9a39d88c-7eee-46df-b32a-c109f9f81fb8-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/9a39d88c-7eee-46df-b32a-c109f9f81fb8-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9a39d88c-7eee-46df-b32a-c109f9f81fb8> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/131" ;
     skos:note "See Test VALIDATION_DAY_INRANGE (8d787cb5-73e2-4c39-9cd1-67c7361dc02e). This Test only asks if dwc:endDayOfYear is a valid value for the relevant year, not if it is consistent with the end day of the range specified in dwc:eventDate. In a non-leap year, the valid range is 1-365 inclusive, in a leap year 366 is also valid. This Test should be run after the series of Tests that assure that dwc:eventDate is populated, if possible (i.e., AMENDMENT_EVENTDATE_FROM_VERBATIM (6d0a0c10-5e4a-4759-b448-88932f399812), AMENDMENT_EVENTDATE_STANDARDIZED (718dfc3c-cb52-4fca-b8e2-0e722f375da7), and AMENDMENT_EVENT_DATE_FROM_YEARMONTHDAY (3892f432-ddd0-4a0a-b713-f2e2ecbd879d))." ;

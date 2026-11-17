@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/3925c15a-2795-4cef-8a30-6e6e5e480eae> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT with Specification for: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3925c15a-2795-4cef-8a30-6e6e5e480eae-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT with Specification: Specification for: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3925c15a-2795-4cef-8a30-6e6e5e480eae-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3925c15a-2795-4cef-8a30-6e6e5e480eae> ;
     skos:historyNote "Source: GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1675",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT with Specification for: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT with Specification: Specification for: VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
     bdqffdq:forValidation bdqtest:b23110e7-1be7-444a-a677-cdee0cf4330c ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/6f1093a0-0da5-4691-a95e-184d6d55eeb0> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -76,8 +76,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:b23110e7-1be7-444a-a677-cdee0cf4330c a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COUNTRYCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "Does the ISO country code, determined from the value of dwc:country, equal the value of dwc:countryCode?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b23110e7-1be7-444a-a677-cdee0cf4330c-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b23110e7-1be7-444a-a677-cdee0cf4330c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://datahub.io/core/country-list>,
         <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://www.iso.org/iso-3166-country-codes.html> ;

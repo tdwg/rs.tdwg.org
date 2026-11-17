@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/e9dd8019-0fbd-45a3-817e-f99bea3f8b19> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e9dd8019-0fbd-45a3-817e-f99bea3f8b19-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e9dd8019-0fbd-45a3-817e-f99bea3f8b19-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:e9dd8019-0fbd-45a3-817e-f99bea3f8b19> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD" ;
     bdqffdq:forMeasure bdqtest:f320ca83-8487-4011-b1ff-f4b1b4dd86ec ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/aa2e919c-5655-488e-90ca-10f8bbd233ca> .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:f320ca83-8487-4011-b1ff-f4b1b4dd86ec .
@@ -63,8 +63,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:f320ca83-8487-4011-b1ff-f4b1b4dd86ec a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_TAXONRANK_STANDARD" ;
     dcterms:description "Measure if all VALIDATION_TAXONRANK_STANDARD in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f320ca83-8487-4011-b1ff-f4b1b4dd86ec-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f320ca83-8487-4011-b1ff-f4b1b4dd86ec-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:f320ca83-8487-4011-b1ff-f4b1b4dd86ec> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

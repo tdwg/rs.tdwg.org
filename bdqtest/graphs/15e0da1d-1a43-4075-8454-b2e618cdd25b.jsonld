@@ -86,18 +86,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/0437ef18-2a7b-422c-8dbc-11dac268955b-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/0437ef18-2a7b-422c-8dbc-11dac268955b-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD"
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -117,7 +117,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD"
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_PATHWAY_STANDARD"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forMeasure": [
@@ -138,13 +138,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -227,13 +227,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/15e0da1d-1a43-4075-8454-b2e618cdd25b-2025-03-07"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/15e0da1d-1a43-4075-8454-b2e618cdd25b-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-07"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

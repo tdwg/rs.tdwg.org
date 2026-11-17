@@ -8,21 +8,21 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/cde5acd3-b95d-444b-817c-8a20adadf279">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/cde5acd3-b95d-444b-817c-8a20adadf279-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/cde5acd3-b95d-444b-817c-8a20adadf279-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:cde5acd3-b95d-444b-817c-8a20adadf279"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation SPACE CODED Test VOCABULARY Completeness CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/942f63bd-d19d-4214-bf8e-cec0055b8909"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/17bebf9d-e049-497b-bcca-dd08939398ea"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/942f63bd-d19d-4214-bf8e-cec0055b8909">
     <dcterms:description>Measure if all VALIDATION_COUNTRYCODE_NOTEMPTY in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/942f63bd-d19d-4214-bf8e-cec0055b8909-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/942f63bd-d19d-4214-bf8e-cec0055b8909-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_COUNTRYCODE_NOTEMPTY</rdfs:label>
@@ -51,8 +51,8 @@
     <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_COUNTRYCODE_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>

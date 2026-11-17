@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/a684cc71-8c74-4c7e-b0db-3f93a874048e> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a684cc71-8c74-4c7e-b0db-3f93a874048e-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a684cc71-8c74-4c7e-b0db-3f93a874048e-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:a684cc71-8c74-4c7e-b0db-3f93a874048e> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation SPACE CODED Test Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE" ;
     bdqffdq:forMeasure bdqtest:071267a0-d993-4961-a3f7-d8210810d167 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/3cac6091-6898-48ea-86d9-3f5cd71c1efa> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:071267a0-d993-4961-a3f7-d8210810d167 .
@@ -63,8 +63,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:071267a0-d993-4961-a3f7-d8210810d167 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_MINELEVATION_INRANGE" ;
     dcterms:description "Count the number of VALIDATION_MINELEVATION_INRANGE in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/071267a0-d993-4961-a3f7-d8210810d167-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/071267a0-d993-4961-a3f7-d8210810d167-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:071267a0-d993-4961-a3f7-d8210810d167> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

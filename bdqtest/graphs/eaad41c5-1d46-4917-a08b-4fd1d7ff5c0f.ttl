@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/06f9faab-102a-452a-b6e0-4eafd8d7e71d> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_PHYLUM_FOUND with Specification for: VALIDATION_PHYLUM_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/06f9faab-102a-452a-b6e0-4eafd8d7e71d-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_PHYLUM_FOUND with Specification: Specification for: VALIDATION_PHYLUM_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/06f9faab-102a-452a-b6e0-4eafd8d7e71d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:06f9faab-102a-452a-b6e0-4eafd8d7e71d> ;
     skos:historyNote "Source: iDigBio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L130",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
         "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_PHYLUM_FOUND with Specification for: VALIDATION_PHYLUM_FOUND" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_PHYLUM_FOUND with Specification: Specification for: VALIDATION_PHYLUM_FOUND" ;
     bdqffdq:forValidation bdqtest:eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/1193230f-f188-4917-92da-bba3390ed3fa> .
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -81,8 +81,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f a bdqffdq:Validation ;
     rdfs:label "VALIDATION_PHYLUM_FOUND" ;
     dcterms:description "Does the value of dwc:phylum occur at the rank of Phylum in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:eaad41c5-1d46-4917-a08b-4fd1d7ff5c0f> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/22" ;

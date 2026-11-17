@@ -86,18 +86,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/69a7c952-ecf0-4cb0-b005-b244926e8f03-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/69a7c952-ecf0-4cb0-b005-b244926e8f03-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE"
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -117,7 +117,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE with Specification Specification for: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE"
+        "@value": "MeasurementMethod: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE with Specification: Specification for: MULTIRECORD_MEASURE_QA_EVENTDATE_INRANGE"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forMeasure": [
@@ -138,13 +138,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-12"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -227,13 +227,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/d41a731b-2e2b-4442-9217-4c375ae92926-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/d41a731b-2e2b-4442-9217-4c375ae92926-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

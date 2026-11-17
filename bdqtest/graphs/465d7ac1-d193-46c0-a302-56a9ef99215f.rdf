@@ -20,8 +20,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/465d7ac1-d193-46c0-a302-56a9ef99215f">
     <dcterms:description>Measure if all VALIDATION_KINGDOM_FOUND in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/465d7ac1-d193-46c0-a302-56a9ef99215f-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/465d7ac1-d193-46c0-a302-56a9ef99215f-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_KINGDOM_FOUND</rdfs:label>
@@ -35,29 +35,29 @@
     <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/465d7ac1-d193-46c0-a302-56a9ef99215f"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/ab20eec9-6bc3-40e6-95ab-76c2c79a7e6c">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/ab20eec9-6bc3-40e6-95ab-76c2c79a7e6c-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:ab20eec9-6bc3-40e6-95ab-76c2c79a7e6c"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND</skos:prefLabel>
-    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/465d7ac1-d193-46c0-a302-56a9ef99215f"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/3f846a5d-629b-45f4-94a0-2c32abe437e2"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/ab20eec9-6bc3-40e6-95ab-76c2c79a7e6c">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/ab20eec9-6bc3-40e6-95ab-76c2c79a7e6c-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:ab20eec9-6bc3-40e6-95ab-76c2c79a7e6c"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_QA_KINGDOM_FOUND</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/465d7ac1-d193-46c0-a302-56a9ef99215f"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/3f846a5d-629b-45f4-94a0-2c32abe437e2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/3f846a5d-629b-45f4-94a0-2c32abe437e2">
     <dcterms:description>COMPLETE if every VALIDATION_KINGDOM_FOUND in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</dcterms:description>

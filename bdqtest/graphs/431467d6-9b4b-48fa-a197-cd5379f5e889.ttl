@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/316da14e-9477-4319-bd2c-c201f3b0f461> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/316da14e-9477-4319-bd2c-c201f3b0f461-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification: Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/316da14e-9477-4319-bd2c-c201f3b0f461-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:316da14e-9477-4319-bd2c-c201f3b0f461> ;
     skos:historyNote "Source: FP-Akka" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L393",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025), Arctos, MCZbase, Symbiota",
         "TG2 Amendment NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification: Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON" ;
     bdqffdq:forAmendment bdqtest:431467d6-9b4b-48fa-a197-cd5379f5e889 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/566faded-60b6-44bf-a335-dc78d5013582> .
 
 <https://rs.tdwg.org/bdqtest/policy/f44333a6-6c09-42f7-bb14-82540abcbff5> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (3) amendments  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f44333a6-6c09-42f7-bb14-82540abcbff5> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:431467d6-9b4b-48fa-a197-cd5379f5e889 .
@@ -111,8 +111,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:431467d6-9b4b-48fa-a197-cd5379f5e889 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON" ;
     dcterms:description "Proposes an amendment to the value of dwc:scientificNameID if it can be unambiguously resolved from bdqval:sourceAuthority using the available taxon terms." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/431467d6-9b4b-48fa-a197-cd5379f5e889-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/431467d6-9b4b-48fa-a197-cd5379f5e889-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:431467d6-9b4b-48fa-a197-cd5379f5e889> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/57" ;

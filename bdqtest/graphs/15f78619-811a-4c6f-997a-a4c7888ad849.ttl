@@ -10,21 +10,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/940621f5-4f24-48de-8b36-256101ca4987> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_LICENSE_NOTEMPTY with Specification for: VALIDATION_LICENSE_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/940621f5-4f24-48de-8b36-256101ca4987-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_LICENSE_NOTEMPTY with Specification: Specification for: VALIDATION_LICENSE_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/940621f5-4f24-48de-8b36-256101ca4987-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:940621f5-4f24-48de-8b36-256101ca4987> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L274",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Validation OTHER CODED Test Completeness CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_LICENSE_NOTEMPTY with Specification for: VALIDATION_LICENSE_NOTEMPTY" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_LICENSE_NOTEMPTY with Specification: Specification for: VALIDATION_LICENSE_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:15f78619-811a-4c6f-997a-a4c7888ad849 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/d8b450af-47e6-4f5c-8154-6d6acbe9efa5> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -32,8 +32,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
@@ -82,8 +82,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:15f78619-811a-4c6f-997a-a4c7888ad849 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_LICENSE_NOTEMPTY" ;
     dcterms:description "Is there a value in dcterms:license?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/15f78619-811a-4c6f-997a-a4c7888ad849-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/15f78619-811a-4c6f-997a-a4c7888ad849-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://creativecommons.org/licenses/>,
         <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> ;
     owl:sameAs <urn:uuid:15f78619-811a-4c6f-997a-a4c7888ad849> ;

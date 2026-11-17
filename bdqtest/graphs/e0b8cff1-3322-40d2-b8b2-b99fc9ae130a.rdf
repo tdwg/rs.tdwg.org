@@ -9,8 +9,8 @@
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a">
     <dcterms:description>Measure if all VALIDATION_TAXONRANK_NOTEMPTY in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY</rdfs:label>
@@ -38,27 +38,6 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Completeness</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/e4baa0f4-ee8c-4521-b9c0-89e6976d6c91">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/e4baa0f4-ee8c-4521-b9c0-89e6976d6c91-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:e4baa0f4-ee8c-4521-b9c0-89e6976d6c91"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>TG2 Validation NAME CODED Test Completeness CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY</skos:prefLabel>
-    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/6317c75a-e514-4840-8b69-81e2e87461d0"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/6317c75a-e514-4840-8b69-81e2e87461d0">
     <dcterms:description>COMPLETE if every VALIDATION_TAXONRANK_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</dcterms:description>
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/6317c75a-e514-4840-8b69-81e2e87461d0-2023-09-18"/>
@@ -69,6 +48,27 @@
     <skos:example></skos:example>
     <bdqffdq:hasAuthoritiesDefaults></bdqffdq:hasAuthoritiesDefaults>
     <bdqffdq:hasExpectedResponse>COMPLETE if every VALIDATION_TAXONRANK_NOTEMPTY in the MultiRecord has Response.result=COMPLIANT; otherwise NOT_COMPLETE.</bdqffdq:hasExpectedResponse>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/e4baa0f4-ee8c-4521-b9c0-89e6976d6c91">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/e4baa0f4-ee8c-4521-b9c0-89e6976d6c91-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:e4baa0f4-ee8c-4521-b9c0-89e6976d6c91"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>TG2 Validation NAME CODED Test Completeness CORE</skos:note>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_TAXONRANK_NOTEMPTY</skos:prefLabel>
+    <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/e0b8cff1-3322-40d2-b8b2-b99fc9ae130a"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/6317c75a-e514-4840-8b69-81e2e87461d0"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/MultiRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

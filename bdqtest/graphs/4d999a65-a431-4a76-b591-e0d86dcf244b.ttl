@@ -10,28 +10,28 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/5f76cfec-04ca-41a9-86bf-67824fd8e7e5> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5f76cfec-04ca-41a9-86bf-67824fd8e7e5-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5f76cfec-04ca-41a9-86bf-67824fd8e7e5-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:5f76cfec-04ca-41a9-86bf-67824fd8e7e5> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test Completeness CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY" ;
     bdqffdq:forMeasure bdqtest:4d999a65-a431-4a76-b591-e0d86dcf244b ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/94bce01c-2184-47ee-89c2-49acf77456f1> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:4d999a65-a431-4a76-b591-e0d86dcf244b .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:4d999a65-a431-4a76-b591-e0d86dcf244b .
@@ -74,8 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:4d999a65-a431-4a76-b591-e0d86dcf244b a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_DCTYPE_NOTEMPTY" ;
     dcterms:description "Measure if all VALIDATION_DCTYPE_NOTEMPTY in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/4d999a65-a431-4a76-b591-e0d86dcf244b-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/4d999a65-a431-4a76-b591-e0d86dcf244b-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:4d999a65-a431-4a76-b591-e0d86dcf244b> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

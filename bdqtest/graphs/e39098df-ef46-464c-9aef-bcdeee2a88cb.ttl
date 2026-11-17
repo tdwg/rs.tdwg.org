@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/e9b8e041-3579-483a-a6aa-74bea442f6bd> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_TAXONRANK_STANDARDIZED with Specification Specification for: AMENDMENT_TAXONRANK_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e9b8e041-3579-483a-a6aa-74bea442f6bd-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_TAXONRANK_STANDARDIZED with Specification: Specification for: AMENDMENT_TAXONRANK_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/e9b8e041-3579-483a-a6aa-74bea442f6bd-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:e9b8e041-3579-483a-a6aa-74bea442f6bd> ;
     skos:historyNote "Source: TDWG2018" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L2272",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
         "TG2 Amendment NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_TAXONRANK_STANDARDIZED with Specification Specification for: AMENDMENT_TAXONRANK_STANDARDIZED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_TAXONRANK_STANDARDIZED with Specification: Specification for: AMENDMENT_TAXONRANK_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:e39098df-ef46-464c-9aef-bcdeee2a88cb ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/ca6b9d39-4a1d-4ec5-925a-d1d67f95bea0> .
 
 <https://rs.tdwg.org/bdqtest/policy/f44333a6-6c09-42f7-bb14-82540abcbff5> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (3) amendments  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f44333a6-6c09-42f7-bb14-82540abcbff5> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:e39098df-ef46-464c-9aef-bcdeee2a88cb .
@@ -80,8 +80,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:e39098df-ef46-464c-9aef-bcdeee2a88cb a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_TAXONRANK_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:taxonRank using the bdqval:sourceAuthority." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/e39098df-ef46-464c-9aef-bcdeee2a88cb-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/e39098df-ef46-464c-9aef-bcdeee2a88cb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://registry.gbif.org/vocabulary/TaxonRank/concepts> ;
     owl:sameAs <urn:uuid:e39098df-ef46-464c-9aef-bcdeee2a88cb> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/163" ;

@@ -12,32 +12,16 @@
     <rdfs:label>bdquc:Alien-Species</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/c779729f-1217-4023-ae22-405f271fae34">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/c779729f-1217-4023-ae22-405f271fae34-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/c779729f-1217-4023-ae22-405f271fae34-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:c779729f-1217-4023-ae22-405f271fae34"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/7270a362-5f2e-41f0-955a-d7a8eaaf0f17"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/be57619a-9c9d-459f-8fb6-02aa912cd696"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/7270a362-5f2e-41f0-955a-d7a8eaaf0f17">
-    <dcterms:description>Count the number of VALIDATION_CLASS_FOUND in a record set that are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/7270a362-5f2e-41f0-955a-d7a8eaaf0f17-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
-    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
-    <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:7270a362-5f2e-41f0-955a-d7a8eaaf0f17"/>
-    <skos:historyNote>https://github.com/tdwg/bdq/issues/296</skos:historyNote>
-    <skos:note>For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set.</skos:note>
-    <skos:prefLabel>Measurement over MultiRecord Counting Compliance of Validation dwc:class Found for MultiRecord</skos:prefLabel>
-    <bdqffdq:hasActedUponInformationElement rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/75264e67-1247-494f-bbc2-4355e5ea8246"/>
-    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
-    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</bdqffdq:hasDateLastUpdated>
-    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/informationelement/75264e67-1247-494f-bbc2-4355e5ea8246">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/version/75264e67-1247-494f-bbc2-4355e5ea8246-2023-09-18"/>
@@ -50,9 +34,34 @@
     <bdqffdq:aggregatesResponsesFrom rdf:resource="https://rs.tdwg.org/bdqtest/terms/2cd6884e-3d14-4476-94f7-1191cfff309b"/>
     <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/7270a362-5f2e-41f0-955a-d7a8eaaf0f17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/7270a362-5f2e-41f0-955a-d7a8eaaf0f17">
+    <dcterms:description>Count the number of VALIDATION_CLASS_FOUND in a record set that are COMPLIANT.</dcterms:description>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/7270a362-5f2e-41f0-955a-d7a8eaaf0f17-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
+    <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_CLASS_FOUND</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:7270a362-5f2e-41f0-955a-d7a8eaaf0f17"/>
+    <skos:historyNote>https://github.com/tdwg/bdq/issues/296</skos:historyNote>
+    <skos:note>For Quality Control, compare the Response.result of this measure with the total number of records to assess work needed on the record set.</skos:note>
+    <skos:prefLabel>Measurement over MultiRecord Counting Compliance of Validation dwc:class Found for MultiRecord</skos:prefLabel>
+    <bdqffdq:hasActedUponInformationElement rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/75264e67-1247-494f-bbc2-4355e5ea8246"/>
+    <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
+    <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</bdqffdq:hasDateLastUpdated>
+    <bdqffdq:hasResourceType rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MultiRecord"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>
@@ -62,15 +71,6 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-07</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/7270a362-5f2e-41f0-955a-d7a8eaaf0f17"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/be57619a-9c9d-459f-8fb6-02aa912cd696">
     <dcterms:description>Count the number of VALIDATION_CLASS_FOUND in the MultiRecord that have Response.result=COMPLIANT.</dcterms:description>

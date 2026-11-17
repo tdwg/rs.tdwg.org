@@ -10,36 +10,36 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/d358d5cf-d6e6-4cd6-b195-7aa8643e4244> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d358d5cf-d6e6-4cd6-b195-7aa8643e4244-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d358d5cf-d6e6-4cd6-b195-7aa8643e4244-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:d358d5cf-d6e6-4cd6-b195-7aa8643e4244> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation TIME CODED Test Completeness CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY" ;
     bdqffdq:forMeasure bdqtest:687d3ad1-93a3-4a1f-b69f-da5a1eb761a5 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/64d2893d-aa67-41df-b5e4-f9978a83e35e> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:687d3ad1-93a3-4a1f-b69f-da5a1eb761a5 .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:687d3ad1-93a3-4a1f-b69f-da5a1eb761a5 .
 
 <https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:687d3ad1-93a3-4a1f-b69f-da5a1eb761a5 .
@@ -85,8 +85,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:687d3ad1-93a3-4a1f-b69f-da5a1eb761a5 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_YEAR_NOTEMPTY" ;
     dcterms:description "Count the number of VALIDATION_YEAR_NOTEMPTY in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/687d3ad1-93a3-4a1f-b69f-da5a1eb761a5-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/687d3ad1-93a3-4a1f-b69f-da5a1eb761a5-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:687d3ad1-93a3-4a1f-b69f-da5a1eb761a5> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

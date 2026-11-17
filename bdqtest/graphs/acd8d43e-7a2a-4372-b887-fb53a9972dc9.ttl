@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/f7786d53-07c1-4253-add9-3bf24d8a97c4> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f7786d53-07c1-4253-add9-3bf24d8a97c4-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f7786d53-07c1-4253-add9-3bf24d8a97c4-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f7786d53-07c1-4253-add9-3bf24d8a97c4> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_LICENSE_STANDARD" ;
     bdqffdq:forMeasure bdqtest:acd8d43e-7a2a-4372-b887-fb53a9972dc9 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/5f5af361-e5fe-44de-9be4-5b02795a2adb> .
 
 <https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:acd8d43e-7a2a-4372-b887-fb53a9972dc9 .
@@ -63,8 +63,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:acd8d43e-7a2a-4372-b887-fb53a9972dc9 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_LICENSE_STANDARD" ;
     dcterms:description "Measure if all VALIDATION_LICENSE_STANDARD in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/acd8d43e-7a2a-4372-b887-fb53a9972dc9-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/acd8d43e-7a2a-4372-b887-fb53a9972dc9-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:acd8d43e-7a2a-4372-b887-fb53a9972dc9> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;

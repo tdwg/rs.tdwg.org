@@ -7,24 +7,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/d9bfd4f7-e158-43ee-8ac4-1bc51bf33307">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/d9bfd4f7-e158-43ee-8ac4-1bc51bf33307-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
-    <rdfs:label>ValidationMethod: VALIDATION_DAY_STANDARD with Specification for: VALIDATION_DAY_STANDARD</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:d9bfd4f7-e158-43ee-8ac4-1bc51bf33307"/>
-    <skos:historyNote>Source: TDWG2018 DQIG Meeting; TG2-Gainesville</skos:historyNote>
-    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L639</skos:note>
-    <skos:note>Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris &amp; Lowery 2025)</skos:note>
-    <skos:note>TG2 Validation TIME CODED Test Conformance CORE</skos:note>
-    <skos:prefLabel>ValidationMethod: VALIDATION_DAY_STANDARD with Specification for: VALIDATION_DAY_STANDARD</skos:prefLabel>
-    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/47ff73ba-0028-4f79-9ce1-ee7008d66498"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/c0fce1a1-8879-4175-8a71-ce037655c358"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/47ff73ba-0028-4f79-9ce1-ee7008d66498">
     <dcterms:description>Is the value of dwc:day an integer between 1 and 31 inclusive?</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/47ff73ba-0028-4f79-9ce1-ee7008d66498-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/47ff73ba-0028-4f79-9ce1-ee7008d66498-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
     <rdfs:label>VALIDATION_DAY_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:47ff73ba-0028-4f79-9ce1-ee7008d66498"/>
@@ -50,9 +36,23 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
     <rdfs:label>Standard</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/d9bfd4f7-e158-43ee-8ac4-1bc51bf33307">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/d9bfd4f7-e158-43ee-8ac4-1bc51bf33307-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_DAY_STANDARD with Specification: Specification for: VALIDATION_DAY_STANDARD</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:d9bfd4f7-e158-43ee-8ac4-1bc51bf33307"/>
+    <skos:historyNote>Source: TDWG2018 DQIG Meeting; TG2-Gainesville</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L639</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris &amp; Lowery 2025)</skos:note>
+    <skos:note>TG2 Validation TIME CODED Test Conformance CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_DAY_STANDARD with Specification: Specification for: VALIDATION_DAY_STANDARD</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/47ff73ba-0028-4f79-9ce1-ee7008d66498"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/c0fce1a1-8879-4175-8a71-ce037655c358"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-15</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>

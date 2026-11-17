@@ -11,22 +11,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/c15d57ce-301c-4db0-8146-399cd59382ad> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_DAY_STANDARDIZED with Specification Specification for: AMENDMENT_DAY_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/c15d57ce-301c-4db0-8146-399cd59382ad-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_DAY_STANDARDIZED with Specification: Specification for: AMENDMENT_DAY_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/c15d57ce-301c-4db0-8146-399cd59382ad-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:c15d57ce-301c-4db0-8146-399cd59382ad> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1621",
         "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
         "TG2 Amendment TIME CODED Test Conformance CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_DAY_STANDARDIZED with Specification Specification for: AMENDMENT_DAY_STANDARDIZED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_DAY_STANDARDIZED with Specification: Specification for: AMENDMENT_DAY_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:b129fa4d-b25b-43f7-9645-5ed4d44b357b ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/3eae7451-19c6-403c-ba36-29f8204d15ff> .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
-    dcterms:modified "2026-04-24"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:b129fa4d-b25b-43f7-9645-5ed4d44b357b .
@@ -65,8 +65,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:b129fa4d-b25b-43f7-9645-5ed4d44b357b a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_DAY_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:day as an integer between 1 and 31 inclusive." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b129fa4d-b25b-43f7-9645-5ed4d44b357b-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b129fa4d-b25b-43f7-9645-5ed4d44b357b-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:b129fa4d-b25b-43f7-9645-5ed4d44b357b> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/127" ;
     skos:note "If dwc:day contains text that may be interpreted as Roman numerals, the result will be NOT_AMENDED as this is not standard. Values such as \"3rd\" or \"12th\" can be interpreted as the integers \"3\" and \"12\". Text such as \"5th Friday\" is ambiguous." ;

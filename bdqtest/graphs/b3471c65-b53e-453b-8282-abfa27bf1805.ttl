@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/05104b96-267c-432a-9f30-88552404763e> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_TYPESTATUS_STANDARDIZED with Specification Specification for: AMENDMENT_TYPESTATUS_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/05104b96-267c-432a-9f30-88552404763e-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_TYPESTATUS_STANDARDIZED with Specification: Specification for: AMENDMENT_TYPESTATUS_STANDARDIZED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/05104b96-267c-432a-9f30-88552404763e-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:05104b96-267c-432a-9f30-88552404763e> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L2338",
         "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
         "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_TYPESTATUS_STANDARDIZED with Specification Specification for: AMENDMENT_TYPESTATUS_STANDARDIZED" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_TYPESTATUS_STANDARDIZED with Specification: Specification for: AMENDMENT_TYPESTATUS_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:b3471c65-b53e-453b-8282-abfa27bf1805 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/401e2562-cb26-43a7-8690-b06eabd5982a> .
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:b3471c65-b53e-453b-8282-abfa27bf1805 .
@@ -80,8 +80,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:b3471c65-b53e-453b-8282-abfa27bf1805 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_TYPESTATUS_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:typeStatus using the bdqval:sourceAuthority." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b3471c65-b53e-453b-8282-abfa27bf1805-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/b3471c65-b53e-453b-8282-abfa27bf1805-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <http://rs.gbif.org/vocabulary/gbif/type_status> ;
     owl:sameAs <urn:uuid:b3471c65-b53e-453b-8282-abfa27bf1805> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/286" ;

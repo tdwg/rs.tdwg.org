@@ -230,18 +230,18 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/316da14e-9477-4319-bd2c-c201f3b0f461-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/316da14e-9477-4319-bd2c-c201f3b0f461-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON"
+        "@value": "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification: Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON"
       }
     ],
     "http://www.w3.org/2002/07/owl#sameAs": [
@@ -267,7 +267,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON"
+        "@value": "AmendmentMethod: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON with Specification: Specification for: AMENDMENT_SCIENTIFICNAMEID_FROM_TAXON"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/forAmendment": [
@@ -288,13 +288,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -385,13 +385,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/431467d6-9b4b-48fa-a197-cd5379f5e889-2025-03-06"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/431467d6-9b4b-48fa-a197-cd5379f5e889-2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-03-06"
+        "@value": "2026-11-17"
       }
     ],
     "http://purl.org/dc/terms/references": [

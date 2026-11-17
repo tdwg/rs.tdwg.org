@@ -1,0 +1,70 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://rs.tdwg.org/bdqtest/method/version/f8024a02-76c0-482a-b805-097d0cdc82e2-2026-11-17> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification: Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/method/f8024a02-76c0-482a-b805-097d0cdc82e2> ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3090",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY with Specification: Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2026-11-17> ;
+    bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/version/f09fc9ad-a449-4422-b32f-63d8ccf2501f-2024-02-07> .
+
+<https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2026-11-17> .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+<https://rs.tdwg.org/bdqtest/informationelement/version/eb155979-58ca-4429-989d-8475e15fdcc6-2024-02-07> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:namePublishedInYear" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/informationelement/eb155979-58ca-4429-989d-8475e15fdcc6> ;
+    skos:prefLabel "Information Element ActedUpon dwc:namePublishedInYear" ;
+    bdqffdq:composedOf dwc:namePublishedInYear .
+
+<https://rs.tdwg.org/bdqtest/specification/version/f09fc9ad-a449-4422-b32f-63d8ccf2501f-2024-02-07> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if dwc:namePublishedInYear is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/specification/f09fc9ad-a449-4422-b32f-63d8ccf2501f> ;
+    skos:example "dwc:namePublishedInYear=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:namePublishedInYear is bdqval:Empty\"",
+        "dwc:namePublishedInYear=\"2024\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:namePublishedInYear is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if dwc:namePublishedInYear is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/ff59f77d-71e9-4eb1-aac9-8bd05c50ff70-2026-11-17> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_NAMEPUBLISHEDINYEAR_NOTEMPTY" ;
+    dcterms:description "Is there a value in dwc:namePublishedInYear?" ;
+    dcterms:isVersionOf bdqtest:ff59f77d-71e9-4eb1-aac9-8bd05c50ff70 ;
+    dcterms:issued "2026-11-17"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/259" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:namePublishedInYear Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <https://rs.tdwg.org/bdqtest/informationelement/version/eb155979-58ca-4429-989d-8475e15fdcc6-2024-02-07> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-02-07"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

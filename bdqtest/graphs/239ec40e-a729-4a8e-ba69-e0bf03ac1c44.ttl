@@ -11,21 +11,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/6d1f3f11-98d9-4b26-a8e7-56fbc066c705> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_GEODETICDATUM_NOTEMPTY with Specification for: VALIDATION_GEODETICDATUM_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/6d1f3f11-98d9-4b26-a8e7-56fbc066c705-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_GEODETICDATUM_NOTEMPTY with Specification: Specification for: VALIDATION_GEODETICDATUM_NOTEMPTY" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/6d1f3f11-98d9-4b26-a8e7-56fbc066c705-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:6d1f3f11-98d9-4b26-a8e7-56fbc066c705> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2105",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Validation SPACE CODED Test Completeness CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_GEODETICDATUM_NOTEMPTY with Specification for: VALIDATION_GEODETICDATUM_NOTEMPTY" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_GEODETICDATUM_NOTEMPTY with Specification: Specification for: VALIDATION_GEODETICDATUM_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:239ec40e-a729-4a8e-ba69-e0bf03ac1c44 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/a3c8b277-15fb-4ae8-afb1-e64fb6eb5241> .
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -68,8 +68,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:239ec40e-a729-4a8e-ba69-e0bf03ac1c44 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_GEODETICDATUM_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:geodeticDatum?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/239ec40e-a729-4a8e-ba69-e0bf03ac1c44-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/239ec40e-a729-4a8e-ba69-e0bf03ac1c44-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:239ec40e-a729-4a8e-ba69-e0bf03ac1c44> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/78" ;

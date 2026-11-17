@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/3cf9d546-bd23-4eb5-a866-4bafac20092f> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3cf9d546-bd23-4eb5-a866-4bafac20092f-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/3cf9d546-bd23-4eb5-a866-4bafac20092f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:3cf9d546-bd23-4eb5-a866-4bafac20092f> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD" ;
     bdqffdq:forMeasure bdqtest:e4d35063-2366-4dda-8eaa-326340361da3 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/9f00505f-133d-47b5-9c81-4dc266896ad6> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:e4d35063-2366-4dda-8eaa-326340361da3 .
@@ -63,8 +63,8 @@ bdquc:Alien-Species a bdqffdq:UseCase ;
 bdqtest:e4d35063-2366-4dda-8eaa-326340361da3 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_COUNT_COMPLIANT_SEX_STANDARD" ;
     dcterms:description "Count the number of VALIDATION_SEX_STANDARD in a record set that are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/e4d35063-2366-4dda-8eaa-326340361da3-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/e4d35063-2366-4dda-8eaa-326340361da3-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:e4d35063-2366-4dda-8eaa-326340361da3> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/296" ;

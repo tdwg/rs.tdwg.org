@@ -10,20 +10,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/06f4a965-9424-47fe-81f8-4264c30b6bf1> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/06f4a965-9424-47fe-81f8-4264c30b6bf1-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/06f4a965-9424-47fe-81f8-4264c30b6bf1-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:06f4a965-9424-47fe-81f8-4264c30b6bf1> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD with Specification Specification for: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD" ;
     bdqffdq:forMeasure bdqtest:ef31ba02-cea7-4d76-990f-99ebbd201fb4 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/b051707d-1f01-48a9-8251-7a0ffecbe2ec> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:ef31ba02-cea7-4d76-990f-99ebbd201fb4 .
@@ -63,8 +63,8 @@ bdquc:Alien-Species a bdqffdq:UseCase ;
 bdqtest:ef31ba02-cea7-4d76-990f-99ebbd201fb4 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_PATHWAY_STANDARD" ;
     dcterms:description "Measure if all VALIDATION_PATHWAY_STANDARD in a record set are COMPLIANT or INTERNAL_PREREQUISITES_NOT_MET (indicating some empty value)." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ef31ba02-cea7-4d76-990f-99ebbd201fb4-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ef31ba02-cea7-4d76-990f-99ebbd201fb4-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:ef31ba02-cea7-4d76-990f-99ebbd201fb4> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/297" ;

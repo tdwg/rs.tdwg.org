@@ -10,28 +10,28 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/d25368be-5f39-4a47-adf3-9c1293499599> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MEASURE_VALIDATIONTESTS_COMPLIANT with Specification Specification for: MEASURE_VALIDATIONTESTS_COMPLIANT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d25368be-5f39-4a47-adf3-9c1293499599-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MEASURE_VALIDATIONTESTS_COMPLIANT with Specification: Specification for: MEASURE_VALIDATIONTESTS_COMPLIANT" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d25368be-5f39-4a47-adf3-9c1293499599-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:d25368be-5f39-4a47-adf3-9c1293499599> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "TG2 Measure NAME SPACE OTHER Test CORE" ;
-    skos:prefLabel "MeasurementMethod: MEASURE_VALIDATIONTESTS_COMPLIANT with Specification Specification for: MEASURE_VALIDATIONTESTS_COMPLIANT" ;
+    skos:prefLabel "MeasurementMethod: MEASURE_VALIDATIONTESTS_COMPLIANT with Specification: Specification for: MEASURE_VALIDATIONTESTS_COMPLIANT" ;
     bdqffdq:forMeasure bdqtest:45fb49eb-4a1b-4b49-876f-15d5034dfc73 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/b611e1b1-cbf5-405c-b24d-24e9a649cbf0> .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:45fb49eb-4a1b-4b49-876f-15d5034dfc73 .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:45fb49eb-4a1b-4b49-876f-15d5034dfc73 .
@@ -69,8 +69,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:45fb49eb-4a1b-4b49-876f-15d5034dfc73 a bdqffdq:Measure ;
     rdfs:label "MEASURE_VALIDATIONTESTS_COMPLIANT" ;
     dcterms:description "A count of the distinct VALIDATION Tests run on a record that have Response.result=COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/45fb49eb-4a1b-4b49-876f-15d5034dfc73-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/45fb49eb-4a1b-4b49-876f-15d5034dfc73-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:45fb49eb-4a1b-4b49-876f-15d5034dfc73> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/135" ;
     skos:note "We have three individual measures for pass (MEASURE_VALIDATIONTESTS_COMPLIANT (45fb49eb-4a1b-4b49-876f-15d5034dfc73)), fail (MEASURE_VALIDATIONTESTS_NOTCOMPLIANT (453844ae-9df4-439f-8e24-c52498eca84a)), and PREREQUISITES_NOT_MET (49a94636-a562-4e6b-803c-665c80628a3d). To get the total number of Tests that were attempted, add all three measures. To get the total number of Tests that ran, add NOT_COMPLIANT (fail) and COMPLIANT (pass). If no VALIDATION Tests were run on the record, the result is 0." ;

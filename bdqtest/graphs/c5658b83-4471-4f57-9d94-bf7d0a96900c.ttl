@@ -11,21 +11,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/2f73a662-b833-44ad-942c-a87f82262b7c> a bdqffdq:AmendmentMethod ;
-    rdfs:label "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2f73a662-b833-44ad-942c-a87f82262b7c-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    rdfs:label "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification: Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2f73a662-b833-44ad-942c-a87f82262b7c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:2f73a662-b833-44ad-942c-a87f82262b7c> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1121",
         "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
         "TG2 Amendment SPACE CODED Test Completeness CORE" ;
-    skos:prefLabel "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM with Specification: Specification for: AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
     bdqffdq:forAmendment bdqtest:c5658b83-4471-4f57-9d94-bf7d0a96900c ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/4db033ea-b0f7-4d01-a5fc-a0459a73a67d> .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-04-24> ;
-    dcterms:modified "2026-04-24"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:c5658b83-4471-4f57-9d94-bf7d0a96900c .
@@ -76,8 +76,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:c5658b83-4471-4f57-9d94-bf7d0a96900c a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_MINDEPTHMAXDEPTH_FROM_VERBATIM" ;
     dcterms:description "Proposes amendments of the values of dwc:minimumDepthInMeters and dwc:maximumDepthInMeters if they can be interpreted from dwc:verbatimDepth." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/c5658b83-4471-4f57-9d94-bf7d0a96900c-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/c5658b83-4471-4f57-9d94-bf7d0a96900c-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:c5658b83-4471-4f57-9d94-bf7d0a96900c> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/55" ;

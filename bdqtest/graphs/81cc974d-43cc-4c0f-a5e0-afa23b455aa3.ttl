@@ -12,22 +12,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/79096434-5b55-40e1-9afb-e138a11f82ba> a bdqffdq:ValidationMethod ;
-    rdfs:label "ValidationMethod: VALIDATION_ORDER_FOUND with Specification for: VALIDATION_ORDER_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/79096434-5b55-40e1-9afb-e138a11f82ba-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "ValidationMethod: VALIDATION_ORDER_FOUND with Specification: Specification for: VALIDATION_ORDER_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/79096434-5b55-40e1-9afb-e138a11f82ba-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:79096434-5b55-40e1-9afb-e138a11f82ba> ;
     skos:historyNote "Source: iDigBio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1459",
         "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
         "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "ValidationMethod: VALIDATION_ORDER_FOUND with Specification for: VALIDATION_ORDER_FOUND" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_ORDER_FOUND with Specification: Specification for: VALIDATION_ORDER_FOUND" ;
     bdqffdq:forValidation bdqtest:81cc974d-43cc-4c0f-a5e0-afa23b455aa3 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/ae08b4b4-89ba-4972-b51f-912b132bd006> .
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-15> ;
-    dcterms:modified "2026-11-15"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -81,8 +81,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:81cc974d-43cc-4c0f-a5e0-afa23b455aa3 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_ORDER_FOUND" ;
     dcterms:description "Does the value of dwc:order occur at the rank of Order in bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/81cc974d-43cc-4c0f-a5e0-afa23b455aa3-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/81cc974d-43cc-4c0f-a5e0-afa23b455aa3-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:81cc974d-43cc-4c0f-a5e0-afa23b455aa3> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/83" ;

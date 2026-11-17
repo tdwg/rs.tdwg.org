@@ -8,14 +8,14 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/0f6f7d29-be39-4285-8e17-d71a9e350d38">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/0f6f7d29-be39-4285-8e17-d71a9e350d38-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/0f6f7d29-be39-4285-8e17-d71a9e350d38-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
-    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND</rdfs:label>
+    <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:0f6f7d29-be39-4285-8e17-d71a9e350d38"/>
     <skos:historyNote>Source: TG2</skos:historyNote>
     <skos:note>TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND</skos:prefLabel>
+    <skos:prefLabel>MeasurementMethod: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND</skos:prefLabel>
     <bdqffdq:forMeasure rdf:resource="https://rs.tdwg.org/bdqtest/terms/012eade5-fc64-458a-a13a-a614491bf4e0"/>
     <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/5fc8b4cc-9da2-4f6a-8fb9-00f6ca3576f7"/>
   </rdf:Description>
@@ -32,8 +32,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/012eade5-fc64-458a-a13a-a614491bf4e0">
     <dcterms:description>Count the number of VALIDATION_KINGDOM_FOUND in a record set that are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/012eade5-fc64-458a-a13a-a614491bf4e0-2025-03-06"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-06</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/012eade5-fc64-458a-a13a-a614491bf4e0-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_COUNT_COMPLIANT_KINGDOM_FOUND</rdfs:label>
@@ -58,8 +58,8 @@
     <bdqffdq:hasExpectedResponse>Count the number of VALIDATION_KINGDOM_FOUND in the MultiRecord that have Response.result=COMPLIANT.</bdqffdq:hasExpectedResponse>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-12</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>

@@ -10,44 +10,44 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://rs.tdwg.org/bdqtest/method/180a834f-d0e1-4abc-b31d-37558ef6352d> a bdqffdq:MeasurementMethod ;
-    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/180a834f-d0e1-4abc-b31d-37558ef6352d-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    rdfs:label "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/180a834f-d0e1-4abc-b31d-37558ef6352d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:180a834f-d0e1-4abc-b31d-37558ef6352d> ;
     skos:historyNote "Source: TG2" ;
     skos:note "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
-    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND with Specification Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND" ;
+    skos:prefLabel "MeasurementMethod: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND with Specification: Specification for: MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND" ;
     bdqffdq:forMeasure bdqtest:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2 ;
     bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/44734c77-85b6-485b-bc43-2d96c0dde693> .
 
 <https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2 .
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2 .
 
 <https://rs.tdwg.org/bdqtest/policy/9949edb2-4376-40af-8e7b-41547bd6bbe9> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (26) measures  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2025-03-07> ;
-    dcterms:modified "2025-03-07"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9949edb2-4376-40af-8e7b-41547bd6bbe9-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:9949edb2-4376-40af-8e7b-41547bd6bbe9> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2 .
 
 <https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-12> ;
-    dcterms:modified "2026-11-12"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     owl:sameAs <urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092> ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
     bdqffdq:includedInPolicy bdqtest:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2 .
@@ -96,8 +96,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2 a bdqffdq:Measure ;
     rdfs:label "MULTIRECORD_MEASURE_QA_SCIENTIFICNAME_FOUND" ;
     dcterms:description "Measure if all VALIDATION_SCIENTIFICNAME_FOUND in a record set are COMPLIANT." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/a8aee02c-cf7c-4104-a601-d8afc4f9cbe2-2025-03-06> ;
-    dcterms:modified "2025-03-06"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/a8aee02c-cf7c-4104-a601-d8afc4f9cbe2-2026-11-17> ;
+    dcterms:modified "2026-11-17"^^xsd:date ;
     dcterms:references <https://doi.org/10.1371/journal.pone.0178731> ;
     owl:sameAs <urn:uuid:a8aee02c-cf7c-4104-a601-d8afc4f9cbe2> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/295" ;
