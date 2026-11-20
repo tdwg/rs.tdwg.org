@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/95627fe5-326a-4468-b220-82af19a6ce98> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT with Specification: Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/95627fe5-326a-4468-b220-82af19a6ce98-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/95627fe5-326a-4468-b220-82af19a6ce98-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:95627fe5-326a-4468-b220-82af19a6ce98> ;
     skos:historyNote "Source: ALA, GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2349",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Amendment SPACE CODED Test Completeness Parameterized CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT with Specification: Specification for: AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT" ;
     bdqffdq:forAmendment bdqtest:7498ca76-c4d4-42e2-8103-acacccbdffa7 ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:7498ca76-c4d4-42e2-8103-acacccbdffa7 .
@@ -105,8 +105,8 @@ bdqval:defaultGeodeticDatum a bdqffdq:Parameter .
 bdqtest:7498ca76-c4d4-42e2-8103-acacccbdffa7 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_GEODETICDATUM_ASSUMEDDEFAULT" ;
     dcterms:description "Proposes an amendment to fill in dwc:geodeticDatum using a parameterized value if the dwc:geodeticDatum is empty." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7498ca76-c4d4-42e2-8103-acacccbdffa7-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/7498ca76-c4d4-42e2-8103-acacccbdffa7-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://epsg.io/>,
         <https://epsg.org/>,

@@ -36,15 +36,6 @@
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Alien-Species"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/54d290e8-ac48-4f31-8af3-676363573217"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
-    <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/54d290e8-ac48-4f31-8af3-676363573217"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/fb38e63c-daaa-45da-abc3-7fe967dc4092">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/fb38e63c-daaa-45da-abc3-7fe967dc4092-2026-11-17"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
@@ -52,6 +43,15 @@
     <rdfs:label>MeasurementPolicy: (42) measures  in UseCase bdquc:Taxon-Management</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:fb38e63c-daaa-45da-abc3-7fe967dc4092"/>
     <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Taxon-Management"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/54d290e8-ac48-4f31-8af3-676363573217"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
+    <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/54d290e8-ac48-4f31-8af3-676363573217"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/54d290e8-ac48-4f31-8af3-676363573217">

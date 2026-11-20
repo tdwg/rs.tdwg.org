@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/07e4c491-0d13-409d-b966-fbb9721e81cf> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_MINDEPTH_LESSTHAN_MAXDEPTH with Specification: Specification for: VALIDATION_MINDEPTH_LESSTHAN_MAXDEPTH" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/07e4c491-0d13-409d-b966-fbb9721e81cf-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/07e4c491-0d13-409d-b966-fbb9721e81cf-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:07e4c491-0d13-409d-b966-fbb9721e81cf> ;
     skos:historyNote "Source: ALA, GBIF, OBIS" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L268",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Validation SPACE CODED Test Conformance CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_MINDEPTH_LESSTHAN_MAXDEPTH with Specification: Specification for: VALIDATION_MINDEPTH_LESSTHAN_MAXDEPTH" ;
     bdqffdq:forValidation bdqtest:8f1e6e58-544b-4365-a569-fb781341644e ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -70,8 +70,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:8f1e6e58-544b-4365-a569-fb781341644e a bdqffdq:Validation ;
     rdfs:label "VALIDATION_MINDEPTH_LESSTHAN_MAXDEPTH" ;
     dcterms:description "Is the value of dwc:minimumDepthInMeters a number less than or equal to the value of dwc:maximumDepthInMeters?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8f1e6e58-544b-4365-a569-fb781341644e-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/8f1e6e58-544b-4365-a569-fb781341644e-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:8f1e6e58-544b-4365-a569-fb781341644e> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/24" ;

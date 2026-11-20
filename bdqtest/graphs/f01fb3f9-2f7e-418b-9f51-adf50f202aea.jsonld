@@ -161,13 +161,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/5a6eaed2-00bd-41ce-9531-ebeb986a3517-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/5a6eaed2-00bd-41ce-9531-ebeb986a3517-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -190,7 +190,7 @@
         "@value": "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1152"
       },
       {
-        "@value": "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)"
+        "@value": "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2026)"
       },
       {
         "@value": "TG2 Amendment NAME CODED Test VOCABULARY Completeness Parameterized CORE"
@@ -219,13 +219,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -256,13 +256,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -293,13 +293,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -330,13 +330,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f44333a6-6c09-42f7-bb14-82540abcbff5-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -427,13 +427,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f01fb3f9-2f7e-418b-9f51-adf50f202aea-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f01fb3f9-2f7e-418b-9f51-adf50f202aea-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/references": [

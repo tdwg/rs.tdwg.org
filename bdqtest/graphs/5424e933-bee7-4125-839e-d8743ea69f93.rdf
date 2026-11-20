@@ -7,20 +7,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/ffae8e47-2181-4a83-b1c7-d0a893e79b67">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/ffae8e47-2181-4a83-b1c7-d0a893e79b67-2026-11-17"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
-    <rdfs:label>ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification: Specification for: VALIDATION_PATHWAY_STANDARD</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:ffae8e47-2181-4a83-b1c7-d0a893e79b67"/>
-    <skos:historyNote>Source: TG2</skos:historyNote>
-    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1875</skos:note>
-    <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)</skos:note>
-    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
-    <skos:prefLabel>ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification: Specification for: VALIDATION_PATHWAY_STANDARD</skos:prefLabel>
-    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/5424e933-bee7-4125-839e-d8743ea69f93"/>
-    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/136039c5-6ceb-41ec-90b3-eb1cd37d6eed">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/136039c5-6ceb-41ec-90b3-eb1cd37d6eed-2024-02-09"/>
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-09</dcterms:modified>
@@ -36,8 +22,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/5424e933-bee7-4125-839e-d8743ea69f93">
     <dcterms:description>Does the value of dwc:pathway occur in the bdqval:sourceAuthority?</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2026-11-17"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/5424e933-bee7-4125-839e-d8743ea69f93-2026-11-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.3897/biss.3.38084"/>
     <dcterms:references rdf:resource="https://dwc.tdwg.org/pw/"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Validation"/>
@@ -56,13 +42,27 @@
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
     <rdfs:label>Standard</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/ffae8e47-2181-4a83-b1c7-d0a893e79b67">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/ffae8e47-2181-4a83-b1c7-d0a893e79b67-2026-11-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
+    <rdfs:label>ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification: Specification for: VALIDATION_PATHWAY_STANDARD</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:ffae8e47-2181-4a83-b1c7-d0a893e79b67"/>
+    <skos:historyNote>Source: TG2</skos:historyNote>
+    <skos:note>Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1875</skos:note>
+    <skos:note>Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)</skos:note>
+    <skos:note>TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE</skos:note>
+    <skos:prefLabel>ValidationMethod: VALIDATION_PATHWAY_STANDARD with Specification: Specification for: VALIDATION_PATHWAY_STANDARD</skos:prefLabel>
+    <bdqffdq:forValidation rdf:resource="https://rs.tdwg.org/bdqtest/terms/5424e933-bee7-4125-839e-d8743ea69f93"/>
+    <bdqffdq:hasSpecification rdf:resource="https://rs.tdwg.org/bdqtest/specification/c7c92ef0-284e-4c5d-8fc9-f1480bfe0b8e"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqdim/terms/Conformance">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/DataQualityDimension"/>
     <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
     <rdfs:label>ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c"/>

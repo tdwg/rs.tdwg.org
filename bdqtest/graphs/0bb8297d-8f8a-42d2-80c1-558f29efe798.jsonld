@@ -183,13 +183,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/1aa9c50e-7e8a-445f-9cf3-12af51a9ec10-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/1aa9c50e-7e8a-445f-9cf3-12af51a9ec10-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -212,7 +212,7 @@
         "@value": "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L582"
       },
       {
-        "@value": "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)"
+        "@value": "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)"
       },
       {
         "@value": "TG2 Validation SPACE CODED Test Conformance Parameterized CORE"
@@ -241,13 +241,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -346,13 +346,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/0bb8297d-8f8a-42d2-80c1-558f29efe798-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/0bb8297d-8f8a-42d2-80c1-558f29efe798-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/references": [

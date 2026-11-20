@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/87d34104-0a79-4f51-aeeb-1115ec56e237> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_EVENTTEMPORAL_NOTEMPTY with Specification: Specification for: VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/87d34104-0a79-4f51-aeeb-1115ec56e237-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/87d34104-0a79-4f51-aeeb-1115ec56e237-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:87d34104-0a79-4f51-aeeb-1115ec56e237> ;
     skos:historyNote "Source: @Tasilee" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1968",
-        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris, Lowery & Johaadien 2026)",
         "TG2 Validation TIME CODED Test Completeness CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_EVENTTEMPORAL_NOTEMPTY with Specification: Specification for: VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:41267642-60ff-4116-90eb-499fee2cd83f ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -72,8 +72,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:41267642-60ff-4116-90eb-499fee2cd83f a bdqffdq:Validation ;
     rdfs:label "VALIDATION_EVENTTEMPORAL_NOTEMPTY" ;
     dcterms:description "Is there a value in any of the terms dwc:eventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear, dwc:verbatimEventDate?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/41267642-60ff-4116-90eb-499fee2cd83f-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/41267642-60ff-4116-90eb-499fee2cd83f-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:41267642-60ff-4116-90eb-499fee2cd83f> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/88" ;
     skos:note "Only fails if all of the relevant fields of the Darwin Core Event class are bdqval:Empty or do not exist. Relevant Darwin Core fields include dwc:eventDate, dwc:verbatimEventDate, dwc:year, dwc:month, dwc:day, dwc:startDayOfYear, dwc:endDayOfYear. The terms dwc:eventID (if populated may or may not point to temporal information accessible to the user of the data) and dwc:eventTime (which is rare) are not included." ;

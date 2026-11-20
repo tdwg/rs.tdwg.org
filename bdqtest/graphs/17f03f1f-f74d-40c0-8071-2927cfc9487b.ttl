@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/94510668-a59f-41d3-84bb-30cd9715cb62> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_POLYNOMIAL_CONSISTENT with Specification: Specification for: VALIDATION_POLYNOMIAL_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/94510668-a59f-41d3-84bb-30cd9715cb62-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/94510668-a59f-41d3-84bb-30cd9715cb62-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:94510668-a59f-41d3-84bb-30cd9715cb62> ;
     skos:historyNote "Source: Paula Zermoglio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1570",
-        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2026)",
         "TG2 Validation NAME CODED Test Consistency CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_POLYNOMIAL_CONSISTENT with Specification: Specification for: VALIDATION_POLYNOMIAL_CONSISTENT" ;
     bdqffdq:forValidation bdqtest:17f03f1f-f74d-40c0-8071-2927cfc9487b ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -72,8 +72,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:17f03f1f-f74d-40c0-8071-2927cfc9487b a bdqffdq:Validation ;
     rdfs:label "VALIDATION_POLYNOMIAL_CONSISTENT" ;
     dcterms:description "Is the polynomial represented in dwc:scientificName consistent with the equivalent values in dwc:genericName, dwc:specificEpithet, dwc:infraspecificEpithet?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/17f03f1f-f74d-40c0-8071-2927cfc9487b-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/17f03f1f-f74d-40c0-8071-2927cfc9487b-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:17f03f1f-f74d-40c0-8071-2927cfc9487b> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/101" ;

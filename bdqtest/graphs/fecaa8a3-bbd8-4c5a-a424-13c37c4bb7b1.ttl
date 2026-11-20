@@ -31,8 +31,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/c06368d9-fff3-4b51-8283-e0e4803d1cf3> a bdqffdq:IssuePolicy ;
     rdfs:label "IssuePolicy: (2) issues  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/c06368d9-fff3-4b51-8283-e0e4803d1cf3-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/c06368d9-fff3-4b51-8283-e0e4803d1cf3-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:c06368d9-fff3-4b51-8283-e0e4803d1cf3> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:fecaa8a3-bbd8-4c5a-a424-13c37c4bb7b1 .

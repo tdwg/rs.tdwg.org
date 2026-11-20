@@ -12,11 +12,11 @@
 
 <https://rs.tdwg.org/bdqtest/method/4c6a5522-ae8c-42d3-a396-8fc3aee49ef9> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_DATEIDENTIFIED_STANDARD with Specification: Specification for: VALIDATION_DATEIDENTIFIED_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/4c6a5522-ae8c-42d3-a396-8fc3aee49ef9-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/4c6a5522-ae8c-42d3-a396-8fc3aee49ef9-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:4c6a5522-ae8c-42d3-a396-8fc3aee49ef9> ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCOtherDateDQ.java#L61",
-        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris, Lowery & Johaadien 2026)",
         "TG2 Validation TIME CODED Test Conformance ISO/DCMI STANDARD CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_DATEIDENTIFIED_STANDARD with Specification: Specification for: VALIDATION_DATEIDENTIFIED_STANDARD" ;
     bdqffdq:forValidation bdqtest:66269bdd-9271-4e76-b25c-7ab81eebe1d8 ;
@@ -24,8 +24,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -74,8 +74,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:66269bdd-9271-4e76-b25c-7ab81eebe1d8 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DATEIDENTIFIED_STANDARD" ;
     dcterms:description "Is the value of dwc:dateIdentified a valid ISO date?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/66269bdd-9271-4e76-b25c-7ab81eebe1d8-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

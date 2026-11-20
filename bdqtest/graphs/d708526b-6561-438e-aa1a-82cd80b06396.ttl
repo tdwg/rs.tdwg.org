@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/a0486e4f-210d-4143-ae5a-f320bebc2cb5> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_MINELEVATION_LESSTHAN_MAXELEVATION with Specification: Specification for: VALIDATION_MINELEVATION_LESSTHAN_MAXELEVATION" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a0486e4f-210d-4143-ae5a-f320bebc2cb5-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a0486e4f-210d-4143-ae5a-f320bebc2cb5-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:a0486e4f-210d-4143-ae5a-f320bebc2cb5> ;
     skos:historyNote "Source: @Tasilee" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L2497",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Validation SPACE CODED Test Conformance CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_MINELEVATION_LESSTHAN_MAXELEVATION with Specification: Specification for: VALIDATION_MINELEVATION_LESSTHAN_MAXELEVATION" ;
     bdqffdq:forValidation bdqtest:d708526b-6561-438e-aa1a-82cd80b06396 ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -70,8 +70,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:d708526b-6561-438e-aa1a-82cd80b06396 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_MINELEVATION_LESSTHAN_MAXELEVATION" ;
     dcterms:description "Is the value of dwc:minimumElevationInMeters a number less than or equal to the value of dwc:maximumElevationInMeters?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d708526b-6561-438e-aa1a-82cd80b06396-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d708526b-6561-438e-aa1a-82cd80b06396-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:d708526b-6561-438e-aa1a-82cd80b06396> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/108" ;

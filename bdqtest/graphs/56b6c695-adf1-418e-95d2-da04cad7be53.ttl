@@ -11,12 +11,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/d5732888-e5d4-4fa7-89dd-09baf1773e07> a bdqffdq:MeasurementMethod ;
     rdfs:label "MeasurementMethod: MEASURE_EVENTDATE_DURATIONINSECONDS with Specification: Specification for: MEASURE_EVENTDATE_DURATIONINSECONDS" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d5732888-e5d4-4fa7-89dd-09baf1773e07-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d5732888-e5d4-4fa7-89dd-09baf1773e07-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:d5732888-e5d4-4fa7-89dd-09baf1773e07> ;
     skos:historyNote "Source: Alex Thompson" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L120",
-        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris, Lowery & Johaadien 2026)",
         "TG2 Measure TIME CODED Test CORE" ;
     skos:prefLabel "MeasurementMethod: MEASURE_EVENTDATE_DURATIONINSECONDS with Specification: Specification for: MEASURE_EVENTDATE_DURATIONINSECONDS" ;
     bdqffdq:forMeasure bdqtest:56b6c695-adf1-418e-95d2-da04cad7be53 ;
@@ -24,8 +24,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503> a bdqffdq:MeasurementPolicy ;
     rdfs:label "MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:56b6c695-adf1-418e-95d2-da04cad7be53 .
@@ -67,8 +67,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:56b6c695-adf1-418e-95d2-da04cad7be53 a bdqffdq:Measure ;
     rdfs:label "MEASURE_EVENTDATE_DURATIONINSECONDS" ;
     dcterms:description "What is the duration of dwc:eventDate in seconds?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/56b6c695-adf1-418e-95d2-da04cad7be53-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/56b6c695-adf1-418e-95d2-da04cad7be53-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/> ;
     owl:sameAs <urn:uuid:56b6c695-adf1-418e-95d2-da04cad7be53> ;

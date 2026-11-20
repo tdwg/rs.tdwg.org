@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/9c5798cd-6176-41ed-8e91-35e3df1fa6d4> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_TAXON_NOTEMPTY with Specification: Specification for: VALIDATION_TAXON_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9c5798cd-6176-41ed-8e91-35e3df1fa6d4-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/9c5798cd-6176-41ed-8e91-35e3df1fa6d4-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9c5798cd-6176-41ed-8e91-35e3df1fa6d4> ;
     skos:historyNote "Source: Lee Belbin" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L1761",
-        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2026)",
         "TG2 Validation NAME CODED Test Completeness CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_TAXON_NOTEMPTY with Specification: Specification for: VALIDATION_TAXON_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:06851339-843f-4a43-8422-4e61b9a00e75 ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -34,8 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -43,8 +43,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -114,8 +114,8 @@ bdquc:Taxon-Management a bdqffdq:UseCase ;
 bdqtest:06851339-843f-4a43-8422-4e61b9a00e75 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_TAXON_NOTEMPTY" ;
     dcterms:description "Is there a value in any of the terms needed to determine that the taxon exists?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/06851339-843f-4a43-8422-4e61b9a00e75-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:06851339-843f-4a43-8422-4e61b9a00e75> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/105" ;
     skos:note "This tests for records that have no taxonomic (NAME) information. If there is any value for any of the Information Elements, this may be useful information. See example." ;

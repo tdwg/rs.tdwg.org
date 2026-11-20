@@ -1,0 +1,80 @@
+@prefix bdqcrit: <https://rs.tdwg.org/bdqcrit/terms/> .
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://rs.tdwg.org/bdqtest/method/version/f6c58791-279d-458b-b4ee-058a73a002ee-2026-11-20> a bdqffdq:ValidationMethod ;
+    rdfs:label "ValidationMethod: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY with Specification: Specification for: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/method/f6c58791-279d-458b-b4ee-058a73a002ee> ;
+    skos:historyNote "Source: TG2" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L3055",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2026)",
+        "TG2 Validation NAME CODED Test Completeness CORE" ;
+    skos:prefLabel "ValidationMethod: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY with Specification: Specification for: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
+    bdqffdq:forValidation <https://rs.tdwg.org/bdqtest/terms/version/49f1d386-5bed-43ae-bd43-deabf7df64fc-2026-11-20> ;
+    bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/version/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b-2024-02-04> .
+
+<https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> ;
+    skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
+    bdqffdq:hasUseCase bdquc:Alien-Species ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/49f1d386-5bed-43ae-bd43-deabf7df64fc-2026-11-20> .
+
+<https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-20> a bdqffdq:ValidationPolicy ;
+    rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
+    skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
+    bdqffdq:hasUseCase bdquc:Taxon-Management ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/49f1d386-5bed-43ae-bd43-deabf7df64fc-2026-11-20> .
+
+bdqcrit:NotEmpty a bdqffdq:Criterion ;
+    rdfs:label "NotEmpty" .
+
+bdqdim:Completeness a bdqffdq:DataQualityDimension ;
+    rdfs:label "Completeness" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+<https://rs.tdwg.org/bdqtest/informationelement/version/ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c-2024-02-04> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:scientificNameAuthorship" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/informationelement/ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c> ;
+    skos:prefLabel "Information Element ActedUpon dwc:scientificNameAuthorship" ;
+    bdqffdq:composedOf dwc:scientificNameAuthorship .
+
+<https://rs.tdwg.org/bdqtest/specification/version/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b-2024-02-04> a bdqffdq:Specification ;
+    rdfs:label "Specification for: VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
+    dcterms:description "COMPLIANT if dwc:scientificNameAuthorship is bdqval:NotEmpty; otherwise NOT_COMPLIANT" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/specification/e9ffc3b0-0fb8-4a7c-a588-a00085ba980b> ;
+    skos:example "dwc:scientificNameAuthorship=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificNameAuthorship is bdqval:Empty\"",
+        "dwc:scientificNameAuthorship=\"(Györfi, 1952)\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:scientificNameAuthorship is bdqval:NotEmpty\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "COMPLIANT if dwc:scientificNameAuthorship is bdqval:NotEmpty; otherwise NOT_COMPLIANT" .
+
+bdquc:Alien-Species a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Alien-Species" .
+
+bdquc:Taxon-Management a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Taxon-Management" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/49f1d386-5bed-43ae-bd43-deabf7df64fc-2026-11-20> a bdqffdq:Validation ;
+    rdfs:label "VALIDATION_SCIENTIFICNAMEAUTHORSHIP_NOTEMPTY" ;
+    dcterms:description "Is there a value in dwc:scientificNameAuthorship?" ;
+    dcterms:isVersionOf bdqtest:49f1d386-5bed-43ae-bd43-deabf7df64fc ;
+    dcterms:issued "2026-11-20"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/244" ;
+    skos:note "" ;
+    skos:prefLabel "Validation dwc:scientificNameAuthorship Not Empty for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <https://rs.tdwg.org/bdqtest/informationelement/version/ebc1be91-f017-4b18-abdb-0c4a1fbb9a0c-2024-02-04> ;
+    bdqffdq:hasCriterion bdqcrit:NotEmpty ;
+    bdqffdq:hasDataQualityDimension bdqdim:Completeness ;
+    bdqffdq:hasDateLastUpdated "2024-02-04"^^xsd:date ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

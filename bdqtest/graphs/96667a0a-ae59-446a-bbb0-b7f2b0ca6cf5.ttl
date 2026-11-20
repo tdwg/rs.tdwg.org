@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT with Specification: Specification for: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:637f7b40-1bdc-4ecc-a6ae-bb9b366da3fd> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1021",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Amendment OTHER CODED Test VOCABULARY Completeness Parameterized CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT with Specification: Specification for: AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT" ;
     bdqffdq:forAmendment bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 ;
@@ -26,16 +26,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 .
@@ -97,8 +97,8 @@ bdqval:defaultOccurrenceStatus a bdqffdq:Parameter .
 bdqtest:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_OCCURRENCESTATUS_ASSUMEDDEFAULT" ;
     dcterms:description "Proposes an amendment of the value of dwc:occurrenceStatus to the default parameter value if dwc:occurrenceStatus, dwc:individualCount and dwc:organismQuantity are empty." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:96667a0a-ae59-446a-bbb0-b7f2b0ca6cf5> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/75" ;
     skos:note "There is currently a capitalization mismatch between https://dwc.tdwg.org/terms/#dwc:occurrenceStatus recommended values and the GBIF vocabulary at (https://api.gbif.org/v1/vocabularies/OccurrenceStatus/concepts)." ;

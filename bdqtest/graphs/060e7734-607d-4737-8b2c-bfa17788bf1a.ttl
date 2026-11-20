@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/fd15e0a4-f49d-4566-b700-a9b46c284e68> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD with Specification: Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/fd15e0a4-f49d-4566-b700-a9b46c284e68-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/fd15e0a4-f49d-4566-b700-a9b46c284e68-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:fd15e0a4-f49d-4566-b700-a9b46c284e68> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1694",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD with Specification: Specification for: VALIDATION_DEGREEOFESTABLISHMENT_STANDARD" ;
     bdqffdq:forValidation bdqtest:060e7734-607d-4737-8b2c-bfa17788bf1a ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -84,8 +84,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:060e7734-607d-4737-8b2c-bfa17788bf1a a bdqffdq:Validation ;
     rdfs:label "VALIDATION_DEGREEOFESTABLISHMENT_STANDARD" ;
     dcterms:description "Does the value of dwc:degreeOfEstablishment occur in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/060e7734-607d-4737-8b2c-bfa17788bf1a-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/060e7734-607d-4737-8b2c-bfa17788bf1a-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <http://dwc.tdwg.org/doe/>,
         <https://doi.org/10.3897/biss.3.38084> ;
     owl:sameAs <urn:uuid:060e7734-607d-4737-8b2c-bfa17788bf1a> ;

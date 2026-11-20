@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/5daad04c-fd7c-4972-ac3a-66f149170bf3> a bdqffdq:IssueMethod ;
     rdfs:label "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification: Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/5daad04c-fd7c-4972-ac3a-66f149170bf3-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:5daad04c-fd7c-4972-ac3a-66f149170bf3> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/d742991440f2f5fc6ffc75dfe3b6d2ab5b6826b2/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L138",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Issue NAME SPACE TIME CODED Test Resolution CORE" ;
     skos:prefLabel "IssueMethod: ISSUE_DATAGENERALIZATIONS_NOTEMPTY with Specification: Specification for: ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
     bdqffdq:forIssue bdqtest:13d5a10e-188e-40fd-a22c-dbaa87b91df2 ;
@@ -25,16 +25,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3> a bdqffdq:IssuePolicy ;
     rdfs:label "IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:13d5a10e-188e-40fd-a22c-dbaa87b91df2 .
 
 <https://rs.tdwg.org/bdqtest/policy/62aa9551-8412-4ee9-a58d-dd6baea1dc35> a bdqffdq:IssuePolicy ;
     rdfs:label "IssuePolicy: (1) issues  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/62aa9551-8412-4ee9-a58d-dd6baea1dc35-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:62aa9551-8412-4ee9-a58d-dd6baea1dc35> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:13d5a10e-188e-40fd-a22c-dbaa87b91df2 .
@@ -82,8 +82,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:13d5a10e-188e-40fd-a22c-dbaa87b91df2 a bdqffdq:Issue ;
     rdfs:label "ISSUE_DATAGENERALIZATIONS_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:dataGeneralizations?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/13d5a10e-188e-40fd-a22c-dbaa87b91df2-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-5jp4-5g10>,
         <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:13d5a10e-188e-40fd-a22c-dbaa87b91df2> ;

@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/97fb9cdf-68c2-4b0b-8b1d-351435d30722> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_SEX_STANDARDIZED with Specification: Specification for: AMENDMENT_SEX_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/97fb9cdf-68c2-4b0b-8b1d-351435d30722-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/97fb9cdf-68c2-4b0b-8b1d-351435d30722-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:97fb9cdf-68c2-4b0b-8b1d-351435d30722> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L2148",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Amendment OTHER CODED Test VOCABULARY Conformance CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_SEX_STANDARDIZED with Specification: Specification for: AMENDMENT_SEX_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:33c45ae1-e2db-462a-a59e-7169bb01c5d6 ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:33c45ae1-e2db-462a-a59e-7169bb01c5d6 .
@@ -80,8 +80,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:33c45ae1-e2db-462a-a59e-7169bb01c5d6 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_SEX_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:sex using the bdqval:sourceAuthority." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/33c45ae1-e2db-462a-a59e-7169bb01c5d6-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/33c45ae1-e2db-462a-a59e-7169bb01c5d6-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://rs.gbif.org/vocabulary/gbif/sex.xml> ;
     owl:sameAs <urn:uuid:33c45ae1-e2db-462a-a59e-7169bb01c5d6> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/284" ;

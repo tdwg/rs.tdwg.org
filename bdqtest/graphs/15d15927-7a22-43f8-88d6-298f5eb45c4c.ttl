@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/fcd9e46a-a31e-47f5-a18a-bb7ee5d1394a> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED with Specification: Specification for: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/fcd9e46a-a31e-47f5-a18a-bb7ee5d1394a-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/fcd9e46a-a31e-47f5-a18a-bb7ee5d1394a-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:fcd9e46a-a31e-47f5-a18a-bb7ee5d1394a> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1502",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED with Specification: Specification for: AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:15d15927-7a22-43f8-88d6-298f5eb45c4c ;
@@ -26,16 +26,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/bf24b955-7497-4d9e-b42e-2706e5bf0d48> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (10) amendments  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/bf24b955-7497-4d9e-b42e-2706e5bf0d48-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:bf24b955-7497-4d9e-b42e-2706e5bf0d48> ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
     bdqffdq:includedInPolicy bdqtest:15d15927-7a22-43f8-88d6-298f5eb45c4c .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:15d15927-7a22-43f8-88d6-298f5eb45c4c .
@@ -94,8 +94,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:15d15927-7a22-43f8-88d6-298f5eb45c4c a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_ESTABLISHMENTMEANS_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dwc:establishmentMeans using the bdqval:sourceAuthority." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/15d15927-7a22-43f8-88d6-298f5eb45c4c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/15d15927-7a22-43f8-88d6-298f5eb45c4c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <http://rs.tdwg.org/dwc/doc/em/>,
         <https://doi.org/10.3897/biss.3.38084> ;
     owl:sameAs <urn:uuid:15d15927-7a22-43f8-88d6-298f5eb45c4c> ;

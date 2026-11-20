@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/2afcbce1-7cf8-4c5c-9df4-d267dc2df704> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification: Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2afcbce1-7cf8-4c5c-9df4-d267dc2df704-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2afcbce1-7cf8-4c5c-9df4-d267dc2df704-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:2afcbce1-7cf8-4c5c-9df4-d267dc2df704> ;
     skos:historyNote "Source: ALA, GBIF, iDigBio" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1005",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Validation SPACE CODED Test VOCABULARY Consistency ISO/DCMI STANDARD Parameterized CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT with Specification: Specification for: VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT" ;
     bdqffdq:forValidation bdqtest:adb27d29-9f0d-4d52-b760-a77ba57a69c9 ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -116,8 +116,8 @@ bdqval:spatialBufferInMeters a bdqffdq:Parameter .
 bdqtest:adb27d29-9f0d-4d52-b760-a77ba57a69c9 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT" ;
     dcterms:description "Do the geographic coordinates fall on or within the boundaries of the territory given in dwc:countryCode or its Exclusive Economic Zone?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/adb27d29-9f0d-4d52-b760-a77ba57a69c9-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/adb27d29-9f0d-4d52-b760-a77ba57a69c9-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
         <https://doi.org/10.14284/628>,
         <https://doi.org/10.15468/doc-gg7h-s853>,

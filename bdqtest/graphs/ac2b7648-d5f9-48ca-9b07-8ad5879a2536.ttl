@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/31c40ce6-eecd-4304-bda7-0234993b079d> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_BASISOFRECORD_NOTEMPTY with Specification: Specification for: VALIDATION_BASISOFRECORD_NOTEMPTY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/31c40ce6-eecd-4304-bda7-0234993b079d-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/31c40ce6-eecd-4304-bda7-0234993b079d-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:31c40ce6-eecd-4304-bda7-0234993b079d> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L207",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Validation OTHER CODED Test Completeness CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_BASISOFRECORD_NOTEMPTY with Specification: Specification for: VALIDATION_BASISOFRECORD_NOTEMPTY" ;
     bdqffdq:forValidation bdqtest:ac2b7648-d5f9-48ca-9b07-8ad5879a2536 ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -34,8 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -43,8 +43,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
@@ -90,8 +90,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:ac2b7648-d5f9-48ca-9b07-8ad5879a2536 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_BASISOFRECORD_NOTEMPTY" ;
     dcterms:description "Is there a value in dwc:basisOfRecord?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ac2b7648-d5f9-48ca-9b07-8ad5879a2536-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/ac2b7648-d5f9-48ca-9b07-8ad5879a2536-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:ac2b7648-d5f9-48ca-9b07-8ad5879a2536> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/58" ;
     skos:note "" ;

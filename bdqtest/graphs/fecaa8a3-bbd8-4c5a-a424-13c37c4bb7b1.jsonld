@@ -239,13 +239,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/c06368d9-fff3-4b51-8283-e0e4803d1cf3-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/c06368d9-fff3-4b51-8283-e0e4803d1cf3-2026-11-20"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-20"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

@@ -1,0 +1,69 @@
+@prefix bdqdim: <https://rs.tdwg.org/bdqdim/terms/> .
+@prefix bdqenh: <https://rs.tdwg.org/bdqenh/terms/> .
+@prefix bdqffdq: <https://rs.tdwg.org/bdqffdq/terms/> .
+@prefix bdqtest: <https://rs.tdwg.org/bdqtest/terms/> .
+@prefix bdquc: <https://rs.tdwg.org/bdquc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://rs.tdwg.org/bdqtest/method/version/c1af0cfd-311e-4982-922a-dc67e0c2c975-2026-11-20> a bdqffdq:AmendmentMethod ;
+    rdfs:label "AmendmentMethod: AMENDMENT_MONTH_STANDARDIZED with Specification: Specification for: AMENDMENT_MONTH_STANDARDIZED" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/method/c1af0cfd-311e-4982-922a-dc67e0c2c975> ;
+    skos:historyNote "Source: TG2-Gainesville" ;
+    skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1535 with unit test at https://github.com/FilteredPush/event_date_qc/blob/f224e5a1e6db81bc6ca725f520dd06a71fcfb54e/src/test/java/org/filteredpush/qc/date/DwcEventDQTest.java#L671 Internals of recognized string values (roman numerals, month names and abbreviations in multiple languages) use a combination of event_date_qc's DateUtils.cleanMonth() (see https://github.com/FilteredPush/event_date_qc/blob/23e4139d7f0ef71736f7fc7e984cfd2d0bfea093/src/main/java/org/filteredpush/qc/date/DateUtils.java#L2111 and Joda time's month recognition)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris, Lowery & Johaadien 2026)",
+        "TG2 Amendment TIME CODED Test Conformance CORE" ;
+    skos:prefLabel "AmendmentMethod: AMENDMENT_MONTH_STANDARDIZED with Specification: Specification for: AMENDMENT_MONTH_STANDARDIZED" ;
+    bdqffdq:forAmendment <https://rs.tdwg.org/bdqtest/terms/version/2e371d57-1eb3-4fe3-8a61-dff43ced50cf-2026-11-20> ;
+    bdqffdq:hasSpecification <https://rs.tdwg.org/bdqtest/specification/version/4a514adf-766f-46a4-bf16-6febcb594f38-2026-04-24> .
+
+<https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> a bdqffdq:AmendmentPolicy ;
+    rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
+    bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
+    bdqffdq:includedInPolicy <https://rs.tdwg.org/bdqtest/terms/version/2e371d57-1eb3-4fe3-8a61-dff43ced50cf-2026-11-20> .
+
+bdqdim:Conformance a bdqffdq:DataQualityDimension ;
+    rdfs:label "Conformance" .
+
+bdqenh:Standardized a bdqffdq:Enhancement ;
+    rdfs:label "Standardized" .
+
+bdqffdq:SingleRecord a bdqffdq:ResourceType ;
+    rdfs:label "SingleRecord" .
+
+<https://rs.tdwg.org/bdqtest/informationelement/version/a16e8cb6-dbf5-44a9-becc-8bef83a37456-2023-09-18> a bdqffdq:ActedUpon ;
+    rdfs:label "Information Element ActedUpon dwc:month" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/informationelement/a16e8cb6-dbf5-44a9-becc-8bef83a37456> ;
+    skos:prefLabel "Information Element ActedUpon dwc:month" ;
+    bdqffdq:composedOf dwc:month .
+
+<https://rs.tdwg.org/bdqtest/specification/version/4a514adf-766f-46a4-bf16-6febcb594f38-2026-04-24> a bdqffdq:Specification ;
+    rdfs:label "Specification for: AMENDMENT_MONTH_STANDARDIZED" ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:month is bdqval:Empty; AMENDED the value of dwc:month if it can be unambiguously interpreted as a month represented as an integer between 1 and 12 inclusive; otherwise NOT_AMENDED" ;
+    dcterms:isVersionOf <https://rs.tdwg.org/bdqtest/specification/4a514adf-766f-46a4-bf16-6febcb594f38> ;
+    skos:example "dwc:month=\"IV\": Response.status=AMENDED, Response.result=dwc:month=\"4\", Response.comment=\"dwc:month interpreted as roman numerals \"",
+        "dwc:month=\"Ma\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"dwc:month contains an ambiguous value\"" ;
+    bdqffdq:hasAuthoritiesDefaults "" ;
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:month is bdqval:Empty; AMENDED the value of dwc:month if it can be unambiguously interpreted as a month represented as an integer between 1 and 12 inclusive; otherwise NOT_AMENDED" .
+
+bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
+    rdfs:label "bdquc:Spatial-Temporal_Patterns" .
+
+<https://rs.tdwg.org/bdqtest/terms/version/2e371d57-1eb3-4fe3-8a61-dff43ced50cf-2026-11-20> a bdqffdq:Amendment ;
+    rdfs:label "AMENDMENT_MONTH_STANDARDIZED" ;
+    dcterms:description "Proposes an amendment to the value of dwc:month as an integer between 1 and 12 inclusive." ;
+    dcterms:isVersionOf bdqtest:2e371d57-1eb3-4fe3-8a61-dff43ced50cf ;
+    dcterms:issued "2026-11-20"^^xsd:date ;
+    skos:historyNote "https://github.com/tdwg/bdq/issues/128" ;
+    skos:note "Implementations should translate unambiguously interpretable names and abbreviations of months to their integer month values 1-12. Implementations should translate interpretable Roman numerals in the range I-XII in dwc:month as integer month values 1-12, as some natural science domains use roman numeral months to avoid language and day/month vs month/day order concerns. In these cases, the result will be AMENDED numeric equivalents." ;
+    skos:prefLabel "Amendment dwc:month Standardized for SingleRecord" ;
+    bdqffdq:hasActedUponInformationElement <https://rs.tdwg.org/bdqtest/informationelement/version/a16e8cb6-dbf5-44a9-becc-8bef83a37456-2023-09-18> ;
+    bdqffdq:hasDataQualityDimension bdqdim:Conformance ;
+    bdqffdq:hasDateLastUpdated "2026-04-24"^^xsd:date ;
+    bdqffdq:hasEnhancement bdqenh:Standardized ;
+    bdqffdq:hasResourceType bdqffdq:SingleRecord .
+

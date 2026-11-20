@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/8ca96a50-f1f5-4a4e-853e-755cc5aa82a7> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY with Specification: Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8ca96a50-f1f5-4a4e-853e-755cc5aa82a7-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8ca96a50-f1f5-4a4e-853e-755cc5aa82a7-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:8ca96a50-f1f5-4a4e-853e-755cc5aa82a7> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1395",
-        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris, Lowery & Johaadien 2026)",
         "TG2 Amendment TIME CODED Test Completeness CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY with Specification: Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
     bdqffdq:forAmendment bdqtest:3892f432-ddd0-4a0a-b713-f2e2ecbd879d ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:3892f432-ddd0-4a0a-b713-f2e2ecbd879d .
@@ -84,8 +84,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:3892f432-ddd0-4a0a-b713-f2e2ecbd879d a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
     dcterms:description "Proposes an amendment to the value of dwc:eventDate from values in dwc:year, dwc:month and dwc:day." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

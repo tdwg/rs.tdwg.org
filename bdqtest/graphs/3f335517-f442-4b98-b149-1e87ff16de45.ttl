@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/275ae9b2-4085-4946-9580-6a63844174cd> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_SCIENTIFICNAME_FOUND with Specification: Specification for: VALIDATION_SCIENTIFICNAME_FOUND" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/275ae9b2-4085-4946-9580-6a63844174cd-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/275ae9b2-4085-4946-9580-6a63844174cd-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:275ae9b2-4085-4946-9580-6a63844174cd> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/sci_name_qc/blob/v1.1.2/src/main/java/org/filteredpush/qc/sciname/DwCSciNameDQ.java#L212",
-        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2025)",
+        "Example Implementations: Kurator/FilteredPush sci_name_qc Library (Morris & Dou 2026)",
         "TG2 Validation NAME CODED Test VOCABULARY Conformance Parameterized CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_SCIENTIFICNAME_FOUND with Specification: Specification for: VALIDATION_SCIENTIFICNAME_FOUND" ;
     bdqffdq:forValidation bdqtest:3f335517-f442-4b98-b149-1e87ff16de45 ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -35,8 +35,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -44,8 +44,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/9c87ce41-04a3-45e6-83d3-95ec70ae553f> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:9c87ce41-04a3-45e6-83d3-95ec70ae553f> ;
     skos:prefLabel "ValidationPolicy: (19) validations  in UseCase bdquc:Taxon-Management" ;
     bdqffdq:hasUseCase bdquc:Taxon-Management ;
@@ -53,8 +53,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
@@ -117,8 +117,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:3f335517-f442-4b98-b149-1e87ff16de45 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_SCIENTIFICNAME_FOUND" ;
     dcterms:description "Is there a match of the contents of dwc:scientificName with the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3f335517-f442-4b98-b149-1e87ff16de45-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3f335517-f442-4b98-b149-1e87ff16de45-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/39omei> ;
     owl:sameAs <urn:uuid:3f335517-f442-4b98-b149-1e87ff16de45> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/46" ;

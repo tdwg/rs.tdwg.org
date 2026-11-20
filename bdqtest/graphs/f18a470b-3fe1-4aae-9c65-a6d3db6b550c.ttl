@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/315a198d-3811-40dd-918a-756f598f3294> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT with Specification: Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/315a198d-3811-40dd-918a-756f598f3294-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/315a198d-3811-40dd-918a-756f598f3294-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:315a198d-3811-40dd-918a-756f598f3294> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L1378",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Validation SPACE CODED Test VOCABULARY Consistency CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT with Specification: Specification for: VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT" ;
     bdqffdq:forValidation bdqtest:f18a470b-3fe1-4aae-9c65-a6d3db6b550c ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -115,8 +115,8 @@ bdqval:spatialBufferInMeters a bdqffdq:Parameter .
 bdqtest:f18a470b-3fe1-4aae-9c65-a6d3db6b550c a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COORDINATESSTATEPROVINCE_CONSISTENT" ;
     dcterms:description "Do the geographic coordinates fall on or within the boundary from the bdqval:sourceAuthority for the given dwc:stateProvince or within the distance given by bdqval:spatialBufferInMeters outside that boundary?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f18a470b-3fe1-4aae-9c65-a6d3db6b550c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/f18a470b-3fe1-4aae-9c65-a6d3db6b550c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <http://www.fao.org/3/a0118e/a0118e00.htm#Contents>,
         <https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse>,
         <https://doi.org/10.15468/doc-gg7h-s853>,

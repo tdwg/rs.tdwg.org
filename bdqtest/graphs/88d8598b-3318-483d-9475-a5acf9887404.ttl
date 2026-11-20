@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/a0c48217-97a2-41e2-9540-61939f2628c5> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_SEX_STANDARD with Specification: Specification for: VALIDATION_SEX_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a0c48217-97a2-41e2-9540-61939f2628c5-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/a0c48217-97a2-41e2-9540-61939f2628c5-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:a0c48217-97a2-41e2-9540-61939f2628c5> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L2084",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Validation OTHER CODED Test VOCABULARY Parameterized CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_SEX_STANDARD with Specification: Specification for: VALIDATION_SEX_STANDARD" ;
     bdqffdq:forValidation bdqtest:88d8598b-3318-483d-9475-a5acf9887404 ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -81,8 +81,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:88d8598b-3318-483d-9475-a5acf9887404 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_SEX_STANDARD" ;
     dcterms:description "Does the value of dwc:sex occur in bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/88d8598b-3318-483d-9475-a5acf9887404-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/88d8598b-3318-483d-9475-a5acf9887404-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://rs.gbif.org/vocabulary/gbif/sex.xml> ;
     owl:sameAs <urn:uuid:88d8598b-3318-483d-9475-a5acf9887404> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/283" ;

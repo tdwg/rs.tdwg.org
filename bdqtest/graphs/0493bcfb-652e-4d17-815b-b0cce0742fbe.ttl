@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/02f5a440-a473-42cf-a3f1-6c10334d5eb8> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COUNTRYCODE_STANDARD with Specification: Specification for: VALIDATION_COUNTRYCODE_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/02f5a440-a473-42cf-a3f1-6c10334d5eb8-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/02f5a440-a473-42cf-a3f1-6c10334d5eb8-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:02f5a440-a473-42cf-a3f1-6c10334d5eb8> ;
     skos:historyNote "Source: TG2" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L99",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Validation SPACE CODED Test VOCABULARY Conformance ISO/DCMI STANDARD CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_COUNTRYCODE_STANDARD with Specification: Specification for: VALIDATION_COUNTRYCODE_STANDARD" ;
     bdqffdq:forValidation bdqtest:0493bcfb-652e-4d17-815b-b0cce0742fbe ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -78,8 +78,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:0493bcfb-652e-4d17-815b-b0cce0742fbe a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COUNTRYCODE_STANDARD" ;
     dcterms:description "Is the value of dwc:countryCode a valid ISO 3166-1-alpha-2 country code?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/0493bcfb-652e-4d17-815b-b0cce0742fbe-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/0493bcfb-652e-4d17-815b-b0cce0742fbe-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://datahub.io/core/country-list>,
         <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,

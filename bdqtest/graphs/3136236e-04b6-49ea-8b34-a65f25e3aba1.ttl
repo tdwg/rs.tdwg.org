@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/180c1a90-94c3-48b5-a9fe-4223d6f2bd60> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification: Specification for: VALIDATION_LICENSE_STANDARD" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/180c1a90-94c3-48b5-a9fe-4223d6f2bd60-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/180c1a90-94c3-48b5-a9fe-4223d6f2bd60-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:180c1a90-94c3-48b5-a9fe-4223d6f2bd60> ;
     skos:historyNote "Source: John Wieczorek" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L635",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Validation OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_LICENSE_STANDARD with Specification: Specification for: VALIDATION_LICENSE_STANDARD" ;
     bdqffdq:forValidation bdqtest:3136236e-04b6-49ea-8b34-a65f25e3aba1 ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/d001ff0b-ade0-4a73-b281-e92ae0129bec> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:d001ff0b-ade0-4a73-b281-e92ae0129bec> ;
     skos:prefLabel "ValidationPolicy: (17) validations  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
@@ -83,8 +83,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:3136236e-04b6-49ea-8b34-a65f25e3aba1 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_LICENSE_STANDARD" ;
     dcterms:description "Does the value of dcterms:license occur in bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3136236e-04b6-49ea-8b34-a65f25e3aba1-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://creativecommons.org/licenses/>,
         <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> ;
     owl:sameAs <urn:uuid:3136236e-04b6-49ea-8b34-a65f25e3aba1> ;

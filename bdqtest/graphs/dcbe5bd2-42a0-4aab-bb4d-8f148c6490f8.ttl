@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/d040474f-edc7-47b8-80a0-3a3859359897> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_LICENSE_STANDARDIZED with Specification: Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d040474f-edc7-47b8-80a0-3a3859359897-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/d040474f-edc7-47b8-80a0-3a3859359897-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:d040474f-edc7-47b8-80a0-3a3859359897> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/rec_occur_qc/blob/v1.0.1/src/main/java/org/filteredpush/qc/metadata/DwCMetadataDQ.java#L1226",
-        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2025)",
+        "Example Implementations: Kurator/FilteredPush rec_occur_qc Library (Morris 2026d)",
         "TG2 Amendment OTHER CODED Test VOCABULARY Conformance Parameterized CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_LICENSE_STANDARDIZED with Specification: Specification for: AMENDMENT_LICENSE_STANDARDIZED" ;
     bdqffdq:forAmendment bdqtest:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8 ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/60c7e911-e72e-421f-be9b-4fb81eef1a54> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8 .
@@ -82,8 +82,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_LICENSE_STANDARDIZED" ;
     dcterms:description "Proposes an amendment to the value of dcterms:license using the bdqval:sourceAuthority." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://creativecommons.org/licenses/>,
         <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/LicenseDocument/> ;
     owl:sameAs <urn:uuid:dcbe5bd2-42a0-4aab-bb4d-8f148c6490f8> ;

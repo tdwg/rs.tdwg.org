@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/7c915d24-1fda-4d72-97d4-8bd5e2136c97> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_VERBATIM with Specification: Specification for: AMENDMENT_EVENTDATE_FROM_VERBATIM" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7c915d24-1fda-4d72-97d4-8bd5e2136c97-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/7c915d24-1fda-4d72-97d4-8bd5e2136c97-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:7c915d24-1fda-4d72-97d4-8bd5e2136c97> ;
     skos:historyNote "Source: VertNet, FP, Kurator" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L334. For a minimum set of unit tests see: [DwcEventDQTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/test/java/org/filteredpush/qc/date/DwcEventDQTest.java#L605), see also unit tests for underlying implementation in [DateUtilsTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/test/java/org/filteredpush/qc/date/DateUtilsTest.java#L632) and [DateUtilsTest](https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/test/java/org/filteredpush/qc/date/DateUtilsTest.java#L788)",
-        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris & Lowery 2025)",
+        "Example Implementations: Kurator/FilteredPush event_date_qc Library (Morris, Lowery & Johaadien 2026)",
         "TG2 Amendment TIME CODED Test Completeness CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_VERBATIM with Specification: Specification for: AMENDMENT_EVENTDATE_FROM_VERBATIM" ;
     bdqffdq:forAmendment bdqtest:6d0a0c10-5e4a-4759-b448-88932f399812 ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:6d0a0c10-5e4a-4759-b448-88932f399812 .
@@ -82,8 +82,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:6d0a0c10-5e4a-4759-b448-88932f399812 a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENTDATE_FROM_VERBATIM" ;
     dcterms:description "Proposes an amendment to the value of dwc:eventDate from the content of dwc:verbatimEventDate." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/6d0a0c10-5e4a-4759-b448-88932f399812-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/6d0a0c10-5e4a-4759-b448-88932f399812-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

@@ -12,12 +12,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/10ad79a1-c93f-4ab2-accf-780867f93957> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification: Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/10ad79a1-c93f-4ab2-accf-780867f93957-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/10ad79a1-c93f-4ab2-accf-780867f93957-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:10ad79a1-c93f-4ab2-accf-780867f93957> ;
     skos:historyNote "Source: ALA" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L402",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Amendment SPACE CODED Test Completeness CORE" ;
     skos:prefLabel "AmendmentMethod: AMENDMENT_COORDINATES_FROM_VERBATIM with Specification: Specification for: AMENDMENT_COORDINATES_FROM_VERBATIM" ;
     bdqffdq:forAmendment bdqtest:3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e ;
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e .
@@ -82,8 +82,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_COORDINATES_FROM_VERBATIM" ;
     dcterms:description "Proposes an amendment to the values of dwc:decimalLatitude, dwc:decimalLongitude, and dwc:geodeticDatum from geographic coordinate information in the verbatim coordinates terms." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853> ;
     owl:sameAs <urn:uuid:3c2590c7-af8a-4eb4-af57-5f73ba9d1f8e> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/32" ;

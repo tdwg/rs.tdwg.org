@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e> a bdqffdq:IssueMethod ;
     rdfs:label "IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification: Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/0239b59b-db0e-4e6a-8ba8-2f89abf9e78e-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0239b59b-db0e-4e6a-8ba8-2f89abf9e78e> ;
     skos:historyNote "Source: GBIF" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3632",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Issue SPACE CODED Test Conformance Parameterized CORE" ;
     skos:prefLabel "IssueMethod: ISSUE_COORDINATES_CENTEROFCOUNTRY with Specification: Specification for: ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
     bdqffdq:forIssue bdqtest:256e51b3-1e08-4349-bb7e-5186631c3f8e ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/506a7fe1-a97e-4ab4-b477-06419ed9b5a3> a bdqffdq:IssuePolicy ;
     rdfs:label "IssuePolicy: (3) issues  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/506a7fe1-a97e-4ab4-b477-06419ed9b5a3-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:506a7fe1-a97e-4ab4-b477-06419ed9b5a3> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:256e51b3-1e08-4349-bb7e-5186631c3f8e .
@@ -101,8 +101,8 @@ bdqval:spatialBufferInMeters a bdqffdq:Parameter .
 bdqtest:256e51b3-1e08-4349-bb7e-5186631c3f8e a bdqffdq:Issue ;
     rdfs:label "ISSUE_COORDINATES_CENTEROFCOUNTRY" ;
     dcterms:description "Are the supplied geographic coordinates within a defined buffer of the center of the country?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/256e51b3-1e08-4349-bb7e-5186631c3f8e-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.3897/biss.7.110728> ;
     owl:sameAs <urn:uuid:256e51b3-1e08-4349-bb7e-5186631c3f8e> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/287" ;

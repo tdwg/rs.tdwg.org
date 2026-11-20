@@ -13,12 +13,12 @@
 
 <https://rs.tdwg.org/bdqtest/method/f1a7f272-9040-42da-9b64-62abedefb1b0> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS with Specification: Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f1a7f272-9040-42da-9b64-62abedefb1b0-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/f1a7f272-9040-42da-9b64-62abedefb1b0-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:f1a7f272-9040-42da-9b64-62abedefb1b0> ;
     skos:historyNote "Source: VertNet, Kurator" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/geo_ref_qc/blob/v2.0.1/src/main/java/org/filteredpush/qc/georeference/DwCGeoRefDQ.java#L3020",
-        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris & Lowery 2025b)",
+        "Example Implementations: Kurator/FilteredPush geo_ref_qc Library (Morris, Lowery & Wieczorek 2026)",
         "TG2 Validation SPACE CODED Test VOCABULARY Conformance Parameterized CORE" ;
     skos:prefLabel "ValidationMethod: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS with Specification: Specification for: VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
     bdqffdq:forValidation bdqtest:d257eb98-27cb-48e5-8d3c-ab9fca4edd11 ;
@@ -26,8 +26,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -94,8 +94,8 @@ bdqval:sourceAuthority a bdqffdq:Parameter .
 bdqtest:d257eb98-27cb-48e5-8d3c-ab9fca4edd11 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_COUNTRYSTATEPROVINCE_UNAMBIGUOUS" ;
     dcterms:description "Is the combination of the values of the terms dwc:country, dwc:stateProvince unique in the bdqval:sourceAuthority?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d257eb98-27cb-48e5-8d3c-ab9fca4edd11-2026-11-17> ;
-    dcterms:modified "2026-11-17"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/d257eb98-27cb-48e5-8d3c-ab9fca4edd11-2026-11-20> ;
+    dcterms:modified "2026-11-20"^^xsd:date ;
     dcterms:references <https://doi.org/10.15468/doc-gg7h-s853>,
         <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>,
         <https://github.com/VertNet/DwCVocabs/tree/master/vocabs>,
