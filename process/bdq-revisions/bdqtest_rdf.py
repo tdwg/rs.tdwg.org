@@ -54,6 +54,11 @@ Key behavioural invariants that mirror the Java implementation:
 #      "... with Specification for: ..." and the others "... with Specification Specification
 #      for: ...". The wording depends on the version's date (the row's issued), so the graphs
 #      and element rows of earlier versions are unchanged (METHOD_LABEL_FIXED).
+#   6. From release 2026-11-20, "oa:" in information elements resolves to the W3C Web Annotation
+#      namespace http://www.w3.org/ns/oa#, so oa:hasTarget is http://www.w3.org/ns/oa#hasTarget.
+#      Before it, as in kurator-ffdq before 4.0.1, it resolved to http://www.w3.org/ns/hasTarget.
+#      By the version's date, so the graphs and element rows of earlier versions are unchanged
+#      (OA_NAMESPACE_FIXED).
 
 
 import argparse
@@ -485,12 +490,21 @@ def _ie_label(ie_type: str, terms_csv: str) -> str:
     return f"Information Element {ie_type} {', '.join(terms)}"
 
 
-def _resolve_ie_terms(terms_csv: str) -> list:
+# rs.tdwg.org (6): the release from which "oa:" resolves to the Web Annotation namespace.
+OA_NAMESPACE_FIXED = '2026-11-20'
+OA_NAMESPACE = "http://www.w3.org/ns/oa#"
+
+
+def _resolve_ie_terms(terms_csv: str, issued: str = '') -> list:
     """Parse 'dwc:foo,dwc:bar' etc. into a list of URIRefs."""
     result = []
     for t in terms_csv.split(','):
         t = t.strip()
         if t:
+            # rs.tdwg.org (6): oa: by the version's date.
+            if t.startswith('oa:') and issued >= OA_NAMESPACE_FIXED:
+                result.append(URIRef(OA_NAMESPACE + t[len('oa:'):]))
+                continue
             try:
                 result.append(resolve_curie(t))
             except ValueError:
@@ -500,7 +514,7 @@ def _resolve_ie_terms(terms_csv: str) -> list:
 
 def _add_standard_ie_node(g: Graph, ie_type: str, ie_guid_iri: str,
                            terms_csv: str, seen_ies: dict,
-                           seen_ontology: set) -> URIRef:
+                           seen_ontology: set, issued: str = '') -> URIRef:
     """
     Add a standard (non-MultiRecord) ActedUpon or Consulted IE node.
     Deduped by ie_guid_iri.  Returns the URIRef.
@@ -510,7 +524,7 @@ def _add_standard_ie_node(g: Graph, ie_type: str, ie_guid_iri: str,
         seen_ies[ie_guid_iri] = node
         g.add((node, RDF.type, BDQFFDQ[ie_type]))
         _ensure_ie_subclass(g, ie_type, seen_ontology)
-        for term_uri in _resolve_ie_terms(terms_csv):
+        for term_uri in _resolve_ie_terms(terms_csv, issued):
             g.add((node, BDQFFDQ.composedOf, term_uri))
         label = _ie_label(ie_type, terms_csv)
         g.add((node, RDFS.label, Literal(label)))
@@ -744,7 +758,7 @@ def build_graph(rows: list, additional_guids: dict, ie_guids: dict,
                 ie_gid = ie_guids.get(ie_lbl)
                 if ie_gid:
                     node = _add_standard_ie_node(g, 'ActedUpon', ie_gid,
-                                                 au_ie, seen_ies, seen_ontology)
+                                                 au_ie, seen_ies, seen_ontology, issued)
                     g.add((version_iri, BDQFFDQ.hasActedUponInformationElement, node))
 
             if cons_ie:
@@ -752,7 +766,7 @@ def build_graph(rows: list, additional_guids: dict, ie_guids: dict,
                 ie_gid = ie_guids.get(ie_lbl)
                 if ie_gid:
                     node = _add_standard_ie_node(g, 'Consulted', ie_gid,
-                                                 cons_ie, seen_ies, seen_ontology)
+                                                 cons_ie, seen_ies, seen_ontology, issued)
                     g.add((version_iri, BDQFFDQ.hasConsultedInformationElement, node))
 
         # Issued date

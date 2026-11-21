@@ -1,5 +1,6 @@
 # BDQ release 2026-11-20 for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).
 # Editorial: Example Implementations cite the 2026 releases of the FilteredPush libraries (event_date_qc 3.2.0, geo_ref_qc 2.2.0, rec_occur_qc 1.2.0, sci_name_qc 1.3.0), as in the BDQ reference list; DateLastUpdated unchanged. Modified: the Quick Reference Guide (the Tests' current version IRIs).
+# Rerun the same day: ISSUE_ANNOTATION_NOTEMPTY gets a non-substantive version (row unchanged), with which its information element oa:hasTarget is the IRI http://www.w3.org/ns/oa#hasTarget instead of http://www.w3.org/ns/hasTarget (bdqtest_rdf.py change 6, OA_NAMESPACE_FIXED).
 # Created by bdq_new_release.py from release 2026-11-17.
 # Run with: python process.py --config bdq-revisions/bdq-revisions-2026-11-20/config.yaml
 # Placeholders for the public review: standard YYY, decision_number YYY (plan 8.2.1).
