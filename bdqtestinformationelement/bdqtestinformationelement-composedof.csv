@@ -202,7 +202,7 @@ a7362af8-77a9-45c3-8520-1a12b8b31804,http://rs.tdwg.org/dwc/terms/year
 af5393af-6a71-4e39-aa70-7609ee10d1d0,http://rs.tdwg.org/dwc/terms/minimumElevationInMeters
 b1b7b96f-79c7-414e-998f-4e31c23b6dec,http://rs.tdwg.org/dwc/terms/order
 b6c0e87e-4b9a-4f6b-bbaf-9cf23b02ddee,https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes
-b7a02234-c4d0-40fd-a437-af8330cc700f,http://www.w3.org/ns/hasTarget
+b7a02234-c4d0-40fd-a437-af8330cc700f,http://www.w3.org/ns/oa#hasTarget
 b856f48c-bf6f-4637-b8de-37d379831801,http://rs.tdwg.org/dwc/terms/kingdom
 b90492ed-90da-4552-8ac0-e18e71db9d86,https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes
 b9dd90bd-0f4d-403d-b24e-8aed6c157946,https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes
