@@ -68,7 +68,8 @@ POLICY_CLASSES = {B[c] for c in ('ValidationPolicy', 'MeasurementPolicy', 'Amend
 FOR = {B.forValidation: 'forValidation', B.forMeasure: 'forMeasure', B.forAmendment: 'forAmendment',
        B.forIssue: 'forIssue'}
 CURIES = {'https://rs.tdwg.org/bdqffdq/terms/': 'bdqffdq:', 'https://rs.tdwg.org/bdqval/terms/': 'bdqval:',
-          'http://rs.tdwg.org/dwc/terms/': 'dwc:', 'https://rs.tdwg.org/bdquc/terms/': 'bdquc:'}
+          'http://rs.tdwg.org/dwc/terms/': 'dwc:', 'https://rs.tdwg.org/bdquc/terms/': 'bdquc:',
+          'http://www.w3.org/ns/oa#': 'oa:'}
 
 # Columns of each element dataset: (column, predicate, mapping type, attribute, in current, in versions).
 # Columns with no predicate are carried (used to build linked tables and redirects), not mapped.

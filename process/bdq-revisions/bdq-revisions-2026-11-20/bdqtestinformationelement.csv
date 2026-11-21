@@ -1,1 +1,2 @@
 term_localName,label,type,sameAs,prefLabel,definition,note,aggregatesResponsesFrom,composedOf
+b7a02234-c4d0-40fd-a437-af8330cc700f,Information Element Consulted oa:hasTarget,bdqffdq:Consulted,urn:uuid:b7a02234-c4d0-40fd-a437-af8330cc700f,Information Element Consulted oa:hasTarget,"An information element of type bdqffdq:Consulted, composed of oa:hasTarget.",,,http://www.w3.org/ns/oa#hasTarget
