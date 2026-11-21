@@ -1312,6 +1312,15 @@ def update_termlist_version_members(aNewTermList, mostRecentListNumber, date_iss
             ', '.join(duplicate_local_names) + '.'
         )
 
+    # The membership of the target version is generated in full by this run. On a
+    # same-release rerun, drop the rows an earlier run wrote for it, so that a term
+    # whose member version changed in the rerun does not keep its earlier version as
+    # a second member (writeCsv only removes exact duplicate rows).
+    term_lists_versions_members[:] = [term_lists_versions_members[0]] + [
+        row for row in term_lists_versions_members[1:]
+        if not row or row[0] != termlistVersionUri
+    ]
+
     # Now that the list is created of new term versions that are part of the new term version list,
     # add a record for each one to the term list versions members table
     for termVersionMember in newTermVersionMembersList:
