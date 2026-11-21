@@ -1,1 +1,7 @@
 term_localName,label,prefLabel,definition,notes,usage,controlled_value_string,type,type1,subClassOf,subClassOf1,subClassOf2,subPropertyOf,subPropertyOf1,subPropertyOf2,subPropertyOf3,range,differentFrom,differentFrom1
+DataResource,Data Resource,Data Resource,An owl:Thing to which a data quality bdqffdq:Response applies.,"Describes a bdqffdq:DataResource containing terms from a vocabulary such as Darwin Core that can be related to bdqffdq:InformationElements, and represents the original values of the data operated on by a bdqffdq:Response Test (e.g., an instance of dwc:Occurrence). Ideally, bdqffdq:DataResources have persistent GUIDs.
+
+A bdqffdq:DataResource could be the oa:hasTarget of an oa:Annotation of which a bdqffdq:Response is the oa:hasBody.
+
+DR = { dr | dr = < id, rt, v >, id ∈ ID, rt ∈ RT ⋀ v ∈ V }",,,http://www.w3.org/2002/07/owl#Class,,https://rs.tdwg.org/bdqffdq/terms/ReportConcept,,,,,,,,,
+appliesTo,applies To,applies To,Describes the bdqffdq:DataResource about which a bdqffdq:Response is made.,"If a bdqffdq:Response forms the oa:hasBody of an oa:Annotation, the bdqffdq:appliesTo bdqffdq:DataResource would be the oa:hasTarget of the oa:Annotation. If bdqffdq:Responses are composed in bdqffdq:DataQualityReports, the bdqffdq:appliesTo bdqffdq:DataResource is an item examined as part of the bdqffdq:DataQualityReport. Expectation for bdqffdq:SingleRecord Test bdqffdq:Responses on Darwin Core data in the BDQ standard is that bdqffdq:appliesTo would point at a dwc:Occurrence record.",,,http://www.w3.org/2002/07/owl#ObjectProperty,,,,,,,,,,,
