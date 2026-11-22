@@ -151,13 +151,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/b751c2ed-11a5-4bff-9c37-1eccc8138191-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/b751c2ed-11a5-4bff-9c37-1eccc8138191-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -209,13 +209,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -251,13 +251,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/9c87ce41-04a3-45e6-83d3-95ec70ae553f-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -298,13 +298,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/21d0b5f6-5b3e-4810-8413-c975b7cf343a-2023-09-18"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/21d0b5f6-5b3e-4810-8413-c975b7cf343a-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-18"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -319,7 +319,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#example": [
       {
-        "@value": "dwc:kingdom=\"\", dwc:phylum=\"Chordata\", dwc:class=\"\", dwc:order=\"Rhopalocera\", dwc:superfamly=\"\", dwc:family=\"Muricidae\", dwc:subfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\", dwc:genus=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"The combination of values of higher classification taxonomic terms cannot be unambiguously resolved in the bdqval:sourceAuthority\""
+        "@value": "dwc:kingdom=\"\", dwc:phylum=\"Chordata\", dwc:class=\"\", dwc:order=\"Rhopalocera\", dwc:superfamily=\"\", dwc:family=\"Muricidae\", dwc:subfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\", dwc:genus=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"The combination of values of higher classification taxonomic terms cannot be unambiguously resolved in the bdqval:sourceAuthority\""
       },
       {
         "@value": "dwc:kingdom=\"\", dwc:phylum=\"\", dwc:class=\"\", dwc:order=\"Myrtales\", dwc:superfamily=\"\", dwc:family=\"Myrtaceae\", dwc:subfamily=\"\", dwc:tribe=\"\", dwc:subtribe=\"\",dwc:genus=\"Punica\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"The combination of values of higher classification taxonomic terms can be unambiguously resolved in the bdqval:sourceAuthority\""
@@ -353,13 +353,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/2750c040-1d4a-4149-99fe-0512785f2d5f-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/2750c040-1d4a-4149-99fe-0512785f2d5f-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [

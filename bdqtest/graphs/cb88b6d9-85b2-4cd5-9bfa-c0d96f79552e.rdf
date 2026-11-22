@@ -20,15 +20,15 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/cb88b6d9-85b2-4cd5-9bfa-c0d96f79552e">
     <dcterms:description>Measure if all VALIDATION_GEODETICDATUM_STANDARD in a record set are COMPLIANT.</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/cb88b6d9-85b2-4cd5-9bfa-c0d96f79552e-2026-11-17"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/cb88b6d9-85b2-4cd5-9bfa-c0d96f79552e-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.1371/journal.pone.0178731"/>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Measure"/>
     <rdfs:label>MULTIRECORD_MEASURE_QA_GEODETICDATUM_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:cb88b6d9-85b2-4cd5-9bfa-c0d96f79552e"/>
     <skos:historyNote>https://github.com/tdwg/bdq/issues/295</skos:historyNote>
     <skos:note>For Quality Assurance, filter record set until this measure is COMPLETE.</skos:note>
-    <skos:prefLabel>Measurement over MultiRecord for QualityAssurance of Vaildation dwc:geodeticDatum Standard for MultiRecord</skos:prefLabel>
+    <skos:prefLabel>Measurement over MultiRecord for QualityAssurance of Validation dwc:geodeticDatum Standard for MultiRecord</skos:prefLabel>
     <bdqffdq:hasActedUponInformationElement rdf:resource="https://rs.tdwg.org/bdqtest/informationelement/32f5c5c1-ec68-462a-8f73-f54c5236c0d1"/>
     <bdqffdq:hasDataQualityDimension rdf:resource="https://rs.tdwg.org/bdqdim/terms/Conformance"/>
     <bdqffdq:hasDateLastUpdated rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-03</bdqffdq:hasDateLastUpdated>
@@ -46,8 +46,8 @@
     <bdqffdq:composedOf rdf:resource="https://rs.tdwg.org/bdqval/terms/AggregatedTestResponseOutcomes"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/fd0d38cd-1a3d-46cd-83ac-aab2a367e21f">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/fd0d38cd-1a3d-46cd-83ac-aab2a367e21f-2026-11-17"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-17</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/fd0d38cd-1a3d-46cd-83ac-aab2a367e21f-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementMethod"/>
     <rdfs:label>MeasurementMethod: MULTIRECORD_MEASURE_QA_GEODETICDATUM_STANDARD with Specification: Specification for: MULTIRECORD_MEASURE_QA_GEODETICDATUM_STANDARD</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:fd0d38cd-1a3d-46cd-83ac-aab2a367e21f"/>
@@ -62,8 +62,8 @@
     <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/962109a0-205f-4ea9-b7df-39ad3a5fc503">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-20"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (107) measures  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:962109a0-205f-4ea9-b7df-39ad3a5fc503"/>

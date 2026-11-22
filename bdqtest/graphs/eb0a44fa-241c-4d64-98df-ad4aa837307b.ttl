@@ -12,8 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/cca7732f-c336-47b0-9d69-4514d39f5950> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR with Specification: Specification for: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/cca7732f-c336-47b0-9d69-4514d39f5950-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/cca7732f-c336-47b0-9d69-4514d39f5950-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:cca7732f-c336-47b0-9d69-4514d39f5950> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1296",
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:eb0a44fa-241c-4d64-98df-ad4aa837307b .
@@ -64,11 +64,11 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/647bf697-e432-4b31-9a69-778396e14a82> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:NotEmpty or any of dwc:year, dwc:startDayOfYear, or dwc:endDayOfYear are bdqval:Empty; FILLED_IN the value of dwc:eventDate from values in dwc:year, dwc:startDayOfYear and dwc:endDayOfYear if the values in each are independently interpretable and if the value of dwc:startDayOfYear is less than the value of dwc:endDayOfYear; otherwise NOT_AMENDED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/647bf697-e432-4b31-9a69-778396e14a82-2024-08-18> ;
-    dcterms:modified "2024-08-18"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/647bf697-e432-4b31-9a69-778396e14a82-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:647bf697-e432-4b31-9a69-778396e14a82> ;
     skos:example "dwc:year=\"1901\", dwc:startDayOfYear=\"15\", dwc:endDayOfYear=\"25\", dwc:eventDate=\"\": Response.status=FILLED_IN, Response.result=dwc:eventDate=\"1901-01-15/1901-01-25\", Response.comment=\"dwc:eventDate was interpreted from dwc:year, dwc:startDayOfYear and dwc:endDayOfYear\"",
-        "dwc:year=\"1901\", dwc:startDayOfYear=\"25\", dwc:endDayOfYear=\"15\", dwc:eventDate=\"\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:startDayOfYear > dwc:endDayOfyear\"" ;
+        "dwc:year=\"1901\", dwc:startDayOfYear=\"25\", dwc:endDayOfYear=\"15\", dwc:eventDate=\"\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:startDayOfYear > dwc:endDayOfYear\"" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
     bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:NotEmpty or any of dwc:year, dwc:startDayOfYear, or dwc:endDayOfYear are bdqval:Empty; FILLED_IN the value of dwc:eventDate from values in dwc:year, dwc:startDayOfYear and dwc:endDayOfYear if the values in each are independently interpretable and if the value of dwc:startDayOfYear is less than the value of dwc:endDayOfYear; otherwise NOT_AMENDED" .
 
@@ -81,8 +81,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:eb0a44fa-241c-4d64-98df-ad4aa837307b a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENTDATE_FROM_YEARSTARTDAYOFYEARENDDAYOFYEAR" ;
     dcterms:description "Proposes an amendment to the value of dwc:eventDate from values in dwc:year, dwc:startDayOfYear and dwc:endDayOfYear." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/eb0a44fa-241c-4d64-98df-ad4aa837307b-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/eb0a44fa-241c-4d64-98df-ad4aa837307b-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/> ;
     owl:sameAs <urn:uuid:eb0a44fa-241c-4d64-98df-ad4aa837307b> ;

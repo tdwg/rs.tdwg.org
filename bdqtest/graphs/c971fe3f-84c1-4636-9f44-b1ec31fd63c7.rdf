@@ -9,13 +9,13 @@
 >
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/specification/f9471802-a5f7-4f4e-9810-f3f4f43dad1a">
     <dcterms:description>INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumElevationInMeters is bdqval:Empty or the value cannot be interpreted as a number; COMPLIANT if the value of dwc:maximumElevationInMeters is within the range of bdqval:minimumValidElevationInMeters to bdqval:maximumValidElevationInMeters inclusive; otherwise NOT_COMPLIANT bdqval:minimumValidElevationInMeters default = "-430",bdqval:maximumValidElevationInMeters default = "8850"</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/f9471802-a5f7-4f4e-9810-f3f4f43dad1a-2023-09-18"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-18</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/specification/version/f9471802-a5f7-4f4e-9810-f3f4f43dad1a-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Specification"/>
     <rdfs:label>Specification for: VALIDATION_MAXELEVATION_INRANGE</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:f9471802-a5f7-4f4e-9810-f3f4f43dad1a"/>
-    <skos:example>dwc:maximumElevationInMeters="-500": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dwc:maximumElevation is not in range, i.e. is &lt;-430"</skos:example>
-    <skos:example>dwc:maximumElevationInMeters="0": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="dwc:maximumElevation is in is range"</skos:example>
+    <skos:example>dwc:maximumElevationInMeters="-500": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment="dwc:maximumElevationInMeters is not in range, i.e. is &lt;-430"</skos:example>
+    <skos:example>dwc:maximumElevationInMeters="0": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment="dwc:maximumElevationInMeters is in is range"</skos:example>
     <bdqffdq:hasArgument rdf:resource="https://rs.tdwg.org/bdqtest/argument/1766715d-e588-4361-8b27-1c9cc43662ab"/>
     <bdqffdq:hasArgument rdf:resource="https://rs.tdwg.org/bdqtest/argument/3ab181c2-a3d8-4317-af4d-f88181e2773a"/>
     <bdqffdq:hasAuthoritiesDefaults>bdqval:minimumValidElevationInMeters default = "-430",bdqval:maximumValidElevationInMeters default = "8850"</bdqffdq:hasAuthoritiesDefaults>
@@ -29,16 +29,6 @@
     <owl:sameAs rdf:resource="urn:uuid:d06be5a2-809e-4b7a-9f4b-6ba1e6951d36"/>
     <skos:prefLabel>Information Element ActedUpon dwc:maximumElevationInMeters</skos:prefLabel>
     <bdqffdq:composedOf rdf:resource="http://rs.tdwg.org/dwc/terms/maximumElevationInMeters"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
-    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
-    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
-    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
-    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
-    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
-    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/c971fe3f-84c1-4636-9f44-b1ec31fd63c7"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/argument/1766715d-e588-4361-8b27-1c9cc43662ab">
     <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/argument/version/1766715d-e588-4361-8b27-1c9cc43662ab-2023-09-18"/>
@@ -62,8 +52,8 @@
     <rdfs:label>Conformance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/method/a6035033-0779-4a75-99ea-f7112c1dde2b">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/a6035033-0779-4a75-99ea-f7112c1dde2b-2026-11-20"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/method/version/a6035033-0779-4a75-99ea-f7112c1dde2b-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationMethod"/>
     <rdfs:label>ValidationMethod: VALIDATION_MAXELEVATION_INRANGE with Specification: Specification for: VALIDATION_MAXELEVATION_INRANGE</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:a6035033-0779-4a75-99ea-f7112c1dde2b"/>
@@ -77,8 +67,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/terms/c971fe3f-84c1-4636-9f44-b1ec31fd63c7">
     <dcterms:description>Is the value of dwc:maximumElevationInMeters within the Parameter range?</dcterms:description>
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c971fe3f-84c1-4636-9f44-b1ec31fd63c7-2026-11-20"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-20</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/terms/version/c971fe3f-84c1-4636-9f44-b1ec31fd63c7-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
     <dcterms:references rdf:resource="https://doi.org/10.15468/doc-gg7h-s853"/>
     <dcterms:references rdf:resource="https://en.wikipedia.org/wiki/Extreme_points_of_Antarctica"/>
     <dcterms:references rdf:resource="https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country_"/>
@@ -117,6 +107,16 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqcrit/terms/InRange">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/Criterion"/>
     <rdfs:label>InRange</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb">
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
+    <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ValidationPolicy"/>
+    <rdfs:label>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</rdfs:label>
+    <owl:sameAs rdf:resource="urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb"/>
+    <skos:prefLabel>ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns</skos:prefLabel>
+    <bdqffdq:hasUseCase rdf:resource="https://rs.tdwg.org/bdquc/terms/Spatial-Temporal_Patterns"/>
+    <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/c971fe3f-84c1-4636-9f44-b1ec31fd63c7"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/terms/SingleRecord">
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/ResourceType"/>

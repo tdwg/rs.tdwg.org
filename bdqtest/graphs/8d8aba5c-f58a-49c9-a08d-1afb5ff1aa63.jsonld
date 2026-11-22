@@ -86,13 +86,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/95b63dab-dd45-49e0-892f-44a73e76fc00-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/95b63dab-dd45-49e0-892f-44a73e76fc00-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -138,13 +138,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/962109a0-205f-4ea9-b7df-39ad3a5fc503-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -227,13 +227,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63-2026-11-17"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/8d8aba5c-f58a-49c9-a08d-1afb5ff1aa63-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-17"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [
@@ -263,7 +263,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Measurement over MultiRecord Counting Compliance of Vaildation dwc:geodeticDatum Standard for MultiRecord"
+        "@value": "Measurement over MultiRecord Counting Compliance of Validation dwc:geodeticDatum Standard for MultiRecord"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [

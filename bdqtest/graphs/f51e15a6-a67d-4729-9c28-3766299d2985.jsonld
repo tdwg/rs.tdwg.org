@@ -76,13 +76,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/12499336-882b-4186-b5a2-4a806af2e35b-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/12499336-882b-4186-b5a2-4a806af2e35b-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -134,13 +134,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -176,13 +176,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -218,13 +218,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/d001ff0b-ade0-4a73-b281-e92ae0129bec-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -265,13 +265,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/1fae3f77-7fcb-42c6-ab43-1ff28adf4fa4-2023-09-17"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/1fae3f77-7fcb-42c6-ab43-1ff28adf4fa4-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-17"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -286,7 +286,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#example": [
       {
-        "@value": "dwc:eventDate=\"1964-11-01T10:00-0600\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:eventdate is bdqval:NotEmpty\""
+        "@value": "dwc:eventDate=\"1964-11-01T10:00-0600\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:eventDate is bdqval:NotEmpty\""
       },
       {
         "@value": "dwc:eventDate=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:eventDate is bdqval:Empty\""
@@ -315,13 +315,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f51e15a6-a67d-4729-9c28-3766299d2985-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f51e15a6-a67d-4729-9c28-3766299d2985-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

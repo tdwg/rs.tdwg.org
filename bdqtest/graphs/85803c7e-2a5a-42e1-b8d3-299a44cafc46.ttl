@@ -12,8 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/c3d0ce9b-2f40-4cd7-8e67-085b137e8e89> a bdqffdq:ValidationMethod ;
     rdfs:label "ValidationMethod: VALIDATION_STARTDAYOFYEAR_INRANGE with Specification: Specification for: VALIDATION_STARTDAYOFYEAR_INRANGE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/c3d0ce9b-2f40-4cd7-8e67-085b137e8e89-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/c3d0ce9b-2f40-4cd7-8e67-085b137e8e89-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:c3d0ce9b-2f40-4cd7-8e67-085b137e8e89> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1087",
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/0348eccf-fc7f-49b3-88b6-1d911e98cbbb> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:0348eccf-fc7f-49b3-88b6-1d911e98cbbb> ;
     skos:prefLabel "ValidationPolicy: (51) validations  in UseCase bdquc:Spatial-Temporal_Patterns" ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
@@ -34,8 +34,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/3a640869-d2ea-4447-8e42-06ddb217066c> a bdqffdq:ValidationPolicy ;
     rdfs:label "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/3a640869-d2ea-4447-8e42-06ddb217066c-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:3a640869-d2ea-4447-8e42-06ddb217066c> ;
     skos:prefLabel "ValidationPolicy: (32) validations  in UseCase bdquc:Alien-Species" ;
     bdqffdq:hasUseCase bdquc:Alien-Species ;
@@ -86,11 +86,11 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:85803c7e-2a5a-42e1-b8d3-299a44cafc46 a bdqffdq:Validation ;
     rdfs:label "VALIDATION_STARTDAYOFYEAR_INRANGE" ;
     dcterms:description "Is the value of dwc:startDayOfYear an integer between 1 and 365 inclusive, or 366 if a leap year?" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/85803c7e-2a5a-42e1-b8d3-299a44cafc46-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/85803c7e-2a5a-42e1-b8d3-299a44cafc46-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:85803c7e-2a5a-42e1-b8d3-299a44cafc46> ;
     skos:historyNote "https://github.com/tdwg/bdq/issues/130" ;
-    skos:note "See Test VALIDATION_DAY_INRANGE (8d787cb5-73e2-4c39-9cd1-67c7361dc02e). This Test only asks if dwc:startDayOfYear is a valid value for the relevant year, not if it is consistent with the start day of the range specified in dwc:eventDate. In a non-leap year, the valid range is 1-365 inclusive, in a leap year 366 is also valid. This Test should be run after the series of Tests that assure that dwc:eventDate is populated, if possible (i.e., AMENDMENT_EVENTDATE_FROM_VERBATIM (6d0a0c10-5e4a-4759-b448-88932f399812), AMENDMENT_EVENTDATE_STANDARDIZED (718dfc3c-cb52-4fca-b8e2-0e722f375da7), and AMENDMENT_EVENT_DATE_FROM_YEARMONTHDAY (3892f432-ddd0-4a0a-b713-f2e2ecbd879d))." ;
+    skos:note "See Test VALIDATION_DAY_INRANGE (8d787cb5-73e2-4c39-9cd1-67c7361dc02e). This Test only asks if dwc:startDayOfYear is a valid value for the relevant year, not if it is consistent with the start day of the range specified in dwc:eventDate. In a non-leap year, the valid range is 1-365 inclusive, in a leap year 366 is also valid. This Test should be run after the series of Tests that assure that dwc:eventDate is populated, if possible (i.e., AMENDMENT_EVENTDATE_FROM_VERBATIM (6d0a0c10-5e4a-4759-b448-88932f399812), AMENDMENT_EVENTDATE_STANDARDIZED (718dfc3c-cb52-4fca-b8e2-0e722f375da7), and AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY (3892f432-ddd0-4a0a-b713-f2e2ecbd879d))." ;
     skos:prefLabel "Validation dwc:startDayOfYear In Range for SingleRecord" ;
     bdqffdq:hasActedUponInformationElement <https://rs.tdwg.org/bdqtest/informationelement/83d00e4e-6359-4545-87fc-94b080f46ead> ;
     bdqffdq:hasConsultedInformationElement <https://rs.tdwg.org/bdqtest/informationelement/73513536-e916-4290-800a-c2daf8932e28> ;

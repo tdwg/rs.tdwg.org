@@ -183,13 +183,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/a6035033-0779-4a75-99ea-f7112c1dde2b-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/a6035033-0779-4a75-99ea-f7112c1dde2b-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -241,13 +241,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -288,13 +288,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/f9471802-a5f7-4f4e-9810-f3f4f43dad1a-2023-09-18"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/f9471802-a5f7-4f4e-9810-f3f4f43dad1a-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-18"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -309,10 +309,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#example": [
       {
-        "@value": "dwc:maximumElevationInMeters=\"-500\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:maximumElevation is not in range, i.e. is <-430\""
+        "@value": "dwc:maximumElevationInMeters=\"-500\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:maximumElevationInMeters is not in range, i.e. is <-430\""
       },
       {
-        "@value": "dwc:maximumElevationInMeters=\"0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:maximumElevation is in is range\""
+        "@value": "dwc:maximumElevationInMeters=\"0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:maximumElevationInMeters is in is range\""
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
@@ -346,13 +346,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c971fe3f-84c1-4636-9f44-b1ec31fd63c7-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/c971fe3f-84c1-4636-9f44-b1ec31fd63c7-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [

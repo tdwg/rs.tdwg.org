@@ -164,13 +164,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -222,13 +222,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -319,13 +319,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [
@@ -350,7 +350,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#note": [
       {
-        "@value": "The dwc:geodeticDatum is not necessary for this Test. The maximum positional shift between any geographic coordinate reference system and WGS84 is less than 6 km, so any hemisphere Test that relies on a country code for consistency would not be affected by the potential shift. The prior VALIDATION for this Test is VALIDATION_COORDINATE_COUNTRYCODE_CONSISTENT (adb27d29-9f0d-4d52-b760-a77ba57a69c9)."
+        "@value": "The dwc:geodeticDatum is not necessary for this Test. The maximum positional shift between any geographic coordinate reference system and WGS84 is less than 6 km, so any hemisphere Test that relies on a country code for consistency would not be affected by the potential shift. The prior VALIDATION for this Test is VALIDATION_COORDINATESCOUNTRYCODE_CONSISTENT (adb27d29-9f0d-4d52-b760-a77ba57a69c9)."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [

@@ -12,8 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/8ca96a50-f1f5-4a4e-853e-755cc5aa82a7> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY with Specification: Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8ca96a50-f1f5-4a4e-853e-755cc5aa82a7-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/8ca96a50-f1f5-4a4e-853e-755cc5aa82a7-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:8ca96a50-f1f5-4a4e-853e-755cc5aa82a7> ;
     skos:historyNote "Source: TG2-Gainesville" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L1395",
@@ -25,8 +25,8 @@
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:3892f432-ddd0-4a0a-b713-f2e2ecbd879d .
@@ -63,14 +63,14 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 
 <https://rs.tdwg.org/bdqtest/specification/bda7e8a3-3366-43d5-8a8b-e206101dc90d> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
-    dcterms:description "INTERNAL _PREREQUISITES_NOT_MET if dwc:eventDate is not EMPTY or dwc:year is EMPTY or is not interpretable as an integer; FILLED_IN the value of dwc:eventDate if an ISO 8601 date was interpreted from the values in dwc:year, dwc:month and dwc:day; otherwise NOT_AMENDED" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/bda7e8a3-3366-43d5-8a8b-e206101dc90d-2024-09-15> ;
-    dcterms:modified "2024-09-15"^^xsd:date ;
+    dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is not EMPTY or dwc:year is EMPTY or is not interpretable as an integer; FILLED_IN the value of dwc:eventDate if an ISO 8601 date was interpreted from the values in dwc:year, dwc:month and dwc:day; otherwise NOT_AMENDED" ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/bda7e8a3-3366-43d5-8a8b-e206101dc90d-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:bda7e8a3-3366-43d5-8a8b-e206101dc90d> ;
     skos:example "dwc:eventDate=\"\", dwc:year=\"1420\", dwc:month=\"10\", dwc:day=\"29\": Response.status=FILLED_IN, Response.result=dwc:eventDate=\"1420-10-29\", Response.comment=\"dwc:year, dwc:month and dwc:day are interpretable, even if pre-Linnaeus\"",
         "dwc:eventDate=\"\", dwc:year=\"2024\", dwc:month=\"2\", dwc:day=\"30\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"Not a valid date\"" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
-    bdqffdq:hasExpectedResponse "INTERNAL _PREREQUISITES_NOT_MET if dwc:eventDate is not EMPTY or dwc:year is EMPTY or is not interpretable as an integer; FILLED_IN the value of dwc:eventDate if an ISO 8601 date was interpreted from the values in dwc:year, dwc:month and dwc:day; otherwise NOT_AMENDED" .
+    bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is not EMPTY or dwc:year is EMPTY or is not interpretable as an integer; FILLED_IN the value of dwc:eventDate if an ISO 8601 date was interpreted from the values in dwc:year, dwc:month and dwc:day; otherwise NOT_AMENDED" .
 
 bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
     rdfs:label "bdquc:Spatial-Temporal_Patterns" .
@@ -84,8 +84,8 @@ bdquc:Spatial-Temporal_Patterns a bdqffdq:UseCase ;
 bdqtest:3892f432-ddd0-4a0a-b713-f2e2ecbd879d a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENTDATE_FROM_YEARMONTHDAY" ;
     dcterms:description "Proposes an amendment to the value of dwc:eventDate from values in dwc:year, dwc:month and dwc:day." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/3892f432-ddd0-4a0a-b713-f2e2ecbd879d-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

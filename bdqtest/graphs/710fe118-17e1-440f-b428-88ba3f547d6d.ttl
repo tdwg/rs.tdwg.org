@@ -12,8 +12,8 @@
 
 <https://rs.tdwg.org/bdqtest/method/2bc15408-d0d0-4166-b6a6-6fdba5704379> a bdqffdq:AmendmentMethod ;
     rdfs:label "AmendmentMethod: AMENDMENT_EVENT_FROM_EVENTDATE with Specification: Specification for: AMENDMENT_EVENT_FROM_EVENTDATE" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2bc15408-d0d0-4166-b6a6-6fdba5704379-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/method/version/2bc15408-d0d0-4166-b6a6-6fdba5704379-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:2bc15408-d0d0-4166-b6a6-6fdba5704379> ;
     skos:historyNote "Source: VertNet" ;
     skos:note "Example Implementations Source Code: https://github.com/FilteredPush/event_date_qc/blob/v3.0.5/src/main/java/org/filteredpush/qc/date/DwCEventDQ.java#L2073",
@@ -25,16 +25,16 @@
 
 <https://rs.tdwg.org/bdqtest/policy/60c7e911-e72e-421f-be9b-4fb81eef1a54> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (5) amendments  in UseCase bdquc:Species-Distribution-Modeling-Trees" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:60c7e911-e72e-421f-be9b-4fb81eef1a54> ;
     bdqffdq:hasUseCase bdquc:Species-Distribution-Modeling-Trees ;
     bdqffdq:includedInPolicy bdqtest:710fe118-17e1-440f-b428-88ba3f547d6d .
 
 <https://rs.tdwg.org/bdqtest/policy/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> a bdqffdq:AmendmentPolicy ;
     rdfs:label "AmendmentPolicy: (22) amendments  in UseCase bdquc:Spatial-Temporal_Patterns" ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:f03dcc89-5e2b-41bc-b1d8-5a319fb18d22> ;
     bdqffdq:hasUseCase bdquc:Spatial-Temporal_Patterns ;
     bdqffdq:includedInPolicy bdqtest:710fe118-17e1-440f-b428-88ba3f547d6d .
@@ -74,11 +74,11 @@ bdqffdq:SingleRecord a bdqffdq:ResourceType ;
 <https://rs.tdwg.org/bdqtest/specification/46992280-0ed6-4c42-9e89-ed388ca1d43b> a bdqffdq:Specification ;
     rdfs:label "Specification for: AMENDMENT_EVENT_FROM_EVENTDATE" ;
     dcterms:description "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or contains an invalid value according to ISO 8601; FILLED_IN if any of (1) dwc:day from dwc:eventDate if dwc:day is bdqval:Empty and dwc:eventDate has a precision of a day or finer and is within a single day, (2) dwc:month from dwc:eventDate if dwc:month is bdqval:Empty and dwc:eventDate has a precision of a single month or finer and is within a single month, (3) dwc:year from dwc:eventDate if dwc:year is bdqval:Empty and dwc:eventDate has a precision of a single year or finer and is within a single year, (4) dwc:startDayOfYear and dwc:endDayOfYear if they are bdqval:Empty and dwc:eventDate has a precision of a day or better; otherwise NOT_AMENDED." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/46992280-0ed6-4c42-9e89-ed388ca1d43b-2024-09-16> ;
-    dcterms:modified "2024-09-16"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/specification/version/46992280-0ed6-4c42-9e89-ed388ca1d43b-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     owl:sameAs <urn:uuid:46992280-0ed6-4c42-9e89-ed388ca1d43b> ;
     skos:example "dwc:eventDate=\"2023\",dwc:year=\"2023\", dwc:month=\"\", dwc:day=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"No amendments possible\"",
-        "dwc:eventDate=\"2023-01-26\", dwc:year=\"2023\", dwc:month=\"\", dwc:day=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=FILLED_IN, Response.result=dwc:month=\"1\", dwc:day=\"26\", dwc:startDayOfYear=\"26\", dwc:endDayOfYear=\"26\", Response.comment=\"dwc:month, dwc:day, dwc:startDayOfyear and dwc:endDayOfYear filled in from dwc:eventDate\"" ;
+        "dwc:eventDate=\"2023-01-26\", dwc:year=\"2023\", dwc:month=\"\", dwc:day=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=FILLED_IN, Response.result=dwc:month=\"1\", dwc:day=\"26\", dwc:startDayOfYear=\"26\", dwc:endDayOfYear=\"26\", Response.comment=\"dwc:month, dwc:day, dwc:startDayOfYear and dwc:endDayOfYear filled in from dwc:eventDate\"" ;
     bdqffdq:hasAuthoritiesDefaults "" ;
     bdqffdq:hasExpectedResponse "INTERNAL_PREREQUISITES_NOT_MET if dwc:eventDate is bdqval:Empty or contains an invalid value according to ISO 8601; FILLED_IN if any of (1) dwc:day from dwc:eventDate if dwc:day is bdqval:Empty and dwc:eventDate has a precision of a day or finer and is within a single day, (2) dwc:month from dwc:eventDate if dwc:month is bdqval:Empty and dwc:eventDate has a precision of a single month or finer and is within a single month, (3) dwc:year from dwc:eventDate if dwc:year is bdqval:Empty and dwc:eventDate has a precision of a single year or finer and is within a single year, (4) dwc:startDayOfYear and dwc:endDayOfYear if they are bdqval:Empty and dwc:eventDate has a precision of a day or better; otherwise NOT_AMENDED." .
 
@@ -97,8 +97,8 @@ bdquc:Species-Distribution-Modeling-Trees a bdqffdq:UseCase ;
 bdqtest:710fe118-17e1-440f-b428-88ba3f547d6d a bdqffdq:Amendment ;
     rdfs:label "AMENDMENT_EVENT_FROM_EVENTDATE" ;
     dcterms:description "Proposes an amendment to values in any of dwc:year, dwc:month, dwc:day, dwc:startDayOfYear or dwc:endDayOfYear from the content of dwc:eventDate." ;
-    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/710fe118-17e1-440f-b428-88ba3f547d6d-2026-11-20> ;
-    dcterms:modified "2026-11-20"^^xsd:date ;
+    dcterms:hasVersion <https://rs.tdwg.org/bdqtest/terms/version/710fe118-17e1-440f-b428-88ba3f547d6d-2026-11-21> ;
+    dcterms:modified "2026-11-21"^^xsd:date ;
     dcterms:references <https://en.wikipedia.org/wiki/ISO_8601>,
         <https://www.iso.org/obp/ui/>,
         <https://www.loc.gov/standards/datetime/> ;

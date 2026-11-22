@@ -144,13 +144,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/1f014694-573d-46e0-b38a-2acf71b32071-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/1f014694-573d-46e0-b38a-2acf71b32071-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -202,13 +202,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -249,13 +249,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/30ed5e2d-ef30-4988-8dbb-12c119e94ac3-2023-09-18"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/30ed5e2d-ef30-4988-8dbb-12c119e94ac3-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-18"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -273,7 +273,7 @@
         "@value": "dwc:locationID=\"\", dwc:higherGeographyID=\"\", dwc:higherGeography=\"\", dwc:continent=\"\", dwc:waterBody=\"\", dwc:islandGroup=\"\", dwc:island=\"\", dwc:country=\"\", dwc:countryCode=\"\", dwc:stateProvince=\"\", dwc:county=\"\", dwc:municipality=\"\", dwc:locality=\"\", dwc:verbatimLocality=\"\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\", dwc:coordinateUncertaintyInMeters=\"\", dwc:geodeticDatum=\"\", dwc:verbatimCoordinates=\"\", dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:footprintWKT=\"\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"All location fields are bdqval:Empty\""
       },
       {
-        "@value": "dwc:locationID=\"https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9\", dwc:higherGeographyID=\"\", dwc:higherGeography=\"\",dwc:continent=\"\", dwc:waterBody=\"\", dwc:islandGroup=\"\", dwc:island=\"\", dwc:country=\"\", dwc:countryCode=\"\", dwc:stateProvince=\"\", dwc:county=\"\", dwc:municipality=\"\", dwc:locality=\"\", dwc:verbatimLocality=\"\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\", dwc:coordinateUncertaintyInMeters=\"\", dwc:geodeticDatum=\"\", dwc:verbatimCoordinates=\"\", dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:footprintWKT=\"\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:LocationID is bdqval:NotEmpty\""
+        "@value": "dwc:locationID=\"https://opencontext.org/subjects/e54377f7-4452-4315-b676-40679b10c4d9\", dwc:higherGeographyID=\"\", dwc:higherGeography=\"\",dwc:continent=\"\", dwc:waterBody=\"\", dwc:islandGroup=\"\", dwc:island=\"\", dwc:country=\"\", dwc:countryCode=\"\", dwc:stateProvince=\"\", dwc:county=\"\", dwc:municipality=\"\", dwc:locality=\"\", dwc:verbatimLocality=\"\", dwc:decimalLatitude=\"\", dwc:decimalLongitude=\"\", dwc:coordinateUncertaintyInMeters=\"\", dwc:geodeticDatum=\"\", dwc:verbatimCoordinates=\"\", dwc:verbatimLatitude=\"\", dwc:verbatimLongitude=\"\", dwc:footprintWKT=\"\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:locationID is bdqval:NotEmpty\""
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
@@ -299,13 +299,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/58486cb6-1114-4a8a-ba1e-bd89cfe887e9-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/58486cb6-1114-4a8a-ba1e-bd89cfe887e9-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [

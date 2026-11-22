@@ -319,13 +319,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/2bb364f7-118b-4258-8afe-978901e5cf67-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/2bb364f7-118b-4258-8afe-978901e5cf67-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -377,13 +377,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -424,13 +424,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/45cb9e13-7944-4535-a5ef-f6ededb77305-2024-08-30"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/45cb9e13-7944-4535-a5ef-f6ededb77305-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-08-30"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -448,7 +448,7 @@
         "@value": "dwc:decimalLatitude=\"-41.0525925872862\", dwc:decimalLongitude=\"-71.5310546742521\", dwc:scientificName=\"Aegla neuquensis\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"The species is freshwater aquatic and the coordinates fall in a lake and thus COMPLIANT\""
       },
       {
-        "@value": "dwc:decimalLatitude=\"20.0\", dwc:decimalLongitude=\"-30.0\", dwc:scientificName=\"Viviparus contectus (Millet, 1813)\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificName is non-marine according to dwc:taxonIsMarine but coordinates are marine\""
+        "@value": "dwc:decimalLatitude=\"20.0\", dwc:decimalLongitude=\"-30.0\", dwc:scientificName=\"Viviparus contectus (Millet, 1813)\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:scientificName is non-marine according to bdqval:taxonIsMarine but coordinates are marine\""
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
@@ -488,13 +488,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/b9c184ce-a859-410c-9d12-71a338200380-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/b9c184ce-a859-410c-9d12-71a338200380-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [

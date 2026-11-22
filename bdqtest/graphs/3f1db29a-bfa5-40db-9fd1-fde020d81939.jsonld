@@ -172,13 +172,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/ed60f87e-7ab7-446a-8565-903dbe6408d2-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/ed60f87e-7ab7-446a-8565-903dbe6408d2-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -230,13 +230,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -272,18 +272,18 @@
     ],
     "http://purl.org/dc/terms/description": [
       {
-        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumDepthInMeters is bdqval:Empty or is not interpretable as a number greater than or equal to zero; COMPLIANT if the value of dwc:maximumDepthInMeters is within the range of bdqval:minimumValidDepthInMeters to bdqval:maximumValidDepthInMeters inclusive; otherwise NOT_COMPLIANT bdqval:minimumValidDepthInMeters default=\"0\",bdqval:maximumValidDepthInMeters default=\"11000\""
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumDepthInMeters is bdqval:Empty or is not interpretable as a number greater than or equal to zero; COMPLIANT if the value of dwc:maximumDepthInMeters is within the range of bdqval:minimumValidDepthInMeters to bdqval:maximumValidDepthInMeters inclusive; otherwise NOT_COMPLIANT bdqval:minimumValidDepthInMeters default = \"0\",bdqval:maximumValidDepthInMeters default = \"11000\""
       }
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/cebc8ba0-ca02-4f1e-830e-ec693bc628e4-2023-09-18"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/cebc8ba0-ca02-4f1e-830e-ec693bc628e4-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-18"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -314,7 +314,7 @@
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasAuthoritiesDefaults": [
       {
-        "@value": "bdqval:minimumValidDepthInMeters default=\"0\",bdqval:maximumValidDepthInMeters default=\"11000\""
+        "@value": "bdqval:minimumValidDepthInMeters default = \"0\",bdqval:maximumValidDepthInMeters default = \"11000\""
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
@@ -335,13 +335,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/3f1db29a-bfa5-40db-9fd1-fde020d81939-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/3f1db29a-bfa5-40db-9fd1-fde020d81939-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [

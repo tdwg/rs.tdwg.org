@@ -90,13 +90,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/a0486e4f-210d-4143-ae5a-f320bebc2cb5-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/a0486e4f-210d-4143-ae5a-f320bebc2cb5-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -148,13 +148,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/0348eccf-fc7f-49b3-88b6-1d911e98cbbb-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -190,18 +190,18 @@
     ],
     "http://purl.org/dc/terms/description": [
       {
-        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumlevationInMeters or dwc:minimumElevationInMeters is bdqval:Empty, or if either is not a number; COMPLIANT if the value of dwc:minimumElevationInMeters is a number less than or equal to the value of the number dwc:maximumElevationInMeters, otherwise NOT_COMPLIANT"
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumElevationInMeters or dwc:minimumElevationInMeters is bdqval:Empty, or if either is not a number; COMPLIANT if the value of dwc:minimumElevationInMeters is a number less than or equal to the value of the number dwc:maximumElevationInMeters, otherwise NOT_COMPLIANT"
       }
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/f799fb5c-37e4-46d7-a07e-87eb071df9c6-2023-09-18"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/f799fb5c-37e4-46d7-a07e-87eb071df9c6-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-18"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -216,7 +216,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#example": [
       {
-        "@value": "dwc:minimumElevationInMeters=\"0\", dwc:maximumElevationInMeters=\"0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:minimumElevationInMeters is equal to dwc: maximumElevationInMeters\""
+        "@value": "dwc:minimumElevationInMeters=\"0\", dwc:maximumElevationInMeters=\"0\": Response.status=RUN_HAS_RESULT, Response.result=COMPLIANT, Response.comment=\"dwc:minimumElevationInMeters is equal to dwc:maximumElevationInMeters\""
       },
       {
         "@value": "dwc:minimumElevationInMeters=\"1\", dwc:maximumElevationInMeters=\"0\": Response.status=RUN_HAS_RESULT, Response.result=NOT_COMPLIANT, Response.comment=\"dwc:minimumElevationInMeters is greater than dwc:maximumElevationInMeters\""
@@ -229,7 +229,7 @@
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasExpectedResponse": [
       {
-        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumlevationInMeters or dwc:minimumElevationInMeters is bdqval:Empty, or if either is not a number; COMPLIANT if the value of dwc:minimumElevationInMeters is a number less than or equal to the value of the number dwc:maximumElevationInMeters, otherwise NOT_COMPLIANT"
+        "@value": "INTERNAL_PREREQUISITES_NOT_MET if dwc:maximumElevationInMeters or dwc:minimumElevationInMeters is bdqval:Empty, or if either is not a number; COMPLIANT if the value of dwc:minimumElevationInMeters is a number less than or equal to the value of the number dwc:maximumElevationInMeters, otherwise NOT_COMPLIANT"
       }
     ]
   },
@@ -245,13 +245,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/d708526b-6561-438e-aa1a-82cd80b06396-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/d708526b-6561-438e-aa1a-82cd80b06396-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [
@@ -281,7 +281,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Validation dwc:minimumElevationInMeters less than dwcmaximumElevationInMeters for SingleRecord"
+        "@value": "Validation dwc:minimumElevationInMeters less than dwc:maximumElevationInMeters for SingleRecord"
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasActedUponInformationElement": [

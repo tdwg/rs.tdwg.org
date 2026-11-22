@@ -136,13 +136,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/2bc15408-d0d0-4166-b6a6-6fdba5704379-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/2bc15408-d0d0-4166-b6a6-6fdba5704379-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -194,13 +194,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/60c7e911-e72e-421f-be9b-4fb81eef1a54-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -231,13 +231,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -273,13 +273,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/46992280-0ed6-4c42-9e89-ed388ca1d43b-2024-09-16"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/46992280-0ed6-4c42-9e89-ed388ca1d43b-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-09-16"
+        "@value": "2026-11-21"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -294,7 +294,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#example": [
       {
-        "@value": "dwc:eventDate=\"2023-01-26\", dwc:year=\"2023\", dwc:month=\"\", dwc:day=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=FILLED_IN, Response.result=dwc:month=\"1\", dwc:day=\"26\", dwc:startDayOfYear=\"26\", dwc:endDayOfYear=\"26\", Response.comment=\"dwc:month, dwc:day, dwc:startDayOfyear and dwc:endDayOfYear filled in from dwc:eventDate\""
+        "@value": "dwc:eventDate=\"2023-01-26\", dwc:year=\"2023\", dwc:month=\"\", dwc:day=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=FILLED_IN, Response.result=dwc:month=\"1\", dwc:day=\"26\", dwc:startDayOfYear=\"26\", dwc:endDayOfYear=\"26\", Response.comment=\"dwc:month, dwc:day, dwc:startDayOfYear and dwc:endDayOfYear filled in from dwc:eventDate\""
       },
       {
         "@value": "dwc:eventDate=\"2023\",dwc:year=\"2023\", dwc:month=\"\", dwc:day=\"\", dwc:startDayOfYear=\"\", dwc:endDayOfYear=\"\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"No amendments possible\""
@@ -323,13 +323,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/710fe118-17e1-440f-b428-88ba3f547d6d-2026-11-20"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/710fe118-17e1-440f-b428-88ba3f547d6d-2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-20"
+        "@value": "2026-11-21"
       }
     ],
     "http://purl.org/dc/terms/references": [
