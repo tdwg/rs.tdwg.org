@@ -1,5 +1,6 @@
 # BDQ release 2026-11-21 for bdq-public-review.rs.tdwg.org (tdwg/bdq#340).
 # Editorial corrections to the texts of 36 Tests: status tokens, misspelt dwc: and bdqval: terms and Test names, a wrong GUID, AuthoritiesDefaults markup, Vaildation (tdwg/bdq#340)
+# Also modified (their text changed in tdwg/bdq since their last versions): the Implementer's Guide, Users' Guide, Supplement, Tutorial, bdqffdq and bdqtest guides, and the Vocabulary Extension document.
 # Created by bdq_new_release.py from release 2026-11-20.
 # Run with: python process.py --config bdq-revisions/bdq-revisions-2026-11-21/config.yaml
 # Placeholders for the public review: standard YYY, decision_number YYY (plan 8.2.1).
@@ -899,6 +900,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdqffdq/doc/guide/
   documentTitle: 'Fitness For Use Framework Ontology: Concepts and Use'
   abstract: 'This document is a guide for the BDQ standard, describing the organization of the bdqffdq: ontology and providing normative guidance on its use. The Fitness For Use Framework ontology formally describes the terms and relationships between them for evaluating the quality of biodiversity data. Because of its comprehensive nature, the Fitness For Use Framework supports varied interpretations and uses by different stakeholders. The Framework also provides a base for the bdqval: and bdqtest: namespace vocabularies.'
@@ -1009,6 +1011,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdqtest/doc/guide/
   documentTitle: 'BDQ Tests: Concepts and Use'
   abstract: 'This document is a reference for the BDQ standard, providing context for and normative guidance on use of the bdqtest: vocabulary.'
@@ -1119,6 +1122,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdqtest/doc/qrg/
   documentTitle: BDQ Tests Quick Reference Guide
   abstract: This document is intended to be an easy-to-read quick reference to the current BDQ Tests using a subset of descriptors maintained as part of the BDQ standard.
@@ -1340,6 +1344,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdq/doc/users/
   documentTitle: BDQ User's Guide
   abstract: This document serves as a reference for the BDQ standard, outlining the BDQ Tests used in `Data Quality Reports`.
@@ -1450,6 +1455,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdq/doc/synthetic/
   documentTitle: Guide to Marking and Identifying Synthetic and Modified Data
   abstract: This document is a standard for the marking of synthetic and modified biodiversity data to allow users of biodiversity data to identify and exclude modified and synthetic data from analysies and other uses.
@@ -1670,6 +1676,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdq/doc/tutorial/
   documentTitle: 'Tutorial: From Use Case to Test'
   abstract: This document provides information supplementary to the BDQ standard, describing the thought process and procedure for describing a new Use Case and Tests.
@@ -1780,6 +1787,7 @@ documents:
     role_uri: http://www.wikidata.org/entity/Q20204892
     affiliation: U.S. Geological Survey
     affiliation_uri: https://www.wikidata.org/wiki/Q193755
+  modified: true
 - document: https://rs.tdwg.org/bdqtest/doc/list/
   documentTitle: BDQ Tests List of Terms
   abstract: 'This document is a reference for the BDQ standard, documenting the Tests in the bdqtest: vocabulary, using terms from the Fitness For Use Framework ontology.'
