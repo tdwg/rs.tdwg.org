@@ -164,13 +164,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2026-11-21"
+        "@id": "https://rs.tdwg.org/bdqtest/method/version/2f59ef74-5439-44db-8d5a-85c9773c0cef-2026-11-23"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-21"
+        "@value": "2026-11-23"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -222,13 +222,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-21"
+        "@id": "https://rs.tdwg.org/bdqtest/policy/version/f03dcc89-5e2b-41bc-b1d8-5a319fb18d22-2026-11-23"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-21"
+        "@value": "2026-11-23"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -264,13 +264,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/specification/version/46caea46-0c94-4efb-9e5f-1b170f2ad54e-2024-11-11"
+        "@id": "https://rs.tdwg.org/bdqtest/specification/version/46caea46-0c94-4efb-9e5f-1b170f2ad54e-2026-11-23"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-11-11"
+        "@value": "2026-11-23"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -288,7 +288,7 @@
         "@value": "dwc:decimalLatitude=\"25.46\", dwc:decimalLongitude=\"135.87\", dwc:countryCode=\"AU\": Response.status=AMENDED, Response.result=dwc:decimalLatitude=\"-25.46\", dwc:decimalLongitude=\"135.87\", Response.comment=\"dwc:decimalLatitude sign reversed to fit dwc:countryCode=AU\""
       },
       {
-        "@value": "dwc:decimalLatitude=\"25.46\", dwc:decimalLongitude=\"135.87\", dwc:countryCode=\"AX\": Response.status=NOT_AMENDED, Response.result=, Response.comment=\"dwc:countryCode is uninterpretable\""
+        "@value": "dwc:decimalLatitude=\"25.46\", dwc:decimalLongitude=\"135.87\", dwc:countryCode=\"XX\": Response.status=NOT_AMENDED, Response.result=\"\", Response.comment=\"dwc:countryCode is uninterpretable\""
       }
     ],
     "https://rs.tdwg.org/bdqffdq/terms/hasArgument": [
@@ -319,13 +319,13 @@
     ],
     "http://purl.org/dc/terms/hasVersion": [
       {
-        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2026-11-21"
+        "@id": "https://rs.tdwg.org/bdqtest/terms/version/f2b4a50a-6b2f-4930-b9df-da87b6a21082-2026-11-23"
       }
     ],
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2026-11-21"
+        "@value": "2026-11-23"
       }
     ],
     "http://purl.org/dc/terms/references": [
