@@ -1,0 +1,2 @@
+term_localName,label,prefLabel,definition,usage,notes,controlled_value_string,skos_inScheme,type,type1,hasFitnessRequirements
+Consistent,Consistent,Consistent,Data are internally consistent and consistent with any authorities consulted.,,"<div xmlns=""http://www.w3.org/1999/xhtml"">A set of bdqffdq:InformationElements and values of bdqval:sourceAuthority are consistent.  Corresponding dimension is bdqdim:Consistency.</div>",Consistent,https://rs.tdwg.org/bdqcrit/terms/,https://rs.tdwg.org/bdqffdq/terms/Criterion,,
