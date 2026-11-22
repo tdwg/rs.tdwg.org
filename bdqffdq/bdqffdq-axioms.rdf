@@ -15,7 +15,7 @@
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqffdq/extension/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:label xml:lang="en">Fitness For Use Framework Ontology Vocabulary Extension</rdfs:label>
-    <owl:versionIRI rdf:resource="https://rs.tdwg.org/bdqffdq/version/extension/2026-11-09"/>
+    <owl:versionIRI rdf:resource="https://rs.tdwg.org/bdqffdq/version/extension/2026-11-22"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb26a59a073be5395868d0e61870ee38196accfb72a8b5a83530000813df2b90ace">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>

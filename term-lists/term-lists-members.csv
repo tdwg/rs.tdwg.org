@@ -2609,6 +2609,7 @@ https://rs.tdwg.org/bdquc/terms/,https://rs.tdwg.org/bdquc/terms/Species-Distrib
 https://rs.tdwg.org/bdqval/terms/,https://rs.tdwg.org/bdqval/terms/defaultOccurrenceStatus
 https://rs.tdwg.org/bdqffdq/terms/,https://rs.tdwg.org/bdqffdq/terms/QualityAssurance
 https://rs.tdwg.org/bdqffdq/terms/,https://rs.tdwg.org/bdqffdq/terms/QualityControl
+https://rs.tdwg.org/bdqtest/informationelement/,https://rs.tdwg.org/bdqtest/informationelement/fd84c789-375d-4c5a-8b5a-2ecf9d107fa1
 https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/AMENDED
 https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/AbstractInformationElement
 https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/ActedUpon
@@ -2659,4 +2660,3 @@ https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/targete
 https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/targetedMeasure
 https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/targetedValidation
 https://rs.tdwg.org/bdqffdq/extension/,https://rs.tdwg.org/bdqffdq/terms/usesSpecification
-https://rs.tdwg.org/bdqtest/informationelement/,https://rs.tdwg.org/bdqtest/informationelement/fd84c789-375d-4c5a-8b5a-2ecf9d107fa1

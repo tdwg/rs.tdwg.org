@@ -1,3 +1,16 @@
 replacing_version,replaced_version_localName
 https://rs.tdwg.org/bdqval/terms/version/AllAmendmentTestsRunOnSingleRecord-2026-11-12,AllAmendmentTestsRunOnSingleRecord-2026-04-22
 https://rs.tdwg.org/bdqval/terms/version/AllValidationTestsRunOnSingleRecord-2026-11-12,AllValidationTestsRunOnSingleRecord-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/Empty-2026-11-22,Empty-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/annotationAlertIf-2026-11-22,annotationAlertIf-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/annotationSystem-2026-11-22,annotationSystem-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/assumptionOnUnknownBiome-2026-11-22,assumptionOnUnknownBiome-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/defaultGeodeticDatum-2026-11-22,defaultGeodeticDatum-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/earliestValidDate-2026-11-22,earliestValidDate-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/includeEventDate-2026-11-22,includeEventDate-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/latestValidDate-2026-11-22,latestValidDate-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/maximumValidDepthInMeters-2026-11-22,maximumValidDepthInMeters-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/maximumValidElevationInMeters-2026-11-22,maximumValidElevationInMeters-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/minimumValidDepthInMeters-2026-11-22,minimumValidDepthInMeters-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/minimumValidElevationInMeters-2026-11-22,minimumValidElevationInMeters-2026-04-22
+https://rs.tdwg.org/bdqval/terms/version/sourceAuthority-2026-11-22,sourceAuthority-2026-04-22
