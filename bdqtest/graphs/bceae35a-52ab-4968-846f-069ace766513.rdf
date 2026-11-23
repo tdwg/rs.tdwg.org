@@ -79,8 +79,8 @@
     <bdqffdq:includedInPolicy rdf:resource="https://rs.tdwg.org/bdqtest/terms/bceae35a-52ab-4968-846f-069ace766513"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://rs.tdwg.org/bdqtest/policy/89332ae7-a4d0-437a-9c15-b3cba92fb36d">
-    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-21"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-21</dcterms:modified>
+    <dcterms:hasVersion rdf:resource="https://rs.tdwg.org/bdqtest/policy/version/89332ae7-a4d0-437a-9c15-b3cba92fb36d-2026-11-25"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-25</dcterms:modified>
     <rdf:type rdf:resource="https://rs.tdwg.org/bdqffdq/terms/MeasurementPolicy"/>
     <rdfs:label>MeasurementPolicy: (64) measures  in UseCase bdquc:Alien-Species</rdfs:label>
     <owl:sameAs rdf:resource="urn:uuid:89332ae7-a4d0-437a-9c15-b3cba92fb36d"/>
