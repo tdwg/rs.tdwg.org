@@ -806,6 +806,12 @@ def determine_state_of_data_tables(database, versions, borrowed, utility_namespa
 
     return terms_metadata, modifications_metadata, mods_local_name, metadata_localname_column, mods_term_localName, new_terms, modified_terms
 
+def _created_by_this_release(issued_dates, date_issued):
+    """True if a resource's versions (given by their issued dates) include one on
+    date_issued and none earlier, i.e. it was created by an earlier run of this release."""
+    dates = [datetime.date.fromisoformat(value) for value in issued_dates]
+    return bool(dates) and min(dates) == datetime.date.fromisoformat(date_issued)
+
 def find_predecessor_row(metadata, resource_column, resource_value, issued_column, date_issued, context):
     """Return the row index of the latest version issued before date_issued."""
     target_date = datetime.date.fromisoformat(date_issued)
@@ -1137,6 +1143,16 @@ def generate_current_terms_metadata(standardUri, terms_metadata, modifications_m
 
         mostRecentListNumber = None # no predecessor exists for a new term list
 
+    elif _created_by_this_release(
+        [row[version_modified] for row in term_lists_versions_metadata[1:] if row[list_uri] == termlist_uri],
+        date_issued
+    ):
+        # The term list was created by an earlier run of this same release: it has a
+        # version on date_issued and none before. Process it as the first run did, with
+        # no predecessor, so that a same-release rerun converges (process-vocabulary.md 7.4).
+        aNewTermList = True
+        mostRecentListNumber = None
+
     else:
         # Find the latest previous version by its explicit version date.
         mostRecentListNumber = find_predecessor_row(
@@ -1251,6 +1267,15 @@ def update_termlist_version_members(aNewTermList, mostRecentListNumber, date_iss
             ' would contain more than one member version for term(s): ' +
             ', '.join(duplicate_local_names) + '.'
         )
+
+    # The membership of the target version is generated in full by this run. On a
+    # same-release rerun, drop the rows an earlier run wrote for it, so that a term
+    # whose member version changed in the rerun does not keep its earlier version as
+    # a second member (writeCsv only removes exact duplicate rows).
+    term_lists_versions_members[:] = [term_lists_versions_members[0]] + [
+        row for row in term_lists_versions_members[1:]
+        if not row or row[0] != termlistVersionUri
+    ]
 
     # Now that the list is created of new term versions that are part of the new term version list,
     # add a record for each one to the term list versions members table
@@ -3422,6 +3447,14 @@ def _document_predecessor(versions_metadata_df, document_iri):
         if issued_date < target_date:
             candidates.append((issued_date, row['version_iri']))
 
+    if not candidates and _created_by_this_release(
+        [row['version_issued'] for _, row in versions_metadata_df.iterrows()
+         if row['current_iri'] == document_iri],
+        date_issued
+    ):
+        # The Document was created by an earlier run of this same release: no
+        # predecessor, as in the first run, so that a same-release rerun converges.
+        return None, None
     if not candidates:
         raise ValueError(
             'No predecessor Document version issued before ' + date_issued +
