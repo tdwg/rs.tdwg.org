@@ -2077,7 +2077,13 @@ let $iri := $class/fullId/text()
 let $propertyBlock :=
   concat(
     page:subject($iri,$serialization),
-    string-join(page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)),
+    string-join(
+      let $pairs := page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)
+      return
+        if ($serialization = "json")
+        then page:group-json-pairs($pairs)
+        else $pairs
+    ),
 
     (: make the backlink only for the instance of the primary class in a table :)
     if ($id="$root")
@@ -2102,6 +2108,31 @@ return (
 };
 
 (:--------------------------------------------------------------------------------------------------:)
+
+(: In JSON-LD, a property with several values must be one key whose value is an array;
+   repeated keys in one object are not valid JSON-LD, and JSON parsers keep only the last.
+   Takes the JSON property/value pair strings ('"predicate": value,&#10;') of one resource,
+   and merges pairs with the same predicate into '"predicate": [value1, value2],&#10;' at the
+   position of the first. A predicate with a single value keeps its pair string unchanged. :)
+declare function page:group-json-pairs($all-pairs as xs:string*) as xs:string*
+{
+  let $pairs := $all-pairs[. != '']   (: unsupported mapping types yield empty strings :)
+  let $predicates := for $pair in $pairs return substring-before(substring-after($pair,'"'),'": ')
+  for $pair at $position in $pairs
+  let $predicate := $predicates[$position]
+  where index-of($predicates,$predicate)[1] = $position
+  let $members := index-of($predicates,$predicate)
+  return
+    if (count($members) = 1)
+    then $pair
+    else concat('"',$predicate,'": [',
+                string-join(
+                  for $member in $members
+                  let $value := substring-after($pairs[$member],'": ')
+                  return substring($value,1,string-length($value)-2),  (: drop the trailing ',&#10;' :)
+                  ', '),
+                '],&#10;')
+};
 
 (: generate sequence of non-type property/value pair strings :)
 declare function page:property-value-pairs($IRIs,$columnInfo,$record,$id,$serialization,$namespaces)
